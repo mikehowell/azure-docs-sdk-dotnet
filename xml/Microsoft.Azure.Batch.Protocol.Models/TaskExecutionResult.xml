@@ -1,23 +1,22 @@
-﻿<Type Name="TaskExecutionResult" FullName="Microsoft.Azure.Batch.Protocol.Models.TaskExecutionResult">
+<Type Name="TaskExecutionResult" FullName="Microsoft.Azure.Batch.Protocol.Models.TaskExecutionResult">
   <TypeSignature Language="C#" Value="public enum TaskExecutionResult" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed TaskExecutionResult extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Azure.Batch.Protocol.Models.TaskExecutionResult" />
   <TypeSignature Language="VB.NET" Value="Public Enum TaskExecutionResult" />
   <TypeSignature Language="F#" Value="type TaskExecutionResult = " />
-  <TypeSignature Language="C++ CLI" Value="public enum class TaskExecutionResult" />
-  <TypeSignature Language="C++ CX" Value="public enum class TaskExecutionResult" />
-  <TypeSignature Language="C++ WINRT" Value="enum TaskExecutionResult" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Azure.Batch</AssemblyName>
-    <AssemblyVersion>7.1.0.0</AssemblyVersion>
-    <AssemblyVersion>8.0.0.0</AssemblyVersion>
+    <AssemblyVersion>12.0.0.0</AssemblyVersion>
+    <AssemblyVersion>13.0.0.0</AssemblyVersion>
+    <AssemblyVersion>14.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Attributes>
     <Attribute>
-      <AttributeName>Newtonsoft.Json.JsonConverter(typeof(Newtonsoft.Json.Converters.StringEnumConverter))</AttributeName>
+      <AttributeName Language="C#">[Newtonsoft.Json.JsonConverter(typeof(Newtonsoft.Json.Converters.StringEnumConverter))]</AttributeName>
+      <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonConverter(typeof(Newtonsoft.Json.Converters.StringEnumConverter))&gt;]</AttributeName>
     </Attribute>
   </Attributes>
   <Docs>
@@ -33,18 +32,17 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.Azure.Batch.Protocol.Models.TaskExecutionResult.Failure" />
       <MemberSignature Language="VB.NET" Value="Failure" />
       <MemberSignature Language="F#" Value="Failure = 1" Usage="Microsoft.Azure.Batch.Protocol.Models.TaskExecutionResult.Failure" />
-      <MemberSignature Language="C++ CLI" Value="Failure" />
-      <MemberSignature Language="C++ CX" Value="Failure" />
-      <MemberSignature Language="C++ WINRT" Value="Failure" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Batch</AssemblyName>
-        <AssemblyVersion>7.1.0.0</AssemblyVersion>
-        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>12.0.0.0</AssemblyVersion>
+        <AssemblyVersion>13.0.0.0</AssemblyVersion>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>System.Runtime.Serialization.EnumMember(Value="failure")</AttributeName>
+          <AttributeName Language="C#">[System.Runtime.Serialization.EnumMember(Value="failure")]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Runtime.Serialization.EnumMember(Value="failure")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -53,9 +51,9 @@
       <MemberValue>1</MemberValue>
       <Docs>
         <summary>
-            There was an error during processing of the task. The failure may
-            have occurred before the task process was launched, while the task
-            process was executing, or after the task process exited.
+            There was an error during processing of the Task. The failure may
+            have occurred before the Task process was launched, while the Task
+            process was executing, or after the Task process exited.
             </summary>
       </Docs>
     </Member>
@@ -65,18 +63,17 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.Azure.Batch.Protocol.Models.TaskExecutionResult.Success" />
       <MemberSignature Language="VB.NET" Value="Success" />
       <MemberSignature Language="F#" Value="Success = 0" Usage="Microsoft.Azure.Batch.Protocol.Models.TaskExecutionResult.Success" />
-      <MemberSignature Language="C++ CLI" Value="Success" />
-      <MemberSignature Language="C++ CX" Value="Success" />
-      <MemberSignature Language="C++ WINRT" Value="Success" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Batch</AssemblyName>
-        <AssemblyVersion>7.1.0.0</AssemblyVersion>
-        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>12.0.0.0</AssemblyVersion>
+        <AssemblyVersion>13.0.0.0</AssemblyVersion>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>System.Runtime.Serialization.EnumMember(Value="success")</AttributeName>
+          <AttributeName Language="C#">[System.Runtime.Serialization.EnumMember(Value="success")]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Runtime.Serialization.EnumMember(Value="success")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -85,7 +82,7 @@
       <MemberValue>0</MemberValue>
       <Docs>
         <summary>
-            The task ran successfully.
+            The Task ran successfully.
             </summary>
       </Docs>
     </Member>

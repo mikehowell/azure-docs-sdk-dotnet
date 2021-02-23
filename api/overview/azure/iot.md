@@ -1,17 +1,9 @@
 ---
 title: Azure IoT libraries for .NET
 description: Reference for Azure IoT libraries for .NET
-keywords: Azure, .NET, SDK, API, IoT
-author: camsoper
-ms.author: casoper
-manager: wpickett
 ms.date: 10/19/2017
 ms.topic: reference
-ms.prod: azure
-ms.technology: azure
-ms.devlang: dotnet
 ms.service: iot-hub
-ms.custom: devcenter, svc-overview
 ---
 
 # Azure IoT libraries for .NET
@@ -41,9 +33,10 @@ Install the [NuGet package]( https://www.nuget.org/packages/Microsoft.Azure.Devi
 Install-Package Microsoft.Azure.Devices.Client
 ```
 
-```bash
+```dotnetcli
 dotnet add package Microsoft.Azure.Devices.Client
 ```
+
 ### Code Examples 
 
 This example connects to the IoT Hub and sends one message per second.
@@ -52,7 +45,7 @@ This example connects to the IoT Hub and sends one message per second.
 string deviceKey = "<deviceKey>";
 string deviceId = "<deviceId>";
 string iotHubHostName = "<IoTHubHostname>";
-DeviceAuthenticationWithRegistrySymmetricKeyvar deviceAuthentication = new DeviceAuthenticationWithRegistrySymmetricKey(deviceId, deviceKey);
+var deviceAuthentication = new DeviceAuthenticationWithRegistrySymmetricKey(deviceId, deviceKey);
 
 DeviceClient deviceClient = DeviceClient.Create(iotHubHostName, deviceAuthentication, TransportType.Mqtt);
 

@@ -1,14 +1,13 @@
-﻿<Type Name="ProcessThreadInfo" FullName="Microsoft.Azure.Management.WebSites.Models.ProcessThreadInfo">
+<Type Name="ProcessThreadInfo" FullName="Microsoft.Azure.Management.WebSites.Models.ProcessThreadInfo">
   <TypeSignature Language="C#" Value="public class ProcessThreadInfo : Microsoft.Azure.Management.WebSites.Models.ProxyOnlyResource" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit ProcessThreadInfo extends Microsoft.Azure.Management.WebSites.Models.ProxyOnlyResource" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Azure.Management.WebSites.Models.ProcessThreadInfo" />
   <TypeSignature Language="VB.NET" Value="Public Class ProcessThreadInfo&#xA;Inherits ProxyOnlyResource" />
   <TypeSignature Language="F#" Value="type ProcessThreadInfo = class&#xA;    inherit ProxyOnlyResource" />
-  <TypeSignature Language="C++ CLI" Value="public ref class ProcessThreadInfo : Microsoft::Azure::Management::WebSites::Models::ProxyOnlyResource" />
-  <TypeSignature Language="C++ WINRT" Value="[Windows::Foundation::Metadata::WebHostHidden]&#xA;class ProcessThreadInfo : Microsoft::Azure::Management::WebSites::Models::ProxyOnlyResource" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Azure.Management.Websites</AssemblyName>
-    <AssemblyVersion>1.0.0.0</AssemblyVersion>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
+    <AssemblyVersion>3.1.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>Microsoft.Azure.Management.WebSites.Models.ProxyOnlyResource</BaseTypeName>
@@ -16,7 +15,8 @@
   <Interfaces />
   <Attributes>
     <Attribute>
-      <AttributeName>Microsoft.Rest.Serialization.JsonTransformation</AttributeName>
+      <AttributeName Language="C#">[Microsoft.Rest.Serialization.JsonTransformation]</AttributeName>
+      <AttributeName Language="F#">[&lt;Microsoft.Rest.Serialization.JsonTransformation&gt;]</AttributeName>
     </Attribute>
   </Attributes>
   <Docs>
@@ -31,13 +31,11 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Management.WebSites.Models.ProcessThreadInfo.#ctor" />
       <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; ProcessThreadInfo();" />
-      <MemberSignature Language="C++ CX" Value="public:&#xA; ProcessThreadInfo();" />
-      <MemberSignature Language="C++ WINRT" Value=" ProcessThreadInfo();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Websites</AssemblyName>
-        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>3.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
@@ -48,22 +46,23 @@
       </Docs>
     </Member>
     <Member MemberName=".ctor">
-      <MemberSignature Language="C#" Value="public ProcessThreadInfo (string id = null, string name = null, string kind = null, string type = null, Nullable&lt;int&gt; processThreadInfoId = null, string href = null, string process = null, string startAddress = null, Nullable&lt;int&gt; currentPriority = null, string priorityLevel = null, Nullable&lt;int&gt; basePriority = null, Nullable&lt;DateTime&gt; startTime = null, string totalProcessorTime = null, string userProcessorTime = null, string priviledgedProcessorTime = null, string state = null, string waitReason = null);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string id, string name, string kind, string type, valuetype System.Nullable`1&lt;int32&gt; processThreadInfoId, string href, string process, string startAddress, valuetype System.Nullable`1&lt;int32&gt; currentPriority, string priorityLevel, valuetype System.Nullable`1&lt;int32&gt; basePriority, valuetype System.Nullable`1&lt;valuetype System.DateTime&gt; startTime, string totalProcessorTime, string userProcessorTime, string priviledgedProcessorTime, string state, string waitReason) cil managed" />
-      <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Management.WebSites.Models.ProcessThreadInfo.#ctor(System.String,System.String,System.String,System.String,System.Nullable{System.Int32},System.String,System.String,System.String,System.Nullable{System.Int32},System.String,System.Nullable{System.Int32},System.Nullable{System.DateTime},System.String,System.String,System.String,System.String,System.String)" />
-      <MemberSignature Language="VB.NET" Value="Public Sub New (Optional id As String = null, Optional name As String = null, Optional kind As String = null, Optional type As String = null, Optional processThreadInfoId As Nullable(Of Integer) = null, Optional href As String = null, Optional process As String = null, Optional startAddress As String = null, Optional currentPriority As Nullable(Of Integer) = null, Optional priorityLevel As String = null, Optional basePriority As Nullable(Of Integer) = null, Optional startTime As Nullable(Of DateTime) = null, Optional totalProcessorTime As String = null, Optional userProcessorTime As String = null, Optional priviledgedProcessorTime As String = null, Optional state As String = null, Optional waitReason As String = null)" />
-      <MemberSignature Language="F#" Value="new Microsoft.Azure.Management.WebSites.Models.ProcessThreadInfo : string * string * string * string * Nullable&lt;int&gt; * string * string * string * Nullable&lt;int&gt; * string * Nullable&lt;int&gt; * Nullable&lt;DateTime&gt; * string * string * string * string * string -&gt; Microsoft.Azure.Management.WebSites.Models.ProcessThreadInfo" Usage="new Microsoft.Azure.Management.WebSites.Models.ProcessThreadInfo (id, name, kind, type, processThreadInfoId, href, process, startAddress, currentPriority, priorityLevel, basePriority, startTime, totalProcessorTime, userProcessorTime, priviledgedProcessorTime, state, waitReason)" />
+      <MemberSignature Language="C#" Value="public ProcessThreadInfo (string id = default, string name = default, string kind = default, string type = default, int? identifier = default, string href = default, string process = default, string startAddress = default, int? currentPriority = default, string priorityLevel = default, int? basePriority = default, DateTime? startTime = default, string totalProcessorTime = default, string userProcessorTime = default, string state = default, string waitReason = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string id, string name, string kind, string type, valuetype System.Nullable`1&lt;int32&gt; identifier, string href, string process, string startAddress, valuetype System.Nullable`1&lt;int32&gt; currentPriority, string priorityLevel, valuetype System.Nullable`1&lt;int32&gt; basePriority, valuetype System.Nullable`1&lt;valuetype System.DateTime&gt; startTime, string totalProcessorTime, string userProcessorTime, string state, string waitReason) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Management.WebSites.Models.ProcessThreadInfo.#ctor(System.String,System.String,System.String,System.String,System.Nullable{System.Int32},System.String,System.String,System.String,System.Nullable{System.Int32},System.String,System.Nullable{System.Int32},System.Nullable{System.DateTime},System.String,System.String,System.String,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (Optional id As String = Nothing, Optional name As String = Nothing, Optional kind As String = Nothing, Optional type As String = Nothing, Optional identifier As Nullable(Of Integer) = Nothing, Optional href As String = Nothing, Optional process As String = Nothing, Optional startAddress As String = Nothing, Optional currentPriority As Nullable(Of Integer) = Nothing, Optional priorityLevel As String = Nothing, Optional basePriority As Nullable(Of Integer) = Nothing, Optional startTime As Nullable(Of DateTime) = Nothing, Optional totalProcessorTime As String = Nothing, Optional userProcessorTime As String = Nothing, Optional state As String = Nothing, Optional waitReason As String = Nothing)" />
+      <MemberSignature Language="F#" Value="new Microsoft.Azure.Management.WebSites.Models.ProcessThreadInfo : string * string * string * string * Nullable&lt;int&gt; * string * string * string * Nullable&lt;int&gt; * string * Nullable&lt;int&gt; * Nullable&lt;DateTime&gt; * string * string * string * string -&gt; Microsoft.Azure.Management.WebSites.Models.ProcessThreadInfo" Usage="new Microsoft.Azure.Management.WebSites.Models.ProcessThreadInfo (id, name, kind, type, identifier, href, process, startAddress, currentPriority, priorityLevel, basePriority, startTime, totalProcessorTime, userProcessorTime, state, waitReason)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Websites</AssemblyName>
-        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>3.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="id" Type="System.String" />
         <Parameter Name="name" Type="System.String" />
         <Parameter Name="kind" Type="System.String" />
         <Parameter Name="type" Type="System.String" />
-        <Parameter Name="processThreadInfoId" Type="System.Nullable&lt;System.Int32&gt;" />
+        <Parameter Name="identifier" Type="System.Nullable&lt;System.Int32&gt;" />
         <Parameter Name="href" Type="System.String" />
         <Parameter Name="process" Type="System.String" />
         <Parameter Name="startAddress" Type="System.String" />
@@ -73,7 +72,6 @@
         <Parameter Name="startTime" Type="System.Nullable&lt;System.DateTime&gt;" />
         <Parameter Name="totalProcessorTime" Type="System.String" />
         <Parameter Name="userProcessorTime" Type="System.String" />
-        <Parameter Name="priviledgedProcessorTime" Type="System.String" />
         <Parameter Name="state" Type="System.String" />
         <Parameter Name="waitReason" Type="System.String" />
       </Parameters>
@@ -82,8 +80,7 @@
         <param name="name">Resource Name.</param>
         <param name="kind">Kind of resource.</param>
         <param name="type">Resource type.</param>
-        <param name="processThreadInfoId">ARM Identifier for
-            deployment.</param>
+        <param name="identifier">Site extension ID.</param>
         <param name="href">HRef URI.</param>
         <param name="process">Process URI.</param>
         <param name="startAddress">Start address.</param>
@@ -93,8 +90,6 @@
         <param name="startTime">Start time.</param>
         <param name="totalProcessorTime">Total processor time.</param>
         <param name="userProcessorTime">User processor time.</param>
-        <param name="priviledgedProcessorTime">Priviledged processor
-            time.</param>
         <param name="state">Thread state.</param>
         <param name="waitReason">Wait reason.</param>
         <summary>
@@ -104,20 +99,21 @@
       </Docs>
     </Member>
     <Member MemberName="BasePriority">
-      <MemberSignature Language="C#" Value="public Nullable&lt;int&gt; BasePriority { get; set; }" />
+      <MemberSignature Language="C#" Value="public int? BasePriority { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;int32&gt; BasePriority" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Management.WebSites.Models.ProcessThreadInfo.BasePriority" />
       <MemberSignature Language="VB.NET" Value="Public Property BasePriority As Nullable(Of Integer)" />
       <MemberSignature Language="F#" Value="member this.BasePriority : Nullable&lt;int&gt; with get, set" Usage="Microsoft.Azure.Management.WebSites.Models.ProcessThreadInfo.BasePriority" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Nullable&lt;int&gt; BasePriority { Nullable&lt;int&gt; get(); void set(Nullable&lt;int&gt; value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Websites</AssemblyName>
-        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>3.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="properties.basePriority")</AttributeName>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty(PropertyName="properties.base_priority")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty(PropertyName="properties.base_priority")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -132,20 +128,21 @@
       </Docs>
     </Member>
     <Member MemberName="CurrentPriority">
-      <MemberSignature Language="C#" Value="public Nullable&lt;int&gt; CurrentPriority { get; set; }" />
+      <MemberSignature Language="C#" Value="public int? CurrentPriority { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;int32&gt; CurrentPriority" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Management.WebSites.Models.ProcessThreadInfo.CurrentPriority" />
       <MemberSignature Language="VB.NET" Value="Public Property CurrentPriority As Nullable(Of Integer)" />
       <MemberSignature Language="F#" Value="member this.CurrentPriority : Nullable&lt;int&gt; with get, set" Usage="Microsoft.Azure.Management.WebSites.Models.ProcessThreadInfo.CurrentPriority" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Nullable&lt;int&gt; CurrentPriority { Nullable&lt;int&gt; get(); void set(Nullable&lt;int&gt; value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Websites</AssemblyName>
-        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>3.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="properties.currentPriority")</AttributeName>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty(PropertyName="properties.current_priority")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty(PropertyName="properties.current_priority")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -165,16 +162,16 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Management.WebSites.Models.ProcessThreadInfo.Href" />
       <MemberSignature Language="VB.NET" Value="Public Property Href As String" />
       <MemberSignature Language="F#" Value="member this.Href : string with get, set" Usage="Microsoft.Azure.Management.WebSites.Models.ProcessThreadInfo.Href" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Href { System::String ^ get(); void set(System::String ^ value); };" />
-      <MemberSignature Language="C++ CX" Value="public:&#xA; property Platform::String ^ Href { Platform::String ^ get(); void set(Platform::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Websites</AssemblyName>
-        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>3.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="properties.href")</AttributeName>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty(PropertyName="properties.href")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty(PropertyName="properties.href")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -188,22 +185,51 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <Member MemberName="Identifier">
+      <MemberSignature Language="C#" Value="public int? Identifier { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;int32&gt; Identifier" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Management.WebSites.Models.ProcessThreadInfo.Identifier" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Identifier As Nullable(Of Integer)" />
+      <MemberSignature Language="F#" Value="member this.Identifier : Nullable&lt;int&gt;" Usage="Microsoft.Azure.Management.WebSites.Models.ProcessThreadInfo.Identifier" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Azure.Management.Websites</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>3.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty(PropertyName="properties.identifier")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty(PropertyName="properties.identifier")&gt;]</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Nullable&lt;System.Int32&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets site extension ID.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
     <Member MemberName="PriorityLevel">
       <MemberSignature Language="C#" Value="public string PriorityLevel { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string PriorityLevel" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Management.WebSites.Models.ProcessThreadInfo.PriorityLevel" />
       <MemberSignature Language="VB.NET" Value="Public Property PriorityLevel As String" />
       <MemberSignature Language="F#" Value="member this.PriorityLevel : string with get, set" Usage="Microsoft.Azure.Management.WebSites.Models.ProcessThreadInfo.PriorityLevel" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ PriorityLevel { System::String ^ get(); void set(System::String ^ value); };" />
-      <MemberSignature Language="C++ CX" Value="public:&#xA; property Platform::String ^ PriorityLevel { Platform::String ^ get(); void set(Platform::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Websites</AssemblyName>
-        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>3.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="properties.priorityLevel")</AttributeName>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty(PropertyName="properties.priority_level")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty(PropertyName="properties.priority_level")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -217,51 +243,22 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
-    <Member MemberName="PriviledgedProcessorTime">
-      <MemberSignature Language="C#" Value="public string PriviledgedProcessorTime { get; set; }" />
-      <MemberSignature Language="ILAsm" Value=".property instance string PriviledgedProcessorTime" />
-      <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Management.WebSites.Models.ProcessThreadInfo.PriviledgedProcessorTime" />
-      <MemberSignature Language="VB.NET" Value="Public Property PriviledgedProcessorTime As String" />
-      <MemberSignature Language="F#" Value="member this.PriviledgedProcessorTime : string with get, set" Usage="Microsoft.Azure.Management.WebSites.Models.ProcessThreadInfo.PriviledgedProcessorTime" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ PriviledgedProcessorTime { System::String ^ get(); void set(System::String ^ value); };" />
-      <MemberSignature Language="C++ CX" Value="public:&#xA; property Platform::String ^ PriviledgedProcessorTime { Platform::String ^ get(); void set(Platform::String ^ value); };" />
-      <MemberType>Property</MemberType>
-      <AssemblyInfo>
-        <AssemblyName>Microsoft.Azure.Management.Websites</AssemblyName>
-        <AssemblyVersion>1.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Attributes>
-        <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="properties.priviledgedProcessorTime")</AttributeName>
-        </Attribute>
-      </Attributes>
-      <ReturnValue>
-        <ReturnType>System.String</ReturnType>
-      </ReturnValue>
-      <Docs>
-        <summary>
-            Gets or sets priviledged processor time.
-            </summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
-      </Docs>
-    </Member>
     <Member MemberName="Process">
       <MemberSignature Language="C#" Value="public string Process { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Process" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Management.WebSites.Models.ProcessThreadInfo.Process" />
       <MemberSignature Language="VB.NET" Value="Public Property Process As String" />
       <MemberSignature Language="F#" Value="member this.Process : string with get, set" Usage="Microsoft.Azure.Management.WebSites.Models.ProcessThreadInfo.Process" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Process { System::String ^ get(); void set(System::String ^ value); };" />
-      <MemberSignature Language="C++ CX" Value="public:&#xA; property Platform::String ^ Process { Platform::String ^ get(); void set(Platform::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Websites</AssemblyName>
-        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>3.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="properties.process")</AttributeName>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty(PropertyName="properties.process")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty(PropertyName="properties.process")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -275,50 +272,22 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
-    <Member MemberName="ProcessThreadInfoId">
-      <MemberSignature Language="C#" Value="public Nullable&lt;int&gt; ProcessThreadInfoId { get; set; }" />
-      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;int32&gt; ProcessThreadInfoId" />
-      <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Management.WebSites.Models.ProcessThreadInfo.ProcessThreadInfoId" />
-      <MemberSignature Language="VB.NET" Value="Public Property ProcessThreadInfoId As Nullable(Of Integer)" />
-      <MemberSignature Language="F#" Value="member this.ProcessThreadInfoId : Nullable&lt;int&gt; with get, set" Usage="Microsoft.Azure.Management.WebSites.Models.ProcessThreadInfo.ProcessThreadInfoId" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Nullable&lt;int&gt; ProcessThreadInfoId { Nullable&lt;int&gt; get(); void set(Nullable&lt;int&gt; value); };" />
-      <MemberType>Property</MemberType>
-      <AssemblyInfo>
-        <AssemblyName>Microsoft.Azure.Management.Websites</AssemblyName>
-        <AssemblyVersion>1.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Attributes>
-        <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="properties.id")</AttributeName>
-        </Attribute>
-      </Attributes>
-      <ReturnValue>
-        <ReturnType>System.Nullable&lt;System.Int32&gt;</ReturnType>
-      </ReturnValue>
-      <Docs>
-        <summary>
-            Gets or sets ARM Identifier for deployment.
-            </summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
-      </Docs>
-    </Member>
     <Member MemberName="StartAddress">
       <MemberSignature Language="C#" Value="public string StartAddress { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string StartAddress" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Management.WebSites.Models.ProcessThreadInfo.StartAddress" />
       <MemberSignature Language="VB.NET" Value="Public Property StartAddress As String" />
       <MemberSignature Language="F#" Value="member this.StartAddress : string with get, set" Usage="Microsoft.Azure.Management.WebSites.Models.ProcessThreadInfo.StartAddress" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ StartAddress { System::String ^ get(); void set(System::String ^ value); };" />
-      <MemberSignature Language="C++ CX" Value="public:&#xA; property Platform::String ^ StartAddress { Platform::String ^ get(); void set(Platform::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Websites</AssemblyName>
-        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>3.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="properties.startAddress")</AttributeName>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty(PropertyName="properties.start_address")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty(PropertyName="properties.start_address")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -333,20 +302,21 @@
       </Docs>
     </Member>
     <Member MemberName="StartTime">
-      <MemberSignature Language="C#" Value="public Nullable&lt;DateTime&gt; StartTime { get; set; }" />
+      <MemberSignature Language="C#" Value="public DateTime? StartTime { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;valuetype System.DateTime&gt; StartTime" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Management.WebSites.Models.ProcessThreadInfo.StartTime" />
       <MemberSignature Language="VB.NET" Value="Public Property StartTime As Nullable(Of DateTime)" />
       <MemberSignature Language="F#" Value="member this.StartTime : Nullable&lt;DateTime&gt; with get, set" Usage="Microsoft.Azure.Management.WebSites.Models.ProcessThreadInfo.StartTime" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Nullable&lt;DateTime&gt; StartTime { Nullable&lt;DateTime&gt; get(); void set(Nullable&lt;DateTime&gt; value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Websites</AssemblyName>
-        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>3.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="properties.startTime")</AttributeName>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty(PropertyName="properties.start_time")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty(PropertyName="properties.start_time")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -366,16 +336,16 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Management.WebSites.Models.ProcessThreadInfo.State" />
       <MemberSignature Language="VB.NET" Value="Public Property State As String" />
       <MemberSignature Language="F#" Value="member this.State : string with get, set" Usage="Microsoft.Azure.Management.WebSites.Models.ProcessThreadInfo.State" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ State { System::String ^ get(); void set(System::String ^ value); };" />
-      <MemberSignature Language="C++ CX" Value="public:&#xA; property Platform::String ^ State { Platform::String ^ get(); void set(Platform::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Websites</AssemblyName>
-        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>3.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="properties.state")</AttributeName>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty(PropertyName="properties.state")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty(PropertyName="properties.state")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -395,16 +365,16 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Management.WebSites.Models.ProcessThreadInfo.TotalProcessorTime" />
       <MemberSignature Language="VB.NET" Value="Public Property TotalProcessorTime As String" />
       <MemberSignature Language="F#" Value="member this.TotalProcessorTime : string with get, set" Usage="Microsoft.Azure.Management.WebSites.Models.ProcessThreadInfo.TotalProcessorTime" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ TotalProcessorTime { System::String ^ get(); void set(System::String ^ value); };" />
-      <MemberSignature Language="C++ CX" Value="public:&#xA; property Platform::String ^ TotalProcessorTime { Platform::String ^ get(); void set(Platform::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Websites</AssemblyName>
-        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>3.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="properties.totalProcessorTime")</AttributeName>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty(PropertyName="properties.total_processor_time")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty(PropertyName="properties.total_processor_time")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -424,16 +394,16 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Management.WebSites.Models.ProcessThreadInfo.UserProcessorTime" />
       <MemberSignature Language="VB.NET" Value="Public Property UserProcessorTime As String" />
       <MemberSignature Language="F#" Value="member this.UserProcessorTime : string with get, set" Usage="Microsoft.Azure.Management.WebSites.Models.ProcessThreadInfo.UserProcessorTime" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ UserProcessorTime { System::String ^ get(); void set(System::String ^ value); };" />
-      <MemberSignature Language="C++ CX" Value="public:&#xA; property Platform::String ^ UserProcessorTime { Platform::String ^ get(); void set(Platform::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Websites</AssemblyName>
-        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>3.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="properties.userProcessorTime")</AttributeName>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty(PropertyName="properties.user_processor_time")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty(PropertyName="properties.user_processor_time")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -453,16 +423,16 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Management.WebSites.Models.ProcessThreadInfo.WaitReason" />
       <MemberSignature Language="VB.NET" Value="Public Property WaitReason As String" />
       <MemberSignature Language="F#" Value="member this.WaitReason : string with get, set" Usage="Microsoft.Azure.Management.WebSites.Models.ProcessThreadInfo.WaitReason" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ WaitReason { System::String ^ get(); void set(System::String ^ value); };" />
-      <MemberSignature Language="C++ CX" Value="public:&#xA; property Platform::String ^ WaitReason { Platform::String ^ get(); void set(Platform::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Websites</AssemblyName>
-        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>3.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="properties.waitReason")</AttributeName>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty(PropertyName="properties.wait_reason")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty(PropertyName="properties.wait_reason")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>

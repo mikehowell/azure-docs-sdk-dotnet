@@ -1,14 +1,15 @@
-﻿<Type Name="EventData" FullName="Microsoft.Azure.EventHubs.EventData">
+<Type Name="EventData" FullName="Microsoft.Azure.EventHubs.EventData">
   <TypeSignature Language="C#" Value="public class EventData : IDisposable" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit EventData extends System.Object implements class System.IDisposable" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Azure.EventHubs.EventData" />
   <TypeSignature Language="VB.NET" Value="Public Class EventData&#xA;Implements IDisposable" />
   <TypeSignature Language="F#" Value="type EventData = class&#xA;    interface IDisposable" />
-  <TypeSignature Language="C++ CLI" Value="public ref class EventData : IDisposable" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Azure.EventHubs</AssemblyName>
-    <AssemblyVersion>1.0.3.0</AssemblyVersion>
-    <AssemblyVersion>2.0.0.0</AssemblyVersion>
+    <AssemblyVersion>4.1.0.0</AssemblyVersion>
+    <AssemblyVersion>4.2.0.0</AssemblyVersion>
+    <AssemblyVersion>4.3.0.0</AssemblyVersion>
+    <AssemblyVersion>4.3.1.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
@@ -32,12 +33,13 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.EventHubs.EventData.#ctor(System.ArraySegment{System.Byte})" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (arraySegment As ArraySegment(Of Byte))" />
       <MemberSignature Language="F#" Value="new Microsoft.Azure.EventHubs.EventData : ArraySegment&lt;byte&gt; -&gt; Microsoft.Azure.EventHubs.EventData" Usage="new Microsoft.Azure.EventHubs.EventData arraySegment" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; EventData(ArraySegment&lt;System::Byte&gt; arraySegment);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.EventHubs</AssemblyName>
-        <AssemblyVersion>1.0.3.0</AssemblyVersion>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+        <AssemblyVersion>4.3.0.0</AssemblyVersion>
+        <AssemblyVersion>4.3.1.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="arraySegment" Type="System.ArraySegment&lt;System.Byte&gt;" />
@@ -63,14 +65,13 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.EventHubs.EventData.#ctor(System.Byte[])" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (array As Byte())" />
       <MemberSignature Language="F#" Value="new Microsoft.Azure.EventHubs.EventData : byte[] -&gt; Microsoft.Azure.EventHubs.EventData" Usage="new Microsoft.Azure.EventHubs.EventData array" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; EventData(cli::array &lt;System::Byte&gt; ^ array);" />
-      <MemberSignature Language="C++ CX" Value="public:&#xA; EventData(Platform::Array &lt;byte&gt; ^ array);" />
-      <MemberSignature Language="C++ WINRT" Value=" EventData(std::Array &lt;byte&gt; const &amp; array);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.EventHubs</AssemblyName>
-        <AssemblyVersion>1.0.3.0</AssemblyVersion>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+        <AssemblyVersion>4.3.0.0</AssemblyVersion>
+        <AssemblyVersion>4.3.1.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="array" Type="System.Byte[]" />
@@ -96,12 +97,13 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Azure.EventHubs.EventData.Body" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Body As ArraySegment(Of Byte)" />
       <MemberSignature Language="F#" Value="member this.Body : ArraySegment&lt;byte&gt;" Usage="Microsoft.Azure.EventHubs.EventData.Body" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property ArraySegment&lt;System::Byte&gt; Body { ArraySegment&lt;System::Byte&gt; get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.EventHubs</AssemblyName>
-        <AssemblyVersion>1.0.3.0</AssemblyVersion>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+        <AssemblyVersion>4.3.0.0</AssemblyVersion>
+        <AssemblyVersion>4.3.1.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.ArraySegment&lt;System.Byte&gt;</ReturnType>
@@ -115,23 +117,45 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <Member MemberName="ContentType">
+      <MemberSignature Language="C#" Value="public string ContentType { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string ContentType" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Azure.EventHubs.EventData.ContentType" />
+      <MemberSignature Language="VB.NET" Value="Public Property ContentType As String" />
+      <MemberSignature Language="F#" Value="member this.ContentType : string with get, set" Usage="Microsoft.Azure.EventHubs.EventData.ContentType" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Azure.EventHubs</AssemblyName>
+        <AssemblyVersion>4.3.0.0</AssemblyVersion>
+        <AssemblyVersion>4.3.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets and sets type of the content.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
     <Member MemberName="Dispose">
       <MemberSignature Language="C#" Value="public void Dispose ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Dispose() cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.EventHubs.EventData.Dispose" />
       <MemberSignature Language="VB.NET" Value="Public Sub Dispose ()" />
       <MemberSignature Language="F#" Value="abstract member Dispose : unit -&gt; unit&#xA;override this.Dispose : unit -&gt; unit" Usage="eventData.Dispose " />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Dispose();" />
-      <MemberSignature Language="C++ CX" Value="public:&#xA; void Dispose();" />
-      <MemberSignature Language="C++ WINRT" Value="void Dispose();" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.IDisposable.Dispose</InterfaceMember>
       </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.EventHubs</AssemblyName>
-        <AssemblyVersion>1.0.3.0</AssemblyVersion>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+        <AssemblyVersion>4.3.0.0</AssemblyVersion>
+        <AssemblyVersion>4.3.1.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -150,12 +174,13 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Azure.EventHubs.EventData.Properties" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Properties As IDictionary(Of String, Object)" />
       <MemberSignature Language="F#" Value="member this.Properties : System.Collections.Generic.IDictionary&lt;string, obj&gt;" Usage="Microsoft.Azure.EventHubs.EventData.Properties" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::Generic::IDictionary&lt;System::String ^, System::Object ^&gt; ^ Properties { System::Collections::Generic::IDictionary&lt;System::String ^, System::Object ^&gt; ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.EventHubs</AssemblyName>
-        <AssemblyVersion>1.0.3.0</AssemblyVersion>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+        <AssemblyVersion>4.3.0.0</AssemblyVersion>
+        <AssemblyVersion>4.3.1.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Collections.Generic.IDictionary&lt;System.String,System.Object&gt;</ReturnType>
@@ -169,17 +194,18 @@
       </Docs>
     </Member>
     <Member MemberName="SystemProperties">
-      <MemberSignature Language="C#" Value="public Microsoft.Azure.EventHubs.EventData.SystemPropertiesCollection SystemProperties { get; }" />
+      <MemberSignature Language="C#" Value="public Microsoft.Azure.EventHubs.EventData.SystemPropertiesCollection SystemProperties { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Azure.EventHubs.EventData/SystemPropertiesCollection SystemProperties" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Azure.EventHubs.EventData.SystemProperties" />
-      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property SystemProperties As EventData.SystemPropertiesCollection" />
-      <MemberSignature Language="F#" Value="member this.SystemProperties : Microsoft.Azure.EventHubs.EventData.SystemPropertiesCollection" Usage="Microsoft.Azure.EventHubs.EventData.SystemProperties" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Azure::EventHubs::EventData::SystemPropertiesCollection ^ SystemProperties { Microsoft::Azure::EventHubs::EventData::SystemPropertiesCollection ^ get(); };" />
+      <MemberSignature Language="VB.NET" Value="Public Property SystemProperties As EventData.SystemPropertiesCollection" />
+      <MemberSignature Language="F#" Value="member this.SystemProperties : Microsoft.Azure.EventHubs.EventData.SystemPropertiesCollection with get, set" Usage="Microsoft.Azure.EventHubs.EventData.SystemProperties" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.EventHubs</AssemblyName>
-        <AssemblyVersion>1.0.3.0</AssemblyVersion>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+        <AssemblyVersion>4.3.0.0</AssemblyVersion>
+        <AssemblyVersion>4.3.1.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Azure.EventHubs.EventData+SystemPropertiesCollection</ReturnType>

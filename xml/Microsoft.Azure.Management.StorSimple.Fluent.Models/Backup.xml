@@ -1,11 +1,9 @@
-﻿<Type Name="Backup" FullName="Microsoft.Azure.Management.StorSimple.Fluent.Models.Backup">
+<Type Name="Backup" FullName="Microsoft.Azure.Management.StorSimple.Fluent.Models.Backup">
   <TypeSignature Language="C#" Value="public class Backup : Microsoft.Azure.Management.StorSimple.Fluent.Models.BaseModel" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit Backup extends Microsoft.Azure.Management.StorSimple.Fluent.Models.BaseModel" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Azure.Management.StorSimple.Fluent.Models.Backup" />
   <TypeSignature Language="VB.NET" Value="Public Class Backup&#xA;Inherits BaseModel" />
   <TypeSignature Language="F#" Value="type Backup = class&#xA;    inherit BaseModel" />
-  <TypeSignature Language="C++ CLI" Value="public ref class Backup : Microsoft::Azure::Management::StorSimple::Fluent::Models::BaseModel" />
-  <TypeSignature Language="C++ WINRT" Value="[Windows::Foundation::Metadata::WebHostHidden]&#xA;class Backup : Microsoft::Azure::Management::StorSimple::Fluent::Models::BaseModel" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Azure.Management.StorSimple.Fluent</AssemblyName>
     <AssemblyVersion>1.0.0.60</AssemblyVersion>
@@ -16,7 +14,8 @@
   <Interfaces />
   <Attributes>
     <Attribute>
-      <AttributeName>Microsoft.Rest.Serialization.JsonTransformation</AttributeName>
+      <AttributeName Language="C#">[Microsoft.Rest.Serialization.JsonTransformation]</AttributeName>
+      <AttributeName Language="F#">[&lt;Microsoft.Rest.Serialization.JsonTransformation&gt;]</AttributeName>
     </Attribute>
   </Attributes>
   <Docs>
@@ -29,9 +28,6 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Management.StorSimple.Fluent.Models.Backup.#ctor" />
       <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; Backup();" />
-      <MemberSignature Language="C++ CX" Value="public:&#xA; Backup();" />
-      <MemberSignature Language="C++ WINRT" Value=" Backup();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.StorSimple.Fluent</AssemblyName>
@@ -44,10 +40,10 @@
       </Docs>
     </Member>
     <Member MemberName=".ctor">
-      <MemberSignature Language="C#" Value="public Backup (DateTime createdOn, long sizeInBytes, System.Collections.Generic.IList&lt;Microsoft.Azure.Management.StorSimple.Fluent.Models.BackupElement&gt; elements, string id = null, string name = null, string type = null, Nullable&lt;Microsoft.Azure.Management.StorSimple.Fluent.Models.Kind&gt; kind = null, Nullable&lt;Microsoft.Azure.Management.StorSimple.Fluent.Models.BackupType&gt; backupType = null, Nullable&lt;Microsoft.Azure.Management.StorSimple.Fluent.Models.BackupJobCreationType&gt; backupJobCreationType = null, string backupPolicyId = null, string ssmHostName = null);" />
+      <MemberSignature Language="C#" Value="public Backup (DateTime createdOn, long sizeInBytes, System.Collections.Generic.IList&lt;Microsoft.Azure.Management.StorSimple.Fluent.Models.BackupElement&gt; elements, string id = default, string name = default, string type = default, Microsoft.Azure.Management.StorSimple.Fluent.Models.Kind? kind = default, Microsoft.Azure.Management.StorSimple.Fluent.Models.BackupType? backupType = default, Microsoft.Azure.Management.StorSimple.Fluent.Models.BackupJobCreationType? backupJobCreationType = default, string backupPolicyId = default, string ssmHostName = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(valuetype System.DateTime createdOn, int64 sizeInBytes, class System.Collections.Generic.IList`1&lt;class Microsoft.Azure.Management.StorSimple.Fluent.Models.BackupElement&gt; elements, string id, string name, string type, valuetype System.Nullable`1&lt;valuetype Microsoft.Azure.Management.StorSimple.Fluent.Models.Kind&gt; kind, valuetype System.Nullable`1&lt;valuetype Microsoft.Azure.Management.StorSimple.Fluent.Models.BackupType&gt; backupType, valuetype System.Nullable`1&lt;valuetype Microsoft.Azure.Management.StorSimple.Fluent.Models.BackupJobCreationType&gt; backupJobCreationType, string backupPolicyId, string ssmHostName) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Management.StorSimple.Fluent.Models.Backup.#ctor(System.DateTime,System.Int64,System.Collections.Generic.IList{Microsoft.Azure.Management.StorSimple.Fluent.Models.BackupElement},System.String,System.String,System.String,System.Nullable{Microsoft.Azure.Management.StorSimple.Fluent.Models.Kind},System.Nullable{Microsoft.Azure.Management.StorSimple.Fluent.Models.BackupType},System.Nullable{Microsoft.Azure.Management.StorSimple.Fluent.Models.BackupJobCreationType},System.String,System.String)" />
-      <MemberSignature Language="VB.NET" Value="Public Sub New (createdOn As DateTime, sizeInBytes As Long, elements As IList(Of BackupElement), Optional id As String = null, Optional name As String = null, Optional type As String = null, Optional kind As Nullable(Of Kind) = null, Optional backupType As Nullable(Of BackupType) = null, Optional backupJobCreationType As Nullable(Of BackupJobCreationType) = null, Optional backupPolicyId As String = null, Optional ssmHostName As String = null)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (createdOn As DateTime, sizeInBytes As Long, elements As IList(Of BackupElement), Optional id As String = Nothing, Optional name As String = Nothing, Optional type As String = Nothing, Optional kind As Nullable(Of Kind) = Nothing, Optional backupType As Nullable(Of BackupType) = Nothing, Optional backupJobCreationType As Nullable(Of BackupJobCreationType) = Nothing, Optional backupPolicyId As String = Nothing, Optional ssmHostName As String = Nothing)" />
       <MemberSignature Language="F#" Value="new Microsoft.Azure.Management.StorSimple.Fluent.Models.Backup : DateTime * int64 * System.Collections.Generic.IList&lt;Microsoft.Azure.Management.StorSimple.Fluent.Models.BackupElement&gt; * string * string * string * Nullable&lt;Microsoft.Azure.Management.StorSimple.Fluent.Models.Kind&gt; * Nullable&lt;Microsoft.Azure.Management.StorSimple.Fluent.Models.BackupType&gt; * Nullable&lt;Microsoft.Azure.Management.StorSimple.Fluent.Models.BackupJobCreationType&gt; * string * string -&gt; Microsoft.Azure.Management.StorSimple.Fluent.Models.Backup" Usage="new Microsoft.Azure.Management.StorSimple.Fluent.Models.Backup (createdOn, sizeInBytes, elements, id, name, type, kind, backupType, backupJobCreationType, backupPolicyId, ssmHostName)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
@@ -84,12 +80,11 @@
       </Docs>
     </Member>
     <Member MemberName="BackupJobCreationType">
-      <MemberSignature Language="C#" Value="public Nullable&lt;Microsoft.Azure.Management.StorSimple.Fluent.Models.BackupJobCreationType&gt; BackupJobCreationType { get; set; }" />
+      <MemberSignature Language="C#" Value="public Microsoft.Azure.Management.StorSimple.Fluent.Models.BackupJobCreationType? BackupJobCreationType { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;valuetype Microsoft.Azure.Management.StorSimple.Fluent.Models.BackupJobCreationType&gt; BackupJobCreationType" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Management.StorSimple.Fluent.Models.Backup.BackupJobCreationType" />
       <MemberSignature Language="VB.NET" Value="Public Property BackupJobCreationType As Nullable(Of BackupJobCreationType)" />
       <MemberSignature Language="F#" Value="member this.BackupJobCreationType : Nullable&lt;Microsoft.Azure.Management.StorSimple.Fluent.Models.BackupJobCreationType&gt; with get, set" Usage="Microsoft.Azure.Management.StorSimple.Fluent.Models.Backup.BackupJobCreationType" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Nullable&lt;Microsoft::Azure::Management::StorSimple::Fluent::Models::BackupJobCreationType&gt; BackupJobCreationType { Nullable&lt;Microsoft::Azure::Management::StorSimple::Fluent::Models::BackupJobCreationType&gt; get(); void set(Nullable&lt;Microsoft::Azure::Management::StorSimple::Fluent::Models::BackupJobCreationType&gt; value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.StorSimple.Fluent</AssemblyName>
@@ -97,7 +92,8 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="properties.backupJobCreationType")</AttributeName>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty(PropertyName="properties.backupJobCreationType")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty(PropertyName="properties.backupJobCreationType")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -115,8 +111,6 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Management.StorSimple.Fluent.Models.Backup.BackupPolicyId" />
       <MemberSignature Language="VB.NET" Value="Public Property BackupPolicyId As String" />
       <MemberSignature Language="F#" Value="member this.BackupPolicyId : string with get, set" Usage="Microsoft.Azure.Management.StorSimple.Fluent.Models.Backup.BackupPolicyId" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ BackupPolicyId { System::String ^ get(); void set(System::String ^ value); };" />
-      <MemberSignature Language="C++ CX" Value="public:&#xA; property Platform::String ^ BackupPolicyId { Platform::String ^ get(); void set(Platform::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.StorSimple.Fluent</AssemblyName>
@@ -124,7 +118,8 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="properties.backupPolicyId")</AttributeName>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty(PropertyName="properties.backupPolicyId")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty(PropertyName="properties.backupPolicyId")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -137,12 +132,11 @@
       </Docs>
     </Member>
     <Member MemberName="BackupType">
-      <MemberSignature Language="C#" Value="public Nullable&lt;Microsoft.Azure.Management.StorSimple.Fluent.Models.BackupType&gt; BackupType { get; set; }" />
+      <MemberSignature Language="C#" Value="public Microsoft.Azure.Management.StorSimple.Fluent.Models.BackupType? BackupType { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;valuetype Microsoft.Azure.Management.StorSimple.Fluent.Models.BackupType&gt; BackupType" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Management.StorSimple.Fluent.Models.Backup.BackupType" />
       <MemberSignature Language="VB.NET" Value="Public Property BackupType As Nullable(Of BackupType)" />
       <MemberSignature Language="F#" Value="member this.BackupType : Nullable&lt;Microsoft.Azure.Management.StorSimple.Fluent.Models.BackupType&gt; with get, set" Usage="Microsoft.Azure.Management.StorSimple.Fluent.Models.Backup.BackupType" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Nullable&lt;Microsoft::Azure::Management::StorSimple::Fluent::Models::BackupType&gt; BackupType { Nullable&lt;Microsoft::Azure::Management::StorSimple::Fluent::Models::BackupType&gt; get(); void set(Nullable&lt;Microsoft::Azure::Management::StorSimple::Fluent::Models::BackupType&gt; value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.StorSimple.Fluent</AssemblyName>
@@ -150,7 +144,8 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="properties.backupType")</AttributeName>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty(PropertyName="properties.backupType")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty(PropertyName="properties.backupType")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -168,7 +163,6 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Management.StorSimple.Fluent.Models.Backup.CreatedOn" />
       <MemberSignature Language="VB.NET" Value="Public Property CreatedOn As DateTime" />
       <MemberSignature Language="F#" Value="member this.CreatedOn : DateTime with get, set" Usage="Microsoft.Azure.Management.StorSimple.Fluent.Models.Backup.CreatedOn" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property DateTime CreatedOn { DateTime get(); void set(DateTime value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.StorSimple.Fluent</AssemblyName>
@@ -176,7 +170,8 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="properties.createdOn")</AttributeName>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty(PropertyName="properties.createdOn")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty(PropertyName="properties.createdOn")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -194,7 +189,6 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Management.StorSimple.Fluent.Models.Backup.Elements" />
       <MemberSignature Language="VB.NET" Value="Public Property Elements As IList(Of BackupElement)" />
       <MemberSignature Language="F#" Value="member this.Elements : System.Collections.Generic.IList&lt;Microsoft.Azure.Management.StorSimple.Fluent.Models.BackupElement&gt; with get, set" Usage="Microsoft.Azure.Management.StorSimple.Fluent.Models.Backup.Elements" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::Generic::IList&lt;Microsoft::Azure::Management::StorSimple::Fluent::Models::BackupElement ^&gt; ^ Elements { System::Collections::Generic::IList&lt;Microsoft::Azure::Management::StorSimple::Fluent::Models::BackupElement ^&gt; ^ get(); void set(System::Collections::Generic::IList&lt;Microsoft::Azure::Management::StorSimple::Fluent::Models::BackupElement ^&gt; ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.StorSimple.Fluent</AssemblyName>
@@ -202,7 +196,8 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="properties.elements")</AttributeName>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty(PropertyName="properties.elements")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty(PropertyName="properties.elements")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -220,8 +215,6 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Management.StorSimple.Fluent.Models.Backup.SizeInBytes" />
       <MemberSignature Language="VB.NET" Value="Public Property SizeInBytes As Long" />
       <MemberSignature Language="F#" Value="member this.SizeInBytes : int64 with get, set" Usage="Microsoft.Azure.Management.StorSimple.Fluent.Models.Backup.SizeInBytes" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property long SizeInBytes { long get(); void set(long value); };" />
-      <MemberSignature Language="C++ CX" Value="public:&#xA; property long long SizeInBytes { long long get(); void set(long long value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.StorSimple.Fluent</AssemblyName>
@@ -229,7 +222,8 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="properties.sizeInBytes")</AttributeName>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty(PropertyName="properties.sizeInBytes")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty(PropertyName="properties.sizeInBytes")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -247,8 +241,6 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Management.StorSimple.Fluent.Models.Backup.SsmHostName" />
       <MemberSignature Language="VB.NET" Value="Public Property SsmHostName As String" />
       <MemberSignature Language="F#" Value="member this.SsmHostName : string with get, set" Usage="Microsoft.Azure.Management.StorSimple.Fluent.Models.Backup.SsmHostName" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ SsmHostName { System::String ^ get(); void set(System::String ^ value); };" />
-      <MemberSignature Language="C++ CX" Value="public:&#xA; property Platform::String ^ SsmHostName { Platform::String ^ get(); void set(Platform::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.StorSimple.Fluent</AssemblyName>
@@ -256,7 +248,8 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="properties.ssmHostName")</AttributeName>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty(PropertyName="properties.ssmHostName")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty(PropertyName="properties.ssmHostName")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -274,9 +267,6 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Management.StorSimple.Fluent.Models.Backup.Validate" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Sub Validate ()" />
       <MemberSignature Language="F#" Value="abstract member Validate : unit -&gt; unit&#xA;override this.Validate : unit -&gt; unit" Usage="backup.Validate " />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Validate();" />
-      <MemberSignature Language="C++ CX" Value="public:&#xA; virtual void Validate();" />
-      <MemberSignature Language="C++ WINRT" Value=" virtual void Validate();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.StorSimple.Fluent</AssemblyName>

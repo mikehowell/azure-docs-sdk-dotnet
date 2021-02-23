@@ -1,17 +1,9 @@
 ---
 title: Azure Notification Hubs libraries for .NET
 description: Reference for Azure Notification Hubs libraries for .NET
-keywords: Azure, .NET, SDK, API, Notification Hubs
-author: camsoper
-ms.author: casoper
-manager: wpickett
 ms.date: 10/19/2017
 ms.topic: reference
-ms.prod: azure
-ms.technology: azure
-ms.devlang: dotnet
 ms.service: notification-hubs
-ms.custom: devcenter, svc-overview
 ---
 
 # Azure Notification Hubs libraries for .NET
@@ -23,7 +15,7 @@ Azure Notification Hubs provide an easy-to-use, multi-platform, scaled-out push 
 Install the [NuGet package](https://www.nuget.org/packages/Microsoft.Azure.NotificationHubs) directly from the Visual Studio [Package Manager console][PackageManager] or with the [.NET Core CLI][DotNetCLI].
 
 > [!NOTE]
-> A [new preview version of the NuGet package](https://www.nuget.org/packages/Microsoft.Azure.NotificationHubs/2.0.0-preview1) now supports .NET Standard, which allows using .NET core for backend use of Notifications Hubs
+> The [Azure Notification Hubs NuGet package](https://www.nuget.org/packages/Microsoft.Azure.NotificationHubs) now supports .NET Standard, which allows using .NET core for backend use of Notifications Hubs
 
 #### Visual Studio Package Manager
 
@@ -31,7 +23,7 @@ Install the [NuGet package](https://www.nuget.org/packages/Microsoft.Azure.Notif
 Install-Package Microsoft.Azure.NotificationHubs
 ```
 
-```bash
+```dotnetcli
 dotnet add package Microsoft.Azure.NotificationHubs
 ```
 
@@ -49,7 +41,6 @@ await hub.SendWindowsNativeNotificationAsync(toast);
 > [!div class="nextstepaction"]
 > [Explore the client APIs](/dotnet/api/overview/azure/notificationhubs/client)
 
-
 ## Management library
 
 Install the [NuGet package](https://www.nuget.org/packages/Microsoft.Azure.Management.NotificationHubs) directly from the Visual Studio [Package Manager console][PackageManager] or with the [.NET Core CLI][DotNetCLI].
@@ -60,7 +51,7 @@ Install the [NuGet package](https://www.nuget.org/packages/Microsoft.Azure.Manag
 Install-Package Microsoft.Azure.Management.NotificationHubs
 ```
 
-```bash
+```dotnetcli
 dotnet add package Microsoft.Azure.Management.NotificationHubs
 ```
 

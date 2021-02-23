@@ -1,11 +1,9 @@
-﻿<Type Name="AzureMachineLearningWebServiceFunctionRetrieveDefaultDefinitionParameters" FullName="Microsoft.Azure.Management.StreamAnalytics.Models.AzureMachineLearningWebServiceFunctionRetrieveDefaultDefinitionParameters">
+<Type Name="AzureMachineLearningWebServiceFunctionRetrieveDefaultDefinitionParameters" FullName="Microsoft.Azure.Management.StreamAnalytics.Models.AzureMachineLearningWebServiceFunctionRetrieveDefaultDefinitionParameters">
   <TypeSignature Language="C#" Value="public class AzureMachineLearningWebServiceFunctionRetrieveDefaultDefinitionParameters : Microsoft.Azure.Management.StreamAnalytics.Models.FunctionRetrieveDefaultDefinitionParameters" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit AzureMachineLearningWebServiceFunctionRetrieveDefaultDefinitionParameters extends Microsoft.Azure.Management.StreamAnalytics.Models.FunctionRetrieveDefaultDefinitionParameters" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Azure.Management.StreamAnalytics.Models.AzureMachineLearningWebServiceFunctionRetrieveDefaultDefinitionParameters" />
   <TypeSignature Language="VB.NET" Value="Public Class AzureMachineLearningWebServiceFunctionRetrieveDefaultDefinitionParameters&#xA;Inherits FunctionRetrieveDefaultDefinitionParameters" />
   <TypeSignature Language="F#" Value="type AzureMachineLearningWebServiceFunctionRetrieveDefaultDefinitionParameters = class&#xA;    inherit FunctionRetrieveDefaultDefinitionParameters" />
-  <TypeSignature Language="C++ CLI" Value="public ref class AzureMachineLearningWebServiceFunctionRetrieveDefaultDefinitionParameters : Microsoft::Azure::Management::StreamAnalytics::Models::FunctionRetrieveDefaultDefinitionParameters" />
-  <TypeSignature Language="C++ WINRT" Value="[Windows::Foundation::Metadata::WebHostHidden]&#xA;class AzureMachineLearningWebServiceFunctionRetrieveDefaultDefinitionParameters : Microsoft::Azure::Management::StreamAnalytics::Models::FunctionRetrieveDefaultDefinitionParameters" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Azure.Management.StreamAnalytics</AssemblyName>
     <AssemblyVersion>2.0.0.0</AssemblyVersion>
@@ -16,10 +14,12 @@
   <Interfaces />
   <Attributes>
     <Attribute>
-      <AttributeName>Microsoft.Rest.Serialization.JsonTransformation</AttributeName>
+      <AttributeName Language="C#">[Microsoft.Rest.Serialization.JsonTransformation]</AttributeName>
+      <AttributeName Language="F#">[&lt;Microsoft.Rest.Serialization.JsonTransformation&gt;]</AttributeName>
     </Attribute>
     <Attribute>
-      <AttributeName>Newtonsoft.Json.JsonObject("Microsoft.MachineLearning/WebService")</AttributeName>
+      <AttributeName Language="C#">[Newtonsoft.Json.JsonObject("Microsoft.MachineLearning/WebService")]</AttributeName>
+      <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonObject("Microsoft.MachineLearning/WebService")&gt;]</AttributeName>
     </Attribute>
   </Attributes>
   <Docs>
@@ -35,9 +35,6 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Management.StreamAnalytics.Models.AzureMachineLearningWebServiceFunctionRetrieveDefaultDefinitionParameters.#ctor" />
       <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; AzureMachineLearningWebServiceFunctionRetrieveDefaultDefinitionParameters();" />
-      <MemberSignature Language="C++ CX" Value="public:&#xA; AzureMachineLearningWebServiceFunctionRetrieveDefaultDefinitionParameters();" />
-      <MemberSignature Language="C++ WINRT" Value=" AzureMachineLearningWebServiceFunctionRetrieveDefaultDefinitionParameters();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.StreamAnalytics</AssemblyName>
@@ -54,10 +51,10 @@
       </Docs>
     </Member>
     <Member MemberName=".ctor">
-      <MemberSignature Language="C#" Value="public AzureMachineLearningWebServiceFunctionRetrieveDefaultDefinitionParameters (string executeEndpoint = null, Nullable&lt;Microsoft.Azure.Management.StreamAnalytics.Models.UdfType&gt; udfType = null);" />
+      <MemberSignature Language="C#" Value="public AzureMachineLearningWebServiceFunctionRetrieveDefaultDefinitionParameters (string executeEndpoint = default, Microsoft.Azure.Management.StreamAnalytics.Models.UdfType? udfType = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string executeEndpoint, valuetype System.Nullable`1&lt;valuetype Microsoft.Azure.Management.StreamAnalytics.Models.UdfType&gt; udfType) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Management.StreamAnalytics.Models.AzureMachineLearningWebServiceFunctionRetrieveDefaultDefinitionParameters.#ctor(System.String,System.Nullable{Microsoft.Azure.Management.StreamAnalytics.Models.UdfType})" />
-      <MemberSignature Language="VB.NET" Value="Public Sub New (Optional executeEndpoint As String = null, Optional udfType As Nullable(Of UdfType) = null)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (Optional executeEndpoint As String = Nothing, Optional udfType As Nullable(Of UdfType) = Nothing)" />
       <MemberSignature Language="F#" Value="new Microsoft.Azure.Management.StreamAnalytics.Models.AzureMachineLearningWebServiceFunctionRetrieveDefaultDefinitionParameters : string * Nullable&lt;Microsoft.Azure.Management.StreamAnalytics.Models.UdfType&gt; -&gt; Microsoft.Azure.Management.StreamAnalytics.Models.AzureMachineLearningWebServiceFunctionRetrieveDefaultDefinitionParameters" Usage="new Microsoft.Azure.Management.StreamAnalytics.Models.AzureMachineLearningWebServiceFunctionRetrieveDefaultDefinitionParameters (executeEndpoint, udfType)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
@@ -88,8 +85,6 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Management.StreamAnalytics.Models.AzureMachineLearningWebServiceFunctionRetrieveDefaultDefinitionParameters.ExecuteEndpoint" />
       <MemberSignature Language="VB.NET" Value="Public Property ExecuteEndpoint As String" />
       <MemberSignature Language="F#" Value="member this.ExecuteEndpoint : string with get, set" Usage="Microsoft.Azure.Management.StreamAnalytics.Models.AzureMachineLearningWebServiceFunctionRetrieveDefaultDefinitionParameters.ExecuteEndpoint" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ ExecuteEndpoint { System::String ^ get(); void set(System::String ^ value); };" />
-      <MemberSignature Language="C++ CX" Value="public:&#xA; property Platform::String ^ ExecuteEndpoint { Platform::String ^ get(); void set(Platform::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.StreamAnalytics</AssemblyName>
@@ -97,7 +92,8 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="bindingRetrievalProperties.executeEndpoint")</AttributeName>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty(PropertyName="bindingRetrievalProperties.executeEndpoint")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty(PropertyName="bindingRetrievalProperties.executeEndpoint")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -114,12 +110,11 @@
       </Docs>
     </Member>
     <Member MemberName="UdfType">
-      <MemberSignature Language="C#" Value="public Nullable&lt;Microsoft.Azure.Management.StreamAnalytics.Models.UdfType&gt; UdfType { get; set; }" />
+      <MemberSignature Language="C#" Value="public Microsoft.Azure.Management.StreamAnalytics.Models.UdfType? UdfType { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;valuetype Microsoft.Azure.Management.StreamAnalytics.Models.UdfType&gt; UdfType" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Management.StreamAnalytics.Models.AzureMachineLearningWebServiceFunctionRetrieveDefaultDefinitionParameters.UdfType" />
       <MemberSignature Language="VB.NET" Value="Public Property UdfType As Nullable(Of UdfType)" />
       <MemberSignature Language="F#" Value="member this.UdfType : Nullable&lt;Microsoft.Azure.Management.StreamAnalytics.Models.UdfType&gt; with get, set" Usage="Microsoft.Azure.Management.StreamAnalytics.Models.AzureMachineLearningWebServiceFunctionRetrieveDefaultDefinitionParameters.UdfType" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Nullable&lt;Microsoft::Azure::Management::StreamAnalytics::Models::UdfType&gt; UdfType { Nullable&lt;Microsoft::Azure::Management::StreamAnalytics::Models::UdfType&gt; get(); void set(Nullable&lt;Microsoft::Azure::Management::StreamAnalytics::Models::UdfType&gt; value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.StreamAnalytics</AssemblyName>
@@ -127,7 +122,8 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="bindingRetrievalProperties.udfType")</AttributeName>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty(PropertyName="bindingRetrievalProperties.udfType")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty(PropertyName="bindingRetrievalProperties.udfType")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>

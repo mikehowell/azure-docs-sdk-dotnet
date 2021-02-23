@@ -1,17 +1,24 @@
-﻿<Type Name="IVirtualMachineImages" FullName="Microsoft.Azure.Management.Compute.Fluent.IVirtualMachineImages">
-  <TypeSignature Language="C#" Value="public interface IVirtualMachineImages : Microsoft.Azure.Management.ResourceManager.Fluent.Core.CollectionActions.ISupportsListingByRegion&lt;Microsoft.Azure.Management.Compute.Fluent.IVirtualMachineImage&gt;" />
-  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IVirtualMachineImages implements class Microsoft.Azure.Management.ResourceManager.Fluent.Core.CollectionActions.ISupportsListingByRegion`1&lt;class Microsoft.Azure.Management.Compute.Fluent.IVirtualMachineImage&gt;" />
+<Type Name="IVirtualMachineImages" FullName="Microsoft.Azure.Management.Compute.Fluent.IVirtualMachineImages">
+  <TypeSignature Language="C#" Value="public interface IVirtualMachineImages : Microsoft.Azure.Management.ResourceManager.Fluent.Core.CollectionActions.ISupportsGettingById&lt;Microsoft.Azure.Management.Compute.Fluent.IVirtualMachineImage&gt;, Microsoft.Azure.Management.ResourceManager.Fluent.Core.CollectionActions.ISupportsListingByRegion&lt;Microsoft.Azure.Management.Compute.Fluent.IVirtualMachineImage&gt;" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IVirtualMachineImages implements class Microsoft.Azure.Management.ResourceManager.Fluent.Core.CollectionActions.ISupportsGettingById`1&lt;class Microsoft.Azure.Management.Compute.Fluent.IVirtualMachineImage&gt;, class Microsoft.Azure.Management.ResourceManager.Fluent.Core.CollectionActions.ISupportsListingByRegion`1&lt;class Microsoft.Azure.Management.Compute.Fluent.IVirtualMachineImage&gt;" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Azure.Management.Compute.Fluent.IVirtualMachineImages" />
-  <TypeSignature Language="VB.NET" Value="Public Interface IVirtualMachineImages&#xA;Implements ISupportsListingByRegion(Of IVirtualMachineImage)" />
-  <TypeSignature Language="F#" Value="type IVirtualMachineImages = interface&#xA;    interface ISupportsListingByRegion&lt;IVirtualMachineImage&gt;" />
-  <TypeSignature Language="C++ CLI" Value="public interface class IVirtualMachineImages : Microsoft::Azure::Management::ResourceManager::Fluent::Core::CollectionActions::ISupportsListingByRegion&lt;Microsoft::Azure::Management::Compute::Fluent::IVirtualMachineImage ^&gt;" />
-  <TypeSignature Language="C++ CX" Value="public interface class IVirtualMachineImages : Microsoft::Azure::Management::ResourceManager::Fluent::Core::CollectionActions::ISupportsListingByRegion&lt;Microsoft::Azure::Management::Compute::Fluent::IVirtualMachineImage ^&gt;" />
-  <TypeSignature Language="C++ WINRT" Value="__interface IVirtualMachineImages : Microsoft::Azure::Management::ResourceManager::Fluent::Core::CollectionActions::ISupportsListingByRegion&lt;Microsoft::Azure::Management::Compute::Fluent::IVirtualMachineImage&gt;" />
+  <TypeSignature Language="VB.NET" Value="Public Interface IVirtualMachineImages&#xA;Implements ISupportsGettingById(Of IVirtualMachineImage), ISupportsListingByRegion(Of IVirtualMachineImage)" />
+  <TypeSignature Language="F#" Value="type IVirtualMachineImages = interface&#xA;    interface ISupportsListingByRegion&lt;IVirtualMachineImage&gt;&#xA;    interface ISupportsGettingById&lt;IVirtualMachineImage&gt;" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Azure.Management.Compute.Fluent</AssemblyName>
-    <AssemblyVersion>1.0.0.60</AssemblyVersion>
+    <AssemblyVersion>1.0.0.61</AssemblyVersion>
+    <AssemblyVersion>1.0.0.62</AssemblyVersion>
+    <AssemblyVersion>1.0.0.63</AssemblyVersion>
+    <AssemblyVersion>1.0.0.64</AssemblyVersion>
+    <AssemblyVersion>1.0.0.65</AssemblyVersion>
+    <AssemblyVersion>1.0.0.66</AssemblyVersion>
+    <AssemblyVersion>1.0.0.67</AssemblyVersion>
+    <AssemblyVersion>1.0.0.68</AssemblyVersion>
   </AssemblyInfo>
   <Interfaces>
+    <Interface>
+      <InterfaceName>Microsoft.Azure.Management.ResourceManager.Fluent.Core.CollectionActions.ISupportsGettingById&lt;Microsoft.Azure.Management.Compute.Fluent.IVirtualMachineImage&gt;</InterfaceName>
+    </Interface>
     <Interface>
       <InterfaceName>Microsoft.Azure.Management.ResourceManager.Fluent.Core.CollectionActions.ISupportsListingByRegion&lt;Microsoft.Azure.Management.Compute.Fluent.IVirtualMachineImage&gt;</InterfaceName>
     </Interface>
@@ -27,14 +34,19 @@
       <MemberSignature Language="C#" Value="public Microsoft.Azure.Management.Compute.Fluent.IVirtualMachineImage GetImage (Microsoft.Azure.Management.ResourceManager.Fluent.Core.Region region, string publisherName, string offerName, string skuName, string version);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Microsoft.Azure.Management.Compute.Fluent.IVirtualMachineImage GetImage(class Microsoft.Azure.Management.ResourceManager.Fluent.Core.Region region, string publisherName, string offerName, string skuName, string version) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Management.Compute.Fluent.IVirtualMachineImages.GetImage(Microsoft.Azure.Management.ResourceManager.Fluent.Core.Region,System.String,System.String,System.String,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetImage (region As Region, publisherName As String, offerName As String, skuName As String, version As String) As IVirtualMachineImage" />
       <MemberSignature Language="F#" Value="abstract member GetImage : Microsoft.Azure.Management.ResourceManager.Fluent.Core.Region * string * string * string * string -&gt; Microsoft.Azure.Management.Compute.Fluent.IVirtualMachineImage" Usage="iVirtualMachineImages.GetImage (region, publisherName, offerName, skuName, version)" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; Microsoft::Azure::Management::Compute::Fluent::IVirtualMachineImage ^ GetImage(Microsoft::Azure::Management::ResourceManager::Fluent::Core::Region ^ region, System::String ^ publisherName, System::String ^ offerName, System::String ^ skuName, System::String ^ version);" />
-      <MemberSignature Language="C++ CX" Value="public:&#xA; Microsoft::Azure::Management::Compute::Fluent::IVirtualMachineImage ^ GetImage(Microsoft::Azure::Management::ResourceManager::Fluent::Core::Region ^ region, Platform::String ^ publisherName, Platform::String ^ offerName, Platform::String ^ skuName, Platform::String ^ version);" />
-      <MemberSignature Language="C++ WINRT" Value="Microsoft::Azure::Management::Compute::Fluent::IVirtualMachineImage GetImage(Microsoft::Azure::Management::ResourceManager::Fluent::Core::Region const &amp; region, std::wstring const &amp; publisherName, std::wstring const &amp; offerName, std::wstring const &amp; skuName, std::wstring const &amp; version);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Compute.Fluent</AssemblyName>
-        <AssemblyVersion>1.0.0.60</AssemblyVersion>
+        <AssemblyVersion>1.0.0.61</AssemblyVersion>
+        <AssemblyVersion>1.0.0.62</AssemblyVersion>
+        <AssemblyVersion>1.0.0.63</AssemblyVersion>
+        <AssemblyVersion>1.0.0.64</AssemblyVersion>
+        <AssemblyVersion>1.0.0.65</AssemblyVersion>
+        <AssemblyVersion>1.0.0.66</AssemblyVersion>
+        <AssemblyVersion>1.0.0.67</AssemblyVersion>
+        <AssemblyVersion>1.0.0.68</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Azure.Management.Compute.Fluent.IVirtualMachineImage</ReturnType>
@@ -66,13 +78,17 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Management.Compute.Fluent.IVirtualMachineImages.GetImage(System.String,System.String,System.String,System.String,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Function GetImage (region As String, publisherName As String, offerName As String, skuName As String, version As String) As IVirtualMachineImage" />
       <MemberSignature Language="F#" Value="abstract member GetImage : string * string * string * string * string -&gt; Microsoft.Azure.Management.Compute.Fluent.IVirtualMachineImage" Usage="iVirtualMachineImages.GetImage (region, publisherName, offerName, skuName, version)" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; Microsoft::Azure::Management::Compute::Fluent::IVirtualMachineImage ^ GetImage(System::String ^ region, System::String ^ publisherName, System::String ^ offerName, System::String ^ skuName, System::String ^ version);" />
-      <MemberSignature Language="C++ CX" Value="public:&#xA; Microsoft::Azure::Management::Compute::Fluent::IVirtualMachineImage ^ GetImage(Platform::String ^ region, Platform::String ^ publisherName, Platform::String ^ offerName, Platform::String ^ skuName, Platform::String ^ version);" />
-      <MemberSignature Language="C++ WINRT" Value="Microsoft::Azure::Management::Compute::Fluent::IVirtualMachineImage GetImage(std::wstring const &amp; region, std::wstring const &amp; publisherName, std::wstring const &amp; offerName, std::wstring const &amp; skuName, std::wstring const &amp; version);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Compute.Fluent</AssemblyName>
-        <AssemblyVersion>1.0.0.60</AssemblyVersion>
+        <AssemblyVersion>1.0.0.61</AssemblyVersion>
+        <AssemblyVersion>1.0.0.62</AssemblyVersion>
+        <AssemblyVersion>1.0.0.63</AssemblyVersion>
+        <AssemblyVersion>1.0.0.64</AssemblyVersion>
+        <AssemblyVersion>1.0.0.65</AssemblyVersion>
+        <AssemblyVersion>1.0.0.66</AssemblyVersion>
+        <AssemblyVersion>1.0.0.67</AssemblyVersion>
+        <AssemblyVersion>1.0.0.68</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Azure.Management.Compute.Fluent.IVirtualMachineImage</ReturnType>
@@ -85,14 +101,95 @@
         <Parameter Name="version" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="region">To be added.</param>
-        <param name="publisherName">To be added.</param>
-        <param name="offerName">To be added.</param>
-        <param name="skuName">To be added.</param>
-        <param name="version">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="region">The region.</param>
+        <param name="publisherName">Publisher name.</param>
+        <param name="offerName">Offer name.</param>
+        <param name="skuName">SKU name.</param>
+        <param name="version">Version name.</param>
+        <summary>
+            Gets a virtual machine image.
+            </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
+        <return>The virtual machine image.</return>
+      </Docs>
+    </Member>
+    <Member MemberName="GetImageAsync">
+      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;Microsoft.Azure.Management.Compute.Fluent.IVirtualMachineImage&gt; GetImageAsync (Microsoft.Azure.Management.ResourceManager.Fluent.Core.Region region, string publisherName, string offerName, string skuName, string version, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Microsoft.Azure.Management.Compute.Fluent.IVirtualMachineImage&gt; GetImageAsync(class Microsoft.Azure.Management.ResourceManager.Fluent.Core.Region region, string publisherName, string offerName, string skuName, string version, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Management.Compute.Fluent.IVirtualMachineImages.GetImageAsync(Microsoft.Azure.Management.ResourceManager.Fluent.Core.Region,System.String,System.String,System.String,System.String,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetImageAsync (region As Region, publisherName As String, offerName As String, skuName As String, version As String, Optional cancellationToken As CancellationToken = Nothing) As Task(Of IVirtualMachineImage)" />
+      <MemberSignature Language="F#" Value="abstract member GetImageAsync : Microsoft.Azure.Management.ResourceManager.Fluent.Core.Region * string * string * string * string * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.Azure.Management.Compute.Fluent.IVirtualMachineImage&gt;" Usage="iVirtualMachineImages.GetImageAsync (region, publisherName, offerName, skuName, version, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Azure.Management.Compute.Fluent</AssemblyName>
+        <AssemblyVersion>1.0.0.66</AssemblyVersion>
+        <AssemblyVersion>1.0.0.67</AssemblyVersion>
+        <AssemblyVersion>1.0.0.68</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.Azure.Management.Compute.Fluent.IVirtualMachineImage&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="region" Type="Microsoft.Azure.Management.ResourceManager.Fluent.Core.Region" />
+        <Parameter Name="publisherName" Type="System.String" />
+        <Parameter Name="offerName" Type="System.String" />
+        <Parameter Name="skuName" Type="System.String" />
+        <Parameter Name="version" Type="System.String" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="cancellationToken">To be added.</param>
+        <param name="region">The region.</param>
+        <param name="publisherName">Publisher name.</param>
+        <param name="offerName">Offer name.</param>
+        <param name="skuName">SKU name.</param>
+        <param name="version">Version name.</param>
+        <summary>
+            Gets a virtual machine image.
+            </summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+        <return>The virtual machine image.</return>
+      </Docs>
+    </Member>
+    <Member MemberName="GetImageAsync">
+      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;Microsoft.Azure.Management.Compute.Fluent.IVirtualMachineImage&gt; GetImageAsync (string region, string publisherName, string offerName, string skuName, string version, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Microsoft.Azure.Management.Compute.Fluent.IVirtualMachineImage&gt; GetImageAsync(string region, string publisherName, string offerName, string skuName, string version, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Management.Compute.Fluent.IVirtualMachineImages.GetImageAsync(System.String,System.String,System.String,System.String,System.String,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetImageAsync (region As String, publisherName As String, offerName As String, skuName As String, version As String, Optional cancellationToken As CancellationToken = Nothing) As Task(Of IVirtualMachineImage)" />
+      <MemberSignature Language="F#" Value="abstract member GetImageAsync : string * string * string * string * string * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.Azure.Management.Compute.Fluent.IVirtualMachineImage&gt;" Usage="iVirtualMachineImages.GetImageAsync (region, publisherName, offerName, skuName, version, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Azure.Management.Compute.Fluent</AssemblyName>
+        <AssemblyVersion>1.0.0.66</AssemblyVersion>
+        <AssemblyVersion>1.0.0.67</AssemblyVersion>
+        <AssemblyVersion>1.0.0.68</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.Azure.Management.Compute.Fluent.IVirtualMachineImage&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="region" Type="System.String" />
+        <Parameter Name="publisherName" Type="System.String" />
+        <Parameter Name="offerName" Type="System.String" />
+        <Parameter Name="skuName" Type="System.String" />
+        <Parameter Name="version" Type="System.String" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="cancellationToken">To be added.</param>
+        <param name="region">The region.</param>
+        <param name="publisherName">Publisher name.</param>
+        <param name="offerName">Offer name.</param>
+        <param name="skuName">SKU name.</param>
+        <param name="version">Version name.</param>
+        <summary>
+            Gets a virtual machine image.
+            </summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+        <return>The virtual machine image.</return>
       </Docs>
     </Member>
     <Member MemberName="Publishers">
@@ -101,12 +198,17 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Management.Compute.Fluent.IVirtualMachineImages.Publishers" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Publishers As IVirtualMachinePublishers" />
       <MemberSignature Language="F#" Value="member this.Publishers : Microsoft.Azure.Management.Compute.Fluent.IVirtualMachinePublishers" Usage="Microsoft.Azure.Management.Compute.Fluent.IVirtualMachineImages.Publishers" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Azure::Management::Compute::Fluent::IVirtualMachinePublishers ^ Publishers { Microsoft::Azure::Management::Compute::Fluent::IVirtualMachinePublishers ^ get(); };" />
-      <MemberSignature Language="C++ CX" Value="public:&#xA; property Microsoft::Azure::Management::Compute::Fluent::IVirtualMachinePublishers ^ Publishers { Microsoft::Azure::Management::Compute::Fluent::IVirtualMachinePublishers ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Compute.Fluent</AssemblyName>
-        <AssemblyVersion>1.0.0.60</AssemblyVersion>
+        <AssemblyVersion>1.0.0.61</AssemblyVersion>
+        <AssemblyVersion>1.0.0.62</AssemblyVersion>
+        <AssemblyVersion>1.0.0.63</AssemblyVersion>
+        <AssemblyVersion>1.0.0.64</AssemblyVersion>
+        <AssemblyVersion>1.0.0.65</AssemblyVersion>
+        <AssemblyVersion>1.0.0.66</AssemblyVersion>
+        <AssemblyVersion>1.0.0.67</AssemblyVersion>
+        <AssemblyVersion>1.0.0.68</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Azure.Management.Compute.Fluent.IVirtualMachinePublishers</ReturnType>

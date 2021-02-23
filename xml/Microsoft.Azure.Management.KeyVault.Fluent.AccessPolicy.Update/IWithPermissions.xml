@@ -1,15 +1,19 @@
-﻿<Type Name="IWithPermissions" FullName="Microsoft.Azure.Management.KeyVault.Fluent.AccessPolicy.Update.IWithPermissions">
+<Type Name="IWithPermissions" FullName="Microsoft.Azure.Management.KeyVault.Fluent.AccessPolicy.Update.IWithPermissions">
   <TypeSignature Language="C#" Value="public interface IWithPermissions" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IWithPermissions" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Azure.Management.KeyVault.Fluent.AccessPolicy.Update.IWithPermissions" />
   <TypeSignature Language="VB.NET" Value="Public Interface IWithPermissions" />
   <TypeSignature Language="F#" Value="type IWithPermissions = interface" />
-  <TypeSignature Language="C++ CLI" Value="public interface class IWithPermissions" />
-  <TypeSignature Language="C++ CX" Value="public interface class IWithPermissions" />
-  <TypeSignature Language="C++ WINRT" Value="__interface IWithPermissions" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Azure.Management.KeyVault.Fluent</AssemblyName>
-    <AssemblyVersion>1.0.0.60</AssemblyVersion>
+    <AssemblyVersion>1.0.0.61</AssemblyVersion>
+    <AssemblyVersion>1.0.0.62</AssemblyVersion>
+    <AssemblyVersion>1.0.0.63</AssemblyVersion>
+    <AssemblyVersion>1.0.0.64</AssemblyVersion>
+    <AssemblyVersion>1.0.0.65</AssemblyVersion>
+    <AssemblyVersion>1.0.0.66</AssemblyVersion>
+    <AssemblyVersion>1.0.0.67</AssemblyVersion>
+    <AssemblyVersion>1.0.0.68</AssemblyVersion>
   </AssemblyInfo>
   <Interfaces />
   <Docs>
@@ -25,22 +29,29 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Management.KeyVault.Fluent.AccessPolicy.Update.IWithPermissions.AllowCertificateAllPermissions" />
       <MemberSignature Language="VB.NET" Value="Public Function AllowCertificateAllPermissions () As IUpdate" />
       <MemberSignature Language="F#" Value="abstract member AllowCertificateAllPermissions : unit -&gt; Microsoft.Azure.Management.KeyVault.Fluent.AccessPolicy.Update.IUpdate" Usage="iWithPermissions.AllowCertificateAllPermissions " />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; Microsoft::Azure::Management::KeyVault::Fluent::AccessPolicy::Update::IUpdate ^ AllowCertificateAllPermissions();" />
-      <MemberSignature Language="C++ CX" Value="public:&#xA; Microsoft::Azure::Management::KeyVault::Fluent::AccessPolicy::Update::IUpdate ^ AllowCertificateAllPermissions();" />
-      <MemberSignature Language="C++ WINRT" Value="Microsoft::Azure::Management::KeyVault::Fluent::AccessPolicy::Update::IUpdate AllowCertificateAllPermissions();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.KeyVault.Fluent</AssemblyName>
-        <AssemblyVersion>1.0.0.60</AssemblyVersion>
+        <AssemblyVersion>1.0.0.61</AssemblyVersion>
+        <AssemblyVersion>1.0.0.62</AssemblyVersion>
+        <AssemblyVersion>1.0.0.63</AssemblyVersion>
+        <AssemblyVersion>1.0.0.64</AssemblyVersion>
+        <AssemblyVersion>1.0.0.65</AssemblyVersion>
+        <AssemblyVersion>1.0.0.66</AssemblyVersion>
+        <AssemblyVersion>1.0.0.67</AssemblyVersion>
+        <AssemblyVersion>1.0.0.68</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Azure.Management.KeyVault.Fluent.AccessPolicy.Update.IUpdate</ReturnType>
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+            Allow all permissions for the AD identity to access certificates.
+            </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
+        <return>The next stage of access policy update.</return>
       </Docs>
     </Member>
     <Member MemberName="AllowCertificatePermissions">
@@ -49,11 +60,17 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Management.KeyVault.Fluent.AccessPolicy.Update.IWithPermissions.AllowCertificatePermissions(Microsoft.Azure.Management.KeyVault.Fluent.Models.CertificatePermissions[])" />
       <MemberSignature Language="VB.NET" Value="Public Function AllowCertificatePermissions (ParamArray permissions As CertificatePermissions()) As IUpdate" />
       <MemberSignature Language="F#" Value="abstract member AllowCertificatePermissions : Microsoft.Azure.Management.KeyVault.Fluent.Models.CertificatePermissions[] -&gt; Microsoft.Azure.Management.KeyVault.Fluent.AccessPolicy.Update.IUpdate" Usage="iWithPermissions.AllowCertificatePermissions permissions" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; Microsoft::Azure::Management::KeyVault::Fluent::AccessPolicy::Update::IUpdate ^ AllowCertificatePermissions(... cli::array &lt;Microsoft::Azure::Management::KeyVault::Fluent::Models::CertificatePermissions ^&gt; ^ permissions);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.KeyVault.Fluent</AssemblyName>
-        <AssemblyVersion>1.0.0.60</AssemblyVersion>
+        <AssemblyVersion>1.0.0.61</AssemblyVersion>
+        <AssemblyVersion>1.0.0.62</AssemblyVersion>
+        <AssemblyVersion>1.0.0.63</AssemblyVersion>
+        <AssemblyVersion>1.0.0.64</AssemblyVersion>
+        <AssemblyVersion>1.0.0.65</AssemblyVersion>
+        <AssemblyVersion>1.0.0.66</AssemblyVersion>
+        <AssemblyVersion>1.0.0.67</AssemblyVersion>
+        <AssemblyVersion>1.0.0.68</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Azure.Management.KeyVault.Fluent.AccessPolicy.Update.IUpdate</ReturnType>
@@ -62,16 +79,20 @@
         <Parameter Name="permissions" Type="Microsoft.Azure.Management.KeyVault.Fluent.Models.CertificatePermissions[]">
           <Attributes>
             <Attribute>
-              <AttributeName>System.ParamArray</AttributeName>
+              <AttributeName Language="C#">[System.ParamArray]</AttributeName>
+              <AttributeName Language="F#">[&lt;System.ParamArray&gt;]</AttributeName>
             </Attribute>
           </Attributes>
         </Parameter>
       </Parameters>
       <Docs>
-        <param name="permissions">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="permissions">The list of permissions allowed.</param>
+        <summary>
+            Allow a list of permissions for the AD identity to access certificates.
+            </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
+        <return>The next stage of access policy update.</return>
       </Docs>
     </Member>
     <Member MemberName="AllowCertificatePermissions">
@@ -80,11 +101,17 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Management.KeyVault.Fluent.AccessPolicy.Update.IWithPermissions.AllowCertificatePermissions(System.Collections.Generic.IList{Microsoft.Azure.Management.KeyVault.Fluent.Models.CertificatePermissions})" />
       <MemberSignature Language="VB.NET" Value="Public Function AllowCertificatePermissions (permissions As IList(Of CertificatePermissions)) As IUpdate" />
       <MemberSignature Language="F#" Value="abstract member AllowCertificatePermissions : System.Collections.Generic.IList&lt;Microsoft.Azure.Management.KeyVault.Fluent.Models.CertificatePermissions&gt; -&gt; Microsoft.Azure.Management.KeyVault.Fluent.AccessPolicy.Update.IUpdate" Usage="iWithPermissions.AllowCertificatePermissions permissions" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; Microsoft::Azure::Management::KeyVault::Fluent::AccessPolicy::Update::IUpdate ^ AllowCertificatePermissions(System::Collections::Generic::IList&lt;Microsoft::Azure::Management::KeyVault::Fluent::Models::CertificatePermissions ^&gt; ^ permissions);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.KeyVault.Fluent</AssemblyName>
-        <AssemblyVersion>1.0.0.60</AssemblyVersion>
+        <AssemblyVersion>1.0.0.61</AssemblyVersion>
+        <AssemblyVersion>1.0.0.62</AssemblyVersion>
+        <AssemblyVersion>1.0.0.63</AssemblyVersion>
+        <AssemblyVersion>1.0.0.64</AssemblyVersion>
+        <AssemblyVersion>1.0.0.65</AssemblyVersion>
+        <AssemblyVersion>1.0.0.66</AssemblyVersion>
+        <AssemblyVersion>1.0.0.67</AssemblyVersion>
+        <AssemblyVersion>1.0.0.68</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Azure.Management.KeyVault.Fluent.AccessPolicy.Update.IUpdate</ReturnType>
@@ -93,10 +120,13 @@
         <Parameter Name="permissions" Type="System.Collections.Generic.IList&lt;Microsoft.Azure.Management.KeyVault.Fluent.Models.CertificatePermissions&gt;" />
       </Parameters>
       <Docs>
-        <param name="permissions">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="permissions">The list of permissions allowed.</param>
+        <summary>
+            Allow a list of permissions for the AD identity to access certificates.
+            </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
+        <return>The next stage of access policy update.</return>
       </Docs>
     </Member>
     <Member MemberName="AllowKeyAllPermissions">
@@ -105,13 +135,17 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Management.KeyVault.Fluent.AccessPolicy.Update.IWithPermissions.AllowKeyAllPermissions" />
       <MemberSignature Language="VB.NET" Value="Public Function AllowKeyAllPermissions () As IUpdate" />
       <MemberSignature Language="F#" Value="abstract member AllowKeyAllPermissions : unit -&gt; Microsoft.Azure.Management.KeyVault.Fluent.AccessPolicy.Update.IUpdate" Usage="iWithPermissions.AllowKeyAllPermissions " />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; Microsoft::Azure::Management::KeyVault::Fluent::AccessPolicy::Update::IUpdate ^ AllowKeyAllPermissions();" />
-      <MemberSignature Language="C++ CX" Value="public:&#xA; Microsoft::Azure::Management::KeyVault::Fluent::AccessPolicy::Update::IUpdate ^ AllowKeyAllPermissions();" />
-      <MemberSignature Language="C++ WINRT" Value="Microsoft::Azure::Management::KeyVault::Fluent::AccessPolicy::Update::IUpdate AllowKeyAllPermissions();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.KeyVault.Fluent</AssemblyName>
-        <AssemblyVersion>1.0.0.60</AssemblyVersion>
+        <AssemblyVersion>1.0.0.61</AssemblyVersion>
+        <AssemblyVersion>1.0.0.62</AssemblyVersion>
+        <AssemblyVersion>1.0.0.63</AssemblyVersion>
+        <AssemblyVersion>1.0.0.64</AssemblyVersion>
+        <AssemblyVersion>1.0.0.65</AssemblyVersion>
+        <AssemblyVersion>1.0.0.66</AssemblyVersion>
+        <AssemblyVersion>1.0.0.67</AssemblyVersion>
+        <AssemblyVersion>1.0.0.68</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Azure.Management.KeyVault.Fluent.AccessPolicy.Update.IUpdate</ReturnType>
@@ -121,8 +155,9 @@
         <summary>
             Allow all permissions for the AD identity to access keys.
             </summary>
-        <returns>the next stage of access policy update</returns>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
+        <return>The next stage of access policy update.</return>
       </Docs>
     </Member>
     <Member MemberName="AllowKeyPermissions">
@@ -131,11 +166,17 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Management.KeyVault.Fluent.AccessPolicy.Update.IWithPermissions.AllowKeyPermissions(Microsoft.Azure.Management.KeyVault.Fluent.Models.KeyPermissions[])" />
       <MemberSignature Language="VB.NET" Value="Public Function AllowKeyPermissions (ParamArray permissions As KeyPermissions()) As IUpdate" />
       <MemberSignature Language="F#" Value="abstract member AllowKeyPermissions : Microsoft.Azure.Management.KeyVault.Fluent.Models.KeyPermissions[] -&gt; Microsoft.Azure.Management.KeyVault.Fluent.AccessPolicy.Update.IUpdate" Usage="iWithPermissions.AllowKeyPermissions permissions" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; Microsoft::Azure::Management::KeyVault::Fluent::AccessPolicy::Update::IUpdate ^ AllowKeyPermissions(... cli::array &lt;Microsoft::Azure::Management::KeyVault::Fluent::Models::KeyPermissions ^&gt; ^ permissions);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.KeyVault.Fluent</AssemblyName>
-        <AssemblyVersion>1.0.0.60</AssemblyVersion>
+        <AssemblyVersion>1.0.0.61</AssemblyVersion>
+        <AssemblyVersion>1.0.0.62</AssemblyVersion>
+        <AssemblyVersion>1.0.0.63</AssemblyVersion>
+        <AssemblyVersion>1.0.0.64</AssemblyVersion>
+        <AssemblyVersion>1.0.0.65</AssemblyVersion>
+        <AssemblyVersion>1.0.0.66</AssemblyVersion>
+        <AssemblyVersion>1.0.0.67</AssemblyVersion>
+        <AssemblyVersion>1.0.0.68</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Azure.Management.KeyVault.Fluent.AccessPolicy.Update.IUpdate</ReturnType>
@@ -144,18 +185,20 @@
         <Parameter Name="permissions" Type="Microsoft.Azure.Management.KeyVault.Fluent.Models.KeyPermissions[]">
           <Attributes>
             <Attribute>
-              <AttributeName>System.ParamArray</AttributeName>
+              <AttributeName Language="C#">[System.ParamArray]</AttributeName>
+              <AttributeName Language="F#">[&lt;System.ParamArray&gt;]</AttributeName>
             </Attribute>
           </Attributes>
         </Parameter>
       </Parameters>
       <Docs>
-        <param name="permissions">permissions the list of permissions allowed</param>
+        <param name="permissions">The list of permissions allowed.</param>
         <summary>
             Allow a list of permissions for the AD identity to access keys.
             </summary>
-        <returns>the next stage of access policy update</returns>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
+        <return>The next stage of access policy update.</return>
       </Docs>
     </Member>
     <Member MemberName="AllowKeyPermissions">
@@ -164,11 +207,17 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Management.KeyVault.Fluent.AccessPolicy.Update.IWithPermissions.AllowKeyPermissions(System.Collections.Generic.IList{Microsoft.Azure.Management.KeyVault.Fluent.Models.KeyPermissions})" />
       <MemberSignature Language="VB.NET" Value="Public Function AllowKeyPermissions (permissions As IList(Of KeyPermissions)) As IUpdate" />
       <MemberSignature Language="F#" Value="abstract member AllowKeyPermissions : System.Collections.Generic.IList&lt;Microsoft.Azure.Management.KeyVault.Fluent.Models.KeyPermissions&gt; -&gt; Microsoft.Azure.Management.KeyVault.Fluent.AccessPolicy.Update.IUpdate" Usage="iWithPermissions.AllowKeyPermissions permissions" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; Microsoft::Azure::Management::KeyVault::Fluent::AccessPolicy::Update::IUpdate ^ AllowKeyPermissions(System::Collections::Generic::IList&lt;Microsoft::Azure::Management::KeyVault::Fluent::Models::KeyPermissions ^&gt; ^ permissions);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.KeyVault.Fluent</AssemblyName>
-        <AssemblyVersion>1.0.0.60</AssemblyVersion>
+        <AssemblyVersion>1.0.0.61</AssemblyVersion>
+        <AssemblyVersion>1.0.0.62</AssemblyVersion>
+        <AssemblyVersion>1.0.0.63</AssemblyVersion>
+        <AssemblyVersion>1.0.0.64</AssemblyVersion>
+        <AssemblyVersion>1.0.0.65</AssemblyVersion>
+        <AssemblyVersion>1.0.0.66</AssemblyVersion>
+        <AssemblyVersion>1.0.0.67</AssemblyVersion>
+        <AssemblyVersion>1.0.0.68</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Azure.Management.KeyVault.Fluent.AccessPolicy.Update.IUpdate</ReturnType>
@@ -177,12 +226,13 @@
         <Parameter Name="permissions" Type="System.Collections.Generic.IList&lt;Microsoft.Azure.Management.KeyVault.Fluent.Models.KeyPermissions&gt;" />
       </Parameters>
       <Docs>
-        <param name="permissions">permissions the list of permissions allowed</param>
+        <param name="permissions">The list of permissions allowed.</param>
         <summary>
             Allow a list of permissions for the AD identity to access keys.
             </summary>
-        <returns>the next stage of access policy update</returns>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
+        <return>The next stage of access policy update.</return>
       </Docs>
     </Member>
     <Member MemberName="AllowSecretAllPermissions">
@@ -191,13 +241,17 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Management.KeyVault.Fluent.AccessPolicy.Update.IWithPermissions.AllowSecretAllPermissions" />
       <MemberSignature Language="VB.NET" Value="Public Function AllowSecretAllPermissions () As IUpdate" />
       <MemberSignature Language="F#" Value="abstract member AllowSecretAllPermissions : unit -&gt; Microsoft.Azure.Management.KeyVault.Fluent.AccessPolicy.Update.IUpdate" Usage="iWithPermissions.AllowSecretAllPermissions " />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; Microsoft::Azure::Management::KeyVault::Fluent::AccessPolicy::Update::IUpdate ^ AllowSecretAllPermissions();" />
-      <MemberSignature Language="C++ CX" Value="public:&#xA; Microsoft::Azure::Management::KeyVault::Fluent::AccessPolicy::Update::IUpdate ^ AllowSecretAllPermissions();" />
-      <MemberSignature Language="C++ WINRT" Value="Microsoft::Azure::Management::KeyVault::Fluent::AccessPolicy::Update::IUpdate AllowSecretAllPermissions();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.KeyVault.Fluent</AssemblyName>
-        <AssemblyVersion>1.0.0.60</AssemblyVersion>
+        <AssemblyVersion>1.0.0.61</AssemblyVersion>
+        <AssemblyVersion>1.0.0.62</AssemblyVersion>
+        <AssemblyVersion>1.0.0.63</AssemblyVersion>
+        <AssemblyVersion>1.0.0.64</AssemblyVersion>
+        <AssemblyVersion>1.0.0.65</AssemblyVersion>
+        <AssemblyVersion>1.0.0.66</AssemblyVersion>
+        <AssemblyVersion>1.0.0.67</AssemblyVersion>
+        <AssemblyVersion>1.0.0.68</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Azure.Management.KeyVault.Fluent.AccessPolicy.Update.IUpdate</ReturnType>
@@ -207,8 +261,9 @@
         <summary>
             Allow all permissions for the AD identity to access secrets.
             </summary>
-        <returns>the next stage of access policy definition</returns>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
+        <return>The next stage of access policy definition.</return>
       </Docs>
     </Member>
     <Member MemberName="AllowSecretPermissions">
@@ -217,11 +272,17 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Management.KeyVault.Fluent.AccessPolicy.Update.IWithPermissions.AllowSecretPermissions(Microsoft.Azure.Management.KeyVault.Fluent.Models.SecretPermissions[])" />
       <MemberSignature Language="VB.NET" Value="Public Function AllowSecretPermissions (ParamArray permissions As SecretPermissions()) As IUpdate" />
       <MemberSignature Language="F#" Value="abstract member AllowSecretPermissions : Microsoft.Azure.Management.KeyVault.Fluent.Models.SecretPermissions[] -&gt; Microsoft.Azure.Management.KeyVault.Fluent.AccessPolicy.Update.IUpdate" Usage="iWithPermissions.AllowSecretPermissions permissions" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; Microsoft::Azure::Management::KeyVault::Fluent::AccessPolicy::Update::IUpdate ^ AllowSecretPermissions(... cli::array &lt;Microsoft::Azure::Management::KeyVault::Fluent::Models::SecretPermissions ^&gt; ^ permissions);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.KeyVault.Fluent</AssemblyName>
-        <AssemblyVersion>1.0.0.60</AssemblyVersion>
+        <AssemblyVersion>1.0.0.61</AssemblyVersion>
+        <AssemblyVersion>1.0.0.62</AssemblyVersion>
+        <AssemblyVersion>1.0.0.63</AssemblyVersion>
+        <AssemblyVersion>1.0.0.64</AssemblyVersion>
+        <AssemblyVersion>1.0.0.65</AssemblyVersion>
+        <AssemblyVersion>1.0.0.66</AssemblyVersion>
+        <AssemblyVersion>1.0.0.67</AssemblyVersion>
+        <AssemblyVersion>1.0.0.68</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Azure.Management.KeyVault.Fluent.AccessPolicy.Update.IUpdate</ReturnType>
@@ -230,18 +291,20 @@
         <Parameter Name="permissions" Type="Microsoft.Azure.Management.KeyVault.Fluent.Models.SecretPermissions[]">
           <Attributes>
             <Attribute>
-              <AttributeName>System.ParamArray</AttributeName>
+              <AttributeName Language="C#">[System.ParamArray]</AttributeName>
+              <AttributeName Language="F#">[&lt;System.ParamArray&gt;]</AttributeName>
             </Attribute>
           </Attributes>
         </Parameter>
       </Parameters>
       <Docs>
-        <param name="permissions">permissions the list of permissions allowed</param>
+        <param name="permissions">The list of permissions allowed.</param>
         <summary>
             Allow a list of permissions for the AD identity to access secrets.
             </summary>
-        <returns>the next stage of access policy definition</returns>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
+        <return>The next stage of access policy definition.</return>
       </Docs>
     </Member>
     <Member MemberName="AllowSecretPermissions">
@@ -250,11 +313,17 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Management.KeyVault.Fluent.AccessPolicy.Update.IWithPermissions.AllowSecretPermissions(System.Collections.Generic.IList{Microsoft.Azure.Management.KeyVault.Fluent.Models.SecretPermissions})" />
       <MemberSignature Language="VB.NET" Value="Public Function AllowSecretPermissions (permissions As IList(Of SecretPermissions)) As IUpdate" />
       <MemberSignature Language="F#" Value="abstract member AllowSecretPermissions : System.Collections.Generic.IList&lt;Microsoft.Azure.Management.KeyVault.Fluent.Models.SecretPermissions&gt; -&gt; Microsoft.Azure.Management.KeyVault.Fluent.AccessPolicy.Update.IUpdate" Usage="iWithPermissions.AllowSecretPermissions permissions" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; Microsoft::Azure::Management::KeyVault::Fluent::AccessPolicy::Update::IUpdate ^ AllowSecretPermissions(System::Collections::Generic::IList&lt;Microsoft::Azure::Management::KeyVault::Fluent::Models::SecretPermissions ^&gt; ^ permissions);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.KeyVault.Fluent</AssemblyName>
-        <AssemblyVersion>1.0.0.60</AssemblyVersion>
+        <AssemblyVersion>1.0.0.61</AssemblyVersion>
+        <AssemblyVersion>1.0.0.62</AssemblyVersion>
+        <AssemblyVersion>1.0.0.63</AssemblyVersion>
+        <AssemblyVersion>1.0.0.64</AssemblyVersion>
+        <AssemblyVersion>1.0.0.65</AssemblyVersion>
+        <AssemblyVersion>1.0.0.66</AssemblyVersion>
+        <AssemblyVersion>1.0.0.67</AssemblyVersion>
+        <AssemblyVersion>1.0.0.68</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Azure.Management.KeyVault.Fluent.AccessPolicy.Update.IUpdate</ReturnType>
@@ -263,12 +332,13 @@
         <Parameter Name="permissions" Type="System.Collections.Generic.IList&lt;Microsoft.Azure.Management.KeyVault.Fluent.Models.SecretPermissions&gt;" />
       </Parameters>
       <Docs>
-        <param name="permissions">permissions the list of permissions allowed</param>
+        <param name="permissions">The list of permissions allowed.</param>
         <summary>
             Allow a list of permissions for the AD identity to access secrets.
             </summary>
-        <returns>the next stage of access policy definition</returns>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
+        <return>The next stage of access policy definition.</return>
       </Docs>
     </Member>
     <Member MemberName="DisallowCertificateAllPermissions">
@@ -277,22 +347,29 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Management.KeyVault.Fluent.AccessPolicy.Update.IWithPermissions.DisallowCertificateAllPermissions" />
       <MemberSignature Language="VB.NET" Value="Public Function DisallowCertificateAllPermissions () As IUpdate" />
       <MemberSignature Language="F#" Value="abstract member DisallowCertificateAllPermissions : unit -&gt; Microsoft.Azure.Management.KeyVault.Fluent.AccessPolicy.Update.IUpdate" Usage="iWithPermissions.DisallowCertificateAllPermissions " />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; Microsoft::Azure::Management::KeyVault::Fluent::AccessPolicy::Update::IUpdate ^ DisallowCertificateAllPermissions();" />
-      <MemberSignature Language="C++ CX" Value="public:&#xA; Microsoft::Azure::Management::KeyVault::Fluent::AccessPolicy::Update::IUpdate ^ DisallowCertificateAllPermissions();" />
-      <MemberSignature Language="C++ WINRT" Value="Microsoft::Azure::Management::KeyVault::Fluent::AccessPolicy::Update::IUpdate DisallowCertificateAllPermissions();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.KeyVault.Fluent</AssemblyName>
-        <AssemblyVersion>1.0.0.60</AssemblyVersion>
+        <AssemblyVersion>1.0.0.61</AssemblyVersion>
+        <AssemblyVersion>1.0.0.62</AssemblyVersion>
+        <AssemblyVersion>1.0.0.63</AssemblyVersion>
+        <AssemblyVersion>1.0.0.64</AssemblyVersion>
+        <AssemblyVersion>1.0.0.65</AssemblyVersion>
+        <AssemblyVersion>1.0.0.66</AssemblyVersion>
+        <AssemblyVersion>1.0.0.67</AssemblyVersion>
+        <AssemblyVersion>1.0.0.68</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Azure.Management.KeyVault.Fluent.AccessPolicy.Update.IUpdate</ReturnType>
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+            Revoke all permissions for the AD identity to access certificates.
+            </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
+        <return>The next stage of access policy update.</return>
       </Docs>
     </Member>
     <Member MemberName="DisallowCertificatePermissions">
@@ -301,11 +378,17 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Management.KeyVault.Fluent.AccessPolicy.Update.IWithPermissions.DisallowCertificatePermissions(Microsoft.Azure.Management.KeyVault.Fluent.Models.CertificatePermissions[])" />
       <MemberSignature Language="VB.NET" Value="Public Function DisallowCertificatePermissions (ParamArray permissions As CertificatePermissions()) As IUpdate" />
       <MemberSignature Language="F#" Value="abstract member DisallowCertificatePermissions : Microsoft.Azure.Management.KeyVault.Fluent.Models.CertificatePermissions[] -&gt; Microsoft.Azure.Management.KeyVault.Fluent.AccessPolicy.Update.IUpdate" Usage="iWithPermissions.DisallowCertificatePermissions permissions" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; Microsoft::Azure::Management::KeyVault::Fluent::AccessPolicy::Update::IUpdate ^ DisallowCertificatePermissions(... cli::array &lt;Microsoft::Azure::Management::KeyVault::Fluent::Models::CertificatePermissions ^&gt; ^ permissions);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.KeyVault.Fluent</AssemblyName>
-        <AssemblyVersion>1.0.0.60</AssemblyVersion>
+        <AssemblyVersion>1.0.0.61</AssemblyVersion>
+        <AssemblyVersion>1.0.0.62</AssemblyVersion>
+        <AssemblyVersion>1.0.0.63</AssemblyVersion>
+        <AssemblyVersion>1.0.0.64</AssemblyVersion>
+        <AssemblyVersion>1.0.0.65</AssemblyVersion>
+        <AssemblyVersion>1.0.0.66</AssemblyVersion>
+        <AssemblyVersion>1.0.0.67</AssemblyVersion>
+        <AssemblyVersion>1.0.0.68</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Azure.Management.KeyVault.Fluent.AccessPolicy.Update.IUpdate</ReturnType>
@@ -314,16 +397,20 @@
         <Parameter Name="permissions" Type="Microsoft.Azure.Management.KeyVault.Fluent.Models.CertificatePermissions[]">
           <Attributes>
             <Attribute>
-              <AttributeName>System.ParamArray</AttributeName>
+              <AttributeName Language="C#">[System.ParamArray]</AttributeName>
+              <AttributeName Language="F#">[&lt;System.ParamArray&gt;]</AttributeName>
             </Attribute>
           </Attributes>
         </Parameter>
       </Parameters>
       <Docs>
-        <param name="permissions">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="permissions">The list of permissions to revoke.</param>
+        <summary>
+            Revoke a list of permissions for the AD identity to access certificates.
+            </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
+        <return>The next stage of access policy update.</return>
       </Docs>
     </Member>
     <Member MemberName="DisallowCertificatePermissions">
@@ -332,11 +419,17 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Management.KeyVault.Fluent.AccessPolicy.Update.IWithPermissions.DisallowCertificatePermissions(System.Collections.Generic.IList{Microsoft.Azure.Management.KeyVault.Fluent.Models.CertificatePermissions})" />
       <MemberSignature Language="VB.NET" Value="Public Function DisallowCertificatePermissions (permissions As IList(Of CertificatePermissions)) As IUpdate" />
       <MemberSignature Language="F#" Value="abstract member DisallowCertificatePermissions : System.Collections.Generic.IList&lt;Microsoft.Azure.Management.KeyVault.Fluent.Models.CertificatePermissions&gt; -&gt; Microsoft.Azure.Management.KeyVault.Fluent.AccessPolicy.Update.IUpdate" Usage="iWithPermissions.DisallowCertificatePermissions permissions" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; Microsoft::Azure::Management::KeyVault::Fluent::AccessPolicy::Update::IUpdate ^ DisallowCertificatePermissions(System::Collections::Generic::IList&lt;Microsoft::Azure::Management::KeyVault::Fluent::Models::CertificatePermissions ^&gt; ^ permissions);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.KeyVault.Fluent</AssemblyName>
-        <AssemblyVersion>1.0.0.60</AssemblyVersion>
+        <AssemblyVersion>1.0.0.61</AssemblyVersion>
+        <AssemblyVersion>1.0.0.62</AssemblyVersion>
+        <AssemblyVersion>1.0.0.63</AssemblyVersion>
+        <AssemblyVersion>1.0.0.64</AssemblyVersion>
+        <AssemblyVersion>1.0.0.65</AssemblyVersion>
+        <AssemblyVersion>1.0.0.66</AssemblyVersion>
+        <AssemblyVersion>1.0.0.67</AssemblyVersion>
+        <AssemblyVersion>1.0.0.68</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Azure.Management.KeyVault.Fluent.AccessPolicy.Update.IUpdate</ReturnType>
@@ -345,10 +438,13 @@
         <Parameter Name="permissions" Type="System.Collections.Generic.IList&lt;Microsoft.Azure.Management.KeyVault.Fluent.Models.CertificatePermissions&gt;" />
       </Parameters>
       <Docs>
-        <param name="permissions">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="permissions">The list of permissions to revoke.</param>
+        <summary>
+            Revoke a list of permissions for the AD identity to access certificates.
+            </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
+        <return>The next stage of access policy update.</return>
       </Docs>
     </Member>
     <Member MemberName="DisallowKeyAllPermissions">
@@ -357,13 +453,17 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Management.KeyVault.Fluent.AccessPolicy.Update.IWithPermissions.DisallowKeyAllPermissions" />
       <MemberSignature Language="VB.NET" Value="Public Function DisallowKeyAllPermissions () As IUpdate" />
       <MemberSignature Language="F#" Value="abstract member DisallowKeyAllPermissions : unit -&gt; Microsoft.Azure.Management.KeyVault.Fluent.AccessPolicy.Update.IUpdate" Usage="iWithPermissions.DisallowKeyAllPermissions " />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; Microsoft::Azure::Management::KeyVault::Fluent::AccessPolicy::Update::IUpdate ^ DisallowKeyAllPermissions();" />
-      <MemberSignature Language="C++ CX" Value="public:&#xA; Microsoft::Azure::Management::KeyVault::Fluent::AccessPolicy::Update::IUpdate ^ DisallowKeyAllPermissions();" />
-      <MemberSignature Language="C++ WINRT" Value="Microsoft::Azure::Management::KeyVault::Fluent::AccessPolicy::Update::IUpdate DisallowKeyAllPermissions();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.KeyVault.Fluent</AssemblyName>
-        <AssemblyVersion>1.0.0.60</AssemblyVersion>
+        <AssemblyVersion>1.0.0.61</AssemblyVersion>
+        <AssemblyVersion>1.0.0.62</AssemblyVersion>
+        <AssemblyVersion>1.0.0.63</AssemblyVersion>
+        <AssemblyVersion>1.0.0.64</AssemblyVersion>
+        <AssemblyVersion>1.0.0.65</AssemblyVersion>
+        <AssemblyVersion>1.0.0.66</AssemblyVersion>
+        <AssemblyVersion>1.0.0.67</AssemblyVersion>
+        <AssemblyVersion>1.0.0.68</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Azure.Management.KeyVault.Fluent.AccessPolicy.Update.IUpdate</ReturnType>
@@ -373,8 +473,9 @@
         <summary>
             Revoke all permissions for the AD identity to access keys.
             </summary>
-        <returns>the next stage of access policy update</returns>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
+        <return>The next stage of access policy update.</return>
       </Docs>
     </Member>
     <Member MemberName="DisallowKeyPermissions">
@@ -383,11 +484,17 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Management.KeyVault.Fluent.AccessPolicy.Update.IWithPermissions.DisallowKeyPermissions(Microsoft.Azure.Management.KeyVault.Fluent.Models.KeyPermissions[])" />
       <MemberSignature Language="VB.NET" Value="Public Function DisallowKeyPermissions (ParamArray permissions As KeyPermissions()) As IUpdate" />
       <MemberSignature Language="F#" Value="abstract member DisallowKeyPermissions : Microsoft.Azure.Management.KeyVault.Fluent.Models.KeyPermissions[] -&gt; Microsoft.Azure.Management.KeyVault.Fluent.AccessPolicy.Update.IUpdate" Usage="iWithPermissions.DisallowKeyPermissions permissions" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; Microsoft::Azure::Management::KeyVault::Fluent::AccessPolicy::Update::IUpdate ^ DisallowKeyPermissions(... cli::array &lt;Microsoft::Azure::Management::KeyVault::Fluent::Models::KeyPermissions ^&gt; ^ permissions);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.KeyVault.Fluent</AssemblyName>
-        <AssemblyVersion>1.0.0.60</AssemblyVersion>
+        <AssemblyVersion>1.0.0.61</AssemblyVersion>
+        <AssemblyVersion>1.0.0.62</AssemblyVersion>
+        <AssemblyVersion>1.0.0.63</AssemblyVersion>
+        <AssemblyVersion>1.0.0.64</AssemblyVersion>
+        <AssemblyVersion>1.0.0.65</AssemblyVersion>
+        <AssemblyVersion>1.0.0.66</AssemblyVersion>
+        <AssemblyVersion>1.0.0.67</AssemblyVersion>
+        <AssemblyVersion>1.0.0.68</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Azure.Management.KeyVault.Fluent.AccessPolicy.Update.IUpdate</ReturnType>
@@ -396,18 +503,20 @@
         <Parameter Name="permissions" Type="Microsoft.Azure.Management.KeyVault.Fluent.Models.KeyPermissions[]">
           <Attributes>
             <Attribute>
-              <AttributeName>System.ParamArray</AttributeName>
+              <AttributeName Language="C#">[System.ParamArray]</AttributeName>
+              <AttributeName Language="F#">[&lt;System.ParamArray&gt;]</AttributeName>
             </Attribute>
           </Attributes>
         </Parameter>
       </Parameters>
       <Docs>
-        <param name="permissions">permissions the list of permissions to revoke</param>
+        <param name="permissions">The list of permissions to revoke.</param>
         <summary>
             Revoke a list of permissions for the AD identity to access keys.
             </summary>
-        <returns>the next stage of access policy update</returns>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
+        <return>The next stage of access policy update.</return>
       </Docs>
     </Member>
     <Member MemberName="DisallowKeyPermissions">
@@ -416,11 +525,17 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Management.KeyVault.Fluent.AccessPolicy.Update.IWithPermissions.DisallowKeyPermissions(System.Collections.Generic.IList{Microsoft.Azure.Management.KeyVault.Fluent.Models.KeyPermissions})" />
       <MemberSignature Language="VB.NET" Value="Public Function DisallowKeyPermissions (permissions As IList(Of KeyPermissions)) As IUpdate" />
       <MemberSignature Language="F#" Value="abstract member DisallowKeyPermissions : System.Collections.Generic.IList&lt;Microsoft.Azure.Management.KeyVault.Fluent.Models.KeyPermissions&gt; -&gt; Microsoft.Azure.Management.KeyVault.Fluent.AccessPolicy.Update.IUpdate" Usage="iWithPermissions.DisallowKeyPermissions permissions" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; Microsoft::Azure::Management::KeyVault::Fluent::AccessPolicy::Update::IUpdate ^ DisallowKeyPermissions(System::Collections::Generic::IList&lt;Microsoft::Azure::Management::KeyVault::Fluent::Models::KeyPermissions ^&gt; ^ permissions);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.KeyVault.Fluent</AssemblyName>
-        <AssemblyVersion>1.0.0.60</AssemblyVersion>
+        <AssemblyVersion>1.0.0.61</AssemblyVersion>
+        <AssemblyVersion>1.0.0.62</AssemblyVersion>
+        <AssemblyVersion>1.0.0.63</AssemblyVersion>
+        <AssemblyVersion>1.0.0.64</AssemblyVersion>
+        <AssemblyVersion>1.0.0.65</AssemblyVersion>
+        <AssemblyVersion>1.0.0.66</AssemblyVersion>
+        <AssemblyVersion>1.0.0.67</AssemblyVersion>
+        <AssemblyVersion>1.0.0.68</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Azure.Management.KeyVault.Fluent.AccessPolicy.Update.IUpdate</ReturnType>
@@ -429,12 +544,13 @@
         <Parameter Name="permissions" Type="System.Collections.Generic.IList&lt;Microsoft.Azure.Management.KeyVault.Fluent.Models.KeyPermissions&gt;" />
       </Parameters>
       <Docs>
-        <param name="permissions">permissions the list of permissions to revoke</param>
+        <param name="permissions">The list of permissions to revoke.</param>
         <summary>
             Revoke a list of permissions for the AD identity to access keys.
             </summary>
-        <returns>the next stage of access policy update</returns>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
+        <return>The next stage of access policy update.</return>
       </Docs>
     </Member>
     <Member MemberName="DisallowSecretAllPermissions">
@@ -443,13 +559,17 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Management.KeyVault.Fluent.AccessPolicy.Update.IWithPermissions.DisallowSecretAllPermissions" />
       <MemberSignature Language="VB.NET" Value="Public Function DisallowSecretAllPermissions () As IUpdate" />
       <MemberSignature Language="F#" Value="abstract member DisallowSecretAllPermissions : unit -&gt; Microsoft.Azure.Management.KeyVault.Fluent.AccessPolicy.Update.IUpdate" Usage="iWithPermissions.DisallowSecretAllPermissions " />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; Microsoft::Azure::Management::KeyVault::Fluent::AccessPolicy::Update::IUpdate ^ DisallowSecretAllPermissions();" />
-      <MemberSignature Language="C++ CX" Value="public:&#xA; Microsoft::Azure::Management::KeyVault::Fluent::AccessPolicy::Update::IUpdate ^ DisallowSecretAllPermissions();" />
-      <MemberSignature Language="C++ WINRT" Value="Microsoft::Azure::Management::KeyVault::Fluent::AccessPolicy::Update::IUpdate DisallowSecretAllPermissions();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.KeyVault.Fluent</AssemblyName>
-        <AssemblyVersion>1.0.0.60</AssemblyVersion>
+        <AssemblyVersion>1.0.0.61</AssemblyVersion>
+        <AssemblyVersion>1.0.0.62</AssemblyVersion>
+        <AssemblyVersion>1.0.0.63</AssemblyVersion>
+        <AssemblyVersion>1.0.0.64</AssemblyVersion>
+        <AssemblyVersion>1.0.0.65</AssemblyVersion>
+        <AssemblyVersion>1.0.0.66</AssemblyVersion>
+        <AssemblyVersion>1.0.0.67</AssemblyVersion>
+        <AssemblyVersion>1.0.0.68</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Azure.Management.KeyVault.Fluent.AccessPolicy.Update.IUpdate</ReturnType>
@@ -459,8 +579,9 @@
         <summary>
             Revoke all permissions for the AD identity to access secrets.
             </summary>
-        <returns>the next stage of access policy update</returns>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
+        <return>The next stage of access policy update.</return>
       </Docs>
     </Member>
     <Member MemberName="DisallowSecretPermissions">
@@ -469,11 +590,17 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Management.KeyVault.Fluent.AccessPolicy.Update.IWithPermissions.DisallowSecretPermissions(Microsoft.Azure.Management.KeyVault.Fluent.Models.SecretPermissions[])" />
       <MemberSignature Language="VB.NET" Value="Public Function DisallowSecretPermissions (ParamArray permissions As SecretPermissions()) As IUpdate" />
       <MemberSignature Language="F#" Value="abstract member DisallowSecretPermissions : Microsoft.Azure.Management.KeyVault.Fluent.Models.SecretPermissions[] -&gt; Microsoft.Azure.Management.KeyVault.Fluent.AccessPolicy.Update.IUpdate" Usage="iWithPermissions.DisallowSecretPermissions permissions" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; Microsoft::Azure::Management::KeyVault::Fluent::AccessPolicy::Update::IUpdate ^ DisallowSecretPermissions(... cli::array &lt;Microsoft::Azure::Management::KeyVault::Fluent::Models::SecretPermissions ^&gt; ^ permissions);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.KeyVault.Fluent</AssemblyName>
-        <AssemblyVersion>1.0.0.60</AssemblyVersion>
+        <AssemblyVersion>1.0.0.61</AssemblyVersion>
+        <AssemblyVersion>1.0.0.62</AssemblyVersion>
+        <AssemblyVersion>1.0.0.63</AssemblyVersion>
+        <AssemblyVersion>1.0.0.64</AssemblyVersion>
+        <AssemblyVersion>1.0.0.65</AssemblyVersion>
+        <AssemblyVersion>1.0.0.66</AssemblyVersion>
+        <AssemblyVersion>1.0.0.67</AssemblyVersion>
+        <AssemblyVersion>1.0.0.68</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Azure.Management.KeyVault.Fluent.AccessPolicy.Update.IUpdate</ReturnType>
@@ -482,18 +609,20 @@
         <Parameter Name="permissions" Type="Microsoft.Azure.Management.KeyVault.Fluent.Models.SecretPermissions[]">
           <Attributes>
             <Attribute>
-              <AttributeName>System.ParamArray</AttributeName>
+              <AttributeName Language="C#">[System.ParamArray]</AttributeName>
+              <AttributeName Language="F#">[&lt;System.ParamArray&gt;]</AttributeName>
             </Attribute>
           </Attributes>
         </Parameter>
       </Parameters>
       <Docs>
-        <param name="permissions">permissions the list of permissions to revoke</param>
+        <param name="permissions">The list of permissions to revoke.</param>
         <summary>
             Revoke a list of permissions for the AD identity to access secrets.
             </summary>
-        <returns>the next stage of access policy update</returns>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
+        <return>The next stage of access policy update.</return>
       </Docs>
     </Member>
     <Member MemberName="DisallowSecretPermissions">
@@ -502,11 +631,17 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Management.KeyVault.Fluent.AccessPolicy.Update.IWithPermissions.DisallowSecretPermissions(System.Collections.Generic.IList{Microsoft.Azure.Management.KeyVault.Fluent.Models.SecretPermissions})" />
       <MemberSignature Language="VB.NET" Value="Public Function DisallowSecretPermissions (permissions As IList(Of SecretPermissions)) As IUpdate" />
       <MemberSignature Language="F#" Value="abstract member DisallowSecretPermissions : System.Collections.Generic.IList&lt;Microsoft.Azure.Management.KeyVault.Fluent.Models.SecretPermissions&gt; -&gt; Microsoft.Azure.Management.KeyVault.Fluent.AccessPolicy.Update.IUpdate" Usage="iWithPermissions.DisallowSecretPermissions permissions" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; Microsoft::Azure::Management::KeyVault::Fluent::AccessPolicy::Update::IUpdate ^ DisallowSecretPermissions(System::Collections::Generic::IList&lt;Microsoft::Azure::Management::KeyVault::Fluent::Models::SecretPermissions ^&gt; ^ permissions);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.KeyVault.Fluent</AssemblyName>
-        <AssemblyVersion>1.0.0.60</AssemblyVersion>
+        <AssemblyVersion>1.0.0.61</AssemblyVersion>
+        <AssemblyVersion>1.0.0.62</AssemblyVersion>
+        <AssemblyVersion>1.0.0.63</AssemblyVersion>
+        <AssemblyVersion>1.0.0.64</AssemblyVersion>
+        <AssemblyVersion>1.0.0.65</AssemblyVersion>
+        <AssemblyVersion>1.0.0.66</AssemblyVersion>
+        <AssemblyVersion>1.0.0.67</AssemblyVersion>
+        <AssemblyVersion>1.0.0.68</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Azure.Management.KeyVault.Fluent.AccessPolicy.Update.IUpdate</ReturnType>
@@ -515,12 +650,13 @@
         <Parameter Name="permissions" Type="System.Collections.Generic.IList&lt;Microsoft.Azure.Management.KeyVault.Fluent.Models.SecretPermissions&gt;" />
       </Parameters>
       <Docs>
-        <param name="permissions">permissions the list of permissions to revoke</param>
+        <param name="permissions">The list of permissions to revoke.</param>
         <summary>
             Revoke a list of permissions for the AD identity to access secrets.
             </summary>
-        <returns>the next stage of access policy update</returns>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
+        <return>The next stage of access policy update.</return>
       </Docs>
     </Member>
   </Members>

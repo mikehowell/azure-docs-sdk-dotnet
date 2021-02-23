@@ -1,14 +1,12 @@
-﻿<Type Name="AzureIaaSComputeVMProtectedItem" FullName="Microsoft.Azure.Management.RecoveryServices.Backup.Models.AzureIaaSComputeVMProtectedItem">
+<Type Name="AzureIaaSComputeVMProtectedItem" FullName="Microsoft.Azure.Management.RecoveryServices.Backup.Models.AzureIaaSComputeVMProtectedItem">
   <TypeSignature Language="C#" Value="public class AzureIaaSComputeVMProtectedItem : Microsoft.Azure.Management.RecoveryServices.Backup.Models.AzureIaaSVMProtectedItem" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit AzureIaaSComputeVMProtectedItem extends Microsoft.Azure.Management.RecoveryServices.Backup.Models.AzureIaaSVMProtectedItem" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Azure.Management.RecoveryServices.Backup.Models.AzureIaaSComputeVMProtectedItem" />
   <TypeSignature Language="VB.NET" Value="Public Class AzureIaaSComputeVMProtectedItem&#xA;Inherits AzureIaaSVMProtectedItem" />
   <TypeSignature Language="F#" Value="type AzureIaaSComputeVMProtectedItem = class&#xA;    inherit AzureIaaSVMProtectedItem" />
-  <TypeSignature Language="C++ CLI" Value="public ref class AzureIaaSComputeVMProtectedItem : Microsoft::Azure::Management::RecoveryServices::Backup::Models::AzureIaaSVMProtectedItem" />
-  <TypeSignature Language="C++ WINRT" Value="[Windows::Foundation::Metadata::WebHostHidden]&#xA;class AzureIaaSComputeVMProtectedItem : Microsoft::Azure::Management::RecoveryServices::Backup::Models::AzureIaaSVMProtectedItem" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Azure.Management.RecoveryServices.Backup</AssemblyName>
-    <AssemblyVersion>2.0.0.0</AssemblyVersion>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>Microsoft.Azure.Management.RecoveryServices.Backup.Models.AzureIaaSVMProtectedItem</BaseTypeName>
@@ -16,7 +14,8 @@
   <Interfaces />
   <Attributes>
     <Attribute>
-      <AttributeName>Newtonsoft.Json.JsonObject("Microsoft.Compute/virtualMachines")</AttributeName>
+      <AttributeName Language="C#">[Newtonsoft.Json.JsonObject("Microsoft.Compute/virtualMachines")]</AttributeName>
+      <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonObject("Microsoft.Compute/virtualMachines")&gt;]</AttributeName>
     </Attribute>
   </Attributes>
   <Docs>
@@ -32,13 +31,10 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Management.RecoveryServices.Backup.Models.AzureIaaSComputeVMProtectedItem.#ctor" />
       <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; AzureIaaSComputeVMProtectedItem();" />
-      <MemberSignature Language="C++ CX" Value="public:&#xA; AzureIaaSComputeVMProtectedItem();" />
-      <MemberSignature Language="C++ WINRT" Value=" AzureIaaSComputeVMProtectedItem();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.RecoveryServices.Backup</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
@@ -50,15 +46,15 @@
       </Docs>
     </Member>
     <Member MemberName=".ctor">
-      <MemberSignature Language="C#" Value="public AzureIaaSComputeVMProtectedItem (string backupManagementType = null, string workloadType = null, string containerName = null, string sourceResourceId = null, string policyId = null, Nullable&lt;DateTime&gt; lastRecoveryPoint = null, string friendlyName = null, string virtualMachineId = null, string protectionStatus = null, string protectionState = null, string healthStatus = null, System.Collections.Generic.IList&lt;Microsoft.Azure.Management.RecoveryServices.Backup.Models.AzureIaaSVMHealthDetails&gt; healthDetails = null, string lastBackupStatus = null, Nullable&lt;DateTime&gt; lastBackupTime = null, string protectedItemDataId = null, Microsoft.Azure.Management.RecoveryServices.Backup.Models.AzureIaaSVMProtectedItemExtendedInfo extendedInfo = null);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string backupManagementType, string workloadType, string containerName, string sourceResourceId, string policyId, valuetype System.Nullable`1&lt;valuetype System.DateTime&gt; lastRecoveryPoint, string friendlyName, string virtualMachineId, string protectionStatus, string protectionState, string healthStatus, class System.Collections.Generic.IList`1&lt;class Microsoft.Azure.Management.RecoveryServices.Backup.Models.AzureIaaSVMHealthDetails&gt; healthDetails, string lastBackupStatus, valuetype System.Nullable`1&lt;valuetype System.DateTime&gt; lastBackupTime, string protectedItemDataId, class Microsoft.Azure.Management.RecoveryServices.Backup.Models.AzureIaaSVMProtectedItemExtendedInfo extendedInfo) cil managed" />
-      <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Management.RecoveryServices.Backup.Models.AzureIaaSComputeVMProtectedItem.#ctor(System.String,System.String,System.String,System.String,System.String,System.Nullable{System.DateTime},System.String,System.String,System.String,System.String,System.String,System.Collections.Generic.IList{Microsoft.Azure.Management.RecoveryServices.Backup.Models.AzureIaaSVMHealthDetails},System.String,System.Nullable{System.DateTime},System.String,Microsoft.Azure.Management.RecoveryServices.Backup.Models.AzureIaaSVMProtectedItemExtendedInfo)" />
-      <MemberSignature Language="VB.NET" Value="Public Sub New (Optional backupManagementType As String = null, Optional workloadType As String = null, Optional containerName As String = null, Optional sourceResourceId As String = null, Optional policyId As String = null, Optional lastRecoveryPoint As Nullable(Of DateTime) = null, Optional friendlyName As String = null, Optional virtualMachineId As String = null, Optional protectionStatus As String = null, Optional protectionState As String = null, Optional healthStatus As String = null, Optional healthDetails As IList(Of AzureIaaSVMHealthDetails) = null, Optional lastBackupStatus As String = null, Optional lastBackupTime As Nullable(Of DateTime) = null, Optional protectedItemDataId As String = null, Optional extendedInfo As AzureIaaSVMProtectedItemExtendedInfo = null)" />
-      <MemberSignature Language="F#" Value="new Microsoft.Azure.Management.RecoveryServices.Backup.Models.AzureIaaSComputeVMProtectedItem : string * string * string * string * string * Nullable&lt;DateTime&gt; * string * string * string * string * string * System.Collections.Generic.IList&lt;Microsoft.Azure.Management.RecoveryServices.Backup.Models.AzureIaaSVMHealthDetails&gt; * string * Nullable&lt;DateTime&gt; * string * Microsoft.Azure.Management.RecoveryServices.Backup.Models.AzureIaaSVMProtectedItemExtendedInfo -&gt; Microsoft.Azure.Management.RecoveryServices.Backup.Models.AzureIaaSComputeVMProtectedItem" Usage="new Microsoft.Azure.Management.RecoveryServices.Backup.Models.AzureIaaSComputeVMProtectedItem (backupManagementType, workloadType, containerName, sourceResourceId, policyId, lastRecoveryPoint, friendlyName, virtualMachineId, protectionStatus, protectionState, healthStatus, healthDetails, lastBackupStatus, lastBackupTime, protectedItemDataId, extendedInfo)" />
+      <MemberSignature Language="C#" Value="public AzureIaaSComputeVMProtectedItem (string backupManagementType = default, string workloadType = default, string containerName = default, string sourceResourceId = default, string policyId = default, DateTime? lastRecoveryPoint = default, string backupSetName = default, string createMode = default, DateTime? deferredDeleteTimeInUTC = default, bool? isScheduledForDeferredDelete = default, string deferredDeleteTimeRemaining = default, bool? isDeferredDeleteScheduleUpcoming = default, bool? isRehydrate = default, string friendlyName = default, string virtualMachineId = default, string protectionStatus = default, string protectionState = default, string healthStatus = default, System.Collections.Generic.IList&lt;Microsoft.Azure.Management.RecoveryServices.Backup.Models.AzureIaaSVMHealthDetails&gt; healthDetails = default, System.Collections.Generic.IDictionary&lt;string,Microsoft.Azure.Management.RecoveryServices.Backup.Models.KPIResourceHealthDetails&gt; kpisHealths = default, string lastBackupStatus = default, DateTime? lastBackupTime = default, string protectedItemDataId = default, Microsoft.Azure.Management.RecoveryServices.Backup.Models.AzureIaaSVMProtectedItemExtendedInfo extendedInfo = default, Microsoft.Azure.Management.RecoveryServices.Backup.Models.ExtendedProperties extendedProperties = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string backupManagementType, string workloadType, string containerName, string sourceResourceId, string policyId, valuetype System.Nullable`1&lt;valuetype System.DateTime&gt; lastRecoveryPoint, string backupSetName, string createMode, valuetype System.Nullable`1&lt;valuetype System.DateTime&gt; deferredDeleteTimeInUTC, valuetype System.Nullable`1&lt;bool&gt; isScheduledForDeferredDelete, string deferredDeleteTimeRemaining, valuetype System.Nullable`1&lt;bool&gt; isDeferredDeleteScheduleUpcoming, valuetype System.Nullable`1&lt;bool&gt; isRehydrate, string friendlyName, string virtualMachineId, string protectionStatus, string protectionState, string healthStatus, class System.Collections.Generic.IList`1&lt;class Microsoft.Azure.Management.RecoveryServices.Backup.Models.AzureIaaSVMHealthDetails&gt; healthDetails, class System.Collections.Generic.IDictionary`2&lt;string, class Microsoft.Azure.Management.RecoveryServices.Backup.Models.KPIResourceHealthDetails&gt; kpisHealths, string lastBackupStatus, valuetype System.Nullable`1&lt;valuetype System.DateTime&gt; lastBackupTime, string protectedItemDataId, class Microsoft.Azure.Management.RecoveryServices.Backup.Models.AzureIaaSVMProtectedItemExtendedInfo extendedInfo, class Microsoft.Azure.Management.RecoveryServices.Backup.Models.ExtendedProperties extendedProperties) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Management.RecoveryServices.Backup.Models.AzureIaaSComputeVMProtectedItem.#ctor(System.String,System.String,System.String,System.String,System.String,System.Nullable{System.DateTime},System.String,System.String,System.Nullable{System.DateTime},System.Nullable{System.Boolean},System.String,System.Nullable{System.Boolean},System.Nullable{System.Boolean},System.String,System.String,System.String,System.String,System.String,System.Collections.Generic.IList{Microsoft.Azure.Management.RecoveryServices.Backup.Models.AzureIaaSVMHealthDetails},System.Collections.Generic.IDictionary{System.String,Microsoft.Azure.Management.RecoveryServices.Backup.Models.KPIResourceHealthDetails},System.String,System.Nullable{System.DateTime},System.String,Microsoft.Azure.Management.RecoveryServices.Backup.Models.AzureIaaSVMProtectedItemExtendedInfo,Microsoft.Azure.Management.RecoveryServices.Backup.Models.ExtendedProperties)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (Optional backupManagementType As String = Nothing, Optional workloadType As String = Nothing, Optional containerName As String = Nothing, Optional sourceResourceId As String = Nothing, Optional policyId As String = Nothing, Optional lastRecoveryPoint As Nullable(Of DateTime) = Nothing, Optional backupSetName As String = Nothing, Optional createMode As String = Nothing, Optional deferredDeleteTimeInUTC As Nullable(Of DateTime) = Nothing, Optional isScheduledForDeferredDelete As Nullable(Of Boolean) = Nothing, Optional deferredDeleteTimeRemaining As String = Nothing, Optional isDeferredDeleteScheduleUpcoming As Nullable(Of Boolean) = Nothing, Optional isRehydrate As Nullable(Of Boolean) = Nothing, Optional friendlyName As String = Nothing, Optional virtualMachineId As String = Nothing, Optional protectionStatus As String = Nothing, Optional protectionState As String = Nothing, Optional healthStatus As String = Nothing, Optional healthDetails As IList(Of AzureIaaSVMHealthDetails) = Nothing, Optional kpisHealths As IDictionary(Of String, KPIResourceHealthDetails) = Nothing, Optional lastBackupStatus As String = Nothing, Optional lastBackupTime As Nullable(Of DateTime) = Nothing, Optional protectedItemDataId As String = Nothing, Optional extendedInfo As AzureIaaSVMProtectedItemExtendedInfo = Nothing, Optional extendedProperties As ExtendedProperties = Nothing)" />
+      <MemberSignature Language="F#" Value="new Microsoft.Azure.Management.RecoveryServices.Backup.Models.AzureIaaSComputeVMProtectedItem : string * string * string * string * string * Nullable&lt;DateTime&gt; * string * string * Nullable&lt;DateTime&gt; * Nullable&lt;bool&gt; * string * Nullable&lt;bool&gt; * Nullable&lt;bool&gt; * string * string * string * string * string * System.Collections.Generic.IList&lt;Microsoft.Azure.Management.RecoveryServices.Backup.Models.AzureIaaSVMHealthDetails&gt; * System.Collections.Generic.IDictionary&lt;string, Microsoft.Azure.Management.RecoveryServices.Backup.Models.KPIResourceHealthDetails&gt; * string * Nullable&lt;DateTime&gt; * string * Microsoft.Azure.Management.RecoveryServices.Backup.Models.AzureIaaSVMProtectedItemExtendedInfo * Microsoft.Azure.Management.RecoveryServices.Backup.Models.ExtendedProperties -&gt; Microsoft.Azure.Management.RecoveryServices.Backup.Models.AzureIaaSComputeVMProtectedItem" Usage="new Microsoft.Azure.Management.RecoveryServices.Backup.Models.AzureIaaSComputeVMProtectedItem (backupManagementType, workloadType, containerName, sourceResourceId, policyId, lastRecoveryPoint, backupSetName, createMode, deferredDeleteTimeInUTC, isScheduledForDeferredDelete, deferredDeleteTimeRemaining, isDeferredDeleteScheduleUpcoming, isRehydrate, friendlyName, virtualMachineId, protectionStatus, protectionState, healthStatus, healthDetails, kpisHealths, lastBackupStatus, lastBackupTime, protectedItemDataId, extendedInfo, extendedProperties)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.RecoveryServices.Backup</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="backupManagementType" Type="System.String" />
@@ -67,26 +63,37 @@
         <Parameter Name="sourceResourceId" Type="System.String" />
         <Parameter Name="policyId" Type="System.String" />
         <Parameter Name="lastRecoveryPoint" Type="System.Nullable&lt;System.DateTime&gt;" />
+        <Parameter Name="backupSetName" Type="System.String" />
+        <Parameter Name="createMode" Type="System.String" />
+        <Parameter Name="deferredDeleteTimeInUTC" Type="System.Nullable&lt;System.DateTime&gt;" />
+        <Parameter Name="isScheduledForDeferredDelete" Type="System.Nullable&lt;System.Boolean&gt;" />
+        <Parameter Name="deferredDeleteTimeRemaining" Type="System.String" />
+        <Parameter Name="isDeferredDeleteScheduleUpcoming" Type="System.Nullable&lt;System.Boolean&gt;" />
+        <Parameter Name="isRehydrate" Type="System.Nullable&lt;System.Boolean&gt;" />
         <Parameter Name="friendlyName" Type="System.String" />
         <Parameter Name="virtualMachineId" Type="System.String" />
         <Parameter Name="protectionStatus" Type="System.String" />
         <Parameter Name="protectionState" Type="System.String" />
         <Parameter Name="healthStatus" Type="System.String" />
         <Parameter Name="healthDetails" Type="System.Collections.Generic.IList&lt;Microsoft.Azure.Management.RecoveryServices.Backup.Models.AzureIaaSVMHealthDetails&gt;" />
+        <Parameter Name="kpisHealths" Type="System.Collections.Generic.IDictionary&lt;System.String,Microsoft.Azure.Management.RecoveryServices.Backup.Models.KPIResourceHealthDetails&gt;" />
         <Parameter Name="lastBackupStatus" Type="System.String" />
         <Parameter Name="lastBackupTime" Type="System.Nullable&lt;System.DateTime&gt;" />
         <Parameter Name="protectedItemDataId" Type="System.String" />
         <Parameter Name="extendedInfo" Type="Microsoft.Azure.Management.RecoveryServices.Backup.Models.AzureIaaSVMProtectedItemExtendedInfo" />
+        <Parameter Name="extendedProperties" Type="Microsoft.Azure.Management.RecoveryServices.Backup.Models.ExtendedProperties" />
       </Parameters>
       <Docs>
-        <param name="backupManagementType">Type of backup managemenent for
+        <param name="extendedProperties">To be added.</param>
+        <param name="backupManagementType">Type of backup management for
             the backed up item. Possible values include: 'Invalid',
-            'AzureIaasVM', 'MAB', 'DPM', 'AzureBackupServer',
-            'AzureSql'</param>
+            'AzureIaasVM', 'MAB', 'DPM', 'AzureBackupServer', 'AzureSql',
+            'AzureStorage', 'AzureWorkload', 'DefaultBackup'</param>
         <param name="workloadType">Type of workload this item represents.
             Possible values include: 'Invalid', 'VM', 'FileFolder',
             'AzureSqlDb', 'SQLDB', 'Exchange', 'Sharepoint', 'VMwareVM',
-            'SystemState', 'Client', 'GenericDataSource'</param>
+            'SystemState', 'Client', 'GenericDataSource', 'SQLDataBase',
+            'AzureFileShare', 'SAPHanaDatabase', 'SAPAseDatabase'</param>
         <param name="containerName">Unique name of container</param>
         <param name="sourceResourceId">ARM ID of the resource to be backed
             up.</param>
@@ -94,6 +101,21 @@
             is backed up.</param>
         <param name="lastRecoveryPoint">Timestamp when the last (latest)
             backup copy was created for this backup item.</param>
+        <param name="backupSetName">Name of the backup set the backup item
+            belongs to</param>
+        <param name="createMode">Create mode to indicate recovery of
+            existing soft deleted data source or creation of new data source.
+            Possible values include: 'Invalid', 'Default', 'Recover'</param>
+        <param name="deferredDeleteTimeInUTC">Time for deferred deletion in
+            UTC</param>
+        <param name="isScheduledForDeferredDelete">Flag to identify whether
+            the DS is scheduled for deferred delete</param>
+        <param name="deferredDeleteTimeRemaining">Time remaining before the
+            DS marked for deferred delete is permanently deleted</param>
+        <param name="isDeferredDeleteScheduleUpcoming">Flag to identify
+            whether the deferred deleted DS is to be purged soon</param>
+        <param name="isRehydrate">Flag to identify that deferred deleted DS
+            is to be moved into Pause state</param>
         <param name="friendlyName">Friendly name of the VM represented by
             this backup item.</param>
         <param name="virtualMachineId">Fully qualified ARM ID of the
@@ -108,8 +130,9 @@
             'ActionSuggested', 'Invalid'</param>
         <param name="healthDetails">Health details on this backup
             item.</param>
-        <param name="lastBackupStatus">Last backup operation status.
-            Possible values: Healthy, Unhealthy.</param>
+        <param name="kpisHealths">Health details of different KPIs</param>
+        <param name="lastBackupStatus">Last backup operation
+            status.</param>
         <param name="lastBackupTime">Timestamp of the last backup operation
             on this backup item.</param>
         <param name="protectedItemDataId">Data ID of the protected

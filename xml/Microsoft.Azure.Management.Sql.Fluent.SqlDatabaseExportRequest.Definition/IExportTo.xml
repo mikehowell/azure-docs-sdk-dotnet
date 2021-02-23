@@ -1,19 +1,25 @@
-﻿<Type Name="IExportTo" FullName="Microsoft.Azure.Management.Sql.Fluent.SqlDatabaseExportRequest.Definition.IExportTo">
+<Type Name="IExportTo" FullName="Microsoft.Azure.Management.Sql.Fluent.SqlDatabaseExportRequest.Definition.IExportTo">
   <TypeSignature Language="C#" Value="public interface IExportTo" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IExportTo" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Azure.Management.Sql.Fluent.SqlDatabaseExportRequest.Definition.IExportTo" />
   <TypeSignature Language="VB.NET" Value="Public Interface IExportTo" />
   <TypeSignature Language="F#" Value="type IExportTo = interface" />
-  <TypeSignature Language="C++ CLI" Value="public interface class IExportTo" />
-  <TypeSignature Language="C++ CX" Value="public interface class IExportTo" />
-  <TypeSignature Language="C++ WINRT" Value="__interface IExportTo" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Azure.Management.Sql.Fluent</AssemblyName>
-    <AssemblyVersion>1.0.0.60</AssemblyVersion>
+    <AssemblyVersion>1.0.0.61</AssemblyVersion>
+    <AssemblyVersion>1.0.0.62</AssemblyVersion>
+    <AssemblyVersion>1.0.0.63</AssemblyVersion>
+    <AssemblyVersion>1.0.0.64</AssemblyVersion>
+    <AssemblyVersion>1.0.0.65</AssemblyVersion>
+    <AssemblyVersion>1.0.0.66</AssemblyVersion>
+    <AssemblyVersion>1.0.0.67</AssemblyVersion>
+    <AssemblyVersion>1.0.0.68</AssemblyVersion>
   </AssemblyInfo>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
+    <summary>
+            Sets the storage URI to use.
+            </summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -23,13 +29,17 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Management.Sql.Fluent.SqlDatabaseExportRequest.Definition.IExportTo.ExportTo(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Function ExportTo (storageUri As String) As IWithStorageTypeAndKey" />
       <MemberSignature Language="F#" Value="abstract member ExportTo : string -&gt; Microsoft.Azure.Management.Sql.Fluent.SqlDatabaseExportRequest.Definition.IWithStorageTypeAndKey" Usage="iExportTo.ExportTo storageUri" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; Microsoft::Azure::Management::Sql::Fluent::SqlDatabaseExportRequest::Definition::IWithStorageTypeAndKey ^ ExportTo(System::String ^ storageUri);" />
-      <MemberSignature Language="C++ CX" Value="public:&#xA; Microsoft::Azure::Management::Sql::Fluent::SqlDatabaseExportRequest::Definition::IWithStorageTypeAndKey ^ ExportTo(Platform::String ^ storageUri);" />
-      <MemberSignature Language="C++ WINRT" Value="Microsoft::Azure::Management::Sql::Fluent::SqlDatabaseExportRequest::Definition::IWithStorageTypeAndKey ExportTo(std::wstring const &amp; storageUri);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Sql.Fluent</AssemblyName>
-        <AssemblyVersion>1.0.0.60</AssemblyVersion>
+        <AssemblyVersion>1.0.0.61</AssemblyVersion>
+        <AssemblyVersion>1.0.0.62</AssemblyVersion>
+        <AssemblyVersion>1.0.0.63</AssemblyVersion>
+        <AssemblyVersion>1.0.0.64</AssemblyVersion>
+        <AssemblyVersion>1.0.0.65</AssemblyVersion>
+        <AssemblyVersion>1.0.0.66</AssemblyVersion>
+        <AssemblyVersion>1.0.0.67</AssemblyVersion>
+        <AssemblyVersion>1.0.0.68</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Azure.Management.Sql.Fluent.SqlDatabaseExportRequest.Definition.IWithStorageTypeAndKey</ReturnType>
@@ -38,10 +48,11 @@
         <Parameter Name="storageUri" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="storageUri">To be added.</param>
+        <param name="storageUri">The storage URI to use.</param>
         <summary>To be added.</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
+        <return>Next definition stage.</return>
       </Docs>
     </Member>
     <Member MemberName="ExportTo">
@@ -50,13 +61,17 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Management.Sql.Fluent.SqlDatabaseExportRequest.Definition.IExportTo.ExportTo(Microsoft.Azure.Management.ResourceManager.Fluent.Core.ResourceActions.ICreatable{Microsoft.Azure.Management.Storage.Fluent.IStorageAccount},System.String,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Function ExportTo (storageAccountCreatable As ICreatable(Of IStorageAccount), containerName As String, fileName As String) As IWithAuthenticationTypeAndLoginPassword" />
       <MemberSignature Language="F#" Value="abstract member ExportTo : Microsoft.Azure.Management.ResourceManager.Fluent.Core.ResourceActions.ICreatable&lt;Microsoft.Azure.Management.Storage.Fluent.IStorageAccount&gt; * string * string -&gt; Microsoft.Azure.Management.Sql.Fluent.SqlDatabaseExportRequest.Definition.IWithAuthenticationTypeAndLoginPassword" Usage="iExportTo.ExportTo (storageAccountCreatable, containerName, fileName)" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; Microsoft::Azure::Management::Sql::Fluent::SqlDatabaseExportRequest::Definition::IWithAuthenticationTypeAndLoginPassword ^ ExportTo(Microsoft::Azure::Management::ResourceManager::Fluent::Core::ResourceActions::ICreatable&lt;Microsoft::Azure::Management::Storage::Fluent::IStorageAccount ^&gt; ^ storageAccountCreatable, System::String ^ containerName, System::String ^ fileName);" />
-      <MemberSignature Language="C++ CX" Value="public:&#xA; Microsoft::Azure::Management::Sql::Fluent::SqlDatabaseExportRequest::Definition::IWithAuthenticationTypeAndLoginPassword ^ ExportTo(Microsoft::Azure::Management::ResourceManager::Fluent::Core::ResourceActions::ICreatable&lt;Microsoft::Azure::Management::Storage::Fluent::IStorageAccount ^&gt; ^ storageAccountCreatable, Platform::String ^ containerName, Platform::String ^ fileName);" />
-      <MemberSignature Language="C++ WINRT" Value="Microsoft::Azure::Management::Sql::Fluent::SqlDatabaseExportRequest::Definition::IWithAuthenticationTypeAndLoginPassword ExportTo(Microsoft::Azure::Management::ResourceManager::Fluent::Core::ResourceActions::ICreatable&lt;Microsoft::Azure::Management::Storage::Fluent::IStorageAccount&gt; const &amp; storageAccountCreatable, std::wstring const &amp; containerName, std::wstring const &amp; fileName);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Sql.Fluent</AssemblyName>
-        <AssemblyVersion>1.0.0.60</AssemblyVersion>
+        <AssemblyVersion>1.0.0.61</AssemblyVersion>
+        <AssemblyVersion>1.0.0.62</AssemblyVersion>
+        <AssemblyVersion>1.0.0.63</AssemblyVersion>
+        <AssemblyVersion>1.0.0.64</AssemblyVersion>
+        <AssemblyVersion>1.0.0.65</AssemblyVersion>
+        <AssemblyVersion>1.0.0.66</AssemblyVersion>
+        <AssemblyVersion>1.0.0.67</AssemblyVersion>
+        <AssemblyVersion>1.0.0.68</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Azure.Management.Sql.Fluent.SqlDatabaseExportRequest.Definition.IWithAuthenticationTypeAndLoginPassword</ReturnType>
@@ -67,12 +82,13 @@
         <Parameter Name="fileName" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="storageAccountCreatable">To be added.</param>
-        <param name="containerName">To be added.</param>
-        <param name="fileName">To be added.</param>
+        <param name="storageAccountCreatable">A storage account to be created as part of this execution flow.</param>
+        <param name="containerName">The container name within the storage account to use.</param>
+        <param name="fileName">The exported database file name.</param>
         <summary>To be added.</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
+        <return>Next definition stage.</return>
       </Docs>
     </Member>
     <Member MemberName="ExportTo">
@@ -81,13 +97,17 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Management.Sql.Fluent.SqlDatabaseExportRequest.Definition.IExportTo.ExportTo(Microsoft.Azure.Management.Storage.Fluent.IStorageAccount,System.String,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Function ExportTo (storageAccount As IStorageAccount, containerName As String, fileName As String) As IWithAuthenticationTypeAndLoginPassword" />
       <MemberSignature Language="F#" Value="abstract member ExportTo : Microsoft.Azure.Management.Storage.Fluent.IStorageAccount * string * string -&gt; Microsoft.Azure.Management.Sql.Fluent.SqlDatabaseExportRequest.Definition.IWithAuthenticationTypeAndLoginPassword" Usage="iExportTo.ExportTo (storageAccount, containerName, fileName)" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; Microsoft::Azure::Management::Sql::Fluent::SqlDatabaseExportRequest::Definition::IWithAuthenticationTypeAndLoginPassword ^ ExportTo(Microsoft::Azure::Management::Storage::Fluent::IStorageAccount ^ storageAccount, System::String ^ containerName, System::String ^ fileName);" />
-      <MemberSignature Language="C++ CX" Value="public:&#xA; Microsoft::Azure::Management::Sql::Fluent::SqlDatabaseExportRequest::Definition::IWithAuthenticationTypeAndLoginPassword ^ ExportTo(Microsoft::Azure::Management::Storage::Fluent::IStorageAccount ^ storageAccount, Platform::String ^ containerName, Platform::String ^ fileName);" />
-      <MemberSignature Language="C++ WINRT" Value="Microsoft::Azure::Management::Sql::Fluent::SqlDatabaseExportRequest::Definition::IWithAuthenticationTypeAndLoginPassword ExportTo(Microsoft::Azure::Management::Storage::Fluent::IStorageAccount const &amp; storageAccount, std::wstring const &amp; containerName, std::wstring const &amp; fileName);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Sql.Fluent</AssemblyName>
-        <AssemblyVersion>1.0.0.60</AssemblyVersion>
+        <AssemblyVersion>1.0.0.61</AssemblyVersion>
+        <AssemblyVersion>1.0.0.62</AssemblyVersion>
+        <AssemblyVersion>1.0.0.63</AssemblyVersion>
+        <AssemblyVersion>1.0.0.64</AssemblyVersion>
+        <AssemblyVersion>1.0.0.65</AssemblyVersion>
+        <AssemblyVersion>1.0.0.66</AssemblyVersion>
+        <AssemblyVersion>1.0.0.67</AssemblyVersion>
+        <AssemblyVersion>1.0.0.68</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Azure.Management.Sql.Fluent.SqlDatabaseExportRequest.Definition.IWithAuthenticationTypeAndLoginPassword</ReturnType>
@@ -98,9 +118,9 @@
         <Parameter Name="fileName" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="storageAccount">To be added.</param>
-        <param name="containerName">To be added.</param>
-        <param name="fileName">To be added.</param>
+        <param name="storageAccount">An existing storage account to be used.</param>
+        <param name="containerName">The container name within the storage account to use.</param>
+        <param name="fileName">The exported database file name.</param>
         <summary>To be added.</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>

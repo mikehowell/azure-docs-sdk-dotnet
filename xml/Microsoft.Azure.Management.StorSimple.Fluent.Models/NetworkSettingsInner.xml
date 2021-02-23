@@ -1,11 +1,9 @@
-﻿<Type Name="NetworkSettingsInner" FullName="Microsoft.Azure.Management.StorSimple.Fluent.Models.NetworkSettingsInner">
+<Type Name="NetworkSettingsInner" FullName="Microsoft.Azure.Management.StorSimple.Fluent.Models.NetworkSettingsInner">
   <TypeSignature Language="C#" Value="public class NetworkSettingsInner : Microsoft.Azure.Management.StorSimple.Fluent.Models.BaseModel" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit NetworkSettingsInner extends Microsoft.Azure.Management.StorSimple.Fluent.Models.BaseModel" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Azure.Management.StorSimple.Fluent.Models.NetworkSettingsInner" />
   <TypeSignature Language="VB.NET" Value="Public Class NetworkSettingsInner&#xA;Inherits BaseModel" />
   <TypeSignature Language="F#" Value="type NetworkSettingsInner = class&#xA;    inherit BaseModel" />
-  <TypeSignature Language="C++ CLI" Value="public ref class NetworkSettingsInner : Microsoft::Azure::Management::StorSimple::Fluent::Models::BaseModel" />
-  <TypeSignature Language="C++ WINRT" Value="[Windows::Foundation::Metadata::WebHostHidden]&#xA;class NetworkSettingsInner : Microsoft::Azure::Management::StorSimple::Fluent::Models::BaseModel" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Azure.Management.StorSimple.Fluent</AssemblyName>
     <AssemblyVersion>1.0.0.60</AssemblyVersion>
@@ -16,7 +14,8 @@
   <Interfaces />
   <Attributes>
     <Attribute>
-      <AttributeName>Microsoft.Rest.Serialization.JsonTransformation</AttributeName>
+      <AttributeName Language="C#">[Microsoft.Rest.Serialization.JsonTransformation]</AttributeName>
+      <AttributeName Language="F#">[&lt;Microsoft.Rest.Serialization.JsonTransformation&gt;]</AttributeName>
     </Attribute>
   </Attributes>
   <Docs>
@@ -29,9 +28,6 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Management.StorSimple.Fluent.Models.NetworkSettingsInner.#ctor" />
       <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; NetworkSettingsInner();" />
-      <MemberSignature Language="C++ CX" Value="public:&#xA; NetworkSettingsInner();" />
-      <MemberSignature Language="C++ WINRT" Value=" NetworkSettingsInner();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.StorSimple.Fluent</AssemblyName>
@@ -44,9 +40,10 @@
       </Docs>
     </Member>
     <Member MemberName=".ctor">
-      <MemberSignature Language="C#" Value="public NetworkSettingsInner (Microsoft.Azure.Management.StorSimple.Fluent.Models.DNSSettings dnsSettings, Microsoft.Azure.Management.StorSimple.Fluent.Models.NetworkAdapterList networkAdapters, Microsoft.Azure.Management.StorSimple.Fluent.Models.WebproxySettings webproxySettings, string id = null, string name = null, string type = null, Nullable&lt;Microsoft.Azure.Management.StorSimple.Fluent.Models.Kind&gt; kind = null);" />
+      <MemberSignature Language="C#" Value="public NetworkSettingsInner (Microsoft.Azure.Management.StorSimple.Fluent.Models.DNSSettings dnsSettings, Microsoft.Azure.Management.StorSimple.Fluent.Models.NetworkAdapterList networkAdapters, Microsoft.Azure.Management.StorSimple.Fluent.Models.WebproxySettings webproxySettings, string id = default, string name = default, string type = default, Microsoft.Azure.Management.StorSimple.Fluent.Models.Kind? kind = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class Microsoft.Azure.Management.StorSimple.Fluent.Models.DNSSettings dnsSettings, class Microsoft.Azure.Management.StorSimple.Fluent.Models.NetworkAdapterList networkAdapters, class Microsoft.Azure.Management.StorSimple.Fluent.Models.WebproxySettings webproxySettings, string id, string name, string type, valuetype System.Nullable`1&lt;valuetype Microsoft.Azure.Management.StorSimple.Fluent.Models.Kind&gt; kind) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Management.StorSimple.Fluent.Models.NetworkSettingsInner.#ctor(Microsoft.Azure.Management.StorSimple.Fluent.Models.DNSSettings,Microsoft.Azure.Management.StorSimple.Fluent.Models.NetworkAdapterList,Microsoft.Azure.Management.StorSimple.Fluent.Models.WebproxySettings,System.String,System.String,System.String,System.Nullable{Microsoft.Azure.Management.StorSimple.Fluent.Models.Kind})" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (dnsSettings As DNSSettings, networkAdapters As NetworkAdapterList, webproxySettings As WebproxySettings, Optional id As String = Nothing, Optional name As String = Nothing, Optional type As String = Nothing, Optional kind As Nullable(Of Kind) = Nothing)" />
       <MemberSignature Language="F#" Value="new Microsoft.Azure.Management.StorSimple.Fluent.Models.NetworkSettingsInner : Microsoft.Azure.Management.StorSimple.Fluent.Models.DNSSettings * Microsoft.Azure.Management.StorSimple.Fluent.Models.NetworkAdapterList * Microsoft.Azure.Management.StorSimple.Fluent.Models.WebproxySettings * string * string * string * Nullable&lt;Microsoft.Azure.Management.StorSimple.Fluent.Models.Kind&gt; -&gt; Microsoft.Azure.Management.StorSimple.Fluent.Models.NetworkSettingsInner" Usage="new Microsoft.Azure.Management.StorSimple.Fluent.Models.NetworkSettingsInner (dnsSettings, networkAdapters, webproxySettings, id, name, type, kind)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
@@ -80,7 +77,6 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Management.StorSimple.Fluent.Models.NetworkSettingsInner.DnsSettings" />
       <MemberSignature Language="VB.NET" Value="Public Property DnsSettings As DNSSettings" />
       <MemberSignature Language="F#" Value="member this.DnsSettings : Microsoft.Azure.Management.StorSimple.Fluent.Models.DNSSettings with get, set" Usage="Microsoft.Azure.Management.StorSimple.Fluent.Models.NetworkSettingsInner.DnsSettings" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Azure::Management::StorSimple::Fluent::Models::DNSSettings ^ DnsSettings { Microsoft::Azure::Management::StorSimple::Fluent::Models::DNSSettings ^ get(); void set(Microsoft::Azure::Management::StorSimple::Fluent::Models::DNSSettings ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.StorSimple.Fluent</AssemblyName>
@@ -88,7 +84,8 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="properties.dnsSettings")</AttributeName>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty(PropertyName="properties.dnsSettings")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty(PropertyName="properties.dnsSettings")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -106,7 +103,6 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Management.StorSimple.Fluent.Models.NetworkSettingsInner.NetworkAdapters" />
       <MemberSignature Language="VB.NET" Value="Public Property NetworkAdapters As NetworkAdapterList" />
       <MemberSignature Language="F#" Value="member this.NetworkAdapters : Microsoft.Azure.Management.StorSimple.Fluent.Models.NetworkAdapterList with get, set" Usage="Microsoft.Azure.Management.StorSimple.Fluent.Models.NetworkSettingsInner.NetworkAdapters" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Azure::Management::StorSimple::Fluent::Models::NetworkAdapterList ^ NetworkAdapters { Microsoft::Azure::Management::StorSimple::Fluent::Models::NetworkAdapterList ^ get(); void set(Microsoft::Azure::Management::StorSimple::Fluent::Models::NetworkAdapterList ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.StorSimple.Fluent</AssemblyName>
@@ -114,7 +110,8 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="properties.networkAdapters")</AttributeName>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty(PropertyName="properties.networkAdapters")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty(PropertyName="properties.networkAdapters")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -132,9 +129,6 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Management.StorSimple.Fluent.Models.NetworkSettingsInner.Validate" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Sub Validate ()" />
       <MemberSignature Language="F#" Value="abstract member Validate : unit -&gt; unit&#xA;override this.Validate : unit -&gt; unit" Usage="networkSettingsInner.Validate " />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Validate();" />
-      <MemberSignature Language="C++ CX" Value="public:&#xA; virtual void Validate();" />
-      <MemberSignature Language="C++ WINRT" Value=" virtual void Validate();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.StorSimple.Fluent</AssemblyName>
@@ -155,7 +149,6 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Management.StorSimple.Fluent.Models.NetworkSettingsInner.WebproxySettings" />
       <MemberSignature Language="VB.NET" Value="Public Property WebproxySettings As WebproxySettings" />
       <MemberSignature Language="F#" Value="member this.WebproxySettings : Microsoft.Azure.Management.StorSimple.Fluent.Models.WebproxySettings with get, set" Usage="Microsoft.Azure.Management.StorSimple.Fluent.Models.NetworkSettingsInner.WebproxySettings" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Azure::Management::StorSimple::Fluent::Models::WebproxySettings ^ WebproxySettings { Microsoft::Azure::Management::StorSimple::Fluent::Models::WebproxySettings ^ get(); void set(Microsoft::Azure::Management::StorSimple::Fluent::Models::WebproxySettings ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.StorSimple.Fluent</AssemblyName>
@@ -163,7 +156,8 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="properties.webproxySettings")</AttributeName>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty(PropertyName="properties.webproxySettings")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty(PropertyName="properties.webproxySettings")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>

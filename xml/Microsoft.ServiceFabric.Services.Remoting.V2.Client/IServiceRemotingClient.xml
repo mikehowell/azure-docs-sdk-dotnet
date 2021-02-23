@@ -1,12 +1,9 @@
-﻿<Type Name="IServiceRemotingClient" FullName="Microsoft.ServiceFabric.Services.Remoting.V2.Client.IServiceRemotingClient">
+<Type Name="IServiceRemotingClient" FullName="Microsoft.ServiceFabric.Services.Remoting.V2.Client.IServiceRemotingClient">
   <TypeSignature Language="C#" Value="public interface IServiceRemotingClient : Microsoft.ServiceFabric.Services.Communication.Client.ICommunicationClient" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IServiceRemotingClient implements class Microsoft.ServiceFabric.Services.Communication.Client.ICommunicationClient" />
   <TypeSignature Language="DocId" Value="T:Microsoft.ServiceFabric.Services.Remoting.V2.Client.IServiceRemotingClient" />
   <TypeSignature Language="VB.NET" Value="Public Interface IServiceRemotingClient&#xA;Implements ICommunicationClient" />
   <TypeSignature Language="F#" Value="type IServiceRemotingClient = interface&#xA;    interface ICommunicationClient" />
-  <TypeSignature Language="C++ CLI" Value="public interface class IServiceRemotingClient : Microsoft::ServiceFabric::Services::Communication::Client::ICommunicationClient" />
-  <TypeSignature Language="C++ CX" Value="public interface class IServiceRemotingClient : Microsoft::ServiceFabric::Services::Communication::Client::ICommunicationClient" />
-  <TypeSignature Language="C++ WINRT" Value="__interface IServiceRemotingClient : Microsoft::ServiceFabric::Services::Communication::Client::ICommunicationClient" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.ServiceFabric.Services.Remoting</AssemblyName>
     <AssemblyVersion>6.0.0.0</AssemblyVersion>
@@ -17,7 +14,9 @@
     </Interface>
   </Interfaces>
   <Docs>
-    <summary />
+    <summary>
+            Defines the interface for service remoting client.
+            </summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -27,7 +26,6 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.ServiceFabric.Services.Remoting.V2.Client.IServiceRemotingClient.RequestResponseAsync(Microsoft.ServiceFabric.Services.Remoting.V2.IServiceRemotingRequestMessage)" />
       <MemberSignature Language="VB.NET" Value="Public Function RequestResponseAsync (requestRequestMessage As IServiceRemotingRequestMessage) As Task(Of IServiceRemotingResponseMessage)" />
       <MemberSignature Language="F#" Value="abstract member RequestResponseAsync : Microsoft.ServiceFabric.Services.Remoting.V2.IServiceRemotingRequestMessage -&gt; System.Threading.Tasks.Task&lt;Microsoft.ServiceFabric.Services.Remoting.V2.IServiceRemotingResponseMessage&gt;" Usage="iServiceRemotingClient.RequestResponseAsync requestRequestMessage" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Threading::Tasks::Task&lt;Microsoft::ServiceFabric::Services::Remoting::V2::IServiceRemotingResponseMessage ^&gt; ^ RequestResponseAsync(Microsoft::ServiceFabric::Services::Remoting::V2::IServiceRemotingRequestMessage ^ requestRequestMessage);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.ServiceFabric.Services.Remoting</AssemblyName>
@@ -40,9 +38,12 @@
         <Parameter Name="requestRequestMessage" Type="Microsoft.ServiceFabric.Services.Remoting.V2.IServiceRemotingRequestMessage" />
       </Parameters>
       <Docs>
-        <param name="requestRequestMessage"></param>
-        <summary />
-        <returns />
+        <param name="requestRequestMessage">The request message.</param>
+        <summary>
+            Send a remoting request to the service and gets a response back.
+            </summary>
+        <returns>A <see cref="T:System.Threading.Tasks.Task" /> that represents the asynchronous operation for remote method call.
+            The result of the task contains the response for the request.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -52,9 +53,6 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.ServiceFabric.Services.Remoting.V2.Client.IServiceRemotingClient.SendOneWay(Microsoft.ServiceFabric.Services.Remoting.V2.IServiceRemotingRequestMessage)" />
       <MemberSignature Language="VB.NET" Value="Public Sub SendOneWay (requestMessage As IServiceRemotingRequestMessage)" />
       <MemberSignature Language="F#" Value="abstract member SendOneWay : Microsoft.ServiceFabric.Services.Remoting.V2.IServiceRemotingRequestMessage -&gt; unit" Usage="iServiceRemotingClient.SendOneWay requestMessage" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; void SendOneWay(Microsoft::ServiceFabric::Services::Remoting::V2::IServiceRemotingRequestMessage ^ requestMessage);" />
-      <MemberSignature Language="C++ CX" Value="public:&#xA; void SendOneWay(Microsoft::ServiceFabric::Services::Remoting::V2::IServiceRemotingRequestMessage ^ requestMessage);" />
-      <MemberSignature Language="C++ WINRT" Value="void SendOneWay(Microsoft::ServiceFabric::Services::Remoting::V2::IServiceRemotingRequestMessage const &amp; requestMessage);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.ServiceFabric.Services.Remoting</AssemblyName>
@@ -67,8 +65,10 @@
         <Parameter Name="requestMessage" Type="Microsoft.ServiceFabric.Services.Remoting.V2.IServiceRemotingRequestMessage" />
       </Parameters>
       <Docs>
-        <param name="requestMessage"></param>
-        <summary />
+        <param name="requestMessage">The one-way message.</param>
+        <summary>
+            Sends a one-way message to the service.
+            </summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

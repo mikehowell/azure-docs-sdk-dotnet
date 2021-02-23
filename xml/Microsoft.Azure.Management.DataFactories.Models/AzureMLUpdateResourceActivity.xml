@@ -1,11 +1,9 @@
-﻿<Type Name="AzureMLUpdateResourceActivity" FullName="Microsoft.Azure.Management.DataFactories.Models.AzureMLUpdateResourceActivity">
+<Type Name="AzureMLUpdateResourceActivity" FullName="Microsoft.Azure.Management.DataFactories.Models.AzureMLUpdateResourceActivity">
   <TypeSignature Language="C#" Value="public class AzureMLUpdateResourceActivity : Microsoft.Azure.Management.DataFactories.Models.ActivityTypeProperties" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit AzureMLUpdateResourceActivity extends Microsoft.Azure.Management.DataFactories.Models.ActivityTypeProperties" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Azure.Management.DataFactories.Models.AzureMLUpdateResourceActivity" />
   <TypeSignature Language="VB.NET" Value="Public Class AzureMLUpdateResourceActivity&#xA;Inherits ActivityTypeProperties" />
   <TypeSignature Language="F#" Value="type AzureMLUpdateResourceActivity = class&#xA;    inherit ActivityTypeProperties" />
-  <TypeSignature Language="C++ CLI" Value="public ref class AzureMLUpdateResourceActivity : Microsoft::Azure::Management::DataFactories::Models::ActivityTypeProperties" />
-  <TypeSignature Language="C++ WINRT" Value="[Windows::Foundation::Metadata::WebHostHidden]&#xA;class AzureMLUpdateResourceActivity : Microsoft::Azure::Management::DataFactories::Models::ActivityTypeProperties" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Azure.Management.DataFactories</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -16,19 +14,12 @@
   <Interfaces />
   <Attributes>
     <Attribute>
-      <AttributeName>Microsoft.Azure.Management.DataFactories.Models.AdfTypeName("AzureMLUpdateResource")</AttributeName>
+      <AttributeName Language="C#">[Microsoft.Azure.Management.DataFactories.Models.AdfTypeName("AzureMLUpdateResource")]</AttributeName>
+      <AttributeName Language="F#">[&lt;Microsoft.Azure.Management.DataFactories.Models.AdfTypeName("AzureMLUpdateResource")&gt;]</AttributeName>
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>
-            ADF Activity for updating the Trained Model module of an Azure ML Web service endpoint with a new trained model. See 
-            https://azure.microsoft.com/documentation/articles/machine-learning-retrain-models-programmatically/
-            for information on how to create retrainable Azure Machine Learning services. You can create an ADF Pipeline with 
-            an <see cref="T:Microsoft.Azure.Management.DataFactories.Models.AzureMLBatchExecutionActivity" /> to perform retraining and produce a new iLearner in an output Dataset, then use that
-            Dataset as input to this Activity to patch a batch scoring endpoint.
-            
-            The Azure ML Linked Service for this activity must contain the management URL and API key.
-            </summary>
+    <summary>To be added.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -37,9 +28,6 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Management.DataFactories.Models.AzureMLUpdateResourceActivity.#ctor" />
       <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; AzureMLUpdateResourceActivity();" />
-      <MemberSignature Language="C++ CX" Value="public:&#xA; AzureMLUpdateResourceActivity();" />
-      <MemberSignature Language="C++ WINRT" Value=" AzureMLUpdateResourceActivity();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.DataFactories</AssemblyName>
@@ -57,9 +45,6 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Management.DataFactories.Models.AzureMLUpdateResourceActivity.#ctor(System.String,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (trainedModelDatasetName As String, trainedModelName As String)" />
       <MemberSignature Language="F#" Value="new Microsoft.Azure.Management.DataFactories.Models.AzureMLUpdateResourceActivity : string * string -&gt; Microsoft.Azure.Management.DataFactories.Models.AzureMLUpdateResourceActivity" Usage="new Microsoft.Azure.Management.DataFactories.Models.AzureMLUpdateResourceActivity (trainedModelDatasetName, trainedModelName)" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; AzureMLUpdateResourceActivity(System::String ^ trainedModelDatasetName, System::String ^ trainedModelName);" />
-      <MemberSignature Language="C++ CX" Value="public:&#xA; AzureMLUpdateResourceActivity(Platform::String ^ trainedModelDatasetName, Platform::String ^ trainedModelName);" />
-      <MemberSignature Language="C++ WINRT" Value=" AzureMLUpdateResourceActivity(std::wstring const &amp; trainedModelDatasetName, std::wstring const &amp; trainedModelName);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.DataFactories</AssemblyName>
@@ -82,8 +67,6 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Management.DataFactories.Models.AzureMLUpdateResourceActivity.TrainedModelDatasetName" />
       <MemberSignature Language="VB.NET" Value="Public Property TrainedModelDatasetName As String" />
       <MemberSignature Language="F#" Value="member this.TrainedModelDatasetName : string with get, set" Usage="Microsoft.Azure.Management.DataFactories.Models.AzureMLUpdateResourceActivity.TrainedModelDatasetName" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ TrainedModelDatasetName { System::String ^ get(); void set(System::String ^ value); };" />
-      <MemberSignature Language="C++ CX" Value="public:&#xA; property Platform::String ^ TrainedModelDatasetName { Platform::String ^ get(); void set(Platform::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.DataFactories</AssemblyName>
@@ -91,17 +74,15 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Microsoft.Azure.Management.DataFactories.Models.AdfRequired</AttributeName>
+          <AttributeName Language="C#">[Microsoft.Azure.Management.DataFactories.Models.AdfRequired]</AttributeName>
+          <AttributeName Language="F#">[&lt;Microsoft.Azure.Management.DataFactories.Models.AdfRequired&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-            Required. Name of ADF Blob Dataset representing the iLearner file that will be uploaded by the update operation.
-            The Dataset must be included in this Activity's Pipeline Inputs.
-            </summary>
+        <summary>To be added.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -112,8 +93,6 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Management.DataFactories.Models.AzureMLUpdateResourceActivity.TrainedModelName" />
       <MemberSignature Language="VB.NET" Value="Public Property TrainedModelName As String" />
       <MemberSignature Language="F#" Value="member this.TrainedModelName : string with get, set" Usage="Microsoft.Azure.Management.DataFactories.Models.AzureMLUpdateResourceActivity.TrainedModelName" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ TrainedModelName { System::String ^ get(); void set(System::String ^ value); };" />
-      <MemberSignature Language="C++ CX" Value="public:&#xA; property Platform::String ^ TrainedModelName { Platform::String ^ get(); void set(Platform::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.DataFactories</AssemblyName>
@@ -121,16 +100,15 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Microsoft.Azure.Management.DataFactories.Models.AdfRequired</AttributeName>
+          <AttributeName Language="C#">[Microsoft.Azure.Management.DataFactories.Models.AdfRequired]</AttributeName>
+          <AttributeName Language="F#">[&lt;Microsoft.Azure.Management.DataFactories.Models.AdfRequired&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-            Required. Name of the Trained Model module in the experiment graph to be updated.
-            </summary>
+        <summary>To be added.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>

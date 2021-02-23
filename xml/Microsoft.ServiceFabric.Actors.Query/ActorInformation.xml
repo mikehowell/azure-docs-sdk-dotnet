@@ -1,12 +1,9 @@
-﻿<Type Name="ActorInformation" FullName="Microsoft.ServiceFabric.Actors.Query.ActorInformation">
+<Type Name="ActorInformation" FullName="Microsoft.ServiceFabric.Actors.Query.ActorInformation">
   <TypeSignature Language="C#" Value="public sealed class ActorInformation" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable sealed beforefieldinit ActorInformation extends System.Object" />
   <TypeSignature Language="DocId" Value="T:Microsoft.ServiceFabric.Actors.Query.ActorInformation" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class ActorInformation" />
   <TypeSignature Language="F#" Value="type ActorInformation = class" />
-  <TypeSignature Language="C++ CLI" Value="public ref class ActorInformation sealed" />
-  <TypeSignature Language="C++ CX" Value="public ref class ActorInformation sealed" />
-  <TypeSignature Language="C++ WINRT" Value="class ActorInformation sealed" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.ServiceFabric.Actors</AssemblyName>
     <AssemblyVersion>6.0.0.0</AssemblyVersion>
@@ -17,12 +14,17 @@
   <Interfaces />
   <Attributes>
     <Attribute>
-      <AttributeName>System.Runtime.Serialization.DataContract(Name="ActorInformation", Namespace="urn:actors")</AttributeName>
+      <AttributeName Language="C#">[System.Runtime.Serialization.DataContract(Name="ActorInformation", Namespace="urn:actors")]</AttributeName>
+      <AttributeName Language="F#">[&lt;System.Runtime.Serialization.DataContract(Name="ActorInformation", Namespace="urn:actors")&gt;]</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName Language="C#">[System.Serializable]</AttributeName>
+      <AttributeName Language="F#">[&lt;System.Serializable&gt;]</AttributeName>
     </Attribute>
   </Attributes>
   <Docs>
     <summary>
-            Represents the information about an actor returned by Actor Query method call. 
+            Represents the information about an actor returned by Actor Query method call.
             </summary>
     <remarks>To be added.</remarks>
   </Docs>
@@ -31,8 +33,8 @@
       <MemberSignature Language="C#" Value="public ActorInformation (Microsoft.ServiceFabric.Actors.ActorId actorId, bool isActive);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class Microsoft.ServiceFabric.Actors.ActorId actorId, bool isActive) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.ServiceFabric.Actors.Query.ActorInformation.#ctor(Microsoft.ServiceFabric.Actors.ActorId,System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (actorId As ActorId, isActive As Boolean)" />
       <MemberSignature Language="F#" Value="new Microsoft.ServiceFabric.Actors.Query.ActorInformation : Microsoft.ServiceFabric.Actors.ActorId * bool -&gt; Microsoft.ServiceFabric.Actors.Query.ActorInformation" Usage="new Microsoft.ServiceFabric.Actors.Query.ActorInformation (actorId, isActive)" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; ActorInformation(Microsoft::ServiceFabric::Actors::ActorId ^ actorId, bool isActive);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.ServiceFabric.Actors</AssemblyName>
@@ -46,7 +48,7 @@
         <param name="actorId">The ID of the actor.</param>
         <param name="isActive">Indicates whether the Actor is active or inactive.</param>
         <summary>
-            Initializes a new instance of the ActorInformation class.
+            Initializes a new instance of the <see cref="T:Microsoft.ServiceFabric.Actors.Query.ActorInformation" /> class.
             </summary>
         <remarks>To be added.</remarks>
       </Docs>
@@ -57,7 +59,6 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.ServiceFabric.Actors.Query.ActorInformation.ActorId" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ActorId As ActorId" />
       <MemberSignature Language="F#" Value="member this.ActorId : Microsoft.ServiceFabric.Actors.ActorId" Usage="Microsoft.ServiceFabric.Actors.Query.ActorInformation.ActorId" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::ServiceFabric::Actors::ActorId ^ ActorId { Microsoft::ServiceFabric::Actors::ActorId ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.ServiceFabric.Actors</AssemblyName>
@@ -65,7 +66,8 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>System.Runtime.Serialization.DataMember(IsRequired=true, Name="ActorId", Order=0)</AttributeName>
+          <AttributeName Language="C#">[System.Runtime.Serialization.DataMember(IsRequired=true, Name="ActorId", Order=0)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Runtime.Serialization.DataMember(IsRequired=true, Name="ActorId", Order=0)&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -85,8 +87,6 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.ServiceFabric.Actors.Query.ActorInformation.IsActive" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsActive As Boolean" />
       <MemberSignature Language="F#" Value="member this.IsActive : bool" Usage="Microsoft.ServiceFabric.Actors.Query.ActorInformation.IsActive" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsActive { bool get(); };" />
-      <MemberSignature Language="C++ CX" Value="public:&#xA; property bool IsActive { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.ServiceFabric.Actors</AssemblyName>
@@ -94,7 +94,8 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>System.Runtime.Serialization.DataMember(IsRequired=true, Name="IsActive", Order=1)</AttributeName>
+          <AttributeName Language="C#">[System.Runtime.Serialization.DataMember(IsRequired=true, Name="IsActive", Order=1)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Runtime.Serialization.DataMember(IsRequired=true, Name="IsActive", Order=1)&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>

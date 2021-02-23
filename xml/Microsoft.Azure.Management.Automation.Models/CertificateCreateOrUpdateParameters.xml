@@ -1,15 +1,12 @@
-﻿<Type Name="CertificateCreateOrUpdateParameters" FullName="Microsoft.Azure.Management.Automation.Models.CertificateCreateOrUpdateParameters">
+<Type Name="CertificateCreateOrUpdateParameters" FullName="Microsoft.Azure.Management.Automation.Models.CertificateCreateOrUpdateParameters">
   <TypeSignature Language="C#" Value="public class CertificateCreateOrUpdateParameters" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit CertificateCreateOrUpdateParameters extends System.Object" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Azure.Management.Automation.Models.CertificateCreateOrUpdateParameters" />
   <TypeSignature Language="VB.NET" Value="Public Class CertificateCreateOrUpdateParameters" />
   <TypeSignature Language="F#" Value="type CertificateCreateOrUpdateParameters = class" />
-  <TypeSignature Language="C++ CLI" Value="public ref class CertificateCreateOrUpdateParameters" />
-  <TypeSignature Language="C++ WINRT" Value="[Windows::Foundation::Metadata::WebHostHidden]&#xA;class CertificateCreateOrUpdateParameters" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Azure.Management.Automation</AssemblyName>
     <AssemblyVersion>2.0.0.0</AssemblyVersion>
-    <AssemblyVersion>3.0.0.0</AssemblyVersion>
     <AssemblyVersion>3.0.1.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -17,8 +14,9 @@
   </Base>
   <Interfaces />
   <Attributes>
-    <Attribute>
-      <AttributeName>Microsoft.Rest.Serialization.JsonTransformation</AttributeName>
+    <Attribute FrameworkAlternate="azure-dotnet-preview">
+      <AttributeName Language="C#">[Microsoft.Rest.Serialization.JsonTransformation]</AttributeName>
+      <AttributeName Language="F#">[&lt;Microsoft.Rest.Serialization.JsonTransformation&gt;]</AttributeName>
     </Attribute>
   </Attributes>
   <Docs>
@@ -34,14 +32,10 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Management.Automation.Models.CertificateCreateOrUpdateParameters.#ctor" />
       <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; CertificateCreateOrUpdateParameters();" />
-      <MemberSignature Language="C++ CX" Value="public:&#xA; CertificateCreateOrUpdateParameters();" />
-      <MemberSignature Language="C++ WINRT" Value=" CertificateCreateOrUpdateParameters();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Automation</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>3.0.1.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
@@ -54,23 +48,44 @@
       </Docs>
     </Member>
     <Member MemberName=".ctor">
-      <MemberSignature Language="C#" Value="public CertificateCreateOrUpdateParameters (string name, string base64Value, string description = null, string thumbprint = null, Nullable&lt;bool&gt; isExportable = null);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string name, string base64Value, string description, string thumbprint, valuetype System.Nullable`1&lt;bool&gt; isExportable) cil managed" />
-      <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Management.Automation.Models.CertificateCreateOrUpdateParameters.#ctor(System.String,System.String,System.String,System.String,System.Nullable{System.Boolean})" />
-      <MemberSignature Language="VB.NET" Value="Public Sub New (name As String, base64Value As String, Optional description As String = null, Optional thumbprint As String = null, Optional isExportable As Nullable(Of Boolean) = null)" />
-      <MemberSignature Language="F#" Value="new Microsoft.Azure.Management.Automation.Models.CertificateCreateOrUpdateParameters : string * string * string * string * Nullable&lt;bool&gt; -&gt; Microsoft.Azure.Management.Automation.Models.CertificateCreateOrUpdateParameters" Usage="new Microsoft.Azure.Management.Automation.Models.CertificateCreateOrUpdateParameters (name, base64Value, description, thumbprint, isExportable)" />
+      <MemberSignature Language="C#" Value="public CertificateCreateOrUpdateParameters (string name, Microsoft.Azure.Management.Automation.Models.CertificateCreateOrUpdateProperties properties);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string name, class Microsoft.Azure.Management.Automation.Models.CertificateCreateOrUpdateProperties properties) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Management.Automation.Models.CertificateCreateOrUpdateParameters.#ctor(System.String,Microsoft.Azure.Management.Automation.Models.CertificateCreateOrUpdateProperties)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (name As String, properties As CertificateCreateOrUpdateProperties)" />
+      <MemberSignature Language="F#" Value="new Microsoft.Azure.Management.Automation.Models.CertificateCreateOrUpdateParameters : string * Microsoft.Azure.Management.Automation.Models.CertificateCreateOrUpdateProperties -&gt; Microsoft.Azure.Management.Automation.Models.CertificateCreateOrUpdateParameters" Usage="new Microsoft.Azure.Management.Automation.Models.CertificateCreateOrUpdateParameters (name, properties)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Automation</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="name" Type="System.String" Index="0" FrameworkAlternate="azure-dotnet" />
+        <Parameter Name="properties" Type="Microsoft.Azure.Management.Automation.Models.CertificateCreateOrUpdateProperties" Index="1" FrameworkAlternate="azure-dotnet" />
+      </Parameters>
+      <Docs>
+        <param name="name">To be added.</param>
+        <param name="properties">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public CertificateCreateOrUpdateParameters (string name, string base64Value, string description = default, string thumbprint = default, bool isExportable = false);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string name, string base64Value, string description, string thumbprint, bool isExportable) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Management.Automation.Models.CertificateCreateOrUpdateParameters.#ctor(System.String,System.String,System.String,System.String,System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (name As String, base64Value As String, Optional description As String = Nothing, Optional thumbprint As String = Nothing, Optional isExportable As Boolean = false)" />
+      <MemberSignature Language="F#" Value="new Microsoft.Azure.Management.Automation.Models.CertificateCreateOrUpdateParameters : string * string * string * string * bool -&gt; Microsoft.Azure.Management.Automation.Models.CertificateCreateOrUpdateParameters" Usage="new Microsoft.Azure.Management.Automation.Models.CertificateCreateOrUpdateParameters (name, base64Value, description, thumbprint, isExportable)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Azure.Management.Automation</AssemblyName>
         <AssemblyVersion>3.0.1.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
-        <Parameter Name="name" Type="System.String" />
-        <Parameter Name="base64Value" Type="System.String" />
-        <Parameter Name="description" Type="System.String" />
-        <Parameter Name="thumbprint" Type="System.String" />
-        <Parameter Name="isExportable" Type="System.Nullable&lt;System.Boolean&gt;" />
+        <Parameter Name="name" Type="System.String" Index="0" FrameworkAlternate="azure-dotnet-preview" />
+        <Parameter Name="base64Value" Type="System.String" Index="1" FrameworkAlternate="azure-dotnet-preview" />
+        <Parameter Name="description" Type="System.String" Index="2" FrameworkAlternate="azure-dotnet-preview" />
+        <Parameter Name="thumbprint" Type="System.String" Index="3" FrameworkAlternate="azure-dotnet-preview" />
+        <Parameter Name="isExportable" Type="System.Boolean" Index="4" FrameworkAlternate="azure-dotnet-preview" />
       </Parameters>
       <Docs>
         <param name="name">Gets or sets the name of the
@@ -96,17 +111,15 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Management.Automation.Models.CertificateCreateOrUpdateParameters.Base64Value" />
       <MemberSignature Language="VB.NET" Value="Public Property Base64Value As String" />
       <MemberSignature Language="F#" Value="member this.Base64Value : string with get, set" Usage="Microsoft.Azure.Management.Automation.Models.CertificateCreateOrUpdateParameters.Base64Value" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Base64Value { System::String ^ get(); void set(System::String ^ value); };" />
-      <MemberSignature Language="C++ CX" Value="public:&#xA; property Platform::String ^ Base64Value { Platform::String ^ get(); void set(Platform::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Automation</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>3.0.1.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="properties.base64Value")</AttributeName>
+        <Attribute FrameworkAlternate="azure-dotnet-preview">
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty(PropertyName="properties.base64Value")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty(PropertyName="properties.base64Value")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -126,17 +139,15 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Management.Automation.Models.CertificateCreateOrUpdateParameters.Description" />
       <MemberSignature Language="VB.NET" Value="Public Property Description As String" />
       <MemberSignature Language="F#" Value="member this.Description : string with get, set" Usage="Microsoft.Azure.Management.Automation.Models.CertificateCreateOrUpdateParameters.Description" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Description { System::String ^ get(); void set(System::String ^ value); };" />
-      <MemberSignature Language="C++ CX" Value="public:&#xA; property Platform::String ^ Description { Platform::String ^ get(); void set(Platform::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Automation</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>3.0.1.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="properties.description")</AttributeName>
+        <Attribute FrameworkAlternate="azure-dotnet-preview">
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty(PropertyName="properties.description")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty(PropertyName="properties.description")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -151,25 +162,24 @@
       </Docs>
     </Member>
     <Member MemberName="IsExportable">
-      <MemberSignature Language="C#" Value="public Nullable&lt;bool&gt; IsExportable { get; set; }" />
-      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;bool&gt; IsExportable" />
+      <MemberSignature Language="C#" Value="public bool IsExportable { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool IsExportable" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Management.Automation.Models.CertificateCreateOrUpdateParameters.IsExportable" />
-      <MemberSignature Language="VB.NET" Value="Public Property IsExportable As Nullable(Of Boolean)" />
-      <MemberSignature Language="F#" Value="member this.IsExportable : Nullable&lt;bool&gt; with get, set" Usage="Microsoft.Azure.Management.Automation.Models.CertificateCreateOrUpdateParameters.IsExportable" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Nullable&lt;bool&gt; IsExportable { Nullable&lt;bool&gt; get(); void set(Nullable&lt;bool&gt; value); };" />
+      <MemberSignature Language="VB.NET" Value="Public Property IsExportable As Boolean" />
+      <MemberSignature Language="F#" Value="member this.IsExportable : bool with get, set" Usage="Microsoft.Azure.Management.Automation.Models.CertificateCreateOrUpdateParameters.IsExportable" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Automation</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>3.0.1.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="properties.isExportable")</AttributeName>
+        <Attribute FrameworkAlternate="azure-dotnet-preview">
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty(PropertyName="properties.isExportable")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty(PropertyName="properties.isExportable")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
-        <ReturnType>System.Nullable&lt;System.Boolean&gt;</ReturnType>
+        <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
         <summary>
@@ -185,18 +195,16 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Management.Automation.Models.CertificateCreateOrUpdateParameters.Name" />
       <MemberSignature Language="VB.NET" Value="Public Property Name As String" />
       <MemberSignature Language="F#" Value="member this.Name : string with get, set" Usage="Microsoft.Azure.Management.Automation.Models.CertificateCreateOrUpdateParameters.Name" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Name { System::String ^ get(); void set(System::String ^ value); };" />
-      <MemberSignature Language="C++ CX" Value="public:&#xA; property Platform::String ^ Name { Platform::String ^ get(); void set(Platform::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Automation</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>3.0.1.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="name")</AttributeName>
+        <Attribute FrameworkAlternate="azure-dotnet-preview">
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty(PropertyName="name")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty(PropertyName="name")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -210,23 +218,41 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <Member MemberName="Properties">
+      <MemberSignature Language="C#" Value="public Microsoft.Azure.Management.Automation.Models.CertificateCreateOrUpdateProperties Properties { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Azure.Management.Automation.Models.CertificateCreateOrUpdateProperties Properties" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Management.Automation.Models.CertificateCreateOrUpdateParameters.Properties" />
+      <MemberSignature Language="VB.NET" Value="Public Property Properties As CertificateCreateOrUpdateProperties" />
+      <MemberSignature Language="F#" Value="member this.Properties : Microsoft.Azure.Management.Automation.Models.CertificateCreateOrUpdateProperties with get, set" Usage="Microsoft.Azure.Management.Automation.Models.CertificateCreateOrUpdateParameters.Properties" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Azure.Management.Automation</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Azure.Management.Automation.Models.CertificateCreateOrUpdateProperties</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
     <Member MemberName="Thumbprint">
       <MemberSignature Language="C#" Value="public string Thumbprint { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Thumbprint" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Management.Automation.Models.CertificateCreateOrUpdateParameters.Thumbprint" />
       <MemberSignature Language="VB.NET" Value="Public Property Thumbprint As String" />
       <MemberSignature Language="F#" Value="member this.Thumbprint : string with get, set" Usage="Microsoft.Azure.Management.Automation.Models.CertificateCreateOrUpdateParameters.Thumbprint" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Thumbprint { System::String ^ get(); void set(System::String ^ value); };" />
-      <MemberSignature Language="C++ CX" Value="public:&#xA; property Platform::String ^ Thumbprint { Platform::String ^ get(); void set(Platform::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Automation</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>3.0.1.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="properties.thumbprint")</AttributeName>
+        <Attribute FrameworkAlternate="azure-dotnet-preview">
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty(PropertyName="properties.thumbprint")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty(PropertyName="properties.thumbprint")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -246,13 +272,9 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Management.Automation.Models.CertificateCreateOrUpdateParameters.Validate" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Sub Validate ()" />
       <MemberSignature Language="F#" Value="abstract member Validate : unit -&gt; unit&#xA;override this.Validate : unit -&gt; unit" Usage="certificateCreateOrUpdateParameters.Validate " />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Validate();" />
-      <MemberSignature Language="C++ CX" Value="public:&#xA; virtual void Validate();" />
-      <MemberSignature Language="C++ WINRT" Value=" virtual void Validate();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Automation</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>3.0.1.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>

@@ -1,24 +1,27 @@
-﻿<Type Name="Connection" FullName="Microsoft.Azure.Management.Automation.Models.Connection">
-  <TypeSignature Language="C#" Value="public class Connection" />
-  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit Connection extends System.Object" />
+<Type Name="Connection" FullName="Microsoft.Azure.Management.Automation.Models.Connection">
+  <TypeSignature Language="C#" Value="public class Connection" FrameworkAlternate="azure-dotnet" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit Connection extends System.Object" FrameworkAlternate="azure-dotnet" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Azure.Management.Automation.Models.Connection" />
-  <TypeSignature Language="VB.NET" Value="Public Class Connection" />
-  <TypeSignature Language="F#" Value="type Connection = class" />
-  <TypeSignature Language="C++ CLI" Value="public ref class Connection" />
-  <TypeSignature Language="C++ WINRT" Value="[Windows::Foundation::Metadata::WebHostHidden]&#xA;class Connection" />
+  <TypeSignature Language="VB.NET" Value="Public Class Connection" FrameworkAlternate="azure-dotnet" />
+  <TypeSignature Language="F#" Value="type Connection = class" FrameworkAlternate="azure-dotnet" />
+  <TypeSignature Language="C#" Value="public class Connection : Microsoft.Azure.Management.Automation.Models.ProxyResource" FrameworkAlternate="azure-dotnet-preview" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit Connection extends Microsoft.Azure.Management.Automation.Models.ProxyResource" FrameworkAlternate="azure-dotnet-preview" />
+  <TypeSignature Language="VB.NET" Value="Public Class Connection&#xA;Inherits ProxyResource" FrameworkAlternate="azure-dotnet-preview" />
+  <TypeSignature Language="F#" Value="type Connection = class&#xA;    inherit ProxyResource" FrameworkAlternate="azure-dotnet-preview" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Azure.Management.Automation</AssemblyName>
     <AssemblyVersion>2.0.0.0</AssemblyVersion>
-    <AssemblyVersion>3.0.0.0</AssemblyVersion>
     <AssemblyVersion>3.0.1.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
+    <BaseTypeName FrameworkAlternate="azure-dotnet-preview">Microsoft.Azure.Management.Automation.Models.ProxyResource</BaseTypeName>
   </Base>
   <Interfaces />
   <Attributes>
-    <Attribute>
-      <AttributeName>Microsoft.Rest.Serialization.JsonTransformation</AttributeName>
+    <Attribute FrameworkAlternate="azure-dotnet-preview">
+      <AttributeName Language="C#">[Microsoft.Rest.Serialization.JsonTransformation]</AttributeName>
+      <AttributeName Language="F#">[&lt;Microsoft.Rest.Serialization.JsonTransformation&gt;]</AttributeName>
     </Attribute>
   </Attributes>
   <Docs>
@@ -33,14 +36,10 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Management.Automation.Models.Connection.#ctor" />
       <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; Connection();" />
-      <MemberSignature Language="C++ CX" Value="public:&#xA; Connection();" />
-      <MemberSignature Language="C++ WINRT" Value=" Connection();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Automation</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>3.0.1.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
@@ -52,29 +51,31 @@
       </Docs>
     </Member>
     <Member MemberName=".ctor">
-      <MemberSignature Language="C#" Value="public Connection (string id = null, string name = null, Microsoft.Azure.Management.Automation.Models.ConnectionTypeAssociationProperty connectionType = null, System.Collections.Generic.IDictionary&lt;string,string&gt; fieldDefinitionValues = null, Nullable&lt;DateTime&gt; creationTime = null, Nullable&lt;DateTime&gt; lastModifiedTime = null, string description = null);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string id, string name, class Microsoft.Azure.Management.Automation.Models.ConnectionTypeAssociationProperty connectionType, class System.Collections.Generic.IDictionary`2&lt;string, string&gt; fieldDefinitionValues, valuetype System.Nullable`1&lt;valuetype System.DateTime&gt; creationTime, valuetype System.Nullable`1&lt;valuetype System.DateTime&gt; lastModifiedTime, string description) cil managed" />
-      <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Management.Automation.Models.Connection.#ctor(System.String,System.String,Microsoft.Azure.Management.Automation.Models.ConnectionTypeAssociationProperty,System.Collections.Generic.IDictionary{System.String,System.String},System.Nullable{System.DateTime},System.Nullable{System.DateTime},System.String)" />
-      <MemberSignature Language="VB.NET" Value="Public Sub New (Optional id As String = null, Optional name As String = null, Optional connectionType As ConnectionTypeAssociationProperty = null, Optional fieldDefinitionValues As IDictionary(Of String, String) = null, Optional creationTime As Nullable(Of DateTime) = null, Optional lastModifiedTime As Nullable(Of DateTime) = null, Optional description As String = null)" />
-      <MemberSignature Language="F#" Value="new Microsoft.Azure.Management.Automation.Models.Connection : string * string * Microsoft.Azure.Management.Automation.Models.ConnectionTypeAssociationProperty * System.Collections.Generic.IDictionary&lt;string, string&gt; * Nullable&lt;DateTime&gt; * Nullable&lt;DateTime&gt; * string -&gt; Microsoft.Azure.Management.Automation.Models.Connection" Usage="new Microsoft.Azure.Management.Automation.Models.Connection (id, name, connectionType, fieldDefinitionValues, creationTime, lastModifiedTime, description)" />
+      <MemberSignature Language="C#" Value="public Connection (string id = default, string name = default, string type = default, Microsoft.Azure.Management.Automation.Models.ConnectionTypeAssociationProperty connectionType = default, System.Collections.Generic.IDictionary&lt;string,string&gt; fieldDefinitionValues = default, DateTimeOffset creationTime = default, DateTimeOffset lastModifiedTime = default, string description = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string id, string name, string type, class Microsoft.Azure.Management.Automation.Models.ConnectionTypeAssociationProperty connectionType, class System.Collections.Generic.IDictionary`2&lt;string, string&gt; fieldDefinitionValues, valuetype System.DateTimeOffset creationTime, valuetype System.DateTimeOffset lastModifiedTime, string description) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Management.Automation.Models.Connection.#ctor(System.String,System.String,System.String,Microsoft.Azure.Management.Automation.Models.ConnectionTypeAssociationProperty,System.Collections.Generic.IDictionary{System.String,System.String},System.DateTimeOffset,System.DateTimeOffset,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (Optional id As String = Nothing, Optional name As String = Nothing, Optional type As String = Nothing, Optional connectionType As ConnectionTypeAssociationProperty = Nothing, Optional fieldDefinitionValues As IDictionary(Of String, String) = Nothing, Optional creationTime As DateTimeOffset = Nothing, Optional lastModifiedTime As DateTimeOffset = Nothing, Optional description As String = Nothing)" />
+      <MemberSignature Language="F#" Value="new Microsoft.Azure.Management.Automation.Models.Connection : string * string * string * Microsoft.Azure.Management.Automation.Models.ConnectionTypeAssociationProperty * System.Collections.Generic.IDictionary&lt;string, string&gt; * DateTimeOffset * DateTimeOffset * string -&gt; Microsoft.Azure.Management.Automation.Models.Connection" Usage="new Microsoft.Azure.Management.Automation.Models.Connection (id, name, type, connectionType, fieldDefinitionValues, creationTime, lastModifiedTime, description)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Automation</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>3.0.1.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
-        <Parameter Name="id" Type="System.String" />
-        <Parameter Name="name" Type="System.String" />
-        <Parameter Name="connectionType" Type="Microsoft.Azure.Management.Automation.Models.ConnectionTypeAssociationProperty" />
-        <Parameter Name="fieldDefinitionValues" Type="System.Collections.Generic.IDictionary&lt;System.String,System.String&gt;" />
-        <Parameter Name="creationTime" Type="System.Nullable&lt;System.DateTime&gt;" />
-        <Parameter Name="lastModifiedTime" Type="System.Nullable&lt;System.DateTime&gt;" />
-        <Parameter Name="description" Type="System.String" />
+        <Parameter Name="id" Type="System.String" Index="0" FrameworkAlternate="azure-dotnet-preview" />
+        <Parameter Name="name" Type="System.String" Index="1" FrameworkAlternate="azure-dotnet-preview" />
+        <Parameter Name="type" Type="System.String" Index="2" FrameworkAlternate="azure-dotnet-preview" />
+        <Parameter Name="connectionType" Type="Microsoft.Azure.Management.Automation.Models.ConnectionTypeAssociationProperty" Index="3" FrameworkAlternate="azure-dotnet-preview" />
+        <Parameter Name="fieldDefinitionValues" Type="System.Collections.Generic.IDictionary&lt;System.String,System.String&gt;" Index="4" FrameworkAlternate="azure-dotnet-preview" />
+        <Parameter Name="creationTime" Type="System.DateTimeOffset" Index="5" FrameworkAlternate="azure-dotnet-preview" />
+        <Parameter Name="lastModifiedTime" Type="System.DateTimeOffset" Index="6" FrameworkAlternate="azure-dotnet-preview" />
+        <Parameter Name="description" Type="System.String" Index="7" FrameworkAlternate="azure-dotnet-preview" />
       </Parameters>
       <Docs>
-        <param name="id">Gets the id of the resource.</param>
-        <param name="name">Gets the name of the connection.</param>
+        <param name="id">Fully qualified resource Id for the
+            resource</param>
+        <param name="name">The name of the resource</param>
+        <param name="type">The type of the resource.</param>
         <param name="connectionType">Gets or sets the connectionType of the
             connection.</param>
         <param name="fieldDefinitionValues">Gets the field definition
@@ -94,16 +95,15 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Management.Automation.Models.Connection.ConnectionType" />
       <MemberSignature Language="VB.NET" Value="Public Property ConnectionType As ConnectionTypeAssociationProperty" />
       <MemberSignature Language="F#" Value="member this.ConnectionType : Microsoft.Azure.Management.Automation.Models.ConnectionTypeAssociationProperty with get, set" Usage="Microsoft.Azure.Management.Automation.Models.Connection.ConnectionType" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Azure::Management::Automation::Models::ConnectionTypeAssociationProperty ^ ConnectionType { Microsoft::Azure::Management::Automation::Models::ConnectionTypeAssociationProperty ^ get(); void set(Microsoft::Azure::Management::Automation::Models::ConnectionTypeAssociationProperty ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Automation</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>3.0.1.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="properties.connectionType")</AttributeName>
+        <Attribute FrameworkAlternate="azure-dotnet-preview">
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty(PropertyName="properties.connectionType")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty(PropertyName="properties.connectionType")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -118,25 +118,24 @@
       </Docs>
     </Member>
     <Member MemberName="CreationTime">
-      <MemberSignature Language="C#" Value="public Nullable&lt;DateTime&gt; CreationTime { get; }" />
-      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;valuetype System.DateTime&gt; CreationTime" />
+      <MemberSignature Language="C#" Value="public DateTimeOffset CreationTime { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.DateTimeOffset CreationTime" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Management.Automation.Models.Connection.CreationTime" />
-      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property CreationTime As Nullable(Of DateTime)" />
-      <MemberSignature Language="F#" Value="member this.CreationTime : Nullable&lt;DateTime&gt;" Usage="Microsoft.Azure.Management.Automation.Models.Connection.CreationTime" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Nullable&lt;DateTime&gt; CreationTime { Nullable&lt;DateTime&gt; get(); };" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property CreationTime As DateTimeOffset" />
+      <MemberSignature Language="F#" Value="member this.CreationTime : DateTimeOffset" Usage="Microsoft.Azure.Management.Automation.Models.Connection.CreationTime" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Automation</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>3.0.1.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="properties.creationTime")</AttributeName>
+        <Attribute FrameworkAlternate="azure-dotnet-preview">
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty(PropertyName="properties.creationTime")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty(PropertyName="properties.creationTime")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
-        <ReturnType>System.Nullable&lt;System.DateTime&gt;</ReturnType>
+        <ReturnType>System.DateTimeOffset</ReturnType>
       </ReturnValue>
       <Docs>
         <summary>
@@ -152,17 +151,15 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Management.Automation.Models.Connection.Description" />
       <MemberSignature Language="VB.NET" Value="Public Property Description As String" />
       <MemberSignature Language="F#" Value="member this.Description : string with get, set" Usage="Microsoft.Azure.Management.Automation.Models.Connection.Description" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Description { System::String ^ get(); void set(System::String ^ value); };" />
-      <MemberSignature Language="C++ CX" Value="public:&#xA; property Platform::String ^ Description { Platform::String ^ get(); void set(Platform::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Automation</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>3.0.1.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="properties.description")</AttributeName>
+        <Attribute FrameworkAlternate="azure-dotnet-preview">
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty(PropertyName="properties.description")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty(PropertyName="properties.description")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -182,16 +179,15 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Management.Automation.Models.Connection.FieldDefinitionValues" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property FieldDefinitionValues As IDictionary(Of String, String)" />
       <MemberSignature Language="F#" Value="member this.FieldDefinitionValues : System.Collections.Generic.IDictionary&lt;string, string&gt;" Usage="Microsoft.Azure.Management.Automation.Models.Connection.FieldDefinitionValues" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::Generic::IDictionary&lt;System::String ^, System::String ^&gt; ^ FieldDefinitionValues { System::Collections::Generic::IDictionary&lt;System::String ^, System::String ^&gt; ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Automation</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>3.0.1.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="properties.fieldDefinitionValues")</AttributeName>
+        <Attribute FrameworkAlternate="azure-dotnet-preview">
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty(PropertyName="properties.fieldDefinitionValues")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty(PropertyName="properties.fieldDefinitionValues")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -206,56 +202,44 @@
       </Docs>
     </Member>
     <Member MemberName="Id">
-      <MemberSignature Language="C#" Value="public string Id { get; }" />
+      <MemberSignature Language="C#" Value="public string Id { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Id" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Management.Automation.Models.Connection.Id" />
-      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Id As String" />
-      <MemberSignature Language="F#" Value="member this.Id : string" Usage="Microsoft.Azure.Management.Automation.Models.Connection.Id" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Id { System::String ^ get(); };" />
-      <MemberSignature Language="C++ CX" Value="public:&#xA; property Platform::String ^ Id { Platform::String ^ get(); };" />
+      <MemberSignature Language="VB.NET" Value="Public Property Id As String" />
+      <MemberSignature Language="F#" Value="member this.Id : string with get, set" Usage="Microsoft.Azure.Management.Automation.Models.Connection.Id" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Automation</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
-        <AssemblyVersion>3.0.1.0</AssemblyVersion>
       </AssemblyInfo>
-      <Attributes>
-        <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="id")</AttributeName>
-        </Attribute>
-      </Attributes>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-            Gets the id of the resource.
-            </summary>
+        <summary>To be added.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="LastModifiedTime">
-      <MemberSignature Language="C#" Value="public Nullable&lt;DateTime&gt; LastModifiedTime { get; }" />
-      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;valuetype System.DateTime&gt; LastModifiedTime" />
+      <MemberSignature Language="C#" Value="public DateTimeOffset LastModifiedTime { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.DateTimeOffset LastModifiedTime" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Management.Automation.Models.Connection.LastModifiedTime" />
-      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property LastModifiedTime As Nullable(Of DateTime)" />
-      <MemberSignature Language="F#" Value="member this.LastModifiedTime : Nullable&lt;DateTime&gt;" Usage="Microsoft.Azure.Management.Automation.Models.Connection.LastModifiedTime" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Nullable&lt;DateTime&gt; LastModifiedTime { Nullable&lt;DateTime&gt; get(); };" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property LastModifiedTime As DateTimeOffset" />
+      <MemberSignature Language="F#" Value="member this.LastModifiedTime : DateTimeOffset" Usage="Microsoft.Azure.Management.Automation.Models.Connection.LastModifiedTime" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Automation</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>3.0.1.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="properties.lastModifiedTime")</AttributeName>
+        <Attribute FrameworkAlternate="azure-dotnet-preview">
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty(PropertyName="properties.lastModifiedTime")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty(PropertyName="properties.lastModifiedTime")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
-        <ReturnType>System.Nullable&lt;System.DateTime&gt;</ReturnType>
+        <ReturnType>System.DateTimeOffset</ReturnType>
       </ReturnValue>
       <Docs>
         <summary>
@@ -266,32 +250,41 @@
       </Docs>
     </Member>
     <Member MemberName="Name">
-      <MemberSignature Language="C#" Value="public string Name { get; }" />
+      <MemberSignature Language="C#" Value="public string Name { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Name" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Management.Automation.Models.Connection.Name" />
-      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Name As String" />
-      <MemberSignature Language="F#" Value="member this.Name : string" Usage="Microsoft.Azure.Management.Automation.Models.Connection.Name" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Name { System::String ^ get(); };" />
-      <MemberSignature Language="C++ CX" Value="public:&#xA; property Platform::String ^ Name { Platform::String ^ get(); };" />
+      <MemberSignature Language="VB.NET" Value="Public Property Name As String" />
+      <MemberSignature Language="F#" Value="member this.Name : string with get, set" Usage="Microsoft.Azure.Management.Automation.Models.Connection.Name" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Automation</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
-        <AssemblyVersion>3.0.1.0</AssemblyVersion>
       </AssemblyInfo>
-      <Attributes>
-        <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="name")</AttributeName>
-        </Attribute>
-      </Attributes>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-            Gets the name of the connection.
-            </summary>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Properties">
+      <MemberSignature Language="C#" Value="public Microsoft.Azure.Management.Automation.Models.ConnectionProperties Properties { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Azure.Management.Automation.Models.ConnectionProperties Properties" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Management.Automation.Models.Connection.Properties" />
+      <MemberSignature Language="VB.NET" Value="Public Property Properties As ConnectionProperties" />
+      <MemberSignature Language="F#" Value="member this.Properties : Microsoft.Azure.Management.Automation.Models.ConnectionProperties with get, set" Usage="Microsoft.Azure.Management.Automation.Models.Connection.Properties" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Azure.Management.Automation</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Azure.Management.Automation.Models.ConnectionProperties</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>

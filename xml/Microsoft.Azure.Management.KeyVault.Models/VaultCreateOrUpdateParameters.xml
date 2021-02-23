@@ -1,14 +1,14 @@
-﻿<Type Name="VaultCreateOrUpdateParameters" FullName="Microsoft.Azure.Management.KeyVault.Models.VaultCreateOrUpdateParameters">
+<Type Name="VaultCreateOrUpdateParameters" FullName="Microsoft.Azure.Management.KeyVault.Models.VaultCreateOrUpdateParameters">
   <TypeSignature Language="C#" Value="public class VaultCreateOrUpdateParameters : Microsoft.Rest.Azure.IResource" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit VaultCreateOrUpdateParameters extends System.Object implements class Microsoft.Rest.Azure.IResource" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Azure.Management.KeyVault.Models.VaultCreateOrUpdateParameters" />
   <TypeSignature Language="VB.NET" Value="Public Class VaultCreateOrUpdateParameters&#xA;Implements IResource" />
   <TypeSignature Language="F#" Value="type VaultCreateOrUpdateParameters = class&#xA;    interface IResource" />
-  <TypeSignature Language="C++ CLI" Value="public ref class VaultCreateOrUpdateParameters : Microsoft::Rest::Azure::IResource" />
-  <TypeSignature Language="C++ WINRT" Value="[Windows::Foundation::Metadata::WebHostHidden]&#xA;class VaultCreateOrUpdateParameters : Microsoft::Rest::Azure::IResource" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Azure.Management.KeyVault</AssemblyName>
     <AssemblyVersion>2.0.0.0</AssemblyVersion>
+    <AssemblyVersion>3.0.0.0</AssemblyVersion>
+    <AssemblyVersion>3.1.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
@@ -30,13 +30,12 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Management.KeyVault.Models.VaultCreateOrUpdateParameters.#ctor" />
       <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; VaultCreateOrUpdateParameters();" />
-      <MemberSignature Language="C++ CX" Value="public:&#xA; VaultCreateOrUpdateParameters();" />
-      <MemberSignature Language="C++ WINRT" Value=" VaultCreateOrUpdateParameters();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.KeyVault</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
+        <AssemblyVersion>3.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
@@ -48,15 +47,17 @@
       </Docs>
     </Member>
     <Member MemberName=".ctor">
-      <MemberSignature Language="C#" Value="public VaultCreateOrUpdateParameters (string location, Microsoft.Azure.Management.KeyVault.Models.VaultProperties properties, System.Collections.Generic.IDictionary&lt;string,string&gt; tags = null);" />
+      <MemberSignature Language="C#" Value="public VaultCreateOrUpdateParameters (string location, Microsoft.Azure.Management.KeyVault.Models.VaultProperties properties, System.Collections.Generic.IDictionary&lt;string,string&gt; tags = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string location, class Microsoft.Azure.Management.KeyVault.Models.VaultProperties properties, class System.Collections.Generic.IDictionary`2&lt;string, string&gt; tags) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Management.KeyVault.Models.VaultCreateOrUpdateParameters.#ctor(System.String,Microsoft.Azure.Management.KeyVault.Models.VaultProperties,System.Collections.Generic.IDictionary{System.String,System.String})" />
-      <MemberSignature Language="VB.NET" Value="Public Sub New (location As String, properties As VaultProperties, Optional tags As IDictionary(Of String, String) = null)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (location As String, properties As VaultProperties, Optional tags As IDictionary(Of String, String) = Nothing)" />
       <MemberSignature Language="F#" Value="new Microsoft.Azure.Management.KeyVault.Models.VaultCreateOrUpdateParameters : string * Microsoft.Azure.Management.KeyVault.Models.VaultProperties * System.Collections.Generic.IDictionary&lt;string, string&gt; -&gt; Microsoft.Azure.Management.KeyVault.Models.VaultCreateOrUpdateParameters" Usage="new Microsoft.Azure.Management.KeyVault.Models.VaultCreateOrUpdateParameters (location, properties, tags)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.KeyVault</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
+        <AssemblyVersion>3.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="location" Type="System.String" />
@@ -82,16 +83,17 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Management.KeyVault.Models.VaultCreateOrUpdateParameters.Location" />
       <MemberSignature Language="VB.NET" Value="Public Property Location As String" />
       <MemberSignature Language="F#" Value="member this.Location : string with get, set" Usage="Microsoft.Azure.Management.KeyVault.Models.VaultCreateOrUpdateParameters.Location" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Location { System::String ^ get(); void set(System::String ^ value); };" />
-      <MemberSignature Language="C++ CX" Value="public:&#xA; property Platform::String ^ Location { Platform::String ^ get(); void set(Platform::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.KeyVault</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
+        <AssemblyVersion>3.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="location")</AttributeName>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty(PropertyName="location")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty(PropertyName="location")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -112,15 +114,17 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Management.KeyVault.Models.VaultCreateOrUpdateParameters.Properties" />
       <MemberSignature Language="VB.NET" Value="Public Property Properties As VaultProperties" />
       <MemberSignature Language="F#" Value="member this.Properties : Microsoft.Azure.Management.KeyVault.Models.VaultProperties with get, set" Usage="Microsoft.Azure.Management.KeyVault.Models.VaultCreateOrUpdateParameters.Properties" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Azure::Management::KeyVault::Models::VaultProperties ^ Properties { Microsoft::Azure::Management::KeyVault::Models::VaultProperties ^ get(); void set(Microsoft::Azure::Management::KeyVault::Models::VaultProperties ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.KeyVault</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
+        <AssemblyVersion>3.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="properties")</AttributeName>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty(PropertyName="properties")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty(PropertyName="properties")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -140,15 +144,17 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Management.KeyVault.Models.VaultCreateOrUpdateParameters.Tags" />
       <MemberSignature Language="VB.NET" Value="Public Property Tags As IDictionary(Of String, String)" />
       <MemberSignature Language="F#" Value="member this.Tags : System.Collections.Generic.IDictionary&lt;string, string&gt; with get, set" Usage="Microsoft.Azure.Management.KeyVault.Models.VaultCreateOrUpdateParameters.Tags" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::Generic::IDictionary&lt;System::String ^, System::String ^&gt; ^ Tags { System::Collections::Generic::IDictionary&lt;System::String ^, System::String ^&gt; ^ get(); void set(System::Collections::Generic::IDictionary&lt;System::String ^, System::String ^&gt; ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.KeyVault</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
+        <AssemblyVersion>3.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="tags")</AttributeName>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty(PropertyName="tags")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty(PropertyName="tags")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -168,13 +174,12 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Management.KeyVault.Models.VaultCreateOrUpdateParameters.Validate" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Sub Validate ()" />
       <MemberSignature Language="F#" Value="abstract member Validate : unit -&gt; unit&#xA;override this.Validate : unit -&gt; unit" Usage="vaultCreateOrUpdateParameters.Validate " />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Validate();" />
-      <MemberSignature Language="C++ CX" Value="public:&#xA; virtual void Validate();" />
-      <MemberSignature Language="C++ WINRT" Value=" virtual void Validate();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.KeyVault</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
+        <AssemblyVersion>3.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>

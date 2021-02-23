@@ -1,14 +1,14 @@
-﻿<Type Name="NetworkRuleSet" FullName="Microsoft.Azure.Management.KeyVault.Models.NetworkRuleSet">
+<Type Name="NetworkRuleSet" FullName="Microsoft.Azure.Management.KeyVault.Models.NetworkRuleSet">
   <TypeSignature Language="C#" Value="public class NetworkRuleSet" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit NetworkRuleSet extends System.Object" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Azure.Management.KeyVault.Models.NetworkRuleSet" />
   <TypeSignature Language="VB.NET" Value="Public Class NetworkRuleSet" />
   <TypeSignature Language="F#" Value="type NetworkRuleSet = class" />
-  <TypeSignature Language="C++ CLI" Value="public ref class NetworkRuleSet" />
-  <TypeSignature Language="C++ WINRT" Value="[Windows::Foundation::Metadata::WebHostHidden]&#xA;class NetworkRuleSet" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Azure.Management.KeyVault</AssemblyName>
     <AssemblyVersion>2.0.0.0</AssemblyVersion>
+    <AssemblyVersion>3.0.0.0</AssemblyVersion>
+    <AssemblyVersion>3.1.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
@@ -26,13 +26,12 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Management.KeyVault.Models.NetworkRuleSet.#ctor" />
       <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; NetworkRuleSet();" />
-      <MemberSignature Language="C++ CX" Value="public:&#xA; NetworkRuleSet();" />
-      <MemberSignature Language="C++ WINRT" Value=" NetworkRuleSet();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.KeyVault</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
+        <AssemblyVersion>3.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
@@ -43,15 +42,17 @@
       </Docs>
     </Member>
     <Member MemberName=".ctor">
-      <MemberSignature Language="C#" Value="public NetworkRuleSet (string bypass = null, string defaultAction = null, System.Collections.Generic.IList&lt;Microsoft.Azure.Management.KeyVault.Models.IPRule&gt; ipRules = null, System.Collections.Generic.IList&lt;Microsoft.Azure.Management.KeyVault.Models.VirtualNetworkRule&gt; virtualNetworkRules = null);" />
+      <MemberSignature Language="C#" Value="public NetworkRuleSet (string bypass = default, string defaultAction = default, System.Collections.Generic.IList&lt;Microsoft.Azure.Management.KeyVault.Models.IPRule&gt; ipRules = default, System.Collections.Generic.IList&lt;Microsoft.Azure.Management.KeyVault.Models.VirtualNetworkRule&gt; virtualNetworkRules = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string bypass, string defaultAction, class System.Collections.Generic.IList`1&lt;class Microsoft.Azure.Management.KeyVault.Models.IPRule&gt; ipRules, class System.Collections.Generic.IList`1&lt;class Microsoft.Azure.Management.KeyVault.Models.VirtualNetworkRule&gt; virtualNetworkRules) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Management.KeyVault.Models.NetworkRuleSet.#ctor(System.String,System.String,System.Collections.Generic.IList{Microsoft.Azure.Management.KeyVault.Models.IPRule},System.Collections.Generic.IList{Microsoft.Azure.Management.KeyVault.Models.VirtualNetworkRule})" />
-      <MemberSignature Language="VB.NET" Value="Public Sub New (Optional bypass As String = null, Optional defaultAction As String = null, Optional ipRules As IList(Of IPRule) = null, Optional virtualNetworkRules As IList(Of VirtualNetworkRule) = null)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (Optional bypass As String = Nothing, Optional defaultAction As String = Nothing, Optional ipRules As IList(Of IPRule) = Nothing, Optional virtualNetworkRules As IList(Of VirtualNetworkRule) = Nothing)" />
       <MemberSignature Language="F#" Value="new Microsoft.Azure.Management.KeyVault.Models.NetworkRuleSet : string * string * System.Collections.Generic.IList&lt;Microsoft.Azure.Management.KeyVault.Models.IPRule&gt; * System.Collections.Generic.IList&lt;Microsoft.Azure.Management.KeyVault.Models.VirtualNetworkRule&gt; -&gt; Microsoft.Azure.Management.KeyVault.Models.NetworkRuleSet" Usage="new Microsoft.Azure.Management.KeyVault.Models.NetworkRuleSet (bypass, defaultAction, ipRules, virtualNetworkRules)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.KeyVault</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
+        <AssemblyVersion>3.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="bypass" Type="System.String" />
@@ -83,16 +84,17 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Management.KeyVault.Models.NetworkRuleSet.Bypass" />
       <MemberSignature Language="VB.NET" Value="Public Property Bypass As String" />
       <MemberSignature Language="F#" Value="member this.Bypass : string with get, set" Usage="Microsoft.Azure.Management.KeyVault.Models.NetworkRuleSet.Bypass" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Bypass { System::String ^ get(); void set(System::String ^ value); };" />
-      <MemberSignature Language="C++ CX" Value="public:&#xA; property Platform::String ^ Bypass { Platform::String ^ get(); void set(Platform::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.KeyVault</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
+        <AssemblyVersion>3.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="bypass")</AttributeName>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty(PropertyName="bypass")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty(PropertyName="bypass")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -114,12 +116,12 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.Azure.Management.KeyVault.Models.NetworkRuleSet.BypassOptionAzureServices" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly BypassOptionAzureServices As String " />
       <MemberSignature Language="F#" Value=" staticval mutable BypassOptionAzureServices : string" Usage="Microsoft.Azure.Management.KeyVault.Models.NetworkRuleSet.BypassOptionAzureServices" />
-      <MemberSignature Language="C++ CLI" Value="public: static initonly System::String ^ BypassOptionAzureServices;" />
-      <MemberSignature Language="C++ WINRT" Value="static initonly std::wstring BypassOptionAzureServices;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.KeyVault</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
+        <AssemblyVersion>3.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -135,16 +137,17 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Management.KeyVault.Models.NetworkRuleSet.DefaultAction" />
       <MemberSignature Language="VB.NET" Value="Public Property DefaultAction As String" />
       <MemberSignature Language="F#" Value="member this.DefaultAction : string with get, set" Usage="Microsoft.Azure.Management.KeyVault.Models.NetworkRuleSet.DefaultAction" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ DefaultAction { System::String ^ get(); void set(System::String ^ value); };" />
-      <MemberSignature Language="C++ CX" Value="public:&#xA; property Platform::String ^ DefaultAction { Platform::String ^ get(); void set(Platform::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.KeyVault</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
+        <AssemblyVersion>3.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="defaultAction")</AttributeName>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty(PropertyName="defaultAction")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty(PropertyName="defaultAction")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -167,12 +170,12 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.Azure.Management.KeyVault.Models.NetworkRuleSet.DefaultActionOptionAllow" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly DefaultActionOptionAllow As String " />
       <MemberSignature Language="F#" Value=" staticval mutable DefaultActionOptionAllow : string" Usage="Microsoft.Azure.Management.KeyVault.Models.NetworkRuleSet.DefaultActionOptionAllow" />
-      <MemberSignature Language="C++ CLI" Value="public: static initonly System::String ^ DefaultActionOptionAllow;" />
-      <MemberSignature Language="C++ WINRT" Value="static initonly std::wstring DefaultActionOptionAllow;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.KeyVault</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
+        <AssemblyVersion>3.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -188,15 +191,17 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Management.KeyVault.Models.NetworkRuleSet.IpRules" />
       <MemberSignature Language="VB.NET" Value="Public Property IpRules As IList(Of IPRule)" />
       <MemberSignature Language="F#" Value="member this.IpRules : System.Collections.Generic.IList&lt;Microsoft.Azure.Management.KeyVault.Models.IPRule&gt; with get, set" Usage="Microsoft.Azure.Management.KeyVault.Models.NetworkRuleSet.IpRules" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::Generic::IList&lt;Microsoft::Azure::Management::KeyVault::Models::IPRule ^&gt; ^ IpRules { System::Collections::Generic::IList&lt;Microsoft::Azure::Management::KeyVault::Models::IPRule ^&gt; ^ get(); void set(System::Collections::Generic::IList&lt;Microsoft::Azure::Management::KeyVault::Models::IPRule ^&gt; ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.KeyVault</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
+        <AssemblyVersion>3.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="ipRules")</AttributeName>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty(PropertyName="ipRules")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty(PropertyName="ipRules")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -216,15 +221,17 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Management.KeyVault.Models.NetworkRuleSet.VirtualNetworkRules" />
       <MemberSignature Language="VB.NET" Value="Public Property VirtualNetworkRules As IList(Of VirtualNetworkRule)" />
       <MemberSignature Language="F#" Value="member this.VirtualNetworkRules : System.Collections.Generic.IList&lt;Microsoft.Azure.Management.KeyVault.Models.VirtualNetworkRule&gt; with get, set" Usage="Microsoft.Azure.Management.KeyVault.Models.NetworkRuleSet.VirtualNetworkRules" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::Generic::IList&lt;Microsoft::Azure::Management::KeyVault::Models::VirtualNetworkRule ^&gt; ^ VirtualNetworkRules { System::Collections::Generic::IList&lt;Microsoft::Azure::Management::KeyVault::Models::VirtualNetworkRule ^&gt; ^ get(); void set(System::Collections::Generic::IList&lt;Microsoft::Azure::Management::KeyVault::Models::VirtualNetworkRule ^&gt; ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.KeyVault</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
+        <AssemblyVersion>3.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="virtualNetworkRules")</AttributeName>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty(PropertyName="virtualNetworkRules")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty(PropertyName="virtualNetworkRules")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>

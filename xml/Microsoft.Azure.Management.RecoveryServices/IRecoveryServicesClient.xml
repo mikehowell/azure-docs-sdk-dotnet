@@ -1,13 +1,14 @@
-﻿<Type Name="IRecoveryServicesClient" FullName="Microsoft.Azure.Management.RecoveryServices.IRecoveryServicesClient">
+<Type Name="IRecoveryServicesClient" FullName="Microsoft.Azure.Management.RecoveryServices.IRecoveryServicesClient">
   <TypeSignature Language="C#" Value="public interface IRecoveryServicesClient : IDisposable" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IRecoveryServicesClient implements class System.IDisposable" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Azure.Management.RecoveryServices.IRecoveryServicesClient" />
   <TypeSignature Language="VB.NET" Value="Public Interface IRecoveryServicesClient&#xA;Implements IDisposable" />
   <TypeSignature Language="F#" Value="type IRecoveryServicesClient = interface&#xA;    interface IDisposable" />
-  <TypeSignature Language="C++ CLI" Value="public interface class IRecoveryServicesClient : IDisposable" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Azure.Management.RecoveryServices</AssemblyName>
     <AssemblyVersion>4.2.0.0</AssemblyVersion>
+    <AssemblyVersion>4.3.0.0</AssemblyVersion>
+    <AssemblyVersion>4.3.1.0</AssemblyVersion>
   </AssemblyInfo>
   <Interfaces>
     <Interface>
@@ -16,7 +17,7 @@
   </Interfaces>
   <Docs>
     <summary>
-            Composite Swagger for Recovery Services Client
+            Recovery Services Client
             </summary>
     <remarks>To be added.</remarks>
   </Docs>
@@ -27,67 +28,42 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Management.RecoveryServices.IRecoveryServicesClient.AcceptLanguage" />
       <MemberSignature Language="VB.NET" Value="Public Property AcceptLanguage As String" />
       <MemberSignature Language="F#" Value="member this.AcceptLanguage : string with get, set" Usage="Microsoft.Azure.Management.RecoveryServices.IRecoveryServicesClient.AcceptLanguage" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ AcceptLanguage { System::String ^ get(); void set(System::String ^ value); };" />
-      <MemberSignature Language="C++ CX" Value="public:&#xA; property Platform::String ^ AcceptLanguage { Platform::String ^ get(); void set(Platform::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.RecoveryServices</AssemblyName>
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
+        <AssemblyVersion>4.3.0.0</AssemblyVersion>
+        <AssemblyVersion>4.3.1.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
         <summary>
-            Gets or sets the preferred language for the response.
+            The preferred language for the response.
             </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
-    <Member MemberName="BackupStorageConfigs">
-      <MemberSignature Language="C#" Value="public Microsoft.Azure.Management.RecoveryServices.IBackupStorageConfigsOperations BackupStorageConfigs { get; }" />
-      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Azure.Management.RecoveryServices.IBackupStorageConfigsOperations BackupStorageConfigs" />
-      <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Management.RecoveryServices.IRecoveryServicesClient.BackupStorageConfigs" />
-      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property BackupStorageConfigs As IBackupStorageConfigsOperations" />
-      <MemberSignature Language="F#" Value="member this.BackupStorageConfigs : Microsoft.Azure.Management.RecoveryServices.IBackupStorageConfigsOperations" Usage="Microsoft.Azure.Management.RecoveryServices.IRecoveryServicesClient.BackupStorageConfigs" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Azure::Management::RecoveryServices::IBackupStorageConfigsOperations ^ BackupStorageConfigs { Microsoft::Azure::Management::RecoveryServices::IBackupStorageConfigsOperations ^ get(); };" />
-      <MemberSignature Language="C++ CX" Value="public:&#xA; property Microsoft::Azure::Management::RecoveryServices::IBackupStorageConfigsOperations ^ BackupStorageConfigs { Microsoft::Azure::Management::RecoveryServices::IBackupStorageConfigsOperations ^ get(); };" />
+    <Member MemberName="ApiVersion">
+      <MemberSignature Language="C#" Value="public string ApiVersion { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string ApiVersion" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Management.RecoveryServices.IRecoveryServicesClient.ApiVersion" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ApiVersion As String" />
+      <MemberSignature Language="F#" Value="member this.ApiVersion : string" Usage="Microsoft.Azure.Management.RecoveryServices.IRecoveryServicesClient.ApiVersion" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.RecoveryServices</AssemblyName>
-        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+        <AssemblyVersion>4.3.0.0</AssemblyVersion>
+        <AssemblyVersion>4.3.1.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
-        <ReturnType>Microsoft.Azure.Management.RecoveryServices.IBackupStorageConfigsOperations</ReturnType>
+        <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
         <summary>
-            Gets the IBackupStorageConfigsOperations.
-            </summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
-      </Docs>
-    </Member>
-    <Member MemberName="BackupVaultConfigs">
-      <MemberSignature Language="C#" Value="public Microsoft.Azure.Management.RecoveryServices.IBackupVaultConfigsOperations BackupVaultConfigs { get; }" />
-      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Azure.Management.RecoveryServices.IBackupVaultConfigsOperations BackupVaultConfigs" />
-      <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Management.RecoveryServices.IRecoveryServicesClient.BackupVaultConfigs" />
-      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property BackupVaultConfigs As IBackupVaultConfigsOperations" />
-      <MemberSignature Language="F#" Value="member this.BackupVaultConfigs : Microsoft.Azure.Management.RecoveryServices.IBackupVaultConfigsOperations" Usage="Microsoft.Azure.Management.RecoveryServices.IRecoveryServicesClient.BackupVaultConfigs" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Azure::Management::RecoveryServices::IBackupVaultConfigsOperations ^ BackupVaultConfigs { Microsoft::Azure::Management::RecoveryServices::IBackupVaultConfigsOperations ^ get(); };" />
-      <MemberSignature Language="C++ CX" Value="public:&#xA; property Microsoft::Azure::Management::RecoveryServices::IBackupVaultConfigsOperations ^ BackupVaultConfigs { Microsoft::Azure::Management::RecoveryServices::IBackupVaultConfigsOperations ^ get(); };" />
-      <MemberType>Property</MemberType>
-      <AssemblyInfo>
-        <AssemblyName>Microsoft.Azure.Management.RecoveryServices</AssemblyName>
-        <AssemblyVersion>4.2.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <ReturnValue>
-        <ReturnType>Microsoft.Azure.Management.RecoveryServices.IBackupVaultConfigsOperations</ReturnType>
-      </ReturnValue>
-      <Docs>
-        <summary>
-            Gets the IBackupVaultConfigsOperations.
+            Client Api Version.
             </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
@@ -99,11 +75,12 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Management.RecoveryServices.IRecoveryServicesClient.BaseUri" />
       <MemberSignature Language="VB.NET" Value="Public Property BaseUri As Uri" />
       <MemberSignature Language="F#" Value="member this.BaseUri : Uri with get, set" Usage="Microsoft.Azure.Management.RecoveryServices.IRecoveryServicesClient.BaseUri" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Uri ^ BaseUri { Uri ^ get(); void set(Uri ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.RecoveryServices</AssemblyName>
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
+        <AssemblyVersion>4.3.0.0</AssemblyVersion>
+        <AssemblyVersion>4.3.1.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Uri</ReturnType>
@@ -122,12 +99,12 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Management.RecoveryServices.IRecoveryServicesClient.Credentials" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Credentials As ServiceClientCredentials" />
       <MemberSignature Language="F#" Value="member this.Credentials : Microsoft.Rest.ServiceClientCredentials" Usage="Microsoft.Azure.Management.RecoveryServices.IRecoveryServicesClient.Credentials" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Rest::ServiceClientCredentials ^ Credentials { Microsoft::Rest::ServiceClientCredentials ^ get(); };" />
-      <MemberSignature Language="C++ CX" Value="public:&#xA; property Microsoft::Rest::ServiceClientCredentials ^ Credentials { Microsoft::Rest::ServiceClientCredentials ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.RecoveryServices</AssemblyName>
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
+        <AssemblyVersion>4.3.0.0</AssemblyVersion>
+        <AssemblyVersion>4.3.1.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Rest.ServiceClientCredentials</ReturnType>
@@ -146,11 +123,12 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Management.RecoveryServices.IRecoveryServicesClient.DeserializationSettings" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property DeserializationSettings As JsonSerializerSettings" />
       <MemberSignature Language="F#" Value="member this.DeserializationSettings : Newtonsoft.Json.JsonSerializerSettings" Usage="Microsoft.Azure.Management.RecoveryServices.IRecoveryServicesClient.DeserializationSettings" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Newtonsoft::Json::JsonSerializerSettings ^ DeserializationSettings { Newtonsoft::Json::JsonSerializerSettings ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.RecoveryServices</AssemblyName>
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
+        <AssemblyVersion>4.3.0.0</AssemblyVersion>
+        <AssemblyVersion>4.3.1.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Newtonsoft.Json.JsonSerializerSettings</ReturnType>
@@ -164,48 +142,51 @@
       </Docs>
     </Member>
     <Member MemberName="GenerateClientRequestId">
-      <MemberSignature Language="C#" Value="public Nullable&lt;bool&gt; GenerateClientRequestId { get; set; }" />
+      <MemberSignature Language="C#" Value="public bool? GenerateClientRequestId { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;bool&gt; GenerateClientRequestId" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Management.RecoveryServices.IRecoveryServicesClient.GenerateClientRequestId" />
       <MemberSignature Language="VB.NET" Value="Public Property GenerateClientRequestId As Nullable(Of Boolean)" />
       <MemberSignature Language="F#" Value="member this.GenerateClientRequestId : Nullable&lt;bool&gt; with get, set" Usage="Microsoft.Azure.Management.RecoveryServices.IRecoveryServicesClient.GenerateClientRequestId" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Nullable&lt;bool&gt; GenerateClientRequestId { Nullable&lt;bool&gt; get(); void set(Nullable&lt;bool&gt; value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.RecoveryServices</AssemblyName>
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
+        <AssemblyVersion>4.3.0.0</AssemblyVersion>
+        <AssemblyVersion>4.3.1.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Nullable&lt;System.Boolean&gt;</ReturnType>
       </ReturnValue>
       <Docs>
         <summary>
-            When set to true a unique x-ms-client-request-id value is generated
-            and included in each request. Default is true.
+            Whether a unique x-ms-client-request-id should be generated. When
+            set to true a unique x-ms-client-request-id value is generated and
+            included in each request. Default is true.
             </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="LongRunningOperationRetryTimeout">
-      <MemberSignature Language="C#" Value="public Nullable&lt;int&gt; LongRunningOperationRetryTimeout { get; set; }" />
+      <MemberSignature Language="C#" Value="public int? LongRunningOperationRetryTimeout { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;int32&gt; LongRunningOperationRetryTimeout" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Management.RecoveryServices.IRecoveryServicesClient.LongRunningOperationRetryTimeout" />
       <MemberSignature Language="VB.NET" Value="Public Property LongRunningOperationRetryTimeout As Nullable(Of Integer)" />
       <MemberSignature Language="F#" Value="member this.LongRunningOperationRetryTimeout : Nullable&lt;int&gt; with get, set" Usage="Microsoft.Azure.Management.RecoveryServices.IRecoveryServicesClient.LongRunningOperationRetryTimeout" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Nullable&lt;int&gt; LongRunningOperationRetryTimeout { Nullable&lt;int&gt; get(); void set(Nullable&lt;int&gt; value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.RecoveryServices</AssemblyName>
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
+        <AssemblyVersion>4.3.0.0</AssemblyVersion>
+        <AssemblyVersion>4.3.1.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Nullable&lt;System.Int32&gt;</ReturnType>
       </ReturnValue>
       <Docs>
         <summary>
-            Gets or sets the retry timeout in seconds for Long Running
-            Operations. Default value is 30.
+            The retry timeout in seconds for Long Running Operations. Default
+            value is 30.
             </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
@@ -217,12 +198,12 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Management.RecoveryServices.IRecoveryServicesClient.Operations" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Operations As IOperations" />
       <MemberSignature Language="F#" Value="member this.Operations : Microsoft.Azure.Management.RecoveryServices.IOperations" Usage="Microsoft.Azure.Management.RecoveryServices.IRecoveryServicesClient.Operations" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Azure::Management::RecoveryServices::IOperations ^ Operations { Microsoft::Azure::Management::RecoveryServices::IOperations ^ get(); };" />
-      <MemberSignature Language="C++ CX" Value="public:&#xA; property Microsoft::Azure::Management::RecoveryServices::IOperations ^ Operations { Microsoft::Azure::Management::RecoveryServices::IOperations ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.RecoveryServices</AssemblyName>
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
+        <AssemblyVersion>4.3.0.0</AssemblyVersion>
+        <AssemblyVersion>4.3.1.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Azure.Management.RecoveryServices.IOperations</ReturnType>
@@ -235,18 +216,64 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <Member MemberName="PrivateLinkResources">
+      <MemberSignature Language="C#" Value="public Microsoft.Azure.Management.RecoveryServices.IPrivateLinkResourcesOperations PrivateLinkResources { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Azure.Management.RecoveryServices.IPrivateLinkResourcesOperations PrivateLinkResources" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Management.RecoveryServices.IRecoveryServicesClient.PrivateLinkResources" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property PrivateLinkResources As IPrivateLinkResourcesOperations" />
+      <MemberSignature Language="F#" Value="member this.PrivateLinkResources : Microsoft.Azure.Management.RecoveryServices.IPrivateLinkResourcesOperations" Usage="Microsoft.Azure.Management.RecoveryServices.IRecoveryServicesClient.PrivateLinkResources" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Azure.Management.RecoveryServices</AssemblyName>
+        <AssemblyVersion>4.3.0.0</AssemblyVersion>
+        <AssemblyVersion>4.3.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Azure.Management.RecoveryServices.IPrivateLinkResourcesOperations</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets the IPrivateLinkResourcesOperations.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RecoveryServices">
+      <MemberSignature Language="C#" Value="public Microsoft.Azure.Management.RecoveryServices.IRecoveryServicesOperations RecoveryServices { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Azure.Management.RecoveryServices.IRecoveryServicesOperations RecoveryServices" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Management.RecoveryServices.IRecoveryServicesClient.RecoveryServices" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property RecoveryServices As IRecoveryServicesOperations" />
+      <MemberSignature Language="F#" Value="member this.RecoveryServices : Microsoft.Azure.Management.RecoveryServices.IRecoveryServicesOperations" Usage="Microsoft.Azure.Management.RecoveryServices.IRecoveryServicesClient.RecoveryServices" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Azure.Management.RecoveryServices</AssemblyName>
+        <AssemblyVersion>4.3.0.0</AssemblyVersion>
+        <AssemblyVersion>4.3.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Azure.Management.RecoveryServices.IRecoveryServicesOperations</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets the IRecoveryServicesOperations.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
     <Member MemberName="RegisteredIdentities">
       <MemberSignature Language="C#" Value="public Microsoft.Azure.Management.RecoveryServices.IRegisteredIdentitiesOperations RegisteredIdentities { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Azure.Management.RecoveryServices.IRegisteredIdentitiesOperations RegisteredIdentities" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Management.RecoveryServices.IRecoveryServicesClient.RegisteredIdentities" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property RegisteredIdentities As IRegisteredIdentitiesOperations" />
       <MemberSignature Language="F#" Value="member this.RegisteredIdentities : Microsoft.Azure.Management.RecoveryServices.IRegisteredIdentitiesOperations" Usage="Microsoft.Azure.Management.RecoveryServices.IRecoveryServicesClient.RegisteredIdentities" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Azure::Management::RecoveryServices::IRegisteredIdentitiesOperations ^ RegisteredIdentities { Microsoft::Azure::Management::RecoveryServices::IRegisteredIdentitiesOperations ^ get(); };" />
-      <MemberSignature Language="C++ CX" Value="public:&#xA; property Microsoft::Azure::Management::RecoveryServices::IRegisteredIdentitiesOperations ^ RegisteredIdentities { Microsoft::Azure::Management::RecoveryServices::IRegisteredIdentitiesOperations ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.RecoveryServices</AssemblyName>
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
+        <AssemblyVersion>4.3.0.0</AssemblyVersion>
+        <AssemblyVersion>4.3.1.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Azure.Management.RecoveryServices.IRegisteredIdentitiesOperations</ReturnType>
@@ -265,12 +292,12 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Management.RecoveryServices.IRecoveryServicesClient.ReplicationUsages" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ReplicationUsages As IReplicationUsagesOperations" />
       <MemberSignature Language="F#" Value="member this.ReplicationUsages : Microsoft.Azure.Management.RecoveryServices.IReplicationUsagesOperations" Usage="Microsoft.Azure.Management.RecoveryServices.IRecoveryServicesClient.ReplicationUsages" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Azure::Management::RecoveryServices::IReplicationUsagesOperations ^ ReplicationUsages { Microsoft::Azure::Management::RecoveryServices::IReplicationUsagesOperations ^ get(); };" />
-      <MemberSignature Language="C++ CX" Value="public:&#xA; property Microsoft::Azure::Management::RecoveryServices::IReplicationUsagesOperations ^ ReplicationUsages { Microsoft::Azure::Management::RecoveryServices::IReplicationUsagesOperations ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.RecoveryServices</AssemblyName>
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
+        <AssemblyVersion>4.3.0.0</AssemblyVersion>
+        <AssemblyVersion>4.3.1.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Azure.Management.RecoveryServices.IReplicationUsagesOperations</ReturnType>
@@ -289,11 +316,12 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Management.RecoveryServices.IRecoveryServicesClient.SerializationSettings" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property SerializationSettings As JsonSerializerSettings" />
       <MemberSignature Language="F#" Value="member this.SerializationSettings : Newtonsoft.Json.JsonSerializerSettings" Usage="Microsoft.Azure.Management.RecoveryServices.IRecoveryServicesClient.SerializationSettings" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Newtonsoft::Json::JsonSerializerSettings ^ SerializationSettings { Newtonsoft::Json::JsonSerializerSettings ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.RecoveryServices</AssemblyName>
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
+        <AssemblyVersion>4.3.0.0</AssemblyVersion>
+        <AssemblyVersion>4.3.1.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Newtonsoft.Json.JsonSerializerSettings</ReturnType>
@@ -312,12 +340,12 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Management.RecoveryServices.IRecoveryServicesClient.SubscriptionId" />
       <MemberSignature Language="VB.NET" Value="Public Property SubscriptionId As String" />
       <MemberSignature Language="F#" Value="member this.SubscriptionId : string with get, set" Usage="Microsoft.Azure.Management.RecoveryServices.IRecoveryServicesClient.SubscriptionId" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ SubscriptionId { System::String ^ get(); void set(System::String ^ value); };" />
-      <MemberSignature Language="C++ CX" Value="public:&#xA; property Platform::String ^ SubscriptionId { Platform::String ^ get(); void set(Platform::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.RecoveryServices</AssemblyName>
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
+        <AssemblyVersion>4.3.0.0</AssemblyVersion>
+        <AssemblyVersion>4.3.1.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -336,12 +364,12 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Management.RecoveryServices.IRecoveryServicesClient.Usages" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Usages As IUsagesOperations" />
       <MemberSignature Language="F#" Value="member this.Usages : Microsoft.Azure.Management.RecoveryServices.IUsagesOperations" Usage="Microsoft.Azure.Management.RecoveryServices.IRecoveryServicesClient.Usages" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Azure::Management::RecoveryServices::IUsagesOperations ^ Usages { Microsoft::Azure::Management::RecoveryServices::IUsagesOperations ^ get(); };" />
-      <MemberSignature Language="C++ CX" Value="public:&#xA; property Microsoft::Azure::Management::RecoveryServices::IUsagesOperations ^ Usages { Microsoft::Azure::Management::RecoveryServices::IUsagesOperations ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.RecoveryServices</AssemblyName>
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
+        <AssemblyVersion>4.3.0.0</AssemblyVersion>
+        <AssemblyVersion>4.3.1.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Azure.Management.RecoveryServices.IUsagesOperations</ReturnType>
@@ -360,12 +388,12 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Management.RecoveryServices.IRecoveryServicesClient.VaultCertificates" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property VaultCertificates As IVaultCertificatesOperations" />
       <MemberSignature Language="F#" Value="member this.VaultCertificates : Microsoft.Azure.Management.RecoveryServices.IVaultCertificatesOperations" Usage="Microsoft.Azure.Management.RecoveryServices.IRecoveryServicesClient.VaultCertificates" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Azure::Management::RecoveryServices::IVaultCertificatesOperations ^ VaultCertificates { Microsoft::Azure::Management::RecoveryServices::IVaultCertificatesOperations ^ get(); };" />
-      <MemberSignature Language="C++ CX" Value="public:&#xA; property Microsoft::Azure::Management::RecoveryServices::IVaultCertificatesOperations ^ VaultCertificates { Microsoft::Azure::Management::RecoveryServices::IVaultCertificatesOperations ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.RecoveryServices</AssemblyName>
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
+        <AssemblyVersion>4.3.0.0</AssemblyVersion>
+        <AssemblyVersion>4.3.1.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Azure.Management.RecoveryServices.IVaultCertificatesOperations</ReturnType>
@@ -384,12 +412,12 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Management.RecoveryServices.IRecoveryServicesClient.VaultExtendedInfo" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property VaultExtendedInfo As IVaultExtendedInfoOperations" />
       <MemberSignature Language="F#" Value="member this.VaultExtendedInfo : Microsoft.Azure.Management.RecoveryServices.IVaultExtendedInfoOperations" Usage="Microsoft.Azure.Management.RecoveryServices.IRecoveryServicesClient.VaultExtendedInfo" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Azure::Management::RecoveryServices::IVaultExtendedInfoOperations ^ VaultExtendedInfo { Microsoft::Azure::Management::RecoveryServices::IVaultExtendedInfoOperations ^ get(); };" />
-      <MemberSignature Language="C++ CX" Value="public:&#xA; property Microsoft::Azure::Management::RecoveryServices::IVaultExtendedInfoOperations ^ VaultExtendedInfo { Microsoft::Azure::Management::RecoveryServices::IVaultExtendedInfoOperations ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.RecoveryServices</AssemblyName>
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
+        <AssemblyVersion>4.3.0.0</AssemblyVersion>
+        <AssemblyVersion>4.3.1.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Azure.Management.RecoveryServices.IVaultExtendedInfoOperations</ReturnType>
@@ -408,12 +436,12 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Management.RecoveryServices.IRecoveryServicesClient.Vaults" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Vaults As IVaultsOperations" />
       <MemberSignature Language="F#" Value="member this.Vaults : Microsoft.Azure.Management.RecoveryServices.IVaultsOperations" Usage="Microsoft.Azure.Management.RecoveryServices.IRecoveryServicesClient.Vaults" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Azure::Management::RecoveryServices::IVaultsOperations ^ Vaults { Microsoft::Azure::Management::RecoveryServices::IVaultsOperations ^ get(); };" />
-      <MemberSignature Language="C++ CX" Value="public:&#xA; property Microsoft::Azure::Management::RecoveryServices::IVaultsOperations ^ Vaults { Microsoft::Azure::Management::RecoveryServices::IVaultsOperations ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.RecoveryServices</AssemblyName>
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
+        <AssemblyVersion>4.3.0.0</AssemblyVersion>
+        <AssemblyVersion>4.3.1.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Azure.Management.RecoveryServices.IVaultsOperations</ReturnType>

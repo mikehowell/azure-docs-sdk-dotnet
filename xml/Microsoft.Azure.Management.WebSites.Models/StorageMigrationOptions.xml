@@ -1,23 +1,22 @@
-﻿<Type Name="StorageMigrationOptions" FullName="Microsoft.Azure.Management.WebSites.Models.StorageMigrationOptions">
+<Type Name="StorageMigrationOptions" FullName="Microsoft.Azure.Management.WebSites.Models.StorageMigrationOptions">
   <TypeSignature Language="C#" Value="public class StorageMigrationOptions : Microsoft.Azure.Management.WebSites.Models.ProxyOnlyResource" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit StorageMigrationOptions extends Microsoft.Azure.Management.WebSites.Models.ProxyOnlyResource" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Azure.Management.WebSites.Models.StorageMigrationOptions" />
   <TypeSignature Language="VB.NET" Value="Public Class StorageMigrationOptions&#xA;Inherits ProxyOnlyResource" />
   <TypeSignature Language="F#" Value="type StorageMigrationOptions = class&#xA;    inherit ProxyOnlyResource" />
-  <TypeSignature Language="C++ CLI" Value="public ref class StorageMigrationOptions : Microsoft::Azure::Management::WebSites::Models::ProxyOnlyResource" />
-  <TypeSignature Language="C++ WINRT" Value="[Windows::Foundation::Metadata::WebHostHidden]&#xA;class StorageMigrationOptions : Microsoft::Azure::Management::WebSites::Models::ProxyOnlyResource" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Azure.Management.Websites</AssemblyName>
-    <AssemblyVersion>1.0.0.0</AssemblyVersion>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
+    <AssemblyVersion>3.1.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
-    <BaseTypeName>Microsoft.Azure.Management.WebSites.Models.Resource</BaseTypeName>
-    <BaseTypeName FrameworkAlternate="azure-dotnet">Microsoft.Azure.Management.WebSites.Models.ProxyOnlyResource</BaseTypeName>
+    <BaseTypeName>Microsoft.Azure.Management.WebSites.Models.ProxyOnlyResource</BaseTypeName>
   </Base>
   <Interfaces />
   <Attributes>
     <Attribute>
-      <AttributeName>Microsoft.Rest.Serialization.JsonTransformation</AttributeName>
+      <AttributeName Language="C#">[Microsoft.Rest.Serialization.JsonTransformation]</AttributeName>
+      <AttributeName Language="F#">[&lt;Microsoft.Rest.Serialization.JsonTransformation&gt;]</AttributeName>
     </Attribute>
   </Attributes>
   <Docs>
@@ -32,13 +31,11 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Management.WebSites.Models.StorageMigrationOptions.#ctor" />
       <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; StorageMigrationOptions();" />
-      <MemberSignature Language="C++ CX" Value="public:&#xA; StorageMigrationOptions();" />
-      <MemberSignature Language="C++ WINRT" Value=" StorageMigrationOptions();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Websites</AssemblyName>
-        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>3.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
@@ -49,34 +46,35 @@
       </Docs>
     </Member>
     <Member MemberName=".ctor">
-      <MemberSignature Language="C#" Value="public StorageMigrationOptions (string id = null, string name = null, string kind = null, string type = null, string azurefilesConnectionString = null, string azurefilesShare = null, Nullable&lt;bool&gt; switchSiteAfterMigration = null, Nullable&lt;bool&gt; blockWriteAccessToSite = null);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string id, string name, string kind, string type, string azurefilesConnectionString, string azurefilesShare, valuetype System.Nullable`1&lt;bool&gt; switchSiteAfterMigration, valuetype System.Nullable`1&lt;bool&gt; blockWriteAccessToSite) cil managed" />
+      <MemberSignature Language="C#" Value="public StorageMigrationOptions (string azurefilesConnectionString, string azurefilesShare, string id = default, string name = default, string kind = default, string type = default, bool? switchSiteAfterMigration = default, bool? blockWriteAccessToSite = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string azurefilesConnectionString, string azurefilesShare, string id, string name, string kind, string type, valuetype System.Nullable`1&lt;bool&gt; switchSiteAfterMigration, valuetype System.Nullable`1&lt;bool&gt; blockWriteAccessToSite) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Management.WebSites.Models.StorageMigrationOptions.#ctor(System.String,System.String,System.String,System.String,System.String,System.String,System.Nullable{System.Boolean},System.Nullable{System.Boolean})" />
-      <MemberSignature Language="VB.NET" Value="Public Sub New (Optional id As String = null, Optional name As String = null, Optional kind As String = null, Optional type As String = null, Optional azurefilesConnectionString As String = null, Optional azurefilesShare As String = null, Optional switchSiteAfterMigration As Nullable(Of Boolean) = null, Optional blockWriteAccessToSite As Nullable(Of Boolean) = null)" />
-      <MemberSignature Language="F#" Value="new Microsoft.Azure.Management.WebSites.Models.StorageMigrationOptions : string * string * string * string * string * string * Nullable&lt;bool&gt; * Nullable&lt;bool&gt; -&gt; Microsoft.Azure.Management.WebSites.Models.StorageMigrationOptions" Usage="new Microsoft.Azure.Management.WebSites.Models.StorageMigrationOptions (id, name, kind, type, azurefilesConnectionString, azurefilesShare, switchSiteAfterMigration, blockWriteAccessToSite)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (azurefilesConnectionString As String, azurefilesShare As String, Optional id As String = Nothing, Optional name As String = Nothing, Optional kind As String = Nothing, Optional type As String = Nothing, Optional switchSiteAfterMigration As Nullable(Of Boolean) = Nothing, Optional blockWriteAccessToSite As Nullable(Of Boolean) = Nothing)" />
+      <MemberSignature Language="F#" Value="new Microsoft.Azure.Management.WebSites.Models.StorageMigrationOptions : string * string * string * string * string * string * Nullable&lt;bool&gt; * Nullable&lt;bool&gt; -&gt; Microsoft.Azure.Management.WebSites.Models.StorageMigrationOptions" Usage="new Microsoft.Azure.Management.WebSites.Models.StorageMigrationOptions (azurefilesConnectionString, azurefilesShare, id, name, kind, type, switchSiteAfterMigration, blockWriteAccessToSite)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Websites</AssemblyName>
-        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>3.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
+        <Parameter Name="azurefilesConnectionString" Type="System.String" />
+        <Parameter Name="azurefilesShare" Type="System.String" />
         <Parameter Name="id" Type="System.String" />
         <Parameter Name="name" Type="System.String" />
         <Parameter Name="kind" Type="System.String" />
         <Parameter Name="type" Type="System.String" />
-        <Parameter Name="azurefilesConnectionString" Type="System.String" />
-        <Parameter Name="azurefilesShare" Type="System.String" />
         <Parameter Name="switchSiteAfterMigration" Type="System.Nullable&lt;System.Boolean&gt;" />
         <Parameter Name="blockWriteAccessToSite" Type="System.Nullable&lt;System.Boolean&gt;" />
       </Parameters>
       <Docs>
+        <param name="azurefilesConnectionString">AzureFiles connection
+            string.</param>
+        <param name="azurefilesShare">AzureFiles share.</param>
         <param name="id">Resource Id.</param>
         <param name="name">Resource Name.</param>
         <param name="kind">Kind of resource.</param>
         <param name="type">Resource type.</param>
-        <param name="azurefilesConnectionString">AzureFiles connection
-            string.</param>
-        <param name="azurefilesShare">AzureFiles share.</param>
         <param name="switchSiteAfterMigration">&lt;code&gt;true&lt;/code&gt;if the
             app should be switched over; otherwise,
             &lt;code&gt;false&lt;/code&gt;.</param>
@@ -95,16 +93,16 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Management.WebSites.Models.StorageMigrationOptions.AzurefilesConnectionString" />
       <MemberSignature Language="VB.NET" Value="Public Property AzurefilesConnectionString As String" />
       <MemberSignature Language="F#" Value="member this.AzurefilesConnectionString : string with get, set" Usage="Microsoft.Azure.Management.WebSites.Models.StorageMigrationOptions.AzurefilesConnectionString" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ AzurefilesConnectionString { System::String ^ get(); void set(System::String ^ value); };" />
-      <MemberSignature Language="C++ CX" Value="public:&#xA; property Platform::String ^ AzurefilesConnectionString { Platform::String ^ get(); void set(Platform::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Websites</AssemblyName>
-        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>3.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="properties.azurefilesConnectionString")</AttributeName>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty(PropertyName="properties.azurefilesConnectionString")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty(PropertyName="properties.azurefilesConnectionString")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -124,16 +122,16 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Management.WebSites.Models.StorageMigrationOptions.AzurefilesShare" />
       <MemberSignature Language="VB.NET" Value="Public Property AzurefilesShare As String" />
       <MemberSignature Language="F#" Value="member this.AzurefilesShare : string with get, set" Usage="Microsoft.Azure.Management.WebSites.Models.StorageMigrationOptions.AzurefilesShare" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ AzurefilesShare { System::String ^ get(); void set(System::String ^ value); };" />
-      <MemberSignature Language="C++ CX" Value="public:&#xA; property Platform::String ^ AzurefilesShare { Platform::String ^ get(); void set(Platform::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Websites</AssemblyName>
-        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>3.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="properties.azurefilesShare")</AttributeName>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty(PropertyName="properties.azurefilesShare")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty(PropertyName="properties.azurefilesShare")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -148,20 +146,21 @@
       </Docs>
     </Member>
     <Member MemberName="BlockWriteAccessToSite">
-      <MemberSignature Language="C#" Value="public Nullable&lt;bool&gt; BlockWriteAccessToSite { get; set; }" />
+      <MemberSignature Language="C#" Value="public bool? BlockWriteAccessToSite { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;bool&gt; BlockWriteAccessToSite" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Management.WebSites.Models.StorageMigrationOptions.BlockWriteAccessToSite" />
       <MemberSignature Language="VB.NET" Value="Public Property BlockWriteAccessToSite As Nullable(Of Boolean)" />
       <MemberSignature Language="F#" Value="member this.BlockWriteAccessToSite : Nullable&lt;bool&gt; with get, set" Usage="Microsoft.Azure.Management.WebSites.Models.StorageMigrationOptions.BlockWriteAccessToSite" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Nullable&lt;bool&gt; BlockWriteAccessToSite { Nullable&lt;bool&gt; get(); void set(Nullable&lt;bool&gt; value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Websites</AssemblyName>
-        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>3.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="properties.blockWriteAccessToSite")</AttributeName>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty(PropertyName="properties.blockWriteAccessToSite")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty(PropertyName="properties.blockWriteAccessToSite")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -178,20 +177,21 @@
       </Docs>
     </Member>
     <Member MemberName="SwitchSiteAfterMigration">
-      <MemberSignature Language="C#" Value="public Nullable&lt;bool&gt; SwitchSiteAfterMigration { get; set; }" />
+      <MemberSignature Language="C#" Value="public bool? SwitchSiteAfterMigration { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;bool&gt; SwitchSiteAfterMigration" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Management.WebSites.Models.StorageMigrationOptions.SwitchSiteAfterMigration" />
       <MemberSignature Language="VB.NET" Value="Public Property SwitchSiteAfterMigration As Nullable(Of Boolean)" />
       <MemberSignature Language="F#" Value="member this.SwitchSiteAfterMigration : Nullable&lt;bool&gt; with get, set" Usage="Microsoft.Azure.Management.WebSites.Models.StorageMigrationOptions.SwitchSiteAfterMigration" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Nullable&lt;bool&gt; SwitchSiteAfterMigration { Nullable&lt;bool&gt; get(); void set(Nullable&lt;bool&gt; value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Websites</AssemblyName>
-        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>3.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="properties.switchSiteAfterMigration")</AttributeName>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty(PropertyName="properties.switchSiteAfterMigration")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty(PropertyName="properties.switchSiteAfterMigration")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -205,6 +205,32 @@
             </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Validate">
+      <MemberSignature Language="C#" Value="public virtual void Validate ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Validate() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Management.WebSites.Models.StorageMigrationOptions.Validate" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Sub Validate ()" />
+      <MemberSignature Language="F#" Value="abstract member Validate : unit -&gt; unit&#xA;override this.Validate : unit -&gt; unit" Usage="storageMigrationOptions.Validate " />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Azure.Management.Websites</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>3.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>
+            Validate the object.
+            </summary>
+        <remarks>To be added.</remarks>
+        <exception cref="T:Microsoft.Rest.ValidationException">
+            Thrown if validation fails
+            </exception>
       </Docs>
     </Member>
   </Members>

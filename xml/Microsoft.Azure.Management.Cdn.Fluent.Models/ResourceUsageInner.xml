@@ -1,14 +1,19 @@
-﻿<Type Name="ResourceUsageInner" FullName="Microsoft.Azure.Management.Cdn.Fluent.Models.ResourceUsageInner">
+<Type Name="ResourceUsageInner" FullName="Microsoft.Azure.Management.Cdn.Fluent.Models.ResourceUsageInner">
   <TypeSignature Language="C#" Value="public class ResourceUsageInner" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit ResourceUsageInner extends System.Object" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Azure.Management.Cdn.Fluent.Models.ResourceUsageInner" />
   <TypeSignature Language="VB.NET" Value="Public Class ResourceUsageInner" />
   <TypeSignature Language="F#" Value="type ResourceUsageInner = class" />
-  <TypeSignature Language="C++ CLI" Value="public ref class ResourceUsageInner" />
-  <TypeSignature Language="C++ WINRT" Value="[Windows::Foundation::Metadata::WebHostHidden]&#xA;class ResourceUsageInner" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Azure.Management.Cdn.Fluent</AssemblyName>
-    <AssemblyVersion>1.0.0.60</AssemblyVersion>
+    <AssemblyVersion>1.0.0.61</AssemblyVersion>
+    <AssemblyVersion>1.0.0.62</AssemblyVersion>
+    <AssemblyVersion>1.0.0.63</AssemblyVersion>
+    <AssemblyVersion>1.0.0.64</AssemblyVersion>
+    <AssemblyVersion>1.0.0.65</AssemblyVersion>
+    <AssemblyVersion>1.0.0.66</AssemblyVersion>
+    <AssemblyVersion>1.0.0.67</AssemblyVersion>
+    <AssemblyVersion>1.0.0.68</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
@@ -26,32 +31,43 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Management.Cdn.Fluent.Models.ResourceUsageInner.#ctor" />
       <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; ResourceUsageInner();" />
-      <MemberSignature Language="C++ CX" Value="public:&#xA; ResourceUsageInner();" />
-      <MemberSignature Language="C++ WINRT" Value=" ResourceUsageInner();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Cdn.Fluent</AssemblyName>
-        <AssemblyVersion>1.0.0.60</AssemblyVersion>
+        <AssemblyVersion>1.0.0.61</AssemblyVersion>
+        <AssemblyVersion>1.0.0.62</AssemblyVersion>
+        <AssemblyVersion>1.0.0.63</AssemblyVersion>
+        <AssemblyVersion>1.0.0.64</AssemblyVersion>
+        <AssemblyVersion>1.0.0.65</AssemblyVersion>
+        <AssemblyVersion>1.0.0.66</AssemblyVersion>
+        <AssemblyVersion>1.0.0.67</AssemblyVersion>
+        <AssemblyVersion>1.0.0.68</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
         <summary>
-            Initializes a new instance of the ResourceUsage class.
+            Initializes a new instance of the ResourceUsageInner class.
             </summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
-      <MemberSignature Language="C#" Value="public ResourceUsageInner (string resourceType = null, string unit = null, Nullable&lt;int&gt; currentValue = null, Nullable&lt;int&gt; limit = null);" />
+      <MemberSignature Language="C#" Value="public ResourceUsageInner (string resourceType = default, string unit = default, int? currentValue = default, int? limit = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string resourceType, string unit, valuetype System.Nullable`1&lt;int32&gt; currentValue, valuetype System.Nullable`1&lt;int32&gt; limit) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Management.Cdn.Fluent.Models.ResourceUsageInner.#ctor(System.String,System.String,System.Nullable{System.Int32},System.Nullable{System.Int32})" />
-      <MemberSignature Language="VB.NET" Value="Public Sub New (Optional resourceType As String = null, Optional unit As String = null, Optional currentValue As Nullable(Of Integer) = null, Optional limit As Nullable(Of Integer) = null)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (Optional resourceType As String = Nothing, Optional unit As String = Nothing, Optional currentValue As Nullable(Of Integer) = Nothing, Optional limit As Nullable(Of Integer) = Nothing)" />
       <MemberSignature Language="F#" Value="new Microsoft.Azure.Management.Cdn.Fluent.Models.ResourceUsageInner : string * string * Nullable&lt;int&gt; * Nullable&lt;int&gt; -&gt; Microsoft.Azure.Management.Cdn.Fluent.Models.ResourceUsageInner" Usage="new Microsoft.Azure.Management.Cdn.Fluent.Models.ResourceUsageInner (resourceType, unit, currentValue, limit)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Cdn.Fluent</AssemblyName>
-        <AssemblyVersion>1.0.0.60</AssemblyVersion>
+        <AssemblyVersion>1.0.0.61</AssemblyVersion>
+        <AssemblyVersion>1.0.0.62</AssemblyVersion>
+        <AssemblyVersion>1.0.0.63</AssemblyVersion>
+        <AssemblyVersion>1.0.0.64</AssemblyVersion>
+        <AssemblyVersion>1.0.0.65</AssemblyVersion>
+        <AssemblyVersion>1.0.0.66</AssemblyVersion>
+        <AssemblyVersion>1.0.0.67</AssemblyVersion>
+        <AssemblyVersion>1.0.0.68</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="resourceType" Type="System.String" />
@@ -60,32 +76,40 @@
         <Parameter Name="limit" Type="System.Nullable&lt;System.Int32&gt;" />
       </Parameters>
       <Docs>
-        <param name="resourceType">Resource type of the usages.</param>
+        <param name="resourceType">Resource type for which the usage is
+            provided.</param>
         <param name="unit">Unit of the usage. e.g. Count.</param>
-        <param name="currentValue">Actual value of the resource
-            type.</param>
-        <param name="limit">Quota of the resource type.</param>
+        <param name="currentValue">Actual value of usage on the specified
+            resource type.</param>
+        <param name="limit">Quota of the specified resource type.</param>
         <summary>
-            Initializes a new instance of the ResourceUsage class.
+            Initializes a new instance of the ResourceUsageInner class.
             </summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="CurrentValue">
-      <MemberSignature Language="C#" Value="public Nullable&lt;int&gt; CurrentValue { get; }" />
+      <MemberSignature Language="C#" Value="public int? CurrentValue { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;int32&gt; CurrentValue" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Management.Cdn.Fluent.Models.ResourceUsageInner.CurrentValue" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property CurrentValue As Nullable(Of Integer)" />
       <MemberSignature Language="F#" Value="member this.CurrentValue : Nullable&lt;int&gt;" Usage="Microsoft.Azure.Management.Cdn.Fluent.Models.ResourceUsageInner.CurrentValue" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Nullable&lt;int&gt; CurrentValue { Nullable&lt;int&gt; get(); void set(Nullable&lt;int&gt; value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Cdn.Fluent</AssemblyName>
-        <AssemblyVersion>1.0.0.60</AssemblyVersion>
+        <AssemblyVersion>1.0.0.61</AssemblyVersion>
+        <AssemblyVersion>1.0.0.62</AssemblyVersion>
+        <AssemblyVersion>1.0.0.63</AssemblyVersion>
+        <AssemblyVersion>1.0.0.64</AssemblyVersion>
+        <AssemblyVersion>1.0.0.65</AssemblyVersion>
+        <AssemblyVersion>1.0.0.66</AssemblyVersion>
+        <AssemblyVersion>1.0.0.67</AssemblyVersion>
+        <AssemblyVersion>1.0.0.68</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="currentValue")</AttributeName>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty(PropertyName="currentValue")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty(PropertyName="currentValue")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -93,27 +117,34 @@
       </ReturnValue>
       <Docs>
         <summary>
-            Gets or sets actual value of the resource type.
+            Gets actual value of usage on the specified resource type.
             </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Limit">
-      <MemberSignature Language="C#" Value="public Nullable&lt;int&gt; Limit { get; }" />
+      <MemberSignature Language="C#" Value="public int? Limit { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;int32&gt; Limit" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Management.Cdn.Fluent.Models.ResourceUsageInner.Limit" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Limit As Nullable(Of Integer)" />
       <MemberSignature Language="F#" Value="member this.Limit : Nullable&lt;int&gt;" Usage="Microsoft.Azure.Management.Cdn.Fluent.Models.ResourceUsageInner.Limit" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Nullable&lt;int&gt; Limit { Nullable&lt;int&gt; get(); void set(Nullable&lt;int&gt; value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Cdn.Fluent</AssemblyName>
-        <AssemblyVersion>1.0.0.60</AssemblyVersion>
+        <AssemblyVersion>1.0.0.61</AssemblyVersion>
+        <AssemblyVersion>1.0.0.62</AssemblyVersion>
+        <AssemblyVersion>1.0.0.63</AssemblyVersion>
+        <AssemblyVersion>1.0.0.64</AssemblyVersion>
+        <AssemblyVersion>1.0.0.65</AssemblyVersion>
+        <AssemblyVersion>1.0.0.66</AssemblyVersion>
+        <AssemblyVersion>1.0.0.67</AssemblyVersion>
+        <AssemblyVersion>1.0.0.68</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="limit")</AttributeName>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty(PropertyName="limit")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty(PropertyName="limit")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -121,7 +152,7 @@
       </ReturnValue>
       <Docs>
         <summary>
-            Gets or sets quota of the resource type.
+            Gets quota of the specified resource type.
             </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
@@ -133,16 +164,22 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Management.Cdn.Fluent.Models.ResourceUsageInner.ResourceType" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ResourceType As String" />
       <MemberSignature Language="F#" Value="member this.ResourceType : string" Usage="Microsoft.Azure.Management.Cdn.Fluent.Models.ResourceUsageInner.ResourceType" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ ResourceType { System::String ^ get(); void set(System::String ^ value); };" />
-      <MemberSignature Language="C++ CX" Value="public:&#xA; property Platform::String ^ ResourceType { Platform::String ^ get(); void set(Platform::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Cdn.Fluent</AssemblyName>
-        <AssemblyVersion>1.0.0.60</AssemblyVersion>
+        <AssemblyVersion>1.0.0.61</AssemblyVersion>
+        <AssemblyVersion>1.0.0.62</AssemblyVersion>
+        <AssemblyVersion>1.0.0.63</AssemblyVersion>
+        <AssemblyVersion>1.0.0.64</AssemblyVersion>
+        <AssemblyVersion>1.0.0.65</AssemblyVersion>
+        <AssemblyVersion>1.0.0.66</AssemblyVersion>
+        <AssemblyVersion>1.0.0.67</AssemblyVersion>
+        <AssemblyVersion>1.0.0.68</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="resourceType")</AttributeName>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty(PropertyName="resourceType")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty(PropertyName="resourceType")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -150,7 +187,7 @@
       </ReturnValue>
       <Docs>
         <summary>
-            Gets or sets resource type of the usages.
+            Gets resource type for which the usage is provided.
             </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
@@ -162,16 +199,22 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Management.Cdn.Fluent.Models.ResourceUsageInner.Unit" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Unit As String" />
       <MemberSignature Language="F#" Value="member this.Unit : string" Usage="Microsoft.Azure.Management.Cdn.Fluent.Models.ResourceUsageInner.Unit" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Unit { System::String ^ get(); void set(System::String ^ value); };" />
-      <MemberSignature Language="C++ CX" Value="public:&#xA; property Platform::String ^ Unit { Platform::String ^ get(); void set(Platform::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Cdn.Fluent</AssemblyName>
-        <AssemblyVersion>1.0.0.60</AssemblyVersion>
+        <AssemblyVersion>1.0.0.61</AssemblyVersion>
+        <AssemblyVersion>1.0.0.62</AssemblyVersion>
+        <AssemblyVersion>1.0.0.63</AssemblyVersion>
+        <AssemblyVersion>1.0.0.64</AssemblyVersion>
+        <AssemblyVersion>1.0.0.65</AssemblyVersion>
+        <AssemblyVersion>1.0.0.66</AssemblyVersion>
+        <AssemblyVersion>1.0.0.67</AssemblyVersion>
+        <AssemblyVersion>1.0.0.68</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="unit")</AttributeName>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty(PropertyName="unit")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty(PropertyName="unit")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -179,7 +222,7 @@
       </ReturnValue>
       <Docs>
         <summary>
-            Gets or sets unit of the usage. e.g. Count.
+            Gets unit of the usage. e.g. Count.
             </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>

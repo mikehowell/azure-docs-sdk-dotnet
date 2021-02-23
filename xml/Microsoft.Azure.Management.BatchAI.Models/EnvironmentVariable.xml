@@ -1,14 +1,12 @@
-﻿<Type Name="EnvironmentVariable" FullName="Microsoft.Azure.Management.BatchAI.Models.EnvironmentVariable">
+<Type Name="EnvironmentVariable" FullName="Microsoft.Azure.Management.BatchAI.Models.EnvironmentVariable">
   <TypeSignature Language="C#" Value="public class EnvironmentVariable" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit EnvironmentVariable extends System.Object" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Azure.Management.BatchAI.Models.EnvironmentVariable" />
   <TypeSignature Language="VB.NET" Value="Public Class EnvironmentVariable" />
   <TypeSignature Language="F#" Value="type EnvironmentVariable = class" />
-  <TypeSignature Language="C++ CLI" Value="public ref class EnvironmentVariable" />
-  <TypeSignature Language="C++ WINRT" Value="[Windows::Foundation::Metadata::WebHostHidden]&#xA;class EnvironmentVariable" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Azure.Management.BatchAI</AssemblyName>
-    <AssemblyVersion>1.0.0.0</AssemblyVersion>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
@@ -16,7 +14,7 @@
   <Interfaces />
   <Docs>
     <summary>
-            A collection of environment variables to set.
+            An environment variable definition.
             </summary>
     <remarks>To be added.</remarks>
   </Docs>
@@ -26,13 +24,10 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Management.BatchAI.Models.EnvironmentVariable.#ctor" />
       <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; EnvironmentVariable();" />
-      <MemberSignature Language="C++ CX" Value="public:&#xA; EnvironmentVariable();" />
-      <MemberSignature Language="C++ WINRT" Value=" EnvironmentVariable();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.BatchAI</AssemblyName>
-        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
@@ -48,21 +43,18 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Management.BatchAI.Models.EnvironmentVariable.#ctor(System.String,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (name As String, value As String)" />
       <MemberSignature Language="F#" Value="new Microsoft.Azure.Management.BatchAI.Models.EnvironmentVariable : string * string -&gt; Microsoft.Azure.Management.BatchAI.Models.EnvironmentVariable" Usage="new Microsoft.Azure.Management.BatchAI.Models.EnvironmentVariable (name, value)" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; EnvironmentVariable(System::String ^ name, System::String ^ value);" />
-      <MemberSignature Language="C++ CX" Value="public:&#xA; EnvironmentVariable(Platform::String ^ name, Platform::String ^ value);" />
-      <MemberSignature Language="C++ WINRT" Value=" EnvironmentVariable(std::wstring const &amp; name, std::wstring const &amp; value);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.BatchAI</AssemblyName>
-        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="name" Type="System.String" />
         <Parameter Name="value" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="name">The name of the environment variable.</param>
-        <param name="value">The value of the environment variable.</param>
+        <param name="name">Name.</param>
+        <param name="value">Value.</param>
         <summary>
             Initializes a new instance of the EnvironmentVariable class.
             </summary>
@@ -75,16 +67,15 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Management.BatchAI.Models.EnvironmentVariable.Name" />
       <MemberSignature Language="VB.NET" Value="Public Property Name As String" />
       <MemberSignature Language="F#" Value="member this.Name : string with get, set" Usage="Microsoft.Azure.Management.BatchAI.Models.EnvironmentVariable.Name" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Name { System::String ^ get(); void set(System::String ^ value); };" />
-      <MemberSignature Language="C++ CX" Value="public:&#xA; property Platform::String ^ Name { Platform::String ^ get(); void set(Platform::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.BatchAI</AssemblyName>
-        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="name")</AttributeName>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty(PropertyName="name")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty(PropertyName="name")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -92,10 +83,12 @@
       </ReturnValue>
       <Docs>
         <summary>
-            Gets or sets the name of the environment variable.
+            Gets or sets name.
             </summary>
         <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <remarks>
+            The name of the environment variable.
+            </remarks>
       </Docs>
     </Member>
     <Member MemberName="Validate">
@@ -104,13 +97,10 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Management.BatchAI.Models.EnvironmentVariable.Validate" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Sub Validate ()" />
       <MemberSignature Language="F#" Value="abstract member Validate : unit -&gt; unit&#xA;override this.Validate : unit -&gt; unit" Usage="environmentVariable.Validate " />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Validate();" />
-      <MemberSignature Language="C++ CX" Value="public:&#xA; virtual void Validate();" />
-      <MemberSignature Language="C++ WINRT" Value=" virtual void Validate();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.BatchAI</AssemblyName>
-        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -132,16 +122,15 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Management.BatchAI.Models.EnvironmentVariable.Value" />
       <MemberSignature Language="VB.NET" Value="Public Property Value As String" />
       <MemberSignature Language="F#" Value="member this.Value : string with get, set" Usage="Microsoft.Azure.Management.BatchAI.Models.EnvironmentVariable.Value" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Value { System::String ^ get(); void set(System::String ^ value); };" />
-      <MemberSignature Language="C++ CX" Value="public:&#xA; property Platform::String ^ Value { Platform::String ^ get(); void set(Platform::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.BatchAI</AssemblyName>
-        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="value")</AttributeName>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty(PropertyName="value")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty(PropertyName="value")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -149,10 +138,12 @@
       </ReturnValue>
       <Docs>
         <summary>
-            Gets or sets the value of the environment variable.
+            Gets or sets value.
             </summary>
         <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <remarks>
+            The value of the environment variable.
+            </remarks>
       </Docs>
     </Member>
   </Members>

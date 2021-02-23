@@ -1,17 +1,9 @@
 ---
 title: Azure compute libraries for .NET
 description: Reference for Azure compute libraries for .NET
-keywords: Azure, .NET, SDK, API, VM, virtual machines, compute
-author: camsoper
-ms.author: casoper
-manager: wpickett
 ms.date: 10/19/2017
 ms.topic: reference
-ms.prod: azure
-ms.technology: azure
-ms.devlang: dotnet
 ms.service: virtual-machines
-ms.custom: devcenter, svc-overview
 ---
 
 # Azure virtual machine libraries for .NET
@@ -36,7 +28,7 @@ Install-Package Microsoft.Azure.Management.Compute.Fluent
 
 #### .NET Core CLI
 
-```bash
+```dotnetcli
 dotnet add package Microsoft.Azure.Management.Compute.Fluent
 ```
 

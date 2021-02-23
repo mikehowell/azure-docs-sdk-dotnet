@@ -1,14 +1,14 @@
-﻿<Type Name="AuthenticationSettingsContract" FullName="Microsoft.Azure.Management.ApiManagement.Models.AuthenticationSettingsContract">
+<Type Name="AuthenticationSettingsContract" FullName="Microsoft.Azure.Management.ApiManagement.Models.AuthenticationSettingsContract">
   <TypeSignature Language="C#" Value="public class AuthenticationSettingsContract" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit AuthenticationSettingsContract extends System.Object" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Azure.Management.ApiManagement.Models.AuthenticationSettingsContract" />
   <TypeSignature Language="VB.NET" Value="Public Class AuthenticationSettingsContract" />
   <TypeSignature Language="F#" Value="type AuthenticationSettingsContract = class" />
-  <TypeSignature Language="C++ CLI" Value="public ref class AuthenticationSettingsContract" />
-  <TypeSignature Language="C++ WINRT" Value="[Windows::Foundation::Metadata::WebHostHidden]&#xA;class AuthenticationSettingsContract" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Azure.Management.ApiManagement</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
+    <AssemblyVersion>5.0.0.0</AssemblyVersion>
+    <AssemblyVersion>6.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
@@ -26,13 +26,12 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Management.ApiManagement.Models.AuthenticationSettingsContract.#ctor" />
       <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; AuthenticationSettingsContract();" />
-      <MemberSignature Language="C++ CX" Value="public:&#xA; AuthenticationSettingsContract();" />
-      <MemberSignature Language="C++ WINRT" Value=" AuthenticationSettingsContract();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.ApiManagement</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
@@ -44,22 +43,25 @@
       </Docs>
     </Member>
     <Member MemberName=".ctor">
-      <MemberSignature Language="C#" Value="public AuthenticationSettingsContract (Microsoft.Azure.Management.ApiManagement.Models.OAuth2AuthenticationSettingsContract oAuth2 = null);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class Microsoft.Azure.Management.ApiManagement.Models.OAuth2AuthenticationSettingsContract oAuth2) cil managed" />
-      <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Management.ApiManagement.Models.AuthenticationSettingsContract.#ctor(Microsoft.Azure.Management.ApiManagement.Models.OAuth2AuthenticationSettingsContract)" />
-      <MemberSignature Language="VB.NET" Value="Public Sub New (Optional oAuth2 As OAuth2AuthenticationSettingsContract = null)" />
-      <MemberSignature Language="F#" Value="new Microsoft.Azure.Management.ApiManagement.Models.AuthenticationSettingsContract : Microsoft.Azure.Management.ApiManagement.Models.OAuth2AuthenticationSettingsContract -&gt; Microsoft.Azure.Management.ApiManagement.Models.AuthenticationSettingsContract" Usage="new Microsoft.Azure.Management.ApiManagement.Models.AuthenticationSettingsContract oAuth2" />
-      <MemberSignature Language="C++ WINRT" Value=" AuthenticationSettingsContract(Microsoft::Azure::Management::ApiManagement::Models::OAuth2AuthenticationSettingsContract const &amp; oAuth2 = null);" />
+      <MemberSignature Language="C#" Value="public AuthenticationSettingsContract (Microsoft.Azure.Management.ApiManagement.Models.OAuth2AuthenticationSettingsContract oAuth2 = default, Microsoft.Azure.Management.ApiManagement.Models.OpenIdAuthenticationSettingsContract openid = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class Microsoft.Azure.Management.ApiManagement.Models.OAuth2AuthenticationSettingsContract oAuth2, class Microsoft.Azure.Management.ApiManagement.Models.OpenIdAuthenticationSettingsContract openid) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Management.ApiManagement.Models.AuthenticationSettingsContract.#ctor(Microsoft.Azure.Management.ApiManagement.Models.OAuth2AuthenticationSettingsContract,Microsoft.Azure.Management.ApiManagement.Models.OpenIdAuthenticationSettingsContract)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (Optional oAuth2 As OAuth2AuthenticationSettingsContract = Nothing, Optional openid As OpenIdAuthenticationSettingsContract = Nothing)" />
+      <MemberSignature Language="F#" Value="new Microsoft.Azure.Management.ApiManagement.Models.AuthenticationSettingsContract : Microsoft.Azure.Management.ApiManagement.Models.OAuth2AuthenticationSettingsContract * Microsoft.Azure.Management.ApiManagement.Models.OpenIdAuthenticationSettingsContract -&gt; Microsoft.Azure.Management.ApiManagement.Models.AuthenticationSettingsContract" Usage="new Microsoft.Azure.Management.ApiManagement.Models.AuthenticationSettingsContract (oAuth2, openid)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.ApiManagement</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="oAuth2" Type="Microsoft.Azure.Management.ApiManagement.Models.OAuth2AuthenticationSettingsContract" />
+        <Parameter Name="openid" Type="Microsoft.Azure.Management.ApiManagement.Models.OpenIdAuthenticationSettingsContract" />
       </Parameters>
       <Docs>
         <param name="oAuth2">OAuth2 Authentication settings</param>
+        <param name="openid">OpenID Connect Authentication Settings</param>
         <summary>
             Initializes a new instance of the AuthenticationSettingsContract
             class.
@@ -73,15 +75,17 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Management.ApiManagement.Models.AuthenticationSettingsContract.OAuth2" />
       <MemberSignature Language="VB.NET" Value="Public Property OAuth2 As OAuth2AuthenticationSettingsContract" />
       <MemberSignature Language="F#" Value="member this.OAuth2 : Microsoft.Azure.Management.ApiManagement.Models.OAuth2AuthenticationSettingsContract with get, set" Usage="Microsoft.Azure.Management.ApiManagement.Models.AuthenticationSettingsContract.OAuth2" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Azure::Management::ApiManagement::Models::OAuth2AuthenticationSettingsContract ^ OAuth2 { Microsoft::Azure::Management::ApiManagement::Models::OAuth2AuthenticationSettingsContract ^ get(); void set(Microsoft::Azure::Management::ApiManagement::Models::OAuth2AuthenticationSettingsContract ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.ApiManagement</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="oAuth2")</AttributeName>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty(PropertyName="oAuth2")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty(PropertyName="oAuth2")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -90,6 +94,36 @@
       <Docs>
         <summary>
             Gets or sets oAuth2 Authentication settings
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Openid">
+      <MemberSignature Language="C#" Value="public Microsoft.Azure.Management.ApiManagement.Models.OpenIdAuthenticationSettingsContract Openid { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Azure.Management.ApiManagement.Models.OpenIdAuthenticationSettingsContract Openid" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Management.ApiManagement.Models.AuthenticationSettingsContract.Openid" />
+      <MemberSignature Language="VB.NET" Value="Public Property Openid As OpenIdAuthenticationSettingsContract" />
+      <MemberSignature Language="F#" Value="member this.Openid : Microsoft.Azure.Management.ApiManagement.Models.OpenIdAuthenticationSettingsContract with get, set" Usage="Microsoft.Azure.Management.ApiManagement.Models.AuthenticationSettingsContract.Openid" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Azure.Management.ApiManagement</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty(PropertyName="openid")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty(PropertyName="openid")&gt;]</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Azure.Management.ApiManagement.Models.OpenIdAuthenticationSettingsContract</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets or sets openID Connect Authentication Settings
             </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>

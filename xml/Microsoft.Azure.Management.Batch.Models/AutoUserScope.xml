@@ -1,22 +1,23 @@
-﻿<Type Name="AutoUserScope" FullName="Microsoft.Azure.Management.Batch.Models.AutoUserScope">
+<Type Name="AutoUserScope" FullName="Microsoft.Azure.Management.Batch.Models.AutoUserScope">
   <TypeSignature Language="C#" Value="public enum AutoUserScope" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed AutoUserScope extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Azure.Management.Batch.Models.AutoUserScope" />
   <TypeSignature Language="VB.NET" Value="Public Enum AutoUserScope" />
   <TypeSignature Language="F#" Value="type AutoUserScope = " />
-  <TypeSignature Language="C++ CLI" Value="public enum class AutoUserScope" />
-  <TypeSignature Language="C++ CX" Value="public enum class AutoUserScope" />
-  <TypeSignature Language="C++ WINRT" Value="enum AutoUserScope" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Azure.Management.Batch</AssemblyName>
-    <AssemblyVersion>6.0.0.0</AssemblyVersion>
+    <AssemblyVersion>9.0.0.0</AssemblyVersion>
+    <AssemblyVersion>10.0.0.0</AssemblyVersion>
+    <AssemblyVersion>11.0.0.0</AssemblyVersion>
+    <AssemblyVersion>13.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Attributes>
     <Attribute>
-      <AttributeName>Newtonsoft.Json.JsonConverter(typeof(Newtonsoft.Json.Converters.StringEnumConverter))</AttributeName>
+      <AttributeName Language="C#">[Newtonsoft.Json.JsonConverter(typeof(Newtonsoft.Json.Converters.StringEnumConverter))]</AttributeName>
+      <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonConverter(typeof(Newtonsoft.Json.Converters.StringEnumConverter))&gt;]</AttributeName>
     </Attribute>
   </Attributes>
   <Docs>
@@ -32,17 +33,18 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.Azure.Management.Batch.Models.AutoUserScope.Pool" />
       <MemberSignature Language="VB.NET" Value="Pool" />
       <MemberSignature Language="F#" Value="Pool = 1" Usage="Microsoft.Azure.Management.Batch.Models.AutoUserScope.Pool" />
-      <MemberSignature Language="C++ CLI" Value="Pool" />
-      <MemberSignature Language="C++ CX" Value="Pool" />
-      <MemberSignature Language="C++ WINRT" Value="Pool" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Batch</AssemblyName>
-        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+        <AssemblyVersion>11.0.0.0</AssemblyVersion>
+        <AssemblyVersion>13.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>System.Runtime.Serialization.EnumMember(Value="Pool")</AttributeName>
+          <AttributeName Language="C#">[System.Runtime.Serialization.EnumMember(Value="Pool")]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Runtime.Serialization.EnumMember(Value="Pool")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -50,7 +52,10 @@
       </ReturnValue>
       <MemberValue>1</MemberValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+            Specifies that the task runs as the common auto user account which
+            is created on every node in a pool.
+            </summary>
       </Docs>
     </Member>
     <Member MemberName="Task">
@@ -59,17 +64,18 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.Azure.Management.Batch.Models.AutoUserScope.Task" />
       <MemberSignature Language="VB.NET" Value="Task" />
       <MemberSignature Language="F#" Value="Task = 0" Usage="Microsoft.Azure.Management.Batch.Models.AutoUserScope.Task" />
-      <MemberSignature Language="C++ CLI" Value="Task" />
-      <MemberSignature Language="C++ CX" Value="Task" />
-      <MemberSignature Language="C++ WINRT" Value="Task" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Batch</AssemblyName>
-        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+        <AssemblyVersion>11.0.0.0</AssemblyVersion>
+        <AssemblyVersion>13.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>System.Runtime.Serialization.EnumMember(Value="Task")</AttributeName>
+          <AttributeName Language="C#">[System.Runtime.Serialization.EnumMember(Value="Task")]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Runtime.Serialization.EnumMember(Value="Task")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -77,7 +83,9 @@
       </ReturnValue>
       <MemberValue>0</MemberValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+            Specifies that the service should create a new user for the task.
+            </summary>
       </Docs>
     </Member>
   </Members>

@@ -1,17 +1,9 @@
 ---
 title: Azure Service Bus Relay libraries for .NET
 description: Reference for Azure Service Bus Relay libraries for .NET
-keywords: Azure, .NET, SDK, API, Service Bus Relay
-author: camsoper
-ms.author: casoper
-manager: wpickett
 ms.date: 10/19/2017
 ms.topic: reference
-ms.prod: azure
-ms.technology: azure
-ms.devlang: dotnet
-ms.service: service-bus
-ms.custom: devcenter, svc-overview
+ms.service: service-bus-relay
 ---
 
 # Azure Service Bus Relay libraries for .NET
@@ -32,7 +24,7 @@ Install the [NuGet package](https://www.nuget.org/packages/Microsoft.Azure.Relay
 Install-Package Microsoft.Azure.Relay
 ```
 
-```bash
+```dotnetcli
 dotnet add package Microsoft.Azure.Relay
 ```
 

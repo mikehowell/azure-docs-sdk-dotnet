@@ -1,13 +1,11 @@
-﻿<Type Name="AutomationClient" FullName="Microsoft.Azure.Management.Automation.AutomationClient">
+<Type Name="AutomationClient" FullName="Microsoft.Azure.Management.Automation.AutomationClient">
   <TypeSignature Language="C#" Value="public class AutomationClient : Microsoft.Rest.ServiceClient&lt;Microsoft.Azure.Management.Automation.AutomationClient&gt;, IDisposable, Microsoft.Azure.Management.Automation.IAutomationClient, Microsoft.Rest.Azure.IAzureClient" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit AutomationClient extends Microsoft.Rest.ServiceClient`1&lt;class Microsoft.Azure.Management.Automation.AutomationClient&gt; implements class Microsoft.Azure.Management.Automation.IAutomationClient, class Microsoft.Rest.Azure.IAzureClient, class System.IDisposable" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Azure.Management.Automation.AutomationClient" />
   <TypeSignature Language="VB.NET" Value="Public Class AutomationClient&#xA;Inherits ServiceClient(Of AutomationClient)&#xA;Implements IAutomationClient, IAzureClient, IDisposable" />
   <TypeSignature Language="F#" Value="type AutomationClient = class&#xA;    inherit ServiceClient&lt;AutomationClient&gt;&#xA;    interface IAutomationClient&#xA;    interface IDisposable&#xA;    interface IAzureClient" />
-  <TypeSignature Language="C++ CLI" Value="public ref class AutomationClient : Microsoft::Rest::ServiceClient&lt;Microsoft::Azure::Management::Automation::AutomationClient ^&gt;, IDisposable, Microsoft::Azure::Management::Automation::IAutomationClient, Microsoft::Rest::Azure::IAzureClient" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Azure.Management.Automation</AssemblyName>
-    <AssemblyVersion>3.0.0.0</AssemblyVersion>
     <AssemblyVersion>3.0.1.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -40,18 +38,17 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Management.Automation.AutomationClient.#ctor(System.Net.Http.DelegatingHandler[])" />
       <MemberSignature Language="VB.NET" Value="Protected Sub New (ParamArray handlers As DelegatingHandler())" />
       <MemberSignature Language="F#" Value="new Microsoft.Azure.Management.Automation.AutomationClient : System.Net.Http.DelegatingHandler[] -&gt; Microsoft.Azure.Management.Automation.AutomationClient" Usage="new Microsoft.Azure.Management.Automation.AutomationClient handlers" />
-      <MemberSignature Language="C++ CLI" Value="protected:&#xA; AutomationClient(... cli::array &lt;System::Net::Http::DelegatingHandler ^&gt; ^ handlers);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Automation</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>3.0.1.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="handlers" Type="System.Net.Http.DelegatingHandler[]">
           <Attributes>
             <Attribute>
-              <AttributeName>System.ParamArray</AttributeName>
+              <AttributeName Language="C#">[System.ParamArray]</AttributeName>
+              <AttributeName Language="F#">[&lt;System.ParamArray&gt;]</AttributeName>
             </Attribute>
           </Attributes>
         </Parameter>
@@ -72,11 +69,9 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Management.Automation.AutomationClient.#ctor(Microsoft.Rest.ServiceClientCredentials,System.Net.Http.DelegatingHandler[])" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (credentials As ServiceClientCredentials, ParamArray handlers As DelegatingHandler())" />
       <MemberSignature Language="F#" Value="new Microsoft.Azure.Management.Automation.AutomationClient : Microsoft.Rest.ServiceClientCredentials * System.Net.Http.DelegatingHandler[] -&gt; Microsoft.Azure.Management.Automation.AutomationClient" Usage="new Microsoft.Azure.Management.Automation.AutomationClient (credentials, handlers)" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; AutomationClient(Microsoft::Rest::ServiceClientCredentials ^ credentials, ... cli::array &lt;System::Net::Http::DelegatingHandler ^&gt; ^ handlers);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Automation</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>3.0.1.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
@@ -84,7 +79,8 @@
         <Parameter Name="handlers" Type="System.Net.Http.DelegatingHandler[]">
           <Attributes>
             <Attribute>
-              <AttributeName>System.ParamArray</AttributeName>
+              <AttributeName Language="C#">[System.ParamArray]</AttributeName>
+              <AttributeName Language="F#">[&lt;System.ParamArray&gt;]</AttributeName>
             </Attribute>
           </Attributes>
         </Parameter>
@@ -106,16 +102,41 @@
       </Docs>
     </Member>
     <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="protected AutomationClient (System.Net.Http.HttpClient httpClient, bool disposeHttpClient);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor(class System.Net.Http.HttpClient httpClient, bool disposeHttpClient) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Management.Automation.AutomationClient.#ctor(System.Net.Http.HttpClient,System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Protected Sub New (httpClient As HttpClient, disposeHttpClient As Boolean)" />
+      <MemberSignature Language="F#" Value="new Microsoft.Azure.Management.Automation.AutomationClient : System.Net.Http.HttpClient * bool -&gt; Microsoft.Azure.Management.Automation.AutomationClient" Usage="new Microsoft.Azure.Management.Automation.AutomationClient (httpClient, disposeHttpClient)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Azure.Management.Automation</AssemblyName>
+        <AssemblyVersion>3.0.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="httpClient" Type="System.Net.Http.HttpClient" />
+        <Parameter Name="disposeHttpClient" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="httpClient">
+            HttpClient to be used
+            </param>
+        <param name="disposeHttpClient">
+            True: will dispose the provided httpClient on calling AutomationClient.Dispose(). False: will not dispose provided httpClient</param>
+        <summary>
+            Initializes a new instance of the AutomationClient class.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="protected AutomationClient (System.Net.Http.HttpClientHandler rootHandler, params System.Net.Http.DelegatingHandler[] handlers);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor(class System.Net.Http.HttpClientHandler rootHandler, class System.Net.Http.DelegatingHandler[] handlers) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Management.Automation.AutomationClient.#ctor(System.Net.Http.HttpClientHandler,System.Net.Http.DelegatingHandler[])" />
       <MemberSignature Language="VB.NET" Value="Protected Sub New (rootHandler As HttpClientHandler, ParamArray handlers As DelegatingHandler())" />
       <MemberSignature Language="F#" Value="new Microsoft.Azure.Management.Automation.AutomationClient : System.Net.Http.HttpClientHandler * System.Net.Http.DelegatingHandler[] -&gt; Microsoft.Azure.Management.Automation.AutomationClient" Usage="new Microsoft.Azure.Management.Automation.AutomationClient (rootHandler, handlers)" />
-      <MemberSignature Language="C++ CLI" Value="protected:&#xA; AutomationClient(System::Net::Http::HttpClientHandler ^ rootHandler, ... cli::array &lt;System::Net::Http::DelegatingHandler ^&gt; ^ handlers);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Automation</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>3.0.1.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
@@ -123,7 +144,8 @@
         <Parameter Name="handlers" Type="System.Net.Http.DelegatingHandler[]">
           <Attributes>
             <Attribute>
-              <AttributeName>System.ParamArray</AttributeName>
+              <AttributeName Language="C#">[System.ParamArray]</AttributeName>
+              <AttributeName Language="F#">[&lt;System.ParamArray&gt;]</AttributeName>
             </Attribute>
           </Attributes>
         </Parameter>
@@ -147,11 +169,9 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Management.Automation.AutomationClient.#ctor(System.Uri,System.Net.Http.DelegatingHandler[])" />
       <MemberSignature Language="VB.NET" Value="Protected Sub New (baseUri As Uri, ParamArray handlers As DelegatingHandler())" />
       <MemberSignature Language="F#" Value="new Microsoft.Azure.Management.Automation.AutomationClient : Uri * System.Net.Http.DelegatingHandler[] -&gt; Microsoft.Azure.Management.Automation.AutomationClient" Usage="new Microsoft.Azure.Management.Automation.AutomationClient (baseUri, handlers)" />
-      <MemberSignature Language="C++ CLI" Value="protected:&#xA; AutomationClient(Uri ^ baseUri, ... cli::array &lt;System::Net::Http::DelegatingHandler ^&gt; ^ handlers);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Automation</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>3.0.1.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
@@ -159,7 +179,8 @@
         <Parameter Name="handlers" Type="System.Net.Http.DelegatingHandler[]">
           <Attributes>
             <Attribute>
-              <AttributeName>System.ParamArray</AttributeName>
+              <AttributeName Language="C#">[System.ParamArray]</AttributeName>
+              <AttributeName Language="F#">[&lt;System.ParamArray&gt;]</AttributeName>
             </Attribute>
           </Attributes>
         </Parameter>
@@ -181,16 +202,48 @@
       </Docs>
     </Member>
     <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public AutomationClient (Microsoft.Rest.ServiceClientCredentials credentials, System.Net.Http.HttpClient httpClient, bool disposeHttpClient);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class Microsoft.Rest.ServiceClientCredentials credentials, class System.Net.Http.HttpClient httpClient, bool disposeHttpClient) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Management.Automation.AutomationClient.#ctor(Microsoft.Rest.ServiceClientCredentials,System.Net.Http.HttpClient,System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (credentials As ServiceClientCredentials, httpClient As HttpClient, disposeHttpClient As Boolean)" />
+      <MemberSignature Language="F#" Value="new Microsoft.Azure.Management.Automation.AutomationClient : Microsoft.Rest.ServiceClientCredentials * System.Net.Http.HttpClient * bool -&gt; Microsoft.Azure.Management.Automation.AutomationClient" Usage="new Microsoft.Azure.Management.Automation.AutomationClient (credentials, httpClient, disposeHttpClient)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Azure.Management.Automation</AssemblyName>
+        <AssemblyVersion>3.0.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="credentials" Type="Microsoft.Rest.ServiceClientCredentials" />
+        <Parameter Name="httpClient" Type="System.Net.Http.HttpClient" />
+        <Parameter Name="disposeHttpClient" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="credentials">
+            Required. Credentials needed for the client to connect to Azure.
+            </param>
+        <param name="httpClient">
+            HttpClient to be used
+            </param>
+        <param name="disposeHttpClient">
+            True: will dispose the provided httpClient on calling AutomationClient.Dispose(). False: will not dispose provided httpClient</param>
+        <summary>
+            Initializes a new instance of the AutomationClient class.
+            </summary>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+            Thrown when a required parameter is null
+            </exception>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public AutomationClient (Microsoft.Rest.ServiceClientCredentials credentials, System.Net.Http.HttpClientHandler rootHandler, params System.Net.Http.DelegatingHandler[] handlers);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class Microsoft.Rest.ServiceClientCredentials credentials, class System.Net.Http.HttpClientHandler rootHandler, class System.Net.Http.DelegatingHandler[] handlers) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Management.Automation.AutomationClient.#ctor(Microsoft.Rest.ServiceClientCredentials,System.Net.Http.HttpClientHandler,System.Net.Http.DelegatingHandler[])" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (credentials As ServiceClientCredentials, rootHandler As HttpClientHandler, ParamArray handlers As DelegatingHandler())" />
       <MemberSignature Language="F#" Value="new Microsoft.Azure.Management.Automation.AutomationClient : Microsoft.Rest.ServiceClientCredentials * System.Net.Http.HttpClientHandler * System.Net.Http.DelegatingHandler[] -&gt; Microsoft.Azure.Management.Automation.AutomationClient" Usage="new Microsoft.Azure.Management.Automation.AutomationClient (credentials, rootHandler, handlers)" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; AutomationClient(Microsoft::Rest::ServiceClientCredentials ^ credentials, System::Net::Http::HttpClientHandler ^ rootHandler, ... cli::array &lt;System::Net::Http::DelegatingHandler ^&gt; ^ handlers);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Automation</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>3.0.1.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
@@ -199,7 +252,8 @@
         <Parameter Name="handlers" Type="System.Net.Http.DelegatingHandler[]">
           <Attributes>
             <Attribute>
-              <AttributeName>System.ParamArray</AttributeName>
+              <AttributeName Language="C#">[System.ParamArray]</AttributeName>
+              <AttributeName Language="F#">[&lt;System.ParamArray&gt;]</AttributeName>
             </Attribute>
           </Attributes>
         </Parameter>
@@ -229,11 +283,9 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Management.Automation.AutomationClient.#ctor(System.Uri,Microsoft.Rest.ServiceClientCredentials,System.Net.Http.DelegatingHandler[])" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (baseUri As Uri, credentials As ServiceClientCredentials, ParamArray handlers As DelegatingHandler())" />
       <MemberSignature Language="F#" Value="new Microsoft.Azure.Management.Automation.AutomationClient : Uri * Microsoft.Rest.ServiceClientCredentials * System.Net.Http.DelegatingHandler[] -&gt; Microsoft.Azure.Management.Automation.AutomationClient" Usage="new Microsoft.Azure.Management.Automation.AutomationClient (baseUri, credentials, handlers)" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; AutomationClient(Uri ^ baseUri, Microsoft::Rest::ServiceClientCredentials ^ credentials, ... cli::array &lt;System::Net::Http::DelegatingHandler ^&gt; ^ handlers);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Automation</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>3.0.1.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
@@ -242,7 +294,8 @@
         <Parameter Name="handlers" Type="System.Net.Http.DelegatingHandler[]">
           <Attributes>
             <Attribute>
-              <AttributeName>System.ParamArray</AttributeName>
+              <AttributeName Language="C#">[System.ParamArray]</AttributeName>
+              <AttributeName Language="F#">[&lt;System.ParamArray&gt;]</AttributeName>
             </Attribute>
           </Attributes>
         </Parameter>
@@ -272,11 +325,9 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Management.Automation.AutomationClient.#ctor(System.Uri,System.Net.Http.HttpClientHandler,System.Net.Http.DelegatingHandler[])" />
       <MemberSignature Language="VB.NET" Value="Protected Sub New (baseUri As Uri, rootHandler As HttpClientHandler, ParamArray handlers As DelegatingHandler())" />
       <MemberSignature Language="F#" Value="new Microsoft.Azure.Management.Automation.AutomationClient : Uri * System.Net.Http.HttpClientHandler * System.Net.Http.DelegatingHandler[] -&gt; Microsoft.Azure.Management.Automation.AutomationClient" Usage="new Microsoft.Azure.Management.Automation.AutomationClient (baseUri, rootHandler, handlers)" />
-      <MemberSignature Language="C++ CLI" Value="protected:&#xA; AutomationClient(Uri ^ baseUri, System::Net::Http::HttpClientHandler ^ rootHandler, ... cli::array &lt;System::Net::Http::DelegatingHandler ^&gt; ^ handlers);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Automation</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>3.0.1.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
@@ -285,7 +336,8 @@
         <Parameter Name="handlers" Type="System.Net.Http.DelegatingHandler[]">
           <Attributes>
             <Attribute>
-              <AttributeName>System.ParamArray</AttributeName>
+              <AttributeName Language="C#">[System.ParamArray]</AttributeName>
+              <AttributeName Language="F#">[&lt;System.ParamArray&gt;]</AttributeName>
             </Attribute>
           </Attributes>
         </Parameter>
@@ -315,11 +367,9 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Management.Automation.AutomationClient.#ctor(System.Uri,Microsoft.Rest.ServiceClientCredentials,System.Net.Http.HttpClientHandler,System.Net.Http.DelegatingHandler[])" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (baseUri As Uri, credentials As ServiceClientCredentials, rootHandler As HttpClientHandler, ParamArray handlers As DelegatingHandler())" />
       <MemberSignature Language="F#" Value="new Microsoft.Azure.Management.Automation.AutomationClient : Uri * Microsoft.Rest.ServiceClientCredentials * System.Net.Http.HttpClientHandler * System.Net.Http.DelegatingHandler[] -&gt; Microsoft.Azure.Management.Automation.AutomationClient" Usage="new Microsoft.Azure.Management.Automation.AutomationClient (baseUri, credentials, rootHandler, handlers)" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; AutomationClient(Uri ^ baseUri, Microsoft::Rest::ServiceClientCredentials ^ credentials, System::Net::Http::HttpClientHandler ^ rootHandler, ... cli::array &lt;System::Net::Http::DelegatingHandler ^&gt; ^ handlers);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Automation</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>3.0.1.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
@@ -329,7 +379,8 @@
         <Parameter Name="handlers" Type="System.Net.Http.DelegatingHandler[]">
           <Attributes>
             <Attribute>
-              <AttributeName>System.ParamArray</AttributeName>
+              <AttributeName Language="C#">[System.ParamArray]</AttributeName>
+              <AttributeName Language="F#">[&lt;System.ParamArray&gt;]</AttributeName>
             </Attribute>
           </Attributes>
         </Parameter>
@@ -362,15 +413,12 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Management.Automation.AutomationClient.AcceptLanguage" />
       <MemberSignature Language="VB.NET" Value="Public Property AcceptLanguage As String" />
       <MemberSignature Language="F#" Value="member this.AcceptLanguage : string with get, set" Usage="Microsoft.Azure.Management.Automation.AutomationClient.AcceptLanguage" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ AcceptLanguage { System::String ^ get(); void set(System::String ^ value); };" />
-      <MemberSignature Language="C++ CX" Value="public:&#xA; property Platform::String ^ AcceptLanguage { Platform::String ^ get(); void set(Platform::String ^ value); };" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:Microsoft.Azure.Management.Automation.IAutomationClient.AcceptLanguage</InterfaceMember>
       </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Automation</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>3.0.1.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -378,7 +426,7 @@
       </ReturnValue>
       <Docs>
         <summary>
-            Gets or sets the preferred language for the response.
+            The preferred language for the response.
             </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
@@ -390,12 +438,9 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Management.Automation.AutomationClient.Activity" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Activity As IActivityOperations" />
       <MemberSignature Language="F#" Value="member this.Activity : Microsoft.Azure.Management.Automation.IActivityOperations" Usage="Microsoft.Azure.Management.Automation.AutomationClient.Activity" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Azure::Management::Automation::IActivityOperations ^ Activity { Microsoft::Azure::Management::Automation::IActivityOperations ^ get(); };" />
-      <MemberSignature Language="C++ CX" Value="public:&#xA; property Microsoft::Azure::Management::Automation::IActivityOperations ^ Activity { Microsoft::Azure::Management::Automation::IActivityOperations ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Automation</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>3.0.1.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -415,12 +460,9 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Management.Automation.AutomationClient.AgentRegistrationInformation" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property AgentRegistrationInformation As IAgentRegistrationInformationOperations" />
       <MemberSignature Language="F#" Value="member this.AgentRegistrationInformation : Microsoft.Azure.Management.Automation.IAgentRegistrationInformationOperations" Usage="Microsoft.Azure.Management.Automation.AutomationClient.AgentRegistrationInformation" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Azure::Management::Automation::IAgentRegistrationInformationOperations ^ AgentRegistrationInformation { Microsoft::Azure::Management::Automation::IAgentRegistrationInformationOperations ^ get(); };" />
-      <MemberSignature Language="C++ CX" Value="public:&#xA; property Microsoft::Azure::Management::Automation::IAgentRegistrationInformationOperations ^ AgentRegistrationInformation { Microsoft::Azure::Management::Automation::IAgentRegistrationInformationOperations ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Automation</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>3.0.1.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -440,12 +482,9 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Management.Automation.AutomationClient.AutomationAccount" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property AutomationAccount As IAutomationAccountOperations" />
       <MemberSignature Language="F#" Value="member this.AutomationAccount : Microsoft.Azure.Management.Automation.IAutomationAccountOperations" Usage="Microsoft.Azure.Management.Automation.AutomationClient.AutomationAccount" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Azure::Management::Automation::IAutomationAccountOperations ^ AutomationAccount { Microsoft::Azure::Management::Automation::IAutomationAccountOperations ^ get(); };" />
-      <MemberSignature Language="C++ CX" Value="public:&#xA; property Microsoft::Azure::Management::Automation::IAutomationAccountOperations ^ AutomationAccount { Microsoft::Azure::Management::Automation::IAutomationAccountOperations ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Automation</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>3.0.1.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -459,48 +498,18 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
-    <Member MemberName="AutomationAccountName">
-      <MemberSignature Language="C#" Value="public string AutomationAccountName { get; set; }" />
-      <MemberSignature Language="ILAsm" Value=".property instance string AutomationAccountName" />
-      <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Management.Automation.AutomationClient.AutomationAccountName" />
-      <MemberSignature Language="VB.NET" Value="Public Property AutomationAccountName As String" />
-      <MemberSignature Language="F#" Value="member this.AutomationAccountName : string with get, set" Usage="Microsoft.Azure.Management.Automation.AutomationClient.AutomationAccountName" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ AutomationAccountName { System::String ^ get(); void set(System::String ^ value); };" />
-      <MemberSignature Language="C++ CX" Value="public:&#xA; property Platform::String ^ AutomationAccountName { Platform::String ^ get(); void set(Platform::String ^ value); };" />
-      <MemberType>Property</MemberType>
-      <Implements>
-        <InterfaceMember>P:Microsoft.Azure.Management.Automation.IAutomationClient.AutomationAccountName</InterfaceMember>
-      </Implements>
-      <AssemblyInfo>
-        <AssemblyName>Microsoft.Azure.Management.Automation</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
-        <AssemblyVersion>3.0.1.0</AssemblyVersion>
-      </AssemblyInfo>
-      <ReturnValue>
-        <ReturnType>System.String</ReturnType>
-      </ReturnValue>
-      <Docs>
-        <summary>
-            The name of the automation account.
-            </summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
-      </Docs>
-    </Member>
     <Member MemberName="BaseUri">
       <MemberSignature Language="C#" Value="public Uri BaseUri { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Uri BaseUri" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Management.Automation.AutomationClient.BaseUri" />
       <MemberSignature Language="VB.NET" Value="Public Property BaseUri As Uri" />
       <MemberSignature Language="F#" Value="member this.BaseUri : Uri with get, set" Usage="Microsoft.Azure.Management.Automation.AutomationClient.BaseUri" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Uri ^ BaseUri { Uri ^ get(); void set(Uri ^ value); };" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:Microsoft.Azure.Management.Automation.IAutomationClient.BaseUri</InterfaceMember>
       </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Automation</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>3.0.1.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -520,12 +529,9 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Management.Automation.AutomationClient.Certificate" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Certificate As ICertificateOperations" />
       <MemberSignature Language="F#" Value="member this.Certificate : Microsoft.Azure.Management.Automation.ICertificateOperations" Usage="Microsoft.Azure.Management.Automation.AutomationClient.Certificate" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Azure::Management::Automation::ICertificateOperations ^ Certificate { Microsoft::Azure::Management::Automation::ICertificateOperations ^ get(); };" />
-      <MemberSignature Language="C++ CX" Value="public:&#xA; property Microsoft::Azure::Management::Automation::ICertificateOperations ^ Certificate { Microsoft::Azure::Management::Automation::ICertificateOperations ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Automation</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>3.0.1.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -539,46 +545,15 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
-    <Member MemberName="ClientRequestId">
-      <MemberSignature Language="C#" Value="public string ClientRequestId { get; set; }" />
-      <MemberSignature Language="ILAsm" Value=".property instance string ClientRequestId" />
-      <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Management.Automation.AutomationClient.ClientRequestId" />
-      <MemberSignature Language="VB.NET" Value="Public Property ClientRequestId As String" />
-      <MemberSignature Language="F#" Value="member this.ClientRequestId : string with get, set" Usage="Microsoft.Azure.Management.Automation.AutomationClient.ClientRequestId" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ ClientRequestId { System::String ^ get(); void set(System::String ^ value); };" />
-      <MemberSignature Language="C++ CX" Value="public:&#xA; property Platform::String ^ ClientRequestId { Platform::String ^ get(); void set(Platform::String ^ value); };" />
-      <MemberType>Property</MemberType>
-      <Implements>
-        <InterfaceMember>P:Microsoft.Azure.Management.Automation.IAutomationClient.ClientRequestId</InterfaceMember>
-      </Implements>
-      <AssemblyInfo>
-        <AssemblyName>Microsoft.Azure.Management.Automation</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
-        <AssemblyVersion>3.0.1.0</AssemblyVersion>
-      </AssemblyInfo>
-      <ReturnValue>
-        <ReturnType>System.String</ReturnType>
-      </ReturnValue>
-      <Docs>
-        <summary>
-            Identifies this specific client request.
-            </summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
-      </Docs>
-    </Member>
     <Member MemberName="Connection">
       <MemberSignature Language="C#" Value="public Microsoft.Azure.Management.Automation.IConnectionOperations Connection { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Azure.Management.Automation.IConnectionOperations Connection" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Management.Automation.AutomationClient.Connection" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Connection As IConnectionOperations" />
       <MemberSignature Language="F#" Value="member this.Connection : Microsoft.Azure.Management.Automation.IConnectionOperations" Usage="Microsoft.Azure.Management.Automation.AutomationClient.Connection" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Azure::Management::Automation::IConnectionOperations ^ Connection { Microsoft::Azure::Management::Automation::IConnectionOperations ^ get(); };" />
-      <MemberSignature Language="C++ CX" Value="public:&#xA; property Microsoft::Azure::Management::Automation::IConnectionOperations ^ Connection { Microsoft::Azure::Management::Automation::IConnectionOperations ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Automation</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>3.0.1.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -598,12 +573,9 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Management.Automation.AutomationClient.ConnectionType" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ConnectionType As IConnectionTypeOperations" />
       <MemberSignature Language="F#" Value="member this.ConnectionType : Microsoft.Azure.Management.Automation.IConnectionTypeOperations" Usage="Microsoft.Azure.Management.Automation.AutomationClient.ConnectionType" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Azure::Management::Automation::IConnectionTypeOperations ^ ConnectionType { Microsoft::Azure::Management::Automation::IConnectionTypeOperations ^ get(); };" />
-      <MemberSignature Language="C++ CX" Value="public:&#xA; property Microsoft::Azure::Management::Automation::IConnectionTypeOperations ^ ConnectionType { Microsoft::Azure::Management::Automation::IConnectionTypeOperations ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Automation</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>3.0.1.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -617,18 +589,41 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <Member MemberName="CountType1">
+      <MemberSignature Language="C#" Value="public string CountType1 { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string CountType1" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Management.Automation.AutomationClient.CountType1" />
+      <MemberSignature Language="VB.NET" Value="Public Property CountType1 As String" />
+      <MemberSignature Language="F#" Value="member this.CountType1 : string with get, set" Usage="Microsoft.Azure.Management.Automation.AutomationClient.CountType1" />
+      <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Azure.Management.Automation.IAutomationClient.CountType1</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Azure.Management.Automation</AssemblyName>
+        <AssemblyVersion>3.0.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            The type of counts to retrieve. Possible values include: 'status',
+            'nodeconfiguration'
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
     <Member MemberName="Credential">
       <MemberSignature Language="C#" Value="public Microsoft.Azure.Management.Automation.ICredentialOperations Credential { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Azure.Management.Automation.ICredentialOperations Credential" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Management.Automation.AutomationClient.Credential" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Credential As ICredentialOperations" />
       <MemberSignature Language="F#" Value="member this.Credential : Microsoft.Azure.Management.Automation.ICredentialOperations" Usage="Microsoft.Azure.Management.Automation.AutomationClient.Credential" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Azure::Management::Automation::ICredentialOperations ^ Credential { Microsoft::Azure::Management::Automation::ICredentialOperations ^ get(); };" />
-      <MemberSignature Language="C++ CX" Value="public:&#xA; property Microsoft::Azure::Management::Automation::ICredentialOperations ^ Credential { Microsoft::Azure::Management::Automation::ICredentialOperations ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Automation</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>3.0.1.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -648,12 +643,9 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Management.Automation.AutomationClient.Credentials" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Credentials As ServiceClientCredentials" />
       <MemberSignature Language="F#" Value="member this.Credentials : Microsoft.Rest.ServiceClientCredentials" Usage="Microsoft.Azure.Management.Automation.AutomationClient.Credentials" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Rest::ServiceClientCredentials ^ Credentials { Microsoft::Rest::ServiceClientCredentials ^ get(); };" />
-      <MemberSignature Language="C++ CX" Value="public:&#xA; property Microsoft::Rest::ServiceClientCredentials ^ Credentials { Microsoft::Rest::ServiceClientCredentials ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Automation</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>3.0.1.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -673,11 +665,9 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Management.Automation.AutomationClient.DeserializationSettings" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property DeserializationSettings As JsonSerializerSettings" />
       <MemberSignature Language="F#" Value="member this.DeserializationSettings : Newtonsoft.Json.JsonSerializerSettings" Usage="Microsoft.Azure.Management.Automation.AutomationClient.DeserializationSettings" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Newtonsoft::Json::JsonSerializerSettings ^ DeserializationSettings { Newtonsoft::Json::JsonSerializerSettings ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Automation</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>3.0.1.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -697,12 +687,9 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Management.Automation.AutomationClient.DscCompilationJob" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property DscCompilationJob As IDscCompilationJobOperations" />
       <MemberSignature Language="F#" Value="member this.DscCompilationJob : Microsoft.Azure.Management.Automation.IDscCompilationJobOperations" Usage="Microsoft.Azure.Management.Automation.AutomationClient.DscCompilationJob" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Azure::Management::Automation::IDscCompilationJobOperations ^ DscCompilationJob { Microsoft::Azure::Management::Automation::IDscCompilationJobOperations ^ get(); };" />
-      <MemberSignature Language="C++ CX" Value="public:&#xA; property Microsoft::Azure::Management::Automation::IDscCompilationJobOperations ^ DscCompilationJob { Microsoft::Azure::Management::Automation::IDscCompilationJobOperations ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Automation</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>3.0.1.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -716,18 +703,37 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <Member MemberName="DscCompilationJobStream">
+      <MemberSignature Language="C#" Value="public Microsoft.Azure.Management.Automation.IDscCompilationJobStreamOperations DscCompilationJobStream { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Azure.Management.Automation.IDscCompilationJobStreamOperations DscCompilationJobStream" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Management.Automation.AutomationClient.DscCompilationJobStream" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property DscCompilationJobStream As IDscCompilationJobStreamOperations" />
+      <MemberSignature Language="F#" Value="member this.DscCompilationJobStream : Microsoft.Azure.Management.Automation.IDscCompilationJobStreamOperations" Usage="Microsoft.Azure.Management.Automation.AutomationClient.DscCompilationJobStream" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Azure.Management.Automation</AssemblyName>
+        <AssemblyVersion>3.0.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Azure.Management.Automation.IDscCompilationJobStreamOperations</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets the IDscCompilationJobStreamOperations.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
     <Member MemberName="DscConfiguration">
       <MemberSignature Language="C#" Value="public Microsoft.Azure.Management.Automation.IDscConfigurationOperations DscConfiguration { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Azure.Management.Automation.IDscConfigurationOperations DscConfiguration" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Management.Automation.AutomationClient.DscConfiguration" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property DscConfiguration As IDscConfigurationOperations" />
       <MemberSignature Language="F#" Value="member this.DscConfiguration : Microsoft.Azure.Management.Automation.IDscConfigurationOperations" Usage="Microsoft.Azure.Management.Automation.AutomationClient.DscConfiguration" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Azure::Management::Automation::IDscConfigurationOperations ^ DscConfiguration { Microsoft::Azure::Management::Automation::IDscConfigurationOperations ^ get(); };" />
-      <MemberSignature Language="C++ CX" Value="public:&#xA; property Microsoft::Azure::Management::Automation::IDscConfigurationOperations ^ DscConfiguration { Microsoft::Azure::Management::Automation::IDscConfigurationOperations ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Automation</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>3.0.1.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -747,12 +753,9 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Management.Automation.AutomationClient.DscNode" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property DscNode As IDscNodeOperations" />
       <MemberSignature Language="F#" Value="member this.DscNode : Microsoft.Azure.Management.Automation.IDscNodeOperations" Usage="Microsoft.Azure.Management.Automation.AutomationClient.DscNode" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Azure::Management::Automation::IDscNodeOperations ^ DscNode { Microsoft::Azure::Management::Automation::IDscNodeOperations ^ get(); };" />
-      <MemberSignature Language="C++ CX" Value="public:&#xA; property Microsoft::Azure::Management::Automation::IDscNodeOperations ^ DscNode { Microsoft::Azure::Management::Automation::IDscNodeOperations ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Automation</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>3.0.1.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -772,12 +775,9 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Management.Automation.AutomationClient.DscNodeConfiguration" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property DscNodeConfiguration As IDscNodeConfigurationOperations" />
       <MemberSignature Language="F#" Value="member this.DscNodeConfiguration : Microsoft.Azure.Management.Automation.IDscNodeConfigurationOperations" Usage="Microsoft.Azure.Management.Automation.AutomationClient.DscNodeConfiguration" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Azure::Management::Automation::IDscNodeConfigurationOperations ^ DscNodeConfiguration { Microsoft::Azure::Management::Automation::IDscNodeConfigurationOperations ^ get(); };" />
-      <MemberSignature Language="C++ CX" Value="public:&#xA; property Microsoft::Azure::Management::Automation::IDscNodeConfigurationOperations ^ DscNodeConfiguration { Microsoft::Azure::Management::Automation::IDscNodeConfigurationOperations ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Automation</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>3.0.1.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -797,12 +797,9 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Management.Automation.AutomationClient.Fields" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Fields As IFieldsOperations" />
       <MemberSignature Language="F#" Value="member this.Fields : Microsoft.Azure.Management.Automation.IFieldsOperations" Usage="Microsoft.Azure.Management.Automation.AutomationClient.Fields" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Azure::Management::Automation::IFieldsOperations ^ Fields { Microsoft::Azure::Management::Automation::IFieldsOperations ^ get(); };" />
-      <MemberSignature Language="C++ CX" Value="public:&#xA; property Microsoft::Azure::Management::Automation::IFieldsOperations ^ Fields { Microsoft::Azure::Management::Automation::IFieldsOperations ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Automation</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>3.0.1.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -817,12 +814,11 @@
       </Docs>
     </Member>
     <Member MemberName="GenerateClientRequestId">
-      <MemberSignature Language="C#" Value="public Nullable&lt;bool&gt; GenerateClientRequestId { get; set; }" />
+      <MemberSignature Language="C#" Value="public bool? GenerateClientRequestId { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;bool&gt; GenerateClientRequestId" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Management.Automation.AutomationClient.GenerateClientRequestId" />
       <MemberSignature Language="VB.NET" Value="Public Property GenerateClientRequestId As Nullable(Of Boolean)" />
       <MemberSignature Language="F#" Value="member this.GenerateClientRequestId : Nullable&lt;bool&gt; with get, set" Usage="Microsoft.Azure.Management.Automation.AutomationClient.GenerateClientRequestId" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Nullable&lt;bool&gt; GenerateClientRequestId { Nullable&lt;bool&gt; get(); void set(Nullable&lt;bool&gt; value); };" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:Microsoft.Azure.Management.Automation.IAutomationClient.GenerateClientRequestId</InterfaceMember>
@@ -830,7 +826,6 @@
       </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Automation</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>3.0.1.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -838,8 +833,9 @@
       </ReturnValue>
       <Docs>
         <summary>
-            When set to true a unique x-ms-client-request-id value is generated and
-            included in each request. Default is true.
+            Whether a unique x-ms-client-request-id should be generated. When set to
+            true a unique x-ms-client-request-id value is generated and included in
+            each request. Default is true.
             </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
@@ -851,12 +847,9 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Management.Automation.AutomationClient.HybridRunbookWorkerGroup" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property HybridRunbookWorkerGroup As IHybridRunbookWorkerGroupOperations" />
       <MemberSignature Language="F#" Value="member this.HybridRunbookWorkerGroup : Microsoft.Azure.Management.Automation.IHybridRunbookWorkerGroupOperations" Usage="Microsoft.Azure.Management.Automation.AutomationClient.HybridRunbookWorkerGroup" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Azure::Management::Automation::IHybridRunbookWorkerGroupOperations ^ HybridRunbookWorkerGroup { Microsoft::Azure::Management::Automation::IHybridRunbookWorkerGroupOperations ^ get(); };" />
-      <MemberSignature Language="C++ CX" Value="public:&#xA; property Microsoft::Azure::Management::Automation::IHybridRunbookWorkerGroupOperations ^ HybridRunbookWorkerGroup { Microsoft::Azure::Management::Automation::IHybridRunbookWorkerGroupOperations ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Automation</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>3.0.1.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -876,12 +869,9 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Management.Automation.AutomationClient.Job" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Job As IJobOperations" />
       <MemberSignature Language="F#" Value="member this.Job : Microsoft.Azure.Management.Automation.IJobOperations" Usage="Microsoft.Azure.Management.Automation.AutomationClient.Job" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Azure::Management::Automation::IJobOperations ^ Job { Microsoft::Azure::Management::Automation::IJobOperations ^ get(); };" />
-      <MemberSignature Language="C++ CX" Value="public:&#xA; property Microsoft::Azure::Management::Automation::IJobOperations ^ Job { Microsoft::Azure::Management::Automation::IJobOperations ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Automation</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>3.0.1.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -901,12 +891,9 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Management.Automation.AutomationClient.JobSchedule" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property JobSchedule As IJobScheduleOperations" />
       <MemberSignature Language="F#" Value="member this.JobSchedule : Microsoft.Azure.Management.Automation.IJobScheduleOperations" Usage="Microsoft.Azure.Management.Automation.AutomationClient.JobSchedule" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Azure::Management::Automation::IJobScheduleOperations ^ JobSchedule { Microsoft::Azure::Management::Automation::IJobScheduleOperations ^ get(); };" />
-      <MemberSignature Language="C++ CX" Value="public:&#xA; property Microsoft::Azure::Management::Automation::IJobScheduleOperations ^ JobSchedule { Microsoft::Azure::Management::Automation::IJobScheduleOperations ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Automation</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>3.0.1.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -926,12 +913,9 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Management.Automation.AutomationClient.JobStream" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property JobStream As IJobStreamOperations" />
       <MemberSignature Language="F#" Value="member this.JobStream : Microsoft.Azure.Management.Automation.IJobStreamOperations" Usage="Microsoft.Azure.Management.Automation.AutomationClient.JobStream" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Azure::Management::Automation::IJobStreamOperations ^ JobStream { Microsoft::Azure::Management::Automation::IJobStreamOperations ^ get(); };" />
-      <MemberSignature Language="C++ CX" Value="public:&#xA; property Microsoft::Azure::Management::Automation::IJobStreamOperations ^ JobStream { Microsoft::Azure::Management::Automation::IJobStreamOperations ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Automation</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>3.0.1.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -945,13 +929,56 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <Member MemberName="Keys">
+      <MemberSignature Language="C#" Value="public Microsoft.Azure.Management.Automation.IKeysOperations Keys { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Azure.Management.Automation.IKeysOperations Keys" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Management.Automation.AutomationClient.Keys" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Keys As IKeysOperations" />
+      <MemberSignature Language="F#" Value="member this.Keys : Microsoft.Azure.Management.Automation.IKeysOperations" Usage="Microsoft.Azure.Management.Automation.AutomationClient.Keys" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Azure.Management.Automation</AssemblyName>
+        <AssemblyVersion>3.0.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Azure.Management.Automation.IKeysOperations</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets the IKeysOperations.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="LinkedWorkspace">
+      <MemberSignature Language="C#" Value="public Microsoft.Azure.Management.Automation.ILinkedWorkspaceOperations LinkedWorkspace { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Azure.Management.Automation.ILinkedWorkspaceOperations LinkedWorkspace" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Management.Automation.AutomationClient.LinkedWorkspace" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property LinkedWorkspace As ILinkedWorkspaceOperations" />
+      <MemberSignature Language="F#" Value="member this.LinkedWorkspace : Microsoft.Azure.Management.Automation.ILinkedWorkspaceOperations" Usage="Microsoft.Azure.Management.Automation.AutomationClient.LinkedWorkspace" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Azure.Management.Automation</AssemblyName>
+        <AssemblyVersion>3.0.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Azure.Management.Automation.ILinkedWorkspaceOperations</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets the ILinkedWorkspaceOperations.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
     <Member MemberName="LongRunningOperationRetryTimeout">
-      <MemberSignature Language="C#" Value="public Nullable&lt;int&gt; LongRunningOperationRetryTimeout { get; set; }" />
+      <MemberSignature Language="C#" Value="public int? LongRunningOperationRetryTimeout { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;int32&gt; LongRunningOperationRetryTimeout" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Management.Automation.AutomationClient.LongRunningOperationRetryTimeout" />
       <MemberSignature Language="VB.NET" Value="Public Property LongRunningOperationRetryTimeout As Nullable(Of Integer)" />
       <MemberSignature Language="F#" Value="member this.LongRunningOperationRetryTimeout : Nullable&lt;int&gt; with get, set" Usage="Microsoft.Azure.Management.Automation.AutomationClient.LongRunningOperationRetryTimeout" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Nullable&lt;int&gt; LongRunningOperationRetryTimeout { Nullable&lt;int&gt; get(); void set(Nullable&lt;int&gt; value); };" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:Microsoft.Azure.Management.Automation.IAutomationClient.LongRunningOperationRetryTimeout</InterfaceMember>
@@ -959,7 +986,6 @@
       </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Automation</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>3.0.1.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -967,8 +993,8 @@
       </ReturnValue>
       <Docs>
         <summary>
-            Gets or sets the retry timeout in seconds for Long Running Operations.
-            Default value is 30.
+            The retry timeout in seconds for Long Running Operations. Default value is
+            30.
             </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
@@ -980,12 +1006,9 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Management.Automation.AutomationClient.Module" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Module As IModuleOperations" />
       <MemberSignature Language="F#" Value="member this.Module : Microsoft.Azure.Management.Automation.IModuleOperations" Usage="Microsoft.Azure.Management.Automation.AutomationClient.Module" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Azure::Management::Automation::IModuleOperations ^ Module { Microsoft::Azure::Management::Automation::IModuleOperations ^ get(); };" />
-      <MemberSignature Language="C++ CX" Value="public:&#xA; property Microsoft::Azure::Management::Automation::IModuleOperations ^ Module { Microsoft::Azure::Management::Automation::IModuleOperations ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Automation</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>3.0.1.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -999,18 +1022,37 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <Member MemberName="NodeCountInformation">
+      <MemberSignature Language="C#" Value="public Microsoft.Azure.Management.Automation.INodeCountInformationOperations NodeCountInformation { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Azure.Management.Automation.INodeCountInformationOperations NodeCountInformation" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Management.Automation.AutomationClient.NodeCountInformation" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property NodeCountInformation As INodeCountInformationOperations" />
+      <MemberSignature Language="F#" Value="member this.NodeCountInformation : Microsoft.Azure.Management.Automation.INodeCountInformationOperations" Usage="Microsoft.Azure.Management.Automation.AutomationClient.NodeCountInformation" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Azure.Management.Automation</AssemblyName>
+        <AssemblyVersion>3.0.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Azure.Management.Automation.INodeCountInformationOperations</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets the INodeCountInformationOperations.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
     <Member MemberName="NodeReports">
       <MemberSignature Language="C#" Value="public Microsoft.Azure.Management.Automation.INodeReportsOperations NodeReports { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Azure.Management.Automation.INodeReportsOperations NodeReports" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Management.Automation.AutomationClient.NodeReports" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property NodeReports As INodeReportsOperations" />
       <MemberSignature Language="F#" Value="member this.NodeReports : Microsoft.Azure.Management.Automation.INodeReportsOperations" Usage="Microsoft.Azure.Management.Automation.AutomationClient.NodeReports" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Azure::Management::Automation::INodeReportsOperations ^ NodeReports { Microsoft::Azure::Management::Automation::INodeReportsOperations ^ get(); };" />
-      <MemberSignature Language="C++ CX" Value="public:&#xA; property Microsoft::Azure::Management::Automation::INodeReportsOperations ^ NodeReports { Microsoft::Azure::Management::Automation::INodeReportsOperations ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Automation</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>3.0.1.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -1030,12 +1072,9 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Management.Automation.AutomationClient.ObjectDataTypes" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ObjectDataTypes As IObjectDataTypesOperations" />
       <MemberSignature Language="F#" Value="member this.ObjectDataTypes : Microsoft.Azure.Management.Automation.IObjectDataTypesOperations" Usage="Microsoft.Azure.Management.Automation.AutomationClient.ObjectDataTypes" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Azure::Management::Automation::IObjectDataTypesOperations ^ ObjectDataTypes { Microsoft::Azure::Management::Automation::IObjectDataTypesOperations ^ get(); };" />
-      <MemberSignature Language="C++ CX" Value="public:&#xA; property Microsoft::Azure::Management::Automation::IObjectDataTypesOperations ^ ObjectDataTypes { Microsoft::Azure::Management::Automation::IObjectDataTypesOperations ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Automation</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>3.0.1.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -1055,12 +1094,9 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Management.Automation.AutomationClient.Operations" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Operations As IOperations" />
       <MemberSignature Language="F#" Value="member this.Operations : Microsoft.Azure.Management.Automation.IOperations" Usage="Microsoft.Azure.Management.Automation.AutomationClient.Operations" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Azure::Management::Automation::IOperations ^ Operations { Microsoft::Azure::Management::Automation::IOperations ^ get(); };" />
-      <MemberSignature Language="C++ CX" Value="public:&#xA; property Microsoft::Azure::Management::Automation::IOperations ^ Operations { Microsoft::Azure::Management::Automation::IOperations ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Automation</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>3.0.1.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -1074,28 +1110,23 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
-    <Member MemberName="ResourceGroupName">
-      <MemberSignature Language="C#" Value="public string ResourceGroupName { get; set; }" />
-      <MemberSignature Language="ILAsm" Value=".property instance string ResourceGroupName" />
-      <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Management.Automation.AutomationClient.ResourceGroupName" />
-      <MemberSignature Language="VB.NET" Value="Public Property ResourceGroupName As String" />
-      <MemberSignature Language="F#" Value="member this.ResourceGroupName : string with get, set" Usage="Microsoft.Azure.Management.Automation.AutomationClient.ResourceGroupName" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ ResourceGroupName { System::String ^ get(); void set(System::String ^ value); };" />
-      <MemberSignature Language="C++ CX" Value="public:&#xA; property Platform::String ^ ResourceGroupName { Platform::String ^ get(); void set(Platform::String ^ value); };" />
+    <Member MemberName="Python2Package">
+      <MemberSignature Language="C#" Value="public Microsoft.Azure.Management.Automation.IPython2PackageOperations Python2Package { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Azure.Management.Automation.IPython2PackageOperations Python2Package" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Management.Automation.AutomationClient.Python2Package" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Python2Package As IPython2PackageOperations" />
+      <MemberSignature Language="F#" Value="member this.Python2Package : Microsoft.Azure.Management.Automation.IPython2PackageOperations" Usage="Microsoft.Azure.Management.Automation.AutomationClient.Python2Package" />
       <MemberType>Property</MemberType>
-      <Implements>
-        <InterfaceMember>P:Microsoft.Azure.Management.Automation.IAutomationClient.ResourceGroupName</InterfaceMember>
-      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Automation</AssemblyName>
         <AssemblyVersion>3.0.1.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
-        <ReturnType>System.String</ReturnType>
+        <ReturnType>Microsoft.Azure.Management.Automation.IPython2PackageOperations</ReturnType>
       </ReturnValue>
       <Docs>
         <summary>
-            The resource group name.
+            Gets the IPython2PackageOperations.
             </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
@@ -1107,12 +1138,9 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Management.Automation.AutomationClient.Runbook" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Runbook As IRunbookOperations" />
       <MemberSignature Language="F#" Value="member this.Runbook : Microsoft.Azure.Management.Automation.IRunbookOperations" Usage="Microsoft.Azure.Management.Automation.AutomationClient.Runbook" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Azure::Management::Automation::IRunbookOperations ^ Runbook { Microsoft::Azure::Management::Automation::IRunbookOperations ^ get(); };" />
-      <MemberSignature Language="C++ CX" Value="public:&#xA; property Microsoft::Azure::Management::Automation::IRunbookOperations ^ Runbook { Microsoft::Azure::Management::Automation::IRunbookOperations ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Automation</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>3.0.1.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -1132,12 +1160,9 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Management.Automation.AutomationClient.RunbookDraft" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property RunbookDraft As IRunbookDraftOperations" />
       <MemberSignature Language="F#" Value="member this.RunbookDraft : Microsoft.Azure.Management.Automation.IRunbookDraftOperations" Usage="Microsoft.Azure.Management.Automation.AutomationClient.RunbookDraft" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Azure::Management::Automation::IRunbookDraftOperations ^ RunbookDraft { Microsoft::Azure::Management::Automation::IRunbookDraftOperations ^ get(); };" />
-      <MemberSignature Language="C++ CX" Value="public:&#xA; property Microsoft::Azure::Management::Automation::IRunbookDraftOperations ^ RunbookDraft { Microsoft::Azure::Management::Automation::IRunbookDraftOperations ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Automation</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>3.0.1.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -1157,12 +1182,9 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Management.Automation.AutomationClient.Schedule" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Schedule As IScheduleOperations" />
       <MemberSignature Language="F#" Value="member this.Schedule : Microsoft.Azure.Management.Automation.IScheduleOperations" Usage="Microsoft.Azure.Management.Automation.AutomationClient.Schedule" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Azure::Management::Automation::IScheduleOperations ^ Schedule { Microsoft::Azure::Management::Automation::IScheduleOperations ^ get(); };" />
-      <MemberSignature Language="C++ CX" Value="public:&#xA; property Microsoft::Azure::Management::Automation::IScheduleOperations ^ Schedule { Microsoft::Azure::Management::Automation::IScheduleOperations ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Automation</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>3.0.1.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -1182,11 +1204,9 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Management.Automation.AutomationClient.SerializationSettings" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property SerializationSettings As JsonSerializerSettings" />
       <MemberSignature Language="F#" Value="member this.SerializationSettings : Newtonsoft.Json.JsonSerializerSettings" Usage="Microsoft.Azure.Management.Automation.AutomationClient.SerializationSettings" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Newtonsoft::Json::JsonSerializerSettings ^ SerializationSettings { Newtonsoft::Json::JsonSerializerSettings ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Automation</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>3.0.1.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -1206,12 +1226,9 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Management.Automation.AutomationClient.SoftwareUpdateConfigurationMachineRuns" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property SoftwareUpdateConfigurationMachineRuns As ISoftwareUpdateConfigurationMachineRunsOperations" />
       <MemberSignature Language="F#" Value="member this.SoftwareUpdateConfigurationMachineRuns : Microsoft.Azure.Management.Automation.ISoftwareUpdateConfigurationMachineRunsOperations" Usage="Microsoft.Azure.Management.Automation.AutomationClient.SoftwareUpdateConfigurationMachineRuns" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Azure::Management::Automation::ISoftwareUpdateConfigurationMachineRunsOperations ^ SoftwareUpdateConfigurationMachineRuns { Microsoft::Azure::Management::Automation::ISoftwareUpdateConfigurationMachineRunsOperations ^ get(); };" />
-      <MemberSignature Language="C++ CX" Value="public:&#xA; property Microsoft::Azure::Management::Automation::ISoftwareUpdateConfigurationMachineRunsOperations ^ SoftwareUpdateConfigurationMachineRuns { Microsoft::Azure::Management::Automation::ISoftwareUpdateConfigurationMachineRunsOperations ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Automation</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>3.0.1.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -1231,12 +1248,9 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Management.Automation.AutomationClient.SoftwareUpdateConfigurationRuns" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property SoftwareUpdateConfigurationRuns As ISoftwareUpdateConfigurationRunsOperations" />
       <MemberSignature Language="F#" Value="member this.SoftwareUpdateConfigurationRuns : Microsoft.Azure.Management.Automation.ISoftwareUpdateConfigurationRunsOperations" Usage="Microsoft.Azure.Management.Automation.AutomationClient.SoftwareUpdateConfigurationRuns" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Azure::Management::Automation::ISoftwareUpdateConfigurationRunsOperations ^ SoftwareUpdateConfigurationRuns { Microsoft::Azure::Management::Automation::ISoftwareUpdateConfigurationRunsOperations ^ get(); };" />
-      <MemberSignature Language="C++ CX" Value="public:&#xA; property Microsoft::Azure::Management::Automation::ISoftwareUpdateConfigurationRunsOperations ^ SoftwareUpdateConfigurationRuns { Microsoft::Azure::Management::Automation::ISoftwareUpdateConfigurationRunsOperations ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Automation</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>3.0.1.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -1256,12 +1270,9 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Management.Automation.AutomationClient.SoftwareUpdateConfigurations" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property SoftwareUpdateConfigurations As ISoftwareUpdateConfigurationsOperations" />
       <MemberSignature Language="F#" Value="member this.SoftwareUpdateConfigurations : Microsoft.Azure.Management.Automation.ISoftwareUpdateConfigurationsOperations" Usage="Microsoft.Azure.Management.Automation.AutomationClient.SoftwareUpdateConfigurations" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Azure::Management::Automation::ISoftwareUpdateConfigurationsOperations ^ SoftwareUpdateConfigurations { Microsoft::Azure::Management::Automation::ISoftwareUpdateConfigurationsOperations ^ get(); };" />
-      <MemberSignature Language="C++ CX" Value="public:&#xA; property Microsoft::Azure::Management::Automation::ISoftwareUpdateConfigurationsOperations ^ SoftwareUpdateConfigurations { Microsoft::Azure::Management::Automation::ISoftwareUpdateConfigurationsOperations ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Automation</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>3.0.1.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -1275,18 +1286,81 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <Member MemberName="SourceControl">
+      <MemberSignature Language="C#" Value="public Microsoft.Azure.Management.Automation.ISourceControlOperations SourceControl { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Azure.Management.Automation.ISourceControlOperations SourceControl" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Management.Automation.AutomationClient.SourceControl" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property SourceControl As ISourceControlOperations" />
+      <MemberSignature Language="F#" Value="member this.SourceControl : Microsoft.Azure.Management.Automation.ISourceControlOperations" Usage="Microsoft.Azure.Management.Automation.AutomationClient.SourceControl" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Azure.Management.Automation</AssemblyName>
+        <AssemblyVersion>3.0.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Azure.Management.Automation.ISourceControlOperations</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets the ISourceControlOperations.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SourceControlSyncJob">
+      <MemberSignature Language="C#" Value="public Microsoft.Azure.Management.Automation.ISourceControlSyncJobOperations SourceControlSyncJob { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Azure.Management.Automation.ISourceControlSyncJobOperations SourceControlSyncJob" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Management.Automation.AutomationClient.SourceControlSyncJob" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property SourceControlSyncJob As ISourceControlSyncJobOperations" />
+      <MemberSignature Language="F#" Value="member this.SourceControlSyncJob : Microsoft.Azure.Management.Automation.ISourceControlSyncJobOperations" Usage="Microsoft.Azure.Management.Automation.AutomationClient.SourceControlSyncJob" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Azure.Management.Automation</AssemblyName>
+        <AssemblyVersion>3.0.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Azure.Management.Automation.ISourceControlSyncJobOperations</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets the ISourceControlSyncJobOperations.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SourceControlSyncJobStreams">
+      <MemberSignature Language="C#" Value="public Microsoft.Azure.Management.Automation.ISourceControlSyncJobStreamsOperations SourceControlSyncJobStreams { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Azure.Management.Automation.ISourceControlSyncJobStreamsOperations SourceControlSyncJobStreams" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Management.Automation.AutomationClient.SourceControlSyncJobStreams" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property SourceControlSyncJobStreams As ISourceControlSyncJobStreamsOperations" />
+      <MemberSignature Language="F#" Value="member this.SourceControlSyncJobStreams : Microsoft.Azure.Management.Automation.ISourceControlSyncJobStreamsOperations" Usage="Microsoft.Azure.Management.Automation.AutomationClient.SourceControlSyncJobStreams" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Azure.Management.Automation</AssemblyName>
+        <AssemblyVersion>3.0.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Azure.Management.Automation.ISourceControlSyncJobStreamsOperations</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets the ISourceControlSyncJobStreamsOperations.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
     <Member MemberName="Statistics">
       <MemberSignature Language="C#" Value="public Microsoft.Azure.Management.Automation.IStatisticsOperations Statistics { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Azure.Management.Automation.IStatisticsOperations Statistics" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Management.Automation.AutomationClient.Statistics" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Statistics As IStatisticsOperations" />
       <MemberSignature Language="F#" Value="member this.Statistics : Microsoft.Azure.Management.Automation.IStatisticsOperations" Usage="Microsoft.Azure.Management.Automation.AutomationClient.Statistics" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Azure::Management::Automation::IStatisticsOperations ^ Statistics { Microsoft::Azure::Management::Automation::IStatisticsOperations ^ get(); };" />
-      <MemberSignature Language="C++ CX" Value="public:&#xA; property Microsoft::Azure::Management::Automation::IStatisticsOperations ^ Statistics { Microsoft::Azure::Management::Automation::IStatisticsOperations ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Automation</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>3.0.1.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -1306,15 +1380,12 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Management.Automation.AutomationClient.SubscriptionId" />
       <MemberSignature Language="VB.NET" Value="Public Property SubscriptionId As String" />
       <MemberSignature Language="F#" Value="member this.SubscriptionId : string with get, set" Usage="Microsoft.Azure.Management.Automation.AutomationClient.SubscriptionId" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ SubscriptionId { System::String ^ get(); void set(System::String ^ value); };" />
-      <MemberSignature Language="C++ CX" Value="public:&#xA; property Platform::String ^ SubscriptionId { Platform::String ^ get(); void set(Platform::String ^ value); };" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:Microsoft.Azure.Management.Automation.IAutomationClient.SubscriptionId</InterfaceMember>
       </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Automation</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>3.0.1.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -1330,26 +1401,23 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
-    <Member MemberName="TestJobs">
-      <MemberSignature Language="C#" Value="public Microsoft.Azure.Management.Automation.ITestJobsOperations TestJobs { get; }" />
-      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Azure.Management.Automation.ITestJobsOperations TestJobs" />
-      <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Management.Automation.AutomationClient.TestJobs" />
-      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property TestJobs As ITestJobsOperations" />
-      <MemberSignature Language="F#" Value="member this.TestJobs : Microsoft.Azure.Management.Automation.ITestJobsOperations" Usage="Microsoft.Azure.Management.Automation.AutomationClient.TestJobs" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Azure::Management::Automation::ITestJobsOperations ^ TestJobs { Microsoft::Azure::Management::Automation::ITestJobsOperations ^ get(); };" />
-      <MemberSignature Language="C++ CX" Value="public:&#xA; property Microsoft::Azure::Management::Automation::ITestJobsOperations ^ TestJobs { Microsoft::Azure::Management::Automation::ITestJobsOperations ^ get(); };" />
+    <Member MemberName="TestJob">
+      <MemberSignature Language="C#" Value="public Microsoft.Azure.Management.Automation.ITestJobOperations TestJob { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Azure.Management.Automation.ITestJobOperations TestJob" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Management.Automation.AutomationClient.TestJob" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property TestJob As ITestJobOperations" />
+      <MemberSignature Language="F#" Value="member this.TestJob : Microsoft.Azure.Management.Automation.ITestJobOperations" Usage="Microsoft.Azure.Management.Automation.AutomationClient.TestJob" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Automation</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>3.0.1.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
-        <ReturnType>Microsoft.Azure.Management.Automation.ITestJobsOperations</ReturnType>
+        <ReturnType>Microsoft.Azure.Management.Automation.ITestJobOperations</ReturnType>
       </ReturnValue>
       <Docs>
         <summary>
-            Gets the ITestJobsOperations.
+            Gets the ITestJobOperations.
             </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
@@ -1361,12 +1429,9 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Management.Automation.AutomationClient.TestJobStreams" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property TestJobStreams As ITestJobStreamsOperations" />
       <MemberSignature Language="F#" Value="member this.TestJobStreams : Microsoft.Azure.Management.Automation.ITestJobStreamsOperations" Usage="Microsoft.Azure.Management.Automation.AutomationClient.TestJobStreams" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Azure::Management::Automation::ITestJobStreamsOperations ^ TestJobStreams { Microsoft::Azure::Management::Automation::ITestJobStreamsOperations ^ get(); };" />
-      <MemberSignature Language="C++ CX" Value="public:&#xA; property Microsoft::Azure::Management::Automation::ITestJobStreamsOperations ^ TestJobStreams { Microsoft::Azure::Management::Automation::ITestJobStreamsOperations ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Automation</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>3.0.1.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -1386,12 +1451,9 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Management.Automation.AutomationClient.Usages" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Usages As IUsagesOperations" />
       <MemberSignature Language="F#" Value="member this.Usages : Microsoft.Azure.Management.Automation.IUsagesOperations" Usage="Microsoft.Azure.Management.Automation.AutomationClient.Usages" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Azure::Management::Automation::IUsagesOperations ^ Usages { Microsoft::Azure::Management::Automation::IUsagesOperations ^ get(); };" />
-      <MemberSignature Language="C++ CX" Value="public:&#xA; property Microsoft::Azure::Management::Automation::IUsagesOperations ^ Usages { Microsoft::Azure::Management::Automation::IUsagesOperations ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Automation</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>3.0.1.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -1411,12 +1473,9 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Management.Automation.AutomationClient.Variable" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Variable As IVariableOperations" />
       <MemberSignature Language="F#" Value="member this.Variable : Microsoft.Azure.Management.Automation.IVariableOperations" Usage="Microsoft.Azure.Management.Automation.AutomationClient.Variable" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Azure::Management::Automation::IVariableOperations ^ Variable { Microsoft::Azure::Management::Automation::IVariableOperations ^ get(); };" />
-      <MemberSignature Language="C++ CX" Value="public:&#xA; property Microsoft::Azure::Management::Automation::IVariableOperations ^ Variable { Microsoft::Azure::Management::Automation::IVariableOperations ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Automation</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>3.0.1.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -1430,18 +1489,37 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <Member MemberName="Watcher">
+      <MemberSignature Language="C#" Value="public Microsoft.Azure.Management.Automation.IWatcherOperations Watcher { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Azure.Management.Automation.IWatcherOperations Watcher" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Management.Automation.AutomationClient.Watcher" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Watcher As IWatcherOperations" />
+      <MemberSignature Language="F#" Value="member this.Watcher : Microsoft.Azure.Management.Automation.IWatcherOperations" Usage="Microsoft.Azure.Management.Automation.AutomationClient.Watcher" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Azure.Management.Automation</AssemblyName>
+        <AssemblyVersion>3.0.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Azure.Management.Automation.IWatcherOperations</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets the IWatcherOperations.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
     <Member MemberName="Webhook">
       <MemberSignature Language="C#" Value="public Microsoft.Azure.Management.Automation.IWebhookOperations Webhook { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Azure.Management.Automation.IWebhookOperations Webhook" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Management.Automation.AutomationClient.Webhook" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Webhook As IWebhookOperations" />
       <MemberSignature Language="F#" Value="member this.Webhook : Microsoft.Azure.Management.Automation.IWebhookOperations" Usage="Microsoft.Azure.Management.Automation.AutomationClient.Webhook" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Azure::Management::Automation::IWebhookOperations ^ Webhook { Microsoft::Azure::Management::Automation::IWebhookOperations ^ get(); };" />
-      <MemberSignature Language="C++ CX" Value="public:&#xA; property Microsoft::Azure::Management::Automation::IWebhookOperations ^ Webhook { Microsoft::Azure::Management::Automation::IWebhookOperations ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Automation</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>3.0.1.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>

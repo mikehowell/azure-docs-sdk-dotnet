@@ -1,22 +1,23 @@
-﻿<Type Name="ComputeNodeDeallocationOption" FullName="Microsoft.Azure.Management.Batch.Models.ComputeNodeDeallocationOption">
+<Type Name="ComputeNodeDeallocationOption" FullName="Microsoft.Azure.Management.Batch.Models.ComputeNodeDeallocationOption">
   <TypeSignature Language="C#" Value="public enum ComputeNodeDeallocationOption" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed ComputeNodeDeallocationOption extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Azure.Management.Batch.Models.ComputeNodeDeallocationOption" />
   <TypeSignature Language="VB.NET" Value="Public Enum ComputeNodeDeallocationOption" />
   <TypeSignature Language="F#" Value="type ComputeNodeDeallocationOption = " />
-  <TypeSignature Language="C++ CLI" Value="public enum class ComputeNodeDeallocationOption" />
-  <TypeSignature Language="C++ CX" Value="public enum class ComputeNodeDeallocationOption" />
-  <TypeSignature Language="C++ WINRT" Value="enum ComputeNodeDeallocationOption" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Azure.Management.Batch</AssemblyName>
-    <AssemblyVersion>6.0.0.0</AssemblyVersion>
+    <AssemblyVersion>9.0.0.0</AssemblyVersion>
+    <AssemblyVersion>10.0.0.0</AssemblyVersion>
+    <AssemblyVersion>11.0.0.0</AssemblyVersion>
+    <AssemblyVersion>13.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Attributes>
     <Attribute>
-      <AttributeName>Newtonsoft.Json.JsonConverter(typeof(Newtonsoft.Json.Converters.StringEnumConverter))</AttributeName>
+      <AttributeName Language="C#">[Newtonsoft.Json.JsonConverter(typeof(Newtonsoft.Json.Converters.StringEnumConverter))]</AttributeName>
+      <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonConverter(typeof(Newtonsoft.Json.Converters.StringEnumConverter))&gt;]</AttributeName>
     </Attribute>
   </Attributes>
   <Docs>
@@ -32,17 +33,18 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.Azure.Management.Batch.Models.ComputeNodeDeallocationOption.Requeue" />
       <MemberSignature Language="VB.NET" Value="Requeue" />
       <MemberSignature Language="F#" Value="Requeue = 0" Usage="Microsoft.Azure.Management.Batch.Models.ComputeNodeDeallocationOption.Requeue" />
-      <MemberSignature Language="C++ CLI" Value="Requeue" />
-      <MemberSignature Language="C++ CX" Value="Requeue" />
-      <MemberSignature Language="C++ WINRT" Value="Requeue" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Batch</AssemblyName>
-        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+        <AssemblyVersion>11.0.0.0</AssemblyVersion>
+        <AssemblyVersion>13.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>System.Runtime.Serialization.EnumMember(Value="Requeue")</AttributeName>
+          <AttributeName Language="C#">[System.Runtime.Serialization.EnumMember(Value="Requeue")]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Runtime.Serialization.EnumMember(Value="Requeue")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -50,7 +52,11 @@
       </ReturnValue>
       <MemberValue>0</MemberValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+            Terminate running task processes and requeue the tasks. The tasks
+            will run again when a node is available. Remove nodes as soon as
+            tasks have been terminated.
+            </summary>
       </Docs>
     </Member>
     <Member MemberName="RetainedData">
@@ -59,17 +65,18 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.Azure.Management.Batch.Models.ComputeNodeDeallocationOption.RetainedData" />
       <MemberSignature Language="VB.NET" Value="RetainedData" />
       <MemberSignature Language="F#" Value="RetainedData = 3" Usage="Microsoft.Azure.Management.Batch.Models.ComputeNodeDeallocationOption.RetainedData" />
-      <MemberSignature Language="C++ CLI" Value="RetainedData" />
-      <MemberSignature Language="C++ CX" Value="RetainedData" />
-      <MemberSignature Language="C++ WINRT" Value="RetainedData" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Batch</AssemblyName>
-        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+        <AssemblyVersion>11.0.0.0</AssemblyVersion>
+        <AssemblyVersion>13.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>System.Runtime.Serialization.EnumMember(Value="RetainedData")</AttributeName>
+          <AttributeName Language="C#">[System.Runtime.Serialization.EnumMember(Value="RetainedData")]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Runtime.Serialization.EnumMember(Value="RetainedData")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -77,7 +84,11 @@
       </ReturnValue>
       <MemberValue>3</MemberValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+            Allow currently running tasks to complete, then wait for all task
+            data retention periods to expire. Schedule no new tasks while
+            waiting. Remove nodes when all task retention periods have expired.
+            </summary>
       </Docs>
     </Member>
     <Member MemberName="TaskCompletion">
@@ -86,17 +97,18 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.Azure.Management.Batch.Models.ComputeNodeDeallocationOption.TaskCompletion" />
       <MemberSignature Language="VB.NET" Value="TaskCompletion" />
       <MemberSignature Language="F#" Value="TaskCompletion = 2" Usage="Microsoft.Azure.Management.Batch.Models.ComputeNodeDeallocationOption.TaskCompletion" />
-      <MemberSignature Language="C++ CLI" Value="TaskCompletion" />
-      <MemberSignature Language="C++ CX" Value="TaskCompletion" />
-      <MemberSignature Language="C++ WINRT" Value="TaskCompletion" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Batch</AssemblyName>
-        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+        <AssemblyVersion>11.0.0.0</AssemblyVersion>
+        <AssemblyVersion>13.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>System.Runtime.Serialization.EnumMember(Value="TaskCompletion")</AttributeName>
+          <AttributeName Language="C#">[System.Runtime.Serialization.EnumMember(Value="TaskCompletion")]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Runtime.Serialization.EnumMember(Value="TaskCompletion")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -104,7 +116,10 @@
       </ReturnValue>
       <MemberValue>2</MemberValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+            Allow currently running tasks to complete. Schedule no new tasks
+            while waiting. Remove nodes when all tasks have completed.
+            </summary>
       </Docs>
     </Member>
     <Member MemberName="Terminate">
@@ -113,17 +128,18 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.Azure.Management.Batch.Models.ComputeNodeDeallocationOption.Terminate" />
       <MemberSignature Language="VB.NET" Value="Terminate" />
       <MemberSignature Language="F#" Value="Terminate = 1" Usage="Microsoft.Azure.Management.Batch.Models.ComputeNodeDeallocationOption.Terminate" />
-      <MemberSignature Language="C++ CLI" Value="Terminate" />
-      <MemberSignature Language="C++ CX" Value="Terminate" />
-      <MemberSignature Language="C++ WINRT" Value="Terminate" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Batch</AssemblyName>
-        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+        <AssemblyVersion>11.0.0.0</AssemblyVersion>
+        <AssemblyVersion>13.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>System.Runtime.Serialization.EnumMember(Value="Terminate")</AttributeName>
+          <AttributeName Language="C#">[System.Runtime.Serialization.EnumMember(Value="Terminate")]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Runtime.Serialization.EnumMember(Value="Terminate")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -131,7 +147,11 @@
       </ReturnValue>
       <MemberValue>1</MemberValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+            Terminate running tasks. The tasks will be completed with
+            failureInfo indicating that they were terminated, and will not run
+            again. Remove nodes as soon as tasks have been terminated.
+            </summary>
       </Docs>
     </Member>
   </Members>

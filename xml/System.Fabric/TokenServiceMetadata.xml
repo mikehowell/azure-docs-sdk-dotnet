@@ -1,13 +1,12 @@
-﻿<Type Name="TokenServiceMetadata" FullName="System.Fabric.TokenServiceMetadata">
+<Type Name="TokenServiceMetadata" FullName="System.Fabric.TokenServiceMetadata">
   <TypeSignature Language="C#" Value="public sealed class TokenServiceMetadata" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable sealed beforefieldinit TokenServiceMetadata extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.Fabric.TokenServiceMetadata" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class TokenServiceMetadata" />
   <TypeSignature Language="F#" Value="type TokenServiceMetadata = class" />
-  <TypeSignature Language="C++ CLI" Value="public ref class TokenServiceMetadata sealed" />
   <AssemblyInfo>
     <AssemblyName>System.Fabric</AssemblyName>
-    <AssemblyVersion>6.0.0.0</AssemblyVersion>
+    <AssemblyVersion>7.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
@@ -15,7 +14,12 @@
   <Interfaces />
   <Attributes>
     <Attribute>
-      <AttributeName>System.Runtime.Serialization.DataContract</AttributeName>
+      <AttributeName Language="C#">[System.Runtime.Serialization.DataContract]</AttributeName>
+      <AttributeName Language="F#">[&lt;System.Runtime.Serialization.DataContract&gt;]</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName Language="C#">[System.Serializable]</AttributeName>
+      <AttributeName Language="F#">[&lt;System.Serializable&gt;]</AttributeName>
     </Attribute>
   </Attributes>
   <Docs>
@@ -33,13 +37,10 @@
       <MemberSignature Language="DocId" Value="M:System.Fabric.TokenServiceMetadata.#ctor(System.String,System.String,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (metadata As String, serviceName As String, serviceDnsName As String)" />
       <MemberSignature Language="F#" Value="new System.Fabric.TokenServiceMetadata : string * string * string -&gt; System.Fabric.TokenServiceMetadata" Usage="new System.Fabric.TokenServiceMetadata (metadata, serviceName, serviceDnsName)" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; TokenServiceMetadata(System::String ^ metadata, System::String ^ serviceName, System::String ^ serviceDnsName);" />
-      <MemberSignature Language="C++ CX" Value="public:&#xA; TokenServiceMetadata(Platform::String ^ metadata, Platform::String ^ serviceName, Platform::String ^ serviceDnsName);" />
-      <MemberSignature Language="C++ WINRT" Value=" TokenServiceMetadata(std::wstring const &amp; metadata, std::wstring const &amp; serviceName, std::wstring const &amp; serviceDnsName);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Fabric</AssemblyName>
-        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="metadata" Type="System.String" />
@@ -70,16 +71,15 @@
       <MemberSignature Language="DocId" Value="P:System.Fabric.TokenServiceMetadata.Metadata" />
       <MemberSignature Language="VB.NET" Value="Public Property Metadata As String" />
       <MemberSignature Language="F#" Value="member this.Metadata : string with get, set" Usage="System.Fabric.TokenServiceMetadata.Metadata" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Metadata { System::String ^ get(); void set(System::String ^ value); };" />
-      <MemberSignature Language="C++ CX" Value="public:&#xA; property Platform::String ^ Metadata { Platform::String ^ get(); void set(Platform::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Fabric</AssemblyName>
-        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>System.Runtime.Serialization.DataMember(IsRequired=true, Name="Metadata")</AttributeName>
+          <AttributeName Language="C#">[System.Runtime.Serialization.DataMember(IsRequired=true, Name="Metadata")]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Runtime.Serialization.DataMember(IsRequired=true, Name="Metadata")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -104,16 +104,15 @@
       <MemberSignature Language="DocId" Value="P:System.Fabric.TokenServiceMetadata.ServiceDnsName" />
       <MemberSignature Language="VB.NET" Value="Public Property ServiceDnsName As String" />
       <MemberSignature Language="F#" Value="member this.ServiceDnsName : string with get, set" Usage="System.Fabric.TokenServiceMetadata.ServiceDnsName" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ ServiceDnsName { System::String ^ get(); void set(System::String ^ value); };" />
-      <MemberSignature Language="C++ CX" Value="public:&#xA; property Platform::String ^ ServiceDnsName { Platform::String ^ get(); void set(Platform::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Fabric</AssemblyName>
-        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>System.Runtime.Serialization.DataMember(IsRequired=true, Name="ServiceDnsName")</AttributeName>
+          <AttributeName Language="C#">[System.Runtime.Serialization.DataMember(IsRequired=true, Name="ServiceDnsName")]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Runtime.Serialization.DataMember(IsRequired=true, Name="ServiceDnsName")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -138,16 +137,15 @@
       <MemberSignature Language="DocId" Value="P:System.Fabric.TokenServiceMetadata.ServiceName" />
       <MemberSignature Language="VB.NET" Value="Public Property ServiceName As String" />
       <MemberSignature Language="F#" Value="member this.ServiceName : string with get, set" Usage="System.Fabric.TokenServiceMetadata.ServiceName" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ ServiceName { System::String ^ get(); void set(System::String ^ value); };" />
-      <MemberSignature Language="C++ CX" Value="public:&#xA; property Platform::String ^ ServiceName { Platform::String ^ get(); void set(Platform::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Fabric</AssemblyName>
-        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>System.Runtime.Serialization.DataMember(IsRequired=true, Name="ServiceName")</AttributeName>
+          <AttributeName Language="C#">[System.Runtime.Serialization.DataMember(IsRequired=true, Name="ServiceName")]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Runtime.Serialization.DataMember(IsRequired=true, Name="ServiceName")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>

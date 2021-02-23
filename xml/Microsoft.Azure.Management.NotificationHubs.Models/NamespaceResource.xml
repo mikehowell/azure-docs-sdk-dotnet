@@ -1,11 +1,9 @@
-﻿<Type Name="NamespaceResource" FullName="Microsoft.Azure.Management.NotificationHubs.Models.NamespaceResource">
+<Type Name="NamespaceResource" FullName="Microsoft.Azure.Management.NotificationHubs.Models.NamespaceResource">
   <TypeSignature Language="C#" Value="public class NamespaceResource : Microsoft.Azure.Management.NotificationHubs.Models.Resource" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit NamespaceResource extends Microsoft.Azure.Management.NotificationHubs.Models.Resource" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Azure.Management.NotificationHubs.Models.NamespaceResource" />
   <TypeSignature Language="VB.NET" Value="Public Class NamespaceResource&#xA;Inherits Resource" />
   <TypeSignature Language="F#" Value="type NamespaceResource = class&#xA;    inherit Resource" />
-  <TypeSignature Language="C++ CLI" Value="public ref class NamespaceResource : Microsoft::Azure::Management::NotificationHubs::Models::Resource" />
-  <TypeSignature Language="C++ WINRT" Value="[Windows::Foundation::Metadata::WebHostHidden]&#xA;class NamespaceResource : Microsoft::Azure::Management::NotificationHubs::Models::Resource" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Azure.Management.NotificationHubs</AssemblyName>
     <AssemblyVersion>2.0.0.0</AssemblyVersion>
@@ -16,7 +14,8 @@
   <Interfaces />
   <Attributes>
     <Attribute>
-      <AttributeName>Microsoft.Rest.Serialization.JsonTransformation</AttributeName>
+      <AttributeName Language="C#">[Microsoft.Rest.Serialization.JsonTransformation]</AttributeName>
+      <AttributeName Language="F#">[&lt;Microsoft.Rest.Serialization.JsonTransformation&gt;]</AttributeName>
     </Attribute>
   </Attributes>
   <Docs>
@@ -31,9 +30,6 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Management.NotificationHubs.Models.NamespaceResource.#ctor" />
       <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; NamespaceResource();" />
-      <MemberSignature Language="C++ CX" Value="public:&#xA; NamespaceResource();" />
-      <MemberSignature Language="C++ WINRT" Value=" NamespaceResource();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.NotificationHubs</AssemblyName>
@@ -48,39 +44,43 @@
       </Docs>
     </Member>
     <Member MemberName=".ctor">
-      <MemberSignature Language="C#" Value="public NamespaceResource (string location, string id = null, string name = null, string type = null, System.Collections.Generic.IDictionary&lt;string,string&gt; tags = null, Microsoft.Azure.Management.NotificationHubs.Models.Sku sku = null, string namespaceResourceName = null, string provisioningState = null, string region = null, string status = null, Nullable&lt;DateTime&gt; createdAt = null, string serviceBusEndpoint = null, string subscriptionId = null, string scaleUnit = null, Nullable&lt;bool&gt; enabled = null, Nullable&lt;bool&gt; critical = null, Nullable&lt;Microsoft.Azure.Management.NotificationHubs.Models.NamespaceType&gt; namespaceType = null);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string location, string id, string name, string type, class System.Collections.Generic.IDictionary`2&lt;string, string&gt; tags, class Microsoft.Azure.Management.NotificationHubs.Models.Sku sku, string namespaceResourceName, string provisioningState, string region, string status, valuetype System.Nullable`1&lt;valuetype System.DateTime&gt; createdAt, string serviceBusEndpoint, string subscriptionId, string scaleUnit, valuetype System.Nullable`1&lt;bool&gt; enabled, valuetype System.Nullable`1&lt;bool&gt; critical, valuetype System.Nullable`1&lt;valuetype Microsoft.Azure.Management.NotificationHubs.Models.NamespaceType&gt; namespaceType) cil managed" />
-      <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Management.NotificationHubs.Models.NamespaceResource.#ctor(System.String,System.String,System.String,System.String,System.Collections.Generic.IDictionary{System.String,System.String},Microsoft.Azure.Management.NotificationHubs.Models.Sku,System.String,System.String,System.String,System.String,System.Nullable{System.DateTime},System.String,System.String,System.String,System.Nullable{System.Boolean},System.Nullable{System.Boolean},System.Nullable{Microsoft.Azure.Management.NotificationHubs.Models.NamespaceType})" />
-      <MemberSignature Language="F#" Value="new Microsoft.Azure.Management.NotificationHubs.Models.NamespaceResource : string * string * string * string * System.Collections.Generic.IDictionary&lt;string, string&gt; * Microsoft.Azure.Management.NotificationHubs.Models.Sku * string * string * string * string * Nullable&lt;DateTime&gt; * string * string * string * Nullable&lt;bool&gt; * Nullable&lt;bool&gt; * Nullable&lt;Microsoft.Azure.Management.NotificationHubs.Models.NamespaceType&gt; -&gt; Microsoft.Azure.Management.NotificationHubs.Models.NamespaceResource" Usage="new Microsoft.Azure.Management.NotificationHubs.Models.NamespaceResource (location, id, name, type, tags, sku, namespaceResourceName, provisioningState, region, status, createdAt, serviceBusEndpoint, subscriptionId, scaleUnit, enabled, critical, namespaceType)" />
+      <MemberSignature Language="C#" Value="public NamespaceResource (string id = default, string name = default, string type = default, string location = default, System.Collections.Generic.IDictionary&lt;string,string&gt; tags = default, Microsoft.Azure.Management.NotificationHubs.Models.Sku sku = default, string namespaceResourceName = default, string provisioningState = default, string region = default, string metricId = default, string status = default, DateTime? createdAt = default, DateTime? updatedAt = default, string serviceBusEndpoint = default, string subscriptionId = default, string scaleUnit = default, bool? enabled = default, bool? critical = default, string dataCenter = default, Microsoft.Azure.Management.NotificationHubs.Models.NamespaceType? namespaceType = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string id, string name, string type, string location, class System.Collections.Generic.IDictionary`2&lt;string, string&gt; tags, class Microsoft.Azure.Management.NotificationHubs.Models.Sku sku, string namespaceResourceName, string provisioningState, string region, string metricId, string status, valuetype System.Nullable`1&lt;valuetype System.DateTime&gt; createdAt, valuetype System.Nullable`1&lt;valuetype System.DateTime&gt; updatedAt, string serviceBusEndpoint, string subscriptionId, string scaleUnit, valuetype System.Nullable`1&lt;bool&gt; enabled, valuetype System.Nullable`1&lt;bool&gt; critical, string dataCenter, valuetype System.Nullable`1&lt;valuetype Microsoft.Azure.Management.NotificationHubs.Models.NamespaceType&gt; namespaceType) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Management.NotificationHubs.Models.NamespaceResource.#ctor(System.String,System.String,System.String,System.String,System.Collections.Generic.IDictionary{System.String,System.String},Microsoft.Azure.Management.NotificationHubs.Models.Sku,System.String,System.String,System.String,System.String,System.String,System.Nullable{System.DateTime},System.Nullable{System.DateTime},System.String,System.String,System.String,System.Nullable{System.Boolean},System.Nullable{System.Boolean},System.String,System.Nullable{Microsoft.Azure.Management.NotificationHubs.Models.NamespaceType})" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (Optional id As String = Nothing, Optional name As String = Nothing, Optional type As String = Nothing, Optional location As String = Nothing, Optional tags As IDictionary(Of String, String) = Nothing, Optional sku As Sku = Nothing, Optional namespaceResourceName As String = Nothing, Optional provisioningState As String = Nothing, Optional region As String = Nothing, Optional metricId As String = Nothing, Optional status As String = Nothing, Optional createdAt As Nullable(Of DateTime) = Nothing, Optional updatedAt As Nullable(Of DateTime) = Nothing, Optional serviceBusEndpoint As String = Nothing, Optional subscriptionId As String = Nothing, Optional scaleUnit As String = Nothing, Optional enabled As Nullable(Of Boolean) = Nothing, Optional critical As Nullable(Of Boolean) = Nothing, Optional dataCenter As String = Nothing, Optional namespaceType As Nullable(Of NamespaceType) = Nothing)" />
+      <MemberSignature Language="F#" Value="new Microsoft.Azure.Management.NotificationHubs.Models.NamespaceResource : string * string * string * string * System.Collections.Generic.IDictionary&lt;string, string&gt; * Microsoft.Azure.Management.NotificationHubs.Models.Sku * string * string * string * string * string * Nullable&lt;DateTime&gt; * Nullable&lt;DateTime&gt; * string * string * string * Nullable&lt;bool&gt; * Nullable&lt;bool&gt; * string * Nullable&lt;Microsoft.Azure.Management.NotificationHubs.Models.NamespaceType&gt; -&gt; Microsoft.Azure.Management.NotificationHubs.Models.NamespaceResource" Usage="new Microsoft.Azure.Management.NotificationHubs.Models.NamespaceResource (id, name, type, location, tags, sku, namespaceResourceName, provisioningState, region, metricId, status, createdAt, updatedAt, serviceBusEndpoint, subscriptionId, scaleUnit, enabled, critical, dataCenter, namespaceType)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.NotificationHubs</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
-        <Parameter Name="location" Type="System.String" />
         <Parameter Name="id" Type="System.String" />
         <Parameter Name="name" Type="System.String" />
         <Parameter Name="type" Type="System.String" />
+        <Parameter Name="location" Type="System.String" />
         <Parameter Name="tags" Type="System.Collections.Generic.IDictionary&lt;System.String,System.String&gt;" />
         <Parameter Name="sku" Type="Microsoft.Azure.Management.NotificationHubs.Models.Sku" />
         <Parameter Name="namespaceResourceName" Type="System.String" />
         <Parameter Name="provisioningState" Type="System.String" />
         <Parameter Name="region" Type="System.String" />
+        <Parameter Name="metricId" Type="System.String" />
         <Parameter Name="status" Type="System.String" />
         <Parameter Name="createdAt" Type="System.Nullable&lt;System.DateTime&gt;" />
+        <Parameter Name="updatedAt" Type="System.Nullable&lt;System.DateTime&gt;" />
         <Parameter Name="serviceBusEndpoint" Type="System.String" />
         <Parameter Name="subscriptionId" Type="System.String" />
         <Parameter Name="scaleUnit" Type="System.String" />
         <Parameter Name="enabled" Type="System.Nullable&lt;System.Boolean&gt;" />
         <Parameter Name="critical" Type="System.Nullable&lt;System.Boolean&gt;" />
+        <Parameter Name="dataCenter" Type="System.String" />
         <Parameter Name="namespaceType" Type="System.Nullable&lt;Microsoft.Azure.Management.NotificationHubs.Models.NamespaceType&gt;" />
       </Parameters>
       <Docs>
-        <param name="location">Resource location</param>
         <param name="id">Resource Id</param>
         <param name="name">Resource name</param>
         <param name="type">Resource type</param>
+        <param name="location">Resource location</param>
         <param name="tags">Resource tags</param>
         <param name="sku">The sku of the created namespace</param>
         <param name="namespaceResourceName">The name of the
@@ -89,13 +89,17 @@
             Namespace.</param>
         <param name="region">Specifies the targeted region in which the
             namespace should be created. It can be any of the following values:
-            Australia EastAustralia SoutheastCentral USEast USEast US 2West
-            USNorth Central USSouth Central USEast AsiaSoutheast AsiaBrazil
-            SouthJapan EastJapan WestNorth EuropeWest Europe</param>
+            Australia East, Australia Southeast, Central US, East US, East US
+            2, West US, North Central US, South Central US, East Asia,
+            Southeast Asia, Brazil South, Japan East, Japan West, North Europe,
+            West Europe</param>
+        <param name="metricId">Identifier for Azure Insights
+            metrics</param>
         <param name="status">Status of the namespace. It can be any of
             these values:1 = Created/Active2 = Creating3 = Suspended4 =
             Deleting</param>
         <param name="createdAt">The time the namespace was created.</param>
+        <param name="updatedAt">The time the namespace was updated.</param>
         <param name="serviceBusEndpoint">Endpoint you can use to perform
             NotificationHub operations.</param>
         <param name="subscriptionId">The Id of the Azure subscription
@@ -106,6 +110,7 @@
             enabled.</param>
         <param name="critical">Whether or not the namespace is set as
             Critical.</param>
+        <param name="dataCenter">Data center for the namespace</param>
         <param name="namespaceType">The namespace type. Possible values
             include: 'Messaging', 'NotificationHub'</param>
         <summary>
@@ -115,12 +120,11 @@
       </Docs>
     </Member>
     <Member MemberName="CreatedAt">
-      <MemberSignature Language="C#" Value="public Nullable&lt;DateTime&gt; CreatedAt { get; set; }" />
+      <MemberSignature Language="C#" Value="public DateTime? CreatedAt { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;valuetype System.DateTime&gt; CreatedAt" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Management.NotificationHubs.Models.NamespaceResource.CreatedAt" />
       <MemberSignature Language="VB.NET" Value="Public Property CreatedAt As Nullable(Of DateTime)" />
       <MemberSignature Language="F#" Value="member this.CreatedAt : Nullable&lt;DateTime&gt; with get, set" Usage="Microsoft.Azure.Management.NotificationHubs.Models.NamespaceResource.CreatedAt" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Nullable&lt;DateTime&gt; CreatedAt { Nullable&lt;DateTime&gt; get(); void set(Nullable&lt;DateTime&gt; value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.NotificationHubs</AssemblyName>
@@ -128,7 +132,8 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="properties.createdAt")</AttributeName>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty(PropertyName="properties.createdAt")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty(PropertyName="properties.createdAt")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -143,12 +148,11 @@
       </Docs>
     </Member>
     <Member MemberName="Critical">
-      <MemberSignature Language="C#" Value="public Nullable&lt;bool&gt; Critical { get; set; }" />
+      <MemberSignature Language="C#" Value="public bool? Critical { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;bool&gt; Critical" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Management.NotificationHubs.Models.NamespaceResource.Critical" />
       <MemberSignature Language="VB.NET" Value="Public Property Critical As Nullable(Of Boolean)" />
       <MemberSignature Language="F#" Value="member this.Critical : Nullable&lt;bool&gt; with get, set" Usage="Microsoft.Azure.Management.NotificationHubs.Models.NamespaceResource.Critical" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Nullable&lt;bool&gt; Critical { Nullable&lt;bool&gt; get(); void set(Nullable&lt;bool&gt; value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.NotificationHubs</AssemblyName>
@@ -156,7 +160,8 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="properties.critical")</AttributeName>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty(PropertyName="properties.critical")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty(PropertyName="properties.critical")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -170,13 +175,12 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
-    <Member MemberName="Enabled">
-      <MemberSignature Language="C#" Value="public Nullable&lt;bool&gt; Enabled { get; set; }" />
-      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;bool&gt; Enabled" />
-      <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Management.NotificationHubs.Models.NamespaceResource.Enabled" />
-      <MemberSignature Language="VB.NET" Value="Public Property Enabled As Nullable(Of Boolean)" />
-      <MemberSignature Language="F#" Value="member this.Enabled : Nullable&lt;bool&gt; with get, set" Usage="Microsoft.Azure.Management.NotificationHubs.Models.NamespaceResource.Enabled" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Nullable&lt;bool&gt; Enabled { Nullable&lt;bool&gt; get(); void set(Nullable&lt;bool&gt; value); };" />
+    <Member MemberName="DataCenter">
+      <MemberSignature Language="C#" Value="public string DataCenter { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string DataCenter" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Management.NotificationHubs.Models.NamespaceResource.DataCenter" />
+      <MemberSignature Language="VB.NET" Value="Public Property DataCenter As String" />
+      <MemberSignature Language="F#" Value="member this.DataCenter : string with get, set" Usage="Microsoft.Azure.Management.NotificationHubs.Models.NamespaceResource.DataCenter" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.NotificationHubs</AssemblyName>
@@ -184,7 +188,36 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="properties.enabled")</AttributeName>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty(PropertyName="properties.dataCenter")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty(PropertyName="properties.dataCenter")&gt;]</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets or sets data center for the namespace
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Enabled">
+      <MemberSignature Language="C#" Value="public bool? Enabled { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;bool&gt; Enabled" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Management.NotificationHubs.Models.NamespaceResource.Enabled" />
+      <MemberSignature Language="VB.NET" Value="Public Property Enabled As Nullable(Of Boolean)" />
+      <MemberSignature Language="F#" Value="member this.Enabled : Nullable&lt;bool&gt; with get, set" Usage="Microsoft.Azure.Management.NotificationHubs.Models.NamespaceResource.Enabled" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Azure.Management.NotificationHubs</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty(PropertyName="properties.enabled")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty(PropertyName="properties.enabled")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -198,14 +231,12 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
-    <Member MemberName="NamespaceResourceName">
-      <MemberSignature Language="C#" Value="public string NamespaceResourceName { get; set; }" />
-      <MemberSignature Language="ILAsm" Value=".property instance string NamespaceResourceName" />
-      <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Management.NotificationHubs.Models.NamespaceResource.NamespaceResourceName" />
-      <MemberSignature Language="VB.NET" Value="Public Property NamespaceResourceName As String" />
-      <MemberSignature Language="F#" Value="member this.NamespaceResourceName : string with get, set" Usage="Microsoft.Azure.Management.NotificationHubs.Models.NamespaceResource.NamespaceResourceName" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ NamespaceResourceName { System::String ^ get(); void set(System::String ^ value); };" />
-      <MemberSignature Language="C++ CX" Value="public:&#xA; property Platform::String ^ NamespaceResourceName { Platform::String ^ get(); void set(Platform::String ^ value); };" />
+    <Member MemberName="MetricId">
+      <MemberSignature Language="C#" Value="public string MetricId { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string MetricId" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Management.NotificationHubs.Models.NamespaceResource.MetricId" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property MetricId As String" />
+      <MemberSignature Language="F#" Value="member this.MetricId : string" Usage="Microsoft.Azure.Management.NotificationHubs.Models.NamespaceResource.MetricId" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.NotificationHubs</AssemblyName>
@@ -213,7 +244,36 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="properties.name")</AttributeName>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty(PropertyName="properties.metricId")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty(PropertyName="properties.metricId")&gt;]</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets identifier for Azure Insights metrics
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="NamespaceResourceName">
+      <MemberSignature Language="C#" Value="public string NamespaceResourceName { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string NamespaceResourceName" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Management.NotificationHubs.Models.NamespaceResource.NamespaceResourceName" />
+      <MemberSignature Language="VB.NET" Value="Public Property NamespaceResourceName As String" />
+      <MemberSignature Language="F#" Value="member this.NamespaceResourceName : string with get, set" Usage="Microsoft.Azure.Management.NotificationHubs.Models.NamespaceResource.NamespaceResourceName" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Azure.Management.NotificationHubs</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty(PropertyName="properties.name")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty(PropertyName="properties.name")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -228,12 +288,11 @@
       </Docs>
     </Member>
     <Member MemberName="NamespaceType">
-      <MemberSignature Language="C#" Value="public Nullable&lt;Microsoft.Azure.Management.NotificationHubs.Models.NamespaceType&gt; NamespaceType { get; set; }" />
+      <MemberSignature Language="C#" Value="public Microsoft.Azure.Management.NotificationHubs.Models.NamespaceType? NamespaceType { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;valuetype Microsoft.Azure.Management.NotificationHubs.Models.NamespaceType&gt; NamespaceType" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Management.NotificationHubs.Models.NamespaceResource.NamespaceType" />
       <MemberSignature Language="VB.NET" Value="Public Property NamespaceType As Nullable(Of NamespaceType)" />
       <MemberSignature Language="F#" Value="member this.NamespaceType : Nullable&lt;Microsoft.Azure.Management.NotificationHubs.Models.NamespaceType&gt; with get, set" Usage="Microsoft.Azure.Management.NotificationHubs.Models.NamespaceResource.NamespaceType" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Nullable&lt;Microsoft::Azure::Management::NotificationHubs::Models::NamespaceType&gt; NamespaceType { Nullable&lt;Microsoft::Azure::Management::NotificationHubs::Models::NamespaceType&gt; get(); void set(Nullable&lt;Microsoft::Azure::Management::NotificationHubs::Models::NamespaceType&gt; value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.NotificationHubs</AssemblyName>
@@ -241,7 +300,8 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="properties.namespaceType")</AttributeName>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty(PropertyName="properties.namespaceType")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty(PropertyName="properties.namespaceType")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -262,8 +322,6 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Management.NotificationHubs.Models.NamespaceResource.ProvisioningState" />
       <MemberSignature Language="VB.NET" Value="Public Property ProvisioningState As String" />
       <MemberSignature Language="F#" Value="member this.ProvisioningState : string with get, set" Usage="Microsoft.Azure.Management.NotificationHubs.Models.NamespaceResource.ProvisioningState" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ ProvisioningState { System::String ^ get(); void set(System::String ^ value); };" />
-      <MemberSignature Language="C++ CX" Value="public:&#xA; property Platform::String ^ ProvisioningState { Platform::String ^ get(); void set(Platform::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.NotificationHubs</AssemblyName>
@@ -271,7 +329,8 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="properties.provisioningState")</AttributeName>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty(PropertyName="properties.provisioningState")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty(PropertyName="properties.provisioningState")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -291,8 +350,6 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Management.NotificationHubs.Models.NamespaceResource.Region" />
       <MemberSignature Language="VB.NET" Value="Public Property Region As String" />
       <MemberSignature Language="F#" Value="member this.Region : string with get, set" Usage="Microsoft.Azure.Management.NotificationHubs.Models.NamespaceResource.Region" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Region { System::String ^ get(); void set(System::String ^ value); };" />
-      <MemberSignature Language="C++ CX" Value="public:&#xA; property Platform::String ^ Region { Platform::String ^ get(); void set(Platform::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.NotificationHubs</AssemblyName>
@@ -300,7 +357,8 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="properties.region")</AttributeName>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty(PropertyName="properties.region")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty(PropertyName="properties.region")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -310,9 +368,9 @@
         <summary>
             Gets or sets specifies the targeted region in which the namespace
             should be created. It can be any of the following values: Australia
-            EastAustralia SoutheastCentral USEast USEast US 2West USNorth
-            Central USSouth Central USEast AsiaSoutheast AsiaBrazil SouthJapan
-            EastJapan WestNorth EuropeWest Europe
+            East, Australia Southeast, Central US, East US, East US 2, West US,
+            North Central US, South Central US, East Asia, Southeast Asia,
+            Brazil South, Japan East, Japan West, North Europe, West Europe
             </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
@@ -324,8 +382,6 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Management.NotificationHubs.Models.NamespaceResource.ScaleUnit" />
       <MemberSignature Language="VB.NET" Value="Public Property ScaleUnit As String" />
       <MemberSignature Language="F#" Value="member this.ScaleUnit : string with get, set" Usage="Microsoft.Azure.Management.NotificationHubs.Models.NamespaceResource.ScaleUnit" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ ScaleUnit { System::String ^ get(); void set(System::String ^ value); };" />
-      <MemberSignature Language="C++ CX" Value="public:&#xA; property Platform::String ^ ScaleUnit { Platform::String ^ get(); void set(Platform::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.NotificationHubs</AssemblyName>
@@ -333,7 +389,8 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="properties.scaleUnit")</AttributeName>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty(PropertyName="properties.scaleUnit")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty(PropertyName="properties.scaleUnit")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -353,8 +410,6 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Management.NotificationHubs.Models.NamespaceResource.ServiceBusEndpoint" />
       <MemberSignature Language="VB.NET" Value="Public Property ServiceBusEndpoint As String" />
       <MemberSignature Language="F#" Value="member this.ServiceBusEndpoint : string with get, set" Usage="Microsoft.Azure.Management.NotificationHubs.Models.NamespaceResource.ServiceBusEndpoint" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ ServiceBusEndpoint { System::String ^ get(); void set(System::String ^ value); };" />
-      <MemberSignature Language="C++ CX" Value="public:&#xA; property Platform::String ^ ServiceBusEndpoint { Platform::String ^ get(); void set(Platform::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.NotificationHubs</AssemblyName>
@@ -362,7 +417,8 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="properties.serviceBusEndpoint")</AttributeName>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty(PropertyName="properties.serviceBusEndpoint")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty(PropertyName="properties.serviceBusEndpoint")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -383,8 +439,6 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Management.NotificationHubs.Models.NamespaceResource.Status" />
       <MemberSignature Language="VB.NET" Value="Public Property Status As String" />
       <MemberSignature Language="F#" Value="member this.Status : string with get, set" Usage="Microsoft.Azure.Management.NotificationHubs.Models.NamespaceResource.Status" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Status { System::String ^ get(); void set(System::String ^ value); };" />
-      <MemberSignature Language="C++ CX" Value="public:&#xA; property Platform::String ^ Status { Platform::String ^ get(); void set(Platform::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.NotificationHubs</AssemblyName>
@@ -392,7 +446,8 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="properties.status")</AttributeName>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty(PropertyName="properties.status")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty(PropertyName="properties.status")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -413,8 +468,6 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Management.NotificationHubs.Models.NamespaceResource.SubscriptionId" />
       <MemberSignature Language="VB.NET" Value="Public Property SubscriptionId As String" />
       <MemberSignature Language="F#" Value="member this.SubscriptionId : string with get, set" Usage="Microsoft.Azure.Management.NotificationHubs.Models.NamespaceResource.SubscriptionId" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ SubscriptionId { System::String ^ get(); void set(System::String ^ value); };" />
-      <MemberSignature Language="C++ CX" Value="public:&#xA; property Platform::String ^ SubscriptionId { Platform::String ^ get(); void set(Platform::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.NotificationHubs</AssemblyName>
@@ -422,7 +475,8 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="properties.subscriptionId")</AttributeName>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty(PropertyName="properties.subscriptionId")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty(PropertyName="properties.subscriptionId")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -435,6 +489,59 @@
             </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="UpdatedAt">
+      <MemberSignature Language="C#" Value="public DateTime? UpdatedAt { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;valuetype System.DateTime&gt; UpdatedAt" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Management.NotificationHubs.Models.NamespaceResource.UpdatedAt" />
+      <MemberSignature Language="VB.NET" Value="Public Property UpdatedAt As Nullable(Of DateTime)" />
+      <MemberSignature Language="F#" Value="member this.UpdatedAt : Nullable&lt;DateTime&gt; with get, set" Usage="Microsoft.Azure.Management.NotificationHubs.Models.NamespaceResource.UpdatedAt" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Azure.Management.NotificationHubs</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty(PropertyName="properties.updatedAt")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty(PropertyName="properties.updatedAt")&gt;]</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Nullable&lt;System.DateTime&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets or sets the time the namespace was updated.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Validate">
+      <MemberSignature Language="C#" Value="public override void Validate ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void Validate() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Management.NotificationHubs.Models.NamespaceResource.Validate" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Sub Validate ()" />
+      <MemberSignature Language="F#" Value="override this.Validate : unit -&gt; unit" Usage="namespaceResource.Validate " />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Azure.Management.NotificationHubs</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>
+            Validate the object.
+            </summary>
+        <remarks>To be added.</remarks>
+        <exception cref="T:Microsoft.Rest.ValidationException">
+            Thrown if validation fails
+            </exception>
       </Docs>
     </Member>
   </Members>

@@ -1,4 +1,4 @@
-﻿<Type Name="MetricsPostBodySchemaParameters" FullName="Microsoft.Azure.ApplicationInsights.Models.MetricsPostBodySchemaParameters">
+<Type Name="MetricsPostBodySchemaParameters" FullName="Microsoft.Azure.ApplicationInsights.Models.MetricsPostBodySchemaParameters">
   <TypeSignature Language="C#" Value="public class MetricsPostBodySchemaParameters" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit MetricsPostBodySchemaParameters extends System.Object" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Azure.ApplicationInsights.Models.MetricsPostBodySchemaParameters" />
@@ -39,10 +39,10 @@
       </Docs>
     </Member>
     <Member MemberName=".ctor">
-      <MemberSignature Language="C#" Value="public MetricsPostBodySchemaParameters (string metricId, Nullable&lt;TimeSpan&gt; timespan = null, System.Collections.Generic.IList&lt;string&gt; aggregation = null, Nullable&lt;TimeSpan&gt; interval = null, System.Collections.Generic.IList&lt;string&gt; segment = null, Nullable&lt;int&gt; top = null, string orderby = null, string filter = null);" />
+      <MemberSignature Language="C#" Value="public MetricsPostBodySchemaParameters (string metricId, TimeSpan? timespan = default, System.Collections.Generic.IList&lt;string&gt; aggregation = default, TimeSpan? interval = default, System.Collections.Generic.IList&lt;string&gt; segment = default, int? top = default, string orderby = default, string filter = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string metricId, valuetype System.Nullable`1&lt;valuetype System.TimeSpan&gt; timespan, class System.Collections.Generic.IList`1&lt;string&gt; aggregation, valuetype System.Nullable`1&lt;valuetype System.TimeSpan&gt; interval, class System.Collections.Generic.IList`1&lt;string&gt; segment, valuetype System.Nullable`1&lt;int32&gt; top, string orderby, string filter) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.ApplicationInsights.Models.MetricsPostBodySchemaParameters.#ctor(System.String,System.Nullable{System.TimeSpan},System.Collections.Generic.IList{System.String},System.Nullable{System.TimeSpan},System.Collections.Generic.IList{System.String},System.Nullable{System.Int32},System.String,System.String)" />
-      <MemberSignature Language="VB.NET" Value="Public Sub New (metricId As String, Optional timespan As Nullable(Of TimeSpan) = null, Optional aggregation As IList(Of String) = null, Optional interval As Nullable(Of TimeSpan) = null, Optional segment As IList(Of String) = null, Optional top As Nullable(Of Integer) = null, Optional orderby As String = null, Optional filter As String = null)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (metricId As String, Optional timespan As Nullable(Of TimeSpan) = Nothing, Optional aggregation As IList(Of String) = Nothing, Optional interval As Nullable(Of TimeSpan) = Nothing, Optional segment As IList(Of String) = Nothing, Optional top As Nullable(Of Integer) = Nothing, Optional orderby As String = Nothing, Optional filter As String = Nothing)" />
       <MemberSignature Language="F#" Value="new Microsoft.Azure.ApplicationInsights.Models.MetricsPostBodySchemaParameters : string * Nullable&lt;TimeSpan&gt; * System.Collections.Generic.IList&lt;string&gt; * Nullable&lt;TimeSpan&gt; * System.Collections.Generic.IList&lt;string&gt; * Nullable&lt;int&gt; * string * string -&gt; Microsoft.Azure.ApplicationInsights.Models.MetricsPostBodySchemaParameters" Usage="new Microsoft.Azure.ApplicationInsights.Models.MetricsPostBodySchemaParameters (metricId, timespan, aggregation, interval, segment, top, orderby, filter)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
@@ -60,6 +60,13 @@
         <Parameter Name="filter" Type="System.String" />
       </Parameters>
       <Docs>
+        <param name="timespan">To be added.</param>
+        <param name="aggregation">To be added.</param>
+        <param name="interval">To be added.</param>
+        <param name="segment">To be added.</param>
+        <param name="top">To be added.</param>
+        <param name="orderby">To be added.</param>
+        <param name="filter">To be added.</param>
         <param name="metricId">Possible values include: 'requests/count',
             'requests/duration', 'requests/failed', 'users/count',
             'users/authenticated', 'pageViews/count', 'pageViews/duration',
@@ -80,13 +87,6 @@
             'availabilityResults/availabilityPercentage',
             'availabilityResults/duration', 'billing/telemetryCount',
             'customEvents/count'</param>
-        <param name="timespan">To be added.</param>
-        <param name="aggregation">To be added.</param>
-        <param name="interval">To be added.</param>
-        <param name="segment">To be added.</param>
-        <param name="top">To be added.</param>
-        <param name="orderby">To be added.</param>
-        <param name="filter">To be added.</param>
         <summary>
             Initializes a new instance of the MetricsPostBodySchemaParameters
             class.
@@ -107,7 +107,8 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="aggregation")</AttributeName>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty(PropertyName="aggregation")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty(PropertyName="aggregation")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -132,7 +133,8 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="filter")</AttributeName>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty(PropertyName="filter")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty(PropertyName="filter")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -145,7 +147,7 @@
       </Docs>
     </Member>
     <Member MemberName="Interval">
-      <MemberSignature Language="C#" Value="public Nullable&lt;TimeSpan&gt; Interval { get; set; }" />
+      <MemberSignature Language="C#" Value="public TimeSpan? Interval { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;valuetype System.TimeSpan&gt; Interval" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Azure.ApplicationInsights.Models.MetricsPostBodySchemaParameters.Interval" />
       <MemberSignature Language="VB.NET" Value="Public Property Interval As Nullable(Of TimeSpan)" />
@@ -157,7 +159,8 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="interval")</AttributeName>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty(PropertyName="interval")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty(PropertyName="interval")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -182,7 +185,8 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="metricId")</AttributeName>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty(PropertyName="metricId")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty(PropertyName="metricId")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -228,7 +232,8 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="orderby")</AttributeName>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty(PropertyName="orderby")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty(PropertyName="orderby")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -253,7 +258,8 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="segment")</AttributeName>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty(PropertyName="segment")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty(PropertyName="segment")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -266,7 +272,7 @@
       </Docs>
     </Member>
     <Member MemberName="Timespan">
-      <MemberSignature Language="C#" Value="public Nullable&lt;TimeSpan&gt; Timespan { get; set; }" />
+      <MemberSignature Language="C#" Value="public TimeSpan? Timespan { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;valuetype System.TimeSpan&gt; Timespan" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Azure.ApplicationInsights.Models.MetricsPostBodySchemaParameters.Timespan" />
       <MemberSignature Language="VB.NET" Value="Public Property Timespan As Nullable(Of TimeSpan)" />
@@ -278,7 +284,8 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="timespan")</AttributeName>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty(PropertyName="timespan")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty(PropertyName="timespan")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -291,7 +298,7 @@
       </Docs>
     </Member>
     <Member MemberName="Top">
-      <MemberSignature Language="C#" Value="public Nullable&lt;int&gt; Top { get; set; }" />
+      <MemberSignature Language="C#" Value="public int? Top { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;int32&gt; Top" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Azure.ApplicationInsights.Models.MetricsPostBodySchemaParameters.Top" />
       <MemberSignature Language="VB.NET" Value="Public Property Top As Nullable(Of Integer)" />
@@ -303,7 +310,8 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="top")</AttributeName>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty(PropertyName="top")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty(PropertyName="top")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>

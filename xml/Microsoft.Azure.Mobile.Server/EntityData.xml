@@ -1,15 +1,12 @@
-﻿<Type Name="EntityData" FullName="Microsoft.Azure.Mobile.Server.EntityData">
+<Type Name="EntityData" FullName="Microsoft.Azure.Mobile.Server.EntityData">
   <TypeSignature Language="C#" Value="public abstract class EntityData : Microsoft.Azure.Mobile.Server.Tables.ITableData" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit EntityData extends System.Object implements class Microsoft.Azure.Mobile.Server.Tables.ITableData" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Azure.Mobile.Server.EntityData" />
   <TypeSignature Language="VB.NET" Value="Public MustInherit Class EntityData&#xA;Implements ITableData" />
   <TypeSignature Language="F#" Value="type EntityData = class&#xA;    interface ITableData" />
-  <TypeSignature Language="C++ CLI" Value="public ref class EntityData abstract : Microsoft::Azure::Mobile::Server::Tables::ITableData" />
-  <TypeSignature Language="C++ CX" Value="[Windows::Foundation::Metadata::WebHostHidden]&#xA;public ref class EntityData abstract : Microsoft::Azure::Mobile::Server::Tables::ITableData" />
-  <TypeSignature Language="C++ WINRT" Value="[Windows::Foundation::Metadata::WebHostHidden]&#xA;class EntityData abstract : Microsoft::Azure::Mobile::Server::Tables::ITableData" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Azure.Mobile.Server.Entity</AssemblyName>
-    <AssemblyVersion>2.0.0.0</AssemblyVersion>
+    <AssemblyVersion>2.0.3.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
@@ -36,13 +33,10 @@
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Mobile.Server.EntityData.#ctor" />
       <MemberSignature Language="VB.NET" Value="Protected Sub New ()" />
-      <MemberSignature Language="C++ CLI" Value="protected:&#xA; EntityData();" />
-      <MemberSignature Language="C++ CX" Value="protected:&#xA; EntityData();" />
-      <MemberSignature Language="C++ WINRT" Value=" EntityData();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Mobile.Server.Entity</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.3.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
@@ -51,29 +45,31 @@
       </Docs>
     </Member>
     <Member MemberName="CreatedAt">
-      <MemberSignature Language="C#" Value="public Nullable&lt;DateTimeOffset&gt; CreatedAt { get; set; }" />
+      <MemberSignature Language="C#" Value="public DateTimeOffset? CreatedAt { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;valuetype System.DateTimeOffset&gt; CreatedAt" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Mobile.Server.EntityData.CreatedAt" />
       <MemberSignature Language="VB.NET" Value="Public Property CreatedAt As Nullable(Of DateTimeOffset)" />
       <MemberSignature Language="F#" Value="member this.CreatedAt : Nullable&lt;DateTimeOffset&gt; with get, set" Usage="Microsoft.Azure.Mobile.Server.EntityData.CreatedAt" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Nullable&lt;DateTimeOffset&gt; CreatedAt { Nullable&lt;DateTimeOffset&gt; get(); void set(Nullable&lt;DateTimeOffset&gt; value); };" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:Microsoft.Azure.Mobile.Server.Tables.ITableData.CreatedAt</InterfaceMember>
       </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Mobile.Server.Entity</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.3.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Microsoft.Azure.Mobile.Server.Tables.TableColumn(Microsoft.Azure.Mobile.Server.Tables.TableColumnType.CreatedAt)</AttributeName>
+          <AttributeName Language="C#">[Microsoft.Azure.Mobile.Server.Tables.TableColumn(Microsoft.Azure.Mobile.Server.Tables.TableColumnType.CreatedAt)]</AttributeName>
+          <AttributeName Language="F#">[&lt;Microsoft.Azure.Mobile.Server.Tables.TableColumn(Microsoft.Azure.Mobile.Server.Tables.TableColumnType.CreatedAt)&gt;]</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.ComponentModel.DataAnnotations.Schema.DatabaseGenerated(System.ComponentModel.DataAnnotations.Schema.DatabaseGeneratedOption.Identity)</AttributeName>
+          <AttributeName Language="C#">[System.ComponentModel.DataAnnotations.Schema.DatabaseGenerated(System.ComponentModel.DataAnnotations.Schema.DatabaseGeneratedOption.Identity)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.ComponentModel.DataAnnotations.Schema.DatabaseGenerated(System.ComponentModel.DataAnnotations.Schema.DatabaseGeneratedOption.Identity)&gt;]</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.ComponentModel.DataAnnotations.Schema.Index(IsClustered=true)</AttributeName>
+          <AttributeName Language="C#">[System.ComponentModel.DataAnnotations.Schema.Index(IsClustered=true)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.ComponentModel.DataAnnotations.Schema.Index(IsClustered=true)&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -91,19 +87,18 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Mobile.Server.EntityData.Deleted" />
       <MemberSignature Language="VB.NET" Value="Public Property Deleted As Boolean" />
       <MemberSignature Language="F#" Value="member this.Deleted : bool with get, set" Usage="Microsoft.Azure.Mobile.Server.EntityData.Deleted" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool Deleted { bool get(); void set(bool value); };" />
-      <MemberSignature Language="C++ CX" Value="public:&#xA; property bool Deleted { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:Microsoft.Azure.Mobile.Server.Tables.ITableData.Deleted</InterfaceMember>
       </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Mobile.Server.Entity</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.3.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Microsoft.Azure.Mobile.Server.Tables.TableColumn(Microsoft.Azure.Mobile.Server.Tables.TableColumnType.Deleted)</AttributeName>
+          <AttributeName Language="C#">[Microsoft.Azure.Mobile.Server.Tables.TableColumn(Microsoft.Azure.Mobile.Server.Tables.TableColumnType.Deleted)]</AttributeName>
+          <AttributeName Language="F#">[&lt;Microsoft.Azure.Mobile.Server.Tables.TableColumn(Microsoft.Azure.Mobile.Server.Tables.TableColumnType.Deleted)&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -121,22 +116,22 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Mobile.Server.EntityData.Id" />
       <MemberSignature Language="VB.NET" Value="Public Property Id As String" />
       <MemberSignature Language="F#" Value="member this.Id : string with get, set" Usage="Microsoft.Azure.Mobile.Server.EntityData.Id" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Id { System::String ^ get(); void set(System::String ^ value); };" />
-      <MemberSignature Language="C++ CX" Value="public:&#xA; property Platform::String ^ Id { Platform::String ^ get(); void set(Platform::String ^ value); };" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:Microsoft.Azure.Mobile.Server.Tables.ITableData.Id</InterfaceMember>
       </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Mobile.Server.Entity</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.3.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Microsoft.Azure.Mobile.Server.Tables.TableColumn(Microsoft.Azure.Mobile.Server.Tables.TableColumnType.Id)</AttributeName>
+          <AttributeName Language="C#">[Microsoft.Azure.Mobile.Server.Tables.TableColumn(Microsoft.Azure.Mobile.Server.Tables.TableColumnType.Id)]</AttributeName>
+          <AttributeName Language="F#">[&lt;Microsoft.Azure.Mobile.Server.Tables.TableColumn(Microsoft.Azure.Mobile.Server.Tables.TableColumnType.Id)&gt;]</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.ComponentModel.DataAnnotations.Key</AttributeName>
+          <AttributeName Language="C#">[System.ComponentModel.DataAnnotations.Key]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.ComponentModel.DataAnnotations.Key&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -149,26 +144,27 @@
       </Docs>
     </Member>
     <Member MemberName="UpdatedAt">
-      <MemberSignature Language="C#" Value="public Nullable&lt;DateTimeOffset&gt; UpdatedAt { get; set; }" />
+      <MemberSignature Language="C#" Value="public DateTimeOffset? UpdatedAt { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;valuetype System.DateTimeOffset&gt; UpdatedAt" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Mobile.Server.EntityData.UpdatedAt" />
       <MemberSignature Language="VB.NET" Value="Public Property UpdatedAt As Nullable(Of DateTimeOffset)" />
       <MemberSignature Language="F#" Value="member this.UpdatedAt : Nullable&lt;DateTimeOffset&gt; with get, set" Usage="Microsoft.Azure.Mobile.Server.EntityData.UpdatedAt" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Nullable&lt;DateTimeOffset&gt; UpdatedAt { Nullable&lt;DateTimeOffset&gt; get(); void set(Nullable&lt;DateTimeOffset&gt; value); };" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:Microsoft.Azure.Mobile.Server.Tables.ITableData.UpdatedAt</InterfaceMember>
       </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Mobile.Server.Entity</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.3.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Microsoft.Azure.Mobile.Server.Tables.TableColumn(Microsoft.Azure.Mobile.Server.Tables.TableColumnType.UpdatedAt)</AttributeName>
+          <AttributeName Language="C#">[Microsoft.Azure.Mobile.Server.Tables.TableColumn(Microsoft.Azure.Mobile.Server.Tables.TableColumnType.UpdatedAt)]</AttributeName>
+          <AttributeName Language="F#">[&lt;Microsoft.Azure.Mobile.Server.Tables.TableColumn(Microsoft.Azure.Mobile.Server.Tables.TableColumnType.UpdatedAt)&gt;]</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.ComponentModel.DataAnnotations.Schema.DatabaseGenerated(System.ComponentModel.DataAnnotations.Schema.DatabaseGeneratedOption.Computed)</AttributeName>
+          <AttributeName Language="C#">[System.ComponentModel.DataAnnotations.Schema.DatabaseGenerated(System.ComponentModel.DataAnnotations.Schema.DatabaseGeneratedOption.Computed)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.ComponentModel.DataAnnotations.Schema.DatabaseGenerated(System.ComponentModel.DataAnnotations.Schema.DatabaseGeneratedOption.Computed)&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -186,22 +182,22 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Mobile.Server.EntityData.Version" />
       <MemberSignature Language="VB.NET" Value="Public Property Version As Byte()" />
       <MemberSignature Language="F#" Value="member this.Version : byte[] with get, set" Usage="Microsoft.Azure.Mobile.Server.EntityData.Version" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property cli::array &lt;System::Byte&gt; ^ Version { cli::array &lt;System::Byte&gt; ^ get(); void set(cli::array &lt;System::Byte&gt; ^ value); };" />
-      <MemberSignature Language="C++ CX" Value="public:&#xA; property Platform::Array &lt;byte&gt; ^ Version { Platform::Array &lt;byte&gt; ^ get(); void set(Platform::Array &lt;byte&gt; ^ value); };" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:Microsoft.Azure.Mobile.Server.Tables.ITableData.Version</InterfaceMember>
       </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Mobile.Server.Entity</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.3.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Microsoft.Azure.Mobile.Server.Tables.TableColumn(Microsoft.Azure.Mobile.Server.Tables.TableColumnType.Version)</AttributeName>
+          <AttributeName Language="C#">[Microsoft.Azure.Mobile.Server.Tables.TableColumn(Microsoft.Azure.Mobile.Server.Tables.TableColumnType.Version)]</AttributeName>
+          <AttributeName Language="F#">[&lt;Microsoft.Azure.Mobile.Server.Tables.TableColumn(Microsoft.Azure.Mobile.Server.Tables.TableColumnType.Version)&gt;]</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.ComponentModel.DataAnnotations.Timestamp</AttributeName>
+          <AttributeName Language="C#">[System.ComponentModel.DataAnnotations.Timestamp]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.ComponentModel.DataAnnotations.Timestamp&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>

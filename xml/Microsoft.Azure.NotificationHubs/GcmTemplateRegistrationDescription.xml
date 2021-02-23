@@ -1,14 +1,15 @@
-﻿<Type Name="GcmTemplateRegistrationDescription" FullName="Microsoft.Azure.NotificationHubs.GcmTemplateRegistrationDescription">
+<Type Name="GcmTemplateRegistrationDescription" FullName="Microsoft.Azure.NotificationHubs.GcmTemplateRegistrationDescription">
   <TypeSignature Language="C#" Value="public class GcmTemplateRegistrationDescription : Microsoft.Azure.NotificationHubs.GcmRegistrationDescription" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit GcmTemplateRegistrationDescription extends Microsoft.Azure.NotificationHubs.GcmRegistrationDescription" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Azure.NotificationHubs.GcmTemplateRegistrationDescription" />
   <TypeSignature Language="VB.NET" Value="Public Class GcmTemplateRegistrationDescription&#xA;Inherits GcmRegistrationDescription" />
   <TypeSignature Language="F#" Value="type GcmTemplateRegistrationDescription = class&#xA;    inherit GcmRegistrationDescription" />
-  <TypeSignature Language="C++ CLI" Value="public ref class GcmTemplateRegistrationDescription : Microsoft::Azure::NotificationHubs::GcmRegistrationDescription" />
-  <TypeSignature Language="C++ WINRT" Value="[Windows::Foundation::Metadata::WebHostHidden]&#xA;class GcmTemplateRegistrationDescription : Microsoft::Azure::NotificationHubs::GcmRegistrationDescription" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Azure.NotificationHubs</AssemblyName>
-    <AssemblyVersion>2.16.0.0</AssemblyVersion>
+    <AssemblyVersion>3.2.1.0</AssemblyVersion>
+    <AssemblyVersion>3.3.0.0</AssemblyVersion>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+    <AssemblyVersion>4.1.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>Microsoft.Azure.NotificationHubs.GcmRegistrationDescription</BaseTypeName>
@@ -16,33 +17,68 @@
   <Interfaces />
   <Attributes>
     <Attribute>
-      <AttributeName>System.Runtime.Serialization.DataContract(Name="GcmTemplateRegistrationDescription", Namespace="http://schemas.microsoft.com/netservices/2010/10/servicebus/connect")</AttributeName>
+      <AttributeName Language="C#">[System.Obsolete("GcmTemplateRegistrationDescription is deprecated, please use FcmTemplateRegistrationDescription instead.")]</AttributeName>
+      <AttributeName Language="F#">[&lt;System.Obsolete("GcmTemplateRegistrationDescription is deprecated, please use FcmTemplateRegistrationDescription instead.")&gt;]</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName Language="C#">[System.Runtime.Serialization.DataContract(Name="GcmTemplateRegistrationDescription", Namespace="http://schemas.microsoft.com/netservices/2010/10/servicebus/connect")]</AttributeName>
+      <AttributeName Language="F#">[&lt;System.Runtime.Serialization.DataContract(Name="GcmTemplateRegistrationDescription", Namespace="http://schemas.microsoft.com/netservices/2010/10/servicebus/connect")&gt;]</AttributeName>
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Represents the description of GCM template registration.</summary>
+    <summary>
+            Represents Notification Hub template registration description for Google Cloud Messaging
+            </summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public GcmTemplateRegistrationDescription (Microsoft.Azure.NotificationHubs.FcmTemplateRegistrationDescription fcmTemplateRegistration);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class Microsoft.Azure.NotificationHubs.FcmTemplateRegistrationDescription fcmTemplateRegistration) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Azure.NotificationHubs.GcmTemplateRegistrationDescription.#ctor(Microsoft.Azure.NotificationHubs.FcmTemplateRegistrationDescription)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (fcmTemplateRegistration As FcmTemplateRegistrationDescription)" />
+      <MemberSignature Language="F#" Value="new Microsoft.Azure.NotificationHubs.GcmTemplateRegistrationDescription : Microsoft.Azure.NotificationHubs.FcmTemplateRegistrationDescription -&gt; Microsoft.Azure.NotificationHubs.GcmTemplateRegistrationDescription" Usage="new Microsoft.Azure.NotificationHubs.GcmTemplateRegistrationDescription fcmTemplateRegistration" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Azure.NotificationHubs</AssemblyName>
+        <AssemblyVersion>3.2.1.0</AssemblyVersion>
+        <AssemblyVersion>3.3.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="fcmTemplateRegistration" Type="Microsoft.Azure.NotificationHubs.FcmTemplateRegistrationDescription" />
+      </Parameters>
+      <Docs>
+        <param name="fcmTemplateRegistration">FcmTemplateRegistrationDescription object to create new GcmTemplateRegistrationDescription from.</param>
+        <summary>
+            Creates instance of <see cref="T:Microsoft.Azure.NotificationHubs.GcmTemplateRegistrationDescription" /> class from <see cref="T:Microsoft.Azure.NotificationHubs.FcmTemplateRegistrationDescription" /> object.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public GcmTemplateRegistrationDescription (Microsoft.Azure.NotificationHubs.GcmTemplateRegistrationDescription sourceRegistration);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class Microsoft.Azure.NotificationHubs.GcmTemplateRegistrationDescription sourceRegistration) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.NotificationHubs.GcmTemplateRegistrationDescription.#ctor(Microsoft.Azure.NotificationHubs.GcmTemplateRegistrationDescription)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (sourceRegistration As GcmTemplateRegistrationDescription)" />
       <MemberSignature Language="F#" Value="new Microsoft.Azure.NotificationHubs.GcmTemplateRegistrationDescription : Microsoft.Azure.NotificationHubs.GcmTemplateRegistrationDescription -&gt; Microsoft.Azure.NotificationHubs.GcmTemplateRegistrationDescription" Usage="new Microsoft.Azure.NotificationHubs.GcmTemplateRegistrationDescription sourceRegistration" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; GcmTemplateRegistrationDescription(Microsoft::Azure::NotificationHubs::GcmTemplateRegistrationDescription ^ sourceRegistration);" />
-      <MemberSignature Language="C++ WINRT" Value=" GcmTemplateRegistrationDescription(Microsoft::Azure::NotificationHubs::GcmTemplateRegistrationDescription const &amp; sourceRegistration);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.NotificationHubs</AssemblyName>
-        <AssemblyVersion>2.16.0.0</AssemblyVersion>
+        <AssemblyVersion>3.2.1.0</AssemblyVersion>
+        <AssemblyVersion>3.3.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="sourceRegistration" Type="Microsoft.Azure.NotificationHubs.GcmTemplateRegistrationDescription" />
       </Parameters>
       <Docs>
-        <param name="sourceRegistration">The source of registration.</param>
-        <summary>Initializes a new instance of the <see cref="T:Microsoft.Azure.NotificationHubs.GcmTemplateRegistrationDescription" /> class.</summary>
+        <param name="sourceRegistration">Another <see cref="T:Microsoft.Azure.NotificationHubs.GcmTemplateRegistrationDescription" /> instance fields values are copyed from</param>
+        <summary>
+            Creates instance of <see cref="T:Microsoft.Azure.NotificationHubs.GcmTemplateRegistrationDescription" /> class by copying fields from the given instance
+            </summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -52,20 +88,22 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.NotificationHubs.GcmTemplateRegistrationDescription.#ctor(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (gcmRegistrationId As String)" />
       <MemberSignature Language="F#" Value="new Microsoft.Azure.NotificationHubs.GcmTemplateRegistrationDescription : string -&gt; Microsoft.Azure.NotificationHubs.GcmTemplateRegistrationDescription" Usage="new Microsoft.Azure.NotificationHubs.GcmTemplateRegistrationDescription gcmRegistrationId" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; GcmTemplateRegistrationDescription(System::String ^ gcmRegistrationId);" />
-      <MemberSignature Language="C++ CX" Value="public:&#xA; GcmTemplateRegistrationDescription(Platform::String ^ gcmRegistrationId);" />
-      <MemberSignature Language="C++ WINRT" Value=" GcmTemplateRegistrationDescription(std::wstring const &amp; gcmRegistrationId);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.NotificationHubs</AssemblyName>
-        <AssemblyVersion>2.16.0.0</AssemblyVersion>
+        <AssemblyVersion>3.2.1.0</AssemblyVersion>
+        <AssemblyVersion>3.3.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="gcmRegistrationId" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="gcmRegistrationId">The GCM registration ID.</param>
-        <summary>Initializes a new instance of the <see cref="T:Microsoft.Azure.NotificationHubs.GcmTemplateRegistrationDescription" /> class.</summary>
+        <param name="gcmRegistrationId">Registration id obtained from the Google Cloud Messaging service</param>
+        <summary>
+            Creates instance of <see cref="T:Microsoft.Azure.NotificationHubs.GcmTemplateRegistrationDescription" /> class using given Google Cloud Messaging registration id
+            </summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -75,22 +113,24 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.NotificationHubs.GcmTemplateRegistrationDescription.#ctor(System.String,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (gcmRegistrationId As String, jsonPayload As String)" />
       <MemberSignature Language="F#" Value="new Microsoft.Azure.NotificationHubs.GcmTemplateRegistrationDescription : string * string -&gt; Microsoft.Azure.NotificationHubs.GcmTemplateRegistrationDescription" Usage="new Microsoft.Azure.NotificationHubs.GcmTemplateRegistrationDescription (gcmRegistrationId, jsonPayload)" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; GcmTemplateRegistrationDescription(System::String ^ gcmRegistrationId, System::String ^ jsonPayload);" />
-      <MemberSignature Language="C++ CX" Value="public:&#xA; GcmTemplateRegistrationDescription(Platform::String ^ gcmRegistrationId, Platform::String ^ jsonPayload);" />
-      <MemberSignature Language="C++ WINRT" Value=" GcmTemplateRegistrationDescription(std::wstring const &amp; gcmRegistrationId, std::wstring const &amp; jsonPayload);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.NotificationHubs</AssemblyName>
-        <AssemblyVersion>2.16.0.0</AssemblyVersion>
+        <AssemblyVersion>3.2.1.0</AssemblyVersion>
+        <AssemblyVersion>3.3.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="gcmRegistrationId" Type="System.String" />
         <Parameter Name="jsonPayload" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="gcmRegistrationId">The GCM registration ID.</param>
-        <param name="jsonPayload">The JSON payload.</param>
-        <summary>Initializes a new instance of the <see cref="T:Microsoft.Azure.NotificationHubs.GcmTemplateRegistrationDescription" /> class.</summary>
+        <param name="gcmRegistrationId">Registration id obtained from the Google Cloud Messaging service</param>
+        <param name="jsonPayload">Payload template</param>
+        <summary>
+            Creates instance of <see cref="T:Microsoft.Azure.NotificationHubs.GcmTemplateRegistrationDescription" /> class using given Google Cloud Messaging registration id and template for payload
+            </summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -100,11 +140,13 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.NotificationHubs.GcmTemplateRegistrationDescription.#ctor(System.String,System.String,System.Collections.Generic.IEnumerable{System.String})" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (gcmRegistrationId As String, jsonPayload As String, tags As IEnumerable(Of String))" />
       <MemberSignature Language="F#" Value="new Microsoft.Azure.NotificationHubs.GcmTemplateRegistrationDescription : string * string * seq&lt;string&gt; -&gt; Microsoft.Azure.NotificationHubs.GcmTemplateRegistrationDescription" Usage="new Microsoft.Azure.NotificationHubs.GcmTemplateRegistrationDescription (gcmRegistrationId, jsonPayload, tags)" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; GcmTemplateRegistrationDescription(System::String ^ gcmRegistrationId, System::String ^ jsonPayload, System::Collections::Generic::IEnumerable&lt;System::String ^&gt; ^ tags);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.NotificationHubs</AssemblyName>
-        <AssemblyVersion>2.16.0.0</AssemblyVersion>
+        <AssemblyVersion>3.2.1.0</AssemblyVersion>
+        <AssemblyVersion>3.3.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="gcmRegistrationId" Type="System.String" />
@@ -112,10 +154,12 @@
         <Parameter Name="tags" Type="System.Collections.Generic.IEnumerable&lt;System.String&gt;" />
       </Parameters>
       <Docs>
-        <param name="gcmRegistrationId">The GCM registration ID.</param>
-        <param name="jsonPayload">The JSON payload.</param>
-        <param name="tags">The description tags.</param>
-        <summary>Initializes a new instance of the <see cref="T:Microsoft.Azure.NotificationHubs.GcmTemplateRegistrationDescription" /> class.</summary>
+        <param name="gcmRegistrationId">Registration id obtained from the Google Cloud Messaging service</param>
+        <param name="jsonPayload">Payload template</param>
+        <param name="tags">Collection of tags. Tags can be used for audience targeting purposes.</param>
+        <summary>
+            Creates instance of <see cref="T:Microsoft.Azure.NotificationHubs.GcmTemplateRegistrationDescription" /> class using given Google Cloud Messaging registration id, template for payload and collection of tags
+            </summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -125,23 +169,28 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Azure.NotificationHubs.GcmTemplateRegistrationDescription.BodyTemplate" />
       <MemberSignature Language="VB.NET" Value="Public Property BodyTemplate As CDataMember" />
       <MemberSignature Language="F#" Value="member this.BodyTemplate : Microsoft.Azure.NotificationHubs.CDataMember with get, set" Usage="Microsoft.Azure.NotificationHubs.GcmTemplateRegistrationDescription.BodyTemplate" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Azure::NotificationHubs::CDataMember ^ BodyTemplate { Microsoft::Azure::NotificationHubs::CDataMember ^ get(); void set(Microsoft::Azure::NotificationHubs::CDataMember ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.NotificationHubs</AssemblyName>
-        <AssemblyVersion>2.16.0.0</AssemblyVersion>
+        <AssemblyVersion>3.2.1.0</AssemblyVersion>
+        <AssemblyVersion>3.3.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>System.Runtime.Serialization.DataMember(IsRequired=true, Name="BodyTemplate", Order=3001)</AttributeName>
+          <AttributeName Language="C#">[System.Runtime.Serialization.DataMember(IsRequired=true, Name="BodyTemplate", Order=3001)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Runtime.Serialization.DataMember(IsRequired=true, Name="BodyTemplate", Order=3001)&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
         <ReturnType>Microsoft.Azure.NotificationHubs.CDataMember</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the body template.</summary>
-        <value>The body template.</value>
+        <summary>
+            Gets or sets a template body for notification payload which may contain placeholders to be filled in with actual data during the send operation
+            </summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -151,24 +200,28 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Azure.NotificationHubs.GcmTemplateRegistrationDescription.TemplateName" />
       <MemberSignature Language="VB.NET" Value="Public Property TemplateName As String" />
       <MemberSignature Language="F#" Value="member this.TemplateName : string with get, set" Usage="Microsoft.Azure.NotificationHubs.GcmTemplateRegistrationDescription.TemplateName" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ TemplateName { System::String ^ get(); void set(System::String ^ value); };" />
-      <MemberSignature Language="C++ CX" Value="public:&#xA; property Platform::String ^ TemplateName { Platform::String ^ get(); void set(Platform::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.NotificationHubs</AssemblyName>
-        <AssemblyVersion>2.16.0.0</AssemblyVersion>
+        <AssemblyVersion>3.2.1.0</AssemblyVersion>
+        <AssemblyVersion>3.3.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>System.Runtime.Serialization.DataMember(IsRequired=false, Name="TemplateName", Order=3002)</AttributeName>
+          <AttributeName Language="C#">[System.Runtime.Serialization.DataMember(IsRequired=false, Name="TemplateName", Order=3002)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Runtime.Serialization.DataMember(IsRequired=false, Name="TemplateName", Order=3002)&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the name of the GCM template.</summary>
-        <value>The name of the GCM template.</value>
+        <summary>
+            Gets or sets a name of the template
+            </summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

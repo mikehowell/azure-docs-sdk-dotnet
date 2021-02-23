@@ -1,10 +1,9 @@
-﻿<Type Name="IssuerElement" FullName="Microsoft.ServiceBus.Configuration.IssuerElement">
+<Type Name="IssuerElement" FullName="Microsoft.ServiceBus.Configuration.IssuerElement">
   <TypeSignature Language="C#" Value="public class IssuerElement : System.Configuration.ConfigurationElement" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit IssuerElement extends System.Configuration.ConfigurationElement" />
   <TypeSignature Language="DocId" Value="T:Microsoft.ServiceBus.Configuration.IssuerElement" />
   <TypeSignature Language="VB.NET" Value="Public Class IssuerElement&#xA;Inherits ConfigurationElement" />
   <TypeSignature Language="F#" Value="type IssuerElement = class&#xA;    inherit ConfigurationElement" />
-  <TypeSignature Language="C++ CLI" Value="public ref class IssuerElement : System::Configuration::ConfigurationElement" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.ServiceBus</AssemblyName>
     <AssemblyVersion>3.0.0.0</AssemblyVersion>
@@ -24,8 +23,6 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.ServiceBus.Configuration.IssuerElement.Address" />
       <MemberSignature Language="VB.NET" Value="Public Property Address As String" />
       <MemberSignature Language="F#" Value="member this.Address : string with get, set" Usage="Microsoft.ServiceBus.Configuration.IssuerElement.Address" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Address { System::String ^ get(); void set(System::String ^ value); };" />
-      <MemberSignature Language="C++ CX" Value="public:&#xA; property Platform::String ^ Address { Platform::String ^ get(); void set(Platform::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.ServiceBus</AssemblyName>
@@ -33,10 +30,12 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>System.Configuration.ConfigurationProperty("issuerAddress", DefaultValue=Mono.Cecil.CustomAttributeArgument)</AttributeName>
+          <AttributeName Language="C#">[System.Configuration.ConfigurationProperty("issuerAddress", DefaultValue=Mono.Cecil.CustomAttributeArgument)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Configuration.ConfigurationProperty("issuerAddress", DefaultValue=Mono.Cecil.CustomAttributeArgument)&gt;]</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.Configuration.StringValidator(MaxLength=2048, MinLength=0)</AttributeName>
+          <AttributeName Language="C#">[System.Configuration.StringValidator(MaxLength=2048, MinLength=0)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Configuration.StringValidator(MaxLength=2048, MinLength=0)&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -54,7 +53,6 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.ServiceBus.Configuration.IssuerElement.CopyFrom(System.Configuration.ConfigurationElement)" />
       <MemberSignature Language="VB.NET" Value="Public Sub CopyFrom (from As ConfigurationElement)" />
       <MemberSignature Language="F#" Value="member this.CopyFrom : System.Configuration.ConfigurationElement -&gt; unit" Usage="issuerElement.CopyFrom from" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; void CopyFrom(System::Configuration::ConfigurationElement ^ from);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.ServiceBus</AssemblyName>
@@ -78,7 +76,6 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.ServiceBus.Configuration.IssuerElement.Properties" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides ReadOnly Property Properties As ConfigurationPropertyCollection" />
       <MemberSignature Language="F#" Value="member this.Properties : System.Configuration.ConfigurationPropertyCollection" Usage="Microsoft.ServiceBus.Configuration.IssuerElement.Properties" />
-      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual property System::Configuration::ConfigurationPropertyCollection ^ Properties { System::Configuration::ConfigurationPropertyCollection ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.ServiceBus</AssemblyName>

@@ -1,22 +1,23 @@
-﻿<Type Name="CertificateVisibility" FullName="Microsoft.Azure.Management.Batch.Models.CertificateVisibility">
+<Type Name="CertificateVisibility" FullName="Microsoft.Azure.Management.Batch.Models.CertificateVisibility">
   <TypeSignature Language="C#" Value="public enum CertificateVisibility" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed CertificateVisibility extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Azure.Management.Batch.Models.CertificateVisibility" />
   <TypeSignature Language="VB.NET" Value="Public Enum CertificateVisibility" />
   <TypeSignature Language="F#" Value="type CertificateVisibility = " />
-  <TypeSignature Language="C++ CLI" Value="public enum class CertificateVisibility" />
-  <TypeSignature Language="C++ CX" Value="public enum class CertificateVisibility" />
-  <TypeSignature Language="C++ WINRT" Value="enum CertificateVisibility" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Azure.Management.Batch</AssemblyName>
-    <AssemblyVersion>6.0.0.0</AssemblyVersion>
+    <AssemblyVersion>9.0.0.0</AssemblyVersion>
+    <AssemblyVersion>10.0.0.0</AssemblyVersion>
+    <AssemblyVersion>11.0.0.0</AssemblyVersion>
+    <AssemblyVersion>13.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Attributes>
     <Attribute>
-      <AttributeName>Newtonsoft.Json.JsonConverter(typeof(Newtonsoft.Json.Converters.StringEnumConverter))</AttributeName>
+      <AttributeName Language="C#">[Newtonsoft.Json.JsonConverter(typeof(Newtonsoft.Json.Converters.StringEnumConverter))]</AttributeName>
+      <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonConverter(typeof(Newtonsoft.Json.Converters.StringEnumConverter))&gt;]</AttributeName>
     </Attribute>
   </Attributes>
   <Docs>
@@ -32,17 +33,18 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.Azure.Management.Batch.Models.CertificateVisibility.RemoteUser" />
       <MemberSignature Language="VB.NET" Value="RemoteUser" />
       <MemberSignature Language="F#" Value="RemoteUser = 2" Usage="Microsoft.Azure.Management.Batch.Models.CertificateVisibility.RemoteUser" />
-      <MemberSignature Language="C++ CLI" Value="RemoteUser" />
-      <MemberSignature Language="C++ CX" Value="RemoteUser" />
-      <MemberSignature Language="C++ WINRT" Value="RemoteUser" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Batch</AssemblyName>
-        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+        <AssemblyVersion>11.0.0.0</AssemblyVersion>
+        <AssemblyVersion>13.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>System.Runtime.Serialization.EnumMember(Value="RemoteUser")</AttributeName>
+          <AttributeName Language="C#">[System.Runtime.Serialization.EnumMember(Value="RemoteUser")]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Runtime.Serialization.EnumMember(Value="RemoteUser")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -50,7 +52,10 @@
       </ReturnValue>
       <MemberValue>2</MemberValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+            The certificate should be visible to the user accounts under which
+            users remotely access the node.
+            </summary>
       </Docs>
     </Member>
     <Member MemberName="StartTask">
@@ -59,17 +64,18 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.Azure.Management.Batch.Models.CertificateVisibility.StartTask" />
       <MemberSignature Language="VB.NET" Value="StartTask" />
       <MemberSignature Language="F#" Value="StartTask = 0" Usage="Microsoft.Azure.Management.Batch.Models.CertificateVisibility.StartTask" />
-      <MemberSignature Language="C++ CLI" Value="StartTask" />
-      <MemberSignature Language="C++ CX" Value="StartTask" />
-      <MemberSignature Language="C++ WINRT" Value="StartTask" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Batch</AssemblyName>
-        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+        <AssemblyVersion>11.0.0.0</AssemblyVersion>
+        <AssemblyVersion>13.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>System.Runtime.Serialization.EnumMember(Value="StartTask")</AttributeName>
+          <AttributeName Language="C#">[System.Runtime.Serialization.EnumMember(Value="StartTask")]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Runtime.Serialization.EnumMember(Value="StartTask")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -77,7 +83,12 @@
       </ReturnValue>
       <MemberValue>0</MemberValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+            The certificate should be visible to the user account under which
+            the start task is run. Note that if AutoUser Scope is Pool for both
+            the StartTask and a Task, this certificate will be visible to the
+            Task as well.
+            </summary>
       </Docs>
     </Member>
     <Member MemberName="Task">
@@ -86,17 +97,18 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.Azure.Management.Batch.Models.CertificateVisibility.Task" />
       <MemberSignature Language="VB.NET" Value="Task" />
       <MemberSignature Language="F#" Value="Task = 1" Usage="Microsoft.Azure.Management.Batch.Models.CertificateVisibility.Task" />
-      <MemberSignature Language="C++ CLI" Value="Task" />
-      <MemberSignature Language="C++ CX" Value="Task" />
-      <MemberSignature Language="C++ WINRT" Value="Task" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Batch</AssemblyName>
-        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+        <AssemblyVersion>11.0.0.0</AssemblyVersion>
+        <AssemblyVersion>13.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>System.Runtime.Serialization.EnumMember(Value="Task")</AttributeName>
+          <AttributeName Language="C#">[System.Runtime.Serialization.EnumMember(Value="Task")]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Runtime.Serialization.EnumMember(Value="Task")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -104,7 +116,10 @@
       </ReturnValue>
       <MemberValue>1</MemberValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+            The certificate should be visible to the user accounts under which
+            job tasks are run.
+            </summary>
       </Docs>
     </Member>
   </Members>

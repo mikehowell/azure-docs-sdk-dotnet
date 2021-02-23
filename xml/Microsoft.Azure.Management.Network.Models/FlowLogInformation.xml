@@ -1,17 +1,15 @@
-﻿<Type Name="FlowLogInformation" FullName="Microsoft.Azure.Management.Network.Models.FlowLogInformation">
+<Type Name="FlowLogInformation" FullName="Microsoft.Azure.Management.Network.Models.FlowLogInformation">
   <TypeSignature Language="C#" Value="public class FlowLogInformation" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit FlowLogInformation extends System.Object" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Azure.Management.Network.Models.FlowLogInformation" />
   <TypeSignature Language="VB.NET" Value="Public Class FlowLogInformation" />
   <TypeSignature Language="F#" Value="type FlowLogInformation = class" />
-  <TypeSignature Language="C++ CLI" Value="public ref class FlowLogInformation" />
-  <TypeSignature Language="C++ WINRT" Value="[Windows::Foundation::Metadata::WebHostHidden]&#xA;class FlowLogInformation" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Azure.Management.Network</AssemblyName>
-    <AssemblyVersion>14.0.0.0</AssemblyVersion>
-    <AssemblyVersion>16.0.0.0</AssemblyVersion>
-    <AssemblyVersion>17.0.0.0</AssemblyVersion>
-    <AssemblyVersion>18.0.0.0</AssemblyVersion>
+    <AssemblyVersion>20.0.0.0</AssemblyVersion>
+    <AssemblyVersion>20.0.1.0</AssemblyVersion>
+    <AssemblyVersion>20.0.2.0</AssemblyVersion>
+    <AssemblyVersion>20.0.3.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
@@ -19,12 +17,14 @@
   <Interfaces />
   <Attributes>
     <Attribute>
-      <AttributeName>Microsoft.Rest.Serialization.JsonTransformation</AttributeName>
+      <AttributeName Language="C#">[Microsoft.Rest.Serialization.JsonTransformation]</AttributeName>
+      <AttributeName Language="F#">[&lt;Microsoft.Rest.Serialization.JsonTransformation&gt;]</AttributeName>
     </Attribute>
   </Attributes>
   <Docs>
     <summary>
-            Information on the configuration of flow log.
+            Information on the configuration of flow log and traffic analytics
+            (optional) .
             </summary>
     <remarks>To be added.</remarks>
   </Docs>
@@ -34,16 +34,13 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Management.Network.Models.FlowLogInformation.#ctor" />
       <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; FlowLogInformation();" />
-      <MemberSignature Language="C++ CX" Value="public:&#xA; FlowLogInformation();" />
-      <MemberSignature Language="C++ WINRT" Value=" FlowLogInformation();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Network</AssemblyName>
-        <AssemblyVersion>14.0.0.0</AssemblyVersion>
-        <AssemblyVersion>16.0.0.0</AssemblyVersion>
-        <AssemblyVersion>17.0.0.0</AssemblyVersion>
-        <AssemblyVersion>18.0.0.0</AssemblyVersion>
+        <AssemblyVersion>20.0.0.0</AssemblyVersion>
+        <AssemblyVersion>20.0.1.0</AssemblyVersion>
+        <AssemblyVersion>20.0.2.0</AssemblyVersion>
+        <AssemblyVersion>20.0.3.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
@@ -54,33 +51,38 @@
       </Docs>
     </Member>
     <Member MemberName=".ctor">
-      <MemberSignature Language="C#" Value="public FlowLogInformation (string targetResourceId, string storageId, bool enabled, Microsoft.Azure.Management.Network.Models.RetentionPolicyParameters retentionPolicy = null);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string targetResourceId, string storageId, bool enabled, class Microsoft.Azure.Management.Network.Models.RetentionPolicyParameters retentionPolicy) cil managed" />
-      <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Management.Network.Models.FlowLogInformation.#ctor(System.String,System.String,System.Boolean,Microsoft.Azure.Management.Network.Models.RetentionPolicyParameters)" />
-      <MemberSignature Language="VB.NET" Value="Public Sub New (targetResourceId As String, storageId As String, enabled As Boolean, Optional retentionPolicy As RetentionPolicyParameters = null)" />
-      <MemberSignature Language="F#" Value="new Microsoft.Azure.Management.Network.Models.FlowLogInformation : string * string * bool * Microsoft.Azure.Management.Network.Models.RetentionPolicyParameters -&gt; Microsoft.Azure.Management.Network.Models.FlowLogInformation" Usage="new Microsoft.Azure.Management.Network.Models.FlowLogInformation (targetResourceId, storageId, enabled, retentionPolicy)" />
-      <MemberSignature Language="C++ WINRT" Value=" FlowLogInformation(std::wstring const &amp; targetResourceId, std::wstring const &amp; storageId, bool enabled, Microsoft::Azure::Management::Network::Models::RetentionPolicyParameters const &amp; retentionPolicy = null);" />
+      <MemberSignature Language="C#" Value="public FlowLogInformation (string targetResourceId, string storageId, bool enabled, Microsoft.Azure.Management.Network.Models.RetentionPolicyParameters retentionPolicy = default, Microsoft.Azure.Management.Network.Models.FlowLogFormatParameters format = default, Microsoft.Azure.Management.Network.Models.TrafficAnalyticsProperties flowAnalyticsConfiguration = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string targetResourceId, string storageId, bool enabled, class Microsoft.Azure.Management.Network.Models.RetentionPolicyParameters retentionPolicy, class Microsoft.Azure.Management.Network.Models.FlowLogFormatParameters format, class Microsoft.Azure.Management.Network.Models.TrafficAnalyticsProperties flowAnalyticsConfiguration) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Management.Network.Models.FlowLogInformation.#ctor(System.String,System.String,System.Boolean,Microsoft.Azure.Management.Network.Models.RetentionPolicyParameters,Microsoft.Azure.Management.Network.Models.FlowLogFormatParameters,Microsoft.Azure.Management.Network.Models.TrafficAnalyticsProperties)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (targetResourceId As String, storageId As String, enabled As Boolean, Optional retentionPolicy As RetentionPolicyParameters = Nothing, Optional format As FlowLogFormatParameters = Nothing, Optional flowAnalyticsConfiguration As TrafficAnalyticsProperties = Nothing)" />
+      <MemberSignature Language="F#" Value="new Microsoft.Azure.Management.Network.Models.FlowLogInformation : string * string * bool * Microsoft.Azure.Management.Network.Models.RetentionPolicyParameters * Microsoft.Azure.Management.Network.Models.FlowLogFormatParameters * Microsoft.Azure.Management.Network.Models.TrafficAnalyticsProperties -&gt; Microsoft.Azure.Management.Network.Models.FlowLogInformation" Usage="new Microsoft.Azure.Management.Network.Models.FlowLogInformation (targetResourceId, storageId, enabled, retentionPolicy, format, flowAnalyticsConfiguration)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Network</AssemblyName>
-        <AssemblyVersion>14.0.0.0</AssemblyVersion>
-        <AssemblyVersion>16.0.0.0</AssemblyVersion>
-        <AssemblyVersion>17.0.0.0</AssemblyVersion>
-        <AssemblyVersion>18.0.0.0</AssemblyVersion>
+        <AssemblyVersion>20.0.1.0</AssemblyVersion>
+        <AssemblyVersion>20.0.2.0</AssemblyVersion>
+        <AssemblyVersion>20.0.3.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="targetResourceId" Type="System.String" />
         <Parameter Name="storageId" Type="System.String" />
         <Parameter Name="enabled" Type="System.Boolean" />
         <Parameter Name="retentionPolicy" Type="Microsoft.Azure.Management.Network.Models.RetentionPolicyParameters" />
+        <Parameter Name="format" Type="Microsoft.Azure.Management.Network.Models.FlowLogFormatParameters" />
+        <Parameter Name="flowAnalyticsConfiguration" Type="Microsoft.Azure.Management.Network.Models.TrafficAnalyticsProperties" />
       </Parameters>
       <Docs>
         <param name="targetResourceId">The ID of the resource to configure
-            for flow logging.</param>
+            for flow log and traffic analytics (optional) .</param>
         <param name="storageId">ID of the storage account which is used to
             store the flow log.</param>
         <param name="enabled">Flag to enable/disable flow logging.</param>
-        <param name="retentionPolicy">To be added.</param>
+        <param name="retentionPolicy">Parameters that define the retention
+            policy for flow log.</param>
+        <param name="format">Parameters that define the flow log
+            format.</param>
+        <param name="flowAnalyticsConfiguration">Parameters that define the
+            configuration of traffic analytics.</param>
         <summary>
             Initializes a new instance of the FlowLogInformation class.
             </summary>
@@ -93,19 +95,18 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Management.Network.Models.FlowLogInformation.Enabled" />
       <MemberSignature Language="VB.NET" Value="Public Property Enabled As Boolean" />
       <MemberSignature Language="F#" Value="member this.Enabled : bool with get, set" Usage="Microsoft.Azure.Management.Network.Models.FlowLogInformation.Enabled" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool Enabled { bool get(); void set(bool value); };" />
-      <MemberSignature Language="C++ CX" Value="public:&#xA; property bool Enabled { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Network</AssemblyName>
-        <AssemblyVersion>14.0.0.0</AssemblyVersion>
-        <AssemblyVersion>16.0.0.0</AssemblyVersion>
-        <AssemblyVersion>17.0.0.0</AssemblyVersion>
-        <AssemblyVersion>18.0.0.0</AssemblyVersion>
+        <AssemblyVersion>20.0.0.0</AssemblyVersion>
+        <AssemblyVersion>20.0.1.0</AssemblyVersion>
+        <AssemblyVersion>20.0.2.0</AssemblyVersion>
+        <AssemblyVersion>20.0.3.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="properties.enabled")</AttributeName>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty(PropertyName="properties.enabled")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty(PropertyName="properties.enabled")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -119,31 +120,96 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <Member MemberName="FlowAnalyticsConfiguration">
+      <MemberSignature Language="C#" Value="public Microsoft.Azure.Management.Network.Models.TrafficAnalyticsProperties FlowAnalyticsConfiguration { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Azure.Management.Network.Models.TrafficAnalyticsProperties FlowAnalyticsConfiguration" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Management.Network.Models.FlowLogInformation.FlowAnalyticsConfiguration" />
+      <MemberSignature Language="VB.NET" Value="Public Property FlowAnalyticsConfiguration As TrafficAnalyticsProperties" />
+      <MemberSignature Language="F#" Value="member this.FlowAnalyticsConfiguration : Microsoft.Azure.Management.Network.Models.TrafficAnalyticsProperties with get, set" Usage="Microsoft.Azure.Management.Network.Models.FlowLogInformation.FlowAnalyticsConfiguration" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Azure.Management.Network</AssemblyName>
+        <AssemblyVersion>20.0.0.0</AssemblyVersion>
+        <AssemblyVersion>20.0.1.0</AssemblyVersion>
+        <AssemblyVersion>20.0.2.0</AssemblyVersion>
+        <AssemblyVersion>20.0.3.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty(PropertyName="flowAnalyticsConfiguration")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty(PropertyName="flowAnalyticsConfiguration")&gt;]</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Azure.Management.Network.Models.TrafficAnalyticsProperties</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets or sets parameters that define the configuration of traffic
+            analytics.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Format">
+      <MemberSignature Language="C#" Value="public Microsoft.Azure.Management.Network.Models.FlowLogFormatParameters Format { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Azure.Management.Network.Models.FlowLogFormatParameters Format" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Management.Network.Models.FlowLogInformation.Format" />
+      <MemberSignature Language="VB.NET" Value="Public Property Format As FlowLogFormatParameters" />
+      <MemberSignature Language="F#" Value="member this.Format : Microsoft.Azure.Management.Network.Models.FlowLogFormatParameters with get, set" Usage="Microsoft.Azure.Management.Network.Models.FlowLogInformation.Format" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Azure.Management.Network</AssemblyName>
+        <AssemblyVersion>20.0.1.0</AssemblyVersion>
+        <AssemblyVersion>20.0.2.0</AssemblyVersion>
+        <AssemblyVersion>20.0.3.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty(PropertyName="properties.format")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty(PropertyName="properties.format")&gt;]</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Azure.Management.Network.Models.FlowLogFormatParameters</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets or sets parameters that define the flow log format.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
     <Member MemberName="RetentionPolicy">
       <MemberSignature Language="C#" Value="public Microsoft.Azure.Management.Network.Models.RetentionPolicyParameters RetentionPolicy { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Azure.Management.Network.Models.RetentionPolicyParameters RetentionPolicy" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Management.Network.Models.FlowLogInformation.RetentionPolicy" />
       <MemberSignature Language="VB.NET" Value="Public Property RetentionPolicy As RetentionPolicyParameters" />
       <MemberSignature Language="F#" Value="member this.RetentionPolicy : Microsoft.Azure.Management.Network.Models.RetentionPolicyParameters with get, set" Usage="Microsoft.Azure.Management.Network.Models.FlowLogInformation.RetentionPolicy" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Azure::Management::Network::Models::RetentionPolicyParameters ^ RetentionPolicy { Microsoft::Azure::Management::Network::Models::RetentionPolicyParameters ^ get(); void set(Microsoft::Azure::Management::Network::Models::RetentionPolicyParameters ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Network</AssemblyName>
-        <AssemblyVersion>14.0.0.0</AssemblyVersion>
-        <AssemblyVersion>16.0.0.0</AssemblyVersion>
-        <AssemblyVersion>17.0.0.0</AssemblyVersion>
-        <AssemblyVersion>18.0.0.0</AssemblyVersion>
+        <AssemblyVersion>20.0.0.0</AssemblyVersion>
+        <AssemblyVersion>20.0.1.0</AssemblyVersion>
+        <AssemblyVersion>20.0.2.0</AssemblyVersion>
+        <AssemblyVersion>20.0.3.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="properties.retentionPolicy")</AttributeName>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty(PropertyName="properties.retentionPolicy")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty(PropertyName="properties.retentionPolicy")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
         <ReturnType>Microsoft.Azure.Management.Network.Models.RetentionPolicyParameters</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary />
+        <summary>
+            Gets or sets parameters that define the retention policy for flow
+            log.
+            </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -154,19 +220,18 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Management.Network.Models.FlowLogInformation.StorageId" />
       <MemberSignature Language="VB.NET" Value="Public Property StorageId As String" />
       <MemberSignature Language="F#" Value="member this.StorageId : string with get, set" Usage="Microsoft.Azure.Management.Network.Models.FlowLogInformation.StorageId" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ StorageId { System::String ^ get(); void set(System::String ^ value); };" />
-      <MemberSignature Language="C++ CX" Value="public:&#xA; property Platform::String ^ StorageId { Platform::String ^ get(); void set(Platform::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Network</AssemblyName>
-        <AssemblyVersion>14.0.0.0</AssemblyVersion>
-        <AssemblyVersion>16.0.0.0</AssemblyVersion>
-        <AssemblyVersion>17.0.0.0</AssemblyVersion>
-        <AssemblyVersion>18.0.0.0</AssemblyVersion>
+        <AssemblyVersion>20.0.0.0</AssemblyVersion>
+        <AssemblyVersion>20.0.1.0</AssemblyVersion>
+        <AssemblyVersion>20.0.2.0</AssemblyVersion>
+        <AssemblyVersion>20.0.3.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="properties.storageId")</AttributeName>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty(PropertyName="properties.storageId")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty(PropertyName="properties.storageId")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -187,19 +252,18 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Management.Network.Models.FlowLogInformation.TargetResourceId" />
       <MemberSignature Language="VB.NET" Value="Public Property TargetResourceId As String" />
       <MemberSignature Language="F#" Value="member this.TargetResourceId : string with get, set" Usage="Microsoft.Azure.Management.Network.Models.FlowLogInformation.TargetResourceId" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ TargetResourceId { System::String ^ get(); void set(System::String ^ value); };" />
-      <MemberSignature Language="C++ CX" Value="public:&#xA; property Platform::String ^ TargetResourceId { Platform::String ^ get(); void set(Platform::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Network</AssemblyName>
-        <AssemblyVersion>14.0.0.0</AssemblyVersion>
-        <AssemblyVersion>16.0.0.0</AssemblyVersion>
-        <AssemblyVersion>17.0.0.0</AssemblyVersion>
-        <AssemblyVersion>18.0.0.0</AssemblyVersion>
+        <AssemblyVersion>20.0.0.0</AssemblyVersion>
+        <AssemblyVersion>20.0.1.0</AssemblyVersion>
+        <AssemblyVersion>20.0.2.0</AssemblyVersion>
+        <AssemblyVersion>20.0.3.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="targetResourceId")</AttributeName>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty(PropertyName="targetResourceId")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty(PropertyName="targetResourceId")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -207,7 +271,8 @@
       </ReturnValue>
       <Docs>
         <summary>
-            Gets or sets the ID of the resource to configure for flow logging.
+            Gets or sets the ID of the resource to configure for flow log and
+            traffic analytics (optional) .
             </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
@@ -219,16 +284,13 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Management.Network.Models.FlowLogInformation.Validate" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Sub Validate ()" />
       <MemberSignature Language="F#" Value="abstract member Validate : unit -&gt; unit&#xA;override this.Validate : unit -&gt; unit" Usage="flowLogInformation.Validate " />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Validate();" />
-      <MemberSignature Language="C++ CX" Value="public:&#xA; virtual void Validate();" />
-      <MemberSignature Language="C++ WINRT" Value=" virtual void Validate();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Network</AssemblyName>
-        <AssemblyVersion>14.0.0.0</AssemblyVersion>
-        <AssemblyVersion>16.0.0.0</AssemblyVersion>
-        <AssemblyVersion>17.0.0.0</AssemblyVersion>
-        <AssemblyVersion>18.0.0.0</AssemblyVersion>
+        <AssemblyVersion>20.0.0.0</AssemblyVersion>
+        <AssemblyVersion>20.0.1.0</AssemblyVersion>
+        <AssemblyVersion>20.0.2.0</AssemblyVersion>
+        <AssemblyVersion>20.0.3.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>

@@ -1,16 +1,12 @@
-﻿<Type Name="MxRecord" FullName="Microsoft.Azure.Management.Dns.Models.MxRecord">
+<Type Name="MxRecord" FullName="Microsoft.Azure.Management.Dns.Models.MxRecord">
   <TypeSignature Language="C#" Value="public class MxRecord" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit MxRecord extends System.Object" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Azure.Management.Dns.Models.MxRecord" />
   <TypeSignature Language="VB.NET" Value="Public Class MxRecord" />
   <TypeSignature Language="F#" Value="type MxRecord = class" />
-  <TypeSignature Language="C++ CLI" Value="public ref class MxRecord" />
-  <TypeSignature Language="C++ WINRT" Value="[Windows::Foundation::Metadata::WebHostHidden]&#xA;class MxRecord" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Azure.Management.Dns</AssemblyName>
-    <AssemblyVersion>1.0.0.0</AssemblyVersion>
-    <AssemblyVersion>2.0.0.0</AssemblyVersion>
-    <AssemblyVersion>2.1.0.0</AssemblyVersion>
+    <AssemblyVersion>3.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
@@ -28,15 +24,10 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Management.Dns.Models.MxRecord.#ctor" />
       <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; MxRecord();" />
-      <MemberSignature Language="C++ CX" Value="public:&#xA; MxRecord();" />
-      <MemberSignature Language="C++ WINRT" Value=" MxRecord();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Dns</AssemblyName>
-        <AssemblyVersion>1.0.0.0</AssemblyVersion>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
-        <AssemblyVersion>2.1.0.0</AssemblyVersion>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
@@ -47,17 +38,15 @@
       </Docs>
     </Member>
     <Member MemberName=".ctor">
-      <MemberSignature Language="C#" Value="public MxRecord (Nullable&lt;int&gt; preference = null, string exchange = null);" />
+      <MemberSignature Language="C#" Value="public MxRecord (int? preference = default, string exchange = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(valuetype System.Nullable`1&lt;int32&gt; preference, string exchange) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Management.Dns.Models.MxRecord.#ctor(System.Nullable{System.Int32},System.String)" />
-      <MemberSignature Language="VB.NET" Value="Public Sub New (Optional preference As Nullable(Of Integer) = null, Optional exchange As String = null)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (Optional preference As Nullable(Of Integer) = Nothing, Optional exchange As String = Nothing)" />
       <MemberSignature Language="F#" Value="new Microsoft.Azure.Management.Dns.Models.MxRecord : Nullable&lt;int&gt; * string -&gt; Microsoft.Azure.Management.Dns.Models.MxRecord" Usage="new Microsoft.Azure.Management.Dns.Models.MxRecord (preference, exchange)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Dns</AssemblyName>
-        <AssemblyVersion>1.0.0.0</AssemblyVersion>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
-        <AssemblyVersion>2.1.0.0</AssemblyVersion>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="preference" Type="System.Nullable&lt;System.Int32&gt;" />
@@ -80,18 +69,15 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Management.Dns.Models.MxRecord.Exchange" />
       <MemberSignature Language="VB.NET" Value="Public Property Exchange As String" />
       <MemberSignature Language="F#" Value="member this.Exchange : string with get, set" Usage="Microsoft.Azure.Management.Dns.Models.MxRecord.Exchange" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Exchange { System::String ^ get(); void set(System::String ^ value); };" />
-      <MemberSignature Language="C++ CX" Value="public:&#xA; property Platform::String ^ Exchange { Platform::String ^ get(); void set(Platform::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Dns</AssemblyName>
-        <AssemblyVersion>1.0.0.0</AssemblyVersion>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
-        <AssemblyVersion>2.1.0.0</AssemblyVersion>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="exchange")</AttributeName>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty(PropertyName="exchange")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty(PropertyName="exchange")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -106,22 +92,20 @@
       </Docs>
     </Member>
     <Member MemberName="Preference">
-      <MemberSignature Language="C#" Value="public Nullable&lt;int&gt; Preference { get; set; }" />
+      <MemberSignature Language="C#" Value="public int? Preference { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;int32&gt; Preference" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Management.Dns.Models.MxRecord.Preference" />
       <MemberSignature Language="VB.NET" Value="Public Property Preference As Nullable(Of Integer)" />
       <MemberSignature Language="F#" Value="member this.Preference : Nullable&lt;int&gt; with get, set" Usage="Microsoft.Azure.Management.Dns.Models.MxRecord.Preference" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Nullable&lt;int&gt; Preference { Nullable&lt;int&gt; get(); void set(Nullable&lt;int&gt; value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Dns</AssemblyName>
-        <AssemblyVersion>1.0.0.0</AssemblyVersion>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
-        <AssemblyVersion>2.1.0.0</AssemblyVersion>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="preference")</AttributeName>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty(PropertyName="preference")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty(PropertyName="preference")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>

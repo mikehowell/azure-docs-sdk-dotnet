@@ -1,12 +1,9 @@
-﻿<Type Name="SyncMembersOperationsExtensions" FullName="Microsoft.Azure.Management.Sql.SyncMembersOperationsExtensions">
+<Type Name="SyncMembersOperationsExtensions" FullName="Microsoft.Azure.Management.Sql.SyncMembersOperationsExtensions">
   <TypeSignature Language="C#" Value="public static class SyncMembersOperationsExtensions" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract sealed beforefieldinit SyncMembersOperationsExtensions extends System.Object" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Azure.Management.Sql.SyncMembersOperationsExtensions" />
   <TypeSignature Language="VB.NET" Value="Public Module SyncMembersOperationsExtensions" />
   <TypeSignature Language="F#" Value="type SyncMembersOperationsExtensions = class" />
-  <TypeSignature Language="C++ CLI" Value="public ref class SyncMembersOperationsExtensions abstract sealed" />
-  <TypeSignature Language="C++ CX" Value="public ref class SyncMembersOperationsExtensions abstract sealed" />
-  <TypeSignature Language="C++ WINRT" Value="class SyncMembersOperationsExtensions abstract sealed" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Azure.Management.Sql</AssemblyName>
     <AssemblyVersion>1.0.0.0</AssemblyVersion>
@@ -28,7 +25,6 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Management.Sql.SyncMembersOperationsExtensions.BeginCreateOrUpdate(Microsoft.Azure.Management.Sql.ISyncMembersOperations,System.String,System.String,System.String,System.String,System.String,Microsoft.Azure.Management.Sql.Models.SyncMember)" />
       <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function BeginCreateOrUpdate (operations As ISyncMembersOperations, resourceGroupName As String, serverName As String, databaseName As String, syncGroupName As String, syncMemberName As String, parameters As SyncMember) As SyncMember" />
       <MemberSignature Language="F#" Value="static member BeginCreateOrUpdate : Microsoft.Azure.Management.Sql.ISyncMembersOperations * string * string * string * string * string * Microsoft.Azure.Management.Sql.Models.SyncMember -&gt; Microsoft.Azure.Management.Sql.Models.SyncMember" Usage="Microsoft.Azure.Management.Sql.SyncMembersOperationsExtensions.BeginCreateOrUpdate (operations, resourceGroupName, serverName, databaseName, syncGroupName, syncMemberName, parameters)" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA;[System::Runtime::CompilerServices::Extension]&#xA; static Microsoft::Azure::Management::Sql::Models::SyncMember ^ BeginCreateOrUpdate(Microsoft::Azure::Management::Sql::ISyncMembersOperations ^ operations, System::String ^ resourceGroupName, System::String ^ serverName, System::String ^ databaseName, System::String ^ syncGroupName, System::String ^ syncMemberName, Microsoft::Azure::Management::Sql::Models::SyncMember ^ parameters);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Sql</AssemblyName>
@@ -77,20 +73,16 @@
       </Docs>
     </Member>
     <Member MemberName="BeginCreateOrUpdateAsync">
-      <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task&lt;Microsoft.Azure.Management.Sql.Models.SyncMember&gt; BeginCreateOrUpdateAsync (this Microsoft.Azure.Management.Sql.ISyncMembersOperations operations, string resourceGroupName, string serverName, string databaseName, string syncGroupName, string syncMemberName, Microsoft.Azure.Management.Sql.Models.SyncMember parameters, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task&lt;Microsoft.Azure.Management.Sql.Models.SyncMember&gt; BeginCreateOrUpdateAsync (this Microsoft.Azure.Management.Sql.ISyncMembersOperations operations, string resourceGroupName, string serverName, string databaseName, string syncGroupName, string syncMemberName, Microsoft.Azure.Management.Sql.Models.SyncMember parameters, System.Threading.CancellationToken cancellationToken = default);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Threading.Tasks.Task`1&lt;class Microsoft.Azure.Management.Sql.Models.SyncMember&gt; BeginCreateOrUpdateAsync(class Microsoft.Azure.Management.Sql.ISyncMembersOperations operations, string resourceGroupName, string serverName, string databaseName, string syncGroupName, string syncMemberName, class Microsoft.Azure.Management.Sql.Models.SyncMember parameters, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Management.Sql.SyncMembersOperationsExtensions.BeginCreateOrUpdateAsync(Microsoft.Azure.Management.Sql.ISyncMembersOperations,System.String,System.String,System.String,System.String,System.String,Microsoft.Azure.Management.Sql.Models.SyncMember,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function BeginCreateOrUpdateAsync (operations As ISyncMembersOperations, resourceGroupName As String, serverName As String, databaseName As String, syncGroupName As String, syncMemberName As String, parameters As SyncMember, Optional cancellationToken As CancellationToken = Nothing) As Task(Of SyncMember)" />
       <MemberSignature Language="F#" Value="static member BeginCreateOrUpdateAsync : Microsoft.Azure.Management.Sql.ISyncMembersOperations * string * string * string * string * string * Microsoft.Azure.Management.Sql.Models.SyncMember * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.Azure.Management.Sql.Models.SyncMember&gt;" Usage="Microsoft.Azure.Management.Sql.SyncMembersOperationsExtensions.BeginCreateOrUpdateAsync (operations, resourceGroupName, serverName, databaseName, syncGroupName, syncMemberName, parameters, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Sql</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
-      <Attributes>
-        <Attribute>
-          <AttributeName>System.Runtime.CompilerServices.AsyncStateMachine(typeof(Microsoft.Azure.Management.Sql.SyncMembersOperationsExtensions/&lt;BeginCreateOrUpdateAsync&gt;d__15))</AttributeName>
-        </Attribute>
-      </Attributes>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.Azure.Management.Sql.Models.SyncMember&gt;</ReturnType>
       </ReturnValue>
@@ -143,8 +135,6 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Management.Sql.SyncMembersOperationsExtensions.BeginDelete(Microsoft.Azure.Management.Sql.ISyncMembersOperations,System.String,System.String,System.String,System.String,System.String)" />
       <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Sub BeginDelete (operations As ISyncMembersOperations, resourceGroupName As String, serverName As String, databaseName As String, syncGroupName As String, syncMemberName As String)" />
       <MemberSignature Language="F#" Value="static member BeginDelete : Microsoft.Azure.Management.Sql.ISyncMembersOperations * string * string * string * string * string -&gt; unit" Usage="Microsoft.Azure.Management.Sql.SyncMembersOperationsExtensions.BeginDelete (operations, resourceGroupName, serverName, databaseName, syncGroupName, syncMemberName)" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA;[System::Runtime::CompilerServices::Extension]&#xA; static void BeginDelete(Microsoft::Azure::Management::Sql::ISyncMembersOperations ^ operations, System::String ^ resourceGroupName, System::String ^ serverName, System::String ^ databaseName, System::String ^ syncGroupName, System::String ^ syncMemberName);" />
-      <MemberSignature Language="C++ CX" Value="public:&#xA;[System::Runtime::CompilerServices::Extension]&#xA; static void BeginDelete(Microsoft::Azure::Management::Sql::ISyncMembersOperations ^ operations, Platform::String ^ resourceGroupName, Platform::String ^ serverName, Platform::String ^ databaseName, Platform::String ^ syncGroupName, Platform::String ^ syncMemberName);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Sql</AssemblyName>
@@ -188,20 +178,16 @@
       </Docs>
     </Member>
     <Member MemberName="BeginDeleteAsync">
-      <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task BeginDeleteAsync (this Microsoft.Azure.Management.Sql.ISyncMembersOperations operations, string resourceGroupName, string serverName, string databaseName, string syncGroupName, string syncMemberName, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task BeginDeleteAsync (this Microsoft.Azure.Management.Sql.ISyncMembersOperations operations, string resourceGroupName, string serverName, string databaseName, string syncGroupName, string syncMemberName, System.Threading.CancellationToken cancellationToken = default);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Threading.Tasks.Task BeginDeleteAsync(class Microsoft.Azure.Management.Sql.ISyncMembersOperations operations, string resourceGroupName, string serverName, string databaseName, string syncGroupName, string syncMemberName, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Management.Sql.SyncMembersOperationsExtensions.BeginDeleteAsync(Microsoft.Azure.Management.Sql.ISyncMembersOperations,System.String,System.String,System.String,System.String,System.String,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function BeginDeleteAsync (operations As ISyncMembersOperations, resourceGroupName As String, serverName As String, databaseName As String, syncGroupName As String, syncMemberName As String, Optional cancellationToken As CancellationToken = Nothing) As Task" />
       <MemberSignature Language="F#" Value="static member BeginDeleteAsync : Microsoft.Azure.Management.Sql.ISyncMembersOperations * string * string * string * string * string * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task" Usage="Microsoft.Azure.Management.Sql.SyncMembersOperationsExtensions.BeginDeleteAsync (operations, resourceGroupName, serverName, databaseName, syncGroupName, syncMemberName, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Sql</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
-      <Attributes>
-        <Attribute>
-          <AttributeName>System.Runtime.CompilerServices.AsyncStateMachine(typeof(Microsoft.Azure.Management.Sql.SyncMembersOperationsExtensions/&lt;BeginDeleteAsync&gt;d__17))</AttributeName>
-        </Attribute>
-      </Attributes>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task</ReturnType>
       </ReturnValue>
@@ -250,8 +236,6 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Management.Sql.SyncMembersOperationsExtensions.BeginRefreshMemberSchema(Microsoft.Azure.Management.Sql.ISyncMembersOperations,System.String,System.String,System.String,System.String,System.String)" />
       <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Sub BeginRefreshMemberSchema (operations As ISyncMembersOperations, resourceGroupName As String, serverName As String, databaseName As String, syncGroupName As String, syncMemberName As String)" />
       <MemberSignature Language="F#" Value="static member BeginRefreshMemberSchema : Microsoft.Azure.Management.Sql.ISyncMembersOperations * string * string * string * string * string -&gt; unit" Usage="Microsoft.Azure.Management.Sql.SyncMembersOperationsExtensions.BeginRefreshMemberSchema (operations, resourceGroupName, serverName, databaseName, syncGroupName, syncMemberName)" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA;[System::Runtime::CompilerServices::Extension]&#xA; static void BeginRefreshMemberSchema(Microsoft::Azure::Management::Sql::ISyncMembersOperations ^ operations, System::String ^ resourceGroupName, System::String ^ serverName, System::String ^ databaseName, System::String ^ syncGroupName, System::String ^ syncMemberName);" />
-      <MemberSignature Language="C++ CX" Value="public:&#xA;[System::Runtime::CompilerServices::Extension]&#xA; static void BeginRefreshMemberSchema(Microsoft::Azure::Management::Sql::ISyncMembersOperations ^ operations, Platform::String ^ resourceGroupName, Platform::String ^ serverName, Platform::String ^ databaseName, Platform::String ^ syncGroupName, Platform::String ^ syncMemberName);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Sql</AssemblyName>
@@ -295,20 +279,16 @@
       </Docs>
     </Member>
     <Member MemberName="BeginRefreshMemberSchemaAsync">
-      <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task BeginRefreshMemberSchemaAsync (this Microsoft.Azure.Management.Sql.ISyncMembersOperations operations, string resourceGroupName, string serverName, string databaseName, string syncGroupName, string syncMemberName, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task BeginRefreshMemberSchemaAsync (this Microsoft.Azure.Management.Sql.ISyncMembersOperations operations, string resourceGroupName, string serverName, string databaseName, string syncGroupName, string syncMemberName, System.Threading.CancellationToken cancellationToken = default);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Threading.Tasks.Task BeginRefreshMemberSchemaAsync(class Microsoft.Azure.Management.Sql.ISyncMembersOperations operations, string resourceGroupName, string serverName, string databaseName, string syncGroupName, string syncMemberName, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Management.Sql.SyncMembersOperationsExtensions.BeginRefreshMemberSchemaAsync(Microsoft.Azure.Management.Sql.ISyncMembersOperations,System.String,System.String,System.String,System.String,System.String,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function BeginRefreshMemberSchemaAsync (operations As ISyncMembersOperations, resourceGroupName As String, serverName As String, databaseName As String, syncGroupName As String, syncMemberName As String, Optional cancellationToken As CancellationToken = Nothing) As Task" />
       <MemberSignature Language="F#" Value="static member BeginRefreshMemberSchemaAsync : Microsoft.Azure.Management.Sql.ISyncMembersOperations * string * string * string * string * string * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task" Usage="Microsoft.Azure.Management.Sql.SyncMembersOperationsExtensions.BeginRefreshMemberSchemaAsync (operations, resourceGroupName, serverName, databaseName, syncGroupName, syncMemberName, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Sql</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
-      <Attributes>
-        <Attribute>
-          <AttributeName>System.Runtime.CompilerServices.AsyncStateMachine(typeof(Microsoft.Azure.Management.Sql.SyncMembersOperationsExtensions/&lt;BeginRefreshMemberSchemaAsync&gt;d__21))</AttributeName>
-        </Attribute>
-      </Attributes>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task</ReturnType>
       </ReturnValue>
@@ -357,7 +337,6 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Management.Sql.SyncMembersOperationsExtensions.BeginUpdate(Microsoft.Azure.Management.Sql.ISyncMembersOperations,System.String,System.String,System.String,System.String,System.String,Microsoft.Azure.Management.Sql.Models.SyncMember)" />
       <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function BeginUpdate (operations As ISyncMembersOperations, resourceGroupName As String, serverName As String, databaseName As String, syncGroupName As String, syncMemberName As String, parameters As SyncMember) As SyncMember" />
       <MemberSignature Language="F#" Value="static member BeginUpdate : Microsoft.Azure.Management.Sql.ISyncMembersOperations * string * string * string * string * string * Microsoft.Azure.Management.Sql.Models.SyncMember -&gt; Microsoft.Azure.Management.Sql.Models.SyncMember" Usage="Microsoft.Azure.Management.Sql.SyncMembersOperationsExtensions.BeginUpdate (operations, resourceGroupName, serverName, databaseName, syncGroupName, syncMemberName, parameters)" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA;[System::Runtime::CompilerServices::Extension]&#xA; static Microsoft::Azure::Management::Sql::Models::SyncMember ^ BeginUpdate(Microsoft::Azure::Management::Sql::ISyncMembersOperations ^ operations, System::String ^ resourceGroupName, System::String ^ serverName, System::String ^ databaseName, System::String ^ syncGroupName, System::String ^ syncMemberName, Microsoft::Azure::Management::Sql::Models::SyncMember ^ parameters);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Sql</AssemblyName>
@@ -406,20 +385,16 @@
       </Docs>
     </Member>
     <Member MemberName="BeginUpdateAsync">
-      <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task&lt;Microsoft.Azure.Management.Sql.Models.SyncMember&gt; BeginUpdateAsync (this Microsoft.Azure.Management.Sql.ISyncMembersOperations operations, string resourceGroupName, string serverName, string databaseName, string syncGroupName, string syncMemberName, Microsoft.Azure.Management.Sql.Models.SyncMember parameters, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task&lt;Microsoft.Azure.Management.Sql.Models.SyncMember&gt; BeginUpdateAsync (this Microsoft.Azure.Management.Sql.ISyncMembersOperations operations, string resourceGroupName, string serverName, string databaseName, string syncGroupName, string syncMemberName, Microsoft.Azure.Management.Sql.Models.SyncMember parameters, System.Threading.CancellationToken cancellationToken = default);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Threading.Tasks.Task`1&lt;class Microsoft.Azure.Management.Sql.Models.SyncMember&gt; BeginUpdateAsync(class Microsoft.Azure.Management.Sql.ISyncMembersOperations operations, string resourceGroupName, string serverName, string databaseName, string syncGroupName, string syncMemberName, class Microsoft.Azure.Management.Sql.Models.SyncMember parameters, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Management.Sql.SyncMembersOperationsExtensions.BeginUpdateAsync(Microsoft.Azure.Management.Sql.ISyncMembersOperations,System.String,System.String,System.String,System.String,System.String,Microsoft.Azure.Management.Sql.Models.SyncMember,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function BeginUpdateAsync (operations As ISyncMembersOperations, resourceGroupName As String, serverName As String, databaseName As String, syncGroupName As String, syncMemberName As String, parameters As SyncMember, Optional cancellationToken As CancellationToken = Nothing) As Task(Of SyncMember)" />
       <MemberSignature Language="F#" Value="static member BeginUpdateAsync : Microsoft.Azure.Management.Sql.ISyncMembersOperations * string * string * string * string * string * Microsoft.Azure.Management.Sql.Models.SyncMember * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.Azure.Management.Sql.Models.SyncMember&gt;" Usage="Microsoft.Azure.Management.Sql.SyncMembersOperationsExtensions.BeginUpdateAsync (operations, resourceGroupName, serverName, databaseName, syncGroupName, syncMemberName, parameters, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Sql</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
-      <Attributes>
-        <Attribute>
-          <AttributeName>System.Runtime.CompilerServices.AsyncStateMachine(typeof(Microsoft.Azure.Management.Sql.SyncMembersOperationsExtensions/&lt;BeginUpdateAsync&gt;d__19))</AttributeName>
-        </Attribute>
-      </Attributes>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.Azure.Management.Sql.Models.SyncMember&gt;</ReturnType>
       </ReturnValue>
@@ -472,7 +447,6 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Management.Sql.SyncMembersOperationsExtensions.CreateOrUpdate(Microsoft.Azure.Management.Sql.ISyncMembersOperations,System.String,System.String,System.String,System.String,System.String,Microsoft.Azure.Management.Sql.Models.SyncMember)" />
       <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function CreateOrUpdate (operations As ISyncMembersOperations, resourceGroupName As String, serverName As String, databaseName As String, syncGroupName As String, syncMemberName As String, parameters As SyncMember) As SyncMember" />
       <MemberSignature Language="F#" Value="static member CreateOrUpdate : Microsoft.Azure.Management.Sql.ISyncMembersOperations * string * string * string * string * string * Microsoft.Azure.Management.Sql.Models.SyncMember -&gt; Microsoft.Azure.Management.Sql.Models.SyncMember" Usage="Microsoft.Azure.Management.Sql.SyncMembersOperationsExtensions.CreateOrUpdate (operations, resourceGroupName, serverName, databaseName, syncGroupName, syncMemberName, parameters)" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA;[System::Runtime::CompilerServices::Extension]&#xA; static Microsoft::Azure::Management::Sql::Models::SyncMember ^ CreateOrUpdate(Microsoft::Azure::Management::Sql::ISyncMembersOperations ^ operations, System::String ^ resourceGroupName, System::String ^ serverName, System::String ^ databaseName, System::String ^ syncGroupName, System::String ^ syncMemberName, Microsoft::Azure::Management::Sql::Models::SyncMember ^ parameters);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Sql</AssemblyName>
@@ -521,20 +495,16 @@
       </Docs>
     </Member>
     <Member MemberName="CreateOrUpdateAsync">
-      <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task&lt;Microsoft.Azure.Management.Sql.Models.SyncMember&gt; CreateOrUpdateAsync (this Microsoft.Azure.Management.Sql.ISyncMembersOperations operations, string resourceGroupName, string serverName, string databaseName, string syncGroupName, string syncMemberName, Microsoft.Azure.Management.Sql.Models.SyncMember parameters, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task&lt;Microsoft.Azure.Management.Sql.Models.SyncMember&gt; CreateOrUpdateAsync (this Microsoft.Azure.Management.Sql.ISyncMembersOperations operations, string resourceGroupName, string serverName, string databaseName, string syncGroupName, string syncMemberName, Microsoft.Azure.Management.Sql.Models.SyncMember parameters, System.Threading.CancellationToken cancellationToken = default);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Threading.Tasks.Task`1&lt;class Microsoft.Azure.Management.Sql.Models.SyncMember&gt; CreateOrUpdateAsync(class Microsoft.Azure.Management.Sql.ISyncMembersOperations operations, string resourceGroupName, string serverName, string databaseName, string syncGroupName, string syncMemberName, class Microsoft.Azure.Management.Sql.Models.SyncMember parameters, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Management.Sql.SyncMembersOperationsExtensions.CreateOrUpdateAsync(Microsoft.Azure.Management.Sql.ISyncMembersOperations,System.String,System.String,System.String,System.String,System.String,Microsoft.Azure.Management.Sql.Models.SyncMember,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function CreateOrUpdateAsync (operations As ISyncMembersOperations, resourceGroupName As String, serverName As String, databaseName As String, syncGroupName As String, syncMemberName As String, parameters As SyncMember, Optional cancellationToken As CancellationToken = Nothing) As Task(Of SyncMember)" />
       <MemberSignature Language="F#" Value="static member CreateOrUpdateAsync : Microsoft.Azure.Management.Sql.ISyncMembersOperations * string * string * string * string * string * Microsoft.Azure.Management.Sql.Models.SyncMember * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.Azure.Management.Sql.Models.SyncMember&gt;" Usage="Microsoft.Azure.Management.Sql.SyncMembersOperationsExtensions.CreateOrUpdateAsync (operations, resourceGroupName, serverName, databaseName, syncGroupName, syncMemberName, parameters, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Sql</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
-      <Attributes>
-        <Attribute>
-          <AttributeName>System.Runtime.CompilerServices.AsyncStateMachine(typeof(Microsoft.Azure.Management.Sql.SyncMembersOperationsExtensions/&lt;CreateOrUpdateAsync&gt;d__3))</AttributeName>
-        </Attribute>
-      </Attributes>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.Azure.Management.Sql.Models.SyncMember&gt;</ReturnType>
       </ReturnValue>
@@ -587,8 +557,6 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Management.Sql.SyncMembersOperationsExtensions.Delete(Microsoft.Azure.Management.Sql.ISyncMembersOperations,System.String,System.String,System.String,System.String,System.String)" />
       <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Sub Delete (operations As ISyncMembersOperations, resourceGroupName As String, serverName As String, databaseName As String, syncGroupName As String, syncMemberName As String)" />
       <MemberSignature Language="F#" Value="static member Delete : Microsoft.Azure.Management.Sql.ISyncMembersOperations * string * string * string * string * string -&gt; unit" Usage="Microsoft.Azure.Management.Sql.SyncMembersOperationsExtensions.Delete (operations, resourceGroupName, serverName, databaseName, syncGroupName, syncMemberName)" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA;[System::Runtime::CompilerServices::Extension]&#xA; static void Delete(Microsoft::Azure::Management::Sql::ISyncMembersOperations ^ operations, System::String ^ resourceGroupName, System::String ^ serverName, System::String ^ databaseName, System::String ^ syncGroupName, System::String ^ syncMemberName);" />
-      <MemberSignature Language="C++ CX" Value="public:&#xA;[System::Runtime::CompilerServices::Extension]&#xA; static void Delete(Microsoft::Azure::Management::Sql::ISyncMembersOperations ^ operations, Platform::String ^ resourceGroupName, Platform::String ^ serverName, Platform::String ^ databaseName, Platform::String ^ syncGroupName, Platform::String ^ syncMemberName);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Sql</AssemblyName>
@@ -632,20 +600,16 @@
       </Docs>
     </Member>
     <Member MemberName="DeleteAsync">
-      <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task DeleteAsync (this Microsoft.Azure.Management.Sql.ISyncMembersOperations operations, string resourceGroupName, string serverName, string databaseName, string syncGroupName, string syncMemberName, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task DeleteAsync (this Microsoft.Azure.Management.Sql.ISyncMembersOperations operations, string resourceGroupName, string serverName, string databaseName, string syncGroupName, string syncMemberName, System.Threading.CancellationToken cancellationToken = default);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Threading.Tasks.Task DeleteAsync(class Microsoft.Azure.Management.Sql.ISyncMembersOperations operations, string resourceGroupName, string serverName, string databaseName, string syncGroupName, string syncMemberName, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Management.Sql.SyncMembersOperationsExtensions.DeleteAsync(Microsoft.Azure.Management.Sql.ISyncMembersOperations,System.String,System.String,System.String,System.String,System.String,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function DeleteAsync (operations As ISyncMembersOperations, resourceGroupName As String, serverName As String, databaseName As String, syncGroupName As String, syncMemberName As String, Optional cancellationToken As CancellationToken = Nothing) As Task" />
       <MemberSignature Language="F#" Value="static member DeleteAsync : Microsoft.Azure.Management.Sql.ISyncMembersOperations * string * string * string * string * string * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task" Usage="Microsoft.Azure.Management.Sql.SyncMembersOperationsExtensions.DeleteAsync (operations, resourceGroupName, serverName, databaseName, syncGroupName, syncMemberName, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Sql</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
-      <Attributes>
-        <Attribute>
-          <AttributeName>System.Runtime.CompilerServices.AsyncStateMachine(typeof(Microsoft.Azure.Management.Sql.SyncMembersOperationsExtensions/&lt;DeleteAsync&gt;d__5))</AttributeName>
-        </Attribute>
-      </Attributes>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task</ReturnType>
       </ReturnValue>
@@ -694,7 +658,6 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Management.Sql.SyncMembersOperationsExtensions.Get(Microsoft.Azure.Management.Sql.ISyncMembersOperations,System.String,System.String,System.String,System.String,System.String)" />
       <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function Get (operations As ISyncMembersOperations, resourceGroupName As String, serverName As String, databaseName As String, syncGroupName As String, syncMemberName As String) As SyncMember" />
       <MemberSignature Language="F#" Value="static member Get : Microsoft.Azure.Management.Sql.ISyncMembersOperations * string * string * string * string * string -&gt; Microsoft.Azure.Management.Sql.Models.SyncMember" Usage="Microsoft.Azure.Management.Sql.SyncMembersOperationsExtensions.Get (operations, resourceGroupName, serverName, databaseName, syncGroupName, syncMemberName)" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA;[System::Runtime::CompilerServices::Extension]&#xA; static Microsoft::Azure::Management::Sql::Models::SyncMember ^ Get(Microsoft::Azure::Management::Sql::ISyncMembersOperations ^ operations, System::String ^ resourceGroupName, System::String ^ serverName, System::String ^ databaseName, System::String ^ syncGroupName, System::String ^ syncMemberName);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Sql</AssemblyName>
@@ -739,20 +702,16 @@
       </Docs>
     </Member>
     <Member MemberName="GetAsync">
-      <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task&lt;Microsoft.Azure.Management.Sql.Models.SyncMember&gt; GetAsync (this Microsoft.Azure.Management.Sql.ISyncMembersOperations operations, string resourceGroupName, string serverName, string databaseName, string syncGroupName, string syncMemberName, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task&lt;Microsoft.Azure.Management.Sql.Models.SyncMember&gt; GetAsync (this Microsoft.Azure.Management.Sql.ISyncMembersOperations operations, string resourceGroupName, string serverName, string databaseName, string syncGroupName, string syncMemberName, System.Threading.CancellationToken cancellationToken = default);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Threading.Tasks.Task`1&lt;class Microsoft.Azure.Management.Sql.Models.SyncMember&gt; GetAsync(class Microsoft.Azure.Management.Sql.ISyncMembersOperations operations, string resourceGroupName, string serverName, string databaseName, string syncGroupName, string syncMemberName, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Management.Sql.SyncMembersOperationsExtensions.GetAsync(Microsoft.Azure.Management.Sql.ISyncMembersOperations,System.String,System.String,System.String,System.String,System.String,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function GetAsync (operations As ISyncMembersOperations, resourceGroupName As String, serverName As String, databaseName As String, syncGroupName As String, syncMemberName As String, Optional cancellationToken As CancellationToken = Nothing) As Task(Of SyncMember)" />
       <MemberSignature Language="F#" Value="static member GetAsync : Microsoft.Azure.Management.Sql.ISyncMembersOperations * string * string * string * string * string * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.Azure.Management.Sql.Models.SyncMember&gt;" Usage="Microsoft.Azure.Management.Sql.SyncMembersOperationsExtensions.GetAsync (operations, resourceGroupName, serverName, databaseName, syncGroupName, syncMemberName, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Sql</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
-      <Attributes>
-        <Attribute>
-          <AttributeName>System.Runtime.CompilerServices.AsyncStateMachine(typeof(Microsoft.Azure.Management.Sql.SyncMembersOperationsExtensions/&lt;GetAsync&gt;d__1))</AttributeName>
-        </Attribute>
-      </Attributes>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.Azure.Management.Sql.Models.SyncMember&gt;</ReturnType>
       </ReturnValue>
@@ -801,7 +760,6 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Management.Sql.SyncMembersOperationsExtensions.ListBySyncGroup(Microsoft.Azure.Management.Sql.ISyncMembersOperations,System.String,System.String,System.String,System.String)" />
       <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function ListBySyncGroup (operations As ISyncMembersOperations, resourceGroupName As String, serverName As String, databaseName As String, syncGroupName As String) As IPage(Of SyncMember)" />
       <MemberSignature Language="F#" Value="static member ListBySyncGroup : Microsoft.Azure.Management.Sql.ISyncMembersOperations * string * string * string * string -&gt; Microsoft.Rest.Azure.IPage&lt;Microsoft.Azure.Management.Sql.Models.SyncMember&gt;" Usage="Microsoft.Azure.Management.Sql.SyncMembersOperationsExtensions.ListBySyncGroup (operations, resourceGroupName, serverName, databaseName, syncGroupName)" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA;[System::Runtime::CompilerServices::Extension]&#xA; static Microsoft::Rest::Azure::IPage&lt;Microsoft::Azure::Management::Sql::Models::SyncMember ^&gt; ^ ListBySyncGroup(Microsoft::Azure::Management::Sql::ISyncMembersOperations ^ operations, System::String ^ resourceGroupName, System::String ^ serverName, System::String ^ databaseName, System::String ^ syncGroupName);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Sql</AssemblyName>
@@ -842,20 +800,16 @@
       </Docs>
     </Member>
     <Member MemberName="ListBySyncGroupAsync">
-      <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task&lt;Microsoft.Rest.Azure.IPage&lt;Microsoft.Azure.Management.Sql.Models.SyncMember&gt;&gt; ListBySyncGroupAsync (this Microsoft.Azure.Management.Sql.ISyncMembersOperations operations, string resourceGroupName, string serverName, string databaseName, string syncGroupName, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task&lt;Microsoft.Rest.Azure.IPage&lt;Microsoft.Azure.Management.Sql.Models.SyncMember&gt;&gt; ListBySyncGroupAsync (this Microsoft.Azure.Management.Sql.ISyncMembersOperations operations, string resourceGroupName, string serverName, string databaseName, string syncGroupName, System.Threading.CancellationToken cancellationToken = default);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Threading.Tasks.Task`1&lt;class Microsoft.Rest.Azure.IPage`1&lt;class Microsoft.Azure.Management.Sql.Models.SyncMember&gt;&gt; ListBySyncGroupAsync(class Microsoft.Azure.Management.Sql.ISyncMembersOperations operations, string resourceGroupName, string serverName, string databaseName, string syncGroupName, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Management.Sql.SyncMembersOperationsExtensions.ListBySyncGroupAsync(Microsoft.Azure.Management.Sql.ISyncMembersOperations,System.String,System.String,System.String,System.String,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function ListBySyncGroupAsync (operations As ISyncMembersOperations, resourceGroupName As String, serverName As String, databaseName As String, syncGroupName As String, Optional cancellationToken As CancellationToken = Nothing) As Task(Of IPage(Of SyncMember))" />
       <MemberSignature Language="F#" Value="static member ListBySyncGroupAsync : Microsoft.Azure.Management.Sql.ISyncMembersOperations * string * string * string * string * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.Rest.Azure.IPage&lt;Microsoft.Azure.Management.Sql.Models.SyncMember&gt;&gt;" Usage="Microsoft.Azure.Management.Sql.SyncMembersOperationsExtensions.ListBySyncGroupAsync (operations, resourceGroupName, serverName, databaseName, syncGroupName, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Sql</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
-      <Attributes>
-        <Attribute>
-          <AttributeName>System.Runtime.CompilerServices.AsyncStateMachine(typeof(Microsoft.Azure.Management.Sql.SyncMembersOperationsExtensions/&lt;ListBySyncGroupAsync&gt;d__9))</AttributeName>
-        </Attribute>
-      </Attributes>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.Rest.Azure.IPage&lt;Microsoft.Azure.Management.Sql.Models.SyncMember&gt;&gt;</ReturnType>
       </ReturnValue>
@@ -900,7 +854,6 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Management.Sql.SyncMembersOperationsExtensions.ListBySyncGroupNext(Microsoft.Azure.Management.Sql.ISyncMembersOperations,System.String)" />
       <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function ListBySyncGroupNext (operations As ISyncMembersOperations, nextPageLink As String) As IPage(Of SyncMember)" />
       <MemberSignature Language="F#" Value="static member ListBySyncGroupNext : Microsoft.Azure.Management.Sql.ISyncMembersOperations * string -&gt; Microsoft.Rest.Azure.IPage&lt;Microsoft.Azure.Management.Sql.Models.SyncMember&gt;" Usage="Microsoft.Azure.Management.Sql.SyncMembersOperationsExtensions.ListBySyncGroupNext (operations, nextPageLink)" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA;[System::Runtime::CompilerServices::Extension]&#xA; static Microsoft::Rest::Azure::IPage&lt;Microsoft::Azure::Management::Sql::Models::SyncMember ^&gt; ^ ListBySyncGroupNext(Microsoft::Azure::Management::Sql::ISyncMembersOperations ^ operations, System::String ^ nextPageLink);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Sql</AssemblyName>
@@ -928,20 +881,16 @@
       </Docs>
     </Member>
     <Member MemberName="ListBySyncGroupNextAsync">
-      <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task&lt;Microsoft.Rest.Azure.IPage&lt;Microsoft.Azure.Management.Sql.Models.SyncMember&gt;&gt; ListBySyncGroupNextAsync (this Microsoft.Azure.Management.Sql.ISyncMembersOperations operations, string nextPageLink, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task&lt;Microsoft.Rest.Azure.IPage&lt;Microsoft.Azure.Management.Sql.Models.SyncMember&gt;&gt; ListBySyncGroupNextAsync (this Microsoft.Azure.Management.Sql.ISyncMembersOperations operations, string nextPageLink, System.Threading.CancellationToken cancellationToken = default);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Threading.Tasks.Task`1&lt;class Microsoft.Rest.Azure.IPage`1&lt;class Microsoft.Azure.Management.Sql.Models.SyncMember&gt;&gt; ListBySyncGroupNextAsync(class Microsoft.Azure.Management.Sql.ISyncMembersOperations operations, string nextPageLink, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Management.Sql.SyncMembersOperationsExtensions.ListBySyncGroupNextAsync(Microsoft.Azure.Management.Sql.ISyncMembersOperations,System.String,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function ListBySyncGroupNextAsync (operations As ISyncMembersOperations, nextPageLink As String, Optional cancellationToken As CancellationToken = Nothing) As Task(Of IPage(Of SyncMember))" />
       <MemberSignature Language="F#" Value="static member ListBySyncGroupNextAsync : Microsoft.Azure.Management.Sql.ISyncMembersOperations * string * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.Rest.Azure.IPage&lt;Microsoft.Azure.Management.Sql.Models.SyncMember&gt;&gt;" Usage="Microsoft.Azure.Management.Sql.SyncMembersOperationsExtensions.ListBySyncGroupNextAsync (operations, nextPageLink, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Sql</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
-      <Attributes>
-        <Attribute>
-          <AttributeName>System.Runtime.CompilerServices.AsyncStateMachine(typeof(Microsoft.Azure.Management.Sql.SyncMembersOperationsExtensions/&lt;ListBySyncGroupNextAsync&gt;d__23))</AttributeName>
-        </Attribute>
-      </Attributes>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.Rest.Azure.IPage&lt;Microsoft.Azure.Management.Sql.Models.SyncMember&gt;&gt;</ReturnType>
       </ReturnValue>
@@ -973,7 +922,6 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Management.Sql.SyncMembersOperationsExtensions.ListMemberSchemas(Microsoft.Azure.Management.Sql.ISyncMembersOperations,System.String,System.String,System.String,System.String,System.String)" />
       <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function ListMemberSchemas (operations As ISyncMembersOperations, resourceGroupName As String, serverName As String, databaseName As String, syncGroupName As String, syncMemberName As String) As IPage(Of SyncFullSchemaProperties)" />
       <MemberSignature Language="F#" Value="static member ListMemberSchemas : Microsoft.Azure.Management.Sql.ISyncMembersOperations * string * string * string * string * string -&gt; Microsoft.Rest.Azure.IPage&lt;Microsoft.Azure.Management.Sql.Models.SyncFullSchemaProperties&gt;" Usage="Microsoft.Azure.Management.Sql.SyncMembersOperationsExtensions.ListMemberSchemas (operations, resourceGroupName, serverName, databaseName, syncGroupName, syncMemberName)" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA;[System::Runtime::CompilerServices::Extension]&#xA; static Microsoft::Rest::Azure::IPage&lt;Microsoft::Azure::Management::Sql::Models::SyncFullSchemaProperties ^&gt; ^ ListMemberSchemas(Microsoft::Azure::Management::Sql::ISyncMembersOperations ^ operations, System::String ^ resourceGroupName, System::String ^ serverName, System::String ^ databaseName, System::String ^ syncGroupName, System::String ^ syncMemberName);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Sql</AssemblyName>
@@ -1018,20 +966,16 @@
       </Docs>
     </Member>
     <Member MemberName="ListMemberSchemasAsync">
-      <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task&lt;Microsoft.Rest.Azure.IPage&lt;Microsoft.Azure.Management.Sql.Models.SyncFullSchemaProperties&gt;&gt; ListMemberSchemasAsync (this Microsoft.Azure.Management.Sql.ISyncMembersOperations operations, string resourceGroupName, string serverName, string databaseName, string syncGroupName, string syncMemberName, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task&lt;Microsoft.Rest.Azure.IPage&lt;Microsoft.Azure.Management.Sql.Models.SyncFullSchemaProperties&gt;&gt; ListMemberSchemasAsync (this Microsoft.Azure.Management.Sql.ISyncMembersOperations operations, string resourceGroupName, string serverName, string databaseName, string syncGroupName, string syncMemberName, System.Threading.CancellationToken cancellationToken = default);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Threading.Tasks.Task`1&lt;class Microsoft.Rest.Azure.IPage`1&lt;class Microsoft.Azure.Management.Sql.Models.SyncFullSchemaProperties&gt;&gt; ListMemberSchemasAsync(class Microsoft.Azure.Management.Sql.ISyncMembersOperations operations, string resourceGroupName, string serverName, string databaseName, string syncGroupName, string syncMemberName, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Management.Sql.SyncMembersOperationsExtensions.ListMemberSchemasAsync(Microsoft.Azure.Management.Sql.ISyncMembersOperations,System.String,System.String,System.String,System.String,System.String,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function ListMemberSchemasAsync (operations As ISyncMembersOperations, resourceGroupName As String, serverName As String, databaseName As String, syncGroupName As String, syncMemberName As String, Optional cancellationToken As CancellationToken = Nothing) As Task(Of IPage(Of SyncFullSchemaProperties))" />
       <MemberSignature Language="F#" Value="static member ListMemberSchemasAsync : Microsoft.Azure.Management.Sql.ISyncMembersOperations * string * string * string * string * string * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.Rest.Azure.IPage&lt;Microsoft.Azure.Management.Sql.Models.SyncFullSchemaProperties&gt;&gt;" Usage="Microsoft.Azure.Management.Sql.SyncMembersOperationsExtensions.ListMemberSchemasAsync (operations, resourceGroupName, serverName, databaseName, syncGroupName, syncMemberName, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Sql</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
-      <Attributes>
-        <Attribute>
-          <AttributeName>System.Runtime.CompilerServices.AsyncStateMachine(typeof(Microsoft.Azure.Management.Sql.SyncMembersOperationsExtensions/&lt;ListMemberSchemasAsync&gt;d__11))</AttributeName>
-        </Attribute>
-      </Attributes>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.Rest.Azure.IPage&lt;Microsoft.Azure.Management.Sql.Models.SyncFullSchemaProperties&gt;&gt;</ReturnType>
       </ReturnValue>
@@ -1080,7 +1024,6 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Management.Sql.SyncMembersOperationsExtensions.ListMemberSchemasNext(Microsoft.Azure.Management.Sql.ISyncMembersOperations,System.String)" />
       <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function ListMemberSchemasNext (operations As ISyncMembersOperations, nextPageLink As String) As IPage(Of SyncFullSchemaProperties)" />
       <MemberSignature Language="F#" Value="static member ListMemberSchemasNext : Microsoft.Azure.Management.Sql.ISyncMembersOperations * string -&gt; Microsoft.Rest.Azure.IPage&lt;Microsoft.Azure.Management.Sql.Models.SyncFullSchemaProperties&gt;" Usage="Microsoft.Azure.Management.Sql.SyncMembersOperationsExtensions.ListMemberSchemasNext (operations, nextPageLink)" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA;[System::Runtime::CompilerServices::Extension]&#xA; static Microsoft::Rest::Azure::IPage&lt;Microsoft::Azure::Management::Sql::Models::SyncFullSchemaProperties ^&gt; ^ ListMemberSchemasNext(Microsoft::Azure::Management::Sql::ISyncMembersOperations ^ operations, System::String ^ nextPageLink);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Sql</AssemblyName>
@@ -1108,20 +1051,16 @@
       </Docs>
     </Member>
     <Member MemberName="ListMemberSchemasNextAsync">
-      <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task&lt;Microsoft.Rest.Azure.IPage&lt;Microsoft.Azure.Management.Sql.Models.SyncFullSchemaProperties&gt;&gt; ListMemberSchemasNextAsync (this Microsoft.Azure.Management.Sql.ISyncMembersOperations operations, string nextPageLink, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task&lt;Microsoft.Rest.Azure.IPage&lt;Microsoft.Azure.Management.Sql.Models.SyncFullSchemaProperties&gt;&gt; ListMemberSchemasNextAsync (this Microsoft.Azure.Management.Sql.ISyncMembersOperations operations, string nextPageLink, System.Threading.CancellationToken cancellationToken = default);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Threading.Tasks.Task`1&lt;class Microsoft.Rest.Azure.IPage`1&lt;class Microsoft.Azure.Management.Sql.Models.SyncFullSchemaProperties&gt;&gt; ListMemberSchemasNextAsync(class Microsoft.Azure.Management.Sql.ISyncMembersOperations operations, string nextPageLink, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Management.Sql.SyncMembersOperationsExtensions.ListMemberSchemasNextAsync(Microsoft.Azure.Management.Sql.ISyncMembersOperations,System.String,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function ListMemberSchemasNextAsync (operations As ISyncMembersOperations, nextPageLink As String, Optional cancellationToken As CancellationToken = Nothing) As Task(Of IPage(Of SyncFullSchemaProperties))" />
       <MemberSignature Language="F#" Value="static member ListMemberSchemasNextAsync : Microsoft.Azure.Management.Sql.ISyncMembersOperations * string * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.Rest.Azure.IPage&lt;Microsoft.Azure.Management.Sql.Models.SyncFullSchemaProperties&gt;&gt;" Usage="Microsoft.Azure.Management.Sql.SyncMembersOperationsExtensions.ListMemberSchemasNextAsync (operations, nextPageLink, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Sql</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
-      <Attributes>
-        <Attribute>
-          <AttributeName>System.Runtime.CompilerServices.AsyncStateMachine(typeof(Microsoft.Azure.Management.Sql.SyncMembersOperationsExtensions/&lt;ListMemberSchemasNextAsync&gt;d__25))</AttributeName>
-        </Attribute>
-      </Attributes>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.Rest.Azure.IPage&lt;Microsoft.Azure.Management.Sql.Models.SyncFullSchemaProperties&gt;&gt;</ReturnType>
       </ReturnValue>
@@ -1153,8 +1092,6 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Management.Sql.SyncMembersOperationsExtensions.RefreshMemberSchema(Microsoft.Azure.Management.Sql.ISyncMembersOperations,System.String,System.String,System.String,System.String,System.String)" />
       <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Sub RefreshMemberSchema (operations As ISyncMembersOperations, resourceGroupName As String, serverName As String, databaseName As String, syncGroupName As String, syncMemberName As String)" />
       <MemberSignature Language="F#" Value="static member RefreshMemberSchema : Microsoft.Azure.Management.Sql.ISyncMembersOperations * string * string * string * string * string -&gt; unit" Usage="Microsoft.Azure.Management.Sql.SyncMembersOperationsExtensions.RefreshMemberSchema (operations, resourceGroupName, serverName, databaseName, syncGroupName, syncMemberName)" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA;[System::Runtime::CompilerServices::Extension]&#xA; static void RefreshMemberSchema(Microsoft::Azure::Management::Sql::ISyncMembersOperations ^ operations, System::String ^ resourceGroupName, System::String ^ serverName, System::String ^ databaseName, System::String ^ syncGroupName, System::String ^ syncMemberName);" />
-      <MemberSignature Language="C++ CX" Value="public:&#xA;[System::Runtime::CompilerServices::Extension]&#xA; static void RefreshMemberSchema(Microsoft::Azure::Management::Sql::ISyncMembersOperations ^ operations, Platform::String ^ resourceGroupName, Platform::String ^ serverName, Platform::String ^ databaseName, Platform::String ^ syncGroupName, Platform::String ^ syncMemberName);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Sql</AssemblyName>
@@ -1198,20 +1135,16 @@
       </Docs>
     </Member>
     <Member MemberName="RefreshMemberSchemaAsync">
-      <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task RefreshMemberSchemaAsync (this Microsoft.Azure.Management.Sql.ISyncMembersOperations operations, string resourceGroupName, string serverName, string databaseName, string syncGroupName, string syncMemberName, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task RefreshMemberSchemaAsync (this Microsoft.Azure.Management.Sql.ISyncMembersOperations operations, string resourceGroupName, string serverName, string databaseName, string syncGroupName, string syncMemberName, System.Threading.CancellationToken cancellationToken = default);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Threading.Tasks.Task RefreshMemberSchemaAsync(class Microsoft.Azure.Management.Sql.ISyncMembersOperations operations, string resourceGroupName, string serverName, string databaseName, string syncGroupName, string syncMemberName, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Management.Sql.SyncMembersOperationsExtensions.RefreshMemberSchemaAsync(Microsoft.Azure.Management.Sql.ISyncMembersOperations,System.String,System.String,System.String,System.String,System.String,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function RefreshMemberSchemaAsync (operations As ISyncMembersOperations, resourceGroupName As String, serverName As String, databaseName As String, syncGroupName As String, syncMemberName As String, Optional cancellationToken As CancellationToken = Nothing) As Task" />
       <MemberSignature Language="F#" Value="static member RefreshMemberSchemaAsync : Microsoft.Azure.Management.Sql.ISyncMembersOperations * string * string * string * string * string * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task" Usage="Microsoft.Azure.Management.Sql.SyncMembersOperationsExtensions.RefreshMemberSchemaAsync (operations, resourceGroupName, serverName, databaseName, syncGroupName, syncMemberName, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Sql</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
-      <Attributes>
-        <Attribute>
-          <AttributeName>System.Runtime.CompilerServices.AsyncStateMachine(typeof(Microsoft.Azure.Management.Sql.SyncMembersOperationsExtensions/&lt;RefreshMemberSchemaAsync&gt;d__13))</AttributeName>
-        </Attribute>
-      </Attributes>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task</ReturnType>
       </ReturnValue>
@@ -1260,7 +1193,6 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Management.Sql.SyncMembersOperationsExtensions.Update(Microsoft.Azure.Management.Sql.ISyncMembersOperations,System.String,System.String,System.String,System.String,System.String,Microsoft.Azure.Management.Sql.Models.SyncMember)" />
       <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function Update (operations As ISyncMembersOperations, resourceGroupName As String, serverName As String, databaseName As String, syncGroupName As String, syncMemberName As String, parameters As SyncMember) As SyncMember" />
       <MemberSignature Language="F#" Value="static member Update : Microsoft.Azure.Management.Sql.ISyncMembersOperations * string * string * string * string * string * Microsoft.Azure.Management.Sql.Models.SyncMember -&gt; Microsoft.Azure.Management.Sql.Models.SyncMember" Usage="Microsoft.Azure.Management.Sql.SyncMembersOperationsExtensions.Update (operations, resourceGroupName, serverName, databaseName, syncGroupName, syncMemberName, parameters)" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA;[System::Runtime::CompilerServices::Extension]&#xA; static Microsoft::Azure::Management::Sql::Models::SyncMember ^ Update(Microsoft::Azure::Management::Sql::ISyncMembersOperations ^ operations, System::String ^ resourceGroupName, System::String ^ serverName, System::String ^ databaseName, System::String ^ syncGroupName, System::String ^ syncMemberName, Microsoft::Azure::Management::Sql::Models::SyncMember ^ parameters);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Sql</AssemblyName>
@@ -1309,20 +1241,16 @@
       </Docs>
     </Member>
     <Member MemberName="UpdateAsync">
-      <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task&lt;Microsoft.Azure.Management.Sql.Models.SyncMember&gt; UpdateAsync (this Microsoft.Azure.Management.Sql.ISyncMembersOperations operations, string resourceGroupName, string serverName, string databaseName, string syncGroupName, string syncMemberName, Microsoft.Azure.Management.Sql.Models.SyncMember parameters, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task&lt;Microsoft.Azure.Management.Sql.Models.SyncMember&gt; UpdateAsync (this Microsoft.Azure.Management.Sql.ISyncMembersOperations operations, string resourceGroupName, string serverName, string databaseName, string syncGroupName, string syncMemberName, Microsoft.Azure.Management.Sql.Models.SyncMember parameters, System.Threading.CancellationToken cancellationToken = default);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Threading.Tasks.Task`1&lt;class Microsoft.Azure.Management.Sql.Models.SyncMember&gt; UpdateAsync(class Microsoft.Azure.Management.Sql.ISyncMembersOperations operations, string resourceGroupName, string serverName, string databaseName, string syncGroupName, string syncMemberName, class Microsoft.Azure.Management.Sql.Models.SyncMember parameters, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Management.Sql.SyncMembersOperationsExtensions.UpdateAsync(Microsoft.Azure.Management.Sql.ISyncMembersOperations,System.String,System.String,System.String,System.String,System.String,Microsoft.Azure.Management.Sql.Models.SyncMember,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function UpdateAsync (operations As ISyncMembersOperations, resourceGroupName As String, serverName As String, databaseName As String, syncGroupName As String, syncMemberName As String, parameters As SyncMember, Optional cancellationToken As CancellationToken = Nothing) As Task(Of SyncMember)" />
       <MemberSignature Language="F#" Value="static member UpdateAsync : Microsoft.Azure.Management.Sql.ISyncMembersOperations * string * string * string * string * string * Microsoft.Azure.Management.Sql.Models.SyncMember * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.Azure.Management.Sql.Models.SyncMember&gt;" Usage="Microsoft.Azure.Management.Sql.SyncMembersOperationsExtensions.UpdateAsync (operations, resourceGroupName, serverName, databaseName, syncGroupName, syncMemberName, parameters, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Sql</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
-      <Attributes>
-        <Attribute>
-          <AttributeName>System.Runtime.CompilerServices.AsyncStateMachine(typeof(Microsoft.Azure.Management.Sql.SyncMembersOperationsExtensions/&lt;UpdateAsync&gt;d__7))</AttributeName>
-        </Attribute>
-      </Attributes>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.Azure.Management.Sql.Models.SyncMember&gt;</ReturnType>
       </ReturnValue>

@@ -1,11 +1,9 @@
-﻿<Type Name="StartStreamingJobParameters" FullName="Microsoft.Azure.Management.StreamAnalytics.Models.StartStreamingJobParameters">
+<Type Name="StartStreamingJobParameters" FullName="Microsoft.Azure.Management.StreamAnalytics.Models.StartStreamingJobParameters">
   <TypeSignature Language="C#" Value="public class StartStreamingJobParameters" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit StartStreamingJobParameters extends System.Object" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Azure.Management.StreamAnalytics.Models.StartStreamingJobParameters" />
   <TypeSignature Language="VB.NET" Value="Public Class StartStreamingJobParameters" />
   <TypeSignature Language="F#" Value="type StartStreamingJobParameters = class" />
-  <TypeSignature Language="C++ CLI" Value="public ref class StartStreamingJobParameters" />
-  <TypeSignature Language="C++ WINRT" Value="[Windows::Foundation::Metadata::WebHostHidden]&#xA;class StartStreamingJobParameters" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Azure.Management.StreamAnalytics</AssemblyName>
     <AssemblyVersion>2.0.0.0</AssemblyVersion>
@@ -26,9 +24,6 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Management.StreamAnalytics.Models.StartStreamingJobParameters.#ctor" />
       <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; StartStreamingJobParameters();" />
-      <MemberSignature Language="C++ CX" Value="public:&#xA; StartStreamingJobParameters();" />
-      <MemberSignature Language="C++ WINRT" Value=" StartStreamingJobParameters();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.StreamAnalytics</AssemblyName>
@@ -44,10 +39,10 @@
       </Docs>
     </Member>
     <Member MemberName=".ctor">
-      <MemberSignature Language="C#" Value="public StartStreamingJobParameters (string outputStartMode = null, Nullable&lt;DateTime&gt; outputStartTime = null);" />
+      <MemberSignature Language="C#" Value="public StartStreamingJobParameters (string outputStartMode = default, DateTime? outputStartTime = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string outputStartMode, valuetype System.Nullable`1&lt;valuetype System.DateTime&gt; outputStartTime) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Management.StreamAnalytics.Models.StartStreamingJobParameters.#ctor(System.String,System.Nullable{System.DateTime})" />
-      <MemberSignature Language="VB.NET" Value="Public Sub New (Optional outputStartMode As String = null, Optional outputStartTime As Nullable(Of DateTime) = null)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (Optional outputStartMode As String = Nothing, Optional outputStartTime As Nullable(Of DateTime) = Nothing)" />
       <MemberSignature Language="F#" Value="new Microsoft.Azure.Management.StreamAnalytics.Models.StartStreamingJobParameters : string * Nullable&lt;DateTime&gt; -&gt; Microsoft.Azure.Management.StreamAnalytics.Models.StartStreamingJobParameters" Usage="new Microsoft.Azure.Management.StreamAnalytics.Models.StartStreamingJobParameters (outputStartMode, outputStartTime)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
@@ -84,8 +79,6 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Management.StreamAnalytics.Models.StartStreamingJobParameters.OutputStartMode" />
       <MemberSignature Language="VB.NET" Value="Public Property OutputStartMode As String" />
       <MemberSignature Language="F#" Value="member this.OutputStartMode : string with get, set" Usage="Microsoft.Azure.Management.StreamAnalytics.Models.StartStreamingJobParameters.OutputStartMode" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ OutputStartMode { System::String ^ get(); void set(System::String ^ value); };" />
-      <MemberSignature Language="C++ CX" Value="public:&#xA; property Platform::String ^ OutputStartMode { Platform::String ^ get(); void set(Platform::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.StreamAnalytics</AssemblyName>
@@ -93,7 +86,8 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="outputStartMode")</AttributeName>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty(PropertyName="outputStartMode")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty(PropertyName="outputStartMode")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -113,12 +107,11 @@
       </Docs>
     </Member>
     <Member MemberName="OutputStartTime">
-      <MemberSignature Language="C#" Value="public Nullable&lt;DateTime&gt; OutputStartTime { get; set; }" />
+      <MemberSignature Language="C#" Value="public DateTime? OutputStartTime { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;valuetype System.DateTime&gt; OutputStartTime" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Management.StreamAnalytics.Models.StartStreamingJobParameters.OutputStartTime" />
       <MemberSignature Language="VB.NET" Value="Public Property OutputStartTime As Nullable(Of DateTime)" />
       <MemberSignature Language="F#" Value="member this.OutputStartTime : Nullable&lt;DateTime&gt; with get, set" Usage="Microsoft.Azure.Management.StreamAnalytics.Models.StartStreamingJobParameters.OutputStartTime" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Nullable&lt;DateTime&gt; OutputStartTime { Nullable&lt;DateTime&gt; get(); void set(Nullable&lt;DateTime&gt; value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.StreamAnalytics</AssemblyName>
@@ -126,7 +119,8 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="outputStartTime")</AttributeName>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty(PropertyName="outputStartTime")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty(PropertyName="outputStartTime")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>

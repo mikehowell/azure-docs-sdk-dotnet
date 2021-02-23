@@ -1,4 +1,4 @@
-﻿<Type Name="IWithSqlServer" FullName="Microsoft.Azure.Management.Sql.Fluent.SqlSyncMemberOperations.Definition.IWithSqlServer">
+<Type Name="IWithSqlServer" FullName="Microsoft.Azure.Management.Sql.Fluent.SqlSyncMemberOperations.Definition.IWithSqlServer">
   <TypeSignature Language="C#" Value="public interface IWithSqlServer : Microsoft.Azure.Management.ResourceManager.Fluent.Core.IBeta" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IWithSqlServer implements class Microsoft.Azure.Management.ResourceManager.Fluent.Core.IBeta" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Azure.Management.Sql.Fluent.SqlSyncMemberOperations.Definition.IWithSqlServer" />
@@ -6,7 +6,14 @@
   <TypeSignature Language="F#" Value="type IWithSqlServer = interface&#xA;    interface IBeta" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Azure.Management.Sql.Fluent</AssemblyName>
-    <AssemblyVersion>1.0.0.60</AssemblyVersion>
+    <AssemblyVersion>1.0.0.61</AssemblyVersion>
+    <AssemblyVersion>1.0.0.62</AssemblyVersion>
+    <AssemblyVersion>1.0.0.63</AssemblyVersion>
+    <AssemblyVersion>1.0.0.64</AssemblyVersion>
+    <AssemblyVersion>1.0.0.65</AssemblyVersion>
+    <AssemblyVersion>1.0.0.66</AssemblyVersion>
+    <AssemblyVersion>1.0.0.67</AssemblyVersion>
+    <AssemblyVersion>1.0.0.68</AssemblyVersion>
   </AssemblyInfo>
   <Interfaces>
     <Interface>
@@ -14,7 +21,9 @@
     </Interface>
   </Interfaces>
   <Docs>
-    <summary>To be added.</summary>
+    <summary>
+            The first stage of the SQL Sync Member definition.
+            </summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -27,7 +36,14 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Sql.Fluent</AssemblyName>
-        <AssemblyVersion>1.0.0.60</AssemblyVersion>
+        <AssemblyVersion>1.0.0.61</AssemblyVersion>
+        <AssemblyVersion>1.0.0.62</AssemblyVersion>
+        <AssemblyVersion>1.0.0.63</AssemblyVersion>
+        <AssemblyVersion>1.0.0.64</AssemblyVersion>
+        <AssemblyVersion>1.0.0.65</AssemblyVersion>
+        <AssemblyVersion>1.0.0.66</AssemblyVersion>
+        <AssemblyVersion>1.0.0.67</AssemblyVersion>
+        <AssemblyVersion>1.0.0.68</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Azure.Management.Sql.Fluent.SqlSyncMemberOperations.Definition.IWithSyncMemberDatabase</ReturnType>
@@ -37,11 +53,14 @@
         <Parameter Name="sqlServerName" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="resourceGroupName">To be added.</param>
-        <param name="sqlServerName">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="resourceGroupName">The name of the resource group the parent SQL server.</param>
+        <param name="sqlServerName">The parent SQL server name.</param>
+        <summary>
+            Sets the parent SQL server name and resource group it belongs to.
+            </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
+        <return>The next stage of the definition.</return>
       </Docs>
     </Member>
     <Member MemberName="WithExistingSyncGroup">
@@ -53,7 +72,14 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Sql.Fluent</AssemblyName>
-        <AssemblyVersion>1.0.0.60</AssemblyVersion>
+        <AssemblyVersion>1.0.0.61</AssemblyVersion>
+        <AssemblyVersion>1.0.0.62</AssemblyVersion>
+        <AssemblyVersion>1.0.0.63</AssemblyVersion>
+        <AssemblyVersion>1.0.0.64</AssemblyVersion>
+        <AssemblyVersion>1.0.0.65</AssemblyVersion>
+        <AssemblyVersion>1.0.0.66</AssemblyVersion>
+        <AssemblyVersion>1.0.0.67</AssemblyVersion>
+        <AssemblyVersion>1.0.0.68</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Azure.Management.Sql.Fluent.SqlSyncMemberOperations.Definition.IWithMemberSqlServer</ReturnType>
@@ -62,10 +88,13 @@
         <Parameter Name="sqlSyncGroup" Type="Microsoft.Azure.Management.Sql.Fluent.ISqlSyncGroup" />
       </Parameters>
       <Docs>
-        <param name="sqlSyncGroup">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="sqlSyncGroup">The parent SQL Sync Group.</param>
+        <summary>
+            Sets the parent SQL server for the new Sync Member.
+            </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
+        <return>The next stage of the definition.</return>
       </Docs>
     </Member>
   </Members>

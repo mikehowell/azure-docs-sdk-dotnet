@@ -1,17 +1,28 @@
-﻿<Type Name="IWithOS" FullName="Microsoft.Azure.Management.Compute.Fluent.VirtualMachineScaleSet.Definition.IWithOS">
-  <TypeSignature Language="C#" Value="public interface IWithOS" />
-  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IWithOS" />
+<Type Name="IWithOS" FullName="Microsoft.Azure.Management.Compute.Fluent.VirtualMachineScaleSet.Definition.IWithOS">
+  <TypeSignature Language="C#" Value="public interface IWithOS : Microsoft.Azure.Management.Compute.Fluent.VirtualMachineScaleSet.Definition.IWithOSBeta, Microsoft.Azure.Management.ResourceManager.Fluent.Core.IBeta" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IWithOS implements class Microsoft.Azure.Management.Compute.Fluent.VirtualMachineScaleSet.Definition.IWithOSBeta, class Microsoft.Azure.Management.ResourceManager.Fluent.Core.IBeta" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Azure.Management.Compute.Fluent.VirtualMachineScaleSet.Definition.IWithOS" />
-  <TypeSignature Language="VB.NET" Value="Public Interface IWithOS" />
-  <TypeSignature Language="F#" Value="type IWithOS = interface" />
-  <TypeSignature Language="C++ CLI" Value="public interface class IWithOS" />
-  <TypeSignature Language="C++ CX" Value="public interface class IWithOS" />
-  <TypeSignature Language="C++ WINRT" Value="__interface IWithOS" />
+  <TypeSignature Language="VB.NET" Value="Public Interface IWithOS&#xA;Implements IBeta, IWithOSBeta" />
+  <TypeSignature Language="F#" Value="type IWithOS = interface&#xA;    interface IWithOSBeta&#xA;    interface IBeta" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Azure.Management.Compute.Fluent</AssemblyName>
-    <AssemblyVersion>1.0.0.60</AssemblyVersion>
+    <AssemblyVersion>1.0.0.61</AssemblyVersion>
+    <AssemblyVersion>1.0.0.62</AssemblyVersion>
+    <AssemblyVersion>1.0.0.63</AssemblyVersion>
+    <AssemblyVersion>1.0.0.64</AssemblyVersion>
+    <AssemblyVersion>1.0.0.65</AssemblyVersion>
+    <AssemblyVersion>1.0.0.66</AssemblyVersion>
+    <AssemblyVersion>1.0.0.67</AssemblyVersion>
+    <AssemblyVersion>1.0.0.68</AssemblyVersion>
   </AssemblyInfo>
-  <Interfaces />
+  <Interfaces>
+    <Interface>
+      <InterfaceName>Microsoft.Azure.Management.Compute.Fluent.VirtualMachineScaleSet.Definition.IWithOSBeta</InterfaceName>
+    </Interface>
+    <Interface>
+      <InterfaceName>Microsoft.Azure.Management.ResourceManager.Fluent.Core.IBeta</InterfaceName>
+    </Interface>
+  </Interfaces>
   <Docs>
     <summary>
             The stage of the virtual machine scale set definition allowing to specify the operating system image.
@@ -25,13 +36,17 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Management.Compute.Fluent.VirtualMachineScaleSet.Definition.IWithOS.WithLatestLinuxImage(System.String,System.String,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Function WithLatestLinuxImage (publisher As String, offer As String, sku As String) As IWithLinuxRootUsernameManagedOrUnmanaged" />
       <MemberSignature Language="F#" Value="abstract member WithLatestLinuxImage : string * string * string -&gt; Microsoft.Azure.Management.Compute.Fluent.VirtualMachineScaleSet.Definition.IWithLinuxRootUsernameManagedOrUnmanaged" Usage="iWithOS.WithLatestLinuxImage (publisher, offer, sku)" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; Microsoft::Azure::Management::Compute::Fluent::VirtualMachineScaleSet::Definition::IWithLinuxRootUsernameManagedOrUnmanaged ^ WithLatestLinuxImage(System::String ^ publisher, System::String ^ offer, System::String ^ sku);" />
-      <MemberSignature Language="C++ CX" Value="public:&#xA; Microsoft::Azure::Management::Compute::Fluent::VirtualMachineScaleSet::Definition::IWithLinuxRootUsernameManagedOrUnmanaged ^ WithLatestLinuxImage(Platform::String ^ publisher, Platform::String ^ offer, Platform::String ^ sku);" />
-      <MemberSignature Language="C++ WINRT" Value="Microsoft::Azure::Management::Compute::Fluent::VirtualMachineScaleSet::Definition::IWithLinuxRootUsernameManagedOrUnmanaged WithLatestLinuxImage(std::wstring const &amp; publisher, std::wstring const &amp; offer, std::wstring const &amp; sku);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Compute.Fluent</AssemblyName>
-        <AssemblyVersion>1.0.0.60</AssemblyVersion>
+        <AssemblyVersion>1.0.0.61</AssemblyVersion>
+        <AssemblyVersion>1.0.0.62</AssemblyVersion>
+        <AssemblyVersion>1.0.0.63</AssemblyVersion>
+        <AssemblyVersion>1.0.0.64</AssemblyVersion>
+        <AssemblyVersion>1.0.0.65</AssemblyVersion>
+        <AssemblyVersion>1.0.0.66</AssemblyVersion>
+        <AssemblyVersion>1.0.0.67</AssemblyVersion>
+        <AssemblyVersion>1.0.0.68</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Azure.Management.Compute.Fluent.VirtualMachineScaleSet.Definition.IWithLinuxRootUsernameManagedOrUnmanaged</ReturnType>
@@ -59,13 +74,17 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Management.Compute.Fluent.VirtualMachineScaleSet.Definition.IWithOS.WithLatestWindowsImage(System.String,System.String,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Function WithLatestWindowsImage (publisher As String, offer As String, sku As String) As IWithWindowsAdminUsernameManagedOrUnmanaged" />
       <MemberSignature Language="F#" Value="abstract member WithLatestWindowsImage : string * string * string -&gt; Microsoft.Azure.Management.Compute.Fluent.VirtualMachineScaleSet.Definition.IWithWindowsAdminUsernameManagedOrUnmanaged" Usage="iWithOS.WithLatestWindowsImage (publisher, offer, sku)" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; Microsoft::Azure::Management::Compute::Fluent::VirtualMachineScaleSet::Definition::IWithWindowsAdminUsernameManagedOrUnmanaged ^ WithLatestWindowsImage(System::String ^ publisher, System::String ^ offer, System::String ^ sku);" />
-      <MemberSignature Language="C++ CX" Value="public:&#xA; Microsoft::Azure::Management::Compute::Fluent::VirtualMachineScaleSet::Definition::IWithWindowsAdminUsernameManagedOrUnmanaged ^ WithLatestWindowsImage(Platform::String ^ publisher, Platform::String ^ offer, Platform::String ^ sku);" />
-      <MemberSignature Language="C++ WINRT" Value="Microsoft::Azure::Management::Compute::Fluent::VirtualMachineScaleSet::Definition::IWithWindowsAdminUsernameManagedOrUnmanaged WithLatestWindowsImage(std::wstring const &amp; publisher, std::wstring const &amp; offer, std::wstring const &amp; sku);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Compute.Fluent</AssemblyName>
-        <AssemblyVersion>1.0.0.60</AssemblyVersion>
+        <AssemblyVersion>1.0.0.61</AssemblyVersion>
+        <AssemblyVersion>1.0.0.62</AssemblyVersion>
+        <AssemblyVersion>1.0.0.63</AssemblyVersion>
+        <AssemblyVersion>1.0.0.64</AssemblyVersion>
+        <AssemblyVersion>1.0.0.65</AssemblyVersion>
+        <AssemblyVersion>1.0.0.66</AssemblyVersion>
+        <AssemblyVersion>1.0.0.67</AssemblyVersion>
+        <AssemblyVersion>1.0.0.68</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Azure.Management.Compute.Fluent.VirtualMachineScaleSet.Definition.IWithWindowsAdminUsernameManagedOrUnmanaged</ReturnType>
@@ -93,13 +112,17 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Management.Compute.Fluent.VirtualMachineScaleSet.Definition.IWithOS.WithLinuxCustomImage(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Function WithLinuxCustomImage (customImageId As String) As IWithLinuxRootUsernameManaged" />
       <MemberSignature Language="F#" Value="abstract member WithLinuxCustomImage : string -&gt; Microsoft.Azure.Management.Compute.Fluent.VirtualMachineScaleSet.Definition.IWithLinuxRootUsernameManaged" Usage="iWithOS.WithLinuxCustomImage customImageId" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; Microsoft::Azure::Management::Compute::Fluent::VirtualMachineScaleSet::Definition::IWithLinuxRootUsernameManaged ^ WithLinuxCustomImage(System::String ^ customImageId);" />
-      <MemberSignature Language="C++ CX" Value="public:&#xA; Microsoft::Azure::Management::Compute::Fluent::VirtualMachineScaleSet::Definition::IWithLinuxRootUsernameManaged ^ WithLinuxCustomImage(Platform::String ^ customImageId);" />
-      <MemberSignature Language="C++ WINRT" Value="Microsoft::Azure::Management::Compute::Fluent::VirtualMachineScaleSet::Definition::IWithLinuxRootUsernameManaged WithLinuxCustomImage(std::wstring const &amp; customImageId);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Compute.Fluent</AssemblyName>
-        <AssemblyVersion>1.0.0.60</AssemblyVersion>
+        <AssemblyVersion>1.0.0.61</AssemblyVersion>
+        <AssemblyVersion>1.0.0.62</AssemblyVersion>
+        <AssemblyVersion>1.0.0.63</AssemblyVersion>
+        <AssemblyVersion>1.0.0.64</AssemblyVersion>
+        <AssemblyVersion>1.0.0.65</AssemblyVersion>
+        <AssemblyVersion>1.0.0.66</AssemblyVersion>
+        <AssemblyVersion>1.0.0.67</AssemblyVersion>
+        <AssemblyVersion>1.0.0.68</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Azure.Management.Compute.Fluent.VirtualMachineScaleSet.Definition.IWithLinuxRootUsernameManaged</ReturnType>
@@ -123,13 +146,17 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Management.Compute.Fluent.VirtualMachineScaleSet.Definition.IWithOS.WithPopularLinuxImage(Microsoft.Azure.Management.Compute.Fluent.KnownLinuxVirtualMachineImage)" />
       <MemberSignature Language="VB.NET" Value="Public Function WithPopularLinuxImage (knownImage As KnownLinuxVirtualMachineImage) As IWithLinuxRootUsernameManagedOrUnmanaged" />
       <MemberSignature Language="F#" Value="abstract member WithPopularLinuxImage : Microsoft.Azure.Management.Compute.Fluent.KnownLinuxVirtualMachineImage -&gt; Microsoft.Azure.Management.Compute.Fluent.VirtualMachineScaleSet.Definition.IWithLinuxRootUsernameManagedOrUnmanaged" Usage="iWithOS.WithPopularLinuxImage knownImage" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; Microsoft::Azure::Management::Compute::Fluent::VirtualMachineScaleSet::Definition::IWithLinuxRootUsernameManagedOrUnmanaged ^ WithPopularLinuxImage(Microsoft::Azure::Management::Compute::Fluent::KnownLinuxVirtualMachineImage knownImage);" />
-      <MemberSignature Language="C++ CX" Value="public:&#xA; Microsoft::Azure::Management::Compute::Fluent::VirtualMachineScaleSet::Definition::IWithLinuxRootUsernameManagedOrUnmanaged ^ WithPopularLinuxImage(Microsoft::Azure::Management::Compute::Fluent::KnownLinuxVirtualMachineImage knownImage);" />
-      <MemberSignature Language="C++ WINRT" Value="Microsoft::Azure::Management::Compute::Fluent::VirtualMachineScaleSet::Definition::IWithLinuxRootUsernameManagedOrUnmanaged WithPopularLinuxImage(Microsoft::Azure::Management::Compute::Fluent::KnownLinuxVirtualMachineImage knownImage);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Compute.Fluent</AssemblyName>
-        <AssemblyVersion>1.0.0.60</AssemblyVersion>
+        <AssemblyVersion>1.0.0.61</AssemblyVersion>
+        <AssemblyVersion>1.0.0.62</AssemblyVersion>
+        <AssemblyVersion>1.0.0.63</AssemblyVersion>
+        <AssemblyVersion>1.0.0.64</AssemblyVersion>
+        <AssemblyVersion>1.0.0.65</AssemblyVersion>
+        <AssemblyVersion>1.0.0.66</AssemblyVersion>
+        <AssemblyVersion>1.0.0.67</AssemblyVersion>
+        <AssemblyVersion>1.0.0.68</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Azure.Management.Compute.Fluent.VirtualMachineScaleSet.Definition.IWithLinuxRootUsernameManagedOrUnmanaged</ReturnType>
@@ -153,13 +180,17 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Management.Compute.Fluent.VirtualMachineScaleSet.Definition.IWithOS.WithPopularWindowsImage(Microsoft.Azure.Management.Compute.Fluent.KnownWindowsVirtualMachineImage)" />
       <MemberSignature Language="VB.NET" Value="Public Function WithPopularWindowsImage (knownImage As KnownWindowsVirtualMachineImage) As IWithWindowsAdminUsernameManagedOrUnmanaged" />
       <MemberSignature Language="F#" Value="abstract member WithPopularWindowsImage : Microsoft.Azure.Management.Compute.Fluent.KnownWindowsVirtualMachineImage -&gt; Microsoft.Azure.Management.Compute.Fluent.VirtualMachineScaleSet.Definition.IWithWindowsAdminUsernameManagedOrUnmanaged" Usage="iWithOS.WithPopularWindowsImage knownImage" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; Microsoft::Azure::Management::Compute::Fluent::VirtualMachineScaleSet::Definition::IWithWindowsAdminUsernameManagedOrUnmanaged ^ WithPopularWindowsImage(Microsoft::Azure::Management::Compute::Fluent::KnownWindowsVirtualMachineImage knownImage);" />
-      <MemberSignature Language="C++ CX" Value="public:&#xA; Microsoft::Azure::Management::Compute::Fluent::VirtualMachineScaleSet::Definition::IWithWindowsAdminUsernameManagedOrUnmanaged ^ WithPopularWindowsImage(Microsoft::Azure::Management::Compute::Fluent::KnownWindowsVirtualMachineImage knownImage);" />
-      <MemberSignature Language="C++ WINRT" Value="Microsoft::Azure::Management::Compute::Fluent::VirtualMachineScaleSet::Definition::IWithWindowsAdminUsernameManagedOrUnmanaged WithPopularWindowsImage(Microsoft::Azure::Management::Compute::Fluent::KnownWindowsVirtualMachineImage knownImage);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Compute.Fluent</AssemblyName>
-        <AssemblyVersion>1.0.0.60</AssemblyVersion>
+        <AssemblyVersion>1.0.0.61</AssemblyVersion>
+        <AssemblyVersion>1.0.0.62</AssemblyVersion>
+        <AssemblyVersion>1.0.0.63</AssemblyVersion>
+        <AssemblyVersion>1.0.0.64</AssemblyVersion>
+        <AssemblyVersion>1.0.0.65</AssemblyVersion>
+        <AssemblyVersion>1.0.0.66</AssemblyVersion>
+        <AssemblyVersion>1.0.0.67</AssemblyVersion>
+        <AssemblyVersion>1.0.0.68</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Azure.Management.Compute.Fluent.VirtualMachineScaleSet.Definition.IWithWindowsAdminUsernameManagedOrUnmanaged</ReturnType>
@@ -181,13 +212,19 @@
       <MemberSignature Language="C#" Value="public Microsoft.Azure.Management.Compute.Fluent.VirtualMachineScaleSet.Definition.IWithLinuxRootUsernameManagedOrUnmanaged WithSpecificLinuxImageVersion (Microsoft.Azure.Management.Compute.Fluent.Models.ImageReference imageReference);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Microsoft.Azure.Management.Compute.Fluent.VirtualMachineScaleSet.Definition.IWithLinuxRootUsernameManagedOrUnmanaged WithSpecificLinuxImageVersion(class Microsoft.Azure.Management.Compute.Fluent.Models.ImageReference imageReference) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Management.Compute.Fluent.VirtualMachineScaleSet.Definition.IWithOS.WithSpecificLinuxImageVersion(Microsoft.Azure.Management.Compute.Fluent.Models.ImageReference)" />
+      <MemberSignature Language="VB.NET" Value="Public Function WithSpecificLinuxImageVersion (imageReference As ImageReference) As IWithLinuxRootUsernameManagedOrUnmanaged" />
       <MemberSignature Language="F#" Value="abstract member WithSpecificLinuxImageVersion : Microsoft.Azure.Management.Compute.Fluent.Models.ImageReference -&gt; Microsoft.Azure.Management.Compute.Fluent.VirtualMachineScaleSet.Definition.IWithLinuxRootUsernameManagedOrUnmanaged" Usage="iWithOS.WithSpecificLinuxImageVersion imageReference" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; Microsoft::Azure::Management::Compute::Fluent::VirtualMachineScaleSet::Definition::IWithLinuxRootUsernameManagedOrUnmanaged ^ WithSpecificLinuxImageVersion(Microsoft::Azure::Management::Compute::Fluent::Models::ImageReference ^ imageReference);" />
-      <MemberSignature Language="C++ WINRT" Value="Microsoft::Azure::Management::Compute::Fluent::VirtualMachineScaleSet::Definition::IWithLinuxRootUsernameManagedOrUnmanaged WithSpecificLinuxImageVersion(Microsoft::Azure::Management::Compute::Fluent::Models::ImageReference const &amp; imageReference);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Compute.Fluent</AssemblyName>
-        <AssemblyVersion>1.0.0.60</AssemblyVersion>
+        <AssemblyVersion>1.0.0.61</AssemblyVersion>
+        <AssemblyVersion>1.0.0.62</AssemblyVersion>
+        <AssemblyVersion>1.0.0.63</AssemblyVersion>
+        <AssemblyVersion>1.0.0.64</AssemblyVersion>
+        <AssemblyVersion>1.0.0.65</AssemblyVersion>
+        <AssemblyVersion>1.0.0.66</AssemblyVersion>
+        <AssemblyVersion>1.0.0.67</AssemblyVersion>
+        <AssemblyVersion>1.0.0.68</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Azure.Management.Compute.Fluent.VirtualMachineScaleSet.Definition.IWithLinuxRootUsernameManagedOrUnmanaged</ReturnType>
@@ -209,13 +246,19 @@
       <MemberSignature Language="C#" Value="public Microsoft.Azure.Management.Compute.Fluent.VirtualMachineScaleSet.Definition.IWithWindowsAdminUsernameManagedOrUnmanaged WithSpecificWindowsImageVersion (Microsoft.Azure.Management.Compute.Fluent.Models.ImageReference imageReference);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Microsoft.Azure.Management.Compute.Fluent.VirtualMachineScaleSet.Definition.IWithWindowsAdminUsernameManagedOrUnmanaged WithSpecificWindowsImageVersion(class Microsoft.Azure.Management.Compute.Fluent.Models.ImageReference imageReference) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Management.Compute.Fluent.VirtualMachineScaleSet.Definition.IWithOS.WithSpecificWindowsImageVersion(Microsoft.Azure.Management.Compute.Fluent.Models.ImageReference)" />
+      <MemberSignature Language="VB.NET" Value="Public Function WithSpecificWindowsImageVersion (imageReference As ImageReference) As IWithWindowsAdminUsernameManagedOrUnmanaged" />
       <MemberSignature Language="F#" Value="abstract member WithSpecificWindowsImageVersion : Microsoft.Azure.Management.Compute.Fluent.Models.ImageReference -&gt; Microsoft.Azure.Management.Compute.Fluent.VirtualMachineScaleSet.Definition.IWithWindowsAdminUsernameManagedOrUnmanaged" Usage="iWithOS.WithSpecificWindowsImageVersion imageReference" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; Microsoft::Azure::Management::Compute::Fluent::VirtualMachineScaleSet::Definition::IWithWindowsAdminUsernameManagedOrUnmanaged ^ WithSpecificWindowsImageVersion(Microsoft::Azure::Management::Compute::Fluent::Models::ImageReference ^ imageReference);" />
-      <MemberSignature Language="C++ WINRT" Value="Microsoft::Azure::Management::Compute::Fluent::VirtualMachineScaleSet::Definition::IWithWindowsAdminUsernameManagedOrUnmanaged WithSpecificWindowsImageVersion(Microsoft::Azure::Management::Compute::Fluent::Models::ImageReference const &amp; imageReference);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Compute.Fluent</AssemblyName>
-        <AssemblyVersion>1.0.0.60</AssemblyVersion>
+        <AssemblyVersion>1.0.0.61</AssemblyVersion>
+        <AssemblyVersion>1.0.0.62</AssemblyVersion>
+        <AssemblyVersion>1.0.0.63</AssemblyVersion>
+        <AssemblyVersion>1.0.0.64</AssemblyVersion>
+        <AssemblyVersion>1.0.0.65</AssemblyVersion>
+        <AssemblyVersion>1.0.0.66</AssemblyVersion>
+        <AssemblyVersion>1.0.0.67</AssemblyVersion>
+        <AssemblyVersion>1.0.0.68</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Azure.Management.Compute.Fluent.VirtualMachineScaleSet.Definition.IWithWindowsAdminUsernameManagedOrUnmanaged</ReturnType>
@@ -239,13 +282,17 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Management.Compute.Fluent.VirtualMachineScaleSet.Definition.IWithOS.WithStoredLinuxImage(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Function WithStoredLinuxImage (imageUrl As String) As IWithLinuxRootUsernameUnmanaged" />
       <MemberSignature Language="F#" Value="abstract member WithStoredLinuxImage : string -&gt; Microsoft.Azure.Management.Compute.Fluent.VirtualMachineScaleSet.Definition.IWithLinuxRootUsernameUnmanaged" Usage="iWithOS.WithStoredLinuxImage imageUrl" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; Microsoft::Azure::Management::Compute::Fluent::VirtualMachineScaleSet::Definition::IWithLinuxRootUsernameUnmanaged ^ WithStoredLinuxImage(System::String ^ imageUrl);" />
-      <MemberSignature Language="C++ CX" Value="public:&#xA; Microsoft::Azure::Management::Compute::Fluent::VirtualMachineScaleSet::Definition::IWithLinuxRootUsernameUnmanaged ^ WithStoredLinuxImage(Platform::String ^ imageUrl);" />
-      <MemberSignature Language="C++ WINRT" Value="Microsoft::Azure::Management::Compute::Fluent::VirtualMachineScaleSet::Definition::IWithLinuxRootUsernameUnmanaged WithStoredLinuxImage(std::wstring const &amp; imageUrl);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Compute.Fluent</AssemblyName>
-        <AssemblyVersion>1.0.0.60</AssemblyVersion>
+        <AssemblyVersion>1.0.0.61</AssemblyVersion>
+        <AssemblyVersion>1.0.0.62</AssemblyVersion>
+        <AssemblyVersion>1.0.0.63</AssemblyVersion>
+        <AssemblyVersion>1.0.0.64</AssemblyVersion>
+        <AssemblyVersion>1.0.0.65</AssemblyVersion>
+        <AssemblyVersion>1.0.0.66</AssemblyVersion>
+        <AssemblyVersion>1.0.0.67</AssemblyVersion>
+        <AssemblyVersion>1.0.0.68</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Azure.Management.Compute.Fluent.VirtualMachineScaleSet.Definition.IWithLinuxRootUsernameUnmanaged</ReturnType>
@@ -269,13 +316,17 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Management.Compute.Fluent.VirtualMachineScaleSet.Definition.IWithOS.WithStoredWindowsImage(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Function WithStoredWindowsImage (imageUrl As String) As IWithWindowsAdminUsernameUnmanaged" />
       <MemberSignature Language="F#" Value="abstract member WithStoredWindowsImage : string -&gt; Microsoft.Azure.Management.Compute.Fluent.VirtualMachineScaleSet.Definition.IWithWindowsAdminUsernameUnmanaged" Usage="iWithOS.WithStoredWindowsImage imageUrl" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; Microsoft::Azure::Management::Compute::Fluent::VirtualMachineScaleSet::Definition::IWithWindowsAdminUsernameUnmanaged ^ WithStoredWindowsImage(System::String ^ imageUrl);" />
-      <MemberSignature Language="C++ CX" Value="public:&#xA; Microsoft::Azure::Management::Compute::Fluent::VirtualMachineScaleSet::Definition::IWithWindowsAdminUsernameUnmanaged ^ WithStoredWindowsImage(Platform::String ^ imageUrl);" />
-      <MemberSignature Language="C++ WINRT" Value="Microsoft::Azure::Management::Compute::Fluent::VirtualMachineScaleSet::Definition::IWithWindowsAdminUsernameUnmanaged WithStoredWindowsImage(std::wstring const &amp; imageUrl);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Compute.Fluent</AssemblyName>
-        <AssemblyVersion>1.0.0.60</AssemblyVersion>
+        <AssemblyVersion>1.0.0.61</AssemblyVersion>
+        <AssemblyVersion>1.0.0.62</AssemblyVersion>
+        <AssemblyVersion>1.0.0.63</AssemblyVersion>
+        <AssemblyVersion>1.0.0.64</AssemblyVersion>
+        <AssemblyVersion>1.0.0.65</AssemblyVersion>
+        <AssemblyVersion>1.0.0.66</AssemblyVersion>
+        <AssemblyVersion>1.0.0.67</AssemblyVersion>
+        <AssemblyVersion>1.0.0.68</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Azure.Management.Compute.Fluent.VirtualMachineScaleSet.Definition.IWithWindowsAdminUsernameUnmanaged</ReturnType>
@@ -300,13 +351,17 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Management.Compute.Fluent.VirtualMachineScaleSet.Definition.IWithOS.WithWindowsCustomImage(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Function WithWindowsCustomImage (customImageId As String) As IWithWindowsAdminUsernameManaged" />
       <MemberSignature Language="F#" Value="abstract member WithWindowsCustomImage : string -&gt; Microsoft.Azure.Management.Compute.Fluent.VirtualMachineScaleSet.Definition.IWithWindowsAdminUsernameManaged" Usage="iWithOS.WithWindowsCustomImage customImageId" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; Microsoft::Azure::Management::Compute::Fluent::VirtualMachineScaleSet::Definition::IWithWindowsAdminUsernameManaged ^ WithWindowsCustomImage(System::String ^ customImageId);" />
-      <MemberSignature Language="C++ CX" Value="public:&#xA; Microsoft::Azure::Management::Compute::Fluent::VirtualMachineScaleSet::Definition::IWithWindowsAdminUsernameManaged ^ WithWindowsCustomImage(Platform::String ^ customImageId);" />
-      <MemberSignature Language="C++ WINRT" Value="Microsoft::Azure::Management::Compute::Fluent::VirtualMachineScaleSet::Definition::IWithWindowsAdminUsernameManaged WithWindowsCustomImage(std::wstring const &amp; customImageId);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Compute.Fluent</AssemblyName>
-        <AssemblyVersion>1.0.0.60</AssemblyVersion>
+        <AssemblyVersion>1.0.0.61</AssemblyVersion>
+        <AssemblyVersion>1.0.0.62</AssemblyVersion>
+        <AssemblyVersion>1.0.0.63</AssemblyVersion>
+        <AssemblyVersion>1.0.0.64</AssemblyVersion>
+        <AssemblyVersion>1.0.0.65</AssemblyVersion>
+        <AssemblyVersion>1.0.0.66</AssemblyVersion>
+        <AssemblyVersion>1.0.0.67</AssemblyVersion>
+        <AssemblyVersion>1.0.0.68</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Azure.Management.Compute.Fluent.VirtualMachineScaleSet.Definition.IWithWindowsAdminUsernameManaged</ReturnType>

@@ -1,17 +1,9 @@
 ---
 title: Azure Batch libraries for .NET
 description: Reference for Azure Batch libraries for .NET
-keywords: Azure, .NET, SDK, API, Batch
-author: camsoper
-ms.author: casoper
-manager: wpickett
 ms.date: 10/19/2017
 ms.topic: reference
-ms.prod: azure
-ms.technology: azure
-ms.devlang: dotnet
 ms.service: batch
-ms.custom: devcenter, svc-overview
 ---
 
 # Azure Batch libraries for .NET
@@ -36,7 +28,7 @@ Install-Package Azure.Batch
 
 #### .NET Core CLI
 
-```bash
+```dotnetcli
 dotnet add package Azure.Batch
 ```
 
@@ -89,7 +81,7 @@ Install-Package Microsoft.Azure.Management.Batch
 
 #### .NET Core CLI
 
-```bash
+```dotnetcli
 dotnet add package Microsoft.Azure.Management.Batch
 ```
 

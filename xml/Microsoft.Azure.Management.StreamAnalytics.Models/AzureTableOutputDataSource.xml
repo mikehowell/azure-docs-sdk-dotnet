@@ -1,11 +1,9 @@
-﻿<Type Name="AzureTableOutputDataSource" FullName="Microsoft.Azure.Management.StreamAnalytics.Models.AzureTableOutputDataSource">
+<Type Name="AzureTableOutputDataSource" FullName="Microsoft.Azure.Management.StreamAnalytics.Models.AzureTableOutputDataSource">
   <TypeSignature Language="C#" Value="public class AzureTableOutputDataSource : Microsoft.Azure.Management.StreamAnalytics.Models.OutputDataSource" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit AzureTableOutputDataSource extends Microsoft.Azure.Management.StreamAnalytics.Models.OutputDataSource" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Azure.Management.StreamAnalytics.Models.AzureTableOutputDataSource" />
   <TypeSignature Language="VB.NET" Value="Public Class AzureTableOutputDataSource&#xA;Inherits OutputDataSource" />
   <TypeSignature Language="F#" Value="type AzureTableOutputDataSource = class&#xA;    inherit OutputDataSource" />
-  <TypeSignature Language="C++ CLI" Value="public ref class AzureTableOutputDataSource : Microsoft::Azure::Management::StreamAnalytics::Models::OutputDataSource" />
-  <TypeSignature Language="C++ WINRT" Value="[Windows::Foundation::Metadata::WebHostHidden]&#xA;class AzureTableOutputDataSource : Microsoft::Azure::Management::StreamAnalytics::Models::OutputDataSource" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Azure.Management.StreamAnalytics</AssemblyName>
     <AssemblyVersion>2.0.0.0</AssemblyVersion>
@@ -16,10 +14,12 @@
   <Interfaces />
   <Attributes>
     <Attribute>
-      <AttributeName>Microsoft.Rest.Serialization.JsonTransformation</AttributeName>
+      <AttributeName Language="C#">[Microsoft.Rest.Serialization.JsonTransformation]</AttributeName>
+      <AttributeName Language="F#">[&lt;Microsoft.Rest.Serialization.JsonTransformation&gt;]</AttributeName>
     </Attribute>
     <Attribute>
-      <AttributeName>Newtonsoft.Json.JsonObject("Microsoft.Storage/Table")</AttributeName>
+      <AttributeName Language="C#">[Newtonsoft.Json.JsonObject("Microsoft.Storage/Table")]</AttributeName>
+      <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonObject("Microsoft.Storage/Table")&gt;]</AttributeName>
     </Attribute>
   </Attributes>
   <Docs>
@@ -34,9 +34,6 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Management.StreamAnalytics.Models.AzureTableOutputDataSource.#ctor" />
       <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; AzureTableOutputDataSource();" />
-      <MemberSignature Language="C++ CX" Value="public:&#xA; AzureTableOutputDataSource();" />
-      <MemberSignature Language="C++ WINRT" Value=" AzureTableOutputDataSource();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.StreamAnalytics</AssemblyName>
@@ -51,10 +48,10 @@
       </Docs>
     </Member>
     <Member MemberName=".ctor">
-      <MemberSignature Language="C#" Value="public AzureTableOutputDataSource (string accountName = null, string accountKey = null, string table = null, string partitionKey = null, string rowKey = null, System.Collections.Generic.IList&lt;string&gt; columnsToRemove = null, Nullable&lt;int&gt; batchSize = null);" />
+      <MemberSignature Language="C#" Value="public AzureTableOutputDataSource (string accountName = default, string accountKey = default, string table = default, string partitionKey = default, string rowKey = default, System.Collections.Generic.IList&lt;string&gt; columnsToRemove = default, int? batchSize = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string accountName, string accountKey, string table, string partitionKey, string rowKey, class System.Collections.Generic.IList`1&lt;string&gt; columnsToRemove, valuetype System.Nullable`1&lt;int32&gt; batchSize) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Management.StreamAnalytics.Models.AzureTableOutputDataSource.#ctor(System.String,System.String,System.String,System.String,System.String,System.Collections.Generic.IList{System.String},System.Nullable{System.Int32})" />
-      <MemberSignature Language="VB.NET" Value="Public Sub New (Optional accountName As String = null, Optional accountKey As String = null, Optional table As String = null, Optional partitionKey As String = null, Optional rowKey As String = null, Optional columnsToRemove As IList(Of String) = null, Optional batchSize As Nullable(Of Integer) = null)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (Optional accountName As String = Nothing, Optional accountKey As String = Nothing, Optional table As String = Nothing, Optional partitionKey As String = Nothing, Optional rowKey As String = Nothing, Optional columnsToRemove As IList(Of String) = Nothing, Optional batchSize As Nullable(Of Integer) = Nothing)" />
       <MemberSignature Language="F#" Value="new Microsoft.Azure.Management.StreamAnalytics.Models.AzureTableOutputDataSource : string * string * string * string * string * System.Collections.Generic.IList&lt;string&gt; * Nullable&lt;int&gt; -&gt; Microsoft.Azure.Management.StreamAnalytics.Models.AzureTableOutputDataSource" Usage="new Microsoft.Azure.Management.StreamAnalytics.Models.AzureTableOutputDataSource (accountName, accountKey, table, partitionKey, rowKey, columnsToRemove, batchSize)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
@@ -102,8 +99,6 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Management.StreamAnalytics.Models.AzureTableOutputDataSource.AccountKey" />
       <MemberSignature Language="VB.NET" Value="Public Property AccountKey As String" />
       <MemberSignature Language="F#" Value="member this.AccountKey : string with get, set" Usage="Microsoft.Azure.Management.StreamAnalytics.Models.AzureTableOutputDataSource.AccountKey" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ AccountKey { System::String ^ get(); void set(System::String ^ value); };" />
-      <MemberSignature Language="C++ CX" Value="public:&#xA; property Platform::String ^ AccountKey { Platform::String ^ get(); void set(Platform::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.StreamAnalytics</AssemblyName>
@@ -111,7 +106,8 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="properties.accountKey")</AttributeName>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty(PropertyName="properties.accountKey")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty(PropertyName="properties.accountKey")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -132,8 +128,6 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Management.StreamAnalytics.Models.AzureTableOutputDataSource.AccountName" />
       <MemberSignature Language="VB.NET" Value="Public Property AccountName As String" />
       <MemberSignature Language="F#" Value="member this.AccountName : string with get, set" Usage="Microsoft.Azure.Management.StreamAnalytics.Models.AzureTableOutputDataSource.AccountName" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ AccountName { System::String ^ get(); void set(System::String ^ value); };" />
-      <MemberSignature Language="C++ CX" Value="public:&#xA; property Platform::String ^ AccountName { Platform::String ^ get(); void set(Platform::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.StreamAnalytics</AssemblyName>
@@ -141,7 +135,8 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="properties.accountName")</AttributeName>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty(PropertyName="properties.accountName")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty(PropertyName="properties.accountName")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -157,12 +152,11 @@
       </Docs>
     </Member>
     <Member MemberName="BatchSize">
-      <MemberSignature Language="C#" Value="public Nullable&lt;int&gt; BatchSize { get; set; }" />
+      <MemberSignature Language="C#" Value="public int? BatchSize { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;int32&gt; BatchSize" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Management.StreamAnalytics.Models.AzureTableOutputDataSource.BatchSize" />
       <MemberSignature Language="VB.NET" Value="Public Property BatchSize As Nullable(Of Integer)" />
       <MemberSignature Language="F#" Value="member this.BatchSize : Nullable&lt;int&gt; with get, set" Usage="Microsoft.Azure.Management.StreamAnalytics.Models.AzureTableOutputDataSource.BatchSize" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Nullable&lt;int&gt; BatchSize { Nullable&lt;int&gt; get(); void set(Nullable&lt;int&gt; value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.StreamAnalytics</AssemblyName>
@@ -170,7 +164,8 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="properties.batchSize")</AttributeName>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty(PropertyName="properties.batchSize")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty(PropertyName="properties.batchSize")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -191,7 +186,6 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Management.StreamAnalytics.Models.AzureTableOutputDataSource.ColumnsToRemove" />
       <MemberSignature Language="VB.NET" Value="Public Property ColumnsToRemove As IList(Of String)" />
       <MemberSignature Language="F#" Value="member this.ColumnsToRemove : System.Collections.Generic.IList&lt;string&gt; with get, set" Usage="Microsoft.Azure.Management.StreamAnalytics.Models.AzureTableOutputDataSource.ColumnsToRemove" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::Generic::IList&lt;System::String ^&gt; ^ ColumnsToRemove { System::Collections::Generic::IList&lt;System::String ^&gt; ^ get(); void set(System::Collections::Generic::IList&lt;System::String ^&gt; ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.StreamAnalytics</AssemblyName>
@@ -199,7 +193,8 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="properties.columnsToRemove")</AttributeName>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty(PropertyName="properties.columnsToRemove")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty(PropertyName="properties.columnsToRemove")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -220,8 +215,6 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Management.StreamAnalytics.Models.AzureTableOutputDataSource.PartitionKey" />
       <MemberSignature Language="VB.NET" Value="Public Property PartitionKey As String" />
       <MemberSignature Language="F#" Value="member this.PartitionKey : string with get, set" Usage="Microsoft.Azure.Management.StreamAnalytics.Models.AzureTableOutputDataSource.PartitionKey" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ PartitionKey { System::String ^ get(); void set(System::String ^ value); };" />
-      <MemberSignature Language="C++ CX" Value="public:&#xA; property Platform::String ^ PartitionKey { Platform::String ^ get(); void set(Platform::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.StreamAnalytics</AssemblyName>
@@ -229,7 +222,8 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="properties.partitionKey")</AttributeName>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty(PropertyName="properties.partitionKey")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty(PropertyName="properties.partitionKey")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -252,8 +246,6 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Management.StreamAnalytics.Models.AzureTableOutputDataSource.RowKey" />
       <MemberSignature Language="VB.NET" Value="Public Property RowKey As String" />
       <MemberSignature Language="F#" Value="member this.RowKey : string with get, set" Usage="Microsoft.Azure.Management.StreamAnalytics.Models.AzureTableOutputDataSource.RowKey" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ RowKey { System::String ^ get(); void set(System::String ^ value); };" />
-      <MemberSignature Language="C++ CX" Value="public:&#xA; property Platform::String ^ RowKey { Platform::String ^ get(); void set(Platform::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.StreamAnalytics</AssemblyName>
@@ -261,7 +253,8 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="properties.rowKey")</AttributeName>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty(PropertyName="properties.rowKey")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty(PropertyName="properties.rowKey")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -283,8 +276,6 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Management.StreamAnalytics.Models.AzureTableOutputDataSource.Table" />
       <MemberSignature Language="VB.NET" Value="Public Property Table As String" />
       <MemberSignature Language="F#" Value="member this.Table : string with get, set" Usage="Microsoft.Azure.Management.StreamAnalytics.Models.AzureTableOutputDataSource.Table" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Table { System::String ^ get(); void set(System::String ^ value); };" />
-      <MemberSignature Language="C++ CX" Value="public:&#xA; property Platform::String ^ Table { Platform::String ^ get(); void set(Platform::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.StreamAnalytics</AssemblyName>
@@ -292,7 +283,8 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="properties.table")</AttributeName>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty(PropertyName="properties.table")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty(PropertyName="properties.table")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>

@@ -1,14 +1,19 @@
-﻿<Type Name="BackupLongTermRetentionPolicyInner" FullName="Microsoft.Azure.Management.Sql.Fluent.Models.BackupLongTermRetentionPolicyInner">
+<Type Name="BackupLongTermRetentionPolicyInner" FullName="Microsoft.Azure.Management.Sql.Fluent.Models.BackupLongTermRetentionPolicyInner">
   <TypeSignature Language="C#" Value="public class BackupLongTermRetentionPolicyInner : Microsoft.Azure.Management.Sql.Fluent.Models.ProxyResourceInner" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit BackupLongTermRetentionPolicyInner extends Microsoft.Azure.Management.Sql.Fluent.Models.ProxyResourceInner" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Azure.Management.Sql.Fluent.Models.BackupLongTermRetentionPolicyInner" />
   <TypeSignature Language="VB.NET" Value="Public Class BackupLongTermRetentionPolicyInner&#xA;Inherits ProxyResourceInner" />
   <TypeSignature Language="F#" Value="type BackupLongTermRetentionPolicyInner = class&#xA;    inherit ProxyResourceInner" />
-  <TypeSignature Language="C++ CLI" Value="public ref class BackupLongTermRetentionPolicyInner : Microsoft::Azure::Management::Sql::Fluent::Models::ProxyResourceInner" />
-  <TypeSignature Language="C++ WINRT" Value="[Windows::Foundation::Metadata::WebHostHidden]&#xA;class BackupLongTermRetentionPolicyInner : Microsoft::Azure::Management::Sql::Fluent::Models::ProxyResourceInner" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Azure.Management.Sql.Fluent</AssemblyName>
-    <AssemblyVersion>1.0.0.60</AssemblyVersion>
+    <AssemblyVersion>1.0.0.61</AssemblyVersion>
+    <AssemblyVersion>1.0.0.62</AssemblyVersion>
+    <AssemblyVersion>1.0.0.63</AssemblyVersion>
+    <AssemblyVersion>1.0.0.64</AssemblyVersion>
+    <AssemblyVersion>1.0.0.65</AssemblyVersion>
+    <AssemblyVersion>1.0.0.66</AssemblyVersion>
+    <AssemblyVersion>1.0.0.67</AssemblyVersion>
+    <AssemblyVersion>1.0.0.68</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>Microsoft.Azure.Management.Sql.Fluent.Models.ProxyResourceInner</BaseTypeName>
@@ -16,11 +21,14 @@
   <Interfaces />
   <Attributes>
     <Attribute>
-      <AttributeName>Microsoft.Rest.Serialization.JsonTransformation</AttributeName>
+      <AttributeName Language="C#">[Microsoft.Rest.Serialization.JsonTransformation]</AttributeName>
+      <AttributeName Language="F#">[&lt;Microsoft.Rest.Serialization.JsonTransformation&gt;]</AttributeName>
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
+    <summary>
+            A backup long term retention policy
+            </summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -29,48 +37,67 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Management.Sql.Fluent.Models.BackupLongTermRetentionPolicyInner.#ctor" />
       <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; BackupLongTermRetentionPolicyInner();" />
-      <MemberSignature Language="C++ CX" Value="public:&#xA; BackupLongTermRetentionPolicyInner();" />
-      <MemberSignature Language="C++ WINRT" Value=" BackupLongTermRetentionPolicyInner();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Sql.Fluent</AssemblyName>
-        <AssemblyVersion>1.0.0.60</AssemblyVersion>
+        <AssemblyVersion>1.0.0.61</AssemblyVersion>
+        <AssemblyVersion>1.0.0.62</AssemblyVersion>
+        <AssemblyVersion>1.0.0.63</AssemblyVersion>
+        <AssemblyVersion>1.0.0.64</AssemblyVersion>
+        <AssemblyVersion>1.0.0.65</AssemblyVersion>
+        <AssemblyVersion>1.0.0.66</AssemblyVersion>
+        <AssemblyVersion>1.0.0.67</AssemblyVersion>
+        <AssemblyVersion>1.0.0.68</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+            Initializes a new instance of the
+            BackupLongTermRetentionPolicyInner class.
+            </summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
-      <MemberSignature Language="C#" Value="public BackupLongTermRetentionPolicyInner (Microsoft.Azure.Management.Sql.Fluent.Models.BackupLongTermRetentionPolicyState state, string recoveryServicesBackupPolicyResourceId, string id = null, string name = null, string type = null, string location = null);" />
+      <MemberSignature Language="C#" Value="public BackupLongTermRetentionPolicyInner (Microsoft.Azure.Management.Sql.Fluent.Models.BackupLongTermRetentionPolicyState state, string recoveryServicesBackupPolicyResourceId, string id = default, string name = default, string type = default, string location = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(valuetype Microsoft.Azure.Management.Sql.Fluent.Models.BackupLongTermRetentionPolicyState state, string recoveryServicesBackupPolicyResourceId, string id, string name, string type, string location) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Management.Sql.Fluent.Models.BackupLongTermRetentionPolicyInner.#ctor(Microsoft.Azure.Management.Sql.Fluent.Models.BackupLongTermRetentionPolicyState,System.String,System.String,System.String,System.String,System.String)" />
-      <MemberSignature Language="VB.NET" Value="Public Sub New (state As BackupLongTermRetentionPolicyState, recoveryServicesBackupPolicyResourceId As String, Optional id As String = null, Optional name As String = null, Optional type As String = null, Optional location As String = null)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (state As BackupLongTermRetentionPolicyState, recoveryServicesBackupPolicyResourceId As String, Optional id As String = Nothing, Optional name As String = Nothing, Optional type As String = Nothing, Optional location As String = Nothing)" />
       <MemberSignature Language="F#" Value="new Microsoft.Azure.Management.Sql.Fluent.Models.BackupLongTermRetentionPolicyInner : Microsoft.Azure.Management.Sql.Fluent.Models.BackupLongTermRetentionPolicyState * string * string * string * string * string -&gt; Microsoft.Azure.Management.Sql.Fluent.Models.BackupLongTermRetentionPolicyInner" Usage="new Microsoft.Azure.Management.Sql.Fluent.Models.BackupLongTermRetentionPolicyInner (state, recoveryServicesBackupPolicyResourceId, id, name, type, location)" />
-      <MemberSignature Language="C++ WINRT" Value=" BackupLongTermRetentionPolicyInner(Microsoft::Azure::Management::Sql::Fluent::Models::BackupLongTermRetentionPolicyState state, std::wstring const &amp; recoveryServicesBackupPolicyResourceId, std::wstring const &amp; id = null, std::wstring const &amp; name = null, std::wstring const &amp; type = null, std::wstring const &amp; location = null);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Sql.Fluent</AssemblyName>
-        <AssemblyVersion>1.0.0.60</AssemblyVersion>
+        <AssemblyVersion>1.0.0.61</AssemblyVersion>
+        <AssemblyVersion>1.0.0.62</AssemblyVersion>
+        <AssemblyVersion>1.0.0.63</AssemblyVersion>
+        <AssemblyVersion>1.0.0.64</AssemblyVersion>
+        <AssemblyVersion>1.0.0.65</AssemblyVersion>
+        <AssemblyVersion>1.0.0.66</AssemblyVersion>
+        <AssemblyVersion>1.0.0.67</AssemblyVersion>
+        <AssemblyVersion>1.0.0.68</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="state" Type="Microsoft.Azure.Management.Sql.Fluent.Models.BackupLongTermRetentionPolicyState" />
         <Parameter Name="recoveryServicesBackupPolicyResourceId" Type="System.String" />
-        <Parameter Name="location" Type="System.String" />
         <Parameter Name="id" Type="System.String" />
         <Parameter Name="name" Type="System.String" />
         <Parameter Name="type" Type="System.String" />
+        <Parameter Name="location" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="state">To be added.</param>
-        <param name="recoveryServicesBackupPolicyResourceId">To be added.</param>
-        <param name="location">To be added.</param>
         <param name="id">To be added.</param>
         <param name="name">To be added.</param>
         <param name="type">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="state">The status of the backup long term retention
+            policy. Possible values include: 'Disabled', 'Enabled'</param>
+        <param name="recoveryServicesBackupPolicyResourceId">The azure
+            recovery services backup protection policy resource id</param>
+        <param name="location">The geo-location where the resource
+            lives</param>
+        <summary>
+            Initializes a new instance of the
+            BackupLongTermRetentionPolicyInner class.
+            </summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -80,23 +107,31 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Management.Sql.Fluent.Models.BackupLongTermRetentionPolicyInner.Location" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Location As String" />
       <MemberSignature Language="F#" Value="member this.Location : string" Usage="Microsoft.Azure.Management.Sql.Fluent.Models.BackupLongTermRetentionPolicyInner.Location" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Location { System::String ^ get(); };" />
-      <MemberSignature Language="C++ CX" Value="public:&#xA; property Platform::String ^ Location { Platform::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Sql.Fluent</AssemblyName>
-        <AssemblyVersion>1.0.0.60</AssemblyVersion>
+        <AssemblyVersion>1.0.0.61</AssemblyVersion>
+        <AssemblyVersion>1.0.0.62</AssemblyVersion>
+        <AssemblyVersion>1.0.0.63</AssemblyVersion>
+        <AssemblyVersion>1.0.0.64</AssemblyVersion>
+        <AssemblyVersion>1.0.0.65</AssemblyVersion>
+        <AssemblyVersion>1.0.0.66</AssemblyVersion>
+        <AssemblyVersion>1.0.0.67</AssemblyVersion>
+        <AssemblyVersion>1.0.0.68</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="location")</AttributeName>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty(PropertyName="location")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty(PropertyName="location")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+            Gets the geo-location where the resource lives
+            </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -107,23 +142,32 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Management.Sql.Fluent.Models.BackupLongTermRetentionPolicyInner.RecoveryServicesBackupPolicyResourceId" />
       <MemberSignature Language="VB.NET" Value="Public Property RecoveryServicesBackupPolicyResourceId As String" />
       <MemberSignature Language="F#" Value="member this.RecoveryServicesBackupPolicyResourceId : string with get, set" Usage="Microsoft.Azure.Management.Sql.Fluent.Models.BackupLongTermRetentionPolicyInner.RecoveryServicesBackupPolicyResourceId" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ RecoveryServicesBackupPolicyResourceId { System::String ^ get(); void set(System::String ^ value); };" />
-      <MemberSignature Language="C++ CX" Value="public:&#xA; property Platform::String ^ RecoveryServicesBackupPolicyResourceId { Platform::String ^ get(); void set(Platform::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Sql.Fluent</AssemblyName>
-        <AssemblyVersion>1.0.0.60</AssemblyVersion>
+        <AssemblyVersion>1.0.0.61</AssemblyVersion>
+        <AssemblyVersion>1.0.0.62</AssemblyVersion>
+        <AssemblyVersion>1.0.0.63</AssemblyVersion>
+        <AssemblyVersion>1.0.0.64</AssemblyVersion>
+        <AssemblyVersion>1.0.0.65</AssemblyVersion>
+        <AssemblyVersion>1.0.0.66</AssemblyVersion>
+        <AssemblyVersion>1.0.0.67</AssemblyVersion>
+        <AssemblyVersion>1.0.0.68</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="properties.recoveryServicesBackupPolicyResourceId")</AttributeName>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty(PropertyName="properties.recoveryServicesBackupPolicyResourceId")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty(PropertyName="properties.recoveryServicesBackupPolicyResourceId")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+            Gets or sets the azure recovery services backup protection policy
+            resource id
+            </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -134,23 +178,32 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Management.Sql.Fluent.Models.BackupLongTermRetentionPolicyInner.State" />
       <MemberSignature Language="VB.NET" Value="Public Property State As BackupLongTermRetentionPolicyState" />
       <MemberSignature Language="F#" Value="member this.State : Microsoft.Azure.Management.Sql.Fluent.Models.BackupLongTermRetentionPolicyState with get, set" Usage="Microsoft.Azure.Management.Sql.Fluent.Models.BackupLongTermRetentionPolicyInner.State" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Azure::Management::Sql::Fluent::Models::BackupLongTermRetentionPolicyState State { Microsoft::Azure::Management::Sql::Fluent::Models::BackupLongTermRetentionPolicyState get(); void set(Microsoft::Azure::Management::Sql::Fluent::Models::BackupLongTermRetentionPolicyState value); };" />
-      <MemberSignature Language="C++ CX" Value="public:&#xA; property Microsoft::Azure::Management::Sql::Fluent::Models::BackupLongTermRetentionPolicyState State { Microsoft::Azure::Management::Sql::Fluent::Models::BackupLongTermRetentionPolicyState get(); void set(Microsoft::Azure::Management::Sql::Fluent::Models::BackupLongTermRetentionPolicyState value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Sql.Fluent</AssemblyName>
-        <AssemblyVersion>1.0.0.60</AssemblyVersion>
+        <AssemblyVersion>1.0.0.61</AssemblyVersion>
+        <AssemblyVersion>1.0.0.62</AssemblyVersion>
+        <AssemblyVersion>1.0.0.63</AssemblyVersion>
+        <AssemblyVersion>1.0.0.64</AssemblyVersion>
+        <AssemblyVersion>1.0.0.65</AssemblyVersion>
+        <AssemblyVersion>1.0.0.66</AssemblyVersion>
+        <AssemblyVersion>1.0.0.67</AssemblyVersion>
+        <AssemblyVersion>1.0.0.68</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="properties.state")</AttributeName>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty(PropertyName="properties.state")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty(PropertyName="properties.state")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
         <ReturnType>Microsoft.Azure.Management.Sql.Fluent.Models.BackupLongTermRetentionPolicyState</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+            Gets or sets the status of the backup long term retention policy.
+            Possible values include: 'Disabled', 'Enabled'
+            </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -160,22 +213,31 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Validate() cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Management.Sql.Fluent.Models.BackupLongTermRetentionPolicyInner.Validate" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Sub Validate ()" />
-      <MemberSignature Language="F#" Value="abstract member Validate : unit -&gt; unit&#xA;override this.Validate : unit -&gt; unit" Usage="backupLongTermRetentionPolicyInner.Validate " />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Validate();" />
-      <MemberSignature Language="C++ CX" Value="public:&#xA; virtual void Validate();" />
-      <MemberSignature Language="C++ WINRT" Value=" virtual void Validate();" />
+      <MemberSignature Language="F#" Value="override this.Validate : unit -&gt; unit" Usage="backupLongTermRetentionPolicyInner.Validate " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Sql.Fluent</AssemblyName>
-        <AssemblyVersion>1.0.0.60</AssemblyVersion>
+        <AssemblyVersion>1.0.0.61</AssemblyVersion>
+        <AssemblyVersion>1.0.0.62</AssemblyVersion>
+        <AssemblyVersion>1.0.0.63</AssemblyVersion>
+        <AssemblyVersion>1.0.0.64</AssemblyVersion>
+        <AssemblyVersion>1.0.0.65</AssemblyVersion>
+        <AssemblyVersion>1.0.0.66</AssemblyVersion>
+        <AssemblyVersion>1.0.0.67</AssemblyVersion>
+        <AssemblyVersion>1.0.0.68</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+            Validate the object.
+            </summary>
         <remarks>To be added.</remarks>
+        <exception cref="T:Microsoft.Rest.ValidationException">
+            Thrown if validation fails
+            </exception>
       </Docs>
     </Member>
   </Members>

@@ -1,15 +1,14 @@
-﻿<Type Name="JobSpecification" FullName="Microsoft.Azure.Batch.Protocol.Models.JobSpecification">
+<Type Name="JobSpecification" FullName="Microsoft.Azure.Batch.Protocol.Models.JobSpecification">
   <TypeSignature Language="C#" Value="public class JobSpecification" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit JobSpecification extends System.Object" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Azure.Batch.Protocol.Models.JobSpecification" />
   <TypeSignature Language="VB.NET" Value="Public Class JobSpecification" />
   <TypeSignature Language="F#" Value="type JobSpecification = class" />
-  <TypeSignature Language="C++ CLI" Value="public ref class JobSpecification" />
-  <TypeSignature Language="C++ WINRT" Value="[Windows::Foundation::Metadata::WebHostHidden]&#xA;class JobSpecification" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Azure.Batch</AssemblyName>
-    <AssemblyVersion>7.1.0.0</AssemblyVersion>
-    <AssemblyVersion>8.0.0.0</AssemblyVersion>
+    <AssemblyVersion>12.0.0.0</AssemblyVersion>
+    <AssemblyVersion>13.0.0.0</AssemblyVersion>
+    <AssemblyVersion>14.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
@@ -17,7 +16,7 @@
   <Interfaces />
   <Docs>
     <summary>
-            Specifies details of the jobs to be created on a schedule.
+            Specifies details of the Jobs to be created on a schedule.
             </summary>
     <remarks>To be added.</remarks>
   </Docs>
@@ -27,14 +26,12 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Batch.Protocol.Models.JobSpecification.#ctor" />
       <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; JobSpecification();" />
-      <MemberSignature Language="C++ CX" Value="public:&#xA; JobSpecification();" />
-      <MemberSignature Language="C++ WINRT" Value=" JobSpecification();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Batch</AssemblyName>
-        <AssemblyVersion>7.1.0.0</AssemblyVersion>
-        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>12.0.0.0</AssemblyVersion>
+        <AssemblyVersion>13.0.0.0</AssemblyVersion>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
@@ -45,15 +42,17 @@
       </Docs>
     </Member>
     <Member MemberName=".ctor">
-      <MemberSignature Language="C#" Value="public JobSpecification (Microsoft.Azure.Batch.Protocol.Models.PoolInformation poolInfo, Nullable&lt;int&gt; priority = null, string displayName = null, Nullable&lt;bool&gt; usesTaskDependencies = null, Nullable&lt;Microsoft.Azure.Batch.Protocol.Models.OnAllTasksComplete&gt; onAllTasksComplete = null, Nullable&lt;Microsoft.Azure.Batch.Protocol.Models.OnTaskFailure&gt; onTaskFailure = null, Microsoft.Azure.Batch.Protocol.Models.JobConstraints constraints = null, Microsoft.Azure.Batch.Protocol.Models.JobManagerTask jobManagerTask = null, Microsoft.Azure.Batch.Protocol.Models.JobPreparationTask jobPreparationTask = null, Microsoft.Azure.Batch.Protocol.Models.JobReleaseTask jobReleaseTask = null, System.Collections.Generic.IList&lt;Microsoft.Azure.Batch.Protocol.Models.EnvironmentSetting&gt; commonEnvironmentSettings = null, System.Collections.Generic.IList&lt;Microsoft.Azure.Batch.Protocol.Models.MetadataItem&gt; metadata = null);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class Microsoft.Azure.Batch.Protocol.Models.PoolInformation poolInfo, valuetype System.Nullable`1&lt;int32&gt; priority, string displayName, valuetype System.Nullable`1&lt;bool&gt; usesTaskDependencies, valuetype System.Nullable`1&lt;valuetype Microsoft.Azure.Batch.Protocol.Models.OnAllTasksComplete&gt; onAllTasksComplete, valuetype System.Nullable`1&lt;valuetype Microsoft.Azure.Batch.Protocol.Models.OnTaskFailure&gt; onTaskFailure, class Microsoft.Azure.Batch.Protocol.Models.JobConstraints constraints, class Microsoft.Azure.Batch.Protocol.Models.JobManagerTask jobManagerTask, class Microsoft.Azure.Batch.Protocol.Models.JobPreparationTask jobPreparationTask, class Microsoft.Azure.Batch.Protocol.Models.JobReleaseTask jobReleaseTask, class System.Collections.Generic.IList`1&lt;class Microsoft.Azure.Batch.Protocol.Models.EnvironmentSetting&gt; commonEnvironmentSettings, class System.Collections.Generic.IList`1&lt;class Microsoft.Azure.Batch.Protocol.Models.MetadataItem&gt; metadata) cil managed" />
-      <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Batch.Protocol.Models.JobSpecification.#ctor(Microsoft.Azure.Batch.Protocol.Models.PoolInformation,System.Nullable{System.Int32},System.String,System.Nullable{System.Boolean},System.Nullable{Microsoft.Azure.Batch.Protocol.Models.OnAllTasksComplete},System.Nullable{Microsoft.Azure.Batch.Protocol.Models.OnTaskFailure},Microsoft.Azure.Batch.Protocol.Models.JobConstraints,Microsoft.Azure.Batch.Protocol.Models.JobManagerTask,Microsoft.Azure.Batch.Protocol.Models.JobPreparationTask,Microsoft.Azure.Batch.Protocol.Models.JobReleaseTask,System.Collections.Generic.IList{Microsoft.Azure.Batch.Protocol.Models.EnvironmentSetting},System.Collections.Generic.IList{Microsoft.Azure.Batch.Protocol.Models.MetadataItem})" />
-      <MemberSignature Language="F#" Value="new Microsoft.Azure.Batch.Protocol.Models.JobSpecification : Microsoft.Azure.Batch.Protocol.Models.PoolInformation * Nullable&lt;int&gt; * string * Nullable&lt;bool&gt; * Nullable&lt;Microsoft.Azure.Batch.Protocol.Models.OnAllTasksComplete&gt; * Nullable&lt;Microsoft.Azure.Batch.Protocol.Models.OnTaskFailure&gt; * Microsoft.Azure.Batch.Protocol.Models.JobConstraints * Microsoft.Azure.Batch.Protocol.Models.JobManagerTask * Microsoft.Azure.Batch.Protocol.Models.JobPreparationTask * Microsoft.Azure.Batch.Protocol.Models.JobReleaseTask * System.Collections.Generic.IList&lt;Microsoft.Azure.Batch.Protocol.Models.EnvironmentSetting&gt; * System.Collections.Generic.IList&lt;Microsoft.Azure.Batch.Protocol.Models.MetadataItem&gt; -&gt; Microsoft.Azure.Batch.Protocol.Models.JobSpecification" Usage="new Microsoft.Azure.Batch.Protocol.Models.JobSpecification (poolInfo, priority, displayName, usesTaskDependencies, onAllTasksComplete, onTaskFailure, constraints, jobManagerTask, jobPreparationTask, jobReleaseTask, commonEnvironmentSettings, metadata)" />
+      <MemberSignature Language="C#" Value="public JobSpecification (Microsoft.Azure.Batch.Protocol.Models.PoolInformation poolInfo, int? priority = default, string displayName = default, bool? usesTaskDependencies = default, Microsoft.Azure.Batch.Protocol.Models.OnAllTasksComplete? onAllTasksComplete = default, Microsoft.Azure.Batch.Protocol.Models.OnTaskFailure? onTaskFailure = default, Microsoft.Azure.Batch.Protocol.Models.JobNetworkConfiguration networkConfiguration = default, Microsoft.Azure.Batch.Protocol.Models.JobConstraints constraints = default, Microsoft.Azure.Batch.Protocol.Models.JobManagerTask jobManagerTask = default, Microsoft.Azure.Batch.Protocol.Models.JobPreparationTask jobPreparationTask = default, Microsoft.Azure.Batch.Protocol.Models.JobReleaseTask jobReleaseTask = default, System.Collections.Generic.IList&lt;Microsoft.Azure.Batch.Protocol.Models.EnvironmentSetting&gt; commonEnvironmentSettings = default, System.Collections.Generic.IList&lt;Microsoft.Azure.Batch.Protocol.Models.MetadataItem&gt; metadata = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class Microsoft.Azure.Batch.Protocol.Models.PoolInformation poolInfo, valuetype System.Nullable`1&lt;int32&gt; priority, string displayName, valuetype System.Nullable`1&lt;bool&gt; usesTaskDependencies, valuetype System.Nullable`1&lt;valuetype Microsoft.Azure.Batch.Protocol.Models.OnAllTasksComplete&gt; onAllTasksComplete, valuetype System.Nullable`1&lt;valuetype Microsoft.Azure.Batch.Protocol.Models.OnTaskFailure&gt; onTaskFailure, class Microsoft.Azure.Batch.Protocol.Models.JobNetworkConfiguration networkConfiguration, class Microsoft.Azure.Batch.Protocol.Models.JobConstraints constraints, class Microsoft.Azure.Batch.Protocol.Models.JobManagerTask jobManagerTask, class Microsoft.Azure.Batch.Protocol.Models.JobPreparationTask jobPreparationTask, class Microsoft.Azure.Batch.Protocol.Models.JobReleaseTask jobReleaseTask, class System.Collections.Generic.IList`1&lt;class Microsoft.Azure.Batch.Protocol.Models.EnvironmentSetting&gt; commonEnvironmentSettings, class System.Collections.Generic.IList`1&lt;class Microsoft.Azure.Batch.Protocol.Models.MetadataItem&gt; metadata) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Batch.Protocol.Models.JobSpecification.#ctor(Microsoft.Azure.Batch.Protocol.Models.PoolInformation,System.Nullable{System.Int32},System.String,System.Nullable{System.Boolean},System.Nullable{Microsoft.Azure.Batch.Protocol.Models.OnAllTasksComplete},System.Nullable{Microsoft.Azure.Batch.Protocol.Models.OnTaskFailure},Microsoft.Azure.Batch.Protocol.Models.JobNetworkConfiguration,Microsoft.Azure.Batch.Protocol.Models.JobConstraints,Microsoft.Azure.Batch.Protocol.Models.JobManagerTask,Microsoft.Azure.Batch.Protocol.Models.JobPreparationTask,Microsoft.Azure.Batch.Protocol.Models.JobReleaseTask,System.Collections.Generic.IList{Microsoft.Azure.Batch.Protocol.Models.EnvironmentSetting},System.Collections.Generic.IList{Microsoft.Azure.Batch.Protocol.Models.MetadataItem})" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (poolInfo As PoolInformation, Optional priority As Nullable(Of Integer) = Nothing, Optional displayName As String = Nothing, Optional usesTaskDependencies As Nullable(Of Boolean) = Nothing, Optional onAllTasksComplete As Nullable(Of OnAllTasksComplete) = Nothing, Optional onTaskFailure As Nullable(Of OnTaskFailure) = Nothing, Optional networkConfiguration As JobNetworkConfiguration = Nothing, Optional constraints As JobConstraints = Nothing, Optional jobManagerTask As JobManagerTask = Nothing, Optional jobPreparationTask As JobPreparationTask = Nothing, Optional jobReleaseTask As JobReleaseTask = Nothing, Optional commonEnvironmentSettings As IList(Of EnvironmentSetting) = Nothing, Optional metadata As IList(Of MetadataItem) = Nothing)" />
+      <MemberSignature Language="F#" Value="new Microsoft.Azure.Batch.Protocol.Models.JobSpecification : Microsoft.Azure.Batch.Protocol.Models.PoolInformation * Nullable&lt;int&gt; * string * Nullable&lt;bool&gt; * Nullable&lt;Microsoft.Azure.Batch.Protocol.Models.OnAllTasksComplete&gt; * Nullable&lt;Microsoft.Azure.Batch.Protocol.Models.OnTaskFailure&gt; * Microsoft.Azure.Batch.Protocol.Models.JobNetworkConfiguration * Microsoft.Azure.Batch.Protocol.Models.JobConstraints * Microsoft.Azure.Batch.Protocol.Models.JobManagerTask * Microsoft.Azure.Batch.Protocol.Models.JobPreparationTask * Microsoft.Azure.Batch.Protocol.Models.JobReleaseTask * System.Collections.Generic.IList&lt;Microsoft.Azure.Batch.Protocol.Models.EnvironmentSetting&gt; * System.Collections.Generic.IList&lt;Microsoft.Azure.Batch.Protocol.Models.MetadataItem&gt; -&gt; Microsoft.Azure.Batch.Protocol.Models.JobSpecification" Usage="new Microsoft.Azure.Batch.Protocol.Models.JobSpecification (poolInfo, priority, displayName, usesTaskDependencies, onAllTasksComplete, onTaskFailure, networkConfiguration, constraints, jobManagerTask, jobPreparationTask, jobReleaseTask, commonEnvironmentSettings, metadata)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Batch</AssemblyName>
-        <AssemblyVersion>7.1.0.0</AssemblyVersion>
-        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>12.0.0.0</AssemblyVersion>
+        <AssemblyVersion>13.0.0.0</AssemblyVersion>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="poolInfo" Type="Microsoft.Azure.Batch.Protocol.Models.PoolInformation" />
@@ -62,6 +61,7 @@
         <Parameter Name="usesTaskDependencies" Type="System.Nullable&lt;System.Boolean&gt;" />
         <Parameter Name="onAllTasksComplete" Type="System.Nullable&lt;Microsoft.Azure.Batch.Protocol.Models.OnAllTasksComplete&gt;" />
         <Parameter Name="onTaskFailure" Type="System.Nullable&lt;Microsoft.Azure.Batch.Protocol.Models.OnTaskFailure&gt;" />
+        <Parameter Name="networkConfiguration" Type="Microsoft.Azure.Batch.Protocol.Models.JobNetworkConfiguration" />
         <Parameter Name="constraints" Type="Microsoft.Azure.Batch.Protocol.Models.JobConstraints" />
         <Parameter Name="jobManagerTask" Type="Microsoft.Azure.Batch.Protocol.Models.JobManagerTask" />
         <Parameter Name="jobPreparationTask" Type="Microsoft.Azure.Batch.Protocol.Models.JobPreparationTask" />
@@ -70,38 +70,40 @@
         <Parameter Name="metadata" Type="System.Collections.Generic.IList&lt;Microsoft.Azure.Batch.Protocol.Models.MetadataItem&gt;" />
       </Parameters>
       <Docs>
-        <param name="poolInfo">The pool on which the Batch service runs the
-            tasks of jobs created under this schedule.</param>
-        <param name="priority">The priority of jobs created under this
+        <param name="poolInfo">The Pool on which the Batch service runs the
+            Tasks of Jobs created under this schedule.</param>
+        <param name="priority">The priority of Jobs created under this
             schedule.</param>
-        <param name="displayName">The display name for jobs created under
+        <param name="displayName">The display name for Jobs created under
             this schedule.</param>
-        <param name="usesTaskDependencies">Whether tasks in the job can
+        <param name="usesTaskDependencies">Whether Tasks in the Job can
             define dependencies on each other. The default is false.</param>
         <param name="onAllTasksComplete">The action the Batch service
-            should take when all tasks in a job created under this schedule are
+            should take when all Tasks in a Job created under this schedule are
             in the completed state.</param>
         <param name="onTaskFailure">The action the Batch service should
-            take when any task fails in a job created under this schedule. A
-            task is considered to have failed if it have failed if has a
-            failureInfo. A failureInfo is set if the task completes with a
+            take when any Task fails in a Job created under this schedule. A
+            Task is considered to have failed if it have failed if has a
+            failureInfo. A failureInfo is set if the Task completes with a
             non-zero exit code after exhausting its retry count, or if there
-            was an error starting the task, for example due to a resource file
+            was an error starting the Task, for example due to a resource file
             download error.</param>
-        <param name="constraints">The execution constraints for jobs
+        <param name="networkConfiguration">The network configuration for
+            the Job.</param>
+        <param name="constraints">The execution constraints for Jobs
             created under this schedule.</param>
-        <param name="jobManagerTask">The details of a Job Manager task to
-            be launched when a job is started under this schedule.</param>
-        <param name="jobPreparationTask">The Job Preparation task for jobs
+        <param name="jobManagerTask">The details of a Job Manager Task to
+            be launched when a Job is started under this schedule.</param>
+        <param name="jobPreparationTask">The Job Preparation Task for Jobs
             created under this schedule.</param>
-        <param name="jobReleaseTask">The Job Release task for jobs created
+        <param name="jobReleaseTask">The Job Release Task for Jobs created
             under this schedule.</param>
         <param name="commonEnvironmentSettings">A list of common
             environment variable settings. These environment variables are set
-            for all tasks in jobs created under this schedule (including the
-            Job Manager, Job Preparation and Job Release tasks).</param>
+            for all Tasks in Jobs created under this schedule (including the
+            Job Manager, Job Preparation and Job Release Tasks).</param>
         <param name="metadata">A list of name-value pairs associated with
-            each job created under this schedule as metadata.</param>
+            each Job created under this schedule as metadata.</param>
         <summary>
             Initializes a new instance of the JobSpecification class.
             </summary>
@@ -114,16 +116,17 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Batch.Protocol.Models.JobSpecification.CommonEnvironmentSettings" />
       <MemberSignature Language="VB.NET" Value="Public Property CommonEnvironmentSettings As IList(Of EnvironmentSetting)" />
       <MemberSignature Language="F#" Value="member this.CommonEnvironmentSettings : System.Collections.Generic.IList&lt;Microsoft.Azure.Batch.Protocol.Models.EnvironmentSetting&gt; with get, set" Usage="Microsoft.Azure.Batch.Protocol.Models.JobSpecification.CommonEnvironmentSettings" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::Generic::IList&lt;Microsoft::Azure::Batch::Protocol::Models::EnvironmentSetting ^&gt; ^ CommonEnvironmentSettings { System::Collections::Generic::IList&lt;Microsoft::Azure::Batch::Protocol::Models::EnvironmentSetting ^&gt; ^ get(); void set(System::Collections::Generic::IList&lt;Microsoft::Azure::Batch::Protocol::Models::EnvironmentSetting ^&gt; ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Batch</AssemblyName>
-        <AssemblyVersion>7.1.0.0</AssemblyVersion>
-        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>12.0.0.0</AssemblyVersion>
+        <AssemblyVersion>13.0.0.0</AssemblyVersion>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="commonEnvironmentSettings")</AttributeName>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty(PropertyName="commonEnvironmentSettings")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty(PropertyName="commonEnvironmentSettings")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -132,13 +135,13 @@
       <Docs>
         <summary>
             Gets or sets a list of common environment variable settings. These
-            environment variables are set for all tasks in jobs created under
+            environment variables are set for all Tasks in Jobs created under
             this schedule (including the Job Manager, Job Preparation and Job
-            Release tasks).
+            Release Tasks).
             </summary>
         <value>To be added.</value>
         <remarks>
-            Individual tasks can override an environment setting specified here
+            Individual Tasks can override an environment setting specified here
             by specifying the same setting name with a different value.
             </remarks>
       </Docs>
@@ -149,16 +152,17 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Batch.Protocol.Models.JobSpecification.Constraints" />
       <MemberSignature Language="VB.NET" Value="Public Property Constraints As JobConstraints" />
       <MemberSignature Language="F#" Value="member this.Constraints : Microsoft.Azure.Batch.Protocol.Models.JobConstraints with get, set" Usage="Microsoft.Azure.Batch.Protocol.Models.JobSpecification.Constraints" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Azure::Batch::Protocol::Models::JobConstraints ^ Constraints { Microsoft::Azure::Batch::Protocol::Models::JobConstraints ^ get(); void set(Microsoft::Azure::Batch::Protocol::Models::JobConstraints ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Batch</AssemblyName>
-        <AssemblyVersion>7.1.0.0</AssemblyVersion>
-        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>12.0.0.0</AssemblyVersion>
+        <AssemblyVersion>13.0.0.0</AssemblyVersion>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="constraints")</AttributeName>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty(PropertyName="constraints")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty(PropertyName="constraints")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -166,7 +170,7 @@
       </ReturnValue>
       <Docs>
         <summary>
-            Gets or sets the execution constraints for jobs created under this
+            Gets or sets the execution constraints for Jobs created under this
             schedule.
             </summary>
         <value>To be added.</value>
@@ -179,17 +183,17 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Batch.Protocol.Models.JobSpecification.DisplayName" />
       <MemberSignature Language="VB.NET" Value="Public Property DisplayName As String" />
       <MemberSignature Language="F#" Value="member this.DisplayName : string with get, set" Usage="Microsoft.Azure.Batch.Protocol.Models.JobSpecification.DisplayName" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ DisplayName { System::String ^ get(); void set(System::String ^ value); };" />
-      <MemberSignature Language="C++ CX" Value="public:&#xA; property Platform::String ^ DisplayName { Platform::String ^ get(); void set(Platform::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Batch</AssemblyName>
-        <AssemblyVersion>7.1.0.0</AssemblyVersion>
-        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>12.0.0.0</AssemblyVersion>
+        <AssemblyVersion>13.0.0.0</AssemblyVersion>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="displayName")</AttributeName>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty(PropertyName="displayName")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty(PropertyName="displayName")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -197,7 +201,7 @@
       </ReturnValue>
       <Docs>
         <summary>
-            Gets or sets the display name for jobs created under this schedule.
+            Gets or sets the display name for Jobs created under this schedule.
             </summary>
         <value>To be added.</value>
         <remarks>
@@ -212,16 +216,17 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Batch.Protocol.Models.JobSpecification.JobManagerTask" />
       <MemberSignature Language="VB.NET" Value="Public Property JobManagerTask As JobManagerTask" />
       <MemberSignature Language="F#" Value="member this.JobManagerTask : Microsoft.Azure.Batch.Protocol.Models.JobManagerTask with get, set" Usage="Microsoft.Azure.Batch.Protocol.Models.JobSpecification.JobManagerTask" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Azure::Batch::Protocol::Models::JobManagerTask ^ JobManagerTask { Microsoft::Azure::Batch::Protocol::Models::JobManagerTask ^ get(); void set(Microsoft::Azure::Batch::Protocol::Models::JobManagerTask ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Batch</AssemblyName>
-        <AssemblyVersion>7.1.0.0</AssemblyVersion>
-        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>12.0.0.0</AssemblyVersion>
+        <AssemblyVersion>13.0.0.0</AssemblyVersion>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="jobManagerTask")</AttributeName>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty(PropertyName="jobManagerTask")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty(PropertyName="jobManagerTask")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -229,16 +234,16 @@
       </ReturnValue>
       <Docs>
         <summary>
-            Gets or sets the details of a Job Manager task to be launched when
-            a job is started under this schedule.
+            Gets or sets the details of a Job Manager Task to be launched when
+            a Job is started under this schedule.
             </summary>
         <value>To be added.</value>
         <remarks>
-            If the job does not specify a Job Manager task, the user must
-            explicitly add tasks to the job using the Task API. If the job does
-            specify a Job Manager task, the Batch service creates the Job
-            Manager task when the job is created, and will try to schedule the
-            Job Manager task before scheduling other tasks in the job.
+            If the Job does not specify a Job Manager Task, the user must
+            explicitly add Tasks to the Job using the Task API. If the Job does
+            specify a Job Manager Task, the Batch service creates the Job
+            Manager Task when the Job is created, and will try to schedule the
+            Job Manager Task before scheduling other Tasks in the Job.
             </remarks>
       </Docs>
     </Member>
@@ -248,16 +253,17 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Batch.Protocol.Models.JobSpecification.JobPreparationTask" />
       <MemberSignature Language="VB.NET" Value="Public Property JobPreparationTask As JobPreparationTask" />
       <MemberSignature Language="F#" Value="member this.JobPreparationTask : Microsoft.Azure.Batch.Protocol.Models.JobPreparationTask with get, set" Usage="Microsoft.Azure.Batch.Protocol.Models.JobSpecification.JobPreparationTask" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Azure::Batch::Protocol::Models::JobPreparationTask ^ JobPreparationTask { Microsoft::Azure::Batch::Protocol::Models::JobPreparationTask ^ get(); void set(Microsoft::Azure::Batch::Protocol::Models::JobPreparationTask ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Batch</AssemblyName>
-        <AssemblyVersion>7.1.0.0</AssemblyVersion>
-        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>12.0.0.0</AssemblyVersion>
+        <AssemblyVersion>13.0.0.0</AssemblyVersion>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="jobPreparationTask")</AttributeName>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty(PropertyName="jobPreparationTask")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty(PropertyName="jobPreparationTask")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -265,14 +271,14 @@
       </ReturnValue>
       <Docs>
         <summary>
-            Gets or sets the Job Preparation task for jobs created under this
+            Gets or sets the Job Preparation Task for Jobs created under this
             schedule.
             </summary>
         <value>To be added.</value>
         <remarks>
-            If a job has a Job Preparation task, the Batch service will run the
-            Job Preparation task on a compute node before starting any tasks of
-            that job on that compute node.
+            If a Job has a Job Preparation Task, the Batch service will run the
+            Job Preparation Task on a Node before starting any Tasks of that
+            Job on that Compute Node.
             </remarks>
       </Docs>
     </Member>
@@ -282,16 +288,17 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Batch.Protocol.Models.JobSpecification.JobReleaseTask" />
       <MemberSignature Language="VB.NET" Value="Public Property JobReleaseTask As JobReleaseTask" />
       <MemberSignature Language="F#" Value="member this.JobReleaseTask : Microsoft.Azure.Batch.Protocol.Models.JobReleaseTask with get, set" Usage="Microsoft.Azure.Batch.Protocol.Models.JobSpecification.JobReleaseTask" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Azure::Batch::Protocol::Models::JobReleaseTask ^ JobReleaseTask { Microsoft::Azure::Batch::Protocol::Models::JobReleaseTask ^ get(); void set(Microsoft::Azure::Batch::Protocol::Models::JobReleaseTask ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Batch</AssemblyName>
-        <AssemblyVersion>7.1.0.0</AssemblyVersion>
-        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>12.0.0.0</AssemblyVersion>
+        <AssemblyVersion>13.0.0.0</AssemblyVersion>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="jobReleaseTask")</AttributeName>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty(PropertyName="jobReleaseTask")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty(PropertyName="jobReleaseTask")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -299,18 +306,18 @@
       </ReturnValue>
       <Docs>
         <summary>
-            Gets or sets the Job Release task for jobs created under this
+            Gets or sets the Job Release Task for Jobs created under this
             schedule.
             </summary>
         <value>To be added.</value>
         <remarks>
-            The primary purpose of the Job Release task is to undo changes to
-            compute nodes made by the Job Preparation task. Example activities
-            include deleting local files, or shutting down services that were
-            started as part of job preparation. A Job Release task cannot be
-            specified without also specifying a Job Preparation task for the
-            job. The Batch service runs the Job Release task on the compute
-            nodes that have run the Job Preparation task.
+            The primary purpose of the Job Release Task is to undo changes to
+            Nodes made by the Job Preparation Task. Example activities include
+            deleting local files, or shutting down services that were started
+            as part of Job preparation. A Job Release Task cannot be specified
+            without also specifying a Job Preparation Task for the Job. The
+            Batch service runs the Job Release Task on the Compute Nodes that
+            have run the Job Preparation Task.
             </remarks>
       </Docs>
     </Member>
@@ -320,16 +327,17 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Batch.Protocol.Models.JobSpecification.Metadata" />
       <MemberSignature Language="VB.NET" Value="Public Property Metadata As IList(Of MetadataItem)" />
       <MemberSignature Language="F#" Value="member this.Metadata : System.Collections.Generic.IList&lt;Microsoft.Azure.Batch.Protocol.Models.MetadataItem&gt; with get, set" Usage="Microsoft.Azure.Batch.Protocol.Models.JobSpecification.Metadata" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::Generic::IList&lt;Microsoft::Azure::Batch::Protocol::Models::MetadataItem ^&gt; ^ Metadata { System::Collections::Generic::IList&lt;Microsoft::Azure::Batch::Protocol::Models::MetadataItem ^&gt; ^ get(); void set(System::Collections::Generic::IList&lt;Microsoft::Azure::Batch::Protocol::Models::MetadataItem ^&gt; ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Batch</AssemblyName>
-        <AssemblyVersion>7.1.0.0</AssemblyVersion>
-        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>12.0.0.0</AssemblyVersion>
+        <AssemblyVersion>13.0.0.0</AssemblyVersion>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="metadata")</AttributeName>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty(PropertyName="metadata")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty(PropertyName="metadata")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -337,7 +345,7 @@
       </ReturnValue>
       <Docs>
         <summary>
-            Gets or sets a list of name-value pairs associated with each job
+            Gets or sets a list of name-value pairs associated with each Job
             created under this schedule as metadata.
             </summary>
         <value>To be added.</value>
@@ -347,22 +355,53 @@
             </remarks>
       </Docs>
     </Member>
+    <Member MemberName="NetworkConfiguration">
+      <MemberSignature Language="C#" Value="public Microsoft.Azure.Batch.Protocol.Models.JobNetworkConfiguration NetworkConfiguration { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Azure.Batch.Protocol.Models.JobNetworkConfiguration NetworkConfiguration" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Batch.Protocol.Models.JobSpecification.NetworkConfiguration" />
+      <MemberSignature Language="VB.NET" Value="Public Property NetworkConfiguration As JobNetworkConfiguration" />
+      <MemberSignature Language="F#" Value="member this.NetworkConfiguration : Microsoft.Azure.Batch.Protocol.Models.JobNetworkConfiguration with get, set" Usage="Microsoft.Azure.Batch.Protocol.Models.JobSpecification.NetworkConfiguration" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Azure.Batch</AssemblyName>
+        <AssemblyVersion>12.0.0.0</AssemblyVersion>
+        <AssemblyVersion>13.0.0.0</AssemblyVersion>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty(PropertyName="networkConfiguration")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty(PropertyName="networkConfiguration")&gt;]</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Azure.Batch.Protocol.Models.JobNetworkConfiguration</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets or sets the network configuration for the Job.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
     <Member MemberName="OnAllTasksComplete">
-      <MemberSignature Language="C#" Value="public Nullable&lt;Microsoft.Azure.Batch.Protocol.Models.OnAllTasksComplete&gt; OnAllTasksComplete { get; set; }" />
+      <MemberSignature Language="C#" Value="public Microsoft.Azure.Batch.Protocol.Models.OnAllTasksComplete? OnAllTasksComplete { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;valuetype Microsoft.Azure.Batch.Protocol.Models.OnAllTasksComplete&gt; OnAllTasksComplete" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Batch.Protocol.Models.JobSpecification.OnAllTasksComplete" />
       <MemberSignature Language="VB.NET" Value="Public Property OnAllTasksComplete As Nullable(Of OnAllTasksComplete)" />
       <MemberSignature Language="F#" Value="member this.OnAllTasksComplete : Nullable&lt;Microsoft.Azure.Batch.Protocol.Models.OnAllTasksComplete&gt; with get, set" Usage="Microsoft.Azure.Batch.Protocol.Models.JobSpecification.OnAllTasksComplete" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Nullable&lt;Microsoft::Azure::Batch::Protocol::Models::OnAllTasksComplete&gt; OnAllTasksComplete { Nullable&lt;Microsoft::Azure::Batch::Protocol::Models::OnAllTasksComplete&gt; get(); void set(Nullable&lt;Microsoft::Azure::Batch::Protocol::Models::OnAllTasksComplete&gt; value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Batch</AssemblyName>
-        <AssemblyVersion>7.1.0.0</AssemblyVersion>
-        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>12.0.0.0</AssemblyVersion>
+        <AssemblyVersion>13.0.0.0</AssemblyVersion>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="onAllTasksComplete")</AttributeName>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty(PropertyName="onAllTasksComplete")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty(PropertyName="onAllTasksComplete")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -371,37 +410,38 @@
       <Docs>
         <summary>
             Gets or sets the action the Batch service should take when all
-            tasks in a job created under this schedule are in the completed
+            Tasks in a Job created under this schedule are in the completed
             state.
             </summary>
         <value>To be added.</value>
         <remarks>
-            Note that if a job contains no tasks, then all tasks are considered
+            Note that if a Job contains no Tasks, then all Tasks are considered
             complete. This option is therefore most commonly used with a Job
-            Manager task; if you want to use automatic job termination without
+            Manager task; if you want to use automatic Job termination without
             a Job Manager, you should initially set onAllTasksComplete to
-            noaction and update the job properties to set onAllTasksComplete to
-            terminatejob once you have finished adding tasks. The default is
+            noaction and update the Job properties to set onAllTasksComplete to
+            terminatejob once you have finished adding Tasks. The default is
             noaction. Possible values include: 'noAction', 'terminateJob'
             </remarks>
       </Docs>
     </Member>
     <Member MemberName="OnTaskFailure">
-      <MemberSignature Language="C#" Value="public Nullable&lt;Microsoft.Azure.Batch.Protocol.Models.OnTaskFailure&gt; OnTaskFailure { get; set; }" />
+      <MemberSignature Language="C#" Value="public Microsoft.Azure.Batch.Protocol.Models.OnTaskFailure? OnTaskFailure { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;valuetype Microsoft.Azure.Batch.Protocol.Models.OnTaskFailure&gt; OnTaskFailure" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Batch.Protocol.Models.JobSpecification.OnTaskFailure" />
       <MemberSignature Language="VB.NET" Value="Public Property OnTaskFailure As Nullable(Of OnTaskFailure)" />
       <MemberSignature Language="F#" Value="member this.OnTaskFailure : Nullable&lt;Microsoft.Azure.Batch.Protocol.Models.OnTaskFailure&gt; with get, set" Usage="Microsoft.Azure.Batch.Protocol.Models.JobSpecification.OnTaskFailure" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Nullable&lt;Microsoft::Azure::Batch::Protocol::Models::OnTaskFailure&gt; OnTaskFailure { Nullable&lt;Microsoft::Azure::Batch::Protocol::Models::OnTaskFailure&gt; get(); void set(Nullable&lt;Microsoft::Azure::Batch::Protocol::Models::OnTaskFailure&gt; value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Batch</AssemblyName>
-        <AssemblyVersion>7.1.0.0</AssemblyVersion>
-        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>12.0.0.0</AssemblyVersion>
+        <AssemblyVersion>13.0.0.0</AssemblyVersion>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="onTaskFailure")</AttributeName>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty(PropertyName="onTaskFailure")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty(PropertyName="onTaskFailure")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -409,12 +449,12 @@
       </ReturnValue>
       <Docs>
         <summary>
-            Gets or sets the action the Batch service should take when any task
-            fails in a job created under this schedule. A task is considered to
+            Gets or sets the action the Batch service should take when any Task
+            fails in a Job created under this schedule. A Task is considered to
             have failed if it have failed if has a failureInfo. A failureInfo
-            is set if the task completes with a non-zero exit code after
+            is set if the Task completes with a non-zero exit code after
             exhausting its retry count, or if there was an error starting the
-            task, for example due to a resource file download error.
+            Task, for example due to a resource file download error.
             </summary>
         <value>To be added.</value>
         <remarks>
@@ -429,16 +469,17 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Batch.Protocol.Models.JobSpecification.PoolInfo" />
       <MemberSignature Language="VB.NET" Value="Public Property PoolInfo As PoolInformation" />
       <MemberSignature Language="F#" Value="member this.PoolInfo : Microsoft.Azure.Batch.Protocol.Models.PoolInformation with get, set" Usage="Microsoft.Azure.Batch.Protocol.Models.JobSpecification.PoolInfo" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Azure::Batch::Protocol::Models::PoolInformation ^ PoolInfo { Microsoft::Azure::Batch::Protocol::Models::PoolInformation ^ get(); void set(Microsoft::Azure::Batch::Protocol::Models::PoolInformation ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Batch</AssemblyName>
-        <AssemblyVersion>7.1.0.0</AssemblyVersion>
-        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>12.0.0.0</AssemblyVersion>
+        <AssemblyVersion>13.0.0.0</AssemblyVersion>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="poolInfo")</AttributeName>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty(PropertyName="poolInfo")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty(PropertyName="poolInfo")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -446,29 +487,30 @@
       </ReturnValue>
       <Docs>
         <summary>
-            Gets or sets the pool on which the Batch service runs the tasks of
-            jobs created under this schedule.
+            Gets or sets the Pool on which the Batch service runs the Tasks of
+            Jobs created under this schedule.
             </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Priority">
-      <MemberSignature Language="C#" Value="public Nullable&lt;int&gt; Priority { get; set; }" />
+      <MemberSignature Language="C#" Value="public int? Priority { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;int32&gt; Priority" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Batch.Protocol.Models.JobSpecification.Priority" />
       <MemberSignature Language="VB.NET" Value="Public Property Priority As Nullable(Of Integer)" />
       <MemberSignature Language="F#" Value="member this.Priority : Nullable&lt;int&gt; with get, set" Usage="Microsoft.Azure.Batch.Protocol.Models.JobSpecification.Priority" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Nullable&lt;int&gt; Priority { Nullable&lt;int&gt; get(); void set(Nullable&lt;int&gt; value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Batch</AssemblyName>
-        <AssemblyVersion>7.1.0.0</AssemblyVersion>
-        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>12.0.0.0</AssemblyVersion>
+        <AssemblyVersion>13.0.0.0</AssemblyVersion>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="priority")</AttributeName>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty(PropertyName="priority")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty(PropertyName="priority")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -476,34 +518,35 @@
       </ReturnValue>
       <Docs>
         <summary>
-            Gets or sets the priority of jobs created under this schedule.
+            Gets or sets the priority of Jobs created under this schedule.
             </summary>
         <value>To be added.</value>
         <remarks>
             Priority values can range from -1000 to 1000, with -1000 being the
             lowest priority and 1000 being the highest priority. The default
-            value is 0. This priority is used as the default for all jobs under
-            the job schedule. You can update a job's priority after it has been
-            created using by using the update job API.
+            value is 0. This priority is used as the default for all Jobs under
+            the Job Schedule. You can update a Job's priority after it has been
+            created using by using the update Job API.
             </remarks>
       </Docs>
     </Member>
     <Member MemberName="UsesTaskDependencies">
-      <MemberSignature Language="C#" Value="public Nullable&lt;bool&gt; UsesTaskDependencies { get; set; }" />
+      <MemberSignature Language="C#" Value="public bool? UsesTaskDependencies { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;bool&gt; UsesTaskDependencies" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Batch.Protocol.Models.JobSpecification.UsesTaskDependencies" />
       <MemberSignature Language="VB.NET" Value="Public Property UsesTaskDependencies As Nullable(Of Boolean)" />
       <MemberSignature Language="F#" Value="member this.UsesTaskDependencies : Nullable&lt;bool&gt; with get, set" Usage="Microsoft.Azure.Batch.Protocol.Models.JobSpecification.UsesTaskDependencies" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Nullable&lt;bool&gt; UsesTaskDependencies { Nullable&lt;bool&gt; get(); void set(Nullable&lt;bool&gt; value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Batch</AssemblyName>
-        <AssemblyVersion>7.1.0.0</AssemblyVersion>
-        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>12.0.0.0</AssemblyVersion>
+        <AssemblyVersion>13.0.0.0</AssemblyVersion>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="usesTaskDependencies")</AttributeName>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty(PropertyName="usesTaskDependencies")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty(PropertyName="usesTaskDependencies")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -511,40 +554,11 @@
       </ReturnValue>
       <Docs>
         <summary>
-            Gets or sets whether tasks in the job can define dependencies on
+            Gets or sets whether Tasks in the Job can define dependencies on
             each other. The default is false.
             </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
-      </Docs>
-    </Member>
-    <Member MemberName="Validate">
-      <MemberSignature Language="C#" Value="public virtual void Validate ();" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Validate() cil managed" />
-      <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Batch.Protocol.Models.JobSpecification.Validate" />
-      <MemberSignature Language="VB.NET" Value="Public Overridable Sub Validate ()" />
-      <MemberSignature Language="F#" Value="abstract member Validate : unit -&gt; unit&#xA;override this.Validate : unit -&gt; unit" Usage="jobSpecification.Validate " />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Validate();" />
-      <MemberSignature Language="C++ CX" Value="public:&#xA; virtual void Validate();" />
-      <MemberSignature Language="C++ WINRT" Value=" virtual void Validate();" />
-      <MemberType>Method</MemberType>
-      <AssemblyInfo>
-        <AssemblyName>Microsoft.Azure.Batch</AssemblyName>
-        <AssemblyVersion>7.1.0.0</AssemblyVersion>
-        <AssemblyVersion>8.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <ReturnValue>
-        <ReturnType>System.Void</ReturnType>
-      </ReturnValue>
-      <Parameters />
-      <Docs>
-        <summary>
-            Validate the object.
-            </summary>
-        <remarks>To be added.</remarks>
-        <exception cref="T:Microsoft.Rest.ValidationException">
-            Thrown if validation fails
-            </exception>
       </Docs>
     </Member>
   </Members>

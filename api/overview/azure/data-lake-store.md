@@ -1,17 +1,9 @@
 ---
 title: Azure Data Lake Store libraries for .NET
 description: Reference for Azure Data Lake Store libraries for .NET
-keywords: Azure, .NET, SDK, API, Data Lake Store
-author: camsoper
-ms.author: casoper
-manager: wpickett
 ms.date: 10/19/2017
 ms.topic: reference
-ms.prod: azure
-ms.technology: azure
-ms.devlang: dotnet
 ms.service: data-lake-store
-ms.custom: devcenter, svc-overview
 ---
 
 # Azure Data Lake Store libraries for .NET
@@ -34,9 +26,10 @@ Install the [NuGet package](https://www.nuget.org/packages/Microsoft.Azure.Manag
 Install-Package Microsoft.Azure.DataLake.Store
 ```
 
-```bash
+```dotnetcli
 dotnet add package Microsoft.Azure.DataLake.Store
 ```
+
 ### Authentication
 
 * For end-user authentication for your application, see [End-user authentication with Data Lake Store using .NET SDK](/azure/data-lake-store/data-lake-store-end-user-authenticate-net-sdk).
@@ -67,17 +60,16 @@ Install the [NuGet package](https://www.nuget.org/packages/Microsoft.Azure.Manag
 Install-Package Microsoft.Azure.Management.DataLake.Store
 ```
 
-```bash
+```dotnetcli
 dotnet add package Microsoft.Azure.Management.DataLake.Store
 ```
 
 > [!div class="nextstepaction"]
 > [Explore the client APIs](/dotnet/api/overview/azure/datalakestore/management)
 
-
 ## Samples
 
-* [Azure Data Lake .NET Client Example](https://azure.microsoft.com/en-us/resources/samples/data-lake-dotnet-client/)
+* [Azure Data Lake .NET Client Example](https://azure.microsoft.com/resources/samples/data-lake-dotnet-client/)
 
 Explore more [sample .NET code](https://azure.microsoft.com/resources/samples/?platform=dotnet) you can use in your apps.
 

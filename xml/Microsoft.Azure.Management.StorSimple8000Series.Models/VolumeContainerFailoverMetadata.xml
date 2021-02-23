@@ -1,11 +1,9 @@
-﻿<Type Name="VolumeContainerFailoverMetadata" FullName="Microsoft.Azure.Management.StorSimple8000Series.Models.VolumeContainerFailoverMetadata">
+<Type Name="VolumeContainerFailoverMetadata" FullName="Microsoft.Azure.Management.StorSimple8000Series.Models.VolumeContainerFailoverMetadata">
   <TypeSignature Language="C#" Value="public class VolumeContainerFailoverMetadata" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit VolumeContainerFailoverMetadata extends System.Object" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Azure.Management.StorSimple8000Series.Models.VolumeContainerFailoverMetadata" />
   <TypeSignature Language="VB.NET" Value="Public Class VolumeContainerFailoverMetadata" />
   <TypeSignature Language="F#" Value="type VolumeContainerFailoverMetadata = class" />
-  <TypeSignature Language="C++ CLI" Value="public ref class VolumeContainerFailoverMetadata" />
-  <TypeSignature Language="C++ WINRT" Value="[Windows::Foundation::Metadata::WebHostHidden]&#xA;class VolumeContainerFailoverMetadata" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Azure.Management.StorSimple8000Series</AssemblyName>
     <AssemblyVersion>1.0.0.0</AssemblyVersion>
@@ -27,9 +25,6 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Management.StorSimple8000Series.Models.VolumeContainerFailoverMetadata.#ctor" />
       <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; VolumeContainerFailoverMetadata();" />
-      <MemberSignature Language="C++ CX" Value="public:&#xA; VolumeContainerFailoverMetadata();" />
-      <MemberSignature Language="C++ WINRT" Value=" VolumeContainerFailoverMetadata();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.StorSimple8000Series</AssemblyName>
@@ -45,10 +40,10 @@
       </Docs>
     </Member>
     <Member MemberName=".ctor">
-      <MemberSignature Language="C#" Value="public VolumeContainerFailoverMetadata (string volumeContainerId = null, System.Collections.Generic.IList&lt;Microsoft.Azure.Management.StorSimple8000Series.Models.VolumeFailoverMetadata&gt; volumes = null);" />
+      <MemberSignature Language="C#" Value="public VolumeContainerFailoverMetadata (string volumeContainerId = default, System.Collections.Generic.IList&lt;Microsoft.Azure.Management.StorSimple8000Series.Models.VolumeFailoverMetadata&gt; volumes = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string volumeContainerId, class System.Collections.Generic.IList`1&lt;class Microsoft.Azure.Management.StorSimple8000Series.Models.VolumeFailoverMetadata&gt; volumes) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Management.StorSimple8000Series.Models.VolumeContainerFailoverMetadata.#ctor(System.String,System.Collections.Generic.IList{Microsoft.Azure.Management.StorSimple8000Series.Models.VolumeFailoverMetadata})" />
-      <MemberSignature Language="VB.NET" Value="Public Sub New (Optional volumeContainerId As String = null, Optional volumes As IList(Of VolumeFailoverMetadata) = null)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (Optional volumeContainerId As String = Nothing, Optional volumes As IList(Of VolumeFailoverMetadata) = Nothing)" />
       <MemberSignature Language="F#" Value="new Microsoft.Azure.Management.StorSimple8000Series.Models.VolumeContainerFailoverMetadata : string * System.Collections.Generic.IList&lt;Microsoft.Azure.Management.StorSimple8000Series.Models.VolumeFailoverMetadata&gt; -&gt; Microsoft.Azure.Management.StorSimple8000Series.Models.VolumeContainerFailoverMetadata" Usage="new Microsoft.Azure.Management.StorSimple8000Series.Models.VolumeContainerFailoverMetadata (volumeContainerId, volumes)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
@@ -77,8 +72,6 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Management.StorSimple8000Series.Models.VolumeContainerFailoverMetadata.VolumeContainerId" />
       <MemberSignature Language="VB.NET" Value="Public Property VolumeContainerId As String" />
       <MemberSignature Language="F#" Value="member this.VolumeContainerId : string with get, set" Usage="Microsoft.Azure.Management.StorSimple8000Series.Models.VolumeContainerFailoverMetadata.VolumeContainerId" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ VolumeContainerId { System::String ^ get(); void set(System::String ^ value); };" />
-      <MemberSignature Language="C++ CX" Value="public:&#xA; property Platform::String ^ VolumeContainerId { Platform::String ^ get(); void set(Platform::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.StorSimple8000Series</AssemblyName>
@@ -86,7 +79,8 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="volumeContainerId")</AttributeName>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty(PropertyName="volumeContainerId")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty(PropertyName="volumeContainerId")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -106,7 +100,6 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Management.StorSimple8000Series.Models.VolumeContainerFailoverMetadata.Volumes" />
       <MemberSignature Language="VB.NET" Value="Public Property Volumes As IList(Of VolumeFailoverMetadata)" />
       <MemberSignature Language="F#" Value="member this.Volumes : System.Collections.Generic.IList&lt;Microsoft.Azure.Management.StorSimple8000Series.Models.VolumeFailoverMetadata&gt; with get, set" Usage="Microsoft.Azure.Management.StorSimple8000Series.Models.VolumeContainerFailoverMetadata.Volumes" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::Generic::IList&lt;Microsoft::Azure::Management::StorSimple8000Series::Models::VolumeFailoverMetadata ^&gt; ^ Volumes { System::Collections::Generic::IList&lt;Microsoft::Azure::Management::StorSimple8000Series::Models::VolumeFailoverMetadata ^&gt; ^ get(); void set(System::Collections::Generic::IList&lt;Microsoft::Azure::Management::StorSimple8000Series::Models::VolumeFailoverMetadata ^&gt; ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.StorSimple8000Series</AssemblyName>
@@ -114,7 +107,8 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="volumes")</AttributeName>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty(PropertyName="volumes")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty(PropertyName="volumes")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>

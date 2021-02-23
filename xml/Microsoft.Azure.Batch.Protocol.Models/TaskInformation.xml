@@ -1,15 +1,14 @@
-﻿<Type Name="TaskInformation" FullName="Microsoft.Azure.Batch.Protocol.Models.TaskInformation">
+<Type Name="TaskInformation" FullName="Microsoft.Azure.Batch.Protocol.Models.TaskInformation">
   <TypeSignature Language="C#" Value="public class TaskInformation" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit TaskInformation extends System.Object" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Azure.Batch.Protocol.Models.TaskInformation" />
   <TypeSignature Language="VB.NET" Value="Public Class TaskInformation" />
   <TypeSignature Language="F#" Value="type TaskInformation = class" />
-  <TypeSignature Language="C++ CLI" Value="public ref class TaskInformation" />
-  <TypeSignature Language="C++ WINRT" Value="[Windows::Foundation::Metadata::WebHostHidden]&#xA;class TaskInformation" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Azure.Batch</AssemblyName>
-    <AssemblyVersion>7.1.0.0</AssemblyVersion>
-    <AssemblyVersion>8.0.0.0</AssemblyVersion>
+    <AssemblyVersion>12.0.0.0</AssemblyVersion>
+    <AssemblyVersion>13.0.0.0</AssemblyVersion>
+    <AssemblyVersion>14.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
@@ -17,7 +16,7 @@
   <Interfaces />
   <Docs>
     <summary>
-            Information about a task running on a compute node.
+            Information about a Task running on a Compute Node.
             </summary>
     <remarks>To be added.</remarks>
   </Docs>
@@ -27,14 +26,12 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Batch.Protocol.Models.TaskInformation.#ctor" />
       <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; TaskInformation();" />
-      <MemberSignature Language="C++ CX" Value="public:&#xA; TaskInformation();" />
-      <MemberSignature Language="C++ WINRT" Value=" TaskInformation();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Batch</AssemblyName>
-        <AssemblyVersion>7.1.0.0</AssemblyVersion>
-        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>12.0.0.0</AssemblyVersion>
+        <AssemblyVersion>13.0.0.0</AssemblyVersion>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
@@ -45,15 +42,17 @@
       </Docs>
     </Member>
     <Member MemberName=".ctor">
-      <MemberSignature Language="C#" Value="public TaskInformation (Microsoft.Azure.Batch.Protocol.Models.TaskState taskState, string taskUrl = null, string jobId = null, string taskId = null, Nullable&lt;int&gt; subtaskId = null, Microsoft.Azure.Batch.Protocol.Models.TaskExecutionInformation executionInfo = null);" />
+      <MemberSignature Language="C#" Value="public TaskInformation (Microsoft.Azure.Batch.Protocol.Models.TaskState taskState, string taskUrl = default, string jobId = default, string taskId = default, int? subtaskId = default, Microsoft.Azure.Batch.Protocol.Models.TaskExecutionInformation executionInfo = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(valuetype Microsoft.Azure.Batch.Protocol.Models.TaskState taskState, string taskUrl, string jobId, string taskId, valuetype System.Nullable`1&lt;int32&gt; subtaskId, class Microsoft.Azure.Batch.Protocol.Models.TaskExecutionInformation executionInfo) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Batch.Protocol.Models.TaskInformation.#ctor(Microsoft.Azure.Batch.Protocol.Models.TaskState,System.String,System.String,System.String,System.Nullable{System.Int32},Microsoft.Azure.Batch.Protocol.Models.TaskExecutionInformation)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (taskState As TaskState, Optional taskUrl As String = Nothing, Optional jobId As String = Nothing, Optional taskId As String = Nothing, Optional subtaskId As Nullable(Of Integer) = Nothing, Optional executionInfo As TaskExecutionInformation = Nothing)" />
       <MemberSignature Language="F#" Value="new Microsoft.Azure.Batch.Protocol.Models.TaskInformation : Microsoft.Azure.Batch.Protocol.Models.TaskState * string * string * string * Nullable&lt;int&gt; * Microsoft.Azure.Batch.Protocol.Models.TaskExecutionInformation -&gt; Microsoft.Azure.Batch.Protocol.Models.TaskInformation" Usage="new Microsoft.Azure.Batch.Protocol.Models.TaskInformation (taskState, taskUrl, jobId, taskId, subtaskId, executionInfo)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Batch</AssemblyName>
-        <AssemblyVersion>7.1.0.0</AssemblyVersion>
-        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>12.0.0.0</AssemblyVersion>
+        <AssemblyVersion>13.0.0.0</AssemblyVersion>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="taskState" Type="Microsoft.Azure.Batch.Protocol.Models.TaskState" />
@@ -64,15 +63,15 @@
         <Parameter Name="executionInfo" Type="Microsoft.Azure.Batch.Protocol.Models.TaskExecutionInformation" />
       </Parameters>
       <Docs>
-        <param name="taskState">The current state of the task.</param>
-        <param name="taskUrl">The URL of the task.</param>
-        <param name="jobId">The ID of the job to which the task
+        <param name="taskState">The current state of the Task.</param>
+        <param name="taskUrl">The URL of the Task.</param>
+        <param name="jobId">The ID of the Job to which the Task
             belongs.</param>
-        <param name="taskId">The ID of the task.</param>
-        <param name="subtaskId">The ID of the subtask if the task is a
-            multi-instance task.</param>
+        <param name="taskId">The ID of the Task.</param>
+        <param name="subtaskId">The ID of the subtask if the Task is a
+            multi-instance Task.</param>
         <param name="executionInfo">Information about the execution of the
-            task.</param>
+            Task.</param>
         <summary>
             Initializes a new instance of the TaskInformation class.
             </summary>
@@ -85,16 +84,17 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Batch.Protocol.Models.TaskInformation.ExecutionInfo" />
       <MemberSignature Language="VB.NET" Value="Public Property ExecutionInfo As TaskExecutionInformation" />
       <MemberSignature Language="F#" Value="member this.ExecutionInfo : Microsoft.Azure.Batch.Protocol.Models.TaskExecutionInformation with get, set" Usage="Microsoft.Azure.Batch.Protocol.Models.TaskInformation.ExecutionInfo" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Azure::Batch::Protocol::Models::TaskExecutionInformation ^ ExecutionInfo { Microsoft::Azure::Batch::Protocol::Models::TaskExecutionInformation ^ get(); void set(Microsoft::Azure::Batch::Protocol::Models::TaskExecutionInformation ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Batch</AssemblyName>
-        <AssemblyVersion>7.1.0.0</AssemblyVersion>
-        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>12.0.0.0</AssemblyVersion>
+        <AssemblyVersion>13.0.0.0</AssemblyVersion>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="executionInfo")</AttributeName>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty(PropertyName="executionInfo")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty(PropertyName="executionInfo")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -102,7 +102,7 @@
       </ReturnValue>
       <Docs>
         <summary>
-            Gets or sets information about the execution of the task.
+            Gets or sets information about the execution of the Task.
             </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
@@ -114,17 +114,17 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Batch.Protocol.Models.TaskInformation.JobId" />
       <MemberSignature Language="VB.NET" Value="Public Property JobId As String" />
       <MemberSignature Language="F#" Value="member this.JobId : string with get, set" Usage="Microsoft.Azure.Batch.Protocol.Models.TaskInformation.JobId" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ JobId { System::String ^ get(); void set(System::String ^ value); };" />
-      <MemberSignature Language="C++ CX" Value="public:&#xA; property Platform::String ^ JobId { Platform::String ^ get(); void set(Platform::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Batch</AssemblyName>
-        <AssemblyVersion>7.1.0.0</AssemblyVersion>
-        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>12.0.0.0</AssemblyVersion>
+        <AssemblyVersion>13.0.0.0</AssemblyVersion>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="jobId")</AttributeName>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty(PropertyName="jobId")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty(PropertyName="jobId")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -132,28 +132,29 @@
       </ReturnValue>
       <Docs>
         <summary>
-            Gets or sets the ID of the job to which the task belongs.
+            Gets or sets the ID of the Job to which the Task belongs.
             </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="SubtaskId">
-      <MemberSignature Language="C#" Value="public Nullable&lt;int&gt; SubtaskId { get; set; }" />
+      <MemberSignature Language="C#" Value="public int? SubtaskId { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;int32&gt; SubtaskId" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Batch.Protocol.Models.TaskInformation.SubtaskId" />
       <MemberSignature Language="VB.NET" Value="Public Property SubtaskId As Nullable(Of Integer)" />
       <MemberSignature Language="F#" Value="member this.SubtaskId : Nullable&lt;int&gt; with get, set" Usage="Microsoft.Azure.Batch.Protocol.Models.TaskInformation.SubtaskId" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Nullable&lt;int&gt; SubtaskId { Nullable&lt;int&gt; get(); void set(Nullable&lt;int&gt; value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Batch</AssemblyName>
-        <AssemblyVersion>7.1.0.0</AssemblyVersion>
-        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>12.0.0.0</AssemblyVersion>
+        <AssemblyVersion>13.0.0.0</AssemblyVersion>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="subtaskId")</AttributeName>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty(PropertyName="subtaskId")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty(PropertyName="subtaskId")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -161,8 +162,8 @@
       </ReturnValue>
       <Docs>
         <summary>
-            Gets or sets the ID of the subtask if the task is a multi-instance
-            task.
+            Gets or sets the ID of the subtask if the Task is a multi-instance
+            Task.
             </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
@@ -174,17 +175,17 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Batch.Protocol.Models.TaskInformation.TaskId" />
       <MemberSignature Language="VB.NET" Value="Public Property TaskId As String" />
       <MemberSignature Language="F#" Value="member this.TaskId : string with get, set" Usage="Microsoft.Azure.Batch.Protocol.Models.TaskInformation.TaskId" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ TaskId { System::String ^ get(); void set(System::String ^ value); };" />
-      <MemberSignature Language="C++ CX" Value="public:&#xA; property Platform::String ^ TaskId { Platform::String ^ get(); void set(Platform::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Batch</AssemblyName>
-        <AssemblyVersion>7.1.0.0</AssemblyVersion>
-        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>12.0.0.0</AssemblyVersion>
+        <AssemblyVersion>13.0.0.0</AssemblyVersion>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="taskId")</AttributeName>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty(PropertyName="taskId")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty(PropertyName="taskId")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -192,7 +193,7 @@
       </ReturnValue>
       <Docs>
         <summary>
-            Gets or sets the ID of the task.
+            Gets or sets the ID of the Task.
             </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
@@ -204,17 +205,17 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Batch.Protocol.Models.TaskInformation.TaskState" />
       <MemberSignature Language="VB.NET" Value="Public Property TaskState As TaskState" />
       <MemberSignature Language="F#" Value="member this.TaskState : Microsoft.Azure.Batch.Protocol.Models.TaskState with get, set" Usage="Microsoft.Azure.Batch.Protocol.Models.TaskInformation.TaskState" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Azure::Batch::Protocol::Models::TaskState TaskState { Microsoft::Azure::Batch::Protocol::Models::TaskState get(); void set(Microsoft::Azure::Batch::Protocol::Models::TaskState value); };" />
-      <MemberSignature Language="C++ CX" Value="public:&#xA; property Microsoft::Azure::Batch::Protocol::Models::TaskState TaskState { Microsoft::Azure::Batch::Protocol::Models::TaskState get(); void set(Microsoft::Azure::Batch::Protocol::Models::TaskState value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Batch</AssemblyName>
-        <AssemblyVersion>7.1.0.0</AssemblyVersion>
-        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>12.0.0.0</AssemblyVersion>
+        <AssemblyVersion>13.0.0.0</AssemblyVersion>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="taskState")</AttributeName>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty(PropertyName="taskState")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty(PropertyName="taskState")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -222,7 +223,7 @@
       </ReturnValue>
       <Docs>
         <summary>
-            Gets or sets the current state of the task.
+            Gets or sets the current state of the Task.
             </summary>
         <value>To be added.</value>
         <remarks>
@@ -237,17 +238,17 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Batch.Protocol.Models.TaskInformation.TaskUrl" />
       <MemberSignature Language="VB.NET" Value="Public Property TaskUrl As String" />
       <MemberSignature Language="F#" Value="member this.TaskUrl : string with get, set" Usage="Microsoft.Azure.Batch.Protocol.Models.TaskInformation.TaskUrl" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ TaskUrl { System::String ^ get(); void set(System::String ^ value); };" />
-      <MemberSignature Language="C++ CX" Value="public:&#xA; property Platform::String ^ TaskUrl { Platform::String ^ get(); void set(Platform::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Batch</AssemblyName>
-        <AssemblyVersion>7.1.0.0</AssemblyVersion>
-        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>12.0.0.0</AssemblyVersion>
+        <AssemblyVersion>13.0.0.0</AssemblyVersion>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="taskUrl")</AttributeName>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty(PropertyName="taskUrl")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty(PropertyName="taskUrl")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -255,39 +256,10 @@
       </ReturnValue>
       <Docs>
         <summary>
-            Gets or sets the URL of the task.
+            Gets or sets the URL of the Task.
             </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
-      </Docs>
-    </Member>
-    <Member MemberName="Validate">
-      <MemberSignature Language="C#" Value="public virtual void Validate ();" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Validate() cil managed" />
-      <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Batch.Protocol.Models.TaskInformation.Validate" />
-      <MemberSignature Language="VB.NET" Value="Public Overridable Sub Validate ()" />
-      <MemberSignature Language="F#" Value="abstract member Validate : unit -&gt; unit&#xA;override this.Validate : unit -&gt; unit" Usage="taskInformation.Validate " />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Validate();" />
-      <MemberSignature Language="C++ CX" Value="public:&#xA; virtual void Validate();" />
-      <MemberSignature Language="C++ WINRT" Value=" virtual void Validate();" />
-      <MemberType>Method</MemberType>
-      <AssemblyInfo>
-        <AssemblyName>Microsoft.Azure.Batch</AssemblyName>
-        <AssemblyVersion>7.1.0.0</AssemblyVersion>
-        <AssemblyVersion>8.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <ReturnValue>
-        <ReturnType>System.Void</ReturnType>
-      </ReturnValue>
-      <Parameters />
-      <Docs>
-        <summary>
-            Validate the object.
-            </summary>
-        <remarks>To be added.</remarks>
-        <exception cref="T:Microsoft.Rest.ValidationException">
-            Thrown if validation fails
-            </exception>
       </Docs>
     </Member>
   </Members>

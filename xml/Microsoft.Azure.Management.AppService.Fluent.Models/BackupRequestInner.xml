@@ -1,23 +1,28 @@
-﻿<Type Name="BackupRequestInner" FullName="Microsoft.Azure.Management.AppService.Fluent.Models.BackupRequestInner">
-  <TypeSignature Language="C#" Value="public class BackupRequestInner : Microsoft.Azure.Management.AppService.Fluent.Models.ProxyOnlyResource" />
-  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit BackupRequestInner extends Microsoft.Azure.Management.AppService.Fluent.Models.ProxyOnlyResource" />
+<Type Name="BackupRequestInner" FullName="Microsoft.Azure.Management.AppService.Fluent.Models.BackupRequestInner">
+  <TypeSignature Language="C#" Value="public class BackupRequestInner : Microsoft.Azure.Management.AppService.Fluent.Models.ProxyOnlyResourceInner" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit BackupRequestInner extends Microsoft.Azure.Management.AppService.Fluent.Models.ProxyOnlyResourceInner" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Azure.Management.AppService.Fluent.Models.BackupRequestInner" />
-  <TypeSignature Language="VB.NET" Value="Public Class BackupRequestInner&#xA;Inherits ProxyOnlyResource" />
-  <TypeSignature Language="F#" Value="type BackupRequestInner = class&#xA;    inherit ProxyOnlyResource" />
-  <TypeSignature Language="C++ CLI" Value="public ref class BackupRequestInner : Microsoft::Azure::Management::AppService::Fluent::Models::ProxyOnlyResource" />
-  <TypeSignature Language="C++ WINRT" Value="[Windows::Foundation::Metadata::WebHostHidden]&#xA;class BackupRequestInner : Microsoft::Azure::Management::AppService::Fluent::Models::ProxyOnlyResource" />
+  <TypeSignature Language="VB.NET" Value="Public Class BackupRequestInner&#xA;Inherits ProxyOnlyResourceInner" />
+  <TypeSignature Language="F#" Value="type BackupRequestInner = class&#xA;    inherit ProxyOnlyResourceInner" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Azure.Management.AppService.Fluent</AssemblyName>
-    <AssemblyVersion>1.0.0.60</AssemblyVersion>
+    <AssemblyVersion>1.0.0.61</AssemblyVersion>
+    <AssemblyVersion>1.0.0.62</AssemblyVersion>
+    <AssemblyVersion>1.0.0.63</AssemblyVersion>
+    <AssemblyVersion>1.0.0.64</AssemblyVersion>
+    <AssemblyVersion>1.0.0.65</AssemblyVersion>
+    <AssemblyVersion>1.0.0.66</AssemblyVersion>
+    <AssemblyVersion>1.0.0.67</AssemblyVersion>
+    <AssemblyVersion>1.0.0.68</AssemblyVersion>
   </AssemblyInfo>
   <Base>
-    <BaseTypeName>Microsoft.Azure.Management.ResourceManager.Fluent.Resource</BaseTypeName>
-    <BaseTypeName FrameworkAlternate="azure-dotnet">Microsoft.Azure.Management.AppService.Fluent.Models.ProxyOnlyResource</BaseTypeName>
+    <BaseTypeName>Microsoft.Azure.Management.AppService.Fluent.Models.ProxyOnlyResourceInner</BaseTypeName>
   </Base>
   <Interfaces />
   <Attributes>
     <Attribute>
-      <AttributeName>Microsoft.Rest.Serialization.JsonTransformation</AttributeName>
+      <AttributeName Language="C#">[Microsoft.Rest.Serialization.JsonTransformation]</AttributeName>
+      <AttributeName Language="F#">[&lt;Microsoft.Rest.Serialization.JsonTransformation&gt;]</AttributeName>
     </Attribute>
   </Attributes>
   <Docs>
@@ -32,13 +37,17 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Management.AppService.Fluent.Models.BackupRequestInner.#ctor" />
       <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; BackupRequestInner();" />
-      <MemberSignature Language="C++ CX" Value="public:&#xA; BackupRequestInner();" />
-      <MemberSignature Language="C++ WINRT" Value=" BackupRequestInner();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.AppService.Fluent</AssemblyName>
-        <AssemblyVersion>1.0.0.60</AssemblyVersion>
+        <AssemblyVersion>1.0.0.61</AssemblyVersion>
+        <AssemblyVersion>1.0.0.62</AssemblyVersion>
+        <AssemblyVersion>1.0.0.63</AssemblyVersion>
+        <AssemblyVersion>1.0.0.64</AssemblyVersion>
+        <AssemblyVersion>1.0.0.65</AssemblyVersion>
+        <AssemblyVersion>1.0.0.66</AssemblyVersion>
+        <AssemblyVersion>1.0.0.67</AssemblyVersion>
+        <AssemblyVersion>1.0.0.68</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
@@ -49,58 +58,75 @@
       </Docs>
     </Member>
     <Member MemberName=".ctor">
-      <MemberSignature Language="C#" Value="public BackupRequestInner (string backupRequestName, string storageAccountUrl, string id = null, string name = null, string kind = null, string type = null, Nullable&lt;bool&gt; enabled = null, Microsoft.Azure.Management.AppService.Fluent.Models.BackupSchedule backupSchedule = null, System.Collections.Generic.IList&lt;Microsoft.Azure.Management.AppService.Fluent.Models.DatabaseBackupSetting&gt; databases = null, Nullable&lt;Microsoft.Azure.Management.AppService.Fluent.Models.BackupRestoreOperationType&gt; backupRequestType = null);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string backupRequestName, string storageAccountUrl, string id, string name, string kind, string type, valuetype System.Nullable`1&lt;bool&gt; enabled, class Microsoft.Azure.Management.AppService.Fluent.Models.BackupSchedule backupSchedule, class System.Collections.Generic.IList`1&lt;class Microsoft.Azure.Management.AppService.Fluent.Models.DatabaseBackupSetting&gt; databases, valuetype System.Nullable`1&lt;valuetype Microsoft.Azure.Management.AppService.Fluent.Models.BackupRestoreOperationType&gt; backupRequestType) cil managed" />
-      <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Management.AppService.Fluent.Models.BackupRequestInner.#ctor(System.String,System.String,System.String,System.String,System.String,System.String,System.Nullable{System.Boolean},Microsoft.Azure.Management.AppService.Fluent.Models.BackupSchedule,System.Collections.Generic.IList{Microsoft.Azure.Management.AppService.Fluent.Models.DatabaseBackupSetting},System.Nullable{Microsoft.Azure.Management.AppService.Fluent.Models.BackupRestoreOperationType})" />
-      <MemberSignature Language="F#" Value="new Microsoft.Azure.Management.AppService.Fluent.Models.BackupRequestInner : string * string * string * string * string * string * Nullable&lt;bool&gt; * Microsoft.Azure.Management.AppService.Fluent.Models.BackupSchedule * System.Collections.Generic.IList&lt;Microsoft.Azure.Management.AppService.Fluent.Models.DatabaseBackupSetting&gt; * Nullable&lt;Microsoft.Azure.Management.AppService.Fluent.Models.BackupRestoreOperationType&gt; -&gt; Microsoft.Azure.Management.AppService.Fluent.Models.BackupRequestInner" Usage="new Microsoft.Azure.Management.AppService.Fluent.Models.BackupRequestInner (backupRequestName, storageAccountUrl, id, name, kind, type, enabled, backupSchedule, databases, backupRequestType)" />
+      <MemberSignature Language="C#" Value="public BackupRequestInner (string storageAccountUrl, string id = default, string name = default, string type = default, string kind = default, string backupName = default, bool? enabled = default, Microsoft.Azure.Management.AppService.Fluent.Models.BackupSchedule backupSchedule = default, System.Collections.Generic.IList&lt;Microsoft.Azure.Management.AppService.Fluent.Models.DatabaseBackupSetting&gt; databases = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string storageAccountUrl, string id, string name, string type, string kind, string backupName, valuetype System.Nullable`1&lt;bool&gt; enabled, class Microsoft.Azure.Management.AppService.Fluent.Models.BackupSchedule backupSchedule, class System.Collections.Generic.IList`1&lt;class Microsoft.Azure.Management.AppService.Fluent.Models.DatabaseBackupSetting&gt; databases) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Management.AppService.Fluent.Models.BackupRequestInner.#ctor(System.String,System.String,System.String,System.String,System.String,System.String,System.Nullable{System.Boolean},Microsoft.Azure.Management.AppService.Fluent.Models.BackupSchedule,System.Collections.Generic.IList{Microsoft.Azure.Management.AppService.Fluent.Models.DatabaseBackupSetting})" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (storageAccountUrl As String, Optional id As String = Nothing, Optional name As String = Nothing, Optional type As String = Nothing, Optional kind As String = Nothing, Optional backupName As String = Nothing, Optional enabled As Nullable(Of Boolean) = Nothing, Optional backupSchedule As BackupSchedule = Nothing, Optional databases As IList(Of DatabaseBackupSetting) = Nothing)" />
+      <MemberSignature Language="F#" Value="new Microsoft.Azure.Management.AppService.Fluent.Models.BackupRequestInner : string * string * string * string * string * string * Nullable&lt;bool&gt; * Microsoft.Azure.Management.AppService.Fluent.Models.BackupSchedule * System.Collections.Generic.IList&lt;Microsoft.Azure.Management.AppService.Fluent.Models.DatabaseBackupSetting&gt; -&gt; Microsoft.Azure.Management.AppService.Fluent.Models.BackupRequestInner" Usage="new Microsoft.Azure.Management.AppService.Fluent.Models.BackupRequestInner (storageAccountUrl, id, name, type, kind, backupName, enabled, backupSchedule, databases)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.AppService.Fluent</AssemblyName>
-        <AssemblyVersion>1.0.0.60</AssemblyVersion>
+        <AssemblyVersion>1.0.0.61</AssemblyVersion>
+        <AssemblyVersion>1.0.0.62</AssemblyVersion>
+        <AssemblyVersion>1.0.0.63</AssemblyVersion>
+        <AssemblyVersion>1.0.0.64</AssemblyVersion>
+        <AssemblyVersion>1.0.0.65</AssemblyVersion>
+        <AssemblyVersion>1.0.0.66</AssemblyVersion>
+        <AssemblyVersion>1.0.0.67</AssemblyVersion>
+        <AssemblyVersion>1.0.0.68</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
-        <Parameter Name="backupRequestName" Type="System.String" />
         <Parameter Name="storageAccountUrl" Type="System.String" />
         <Parameter Name="id" Type="System.String" />
         <Parameter Name="name" Type="System.String" />
-        <Parameter Name="kind" Type="System.String" />
         <Parameter Name="type" Type="System.String" />
+        <Parameter Name="kind" Type="System.String" />
+        <Parameter Name="backupName" Type="System.String" />
         <Parameter Name="enabled" Type="System.Nullable&lt;System.Boolean&gt;" />
         <Parameter Name="backupSchedule" Type="Microsoft.Azure.Management.AppService.Fluent.Models.BackupSchedule" />
         <Parameter Name="databases" Type="System.Collections.Generic.IList&lt;Microsoft.Azure.Management.AppService.Fluent.Models.DatabaseBackupSetting&gt;" />
-        <Parameter Name="backupRequestType" Type="System.Nullable&lt;Microsoft.Azure.Management.AppService.Fluent.Models.BackupRestoreOperationType&gt;" />
       </Parameters>
       <Docs>
-        <param name="backupRequestName">To be added.</param>
-        <param name="storageAccountUrl">To be added.</param>
         <param name="id">To be added.</param>
         <param name="name">To be added.</param>
-        <param name="kind">To be added.</param>
         <param name="type">To be added.</param>
-        <param name="enabled">To be added.</param>
-        <param name="backupSchedule">To be added.</param>
-        <param name="databases">To be added.</param>
-        <param name="backupRequestType">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="storageAccountUrl">SAS URL to the container.</param>
+        <param name="kind">Kind of resource.</param>
+        <param name="backupName">Name of the backup.</param>
+        <param name="enabled">True if the backup schedule is enabled (must
+            be included in that case), false if the backup schedule should be
+            disabled.</param>
+        <param name="backupSchedule">Schedule for the backup if it is
+            executed periodically.</param>
+        <param name="databases">Databases included in the backup.</param>
+        <summary>
+            Initializes a new instance of the BackupRequestInner class.
+            </summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
-    <Member MemberName="BackupRequestName">
-      <MemberSignature Language="C#" Value="public string BackupRequestName { get; set; }" />
-      <MemberSignature Language="ILAsm" Value=".property instance string BackupRequestName" />
-      <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Management.AppService.Fluent.Models.BackupRequestInner.BackupRequestName" />
-      <MemberSignature Language="VB.NET" Value="Public Property BackupRequestName As String" />
-      <MemberSignature Language="F#" Value="member this.BackupRequestName : string with get, set" Usage="Microsoft.Azure.Management.AppService.Fluent.Models.BackupRequestInner.BackupRequestName" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ BackupRequestName { System::String ^ get(); void set(System::String ^ value); };" />
-      <MemberSignature Language="C++ CX" Value="public:&#xA; property Platform::String ^ BackupRequestName { Platform::String ^ get(); void set(Platform::String ^ value); };" />
+    <Member MemberName="BackupName">
+      <MemberSignature Language="C#" Value="public string BackupName { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string BackupName" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Management.AppService.Fluent.Models.BackupRequestInner.BackupName" />
+      <MemberSignature Language="VB.NET" Value="Public Property BackupName As String" />
+      <MemberSignature Language="F#" Value="member this.BackupName : string with get, set" Usage="Microsoft.Azure.Management.AppService.Fluent.Models.BackupRequestInner.BackupName" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.AppService.Fluent</AssemblyName>
-        <AssemblyVersion>1.0.0.60</AssemblyVersion>
+        <AssemblyVersion>1.0.0.61</AssemblyVersion>
+        <AssemblyVersion>1.0.0.62</AssemblyVersion>
+        <AssemblyVersion>1.0.0.63</AssemblyVersion>
+        <AssemblyVersion>1.0.0.64</AssemblyVersion>
+        <AssemblyVersion>1.0.0.65</AssemblyVersion>
+        <AssemblyVersion>1.0.0.66</AssemblyVersion>
+        <AssemblyVersion>1.0.0.67</AssemblyVersion>
+        <AssemblyVersion>1.0.0.68</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="properties.name")</AttributeName>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty(PropertyName="properties.backupName")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty(PropertyName="properties.backupName")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -114,50 +140,28 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
-    <Member MemberName="BackupRequestType">
-      <MemberSignature Language="C#" Value="public Nullable&lt;Microsoft.Azure.Management.AppService.Fluent.Models.BackupRestoreOperationType&gt; BackupRequestType { get; set; }" />
-      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;valuetype Microsoft.Azure.Management.AppService.Fluent.Models.BackupRestoreOperationType&gt; BackupRequestType" />
-      <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Management.AppService.Fluent.Models.BackupRequestInner.BackupRequestType" />
-      <MemberSignature Language="VB.NET" Value="Public Property BackupRequestType As Nullable(Of BackupRestoreOperationType)" />
-      <MemberSignature Language="F#" Value="member this.BackupRequestType : Nullable&lt;Microsoft.Azure.Management.AppService.Fluent.Models.BackupRestoreOperationType&gt; with get, set" Usage="Microsoft.Azure.Management.AppService.Fluent.Models.BackupRequestInner.BackupRequestType" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Nullable&lt;Microsoft::Azure::Management::AppService::Fluent::Models::BackupRestoreOperationType&gt; BackupRequestType { Nullable&lt;Microsoft::Azure::Management::AppService::Fluent::Models::BackupRestoreOperationType&gt; get(); void set(Nullable&lt;Microsoft::Azure::Management::AppService::Fluent::Models::BackupRestoreOperationType&gt; value); };" />
-      <MemberType>Property</MemberType>
-      <AssemblyInfo>
-        <AssemblyName>Microsoft.Azure.Management.AppService.Fluent</AssemblyName>
-        <AssemblyVersion>1.0.0.60</AssemblyVersion>
-      </AssemblyInfo>
-      <Attributes>
-        <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="properties.type")</AttributeName>
-        </Attribute>
-      </Attributes>
-      <ReturnValue>
-        <ReturnType>System.Nullable&lt;Microsoft.Azure.Management.AppService.Fluent.Models.BackupRestoreOperationType&gt;</ReturnType>
-      </ReturnValue>
-      <Docs>
-        <summary>
-            Gets or sets type of the backup. Possible values include:
-            'Default', 'Clone', 'Relocation'
-            </summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
-      </Docs>
-    </Member>
     <Member MemberName="BackupSchedule">
       <MemberSignature Language="C#" Value="public Microsoft.Azure.Management.AppService.Fluent.Models.BackupSchedule BackupSchedule { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Azure.Management.AppService.Fluent.Models.BackupSchedule BackupSchedule" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Management.AppService.Fluent.Models.BackupRequestInner.BackupSchedule" />
       <MemberSignature Language="VB.NET" Value="Public Property BackupSchedule As BackupSchedule" />
       <MemberSignature Language="F#" Value="member this.BackupSchedule : Microsoft.Azure.Management.AppService.Fluent.Models.BackupSchedule with get, set" Usage="Microsoft.Azure.Management.AppService.Fluent.Models.BackupRequestInner.BackupSchedule" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Azure::Management::AppService::Fluent::Models::BackupSchedule ^ BackupSchedule { Microsoft::Azure::Management::AppService::Fluent::Models::BackupSchedule ^ get(); void set(Microsoft::Azure::Management::AppService::Fluent::Models::BackupSchedule ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.AppService.Fluent</AssemblyName>
-        <AssemblyVersion>1.0.0.60</AssemblyVersion>
+        <AssemblyVersion>1.0.0.61</AssemblyVersion>
+        <AssemblyVersion>1.0.0.62</AssemblyVersion>
+        <AssemblyVersion>1.0.0.63</AssemblyVersion>
+        <AssemblyVersion>1.0.0.64</AssemblyVersion>
+        <AssemblyVersion>1.0.0.65</AssemblyVersion>
+        <AssemblyVersion>1.0.0.66</AssemblyVersion>
+        <AssemblyVersion>1.0.0.67</AssemblyVersion>
+        <AssemblyVersion>1.0.0.68</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="properties.backupSchedule")</AttributeName>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty(PropertyName="properties.backupSchedule")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty(PropertyName="properties.backupSchedule")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -178,15 +182,22 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Management.AppService.Fluent.Models.BackupRequestInner.Databases" />
       <MemberSignature Language="VB.NET" Value="Public Property Databases As IList(Of DatabaseBackupSetting)" />
       <MemberSignature Language="F#" Value="member this.Databases : System.Collections.Generic.IList&lt;Microsoft.Azure.Management.AppService.Fluent.Models.DatabaseBackupSetting&gt; with get, set" Usage="Microsoft.Azure.Management.AppService.Fluent.Models.BackupRequestInner.Databases" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::Generic::IList&lt;Microsoft::Azure::Management::AppService::Fluent::Models::DatabaseBackupSetting ^&gt; ^ Databases { System::Collections::Generic::IList&lt;Microsoft::Azure::Management::AppService::Fluent::Models::DatabaseBackupSetting ^&gt; ^ get(); void set(System::Collections::Generic::IList&lt;Microsoft::Azure::Management::AppService::Fluent::Models::DatabaseBackupSetting ^&gt; ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.AppService.Fluent</AssemblyName>
-        <AssemblyVersion>1.0.0.60</AssemblyVersion>
+        <AssemblyVersion>1.0.0.61</AssemblyVersion>
+        <AssemblyVersion>1.0.0.62</AssemblyVersion>
+        <AssemblyVersion>1.0.0.63</AssemblyVersion>
+        <AssemblyVersion>1.0.0.64</AssemblyVersion>
+        <AssemblyVersion>1.0.0.65</AssemblyVersion>
+        <AssemblyVersion>1.0.0.66</AssemblyVersion>
+        <AssemblyVersion>1.0.0.67</AssemblyVersion>
+        <AssemblyVersion>1.0.0.68</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="properties.databases")</AttributeName>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty(PropertyName="properties.databases")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty(PropertyName="properties.databases")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -201,20 +212,27 @@
       </Docs>
     </Member>
     <Member MemberName="Enabled">
-      <MemberSignature Language="C#" Value="public Nullable&lt;bool&gt; Enabled { get; set; }" />
+      <MemberSignature Language="C#" Value="public bool? Enabled { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;bool&gt; Enabled" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Management.AppService.Fluent.Models.BackupRequestInner.Enabled" />
       <MemberSignature Language="VB.NET" Value="Public Property Enabled As Nullable(Of Boolean)" />
       <MemberSignature Language="F#" Value="member this.Enabled : Nullable&lt;bool&gt; with get, set" Usage="Microsoft.Azure.Management.AppService.Fluent.Models.BackupRequestInner.Enabled" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Nullable&lt;bool&gt; Enabled { Nullable&lt;bool&gt; get(); void set(Nullable&lt;bool&gt; value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.AppService.Fluent</AssemblyName>
-        <AssemblyVersion>1.0.0.60</AssemblyVersion>
+        <AssemblyVersion>1.0.0.61</AssemblyVersion>
+        <AssemblyVersion>1.0.0.62</AssemblyVersion>
+        <AssemblyVersion>1.0.0.63</AssemblyVersion>
+        <AssemblyVersion>1.0.0.64</AssemblyVersion>
+        <AssemblyVersion>1.0.0.65</AssemblyVersion>
+        <AssemblyVersion>1.0.0.66</AssemblyVersion>
+        <AssemblyVersion>1.0.0.67</AssemblyVersion>
+        <AssemblyVersion>1.0.0.68</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="properties.enabled")</AttributeName>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty(PropertyName="properties.enabled")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty(PropertyName="properties.enabled")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -236,16 +254,22 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Management.AppService.Fluent.Models.BackupRequestInner.StorageAccountUrl" />
       <MemberSignature Language="VB.NET" Value="Public Property StorageAccountUrl As String" />
       <MemberSignature Language="F#" Value="member this.StorageAccountUrl : string with get, set" Usage="Microsoft.Azure.Management.AppService.Fluent.Models.BackupRequestInner.StorageAccountUrl" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ StorageAccountUrl { System::String ^ get(); void set(System::String ^ value); };" />
-      <MemberSignature Language="C++ CX" Value="public:&#xA; property Platform::String ^ StorageAccountUrl { Platform::String ^ get(); void set(Platform::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.AppService.Fluent</AssemblyName>
-        <AssemblyVersion>1.0.0.60</AssemblyVersion>
+        <AssemblyVersion>1.0.0.61</AssemblyVersion>
+        <AssemblyVersion>1.0.0.62</AssemblyVersion>
+        <AssemblyVersion>1.0.0.63</AssemblyVersion>
+        <AssemblyVersion>1.0.0.64</AssemblyVersion>
+        <AssemblyVersion>1.0.0.65</AssemblyVersion>
+        <AssemblyVersion>1.0.0.66</AssemblyVersion>
+        <AssemblyVersion>1.0.0.67</AssemblyVersion>
+        <AssemblyVersion>1.0.0.68</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="properties.storageAccountUrl")</AttributeName>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty(PropertyName="properties.storageAccountUrl")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty(PropertyName="properties.storageAccountUrl")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -264,14 +288,18 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Validate() cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Management.AppService.Fluent.Models.BackupRequestInner.Validate" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Sub Validate ()" />
-      <MemberSignature Language="F#" Value="abstract member Validate : unit -&gt; unit&#xA;override this.Validate : unit -&gt; unit" Usage="backupRequestInner.Validate " />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Validate();" />
-      <MemberSignature Language="C++ CX" Value="public:&#xA; virtual void Validate();" />
-      <MemberSignature Language="C++ WINRT" Value=" virtual void Validate();" />
+      <MemberSignature Language="F#" Value="override this.Validate : unit -&gt; unit" Usage="backupRequestInner.Validate " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.AppService.Fluent</AssemblyName>
-        <AssemblyVersion>1.0.0.60</AssemblyVersion>
+        <AssemblyVersion>1.0.0.61</AssemblyVersion>
+        <AssemblyVersion>1.0.0.62</AssemblyVersion>
+        <AssemblyVersion>1.0.0.63</AssemblyVersion>
+        <AssemblyVersion>1.0.0.64</AssemblyVersion>
+        <AssemblyVersion>1.0.0.65</AssemblyVersion>
+        <AssemblyVersion>1.0.0.66</AssemblyVersion>
+        <AssemblyVersion>1.0.0.67</AssemblyVersion>
+        <AssemblyVersion>1.0.0.68</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>

@@ -1,14 +1,14 @@
-﻿<Type Name="QuotaCounterContract" FullName="Microsoft.Azure.Management.ApiManagement.Models.QuotaCounterContract">
+<Type Name="QuotaCounterContract" FullName="Microsoft.Azure.Management.ApiManagement.Models.QuotaCounterContract">
   <TypeSignature Language="C#" Value="public class QuotaCounterContract" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit QuotaCounterContract extends System.Object" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Azure.Management.ApiManagement.Models.QuotaCounterContract" />
   <TypeSignature Language="VB.NET" Value="Public Class QuotaCounterContract" />
   <TypeSignature Language="F#" Value="type QuotaCounterContract = class" />
-  <TypeSignature Language="C++ CLI" Value="public ref class QuotaCounterContract" />
-  <TypeSignature Language="C++ WINRT" Value="[Windows::Foundation::Metadata::WebHostHidden]&#xA;class QuotaCounterContract" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Azure.Management.ApiManagement</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
+    <AssemblyVersion>5.0.0.0</AssemblyVersion>
+    <AssemblyVersion>6.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
@@ -26,13 +26,12 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Management.ApiManagement.Models.QuotaCounterContract.#ctor" />
       <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; QuotaCounterContract();" />
-      <MemberSignature Language="C++ CX" Value="public:&#xA; QuotaCounterContract();" />
-      <MemberSignature Language="C++ WINRT" Value=" QuotaCounterContract();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.ApiManagement</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
@@ -43,15 +42,17 @@
       </Docs>
     </Member>
     <Member MemberName=".ctor">
-      <MemberSignature Language="C#" Value="public QuotaCounterContract (string counterKey, string periodKey, DateTime periodStartTime, DateTime periodEndTime, Microsoft.Azure.Management.ApiManagement.Models.QuotaCounterValueContractProperties value = null);" />
+      <MemberSignature Language="C#" Value="public QuotaCounterContract (string counterKey, string periodKey, DateTime periodStartTime, DateTime periodEndTime, Microsoft.Azure.Management.ApiManagement.Models.QuotaCounterValueContractProperties value = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string counterKey, string periodKey, valuetype System.DateTime periodStartTime, valuetype System.DateTime periodEndTime, class Microsoft.Azure.Management.ApiManagement.Models.QuotaCounterValueContractProperties value) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Management.ApiManagement.Models.QuotaCounterContract.#ctor(System.String,System.String,System.DateTime,System.DateTime,Microsoft.Azure.Management.ApiManagement.Models.QuotaCounterValueContractProperties)" />
-      <MemberSignature Language="VB.NET" Value="Public Sub New (counterKey As String, periodKey As String, periodStartTime As DateTime, periodEndTime As DateTime, Optional value As QuotaCounterValueContractProperties = null)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (counterKey As String, periodKey As String, periodStartTime As DateTime, periodEndTime As DateTime, Optional value As QuotaCounterValueContractProperties = Nothing)" />
       <MemberSignature Language="F#" Value="new Microsoft.Azure.Management.ApiManagement.Models.QuotaCounterContract : string * string * DateTime * DateTime * Microsoft.Azure.Management.ApiManagement.Models.QuotaCounterValueContractProperties -&gt; Microsoft.Azure.Management.ApiManagement.Models.QuotaCounterContract" Usage="new Microsoft.Azure.Management.ApiManagement.Models.QuotaCounterContract (counterKey, periodKey, periodStartTime, periodEndTime, value)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.ApiManagement</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="counterKey" Type="System.String" />
@@ -86,16 +87,17 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Management.ApiManagement.Models.QuotaCounterContract.CounterKey" />
       <MemberSignature Language="VB.NET" Value="Public Property CounterKey As String" />
       <MemberSignature Language="F#" Value="member this.CounterKey : string with get, set" Usage="Microsoft.Azure.Management.ApiManagement.Models.QuotaCounterContract.CounterKey" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ CounterKey { System::String ^ get(); void set(System::String ^ value); };" />
-      <MemberSignature Language="C++ CX" Value="public:&#xA; property Platform::String ^ CounterKey { Platform::String ^ get(); void set(Platform::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.ApiManagement</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="counterKey")</AttributeName>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty(PropertyName="counterKey")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty(PropertyName="counterKey")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -115,15 +117,17 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Management.ApiManagement.Models.QuotaCounterContract.PeriodEndTime" />
       <MemberSignature Language="VB.NET" Value="Public Property PeriodEndTime As DateTime" />
       <MemberSignature Language="F#" Value="member this.PeriodEndTime : DateTime with get, set" Usage="Microsoft.Azure.Management.ApiManagement.Models.QuotaCounterContract.PeriodEndTime" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property DateTime PeriodEndTime { DateTime get(); void set(DateTime value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.ApiManagement</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="periodEndTime")</AttributeName>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty(PropertyName="periodEndTime")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty(PropertyName="periodEndTime")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -146,16 +150,17 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Management.ApiManagement.Models.QuotaCounterContract.PeriodKey" />
       <MemberSignature Language="VB.NET" Value="Public Property PeriodKey As String" />
       <MemberSignature Language="F#" Value="member this.PeriodKey : string with get, set" Usage="Microsoft.Azure.Management.ApiManagement.Models.QuotaCounterContract.PeriodKey" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ PeriodKey { System::String ^ get(); void set(System::String ^ value); };" />
-      <MemberSignature Language="C++ CX" Value="public:&#xA; property Platform::String ^ PeriodKey { Platform::String ^ get(); void set(Platform::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.ApiManagement</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="periodKey")</AttributeName>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty(PropertyName="periodKey")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty(PropertyName="periodKey")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -176,15 +181,17 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Management.ApiManagement.Models.QuotaCounterContract.PeriodStartTime" />
       <MemberSignature Language="VB.NET" Value="Public Property PeriodStartTime As DateTime" />
       <MemberSignature Language="F#" Value="member this.PeriodStartTime : DateTime with get, set" Usage="Microsoft.Azure.Management.ApiManagement.Models.QuotaCounterContract.PeriodStartTime" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property DateTime PeriodStartTime { DateTime get(); void set(DateTime value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.ApiManagement</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="periodStartTime")</AttributeName>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty(PropertyName="periodStartTime")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty(PropertyName="periodStartTime")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -207,13 +214,12 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Management.ApiManagement.Models.QuotaCounterContract.Validate" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Sub Validate ()" />
       <MemberSignature Language="F#" Value="abstract member Validate : unit -&gt; unit&#xA;override this.Validate : unit -&gt; unit" Usage="quotaCounterContract.Validate " />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Validate();" />
-      <MemberSignature Language="C++ CX" Value="public:&#xA; virtual void Validate();" />
-      <MemberSignature Language="C++ WINRT" Value=" virtual void Validate();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.ApiManagement</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -235,15 +241,17 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Management.ApiManagement.Models.QuotaCounterContract.Value" />
       <MemberSignature Language="VB.NET" Value="Public Property Value As QuotaCounterValueContractProperties" />
       <MemberSignature Language="F#" Value="member this.Value : Microsoft.Azure.Management.ApiManagement.Models.QuotaCounterValueContractProperties with get, set" Usage="Microsoft.Azure.Management.ApiManagement.Models.QuotaCounterContract.Value" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Azure::Management::ApiManagement::Models::QuotaCounterValueContractProperties ^ Value { Microsoft::Azure::Management::ApiManagement::Models::QuotaCounterValueContractProperties ^ get(); void set(Microsoft::Azure::Management::ApiManagement::Models::QuotaCounterValueContractProperties ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.ApiManagement</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="value")</AttributeName>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty(PropertyName="value")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty(PropertyName="value")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>

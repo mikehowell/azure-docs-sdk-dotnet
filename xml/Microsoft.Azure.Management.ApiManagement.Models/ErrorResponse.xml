@@ -1,22 +1,28 @@
-﻿<Type Name="ErrorResponse" FullName="Microsoft.Azure.Management.ApiManagement.Models.ErrorResponse">
+<Type Name="ErrorResponse" FullName="Microsoft.Azure.Management.ApiManagement.Models.ErrorResponse">
   <TypeSignature Language="C#" Value="public class ErrorResponse" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit ErrorResponse extends System.Object" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Azure.Management.ApiManagement.Models.ErrorResponse" />
   <TypeSignature Language="VB.NET" Value="Public Class ErrorResponse" />
   <TypeSignature Language="F#" Value="type ErrorResponse = class" />
-  <TypeSignature Language="C++ CLI" Value="public ref class ErrorResponse" />
-  <TypeSignature Language="C++ WINRT" Value="[Windows::Foundation::Metadata::WebHostHidden]&#xA;class ErrorResponse" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Azure.Management.ApiManagement</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
+    <AssemblyVersion>5.0.0.0</AssemblyVersion>
+    <AssemblyVersion>6.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
   </Base>
   <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName Language="C#">[Microsoft.Rest.Serialization.JsonTransformation]</AttributeName>
+      <AttributeName Language="F#">[&lt;Microsoft.Rest.Serialization.JsonTransformation&gt;]</AttributeName>
+    </Attribute>
+  </Attributes>
   <Docs>
     <summary>
-            Error Body contract.
+            Error Response.
             </summary>
     <remarks>To be added.</remarks>
   </Docs>
@@ -26,13 +32,12 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Management.ApiManagement.Models.ErrorResponse.#ctor" />
       <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; ErrorResponse();" />
-      <MemberSignature Language="C++ CX" Value="public:&#xA; ErrorResponse();" />
-      <MemberSignature Language="C++ WINRT" Value=" ErrorResponse();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.ApiManagement</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
@@ -43,15 +48,17 @@
       </Docs>
     </Member>
     <Member MemberName=".ctor">
-      <MemberSignature Language="C#" Value="public ErrorResponse (string code = null, string message = null, System.Collections.Generic.IList&lt;Microsoft.Azure.Management.ApiManagement.Models.ErrorFieldContract&gt; details = null);" />
+      <MemberSignature Language="C#" Value="public ErrorResponse (string code = default, string message = default, System.Collections.Generic.IList&lt;Microsoft.Azure.Management.ApiManagement.Models.ErrorFieldContract&gt; details = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string code, string message, class System.Collections.Generic.IList`1&lt;class Microsoft.Azure.Management.ApiManagement.Models.ErrorFieldContract&gt; details) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Management.ApiManagement.Models.ErrorResponse.#ctor(System.String,System.String,System.Collections.Generic.IList{Microsoft.Azure.Management.ApiManagement.Models.ErrorFieldContract})" />
-      <MemberSignature Language="VB.NET" Value="Public Sub New (Optional code As String = null, Optional message As String = null, Optional details As IList(Of ErrorFieldContract) = null)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (Optional code As String = Nothing, Optional message As String = Nothing, Optional details As IList(Of ErrorFieldContract) = Nothing)" />
       <MemberSignature Language="F#" Value="new Microsoft.Azure.Management.ApiManagement.Models.ErrorResponse : string * string * System.Collections.Generic.IList&lt;Microsoft.Azure.Management.ApiManagement.Models.ErrorFieldContract&gt; -&gt; Microsoft.Azure.Management.ApiManagement.Models.ErrorResponse" Usage="new Microsoft.Azure.Management.ApiManagement.Models.ErrorResponse (code, message, details)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.ApiManagement</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="code" Type="System.String" />
@@ -78,16 +85,17 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Management.ApiManagement.Models.ErrorResponse.Code" />
       <MemberSignature Language="VB.NET" Value="Public Property Code As String" />
       <MemberSignature Language="F#" Value="member this.Code : string with get, set" Usage="Microsoft.Azure.Management.ApiManagement.Models.ErrorResponse.Code" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Code { System::String ^ get(); void set(System::String ^ value); };" />
-      <MemberSignature Language="C++ CX" Value="public:&#xA; property Platform::String ^ Code { Platform::String ^ get(); void set(Platform::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.ApiManagement</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="code")</AttributeName>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty(PropertyName="error.code")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty(PropertyName="error.code")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -108,15 +116,17 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Management.ApiManagement.Models.ErrorResponse.Details" />
       <MemberSignature Language="VB.NET" Value="Public Property Details As IList(Of ErrorFieldContract)" />
       <MemberSignature Language="F#" Value="member this.Details : System.Collections.Generic.IList&lt;Microsoft.Azure.Management.ApiManagement.Models.ErrorFieldContract&gt; with get, set" Usage="Microsoft.Azure.Management.ApiManagement.Models.ErrorResponse.Details" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::Generic::IList&lt;Microsoft::Azure::Management::ApiManagement::Models::ErrorFieldContract ^&gt; ^ Details { System::Collections::Generic::IList&lt;Microsoft::Azure::Management::ApiManagement::Models::ErrorFieldContract ^&gt; ^ get(); void set(System::Collections::Generic::IList&lt;Microsoft::Azure::Management::ApiManagement::Models::ErrorFieldContract ^&gt; ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.ApiManagement</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="details")</AttributeName>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty(PropertyName="error.details")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty(PropertyName="error.details")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -137,16 +147,17 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Management.ApiManagement.Models.ErrorResponse.Message" />
       <MemberSignature Language="VB.NET" Value="Public Property Message As String" />
       <MemberSignature Language="F#" Value="member this.Message : string with get, set" Usage="Microsoft.Azure.Management.ApiManagement.Models.ErrorResponse.Message" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Message { System::String ^ get(); void set(System::String ^ value); };" />
-      <MemberSignature Language="C++ CX" Value="public:&#xA; property Platform::String ^ Message { Platform::String ^ get(); void set(Platform::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.ApiManagement</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="message")</AttributeName>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty(PropertyName="error.message")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty(PropertyName="error.message")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>

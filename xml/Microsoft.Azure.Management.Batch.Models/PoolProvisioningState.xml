@@ -1,22 +1,23 @@
-﻿<Type Name="PoolProvisioningState" FullName="Microsoft.Azure.Management.Batch.Models.PoolProvisioningState">
+<Type Name="PoolProvisioningState" FullName="Microsoft.Azure.Management.Batch.Models.PoolProvisioningState">
   <TypeSignature Language="C#" Value="public enum PoolProvisioningState" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed PoolProvisioningState extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Azure.Management.Batch.Models.PoolProvisioningState" />
   <TypeSignature Language="VB.NET" Value="Public Enum PoolProvisioningState" />
   <TypeSignature Language="F#" Value="type PoolProvisioningState = " />
-  <TypeSignature Language="C++ CLI" Value="public enum class PoolProvisioningState" />
-  <TypeSignature Language="C++ CX" Value="public enum class PoolProvisioningState" />
-  <TypeSignature Language="C++ WINRT" Value="enum PoolProvisioningState" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Azure.Management.Batch</AssemblyName>
-    <AssemblyVersion>6.0.0.0</AssemblyVersion>
+    <AssemblyVersion>9.0.0.0</AssemblyVersion>
+    <AssemblyVersion>10.0.0.0</AssemblyVersion>
+    <AssemblyVersion>11.0.0.0</AssemblyVersion>
+    <AssemblyVersion>13.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Attributes>
     <Attribute>
-      <AttributeName>Newtonsoft.Json.JsonConverter(typeof(Newtonsoft.Json.Converters.StringEnumConverter))</AttributeName>
+      <AttributeName Language="C#">[Newtonsoft.Json.JsonConverter(typeof(Newtonsoft.Json.Converters.StringEnumConverter))]</AttributeName>
+      <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonConverter(typeof(Newtonsoft.Json.Converters.StringEnumConverter))&gt;]</AttributeName>
     </Attribute>
   </Attributes>
   <Docs>
@@ -32,17 +33,18 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.Azure.Management.Batch.Models.PoolProvisioningState.Deleting" />
       <MemberSignature Language="VB.NET" Value="Deleting" />
       <MemberSignature Language="F#" Value="Deleting = 1" Usage="Microsoft.Azure.Management.Batch.Models.PoolProvisioningState.Deleting" />
-      <MemberSignature Language="C++ CLI" Value="Deleting" />
-      <MemberSignature Language="C++ CX" Value="Deleting" />
-      <MemberSignature Language="C++ WINRT" Value="Deleting" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Batch</AssemblyName>
-        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+        <AssemblyVersion>11.0.0.0</AssemblyVersion>
+        <AssemblyVersion>13.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>System.Runtime.Serialization.EnumMember(Value="Deleting")</AttributeName>
+          <AttributeName Language="C#">[System.Runtime.Serialization.EnumMember(Value="Deleting")]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Runtime.Serialization.EnumMember(Value="Deleting")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -50,7 +52,10 @@
       </ReturnValue>
       <MemberValue>1</MemberValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+            The user has requested that the pool be deleted, but the delete
+            operation has not yet completed.
+            </summary>
       </Docs>
     </Member>
     <Member MemberName="Succeeded">
@@ -59,17 +64,18 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.Azure.Management.Batch.Models.PoolProvisioningState.Succeeded" />
       <MemberSignature Language="VB.NET" Value="Succeeded" />
       <MemberSignature Language="F#" Value="Succeeded = 0" Usage="Microsoft.Azure.Management.Batch.Models.PoolProvisioningState.Succeeded" />
-      <MemberSignature Language="C++ CLI" Value="Succeeded" />
-      <MemberSignature Language="C++ CX" Value="Succeeded" />
-      <MemberSignature Language="C++ WINRT" Value="Succeeded" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Batch</AssemblyName>
-        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+        <AssemblyVersion>11.0.0.0</AssemblyVersion>
+        <AssemblyVersion>13.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>System.Runtime.Serialization.EnumMember(Value="Succeeded")</AttributeName>
+          <AttributeName Language="C#">[System.Runtime.Serialization.EnumMember(Value="Succeeded")]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Runtime.Serialization.EnumMember(Value="Succeeded")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -77,7 +83,10 @@
       </ReturnValue>
       <MemberValue>0</MemberValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+            The pool is available to run tasks subject to the availability of
+            compute nodes.
+            </summary>
       </Docs>
     </Member>
   </Members>

@@ -1,15 +1,15 @@
-﻿<Type Name="Incident" FullName="Microsoft.Azure.Management.Monitor.Models.Incident">
+<Type Name="Incident" FullName="Microsoft.Azure.Management.Monitor.Models.Incident">
   <TypeSignature Language="C#" Value="public class Incident" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit Incident extends System.Object" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Azure.Management.Monitor.Models.Incident" />
   <TypeSignature Language="VB.NET" Value="Public Class Incident" />
   <TypeSignature Language="F#" Value="type Incident = class" />
-  <TypeSignature Language="C++ CLI" Value="public ref class Incident" />
-  <TypeSignature Language="C++ WINRT" Value="[Windows::Foundation::Metadata::WebHostHidden]&#xA;class Incident" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Azure.Management.Monitor</AssemblyName>
-    <AssemblyVersion>0.19.0.0</AssemblyVersion>
-    <AssemblyVersion>0.19.1.0</AssemblyVersion>
+    <AssemblyVersion>0.24.1.0</AssemblyVersion>
+    <AssemblyVersion>0.25.0.0</AssemblyVersion>
+    <AssemblyVersion>0.25.1.0</AssemblyVersion>
+    <AssemblyVersion>0.25.2.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
@@ -27,14 +27,13 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Management.Monitor.Models.Incident.#ctor" />
       <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; Incident();" />
-      <MemberSignature Language="C++ CX" Value="public:&#xA; Incident();" />
-      <MemberSignature Language="C++ WINRT" Value=" Incident();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Monitor</AssemblyName>
-        <AssemblyVersion>0.19.0.0</AssemblyVersion>
-        <AssemblyVersion>0.19.1.0</AssemblyVersion>
+        <AssemblyVersion>0.24.1.0</AssemblyVersion>
+        <AssemblyVersion>0.25.0.0</AssemblyVersion>
+        <AssemblyVersion>0.25.1.0</AssemblyVersion>
+        <AssemblyVersion>0.25.2.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
@@ -45,16 +44,18 @@
       </Docs>
     </Member>
     <Member MemberName=".ctor">
-      <MemberSignature Language="C#" Value="public Incident (string name = null, string ruleName = null, Nullable&lt;bool&gt; isActive = null, Nullable&lt;DateTime&gt; activatedTime = null, Nullable&lt;DateTime&gt; resolvedTime = null);" />
+      <MemberSignature Language="C#" Value="public Incident (string name = default, string ruleName = default, bool? isActive = default, DateTime? activatedTime = default, DateTime? resolvedTime = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string name, string ruleName, valuetype System.Nullable`1&lt;bool&gt; isActive, valuetype System.Nullable`1&lt;valuetype System.DateTime&gt; activatedTime, valuetype System.Nullable`1&lt;valuetype System.DateTime&gt; resolvedTime) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Management.Monitor.Models.Incident.#ctor(System.String,System.String,System.Nullable{System.Boolean},System.Nullable{System.DateTime},System.Nullable{System.DateTime})" />
-      <MemberSignature Language="VB.NET" Value="Public Sub New (Optional name As String = null, Optional ruleName As String = null, Optional isActive As Nullable(Of Boolean) = null, Optional activatedTime As Nullable(Of DateTime) = null, Optional resolvedTime As Nullable(Of DateTime) = null)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (Optional name As String = Nothing, Optional ruleName As String = Nothing, Optional isActive As Nullable(Of Boolean) = Nothing, Optional activatedTime As Nullable(Of DateTime) = Nothing, Optional resolvedTime As Nullable(Of DateTime) = Nothing)" />
       <MemberSignature Language="F#" Value="new Microsoft.Azure.Management.Monitor.Models.Incident : string * string * Nullable&lt;bool&gt; * Nullable&lt;DateTime&gt; * Nullable&lt;DateTime&gt; -&gt; Microsoft.Azure.Management.Monitor.Models.Incident" Usage="new Microsoft.Azure.Management.Monitor.Models.Incident (name, ruleName, isActive, activatedTime, resolvedTime)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Monitor</AssemblyName>
-        <AssemblyVersion>0.19.0.0</AssemblyVersion>
-        <AssemblyVersion>0.19.1.0</AssemblyVersion>
+        <AssemblyVersion>0.24.1.0</AssemblyVersion>
+        <AssemblyVersion>0.25.0.0</AssemblyVersion>
+        <AssemblyVersion>0.25.1.0</AssemblyVersion>
+        <AssemblyVersion>0.25.2.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="name" Type="System.String" />
@@ -81,21 +82,23 @@
       </Docs>
     </Member>
     <Member MemberName="ActivatedTime">
-      <MemberSignature Language="C#" Value="public Nullable&lt;DateTime&gt; ActivatedTime { get; }" />
+      <MemberSignature Language="C#" Value="public DateTime? ActivatedTime { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;valuetype System.DateTime&gt; ActivatedTime" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Management.Monitor.Models.Incident.ActivatedTime" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ActivatedTime As Nullable(Of DateTime)" />
       <MemberSignature Language="F#" Value="member this.ActivatedTime : Nullable&lt;DateTime&gt;" Usage="Microsoft.Azure.Management.Monitor.Models.Incident.ActivatedTime" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Nullable&lt;DateTime&gt; ActivatedTime { Nullable&lt;DateTime&gt; get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Monitor</AssemblyName>
-        <AssemblyVersion>0.19.0.0</AssemblyVersion>
-        <AssemblyVersion>0.19.1.0</AssemblyVersion>
+        <AssemblyVersion>0.24.1.0</AssemblyVersion>
+        <AssemblyVersion>0.25.0.0</AssemblyVersion>
+        <AssemblyVersion>0.25.1.0</AssemblyVersion>
+        <AssemblyVersion>0.25.2.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="activatedTime")</AttributeName>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty(PropertyName="activatedTime")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty(PropertyName="activatedTime")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -111,21 +114,23 @@
       </Docs>
     </Member>
     <Member MemberName="IsActive">
-      <MemberSignature Language="C#" Value="public Nullable&lt;bool&gt; IsActive { get; }" />
+      <MemberSignature Language="C#" Value="public bool? IsActive { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;bool&gt; IsActive" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Management.Monitor.Models.Incident.IsActive" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsActive As Nullable(Of Boolean)" />
       <MemberSignature Language="F#" Value="member this.IsActive : Nullable&lt;bool&gt;" Usage="Microsoft.Azure.Management.Monitor.Models.Incident.IsActive" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Nullable&lt;bool&gt; IsActive { Nullable&lt;bool&gt; get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Monitor</AssemblyName>
-        <AssemblyVersion>0.19.0.0</AssemblyVersion>
-        <AssemblyVersion>0.19.1.0</AssemblyVersion>
+        <AssemblyVersion>0.24.1.0</AssemblyVersion>
+        <AssemblyVersion>0.25.0.0</AssemblyVersion>
+        <AssemblyVersion>0.25.1.0</AssemblyVersion>
+        <AssemblyVersion>0.25.2.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="isActive")</AttributeName>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty(PropertyName="isActive")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty(PropertyName="isActive")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -146,17 +151,18 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Management.Monitor.Models.Incident.Name" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Name As String" />
       <MemberSignature Language="F#" Value="member this.Name : string" Usage="Microsoft.Azure.Management.Monitor.Models.Incident.Name" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Name { System::String ^ get(); };" />
-      <MemberSignature Language="C++ CX" Value="public:&#xA; property Platform::String ^ Name { Platform::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Monitor</AssemblyName>
-        <AssemblyVersion>0.19.0.0</AssemblyVersion>
-        <AssemblyVersion>0.19.1.0</AssemblyVersion>
+        <AssemblyVersion>0.24.1.0</AssemblyVersion>
+        <AssemblyVersion>0.25.0.0</AssemblyVersion>
+        <AssemblyVersion>0.25.1.0</AssemblyVersion>
+        <AssemblyVersion>0.25.2.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="name")</AttributeName>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty(PropertyName="name")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty(PropertyName="name")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -171,21 +177,23 @@
       </Docs>
     </Member>
     <Member MemberName="ResolvedTime">
-      <MemberSignature Language="C#" Value="public Nullable&lt;DateTime&gt; ResolvedTime { get; }" />
+      <MemberSignature Language="C#" Value="public DateTime? ResolvedTime { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;valuetype System.DateTime&gt; ResolvedTime" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Management.Monitor.Models.Incident.ResolvedTime" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ResolvedTime As Nullable(Of DateTime)" />
       <MemberSignature Language="F#" Value="member this.ResolvedTime : Nullable&lt;DateTime&gt;" Usage="Microsoft.Azure.Management.Monitor.Models.Incident.ResolvedTime" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Nullable&lt;DateTime&gt; ResolvedTime { Nullable&lt;DateTime&gt; get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Monitor</AssemblyName>
-        <AssemblyVersion>0.19.0.0</AssemblyVersion>
-        <AssemblyVersion>0.19.1.0</AssemblyVersion>
+        <AssemblyVersion>0.24.1.0</AssemblyVersion>
+        <AssemblyVersion>0.25.0.0</AssemblyVersion>
+        <AssemblyVersion>0.25.1.0</AssemblyVersion>
+        <AssemblyVersion>0.25.2.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="resolvedTime")</AttributeName>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty(PropertyName="resolvedTime")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty(PropertyName="resolvedTime")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -206,17 +214,18 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Management.Monitor.Models.Incident.RuleName" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property RuleName As String" />
       <MemberSignature Language="F#" Value="member this.RuleName : string" Usage="Microsoft.Azure.Management.Monitor.Models.Incident.RuleName" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ RuleName { System::String ^ get(); };" />
-      <MemberSignature Language="C++ CX" Value="public:&#xA; property Platform::String ^ RuleName { Platform::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Monitor</AssemblyName>
-        <AssemblyVersion>0.19.0.0</AssemblyVersion>
-        <AssemblyVersion>0.19.1.0</AssemblyVersion>
+        <AssemblyVersion>0.24.1.0</AssemblyVersion>
+        <AssemblyVersion>0.25.0.0</AssemblyVersion>
+        <AssemblyVersion>0.25.1.0</AssemblyVersion>
+        <AssemblyVersion>0.25.2.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="ruleName")</AttributeName>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty(PropertyName="ruleName")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty(PropertyName="ruleName")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>

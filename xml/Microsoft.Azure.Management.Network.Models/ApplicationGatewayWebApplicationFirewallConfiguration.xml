@@ -1,17 +1,15 @@
-﻿<Type Name="ApplicationGatewayWebApplicationFirewallConfiguration" FullName="Microsoft.Azure.Management.Network.Models.ApplicationGatewayWebApplicationFirewallConfiguration">
+<Type Name="ApplicationGatewayWebApplicationFirewallConfiguration" FullName="Microsoft.Azure.Management.Network.Models.ApplicationGatewayWebApplicationFirewallConfiguration">
   <TypeSignature Language="C#" Value="public class ApplicationGatewayWebApplicationFirewallConfiguration" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit ApplicationGatewayWebApplicationFirewallConfiguration extends System.Object" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Azure.Management.Network.Models.ApplicationGatewayWebApplicationFirewallConfiguration" />
   <TypeSignature Language="VB.NET" Value="Public Class ApplicationGatewayWebApplicationFirewallConfiguration" />
   <TypeSignature Language="F#" Value="type ApplicationGatewayWebApplicationFirewallConfiguration = class" />
-  <TypeSignature Language="C++ CLI" Value="public ref class ApplicationGatewayWebApplicationFirewallConfiguration" />
-  <TypeSignature Language="C++ WINRT" Value="[Windows::Foundation::Metadata::WebHostHidden]&#xA;class ApplicationGatewayWebApplicationFirewallConfiguration" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Azure.Management.Network</AssemblyName>
-    <AssemblyVersion>14.0.0.0</AssemblyVersion>
-    <AssemblyVersion>16.0.0.0</AssemblyVersion>
-    <AssemblyVersion>17.0.0.0</AssemblyVersion>
-    <AssemblyVersion>18.0.0.0</AssemblyVersion>
+    <AssemblyVersion>20.0.0.0</AssemblyVersion>
+    <AssemblyVersion>20.0.1.0</AssemblyVersion>
+    <AssemblyVersion>20.0.2.0</AssemblyVersion>
+    <AssemblyVersion>20.0.3.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
@@ -29,16 +27,13 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Management.Network.Models.ApplicationGatewayWebApplicationFirewallConfiguration.#ctor" />
       <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; ApplicationGatewayWebApplicationFirewallConfiguration();" />
-      <MemberSignature Language="C++ CX" Value="public:&#xA; ApplicationGatewayWebApplicationFirewallConfiguration();" />
-      <MemberSignature Language="C++ WINRT" Value=" ApplicationGatewayWebApplicationFirewallConfiguration();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Network</AssemblyName>
-        <AssemblyVersion>14.0.0.0</AssemblyVersion>
-        <AssemblyVersion>16.0.0.0</AssemblyVersion>
-        <AssemblyVersion>17.0.0.0</AssemblyVersion>
-        <AssemblyVersion>18.0.0.0</AssemblyVersion>
+        <AssemblyVersion>20.0.0.0</AssemblyVersion>
+        <AssemblyVersion>20.0.1.0</AssemblyVersion>
+        <AssemblyVersion>20.0.2.0</AssemblyVersion>
+        <AssemblyVersion>20.0.3.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
@@ -50,15 +45,17 @@
       </Docs>
     </Member>
     <Member MemberName=".ctor">
-      <MemberSignature Language="C#" Value="public ApplicationGatewayWebApplicationFirewallConfiguration (bool enabled, string firewallMode, string ruleSetType, string ruleSetVersion, System.Collections.Generic.IList&lt;Microsoft.Azure.Management.Network.Models.ApplicationGatewayFirewallDisabledRuleGroup&gt; disabledRuleGroups = null, Nullable&lt;bool&gt; requestBodyCheck = null, Nullable&lt;int&gt; maxRequestBodySize = null);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(bool enabled, string firewallMode, string ruleSetType, string ruleSetVersion, class System.Collections.Generic.IList`1&lt;class Microsoft.Azure.Management.Network.Models.ApplicationGatewayFirewallDisabledRuleGroup&gt; disabledRuleGroups, valuetype System.Nullable`1&lt;bool&gt; requestBodyCheck, valuetype System.Nullable`1&lt;int32&gt; maxRequestBodySize) cil managed" />
-      <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Management.Network.Models.ApplicationGatewayWebApplicationFirewallConfiguration.#ctor(System.Boolean,System.String,System.String,System.String,System.Collections.Generic.IList{Microsoft.Azure.Management.Network.Models.ApplicationGatewayFirewallDisabledRuleGroup},System.Nullable{System.Boolean},System.Nullable{System.Int32})" />
-      <MemberSignature Language="VB.NET" Value="Public Sub New (enabled As Boolean, firewallMode As String, ruleSetType As String, ruleSetVersion As String, Optional disabledRuleGroups As IList(Of ApplicationGatewayFirewallDisabledRuleGroup) = null, Optional requestBodyCheck As Nullable(Of Boolean) = null, Optional maxRequestBodySize As Nullable(Of Integer) = null)" />
-      <MemberSignature Language="F#" Value="new Microsoft.Azure.Management.Network.Models.ApplicationGatewayWebApplicationFirewallConfiguration : bool * string * string * string * System.Collections.Generic.IList&lt;Microsoft.Azure.Management.Network.Models.ApplicationGatewayFirewallDisabledRuleGroup&gt; * Nullable&lt;bool&gt; * Nullable&lt;int&gt; -&gt; Microsoft.Azure.Management.Network.Models.ApplicationGatewayWebApplicationFirewallConfiguration" Usage="new Microsoft.Azure.Management.Network.Models.ApplicationGatewayWebApplicationFirewallConfiguration (enabled, firewallMode, ruleSetType, ruleSetVersion, disabledRuleGroups, requestBodyCheck, maxRequestBodySize)" />
+      <MemberSignature Language="C#" Value="public ApplicationGatewayWebApplicationFirewallConfiguration (bool enabled, string firewallMode, string ruleSetType, string ruleSetVersion, System.Collections.Generic.IList&lt;Microsoft.Azure.Management.Network.Models.ApplicationGatewayFirewallDisabledRuleGroup&gt; disabledRuleGroups = default, bool? requestBodyCheck = default, int? maxRequestBodySize = default, int? maxRequestBodySizeInKb = default, int? fileUploadLimitInMb = default, System.Collections.Generic.IList&lt;Microsoft.Azure.Management.Network.Models.ApplicationGatewayFirewallExclusion&gt; exclusions = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(bool enabled, string firewallMode, string ruleSetType, string ruleSetVersion, class System.Collections.Generic.IList`1&lt;class Microsoft.Azure.Management.Network.Models.ApplicationGatewayFirewallDisabledRuleGroup&gt; disabledRuleGroups, valuetype System.Nullable`1&lt;bool&gt; requestBodyCheck, valuetype System.Nullable`1&lt;int32&gt; maxRequestBodySize, valuetype System.Nullable`1&lt;int32&gt; maxRequestBodySizeInKb, valuetype System.Nullable`1&lt;int32&gt; fileUploadLimitInMb, class System.Collections.Generic.IList`1&lt;class Microsoft.Azure.Management.Network.Models.ApplicationGatewayFirewallExclusion&gt; exclusions) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Management.Network.Models.ApplicationGatewayWebApplicationFirewallConfiguration.#ctor(System.Boolean,System.String,System.String,System.String,System.Collections.Generic.IList{Microsoft.Azure.Management.Network.Models.ApplicationGatewayFirewallDisabledRuleGroup},System.Nullable{System.Boolean},System.Nullable{System.Int32},System.Nullable{System.Int32},System.Nullable{System.Int32},System.Collections.Generic.IList{Microsoft.Azure.Management.Network.Models.ApplicationGatewayFirewallExclusion})" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (enabled As Boolean, firewallMode As String, ruleSetType As String, ruleSetVersion As String, Optional disabledRuleGroups As IList(Of ApplicationGatewayFirewallDisabledRuleGroup) = Nothing, Optional requestBodyCheck As Nullable(Of Boolean) = Nothing, Optional maxRequestBodySize As Nullable(Of Integer) = Nothing, Optional maxRequestBodySizeInKb As Nullable(Of Integer) = Nothing, Optional fileUploadLimitInMb As Nullable(Of Integer) = Nothing, Optional exclusions As IList(Of ApplicationGatewayFirewallExclusion) = Nothing)" />
+      <MemberSignature Language="F#" Value="new Microsoft.Azure.Management.Network.Models.ApplicationGatewayWebApplicationFirewallConfiguration : bool * string * string * string * System.Collections.Generic.IList&lt;Microsoft.Azure.Management.Network.Models.ApplicationGatewayFirewallDisabledRuleGroup&gt; * Nullable&lt;bool&gt; * Nullable&lt;int&gt; * Nullable&lt;int&gt; * Nullable&lt;int&gt; * System.Collections.Generic.IList&lt;Microsoft.Azure.Management.Network.Models.ApplicationGatewayFirewallExclusion&gt; -&gt; Microsoft.Azure.Management.Network.Models.ApplicationGatewayWebApplicationFirewallConfiguration" Usage="new Microsoft.Azure.Management.Network.Models.ApplicationGatewayWebApplicationFirewallConfiguration (enabled, firewallMode, ruleSetType, ruleSetVersion, disabledRuleGroups, requestBodyCheck, maxRequestBodySize, maxRequestBodySizeInKb, fileUploadLimitInMb, exclusions)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Network</AssemblyName>
-        <AssemblyVersion>18.0.0.0</AssemblyVersion>
+        <AssemblyVersion>20.0.1.0</AssemblyVersion>
+        <AssemblyVersion>20.0.2.0</AssemblyVersion>
+        <AssemblyVersion>20.0.3.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="enabled" Type="System.Boolean" />
@@ -68,6 +65,9 @@
         <Parameter Name="disabledRuleGroups" Type="System.Collections.Generic.IList&lt;Microsoft.Azure.Management.Network.Models.ApplicationGatewayFirewallDisabledRuleGroup&gt;" />
         <Parameter Name="requestBodyCheck" Type="System.Nullable&lt;System.Boolean&gt;" />
         <Parameter Name="maxRequestBodySize" Type="System.Nullable&lt;System.Int32&gt;" />
+        <Parameter Name="maxRequestBodySizeInKb" Type="System.Nullable&lt;System.Int32&gt;" />
+        <Parameter Name="fileUploadLimitInMb" Type="System.Nullable&lt;System.Int32&gt;" />
+        <Parameter Name="exclusions" Type="System.Collections.Generic.IList&lt;Microsoft.Azure.Management.Network.Models.ApplicationGatewayFirewallExclusion&gt;" />
       </Parameters>
       <Docs>
         <param name="enabled">Whether the web application firewall is
@@ -81,8 +81,13 @@
         <param name="disabledRuleGroups">The disabled rule groups.</param>
         <param name="requestBodyCheck">Whether allow WAF to check request
             Body.</param>
-        <param name="maxRequestBodySize">Maxium request body size for
+        <param name="maxRequestBodySize">Maximum request body size for
             WAF.</param>
+        <param name="maxRequestBodySizeInKb">Maximum request body size in
+            Kb for WAF.</param>
+        <param name="fileUploadLimitInMb">Maximum file upload size in Mb
+            for WAF.</param>
+        <param name="exclusions">The exclusion list.</param>
         <summary>
             Initializes a new instance of the
             ApplicationGatewayWebApplicationFirewallConfiguration class.
@@ -96,18 +101,18 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Management.Network.Models.ApplicationGatewayWebApplicationFirewallConfiguration.DisabledRuleGroups" />
       <MemberSignature Language="VB.NET" Value="Public Property DisabledRuleGroups As IList(Of ApplicationGatewayFirewallDisabledRuleGroup)" />
       <MemberSignature Language="F#" Value="member this.DisabledRuleGroups : System.Collections.Generic.IList&lt;Microsoft.Azure.Management.Network.Models.ApplicationGatewayFirewallDisabledRuleGroup&gt; with get, set" Usage="Microsoft.Azure.Management.Network.Models.ApplicationGatewayWebApplicationFirewallConfiguration.DisabledRuleGroups" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::Generic::IList&lt;Microsoft::Azure::Management::Network::Models::ApplicationGatewayFirewallDisabledRuleGroup ^&gt; ^ DisabledRuleGroups { System::Collections::Generic::IList&lt;Microsoft::Azure::Management::Network::Models::ApplicationGatewayFirewallDisabledRuleGroup ^&gt; ^ get(); void set(System::Collections::Generic::IList&lt;Microsoft::Azure::Management::Network::Models::ApplicationGatewayFirewallDisabledRuleGroup ^&gt; ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Network</AssemblyName>
-        <AssemblyVersion>14.0.0.0</AssemblyVersion>
-        <AssemblyVersion>16.0.0.0</AssemblyVersion>
-        <AssemblyVersion>17.0.0.0</AssemblyVersion>
-        <AssemblyVersion>18.0.0.0</AssemblyVersion>
+        <AssemblyVersion>20.0.0.0</AssemblyVersion>
+        <AssemblyVersion>20.0.1.0</AssemblyVersion>
+        <AssemblyVersion>20.0.2.0</AssemblyVersion>
+        <AssemblyVersion>20.0.3.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="disabledRuleGroups")</AttributeName>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty(PropertyName="disabledRuleGroups")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty(PropertyName="disabledRuleGroups")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -127,19 +132,18 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Management.Network.Models.ApplicationGatewayWebApplicationFirewallConfiguration.Enabled" />
       <MemberSignature Language="VB.NET" Value="Public Property Enabled As Boolean" />
       <MemberSignature Language="F#" Value="member this.Enabled : bool with get, set" Usage="Microsoft.Azure.Management.Network.Models.ApplicationGatewayWebApplicationFirewallConfiguration.Enabled" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool Enabled { bool get(); void set(bool value); };" />
-      <MemberSignature Language="C++ CX" Value="public:&#xA; property bool Enabled { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Network</AssemblyName>
-        <AssemblyVersion>14.0.0.0</AssemblyVersion>
-        <AssemblyVersion>16.0.0.0</AssemblyVersion>
-        <AssemblyVersion>17.0.0.0</AssemblyVersion>
-        <AssemblyVersion>18.0.0.0</AssemblyVersion>
+        <AssemblyVersion>20.0.0.0</AssemblyVersion>
+        <AssemblyVersion>20.0.1.0</AssemblyVersion>
+        <AssemblyVersion>20.0.2.0</AssemblyVersion>
+        <AssemblyVersion>20.0.3.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="enabled")</AttributeName>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty(PropertyName="enabled")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty(PropertyName="enabled")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -154,25 +158,84 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <Member MemberName="Exclusions">
+      <MemberSignature Language="C#" Value="public System.Collections.Generic.IList&lt;Microsoft.Azure.Management.Network.Models.ApplicationGatewayFirewallExclusion&gt; Exclusions { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Generic.IList`1&lt;class Microsoft.Azure.Management.Network.Models.ApplicationGatewayFirewallExclusion&gt; Exclusions" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Management.Network.Models.ApplicationGatewayWebApplicationFirewallConfiguration.Exclusions" />
+      <MemberSignature Language="VB.NET" Value="Public Property Exclusions As IList(Of ApplicationGatewayFirewallExclusion)" />
+      <MemberSignature Language="F#" Value="member this.Exclusions : System.Collections.Generic.IList&lt;Microsoft.Azure.Management.Network.Models.ApplicationGatewayFirewallExclusion&gt; with get, set" Usage="Microsoft.Azure.Management.Network.Models.ApplicationGatewayWebApplicationFirewallConfiguration.Exclusions" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Azure.Management.Network</AssemblyName>
+        <AssemblyVersion>20.0.1.0</AssemblyVersion>
+        <AssemblyVersion>20.0.2.0</AssemblyVersion>
+        <AssemblyVersion>20.0.3.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty(PropertyName="exclusions")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty(PropertyName="exclusions")&gt;]</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.IList&lt;Microsoft.Azure.Management.Network.Models.ApplicationGatewayFirewallExclusion&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets or sets the exclusion list.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="FileUploadLimitInMb">
+      <MemberSignature Language="C#" Value="public int? FileUploadLimitInMb { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;int32&gt; FileUploadLimitInMb" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Management.Network.Models.ApplicationGatewayWebApplicationFirewallConfiguration.FileUploadLimitInMb" />
+      <MemberSignature Language="VB.NET" Value="Public Property FileUploadLimitInMb As Nullable(Of Integer)" />
+      <MemberSignature Language="F#" Value="member this.FileUploadLimitInMb : Nullable&lt;int&gt; with get, set" Usage="Microsoft.Azure.Management.Network.Models.ApplicationGatewayWebApplicationFirewallConfiguration.FileUploadLimitInMb" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Azure.Management.Network</AssemblyName>
+        <AssemblyVersion>20.0.1.0</AssemblyVersion>
+        <AssemblyVersion>20.0.2.0</AssemblyVersion>
+        <AssemblyVersion>20.0.3.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty(PropertyName="fileUploadLimitInMb")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty(PropertyName="fileUploadLimitInMb")&gt;]</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Nullable&lt;System.Int32&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets or sets maximum file upload size in Mb for WAF.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
     <Member MemberName="FirewallMode">
       <MemberSignature Language="C#" Value="public string FirewallMode { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string FirewallMode" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Management.Network.Models.ApplicationGatewayWebApplicationFirewallConfiguration.FirewallMode" />
       <MemberSignature Language="VB.NET" Value="Public Property FirewallMode As String" />
       <MemberSignature Language="F#" Value="member this.FirewallMode : string with get, set" Usage="Microsoft.Azure.Management.Network.Models.ApplicationGatewayWebApplicationFirewallConfiguration.FirewallMode" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ FirewallMode { System::String ^ get(); void set(System::String ^ value); };" />
-      <MemberSignature Language="C++ CX" Value="public:&#xA; property Platform::String ^ FirewallMode { Platform::String ^ get(); void set(Platform::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Network</AssemblyName>
-        <AssemblyVersion>14.0.0.0</AssemblyVersion>
-        <AssemblyVersion>16.0.0.0</AssemblyVersion>
-        <AssemblyVersion>17.0.0.0</AssemblyVersion>
-        <AssemblyVersion>18.0.0.0</AssemblyVersion>
+        <AssemblyVersion>20.0.0.0</AssemblyVersion>
+        <AssemblyVersion>20.0.1.0</AssemblyVersion>
+        <AssemblyVersion>20.0.2.0</AssemblyVersion>
+        <AssemblyVersion>20.0.3.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="firewallMode")</AttributeName>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty(PropertyName="firewallMode")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty(PropertyName="firewallMode")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -188,7 +251,7 @@
       </Docs>
     </Member>
     <Member MemberName="MaxRequestBodySize">
-      <MemberSignature Language="C#" Value="public Nullable&lt;int&gt; MaxRequestBodySize { get; set; }" />
+      <MemberSignature Language="C#" Value="public int? MaxRequestBodySize { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;int32&gt; MaxRequestBodySize" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Management.Network.Models.ApplicationGatewayWebApplicationFirewallConfiguration.MaxRequestBodySize" />
       <MemberSignature Language="VB.NET" Value="Public Property MaxRequestBodySize As Nullable(Of Integer)" />
@@ -196,11 +259,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Network</AssemblyName>
-        <AssemblyVersion>18.0.0.0</AssemblyVersion>
+        <AssemblyVersion>20.0.0.0</AssemblyVersion>
+        <AssemblyVersion>20.0.1.0</AssemblyVersion>
+        <AssemblyVersion>20.0.2.0</AssemblyVersion>
+        <AssemblyVersion>20.0.3.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="maxRequestBodySize")</AttributeName>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty(PropertyName="maxRequestBodySize")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty(PropertyName="maxRequestBodySize")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -208,14 +275,44 @@
       </ReturnValue>
       <Docs>
         <summary>
-            Gets or sets maxium request body size for WAF.
+            Gets or sets maximum request body size for WAF.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="MaxRequestBodySizeInKb">
+      <MemberSignature Language="C#" Value="public int? MaxRequestBodySizeInKb { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;int32&gt; MaxRequestBodySizeInKb" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Management.Network.Models.ApplicationGatewayWebApplicationFirewallConfiguration.MaxRequestBodySizeInKb" />
+      <MemberSignature Language="VB.NET" Value="Public Property MaxRequestBodySizeInKb As Nullable(Of Integer)" />
+      <MemberSignature Language="F#" Value="member this.MaxRequestBodySizeInKb : Nullable&lt;int&gt; with get, set" Usage="Microsoft.Azure.Management.Network.Models.ApplicationGatewayWebApplicationFirewallConfiguration.MaxRequestBodySizeInKb" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Azure.Management.Network</AssemblyName>
+        <AssemblyVersion>20.0.1.0</AssemblyVersion>
+        <AssemblyVersion>20.0.2.0</AssemblyVersion>
+        <AssemblyVersion>20.0.3.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty(PropertyName="maxRequestBodySizeInKb")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty(PropertyName="maxRequestBodySizeInKb")&gt;]</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Nullable&lt;System.Int32&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets or sets maximum request body size in Kb for WAF.
             </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="RequestBodyCheck">
-      <MemberSignature Language="C#" Value="public Nullable&lt;bool&gt; RequestBodyCheck { get; set; }" />
+      <MemberSignature Language="C#" Value="public bool? RequestBodyCheck { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;bool&gt; RequestBodyCheck" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Management.Network.Models.ApplicationGatewayWebApplicationFirewallConfiguration.RequestBodyCheck" />
       <MemberSignature Language="VB.NET" Value="Public Property RequestBodyCheck As Nullable(Of Boolean)" />
@@ -223,11 +320,15 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Network</AssemblyName>
-        <AssemblyVersion>18.0.0.0</AssemblyVersion>
+        <AssemblyVersion>20.0.0.0</AssemblyVersion>
+        <AssemblyVersion>20.0.1.0</AssemblyVersion>
+        <AssemblyVersion>20.0.2.0</AssemblyVersion>
+        <AssemblyVersion>20.0.3.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="requestBodyCheck")</AttributeName>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty(PropertyName="requestBodyCheck")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty(PropertyName="requestBodyCheck")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -247,19 +348,18 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Management.Network.Models.ApplicationGatewayWebApplicationFirewallConfiguration.RuleSetType" />
       <MemberSignature Language="VB.NET" Value="Public Property RuleSetType As String" />
       <MemberSignature Language="F#" Value="member this.RuleSetType : string with get, set" Usage="Microsoft.Azure.Management.Network.Models.ApplicationGatewayWebApplicationFirewallConfiguration.RuleSetType" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ RuleSetType { System::String ^ get(); void set(System::String ^ value); };" />
-      <MemberSignature Language="C++ CX" Value="public:&#xA; property Platform::String ^ RuleSetType { Platform::String ^ get(); void set(Platform::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Network</AssemblyName>
-        <AssemblyVersion>14.0.0.0</AssemblyVersion>
-        <AssemblyVersion>16.0.0.0</AssemblyVersion>
-        <AssemblyVersion>17.0.0.0</AssemblyVersion>
-        <AssemblyVersion>18.0.0.0</AssemblyVersion>
+        <AssemblyVersion>20.0.0.0</AssemblyVersion>
+        <AssemblyVersion>20.0.1.0</AssemblyVersion>
+        <AssemblyVersion>20.0.2.0</AssemblyVersion>
+        <AssemblyVersion>20.0.3.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="ruleSetType")</AttributeName>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty(PropertyName="ruleSetType")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty(PropertyName="ruleSetType")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -280,19 +380,18 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Management.Network.Models.ApplicationGatewayWebApplicationFirewallConfiguration.RuleSetVersion" />
       <MemberSignature Language="VB.NET" Value="Public Property RuleSetVersion As String" />
       <MemberSignature Language="F#" Value="member this.RuleSetVersion : string with get, set" Usage="Microsoft.Azure.Management.Network.Models.ApplicationGatewayWebApplicationFirewallConfiguration.RuleSetVersion" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ RuleSetVersion { System::String ^ get(); void set(System::String ^ value); };" />
-      <MemberSignature Language="C++ CX" Value="public:&#xA; property Platform::String ^ RuleSetVersion { Platform::String ^ get(); void set(Platform::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Network</AssemblyName>
-        <AssemblyVersion>14.0.0.0</AssemblyVersion>
-        <AssemblyVersion>16.0.0.0</AssemblyVersion>
-        <AssemblyVersion>17.0.0.0</AssemblyVersion>
-        <AssemblyVersion>18.0.0.0</AssemblyVersion>
+        <AssemblyVersion>20.0.0.0</AssemblyVersion>
+        <AssemblyVersion>20.0.1.0</AssemblyVersion>
+        <AssemblyVersion>20.0.2.0</AssemblyVersion>
+        <AssemblyVersion>20.0.3.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="ruleSetVersion")</AttributeName>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty(PropertyName="ruleSetVersion")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty(PropertyName="ruleSetVersion")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -312,16 +411,13 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Management.Network.Models.ApplicationGatewayWebApplicationFirewallConfiguration.Validate" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Sub Validate ()" />
       <MemberSignature Language="F#" Value="abstract member Validate : unit -&gt; unit&#xA;override this.Validate : unit -&gt; unit" Usage="applicationGatewayWebApplicationFirewallConfiguration.Validate " />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Validate();" />
-      <MemberSignature Language="C++ CX" Value="public:&#xA; virtual void Validate();" />
-      <MemberSignature Language="C++ WINRT" Value=" virtual void Validate();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Network</AssemblyName>
-        <AssemblyVersion>14.0.0.0</AssemblyVersion>
-        <AssemblyVersion>16.0.0.0</AssemblyVersion>
-        <AssemblyVersion>17.0.0.0</AssemblyVersion>
-        <AssemblyVersion>18.0.0.0</AssemblyVersion>
+        <AssemblyVersion>20.0.0.0</AssemblyVersion>
+        <AssemblyVersion>20.0.1.0</AssemblyVersion>
+        <AssemblyVersion>20.0.2.0</AssemblyVersion>
+        <AssemblyVersion>20.0.3.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>

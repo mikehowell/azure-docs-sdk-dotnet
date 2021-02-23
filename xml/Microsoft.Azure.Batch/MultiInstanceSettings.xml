@@ -1,15 +1,14 @@
-﻿<Type Name="MultiInstanceSettings" FullName="Microsoft.Azure.Batch.MultiInstanceSettings">
+<Type Name="MultiInstanceSettings" FullName="Microsoft.Azure.Batch.MultiInstanceSettings">
   <TypeSignature Language="C#" Value="public class MultiInstanceSettings" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit MultiInstanceSettings extends System.Object" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Azure.Batch.MultiInstanceSettings" />
   <TypeSignature Language="VB.NET" Value="Public Class MultiInstanceSettings" />
-  <TypeSignature Language="F#" Value="type MultiInstanceSettings = class&#xA;    interface ITransportObjectProvider&lt;MultiInstanceSettings&gt;&#xA;    interface IPropertyMetadata&#xA;    interface IModifiable&#xA;    interface IReadOnly" />
-  <TypeSignature Language="C++ CLI" Value="public ref class MultiInstanceSettings" />
-  <TypeSignature Language="C++ WINRT" Value="[Windows::Foundation::Metadata::WebHostHidden]&#xA;class MultiInstanceSettings" />
+  <TypeSignature Language="F#" Value="type MultiInstanceSettings = class" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Azure.Batch</AssemblyName>
-    <AssemblyVersion>7.1.0.0</AssemblyVersion>
-    <AssemblyVersion>8.0.0.0</AssemblyVersion>
+    <AssemblyVersion>12.0.0.0</AssemblyVersion>
+    <AssemblyVersion>13.0.0.0</AssemblyVersion>
+    <AssemblyVersion>14.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
@@ -18,21 +17,25 @@
   <Docs>
     <summary>
             Settings which specify how to run a multi-instance task. Multi-instance tasks are commonly used to support MPI tasks. 
-            For more information see https://azure.microsoft.com/documentation/articles/batch-mpi/.
+            In the MPI case, if any of the subtasks fail (for example due to exiting with a non-zero exit code) the entire multi-instance 
+            task fails. The multi-instance task is then terminated and retried, up to its retry limit. For more information see 
+            https://azure.microsoft.com/documentation/articles/batch-mpi/.
             </summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
-      <MemberSignature Language="C#" Value="public MultiInstanceSettings (string coordinationCommandLine, Nullable&lt;int&gt; numberOfInstances = null);" />
+      <MemberSignature Language="C#" Value="public MultiInstanceSettings (string coordinationCommandLine, int? numberOfInstances = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string coordinationCommandLine, valuetype System.Nullable`1&lt;int32&gt; numberOfInstances) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Batch.MultiInstanceSettings.#ctor(System.String,System.Nullable{System.Int32})" />
-      <MemberSignature Language="VB.NET" Value="Public Sub New (coordinationCommandLine As String, Optional numberOfInstances As Nullable(Of Integer) = null)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (coordinationCommandLine As String, Optional numberOfInstances As Nullable(Of Integer) = Nothing)" />
       <MemberSignature Language="F#" Value="new Microsoft.Azure.Batch.MultiInstanceSettings : string * Nullable&lt;int&gt; -&gt; Microsoft.Azure.Batch.MultiInstanceSettings" Usage="new Microsoft.Azure.Batch.MultiInstanceSettings (coordinationCommandLine, numberOfInstances)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Batch</AssemblyName>
-        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>12.0.0.0</AssemblyVersion>
+        <AssemblyVersion>13.0.0.0</AssemblyVersion>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="coordinationCommandLine" Type="System.String" />
@@ -53,12 +56,12 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Batch.MultiInstanceSettings.CommonResourceFiles" />
       <MemberSignature Language="VB.NET" Value="Public Property CommonResourceFiles As IList(Of ResourceFile)" />
       <MemberSignature Language="F#" Value="member this.CommonResourceFiles : System.Collections.Generic.IList&lt;Microsoft.Azure.Batch.ResourceFile&gt; with get, set" Usage="Microsoft.Azure.Batch.MultiInstanceSettings.CommonResourceFiles" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::Generic::IList&lt;Microsoft::Azure::Batch::ResourceFile ^&gt; ^ CommonResourceFiles { System::Collections::Generic::IList&lt;Microsoft::Azure::Batch::ResourceFile ^&gt; ^ get(); void set(System::Collections::Generic::IList&lt;Microsoft::Azure::Batch::ResourceFile ^&gt; ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Batch</AssemblyName>
-        <AssemblyVersion>7.1.0.0</AssemblyVersion>
-        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>12.0.0.0</AssemblyVersion>
+        <AssemblyVersion>13.0.0.0</AssemblyVersion>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Collections.Generic.IList&lt;Microsoft.Azure.Batch.ResourceFile&gt;</ReturnType>
@@ -70,7 +73,10 @@
         <value>To be added.</value>
         <remarks>
             The difference between common resource files and task resource files is that common resource files are downloaded 
-            for all subtasks including the primary, whereas task resource files are downloaded only for the primary.
+            for all subtasks including the primary, whereas task resource files are downloaded only for the primary. There 
+            is a maximum size for the list of resource files. When the max size is exceeded, the request will fail and the 
+            response error code will be RequestEntityTooLarge. If this occurs, the collection of resource files must be reduced 
+            in size. This can be achieved using .zip files, Application Packages, or Docker Containers.
             </remarks>
       </Docs>
     </Member>
@@ -80,13 +86,12 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Batch.MultiInstanceSettings.CoordinationCommandLine" />
       <MemberSignature Language="VB.NET" Value="Public Property CoordinationCommandLine As String" />
       <MemberSignature Language="F#" Value="member this.CoordinationCommandLine : string with get, set" Usage="Microsoft.Azure.Batch.MultiInstanceSettings.CoordinationCommandLine" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ CoordinationCommandLine { System::String ^ get(); void set(System::String ^ value); };" />
-      <MemberSignature Language="C++ CX" Value="public:&#xA; property Platform::String ^ CoordinationCommandLine { Platform::String ^ get(); void set(Platform::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Batch</AssemblyName>
-        <AssemblyVersion>7.1.0.0</AssemblyVersion>
-        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>12.0.0.0</AssemblyVersion>
+        <AssemblyVersion>13.0.0.0</AssemblyVersion>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -100,17 +105,17 @@
       </Docs>
     </Member>
     <Member MemberName="NumberOfInstances">
-      <MemberSignature Language="C#" Value="public Nullable&lt;int&gt; NumberOfInstances { get; set; }" />
+      <MemberSignature Language="C#" Value="public int? NumberOfInstances { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;int32&gt; NumberOfInstances" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Batch.MultiInstanceSettings.NumberOfInstances" />
       <MemberSignature Language="VB.NET" Value="Public Property NumberOfInstances As Nullable(Of Integer)" />
       <MemberSignature Language="F#" Value="member this.NumberOfInstances : Nullable&lt;int&gt; with get, set" Usage="Microsoft.Azure.Batch.MultiInstanceSettings.NumberOfInstances" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Nullable&lt;int&gt; NumberOfInstances { Nullable&lt;int&gt; get(); void set(Nullable&lt;int&gt; value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Batch</AssemblyName>
-        <AssemblyVersion>7.1.0.0</AssemblyVersion>
-        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>12.0.0.0</AssemblyVersion>
+        <AssemblyVersion>13.0.0.0</AssemblyVersion>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Nullable&lt;System.Int32&gt;</ReturnType>

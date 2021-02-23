@@ -1,11 +1,9 @@
-﻿<Type Name="SubscriptionUsage" FullName="Microsoft.Azure.Management.Sql.Models.SubscriptionUsage">
+<Type Name="SubscriptionUsage" FullName="Microsoft.Azure.Management.Sql.Models.SubscriptionUsage">
   <TypeSignature Language="C#" Value="public class SubscriptionUsage : Microsoft.Azure.Management.Sql.Models.ProxyResource" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit SubscriptionUsage extends Microsoft.Azure.Management.Sql.Models.ProxyResource" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Azure.Management.Sql.Models.SubscriptionUsage" />
   <TypeSignature Language="VB.NET" Value="Public Class SubscriptionUsage&#xA;Inherits ProxyResource" />
   <TypeSignature Language="F#" Value="type SubscriptionUsage = class&#xA;    inherit ProxyResource" />
-  <TypeSignature Language="C++ CLI" Value="public ref class SubscriptionUsage : Microsoft::Azure::Management::Sql::Models::ProxyResource" />
-  <TypeSignature Language="C++ WINRT" Value="[Windows::Foundation::Metadata::WebHostHidden]&#xA;class SubscriptionUsage : Microsoft::Azure::Management::Sql::Models::ProxyResource" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Azure.Management.Sql</AssemblyName>
     <AssemblyVersion>1.0.0.0</AssemblyVersion>
@@ -16,7 +14,8 @@
   <Interfaces />
   <Attributes>
     <Attribute>
-      <AttributeName>Microsoft.Rest.Serialization.JsonTransformation</AttributeName>
+      <AttributeName Language="C#">[Microsoft.Rest.Serialization.JsonTransformation]</AttributeName>
+      <AttributeName Language="F#">[&lt;Microsoft.Rest.Serialization.JsonTransformation&gt;]</AttributeName>
     </Attribute>
   </Attributes>
   <Docs>
@@ -31,9 +30,6 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Management.Sql.Models.SubscriptionUsage.#ctor" />
       <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; SubscriptionUsage();" />
-      <MemberSignature Language="C++ CX" Value="public:&#xA; SubscriptionUsage();" />
-      <MemberSignature Language="C++ WINRT" Value=" SubscriptionUsage();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Sql</AssemblyName>
@@ -48,10 +44,10 @@
       </Docs>
     </Member>
     <Member MemberName=".ctor">
-      <MemberSignature Language="C#" Value="public SubscriptionUsage (string id = null, string name = null, string type = null, string displayName = null, Nullable&lt;double&gt; currentValue = null, Nullable&lt;double&gt; limit = null, string unit = null);" />
+      <MemberSignature Language="C#" Value="public SubscriptionUsage (string id = default, string name = default, string type = default, string displayName = default, double? currentValue = default, double? limit = default, string unit = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string id, string name, string type, string displayName, valuetype System.Nullable`1&lt;float64&gt; currentValue, valuetype System.Nullable`1&lt;float64&gt; limit, string unit) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Management.Sql.Models.SubscriptionUsage.#ctor(System.String,System.String,System.String,System.String,System.Nullable{System.Double},System.Nullable{System.Double},System.String)" />
-      <MemberSignature Language="VB.NET" Value="Public Sub New (Optional id As String = null, Optional name As String = null, Optional type As String = null, Optional displayName As String = null, Optional currentValue As Nullable(Of Double) = null, Optional limit As Nullable(Of Double) = null, Optional unit As String = null)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (Optional id As String = Nothing, Optional name As String = Nothing, Optional type As String = Nothing, Optional displayName As String = Nothing, Optional currentValue As Nullable(Of Double) = Nothing, Optional limit As Nullable(Of Double) = Nothing, Optional unit As String = Nothing)" />
       <MemberSignature Language="F#" Value="new Microsoft.Azure.Management.Sql.Models.SubscriptionUsage : string * string * string * string * Nullable&lt;double&gt; * Nullable&lt;double&gt; * string -&gt; Microsoft.Azure.Management.Sql.Models.SubscriptionUsage" Usage="new Microsoft.Azure.Management.Sql.Models.SubscriptionUsage (id, name, type, displayName, currentValue, limit, unit)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
@@ -82,12 +78,11 @@
       </Docs>
     </Member>
     <Member MemberName="CurrentValue">
-      <MemberSignature Language="C#" Value="public Nullable&lt;double&gt; CurrentValue { get; }" />
+      <MemberSignature Language="C#" Value="public double? CurrentValue { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;float64&gt; CurrentValue" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Management.Sql.Models.SubscriptionUsage.CurrentValue" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property CurrentValue As Nullable(Of Double)" />
       <MemberSignature Language="F#" Value="member this.CurrentValue : Nullable&lt;double&gt;" Usage="Microsoft.Azure.Management.Sql.Models.SubscriptionUsage.CurrentValue" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Nullable&lt;double&gt; CurrentValue { Nullable&lt;double&gt; get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Sql</AssemblyName>
@@ -95,7 +90,8 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="properties.currentValue")</AttributeName>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty(PropertyName="properties.currentValue")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty(PropertyName="properties.currentValue")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -115,8 +111,6 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Management.Sql.Models.SubscriptionUsage.DisplayName" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property DisplayName As String" />
       <MemberSignature Language="F#" Value="member this.DisplayName : string" Usage="Microsoft.Azure.Management.Sql.Models.SubscriptionUsage.DisplayName" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ DisplayName { System::String ^ get(); };" />
-      <MemberSignature Language="C++ CX" Value="public:&#xA; property Platform::String ^ DisplayName { Platform::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Sql</AssemblyName>
@@ -124,7 +118,8 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="properties.displayName")</AttributeName>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty(PropertyName="properties.displayName")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty(PropertyName="properties.displayName")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -139,12 +134,11 @@
       </Docs>
     </Member>
     <Member MemberName="Limit">
-      <MemberSignature Language="C#" Value="public Nullable&lt;double&gt; Limit { get; }" />
+      <MemberSignature Language="C#" Value="public double? Limit { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;float64&gt; Limit" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Management.Sql.Models.SubscriptionUsage.Limit" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Limit As Nullable(Of Double)" />
       <MemberSignature Language="F#" Value="member this.Limit : Nullable&lt;double&gt;" Usage="Microsoft.Azure.Management.Sql.Models.SubscriptionUsage.Limit" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Nullable&lt;double&gt; Limit { Nullable&lt;double&gt; get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Sql</AssemblyName>
@@ -152,7 +146,8 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="properties.limit")</AttributeName>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty(PropertyName="properties.limit")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty(PropertyName="properties.limit")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -172,8 +167,6 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Management.Sql.Models.SubscriptionUsage.Unit" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Unit As String" />
       <MemberSignature Language="F#" Value="member this.Unit : string" Usage="Microsoft.Azure.Management.Sql.Models.SubscriptionUsage.Unit" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Unit { System::String ^ get(); };" />
-      <MemberSignature Language="C++ CX" Value="public:&#xA; property Platform::String ^ Unit { Platform::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Sql</AssemblyName>
@@ -181,7 +174,8 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="properties.unit")</AttributeName>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty(PropertyName="properties.unit")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty(PropertyName="properties.unit")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>

@@ -1,15 +1,32 @@
-﻿<Type Name="WillMessage" FullName="Microsoft.Azure.Devices.Client.Transport.Mqtt.WillMessage">
+<Type Name="WillMessage" FullName="Microsoft.Azure.Devices.Client.Transport.Mqtt.WillMessage">
   <TypeSignature Language="C#" Value="public class WillMessage : Microsoft.Azure.Devices.Client.Transport.Mqtt.IWillMessage" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit WillMessage extends System.Object implements class Microsoft.Azure.Devices.Client.Transport.Mqtt.IWillMessage" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Azure.Devices.Client.Transport.Mqtt.WillMessage" />
   <TypeSignature Language="VB.NET" Value="Public Class WillMessage&#xA;Implements IWillMessage" />
   <TypeSignature Language="F#" Value="type WillMessage = class&#xA;    interface IWillMessage" />
-  <TypeSignature Language="C++ CLI" Value="public ref class WillMessage : Microsoft::Azure::Devices::Client::Transport::Mqtt::IWillMessage" />
-  <TypeSignature Language="C++ WINRT" Value="[Windows::Foundation::Metadata::WebHostHidden]&#xA;class WillMessage : Microsoft::Azure::Devices::Client::Transport::Mqtt::IWillMessage" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Azure.Devices.Client</AssemblyName>
-    <AssemblyVersion>1.0.0.0</AssemblyVersion>
-    <AssemblyVersion>1.17.0.0</AssemblyVersion>
+    <AssemblyVersion>1.21.2.0</AssemblyVersion>
+    <AssemblyVersion>1.21.3.0</AssemblyVersion>
+    <AssemblyVersion>1.21.4.0</AssemblyVersion>
+    <AssemblyVersion>1.22.0.0</AssemblyVersion>
+    <AssemblyVersion>1.23.0.0</AssemblyVersion>
+    <AssemblyVersion>1.23.1.0</AssemblyVersion>
+    <AssemblyVersion>1.23.2.0</AssemblyVersion>
+    <AssemblyVersion>1.24.0.0</AssemblyVersion>
+    <AssemblyVersion>1.25.0.0</AssemblyVersion>
+    <AssemblyVersion>1.26.0.0</AssemblyVersion>
+    <AssemblyVersion>1.27.0.0</AssemblyVersion>
+    <AssemblyVersion>1.28.0.0</AssemblyVersion>
+    <AssemblyVersion>1.30.0.0</AssemblyVersion>
+    <AssemblyVersion>1.31.0.0</AssemblyVersion>
+    <AssemblyVersion>1.31.1.0</AssemblyVersion>
+    <AssemblyVersion>1.31.2.0</AssemblyVersion>
+    <AssemblyVersion>1.32.0.0</AssemblyVersion>
+    <AssemblyVersion>1.33.0.0</AssemblyVersion>
+    <AssemblyVersion>1.33.1.0</AssemblyVersion>
+    <AssemblyVersion>1.34.0.0</AssemblyVersion>
+    <AssemblyVersion>1.35.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
@@ -20,7 +37,9 @@
     </Interface>
   </Interfaces>
   <Docs>
-    <summary>To be added.</summary>
+    <summary>
+            An MQTT "will" message, used when a client disconnects
+            </summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -28,22 +47,43 @@
       <MemberSignature Language="C#" Value="public WillMessage (DotNetty.Codecs.Mqtt.Packets.QualityOfService qos, Microsoft.Azure.Devices.Client.Message message);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(valuetype DotNetty.Codecs.Mqtt.Packets.QualityOfService qos, class Microsoft.Azure.Devices.Client.Message message) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Devices.Client.Transport.Mqtt.WillMessage.#ctor(DotNetty.Codecs.Mqtt.Packets.QualityOfService,Microsoft.Azure.Devices.Client.Message)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (qos As QualityOfService, message As Message)" />
       <MemberSignature Language="F#" Value="new Microsoft.Azure.Devices.Client.Transport.Mqtt.WillMessage : DotNetty.Codecs.Mqtt.Packets.QualityOfService * Microsoft.Azure.Devices.Client.Message -&gt; Microsoft.Azure.Devices.Client.Transport.Mqtt.WillMessage" Usage="new Microsoft.Azure.Devices.Client.Transport.Mqtt.WillMessage (qos, message)" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; WillMessage(DotNetty::Codecs::Mqtt::Packets::QualityOfService qos, Microsoft::Azure::Devices::Client::Message ^ message);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Devices.Client</AssemblyName>
-        <AssemblyVersion>1.0.0.0</AssemblyVersion>
-        <AssemblyVersion>1.17.0.0</AssemblyVersion>
+        <AssemblyVersion>1.21.2.0</AssemblyVersion>
+        <AssemblyVersion>1.21.3.0</AssemblyVersion>
+        <AssemblyVersion>1.21.4.0</AssemblyVersion>
+        <AssemblyVersion>1.22.0.0</AssemblyVersion>
+        <AssemblyVersion>1.23.0.0</AssemblyVersion>
+        <AssemblyVersion>1.23.1.0</AssemblyVersion>
+        <AssemblyVersion>1.23.2.0</AssemblyVersion>
+        <AssemblyVersion>1.24.0.0</AssemblyVersion>
+        <AssemblyVersion>1.25.0.0</AssemblyVersion>
+        <AssemblyVersion>1.26.0.0</AssemblyVersion>
+        <AssemblyVersion>1.27.0.0</AssemblyVersion>
+        <AssemblyVersion>1.28.0.0</AssemblyVersion>
+        <AssemblyVersion>1.30.0.0</AssemblyVersion>
+        <AssemblyVersion>1.31.0.0</AssemblyVersion>
+        <AssemblyVersion>1.31.1.0</AssemblyVersion>
+        <AssemblyVersion>1.31.2.0</AssemblyVersion>
+        <AssemblyVersion>1.32.0.0</AssemblyVersion>
+        <AssemblyVersion>1.33.0.0</AssemblyVersion>
+        <AssemblyVersion>1.33.1.0</AssemblyVersion>
+        <AssemblyVersion>1.34.0.0</AssemblyVersion>
+        <AssemblyVersion>1.35.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="qos" Type="DotNetty.Codecs.Mqtt.Packets.QualityOfService" />
         <Parameter Name="message" Type="Microsoft.Azure.Devices.Client.Message" />
       </Parameters>
       <Docs>
-        <param name="qos">To be added.</param>
-        <param name="message">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="qos">The quality of service</param>
+        <param name="message">The message to be sent</param>
+        <summary>
+            Creates an instance of WillMessage
+            </summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -53,12 +93,30 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Devices.Client.Transport.Mqtt.WillMessage.Message" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Message As Message" />
       <MemberSignature Language="F#" Value="member this.Message : Microsoft.Azure.Devices.Client.Message" Usage="Microsoft.Azure.Devices.Client.Transport.Mqtt.WillMessage.Message" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Azure::Devices::Client::Message ^ Message { Microsoft::Azure::Devices::Client::Message ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Devices.Client</AssemblyName>
-        <AssemblyVersion>1.0.0.0</AssemblyVersion>
-        <AssemblyVersion>1.17.0.0</AssemblyVersion>
+        <AssemblyVersion>1.21.2.0</AssemblyVersion>
+        <AssemblyVersion>1.21.3.0</AssemblyVersion>
+        <AssemblyVersion>1.21.4.0</AssemblyVersion>
+        <AssemblyVersion>1.22.0.0</AssemblyVersion>
+        <AssemblyVersion>1.23.0.0</AssemblyVersion>
+        <AssemblyVersion>1.23.1.0</AssemblyVersion>
+        <AssemblyVersion>1.23.2.0</AssemblyVersion>
+        <AssemblyVersion>1.24.0.0</AssemblyVersion>
+        <AssemblyVersion>1.25.0.0</AssemblyVersion>
+        <AssemblyVersion>1.26.0.0</AssemblyVersion>
+        <AssemblyVersion>1.27.0.0</AssemblyVersion>
+        <AssemblyVersion>1.28.0.0</AssemblyVersion>
+        <AssemblyVersion>1.30.0.0</AssemblyVersion>
+        <AssemblyVersion>1.31.0.0</AssemblyVersion>
+        <AssemblyVersion>1.31.1.0</AssemblyVersion>
+        <AssemblyVersion>1.31.2.0</AssemblyVersion>
+        <AssemblyVersion>1.32.0.0</AssemblyVersion>
+        <AssemblyVersion>1.33.0.0</AssemblyVersion>
+        <AssemblyVersion>1.33.1.0</AssemblyVersion>
+        <AssemblyVersion>1.34.0.0</AssemblyVersion>
+        <AssemblyVersion>1.35.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Azure.Devices.Client.Message</ReturnType>
@@ -67,6 +125,7 @@
         <summary>To be added.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
+        <inheritdoc />
       </Docs>
     </Member>
     <Member MemberName="QoS">
@@ -75,16 +134,33 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Devices.Client.Transport.Mqtt.WillMessage.QoS" />
       <MemberSignature Language="VB.NET" Value="Public Property QoS As QualityOfService" />
       <MemberSignature Language="F#" Value="member this.QoS : DotNetty.Codecs.Mqtt.Packets.QualityOfService with get, set" Usage="Microsoft.Azure.Devices.Client.Transport.Mqtt.WillMessage.QoS" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property DotNetty::Codecs::Mqtt::Packets::QualityOfService QoS { DotNetty::Codecs::Mqtt::Packets::QualityOfService get(); void set(DotNetty::Codecs::Mqtt::Packets::QualityOfService value); };" />
-      <MemberSignature Language="C++ CX" Value="public:&#xA; property DotNetty::Codecs::Mqtt::Packets::QualityOfService QoS { DotNetty::Codecs::Mqtt::Packets::QualityOfService get(); void set(DotNetty::Codecs::Mqtt::Packets::QualityOfService value); };" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:Microsoft.Azure.Devices.Client.Transport.Mqtt.IWillMessage.QoS</InterfaceMember>
       </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Devices.Client</AssemblyName>
-        <AssemblyVersion>1.0.0.0</AssemblyVersion>
-        <AssemblyVersion>1.17.0.0</AssemblyVersion>
+        <AssemblyVersion>1.21.2.0</AssemblyVersion>
+        <AssemblyVersion>1.21.3.0</AssemblyVersion>
+        <AssemblyVersion>1.21.4.0</AssemblyVersion>
+        <AssemblyVersion>1.22.0.0</AssemblyVersion>
+        <AssemblyVersion>1.23.0.0</AssemblyVersion>
+        <AssemblyVersion>1.23.1.0</AssemblyVersion>
+        <AssemblyVersion>1.23.2.0</AssemblyVersion>
+        <AssemblyVersion>1.24.0.0</AssemblyVersion>
+        <AssemblyVersion>1.25.0.0</AssemblyVersion>
+        <AssemblyVersion>1.26.0.0</AssemblyVersion>
+        <AssemblyVersion>1.27.0.0</AssemblyVersion>
+        <AssemblyVersion>1.28.0.0</AssemblyVersion>
+        <AssemblyVersion>1.30.0.0</AssemblyVersion>
+        <AssemblyVersion>1.31.0.0</AssemblyVersion>
+        <AssemblyVersion>1.31.1.0</AssemblyVersion>
+        <AssemblyVersion>1.31.2.0</AssemblyVersion>
+        <AssemblyVersion>1.32.0.0</AssemblyVersion>
+        <AssemblyVersion>1.33.0.0</AssemblyVersion>
+        <AssemblyVersion>1.33.1.0</AssemblyVersion>
+        <AssemblyVersion>1.34.0.0</AssemblyVersion>
+        <AssemblyVersion>1.35.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>DotNetty.Codecs.Mqtt.Packets.QualityOfService</ReturnType>
@@ -93,6 +169,7 @@
         <summary>To be added.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
+        <inheritdoc />
       </Docs>
     </Member>
   </Members>

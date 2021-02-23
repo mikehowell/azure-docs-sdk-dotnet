@@ -1,11 +1,9 @@
-﻿<Type Name="JobRelationshipProperties" FullName="Microsoft.Azure.Management.DataLake.Analytics.Models.JobRelationshipProperties">
+<Type Name="JobRelationshipProperties" FullName="Microsoft.Azure.Management.DataLake.Analytics.Models.JobRelationshipProperties">
   <TypeSignature Language="C#" Value="public class JobRelationshipProperties" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit JobRelationshipProperties extends System.Object" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Azure.Management.DataLake.Analytics.Models.JobRelationshipProperties" />
   <TypeSignature Language="VB.NET" Value="Public Class JobRelationshipProperties" />
   <TypeSignature Language="F#" Value="type JobRelationshipProperties = class" />
-  <TypeSignature Language="C++ CLI" Value="public ref class JobRelationshipProperties" />
-  <TypeSignature Language="C++ WINRT" Value="[Windows::Foundation::Metadata::WebHostHidden]&#xA;class JobRelationshipProperties" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Azure.Management.DataLake.Analytics</AssemblyName>
     <AssemblyVersion>3.0.0.0</AssemblyVersion>
@@ -27,9 +25,6 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Management.DataLake.Analytics.Models.JobRelationshipProperties.#ctor" />
       <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; JobRelationshipProperties();" />
-      <MemberSignature Language="C++ CX" Value="public:&#xA; JobRelationshipProperties();" />
-      <MemberSignature Language="C++ WINRT" Value=" JobRelationshipProperties();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.DataLake.Analytics</AssemblyName>
@@ -44,10 +39,10 @@
       </Docs>
     </Member>
     <Member MemberName=".ctor">
-      <MemberSignature Language="C#" Value="public JobRelationshipProperties (Guid recurrenceId, Nullable&lt;Guid&gt; pipelineId = null, string pipelineName = null, string pipelineUri = null, Nullable&lt;Guid&gt; runId = null, string recurrenceName = null);" />
+      <MemberSignature Language="C#" Value="public JobRelationshipProperties (Guid recurrenceId, Guid? pipelineId = default, string pipelineName = default, string pipelineUri = default, Guid? runId = default, string recurrenceName = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(valuetype System.Guid recurrenceId, valuetype System.Nullable`1&lt;valuetype System.Guid&gt; pipelineId, string pipelineName, string pipelineUri, valuetype System.Nullable`1&lt;valuetype System.Guid&gt; runId, string recurrenceName) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Management.DataLake.Analytics.Models.JobRelationshipProperties.#ctor(System.Guid,System.Nullable{System.Guid},System.String,System.String,System.Nullable{System.Guid},System.String)" />
-      <MemberSignature Language="VB.NET" Value="Public Sub New (recurrenceId As Guid, Optional pipelineId As Nullable(Of Guid) = null, Optional pipelineName As String = null, Optional pipelineUri As String = null, Optional runId As Nullable(Of Guid) = null, Optional recurrenceName As String = null)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (recurrenceId As Guid, Optional pipelineId As Nullable(Of Guid) = Nothing, Optional pipelineName As String = Nothing, Optional pipelineUri As String = Nothing, Optional runId As Nullable(Of Guid) = Nothing, Optional recurrenceName As String = Nothing)" />
       <MemberSignature Language="F#" Value="new Microsoft.Azure.Management.DataLake.Analytics.Models.JobRelationshipProperties : Guid * Nullable&lt;Guid&gt; * string * string * Nullable&lt;Guid&gt; * string -&gt; Microsoft.Azure.Management.DataLake.Analytics.Models.JobRelationshipProperties" Usage="new Microsoft.Azure.Management.DataLake.Analytics.Models.JobRelationshipProperties (recurrenceId, pipelineId, pipelineName, pipelineUri, runId, recurrenceName)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
@@ -63,19 +58,19 @@
         <Parameter Name="recurrenceName" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="recurrenceId">the recurrence identifier (a GUID),
+        <param name="recurrenceId">The recurrence identifier (a GUID),
             unique per activity/script, regardless of iterations. This is
             something to link different occurrences of the same job
             together.</param>
-        <param name="pipelineId">the job relationship pipeline identifier
+        <param name="pipelineId">The job relationship pipeline identifier
             (a GUID).</param>
-        <param name="pipelineName">the friendly name of the job
+        <param name="pipelineName">The friendly name of the job
             relationship pipeline, which does not need to be unique.</param>
-        <param name="pipelineUri">the pipeline uri, unique, links to the
+        <param name="pipelineUri">The pipeline uri, unique, links to the
             originating service for this pipeline.</param>
-        <param name="runId">the run identifier (a GUID), unique identifier
+        <param name="runId">The run identifier (a GUID), unique identifier
             of the iteration of this pipeline.</param>
-        <param name="recurrenceName">the recurrence name, user friendly
+        <param name="recurrenceName">The recurrence name, user friendly
             name for the correlation between jobs.</param>
         <summary>
             Initializes a new instance of the JobRelationshipProperties class.
@@ -84,12 +79,11 @@
       </Docs>
     </Member>
     <Member MemberName="PipelineId">
-      <MemberSignature Language="C#" Value="public Nullable&lt;Guid&gt; PipelineId { get; set; }" />
+      <MemberSignature Language="C#" Value="public Guid? PipelineId { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;valuetype System.Guid&gt; PipelineId" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Management.DataLake.Analytics.Models.JobRelationshipProperties.PipelineId" />
       <MemberSignature Language="VB.NET" Value="Public Property PipelineId As Nullable(Of Guid)" />
       <MemberSignature Language="F#" Value="member this.PipelineId : Nullable&lt;Guid&gt; with get, set" Usage="Microsoft.Azure.Management.DataLake.Analytics.Models.JobRelationshipProperties.PipelineId" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Nullable&lt;Guid&gt; PipelineId { Nullable&lt;Guid&gt; get(); void set(Nullable&lt;Guid&gt; value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.DataLake.Analytics</AssemblyName>
@@ -97,7 +91,8 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="pipelineId")</AttributeName>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty(PropertyName="pipelineId")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty(PropertyName="pipelineId")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -117,8 +112,6 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Management.DataLake.Analytics.Models.JobRelationshipProperties.PipelineName" />
       <MemberSignature Language="VB.NET" Value="Public Property PipelineName As String" />
       <MemberSignature Language="F#" Value="member this.PipelineName : string with get, set" Usage="Microsoft.Azure.Management.DataLake.Analytics.Models.JobRelationshipProperties.PipelineName" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ PipelineName { System::String ^ get(); void set(System::String ^ value); };" />
-      <MemberSignature Language="C++ CX" Value="public:&#xA; property Platform::String ^ PipelineName { Platform::String ^ get(); void set(Platform::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.DataLake.Analytics</AssemblyName>
@@ -126,7 +119,8 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="pipelineName")</AttributeName>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty(PropertyName="pipelineName")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty(PropertyName="pipelineName")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -147,8 +141,6 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Management.DataLake.Analytics.Models.JobRelationshipProperties.PipelineUri" />
       <MemberSignature Language="VB.NET" Value="Public Property PipelineUri As String" />
       <MemberSignature Language="F#" Value="member this.PipelineUri : string with get, set" Usage="Microsoft.Azure.Management.DataLake.Analytics.Models.JobRelationshipProperties.PipelineUri" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ PipelineUri { System::String ^ get(); void set(System::String ^ value); };" />
-      <MemberSignature Language="C++ CX" Value="public:&#xA; property Platform::String ^ PipelineUri { Platform::String ^ get(); void set(Platform::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.DataLake.Analytics</AssemblyName>
@@ -156,7 +148,8 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="pipelineUri")</AttributeName>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty(PropertyName="pipelineUri")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty(PropertyName="pipelineUri")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -177,7 +170,6 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Management.DataLake.Analytics.Models.JobRelationshipProperties.RecurrenceId" />
       <MemberSignature Language="VB.NET" Value="Public Property RecurrenceId As Guid" />
       <MemberSignature Language="F#" Value="member this.RecurrenceId : Guid with get, set" Usage="Microsoft.Azure.Management.DataLake.Analytics.Models.JobRelationshipProperties.RecurrenceId" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Guid RecurrenceId { Guid get(); void set(Guid value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.DataLake.Analytics</AssemblyName>
@@ -185,7 +177,8 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="recurrenceId")</AttributeName>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty(PropertyName="recurrenceId")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty(PropertyName="recurrenceId")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -207,8 +200,6 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Management.DataLake.Analytics.Models.JobRelationshipProperties.RecurrenceName" />
       <MemberSignature Language="VB.NET" Value="Public Property RecurrenceName As String" />
       <MemberSignature Language="F#" Value="member this.RecurrenceName : string with get, set" Usage="Microsoft.Azure.Management.DataLake.Analytics.Models.JobRelationshipProperties.RecurrenceName" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ RecurrenceName { System::String ^ get(); void set(System::String ^ value); };" />
-      <MemberSignature Language="C++ CX" Value="public:&#xA; property Platform::String ^ RecurrenceName { Platform::String ^ get(); void set(Platform::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.DataLake.Analytics</AssemblyName>
@@ -216,7 +207,8 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="recurrenceName")</AttributeName>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty(PropertyName="recurrenceName")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty(PropertyName="recurrenceName")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -232,12 +224,11 @@
       </Docs>
     </Member>
     <Member MemberName="RunId">
-      <MemberSignature Language="C#" Value="public Nullable&lt;Guid&gt; RunId { get; set; }" />
+      <MemberSignature Language="C#" Value="public Guid? RunId { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;valuetype System.Guid&gt; RunId" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Management.DataLake.Analytics.Models.JobRelationshipProperties.RunId" />
       <MemberSignature Language="VB.NET" Value="Public Property RunId As Nullable(Of Guid)" />
       <MemberSignature Language="F#" Value="member this.RunId : Nullable&lt;Guid&gt; with get, set" Usage="Microsoft.Azure.Management.DataLake.Analytics.Models.JobRelationshipProperties.RunId" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Nullable&lt;Guid&gt; RunId { Nullable&lt;Guid&gt; get(); void set(Nullable&lt;Guid&gt; value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.DataLake.Analytics</AssemblyName>
@@ -245,7 +236,8 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="runId")</AttributeName>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty(PropertyName="runId")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty(PropertyName="runId")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -266,9 +258,6 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Management.DataLake.Analytics.Models.JobRelationshipProperties.Validate" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Sub Validate ()" />
       <MemberSignature Language="F#" Value="abstract member Validate : unit -&gt; unit&#xA;override this.Validate : unit -&gt; unit" Usage="jobRelationshipProperties.Validate " />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Validate();" />
-      <MemberSignature Language="C++ CX" Value="public:&#xA; virtual void Validate();" />
-      <MemberSignature Language="C++ WINRT" Value=" virtual void Validate();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.DataLake.Analytics</AssemblyName>

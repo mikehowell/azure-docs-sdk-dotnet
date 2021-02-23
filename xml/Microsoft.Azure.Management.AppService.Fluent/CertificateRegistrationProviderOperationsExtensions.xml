@@ -1,38 +1,53 @@
-﻿<Type Name="CertificateRegistrationProviderOperationsExtensions" FullName="Microsoft.Azure.Management.AppService.Fluent.CertificateRegistrationProviderOperationsExtensions">
+<Type Name="CertificateRegistrationProviderOperationsExtensions" FullName="Microsoft.Azure.Management.AppService.Fluent.CertificateRegistrationProviderOperationsExtensions">
   <TypeSignature Language="C#" Value="public static class CertificateRegistrationProviderOperationsExtensions" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract sealed beforefieldinit CertificateRegistrationProviderOperationsExtensions extends System.Object" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Azure.Management.AppService.Fluent.CertificateRegistrationProviderOperationsExtensions" />
   <TypeSignature Language="VB.NET" Value="Public Module CertificateRegistrationProviderOperationsExtensions" />
   <TypeSignature Language="F#" Value="type CertificateRegistrationProviderOperationsExtensions = class" />
-  <TypeSignature Language="C++ CLI" Value="public ref class CertificateRegistrationProviderOperationsExtensions abstract sealed" />
-  <TypeSignature Language="C++ CX" Value="public ref class CertificateRegistrationProviderOperationsExtensions abstract sealed" />
-  <TypeSignature Language="C++ WINRT" Value="class CertificateRegistrationProviderOperationsExtensions abstract sealed" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Azure.Management.AppService.Fluent</AssemblyName>
-    <AssemblyVersion>1.0.0.60</AssemblyVersion>
+    <AssemblyVersion>1.0.0.61</AssemblyVersion>
+    <AssemblyVersion>1.0.0.62</AssemblyVersion>
+    <AssemblyVersion>1.0.0.63</AssemblyVersion>
+    <AssemblyVersion>1.0.0.64</AssemblyVersion>
+    <AssemblyVersion>1.0.0.65</AssemblyVersion>
+    <AssemblyVersion>1.0.0.66</AssemblyVersion>
+    <AssemblyVersion>1.0.0.67</AssemblyVersion>
+    <AssemblyVersion>1.0.0.68</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
+    <summary>
+            Extension methods for CertificateRegistrationProviderOperations.
+            </summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName="ListOperationsAsync">
-      <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task&lt;Microsoft.Rest.Azure.IPage&lt;Microsoft.Azure.Management.AppService.Fluent.Models.CsmOperationDescription&gt;&gt; ListOperationsAsync (this Microsoft.Azure.Management.AppService.Fluent.ICertificateRegistrationProviderOperations operations, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task&lt;Microsoft.Rest.Azure.IPage&lt;Microsoft.Azure.Management.AppService.Fluent.Models.CsmOperationDescription&gt;&gt; ListOperationsAsync (this Microsoft.Azure.Management.AppService.Fluent.ICertificateRegistrationProviderOperations operations, System.Threading.CancellationToken cancellationToken = default);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Threading.Tasks.Task`1&lt;class Microsoft.Rest.Azure.IPage`1&lt;class Microsoft.Azure.Management.AppService.Fluent.Models.CsmOperationDescription&gt;&gt; ListOperationsAsync(class Microsoft.Azure.Management.AppService.Fluent.ICertificateRegistrationProviderOperations operations, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Management.AppService.Fluent.CertificateRegistrationProviderOperationsExtensions.ListOperationsAsync(Microsoft.Azure.Management.AppService.Fluent.ICertificateRegistrationProviderOperations,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function ListOperationsAsync (operations As ICertificateRegistrationProviderOperations, Optional cancellationToken As CancellationToken = Nothing) As Task(Of IPage(Of CsmOperationDescription))" />
       <MemberSignature Language="F#" Value="static member ListOperationsAsync : Microsoft.Azure.Management.AppService.Fluent.ICertificateRegistrationProviderOperations * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.Rest.Azure.IPage&lt;Microsoft.Azure.Management.AppService.Fluent.Models.CsmOperationDescription&gt;&gt;" Usage="Microsoft.Azure.Management.AppService.Fluent.CertificateRegistrationProviderOperationsExtensions.ListOperationsAsync (operations, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.AppService.Fluent</AssemblyName>
-        <AssemblyVersion>1.0.0.60</AssemblyVersion>
+        <AssemblyVersion>1.0.0.61</AssemblyVersion>
+        <AssemblyVersion>1.0.0.62</AssemblyVersion>
+        <AssemblyVersion>1.0.0.63</AssemblyVersion>
+        <AssemblyVersion>1.0.0.64</AssemblyVersion>
+        <AssemblyVersion>1.0.0.65</AssemblyVersion>
+        <AssemblyVersion>1.0.0.66</AssemblyVersion>
+        <AssemblyVersion>1.0.0.67</AssemblyVersion>
+        <AssemblyVersion>1.0.0.68</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>System.Runtime.CompilerServices.AsyncStateMachine(typeof(Microsoft.Azure.Management.AppService.Fluent.CertificateRegistrationProviderOperationsExtensions/&lt;ListOperationsAsync&gt;d__0))</AttributeName>
+          <AttributeName Language="C#">[System.Diagnostics.DebuggerStepThrough]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Diagnostics.DebuggerStepThrough&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -43,26 +58,45 @@
         <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
       </Parameters>
       <Docs>
-        <param name="operations">To be added.</param>
-        <param name="cancellationToken">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="operations">
+            The operations group for this extension method.
+            </param>
+        <param name="cancellationToken">
+            The cancellation token.
+            </param>
+        <summary>
+            Implements Csm operations Api to exposes the list of available Csm Apis
+            under the resource provider
+            </summary>
         <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <remarks>
+            Description for Implements Csm operations Api to exposes the list of
+            available Csm Apis under the resource provider
+            </remarks>
       </Docs>
     </Member>
     <Member MemberName="ListOperationsNextAsync">
-      <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task&lt;Microsoft.Rest.Azure.IPage&lt;Microsoft.Azure.Management.AppService.Fluent.Models.CsmOperationDescription&gt;&gt; ListOperationsNextAsync (this Microsoft.Azure.Management.AppService.Fluent.ICertificateRegistrationProviderOperations operations, string nextPageLink, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task&lt;Microsoft.Rest.Azure.IPage&lt;Microsoft.Azure.Management.AppService.Fluent.Models.CsmOperationDescription&gt;&gt; ListOperationsNextAsync (this Microsoft.Azure.Management.AppService.Fluent.ICertificateRegistrationProviderOperations operations, string nextPageLink, System.Threading.CancellationToken cancellationToken = default);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Threading.Tasks.Task`1&lt;class Microsoft.Rest.Azure.IPage`1&lt;class Microsoft.Azure.Management.AppService.Fluent.Models.CsmOperationDescription&gt;&gt; ListOperationsNextAsync(class Microsoft.Azure.Management.AppService.Fluent.ICertificateRegistrationProviderOperations operations, string nextPageLink, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Management.AppService.Fluent.CertificateRegistrationProviderOperationsExtensions.ListOperationsNextAsync(Microsoft.Azure.Management.AppService.Fluent.ICertificateRegistrationProviderOperations,System.String,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function ListOperationsNextAsync (operations As ICertificateRegistrationProviderOperations, nextPageLink As String, Optional cancellationToken As CancellationToken = Nothing) As Task(Of IPage(Of CsmOperationDescription))" />
       <MemberSignature Language="F#" Value="static member ListOperationsNextAsync : Microsoft.Azure.Management.AppService.Fluent.ICertificateRegistrationProviderOperations * string * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.Rest.Azure.IPage&lt;Microsoft.Azure.Management.AppService.Fluent.Models.CsmOperationDescription&gt;&gt;" Usage="Microsoft.Azure.Management.AppService.Fluent.CertificateRegistrationProviderOperationsExtensions.ListOperationsNextAsync (operations, nextPageLink, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.AppService.Fluent</AssemblyName>
-        <AssemblyVersion>1.0.0.60</AssemblyVersion>
+        <AssemblyVersion>1.0.0.61</AssemblyVersion>
+        <AssemblyVersion>1.0.0.62</AssemblyVersion>
+        <AssemblyVersion>1.0.0.63</AssemblyVersion>
+        <AssemblyVersion>1.0.0.64</AssemblyVersion>
+        <AssemblyVersion>1.0.0.65</AssemblyVersion>
+        <AssemblyVersion>1.0.0.66</AssemblyVersion>
+        <AssemblyVersion>1.0.0.67</AssemblyVersion>
+        <AssemblyVersion>1.0.0.68</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>System.Runtime.CompilerServices.AsyncStateMachine(typeof(Microsoft.Azure.Management.AppService.Fluent.CertificateRegistrationProviderOperationsExtensions/&lt;ListOperationsNextAsync&gt;d__1))</AttributeName>
+          <AttributeName Language="C#">[System.Diagnostics.DebuggerStepThrough]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Diagnostics.DebuggerStepThrough&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -74,12 +108,24 @@
         <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
       </Parameters>
       <Docs>
-        <param name="operations">To be added.</param>
-        <param name="nextPageLink">To be added.</param>
-        <param name="cancellationToken">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="operations">
+            The operations group for this extension method.
+            </param>
+        <param name="nextPageLink">
+            The NextLink from the previous successful call to List operation.
+            </param>
+        <param name="cancellationToken">
+            The cancellation token.
+            </param>
+        <summary>
+            Implements Csm operations Api to exposes the list of available Csm Apis
+            under the resource provider
+            </summary>
         <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <remarks>
+            Description for Implements Csm operations Api to exposes the list of
+            available Csm Apis under the resource provider
+            </remarks>
       </Docs>
     </Member>
   </Members>

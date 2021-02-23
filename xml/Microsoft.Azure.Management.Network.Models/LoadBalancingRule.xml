@@ -1,17 +1,15 @@
-﻿<Type Name="LoadBalancingRule" FullName="Microsoft.Azure.Management.Network.Models.LoadBalancingRule">
+<Type Name="LoadBalancingRule" FullName="Microsoft.Azure.Management.Network.Models.LoadBalancingRule">
   <TypeSignature Language="C#" Value="public class LoadBalancingRule : Microsoft.Azure.Management.Network.Models.SubResource" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit LoadBalancingRule extends Microsoft.Azure.Management.Network.Models.SubResource" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Azure.Management.Network.Models.LoadBalancingRule" />
   <TypeSignature Language="VB.NET" Value="Public Class LoadBalancingRule&#xA;Inherits SubResource" />
   <TypeSignature Language="F#" Value="type LoadBalancingRule = class&#xA;    inherit SubResource" />
-  <TypeSignature Language="C++ CLI" Value="public ref class LoadBalancingRule : Microsoft::Azure::Management::Network::Models::SubResource" />
-  <TypeSignature Language="C++ WINRT" Value="[Windows::Foundation::Metadata::WebHostHidden]&#xA;class LoadBalancingRule : Microsoft::Azure::Management::Network::Models::SubResource" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Azure.Management.Network</AssemblyName>
-    <AssemblyVersion>14.0.0.0</AssemblyVersion>
-    <AssemblyVersion>16.0.0.0</AssemblyVersion>
-    <AssemblyVersion>17.0.0.0</AssemblyVersion>
-    <AssemblyVersion>18.0.0.0</AssemblyVersion>
+    <AssemblyVersion>20.0.0.0</AssemblyVersion>
+    <AssemblyVersion>20.0.1.0</AssemblyVersion>
+    <AssemblyVersion>20.0.2.0</AssemblyVersion>
+    <AssemblyVersion>20.0.3.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>Microsoft.Azure.Management.Network.Models.SubResource</BaseTypeName>
@@ -19,7 +17,8 @@
   <Interfaces />
   <Attributes>
     <Attribute>
-      <AttributeName>Microsoft.Rest.Serialization.JsonTransformation</AttributeName>
+      <AttributeName Language="C#">[Microsoft.Rest.Serialization.JsonTransformation]</AttributeName>
+      <AttributeName Language="F#">[&lt;Microsoft.Rest.Serialization.JsonTransformation&gt;]</AttributeName>
     </Attribute>
   </Attributes>
   <Docs>
@@ -34,16 +33,13 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Management.Network.Models.LoadBalancingRule.#ctor" />
       <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; LoadBalancingRule();" />
-      <MemberSignature Language="C++ CX" Value="public:&#xA; LoadBalancingRule();" />
-      <MemberSignature Language="C++ WINRT" Value=" LoadBalancingRule();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Network</AssemblyName>
-        <AssemblyVersion>14.0.0.0</AssemblyVersion>
-        <AssemblyVersion>16.0.0.0</AssemblyVersion>
-        <AssemblyVersion>17.0.0.0</AssemblyVersion>
-        <AssemblyVersion>18.0.0.0</AssemblyVersion>
+        <AssemblyVersion>20.0.0.0</AssemblyVersion>
+        <AssemblyVersion>20.0.1.0</AssemblyVersion>
+        <AssemblyVersion>20.0.2.0</AssemblyVersion>
+        <AssemblyVersion>20.0.3.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
@@ -54,18 +50,17 @@
       </Docs>
     </Member>
     <Member MemberName=".ctor">
-      <MemberSignature Language="C#" Value="public LoadBalancingRule (string protocol, int frontendPort, string id = null, Microsoft.Azure.Management.Network.Models.SubResource frontendIPConfiguration = null, Microsoft.Azure.Management.Network.Models.SubResource backendAddressPool = null, Microsoft.Azure.Management.Network.Models.SubResource probe = null, string loadDistribution = null, Nullable&lt;int&gt; backendPort = null, Nullable&lt;int&gt; idleTimeoutInMinutes = null, Nullable&lt;bool&gt; enableFloatingIP = null, Nullable&lt;bool&gt; disableOutboundSnat = null, string provisioningState = null, string name = null, string etag = null);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string protocol, int32 frontendPort, string id, class Microsoft.Azure.Management.Network.Models.SubResource frontendIPConfiguration, class Microsoft.Azure.Management.Network.Models.SubResource backendAddressPool, class Microsoft.Azure.Management.Network.Models.SubResource probe, string loadDistribution, valuetype System.Nullable`1&lt;int32&gt; backendPort, valuetype System.Nullable`1&lt;int32&gt; idleTimeoutInMinutes, valuetype System.Nullable`1&lt;bool&gt; enableFloatingIP, valuetype System.Nullable`1&lt;bool&gt; disableOutboundSnat, string provisioningState, string name, string etag) cil managed" />
-      <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Management.Network.Models.LoadBalancingRule.#ctor(System.String,System.Int32,System.String,Microsoft.Azure.Management.Network.Models.SubResource,Microsoft.Azure.Management.Network.Models.SubResource,Microsoft.Azure.Management.Network.Models.SubResource,System.String,System.Nullable{System.Int32},System.Nullable{System.Int32},System.Nullable{System.Boolean},System.Nullable{System.Boolean},System.String,System.String,System.String)" />
-      <MemberSignature Language="VB.NET" Value="Public Sub New (protocol As String, frontendPort As Integer, Optional id As String = null, Optional frontendIPConfiguration As SubResource = null, Optional backendAddressPool As SubResource = null, Optional probe As SubResource = null, Optional loadDistribution As String = null, Optional backendPort As Nullable(Of Integer) = null, Optional idleTimeoutInMinutes As Nullable(Of Integer) = null, Optional enableFloatingIP As Nullable(Of Boolean) = null, Optional disableOutboundSnat As Nullable(Of Boolean) = null, Optional provisioningState As String = null, Optional name As String = null, Optional etag As String = null)" />
-      <MemberSignature Language="F#" Value="new Microsoft.Azure.Management.Network.Models.LoadBalancingRule : string * int * string * Microsoft.Azure.Management.Network.Models.SubResource * Microsoft.Azure.Management.Network.Models.SubResource * Microsoft.Azure.Management.Network.Models.SubResource * string * Nullable&lt;int&gt; * Nullable&lt;int&gt; * Nullable&lt;bool&gt; * Nullable&lt;bool&gt; * string * string * string -&gt; Microsoft.Azure.Management.Network.Models.LoadBalancingRule" Usage="new Microsoft.Azure.Management.Network.Models.LoadBalancingRule (protocol, frontendPort, id, frontendIPConfiguration, backendAddressPool, probe, loadDistribution, backendPort, idleTimeoutInMinutes, enableFloatingIP, disableOutboundSnat, provisioningState, name, etag)" />
+      <MemberSignature Language="C#" Value="public LoadBalancingRule (string protocol, int frontendPort, string id = default, Microsoft.Azure.Management.Network.Models.SubResource frontendIPConfiguration = default, Microsoft.Azure.Management.Network.Models.SubResource backendAddressPool = default, Microsoft.Azure.Management.Network.Models.SubResource probe = default, string loadDistribution = default, int? backendPort = default, int? idleTimeoutInMinutes = default, bool? enableFloatingIP = default, bool? enableTcpReset = default, bool? disableOutboundSnat = default, string provisioningState = default, string name = default, string etag = default, string type = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string protocol, int32 frontendPort, string id, class Microsoft.Azure.Management.Network.Models.SubResource frontendIPConfiguration, class Microsoft.Azure.Management.Network.Models.SubResource backendAddressPool, class Microsoft.Azure.Management.Network.Models.SubResource probe, string loadDistribution, valuetype System.Nullable`1&lt;int32&gt; backendPort, valuetype System.Nullable`1&lt;int32&gt; idleTimeoutInMinutes, valuetype System.Nullable`1&lt;bool&gt; enableFloatingIP, valuetype System.Nullable`1&lt;bool&gt; enableTcpReset, valuetype System.Nullable`1&lt;bool&gt; disableOutboundSnat, string provisioningState, string name, string etag, string type) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Management.Network.Models.LoadBalancingRule.#ctor(System.String,System.Int32,System.String,Microsoft.Azure.Management.Network.Models.SubResource,Microsoft.Azure.Management.Network.Models.SubResource,Microsoft.Azure.Management.Network.Models.SubResource,System.String,System.Nullable{System.Int32},System.Nullable{System.Int32},System.Nullable{System.Boolean},System.Nullable{System.Boolean},System.Nullable{System.Boolean},System.String,System.String,System.String,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (protocol As String, frontendPort As Integer, Optional id As String = Nothing, Optional frontendIPConfiguration As SubResource = Nothing, Optional backendAddressPool As SubResource = Nothing, Optional probe As SubResource = Nothing, Optional loadDistribution As String = Nothing, Optional backendPort As Nullable(Of Integer) = Nothing, Optional idleTimeoutInMinutes As Nullable(Of Integer) = Nothing, Optional enableFloatingIP As Nullable(Of Boolean) = Nothing, Optional enableTcpReset As Nullable(Of Boolean) = Nothing, Optional disableOutboundSnat As Nullable(Of Boolean) = Nothing, Optional provisioningState As String = Nothing, Optional name As String = Nothing, Optional etag As String = Nothing, Optional type As String = Nothing)" />
+      <MemberSignature Language="F#" Value="new Microsoft.Azure.Management.Network.Models.LoadBalancingRule : string * int * string * Microsoft.Azure.Management.Network.Models.SubResource * Microsoft.Azure.Management.Network.Models.SubResource * Microsoft.Azure.Management.Network.Models.SubResource * string * Nullable&lt;int&gt; * Nullable&lt;int&gt; * Nullable&lt;bool&gt; * Nullable&lt;bool&gt; * Nullable&lt;bool&gt; * string * string * string * string -&gt; Microsoft.Azure.Management.Network.Models.LoadBalancingRule" Usage="new Microsoft.Azure.Management.Network.Models.LoadBalancingRule (protocol, frontendPort, id, frontendIPConfiguration, backendAddressPool, probe, loadDistribution, backendPort, idleTimeoutInMinutes, enableFloatingIP, enableTcpReset, disableOutboundSnat, provisioningState, name, etag, type)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Network</AssemblyName>
-        <AssemblyVersion>14.0.0.0</AssemblyVersion>
-        <AssemblyVersion>16.0.0.0</AssemblyVersion>
-        <AssemblyVersion>17.0.0.0</AssemblyVersion>
-        <AssemblyVersion>18.0.0.0</AssemblyVersion>
+        <AssemblyVersion>20.0.1.0</AssemblyVersion>
+        <AssemblyVersion>20.0.2.0</AssemblyVersion>
+        <AssemblyVersion>20.0.3.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="protocol" Type="System.String" />
@@ -78,33 +73,35 @@
         <Parameter Name="backendPort" Type="System.Nullable&lt;System.Int32&gt;" />
         <Parameter Name="idleTimeoutInMinutes" Type="System.Nullable&lt;System.Int32&gt;" />
         <Parameter Name="enableFloatingIP" Type="System.Nullable&lt;System.Boolean&gt;" />
+        <Parameter Name="enableTcpReset" Type="System.Nullable&lt;System.Boolean&gt;" />
         <Parameter Name="disableOutboundSnat" Type="System.Nullable&lt;System.Boolean&gt;" />
         <Parameter Name="provisioningState" Type="System.String" />
         <Parameter Name="name" Type="System.String" />
         <Parameter Name="etag" Type="System.String" />
+        <Parameter Name="type" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="protocol">Possible values include: 'Udp', 'Tcp',
+        <param name="protocol">The reference to the transport protocol used
+            by the load balancing rule. Possible values include: 'Udp', 'Tcp',
             'All'</param>
         <param name="frontendPort">The port for the external endpoint. Port
             numbers for each rule must be unique within the Load Balancer.
             Acceptable values are between 0 and 65534. Note that value 0
-            enables "Any Port"</param>
+            enables "Any Port".</param>
         <param name="id">Resource ID.</param>
         <param name="frontendIPConfiguration">A reference to frontend IP
             addresses.</param>
         <param name="backendAddressPool">A reference to a pool of DIPs.
             Inbound traffic is randomly load balanced across IPs in the backend
             IPs.</param>
-        <param name="probe">The reference of the load balancer probe used
+        <param name="probe">The reference to the load balancer probe used
             by the load balancing rule.</param>
         <param name="loadDistribution">The load distribution policy for
-            this rule. Possible values are 'Default', 'SourceIP', and
-            'SourceIPProtocol'. Possible values include: 'Default', 'SourceIP',
+            this rule. Possible values include: 'Default', 'SourceIP',
             'SourceIPProtocol'</param>
         <param name="backendPort">The port used for internal connections on
             the endpoint. Acceptable values are between 0 and 65535. Note that
-            value 0 enables "Any Port"</param>
+            value 0 enables "Any Port".</param>
         <param name="idleTimeoutInMinutes">The timeout for the TCP idle
             connection. The value can be set between 4 and 30 minutes. The
             default value is 4 minutes. This element is only used when the
@@ -114,17 +111,21 @@
             AlwaysOn Availability Group. This setting is required when using
             the SQL AlwaysOn Availability Groups in SQL server. This setting
             can't be changed after you create the endpoint.</param>
+        <param name="enableTcpReset">Receive bidirectional TCP Reset on TCP
+            flow idle timeout or unexpected connection termination. This
+            element is only used when the protocol is set to TCP.</param>
         <param name="disableOutboundSnat">Configures SNAT for the VMs in
             the backend pool to use the publicIP address specified in the
             frontend of the load balancing rule.</param>
-        <param name="provisioningState">Gets the provisioning state of the
-            PublicIP resource. Possible values are: 'Updating', 'Deleting', and
-            'Failed'.</param>
-        <param name="name">The name of the resource that is unique within a
-            resource group. This name can be used to access the
-            resource.</param>
+        <param name="provisioningState">The provisioning state of the load
+            balancing rule resource. Possible values include: 'Succeeded',
+            'Updating', 'Deleting', 'Failed'</param>
+        <param name="name">The name of the resource that is unique within
+            the set of load balancing rules used by the load balancer. This
+            name can be used to access the resource.</param>
         <param name="etag">A unique read-only string that changes whenever
             the resource is updated.</param>
+        <param name="type">Type of the resource.</param>
         <summary>
             Initializes a new instance of the LoadBalancingRule class.
             </summary>
@@ -137,18 +138,18 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Management.Network.Models.LoadBalancingRule.BackendAddressPool" />
       <MemberSignature Language="VB.NET" Value="Public Property BackendAddressPool As SubResource" />
       <MemberSignature Language="F#" Value="member this.BackendAddressPool : Microsoft.Azure.Management.Network.Models.SubResource with get, set" Usage="Microsoft.Azure.Management.Network.Models.LoadBalancingRule.BackendAddressPool" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Azure::Management::Network::Models::SubResource ^ BackendAddressPool { Microsoft::Azure::Management::Network::Models::SubResource ^ get(); void set(Microsoft::Azure::Management::Network::Models::SubResource ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Network</AssemblyName>
-        <AssemblyVersion>14.0.0.0</AssemblyVersion>
-        <AssemblyVersion>16.0.0.0</AssemblyVersion>
-        <AssemblyVersion>17.0.0.0</AssemblyVersion>
-        <AssemblyVersion>18.0.0.0</AssemblyVersion>
+        <AssemblyVersion>20.0.0.0</AssemblyVersion>
+        <AssemblyVersion>20.0.1.0</AssemblyVersion>
+        <AssemblyVersion>20.0.2.0</AssemblyVersion>
+        <AssemblyVersion>20.0.3.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="properties.backendAddressPool")</AttributeName>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty(PropertyName="properties.backendAddressPool")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty(PropertyName="properties.backendAddressPool")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -164,23 +165,23 @@
       </Docs>
     </Member>
     <Member MemberName="BackendPort">
-      <MemberSignature Language="C#" Value="public Nullable&lt;int&gt; BackendPort { get; set; }" />
+      <MemberSignature Language="C#" Value="public int? BackendPort { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;int32&gt; BackendPort" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Management.Network.Models.LoadBalancingRule.BackendPort" />
       <MemberSignature Language="VB.NET" Value="Public Property BackendPort As Nullable(Of Integer)" />
       <MemberSignature Language="F#" Value="member this.BackendPort : Nullable&lt;int&gt; with get, set" Usage="Microsoft.Azure.Management.Network.Models.LoadBalancingRule.BackendPort" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Nullable&lt;int&gt; BackendPort { Nullable&lt;int&gt; get(); void set(Nullable&lt;int&gt; value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Network</AssemblyName>
-        <AssemblyVersion>14.0.0.0</AssemblyVersion>
-        <AssemblyVersion>16.0.0.0</AssemblyVersion>
-        <AssemblyVersion>17.0.0.0</AssemblyVersion>
-        <AssemblyVersion>18.0.0.0</AssemblyVersion>
+        <AssemblyVersion>20.0.0.0</AssemblyVersion>
+        <AssemblyVersion>20.0.1.0</AssemblyVersion>
+        <AssemblyVersion>20.0.2.0</AssemblyVersion>
+        <AssemblyVersion>20.0.3.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="properties.backendPort")</AttributeName>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty(PropertyName="properties.backendPort")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty(PropertyName="properties.backendPort")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -190,30 +191,30 @@
         <summary>
             Gets or sets the port used for internal connections on the
             endpoint. Acceptable values are between 0 and 65535. Note that
-            value 0 enables "Any Port"
+            value 0 enables "Any Port".
             </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="DisableOutboundSnat">
-      <MemberSignature Language="C#" Value="public Nullable&lt;bool&gt; DisableOutboundSnat { get; set; }" />
+      <MemberSignature Language="C#" Value="public bool? DisableOutboundSnat { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;bool&gt; DisableOutboundSnat" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Management.Network.Models.LoadBalancingRule.DisableOutboundSnat" />
       <MemberSignature Language="VB.NET" Value="Public Property DisableOutboundSnat As Nullable(Of Boolean)" />
       <MemberSignature Language="F#" Value="member this.DisableOutboundSnat : Nullable&lt;bool&gt; with get, set" Usage="Microsoft.Azure.Management.Network.Models.LoadBalancingRule.DisableOutboundSnat" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Nullable&lt;bool&gt; DisableOutboundSnat { Nullable&lt;bool&gt; get(); void set(Nullable&lt;bool&gt; value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Network</AssemblyName>
-        <AssemblyVersion>14.0.0.0</AssemblyVersion>
-        <AssemblyVersion>16.0.0.0</AssemblyVersion>
-        <AssemblyVersion>17.0.0.0</AssemblyVersion>
-        <AssemblyVersion>18.0.0.0</AssemblyVersion>
+        <AssemblyVersion>20.0.0.0</AssemblyVersion>
+        <AssemblyVersion>20.0.1.0</AssemblyVersion>
+        <AssemblyVersion>20.0.2.0</AssemblyVersion>
+        <AssemblyVersion>20.0.3.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="properties.disableOutboundSnat")</AttributeName>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty(PropertyName="properties.disableOutboundSnat")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty(PropertyName="properties.disableOutboundSnat")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -230,23 +231,23 @@
       </Docs>
     </Member>
     <Member MemberName="EnableFloatingIP">
-      <MemberSignature Language="C#" Value="public Nullable&lt;bool&gt; EnableFloatingIP { get; set; }" />
+      <MemberSignature Language="C#" Value="public bool? EnableFloatingIP { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;bool&gt; EnableFloatingIP" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Management.Network.Models.LoadBalancingRule.EnableFloatingIP" />
       <MemberSignature Language="VB.NET" Value="Public Property EnableFloatingIP As Nullable(Of Boolean)" />
       <MemberSignature Language="F#" Value="member this.EnableFloatingIP : Nullable&lt;bool&gt; with get, set" Usage="Microsoft.Azure.Management.Network.Models.LoadBalancingRule.EnableFloatingIP" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Nullable&lt;bool&gt; EnableFloatingIP { Nullable&lt;bool&gt; get(); void set(Nullable&lt;bool&gt; value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Network</AssemblyName>
-        <AssemblyVersion>14.0.0.0</AssemblyVersion>
-        <AssemblyVersion>16.0.0.0</AssemblyVersion>
-        <AssemblyVersion>17.0.0.0</AssemblyVersion>
-        <AssemblyVersion>18.0.0.0</AssemblyVersion>
+        <AssemblyVersion>20.0.0.0</AssemblyVersion>
+        <AssemblyVersion>20.0.1.0</AssemblyVersion>
+        <AssemblyVersion>20.0.2.0</AssemblyVersion>
+        <AssemblyVersion>20.0.3.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="properties.enableFloatingIP")</AttributeName>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty(PropertyName="properties.enableFloatingIP")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty(PropertyName="properties.enableFloatingIP")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -264,25 +265,56 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
-    <Member MemberName="Etag">
-      <MemberSignature Language="C#" Value="public string Etag { get; set; }" />
-      <MemberSignature Language="ILAsm" Value=".property instance string Etag" />
-      <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Management.Network.Models.LoadBalancingRule.Etag" />
-      <MemberSignature Language="VB.NET" Value="Public Property Etag As String" />
-      <MemberSignature Language="F#" Value="member this.Etag : string with get, set" Usage="Microsoft.Azure.Management.Network.Models.LoadBalancingRule.Etag" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Etag { System::String ^ get(); void set(System::String ^ value); };" />
-      <MemberSignature Language="C++ CX" Value="public:&#xA; property Platform::String ^ Etag { Platform::String ^ get(); void set(Platform::String ^ value); };" />
+    <Member MemberName="EnableTcpReset">
+      <MemberSignature Language="C#" Value="public bool? EnableTcpReset { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;bool&gt; EnableTcpReset" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Management.Network.Models.LoadBalancingRule.EnableTcpReset" />
+      <MemberSignature Language="VB.NET" Value="Public Property EnableTcpReset As Nullable(Of Boolean)" />
+      <MemberSignature Language="F#" Value="member this.EnableTcpReset : Nullable&lt;bool&gt; with get, set" Usage="Microsoft.Azure.Management.Network.Models.LoadBalancingRule.EnableTcpReset" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Network</AssemblyName>
-        <AssemblyVersion>14.0.0.0</AssemblyVersion>
-        <AssemblyVersion>16.0.0.0</AssemblyVersion>
-        <AssemblyVersion>17.0.0.0</AssemblyVersion>
-        <AssemblyVersion>18.0.0.0</AssemblyVersion>
+        <AssemblyVersion>20.0.1.0</AssemblyVersion>
+        <AssemblyVersion>20.0.2.0</AssemblyVersion>
+        <AssemblyVersion>20.0.3.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="etag")</AttributeName>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty(PropertyName="properties.enableTcpReset")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty(PropertyName="properties.enableTcpReset")&gt;]</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Nullable&lt;System.Boolean&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets or sets receive bidirectional TCP Reset on TCP flow idle
+            timeout or unexpected connection termination. This element is only
+            used when the protocol is set to TCP.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Etag">
+      <MemberSignature Language="C#" Value="public string Etag { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Etag" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Management.Network.Models.LoadBalancingRule.Etag" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Etag As String" />
+      <MemberSignature Language="F#" Value="member this.Etag : string" Usage="Microsoft.Azure.Management.Network.Models.LoadBalancingRule.Etag" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Azure.Management.Network</AssemblyName>
+        <AssemblyVersion>20.0.0.0</AssemblyVersion>
+        <AssemblyVersion>20.0.1.0</AssemblyVersion>
+        <AssemblyVersion>20.0.2.0</AssemblyVersion>
+        <AssemblyVersion>20.0.3.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty(PropertyName="etag")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty(PropertyName="etag")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -290,8 +322,8 @@
       </ReturnValue>
       <Docs>
         <summary>
-            Gets or sets a unique read-only string that changes whenever the
-            resource is updated.
+            Gets a unique read-only string that changes whenever the resource
+            is updated.
             </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
@@ -303,18 +335,18 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Management.Network.Models.LoadBalancingRule.FrontendIPConfiguration" />
       <MemberSignature Language="VB.NET" Value="Public Property FrontendIPConfiguration As SubResource" />
       <MemberSignature Language="F#" Value="member this.FrontendIPConfiguration : Microsoft.Azure.Management.Network.Models.SubResource with get, set" Usage="Microsoft.Azure.Management.Network.Models.LoadBalancingRule.FrontendIPConfiguration" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Azure::Management::Network::Models::SubResource ^ FrontendIPConfiguration { Microsoft::Azure::Management::Network::Models::SubResource ^ get(); void set(Microsoft::Azure::Management::Network::Models::SubResource ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Network</AssemblyName>
-        <AssemblyVersion>14.0.0.0</AssemblyVersion>
-        <AssemblyVersion>16.0.0.0</AssemblyVersion>
-        <AssemblyVersion>17.0.0.0</AssemblyVersion>
-        <AssemblyVersion>18.0.0.0</AssemblyVersion>
+        <AssemblyVersion>20.0.0.0</AssemblyVersion>
+        <AssemblyVersion>20.0.1.0</AssemblyVersion>
+        <AssemblyVersion>20.0.2.0</AssemblyVersion>
+        <AssemblyVersion>20.0.3.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="properties.frontendIPConfiguration")</AttributeName>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty(PropertyName="properties.frontendIPConfiguration")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty(PropertyName="properties.frontendIPConfiguration")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -334,19 +366,18 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Management.Network.Models.LoadBalancingRule.FrontendPort" />
       <MemberSignature Language="VB.NET" Value="Public Property FrontendPort As Integer" />
       <MemberSignature Language="F#" Value="member this.FrontendPort : int with get, set" Usage="Microsoft.Azure.Management.Network.Models.LoadBalancingRule.FrontendPort" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int FrontendPort { int get(); void set(int value); };" />
-      <MemberSignature Language="C++ CX" Value="public:&#xA; property int FrontendPort { int get(); void set(int value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Network</AssemblyName>
-        <AssemblyVersion>14.0.0.0</AssemblyVersion>
-        <AssemblyVersion>16.0.0.0</AssemblyVersion>
-        <AssemblyVersion>17.0.0.0</AssemblyVersion>
-        <AssemblyVersion>18.0.0.0</AssemblyVersion>
+        <AssemblyVersion>20.0.0.0</AssemblyVersion>
+        <AssemblyVersion>20.0.1.0</AssemblyVersion>
+        <AssemblyVersion>20.0.2.0</AssemblyVersion>
+        <AssemblyVersion>20.0.3.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="properties.frontendPort")</AttributeName>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty(PropertyName="properties.frontendPort")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty(PropertyName="properties.frontendPort")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -357,30 +388,30 @@
             Gets or sets the port for the external endpoint. Port numbers for
             each rule must be unique within the Load Balancer. Acceptable
             values are between 0 and 65534. Note that value 0 enables "Any
-            Port"
+            Port".
             </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="IdleTimeoutInMinutes">
-      <MemberSignature Language="C#" Value="public Nullable&lt;int&gt; IdleTimeoutInMinutes { get; set; }" />
+      <MemberSignature Language="C#" Value="public int? IdleTimeoutInMinutes { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;int32&gt; IdleTimeoutInMinutes" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Management.Network.Models.LoadBalancingRule.IdleTimeoutInMinutes" />
       <MemberSignature Language="VB.NET" Value="Public Property IdleTimeoutInMinutes As Nullable(Of Integer)" />
       <MemberSignature Language="F#" Value="member this.IdleTimeoutInMinutes : Nullable&lt;int&gt; with get, set" Usage="Microsoft.Azure.Management.Network.Models.LoadBalancingRule.IdleTimeoutInMinutes" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Nullable&lt;int&gt; IdleTimeoutInMinutes { Nullable&lt;int&gt; get(); void set(Nullable&lt;int&gt; value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Network</AssemblyName>
-        <AssemblyVersion>14.0.0.0</AssemblyVersion>
-        <AssemblyVersion>16.0.0.0</AssemblyVersion>
-        <AssemblyVersion>17.0.0.0</AssemblyVersion>
-        <AssemblyVersion>18.0.0.0</AssemblyVersion>
+        <AssemblyVersion>20.0.0.0</AssemblyVersion>
+        <AssemblyVersion>20.0.1.0</AssemblyVersion>
+        <AssemblyVersion>20.0.2.0</AssemblyVersion>
+        <AssemblyVersion>20.0.3.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="properties.idleTimeoutInMinutes")</AttributeName>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty(PropertyName="properties.idleTimeoutInMinutes")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty(PropertyName="properties.idleTimeoutInMinutes")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -402,19 +433,18 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Management.Network.Models.LoadBalancingRule.LoadDistribution" />
       <MemberSignature Language="VB.NET" Value="Public Property LoadDistribution As String" />
       <MemberSignature Language="F#" Value="member this.LoadDistribution : string with get, set" Usage="Microsoft.Azure.Management.Network.Models.LoadBalancingRule.LoadDistribution" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ LoadDistribution { System::String ^ get(); void set(System::String ^ value); };" />
-      <MemberSignature Language="C++ CX" Value="public:&#xA; property Platform::String ^ LoadDistribution { Platform::String ^ get(); void set(Platform::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Network</AssemblyName>
-        <AssemblyVersion>14.0.0.0</AssemblyVersion>
-        <AssemblyVersion>16.0.0.0</AssemblyVersion>
-        <AssemblyVersion>17.0.0.0</AssemblyVersion>
-        <AssemblyVersion>18.0.0.0</AssemblyVersion>
+        <AssemblyVersion>20.0.0.0</AssemblyVersion>
+        <AssemblyVersion>20.0.1.0</AssemblyVersion>
+        <AssemblyVersion>20.0.2.0</AssemblyVersion>
+        <AssemblyVersion>20.0.3.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="properties.loadDistribution")</AttributeName>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty(PropertyName="properties.loadDistribution")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty(PropertyName="properties.loadDistribution")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -423,7 +453,6 @@
       <Docs>
         <summary>
             Gets or sets the load distribution policy for this rule. Possible
-            values are 'Default', 'SourceIP', and 'SourceIPProtocol'. Possible
             values include: 'Default', 'SourceIP', 'SourceIPProtocol'
             </summary>
         <value>To be added.</value>
@@ -436,19 +465,18 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Management.Network.Models.LoadBalancingRule.Name" />
       <MemberSignature Language="VB.NET" Value="Public Property Name As String" />
       <MemberSignature Language="F#" Value="member this.Name : string with get, set" Usage="Microsoft.Azure.Management.Network.Models.LoadBalancingRule.Name" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Name { System::String ^ get(); void set(System::String ^ value); };" />
-      <MemberSignature Language="C++ CX" Value="public:&#xA; property Platform::String ^ Name { Platform::String ^ get(); void set(Platform::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Network</AssemblyName>
-        <AssemblyVersion>14.0.0.0</AssemblyVersion>
-        <AssemblyVersion>16.0.0.0</AssemblyVersion>
-        <AssemblyVersion>17.0.0.0</AssemblyVersion>
-        <AssemblyVersion>18.0.0.0</AssemblyVersion>
+        <AssemblyVersion>20.0.0.0</AssemblyVersion>
+        <AssemblyVersion>20.0.1.0</AssemblyVersion>
+        <AssemblyVersion>20.0.2.0</AssemblyVersion>
+        <AssemblyVersion>20.0.3.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="name")</AttributeName>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty(PropertyName="name")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty(PropertyName="name")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -456,8 +484,9 @@
       </ReturnValue>
       <Docs>
         <summary>
-            Gets or sets the name of the resource that is unique within a
-            resource group. This name can be used to access the resource.
+            Gets or sets the name of the resource that is unique within the set
+            of load balancing rules used by the load balancer. This name can be
+            used to access the resource.
             </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
@@ -469,18 +498,18 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Management.Network.Models.LoadBalancingRule.Probe" />
       <MemberSignature Language="VB.NET" Value="Public Property Probe As SubResource" />
       <MemberSignature Language="F#" Value="member this.Probe : Microsoft.Azure.Management.Network.Models.SubResource with get, set" Usage="Microsoft.Azure.Management.Network.Models.LoadBalancingRule.Probe" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Azure::Management::Network::Models::SubResource ^ Probe { Microsoft::Azure::Management::Network::Models::SubResource ^ get(); void set(Microsoft::Azure::Management::Network::Models::SubResource ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Network</AssemblyName>
-        <AssemblyVersion>14.0.0.0</AssemblyVersion>
-        <AssemblyVersion>16.0.0.0</AssemblyVersion>
-        <AssemblyVersion>17.0.0.0</AssemblyVersion>
-        <AssemblyVersion>18.0.0.0</AssemblyVersion>
+        <AssemblyVersion>20.0.0.0</AssemblyVersion>
+        <AssemblyVersion>20.0.1.0</AssemblyVersion>
+        <AssemblyVersion>20.0.2.0</AssemblyVersion>
+        <AssemblyVersion>20.0.3.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="properties.probe")</AttributeName>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty(PropertyName="properties.probe")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty(PropertyName="properties.probe")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -488,7 +517,7 @@
       </ReturnValue>
       <Docs>
         <summary>
-            Gets or sets the reference of the load balancer probe used by the
+            Gets or sets the reference to the load balancer probe used by the
             load balancing rule.
             </summary>
         <value>To be added.</value>
@@ -501,19 +530,18 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Management.Network.Models.LoadBalancingRule.Protocol" />
       <MemberSignature Language="VB.NET" Value="Public Property Protocol As String" />
       <MemberSignature Language="F#" Value="member this.Protocol : string with get, set" Usage="Microsoft.Azure.Management.Network.Models.LoadBalancingRule.Protocol" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Protocol { System::String ^ get(); void set(System::String ^ value); };" />
-      <MemberSignature Language="C++ CX" Value="public:&#xA; property Platform::String ^ Protocol { Platform::String ^ get(); void set(Platform::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Network</AssemblyName>
-        <AssemblyVersion>14.0.0.0</AssemblyVersion>
-        <AssemblyVersion>16.0.0.0</AssemblyVersion>
-        <AssemblyVersion>17.0.0.0</AssemblyVersion>
-        <AssemblyVersion>18.0.0.0</AssemblyVersion>
+        <AssemblyVersion>20.0.0.0</AssemblyVersion>
+        <AssemblyVersion>20.0.1.0</AssemblyVersion>
+        <AssemblyVersion>20.0.2.0</AssemblyVersion>
+        <AssemblyVersion>20.0.3.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="properties.protocol")</AttributeName>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty(PropertyName="properties.protocol")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty(PropertyName="properties.protocol")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -521,31 +549,31 @@
       </ReturnValue>
       <Docs>
         <summary>
-            Gets or sets possible values include: 'Udp', 'Tcp', 'All'
+            Gets or sets the reference to the transport protocol used by the
+            load balancing rule. Possible values include: 'Udp', 'Tcp', 'All'
             </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="ProvisioningState">
-      <MemberSignature Language="C#" Value="public string ProvisioningState { get; set; }" />
+      <MemberSignature Language="C#" Value="public string ProvisioningState { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string ProvisioningState" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Management.Network.Models.LoadBalancingRule.ProvisioningState" />
-      <MemberSignature Language="VB.NET" Value="Public Property ProvisioningState As String" />
-      <MemberSignature Language="F#" Value="member this.ProvisioningState : string with get, set" Usage="Microsoft.Azure.Management.Network.Models.LoadBalancingRule.ProvisioningState" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ ProvisioningState { System::String ^ get(); void set(System::String ^ value); };" />
-      <MemberSignature Language="C++ CX" Value="public:&#xA; property Platform::String ^ ProvisioningState { Platform::String ^ get(); void set(Platform::String ^ value); };" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ProvisioningState As String" />
+      <MemberSignature Language="F#" Value="member this.ProvisioningState : string" Usage="Microsoft.Azure.Management.Network.Models.LoadBalancingRule.ProvisioningState" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Network</AssemblyName>
-        <AssemblyVersion>14.0.0.0</AssemblyVersion>
-        <AssemblyVersion>16.0.0.0</AssemblyVersion>
-        <AssemblyVersion>17.0.0.0</AssemblyVersion>
-        <AssemblyVersion>18.0.0.0</AssemblyVersion>
+        <AssemblyVersion>20.0.0.0</AssemblyVersion>
+        <AssemblyVersion>20.0.1.0</AssemblyVersion>
+        <AssemblyVersion>20.0.2.0</AssemblyVersion>
+        <AssemblyVersion>20.0.3.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="properties.provisioningState")</AttributeName>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty(PropertyName="properties.provisioningState")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty(PropertyName="properties.provisioningState")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -553,8 +581,39 @@
       </ReturnValue>
       <Docs>
         <summary>
-            Gets the provisioning state of the PublicIP resource. Possible
-            values are: 'Updating', 'Deleting', and 'Failed'.
+            Gets the provisioning state of the load balancing rule resource.
+            Possible values include: 'Succeeded', 'Updating', 'Deleting',
+            'Failed'
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Type">
+      <MemberSignature Language="C#" Value="public string Type { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Type" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Management.Network.Models.LoadBalancingRule.Type" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Type As String" />
+      <MemberSignature Language="F#" Value="member this.Type : string" Usage="Microsoft.Azure.Management.Network.Models.LoadBalancingRule.Type" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Azure.Management.Network</AssemblyName>
+        <AssemblyVersion>20.0.1.0</AssemblyVersion>
+        <AssemblyVersion>20.0.2.0</AssemblyVersion>
+        <AssemblyVersion>20.0.3.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty(PropertyName="type")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty(PropertyName="type")&gt;]</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets type of the resource.
             </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
@@ -566,16 +625,13 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Management.Network.Models.LoadBalancingRule.Validate" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Sub Validate ()" />
       <MemberSignature Language="F#" Value="abstract member Validate : unit -&gt; unit&#xA;override this.Validate : unit -&gt; unit" Usage="loadBalancingRule.Validate " />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Validate();" />
-      <MemberSignature Language="C++ CX" Value="public:&#xA; virtual void Validate();" />
-      <MemberSignature Language="C++ WINRT" Value=" virtual void Validate();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Network</AssemblyName>
-        <AssemblyVersion>14.0.0.0</AssemblyVersion>
-        <AssemblyVersion>16.0.0.0</AssemblyVersion>
-        <AssemblyVersion>17.0.0.0</AssemblyVersion>
-        <AssemblyVersion>18.0.0.0</AssemblyVersion>
+        <AssemblyVersion>20.0.0.0</AssemblyVersion>
+        <AssemblyVersion>20.0.1.0</AssemblyVersion>
+        <AssemblyVersion>20.0.2.0</AssemblyVersion>
+        <AssemblyVersion>20.0.3.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>

@@ -1,11 +1,9 @@
-﻿<Type Name="ScalarFunctionProperties" FullName="Microsoft.Azure.Management.StreamAnalytics.Models.ScalarFunctionProperties">
+<Type Name="ScalarFunctionProperties" FullName="Microsoft.Azure.Management.StreamAnalytics.Models.ScalarFunctionProperties">
   <TypeSignature Language="C#" Value="public class ScalarFunctionProperties : Microsoft.Azure.Management.StreamAnalytics.Models.FunctionProperties" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit ScalarFunctionProperties extends Microsoft.Azure.Management.StreamAnalytics.Models.FunctionProperties" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Azure.Management.StreamAnalytics.Models.ScalarFunctionProperties" />
   <TypeSignature Language="VB.NET" Value="Public Class ScalarFunctionProperties&#xA;Inherits FunctionProperties" />
   <TypeSignature Language="F#" Value="type ScalarFunctionProperties = class&#xA;    inherit FunctionProperties" />
-  <TypeSignature Language="C++ CLI" Value="public ref class ScalarFunctionProperties : Microsoft::Azure::Management::StreamAnalytics::Models::FunctionProperties" />
-  <TypeSignature Language="C++ WINRT" Value="[Windows::Foundation::Metadata::WebHostHidden]&#xA;class ScalarFunctionProperties : Microsoft::Azure::Management::StreamAnalytics::Models::FunctionProperties" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Azure.Management.StreamAnalytics</AssemblyName>
     <AssemblyVersion>2.0.0.0</AssemblyVersion>
@@ -16,10 +14,12 @@
   <Interfaces />
   <Attributes>
     <Attribute>
-      <AttributeName>Microsoft.Rest.Serialization.JsonTransformation</AttributeName>
+      <AttributeName Language="C#">[Microsoft.Rest.Serialization.JsonTransformation]</AttributeName>
+      <AttributeName Language="F#">[&lt;Microsoft.Rest.Serialization.JsonTransformation&gt;]</AttributeName>
     </Attribute>
     <Attribute>
-      <AttributeName>Newtonsoft.Json.JsonObject("Scalar")</AttributeName>
+      <AttributeName Language="C#">[Newtonsoft.Json.JsonObject("Scalar")]</AttributeName>
+      <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonObject("Scalar")&gt;]</AttributeName>
     </Attribute>
   </Attributes>
   <Docs>
@@ -34,9 +34,6 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Management.StreamAnalytics.Models.ScalarFunctionProperties.#ctor" />
       <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; ScalarFunctionProperties();" />
-      <MemberSignature Language="C++ CX" Value="public:&#xA; ScalarFunctionProperties();" />
-      <MemberSignature Language="C++ WINRT" Value=" ScalarFunctionProperties();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.StreamAnalytics</AssemblyName>
@@ -51,10 +48,10 @@
       </Docs>
     </Member>
     <Member MemberName=".ctor">
-      <MemberSignature Language="C#" Value="public ScalarFunctionProperties (string etag = null, System.Collections.Generic.IList&lt;Microsoft.Azure.Management.StreamAnalytics.Models.FunctionInput&gt; inputs = null, Microsoft.Azure.Management.StreamAnalytics.Models.FunctionOutput output = null, Microsoft.Azure.Management.StreamAnalytics.Models.FunctionBinding binding = null);" />
+      <MemberSignature Language="C#" Value="public ScalarFunctionProperties (string etag = default, System.Collections.Generic.IList&lt;Microsoft.Azure.Management.StreamAnalytics.Models.FunctionInput&gt; inputs = default, Microsoft.Azure.Management.StreamAnalytics.Models.FunctionOutput output = default, Microsoft.Azure.Management.StreamAnalytics.Models.FunctionBinding binding = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string etag, class System.Collections.Generic.IList`1&lt;class Microsoft.Azure.Management.StreamAnalytics.Models.FunctionInput&gt; inputs, class Microsoft.Azure.Management.StreamAnalytics.Models.FunctionOutput output, class Microsoft.Azure.Management.StreamAnalytics.Models.FunctionBinding binding) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Management.StreamAnalytics.Models.ScalarFunctionProperties.#ctor(System.String,System.Collections.Generic.IList{Microsoft.Azure.Management.StreamAnalytics.Models.FunctionInput},Microsoft.Azure.Management.StreamAnalytics.Models.FunctionOutput,Microsoft.Azure.Management.StreamAnalytics.Models.FunctionBinding)" />
-      <MemberSignature Language="VB.NET" Value="Public Sub New (Optional etag As String = null, Optional inputs As IList(Of FunctionInput) = null, Optional output As FunctionOutput = null, Optional binding As FunctionBinding = null)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (Optional etag As String = Nothing, Optional inputs As IList(Of FunctionInput) = Nothing, Optional output As FunctionOutput = Nothing, Optional binding As FunctionBinding = Nothing)" />
       <MemberSignature Language="F#" Value="new Microsoft.Azure.Management.StreamAnalytics.Models.ScalarFunctionProperties : string * System.Collections.Generic.IList&lt;Microsoft.Azure.Management.StreamAnalytics.Models.FunctionInput&gt; * Microsoft.Azure.Management.StreamAnalytics.Models.FunctionOutput * Microsoft.Azure.Management.StreamAnalytics.Models.FunctionBinding -&gt; Microsoft.Azure.Management.StreamAnalytics.Models.ScalarFunctionProperties" Usage="new Microsoft.Azure.Management.StreamAnalytics.Models.ScalarFunctionProperties (etag, inputs, output, binding)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
@@ -91,7 +88,6 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Management.StreamAnalytics.Models.ScalarFunctionProperties.Binding" />
       <MemberSignature Language="VB.NET" Value="Public Property Binding As FunctionBinding" />
       <MemberSignature Language="F#" Value="member this.Binding : Microsoft.Azure.Management.StreamAnalytics.Models.FunctionBinding with get, set" Usage="Microsoft.Azure.Management.StreamAnalytics.Models.ScalarFunctionProperties.Binding" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Azure::Management::StreamAnalytics::Models::FunctionBinding ^ Binding { Microsoft::Azure::Management::StreamAnalytics::Models::FunctionBinding ^ get(); void set(Microsoft::Azure::Management::StreamAnalytics::Models::FunctionBinding ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.StreamAnalytics</AssemblyName>
@@ -99,7 +95,8 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="properties.binding")</AttributeName>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty(PropertyName="properties.binding")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty(PropertyName="properties.binding")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -121,7 +118,6 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Management.StreamAnalytics.Models.ScalarFunctionProperties.Inputs" />
       <MemberSignature Language="VB.NET" Value="Public Property Inputs As IList(Of FunctionInput)" />
       <MemberSignature Language="F#" Value="member this.Inputs : System.Collections.Generic.IList&lt;Microsoft.Azure.Management.StreamAnalytics.Models.FunctionInput&gt; with get, set" Usage="Microsoft.Azure.Management.StreamAnalytics.Models.ScalarFunctionProperties.Inputs" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::Generic::IList&lt;Microsoft::Azure::Management::StreamAnalytics::Models::FunctionInput ^&gt; ^ Inputs { System::Collections::Generic::IList&lt;Microsoft::Azure::Management::StreamAnalytics::Models::FunctionInput ^&gt; ^ get(); void set(System::Collections::Generic::IList&lt;Microsoft::Azure::Management::StreamAnalytics::Models::FunctionInput ^&gt; ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.StreamAnalytics</AssemblyName>
@@ -129,7 +125,8 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="properties.inputs")</AttributeName>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty(PropertyName="properties.inputs")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty(PropertyName="properties.inputs")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -150,7 +147,6 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Management.StreamAnalytics.Models.ScalarFunctionProperties.Output" />
       <MemberSignature Language="VB.NET" Value="Public Property Output As FunctionOutput" />
       <MemberSignature Language="F#" Value="member this.Output : Microsoft.Azure.Management.StreamAnalytics.Models.FunctionOutput with get, set" Usage="Microsoft.Azure.Management.StreamAnalytics.Models.ScalarFunctionProperties.Output" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Azure::Management::StreamAnalytics::Models::FunctionOutput ^ Output { Microsoft::Azure::Management::StreamAnalytics::Models::FunctionOutput ^ get(); void set(Microsoft::Azure::Management::StreamAnalytics::Models::FunctionOutput ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.StreamAnalytics</AssemblyName>
@@ -158,7 +154,8 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="properties.output")</AttributeName>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty(PropertyName="properties.output")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty(PropertyName="properties.output")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>

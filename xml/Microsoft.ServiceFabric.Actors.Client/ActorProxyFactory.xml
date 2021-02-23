@@ -1,11 +1,9 @@
-﻿<Type Name="ActorProxyFactory" FullName="Microsoft.ServiceFabric.Actors.Client.ActorProxyFactory">
+<Type Name="ActorProxyFactory" FullName="Microsoft.ServiceFabric.Actors.Client.ActorProxyFactory">
   <TypeSignature Language="C#" Value="public class ActorProxyFactory : Microsoft.ServiceFabric.Actors.Client.IActorProxyFactory" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit ActorProxyFactory extends System.Object implements class Microsoft.ServiceFabric.Actors.Client.IActorProxyFactory" />
   <TypeSignature Language="DocId" Value="T:Microsoft.ServiceFabric.Actors.Client.ActorProxyFactory" />
   <TypeSignature Language="VB.NET" Value="Public Class ActorProxyFactory&#xA;Implements IActorProxyFactory" />
   <TypeSignature Language="F#" Value="type ActorProxyFactory = class&#xA;    interface IActorProxyFactory" />
-  <TypeSignature Language="C++ CLI" Value="public ref class ActorProxyFactory : Microsoft::ServiceFabric::Actors::Client::IActorProxyFactory" />
-  <TypeSignature Language="C++ WINRT" Value="[Windows::Foundation::Metadata::WebHostHidden]&#xA;class ActorProxyFactory : Microsoft::ServiceFabric::Actors::Client::IActorProxyFactory" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.ServiceFabric.Actors</AssemblyName>
     <AssemblyVersion>6.0.0.0</AssemblyVersion>
@@ -26,12 +24,11 @@
   </Docs>
   <Members>
     <Member MemberName=".ctor">
-      <MemberSignature Language="C#" Value="public ActorProxyFactory (Microsoft.ServiceFabric.Services.Communication.Client.OperationRetrySettings retrySettings = null);" />
+      <MemberSignature Language="C#" Value="public ActorProxyFactory (Microsoft.ServiceFabric.Services.Communication.Client.OperationRetrySettings retrySettings = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class Microsoft.ServiceFabric.Services.Communication.Client.OperationRetrySettings retrySettings) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.ServiceFabric.Actors.Client.ActorProxyFactory.#ctor(Microsoft.ServiceFabric.Services.Communication.Client.OperationRetrySettings)" />
-      <MemberSignature Language="VB.NET" Value="Public Sub New (Optional retrySettings As OperationRetrySettings = null)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (Optional retrySettings As OperationRetrySettings = Nothing)" />
       <MemberSignature Language="F#" Value="new Microsoft.ServiceFabric.Actors.Client.ActorProxyFactory : Microsoft.ServiceFabric.Services.Communication.Client.OperationRetrySettings -&gt; Microsoft.ServiceFabric.Actors.Client.ActorProxyFactory" Usage="new Microsoft.ServiceFabric.Actors.Client.ActorProxyFactory retrySettings" />
-      <MemberSignature Language="C++ WINRT" Value=" ActorProxyFactory(Microsoft::ServiceFabric::Services::Communication::Client::OperationRetrySettings const &amp; retrySettings = null);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.ServiceFabric.Actors</AssemblyName>
@@ -49,10 +46,10 @@
       </Docs>
     </Member>
     <Member MemberName=".ctor">
-      <MemberSignature Language="C#" Value="public ActorProxyFactory (Func&lt;Microsoft.ServiceFabric.Services.Remoting.V1.IServiceRemotingCallbackClient,Microsoft.ServiceFabric.Services.Remoting.V1.Client.IServiceRemotingClientFactory&gt; createServiceRemotingClientFactory, Microsoft.ServiceFabric.Services.Communication.Client.OperationRetrySettings retrySettings = null);" />
+      <MemberSignature Language="C#" Value="public ActorProxyFactory (Func&lt;Microsoft.ServiceFabric.Services.Remoting.V1.IServiceRemotingCallbackClient,Microsoft.ServiceFabric.Services.Remoting.V1.Client.IServiceRemotingClientFactory&gt; createServiceRemotingClientFactory, Microsoft.ServiceFabric.Services.Communication.Client.OperationRetrySettings retrySettings = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Func`2&lt;class Microsoft.ServiceFabric.Services.Remoting.V1.IServiceRemotingCallbackClient, class Microsoft.ServiceFabric.Services.Remoting.V1.Client.IServiceRemotingClientFactory&gt; createServiceRemotingClientFactory, class Microsoft.ServiceFabric.Services.Communication.Client.OperationRetrySettings retrySettings) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.ServiceFabric.Actors.Client.ActorProxyFactory.#ctor(System.Func{Microsoft.ServiceFabric.Services.Remoting.V1.IServiceRemotingCallbackClient,Microsoft.ServiceFabric.Services.Remoting.V1.Client.IServiceRemotingClientFactory},Microsoft.ServiceFabric.Services.Communication.Client.OperationRetrySettings)" />
-      <MemberSignature Language="VB.NET" Value="Public Sub New (createServiceRemotingClientFactory As Func(Of IServiceRemotingCallbackClient, IServiceRemotingClientFactory), Optional retrySettings As OperationRetrySettings = null)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (createServiceRemotingClientFactory As Func(Of IServiceRemotingCallbackClient, IServiceRemotingClientFactory), Optional retrySettings As OperationRetrySettings = Nothing)" />
       <MemberSignature Language="F#" Value="new Microsoft.ServiceFabric.Actors.Client.ActorProxyFactory : Func&lt;Microsoft.ServiceFabric.Services.Remoting.V1.IServiceRemotingCallbackClient, Microsoft.ServiceFabric.Services.Remoting.V1.Client.IServiceRemotingClientFactory&gt; * Microsoft.ServiceFabric.Services.Communication.Client.OperationRetrySettings -&gt; Microsoft.ServiceFabric.Actors.Client.ActorProxyFactory" Usage="new Microsoft.ServiceFabric.Actors.Client.ActorProxyFactory (createServiceRemotingClientFactory, retrySettings)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
@@ -73,10 +70,10 @@
       </Docs>
     </Member>
     <Member MemberName=".ctor">
-      <MemberSignature Language="C#" Value="public ActorProxyFactory (Func&lt;Microsoft.ServiceFabric.Services.Remoting.V2.Client.IServiceRemotingCallbackMessageHandler,Microsoft.ServiceFabric.Services.Remoting.V2.Client.IServiceRemotingClientFactory&gt; createServiceRemotingClientFactory, Microsoft.ServiceFabric.Services.Communication.Client.OperationRetrySettings retrySettings = null);" />
+      <MemberSignature Language="C#" Value="public ActorProxyFactory (Func&lt;Microsoft.ServiceFabric.Services.Remoting.V2.Client.IServiceRemotingCallbackMessageHandler,Microsoft.ServiceFabric.Services.Remoting.V2.Client.IServiceRemotingClientFactory&gt; createServiceRemotingClientFactory, Microsoft.ServiceFabric.Services.Communication.Client.OperationRetrySettings retrySettings = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Func`2&lt;class Microsoft.ServiceFabric.Services.Remoting.V2.Client.IServiceRemotingCallbackMessageHandler, class Microsoft.ServiceFabric.Services.Remoting.V2.Client.IServiceRemotingClientFactory&gt; createServiceRemotingClientFactory, class Microsoft.ServiceFabric.Services.Communication.Client.OperationRetrySettings retrySettings) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.ServiceFabric.Actors.Client.ActorProxyFactory.#ctor(System.Func{Microsoft.ServiceFabric.Services.Remoting.V2.Client.IServiceRemotingCallbackMessageHandler,Microsoft.ServiceFabric.Services.Remoting.V2.Client.IServiceRemotingClientFactory},Microsoft.ServiceFabric.Services.Communication.Client.OperationRetrySettings)" />
-      <MemberSignature Language="VB.NET" Value="Public Sub New (createServiceRemotingClientFactory As Func(Of IServiceRemotingCallbackMessageHandler, IServiceRemotingClientFactory), Optional retrySettings As OperationRetrySettings = null)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (createServiceRemotingClientFactory As Func(Of IServiceRemotingCallbackMessageHandler, IServiceRemotingClientFactory), Optional retrySettings As OperationRetrySettings = Nothing)" />
       <MemberSignature Language="F#" Value="new Microsoft.ServiceFabric.Actors.Client.ActorProxyFactory : Func&lt;Microsoft.ServiceFabric.Services.Remoting.V2.Client.IServiceRemotingCallbackMessageHandler, Microsoft.ServiceFabric.Services.Remoting.V2.Client.IServiceRemotingClientFactory&gt; * Microsoft.ServiceFabric.Services.Communication.Client.OperationRetrySettings -&gt; Microsoft.ServiceFabric.Actors.Client.ActorProxyFactory" Usage="new Microsoft.ServiceFabric.Actors.Client.ActorProxyFactory (createServiceRemotingClientFactory, retrySettings)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
@@ -97,9 +94,10 @@
       </Docs>
     </Member>
     <Member MemberName="CreateActorProxy&lt;TActorInterface&gt;">
-      <MemberSignature Language="C#" Value="public TActorInterface CreateActorProxy&lt;TActorInterface&gt; (Uri serviceUri, Microsoft.ServiceFabric.Actors.ActorId actorId, string listenerName = null) where TActorInterface : Microsoft.ServiceFabric.Actors.IActor;" />
+      <MemberSignature Language="C#" Value="public TActorInterface CreateActorProxy&lt;TActorInterface&gt; (Uri serviceUri, Microsoft.ServiceFabric.Actors.ActorId actorId, string listenerName = default) where TActorInterface : Microsoft.ServiceFabric.Actors.IActor;" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance !!TActorInterface CreateActorProxy&lt;(class Microsoft.ServiceFabric.Actors.IActor) TActorInterface&gt;(class System.Uri serviceUri, class Microsoft.ServiceFabric.Actors.ActorId actorId, string listenerName) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.ServiceFabric.Actors.Client.ActorProxyFactory.CreateActorProxy``1(System.Uri,Microsoft.ServiceFabric.Actors.ActorId,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Function CreateActorProxy(Of TActorInterface As IActor) (serviceUri As Uri, actorId As ActorId, Optional listenerName As String = Nothing) As TActorInterface" />
       <MemberSignature Language="F#" Value="abstract member CreateActorProxy : Uri * Microsoft.ServiceFabric.Actors.ActorId * string -&gt; 'ActorInterface (requires 'ActorInterface :&gt; Microsoft.ServiceFabric.Actors.IActor)&#xA;override this.CreateActorProxy : Uri * Microsoft.ServiceFabric.Actors.ActorId * string -&gt; 'ActorInterface (requires 'ActorInterface :&gt; Microsoft.ServiceFabric.Actors.IActor)" Usage="actorProxyFactory.CreateActorProxy (serviceUri, actorId, listenerName)" />
       <MemberType>Method</MemberType>
       <Implements>
@@ -126,11 +124,11 @@
       </Parameters>
       <Docs>
         <typeparam name="TActorInterface">
-            The actor interface implemented by the remote actor object. 
+            The actor interface implemented by the remote actor object.
             The returned proxy object will implement this interface.
             </typeparam>
         <param name="serviceUri">Uri of the actor service.</param>
-        <param name="actorId">Actor Id of the proxy actor object. Methods called on this proxy will result in requests 
+        <param name="actorId">Actor Id of the proxy actor object. Methods called on this proxy will result in requests
             being sent to the actor with this id.</param>
         <param name="listenerName">
             By default an actor service has only one listener for clients to connect to and communicate with.
@@ -144,9 +142,10 @@
       </Docs>
     </Member>
     <Member MemberName="CreateActorProxy&lt;TActorInterface&gt;">
-      <MemberSignature Language="C#" Value="public TActorInterface CreateActorProxy&lt;TActorInterface&gt; (Microsoft.ServiceFabric.Actors.ActorId actorId, string applicationName = null, string serviceName = null, string listenerName = null) where TActorInterface : Microsoft.ServiceFabric.Actors.IActor;" />
+      <MemberSignature Language="C#" Value="public TActorInterface CreateActorProxy&lt;TActorInterface&gt; (Microsoft.ServiceFabric.Actors.ActorId actorId, string applicationName = default, string serviceName = default, string listenerName = default) where TActorInterface : Microsoft.ServiceFabric.Actors.IActor;" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance !!TActorInterface CreateActorProxy&lt;(class Microsoft.ServiceFabric.Actors.IActor) TActorInterface&gt;(class Microsoft.ServiceFabric.Actors.ActorId actorId, string applicationName, string serviceName, string listenerName) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.ServiceFabric.Actors.Client.ActorProxyFactory.CreateActorProxy``1(Microsoft.ServiceFabric.Actors.ActorId,System.String,System.String,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Function CreateActorProxy(Of TActorInterface As IActor) (actorId As ActorId, Optional applicationName As String = Nothing, Optional serviceName As String = Nothing, Optional listenerName As String = Nothing) As TActorInterface" />
       <MemberSignature Language="F#" Value="abstract member CreateActorProxy : Microsoft.ServiceFabric.Actors.ActorId * string * string * string -&gt; 'ActorInterface (requires 'ActorInterface :&gt; Microsoft.ServiceFabric.Actors.IActor)&#xA;override this.CreateActorProxy : Microsoft.ServiceFabric.Actors.ActorId * string * string * string -&gt; 'ActorInterface (requires 'ActorInterface :&gt; Microsoft.ServiceFabric.Actors.IActor)" Usage="actorProxyFactory.CreateActorProxy (actorId, applicationName, serviceName, listenerName)" />
       <MemberType>Method</MemberType>
       <Implements>
@@ -174,19 +173,19 @@
       </Parameters>
       <Docs>
         <typeparam name="TActorInterface">
-            The actor interface implemented by the remote actor object. 
+            The actor interface implemented by the remote actor object.
             The returned proxy object will implement this interface.
             </typeparam>
-        <param name="actorId">Actor Id of the proxy actor object. Methods called on this proxy will result in requests 
+        <param name="actorId">Actor Id of the proxy actor object. Methods called on this proxy will result in requests
             being sent to the actor with this id.</param>
         <param name="applicationName">
             Name of the Service Fabric application that contains the actor service hosting the actor objects.
-            This parameter can be null if the client is running as part of that same Service Fabric application. For more information, see Remarks. 
+            This parameter can be null if the client is running as part of that same Service Fabric application. For more information, see Remarks.
             </param>
         <param name="serviceName">
             Name of the Service Fabric service as configured by <see cref="T:Microsoft.ServiceFabric.Actors.Runtime.ActorServiceAttribute" /> on the actor implementation.
             By default, the name of the service is derived from the name of the actor interface. However <see cref="T:Microsoft.ServiceFabric.Actors.Runtime.ActorServiceAttribute" />
-            is required when an actor implements more than one actor interfaces or an actor interface derives from another actor interface as the determination of the 
+            is required when an actor implements more than one actor interfaces or an actor interface derives from another actor interface as the determination of the
             serviceName cannot be made automatically.
             </param>
         <param name="listenerName">
@@ -201,9 +200,10 @@
       </Docs>
     </Member>
     <Member MemberName="CreateActorServiceProxy&lt;TServiceInterface&gt;">
-      <MemberSignature Language="C#" Value="public TServiceInterface CreateActorServiceProxy&lt;TServiceInterface&gt; (Uri serviceUri, Microsoft.ServiceFabric.Actors.ActorId actorId, string listenerName = null) where TServiceInterface : Microsoft.ServiceFabric.Services.Remoting.IService;" />
+      <MemberSignature Language="C#" Value="public TServiceInterface CreateActorServiceProxy&lt;TServiceInterface&gt; (Uri serviceUri, Microsoft.ServiceFabric.Actors.ActorId actorId, string listenerName = default) where TServiceInterface : Microsoft.ServiceFabric.Services.Remoting.IService;" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance !!TServiceInterface CreateActorServiceProxy&lt;(class Microsoft.ServiceFabric.Services.Remoting.IService) TServiceInterface&gt;(class System.Uri serviceUri, class Microsoft.ServiceFabric.Actors.ActorId actorId, string listenerName) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.ServiceFabric.Actors.Client.ActorProxyFactory.CreateActorServiceProxy``1(System.Uri,Microsoft.ServiceFabric.Actors.ActorId,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Function CreateActorServiceProxy(Of TServiceInterface As IService) (serviceUri As Uri, actorId As ActorId, Optional listenerName As String = Nothing) As TServiceInterface" />
       <MemberSignature Language="F#" Value="abstract member CreateActorServiceProxy : Uri * Microsoft.ServiceFabric.Actors.ActorId * string -&gt; 'ServiceInterface (requires 'ServiceInterface :&gt; Microsoft.ServiceFabric.Services.Remoting.IService)&#xA;override this.CreateActorServiceProxy : Uri * Microsoft.ServiceFabric.Actors.ActorId * string -&gt; 'ServiceInterface (requires 'ServiceInterface :&gt; Microsoft.ServiceFabric.Services.Remoting.IService)" Usage="actorProxyFactory.CreateActorServiceProxy (serviceUri, actorId, listenerName)" />
       <MemberType>Method</MemberType>
       <Implements>
@@ -244,10 +244,10 @@
       </Docs>
     </Member>
     <Member MemberName="CreateActorServiceProxy&lt;TServiceInterface&gt;">
-      <MemberSignature Language="C#" Value="public TServiceInterface CreateActorServiceProxy&lt;TServiceInterface&gt; (Uri serviceUri, long partitionKey, string listenerName = null) where TServiceInterface : Microsoft.ServiceFabric.Services.Remoting.IService;" />
+      <MemberSignature Language="C#" Value="public TServiceInterface CreateActorServiceProxy&lt;TServiceInterface&gt; (Uri serviceUri, long partitionKey, string listenerName = default) where TServiceInterface : Microsoft.ServiceFabric.Services.Remoting.IService;" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance !!TServiceInterface CreateActorServiceProxy&lt;(class Microsoft.ServiceFabric.Services.Remoting.IService) TServiceInterface&gt;(class System.Uri serviceUri, int64 partitionKey, string listenerName) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.ServiceFabric.Actors.Client.ActorProxyFactory.CreateActorServiceProxy``1(System.Uri,System.Int64,System.String)" />
-      <MemberSignature Language="VB.NET" Value="Public Function CreateActorServiceProxy(Of TServiceInterface As IService) (serviceUri As Uri, partitionKey As Long, Optional listenerName As String = null) As TServiceInterface" />
+      <MemberSignature Language="VB.NET" Value="Public Function CreateActorServiceProxy(Of TServiceInterface As IService) (serviceUri As Uri, partitionKey As Long, Optional listenerName As String = Nothing) As TServiceInterface" />
       <MemberSignature Language="F#" Value="abstract member CreateActorServiceProxy : Uri * int64 * string -&gt; 'ServiceInterface (requires 'ServiceInterface :&gt; Microsoft.ServiceFabric.Services.Remoting.IService)&#xA;override this.CreateActorServiceProxy : Uri * int64 * string -&gt; 'ServiceInterface (requires 'ServiceInterface :&gt; Microsoft.ServiceFabric.Services.Remoting.IService)" Usage="actorProxyFactory.CreateActorServiceProxy (serviceUri, partitionKey, listenerName)" />
       <MemberType>Method</MemberType>
       <Implements>
@@ -284,6 +284,29 @@
             Create a proxy to the actor service that is hosting the specified actor id and implementing specified type of the service interface.
             </summary>
         <returns>A service proxy object that implements <see cref="T:Microsoft.ServiceFabric.Services.Remoting.Client.IServiceProxy" /> and TServiceInterface.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Dispose">
+      <MemberSignature Language="C#" Value="public void Dispose ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Dispose() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.ServiceFabric.Actors.Client.ActorProxyFactory.Dispose" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Dispose ()" />
+      <MemberSignature Language="F#" Value="member this.Dispose : unit -&gt; unit" Usage="actorProxyFactory.Dispose " />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.ServiceFabric.Actors</AssemblyName>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>
+            Releases managed/unmanaged resources.
+            Dispose Method is being added rather than making it IDisposable so that it doesn't change type information and wont be a breaking change.
+            </summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

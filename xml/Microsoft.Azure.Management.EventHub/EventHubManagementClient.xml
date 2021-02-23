@@ -1,10 +1,9 @@
-﻿<Type Name="EventHubManagementClient" FullName="Microsoft.Azure.Management.EventHub.EventHubManagementClient">
+<Type Name="EventHubManagementClient" FullName="Microsoft.Azure.Management.EventHub.EventHubManagementClient">
   <TypeSignature Language="C#" Value="public class EventHubManagementClient : Microsoft.Rest.ServiceClient&lt;Microsoft.Azure.Management.EventHub.EventHubManagementClient&gt;, IDisposable, Microsoft.Azure.Management.EventHub.IEventHubManagementClient, Microsoft.Rest.Azure.IAzureClient" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit EventHubManagementClient extends Microsoft.Rest.ServiceClient`1&lt;class Microsoft.Azure.Management.EventHub.EventHubManagementClient&gt; implements class Microsoft.Azure.Management.EventHub.IEventHubManagementClient, class Microsoft.Rest.Azure.IAzureClient, class System.IDisposable" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Azure.Management.EventHub.EventHubManagementClient" />
   <TypeSignature Language="VB.NET" Value="Public Class EventHubManagementClient&#xA;Inherits ServiceClient(Of EventHubManagementClient)&#xA;Implements IAzureClient, IDisposable, IEventHubManagementClient" />
   <TypeSignature Language="F#" Value="type EventHubManagementClient = class&#xA;    inherit ServiceClient&lt;EventHubManagementClient&gt;&#xA;    interface IEventHubManagementClient&#xA;    interface IDisposable&#xA;    interface IAzureClient" />
-  <TypeSignature Language="C++ CLI" Value="public ref class EventHubManagementClient : Microsoft::Rest::ServiceClient&lt;Microsoft::Azure::Management::EventHub::EventHubManagementClient ^&gt;, IDisposable, Microsoft::Azure::Management::EventHub::IEventHubManagementClient, Microsoft::Rest::Azure::IAzureClient" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Azure.Management.EventHub</AssemblyName>
     <AssemblyVersion>2.0.0.0</AssemblyVersion>
@@ -39,7 +38,6 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Management.EventHub.EventHubManagementClient.#ctor(System.Net.Http.DelegatingHandler[])" />
       <MemberSignature Language="VB.NET" Value="Protected Sub New (ParamArray handlers As DelegatingHandler())" />
       <MemberSignature Language="F#" Value="new Microsoft.Azure.Management.EventHub.EventHubManagementClient : System.Net.Http.DelegatingHandler[] -&gt; Microsoft.Azure.Management.EventHub.EventHubManagementClient" Usage="new Microsoft.Azure.Management.EventHub.EventHubManagementClient handlers" />
-      <MemberSignature Language="C++ CLI" Value="protected:&#xA; EventHubManagementClient(... cli::array &lt;System::Net::Http::DelegatingHandler ^&gt; ^ handlers);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.EventHub</AssemblyName>
@@ -49,7 +47,8 @@
         <Parameter Name="handlers" Type="System.Net.Http.DelegatingHandler[]">
           <Attributes>
             <Attribute>
-              <AttributeName>System.ParamArray</AttributeName>
+              <AttributeName Language="C#">[System.ParamArray]</AttributeName>
+              <AttributeName Language="F#">[&lt;System.ParamArray&gt;]</AttributeName>
             </Attribute>
           </Attributes>
         </Parameter>
@@ -70,7 +69,6 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Management.EventHub.EventHubManagementClient.#ctor(Microsoft.Rest.ServiceClientCredentials,System.Net.Http.DelegatingHandler[])" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (credentials As ServiceClientCredentials, ParamArray handlers As DelegatingHandler())" />
       <MemberSignature Language="F#" Value="new Microsoft.Azure.Management.EventHub.EventHubManagementClient : Microsoft.Rest.ServiceClientCredentials * System.Net.Http.DelegatingHandler[] -&gt; Microsoft.Azure.Management.EventHub.EventHubManagementClient" Usage="new Microsoft.Azure.Management.EventHub.EventHubManagementClient (credentials, handlers)" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; EventHubManagementClient(Microsoft::Rest::ServiceClientCredentials ^ credentials, ... cli::array &lt;System::Net::Http::DelegatingHandler ^&gt; ^ handlers);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.EventHub</AssemblyName>
@@ -81,7 +79,8 @@
         <Parameter Name="handlers" Type="System.Net.Http.DelegatingHandler[]">
           <Attributes>
             <Attribute>
-              <AttributeName>System.ParamArray</AttributeName>
+              <AttributeName Language="C#">[System.ParamArray]</AttributeName>
+              <AttributeName Language="F#">[&lt;System.ParamArray&gt;]</AttributeName>
             </Attribute>
           </Attributes>
         </Parameter>
@@ -103,12 +102,38 @@
       </Docs>
     </Member>
     <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="protected EventHubManagementClient (System.Net.Http.HttpClient httpClient, bool disposeHttpClient);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor(class System.Net.Http.HttpClient httpClient, bool disposeHttpClient) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Management.EventHub.EventHubManagementClient.#ctor(System.Net.Http.HttpClient,System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Protected Sub New (httpClient As HttpClient, disposeHttpClient As Boolean)" />
+      <MemberSignature Language="F#" Value="new Microsoft.Azure.Management.EventHub.EventHubManagementClient : System.Net.Http.HttpClient * bool -&gt; Microsoft.Azure.Management.EventHub.EventHubManagementClient" Usage="new Microsoft.Azure.Management.EventHub.EventHubManagementClient (httpClient, disposeHttpClient)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Azure.Management.EventHub</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="httpClient" Type="System.Net.Http.HttpClient" />
+        <Parameter Name="disposeHttpClient" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="httpClient">
+            HttpClient to be used
+            </param>
+        <param name="disposeHttpClient">
+            True: will dispose the provided httpClient on calling EventHubManagementClient.Dispose(). False: will not dispose provided httpClient</param>
+        <summary>
+            Initializes a new instance of the EventHubManagementClient class.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="protected EventHubManagementClient (System.Net.Http.HttpClientHandler rootHandler, params System.Net.Http.DelegatingHandler[] handlers);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor(class System.Net.Http.HttpClientHandler rootHandler, class System.Net.Http.DelegatingHandler[] handlers) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Management.EventHub.EventHubManagementClient.#ctor(System.Net.Http.HttpClientHandler,System.Net.Http.DelegatingHandler[])" />
       <MemberSignature Language="VB.NET" Value="Protected Sub New (rootHandler As HttpClientHandler, ParamArray handlers As DelegatingHandler())" />
       <MemberSignature Language="F#" Value="new Microsoft.Azure.Management.EventHub.EventHubManagementClient : System.Net.Http.HttpClientHandler * System.Net.Http.DelegatingHandler[] -&gt; Microsoft.Azure.Management.EventHub.EventHubManagementClient" Usage="new Microsoft.Azure.Management.EventHub.EventHubManagementClient (rootHandler, handlers)" />
-      <MemberSignature Language="C++ CLI" Value="protected:&#xA; EventHubManagementClient(System::Net::Http::HttpClientHandler ^ rootHandler, ... cli::array &lt;System::Net::Http::DelegatingHandler ^&gt; ^ handlers);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.EventHub</AssemblyName>
@@ -119,7 +144,8 @@
         <Parameter Name="handlers" Type="System.Net.Http.DelegatingHandler[]">
           <Attributes>
             <Attribute>
-              <AttributeName>System.ParamArray</AttributeName>
+              <AttributeName Language="C#">[System.ParamArray]</AttributeName>
+              <AttributeName Language="F#">[&lt;System.ParamArray&gt;]</AttributeName>
             </Attribute>
           </Attributes>
         </Parameter>
@@ -143,7 +169,6 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Management.EventHub.EventHubManagementClient.#ctor(System.Uri,System.Net.Http.DelegatingHandler[])" />
       <MemberSignature Language="VB.NET" Value="Protected Sub New (baseUri As Uri, ParamArray handlers As DelegatingHandler())" />
       <MemberSignature Language="F#" Value="new Microsoft.Azure.Management.EventHub.EventHubManagementClient : Uri * System.Net.Http.DelegatingHandler[] -&gt; Microsoft.Azure.Management.EventHub.EventHubManagementClient" Usage="new Microsoft.Azure.Management.EventHub.EventHubManagementClient (baseUri, handlers)" />
-      <MemberSignature Language="C++ CLI" Value="protected:&#xA; EventHubManagementClient(Uri ^ baseUri, ... cli::array &lt;System::Net::Http::DelegatingHandler ^&gt; ^ handlers);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.EventHub</AssemblyName>
@@ -154,7 +179,8 @@
         <Parameter Name="handlers" Type="System.Net.Http.DelegatingHandler[]">
           <Attributes>
             <Attribute>
-              <AttributeName>System.ParamArray</AttributeName>
+              <AttributeName Language="C#">[System.ParamArray]</AttributeName>
+              <AttributeName Language="F#">[&lt;System.ParamArray&gt;]</AttributeName>
             </Attribute>
           </Attributes>
         </Parameter>
@@ -176,12 +202,45 @@
       </Docs>
     </Member>
     <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public EventHubManagementClient (Microsoft.Rest.ServiceClientCredentials credentials, System.Net.Http.HttpClient httpClient, bool disposeHttpClient);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class Microsoft.Rest.ServiceClientCredentials credentials, class System.Net.Http.HttpClient httpClient, bool disposeHttpClient) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Management.EventHub.EventHubManagementClient.#ctor(Microsoft.Rest.ServiceClientCredentials,System.Net.Http.HttpClient,System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (credentials As ServiceClientCredentials, httpClient As HttpClient, disposeHttpClient As Boolean)" />
+      <MemberSignature Language="F#" Value="new Microsoft.Azure.Management.EventHub.EventHubManagementClient : Microsoft.Rest.ServiceClientCredentials * System.Net.Http.HttpClient * bool -&gt; Microsoft.Azure.Management.EventHub.EventHubManagementClient" Usage="new Microsoft.Azure.Management.EventHub.EventHubManagementClient (credentials, httpClient, disposeHttpClient)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Azure.Management.EventHub</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="credentials" Type="Microsoft.Rest.ServiceClientCredentials" />
+        <Parameter Name="httpClient" Type="System.Net.Http.HttpClient" />
+        <Parameter Name="disposeHttpClient" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="credentials">
+            Required. Credentials needed for the client to connect to Azure.
+            </param>
+        <param name="httpClient">
+            HttpClient to be used
+            </param>
+        <param name="disposeHttpClient">
+            True: will dispose the provided httpClient on calling EventHubManagementClient.Dispose(). False: will not dispose provided httpClient</param>
+        <summary>
+            Initializes a new instance of the EventHubManagementClient class.
+            </summary>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+            Thrown when a required parameter is null
+            </exception>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public EventHubManagementClient (Microsoft.Rest.ServiceClientCredentials credentials, System.Net.Http.HttpClientHandler rootHandler, params System.Net.Http.DelegatingHandler[] handlers);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class Microsoft.Rest.ServiceClientCredentials credentials, class System.Net.Http.HttpClientHandler rootHandler, class System.Net.Http.DelegatingHandler[] handlers) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Management.EventHub.EventHubManagementClient.#ctor(Microsoft.Rest.ServiceClientCredentials,System.Net.Http.HttpClientHandler,System.Net.Http.DelegatingHandler[])" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (credentials As ServiceClientCredentials, rootHandler As HttpClientHandler, ParamArray handlers As DelegatingHandler())" />
       <MemberSignature Language="F#" Value="new Microsoft.Azure.Management.EventHub.EventHubManagementClient : Microsoft.Rest.ServiceClientCredentials * System.Net.Http.HttpClientHandler * System.Net.Http.DelegatingHandler[] -&gt; Microsoft.Azure.Management.EventHub.EventHubManagementClient" Usage="new Microsoft.Azure.Management.EventHub.EventHubManagementClient (credentials, rootHandler, handlers)" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; EventHubManagementClient(Microsoft::Rest::ServiceClientCredentials ^ credentials, System::Net::Http::HttpClientHandler ^ rootHandler, ... cli::array &lt;System::Net::Http::DelegatingHandler ^&gt; ^ handlers);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.EventHub</AssemblyName>
@@ -193,7 +252,8 @@
         <Parameter Name="handlers" Type="System.Net.Http.DelegatingHandler[]">
           <Attributes>
             <Attribute>
-              <AttributeName>System.ParamArray</AttributeName>
+              <AttributeName Language="C#">[System.ParamArray]</AttributeName>
+              <AttributeName Language="F#">[&lt;System.ParamArray&gt;]</AttributeName>
             </Attribute>
           </Attributes>
         </Parameter>
@@ -223,7 +283,6 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Management.EventHub.EventHubManagementClient.#ctor(System.Uri,Microsoft.Rest.ServiceClientCredentials,System.Net.Http.DelegatingHandler[])" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (baseUri As Uri, credentials As ServiceClientCredentials, ParamArray handlers As DelegatingHandler())" />
       <MemberSignature Language="F#" Value="new Microsoft.Azure.Management.EventHub.EventHubManagementClient : Uri * Microsoft.Rest.ServiceClientCredentials * System.Net.Http.DelegatingHandler[] -&gt; Microsoft.Azure.Management.EventHub.EventHubManagementClient" Usage="new Microsoft.Azure.Management.EventHub.EventHubManagementClient (baseUri, credentials, handlers)" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; EventHubManagementClient(Uri ^ baseUri, Microsoft::Rest::ServiceClientCredentials ^ credentials, ... cli::array &lt;System::Net::Http::DelegatingHandler ^&gt; ^ handlers);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.EventHub</AssemblyName>
@@ -235,7 +294,8 @@
         <Parameter Name="handlers" Type="System.Net.Http.DelegatingHandler[]">
           <Attributes>
             <Attribute>
-              <AttributeName>System.ParamArray</AttributeName>
+              <AttributeName Language="C#">[System.ParamArray]</AttributeName>
+              <AttributeName Language="F#">[&lt;System.ParamArray&gt;]</AttributeName>
             </Attribute>
           </Attributes>
         </Parameter>
@@ -265,7 +325,6 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Management.EventHub.EventHubManagementClient.#ctor(System.Uri,System.Net.Http.HttpClientHandler,System.Net.Http.DelegatingHandler[])" />
       <MemberSignature Language="VB.NET" Value="Protected Sub New (baseUri As Uri, rootHandler As HttpClientHandler, ParamArray handlers As DelegatingHandler())" />
       <MemberSignature Language="F#" Value="new Microsoft.Azure.Management.EventHub.EventHubManagementClient : Uri * System.Net.Http.HttpClientHandler * System.Net.Http.DelegatingHandler[] -&gt; Microsoft.Azure.Management.EventHub.EventHubManagementClient" Usage="new Microsoft.Azure.Management.EventHub.EventHubManagementClient (baseUri, rootHandler, handlers)" />
-      <MemberSignature Language="C++ CLI" Value="protected:&#xA; EventHubManagementClient(Uri ^ baseUri, System::Net::Http::HttpClientHandler ^ rootHandler, ... cli::array &lt;System::Net::Http::DelegatingHandler ^&gt; ^ handlers);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.EventHub</AssemblyName>
@@ -277,7 +336,8 @@
         <Parameter Name="handlers" Type="System.Net.Http.DelegatingHandler[]">
           <Attributes>
             <Attribute>
-              <AttributeName>System.ParamArray</AttributeName>
+              <AttributeName Language="C#">[System.ParamArray]</AttributeName>
+              <AttributeName Language="F#">[&lt;System.ParamArray&gt;]</AttributeName>
             </Attribute>
           </Attributes>
         </Parameter>
@@ -307,7 +367,6 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Management.EventHub.EventHubManagementClient.#ctor(System.Uri,Microsoft.Rest.ServiceClientCredentials,System.Net.Http.HttpClientHandler,System.Net.Http.DelegatingHandler[])" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (baseUri As Uri, credentials As ServiceClientCredentials, rootHandler As HttpClientHandler, ParamArray handlers As DelegatingHandler())" />
       <MemberSignature Language="F#" Value="new Microsoft.Azure.Management.EventHub.EventHubManagementClient : Uri * Microsoft.Rest.ServiceClientCredentials * System.Net.Http.HttpClientHandler * System.Net.Http.DelegatingHandler[] -&gt; Microsoft.Azure.Management.EventHub.EventHubManagementClient" Usage="new Microsoft.Azure.Management.EventHub.EventHubManagementClient (baseUri, credentials, rootHandler, handlers)" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; EventHubManagementClient(Uri ^ baseUri, Microsoft::Rest::ServiceClientCredentials ^ credentials, System::Net::Http::HttpClientHandler ^ rootHandler, ... cli::array &lt;System::Net::Http::DelegatingHandler ^&gt; ^ handlers);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.EventHub</AssemblyName>
@@ -320,7 +379,8 @@
         <Parameter Name="handlers" Type="System.Net.Http.DelegatingHandler[]">
           <Attributes>
             <Attribute>
-              <AttributeName>System.ParamArray</AttributeName>
+              <AttributeName Language="C#">[System.ParamArray]</AttributeName>
+              <AttributeName Language="F#">[&lt;System.ParamArray&gt;]</AttributeName>
             </Attribute>
           </Attributes>
         </Parameter>
@@ -353,8 +413,6 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Management.EventHub.EventHubManagementClient.AcceptLanguage" />
       <MemberSignature Language="VB.NET" Value="Public Property AcceptLanguage As String" />
       <MemberSignature Language="F#" Value="member this.AcceptLanguage : string with get, set" Usage="Microsoft.Azure.Management.EventHub.EventHubManagementClient.AcceptLanguage" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ AcceptLanguage { System::String ^ get(); void set(System::String ^ value); };" />
-      <MemberSignature Language="C++ CX" Value="public:&#xA; property Platform::String ^ AcceptLanguage { Platform::String ^ get(); void set(Platform::String ^ value); };" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:Microsoft.Azure.Management.EventHub.IEventHubManagementClient.AcceptLanguage</InterfaceMember>
@@ -368,31 +426,7 @@
       </ReturnValue>
       <Docs>
         <summary>
-            Gets or sets the preferred language for the response.
-            </summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
-      </Docs>
-    </Member>
-    <Member MemberName="ApiVersion">
-      <MemberSignature Language="C#" Value="public string ApiVersion { get; }" />
-      <MemberSignature Language="ILAsm" Value=".property instance string ApiVersion" />
-      <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Management.EventHub.EventHubManagementClient.ApiVersion" />
-      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ApiVersion As String" />
-      <MemberSignature Language="F#" Value="member this.ApiVersion : string" Usage="Microsoft.Azure.Management.EventHub.EventHubManagementClient.ApiVersion" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ ApiVersion { System::String ^ get(); };" />
-      <MemberSignature Language="C++ CX" Value="public:&#xA; property Platform::String ^ ApiVersion { Platform::String ^ get(); };" />
-      <MemberType>Property</MemberType>
-      <AssemblyInfo>
-        <AssemblyName>Microsoft.Azure.Management.EventHub</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <ReturnValue>
-        <ReturnType>System.String</ReturnType>
-      </ReturnValue>
-      <Docs>
-        <summary>
-            Client API Version.
+            The preferred language for the response.
             </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
@@ -404,7 +438,6 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Management.EventHub.EventHubManagementClient.BaseUri" />
       <MemberSignature Language="VB.NET" Value="Public Property BaseUri As Uri" />
       <MemberSignature Language="F#" Value="member this.BaseUri : Uri with get, set" Usage="Microsoft.Azure.Management.EventHub.EventHubManagementClient.BaseUri" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Uri ^ BaseUri { Uri ^ get(); void set(Uri ^ value); };" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:Microsoft.Azure.Management.EventHub.IEventHubManagementClient.BaseUri</InterfaceMember>
@@ -424,14 +457,56 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <Member MemberName="Clusters">
+      <MemberSignature Language="C#" Value="public Microsoft.Azure.Management.EventHub.IClustersOperations Clusters { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Azure.Management.EventHub.IClustersOperations Clusters" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Management.EventHub.EventHubManagementClient.Clusters" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Clusters As IClustersOperations" />
+      <MemberSignature Language="F#" Value="member this.Clusters : Microsoft.Azure.Management.EventHub.IClustersOperations" Usage="Microsoft.Azure.Management.EventHub.EventHubManagementClient.Clusters" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Azure.Management.EventHub</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Azure.Management.EventHub.IClustersOperations</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets the IClustersOperations.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Configuration">
+      <MemberSignature Language="C#" Value="public Microsoft.Azure.Management.EventHub.IConfigurationOperations Configuration { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Azure.Management.EventHub.IConfigurationOperations Configuration" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Management.EventHub.EventHubManagementClient.Configuration" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Configuration As IConfigurationOperations" />
+      <MemberSignature Language="F#" Value="member this.Configuration : Microsoft.Azure.Management.EventHub.IConfigurationOperations" Usage="Microsoft.Azure.Management.EventHub.EventHubManagementClient.Configuration" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Azure.Management.EventHub</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Azure.Management.EventHub.IConfigurationOperations</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets the IConfigurationOperations.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
     <Member MemberName="ConsumerGroups">
       <MemberSignature Language="C#" Value="public Microsoft.Azure.Management.EventHub.IConsumerGroupsOperations ConsumerGroups { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Azure.Management.EventHub.IConsumerGroupsOperations ConsumerGroups" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Management.EventHub.EventHubManagementClient.ConsumerGroups" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ConsumerGroups As IConsumerGroupsOperations" />
       <MemberSignature Language="F#" Value="member this.ConsumerGroups : Microsoft.Azure.Management.EventHub.IConsumerGroupsOperations" Usage="Microsoft.Azure.Management.EventHub.EventHubManagementClient.ConsumerGroups" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Azure::Management::EventHub::IConsumerGroupsOperations ^ ConsumerGroups { Microsoft::Azure::Management::EventHub::IConsumerGroupsOperations ^ get(); };" />
-      <MemberSignature Language="C++ CX" Value="public:&#xA; property Microsoft::Azure::Management::EventHub::IConsumerGroupsOperations ^ ConsumerGroups { Microsoft::Azure::Management::EventHub::IConsumerGroupsOperations ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.EventHub</AssemblyName>
@@ -454,8 +529,6 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Management.EventHub.EventHubManagementClient.Credentials" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Credentials As ServiceClientCredentials" />
       <MemberSignature Language="F#" Value="member this.Credentials : Microsoft.Rest.ServiceClientCredentials" Usage="Microsoft.Azure.Management.EventHub.EventHubManagementClient.Credentials" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Rest::ServiceClientCredentials ^ Credentials { Microsoft::Rest::ServiceClientCredentials ^ get(); };" />
-      <MemberSignature Language="C++ CX" Value="public:&#xA; property Microsoft::Rest::ServiceClientCredentials ^ Credentials { Microsoft::Rest::ServiceClientCredentials ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.EventHub</AssemblyName>
@@ -478,7 +551,6 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Management.EventHub.EventHubManagementClient.DeserializationSettings" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property DeserializationSettings As JsonSerializerSettings" />
       <MemberSignature Language="F#" Value="member this.DeserializationSettings : Newtonsoft.Json.JsonSerializerSettings" Usage="Microsoft.Azure.Management.EventHub.EventHubManagementClient.DeserializationSettings" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Newtonsoft::Json::JsonSerializerSettings ^ DeserializationSettings { Newtonsoft::Json::JsonSerializerSettings ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.EventHub</AssemblyName>
@@ -501,8 +573,6 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Management.EventHub.EventHubManagementClient.DisasterRecoveryConfigs" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property DisasterRecoveryConfigs As IDisasterRecoveryConfigsOperations" />
       <MemberSignature Language="F#" Value="member this.DisasterRecoveryConfigs : Microsoft.Azure.Management.EventHub.IDisasterRecoveryConfigsOperations" Usage="Microsoft.Azure.Management.EventHub.EventHubManagementClient.DisasterRecoveryConfigs" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Azure::Management::EventHub::IDisasterRecoveryConfigsOperations ^ DisasterRecoveryConfigs { Microsoft::Azure::Management::EventHub::IDisasterRecoveryConfigsOperations ^ get(); };" />
-      <MemberSignature Language="C++ CX" Value="public:&#xA; property Microsoft::Azure::Management::EventHub::IDisasterRecoveryConfigsOperations ^ DisasterRecoveryConfigs { Microsoft::Azure::Management::EventHub::IDisasterRecoveryConfigsOperations ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.EventHub</AssemblyName>
@@ -525,8 +595,6 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Management.EventHub.EventHubManagementClient.EventHubs" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property EventHubs As IEventHubsOperations" />
       <MemberSignature Language="F#" Value="member this.EventHubs : Microsoft.Azure.Management.EventHub.IEventHubsOperations" Usage="Microsoft.Azure.Management.EventHub.EventHubManagementClient.EventHubs" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Azure::Management::EventHub::IEventHubsOperations ^ EventHubs { Microsoft::Azure::Management::EventHub::IEventHubsOperations ^ get(); };" />
-      <MemberSignature Language="C++ CX" Value="public:&#xA; property Microsoft::Azure::Management::EventHub::IEventHubsOperations ^ EventHubs { Microsoft::Azure::Management::EventHub::IEventHubsOperations ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.EventHub</AssemblyName>
@@ -544,12 +612,11 @@
       </Docs>
     </Member>
     <Member MemberName="GenerateClientRequestId">
-      <MemberSignature Language="C#" Value="public Nullable&lt;bool&gt; GenerateClientRequestId { get; set; }" />
+      <MemberSignature Language="C#" Value="public bool? GenerateClientRequestId { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;bool&gt; GenerateClientRequestId" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Management.EventHub.EventHubManagementClient.GenerateClientRequestId" />
       <MemberSignature Language="VB.NET" Value="Public Property GenerateClientRequestId As Nullable(Of Boolean)" />
       <MemberSignature Language="F#" Value="member this.GenerateClientRequestId : Nullable&lt;bool&gt; with get, set" Usage="Microsoft.Azure.Management.EventHub.EventHubManagementClient.GenerateClientRequestId" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Nullable&lt;bool&gt; GenerateClientRequestId { Nullable&lt;bool&gt; get(); void set(Nullable&lt;bool&gt; value); };" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:Microsoft.Azure.Management.EventHub.IEventHubManagementClient.GenerateClientRequestId</InterfaceMember>
@@ -564,20 +631,20 @@
       </ReturnValue>
       <Docs>
         <summary>
-            When set to true a unique x-ms-client-request-id value is generated and
-            included in each request. Default is true.
+            Whether a unique x-ms-client-request-id should be generated. When set to
+            true a unique x-ms-client-request-id value is generated and included in
+            each request. Default is true.
             </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="LongRunningOperationRetryTimeout">
-      <MemberSignature Language="C#" Value="public Nullable&lt;int&gt; LongRunningOperationRetryTimeout { get; set; }" />
+      <MemberSignature Language="C#" Value="public int? LongRunningOperationRetryTimeout { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;int32&gt; LongRunningOperationRetryTimeout" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Management.EventHub.EventHubManagementClient.LongRunningOperationRetryTimeout" />
       <MemberSignature Language="VB.NET" Value="Public Property LongRunningOperationRetryTimeout As Nullable(Of Integer)" />
       <MemberSignature Language="F#" Value="member this.LongRunningOperationRetryTimeout : Nullable&lt;int&gt; with get, set" Usage="Microsoft.Azure.Management.EventHub.EventHubManagementClient.LongRunningOperationRetryTimeout" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Nullable&lt;int&gt; LongRunningOperationRetryTimeout { Nullable&lt;int&gt; get(); void set(Nullable&lt;int&gt; value); };" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:Microsoft.Azure.Management.EventHub.IEventHubManagementClient.LongRunningOperationRetryTimeout</InterfaceMember>
@@ -592,8 +659,8 @@
       </ReturnValue>
       <Docs>
         <summary>
-            Gets or sets the retry timeout in seconds for Long Running Operations.
-            Default value is 30.
+            The retry timeout in seconds for Long Running Operations. Default value is
+            30.
             </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
@@ -605,8 +672,6 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Management.EventHub.EventHubManagementClient.Namespaces" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Namespaces As INamespacesOperations" />
       <MemberSignature Language="F#" Value="member this.Namespaces : Microsoft.Azure.Management.EventHub.INamespacesOperations" Usage="Microsoft.Azure.Management.EventHub.EventHubManagementClient.Namespaces" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Azure::Management::EventHub::INamespacesOperations ^ Namespaces { Microsoft::Azure::Management::EventHub::INamespacesOperations ^ get(); };" />
-      <MemberSignature Language="C++ CX" Value="public:&#xA; property Microsoft::Azure::Management::EventHub::INamespacesOperations ^ Namespaces { Microsoft::Azure::Management::EventHub::INamespacesOperations ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.EventHub</AssemblyName>
@@ -629,8 +694,6 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Management.EventHub.EventHubManagementClient.Operations" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Operations As IOperations" />
       <MemberSignature Language="F#" Value="member this.Operations : Microsoft.Azure.Management.EventHub.IOperations" Usage="Microsoft.Azure.Management.EventHub.EventHubManagementClient.Operations" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Azure::Management::EventHub::IOperations ^ Operations { Microsoft::Azure::Management::EventHub::IOperations ^ get(); };" />
-      <MemberSignature Language="C++ CX" Value="public:&#xA; property Microsoft::Azure::Management::EventHub::IOperations ^ Operations { Microsoft::Azure::Management::EventHub::IOperations ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.EventHub</AssemblyName>
@@ -647,13 +710,34 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <Member MemberName="Regions">
+      <MemberSignature Language="C#" Value="public Microsoft.Azure.Management.EventHub.IRegionsOperations Regions { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Azure.Management.EventHub.IRegionsOperations Regions" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Management.EventHub.EventHubManagementClient.Regions" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Regions As IRegionsOperations" />
+      <MemberSignature Language="F#" Value="member this.Regions : Microsoft.Azure.Management.EventHub.IRegionsOperations" Usage="Microsoft.Azure.Management.EventHub.EventHubManagementClient.Regions" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Azure.Management.EventHub</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Azure.Management.EventHub.IRegionsOperations</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets the IRegionsOperations.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
     <Member MemberName="SerializationSettings">
       <MemberSignature Language="C#" Value="public Newtonsoft.Json.JsonSerializerSettings SerializationSettings { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class Newtonsoft.Json.JsonSerializerSettings SerializationSettings" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Management.EventHub.EventHubManagementClient.SerializationSettings" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property SerializationSettings As JsonSerializerSettings" />
       <MemberSignature Language="F#" Value="member this.SerializationSettings : Newtonsoft.Json.JsonSerializerSettings" Usage="Microsoft.Azure.Management.EventHub.EventHubManagementClient.SerializationSettings" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Newtonsoft::Json::JsonSerializerSettings ^ SerializationSettings { Newtonsoft::Json::JsonSerializerSettings ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.EventHub</AssemblyName>
@@ -676,8 +760,6 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Management.EventHub.EventHubManagementClient.SubscriptionId" />
       <MemberSignature Language="VB.NET" Value="Public Property SubscriptionId As String" />
       <MemberSignature Language="F#" Value="member this.SubscriptionId : string with get, set" Usage="Microsoft.Azure.Management.EventHub.EventHubManagementClient.SubscriptionId" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ SubscriptionId { System::String ^ get(); void set(System::String ^ value); };" />
-      <MemberSignature Language="C++ CX" Value="public:&#xA; property Platform::String ^ SubscriptionId { Platform::String ^ get(); void set(Platform::String ^ value); };" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:Microsoft.Azure.Management.EventHub.IEventHubManagementClient.SubscriptionId</InterfaceMember>

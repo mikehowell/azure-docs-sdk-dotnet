@@ -1,4 +1,4 @@
-﻿<Type Name="MetricSeriesConfigurationForMeasurement" FullName="Microsoft.ApplicationInsights.Metrics.MetricSeriesConfigurationForMeasurement">
+<Type Name="MetricSeriesConfigurationForMeasurement" FullName="Microsoft.ApplicationInsights.Metrics.MetricSeriesConfigurationForMeasurement">
   <TypeSignature Language="C#" Value="public class MetricSeriesConfigurationForMeasurement : IEquatable&lt;Microsoft.ApplicationInsights.Metrics.IMetricSeriesConfiguration&gt;, Microsoft.ApplicationInsights.Metrics.IMetricSeriesConfiguration" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi MetricSeriesConfigurationForMeasurement extends System.Object implements class Microsoft.ApplicationInsights.Metrics.IMetricSeriesConfiguration, class System.IEquatable`1&lt;class Microsoft.ApplicationInsights.Metrics.IMetricSeriesConfiguration&gt;" />
   <TypeSignature Language="DocId" Value="T:Microsoft.ApplicationInsights.Metrics.MetricSeriesConfigurationForMeasurement" />
@@ -6,7 +6,15 @@
   <TypeSignature Language="F#" Value="type MetricSeriesConfigurationForMeasurement = class&#xA;    interface IMetricSeriesConfiguration&#xA;    interface IEquatable&lt;IMetricSeriesConfiguration&gt;" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.ApplicationInsights</AssemblyName>
-    <AssemblyVersion>2.6.0.0</AssemblyVersion>
+    <AssemblyVersion>2.11.0.0</AssemblyVersion>
+    <AssemblyVersion>2.12.0.21496</AssemblyVersion>
+    <AssemblyVersion>2.12.1.36699</AssemblyVersion>
+    <AssemblyVersion>2.13.0.10578</AssemblyVersion>
+    <AssemblyVersion>2.13.1.12554</AssemblyVersion>
+    <AssemblyVersion>2.14.0.17971</AssemblyVersion>
+    <AssemblyVersion>2.15.0.44797</AssemblyVersion>
+    <AssemblyVersion>2.16.0.18277</AssemblyVersion>
+    <AssemblyVersion>2.17.0.146</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
@@ -20,7 +28,9 @@
     </Interface>
   </Interfaces>
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Abstracts the configuration for a metric series aggregated using the "measurement" aggregation kind.
+            A mear=surement is best suited for metrics describing sizes or durations.
+            It contains the Min, Max, Sum and Count of values tracked during an aggregation period.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -33,14 +43,22 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.ApplicationInsights</AssemblyName>
-        <AssemblyVersion>2.6.0.0</AssemblyVersion>
+        <AssemblyVersion>2.11.0.0</AssemblyVersion>
+        <AssemblyVersion>2.12.0.21496</AssemblyVersion>
+        <AssemblyVersion>2.12.1.36699</AssemblyVersion>
+        <AssemblyVersion>2.13.0.10578</AssemblyVersion>
+        <AssemblyVersion>2.13.1.12554</AssemblyVersion>
+        <AssemblyVersion>2.14.0.17971</AssemblyVersion>
+        <AssemblyVersion>2.15.0.44797</AssemblyVersion>
+        <AssemblyVersion>2.16.0.18277</AssemblyVersion>
+        <AssemblyVersion>2.17.0.146</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="restrictToUInt32Values" Type="System.Boolean" />
       </Parameters>
       <Docs>
-        <param name="restrictToUInt32Values">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="restrictToUInt32Values">Whether only integer numbers should be tracked (used for some integer-optimized backends).</param>
+        <summary>CReates a new configuration.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -56,7 +74,15 @@
       </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.ApplicationInsights</AssemblyName>
-        <AssemblyVersion>2.6.0.0</AssemblyVersion>
+        <AssemblyVersion>2.11.0.0</AssemblyVersion>
+        <AssemblyVersion>2.12.0.21496</AssemblyVersion>
+        <AssemblyVersion>2.12.1.36699</AssemblyVersion>
+        <AssemblyVersion>2.13.0.10578</AssemblyVersion>
+        <AssemblyVersion>2.13.1.12554</AssemblyVersion>
+        <AssemblyVersion>2.14.0.17971</AssemblyVersion>
+        <AssemblyVersion>2.15.0.44797</AssemblyVersion>
+        <AssemblyVersion>2.16.0.18277</AssemblyVersion>
+        <AssemblyVersion>2.17.0.146</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.ApplicationInsights.Metrics.Extensibility.IMetricSeriesAggregator</ReturnType>
@@ -66,10 +92,10 @@
         <Parameter Name="aggregationCycleKind" Type="Microsoft.ApplicationInsights.Metrics.Extensibility.MetricAggregationCycleKind" />
       </Parameters>
       <Docs>
-        <param name="dataSeries">To be added.</param>
-        <param name="aggregationCycleKind">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="dataSeries">Metric data tie series to be aggregated.</param>
+        <param name="aggregationCycleKind">The kind of th aggregtion cycle.</param>
+        <summary>Creates a new aggregator capable of aggregating according to this configurations.</summary>
+        <returns>A new metric aggregator.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -85,7 +111,15 @@
       </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.ApplicationInsights</AssemblyName>
-        <AssemblyVersion>2.6.0.0</AssemblyVersion>
+        <AssemblyVersion>2.11.0.0</AssemblyVersion>
+        <AssemblyVersion>2.12.0.21496</AssemblyVersion>
+        <AssemblyVersion>2.12.1.36699</AssemblyVersion>
+        <AssemblyVersion>2.13.0.10578</AssemblyVersion>
+        <AssemblyVersion>2.13.1.12554</AssemblyVersion>
+        <AssemblyVersion>2.14.0.17971</AssemblyVersion>
+        <AssemblyVersion>2.15.0.44797</AssemblyVersion>
+        <AssemblyVersion>2.16.0.18277</AssemblyVersion>
+        <AssemblyVersion>2.17.0.146</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
@@ -94,9 +128,11 @@
         <Parameter Name="other" Type="Microsoft.ApplicationInsights.Metrics.IMetricSeriesConfiguration" />
       </Parameters>
       <Docs>
-        <param name="other">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="other">Some configuration objects.</param>
+        <summary>Checks whether this configuration is semantically equat to a specified configuration.</summary>
+        <returns>
+          <c>true</c> if the specified object is a configutation that is semantically equal to this configuration;
+            <c>false</c> otherwise.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -109,7 +145,15 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.ApplicationInsights</AssemblyName>
-        <AssemblyVersion>2.6.0.0</AssemblyVersion>
+        <AssemblyVersion>2.11.0.0</AssemblyVersion>
+        <AssemblyVersion>2.12.0.21496</AssemblyVersion>
+        <AssemblyVersion>2.12.1.36699</AssemblyVersion>
+        <AssemblyVersion>2.13.0.10578</AssemblyVersion>
+        <AssemblyVersion>2.13.1.12554</AssemblyVersion>
+        <AssemblyVersion>2.14.0.17971</AssemblyVersion>
+        <AssemblyVersion>2.15.0.44797</AssemblyVersion>
+        <AssemblyVersion>2.16.0.18277</AssemblyVersion>
+        <AssemblyVersion>2.17.0.146</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
@@ -118,9 +162,11 @@
         <Parameter Name="other" Type="Microsoft.ApplicationInsights.Metrics.MetricSeriesConfigurationForMeasurement" />
       </Parameters>
       <Docs>
-        <param name="other">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="other">Some configuration objects.</param>
+        <summary>Checks whether this configuration is semantically equat to a specified configuration.</summary>
+        <returns>
+          <c>true</c> if the specified object is a configutation that is semantically equal to this configuration;
+            <c>false</c> otherwise.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -133,7 +179,15 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.ApplicationInsights</AssemblyName>
-        <AssemblyVersion>2.6.0.0</AssemblyVersion>
+        <AssemblyVersion>2.11.0.0</AssemblyVersion>
+        <AssemblyVersion>2.12.0.21496</AssemblyVersion>
+        <AssemblyVersion>2.12.1.36699</AssemblyVersion>
+        <AssemblyVersion>2.13.0.10578</AssemblyVersion>
+        <AssemblyVersion>2.13.1.12554</AssemblyVersion>
+        <AssemblyVersion>2.14.0.17971</AssemblyVersion>
+        <AssemblyVersion>2.15.0.44797</AssemblyVersion>
+        <AssemblyVersion>2.16.0.18277</AssemblyVersion>
+        <AssemblyVersion>2.17.0.146</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
@@ -142,9 +196,11 @@
         <Parameter Name="obj" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="obj">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="obj">Some objects.</param>
+        <summary>Checks whether this configuration is semantically equat to a specified configuration.</summary>
+        <returns>
+          <c>true</c> if the specified object is a configutation that is semantically equal to this configuration;
+            <c>false</c> otherwise.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -157,15 +213,23 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.ApplicationInsights</AssemblyName>
-        <AssemblyVersion>2.6.0.0</AssemblyVersion>
+        <AssemblyVersion>2.11.0.0</AssemblyVersion>
+        <AssemblyVersion>2.12.0.21496</AssemblyVersion>
+        <AssemblyVersion>2.12.1.36699</AssemblyVersion>
+        <AssemblyVersion>2.13.0.10578</AssemblyVersion>
+        <AssemblyVersion>2.13.1.12554</AssemblyVersion>
+        <AssemblyVersion>2.14.0.17971</AssemblyVersion>
+        <AssemblyVersion>2.15.0.44797</AssemblyVersion>
+        <AssemblyVersion>2.16.0.18277</AssemblyVersion>
+        <AssemblyVersion>2.17.0.146</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>Gets a hash code for this configuration.</summary>
+        <returns>A hash code for this configuration.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -181,13 +245,22 @@
       </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.ApplicationInsights</AssemblyName>
-        <AssemblyVersion>2.6.0.0</AssemblyVersion>
+        <AssemblyVersion>2.11.0.0</AssemblyVersion>
+        <AssemblyVersion>2.12.0.21496</AssemblyVersion>
+        <AssemblyVersion>2.12.1.36699</AssemblyVersion>
+        <AssemblyVersion>2.13.0.10578</AssemblyVersion>
+        <AssemblyVersion>2.13.1.12554</AssemblyVersion>
+        <AssemblyVersion>2.14.0.17971</AssemblyVersion>
+        <AssemblyVersion>2.15.0.44797</AssemblyVersion>
+        <AssemblyVersion>2.16.0.18277</AssemblyVersion>
+        <AssemblyVersion>2.17.0.146</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Gets a value indicating whether the aggregation kind used by this configuration keeps state across aggregation cycles.
+            FOr measurements - always returns <c>false</c>.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -201,13 +274,22 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.ApplicationInsights</AssemblyName>
-        <AssemblyVersion>2.6.0.0</AssemblyVersion>
+        <AssemblyVersion>2.11.0.0</AssemblyVersion>
+        <AssemblyVersion>2.12.0.21496</AssemblyVersion>
+        <AssemblyVersion>2.12.1.36699</AssemblyVersion>
+        <AssemblyVersion>2.13.0.10578</AssemblyVersion>
+        <AssemblyVersion>2.13.1.12554</AssemblyVersion>
+        <AssemblyVersion>2.14.0.17971</AssemblyVersion>
+        <AssemblyVersion>2.15.0.44797</AssemblyVersion>
+        <AssemblyVersion>2.16.0.18277</AssemblyVersion>
+        <AssemblyVersion>2.17.0.146</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Gets a value indicating whether only integer numbers should be tracked
+            (used for some integer-optimized backends).</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>

@@ -1,15 +1,19 @@
-﻿<Type Name="IWithProtocol" FullName="Microsoft.Azure.Management.Network.Fluent.VerificationIPFlow.Definition.IWithProtocol">
+<Type Name="IWithProtocol" FullName="Microsoft.Azure.Management.Network.Fluent.VerificationIPFlow.Definition.IWithProtocol">
   <TypeSignature Language="C#" Value="public interface IWithProtocol : Microsoft.Azure.Management.Network.Fluent.HasProtocol.Definition.IWithProtocol&lt;Microsoft.Azure.Management.Network.Fluent.VerificationIPFlow.Definition.IWithLocalIP,Microsoft.Azure.Management.Network.Fluent.Models.IpFlowProtocol&gt;" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IWithProtocol implements class Microsoft.Azure.Management.Network.Fluent.HasProtocol.Definition.IWithProtocol`2&lt;class Microsoft.Azure.Management.Network.Fluent.VerificationIPFlow.Definition.IWithLocalIP, class Microsoft.Azure.Management.Network.Fluent.Models.IpFlowProtocol&gt;" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Azure.Management.Network.Fluent.VerificationIPFlow.Definition.IWithProtocol" />
   <TypeSignature Language="VB.NET" Value="Public Interface IWithProtocol&#xA;Implements IWithProtocol(Of IWithLocalIP, IpFlowProtocol)" />
   <TypeSignature Language="F#" Value="type IWithProtocol = interface&#xA;    interface IWithProtocol&lt;IWithLocalIP, IpFlowProtocol&gt;" />
-  <TypeSignature Language="C++ CLI" Value="public interface class IWithProtocol : Microsoft::Azure::Management::Network::Fluent::HasProtocol::Definition::IWithProtocol&lt;Microsoft::Azure::Management::Network::Fluent::VerificationIPFlow::Definition::IWithLocalIP ^, Microsoft::Azure::Management::Network::Fluent::Models::Protocol ^&gt;" />
-  <TypeSignature Language="C++ CX" Value="public interface class IWithProtocol : Microsoft::Azure::Management::Network::Fluent::HasProtocol::Definition::IWithProtocol&lt;Microsoft::Azure::Management::Network::Fluent::VerificationIPFlow::Definition::IWithLocalIP ^, Microsoft::Azure::Management::Network::Fluent::Models::Protocol ^&gt;" />
-  <TypeSignature Language="C++ WINRT" Value="__interface IWithProtocol : Microsoft::Azure::Management::Network::Fluent::HasProtocol::Definition::IWithProtocol&lt;Microsoft::Azure::Management::Network::Fluent::VerificationIPFlow::Definition::IWithLocalIP, Microsoft::Azure::Management::Network::Fluent::Models::Protocol const &amp;&gt;" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Azure.Management.Network.Fluent</AssemblyName>
-    <AssemblyVersion>1.0.0.60</AssemblyVersion>
+    <AssemblyVersion>1.0.0.61</AssemblyVersion>
+    <AssemblyVersion>1.0.0.62</AssemblyVersion>
+    <AssemblyVersion>1.0.0.63</AssemblyVersion>
+    <AssemblyVersion>1.0.0.64</AssemblyVersion>
+    <AssemblyVersion>1.0.0.65</AssemblyVersion>
+    <AssemblyVersion>1.0.0.66</AssemblyVersion>
+    <AssemblyVersion>1.0.0.67</AssemblyVersion>
+    <AssemblyVersion>1.0.0.68</AssemblyVersion>
   </AssemblyInfo>
   <Interfaces>
     <Interface>
@@ -17,7 +21,9 @@
     </Interface>
   </Interfaces>
   <Docs>
-    <summary>To be added.</summary>
+    <summary>
+            Protocol to be verified on. Possible values include: 'TCP', 'UDP'.
+            </summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -27,22 +33,29 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Management.Network.Fluent.VerificationIPFlow.Definition.IWithProtocol.WithTCP" />
       <MemberSignature Language="VB.NET" Value="Public Function WithTCP () As IWithLocalIP" />
       <MemberSignature Language="F#" Value="abstract member WithTCP : unit -&gt; Microsoft.Azure.Management.Network.Fluent.VerificationIPFlow.Definition.IWithLocalIP" Usage="iWithProtocol.WithTCP " />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; Microsoft::Azure::Management::Network::Fluent::VerificationIPFlow::Definition::IWithLocalIP ^ WithTCP();" />
-      <MemberSignature Language="C++ CX" Value="public:&#xA; Microsoft::Azure::Management::Network::Fluent::VerificationIPFlow::Definition::IWithLocalIP ^ WithTCP();" />
-      <MemberSignature Language="C++ WINRT" Value="Microsoft::Azure::Management::Network::Fluent::VerificationIPFlow::Definition::IWithLocalIP WithTCP();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Network.Fluent</AssemblyName>
-        <AssemblyVersion>1.0.0.60</AssemblyVersion>
+        <AssemblyVersion>1.0.0.61</AssemblyVersion>
+        <AssemblyVersion>1.0.0.62</AssemblyVersion>
+        <AssemblyVersion>1.0.0.63</AssemblyVersion>
+        <AssemblyVersion>1.0.0.64</AssemblyVersion>
+        <AssemblyVersion>1.0.0.65</AssemblyVersion>
+        <AssemblyVersion>1.0.0.66</AssemblyVersion>
+        <AssemblyVersion>1.0.0.67</AssemblyVersion>
+        <AssemblyVersion>1.0.0.68</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Azure.Management.Network.Fluent.VerificationIPFlow.Definition.IWithLocalIP</ReturnType>
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+            Set TCP protocol.
+            </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
+        <return>The next stage of the definition.</return>
       </Docs>
     </Member>
     <Member MemberName="WithUDP">
@@ -51,22 +64,29 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Management.Network.Fluent.VerificationIPFlow.Definition.IWithProtocol.WithUDP" />
       <MemberSignature Language="VB.NET" Value="Public Function WithUDP () As IWithLocalIP" />
       <MemberSignature Language="F#" Value="abstract member WithUDP : unit -&gt; Microsoft.Azure.Management.Network.Fluent.VerificationIPFlow.Definition.IWithLocalIP" Usage="iWithProtocol.WithUDP " />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; Microsoft::Azure::Management::Network::Fluent::VerificationIPFlow::Definition::IWithLocalIP ^ WithUDP();" />
-      <MemberSignature Language="C++ CX" Value="public:&#xA; Microsoft::Azure::Management::Network::Fluent::VerificationIPFlow::Definition::IWithLocalIP ^ WithUDP();" />
-      <MemberSignature Language="C++ WINRT" Value="Microsoft::Azure::Management::Network::Fluent::VerificationIPFlow::Definition::IWithLocalIP WithUDP();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Network.Fluent</AssemblyName>
-        <AssemblyVersion>1.0.0.60</AssemblyVersion>
+        <AssemblyVersion>1.0.0.61</AssemblyVersion>
+        <AssemblyVersion>1.0.0.62</AssemblyVersion>
+        <AssemblyVersion>1.0.0.63</AssemblyVersion>
+        <AssemblyVersion>1.0.0.64</AssemblyVersion>
+        <AssemblyVersion>1.0.0.65</AssemblyVersion>
+        <AssemblyVersion>1.0.0.66</AssemblyVersion>
+        <AssemblyVersion>1.0.0.67</AssemblyVersion>
+        <AssemblyVersion>1.0.0.68</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Azure.Management.Network.Fluent.VerificationIPFlow.Definition.IWithLocalIP</ReturnType>
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+            Set UDP protocol.
+            </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
+        <return>The next stage of the definition.</return>
       </Docs>
     </Member>
   </Members>

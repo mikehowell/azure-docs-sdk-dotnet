@@ -1,11 +1,9 @@
-﻿<Type Name="PartitionManagerOptions" FullName="Microsoft.ServiceBus.Messaging.PartitionManagerOptions">
+<Type Name="PartitionManagerOptions" FullName="Microsoft.ServiceBus.Messaging.PartitionManagerOptions">
   <TypeSignature Language="C#" Value="public class PartitionManagerOptions" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit PartitionManagerOptions extends System.Object" />
   <TypeSignature Language="DocId" Value="T:Microsoft.ServiceBus.Messaging.PartitionManagerOptions" />
   <TypeSignature Language="VB.NET" Value="Public Class PartitionManagerOptions" />
   <TypeSignature Language="F#" Value="type PartitionManagerOptions = class" />
-  <TypeSignature Language="C++ CLI" Value="public ref class PartitionManagerOptions" />
-  <TypeSignature Language="C++ WINRT" Value="[Windows::Foundation::Metadata::WebHostHidden]&#xA;class PartitionManagerOptions" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.ServiceBus.Messaging.EventProcessorHost</AssemblyName>
     <AssemblyVersion>0.1.0.0</AssemblyVersion>
@@ -15,7 +13,9 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>Represents the options that control various aspects of partition distribution that occur within the <see cref="T:Microsoft.ServiceBus.Messaging.EventProcessorHost" /> instance.</summary>
+    <summary>
+            Options to control various aspects of partition distribution happening within <see cref="T:Microsoft.ServiceBus.Messaging.EventProcessorHost" /> instance.
+            </summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -24,9 +24,6 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.ServiceBus.Messaging.PartitionManagerOptions.#ctor" />
       <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; PartitionManagerOptions();" />
-      <MemberSignature Language="C++ CX" Value="public:&#xA; PartitionManagerOptions();" />
-      <MemberSignature Language="C++ WINRT" Value=" PartitionManagerOptions();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.ServiceBus.Messaging.EventProcessorHost</AssemblyName>
@@ -44,7 +41,6 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.ServiceBus.Messaging.PartitionManagerOptions.AcquireInterval" />
       <MemberSignature Language="VB.NET" Value="Public Property AcquireInterval As TimeSpan" />
       <MemberSignature Language="F#" Value="member this.AcquireInterval : TimeSpan with get, set" Usage="Microsoft.ServiceBus.Messaging.PartitionManagerOptions.AcquireInterval" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property TimeSpan AcquireInterval { TimeSpan get(); void set(TimeSpan value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.ServiceBus.Messaging.EventProcessorHost</AssemblyName>
@@ -54,8 +50,11 @@
         <ReturnType>System.TimeSpan</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the interval at which the <see cref="T:Microsoft.ServiceBus.Messaging.EventProcessorHost" /> instance begins a task to determine whether partitions are distributed evenly among known host instances.</summary>
-        <value>The acquire interval of the partition.</value>
+        <summary>
+            Interval when <see cref="T:Microsoft.ServiceBus.Messaging.EventProcessorHost" /> instance kicks off a task to compute if partitions are distributed evenly
+            among known host instances. 
+            </summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -65,7 +64,6 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.ServiceBus.Messaging.PartitionManagerOptions.DefaultOptions" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property DefaultOptions As PartitionManagerOptions" />
       <MemberSignature Language="F#" Value="member this.DefaultOptions : Microsoft.ServiceBus.Messaging.PartitionManagerOptions" Usage="Microsoft.ServiceBus.Messaging.PartitionManagerOptions.DefaultOptions" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property Microsoft::ServiceBus::Messaging::PartitionManagerOptions ^ DefaultOptions { Microsoft::ServiceBus::Messaging::PartitionManagerOptions ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.ServiceBus.Messaging.EventProcessorHost</AssemblyName>
@@ -75,8 +73,14 @@
         <ReturnType>Microsoft.ServiceBus.Messaging.PartitionManagerOptions</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Creates an instance of <see cref="P:Microsoft.ServiceBus.Messaging.EventProcessorHost.PartitionManagerOptions" /> with the following default values:<see cref="P:Microsoft.ServiceBus.Messaging.PartitionManagerOptions.RenewInterval" />: 10 seconds.<see cref="P:Microsoft.ServiceBus.Messaging.PartitionManagerOptions.AcquireInterval" />: 10 seconds.<see cref="P:Microsoft.ServiceBus.Messaging.PartitionManagerOptions.LeaseInterval" />: 30 seconds. </summary>
-        <value>The default partition manager options.</value>
+        <summary>
+            Creates an instance of <see cref="T:Microsoft.ServiceBus.Messaging.PartitionManagerOptions" /> with following default values:
+                a) RenewInterval = 10 seconds
+                b) AcquireInterval = 10 seconds
+                c) DefaultLeaseInterval = 30 seconds
+                d) MaxReceiveClients = 16,
+            </summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -86,7 +90,6 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.ServiceBus.Messaging.PartitionManagerOptions.LeaseInterval" />
       <MemberSignature Language="VB.NET" Value="Public Property LeaseInterval As TimeSpan" />
       <MemberSignature Language="F#" Value="member this.LeaseInterval : TimeSpan with get, set" Usage="Microsoft.ServiceBus.Messaging.PartitionManagerOptions.LeaseInterval" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property TimeSpan LeaseInterval { TimeSpan get(); void set(TimeSpan value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.ServiceBus.Messaging.EventProcessorHost</AssemblyName>
@@ -96,8 +99,11 @@
         <ReturnType>System.TimeSpan</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the interval at which the lease is created on an Azure Blob representing an Event Hubs partition. If the lease is not renewed within this interval, it expires, and ownership of the partition passes to another <see cref="T:Microsoft.ServiceBus.Messaging.EventProcessorHost" /> instance.</summary>
-        <value>Returns <see cref="T:System.TimeSpan" />.</value>
+        <summary>
+            Interval for which the lease is taken on Azure Blob representing an EventHub partition.  If the lease is not renewed within this 
+            interval, it will cause it to expire and ownership of the partition will move to another <see cref="T:Microsoft.ServiceBus.Messaging.EventProcessorHost" /> instance.
+            </summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -107,8 +113,6 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.ServiceBus.Messaging.PartitionManagerOptions.MaxReceiveClients" />
       <MemberSignature Language="VB.NET" Value="Public Property MaxReceiveClients As Integer" />
       <MemberSignature Language="F#" Value="member this.MaxReceiveClients : int with get, set" Usage="Microsoft.ServiceBus.Messaging.PartitionManagerOptions.MaxReceiveClients" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int MaxReceiveClients { int get(); void set(int value); };" />
-      <MemberSignature Language="C++ CX" Value="public:&#xA; property int MaxReceiveClients { int get(); void set(int value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.ServiceBus.Messaging.EventProcessorHost</AssemblyName>
@@ -118,7 +122,10 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+            Maximum number of receiver clients created for each host instance. Once the max is reached host will start rebalancing partitions 
+            among receiver clients already created.
+            </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -129,7 +136,6 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.ServiceBus.Messaging.PartitionManagerOptions.RenewInterval" />
       <MemberSignature Language="VB.NET" Value="Public Property RenewInterval As TimeSpan" />
       <MemberSignature Language="F#" Value="member this.RenewInterval : TimeSpan with get, set" Usage="Microsoft.ServiceBus.Messaging.PartitionManagerOptions.RenewInterval" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property TimeSpan RenewInterval { TimeSpan get(); void set(TimeSpan value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.ServiceBus.Messaging.EventProcessorHost</AssemblyName>
@@ -139,8 +145,10 @@
         <ReturnType>System.TimeSpan</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the renewal interval for all leases for partitions currently held by the <see cref="T:Microsoft.ServiceBus.Messaging.EventProcessorHost" /> instance.</summary>
-        <value>The interval to renew the partition.</value>
+        <summary>
+            Renew interval for all leases for partitions currently held by <see cref="T:Microsoft.ServiceBus.Messaging.EventProcessorHost" /> instance.
+            </summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -150,8 +158,6 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.ServiceBus.Messaging.PartitionManagerOptions.SkipBlobContainerCreation" />
       <MemberSignature Language="VB.NET" Value="Public Property SkipBlobContainerCreation As Boolean" />
       <MemberSignature Language="F#" Value="member this.SkipBlobContainerCreation : bool with get, set" Usage="Microsoft.ServiceBus.Messaging.PartitionManagerOptions.SkipBlobContainerCreation" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool SkipBlobContainerCreation { bool get(); void set(bool value); };" />
-      <MemberSignature Language="C++ CX" Value="public:&#xA; property bool SkipBlobContainerCreation { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.ServiceBus.Messaging.EventProcessorHost</AssemblyName>
@@ -161,7 +167,11 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+            Use this option if you want creation of Blob container for partition leases to happen outside of EventProcessorHost.  This is 
+            useful in scenarios where you want to pass in a CloudBlobClient to EventProcessorHost which does not have permissions to create
+            storage container.  Default value for this options is 'false'.
+            </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>

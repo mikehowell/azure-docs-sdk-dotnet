@@ -1,18 +1,20 @@
-﻿<Type Name="JsonSerializer" FullName="Microsoft.ApplicationInsights.Extensibility.Implementation.JsonSerializer">
+<Type Name="JsonSerializer" FullName="Microsoft.ApplicationInsights.Extensibility.Implementation.JsonSerializer">
   <TypeSignature Language="C#" Value="public static class JsonSerializer" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract sealed beforefieldinit JsonSerializer extends System.Object" />
   <TypeSignature Language="DocId" Value="T:Microsoft.ApplicationInsights.Extensibility.Implementation.JsonSerializer" />
   <TypeSignature Language="VB.NET" Value="Public Class JsonSerializer" />
   <TypeSignature Language="F#" Value="type JsonSerializer = class" />
-  <TypeSignature Language="C++ CLI" Value="public ref class JsonSerializer abstract sealed" />
-  <TypeSignature Language="C++ CX" Value="public ref class JsonSerializer abstract sealed" />
-  <TypeSignature Language="C++ WINRT" Value="class JsonSerializer abstract sealed" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.ApplicationInsights</AssemblyName>
-    <AssemblyVersion>2.3.0.0</AssemblyVersion>
-    <AssemblyVersion>2.5.0.0</AssemblyVersion>
-    <AssemblyVersion>2.5.1.0</AssemblyVersion>
-    <AssemblyVersion>2.6.0.0</AssemblyVersion>
+    <AssemblyVersion>2.11.0.0</AssemblyVersion>
+    <AssemblyVersion>2.12.0.21496</AssemblyVersion>
+    <AssemblyVersion>2.12.1.36699</AssemblyVersion>
+    <AssemblyVersion>2.13.0.10578</AssemblyVersion>
+    <AssemblyVersion>2.13.1.12554</AssemblyVersion>
+    <AssemblyVersion>2.14.0.17971</AssemblyVersion>
+    <AssemblyVersion>2.15.0.44797</AssemblyVersion>
+    <AssemblyVersion>2.16.0.18277</AssemblyVersion>
+    <AssemblyVersion>2.17.0.146</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
@@ -20,7 +22,8 @@
   <Interfaces />
   <Attributes>
     <Attribute>
-      <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
+      <AttributeName Language="C#">[System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)]</AttributeName>
+      <AttributeName Language="F#">[&lt;System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)&gt;]</AttributeName>
     </Attribute>
   </Attributes>
   <Docs>
@@ -37,15 +40,18 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.ApplicationInsights.Extensibility.Implementation.JsonSerializer.CompressionType" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property CompressionType As String" />
       <MemberSignature Language="F#" Value="member this.CompressionType : string" Usage="Microsoft.ApplicationInsights.Extensibility.Implementation.JsonSerializer.CompressionType" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::String ^ CompressionType { System::String ^ get(); };" />
-      <MemberSignature Language="C++ CX" Value="public:&#xA; static property Platform::String ^ CompressionType { Platform::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.ApplicationInsights</AssemblyName>
-        <AssemblyVersion>2.3.0.0</AssemblyVersion>
-        <AssemblyVersion>2.5.0.0</AssemblyVersion>
-        <AssemblyVersion>2.5.1.0</AssemblyVersion>
-        <AssemblyVersion>2.6.0.0</AssemblyVersion>
+        <AssemblyVersion>2.11.0.0</AssemblyVersion>
+        <AssemblyVersion>2.12.0.21496</AssemblyVersion>
+        <AssemblyVersion>2.12.1.36699</AssemblyVersion>
+        <AssemblyVersion>2.13.0.10578</AssemblyVersion>
+        <AssemblyVersion>2.13.1.12554</AssemblyVersion>
+        <AssemblyVersion>2.14.0.17971</AssemblyVersion>
+        <AssemblyVersion>2.15.0.44797</AssemblyVersion>
+        <AssemblyVersion>2.16.0.18277</AssemblyVersion>
+        <AssemblyVersion>2.17.0.146</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -64,15 +70,18 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.ApplicationInsights.Extensibility.Implementation.JsonSerializer.ContentType" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property ContentType As String" />
       <MemberSignature Language="F#" Value="member this.ContentType : string" Usage="Microsoft.ApplicationInsights.Extensibility.Implementation.JsonSerializer.ContentType" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::String ^ ContentType { System::String ^ get(); };" />
-      <MemberSignature Language="C++ CX" Value="public:&#xA; static property Platform::String ^ ContentType { Platform::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.ApplicationInsights</AssemblyName>
-        <AssemblyVersion>2.3.0.0</AssemblyVersion>
-        <AssemblyVersion>2.5.0.0</AssemblyVersion>
-        <AssemblyVersion>2.5.1.0</AssemblyVersion>
-        <AssemblyVersion>2.6.0.0</AssemblyVersion>
+        <AssemblyVersion>2.11.0.0</AssemblyVersion>
+        <AssemblyVersion>2.12.0.21496</AssemblyVersion>
+        <AssemblyVersion>2.12.1.36699</AssemblyVersion>
+        <AssemblyVersion>2.13.0.10578</AssemblyVersion>
+        <AssemblyVersion>2.13.1.12554</AssemblyVersion>
+        <AssemblyVersion>2.14.0.17971</AssemblyVersion>
+        <AssemblyVersion>2.15.0.44797</AssemblyVersion>
+        <AssemblyVersion>2.16.0.18277</AssemblyVersion>
+        <AssemblyVersion>2.17.0.146</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -91,20 +100,19 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.ApplicationInsights.Extensibility.Implementation.JsonSerializer.ConvertToByteArray(System.String,System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function ConvertToByteArray (telemetryItems As String, Optional compress As Boolean = true) As Byte()" />
       <MemberSignature Language="F#" Value="static member ConvertToByteArray : string * bool -&gt; byte[]" Usage="Microsoft.ApplicationInsights.Extensibility.Implementation.JsonSerializer.ConvertToByteArray (telemetryItems, compress)" />
-      <MemberSignature Language="C++ WINRT" Value=" static std::Array &lt;byte&gt; ConvertToByteArray(std::wstring const &amp; telemetryItems, bool compress = true);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.ApplicationInsights</AssemblyName>
-        <AssemblyVersion>2.3.0.0</AssemblyVersion>
-        <AssemblyVersion>2.5.0.0</AssemblyVersion>
-        <AssemblyVersion>2.5.1.0</AssemblyVersion>
-        <AssemblyVersion>2.6.0.0</AssemblyVersion>
+        <AssemblyVersion>2.11.0.0</AssemblyVersion>
+        <AssemblyVersion>2.12.0.21496</AssemblyVersion>
+        <AssemblyVersion>2.12.1.36699</AssemblyVersion>
+        <AssemblyVersion>2.13.0.10578</AssemblyVersion>
+        <AssemblyVersion>2.13.1.12554</AssemblyVersion>
+        <AssemblyVersion>2.14.0.17971</AssemblyVersion>
+        <AssemblyVersion>2.15.0.44797</AssemblyVersion>
+        <AssemblyVersion>2.16.0.18277</AssemblyVersion>
+        <AssemblyVersion>2.17.0.146</AssemblyVersion>
       </AssemblyInfo>
-      <Attributes>
-        <Attribute>
-          <AttributeName>System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2202:Do not dispose objects multiple times", Justification="Disposing a MemoryStream multiple times is harmless.")</AttributeName>
-        </Attribute>
-      </Attributes>
       <ReturnValue>
         <ReturnType>System.Byte[]</ReturnType>
       </ReturnValue>
@@ -128,14 +136,18 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.ApplicationInsights.Extensibility.Implementation.JsonSerializer.Deserialize(System.Byte[],System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function Deserialize (telemetryItemsData As Byte(), Optional compress As Boolean = true) As String" />
       <MemberSignature Language="F#" Value="static member Deserialize : byte[] * bool -&gt; string" Usage="Microsoft.ApplicationInsights.Extensibility.Implementation.JsonSerializer.Deserialize (telemetryItemsData, compress)" />
-      <MemberSignature Language="C++ WINRT" Value=" static std::wstring Deserialize(std::Array &lt;byte&gt; const &amp; telemetryItemsData, bool compress = true);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.ApplicationInsights</AssemblyName>
-        <AssemblyVersion>2.3.0.0</AssemblyVersion>
-        <AssemblyVersion>2.5.0.0</AssemblyVersion>
-        <AssemblyVersion>2.5.1.0</AssemblyVersion>
-        <AssemblyVersion>2.6.0.0</AssemblyVersion>
+        <AssemblyVersion>2.11.0.0</AssemblyVersion>
+        <AssemblyVersion>2.12.0.21496</AssemblyVersion>
+        <AssemblyVersion>2.12.1.36699</AssemblyVersion>
+        <AssemblyVersion>2.13.0.10578</AssemblyVersion>
+        <AssemblyVersion>2.13.1.12554</AssemblyVersion>
+        <AssemblyVersion>2.14.0.17971</AssemblyVersion>
+        <AssemblyVersion>2.15.0.44797</AssemblyVersion>
+        <AssemblyVersion>2.16.0.18277</AssemblyVersion>
+        <AssemblyVersion>2.17.0.146</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -163,16 +175,16 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.ApplicationInsights</AssemblyName>
-        <AssemblyVersion>2.3.0.0</AssemblyVersion>
-        <AssemblyVersion>2.5.0.0</AssemblyVersion>
-        <AssemblyVersion>2.5.1.0</AssemblyVersion>
-        <AssemblyVersion>2.6.0.0</AssemblyVersion>
+        <AssemblyVersion>2.11.0.0</AssemblyVersion>
+        <AssemblyVersion>2.12.0.21496</AssemblyVersion>
+        <AssemblyVersion>2.12.1.36699</AssemblyVersion>
+        <AssemblyVersion>2.13.0.10578</AssemblyVersion>
+        <AssemblyVersion>2.13.1.12554</AssemblyVersion>
+        <AssemblyVersion>2.14.0.17971</AssemblyVersion>
+        <AssemblyVersion>2.15.0.44797</AssemblyVersion>
+        <AssemblyVersion>2.16.0.18277</AssemblyVersion>
+        <AssemblyVersion>2.17.0.146</AssemblyVersion>
       </AssemblyInfo>
-      <Attributes>
-        <Attribute>
-          <AttributeName>System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2202:Do not dispose objects multiple times", Justification="Disposing a MemoryStream multiple times is harmless.")</AttributeName>
-        </Attribute>
-      </Attributes>
       <ReturnValue>
         <ReturnType>System.Byte[]</ReturnType>
       </ReturnValue>

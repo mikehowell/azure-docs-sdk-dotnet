@@ -1,14 +1,15 @@
-﻿<Type Name="ImageReference" FullName="Microsoft.Azure.Management.Batch.Models.ImageReference">
+<Type Name="ImageReference" FullName="Microsoft.Azure.Management.Batch.Models.ImageReference">
   <TypeSignature Language="C#" Value="public class ImageReference" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit ImageReference extends System.Object" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Azure.Management.Batch.Models.ImageReference" />
   <TypeSignature Language="VB.NET" Value="Public Class ImageReference" />
   <TypeSignature Language="F#" Value="type ImageReference = class" />
-  <TypeSignature Language="C++ CLI" Value="public ref class ImageReference" />
-  <TypeSignature Language="C++ WINRT" Value="[Windows::Foundation::Metadata::WebHostHidden]&#xA;class ImageReference" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Azure.Management.Batch</AssemblyName>
-    <AssemblyVersion>6.0.0.0</AssemblyVersion>
+    <AssemblyVersion>9.0.0.0</AssemblyVersion>
+    <AssemblyVersion>10.0.0.0</AssemblyVersion>
+    <AssemblyVersion>11.0.0.0</AssemblyVersion>
+    <AssemblyVersion>13.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
@@ -29,13 +30,13 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Management.Batch.Models.ImageReference.#ctor" />
       <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; ImageReference();" />
-      <MemberSignature Language="C++ CX" Value="public:&#xA; ImageReference();" />
-      <MemberSignature Language="C++ WINRT" Value=" ImageReference();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Batch</AssemblyName>
-        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+        <AssemblyVersion>11.0.0.0</AssemblyVersion>
+        <AssemblyVersion>13.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
@@ -46,16 +47,18 @@
       </Docs>
     </Member>
     <Member MemberName=".ctor">
-      <MemberSignature Language="C#" Value="public ImageReference (string publisher = null, string offer = null, string sku = null, string version = null, string id = null);" />
+      <MemberSignature Language="C#" Value="public ImageReference (string publisher = default, string offer = default, string sku = default, string version = default, string id = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string publisher, string offer, string sku, string version, string id) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Management.Batch.Models.ImageReference.#ctor(System.String,System.String,System.String,System.String,System.String)" />
-      <MemberSignature Language="VB.NET" Value="Public Sub New (Optional publisher As String = null, Optional offer As String = null, Optional sku As String = null, Optional version As String = null, Optional id As String = null)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (Optional publisher As String = Nothing, Optional offer As String = Nothing, Optional sku As String = Nothing, Optional version As String = Nothing, Optional id As String = Nothing)" />
       <MemberSignature Language="F#" Value="new Microsoft.Azure.Management.Batch.Models.ImageReference : string * string * string * string * string -&gt; Microsoft.Azure.Management.Batch.Models.ImageReference" Usage="new Microsoft.Azure.Management.Batch.Models.ImageReference (publisher, offer, sku, version, id)" />
-      <MemberSignature Language="C++ WINRT" Value=" ImageReference(std::wstring const &amp; publisher = null, std::wstring const &amp; offer = null, std::wstring const &amp; sku = null, std::wstring const &amp; version = null, std::wstring const &amp; id = null);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Batch</AssemblyName>
-        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+        <AssemblyVersion>11.0.0.0</AssemblyVersion>
+        <AssemblyVersion>13.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="publisher" Type="System.String" />
@@ -73,10 +76,10 @@
             image.</param>
         <param name="version">The version of the Azure Virtual Machines
             Marketplace image.</param>
-        <param name="id">The ARM resource identifier of the virtual machine
-            image. Computes nodes of the pool will be created using this custom
-            image. This is of the form
-            /subscriptions/{subscriptionId}/resourceGroups/{resourceGroup}/providers/Microsoft.Compute/images/{imageName}</param>
+        <param name="id">The ARM resource identifier of the Shared Image
+            Gallery Image. Compute Nodes in the Pool will be created using this
+            Image Id. This is of the form
+            /subscriptions/{subscriptionId}/resourceGroups/{resourceGroup}/providers/Microsoft.Compute/galleries/{galleryName}/images/{imageDefinitionName}/versions/{versionId}.</param>
         <summary>
             Initializes a new instance of the ImageReference class.
             </summary>
@@ -89,16 +92,18 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Management.Batch.Models.ImageReference.Id" />
       <MemberSignature Language="VB.NET" Value="Public Property Id As String" />
       <MemberSignature Language="F#" Value="member this.Id : string with get, set" Usage="Microsoft.Azure.Management.Batch.Models.ImageReference.Id" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Id { System::String ^ get(); void set(System::String ^ value); };" />
-      <MemberSignature Language="C++ CX" Value="public:&#xA; property Platform::String ^ Id { Platform::String ^ get(); void set(Platform::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Batch</AssemblyName>
-        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+        <AssemblyVersion>11.0.0.0</AssemblyVersion>
+        <AssemblyVersion>13.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="id")</AttributeName>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty(PropertyName="id")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty(PropertyName="id")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -106,19 +111,19 @@
       </ReturnValue>
       <Docs>
         <summary>
-            Gets or sets the ARM resource identifier of the virtual machine
-            image. Computes nodes of the pool will be created using this custom
-            image. This is of the form
-            /subscriptions/{subscriptionId}/resourceGroups/{resourceGroup}/providers/Microsoft.Compute/images/{imageName}
+            Gets or sets the ARM resource identifier of the Shared Image
+            Gallery Image. Compute Nodes in the Pool will be created using this
+            Image Id. This is of the form
+            /subscriptions/{subscriptionId}/resourceGroups/{resourceGroup}/providers/Microsoft.Compute/galleries/{galleryName}/images/{imageDefinitionName}/versions/{versionId}.
             </summary>
         <value>To be added.</value>
         <remarks>
             This property is mutually exclusive with other properties. The
-            virtual machine image must be in the same region and subscription
-            as the Azure Batch account. For information about the firewall
-            settings for Batch node agent to communicate with Batch service see
-            https://docs.microsoft.com/en-us/azure/batch/batch-api-basics#virtual-network-vnet-and-firewall-configuration
-            .
+            Shared Image Gallery image must have replicas in the same region as
+            the Azure Batch account. For information about the firewall
+            settings for the Batch node agent to communicate with the Batch
+            service see
+            https://docs.microsoft.com/en-us/azure/batch/batch-api-basics#virtual-network-vnet-and-firewall-configuration.
             </remarks>
       </Docs>
     </Member>
@@ -128,16 +133,18 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Management.Batch.Models.ImageReference.Offer" />
       <MemberSignature Language="VB.NET" Value="Public Property Offer As String" />
       <MemberSignature Language="F#" Value="member this.Offer : string with get, set" Usage="Microsoft.Azure.Management.Batch.Models.ImageReference.Offer" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Offer { System::String ^ get(); void set(System::String ^ value); };" />
-      <MemberSignature Language="C++ CX" Value="public:&#xA; property Platform::String ^ Offer { Platform::String ^ get(); void set(Platform::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Batch</AssemblyName>
-        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+        <AssemblyVersion>11.0.0.0</AssemblyVersion>
+        <AssemblyVersion>13.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="offer")</AttributeName>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty(PropertyName="offer")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty(PropertyName="offer")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -160,16 +167,18 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Management.Batch.Models.ImageReference.Publisher" />
       <MemberSignature Language="VB.NET" Value="Public Property Publisher As String" />
       <MemberSignature Language="F#" Value="member this.Publisher : string with get, set" Usage="Microsoft.Azure.Management.Batch.Models.ImageReference.Publisher" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Publisher { System::String ^ get(); void set(System::String ^ value); };" />
-      <MemberSignature Language="C++ CX" Value="public:&#xA; property Platform::String ^ Publisher { Platform::String ^ get(); void set(Platform::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Batch</AssemblyName>
-        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+        <AssemblyVersion>11.0.0.0</AssemblyVersion>
+        <AssemblyVersion>13.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="publisher")</AttributeName>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty(PropertyName="publisher")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty(PropertyName="publisher")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -192,16 +201,18 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Management.Batch.Models.ImageReference.Sku" />
       <MemberSignature Language="VB.NET" Value="Public Property Sku As String" />
       <MemberSignature Language="F#" Value="member this.Sku : string with get, set" Usage="Microsoft.Azure.Management.Batch.Models.ImageReference.Sku" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Sku { System::String ^ get(); void set(System::String ^ value); };" />
-      <MemberSignature Language="C++ CX" Value="public:&#xA; property Platform::String ^ Sku { Platform::String ^ get(); void set(Platform::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Batch</AssemblyName>
-        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+        <AssemblyVersion>11.0.0.0</AssemblyVersion>
+        <AssemblyVersion>13.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="sku")</AttributeName>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty(PropertyName="sku")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty(PropertyName="sku")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -214,7 +225,7 @@
             </summary>
         <value>To be added.</value>
         <remarks>
-            For example, 14.04.0-LTS or 2012-R2-Datacenter.
+            For example, 18.04-LTS or 2019-Datacenter.
             </remarks>
       </Docs>
     </Member>
@@ -224,16 +235,18 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Management.Batch.Models.ImageReference.Version" />
       <MemberSignature Language="VB.NET" Value="Public Property Version As String" />
       <MemberSignature Language="F#" Value="member this.Version : string with get, set" Usage="Microsoft.Azure.Management.Batch.Models.ImageReference.Version" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Version { System::String ^ get(); void set(System::String ^ value); };" />
-      <MemberSignature Language="C++ CX" Value="public:&#xA; property Platform::String ^ Version { Platform::String ^ get(); void set(Platform::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Batch</AssemblyName>
-        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+        <AssemblyVersion>11.0.0.0</AssemblyVersion>
+        <AssemblyVersion>13.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="version")</AttributeName>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty(PropertyName="version")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty(PropertyName="version")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>

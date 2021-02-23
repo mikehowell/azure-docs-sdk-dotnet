@@ -1,16 +1,15 @@
-﻿<Type Name="TokenProvider" FullName="Microsoft.Azure.EventHubs.TokenProvider">
+<Type Name="TokenProvider" FullName="Microsoft.Azure.EventHubs.TokenProvider">
   <TypeSignature Language="C#" Value="public abstract class TokenProvider : Microsoft.Azure.EventHubs.ITokenProvider" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit TokenProvider extends System.Object implements class Microsoft.Azure.EventHubs.ITokenProvider" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Azure.EventHubs.TokenProvider" />
   <TypeSignature Language="VB.NET" Value="Public MustInherit Class TokenProvider&#xA;Implements ITokenProvider" />
   <TypeSignature Language="F#" Value="type TokenProvider = class&#xA;    interface ITokenProvider" />
-  <TypeSignature Language="C++ CLI" Value="public ref class TokenProvider abstract : Microsoft::Azure::EventHubs::ITokenProvider" />
-  <TypeSignature Language="C++ CX" Value="[Windows::Foundation::Metadata::WebHostHidden]&#xA;public ref class TokenProvider abstract : Microsoft::Azure::EventHubs::ITokenProvider" />
-  <TypeSignature Language="C++ WINRT" Value="[Windows::Foundation::Metadata::WebHostHidden]&#xA;class TokenProvider abstract : Microsoft::Azure::EventHubs::ITokenProvider" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Azure.EventHubs</AssemblyName>
-    <AssemblyVersion>1.0.3.0</AssemblyVersion>
-    <AssemblyVersion>2.0.0.0</AssemblyVersion>
+    <AssemblyVersion>4.1.0.0</AssemblyVersion>
+    <AssemblyVersion>4.2.0.0</AssemblyVersion>
+    <AssemblyVersion>4.3.0.0</AssemblyVersion>
+    <AssemblyVersion>4.3.1.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
@@ -32,18 +31,72 @@
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.EventHubs.TokenProvider.#ctor" />
       <MemberSignature Language="VB.NET" Value="Protected Sub New ()" />
-      <MemberSignature Language="C++ CLI" Value="protected:&#xA; TokenProvider();" />
-      <MemberSignature Language="C++ CX" Value="protected:&#xA; TokenProvider();" />
-      <MemberSignature Language="C++ WINRT" Value=" TokenProvider();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.EventHubs</AssemblyName>
-        <AssemblyVersion>1.0.3.0</AssemblyVersion>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+        <AssemblyVersion>4.3.0.0</AssemblyVersion>
+        <AssemblyVersion>4.3.1.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary />
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CreateAzureActiveDirectoryTokenProvider">
+      <MemberSignature Language="C#" Value="public static Microsoft.Azure.EventHubs.TokenProvider CreateAzureActiveDirectoryTokenProvider (Microsoft.Azure.EventHubs.AzureActiveDirectoryTokenProvider.AuthenticationCallback authCallback, string authority, object state = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Microsoft.Azure.EventHubs.TokenProvider CreateAzureActiveDirectoryTokenProvider(class Microsoft.Azure.EventHubs.AzureActiveDirectoryTokenProvider/AuthenticationCallback authCallback, string authority, object state) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Azure.EventHubs.TokenProvider.CreateAzureActiveDirectoryTokenProvider(Microsoft.Azure.EventHubs.AzureActiveDirectoryTokenProvider.AuthenticationCallback,System.String,System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function CreateAzureActiveDirectoryTokenProvider (authCallback As AzureActiveDirectoryTokenProvider.AuthenticationCallback, authority As String, Optional state As Object = Nothing) As TokenProvider" />
+      <MemberSignature Language="F#" Value="static member CreateAzureActiveDirectoryTokenProvider : Microsoft.Azure.EventHubs.AzureActiveDirectoryTokenProvider.AuthenticationCallback * string * obj -&gt; Microsoft.Azure.EventHubs.TokenProvider" Usage="Microsoft.Azure.EventHubs.TokenProvider.CreateAzureActiveDirectoryTokenProvider (authCallback, authority, state)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Azure.EventHubs</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+        <AssemblyVersion>4.3.0.0</AssemblyVersion>
+        <AssemblyVersion>4.3.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Azure.EventHubs.TokenProvider</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="authCallback" Type="Microsoft.Azure.EventHubs.AzureActiveDirectoryTokenProvider+AuthenticationCallback" />
+        <Parameter Name="authority" Type="System.String" />
+        <Parameter Name="state" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="authCallback">The authentication delegate to provide access token.</param>
+        <param name="authority">Address of the authority to issue token.</param>
+        <param name="state">State to be delivered to callback.</param>
+        <summary>Creates an Azure Active Directory token provider.</summary>
+        <returns>The <see cref="T:Microsoft.Azure.EventHubs.TokenProvider" /> for returning Json web token.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CreateManagedIdentityTokenProvider">
+      <MemberSignature Language="C#" Value="public static Microsoft.Azure.EventHubs.TokenProvider CreateManagedIdentityTokenProvider ();" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Microsoft.Azure.EventHubs.TokenProvider CreateManagedIdentityTokenProvider() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Azure.EventHubs.TokenProvider.CreateManagedIdentityTokenProvider" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function CreateManagedIdentityTokenProvider () As TokenProvider" />
+      <MemberSignature Language="F#" Value="static member CreateManagedIdentityTokenProvider : unit -&gt; Microsoft.Azure.EventHubs.TokenProvider" Usage="Microsoft.Azure.EventHubs.TokenProvider.CreateManagedIdentityTokenProvider " />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Azure.EventHubs</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+        <AssemblyVersion>4.3.0.0</AssemblyVersion>
+        <AssemblyVersion>4.3.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Azure.EventHubs.TokenProvider</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Creates Azure Managed Identity token provider.</summary>
+        <returns>The <see cref="T:Microsoft.Azure.EventHubs.TokenProvider" /> for returning Json web token.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -53,14 +106,13 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.EventHubs.TokenProvider.CreateSharedAccessSignatureTokenProvider(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function CreateSharedAccessSignatureTokenProvider (sharedAccessSignature As String) As TokenProvider" />
       <MemberSignature Language="F#" Value="static member CreateSharedAccessSignatureTokenProvider : string -&gt; Microsoft.Azure.EventHubs.TokenProvider" Usage="Microsoft.Azure.EventHubs.TokenProvider.CreateSharedAccessSignatureTokenProvider sharedAccessSignature" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; static Microsoft::Azure::EventHubs::TokenProvider ^ CreateSharedAccessSignatureTokenProvider(System::String ^ sharedAccessSignature);" />
-      <MemberSignature Language="C++ CX" Value="public:&#xA; static Microsoft::Azure::EventHubs::TokenProvider ^ CreateSharedAccessSignatureTokenProvider(Platform::String ^ sharedAccessSignature);" />
-      <MemberSignature Language="C++ WINRT" Value=" static Microsoft::Azure::EventHubs::TokenProvider CreateSharedAccessSignatureTokenProvider(std::wstring const &amp; sharedAccessSignature);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.EventHubs</AssemblyName>
-        <AssemblyVersion>1.0.3.0</AssemblyVersion>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+        <AssemblyVersion>4.3.0.0</AssemblyVersion>
+        <AssemblyVersion>4.3.1.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Azure.EventHubs.TokenProvider</ReturnType>
@@ -83,14 +135,13 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.EventHubs.TokenProvider.CreateSharedAccessSignatureTokenProvider(System.String,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function CreateSharedAccessSignatureTokenProvider (keyName As String, sharedAccessKey As String) As TokenProvider" />
       <MemberSignature Language="F#" Value="static member CreateSharedAccessSignatureTokenProvider : string * string -&gt; Microsoft.Azure.EventHubs.TokenProvider" Usage="Microsoft.Azure.EventHubs.TokenProvider.CreateSharedAccessSignatureTokenProvider (keyName, sharedAccessKey)" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; static Microsoft::Azure::EventHubs::TokenProvider ^ CreateSharedAccessSignatureTokenProvider(System::String ^ keyName, System::String ^ sharedAccessKey);" />
-      <MemberSignature Language="C++ CX" Value="public:&#xA; static Microsoft::Azure::EventHubs::TokenProvider ^ CreateSharedAccessSignatureTokenProvider(Platform::String ^ keyName, Platform::String ^ sharedAccessKey);" />
-      <MemberSignature Language="C++ WINRT" Value=" static Microsoft::Azure::EventHubs::TokenProvider CreateSharedAccessSignatureTokenProvider(std::wstring const &amp; keyName, std::wstring const &amp; sharedAccessKey);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.EventHubs</AssemblyName>
-        <AssemblyVersion>1.0.3.0</AssemblyVersion>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+        <AssemblyVersion>4.3.0.0</AssemblyVersion>
+        <AssemblyVersion>4.3.1.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Azure.EventHubs.TokenProvider</ReturnType>
@@ -113,15 +164,15 @@
       <MemberSignature Language="C#" Value="public static Microsoft.Azure.EventHubs.TokenProvider CreateSharedAccessSignatureTokenProvider (string keyName, string sharedAccessKey, Microsoft.Azure.EventHubs.TokenScope tokenScope);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Microsoft.Azure.EventHubs.TokenProvider CreateSharedAccessSignatureTokenProvider(string keyName, string sharedAccessKey, valuetype Microsoft.Azure.EventHubs.TokenScope tokenScope) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.EventHubs.TokenProvider.CreateSharedAccessSignatureTokenProvider(System.String,System.String,Microsoft.Azure.EventHubs.TokenScope)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function CreateSharedAccessSignatureTokenProvider (keyName As String, sharedAccessKey As String, tokenScope As TokenScope) As TokenProvider" />
       <MemberSignature Language="F#" Value="static member CreateSharedAccessSignatureTokenProvider : string * string * Microsoft.Azure.EventHubs.TokenScope -&gt; Microsoft.Azure.EventHubs.TokenProvider" Usage="Microsoft.Azure.EventHubs.TokenProvider.CreateSharedAccessSignatureTokenProvider (keyName, sharedAccessKey, tokenScope)" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; static Microsoft::Azure::EventHubs::TokenProvider ^ CreateSharedAccessSignatureTokenProvider(System::String ^ keyName, System::String ^ sharedAccessKey, Microsoft::Azure::EventHubs::TokenScope tokenScope);" />
-      <MemberSignature Language="C++ CX" Value="public:&#xA; static Microsoft::Azure::EventHubs::TokenProvider ^ CreateSharedAccessSignatureTokenProvider(Platform::String ^ keyName, Platform::String ^ sharedAccessKey, Microsoft::Azure::EventHubs::TokenScope tokenScope);" />
-      <MemberSignature Language="C++ WINRT" Value=" static Microsoft::Azure::EventHubs::TokenProvider CreateSharedAccessSignatureTokenProvider(std::wstring const &amp; keyName, std::wstring const &amp; sharedAccessKey, Microsoft::Azure::EventHubs::TokenScope tokenScope);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.EventHubs</AssemblyName>
-        <AssemblyVersion>1.0.3.0</AssemblyVersion>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+        <AssemblyVersion>4.3.0.0</AssemblyVersion>
+        <AssemblyVersion>4.3.1.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Azure.EventHubs.TokenProvider</ReturnType>
@@ -148,12 +199,13 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.EventHubs.TokenProvider.CreateSharedAccessSignatureTokenProvider(System.String,System.String,System.TimeSpan)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function CreateSharedAccessSignatureTokenProvider (keyName As String, sharedAccessKey As String, tokenTimeToLive As TimeSpan) As TokenProvider" />
       <MemberSignature Language="F#" Value="static member CreateSharedAccessSignatureTokenProvider : string * string * TimeSpan -&gt; Microsoft.Azure.EventHubs.TokenProvider" Usage="Microsoft.Azure.EventHubs.TokenProvider.CreateSharedAccessSignatureTokenProvider (keyName, sharedAccessKey, tokenTimeToLive)" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; static Microsoft::Azure::EventHubs::TokenProvider ^ CreateSharedAccessSignatureTokenProvider(System::String ^ keyName, System::String ^ sharedAccessKey, TimeSpan tokenTimeToLive);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.EventHubs</AssemblyName>
-        <AssemblyVersion>1.0.3.0</AssemblyVersion>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+        <AssemblyVersion>4.3.0.0</AssemblyVersion>
+        <AssemblyVersion>4.3.1.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Azure.EventHubs.TokenProvider</ReturnType>
@@ -178,13 +230,15 @@
       <MemberSignature Language="C#" Value="public static Microsoft.Azure.EventHubs.TokenProvider CreateSharedAccessSignatureTokenProvider (string keyName, string sharedAccessKey, TimeSpan tokenTimeToLive, Microsoft.Azure.EventHubs.TokenScope tokenScope);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Microsoft.Azure.EventHubs.TokenProvider CreateSharedAccessSignatureTokenProvider(string keyName, string sharedAccessKey, valuetype System.TimeSpan tokenTimeToLive, valuetype Microsoft.Azure.EventHubs.TokenScope tokenScope) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.EventHubs.TokenProvider.CreateSharedAccessSignatureTokenProvider(System.String,System.String,System.TimeSpan,Microsoft.Azure.EventHubs.TokenScope)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function CreateSharedAccessSignatureTokenProvider (keyName As String, sharedAccessKey As String, tokenTimeToLive As TimeSpan, tokenScope As TokenScope) As TokenProvider" />
       <MemberSignature Language="F#" Value="static member CreateSharedAccessSignatureTokenProvider : string * string * TimeSpan * Microsoft.Azure.EventHubs.TokenScope -&gt; Microsoft.Azure.EventHubs.TokenProvider" Usage="Microsoft.Azure.EventHubs.TokenProvider.CreateSharedAccessSignatureTokenProvider (keyName, sharedAccessKey, tokenTimeToLive, tokenScope)" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; static Microsoft::Azure::EventHubs::TokenProvider ^ CreateSharedAccessSignatureTokenProvider(System::String ^ keyName, System::String ^ sharedAccessKey, TimeSpan tokenTimeToLive, Microsoft::Azure::EventHubs::TokenScope tokenScope);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.EventHubs</AssemblyName>
-        <AssemblyVersion>1.0.3.0</AssemblyVersion>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+        <AssemblyVersion>4.3.0.0</AssemblyVersion>
+        <AssemblyVersion>4.3.1.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Azure.EventHubs.TokenProvider</ReturnType>
@@ -213,14 +267,16 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.EventHubs.TokenProvider.GetTokenAsync(System.String,System.TimeSpan)" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride Function GetTokenAsync (appliesTo As String, timeout As TimeSpan) As Task(Of SecurityToken)" />
       <MemberSignature Language="F#" Value="abstract member GetTokenAsync : string * TimeSpan -&gt; System.Threading.Tasks.Task&lt;Microsoft.Azure.EventHubs.SecurityToken&gt;" Usage="tokenProvider.GetTokenAsync (appliesTo, timeout)" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract System::Threading::Tasks::Task&lt;Microsoft::Azure::EventHubs::SecurityToken ^&gt; ^ GetTokenAsync(System::String ^ appliesTo, TimeSpan timeout);" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:Microsoft.Azure.EventHubs.ITokenProvider.GetTokenAsync(System.String,System.TimeSpan)</InterfaceMember>
       </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.EventHubs</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+        <AssemblyVersion>4.3.0.0</AssemblyVersion>
+        <AssemblyVersion>4.3.1.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.Azure.EventHubs.SecurityToken&gt;</ReturnType>

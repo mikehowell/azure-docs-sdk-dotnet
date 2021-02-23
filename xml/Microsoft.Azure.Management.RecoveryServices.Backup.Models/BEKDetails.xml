@@ -1,14 +1,12 @@
-﻿<Type Name="BEKDetails" FullName="Microsoft.Azure.Management.RecoveryServices.Backup.Models.BEKDetails">
+<Type Name="BEKDetails" FullName="Microsoft.Azure.Management.RecoveryServices.Backup.Models.BEKDetails">
   <TypeSignature Language="C#" Value="public class BEKDetails" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit BEKDetails extends System.Object" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Azure.Management.RecoveryServices.Backup.Models.BEKDetails" />
   <TypeSignature Language="VB.NET" Value="Public Class BEKDetails" />
   <TypeSignature Language="F#" Value="type BEKDetails = class" />
-  <TypeSignature Language="C++ CLI" Value="public ref class BEKDetails" />
-  <TypeSignature Language="C++ WINRT" Value="[Windows::Foundation::Metadata::WebHostHidden]&#xA;class BEKDetails" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Azure.Management.RecoveryServices.Backup</AssemblyName>
-    <AssemblyVersion>2.0.0.0</AssemblyVersion>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
@@ -16,7 +14,7 @@
   <Interfaces />
   <Docs>
     <summary>
-            BEK is bitlocker encrpytion key.
+            BEK is bitlocker encryption key.
             </summary>
     <remarks>To be added.</remarks>
   </Docs>
@@ -26,13 +24,10 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Management.RecoveryServices.Backup.Models.BEKDetails.#ctor" />
       <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; BEKDetails();" />
-      <MemberSignature Language="C++ CX" Value="public:&#xA; BEKDetails();" />
-      <MemberSignature Language="C++ WINRT" Value=" BEKDetails();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.RecoveryServices.Backup</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
@@ -43,16 +38,15 @@
       </Docs>
     </Member>
     <Member MemberName=".ctor">
-      <MemberSignature Language="C#" Value="public BEKDetails (string secretUrl = null, string secretVaultId = null, string secretData = null);" />
+      <MemberSignature Language="C#" Value="public BEKDetails (string secretUrl = default, string secretVaultId = default, string secretData = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string secretUrl, string secretVaultId, string secretData) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Management.RecoveryServices.Backup.Models.BEKDetails.#ctor(System.String,System.String,System.String)" />
-      <MemberSignature Language="VB.NET" Value="Public Sub New (Optional secretUrl As String = null, Optional secretVaultId As String = null, Optional secretData As String = null)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (Optional secretUrl As String = Nothing, Optional secretVaultId As String = Nothing, Optional secretData As String = Nothing)" />
       <MemberSignature Language="F#" Value="new Microsoft.Azure.Management.RecoveryServices.Backup.Models.BEKDetails : string * string * string -&gt; Microsoft.Azure.Management.RecoveryServices.Backup.Models.BEKDetails" Usage="new Microsoft.Azure.Management.RecoveryServices.Backup.Models.BEKDetails (secretUrl, secretVaultId, secretData)" />
-      <MemberSignature Language="C++ WINRT" Value=" BEKDetails(std::wstring const &amp; secretUrl = null, std::wstring const &amp; secretVaultId = null, std::wstring const &amp; secretData = null);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.RecoveryServices.Backup</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="secretUrl" Type="System.String" />
@@ -76,16 +70,15 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Management.RecoveryServices.Backup.Models.BEKDetails.SecretData" />
       <MemberSignature Language="VB.NET" Value="Public Property SecretData As String" />
       <MemberSignature Language="F#" Value="member this.SecretData : string with get, set" Usage="Microsoft.Azure.Management.RecoveryServices.Backup.Models.BEKDetails.SecretData" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ SecretData { System::String ^ get(); void set(System::String ^ value); };" />
-      <MemberSignature Language="C++ CX" Value="public:&#xA; property Platform::String ^ SecretData { Platform::String ^ get(); void set(Platform::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.RecoveryServices.Backup</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="secretData")</AttributeName>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty(PropertyName="secretData")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty(PropertyName="secretData")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -105,16 +98,15 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Management.RecoveryServices.Backup.Models.BEKDetails.SecretUrl" />
       <MemberSignature Language="VB.NET" Value="Public Property SecretUrl As String" />
       <MemberSignature Language="F#" Value="member this.SecretUrl : string with get, set" Usage="Microsoft.Azure.Management.RecoveryServices.Backup.Models.BEKDetails.SecretUrl" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ SecretUrl { System::String ^ get(); void set(System::String ^ value); };" />
-      <MemberSignature Language="C++ CX" Value="public:&#xA; property Platform::String ^ SecretUrl { Platform::String ^ get(); void set(Platform::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.RecoveryServices.Backup</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="secretUrl")</AttributeName>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty(PropertyName="secretUrl")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty(PropertyName="secretUrl")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -134,16 +126,15 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Management.RecoveryServices.Backup.Models.BEKDetails.SecretVaultId" />
       <MemberSignature Language="VB.NET" Value="Public Property SecretVaultId As String" />
       <MemberSignature Language="F#" Value="member this.SecretVaultId : string with get, set" Usage="Microsoft.Azure.Management.RecoveryServices.Backup.Models.BEKDetails.SecretVaultId" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ SecretVaultId { System::String ^ get(); void set(System::String ^ value); };" />
-      <MemberSignature Language="C++ CX" Value="public:&#xA; property Platform::String ^ SecretVaultId { Platform::String ^ get(); void set(Platform::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.RecoveryServices.Backup</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="secretVaultId")</AttributeName>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty(PropertyName="secretVaultId")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty(PropertyName="secretVaultId")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>

@@ -1,10 +1,9 @@
-﻿<Type Name="EventProcessorHost" FullName="Microsoft.ServiceBus.Messaging.EventProcessorHost">
+<Type Name="EventProcessorHost" FullName="Microsoft.ServiceBus.Messaging.EventProcessorHost">
   <TypeSignature Language="C#" Value="public class EventProcessorHost : IDisposable" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit EventProcessorHost extends System.Object implements class System.IDisposable" />
   <TypeSignature Language="DocId" Value="T:Microsoft.ServiceBus.Messaging.EventProcessorHost" />
   <TypeSignature Language="VB.NET" Value="Public Class EventProcessorHost&#xA;Implements IDisposable" />
-  <TypeSignature Language="F#" Value="type EventProcessorHost = class&#xA;    interface IPartitionObserver&lt;BlobLease&gt;&#xA;    interface IDisposable" />
-  <TypeSignature Language="C++ CLI" Value="public ref class EventProcessorHost : IDisposable" />
+  <TypeSignature Language="F#" Value="type EventProcessorHost = class&#xA;    interface IDisposable" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.ServiceBus.Messaging.EventProcessorHost</AssemblyName>
     <AssemblyVersion>0.1.0.0</AssemblyVersion>
@@ -18,7 +17,15 @@
     </Interface>
   </Interfaces>
   <Docs>
-    <summary>Represents a host for processing Event Hubs event data.</summary>
+    <summary>
+            A very simple host for processing EventHub messages.  It takes care of distributing EventHub partitions among EventProcessorHost
+            instances.  It creates an Azure Block Blob for each partition in EventHub and use these blobs for managing lease for a partition.
+            Every EventProcessorHost instance is performing the following two tasks:
+                1) Renew Leases: It keeps track of leases currently owned by the host and continuously keeps on renewing the leases.
+                2) Acquire Leases: Each instance continuously polls all the lease blobs to check if there are any leases it should acquire 
+                for the system to get into balanced state.
+            Client application needs to implement <see cref="T:Microsoft.ServiceBus.Messaging.IEventProcessor" /> and register processor implementation with EventProcessorHost.
+            </summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -28,9 +35,6 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.ServiceBus.Messaging.EventProcessorHost.#ctor(System.String,System.String,System.String,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (eventHubPath As String, consumerGroupName As String, eventHubConnectionString As String, storageConnectionString As String)" />
       <MemberSignature Language="F#" Value="new Microsoft.ServiceBus.Messaging.EventProcessorHost : string * string * string * string -&gt; Microsoft.ServiceBus.Messaging.EventProcessorHost" Usage="new Microsoft.ServiceBus.Messaging.EventProcessorHost (eventHubPath, consumerGroupName, eventHubConnectionString, storageConnectionString)" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; EventProcessorHost(System::String ^ eventHubPath, System::String ^ consumerGroupName, System::String ^ eventHubConnectionString, System::String ^ storageConnectionString);" />
-      <MemberSignature Language="C++ CX" Value="public:&#xA; EventProcessorHost(Platform::String ^ eventHubPath, Platform::String ^ consumerGroupName, Platform::String ^ eventHubConnectionString, Platform::String ^ storageConnectionString);" />
-      <MemberSignature Language="C++ WINRT" Value=" EventProcessorHost(std::wstring const &amp; eventHubPath, std::wstring const &amp; consumerGroupName, std::wstring const &amp; eventHubConnectionString, std::wstring const &amp; storageConnectionString);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.ServiceBus.Messaging.EventProcessorHost</AssemblyName>
@@ -43,11 +47,13 @@
         <Parameter Name="storageConnectionString" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="eventHubPath">To be added.</param>
-        <param name="consumerGroupName">To be added.</param>
-        <param name="eventHubConnectionString">To be added.</param>
-        <param name="storageConnectionString">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="eventHubPath">Event Hub path to start receiving messages from.</param>
+        <param name="consumerGroupName">Name of Event Hub consumer group to start receiving messages from.</param>
+        <param name="eventHubConnectionString">Connection string for Event Hub.</param>
+        <param name="storageConnectionString">Connection string of Azure Blob storage account to use for partition distribution.</param>
+        <summary>
+            Creates new instance of EventProcessorHost.
+            </summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -57,7 +63,6 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.ServiceBus.Messaging.EventProcessorHost.#ctor(System.String,System.String,System.String,System.Func{Microsoft.ServiceBus.Messaging.EventProcessorOptions,Microsoft.ServiceBus.Messaging.MessagingFactory},System.Func{Microsoft.WindowsAzure.Storage.Blob.CloudBlobClient})" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (hostName As String, eventHubPath As String, consumerGroupName As String, eventHubClientFactory As Func(Of EventProcessorOptions, MessagingFactory), storageClientFactory As Func(Of CloudBlobClient))" />
       <MemberSignature Language="F#" Value="new Microsoft.ServiceBus.Messaging.EventProcessorHost : string * string * string * Func&lt;Microsoft.ServiceBus.Messaging.EventProcessorOptions, Microsoft.ServiceBus.Messaging.MessagingFactory&gt; * Func&lt;Microsoft.WindowsAzure.Storage.Blob.CloudBlobClient&gt; -&gt; Microsoft.ServiceBus.Messaging.EventProcessorHost" Usage="new Microsoft.ServiceBus.Messaging.EventProcessorHost (hostName, eventHubPath, consumerGroupName, eventHubClientFactory, storageClientFactory)" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; EventProcessorHost(System::String ^ hostName, System::String ^ eventHubPath, System::String ^ consumerGroupName, Func&lt;Microsoft::ServiceBus::Messaging::EventProcessorOptions ^, Microsoft::ServiceBus::Messaging::MessagingFactory ^&gt; ^ eventHubClientFactory, Func&lt;Microsoft::WindowsAzure::Storage::Blob::CloudBlobClient ^&gt; ^ storageClientFactory);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.ServiceBus.Messaging.EventProcessorHost</AssemblyName>
@@ -71,12 +76,17 @@
         <Parameter Name="storageClientFactory" Type="System.Func&lt;Microsoft.WindowsAzure.Storage.Blob.CloudBlobClient&gt;" />
       </Parameters>
       <Docs>
-        <param name="hostName">To be added.</param>
-        <param name="eventHubPath">To be added.</param>
-        <param name="consumerGroupName">To be added.</param>
-        <param name="eventHubClientFactory">To be added.</param>
-        <param name="storageClientFactory">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="hostName">Name for EventProcessorHost instance.  This must be unique for each instance of the host.</param>
+        <param name="eventHubPath">EventHub path to start receiving messages from.</param>
+        <param name="consumerGroupName">Name of EventHub consumer group to start receiving messages from.</param>
+        <param name="eventHubClientFactory">Factory to initialize <see cref="T:Microsoft.ServiceBus.Messaging.MessagingFactory" /> to be used by EventProcessorHost for creating <see cref="T:Microsoft.ServiceBus.Messaging.EventHubClient" />
+            and eventually <see cref="T:Microsoft.ServiceBus.Messaging.EventHubReceiver" />.  EventProcessorHost maintains a pool of these <see cref="T:Microsoft.ServiceBus.Messaging.MessagingFactory" /> objects and will use provided factory whenever
+            a new instance needs to be created based on <see cref="P:Microsoft.ServiceBus.Messaging.PartitionManagerOptions.MaxReceiveClients" /> option.</param>
+        <param name="storageClientFactory">Factory to initialize <see cref="P:Microsoft.ServiceBus.Messaging.EventProcessorHost.CloudBlobClient" /> which is used by EventProcessorHost for lease management and partition 
+            distribution among available hosts.</param>
+        <summary>
+            Creates new instance of EventProcessorHost.
+            </summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -86,9 +96,6 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.ServiceBus.Messaging.EventProcessorHost.#ctor(System.String,System.String,System.String,System.String,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (hostName As String, eventHubPath As String, consumerGroupName As String, eventHubConnectionString As String, storageConnectionString As String)" />
       <MemberSignature Language="F#" Value="new Microsoft.ServiceBus.Messaging.EventProcessorHost : string * string * string * string * string -&gt; Microsoft.ServiceBus.Messaging.EventProcessorHost" Usage="new Microsoft.ServiceBus.Messaging.EventProcessorHost (hostName, eventHubPath, consumerGroupName, eventHubConnectionString, storageConnectionString)" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; EventProcessorHost(System::String ^ hostName, System::String ^ eventHubPath, System::String ^ consumerGroupName, System::String ^ eventHubConnectionString, System::String ^ storageConnectionString);" />
-      <MemberSignature Language="C++ CX" Value="public:&#xA; EventProcessorHost(Platform::String ^ hostName, Platform::String ^ eventHubPath, Platform::String ^ consumerGroupName, Platform::String ^ eventHubConnectionString, Platform::String ^ storageConnectionString);" />
-      <MemberSignature Language="C++ WINRT" Value=" EventProcessorHost(std::wstring const &amp; hostName, std::wstring const &amp; eventHubPath, std::wstring const &amp; consumerGroupName, std::wstring const &amp; eventHubConnectionString, std::wstring const &amp; storageConnectionString);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.ServiceBus.Messaging.EventProcessorHost</AssemblyName>
@@ -102,7 +109,8 @@
         <Parameter Name="storageConnectionString" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="hostName">The name of the <see cref="T:Microsoft.ServiceBus.Messaging.EventProcessorHost" /> instance. This name must be unique for each instance of the host.</param>
+        <param name="hostName">The name of the 
+            <see cref="T:Microsoft.ServiceBus.Messaging.EventProcessorHost" /> instance. This name must be unique for each instance of the host.</param>
         <param name="eventHubPath">The path to the Event Hub from which to start receiving event data.</param>
         <param name="consumerGroupName">The name of the Event Hubs consumer group from which to start receiving event data.</param>
         <param name="eventHubConnectionString">The connection string for the Event Hub.</param>
@@ -112,10 +120,10 @@
       </Docs>
     </Member>
     <Member MemberName=".ctor">
-      <MemberSignature Language="C#" Value="public EventProcessorHost (string hostName, string eventHubPath, string consumerGroupName, Func&lt;Microsoft.ServiceBus.Messaging.EventProcessorOptions,Microsoft.ServiceBus.Messaging.MessagingFactory&gt; eventHubClientFactory, Func&lt;Microsoft.WindowsAzure.Storage.Blob.CloudBlobClient&gt; storageClientFactory, string leaseContainerName, string leaseBlobPrefix = null);" />
+      <MemberSignature Language="C#" Value="public EventProcessorHost (string hostName, string eventHubPath, string consumerGroupName, Func&lt;Microsoft.ServiceBus.Messaging.EventProcessorOptions,Microsoft.ServiceBus.Messaging.MessagingFactory&gt; eventHubClientFactory, Func&lt;Microsoft.WindowsAzure.Storage.Blob.CloudBlobClient&gt; storageClientFactory, string leaseContainerName, string leaseBlobPrefix = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string hostName, string eventHubPath, string consumerGroupName, class System.Func`2&lt;class Microsoft.ServiceBus.Messaging.EventProcessorOptions, class Microsoft.ServiceBus.Messaging.MessagingFactory&gt; eventHubClientFactory, class System.Func`1&lt;class Microsoft.WindowsAzure.Storage.Blob.CloudBlobClient&gt; storageClientFactory, string leaseContainerName, string leaseBlobPrefix) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.ServiceBus.Messaging.EventProcessorHost.#ctor(System.String,System.String,System.String,System.Func{Microsoft.ServiceBus.Messaging.EventProcessorOptions,Microsoft.ServiceBus.Messaging.MessagingFactory},System.Func{Microsoft.WindowsAzure.Storage.Blob.CloudBlobClient},System.String,System.String)" />
-      <MemberSignature Language="VB.NET" Value="Public Sub New (hostName As String, eventHubPath As String, consumerGroupName As String, eventHubClientFactory As Func(Of EventProcessorOptions, MessagingFactory), storageClientFactory As Func(Of CloudBlobClient), leaseContainerName As String, Optional leaseBlobPrefix As String = null)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (hostName As String, eventHubPath As String, consumerGroupName As String, eventHubClientFactory As Func(Of EventProcessorOptions, MessagingFactory), storageClientFactory As Func(Of CloudBlobClient), leaseContainerName As String, Optional leaseBlobPrefix As String = Nothing)" />
       <MemberSignature Language="F#" Value="new Microsoft.ServiceBus.Messaging.EventProcessorHost : string * string * string * Func&lt;Microsoft.ServiceBus.Messaging.EventProcessorOptions, Microsoft.ServiceBus.Messaging.MessagingFactory&gt; * Func&lt;Microsoft.WindowsAzure.Storage.Blob.CloudBlobClient&gt; * string * string -&gt; Microsoft.ServiceBus.Messaging.EventProcessorHost" Usage="new Microsoft.ServiceBus.Messaging.EventProcessorHost (hostName, eventHubPath, consumerGroupName, eventHubClientFactory, storageClientFactory, leaseContainerName, leaseBlobPrefix)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
@@ -132,24 +140,29 @@
         <Parameter Name="leaseBlobPrefix" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="hostName">To be added.</param>
-        <param name="eventHubPath">To be added.</param>
-        <param name="consumerGroupName">To be added.</param>
-        <param name="eventHubClientFactory">To be added.</param>
-        <param name="storageClientFactory">To be added.</param>
-        <param name="leaseContainerName">To be added.</param>
-        <param name="leaseBlobPrefix">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="hostName">Name for EventProcessorHost instance.  This must be unique for each instance of the host.</param>
+        <param name="eventHubPath">EventHub path to start receiving messages from.</param>
+        <param name="consumerGroupName">Name of EventHub consumer group to start receiving messages from.</param>
+        <param name="eventHubClientFactory">Factory to initialize <see cref="T:Microsoft.ServiceBus.Messaging.MessagingFactory" /> to be used by EventProcessorHost for creating <see cref="T:Microsoft.ServiceBus.Messaging.EventHubClient" />
+            and eventually <see cref="T:Microsoft.ServiceBus.Messaging.EventHubReceiver" />.  EventProcessorHost maintains a pool of these <see cref="T:Microsoft.ServiceBus.Messaging.MessagingFactory" /> objects and will use provided factory whenever
+            a new instance needs to be created based on <see cref="P:Microsoft.ServiceBus.Messaging.PartitionManagerOptions.MaxReceiveClients" /> option.</param>
+        <param name="storageClientFactory">Factory to initialize <see cref="P:Microsoft.ServiceBus.Messaging.EventProcessorHost.CloudBlobClient" /> which is used by EventProcessorHost for lease management and partition 
+            distribution among available hosts.</param>
+        <param name="leaseContainerName">Name of Azure Blob container where all lease blobs are created.  If this is not passed in then EventHub path 
+            is used as the name of Azure Blob container.</param>
+        <param name="leaseBlobPrefix">The prefix of lease blob files.</param>
+        <summary>
+            Creates new instance of EventProcessorHost.
+            </summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
-      <MemberSignature Language="C#" Value="public EventProcessorHost (string hostName, string eventHubPath, string consumerGroupName, string eventHubConnectionString, string storageConnectionString, string leaseContainerName, string leaseBlobPrefix = null);" />
+      <MemberSignature Language="C#" Value="public EventProcessorHost (string hostName, string eventHubPath, string consumerGroupName, string eventHubConnectionString, string storageConnectionString, string leaseContainerName, string leaseBlobPrefix = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string hostName, string eventHubPath, string consumerGroupName, string eventHubConnectionString, string storageConnectionString, string leaseContainerName, string leaseBlobPrefix) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.ServiceBus.Messaging.EventProcessorHost.#ctor(System.String,System.String,System.String,System.String,System.String,System.String,System.String)" />
-      <MemberSignature Language="VB.NET" Value="Public Sub New (hostName As String, eventHubPath As String, consumerGroupName As String, eventHubConnectionString As String, storageConnectionString As String, leaseContainerName As String, Optional leaseBlobPrefix As String = null)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (hostName As String, eventHubPath As String, consumerGroupName As String, eventHubConnectionString As String, storageConnectionString As String, leaseContainerName As String, Optional leaseBlobPrefix As String = Nothing)" />
       <MemberSignature Language="F#" Value="new Microsoft.ServiceBus.Messaging.EventProcessorHost : string * string * string * string * string * string * string -&gt; Microsoft.ServiceBus.Messaging.EventProcessorHost" Usage="new Microsoft.ServiceBus.Messaging.EventProcessorHost (hostName, eventHubPath, consumerGroupName, eventHubConnectionString, storageConnectionString, leaseContainerName, leaseBlobPrefix)" />
-      <MemberSignature Language="C++ WINRT" Value=" EventProcessorHost(std::wstring const &amp; hostName, std::wstring const &amp; eventHubPath, std::wstring const &amp; consumerGroupName, std::wstring const &amp; eventHubConnectionString, std::wstring const &amp; storageConnectionString, std::wstring const &amp; leaseContainerName, std::wstring const &amp; leaseBlobPrefix = null);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.ServiceBus.Messaging.EventProcessorHost</AssemblyName>
@@ -165,14 +178,16 @@
         <Parameter Name="leaseBlobPrefix" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="hostName">To be added.</param>
-        <param name="eventHubPath">To be added.</param>
-        <param name="consumerGroupName">To be added.</param>
-        <param name="eventHubConnectionString">To be added.</param>
-        <param name="storageConnectionString">To be added.</param>
-        <param name="leaseContainerName">To be added.</param>
-        <param name="leaseBlobPrefix">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="hostName">The name of the 
+            <see cref="T:Microsoft.ServiceBus.Messaging.EventProcessorHost" /> instance. This name must be unique for each instance of the host.</param>
+        <param name="eventHubPath">The path to the Event Hub from which to start receiving event data.</param>
+        <param name="consumerGroupName">The name of the Event Hubs consumer group from which to start receiving event data.</param>
+        <param name="eventHubConnectionString">The connection string for the Event Hub.</param>
+        <param name="storageConnectionString">The connection string for the Azure Blob storage account to use for partition distribution.</param>
+        <param name="leaseContainerName">The name of the Azure Blob container in which all lease blobs are created. If this 
+            parameter is not supplied, then the Event Hubs path is used as the name of the Azure Blob container.</param>
+        <param name="leaseBlobPrefix">The prefix of lease blob files.</param>
+        <summary>Initializes a new instance of the <see cref="T:Microsoft.ServiceBus.Messaging.EventProcessorHost" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -182,9 +197,6 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.ServiceBus.Messaging.EventProcessorHost.Dispose" />
       <MemberSignature Language="VB.NET" Value="Public Sub Dispose ()" />
       <MemberSignature Language="F#" Value="abstract member Dispose : unit -&gt; unit&#xA;override this.Dispose : unit -&gt; unit" Usage="eventProcessorHost.Dispose " />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Dispose();" />
-      <MemberSignature Language="C++ CX" Value="public:&#xA; void Dispose();" />
-      <MemberSignature Language="C++ WINRT" Value="void Dispose();" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.IDisposable.Dispose</InterfaceMember>
@@ -208,9 +220,6 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.ServiceBus.Messaging.EventProcessorHost.Dispose(System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Sub Dispose (disposing As Boolean)" />
       <MemberSignature Language="F#" Value="abstract member Dispose : bool -&gt; unit&#xA;override this.Dispose : bool -&gt; unit" Usage="eventProcessorHost.Dispose disposing" />
-      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void Dispose(bool disposing);" />
-      <MemberSignature Language="C++ CX" Value="protected:&#xA; virtual void Dispose(bool disposing);" />
-      <MemberSignature Language="C++ WINRT" Value=" virtual void Dispose(bool disposing);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.ServiceBus.Messaging.EventProcessorHost</AssemblyName>
@@ -234,8 +243,6 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.ServiceBus.Messaging.EventProcessorHost.HostName" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property HostName As String" />
       <MemberSignature Language="F#" Value="member this.HostName : string" Usage="Microsoft.ServiceBus.Messaging.EventProcessorHost.HostName" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ HostName { System::String ^ get(); };" />
-      <MemberSignature Language="C++ CX" Value="public:&#xA; property Platform::String ^ HostName { Platform::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.ServiceBus.Messaging.EventProcessorHost</AssemblyName>
@@ -256,7 +263,6 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.ServiceBus.Messaging.EventProcessorHost.PartitionManagerOptions" />
       <MemberSignature Language="VB.NET" Value="Public Property PartitionManagerOptions As PartitionManagerOptions" />
       <MemberSignature Language="F#" Value="member this.PartitionManagerOptions : Microsoft.ServiceBus.Messaging.PartitionManagerOptions with get, set" Usage="Microsoft.ServiceBus.Messaging.EventProcessorHost.PartitionManagerOptions" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::ServiceBus::Messaging::PartitionManagerOptions ^ PartitionManagerOptions { Microsoft::ServiceBus::Messaging::PartitionManagerOptions ^ get(); void set(Microsoft::ServiceBus::Messaging::PartitionManagerOptions ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.ServiceBus.Messaging.EventProcessorHost</AssemblyName>
@@ -266,7 +272,9 @@
         <ReturnType>Microsoft.ServiceBus.Messaging.PartitionManagerOptions</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the <see cref="T:Microsoft.ServiceBus.Messaging.PartitionManagerOptions" /> instance used by the <see cref="T:Microsoft.ServiceBus.Messaging.EventProcessorHost" /> object.</summary>
+        <summary>Gets or sets the 
+            <see cref="T:Microsoft.ServiceBus.Messaging.PartitionManagerOptions" /> instance used by the 
+            <see cref="T:Microsoft.ServiceBus.Messaging.EventProcessorHost" /> object.</summary>
         <value>The <see cref="T:Microsoft.ServiceBus.Messaging.PartitionManagerOptions" /> instance.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -277,7 +285,6 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.ServiceBus.Messaging.EventProcessorHost.RegisterEventProcessorAsync``1" />
       <MemberSignature Language="VB.NET" Value="Public Function RegisterEventProcessorAsync(Of T As IEventProcessor) () As Task" />
       <MemberSignature Language="F#" Value="member this.RegisterEventProcessorAsync : unit -&gt; System.Threading.Tasks.Task (requires 'T :&gt; Microsoft.ServiceBus.Messaging.IEventProcessor)" Usage="eventProcessorHost.RegisterEventProcessorAsync " />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename T&gt;&#xA; where T : Microsoft::ServiceBus::Messaging::IEventProcessor System::Threading::Tasks::Task ^ RegisterEventProcessorAsync();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.ServiceBus.Messaging.EventProcessorHost</AssemblyName>
@@ -296,7 +303,9 @@
       <Parameters />
       <Docs>
         <typeparam name="T">Implementation of your application-specific <see cref="T:Microsoft.ServiceBus.Messaging.IEventProcessor" />.</typeparam>
-        <summary>Asynchronously registers the <see cref="T:Microsoft.ServiceBus.Messaging.IEventProcessor" /> interface implementation with the host using the <see cref="T:Microsoft.ServiceBus.Messaging.DefaultEventProcessorFactory`1" /> factory. This method also starts the host and enables it to start participating in the partition distribution process.</summary>
+        <summary>Asynchronously registers the 
+            <see cref="T:Microsoft.ServiceBus.Messaging.IEventProcessor" /> interface implementation with the host using the 
+            <see cref="T:Microsoft.ServiceBus.Messaging.DefaultEventProcessorFactory`1" /> factory. This method also starts the host and enables it to start participating in the partition distribution process.</summary>
         <returns>A task indicating that the <see cref="T:Microsoft.ServiceBus.Messaging.EventProcessorHost" /> instance has started.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -307,7 +316,6 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.ServiceBus.Messaging.EventProcessorHost.RegisterEventProcessorAsync``1(Microsoft.ServiceBus.Messaging.EventProcessorOptions)" />
       <MemberSignature Language="VB.NET" Value="Public Function RegisterEventProcessorAsync(Of T As IEventProcessor) (processorOptions As EventProcessorOptions) As Task" />
       <MemberSignature Language="F#" Value="member this.RegisterEventProcessorAsync : Microsoft.ServiceBus.Messaging.EventProcessorOptions -&gt; System.Threading.Tasks.Task (requires 'T :&gt; Microsoft.ServiceBus.Messaging.IEventProcessor)" Usage="eventProcessorHost.RegisterEventProcessorAsync processorOptions" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename T&gt;&#xA; where T : Microsoft::ServiceBus::Messaging::IEventProcessor System::Threading::Tasks::Task ^ RegisterEventProcessorAsync(Microsoft::ServiceBus::Messaging::EventProcessorOptions ^ processorOptions);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.ServiceBus.Messaging.EventProcessorHost</AssemblyName>
@@ -327,10 +335,15 @@
         <Parameter Name="processorOptions" Type="Microsoft.ServiceBus.Messaging.EventProcessorOptions" />
       </Parameters>
       <Docs>
-        <typeparam name="T">Implementation of your application-specific <see cref="T:Microsoft.ServiceBus.Messaging.IEventProcessor" />.</typeparam>
-        <param name="processorOptions">An <see cref="T:Microsoft.ServiceBus.Messaging.EventProcessorOptions" /> object that controls various aspects of the event pump created when ownership is acquired for a given Event Hubs partition.</param>
-        <summary>Asynchronously registers the <see cref="T:Microsoft.ServiceBus.Messaging.IEventProcessor" /> interface implementation with the host using the <see cref="T:Microsoft.ServiceBus.Messaging.DefaultEventProcessorFactory`1" /> factory. This method also starts the host and enables it to start participating in the partition distribution process.</summary>
-        <returns>A task indicating that the <see cref="T:Microsoft.ServiceBus.Messaging.EventProcessorHost" /> instance has started.</returns>
+        <typeparam name="T">Implementation of your application specific <see cref="T:Microsoft.ServiceBus.Messaging.IEventProcessor" />.</typeparam>
+        <param name="processorOptions">
+          <see cref="T:Microsoft.ServiceBus.Messaging.EventProcessorOptions" /> to control various aspects of message pump created when ownership 
+            is acquired for a particular partition of EventHub.</param>
+        <summary>
+            This registers <see cref="T:Microsoft.ServiceBus.Messaging.IEventProcessor" /> implementation with the host using <see cref="T:Microsoft.ServiceBus.Messaging.DefaultEventProcessorFactory`1" />.  
+            This also starts the host and causes it to start participating in the partition distribution process.
+            </summary>
+        <returns>A task to indicate EventProcessorHost instance is started.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -340,7 +353,6 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.ServiceBus.Messaging.EventProcessorHost.RegisterEventProcessorFactoryAsync(Microsoft.ServiceBus.Messaging.IEventProcessorFactory)" />
       <MemberSignature Language="VB.NET" Value="Public Function RegisterEventProcessorFactoryAsync (factory As IEventProcessorFactory) As Task" />
       <MemberSignature Language="F#" Value="member this.RegisterEventProcessorFactoryAsync : Microsoft.ServiceBus.Messaging.IEventProcessorFactory -&gt; System.Threading.Tasks.Task" Usage="eventProcessorHost.RegisterEventProcessorFactoryAsync factory" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Threading::Tasks::Task ^ RegisterEventProcessorFactoryAsync(Microsoft::ServiceBus::Messaging::IEventProcessorFactory ^ factory);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.ServiceBus.Messaging.EventProcessorHost</AssemblyName>
@@ -353,9 +365,13 @@
         <Parameter Name="factory" Type="Microsoft.ServiceBus.Messaging.IEventProcessorFactory" />
       </Parameters>
       <Docs>
-        <param name="factory">The factory to register.</param>
-        <summary>Asynchronously registers the event processor factory.</summary>
-        <returns>The task representing the asynchronous operation.</returns>
+        <param name="factory">Instance of <see cref="T:Microsoft.ServiceBus.Messaging.IEventProcessorFactory" /> implementation.</param>
+        <summary>
+            This registers <see cref="T:Microsoft.ServiceBus.Messaging.IEventProcessorFactory" /> implementation with the host which is used to create an instance of 
+            <see cref="T:Microsoft.ServiceBus.Messaging.IEventProcessor" /> when it takes ownership of a partition.  This also starts the host and causes it to start participating 
+            in the partition distribution process.
+            </summary>
+        <returns>A task to indicate EventProcessorHost instance is started.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -365,7 +381,6 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.ServiceBus.Messaging.EventProcessorHost.RegisterEventProcessorFactoryAsync(Microsoft.ServiceBus.Messaging.IEventProcessorFactory,Microsoft.ServiceBus.Messaging.EventProcessorOptions)" />
       <MemberSignature Language="VB.NET" Value="Public Function RegisterEventProcessorFactoryAsync (factory As IEventProcessorFactory, processorOptions As EventProcessorOptions) As Task" />
       <MemberSignature Language="F#" Value="member this.RegisterEventProcessorFactoryAsync : Microsoft.ServiceBus.Messaging.IEventProcessorFactory * Microsoft.ServiceBus.Messaging.EventProcessorOptions -&gt; System.Threading.Tasks.Task" Usage="eventProcessorHost.RegisterEventProcessorFactoryAsync (factory, processorOptions)" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Threading::Tasks::Task ^ RegisterEventProcessorFactoryAsync(Microsoft::ServiceBus::Messaging::IEventProcessorFactory ^ factory, Microsoft::ServiceBus::Messaging::EventProcessorOptions ^ processorOptions);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.ServiceBus.Messaging.EventProcessorHost</AssemblyName>
@@ -379,10 +394,16 @@
         <Parameter Name="processorOptions" Type="Microsoft.ServiceBus.Messaging.EventProcessorOptions" />
       </Parameters>
       <Docs>
-        <param name="factory">The factory to register.</param>
-        <param name="processorOptions">An <see cref="T:Microsoft.ServiceBus.Messaging.EventProcessorOptions" /> object that controls various aspects of the event pump created when ownership is acquired for a given Event Hubs partition.</param>
-        <summary>Asynchronously registers the event processor factory.</summary>
-        <returns>Returns <see cref="T:System.Threading.Tasks.Task" />.</returns>
+        <param name="factory">Instance of <see cref="T:Microsoft.ServiceBus.Messaging.IEventProcessorFactory" /> implementation.</param>
+        <param name="processorOptions">
+          <see cref="T:Microsoft.ServiceBus.Messaging.EventProcessorOptions" /> to control various aspects of message pump created when ownership 
+            is acquired for a particular partition of EventHub.</param>
+        <summary>
+            This registers <see cref="T:Microsoft.ServiceBus.Messaging.IEventProcessorFactory" /> implementation with the host which is used to create an instance of 
+            <see cref="T:Microsoft.ServiceBus.Messaging.IEventProcessor" /> when it takes ownership of a partition.  This also starts the host and causes it to start participating 
+            in the partition distribution process.
+            </summary>
+        <returns>A task to indicate EventProcessorHost instance is started.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -392,9 +413,6 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.ServiceBus.Messaging.EventProcessorHost.ResetAllConnections" />
       <MemberSignature Language="VB.NET" Value="Public Sub ResetAllConnections ()" />
       <MemberSignature Language="F#" Value="member this.ResetAllConnections : unit -&gt; unit" Usage="eventProcessorHost.ResetAllConnections " />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; void ResetAllConnections();" />
-      <MemberSignature Language="C++ CX" Value="public:&#xA; void ResetAllConnections();" />
-      <MemberSignature Language="C++ WINRT" Value="void ResetAllConnections();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.ServiceBus.Messaging.EventProcessorHost</AssemblyName>
@@ -405,7 +423,9 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+            Reset all Event Hubs receiver connections used by this instance of EventProcessorHost.
+            </summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -415,9 +435,6 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.ServiceBus.Messaging.EventProcessorHost.ResetConnection(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub ResetConnection (partitionId As String)" />
       <MemberSignature Language="F#" Value="member this.ResetConnection : string -&gt; unit" Usage="eventProcessorHost.ResetConnection partitionId" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; void ResetConnection(System::String ^ partitionId);" />
-      <MemberSignature Language="C++ CX" Value="public:&#xA; void ResetConnection(Platform::String ^ partitionId);" />
-      <MemberSignature Language="C++ WINRT" Value="void ResetConnection(std::wstring const &amp; partitionId);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.ServiceBus.Messaging.EventProcessorHost</AssemblyName>
@@ -430,8 +447,8 @@
         <Parameter Name="partitionId" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="partitionId">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="partitionId" />
+        <summary />
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -441,23 +458,21 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.ServiceBus.Messaging.EventProcessorHost.UnregisterEventProcessorAsync" />
       <MemberSignature Language="VB.NET" Value="Public Function UnregisterEventProcessorAsync () As Task" />
       <MemberSignature Language="F#" Value="member this.UnregisterEventProcessorAsync : unit -&gt; System.Threading.Tasks.Task" Usage="eventProcessorHost.UnregisterEventProcessorAsync " />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Threading::Tasks::Task ^ UnregisterEventProcessorAsync();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.ServiceBus.Messaging.EventProcessorHost</AssemblyName>
         <AssemblyVersion>0.1.0.0</AssemblyVersion>
       </AssemblyInfo>
-      <Attributes>
-        <Attribute>
-          <AttributeName>System.Runtime.CompilerServices.AsyncStateMachine(typeof(Microsoft.ServiceBus.Messaging.EventProcessorHost/&lt;UnregisterEventProcessorAsync&gt;d__48))</AttributeName>
-        </Attribute>
-      </Attributes>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task</ReturnType>
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Asynchronously shuts down the <see cref="T:Microsoft.ServiceBus.Messaging.EventProcessorHost" /> instance. This method maintains the leases on all partitions currently held, and enables each <see cref="T:Microsoft.ServiceBus.Messaging.IEventProcessor" /> instance to shut down cleanly by invoking the <see cref="M:Microsoft.ServiceBus.Messaging.IEventProcessor.CloseAsync(Microsoft.ServiceBus.Messaging.PartitionContext,Microsoft.ServiceBus.Messaging.CloseReason)" /> method with a <see cref="F:Microsoft.ServiceBus.Messaging.CloseReason.Shutdown" /> object.</summary>
+        <summary>Asynchronously shuts down the 
+            <see cref="T:Microsoft.ServiceBus.Messaging.EventProcessorHost" /> instance. This method maintains the leases on all partitions currently held, and enables each 
+            <see cref="T:Microsoft.ServiceBus.Messaging.IEventProcessor" /> instance to shut down cleanly by invoking the 
+            <see cref="M:Microsoft.ServiceBus.Messaging.IEventProcessor.CloseAsync(Microsoft.ServiceBus.Messaging.PartitionContext,Microsoft.ServiceBus.Messaging.CloseReason)" /> method with a 
+            <see cref="F:Microsoft.ServiceBus.Messaging.CloseReason.Shutdown" /> object.</summary>
         <returns>A task that indicates the <see cref="T:Microsoft.ServiceBus.Messaging.EventProcessorHost" /> instance has stopped.</returns>
         <remarks>To be added.</remarks>
       </Docs>

@@ -1,14 +1,13 @@
-﻿<Type Name="ContainerState" FullName="Microsoft.Azure.Management.ContainerInstance.Models.ContainerState">
+<Type Name="ContainerState" FullName="Microsoft.Azure.Management.ContainerInstance.Models.ContainerState">
   <TypeSignature Language="C#" Value="public class ContainerState" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit ContainerState extends System.Object" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Azure.Management.ContainerInstance.Models.ContainerState" />
   <TypeSignature Language="VB.NET" Value="Public Class ContainerState" />
   <TypeSignature Language="F#" Value="type ContainerState = class" />
-  <TypeSignature Language="C++ CLI" Value="public ref class ContainerState" />
-  <TypeSignature Language="C++ WINRT" Value="[Windows::Foundation::Metadata::WebHostHidden]&#xA;class ContainerState" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Azure.Management.ContainerInstance</AssemblyName>
-    <AssemblyVersion>0.0.0.0</AssemblyVersion>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
+    <AssemblyVersion>3.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
@@ -26,13 +25,11 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Management.ContainerInstance.Models.ContainerState.#ctor" />
       <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; ContainerState();" />
-      <MemberSignature Language="C++ CX" Value="public:&#xA; ContainerState();" />
-      <MemberSignature Language="C++ WINRT" Value=" ContainerState();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.ContainerInstance</AssemblyName>
-        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
@@ -43,15 +40,16 @@
       </Docs>
     </Member>
     <Member MemberName=".ctor">
-      <MemberSignature Language="C#" Value="public ContainerState (string state = null, Nullable&lt;DateTime&gt; startTime = null, Nullable&lt;int&gt; exitCode = null, Nullable&lt;DateTime&gt; finishTime = null, string detailStatus = null);" />
+      <MemberSignature Language="C#" Value="public ContainerState (string state = default, DateTime? startTime = default, int? exitCode = default, DateTime? finishTime = default, string detailStatus = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string state, valuetype System.Nullable`1&lt;valuetype System.DateTime&gt; startTime, valuetype System.Nullable`1&lt;int32&gt; exitCode, valuetype System.Nullable`1&lt;valuetype System.DateTime&gt; finishTime, string detailStatus) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Management.ContainerInstance.Models.ContainerState.#ctor(System.String,System.Nullable{System.DateTime},System.Nullable{System.Int32},System.Nullable{System.DateTime},System.String)" />
-      <MemberSignature Language="VB.NET" Value="Public Sub New (Optional state As String = null, Optional startTime As Nullable(Of DateTime) = null, Optional exitCode As Nullable(Of Integer) = null, Optional finishTime As Nullable(Of DateTime) = null, Optional detailStatus As String = null)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (Optional state As String = Nothing, Optional startTime As Nullable(Of DateTime) = Nothing, Optional exitCode As Nullable(Of Integer) = Nothing, Optional finishTime As Nullable(Of DateTime) = Nothing, Optional detailStatus As String = Nothing)" />
       <MemberSignature Language="F#" Value="new Microsoft.Azure.Management.ContainerInstance.Models.ContainerState : string * Nullable&lt;DateTime&gt; * Nullable&lt;int&gt; * Nullable&lt;DateTime&gt; * string -&gt; Microsoft.Azure.Management.ContainerInstance.Models.ContainerState" Usage="new Microsoft.Azure.Management.ContainerInstance.Models.ContainerState (state, startTime, exitCode, finishTime, detailStatus)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.ContainerInstance</AssemblyName>
-        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="state" Type="System.String" />
@@ -82,16 +80,16 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Management.ContainerInstance.Models.ContainerState.DetailStatus" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property DetailStatus As String" />
       <MemberSignature Language="F#" Value="member this.DetailStatus : string" Usage="Microsoft.Azure.Management.ContainerInstance.Models.ContainerState.DetailStatus" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ DetailStatus { System::String ^ get(); void set(System::String ^ value); };" />
-      <MemberSignature Language="C++ CX" Value="public:&#xA; property Platform::String ^ DetailStatus { Platform::String ^ get(); void set(Platform::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.ContainerInstance</AssemblyName>
-        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="detailStatus")</AttributeName>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty(PropertyName="detailStatus")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty(PropertyName="detailStatus")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -106,20 +104,21 @@
       </Docs>
     </Member>
     <Member MemberName="ExitCode">
-      <MemberSignature Language="C#" Value="public Nullable&lt;int&gt; ExitCode { get; }" />
+      <MemberSignature Language="C#" Value="public int? ExitCode { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;int32&gt; ExitCode" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Management.ContainerInstance.Models.ContainerState.ExitCode" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ExitCode As Nullable(Of Integer)" />
       <MemberSignature Language="F#" Value="member this.ExitCode : Nullable&lt;int&gt;" Usage="Microsoft.Azure.Management.ContainerInstance.Models.ContainerState.ExitCode" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Nullable&lt;int&gt; ExitCode { Nullable&lt;int&gt; get(); void set(Nullable&lt;int&gt; value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.ContainerInstance</AssemblyName>
-        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="exitCode")</AttributeName>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty(PropertyName="exitCode")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty(PropertyName="exitCode")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -135,20 +134,21 @@
       </Docs>
     </Member>
     <Member MemberName="FinishTime">
-      <MemberSignature Language="C#" Value="public Nullable&lt;DateTime&gt; FinishTime { get; }" />
+      <MemberSignature Language="C#" Value="public DateTime? FinishTime { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;valuetype System.DateTime&gt; FinishTime" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Management.ContainerInstance.Models.ContainerState.FinishTime" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property FinishTime As Nullable(Of DateTime)" />
       <MemberSignature Language="F#" Value="member this.FinishTime : Nullable&lt;DateTime&gt;" Usage="Microsoft.Azure.Management.ContainerInstance.Models.ContainerState.FinishTime" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Nullable&lt;DateTime&gt; FinishTime { Nullable&lt;DateTime&gt; get(); void set(Nullable&lt;DateTime&gt; value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.ContainerInstance</AssemblyName>
-        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="finishTime")</AttributeName>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty(PropertyName="finishTime")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty(PropertyName="finishTime")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -163,20 +163,21 @@
       </Docs>
     </Member>
     <Member MemberName="StartTime">
-      <MemberSignature Language="C#" Value="public Nullable&lt;DateTime&gt; StartTime { get; }" />
+      <MemberSignature Language="C#" Value="public DateTime? StartTime { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;valuetype System.DateTime&gt; StartTime" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Management.ContainerInstance.Models.ContainerState.StartTime" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property StartTime As Nullable(Of DateTime)" />
       <MemberSignature Language="F#" Value="member this.StartTime : Nullable&lt;DateTime&gt;" Usage="Microsoft.Azure.Management.ContainerInstance.Models.ContainerState.StartTime" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Nullable&lt;DateTime&gt; StartTime { Nullable&lt;DateTime&gt; get(); void set(Nullable&lt;DateTime&gt; value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.ContainerInstance</AssemblyName>
-        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="startTime")</AttributeName>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty(PropertyName="startTime")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty(PropertyName="startTime")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -196,16 +197,16 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Management.ContainerInstance.Models.ContainerState.State" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property State As String" />
       <MemberSignature Language="F#" Value="member this.State : string" Usage="Microsoft.Azure.Management.ContainerInstance.Models.ContainerState.State" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ State { System::String ^ get(); void set(System::String ^ value); };" />
-      <MemberSignature Language="C++ CX" Value="public:&#xA; property Platform::String ^ State { Platform::String ^ get(); void set(Platform::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.ContainerInstance</AssemblyName>
-        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="state")</AttributeName>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty(PropertyName="state")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty(PropertyName="state")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>

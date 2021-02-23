@@ -1,11 +1,9 @@
-﻿<Type Name="Operation" FullName="Microsoft.Azure.Management.Sql.Models.Operation">
+<Type Name="Operation" FullName="Microsoft.Azure.Management.Sql.Models.Operation">
   <TypeSignature Language="C#" Value="public class Operation" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit Operation extends System.Object" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Azure.Management.Sql.Models.Operation" />
   <TypeSignature Language="VB.NET" Value="Public Class Operation" />
   <TypeSignature Language="F#" Value="type Operation = class" />
-  <TypeSignature Language="C++ CLI" Value="public ref class Operation" />
-  <TypeSignature Language="C++ WINRT" Value="[Windows::Foundation::Metadata::WebHostHidden]&#xA;class Operation" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Azure.Management.Sql</AssemblyName>
     <AssemblyVersion>1.0.0.0</AssemblyVersion>
@@ -26,9 +24,6 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Management.Sql.Models.Operation.#ctor" />
       <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; Operation();" />
-      <MemberSignature Language="C++ CX" Value="public:&#xA; Operation();" />
-      <MemberSignature Language="C++ WINRT" Value=" Operation();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Sql</AssemblyName>
@@ -43,10 +38,10 @@
       </Docs>
     </Member>
     <Member MemberName=".ctor">
-      <MemberSignature Language="C#" Value="public Operation (string name = null, Microsoft.Azure.Management.Sql.Models.OperationDisplay display = null, string origin = null, System.Collections.Generic.IDictionary&lt;string,object&gt; properties = null);" />
+      <MemberSignature Language="C#" Value="public Operation (string name = default, Microsoft.Azure.Management.Sql.Models.OperationDisplay display = default, string origin = default, System.Collections.Generic.IDictionary&lt;string,object&gt; properties = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string name, class Microsoft.Azure.Management.Sql.Models.OperationDisplay display, string origin, class System.Collections.Generic.IDictionary`2&lt;string, object&gt; properties) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Management.Sql.Models.Operation.#ctor(System.String,Microsoft.Azure.Management.Sql.Models.OperationDisplay,System.String,System.Collections.Generic.IDictionary{System.String,System.Object})" />
-      <MemberSignature Language="VB.NET" Value="Public Sub New (Optional name As String = null, Optional display As OperationDisplay = null, Optional origin As String = null, Optional properties As IDictionary(Of String, Object) = null)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (Optional name As String = Nothing, Optional display As OperationDisplay = Nothing, Optional origin As String = Nothing, Optional properties As IDictionary(Of String, Object) = Nothing)" />
       <MemberSignature Language="F#" Value="new Microsoft.Azure.Management.Sql.Models.Operation : string * Microsoft.Azure.Management.Sql.Models.OperationDisplay * string * System.Collections.Generic.IDictionary&lt;string, obj&gt; -&gt; Microsoft.Azure.Management.Sql.Models.Operation" Usage="new Microsoft.Azure.Management.Sql.Models.Operation (name, display, origin, properties)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
@@ -80,7 +75,6 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Management.Sql.Models.Operation.Display" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Display As OperationDisplay" />
       <MemberSignature Language="F#" Value="member this.Display : Microsoft.Azure.Management.Sql.Models.OperationDisplay" Usage="Microsoft.Azure.Management.Sql.Models.Operation.Display" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Azure::Management::Sql::Models::OperationDisplay ^ Display { Microsoft::Azure::Management::Sql::Models::OperationDisplay ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Sql</AssemblyName>
@@ -88,7 +82,8 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="display")</AttributeName>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty(PropertyName="display")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty(PropertyName="display")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -109,8 +104,6 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Management.Sql.Models.Operation.Name" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Name As String" />
       <MemberSignature Language="F#" Value="member this.Name : string" Usage="Microsoft.Azure.Management.Sql.Models.Operation.Name" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Name { System::String ^ get(); };" />
-      <MemberSignature Language="C++ CX" Value="public:&#xA; property Platform::String ^ Name { Platform::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Sql</AssemblyName>
@@ -118,7 +111,8 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="name")</AttributeName>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty(PropertyName="name")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty(PropertyName="name")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -139,8 +133,6 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Management.Sql.Models.Operation.Origin" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Origin As String" />
       <MemberSignature Language="F#" Value="member this.Origin : string" Usage="Microsoft.Azure.Management.Sql.Models.Operation.Origin" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Origin { System::String ^ get(); };" />
-      <MemberSignature Language="C++ CX" Value="public:&#xA; property Platform::String ^ Origin { Platform::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Sql</AssemblyName>
@@ -148,7 +140,8 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="origin")</AttributeName>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty(PropertyName="origin")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty(PropertyName="origin")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -169,7 +162,6 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Management.Sql.Models.Operation.Properties" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Properties As IDictionary(Of String, Object)" />
       <MemberSignature Language="F#" Value="member this.Properties : System.Collections.Generic.IDictionary&lt;string, obj&gt;" Usage="Microsoft.Azure.Management.Sql.Models.Operation.Properties" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::Generic::IDictionary&lt;System::String ^, System::Object ^&gt; ^ Properties { System::Collections::Generic::IDictionary&lt;System::String ^, System::Object ^&gt; ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Sql</AssemblyName>
@@ -177,7 +169,8 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="properties")</AttributeName>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty(PropertyName="properties")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty(PropertyName="properties")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>

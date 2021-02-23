@@ -1,13 +1,12 @@
-﻿<Type Name="KeyValueStoreReplicaSettings" FullName="System.Fabric.KeyValueStoreReplicaSettings">
+<Type Name="KeyValueStoreReplicaSettings" FullName="System.Fabric.KeyValueStoreReplicaSettings">
   <TypeSignature Language="C#" Value="public class KeyValueStoreReplicaSettings" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit KeyValueStoreReplicaSettings extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.Fabric.KeyValueStoreReplicaSettings" />
   <TypeSignature Language="VB.NET" Value="Public Class KeyValueStoreReplicaSettings" />
   <TypeSignature Language="F#" Value="type KeyValueStoreReplicaSettings = class" />
-  <TypeSignature Language="C++ CLI" Value="public ref class KeyValueStoreReplicaSettings" />
   <AssemblyInfo>
     <AssemblyName>System.Fabric</AssemblyName>
-    <AssemblyVersion>6.0.0.0</AssemblyVersion>
+    <AssemblyVersion>7.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
@@ -25,13 +24,10 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Fabric.KeyValueStoreReplicaSettings.#ctor" />
       <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; KeyValueStoreReplicaSettings();" />
-      <MemberSignature Language="C++ CX" Value="public:&#xA; KeyValueStoreReplicaSettings();" />
-      <MemberSignature Language="C++ WINRT" Value=" KeyValueStoreReplicaSettings();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Fabric</AssemblyName>
-        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
@@ -41,18 +37,39 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <Member MemberName="DisableTombstoneCleanup">
+      <MemberSignature Language="C#" Value="public bool DisableTombstoneCleanup { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool DisableTombstoneCleanup" />
+      <MemberSignature Language="DocId" Value="P:System.Fabric.KeyValueStoreReplicaSettings.DisableTombstoneCleanup" />
+      <MemberSignature Language="VB.NET" Value="Public Property DisableTombstoneCleanup As Boolean" />
+      <MemberSignature Language="F#" Value="member this.DisableTombstoneCleanup : bool with get, set" Usage="System.Fabric.KeyValueStoreReplicaSettings.DisableTombstoneCleanup" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Fabric</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Disable or enable tombstone cleanup on <see cref="T:System.Fabric.KeyValueStoreReplica" /></summary>
+        <value>
+            Returns true if disabled, false otherwise.
+            </value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
     <Member MemberName="EnableCopyNotificationPrefetch">
       <MemberSignature Language="C#" Value="public bool EnableCopyNotificationPrefetch { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool EnableCopyNotificationPrefetch" />
       <MemberSignature Language="DocId" Value="P:System.Fabric.KeyValueStoreReplicaSettings.EnableCopyNotificationPrefetch" />
       <MemberSignature Language="VB.NET" Value="Public Property EnableCopyNotificationPrefetch As Boolean" />
       <MemberSignature Language="F#" Value="member this.EnableCopyNotificationPrefetch : bool with get, set" Usage="System.Fabric.KeyValueStoreReplicaSettings.EnableCopyNotificationPrefetch" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool EnableCopyNotificationPrefetch { bool get(); void set(bool value); };" />
-      <MemberSignature Language="C++ CX" Value="public:&#xA; property bool EnableCopyNotificationPrefetch { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Fabric</AssemblyName>
-        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
@@ -73,11 +90,10 @@
       <MemberSignature Language="DocId" Value="P:System.Fabric.KeyValueStoreReplicaSettings.FullCopyMode" />
       <MemberSignature Language="VB.NET" Value="Public Property FullCopyMode As KeyValueStoreReplica.FullCopyMode" />
       <MemberSignature Language="F#" Value="member this.FullCopyMode : System.Fabric.KeyValueStoreReplica.FullCopyMode with get, set" Usage="System.Fabric.KeyValueStoreReplicaSettings.FullCopyMode" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Fabric::KeyValueStoreReplica::FullCopyMode FullCopyMode { System::Fabric::KeyValueStoreReplica::FullCopyMode get(); void set(System::Fabric::KeyValueStoreReplica::FullCopyMode value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Fabric</AssemblyName>
-        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Fabric.KeyValueStoreReplica+FullCopyMode</ReturnType>
@@ -91,18 +107,38 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <Member MemberName="LogicalCopyProbabilityInPercent">
+      <MemberSignature Language="C#" Value="public int LogicalCopyProbabilityInPercent { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 LogicalCopyProbabilityInPercent" />
+      <MemberSignature Language="DocId" Value="P:System.Fabric.KeyValueStoreReplicaSettings.LogicalCopyProbabilityInPercent" />
+      <MemberSignature Language="VB.NET" Value="Public Property LogicalCopyProbabilityInPercent As Integer" />
+      <MemberSignature Language="F#" Value="member this.LogicalCopyProbabilityInPercent : int with get, set" Usage="System.Fabric.KeyValueStoreReplicaSettings.LogicalCopyProbabilityInPercent" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Fabric</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets or sets a value indicating the probablity with which logical copy occurs during full build.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
     <Member MemberName="LogTruncationIntervalInMinutes">
       <MemberSignature Language="C#" Value="public int LogTruncationIntervalInMinutes { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 LogTruncationIntervalInMinutes" />
       <MemberSignature Language="DocId" Value="P:System.Fabric.KeyValueStoreReplicaSettings.LogTruncationIntervalInMinutes" />
       <MemberSignature Language="VB.NET" Value="Public Property LogTruncationIntervalInMinutes As Integer" />
       <MemberSignature Language="F#" Value="member this.LogTruncationIntervalInMinutes : int with get, set" Usage="System.Fabric.KeyValueStoreReplicaSettings.LogTruncationIntervalInMinutes" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int LogTruncationIntervalInMinutes { int get(); void set(int value); };" />
-      <MemberSignature Language="C++ CX" Value="public:&#xA; property int LogTruncationIntervalInMinutes { int get(); void set(int value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Fabric</AssemblyName>
-        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
@@ -116,17 +152,38 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <Member MemberName="RunTransactionCommitContinuationsAsynchronously">
+      <MemberSignature Language="C#" Value="public bool RunTransactionCommitContinuationsAsynchronously { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool RunTransactionCommitContinuationsAsynchronously" />
+      <MemberSignature Language="DocId" Value="P:System.Fabric.KeyValueStoreReplicaSettings.RunTransactionCommitContinuationsAsynchronously" />
+      <MemberSignature Language="VB.NET" Value="Public Property RunTransactionCommitContinuationsAsynchronously As Boolean" />
+      <MemberSignature Language="F#" Value="member this.RunTransactionCommitContinuationsAsynchronously : bool with get, set" Usage="System.Fabric.KeyValueStoreReplicaSettings.RunTransactionCommitContinuationsAsynchronously" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Fabric</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <para>Setting this property to true allows continuations to transaction commit operation run asynchronously.</para>
+        </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
     <Member MemberName="SecondaryNotificationMode">
       <MemberSignature Language="C#" Value="public System.Fabric.KeyValueStoreReplica.SecondaryNotificationMode SecondaryNotificationMode { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Fabric.KeyValueStoreReplica/SecondaryNotificationMode SecondaryNotificationMode" />
       <MemberSignature Language="DocId" Value="P:System.Fabric.KeyValueStoreReplicaSettings.SecondaryNotificationMode" />
       <MemberSignature Language="VB.NET" Value="Public Property SecondaryNotificationMode As KeyValueStoreReplica.SecondaryNotificationMode" />
       <MemberSignature Language="F#" Value="member this.SecondaryNotificationMode : System.Fabric.KeyValueStoreReplica.SecondaryNotificationMode with get, set" Usage="System.Fabric.KeyValueStoreReplicaSettings.SecondaryNotificationMode" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Fabric::KeyValueStoreReplica::SecondaryNotificationMode SecondaryNotificationMode { System::Fabric::KeyValueStoreReplica::SecondaryNotificationMode get(); void set(System::Fabric::KeyValueStoreReplica::SecondaryNotificationMode value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Fabric</AssemblyName>
-        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Fabric.KeyValueStoreReplica+SecondaryNotificationMode</ReturnType>
@@ -146,11 +203,10 @@
       <MemberSignature Language="DocId" Value="P:System.Fabric.KeyValueStoreReplicaSettings.TransactionDrainTimeout" />
       <MemberSignature Language="VB.NET" Value="Public Property TransactionDrainTimeout As TimeSpan" />
       <MemberSignature Language="F#" Value="member this.TransactionDrainTimeout : TimeSpan with get, set" Usage="System.Fabric.KeyValueStoreReplicaSettings.TransactionDrainTimeout" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property TimeSpan TransactionDrainTimeout { TimeSpan get(); void set(TimeSpan value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Fabric</AssemblyName>
-        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.TimeSpan</ReturnType>

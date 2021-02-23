@@ -1,10 +1,28 @@
 <?xml version="1.0" encoding="utf-8"?>
 <filter>
   <apiFilter apply="true">
+    <namespaceFilter name="AspNetCore">
+      <typeFilter name="*" expose="false" />
+    </namespaceFilter>
+    <namespaceFilter name="Microsoft.CognitiveServices.Speech.Internal">
+      <typeFilter name="*" expose="false" />
+    </namespaceFilter>
     <namespaceFilter name="Microsoft.Practices.EnterpriseLibrary.TransientFaultHandling">
       <typeFilter name="*" expose="false" />
     </namespaceFilter>
+    <namespaceFilter name="Microsoft.Rest.Azure.Authentication.Internal">
+      <typeFilter name="*" expose="false" />
+    </namespaceFilter>
     <namespaceFilter name="Microsoft.IdentityModel.Clients.ActiveDirectory.Exceptions">
+      <typeFilter name="*" expose="false" />
+    </namespaceFilter>
+    <namespaceFilter name="Microsoft.Identity.Client.Internal.UI">
+      <typeFilter name="*" expose="false" />
+    </namespaceFilter>
+    <namespaceFilter name="Microsoft.IdentityModel.Clients.ActiveDirectory.Internal">
+      <typeFilter name="*" expose="false" />
+    </namespaceFilter>
+    <namespaceFilter name="Microsoft.IdentityModel.Clients.ActiveDirectory.Native">
       <typeFilter name="*" expose="false" />
     </namespaceFilter>
     <namespaceFilter name="Owin">

@@ -1,13 +1,12 @@
-﻿<Type Name="RedisManagementClient" FullName="Microsoft.Azure.Management.Redis.RedisManagementClient">
+<Type Name="RedisManagementClient" FullName="Microsoft.Azure.Management.Redis.RedisManagementClient">
   <TypeSignature Language="C#" Value="public class RedisManagementClient : Microsoft.Rest.ServiceClient&lt;Microsoft.Azure.Management.Redis.RedisManagementClient&gt;, IDisposable, Microsoft.Azure.Management.Redis.IRedisManagementClient, Microsoft.Rest.Azure.IAzureClient" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit RedisManagementClient extends Microsoft.Rest.ServiceClient`1&lt;class Microsoft.Azure.Management.Redis.RedisManagementClient&gt; implements class Microsoft.Azure.Management.Redis.IRedisManagementClient, class Microsoft.Rest.Azure.IAzureClient, class System.IDisposable" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Azure.Management.Redis.RedisManagementClient" />
   <TypeSignature Language="VB.NET" Value="Public Class RedisManagementClient&#xA;Inherits ServiceClient(Of RedisManagementClient)&#xA;Implements IAzureClient, IDisposable, IRedisManagementClient" />
   <TypeSignature Language="F#" Value="type RedisManagementClient = class&#xA;    inherit ServiceClient&lt;RedisManagementClient&gt;&#xA;    interface IRedisManagementClient&#xA;    interface IDisposable&#xA;    interface IAzureClient" />
-  <TypeSignature Language="C++ CLI" Value="public ref class RedisManagementClient : Microsoft::Rest::ServiceClient&lt;Microsoft::Azure::Management::Redis::RedisManagementClient ^&gt;, IDisposable, Microsoft::Azure::Management::Redis::IRedisManagementClient, Microsoft::Rest::Azure::IAzureClient" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Azure.Management.Redis</AssemblyName>
-    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+    <AssemblyVersion>5.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>Microsoft.Rest.ServiceClient&lt;Microsoft.Azure.Management.Redis.RedisManagementClient&gt;</BaseTypeName>
@@ -39,17 +38,17 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Management.Redis.RedisManagementClient.#ctor(System.Net.Http.DelegatingHandler[])" />
       <MemberSignature Language="VB.NET" Value="Protected Sub New (ParamArray handlers As DelegatingHandler())" />
       <MemberSignature Language="F#" Value="new Microsoft.Azure.Management.Redis.RedisManagementClient : System.Net.Http.DelegatingHandler[] -&gt; Microsoft.Azure.Management.Redis.RedisManagementClient" Usage="new Microsoft.Azure.Management.Redis.RedisManagementClient handlers" />
-      <MemberSignature Language="C++ CLI" Value="protected:&#xA; RedisManagementClient(... cli::array &lt;System::Net::Http::DelegatingHandler ^&gt; ^ handlers);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Redis</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="handlers" Type="System.Net.Http.DelegatingHandler[]">
           <Attributes>
             <Attribute>
-              <AttributeName>System.ParamArray</AttributeName>
+              <AttributeName Language="C#">[System.ParamArray]</AttributeName>
+              <AttributeName Language="F#">[&lt;System.ParamArray&gt;]</AttributeName>
             </Attribute>
           </Attributes>
         </Parameter>
@@ -70,18 +69,18 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Management.Redis.RedisManagementClient.#ctor(Microsoft.Rest.ServiceClientCredentials,System.Net.Http.DelegatingHandler[])" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (credentials As ServiceClientCredentials, ParamArray handlers As DelegatingHandler())" />
       <MemberSignature Language="F#" Value="new Microsoft.Azure.Management.Redis.RedisManagementClient : Microsoft.Rest.ServiceClientCredentials * System.Net.Http.DelegatingHandler[] -&gt; Microsoft.Azure.Management.Redis.RedisManagementClient" Usage="new Microsoft.Azure.Management.Redis.RedisManagementClient (credentials, handlers)" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; RedisManagementClient(Microsoft::Rest::ServiceClientCredentials ^ credentials, ... cli::array &lt;System::Net::Http::DelegatingHandler ^&gt; ^ handlers);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Redis</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="credentials" Type="Microsoft.Rest.ServiceClientCredentials" />
         <Parameter Name="handlers" Type="System.Net.Http.DelegatingHandler[]">
           <Attributes>
             <Attribute>
-              <AttributeName>System.ParamArray</AttributeName>
+              <AttributeName Language="C#">[System.ParamArray]</AttributeName>
+              <AttributeName Language="F#">[&lt;System.ParamArray&gt;]</AttributeName>
             </Attribute>
           </Attributes>
         </Parameter>
@@ -103,23 +102,50 @@
       </Docs>
     </Member>
     <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="protected RedisManagementClient (System.Net.Http.HttpClient httpClient, bool disposeHttpClient);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor(class System.Net.Http.HttpClient httpClient, bool disposeHttpClient) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Management.Redis.RedisManagementClient.#ctor(System.Net.Http.HttpClient,System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Protected Sub New (httpClient As HttpClient, disposeHttpClient As Boolean)" />
+      <MemberSignature Language="F#" Value="new Microsoft.Azure.Management.Redis.RedisManagementClient : System.Net.Http.HttpClient * bool -&gt; Microsoft.Azure.Management.Redis.RedisManagementClient" Usage="new Microsoft.Azure.Management.Redis.RedisManagementClient (httpClient, disposeHttpClient)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Azure.Management.Redis</AssemblyName>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="httpClient" Type="System.Net.Http.HttpClient" />
+        <Parameter Name="disposeHttpClient" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="httpClient">
+            HttpClient to be used
+            </param>
+        <param name="disposeHttpClient">
+            True: will dispose the provided httpClient on calling RedisManagementClient.Dispose(). False: will not dispose provided httpClient</param>
+        <summary>
+            Initializes a new instance of the RedisManagementClient class.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="protected RedisManagementClient (System.Net.Http.HttpClientHandler rootHandler, params System.Net.Http.DelegatingHandler[] handlers);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor(class System.Net.Http.HttpClientHandler rootHandler, class System.Net.Http.DelegatingHandler[] handlers) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Management.Redis.RedisManagementClient.#ctor(System.Net.Http.HttpClientHandler,System.Net.Http.DelegatingHandler[])" />
       <MemberSignature Language="VB.NET" Value="Protected Sub New (rootHandler As HttpClientHandler, ParamArray handlers As DelegatingHandler())" />
       <MemberSignature Language="F#" Value="new Microsoft.Azure.Management.Redis.RedisManagementClient : System.Net.Http.HttpClientHandler * System.Net.Http.DelegatingHandler[] -&gt; Microsoft.Azure.Management.Redis.RedisManagementClient" Usage="new Microsoft.Azure.Management.Redis.RedisManagementClient (rootHandler, handlers)" />
-      <MemberSignature Language="C++ CLI" Value="protected:&#xA; RedisManagementClient(System::Net::Http::HttpClientHandler ^ rootHandler, ... cli::array &lt;System::Net::Http::DelegatingHandler ^&gt; ^ handlers);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Redis</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="rootHandler" Type="System.Net.Http.HttpClientHandler" />
         <Parameter Name="handlers" Type="System.Net.Http.DelegatingHandler[]">
           <Attributes>
             <Attribute>
-              <AttributeName>System.ParamArray</AttributeName>
+              <AttributeName Language="C#">[System.ParamArray]</AttributeName>
+              <AttributeName Language="F#">[&lt;System.ParamArray&gt;]</AttributeName>
             </Attribute>
           </Attributes>
         </Parameter>
@@ -143,18 +169,18 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Management.Redis.RedisManagementClient.#ctor(System.Uri,System.Net.Http.DelegatingHandler[])" />
       <MemberSignature Language="VB.NET" Value="Protected Sub New (baseUri As Uri, ParamArray handlers As DelegatingHandler())" />
       <MemberSignature Language="F#" Value="new Microsoft.Azure.Management.Redis.RedisManagementClient : Uri * System.Net.Http.DelegatingHandler[] -&gt; Microsoft.Azure.Management.Redis.RedisManagementClient" Usage="new Microsoft.Azure.Management.Redis.RedisManagementClient (baseUri, handlers)" />
-      <MemberSignature Language="C++ CLI" Value="protected:&#xA; RedisManagementClient(Uri ^ baseUri, ... cli::array &lt;System::Net::Http::DelegatingHandler ^&gt; ^ handlers);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Redis</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="baseUri" Type="System.Uri" />
         <Parameter Name="handlers" Type="System.Net.Http.DelegatingHandler[]">
           <Attributes>
             <Attribute>
-              <AttributeName>System.ParamArray</AttributeName>
+              <AttributeName Language="C#">[System.ParamArray]</AttributeName>
+              <AttributeName Language="F#">[&lt;System.ParamArray&gt;]</AttributeName>
             </Attribute>
           </Attributes>
         </Parameter>
@@ -176,16 +202,49 @@
       </Docs>
     </Member>
     <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public RedisManagementClient (Microsoft.Rest.ServiceClientCredentials credentials, System.Net.Http.HttpClient httpClient, bool disposeHttpClient);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class Microsoft.Rest.ServiceClientCredentials credentials, class System.Net.Http.HttpClient httpClient, bool disposeHttpClient) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Management.Redis.RedisManagementClient.#ctor(Microsoft.Rest.ServiceClientCredentials,System.Net.Http.HttpClient,System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (credentials As ServiceClientCredentials, httpClient As HttpClient, disposeHttpClient As Boolean)" />
+      <MemberSignature Language="F#" Value="new Microsoft.Azure.Management.Redis.RedisManagementClient : Microsoft.Rest.ServiceClientCredentials * System.Net.Http.HttpClient * bool -&gt; Microsoft.Azure.Management.Redis.RedisManagementClient" Usage="new Microsoft.Azure.Management.Redis.RedisManagementClient (credentials, httpClient, disposeHttpClient)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Azure.Management.Redis</AssemblyName>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="credentials" Type="Microsoft.Rest.ServiceClientCredentials" />
+        <Parameter Name="httpClient" Type="System.Net.Http.HttpClient" />
+        <Parameter Name="disposeHttpClient" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="credentials">
+            Required. Credentials needed for the client to connect to Azure.
+            </param>
+        <param name="httpClient">
+            HttpClient to be used
+            </param>
+        <param name="disposeHttpClient">
+            True: will dispose the provided httpClient on calling RedisManagementClient.Dispose(). False: will not dispose provided httpClient</param>
+        <summary>
+            Initializes a new instance of the RedisManagementClient class.
+            </summary>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+            Thrown when a required parameter is null
+            </exception>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public RedisManagementClient (Microsoft.Rest.ServiceClientCredentials credentials, System.Net.Http.HttpClientHandler rootHandler, params System.Net.Http.DelegatingHandler[] handlers);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class Microsoft.Rest.ServiceClientCredentials credentials, class System.Net.Http.HttpClientHandler rootHandler, class System.Net.Http.DelegatingHandler[] handlers) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Management.Redis.RedisManagementClient.#ctor(Microsoft.Rest.ServiceClientCredentials,System.Net.Http.HttpClientHandler,System.Net.Http.DelegatingHandler[])" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (credentials As ServiceClientCredentials, rootHandler As HttpClientHandler, ParamArray handlers As DelegatingHandler())" />
       <MemberSignature Language="F#" Value="new Microsoft.Azure.Management.Redis.RedisManagementClient : Microsoft.Rest.ServiceClientCredentials * System.Net.Http.HttpClientHandler * System.Net.Http.DelegatingHandler[] -&gt; Microsoft.Azure.Management.Redis.RedisManagementClient" Usage="new Microsoft.Azure.Management.Redis.RedisManagementClient (credentials, rootHandler, handlers)" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; RedisManagementClient(Microsoft::Rest::ServiceClientCredentials ^ credentials, System::Net::Http::HttpClientHandler ^ rootHandler, ... cli::array &lt;System::Net::Http::DelegatingHandler ^&gt; ^ handlers);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Redis</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="credentials" Type="Microsoft.Rest.ServiceClientCredentials" />
@@ -193,7 +252,8 @@
         <Parameter Name="handlers" Type="System.Net.Http.DelegatingHandler[]">
           <Attributes>
             <Attribute>
-              <AttributeName>System.ParamArray</AttributeName>
+              <AttributeName Language="C#">[System.ParamArray]</AttributeName>
+              <AttributeName Language="F#">[&lt;System.ParamArray&gt;]</AttributeName>
             </Attribute>
           </Attributes>
         </Parameter>
@@ -223,11 +283,10 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Management.Redis.RedisManagementClient.#ctor(System.Uri,Microsoft.Rest.ServiceClientCredentials,System.Net.Http.DelegatingHandler[])" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (baseUri As Uri, credentials As ServiceClientCredentials, ParamArray handlers As DelegatingHandler())" />
       <MemberSignature Language="F#" Value="new Microsoft.Azure.Management.Redis.RedisManagementClient : Uri * Microsoft.Rest.ServiceClientCredentials * System.Net.Http.DelegatingHandler[] -&gt; Microsoft.Azure.Management.Redis.RedisManagementClient" Usage="new Microsoft.Azure.Management.Redis.RedisManagementClient (baseUri, credentials, handlers)" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; RedisManagementClient(Uri ^ baseUri, Microsoft::Rest::ServiceClientCredentials ^ credentials, ... cli::array &lt;System::Net::Http::DelegatingHandler ^&gt; ^ handlers);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Redis</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="baseUri" Type="System.Uri" />
@@ -235,7 +294,8 @@
         <Parameter Name="handlers" Type="System.Net.Http.DelegatingHandler[]">
           <Attributes>
             <Attribute>
-              <AttributeName>System.ParamArray</AttributeName>
+              <AttributeName Language="C#">[System.ParamArray]</AttributeName>
+              <AttributeName Language="F#">[&lt;System.ParamArray&gt;]</AttributeName>
             </Attribute>
           </Attributes>
         </Parameter>
@@ -265,11 +325,10 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Management.Redis.RedisManagementClient.#ctor(System.Uri,System.Net.Http.HttpClientHandler,System.Net.Http.DelegatingHandler[])" />
       <MemberSignature Language="VB.NET" Value="Protected Sub New (baseUri As Uri, rootHandler As HttpClientHandler, ParamArray handlers As DelegatingHandler())" />
       <MemberSignature Language="F#" Value="new Microsoft.Azure.Management.Redis.RedisManagementClient : Uri * System.Net.Http.HttpClientHandler * System.Net.Http.DelegatingHandler[] -&gt; Microsoft.Azure.Management.Redis.RedisManagementClient" Usage="new Microsoft.Azure.Management.Redis.RedisManagementClient (baseUri, rootHandler, handlers)" />
-      <MemberSignature Language="C++ CLI" Value="protected:&#xA; RedisManagementClient(Uri ^ baseUri, System::Net::Http::HttpClientHandler ^ rootHandler, ... cli::array &lt;System::Net::Http::DelegatingHandler ^&gt; ^ handlers);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Redis</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="baseUri" Type="System.Uri" />
@@ -277,7 +336,8 @@
         <Parameter Name="handlers" Type="System.Net.Http.DelegatingHandler[]">
           <Attributes>
             <Attribute>
-              <AttributeName>System.ParamArray</AttributeName>
+              <AttributeName Language="C#">[System.ParamArray]</AttributeName>
+              <AttributeName Language="F#">[&lt;System.ParamArray&gt;]</AttributeName>
             </Attribute>
           </Attributes>
         </Parameter>
@@ -307,11 +367,10 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Management.Redis.RedisManagementClient.#ctor(System.Uri,Microsoft.Rest.ServiceClientCredentials,System.Net.Http.HttpClientHandler,System.Net.Http.DelegatingHandler[])" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (baseUri As Uri, credentials As ServiceClientCredentials, rootHandler As HttpClientHandler, ParamArray handlers As DelegatingHandler())" />
       <MemberSignature Language="F#" Value="new Microsoft.Azure.Management.Redis.RedisManagementClient : Uri * Microsoft.Rest.ServiceClientCredentials * System.Net.Http.HttpClientHandler * System.Net.Http.DelegatingHandler[] -&gt; Microsoft.Azure.Management.Redis.RedisManagementClient" Usage="new Microsoft.Azure.Management.Redis.RedisManagementClient (baseUri, credentials, rootHandler, handlers)" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; RedisManagementClient(Uri ^ baseUri, Microsoft::Rest::ServiceClientCredentials ^ credentials, System::Net::Http::HttpClientHandler ^ rootHandler, ... cli::array &lt;System::Net::Http::DelegatingHandler ^&gt; ^ handlers);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Redis</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="baseUri" Type="System.Uri" />
@@ -320,7 +379,8 @@
         <Parameter Name="handlers" Type="System.Net.Http.DelegatingHandler[]">
           <Attributes>
             <Attribute>
-              <AttributeName>System.ParamArray</AttributeName>
+              <AttributeName Language="C#">[System.ParamArray]</AttributeName>
+              <AttributeName Language="F#">[&lt;System.ParamArray&gt;]</AttributeName>
             </Attribute>
           </Attributes>
         </Parameter>
@@ -353,22 +413,20 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Management.Redis.RedisManagementClient.AcceptLanguage" />
       <MemberSignature Language="VB.NET" Value="Public Property AcceptLanguage As String" />
       <MemberSignature Language="F#" Value="member this.AcceptLanguage : string with get, set" Usage="Microsoft.Azure.Management.Redis.RedisManagementClient.AcceptLanguage" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ AcceptLanguage { System::String ^ get(); void set(System::String ^ value); };" />
-      <MemberSignature Language="C++ CX" Value="public:&#xA; property Platform::String ^ AcceptLanguage { Platform::String ^ get(); void set(Platform::String ^ value); };" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:Microsoft.Azure.Management.Redis.IRedisManagementClient.AcceptLanguage</InterfaceMember>
       </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Redis</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
         <summary>
-            Gets or sets the preferred language for the response.
+            The preferred language for the response.
             </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
@@ -380,12 +438,10 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Management.Redis.RedisManagementClient.ApiVersion" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ApiVersion As String" />
       <MemberSignature Language="F#" Value="member this.ApiVersion : string" Usage="Microsoft.Azure.Management.Redis.RedisManagementClient.ApiVersion" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ ApiVersion { System::String ^ get(); };" />
-      <MemberSignature Language="C++ CX" Value="public:&#xA; property Platform::String ^ ApiVersion { Platform::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Redis</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -404,14 +460,13 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Management.Redis.RedisManagementClient.BaseUri" />
       <MemberSignature Language="VB.NET" Value="Public Property BaseUri As Uri" />
       <MemberSignature Language="F#" Value="member this.BaseUri : Uri with get, set" Usage="Microsoft.Azure.Management.Redis.RedisManagementClient.BaseUri" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Uri ^ BaseUri { Uri ^ get(); void set(Uri ^ value); };" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:Microsoft.Azure.Management.Redis.IRedisManagementClient.BaseUri</InterfaceMember>
       </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Redis</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Uri</ReturnType>
@@ -430,12 +485,10 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Management.Redis.RedisManagementClient.Credentials" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Credentials As ServiceClientCredentials" />
       <MemberSignature Language="F#" Value="member this.Credentials : Microsoft.Rest.ServiceClientCredentials" Usage="Microsoft.Azure.Management.Redis.RedisManagementClient.Credentials" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Rest::ServiceClientCredentials ^ Credentials { Microsoft::Rest::ServiceClientCredentials ^ get(); };" />
-      <MemberSignature Language="C++ CX" Value="public:&#xA; property Microsoft::Rest::ServiceClientCredentials ^ Credentials { Microsoft::Rest::ServiceClientCredentials ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Redis</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Rest.ServiceClientCredentials</ReturnType>
@@ -454,11 +507,10 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Management.Redis.RedisManagementClient.DeserializationSettings" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property DeserializationSettings As JsonSerializerSettings" />
       <MemberSignature Language="F#" Value="member this.DeserializationSettings : Newtonsoft.Json.JsonSerializerSettings" Usage="Microsoft.Azure.Management.Redis.RedisManagementClient.DeserializationSettings" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Newtonsoft::Json::JsonSerializerSettings ^ DeserializationSettings { Newtonsoft::Json::JsonSerializerSettings ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Redis</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Newtonsoft.Json.JsonSerializerSettings</ReturnType>
@@ -477,12 +529,10 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Management.Redis.RedisManagementClient.FirewallRules" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property FirewallRules As IFirewallRulesOperations" />
       <MemberSignature Language="F#" Value="member this.FirewallRules : Microsoft.Azure.Management.Redis.IFirewallRulesOperations" Usage="Microsoft.Azure.Management.Redis.RedisManagementClient.FirewallRules" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Azure::Management::Redis::IFirewallRulesOperations ^ FirewallRules { Microsoft::Azure::Management::Redis::IFirewallRulesOperations ^ get(); };" />
-      <MemberSignature Language="C++ CX" Value="public:&#xA; property Microsoft::Azure::Management::Redis::IFirewallRulesOperations ^ FirewallRules { Microsoft::Azure::Management::Redis::IFirewallRulesOperations ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Redis</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Azure.Management.Redis.IFirewallRulesOperations</ReturnType>
@@ -496,12 +546,11 @@
       </Docs>
     </Member>
     <Member MemberName="GenerateClientRequestId">
-      <MemberSignature Language="C#" Value="public Nullable&lt;bool&gt; GenerateClientRequestId { get; set; }" />
+      <MemberSignature Language="C#" Value="public bool? GenerateClientRequestId { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;bool&gt; GenerateClientRequestId" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Management.Redis.RedisManagementClient.GenerateClientRequestId" />
       <MemberSignature Language="VB.NET" Value="Public Property GenerateClientRequestId As Nullable(Of Boolean)" />
       <MemberSignature Language="F#" Value="member this.GenerateClientRequestId : Nullable&lt;bool&gt; with get, set" Usage="Microsoft.Azure.Management.Redis.RedisManagementClient.GenerateClientRequestId" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Nullable&lt;bool&gt; GenerateClientRequestId { Nullable&lt;bool&gt; get(); void set(Nullable&lt;bool&gt; value); };" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:Microsoft.Azure.Management.Redis.IRedisManagementClient.GenerateClientRequestId</InterfaceMember>
@@ -509,15 +558,16 @@
       </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Redis</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Nullable&lt;System.Boolean&gt;</ReturnType>
       </ReturnValue>
       <Docs>
         <summary>
-            When set to true a unique x-ms-client-request-id value is generated and
-            included in each request. Default is true.
+            Whether a unique x-ms-client-request-id should be generated. When set to
+            true a unique x-ms-client-request-id value is generated and included in
+            each request. Default is true.
             </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
@@ -529,12 +579,10 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Management.Redis.RedisManagementClient.LinkedServer" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property LinkedServer As ILinkedServerOperations" />
       <MemberSignature Language="F#" Value="member this.LinkedServer : Microsoft.Azure.Management.Redis.ILinkedServerOperations" Usage="Microsoft.Azure.Management.Redis.RedisManagementClient.LinkedServer" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Azure::Management::Redis::ILinkedServerOperations ^ LinkedServer { Microsoft::Azure::Management::Redis::ILinkedServerOperations ^ get(); };" />
-      <MemberSignature Language="C++ CX" Value="public:&#xA; property Microsoft::Azure::Management::Redis::ILinkedServerOperations ^ LinkedServer { Microsoft::Azure::Management::Redis::ILinkedServerOperations ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Redis</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Azure.Management.Redis.ILinkedServerOperations</ReturnType>
@@ -548,12 +596,11 @@
       </Docs>
     </Member>
     <Member MemberName="LongRunningOperationRetryTimeout">
-      <MemberSignature Language="C#" Value="public Nullable&lt;int&gt; LongRunningOperationRetryTimeout { get; set; }" />
+      <MemberSignature Language="C#" Value="public int? LongRunningOperationRetryTimeout { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;int32&gt; LongRunningOperationRetryTimeout" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Management.Redis.RedisManagementClient.LongRunningOperationRetryTimeout" />
       <MemberSignature Language="VB.NET" Value="Public Property LongRunningOperationRetryTimeout As Nullable(Of Integer)" />
       <MemberSignature Language="F#" Value="member this.LongRunningOperationRetryTimeout : Nullable&lt;int&gt; with get, set" Usage="Microsoft.Azure.Management.Redis.RedisManagementClient.LongRunningOperationRetryTimeout" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Nullable&lt;int&gt; LongRunningOperationRetryTimeout { Nullable&lt;int&gt; get(); void set(Nullable&lt;int&gt; value); };" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:Microsoft.Azure.Management.Redis.IRedisManagementClient.LongRunningOperationRetryTimeout</InterfaceMember>
@@ -561,15 +608,15 @@
       </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Redis</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Nullable&lt;System.Int32&gt;</ReturnType>
       </ReturnValue>
       <Docs>
         <summary>
-            Gets or sets the retry timeout in seconds for Long Running Operations.
-            Default value is 30.
+            The retry timeout in seconds for Long Running Operations. Default value is
+            30.
             </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
@@ -581,12 +628,10 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Management.Redis.RedisManagementClient.Operations" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Operations As IOperations" />
       <MemberSignature Language="F#" Value="member this.Operations : Microsoft.Azure.Management.Redis.IOperations" Usage="Microsoft.Azure.Management.Redis.RedisManagementClient.Operations" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Azure::Management::Redis::IOperations ^ Operations { Microsoft::Azure::Management::Redis::IOperations ^ get(); };" />
-      <MemberSignature Language="C++ CX" Value="public:&#xA; property Microsoft::Azure::Management::Redis::IOperations ^ Operations { Microsoft::Azure::Management::Redis::IOperations ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Redis</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Azure.Management.Redis.IOperations</ReturnType>
@@ -605,12 +650,10 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Management.Redis.RedisManagementClient.PatchSchedules" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property PatchSchedules As IPatchSchedulesOperations" />
       <MemberSignature Language="F#" Value="member this.PatchSchedules : Microsoft.Azure.Management.Redis.IPatchSchedulesOperations" Usage="Microsoft.Azure.Management.Redis.RedisManagementClient.PatchSchedules" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Azure::Management::Redis::IPatchSchedulesOperations ^ PatchSchedules { Microsoft::Azure::Management::Redis::IPatchSchedulesOperations ^ get(); };" />
-      <MemberSignature Language="C++ CX" Value="public:&#xA; property Microsoft::Azure::Management::Redis::IPatchSchedulesOperations ^ PatchSchedules { Microsoft::Azure::Management::Redis::IPatchSchedulesOperations ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Redis</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Azure.Management.Redis.IPatchSchedulesOperations</ReturnType>
@@ -629,12 +672,10 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Management.Redis.RedisManagementClient.Redis" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Redis As IRedisOperations" />
       <MemberSignature Language="F#" Value="member this.Redis : Microsoft.Azure.Management.Redis.IRedisOperations" Usage="Microsoft.Azure.Management.Redis.RedisManagementClient.Redis" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Azure::Management::Redis::IRedisOperations ^ Redis { Microsoft::Azure::Management::Redis::IRedisOperations ^ get(); };" />
-      <MemberSignature Language="C++ CX" Value="public:&#xA; property Microsoft::Azure::Management::Redis::IRedisOperations ^ Redis { Microsoft::Azure::Management::Redis::IRedisOperations ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Redis</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Azure.Management.Redis.IRedisOperations</ReturnType>
@@ -653,11 +694,10 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Management.Redis.RedisManagementClient.SerializationSettings" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property SerializationSettings As JsonSerializerSettings" />
       <MemberSignature Language="F#" Value="member this.SerializationSettings : Newtonsoft.Json.JsonSerializerSettings" Usage="Microsoft.Azure.Management.Redis.RedisManagementClient.SerializationSettings" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Newtonsoft::Json::JsonSerializerSettings ^ SerializationSettings { Newtonsoft::Json::JsonSerializerSettings ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Redis</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Newtonsoft.Json.JsonSerializerSettings</ReturnType>
@@ -676,15 +716,13 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Management.Redis.RedisManagementClient.SubscriptionId" />
       <MemberSignature Language="VB.NET" Value="Public Property SubscriptionId As String" />
       <MemberSignature Language="F#" Value="member this.SubscriptionId : string with get, set" Usage="Microsoft.Azure.Management.Redis.RedisManagementClient.SubscriptionId" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ SubscriptionId { System::String ^ get(); void set(System::String ^ value); };" />
-      <MemberSignature Language="C++ CX" Value="public:&#xA; property Platform::String ^ SubscriptionId { Platform::String ^ get(); void set(Platform::String ^ value); };" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:Microsoft.Azure.Management.Redis.IRedisManagementClient.SubscriptionId</InterfaceMember>
       </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Redis</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>

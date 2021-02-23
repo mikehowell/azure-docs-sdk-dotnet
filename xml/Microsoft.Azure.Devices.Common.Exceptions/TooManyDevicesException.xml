@@ -1,22 +1,41 @@
-﻿<Type Name="TooManyDevicesException" FullName="Microsoft.Azure.Devices.Common.Exceptions.TooManyDevicesException">
+<Type Name="TooManyDevicesException" FullName="Microsoft.Azure.Devices.Common.Exceptions.TooManyDevicesException">
   <TypeSignature Language="C#" Value="public sealed class TooManyDevicesException : Microsoft.Azure.Devices.Common.Exceptions.IotHubException" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable sealed beforefieldinit TooManyDevicesException extends Microsoft.Azure.Devices.Common.Exceptions.IotHubException" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Azure.Devices.Common.Exceptions.TooManyDevicesException" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class TooManyDevicesException&#xA;Inherits IotHubException" />
   <TypeSignature Language="F#" Value="type TooManyDevicesException = class&#xA;    inherit IotHubException" />
-  <TypeSignature Language="C++ CLI" Value="public ref class TooManyDevicesException sealed : Microsoft::Azure::Devices::Common::Exceptions::IotHubException" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Azure.Devices</AssemblyName>
-    <AssemblyVersion>1.0.0.0</AssemblyVersion>
-    <AssemblyVersion>1.16.0.0</AssemblyVersion>
+    <AssemblyVersion>1.18.2.0</AssemblyVersion>
+    <AssemblyVersion>1.18.3.0</AssemblyVersion>
+    <AssemblyVersion>1.18.4.0</AssemblyVersion>
+    <AssemblyVersion>1.19.0.0</AssemblyVersion>
+    <AssemblyVersion>1.20.0.0</AssemblyVersion>
+    <AssemblyVersion>1.20.1.0</AssemblyVersion>
+    <AssemblyVersion>1.21.0.0</AssemblyVersion>
+    <AssemblyVersion>1.22.0.0</AssemblyVersion>
+    <AssemblyVersion>1.27.0.0</AssemblyVersion>
+    <AssemblyVersion>1.27.1.0</AssemblyVersion>
+    <AssemblyVersion>1.27.2.0</AssemblyVersion>
+    <AssemblyVersion>1.27.3.0</AssemblyVersion>
+    <AssemblyVersion>1.28.0.0</AssemblyVersion>
+    <AssemblyVersion>1.28.1.0</AssemblyVersion>
+    <AssemblyVersion>1.29.0.0</AssemblyVersion>
+    <AssemblyVersion>1.30.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>Microsoft.Azure.Devices.Common.Exceptions.IotHubException</BaseTypeName>
   </Base>
   <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName Language="C#">[System.Serializable]</AttributeName>
+      <AttributeName Language="F#">[&lt;System.Serializable&gt;]</AttributeName>
+    </Attribute>
+  </Attributes>
   <Docs>
     <summary>
-            Exception thrown when the list of input devices is too large for an operation 
+            The exception that is thrown when the list of input devices is too large for an operation.
             </summary>
     <remarks>To be added.</remarks>
   </Docs>
@@ -27,22 +46,33 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Devices.Common.Exceptions.TooManyDevicesException.#ctor(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (message As String)" />
       <MemberSignature Language="F#" Value="new Microsoft.Azure.Devices.Common.Exceptions.TooManyDevicesException : string -&gt; Microsoft.Azure.Devices.Common.Exceptions.TooManyDevicesException" Usage="new Microsoft.Azure.Devices.Common.Exceptions.TooManyDevicesException message" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; TooManyDevicesException(System::String ^ message);" />
-      <MemberSignature Language="C++ CX" Value="public:&#xA; TooManyDevicesException(Platform::String ^ message);" />
-      <MemberSignature Language="C++ WINRT" Value=" TooManyDevicesException(std::wstring const &amp; message);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Devices</AssemblyName>
-        <AssemblyVersion>1.0.0.0</AssemblyVersion>
-        <AssemblyVersion>1.16.0.0</AssemblyVersion>
+        <AssemblyVersion>1.18.2.0</AssemblyVersion>
+        <AssemblyVersion>1.18.3.0</AssemblyVersion>
+        <AssemblyVersion>1.18.4.0</AssemblyVersion>
+        <AssemblyVersion>1.19.0.0</AssemblyVersion>
+        <AssemblyVersion>1.20.0.0</AssemblyVersion>
+        <AssemblyVersion>1.20.1.0</AssemblyVersion>
+        <AssemblyVersion>1.21.0.0</AssemblyVersion>
+        <AssemblyVersion>1.22.0.0</AssemblyVersion>
+        <AssemblyVersion>1.27.0.0</AssemblyVersion>
+        <AssemblyVersion>1.27.1.0</AssemblyVersion>
+        <AssemblyVersion>1.27.2.0</AssemblyVersion>
+        <AssemblyVersion>1.27.3.0</AssemblyVersion>
+        <AssemblyVersion>1.28.0.0</AssemblyVersion>
+        <AssemblyVersion>1.28.1.0</AssemblyVersion>
+        <AssemblyVersion>1.29.0.0</AssemblyVersion>
+        <AssemblyVersion>1.30.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="message" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="message"></param>
+        <param name="message">The message that describes the error.</param>
         <summary>
-            ctor which takes an error message
+            Creates an instance of <see cref="T:Microsoft.Azure.Devices.Common.Exceptions.TooManyDevicesException" /> with a specified error message and marks it as non-transient.
             </summary>
         <remarks>To be added.</remarks>
       </Docs>
@@ -53,22 +83,36 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Devices.Common.Exceptions.TooManyDevicesException.#ctor(System.String,System.Exception)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (message As String, innerException As Exception)" />
       <MemberSignature Language="F#" Value="new Microsoft.Azure.Devices.Common.Exceptions.TooManyDevicesException : string * Exception -&gt; Microsoft.Azure.Devices.Common.Exceptions.TooManyDevicesException" Usage="new Microsoft.Azure.Devices.Common.Exceptions.TooManyDevicesException (message, innerException)" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; TooManyDevicesException(System::String ^ message, Exception ^ innerException);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Devices</AssemblyName>
-        <AssemblyVersion>1.0.0.0</AssemblyVersion>
-        <AssemblyVersion>1.16.0.0</AssemblyVersion>
+        <AssemblyVersion>1.18.2.0</AssemblyVersion>
+        <AssemblyVersion>1.18.3.0</AssemblyVersion>
+        <AssemblyVersion>1.18.4.0</AssemblyVersion>
+        <AssemblyVersion>1.19.0.0</AssemblyVersion>
+        <AssemblyVersion>1.20.0.0</AssemblyVersion>
+        <AssemblyVersion>1.20.1.0</AssemblyVersion>
+        <AssemblyVersion>1.21.0.0</AssemblyVersion>
+        <AssemblyVersion>1.22.0.0</AssemblyVersion>
+        <AssemblyVersion>1.27.0.0</AssemblyVersion>
+        <AssemblyVersion>1.27.1.0</AssemblyVersion>
+        <AssemblyVersion>1.27.2.0</AssemblyVersion>
+        <AssemblyVersion>1.27.3.0</AssemblyVersion>
+        <AssemblyVersion>1.28.0.0</AssemblyVersion>
+        <AssemblyVersion>1.28.1.0</AssemblyVersion>
+        <AssemblyVersion>1.29.0.0</AssemblyVersion>
+        <AssemblyVersion>1.30.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="message" Type="System.String" />
         <Parameter Name="innerException" Type="System.Exception" />
       </Parameters>
       <Docs>
-        <param name="message"></param>
-        <param name="innerException"></param>
+        <param name="message">The message that describes the error.</param>
+        <param name="innerException">The exception that is the cause of the current exception.</param>
         <summary>
-            ctor which takes an error message alongwith an inner exception
+            Creates an instance of <see cref="T:Microsoft.Azure.Devices.Common.Exceptions.TooManyDevicesException" /> with a specified error message and
+            a reference to the inner exception that caused this exception, and marks it as non-transient.
             </summary>
         <remarks>To be added.</remarks>
       </Docs>
@@ -79,24 +123,35 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Devices.Common.Exceptions.TooManyDevicesException.#ctor(System.String,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (message As String, trackingId As String)" />
       <MemberSignature Language="F#" Value="new Microsoft.Azure.Devices.Common.Exceptions.TooManyDevicesException : string * string -&gt; Microsoft.Azure.Devices.Common.Exceptions.TooManyDevicesException" Usage="new Microsoft.Azure.Devices.Common.Exceptions.TooManyDevicesException (message, trackingId)" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; TooManyDevicesException(System::String ^ message, System::String ^ trackingId);" />
-      <MemberSignature Language="C++ CX" Value="public:&#xA; TooManyDevicesException(Platform::String ^ message, Platform::String ^ trackingId);" />
-      <MemberSignature Language="C++ WINRT" Value=" TooManyDevicesException(std::wstring const &amp; message, std::wstring const &amp; trackingId);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Devices</AssemblyName>
-        <AssemblyVersion>1.0.0.0</AssemblyVersion>
-        <AssemblyVersion>1.16.0.0</AssemblyVersion>
+        <AssemblyVersion>1.18.2.0</AssemblyVersion>
+        <AssemblyVersion>1.18.3.0</AssemblyVersion>
+        <AssemblyVersion>1.18.4.0</AssemblyVersion>
+        <AssemblyVersion>1.19.0.0</AssemblyVersion>
+        <AssemblyVersion>1.20.0.0</AssemblyVersion>
+        <AssemblyVersion>1.20.1.0</AssemblyVersion>
+        <AssemblyVersion>1.21.0.0</AssemblyVersion>
+        <AssemblyVersion>1.22.0.0</AssemblyVersion>
+        <AssemblyVersion>1.27.0.0</AssemblyVersion>
+        <AssemblyVersion>1.27.1.0</AssemblyVersion>
+        <AssemblyVersion>1.27.2.0</AssemblyVersion>
+        <AssemblyVersion>1.27.3.0</AssemblyVersion>
+        <AssemblyVersion>1.28.0.0</AssemblyVersion>
+        <AssemblyVersion>1.28.1.0</AssemblyVersion>
+        <AssemblyVersion>1.29.0.0</AssemblyVersion>
+        <AssemblyVersion>1.30.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="message" Type="System.String" />
         <Parameter Name="trackingId" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="message"></param>
-        <param name="trackingId"></param>
+        <param name="message">The message that describes the error.</param>
+        <param name="trackingId">The service returned tracking Id associated with this particular error.</param>
         <summary>
-            ctor which takes an error message and a tracking id
+            Creates an instance of <see cref="T:Microsoft.Azure.Devices.Common.Exceptions.TooManyDevicesException" /> with the supplied error message and tracking Id, and marks it as non-transient.
             </summary>
         <remarks>To be added.</remarks>
       </Docs>

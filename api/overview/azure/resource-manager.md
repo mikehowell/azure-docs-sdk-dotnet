@@ -1,17 +1,9 @@
 ---
 title: Azure Resource Manager libraries for .NET
 description: Reference for Azure Resource Manager libraries for .NET
-keywords: Azure, .NET, SDK, API, Resource Manager
-author: camsoper
-ms.author: casoper
-manager: wpickett
 ms.date: 10/19/2017
 ms.topic: reference
-ms.prod: azure
-ms.technology: azure
-ms.devlang: dotnet
 ms.service: multiple
-ms.custom: devcenter, svc-overview
 ---
 
 # Azure Resource Manager libraries for .NET
@@ -32,7 +24,7 @@ Install the [NuGet package](https://www.nuget.org/packages/Microsoft.Azure.Manag
 Install-Package Microsoft.Azure.Management.ResourceManager.Fluent
 ```
 
-```bash
+```dotnetcli
 dotnet add package Microsoft.Azure.Management.ResourceManager.Fluent
 ```
 

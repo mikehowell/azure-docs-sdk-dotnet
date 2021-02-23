@@ -1,18 +1,20 @@
-﻿<Type Name="TelemetryClientExtensions" FullName="Microsoft.ApplicationInsights.TelemetryClientExtensions">
+<Type Name="TelemetryClientExtensions" FullName="Microsoft.ApplicationInsights.TelemetryClientExtensions">
   <TypeSignature Language="C#" Value="public static class TelemetryClientExtensions" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract sealed beforefieldinit TelemetryClientExtensions extends System.Object" />
   <TypeSignature Language="DocId" Value="T:Microsoft.ApplicationInsights.TelemetryClientExtensions" />
   <TypeSignature Language="VB.NET" Value="Public Module TelemetryClientExtensions" />
   <TypeSignature Language="F#" Value="type TelemetryClientExtensions = class" />
-  <TypeSignature Language="C++ CLI" Value="public ref class TelemetryClientExtensions abstract sealed" />
-  <TypeSignature Language="C++ CX" Value="public ref class TelemetryClientExtensions abstract sealed" />
-  <TypeSignature Language="C++ WINRT" Value="class TelemetryClientExtensions abstract sealed" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.ApplicationInsights</AssemblyName>
-    <AssemblyVersion>2.3.0.0</AssemblyVersion>
-    <AssemblyVersion>2.5.0.0</AssemblyVersion>
-    <AssemblyVersion>2.5.1.0</AssemblyVersion>
-    <AssemblyVersion>2.6.0.0</AssemblyVersion>
+    <AssemblyVersion>2.11.0.0</AssemblyVersion>
+    <AssemblyVersion>2.12.0.21496</AssemblyVersion>
+    <AssemblyVersion>2.12.1.36699</AssemblyVersion>
+    <AssemblyVersion>2.13.0.10578</AssemblyVersion>
+    <AssemblyVersion>2.13.1.12554</AssemblyVersion>
+    <AssemblyVersion>2.14.0.17971</AssemblyVersion>
+    <AssemblyVersion>2.15.0.44797</AssemblyVersion>
+    <AssemblyVersion>2.16.0.18277</AssemblyVersion>
+    <AssemblyVersion>2.17.0.146</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
@@ -20,7 +22,8 @@
   <Interfaces />
   <Attributes>
     <Attribute>
-      <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
+      <AttributeName Language="C#">[System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)]</AttributeName>
+      <AttributeName Language="F#">[&lt;System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)&gt;]</AttributeName>
     </Attribute>
   </Attributes>
   <Docs>
@@ -34,12 +37,20 @@
       <MemberSignature Language="C#" Value="public static Microsoft.ApplicationInsights.Extensibility.IOperationHolder&lt;T&gt; StartOperation&lt;T&gt; (this Microsoft.ApplicationInsights.TelemetryClient telemetryClient, System.Diagnostics.Activity activity) where T : Microsoft.ApplicationInsights.Extensibility.Implementation.OperationTelemetrynew();" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Microsoft.ApplicationInsights.Extensibility.IOperationHolder`1&lt;!!T&gt; StartOperation&lt;.ctor (class Microsoft.ApplicationInsights.Extensibility.Implementation.OperationTelemetry) T&gt;(class Microsoft.ApplicationInsights.TelemetryClient telemetryClient, class System.Diagnostics.Activity activity) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.ApplicationInsights.TelemetryClientExtensions.StartOperation``1(Microsoft.ApplicationInsights.TelemetryClient,System.Diagnostics.Activity)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function StartOperation(Of T As {OperationTelemetryNew}) (telemetryClient As TelemetryClient, activity As Activity) As IOperationHolder(Of T)" />
       <MemberSignature Language="F#" Value="static member StartOperation : Microsoft.ApplicationInsights.TelemetryClient * System.Diagnostics.Activity -&gt; Microsoft.ApplicationInsights.Extensibility.IOperationHolder&lt;'T (requires 'T :&gt; Microsoft.ApplicationInsights.Extensibility.Implementation.OperationTelemetry and 'T : (new : unit -&gt; 'T))&gt; (requires 'T :&gt; Microsoft.ApplicationInsights.Extensibility.Implementation.OperationTelemetry and 'T : (new : unit -&gt; 'T))" Usage="Microsoft.ApplicationInsights.TelemetryClientExtensions.StartOperation (telemetryClient, activity)" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename T&gt;&#xA; where T : Microsoft::ApplicationInsights::Extensibility::Implementation::OperationTelemetrygcnew()[System::Runtime::CompilerServices::Extension]&#xA; static Microsoft::ApplicationInsights::Extensibility::IOperationHolder&lt;T&gt; ^ StartOperation(Microsoft::ApplicationInsights::TelemetryClient ^ telemetryClient, System::Diagnostics::Activity ^ activity);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.ApplicationInsights</AssemblyName>
-        <AssemblyVersion>2.6.0.0</AssemblyVersion>
+        <AssemblyVersion>2.11.0.0</AssemblyVersion>
+        <AssemblyVersion>2.12.0.21496</AssemblyVersion>
+        <AssemblyVersion>2.12.1.36699</AssemblyVersion>
+        <AssemblyVersion>2.13.0.10578</AssemblyVersion>
+        <AssemblyVersion>2.13.1.12554</AssemblyVersion>
+        <AssemblyVersion>2.14.0.17971</AssemblyVersion>
+        <AssemblyVersion>2.15.0.44797</AssemblyVersion>
+        <AssemblyVersion>2.16.0.18277</AssemblyVersion>
+        <AssemblyVersion>2.17.0.146</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.ApplicationInsights.Extensibility.IOperationHolder&lt;T&gt;</ReturnType>
@@ -57,27 +68,59 @@
         <Parameter Name="activity" Type="System.Diagnostics.Activity" />
       </Parameters>
       <Docs>
-        <typeparam name="T">To be added.</typeparam>
-        <param name="telemetryClient">To be added.</param>
-        <param name="activity">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <typeparam name="T">Type of the telemetry item.</typeparam>
+        <param name="telemetryClient">Telemetry client object.</param>
+        <param name="activity">Activity to get tracing context and telemetry properties from.</param>
+        <summary>
+            Creates an operation object with a respective telemetry item using <see cref="T:System.Diagnostics.Activity" /> instance that holds tracing context. 
+            </summary>
+        <returns>Operation item object with a new telemetry item having current start time and timestamp.</returns>
+        <remarks>
+          <para>Activity represents tracing context; it contains correlation identifiers and extended properties that are propagated to external calls.
+            See <a href="https://github.com/dotnet/corefx/blob/master/src/System.Diagnostics.DiagnosticSource/src/ActivityUserGuide.md" /> for more details.</para>
+          <para>When Activity instance is passed to StartOperation, it is expected that Activity has ParentId (if it was provided by upstream service), but has not been started yet.
+            It may also have additional Tags and Baggage to augment telemetry.</para>
+        </remarks>
+        <example>
+          <code>
+              // receive message from a queue service (or any kind of the request/message from external service)
+              var message = queue.Receive();
+            
+              // Extract tracing context from the message before processing it
+              // Note that some protocols may define how Activity should be serialized into the message,
+              // and some client SDKs implementing them may provide Extract method.
+              // For other protocols/libraries, serialization has to be agreed between producer and consumer
+              // and Inject/Extract pattern to be implemented
+              var activity = message.ExtractActivity();
+            
+              // Track processing of the message
+              using (telemetryClient.StartOperation&lt;RequestTelemetry&gt;(activity))
+              {
+                // process message
+              }
+             // telemetry is reported when operation is disposed.
+            </code>
+        </example>
       </Docs>
     </Member>
     <Member MemberName="StartOperation&lt;T&gt;">
       <MemberSignature Language="C#" Value="public static Microsoft.ApplicationInsights.Extensibility.IOperationHolder&lt;T&gt; StartOperation&lt;T&gt; (this Microsoft.ApplicationInsights.TelemetryClient telemetryClient, string operationName) where T : Microsoft.ApplicationInsights.Extensibility.Implementation.OperationTelemetrynew();" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Microsoft.ApplicationInsights.Extensibility.IOperationHolder`1&lt;!!T&gt; StartOperation&lt;.ctor (class Microsoft.ApplicationInsights.Extensibility.Implementation.OperationTelemetry) T&gt;(class Microsoft.ApplicationInsights.TelemetryClient telemetryClient, string operationName) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.ApplicationInsights.TelemetryClientExtensions.StartOperation``1(Microsoft.ApplicationInsights.TelemetryClient,System.String)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function StartOperation(Of T As {OperationTelemetryNew}) (telemetryClient As TelemetryClient, operationName As String) As IOperationHolder(Of T)" />
       <MemberSignature Language="F#" Value="static member StartOperation : Microsoft.ApplicationInsights.TelemetryClient * string -&gt; Microsoft.ApplicationInsights.Extensibility.IOperationHolder&lt;'T (requires 'T :&gt; Microsoft.ApplicationInsights.Extensibility.Implementation.OperationTelemetry and 'T : (new : unit -&gt; 'T))&gt; (requires 'T :&gt; Microsoft.ApplicationInsights.Extensibility.Implementation.OperationTelemetry and 'T : (new : unit -&gt; 'T))" Usage="Microsoft.ApplicationInsights.TelemetryClientExtensions.StartOperation (telemetryClient, operationName)" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename T&gt;&#xA; where T : Microsoft::ApplicationInsights::Extensibility::Implementation::OperationTelemetrygcnew()[System::Runtime::CompilerServices::Extension]&#xA; static Microsoft::ApplicationInsights::Extensibility::IOperationHolder&lt;T&gt; ^ StartOperation(Microsoft::ApplicationInsights::TelemetryClient ^ telemetryClient, System::String ^ operationName);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.ApplicationInsights</AssemblyName>
-        <AssemblyVersion>2.3.0.0</AssemblyVersion>
-        <AssemblyVersion>2.5.0.0</AssemblyVersion>
-        <AssemblyVersion>2.5.1.0</AssemblyVersion>
-        <AssemblyVersion>2.6.0.0</AssemblyVersion>
+        <AssemblyVersion>2.11.0.0</AssemblyVersion>
+        <AssemblyVersion>2.12.0.21496</AssemblyVersion>
+        <AssemblyVersion>2.12.1.36699</AssemblyVersion>
+        <AssemblyVersion>2.13.0.10578</AssemblyVersion>
+        <AssemblyVersion>2.13.1.12554</AssemblyVersion>
+        <AssemblyVersion>2.14.0.17971</AssemblyVersion>
+        <AssemblyVersion>2.15.0.44797</AssemblyVersion>
+        <AssemblyVersion>2.16.0.18277</AssemblyVersion>
+        <AssemblyVersion>2.17.0.146</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.ApplicationInsights.Extensibility.IOperationHolder&lt;T&gt;</ReturnType>
@@ -109,15 +152,20 @@
       <MemberSignature Language="C#" Value="public static Microsoft.ApplicationInsights.Extensibility.IOperationHolder&lt;T&gt; StartOperation&lt;T&gt; (this Microsoft.ApplicationInsights.TelemetryClient telemetryClient, T operationTelemetry) where T : Microsoft.ApplicationInsights.Extensibility.Implementation.OperationTelemetry;" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Microsoft.ApplicationInsights.Extensibility.IOperationHolder`1&lt;!!T&gt; StartOperation&lt;(class Microsoft.ApplicationInsights.Extensibility.Implementation.OperationTelemetry) T&gt;(class Microsoft.ApplicationInsights.TelemetryClient telemetryClient, !!T operationTelemetry) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.ApplicationInsights.TelemetryClientExtensions.StartOperation``1(Microsoft.ApplicationInsights.TelemetryClient,``0)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function StartOperation(Of T As OperationTelemetry) (telemetryClient As TelemetryClient, operationTelemetry As T) As IOperationHolder(Of T)" />
       <MemberSignature Language="F#" Value="static member StartOperation : Microsoft.ApplicationInsights.TelemetryClient * 'T -&gt; Microsoft.ApplicationInsights.Extensibility.IOperationHolder&lt;'T (requires 'T :&gt; Microsoft.ApplicationInsights.Extensibility.Implementation.OperationTelemetry)&gt; (requires 'T :&gt; Microsoft.ApplicationInsights.Extensibility.Implementation.OperationTelemetry)" Usage="Microsoft.ApplicationInsights.TelemetryClientExtensions.StartOperation (telemetryClient, operationTelemetry)" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename T&gt;&#xA; where T : Microsoft::ApplicationInsights::Extensibility::Implementation::OperationTelemetry[System::Runtime::CompilerServices::Extension]&#xA; static Microsoft::ApplicationInsights::Extensibility::IOperationHolder&lt;T&gt; ^ StartOperation(Microsoft::ApplicationInsights::TelemetryClient ^ telemetryClient, T operationTelemetry);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.ApplicationInsights</AssemblyName>
-        <AssemblyVersion>2.3.0.0</AssemblyVersion>
-        <AssemblyVersion>2.5.0.0</AssemblyVersion>
-        <AssemblyVersion>2.5.1.0</AssemblyVersion>
-        <AssemblyVersion>2.6.0.0</AssemblyVersion>
+        <AssemblyVersion>2.11.0.0</AssemblyVersion>
+        <AssemblyVersion>2.12.0.21496</AssemblyVersion>
+        <AssemblyVersion>2.12.1.36699</AssemblyVersion>
+        <AssemblyVersion>2.13.0.10578</AssemblyVersion>
+        <AssemblyVersion>2.13.1.12554</AssemblyVersion>
+        <AssemblyVersion>2.14.0.17971</AssemblyVersion>
+        <AssemblyVersion>2.15.0.44797</AssemblyVersion>
+        <AssemblyVersion>2.16.0.18277</AssemblyVersion>
+        <AssemblyVersion>2.17.0.146</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.ApplicationInsights.Extensibility.IOperationHolder&lt;T&gt;</ReturnType>
@@ -145,17 +193,23 @@
       </Docs>
     </Member>
     <Member MemberName="StartOperation&lt;T&gt;">
-      <MemberSignature Language="C#" Value="public static Microsoft.ApplicationInsights.Extensibility.IOperationHolder&lt;T&gt; StartOperation&lt;T&gt; (this Microsoft.ApplicationInsights.TelemetryClient telemetryClient, string operationName, string operationId, string parentOperationId = null) where T : Microsoft.ApplicationInsights.Extensibility.Implementation.OperationTelemetrynew();" />
+      <MemberSignature Language="C#" Value="public static Microsoft.ApplicationInsights.Extensibility.IOperationHolder&lt;T&gt; StartOperation&lt;T&gt; (this Microsoft.ApplicationInsights.TelemetryClient telemetryClient, string operationName, string operationId, string parentOperationId = default) where T : Microsoft.ApplicationInsights.Extensibility.Implementation.OperationTelemetrynew();" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Microsoft.ApplicationInsights.Extensibility.IOperationHolder`1&lt;!!T&gt; StartOperation&lt;.ctor (class Microsoft.ApplicationInsights.Extensibility.Implementation.OperationTelemetry) T&gt;(class Microsoft.ApplicationInsights.TelemetryClient telemetryClient, string operationName, string operationId, string parentOperationId) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.ApplicationInsights.TelemetryClientExtensions.StartOperation``1(Microsoft.ApplicationInsights.TelemetryClient,System.String,System.String,System.String)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function StartOperation(Of T As {OperationTelemetryNew}) (telemetryClient As TelemetryClient, operationName As String, operationId As String, Optional parentOperationId As String = Nothing) As IOperationHolder(Of T)" />
       <MemberSignature Language="F#" Value="static member StartOperation : Microsoft.ApplicationInsights.TelemetryClient * string * string * string -&gt; Microsoft.ApplicationInsights.Extensibility.IOperationHolder&lt;'T (requires 'T :&gt; Microsoft.ApplicationInsights.Extensibility.Implementation.OperationTelemetry and 'T : (new : unit -&gt; 'T))&gt; (requires 'T :&gt; Microsoft.ApplicationInsights.Extensibility.Implementation.OperationTelemetry and 'T : (new : unit -&gt; 'T))" Usage="Microsoft.ApplicationInsights.TelemetryClientExtensions.StartOperation (telemetryClient, operationName, operationId, parentOperationId)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.ApplicationInsights</AssemblyName>
-        <AssemblyVersion>2.3.0.0</AssemblyVersion>
-        <AssemblyVersion>2.5.0.0</AssemblyVersion>
-        <AssemblyVersion>2.5.1.0</AssemblyVersion>
-        <AssemblyVersion>2.6.0.0</AssemblyVersion>
+        <AssemblyVersion>2.11.0.0</AssemblyVersion>
+        <AssemblyVersion>2.12.0.21496</AssemblyVersion>
+        <AssemblyVersion>2.12.1.36699</AssemblyVersion>
+        <AssemblyVersion>2.13.0.10578</AssemblyVersion>
+        <AssemblyVersion>2.13.1.12554</AssemblyVersion>
+        <AssemblyVersion>2.14.0.17971</AssemblyVersion>
+        <AssemblyVersion>2.15.0.44797</AssemblyVersion>
+        <AssemblyVersion>2.16.0.18277</AssemblyVersion>
+        <AssemblyVersion>2.17.0.146</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.ApplicationInsights.Extensibility.IOperationHolder&lt;T&gt;</ReturnType>
@@ -191,15 +245,20 @@
       <MemberSignature Language="C#" Value="public static void StopOperation&lt;T&gt; (this Microsoft.ApplicationInsights.TelemetryClient telemetryClient, Microsoft.ApplicationInsights.Extensibility.IOperationHolder&lt;T&gt; operation) where T : Microsoft.ApplicationInsights.Extensibility.Implementation.OperationTelemetry;" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void StopOperation&lt;(class Microsoft.ApplicationInsights.Extensibility.Implementation.OperationTelemetry) T&gt;(class Microsoft.ApplicationInsights.TelemetryClient telemetryClient, class Microsoft.ApplicationInsights.Extensibility.IOperationHolder`1&lt;!!T&gt; operation) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.ApplicationInsights.TelemetryClientExtensions.StopOperation``1(Microsoft.ApplicationInsights.TelemetryClient,Microsoft.ApplicationInsights.Extensibility.IOperationHolder{``0})" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Sub StopOperation(Of T As OperationTelemetry) (telemetryClient As TelemetryClient, operation As IOperationHolder(Of T))" />
       <MemberSignature Language="F#" Value="static member StopOperation : Microsoft.ApplicationInsights.TelemetryClient * Microsoft.ApplicationInsights.Extensibility.IOperationHolder&lt;'T (requires 'T :&gt; Microsoft.ApplicationInsights.Extensibility.Implementation.OperationTelemetry)&gt; -&gt; unit (requires 'T :&gt; Microsoft.ApplicationInsights.Extensibility.Implementation.OperationTelemetry)" Usage="Microsoft.ApplicationInsights.TelemetryClientExtensions.StopOperation (telemetryClient, operation)" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename T&gt;&#xA; where T : Microsoft::ApplicationInsights::Extensibility::Implementation::OperationTelemetry[System::Runtime::CompilerServices::Extension]&#xA; static void StopOperation(Microsoft::ApplicationInsights::TelemetryClient ^ telemetryClient, Microsoft::ApplicationInsights::Extensibility::IOperationHolder&lt;T&gt; ^ operation);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.ApplicationInsights</AssemblyName>
-        <AssemblyVersion>2.3.0.0</AssemblyVersion>
-        <AssemblyVersion>2.5.0.0</AssemblyVersion>
-        <AssemblyVersion>2.5.1.0</AssemblyVersion>
-        <AssemblyVersion>2.6.0.0</AssemblyVersion>
+        <AssemblyVersion>2.11.0.0</AssemblyVersion>
+        <AssemblyVersion>2.12.0.21496</AssemblyVersion>
+        <AssemblyVersion>2.12.1.36699</AssemblyVersion>
+        <AssemblyVersion>2.13.0.10578</AssemblyVersion>
+        <AssemblyVersion>2.13.1.12554</AssemblyVersion>
+        <AssemblyVersion>2.14.0.17971</AssemblyVersion>
+        <AssemblyVersion>2.15.0.44797</AssemblyVersion>
+        <AssemblyVersion>2.16.0.18277</AssemblyVersion>
+        <AssemblyVersion>2.17.0.146</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>

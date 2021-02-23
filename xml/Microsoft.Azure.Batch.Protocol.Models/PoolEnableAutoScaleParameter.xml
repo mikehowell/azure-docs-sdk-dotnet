@@ -1,15 +1,14 @@
-﻿<Type Name="PoolEnableAutoScaleParameter" FullName="Microsoft.Azure.Batch.Protocol.Models.PoolEnableAutoScaleParameter">
+<Type Name="PoolEnableAutoScaleParameter" FullName="Microsoft.Azure.Batch.Protocol.Models.PoolEnableAutoScaleParameter">
   <TypeSignature Language="C#" Value="public class PoolEnableAutoScaleParameter" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit PoolEnableAutoScaleParameter extends System.Object" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Azure.Batch.Protocol.Models.PoolEnableAutoScaleParameter" />
   <TypeSignature Language="VB.NET" Value="Public Class PoolEnableAutoScaleParameter" />
   <TypeSignature Language="F#" Value="type PoolEnableAutoScaleParameter = class" />
-  <TypeSignature Language="C++ CLI" Value="public ref class PoolEnableAutoScaleParameter" />
-  <TypeSignature Language="C++ WINRT" Value="[Windows::Foundation::Metadata::WebHostHidden]&#xA;class PoolEnableAutoScaleParameter" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Azure.Batch</AssemblyName>
-    <AssemblyVersion>7.1.0.0</AssemblyVersion>
-    <AssemblyVersion>8.0.0.0</AssemblyVersion>
+    <AssemblyVersion>12.0.0.0</AssemblyVersion>
+    <AssemblyVersion>13.0.0.0</AssemblyVersion>
+    <AssemblyVersion>14.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
@@ -17,7 +16,7 @@
   <Interfaces />
   <Docs>
     <summary>
-            Options for enabling automatic scaling on a pool.
+            Options for enabling automatic scaling on a Pool.
             </summary>
     <remarks>To be added.</remarks>
   </Docs>
@@ -27,14 +26,12 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Batch.Protocol.Models.PoolEnableAutoScaleParameter.#ctor" />
       <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; PoolEnableAutoScaleParameter();" />
-      <MemberSignature Language="C++ CX" Value="public:&#xA; PoolEnableAutoScaleParameter();" />
-      <MemberSignature Language="C++ WINRT" Value=" PoolEnableAutoScaleParameter();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Batch</AssemblyName>
-        <AssemblyVersion>7.1.0.0</AssemblyVersion>
-        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>12.0.0.0</AssemblyVersion>
+        <AssemblyVersion>13.0.0.0</AssemblyVersion>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
@@ -46,16 +43,17 @@
       </Docs>
     </Member>
     <Member MemberName=".ctor">
-      <MemberSignature Language="C#" Value="public PoolEnableAutoScaleParameter (string autoScaleFormula = null, Nullable&lt;TimeSpan&gt; autoScaleEvaluationInterval = null);" />
+      <MemberSignature Language="C#" Value="public PoolEnableAutoScaleParameter (string autoScaleFormula = default, TimeSpan? autoScaleEvaluationInterval = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string autoScaleFormula, valuetype System.Nullable`1&lt;valuetype System.TimeSpan&gt; autoScaleEvaluationInterval) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Batch.Protocol.Models.PoolEnableAutoScaleParameter.#ctor(System.String,System.Nullable{System.TimeSpan})" />
-      <MemberSignature Language="VB.NET" Value="Public Sub New (Optional autoScaleFormula As String = null, Optional autoScaleEvaluationInterval As Nullable(Of TimeSpan) = null)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (Optional autoScaleFormula As String = Nothing, Optional autoScaleEvaluationInterval As Nullable(Of TimeSpan) = Nothing)" />
       <MemberSignature Language="F#" Value="new Microsoft.Azure.Batch.Protocol.Models.PoolEnableAutoScaleParameter : string * Nullable&lt;TimeSpan&gt; -&gt; Microsoft.Azure.Batch.Protocol.Models.PoolEnableAutoScaleParameter" Usage="new Microsoft.Azure.Batch.Protocol.Models.PoolEnableAutoScaleParameter (autoScaleFormula, autoScaleEvaluationInterval)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Batch</AssemblyName>
-        <AssemblyVersion>7.1.0.0</AssemblyVersion>
-        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>12.0.0.0</AssemblyVersion>
+        <AssemblyVersion>13.0.0.0</AssemblyVersion>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="autoScaleFormula" Type="System.String" />
@@ -63,9 +61,9 @@
       </Parameters>
       <Docs>
         <param name="autoScaleFormula">The formula for the desired number
-            of compute nodes in the pool.</param>
+            of Compute Nodes in the Pool.</param>
         <param name="autoScaleEvaluationInterval">The time interval at
-            which to automatically adjust the pool size according to the
+            which to automatically adjust the Pool size according to the
             autoscale formula.</param>
         <summary>
             Initializes a new instance of the PoolEnableAutoScaleParameter
@@ -75,21 +73,22 @@
       </Docs>
     </Member>
     <Member MemberName="AutoScaleEvaluationInterval">
-      <MemberSignature Language="C#" Value="public Nullable&lt;TimeSpan&gt; AutoScaleEvaluationInterval { get; set; }" />
+      <MemberSignature Language="C#" Value="public TimeSpan? AutoScaleEvaluationInterval { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;valuetype System.TimeSpan&gt; AutoScaleEvaluationInterval" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Batch.Protocol.Models.PoolEnableAutoScaleParameter.AutoScaleEvaluationInterval" />
       <MemberSignature Language="VB.NET" Value="Public Property AutoScaleEvaluationInterval As Nullable(Of TimeSpan)" />
       <MemberSignature Language="F#" Value="member this.AutoScaleEvaluationInterval : Nullable&lt;TimeSpan&gt; with get, set" Usage="Microsoft.Azure.Batch.Protocol.Models.PoolEnableAutoScaleParameter.AutoScaleEvaluationInterval" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Nullable&lt;TimeSpan&gt; AutoScaleEvaluationInterval { Nullable&lt;TimeSpan&gt; get(); void set(Nullable&lt;TimeSpan&gt; value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Batch</AssemblyName>
-        <AssemblyVersion>7.1.0.0</AssemblyVersion>
-        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>12.0.0.0</AssemblyVersion>
+        <AssemblyVersion>13.0.0.0</AssemblyVersion>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="autoScaleEvaluationInterval")</AttributeName>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty(PropertyName="autoScaleEvaluationInterval")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty(PropertyName="autoScaleEvaluationInterval")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -98,7 +97,7 @@
       <Docs>
         <summary>
             Gets or sets the time interval at which to automatically adjust the
-            pool size according to the autoscale formula.
+            Pool size according to the autoscale formula.
             </summary>
         <value>To be added.</value>
         <remarks>
@@ -120,17 +119,17 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Batch.Protocol.Models.PoolEnableAutoScaleParameter.AutoScaleFormula" />
       <MemberSignature Language="VB.NET" Value="Public Property AutoScaleFormula As String" />
       <MemberSignature Language="F#" Value="member this.AutoScaleFormula : string with get, set" Usage="Microsoft.Azure.Batch.Protocol.Models.PoolEnableAutoScaleParameter.AutoScaleFormula" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ AutoScaleFormula { System::String ^ get(); void set(System::String ^ value); };" />
-      <MemberSignature Language="C++ CX" Value="public:&#xA; property Platform::String ^ AutoScaleFormula { Platform::String ^ get(); void set(Platform::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Batch</AssemblyName>
-        <AssemblyVersion>7.1.0.0</AssemblyVersion>
-        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>12.0.0.0</AssemblyVersion>
+        <AssemblyVersion>13.0.0.0</AssemblyVersion>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="autoScaleFormula")</AttributeName>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty(PropertyName="autoScaleFormula")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty(PropertyName="autoScaleFormula")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -138,16 +137,16 @@
       </ReturnValue>
       <Docs>
         <summary>
-            Gets or sets the formula for the desired number of compute nodes in
-            the pool.
+            Gets or sets the formula for the desired number of Compute Nodes in
+            the Pool.
             </summary>
         <value>To be added.</value>
         <remarks>
             The formula is checked for validity before it is applied to the
-            pool. If the formula is not valid, the Batch service rejects the
+            Pool. If the formula is not valid, the Batch service rejects the
             request with detailed error information. For more information about
-            specifying this formula, see Automatically scale compute nodes in
-            an Azure Batch pool
+            specifying this formula, see Automatically scale Compute Nodes in
+            an Azure Batch Pool
             (https://azure.microsoft.com/en-us/documentation/articles/batch-automatic-scaling).
             </remarks>
       </Docs>

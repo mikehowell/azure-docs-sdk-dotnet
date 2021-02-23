@@ -1,4 +1,4 @@
-﻿<Type Name="StandardAnalyzer" FullName="Microsoft.Azure.Search.Models.StandardAnalyzer">
+<Type Name="StandardAnalyzer" FullName="Microsoft.Azure.Search.Models.StandardAnalyzer">
   <TypeSignature Language="C#" Value="public class StandardAnalyzer : Microsoft.Azure.Search.Models.Analyzer" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit StandardAnalyzer extends Microsoft.Azure.Search.Models.Analyzer" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Azure.Search.Models.StandardAnalyzer" />
@@ -6,7 +6,7 @@
   <TypeSignature Language="F#" Value="type StandardAnalyzer = class&#xA;    inherit Analyzer" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Azure.Search.Service</AssemblyName>
-    <AssemblyVersion>5.0.0.0</AssemblyVersion>
+    <AssemblyVersion>10.1.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>Microsoft.Azure.Search.Models.Analyzer</BaseTypeName>
@@ -14,7 +14,8 @@
   <Interfaces />
   <Attributes>
     <Attribute>
-      <AttributeName>Newtonsoft.Json.JsonObject("#Microsoft.Azure.Search.StandardAnalyzer")</AttributeName>
+      <AttributeName Language="C#">[Newtonsoft.Json.JsonObject("#Microsoft.Azure.Search.StandardAnalyzer")]</AttributeName>
+      <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonObject("#Microsoft.Azure.Search.StandardAnalyzer")&gt;]</AttributeName>
     </Attribute>
   </Attributes>
   <Docs>
@@ -33,7 +34,7 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Search.Service</AssemblyName>
-        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>10.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
@@ -44,15 +45,15 @@
       </Docs>
     </Member>
     <Member MemberName=".ctor">
-      <MemberSignature Language="C#" Value="public StandardAnalyzer (string name, Nullable&lt;int&gt; maxTokenLength = null, System.Collections.Generic.IList&lt;string&gt; stopwords = null);" />
+      <MemberSignature Language="C#" Value="public StandardAnalyzer (string name, int? maxTokenLength = default, System.Collections.Generic.IList&lt;string&gt; stopwords = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string name, valuetype System.Nullable`1&lt;int32&gt; maxTokenLength, class System.Collections.Generic.IList`1&lt;string&gt; stopwords) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Search.Models.StandardAnalyzer.#ctor(System.String,System.Nullable{System.Int32},System.Collections.Generic.IList{System.String})" />
-      <MemberSignature Language="VB.NET" Value="Public Sub New (name As String, Optional maxTokenLength As Nullable(Of Integer) = null, Optional stopwords As IList(Of String) = null)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (name As String, Optional maxTokenLength As Nullable(Of Integer) = Nothing, Optional stopwords As IList(Of String) = Nothing)" />
       <MemberSignature Language="F#" Value="new Microsoft.Azure.Search.Models.StandardAnalyzer : string * Nullable&lt;int&gt; * System.Collections.Generic.IList&lt;string&gt; -&gt; Microsoft.Azure.Search.Models.StandardAnalyzer" Usage="new Microsoft.Azure.Search.Models.StandardAnalyzer (name, maxTokenLength, stopwords)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Search.Service</AssemblyName>
-        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>10.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="name" Type="System.String" />
@@ -75,7 +76,7 @@
       </Docs>
     </Member>
     <Member MemberName="MaxTokenLength">
-      <MemberSignature Language="C#" Value="public Nullable&lt;int&gt; MaxTokenLength { get; set; }" />
+      <MemberSignature Language="C#" Value="public int? MaxTokenLength { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;int32&gt; MaxTokenLength" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Search.Models.StandardAnalyzer.MaxTokenLength" />
       <MemberSignature Language="VB.NET" Value="Public Property MaxTokenLength As Nullable(Of Integer)" />
@@ -83,11 +84,12 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Search.Service</AssemblyName>
-        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>10.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="maxTokenLength")</AttributeName>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty(PropertyName="maxTokenLength")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty(PropertyName="maxTokenLength")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -112,11 +114,12 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Search.Service</AssemblyName>
-        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>10.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="stopwords")</AttributeName>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty(PropertyName="stopwords")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty(PropertyName="stopwords")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -139,7 +142,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Search.Service</AssemblyName>
-        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>10.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>

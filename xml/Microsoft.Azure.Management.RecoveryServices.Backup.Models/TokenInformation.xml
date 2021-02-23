@@ -1,14 +1,12 @@
-﻿<Type Name="TokenInformation" FullName="Microsoft.Azure.Management.RecoveryServices.Backup.Models.TokenInformation">
+<Type Name="TokenInformation" FullName="Microsoft.Azure.Management.RecoveryServices.Backup.Models.TokenInformation">
   <TypeSignature Language="C#" Value="public class TokenInformation" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit TokenInformation extends System.Object" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Azure.Management.RecoveryServices.Backup.Models.TokenInformation" />
   <TypeSignature Language="VB.NET" Value="Public Class TokenInformation" />
   <TypeSignature Language="F#" Value="type TokenInformation = class" />
-  <TypeSignature Language="C++ CLI" Value="public ref class TokenInformation" />
-  <TypeSignature Language="C++ WINRT" Value="[Windows::Foundation::Metadata::WebHostHidden]&#xA;class TokenInformation" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Azure.Management.RecoveryServices.Backup</AssemblyName>
-    <AssemblyVersion>2.0.0.0</AssemblyVersion>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
@@ -26,13 +24,10 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Management.RecoveryServices.Backup.Models.TokenInformation.#ctor" />
       <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; TokenInformation();" />
-      <MemberSignature Language="C++ CX" Value="public:&#xA; TokenInformation();" />
-      <MemberSignature Language="C++ WINRT" Value=" TokenInformation();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.RecoveryServices.Backup</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
@@ -43,15 +38,15 @@
       </Docs>
     </Member>
     <Member MemberName=".ctor">
-      <MemberSignature Language="C#" Value="public TokenInformation (string token = null, Nullable&lt;long&gt; expiryTimeInUtcTicks = null, string securityPIN = null);" />
+      <MemberSignature Language="C#" Value="public TokenInformation (string token = default, long? expiryTimeInUtcTicks = default, string securityPIN = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string token, valuetype System.Nullable`1&lt;int64&gt; expiryTimeInUtcTicks, string securityPIN) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Management.RecoveryServices.Backup.Models.TokenInformation.#ctor(System.String,System.Nullable{System.Int64},System.String)" />
-      <MemberSignature Language="VB.NET" Value="Public Sub New (Optional token As String = null, Optional expiryTimeInUtcTicks As Nullable(Of Long) = null, Optional securityPIN As String = null)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (Optional token As String = Nothing, Optional expiryTimeInUtcTicks As Nullable(Of Long) = Nothing, Optional securityPIN As String = Nothing)" />
       <MemberSignature Language="F#" Value="new Microsoft.Azure.Management.RecoveryServices.Backup.Models.TokenInformation : string * Nullable&lt;int64&gt; * string -&gt; Microsoft.Azure.Management.RecoveryServices.Backup.Models.TokenInformation" Usage="new Microsoft.Azure.Management.RecoveryServices.Backup.Models.TokenInformation (token, expiryTimeInUtcTicks, securityPIN)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.RecoveryServices.Backup</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="token" Type="System.String" />
@@ -69,20 +64,20 @@
       </Docs>
     </Member>
     <Member MemberName="ExpiryTimeInUtcTicks">
-      <MemberSignature Language="C#" Value="public Nullable&lt;long&gt; ExpiryTimeInUtcTicks { get; set; }" />
+      <MemberSignature Language="C#" Value="public long? ExpiryTimeInUtcTicks { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;int64&gt; ExpiryTimeInUtcTicks" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Management.RecoveryServices.Backup.Models.TokenInformation.ExpiryTimeInUtcTicks" />
       <MemberSignature Language="VB.NET" Value="Public Property ExpiryTimeInUtcTicks As Nullable(Of Long)" />
       <MemberSignature Language="F#" Value="member this.ExpiryTimeInUtcTicks : Nullable&lt;int64&gt; with get, set" Usage="Microsoft.Azure.Management.RecoveryServices.Backup.Models.TokenInformation.ExpiryTimeInUtcTicks" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Nullable&lt;long&gt; ExpiryTimeInUtcTicks { Nullable&lt;long&gt; get(); void set(Nullable&lt;long&gt; value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.RecoveryServices.Backup</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="expiryTimeInUtcTicks")</AttributeName>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty(PropertyName="expiryTimeInUtcTicks")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty(PropertyName="expiryTimeInUtcTicks")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -102,16 +97,15 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Management.RecoveryServices.Backup.Models.TokenInformation.SecurityPIN" />
       <MemberSignature Language="VB.NET" Value="Public Property SecurityPIN As String" />
       <MemberSignature Language="F#" Value="member this.SecurityPIN : string with get, set" Usage="Microsoft.Azure.Management.RecoveryServices.Backup.Models.TokenInformation.SecurityPIN" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ SecurityPIN { System::String ^ get(); void set(System::String ^ value); };" />
-      <MemberSignature Language="C++ CX" Value="public:&#xA; property Platform::String ^ SecurityPIN { Platform::String ^ get(); void set(Platform::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.RecoveryServices.Backup</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="securityPIN")</AttributeName>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty(PropertyName="securityPIN")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty(PropertyName="securityPIN")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -131,16 +125,15 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Management.RecoveryServices.Backup.Models.TokenInformation.Token" />
       <MemberSignature Language="VB.NET" Value="Public Property Token As String" />
       <MemberSignature Language="F#" Value="member this.Token : string with get, set" Usage="Microsoft.Azure.Management.RecoveryServices.Backup.Models.TokenInformation.Token" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Token { System::String ^ get(); void set(System::String ^ value); };" />
-      <MemberSignature Language="C++ CX" Value="public:&#xA; property Platform::String ^ Token { Platform::String ^ get(); void set(Platform::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.RecoveryServices.Backup</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="token")</AttributeName>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty(PropertyName="token")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty(PropertyName="token")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>

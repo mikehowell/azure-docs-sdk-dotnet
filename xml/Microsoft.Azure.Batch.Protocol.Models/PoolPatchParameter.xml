@@ -1,15 +1,14 @@
-﻿<Type Name="PoolPatchParameter" FullName="Microsoft.Azure.Batch.Protocol.Models.PoolPatchParameter">
+<Type Name="PoolPatchParameter" FullName="Microsoft.Azure.Batch.Protocol.Models.PoolPatchParameter">
   <TypeSignature Language="C#" Value="public class PoolPatchParameter" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit PoolPatchParameter extends System.Object" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Azure.Batch.Protocol.Models.PoolPatchParameter" />
   <TypeSignature Language="VB.NET" Value="Public Class PoolPatchParameter" />
   <TypeSignature Language="F#" Value="type PoolPatchParameter = class" />
-  <TypeSignature Language="C++ CLI" Value="public ref class PoolPatchParameter" />
-  <TypeSignature Language="C++ WINRT" Value="[Windows::Foundation::Metadata::WebHostHidden]&#xA;class PoolPatchParameter" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Azure.Batch</AssemblyName>
-    <AssemblyVersion>7.1.0.0</AssemblyVersion>
-    <AssemblyVersion>8.0.0.0</AssemblyVersion>
+    <AssemblyVersion>12.0.0.0</AssemblyVersion>
+    <AssemblyVersion>13.0.0.0</AssemblyVersion>
+    <AssemblyVersion>14.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
@@ -17,7 +16,7 @@
   <Interfaces />
   <Docs>
     <summary>
-            The set of changes to be made to a pool.
+            The set of changes to be made to a Pool.
             </summary>
     <remarks>To be added.</remarks>
   </Docs>
@@ -27,14 +26,12 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Batch.Protocol.Models.PoolPatchParameter.#ctor" />
       <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; PoolPatchParameter();" />
-      <MemberSignature Language="C++ CX" Value="public:&#xA; PoolPatchParameter();" />
-      <MemberSignature Language="C++ WINRT" Value=" PoolPatchParameter();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Batch</AssemblyName>
-        <AssemblyVersion>7.1.0.0</AssemblyVersion>
-        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>12.0.0.0</AssemblyVersion>
+        <AssemblyVersion>13.0.0.0</AssemblyVersion>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
@@ -45,15 +42,17 @@
       </Docs>
     </Member>
     <Member MemberName=".ctor">
-      <MemberSignature Language="C#" Value="public PoolPatchParameter (Microsoft.Azure.Batch.Protocol.Models.StartTask startTask = null, System.Collections.Generic.IList&lt;Microsoft.Azure.Batch.Protocol.Models.CertificateReference&gt; certificateReferences = null, System.Collections.Generic.IList&lt;Microsoft.Azure.Batch.Protocol.Models.ApplicationPackageReference&gt; applicationPackageReferences = null, System.Collections.Generic.IList&lt;Microsoft.Azure.Batch.Protocol.Models.MetadataItem&gt; metadata = null);" />
+      <MemberSignature Language="C#" Value="public PoolPatchParameter (Microsoft.Azure.Batch.Protocol.Models.StartTask startTask = default, System.Collections.Generic.IList&lt;Microsoft.Azure.Batch.Protocol.Models.CertificateReference&gt; certificateReferences = default, System.Collections.Generic.IList&lt;Microsoft.Azure.Batch.Protocol.Models.ApplicationPackageReference&gt; applicationPackageReferences = default, System.Collections.Generic.IList&lt;Microsoft.Azure.Batch.Protocol.Models.MetadataItem&gt; metadata = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class Microsoft.Azure.Batch.Protocol.Models.StartTask startTask, class System.Collections.Generic.IList`1&lt;class Microsoft.Azure.Batch.Protocol.Models.CertificateReference&gt; certificateReferences, class System.Collections.Generic.IList`1&lt;class Microsoft.Azure.Batch.Protocol.Models.ApplicationPackageReference&gt; applicationPackageReferences, class System.Collections.Generic.IList`1&lt;class Microsoft.Azure.Batch.Protocol.Models.MetadataItem&gt; metadata) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Batch.Protocol.Models.PoolPatchParameter.#ctor(Microsoft.Azure.Batch.Protocol.Models.StartTask,System.Collections.Generic.IList{Microsoft.Azure.Batch.Protocol.Models.CertificateReference},System.Collections.Generic.IList{Microsoft.Azure.Batch.Protocol.Models.ApplicationPackageReference},System.Collections.Generic.IList{Microsoft.Azure.Batch.Protocol.Models.MetadataItem})" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (Optional startTask As StartTask = Nothing, Optional certificateReferences As IList(Of CertificateReference) = Nothing, Optional applicationPackageReferences As IList(Of ApplicationPackageReference) = Nothing, Optional metadata As IList(Of MetadataItem) = Nothing)" />
       <MemberSignature Language="F#" Value="new Microsoft.Azure.Batch.Protocol.Models.PoolPatchParameter : Microsoft.Azure.Batch.Protocol.Models.StartTask * System.Collections.Generic.IList&lt;Microsoft.Azure.Batch.Protocol.Models.CertificateReference&gt; * System.Collections.Generic.IList&lt;Microsoft.Azure.Batch.Protocol.Models.ApplicationPackageReference&gt; * System.Collections.Generic.IList&lt;Microsoft.Azure.Batch.Protocol.Models.MetadataItem&gt; -&gt; Microsoft.Azure.Batch.Protocol.Models.PoolPatchParameter" Usage="new Microsoft.Azure.Batch.Protocol.Models.PoolPatchParameter (startTask, certificateReferences, applicationPackageReferences, metadata)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Batch</AssemblyName>
-        <AssemblyVersion>7.1.0.0</AssemblyVersion>
-        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>12.0.0.0</AssemblyVersion>
+        <AssemblyVersion>13.0.0.0</AssemblyVersion>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="startTask" Type="Microsoft.Azure.Batch.Protocol.Models.StartTask" />
@@ -62,15 +61,15 @@
         <Parameter Name="metadata" Type="System.Collections.Generic.IList&lt;Microsoft.Azure.Batch.Protocol.Models.MetadataItem&gt;" />
       </Parameters>
       <Docs>
-        <param name="startTask">A task to run on each compute node as it
-            joins the pool. The task runs when the node is added to the pool or
-            when the node is restarted.</param>
-        <param name="certificateReferences">A list of certificates to be
-            installed on each compute node in the pool.</param>
-        <param name="applicationPackageReferences">A list of application
-            packages to be installed on each compute node in the pool.</param>
+        <param name="startTask">A Task to run on each Compute Node as it
+            joins the Pool. The Task runs when the Compute Node is added to the
+            Pool or when the Compute Node is restarted.</param>
+        <param name="certificateReferences">A list of Certificates to be
+            installed on each Compute Node in the Pool.</param>
+        <param name="applicationPackageReferences">A list of Packages to be
+            installed on each Compute Node in the Pool.</param>
         <param name="metadata">A list of name-value pairs associated with
-            the pool as metadata.</param>
+            the Pool as metadata.</param>
         <summary>
             Initializes a new instance of the PoolPatchParameter class.
             </summary>
@@ -83,16 +82,17 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Batch.Protocol.Models.PoolPatchParameter.ApplicationPackageReferences" />
       <MemberSignature Language="VB.NET" Value="Public Property ApplicationPackageReferences As IList(Of ApplicationPackageReference)" />
       <MemberSignature Language="F#" Value="member this.ApplicationPackageReferences : System.Collections.Generic.IList&lt;Microsoft.Azure.Batch.Protocol.Models.ApplicationPackageReference&gt; with get, set" Usage="Microsoft.Azure.Batch.Protocol.Models.PoolPatchParameter.ApplicationPackageReferences" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::Generic::IList&lt;Microsoft::Azure::Batch::Protocol::Models::ApplicationPackageReference ^&gt; ^ ApplicationPackageReferences { System::Collections::Generic::IList&lt;Microsoft::Azure::Batch::Protocol::Models::ApplicationPackageReference ^&gt; ^ get(); void set(System::Collections::Generic::IList&lt;Microsoft::Azure::Batch::Protocol::Models::ApplicationPackageReference ^&gt; ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Batch</AssemblyName>
-        <AssemblyVersion>7.1.0.0</AssemblyVersion>
-        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>12.0.0.0</AssemblyVersion>
+        <AssemblyVersion>13.0.0.0</AssemblyVersion>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="applicationPackageReferences")</AttributeName>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty(PropertyName="applicationPackageReferences")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty(PropertyName="applicationPackageReferences")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -100,19 +100,17 @@
       </ReturnValue>
       <Docs>
         <summary>
-            Gets or sets a list of application packages to be installed on each
-            compute node in the pool.
+            Gets or sets a list of Packages to be installed on each Compute
+            Node in the Pool.
             </summary>
         <value>To be added.</value>
         <remarks>
-            Changes to application package references affect all new compute
-            nodes joining the pool, but do not affect compute nodes that are
-            already in the pool until they are rebooted or reimaged. If this
-            element is present, it replaces any existing application package
-            references. If you specify an empty collection, then all
-            application package references are removed from the pool. If
-            omitted, any existing application package references are left
-            unchanged.
+            Changes to Package references affect all new Nodes joining the
+            Pool, but do not affect Compute Nodes that are already in the Pool
+            until they are rebooted or reimaged. If this element is present, it
+            replaces any existing Package references. If you specify an empty
+            collection, then all Package references are removed from the Pool.
+            If omitted, any existing Package references are left unchanged.
             </remarks>
       </Docs>
     </Member>
@@ -122,16 +120,17 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Batch.Protocol.Models.PoolPatchParameter.CertificateReferences" />
       <MemberSignature Language="VB.NET" Value="Public Property CertificateReferences As IList(Of CertificateReference)" />
       <MemberSignature Language="F#" Value="member this.CertificateReferences : System.Collections.Generic.IList&lt;Microsoft.Azure.Batch.Protocol.Models.CertificateReference&gt; with get, set" Usage="Microsoft.Azure.Batch.Protocol.Models.PoolPatchParameter.CertificateReferences" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::Generic::IList&lt;Microsoft::Azure::Batch::Protocol::Models::CertificateReference ^&gt; ^ CertificateReferences { System::Collections::Generic::IList&lt;Microsoft::Azure::Batch::Protocol::Models::CertificateReference ^&gt; ^ get(); void set(System::Collections::Generic::IList&lt;Microsoft::Azure::Batch::Protocol::Models::CertificateReference ^&gt; ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Batch</AssemblyName>
-        <AssemblyVersion>7.1.0.0</AssemblyVersion>
-        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>12.0.0.0</AssemblyVersion>
+        <AssemblyVersion>13.0.0.0</AssemblyVersion>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="certificateReferences")</AttributeName>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty(PropertyName="certificateReferences")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty(PropertyName="certificateReferences")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -139,22 +138,22 @@
       </ReturnValue>
       <Docs>
         <summary>
-            Gets or sets a list of certificates to be installed on each compute
-            node in the pool.
+            Gets or sets a list of Certificates to be installed on each Compute
+            Node in the Pool.
             </summary>
         <value>To be added.</value>
         <remarks>
-            If this element is present, it replaces any existing certificate
-            references configured on the pool. If omitted, any existing
-            certificate references are left unchanged. For Windows compute
-            nodes, the Batch service installs the certificates to the specified
-            certificate store and location. For Linux compute nodes, the
-            certificates are stored in a directory inside the task working
+            If this element is present, it replaces any existing Certificate
+            references configured on the Pool. If omitted, any existing
+            Certificate references are left unchanged. For Windows Nodes, the
+            Batch service installs the Certificates to the specified
+            Certificate store and location. For Linux Compute Nodes, the
+            Certificates are stored in a directory inside the Task working
             directory and an environment variable AZ_BATCH_CERTIFICATES_DIR is
-            supplied to the task to query for this location. For certificates
+            supplied to the Task to query for this location. For Certificates
             with visibility of 'remoteUser', a 'certs' directory is created in
             the user's home directory (e.g., /home/{user-name}/certs) and
-            certificates are placed in that directory.
+            Certificates are placed in that directory.
             </remarks>
       </Docs>
     </Member>
@@ -164,16 +163,17 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Batch.Protocol.Models.PoolPatchParameter.Metadata" />
       <MemberSignature Language="VB.NET" Value="Public Property Metadata As IList(Of MetadataItem)" />
       <MemberSignature Language="F#" Value="member this.Metadata : System.Collections.Generic.IList&lt;Microsoft.Azure.Batch.Protocol.Models.MetadataItem&gt; with get, set" Usage="Microsoft.Azure.Batch.Protocol.Models.PoolPatchParameter.Metadata" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::Generic::IList&lt;Microsoft::Azure::Batch::Protocol::Models::MetadataItem ^&gt; ^ Metadata { System::Collections::Generic::IList&lt;Microsoft::Azure::Batch::Protocol::Models::MetadataItem ^&gt; ^ get(); void set(System::Collections::Generic::IList&lt;Microsoft::Azure::Batch::Protocol::Models::MetadataItem ^&gt; ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Batch</AssemblyName>
-        <AssemblyVersion>7.1.0.0</AssemblyVersion>
-        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>12.0.0.0</AssemblyVersion>
+        <AssemblyVersion>13.0.0.0</AssemblyVersion>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="metadata")</AttributeName>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty(PropertyName="metadata")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty(PropertyName="metadata")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -181,14 +181,14 @@
       </ReturnValue>
       <Docs>
         <summary>
-            Gets or sets a list of name-value pairs associated with the pool as
+            Gets or sets a list of name-value pairs associated with the Pool as
             metadata.
             </summary>
         <value>To be added.</value>
         <remarks>
             If this element is present, it replaces any existing metadata
-            configured on the pool. If you specify an empty collection, any
-            metadata is removed from the pool. If omitted, any existing
+            configured on the Pool. If you specify an empty collection, any
+            metadata is removed from the Pool. If omitted, any existing
             metadata is left unchanged.
             </remarks>
       </Docs>
@@ -199,16 +199,17 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Batch.Protocol.Models.PoolPatchParameter.StartTask" />
       <MemberSignature Language="VB.NET" Value="Public Property StartTask As StartTask" />
       <MemberSignature Language="F#" Value="member this.StartTask : Microsoft.Azure.Batch.Protocol.Models.StartTask with get, set" Usage="Microsoft.Azure.Batch.Protocol.Models.PoolPatchParameter.StartTask" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Azure::Batch::Protocol::Models::StartTask ^ StartTask { Microsoft::Azure::Batch::Protocol::Models::StartTask ^ get(); void set(Microsoft::Azure::Batch::Protocol::Models::StartTask ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Batch</AssemblyName>
-        <AssemblyVersion>7.1.0.0</AssemblyVersion>
-        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>12.0.0.0</AssemblyVersion>
+        <AssemblyVersion>13.0.0.0</AssemblyVersion>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="startTask")</AttributeName>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty(PropertyName="startTask")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty(PropertyName="startTask")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -216,44 +217,15 @@
       </ReturnValue>
       <Docs>
         <summary>
-            Gets or sets a task to run on each compute node as it joins the
-            pool. The task runs when the node is added to the pool or when the
-            node is restarted.
+            Gets or sets a Task to run on each Compute Node as it joins the
+            Pool. The Task runs when the Compute Node is added to the Pool or
+            when the Compute Node is restarted.
             </summary>
         <value>To be added.</value>
         <remarks>
-            If this element is present, it overwrites any existing start task.
-            If omitted, any existing start task is left unchanged.
+            If this element is present, it overwrites any existing StartTask.
+            If omitted, any existing StartTask is left unchanged.
             </remarks>
-      </Docs>
-    </Member>
-    <Member MemberName="Validate">
-      <MemberSignature Language="C#" Value="public virtual void Validate ();" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Validate() cil managed" />
-      <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Batch.Protocol.Models.PoolPatchParameter.Validate" />
-      <MemberSignature Language="VB.NET" Value="Public Overridable Sub Validate ()" />
-      <MemberSignature Language="F#" Value="abstract member Validate : unit -&gt; unit&#xA;override this.Validate : unit -&gt; unit" Usage="poolPatchParameter.Validate " />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Validate();" />
-      <MemberSignature Language="C++ CX" Value="public:&#xA; virtual void Validate();" />
-      <MemberSignature Language="C++ WINRT" Value=" virtual void Validate();" />
-      <MemberType>Method</MemberType>
-      <AssemblyInfo>
-        <AssemblyName>Microsoft.Azure.Batch</AssemblyName>
-        <AssemblyVersion>7.1.0.0</AssemblyVersion>
-        <AssemblyVersion>8.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <ReturnValue>
-        <ReturnType>System.Void</ReturnType>
-      </ReturnValue>
-      <Parameters />
-      <Docs>
-        <summary>
-            Validate the object.
-            </summary>
-        <remarks>To be added.</remarks>
-        <exception cref="T:Microsoft.Rest.ValidationException">
-            Thrown if validation fails
-            </exception>
       </Docs>
     </Member>
   </Members>

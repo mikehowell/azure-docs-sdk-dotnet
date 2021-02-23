@@ -1,18 +1,20 @@
-﻿<Type Name="FabricReplicator" FullName="System.Fabric.FabricReplicator">
+<Type Name="FabricReplicator" FullName="System.Fabric.FabricReplicator">
   <TypeSignature Language="C#" Value="public sealed class FabricReplicator : System.Fabric.IReplicator, System.Fabric.IReplicatorCatchupSpecificQuorum" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit FabricReplicator extends System.Object implements class System.Fabric.IPrimaryReplicator, class System.Fabric.IReplicator, class System.Fabric.IReplicatorCatchupSpecificQuorum" />
   <TypeSignature Language="DocId" Value="T:System.Fabric.FabricReplicator" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class FabricReplicator&#xA;Implements IReplicator, IReplicatorCatchupSpecificQuorum" />
   <TypeSignature Language="F#" Value="type FabricReplicator = class&#xA;    interface IReplicator&#xA;    interface IPrimaryReplicator&#xA;    interface IReplicatorCatchupSpecificQuorum" />
-  <TypeSignature Language="C++ CLI" Value="public ref class FabricReplicator sealed : System::Fabric::IReplicator, System::Fabric::IReplicatorCatchupSpecificQuorum" />
   <AssemblyInfo>
     <AssemblyName>System.Fabric</AssemblyName>
-    <AssemblyVersion>6.0.0.0</AssemblyVersion>
+    <AssemblyVersion>7.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
   </Base>
   <Interfaces>
+    <Interface>
+      <InterfaceName>System.Fabric.IPrimaryReplicator</InterfaceName>
+    </Interface>
     <Interface>
       <InterfaceName>System.Fabric.IReplicator</InterfaceName>
     </Interface>
@@ -36,12 +38,10 @@
       <MemberSignature Language="DocId" Value="F:System.Fabric.FabricReplicator.InvalidAtomicGroupId" />
       <MemberSignature Language="VB.NET" Value="Public Const InvalidAtomicGroupId As Long  = -1" />
       <MemberSignature Language="F#" Value="val mutable InvalidAtomicGroupId : int64" Usage="System.Fabric.FabricReplicator.InvalidAtomicGroupId" />
-      <MemberSignature Language="C++ CLI" Value="public: long InvalidAtomicGroupId = -1;" />
-      <MemberSignature Language="C++ WINRT" Value="long InvalidAtomicGroupId = -1;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Fabric</AssemblyName>
-        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int64</ReturnType>
@@ -58,11 +58,10 @@
       <MemberSignature Language="DocId" Value="P:System.Fabric.FabricReplicator.StateReplicator" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property StateReplicator As IStateReplicator" />
       <MemberSignature Language="F#" Value="member this.StateReplicator : System.Fabric.IStateReplicator" Usage="System.Fabric.FabricReplicator.StateReplicator" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Fabric::IStateReplicator ^ StateReplicator { System::Fabric::IStateReplicator ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Fabric</AssemblyName>
-        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Fabric.IStateReplicator</ReturnType>
@@ -81,11 +80,10 @@
       <MemberSignature Language="DocId" Value="P:System.Fabric.FabricReplicator.StateReplicator2" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property StateReplicator2 As IStateReplicator2" />
       <MemberSignature Language="F#" Value="member this.StateReplicator2 : System.Fabric.IStateReplicator2" Usage="System.Fabric.FabricReplicator.StateReplicator2" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Fabric::IStateReplicator2 ^ StateReplicator2 { System::Fabric::IStateReplicator2 ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Fabric</AssemblyName>
-        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Fabric.IStateReplicator2</ReturnType>
@@ -102,14 +100,15 @@
       <MemberSignature Language="C#" Value="System.Threading.Tasks.Task IPrimaryReplicator.BuildReplicaAsync (System.Fabric.ReplicaInformation replicaInfo, System.Threading.CancellationToken cancellationToken);" />
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance class System.Threading.Tasks.Task System.Fabric.IPrimaryReplicator.BuildReplicaAsync(class System.Fabric.ReplicaInformation replicaInfo, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Fabric.FabricReplicator.System#Fabric#IPrimaryReplicator#BuildReplicaAsync(System.Fabric.ReplicaInformation,System.Threading.CancellationToken)" />
-      <MemberSignature Language="C++ CLI" Value=" virtual System::Threading::Tasks::Task ^ System.Fabric.IPrimaryReplicator.BuildReplicaAsync(System::Fabric::ReplicaInformation ^ replicaInfo, System::Threading::CancellationToken cancellationToken) = System::Fabric::IPrimaryReplicator::BuildReplicaAsync;" />
+      <MemberSignature Language="VB.NET" Value="Function BuildReplicaAsync (replicaInfo As ReplicaInformation, cancellationToken As CancellationToken) As Task Implements IPrimaryReplicator.BuildReplicaAsync" />
+      <MemberSignature Language="F#" Value="abstract member System.Fabric.IPrimaryReplicator.BuildReplicaAsync : System.Fabric.ReplicaInformation * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&#xA;override this.System.Fabric.IPrimaryReplicator.BuildReplicaAsync : System.Fabric.ReplicaInformation * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task" Usage="fabricReplicator.System.Fabric.IPrimaryReplicator.BuildReplicaAsync (replicaInfo, cancellationToken)" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Fabric.IPrimaryReplicator.BuildReplicaAsync(System.Fabric.ReplicaInformation,System.Threading.CancellationToken)</InterfaceMember>
       </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Fabric</AssemblyName>
-        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task</ReturnType>
@@ -136,14 +135,15 @@
       <MemberSignature Language="C#" Value="System.Threading.Tasks.Task&lt;bool&gt; IPrimaryReplicator.OnDataLossAsync (System.Threading.CancellationToken cancellationToken);" />
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;bool&gt; System.Fabric.IPrimaryReplicator.OnDataLossAsync(valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Fabric.FabricReplicator.System#Fabric#IPrimaryReplicator#OnDataLossAsync(System.Threading.CancellationToken)" />
-      <MemberSignature Language="C++ CLI" Value=" virtual System::Threading::Tasks::Task&lt;bool&gt; ^ System.Fabric.IPrimaryReplicator.OnDataLossAsync(System::Threading::CancellationToken cancellationToken) = System::Fabric::IPrimaryReplicator::OnDataLossAsync;" />
+      <MemberSignature Language="VB.NET" Value="Function OnDataLossAsync (cancellationToken As CancellationToken) As Task(Of Boolean) Implements IPrimaryReplicator.OnDataLossAsync" />
+      <MemberSignature Language="F#" Value="abstract member System.Fabric.IPrimaryReplicator.OnDataLossAsync : System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;bool&gt;&#xA;override this.System.Fabric.IPrimaryReplicator.OnDataLossAsync : System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;bool&gt;" Usage="fabricReplicator.System.Fabric.IPrimaryReplicator.OnDataLossAsync cancellationToken" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Fabric.IPrimaryReplicator.OnDataLossAsync(System.Threading.CancellationToken)</InterfaceMember>
       </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Fabric</AssemblyName>
-        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;System.Boolean&gt;</ReturnType>
@@ -167,16 +167,14 @@
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void System.Fabric.IPrimaryReplicator.RemoveReplica(int64 replicaId) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Fabric.FabricReplicator.System#Fabric#IPrimaryReplicator#RemoveReplica(System.Int64)" />
       <MemberSignature Language="VB.NET" Value="Sub RemoveReplica (replicaId As Long) Implements IPrimaryReplicator.RemoveReplica" />
-      <MemberSignature Language="C++ CLI" Value=" virtual void System.Fabric.IPrimaryReplicator.RemoveReplica(long replicaId) = System::Fabric::IPrimaryReplicator::RemoveReplica;" />
-      <MemberSignature Language="C++ CX" Value=" virtual void System.Fabric.IPrimaryReplicator.RemoveReplica(long long replicaId) = System::Fabric::IPrimaryReplicator::RemoveReplica;" />
-      <MemberSignature Language="C++ WINRT" Value="void System.Fabric.IPrimaryReplicator.RemoveReplica(long replicaId);" />
+      <MemberSignature Language="F#" Value="abstract member System.Fabric.IPrimaryReplicator.RemoveReplica : int64 -&gt; unit&#xA;override this.System.Fabric.IPrimaryReplicator.RemoveReplica : int64 -&gt; unit" Usage="fabricReplicator.System.Fabric.IPrimaryReplicator.RemoveReplica replicaId" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Fabric.IPrimaryReplicator.RemoveReplica(System.Int64)</InterfaceMember>
       </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Fabric</AssemblyName>
-        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -199,14 +197,14 @@
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void System.Fabric.IPrimaryReplicator.UpdateCatchUpReplicaSetConfiguration(class System.Fabric.ReplicaSetConfiguration currentConfiguration, class System.Fabric.ReplicaSetConfiguration previousConfiguration) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Fabric.FabricReplicator.System#Fabric#IPrimaryReplicator#UpdateCatchUpReplicaSetConfiguration(System.Fabric.ReplicaSetConfiguration,System.Fabric.ReplicaSetConfiguration)" />
       <MemberSignature Language="VB.NET" Value="Sub UpdateCatchUpReplicaSetConfiguration (currentConfiguration As ReplicaSetConfiguration, previousConfiguration As ReplicaSetConfiguration) Implements IPrimaryReplicator.UpdateCatchUpReplicaSetConfiguration" />
-      <MemberSignature Language="C++ CLI" Value=" virtual void System.Fabric.IPrimaryReplicator.UpdateCatchUpReplicaSetConfiguration(System::Fabric::ReplicaSetConfiguration ^ currentConfiguration, System::Fabric::ReplicaSetConfiguration ^ previousConfiguration) = System::Fabric::IPrimaryReplicator::UpdateCatchUpReplicaSetConfiguration;" />
+      <MemberSignature Language="F#" Value="abstract member System.Fabric.IPrimaryReplicator.UpdateCatchUpReplicaSetConfiguration : System.Fabric.ReplicaSetConfiguration * System.Fabric.ReplicaSetConfiguration -&gt; unit&#xA;override this.System.Fabric.IPrimaryReplicator.UpdateCatchUpReplicaSetConfiguration : System.Fabric.ReplicaSetConfiguration * System.Fabric.ReplicaSetConfiguration -&gt; unit" Usage="fabricReplicator.System.Fabric.IPrimaryReplicator.UpdateCatchUpReplicaSetConfiguration (currentConfiguration, previousConfiguration)" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Fabric.IPrimaryReplicator.UpdateCatchUpReplicaSetConfiguration(System.Fabric.ReplicaSetConfiguration,System.Fabric.ReplicaSetConfiguration)</InterfaceMember>
       </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Fabric</AssemblyName>
-        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -231,14 +229,14 @@
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void System.Fabric.IPrimaryReplicator.UpdateCurrentReplicaSetConfiguration(class System.Fabric.ReplicaSetConfiguration currentConfiguration) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Fabric.FabricReplicator.System#Fabric#IPrimaryReplicator#UpdateCurrentReplicaSetConfiguration(System.Fabric.ReplicaSetConfiguration)" />
       <MemberSignature Language="VB.NET" Value="Sub UpdateCurrentReplicaSetConfiguration (currentConfiguration As ReplicaSetConfiguration) Implements IPrimaryReplicator.UpdateCurrentReplicaSetConfiguration" />
-      <MemberSignature Language="C++ CLI" Value=" virtual void System.Fabric.IPrimaryReplicator.UpdateCurrentReplicaSetConfiguration(System::Fabric::ReplicaSetConfiguration ^ currentConfiguration) = System::Fabric::IPrimaryReplicator::UpdateCurrentReplicaSetConfiguration;" />
+      <MemberSignature Language="F#" Value="abstract member System.Fabric.IPrimaryReplicator.UpdateCurrentReplicaSetConfiguration : System.Fabric.ReplicaSetConfiguration -&gt; unit&#xA;override this.System.Fabric.IPrimaryReplicator.UpdateCurrentReplicaSetConfiguration : System.Fabric.ReplicaSetConfiguration -&gt; unit" Usage="fabricReplicator.System.Fabric.IPrimaryReplicator.UpdateCurrentReplicaSetConfiguration currentConfiguration" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Fabric.IPrimaryReplicator.UpdateCurrentReplicaSetConfiguration(System.Fabric.ReplicaSetConfiguration)</InterfaceMember>
       </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Fabric</AssemblyName>
-        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -260,14 +258,15 @@
       <MemberSignature Language="C#" Value="System.Threading.Tasks.Task IPrimaryReplicator.WaitForCatchUpQuorumAsync (System.Fabric.ReplicaSetQuorumMode quorumMode, System.Threading.CancellationToken cancellationToken);" />
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance class System.Threading.Tasks.Task System.Fabric.IPrimaryReplicator.WaitForCatchUpQuorumAsync(valuetype System.Fabric.ReplicaSetQuorumMode quorumMode, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Fabric.FabricReplicator.System#Fabric#IPrimaryReplicator#WaitForCatchUpQuorumAsync(System.Fabric.ReplicaSetQuorumMode,System.Threading.CancellationToken)" />
-      <MemberSignature Language="C++ CLI" Value=" virtual System::Threading::Tasks::Task ^ System.Fabric.IPrimaryReplicator.WaitForCatchUpQuorumAsync(System::Fabric::ReplicaSetQuorumMode quorumMode, System::Threading::CancellationToken cancellationToken) = System::Fabric::IPrimaryReplicator::WaitForCatchUpQuorumAsync;" />
+      <MemberSignature Language="VB.NET" Value="Function WaitForCatchUpQuorumAsync (quorumMode As ReplicaSetQuorumMode, cancellationToken As CancellationToken) As Task Implements IPrimaryReplicator.WaitForCatchUpQuorumAsync" />
+      <MemberSignature Language="F#" Value="abstract member System.Fabric.IPrimaryReplicator.WaitForCatchUpQuorumAsync : System.Fabric.ReplicaSetQuorumMode * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&#xA;override this.System.Fabric.IPrimaryReplicator.WaitForCatchUpQuorumAsync : System.Fabric.ReplicaSetQuorumMode * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task" Usage="fabricReplicator.System.Fabric.IPrimaryReplicator.WaitForCatchUpQuorumAsync (quorumMode, cancellationToken)" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Fabric.IPrimaryReplicator.WaitForCatchUpQuorumAsync(System.Fabric.ReplicaSetQuorumMode,System.Threading.CancellationToken)</InterfaceMember>
       </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Fabric</AssemblyName>
-        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task</ReturnType>
@@ -296,16 +295,14 @@
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void System.Fabric.IReplicator.Abort() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Fabric.FabricReplicator.System#Fabric#IReplicator#Abort" />
       <MemberSignature Language="VB.NET" Value="Sub Abort () Implements IReplicator.Abort" />
-      <MemberSignature Language="C++ CLI" Value=" virtual void System.Fabric.IReplicator.Abort() = System::Fabric::IReplicator::Abort;" />
-      <MemberSignature Language="C++ CX" Value=" virtual void System.Fabric.IReplicator.Abort() = System::Fabric::IReplicator::Abort;" />
-      <MemberSignature Language="C++ WINRT" Value="void System.Fabric.IReplicator.Abort();" />
+      <MemberSignature Language="F#" Value="abstract member System.Fabric.IReplicator.Abort : unit -&gt; unit&#xA;override this.System.Fabric.IReplicator.Abort : unit -&gt; unit" Usage="fabricReplicator.System.Fabric.IReplicator.Abort " />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Fabric.IReplicator.Abort</InterfaceMember>
       </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Fabric</AssemblyName>
-        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -320,14 +317,15 @@
       <MemberSignature Language="C#" Value="System.Threading.Tasks.Task IReplicator.ChangeRoleAsync (System.Fabric.Epoch epoch, System.Fabric.ReplicaRole role, System.Threading.CancellationToken cancellationToken);" />
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance class System.Threading.Tasks.Task System.Fabric.IReplicator.ChangeRoleAsync(valuetype System.Fabric.Epoch epoch, valuetype System.Fabric.ReplicaRole role, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Fabric.FabricReplicator.System#Fabric#IReplicator#ChangeRoleAsync(System.Fabric.Epoch,System.Fabric.ReplicaRole,System.Threading.CancellationToken)" />
-      <MemberSignature Language="C++ CLI" Value=" virtual System::Threading::Tasks::Task ^ System.Fabric.IReplicator.ChangeRoleAsync(System::Fabric::Epoch epoch, System::Fabric::ReplicaRole role, System::Threading::CancellationToken cancellationToken) = System::Fabric::IReplicator::ChangeRoleAsync;" />
+      <MemberSignature Language="VB.NET" Value="Function ChangeRoleAsync (epoch As Epoch, role As ReplicaRole, cancellationToken As CancellationToken) As Task Implements IReplicator.ChangeRoleAsync" />
+      <MemberSignature Language="F#" Value="abstract member System.Fabric.IReplicator.ChangeRoleAsync : System.Fabric.Epoch * System.Fabric.ReplicaRole * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&#xA;override this.System.Fabric.IReplicator.ChangeRoleAsync : System.Fabric.Epoch * System.Fabric.ReplicaRole * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task" Usage="fabricReplicator.System.Fabric.IReplicator.ChangeRoleAsync (epoch, role, cancellationToken)" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Fabric.IReplicator.ChangeRoleAsync(System.Fabric.Epoch,System.Fabric.ReplicaRole,System.Threading.CancellationToken)</InterfaceMember>
       </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Fabric</AssemblyName>
-        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task</ReturnType>
@@ -358,14 +356,15 @@
       <MemberSignature Language="C#" Value="System.Threading.Tasks.Task IReplicator.CloseAsync (System.Threading.CancellationToken cancellationToken);" />
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance class System.Threading.Tasks.Task System.Fabric.IReplicator.CloseAsync(valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Fabric.FabricReplicator.System#Fabric#IReplicator#CloseAsync(System.Threading.CancellationToken)" />
-      <MemberSignature Language="C++ CLI" Value=" virtual System::Threading::Tasks::Task ^ System.Fabric.IReplicator.CloseAsync(System::Threading::CancellationToken cancellationToken) = System::Fabric::IReplicator::CloseAsync;" />
+      <MemberSignature Language="VB.NET" Value="Function CloseAsync (cancellationToken As CancellationToken) As Task Implements IReplicator.CloseAsync" />
+      <MemberSignature Language="F#" Value="abstract member System.Fabric.IReplicator.CloseAsync : System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&#xA;override this.System.Fabric.IReplicator.CloseAsync : System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task" Usage="fabricReplicator.System.Fabric.IReplicator.CloseAsync cancellationToken" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Fabric.IReplicator.CloseAsync(System.Threading.CancellationToken)</InterfaceMember>
       </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Fabric</AssemblyName>
-        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task</ReturnType>
@@ -389,16 +388,14 @@
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance int64 System.Fabric.IReplicator.GetCatchUpCapability() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Fabric.FabricReplicator.System#Fabric#IReplicator#GetCatchUpCapability" />
       <MemberSignature Language="VB.NET" Value="Function GetCatchUpCapability () As Long Implements IReplicator.GetCatchUpCapability" />
-      <MemberSignature Language="C++ CLI" Value=" virtual long System.Fabric.IReplicator.GetCatchUpCapability() = System::Fabric::IReplicator::GetCatchUpCapability;" />
-      <MemberSignature Language="C++ CX" Value=" virtual long long System.Fabric.IReplicator.GetCatchUpCapability() = System::Fabric::IReplicator::GetCatchUpCapability;" />
-      <MemberSignature Language="C++ WINRT" Value="long System.Fabric.IReplicator.GetCatchUpCapability();" />
+      <MemberSignature Language="F#" Value="abstract member System.Fabric.IReplicator.GetCatchUpCapability : unit -&gt; int64&#xA;override this.System.Fabric.IReplicator.GetCatchUpCapability : unit -&gt; int64" Usage="fabricReplicator.System.Fabric.IReplicator.GetCatchUpCapability " />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Fabric.IReplicator.GetCatchUpCapability</InterfaceMember>
       </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Fabric</AssemblyName>
-        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int64</ReturnType>
@@ -417,16 +414,14 @@
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance int64 System.Fabric.IReplicator.GetCurrentProgress() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Fabric.FabricReplicator.System#Fabric#IReplicator#GetCurrentProgress" />
       <MemberSignature Language="VB.NET" Value="Function GetCurrentProgress () As Long Implements IReplicator.GetCurrentProgress" />
-      <MemberSignature Language="C++ CLI" Value=" virtual long System.Fabric.IReplicator.GetCurrentProgress() = System::Fabric::IReplicator::GetCurrentProgress;" />
-      <MemberSignature Language="C++ CX" Value=" virtual long long System.Fabric.IReplicator.GetCurrentProgress() = System::Fabric::IReplicator::GetCurrentProgress;" />
-      <MemberSignature Language="C++ WINRT" Value="long System.Fabric.IReplicator.GetCurrentProgress();" />
+      <MemberSignature Language="F#" Value="abstract member System.Fabric.IReplicator.GetCurrentProgress : unit -&gt; int64&#xA;override this.System.Fabric.IReplicator.GetCurrentProgress : unit -&gt; int64" Usage="fabricReplicator.System.Fabric.IReplicator.GetCurrentProgress " />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Fabric.IReplicator.GetCurrentProgress</InterfaceMember>
       </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Fabric</AssemblyName>
-        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int64</ReturnType>
@@ -444,14 +439,15 @@
       <MemberSignature Language="C#" Value="System.Threading.Tasks.Task&lt;string&gt; IReplicator.OpenAsync (System.Threading.CancellationToken cancellationToken);" />
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;string&gt; System.Fabric.IReplicator.OpenAsync(valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Fabric.FabricReplicator.System#Fabric#IReplicator#OpenAsync(System.Threading.CancellationToken)" />
-      <MemberSignature Language="C++ CLI" Value=" virtual System::Threading::Tasks::Task&lt;System::String ^&gt; ^ System.Fabric.IReplicator.OpenAsync(System::Threading::CancellationToken cancellationToken) = System::Fabric::IReplicator::OpenAsync;" />
+      <MemberSignature Language="VB.NET" Value="Function OpenAsync (cancellationToken As CancellationToken) As Task(Of String) Implements IReplicator.OpenAsync" />
+      <MemberSignature Language="F#" Value="abstract member System.Fabric.IReplicator.OpenAsync : System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;string&gt;&#xA;override this.System.Fabric.IReplicator.OpenAsync : System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;string&gt;" Usage="fabricReplicator.System.Fabric.IReplicator.OpenAsync cancellationToken" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Fabric.IReplicator.OpenAsync(System.Threading.CancellationToken)</InterfaceMember>
       </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Fabric</AssemblyName>
-        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;System.String&gt;</ReturnType>
@@ -474,14 +470,15 @@
       <MemberSignature Language="C#" Value="System.Threading.Tasks.Task IReplicator.UpdateEpochAsync (System.Fabric.Epoch epoch, System.Threading.CancellationToken cancellationToken);" />
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance class System.Threading.Tasks.Task System.Fabric.IReplicator.UpdateEpochAsync(valuetype System.Fabric.Epoch epoch, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Fabric.FabricReplicator.System#Fabric#IReplicator#UpdateEpochAsync(System.Fabric.Epoch,System.Threading.CancellationToken)" />
-      <MemberSignature Language="C++ CLI" Value=" virtual System::Threading::Tasks::Task ^ System.Fabric.IReplicator.UpdateEpochAsync(System::Fabric::Epoch epoch, System::Threading::CancellationToken cancellationToken) = System::Fabric::IReplicator::UpdateEpochAsync;" />
+      <MemberSignature Language="VB.NET" Value="Function UpdateEpochAsync (epoch As Epoch, cancellationToken As CancellationToken) As Task Implements IReplicator.UpdateEpochAsync" />
+      <MemberSignature Language="F#" Value="abstract member System.Fabric.IReplicator.UpdateEpochAsync : System.Fabric.Epoch * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&#xA;override this.System.Fabric.IReplicator.UpdateEpochAsync : System.Fabric.Epoch * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task" Usage="fabricReplicator.System.Fabric.IReplicator.UpdateEpochAsync (epoch, cancellationToken)" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Fabric.IReplicator.UpdateEpochAsync(System.Fabric.Epoch,System.Threading.CancellationToken)</InterfaceMember>
       </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Fabric</AssemblyName>
-        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task</ReturnType>
@@ -510,12 +507,10 @@
       <MemberSignature Language="DocId" Value="F:System.Fabric.FabricReplicator.UnknownSequenceNumber" />
       <MemberSignature Language="VB.NET" Value="Public Const UnknownSequenceNumber As Long  = -1" />
       <MemberSignature Language="F#" Value="val mutable UnknownSequenceNumber : int64" Usage="System.Fabric.FabricReplicator.UnknownSequenceNumber" />
-      <MemberSignature Language="C++ CLI" Value="public: long UnknownSequenceNumber = -1;" />
-      <MemberSignature Language="C++ WINRT" Value="long UnknownSequenceNumber = -1;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Fabric</AssemblyName>
-        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int64</ReturnType>

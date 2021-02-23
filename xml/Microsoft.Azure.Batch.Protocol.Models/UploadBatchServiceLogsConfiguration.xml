@@ -1,14 +1,14 @@
-﻿<Type Name="UploadBatchServiceLogsConfiguration" FullName="Microsoft.Azure.Batch.Protocol.Models.UploadBatchServiceLogsConfiguration">
+<Type Name="UploadBatchServiceLogsConfiguration" FullName="Microsoft.Azure.Batch.Protocol.Models.UploadBatchServiceLogsConfiguration">
   <TypeSignature Language="C#" Value="public class UploadBatchServiceLogsConfiguration" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit UploadBatchServiceLogsConfiguration extends System.Object" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Azure.Batch.Protocol.Models.UploadBatchServiceLogsConfiguration" />
   <TypeSignature Language="VB.NET" Value="Public Class UploadBatchServiceLogsConfiguration" />
   <TypeSignature Language="F#" Value="type UploadBatchServiceLogsConfiguration = class" />
-  <TypeSignature Language="C++ CLI" Value="public ref class UploadBatchServiceLogsConfiguration" />
-  <TypeSignature Language="C++ WINRT" Value="[Windows::Foundation::Metadata::WebHostHidden]&#xA;class UploadBatchServiceLogsConfiguration" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Azure.Batch</AssemblyName>
-    <AssemblyVersion>8.0.0.0</AssemblyVersion>
+    <AssemblyVersion>12.0.0.0</AssemblyVersion>
+    <AssemblyVersion>13.0.0.0</AssemblyVersion>
+    <AssemblyVersion>14.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
@@ -16,8 +16,8 @@
   <Interfaces />
   <Docs>
     <summary>
-            The Azure Batch service log files upload configuration for a compute
-            node.
+            The Azure Batch service log files upload configuration for a Compute
+            Node.
             </summary>
     <remarks>To be added.</remarks>
   </Docs>
@@ -27,13 +27,12 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Batch.Protocol.Models.UploadBatchServiceLogsConfiguration.#ctor" />
       <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; UploadBatchServiceLogsConfiguration();" />
-      <MemberSignature Language="C++ CX" Value="public:&#xA; UploadBatchServiceLogsConfiguration();" />
-      <MemberSignature Language="C++ WINRT" Value=" UploadBatchServiceLogsConfiguration();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Batch</AssemblyName>
-        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>12.0.0.0</AssemblyVersion>
+        <AssemblyVersion>13.0.0.0</AssemblyVersion>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
@@ -45,15 +44,17 @@
       </Docs>
     </Member>
     <Member MemberName=".ctor">
-      <MemberSignature Language="C#" Value="public UploadBatchServiceLogsConfiguration (string containerUrl, DateTime startTime, Nullable&lt;DateTime&gt; endTime = null);" />
+      <MemberSignature Language="C#" Value="public UploadBatchServiceLogsConfiguration (string containerUrl, DateTime startTime, DateTime? endTime = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string containerUrl, valuetype System.DateTime startTime, valuetype System.Nullable`1&lt;valuetype System.DateTime&gt; endTime) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Batch.Protocol.Models.UploadBatchServiceLogsConfiguration.#ctor(System.String,System.DateTime,System.Nullable{System.DateTime})" />
-      <MemberSignature Language="VB.NET" Value="Public Sub New (containerUrl As String, startTime As DateTime, Optional endTime As Nullable(Of DateTime) = null)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (containerUrl As String, startTime As DateTime, Optional endTime As Nullable(Of DateTime) = Nothing)" />
       <MemberSignature Language="F#" Value="new Microsoft.Azure.Batch.Protocol.Models.UploadBatchServiceLogsConfiguration : string * DateTime * Nullable&lt;DateTime&gt; -&gt; Microsoft.Azure.Batch.Protocol.Models.UploadBatchServiceLogsConfiguration" Usage="new Microsoft.Azure.Batch.Protocol.Models.UploadBatchServiceLogsConfiguration (containerUrl, startTime, endTime)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Batch</AssemblyName>
-        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>12.0.0.0</AssemblyVersion>
+        <AssemblyVersion>13.0.0.0</AssemblyVersion>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="containerUrl" Type="System.String" />
@@ -81,16 +82,17 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Batch.Protocol.Models.UploadBatchServiceLogsConfiguration.ContainerUrl" />
       <MemberSignature Language="VB.NET" Value="Public Property ContainerUrl As String" />
       <MemberSignature Language="F#" Value="member this.ContainerUrl : string with get, set" Usage="Microsoft.Azure.Batch.Protocol.Models.UploadBatchServiceLogsConfiguration.ContainerUrl" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ ContainerUrl { System::String ^ get(); void set(System::String ^ value); };" />
-      <MemberSignature Language="C++ CX" Value="public:&#xA; property Platform::String ^ ContainerUrl { Platform::String ^ get(); void set(Platform::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Batch</AssemblyName>
-        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>12.0.0.0</AssemblyVersion>
+        <AssemblyVersion>13.0.0.0</AssemblyVersion>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="containerUrl")</AttributeName>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty(PropertyName="containerUrl")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty(PropertyName="containerUrl")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -111,20 +113,22 @@
       </Docs>
     </Member>
     <Member MemberName="EndTime">
-      <MemberSignature Language="C#" Value="public Nullable&lt;DateTime&gt; EndTime { get; set; }" />
+      <MemberSignature Language="C#" Value="public DateTime? EndTime { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;valuetype System.DateTime&gt; EndTime" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Batch.Protocol.Models.UploadBatchServiceLogsConfiguration.EndTime" />
       <MemberSignature Language="VB.NET" Value="Public Property EndTime As Nullable(Of DateTime)" />
       <MemberSignature Language="F#" Value="member this.EndTime : Nullable&lt;DateTime&gt; with get, set" Usage="Microsoft.Azure.Batch.Protocol.Models.UploadBatchServiceLogsConfiguration.EndTime" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Nullable&lt;DateTime&gt; EndTime { Nullable&lt;DateTime&gt; get(); void set(Nullable&lt;DateTime&gt; value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Batch</AssemblyName>
-        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>12.0.0.0</AssemblyVersion>
+        <AssemblyVersion>13.0.0.0</AssemblyVersion>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="endTime")</AttributeName>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty(PropertyName="endTime")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty(PropertyName="endTime")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -152,15 +156,17 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Batch.Protocol.Models.UploadBatchServiceLogsConfiguration.StartTime" />
       <MemberSignature Language="VB.NET" Value="Public Property StartTime As DateTime" />
       <MemberSignature Language="F#" Value="member this.StartTime : DateTime with get, set" Usage="Microsoft.Azure.Batch.Protocol.Models.UploadBatchServiceLogsConfiguration.StartTime" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property DateTime StartTime { DateTime get(); void set(DateTime value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Batch</AssemblyName>
-        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>12.0.0.0</AssemblyVersion>
+        <AssemblyVersion>13.0.0.0</AssemblyVersion>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="startTime")</AttributeName>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty(PropertyName="startTime")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty(PropertyName="startTime")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -179,34 +185,6 @@
             uploaded, but the operation should not retrieve fewer logs than
             have been requested.
             </remarks>
-      </Docs>
-    </Member>
-    <Member MemberName="Validate">
-      <MemberSignature Language="C#" Value="public virtual void Validate ();" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Validate() cil managed" />
-      <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Batch.Protocol.Models.UploadBatchServiceLogsConfiguration.Validate" />
-      <MemberSignature Language="VB.NET" Value="Public Overridable Sub Validate ()" />
-      <MemberSignature Language="F#" Value="abstract member Validate : unit -&gt; unit&#xA;override this.Validate : unit -&gt; unit" Usage="uploadBatchServiceLogsConfiguration.Validate " />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Validate();" />
-      <MemberSignature Language="C++ CX" Value="public:&#xA; virtual void Validate();" />
-      <MemberSignature Language="C++ WINRT" Value=" virtual void Validate();" />
-      <MemberType>Method</MemberType>
-      <AssemblyInfo>
-        <AssemblyName>Microsoft.Azure.Batch</AssemblyName>
-        <AssemblyVersion>8.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <ReturnValue>
-        <ReturnType>System.Void</ReturnType>
-      </ReturnValue>
-      <Parameters />
-      <Docs>
-        <summary>
-            Validate the object.
-            </summary>
-        <remarks>To be added.</remarks>
-        <exception cref="T:Microsoft.Rest.ValidationException">
-            Thrown if validation fails
-            </exception>
       </Docs>
     </Member>
   </Members>

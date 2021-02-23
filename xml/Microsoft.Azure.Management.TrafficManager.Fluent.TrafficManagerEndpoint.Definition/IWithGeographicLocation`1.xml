@@ -1,23 +1,29 @@
-﻿<Type Name="IWithGeographicLocation&lt;ParentT&gt;" FullName="Microsoft.Azure.Management.TrafficManager.Fluent.TrafficManagerEndpoint.Definition.IWithGeographicLocation&lt;ParentT&gt;">
+<Type Name="IWithGeographicLocation&lt;ParentT&gt;" FullName="Microsoft.Azure.Management.TrafficManager.Fluent.TrafficManagerEndpoint.Definition.IWithGeographicLocation&lt;ParentT&gt;">
   <TypeSignature Language="C#" Value="public interface IWithGeographicLocation&lt;ParentT&gt;" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IWithGeographicLocation`1&lt;ParentT&gt;" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Azure.Management.TrafficManager.Fluent.TrafficManagerEndpoint.Definition.IWithGeographicLocation`1" />
   <TypeSignature Language="VB.NET" Value="Public Interface IWithGeographicLocation(Of ParentT)" />
   <TypeSignature Language="F#" Value="type IWithGeographicLocation&lt;'ParentT&gt; = interface" />
-  <TypeSignature Language="C++ CLI" Value="generic &lt;typename ParentT&gt;&#xA;public interface class IWithGeographicLocation" />
-  <TypeSignature Language="C++ CX" Value="public interface class IWithGeographicLocation" />
-  <TypeSignature Language="C++ WINRT" Value="template &lt;typename ParentT&gt;&#xA;__interface IWithGeographicLocation" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Azure.Management.TrafficManager.Fluent</AssemblyName>
-    <AssemblyVersion>1.0.0.60</AssemblyVersion>
+    <AssemblyVersion>1.0.0.61</AssemblyVersion>
+    <AssemblyVersion>1.0.0.62</AssemblyVersion>
+    <AssemblyVersion>1.0.0.63</AssemblyVersion>
+    <AssemblyVersion>1.0.0.64</AssemblyVersion>
+    <AssemblyVersion>1.0.0.65</AssemblyVersion>
+    <AssemblyVersion>1.0.0.66</AssemblyVersion>
+    <AssemblyVersion>1.0.0.67</AssemblyVersion>
+    <AssemblyVersion>1.0.0.68</AssemblyVersion>
   </AssemblyInfo>
   <TypeParameters>
     <TypeParameter Name="ParentT" />
   </TypeParameters>
   <Interfaces />
   <Docs>
-    <typeparam name="ParentT">To be added.</typeparam>
-    <summary>To be added.</summary>
+    <typeparam name="ParentT">The return type of  WithAttach.attach().</typeparam>
+    <summary>
+            The stage of the traffic manager endpoint definition allowing to specify the geographic region.
+            </summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -27,13 +33,17 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Management.TrafficManager.Fluent.TrafficManagerEndpoint.Definition.IWithGeographicLocation`1.WithGeographicLocation(Microsoft.Azure.Management.TrafficManager.Fluent.IGeographicLocation)" />
       <MemberSignature Language="VB.NET" Value="Public Function WithGeographicLocation (geographicLocation As IGeographicLocation) As IWithAttach(Of ParentT)" />
       <MemberSignature Language="F#" Value="abstract member WithGeographicLocation : Microsoft.Azure.Management.TrafficManager.Fluent.IGeographicLocation -&gt; Microsoft.Azure.Management.TrafficManager.Fluent.TrafficManagerEndpoint.Definition.IWithAttach&lt;'ParentT&gt;" Usage="iWithGeographicLocation.WithGeographicLocation geographicLocation" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; Microsoft::Azure::Management::TrafficManager::Fluent::TrafficManagerEndpoint::Definition::IWithAttach&lt;ParentT&gt; ^ WithGeographicLocation(Microsoft::Azure::Management::TrafficManager::Fluent::IGeographicLocation ^ geographicLocation);" />
-      <MemberSignature Language="C++ CX" Value="public:&#xA; Microsoft::Azure::Management::TrafficManager::Fluent::TrafficManagerEndpoint::Definition::IWithAttach&lt;ParentT&gt; ^ WithGeographicLocation(Microsoft::Azure::Management::TrafficManager::Fluent::IGeographicLocation ^ geographicLocation);" />
-      <MemberSignature Language="C++ WINRT" Value="Microsoft::Azure::Management::TrafficManager::Fluent::TrafficManagerEndpoint::Definition::IWithAttach&lt;ParentT&gt; WithGeographicLocation(Microsoft::Azure::Management::TrafficManager::Fluent::IGeographicLocation const &amp; geographicLocation);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.TrafficManager.Fluent</AssemblyName>
-        <AssemblyVersion>1.0.0.60</AssemblyVersion>
+        <AssemblyVersion>1.0.0.61</AssemblyVersion>
+        <AssemblyVersion>1.0.0.62</AssemblyVersion>
+        <AssemblyVersion>1.0.0.63</AssemblyVersion>
+        <AssemblyVersion>1.0.0.64</AssemblyVersion>
+        <AssemblyVersion>1.0.0.65</AssemblyVersion>
+        <AssemblyVersion>1.0.0.66</AssemblyVersion>
+        <AssemblyVersion>1.0.0.67</AssemblyVersion>
+        <AssemblyVersion>1.0.0.68</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Azure.Management.TrafficManager.Fluent.TrafficManagerEndpoint.Definition.IWithAttach&lt;ParentT&gt;</ReturnType>
@@ -42,10 +52,14 @@
         <Parameter Name="geographicLocation" Type="Microsoft.Azure.Management.TrafficManager.Fluent.IGeographicLocation" />
       </Parameters>
       <Docs>
-        <param name="geographicLocation">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="geographicLocation">The geographic location.</param>
+        <summary>
+            Specifies the geographic location for the endpoint that will be used when the parent profile is configured
+            with geographic based routing method  TrafficRoutingMethod.GEOGRAPHIC.
+            </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
+        <return>The next stage of the definition.</return>
       </Docs>
     </Member>
     <Member MemberName="WithGeographicLocation">
@@ -54,13 +68,17 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Management.TrafficManager.Fluent.TrafficManagerEndpoint.Definition.IWithGeographicLocation`1.WithGeographicLocation(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Function WithGeographicLocation (geographicLocationCode As String) As IWithAttach(Of ParentT)" />
       <MemberSignature Language="F#" Value="abstract member WithGeographicLocation : string -&gt; Microsoft.Azure.Management.TrafficManager.Fluent.TrafficManagerEndpoint.Definition.IWithAttach&lt;'ParentT&gt;" Usage="iWithGeographicLocation.WithGeographicLocation geographicLocationCode" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; Microsoft::Azure::Management::TrafficManager::Fluent::TrafficManagerEndpoint::Definition::IWithAttach&lt;ParentT&gt; ^ WithGeographicLocation(System::String ^ geographicLocationCode);" />
-      <MemberSignature Language="C++ CX" Value="public:&#xA; Microsoft::Azure::Management::TrafficManager::Fluent::TrafficManagerEndpoint::Definition::IWithAttach&lt;ParentT&gt; ^ WithGeographicLocation(Platform::String ^ geographicLocationCode);" />
-      <MemberSignature Language="C++ WINRT" Value="Microsoft::Azure::Management::TrafficManager::Fluent::TrafficManagerEndpoint::Definition::IWithAttach&lt;ParentT&gt; WithGeographicLocation(std::wstring const &amp; geographicLocationCode);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.TrafficManager.Fluent</AssemblyName>
-        <AssemblyVersion>1.0.0.60</AssemblyVersion>
+        <AssemblyVersion>1.0.0.61</AssemblyVersion>
+        <AssemblyVersion>1.0.0.62</AssemblyVersion>
+        <AssemblyVersion>1.0.0.63</AssemblyVersion>
+        <AssemblyVersion>1.0.0.64</AssemblyVersion>
+        <AssemblyVersion>1.0.0.65</AssemblyVersion>
+        <AssemblyVersion>1.0.0.66</AssemblyVersion>
+        <AssemblyVersion>1.0.0.67</AssemblyVersion>
+        <AssemblyVersion>1.0.0.68</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Azure.Management.TrafficManager.Fluent.TrafficManagerEndpoint.Definition.IWithAttach&lt;ParentT&gt;</ReturnType>
@@ -69,10 +87,14 @@
         <Parameter Name="geographicLocationCode" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="geographicLocationCode">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="geographicLocationCode">The geographic location code.</param>
+        <summary>
+            Specifies the geographic location for the endpoint that will be used when the parent profile is configured
+            with geographic based routing method  TrafficRoutingMethod.GEOGRAPHIC.
+            </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
+        <return>The next stage of the definition.</return>
       </Docs>
     </Member>
     <Member MemberName="WithGeographicLocations">
@@ -81,11 +103,17 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Management.TrafficManager.Fluent.TrafficManagerEndpoint.Definition.IWithGeographicLocation`1.WithGeographicLocations(System.Collections.Generic.IList{Microsoft.Azure.Management.TrafficManager.Fluent.IGeographicLocation})" />
       <MemberSignature Language="VB.NET" Value="Public Function WithGeographicLocations (geographicLocations As IList(Of IGeographicLocation)) As IWithAttach(Of ParentT)" />
       <MemberSignature Language="F#" Value="abstract member WithGeographicLocations : System.Collections.Generic.IList&lt;Microsoft.Azure.Management.TrafficManager.Fluent.IGeographicLocation&gt; -&gt; Microsoft.Azure.Management.TrafficManager.Fluent.TrafficManagerEndpoint.Definition.IWithAttach&lt;'ParentT&gt;" Usage="iWithGeographicLocation.WithGeographicLocations geographicLocations" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; Microsoft::Azure::Management::TrafficManager::Fluent::TrafficManagerEndpoint::Definition::IWithAttach&lt;ParentT&gt; ^ WithGeographicLocations(System::Collections::Generic::IList&lt;Microsoft::Azure::Management::TrafficManager::Fluent::IGeographicLocation ^&gt; ^ geographicLocations);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.TrafficManager.Fluent</AssemblyName>
-        <AssemblyVersion>1.0.0.60</AssemblyVersion>
+        <AssemblyVersion>1.0.0.61</AssemblyVersion>
+        <AssemblyVersion>1.0.0.62</AssemblyVersion>
+        <AssemblyVersion>1.0.0.63</AssemblyVersion>
+        <AssemblyVersion>1.0.0.64</AssemblyVersion>
+        <AssemblyVersion>1.0.0.65</AssemblyVersion>
+        <AssemblyVersion>1.0.0.66</AssemblyVersion>
+        <AssemblyVersion>1.0.0.67</AssemblyVersion>
+        <AssemblyVersion>1.0.0.68</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Azure.Management.TrafficManager.Fluent.TrafficManagerEndpoint.Definition.IWithAttach&lt;ParentT&gt;</ReturnType>
@@ -94,10 +122,14 @@
         <Parameter Name="geographicLocations" Type="System.Collections.Generic.IList&lt;Microsoft.Azure.Management.TrafficManager.Fluent.IGeographicLocation&gt;" />
       </Parameters>
       <Docs>
-        <param name="geographicLocations">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="geographicLocations">The geographic locations.</param>
+        <summary>
+            Specifies the list of geographic location for the endpoint that will be used when the parent profile is
+            configured with geographic based routing method  TrafficRoutingMethod.GEOGRAPHIC.
+            </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
+        <return>The next stage of the definition.</return>
       </Docs>
     </Member>
     <Member MemberName="WithGeographicLocations">
@@ -106,11 +138,17 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Management.TrafficManager.Fluent.TrafficManagerEndpoint.Definition.IWithGeographicLocation`1.WithGeographicLocations(System.Collections.Generic.IList{System.String})" />
       <MemberSignature Language="VB.NET" Value="Public Function WithGeographicLocations (geographicLocationCodes As IList(Of String)) As IWithAttach(Of ParentT)" />
       <MemberSignature Language="F#" Value="abstract member WithGeographicLocations : System.Collections.Generic.IList&lt;string&gt; -&gt; Microsoft.Azure.Management.TrafficManager.Fluent.TrafficManagerEndpoint.Definition.IWithAttach&lt;'ParentT&gt;" Usage="iWithGeographicLocation.WithGeographicLocations geographicLocationCodes" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; Microsoft::Azure::Management::TrafficManager::Fluent::TrafficManagerEndpoint::Definition::IWithAttach&lt;ParentT&gt; ^ WithGeographicLocations(System::Collections::Generic::IList&lt;System::String ^&gt; ^ geographicLocationCodes);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.TrafficManager.Fluent</AssemblyName>
-        <AssemblyVersion>1.0.0.60</AssemblyVersion>
+        <AssemblyVersion>1.0.0.61</AssemblyVersion>
+        <AssemblyVersion>1.0.0.62</AssemblyVersion>
+        <AssemblyVersion>1.0.0.63</AssemblyVersion>
+        <AssemblyVersion>1.0.0.64</AssemblyVersion>
+        <AssemblyVersion>1.0.0.65</AssemblyVersion>
+        <AssemblyVersion>1.0.0.66</AssemblyVersion>
+        <AssemblyVersion>1.0.0.67</AssemblyVersion>
+        <AssemblyVersion>1.0.0.68</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Azure.Management.TrafficManager.Fluent.TrafficManagerEndpoint.Definition.IWithAttach&lt;ParentT&gt;</ReturnType>
@@ -119,10 +157,14 @@
         <Parameter Name="geographicLocationCodes" Type="System.Collections.Generic.IList&lt;System.String&gt;" />
       </Parameters>
       <Docs>
-        <param name="geographicLocationCodes">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="geographicLocationCodes">The geographic location codes.</param>
+        <summary>
+            Specifies the list of geographic location for the endpoint that will be used when the parent profile is
+            configured with geographic based routing method  TrafficRoutingMethod.GEOGRAPHIC.
+            </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
+        <return>The next stage of the definition.</return>
       </Docs>
     </Member>
   </Members>

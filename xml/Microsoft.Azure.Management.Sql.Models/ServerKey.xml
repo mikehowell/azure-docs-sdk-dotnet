@@ -1,11 +1,9 @@
-﻿<Type Name="ServerKey" FullName="Microsoft.Azure.Management.Sql.Models.ServerKey">
+<Type Name="ServerKey" FullName="Microsoft.Azure.Management.Sql.Models.ServerKey">
   <TypeSignature Language="C#" Value="public class ServerKey : Microsoft.Azure.Management.Sql.Models.ProxyResource" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit ServerKey extends Microsoft.Azure.Management.Sql.Models.ProxyResource" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Azure.Management.Sql.Models.ServerKey" />
   <TypeSignature Language="VB.NET" Value="Public Class ServerKey&#xA;Inherits ProxyResource" />
   <TypeSignature Language="F#" Value="type ServerKey = class&#xA;    inherit ProxyResource" />
-  <TypeSignature Language="C++ CLI" Value="public ref class ServerKey : Microsoft::Azure::Management::Sql::Models::ProxyResource" />
-  <TypeSignature Language="C++ WINRT" Value="[Windows::Foundation::Metadata::WebHostHidden]&#xA;class ServerKey : Microsoft::Azure::Management::Sql::Models::ProxyResource" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Azure.Management.Sql</AssemblyName>
     <AssemblyVersion>1.0.0.0</AssemblyVersion>
@@ -16,7 +14,8 @@
   <Interfaces />
   <Attributes>
     <Attribute>
-      <AttributeName>Microsoft.Rest.Serialization.JsonTransformation</AttributeName>
+      <AttributeName Language="C#">[Microsoft.Rest.Serialization.JsonTransformation]</AttributeName>
+      <AttributeName Language="F#">[&lt;Microsoft.Rest.Serialization.JsonTransformation&gt;]</AttributeName>
     </Attribute>
   </Attributes>
   <Docs>
@@ -31,9 +30,6 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Management.Sql.Models.ServerKey.#ctor" />
       <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; ServerKey();" />
-      <MemberSignature Language="C++ CX" Value="public:&#xA; ServerKey();" />
-      <MemberSignature Language="C++ WINRT" Value=" ServerKey();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Sql</AssemblyName>
@@ -48,10 +44,10 @@
       </Docs>
     </Member>
     <Member MemberName=".ctor">
-      <MemberSignature Language="C#" Value="public ServerKey (string serverKeyType, string id = null, string name = null, string type = null, string kind = null, string location = null, string subregion = null, string uri = null, string thumbprint = null, Nullable&lt;DateTime&gt; creationDate = null);" />
+      <MemberSignature Language="C#" Value="public ServerKey (string serverKeyType, string id = default, string name = default, string type = default, string kind = default, string location = default, string subregion = default, string uri = default, string thumbprint = default, DateTime? creationDate = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string serverKeyType, string id, string name, string type, string kind, string location, string subregion, string uri, string thumbprint, valuetype System.Nullable`1&lt;valuetype System.DateTime&gt; creationDate) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Management.Sql.Models.ServerKey.#ctor(System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.Nullable{System.DateTime})" />
-      <MemberSignature Language="VB.NET" Value="Public Sub New (serverKeyType As String, Optional id As String = null, Optional name As String = null, Optional type As String = null, Optional kind As String = null, Optional location As String = null, Optional subregion As String = null, Optional uri As String = null, Optional thumbprint As String = null, Optional creationDate As Nullable(Of DateTime) = null)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (serverKeyType As String, Optional id As String = Nothing, Optional name As String = Nothing, Optional type As String = Nothing, Optional kind As String = Nothing, Optional location As String = Nothing, Optional subregion As String = Nothing, Optional uri As String = Nothing, Optional thumbprint As String = Nothing, Optional creationDate As Nullable(Of DateTime) = Nothing)" />
       <MemberSignature Language="F#" Value="new Microsoft.Azure.Management.Sql.Models.ServerKey : string * string * string * string * string * string * string * string * string * Nullable&lt;DateTime&gt; -&gt; Microsoft.Azure.Management.Sql.Models.ServerKey" Usage="new Microsoft.Azure.Management.Sql.Models.ServerKey (serverKeyType, id, name, type, kind, location, subregion, uri, thumbprint, creationDate)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
@@ -59,13 +55,13 @@
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
+        <Parameter Name="serverKeyType" Type="System.String" />
         <Parameter Name="id" Type="System.String" />
         <Parameter Name="name" Type="System.String" />
         <Parameter Name="type" Type="System.String" />
         <Parameter Name="kind" Type="System.String" />
         <Parameter Name="location" Type="System.String" />
         <Parameter Name="subregion" Type="System.String" />
-        <Parameter Name="serverKeyType" Type="System.String" />
         <Parameter Name="uri" Type="System.String" />
         <Parameter Name="thumbprint" Type="System.String" />
         <Parameter Name="creationDate" Type="System.Nullable&lt;System.DateTime&gt;" />
@@ -91,12 +87,11 @@
       </Docs>
     </Member>
     <Member MemberName="CreationDate">
-      <MemberSignature Language="C#" Value="public Nullable&lt;DateTime&gt; CreationDate { get; set; }" />
+      <MemberSignature Language="C#" Value="public DateTime? CreationDate { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;valuetype System.DateTime&gt; CreationDate" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Management.Sql.Models.ServerKey.CreationDate" />
       <MemberSignature Language="VB.NET" Value="Public Property CreationDate As Nullable(Of DateTime)" />
       <MemberSignature Language="F#" Value="member this.CreationDate : Nullable&lt;DateTime&gt; with get, set" Usage="Microsoft.Azure.Management.Sql.Models.ServerKey.CreationDate" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Nullable&lt;DateTime&gt; CreationDate { Nullable&lt;DateTime&gt; get(); void set(Nullable&lt;DateTime&gt; value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Sql</AssemblyName>
@@ -104,7 +99,8 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="properties.creationDate")</AttributeName>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty(PropertyName="properties.creationDate")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty(PropertyName="properties.creationDate")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -124,8 +120,6 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Management.Sql.Models.ServerKey.Kind" />
       <MemberSignature Language="VB.NET" Value="Public Property Kind As String" />
       <MemberSignature Language="F#" Value="member this.Kind : string with get, set" Usage="Microsoft.Azure.Management.Sql.Models.ServerKey.Kind" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Kind { System::String ^ get(); void set(System::String ^ value); };" />
-      <MemberSignature Language="C++ CX" Value="public:&#xA; property Platform::String ^ Kind { Platform::String ^ get(); void set(Platform::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Sql</AssemblyName>
@@ -133,7 +127,8 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="kind")</AttributeName>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty(PropertyName="kind")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty(PropertyName="kind")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -154,8 +149,6 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Management.Sql.Models.ServerKey.Location" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Location As String" />
       <MemberSignature Language="F#" Value="member this.Location : string" Usage="Microsoft.Azure.Management.Sql.Models.ServerKey.Location" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Location { System::String ^ get(); };" />
-      <MemberSignature Language="C++ CX" Value="public:&#xA; property Platform::String ^ Location { Platform::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Sql</AssemblyName>
@@ -163,7 +156,8 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="location")</AttributeName>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty(PropertyName="location")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty(PropertyName="location")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -183,8 +177,6 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Management.Sql.Models.ServerKey.ServerKeyType" />
       <MemberSignature Language="VB.NET" Value="Public Property ServerKeyType As String" />
       <MemberSignature Language="F#" Value="member this.ServerKeyType : string with get, set" Usage="Microsoft.Azure.Management.Sql.Models.ServerKey.ServerKeyType" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ ServerKeyType { System::String ^ get(); void set(System::String ^ value); };" />
-      <MemberSignature Language="C++ CX" Value="public:&#xA; property Platform::String ^ ServerKeyType { Platform::String ^ get(); void set(Platform::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Sql</AssemblyName>
@@ -192,7 +184,8 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="properties.serverKeyType")</AttributeName>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty(PropertyName="properties.serverKeyType")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty(PropertyName="properties.serverKeyType")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -214,8 +207,6 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Management.Sql.Models.ServerKey.Subregion" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Subregion As String" />
       <MemberSignature Language="F#" Value="member this.Subregion : string" Usage="Microsoft.Azure.Management.Sql.Models.ServerKey.Subregion" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Subregion { System::String ^ get(); };" />
-      <MemberSignature Language="C++ CX" Value="public:&#xA; property Platform::String ^ Subregion { Platform::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Sql</AssemblyName>
@@ -223,7 +214,8 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="properties.subregion")</AttributeName>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty(PropertyName="properties.subregion")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty(PropertyName="properties.subregion")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -243,8 +235,6 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Management.Sql.Models.ServerKey.Thumbprint" />
       <MemberSignature Language="VB.NET" Value="Public Property Thumbprint As String" />
       <MemberSignature Language="F#" Value="member this.Thumbprint : string with get, set" Usage="Microsoft.Azure.Management.Sql.Models.ServerKey.Thumbprint" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Thumbprint { System::String ^ get(); void set(System::String ^ value); };" />
-      <MemberSignature Language="C++ CX" Value="public:&#xA; property Platform::String ^ Thumbprint { Platform::String ^ get(); void set(Platform::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Sql</AssemblyName>
@@ -252,7 +242,8 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="properties.thumbprint")</AttributeName>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty(PropertyName="properties.thumbprint")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty(PropertyName="properties.thumbprint")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -272,8 +263,6 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Management.Sql.Models.ServerKey.Uri" />
       <MemberSignature Language="VB.NET" Value="Public Property Uri As String" />
       <MemberSignature Language="F#" Value="member this.Uri : string with get, set" Usage="Microsoft.Azure.Management.Sql.Models.ServerKey.Uri" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Uri { System::String ^ get(); void set(System::String ^ value); };" />
-      <MemberSignature Language="C++ CX" Value="public:&#xA; property Platform::String ^ Uri { Platform::String ^ get(); void set(Platform::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Sql</AssemblyName>
@@ -281,7 +270,8 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="properties.uri")</AttributeName>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty(PropertyName="properties.uri")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty(PropertyName="properties.uri")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -301,9 +291,6 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Management.Sql.Models.ServerKey.Validate" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Sub Validate ()" />
       <MemberSignature Language="F#" Value="abstract member Validate : unit -&gt; unit&#xA;override this.Validate : unit -&gt; unit" Usage="serverKey.Validate " />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Validate();" />
-      <MemberSignature Language="C++ CX" Value="public:&#xA; virtual void Validate();" />
-      <MemberSignature Language="C++ WINRT" Value=" virtual void Validate();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Sql</AssemblyName>

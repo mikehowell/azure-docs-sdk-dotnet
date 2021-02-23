@@ -1,16 +1,15 @@
-﻿<Type Name="EventHubClient" FullName="Microsoft.Azure.EventHubs.EventHubClient">
+<Type Name="EventHubClient" FullName="Microsoft.Azure.EventHubs.EventHubClient">
   <TypeSignature Language="C#" Value="public abstract class EventHubClient : Microsoft.Azure.EventHubs.ClientEntity" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit EventHubClient extends Microsoft.Azure.EventHubs.ClientEntity" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Azure.EventHubs.EventHubClient" />
   <TypeSignature Language="VB.NET" Value="Public MustInherit Class EventHubClient&#xA;Inherits ClientEntity" />
   <TypeSignature Language="F#" Value="type EventHubClient = class&#xA;    inherit ClientEntity" />
-  <TypeSignature Language="C++ CLI" Value="public ref class EventHubClient abstract : Microsoft::Azure::EventHubs::ClientEntity" />
-  <TypeSignature Language="C++ CX" Value="[Windows::Foundation::Metadata::WebHostHidden]&#xA;public ref class EventHubClient abstract : Microsoft::Azure::EventHubs::ClientEntity" />
-  <TypeSignature Language="C++ WINRT" Value="[Windows::Foundation::Metadata::WebHostHidden]&#xA;class EventHubClient abstract : Microsoft::Azure::EventHubs::ClientEntity" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Azure.EventHubs</AssemblyName>
-    <AssemblyVersion>1.0.3.0</AssemblyVersion>
-    <AssemblyVersion>2.0.0.0</AssemblyVersion>
+    <AssemblyVersion>4.1.0.0</AssemblyVersion>
+    <AssemblyVersion>4.2.0.0</AssemblyVersion>
+    <AssemblyVersion>4.3.0.0</AssemblyVersion>
+    <AssemblyVersion>4.3.1.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>Microsoft.Azure.EventHubs.ClientEntity</BaseTypeName>
@@ -29,18 +28,14 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.EventHubs.EventHubClient.CloseAsync" />
       <MemberSignature Language="VB.NET" Value="Public Overrides NotOverridable Function CloseAsync () As Task" />
       <MemberSignature Language="F#" Value="override this.CloseAsync : unit -&gt; System.Threading.Tasks.Task" Usage="eventHubClient.CloseAsync " />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Threading::Tasks::Task ^ CloseAsync();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.EventHubs</AssemblyName>
-        <AssemblyVersion>1.0.3.0</AssemblyVersion>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+        <AssemblyVersion>4.3.0.0</AssemblyVersion>
+        <AssemblyVersion>4.3.1.0</AssemblyVersion>
       </AssemblyInfo>
-      <Attributes>
-        <Attribute>
-          <AttributeName>System.Runtime.CompilerServices.AsyncStateMachine(typeof(Microsoft.Azure.EventHubs.EventHubClient/&lt;CloseAsync&gt;d__20))</AttributeName>
-        </Attribute>
-      </Attributes>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task</ReturnType>
       </ReturnValue>
@@ -53,18 +48,48 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <Member MemberName="Create">
+      <MemberSignature Language="C#" Value="public static Microsoft.Azure.EventHubs.EventHubClient Create (Microsoft.Azure.EventHubs.EventHubsConnectionStringBuilder csb);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Microsoft.Azure.EventHubs.EventHubClient Create(class Microsoft.Azure.EventHubs.EventHubsConnectionStringBuilder csb) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Azure.EventHubs.EventHubClient.Create(Microsoft.Azure.EventHubs.EventHubsConnectionStringBuilder)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function Create (csb As EventHubsConnectionStringBuilder) As EventHubClient" />
+      <MemberSignature Language="F#" Value="static member Create : Microsoft.Azure.EventHubs.EventHubsConnectionStringBuilder -&gt; Microsoft.Azure.EventHubs.EventHubClient" Usage="Microsoft.Azure.EventHubs.EventHubClient.Create csb" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Azure.EventHubs</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+        <AssemblyVersion>4.3.0.0</AssemblyVersion>
+        <AssemblyVersion>4.3.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Azure.EventHubs.EventHubClient</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="csb" Type="Microsoft.Azure.EventHubs.EventHubsConnectionStringBuilder" />
+      </Parameters>
+      <Docs>
+        <param name="csb" />
+        <summary>
+            Creates a new instance of the Event Hubs client using the specified connection string builder.
+            </summary>
+        <returns />
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
     <Member MemberName="CreateBatch">
       <MemberSignature Language="C#" Value="public Microsoft.Azure.EventHubs.EventDataBatch CreateBatch ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class Microsoft.Azure.EventHubs.EventDataBatch CreateBatch() cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.EventHubs.EventHubClient.CreateBatch" />
       <MemberSignature Language="VB.NET" Value="Public Function CreateBatch () As EventDataBatch" />
       <MemberSignature Language="F#" Value="member this.CreateBatch : unit -&gt; Microsoft.Azure.EventHubs.EventDataBatch" Usage="eventHubClient.CreateBatch " />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; Microsoft::Azure::EventHubs::EventDataBatch ^ CreateBatch();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.EventHubs</AssemblyName>
-        <AssemblyVersion>1.0.3.0</AssemblyVersion>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+        <AssemblyVersion>4.3.0.0</AssemblyVersion>
+        <AssemblyVersion>4.3.1.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Azure.EventHubs.EventDataBatch</ReturnType>
@@ -82,11 +107,13 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.EventHubs.EventHubClient.CreateBatch(Microsoft.Azure.EventHubs.BatchOptions)" />
       <MemberSignature Language="VB.NET" Value="Public Function CreateBatch (options As BatchOptions) As EventDataBatch" />
       <MemberSignature Language="F#" Value="member this.CreateBatch : Microsoft.Azure.EventHubs.BatchOptions -&gt; Microsoft.Azure.EventHubs.EventDataBatch" Usage="eventHubClient.CreateBatch options" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; Microsoft::Azure::EventHubs::EventDataBatch ^ CreateBatch(Microsoft::Azure::EventHubs::BatchOptions ^ options);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.EventHubs</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+        <AssemblyVersion>4.3.0.0</AssemblyVersion>
+        <AssemblyVersion>4.3.1.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Azure.EventHubs.EventDataBatch</ReturnType>
@@ -103,15 +130,18 @@
       </Docs>
     </Member>
     <Member MemberName="CreateEpochReceiver">
-      <MemberSignature Language="C#" Value="public Microsoft.Azure.EventHubs.PartitionReceiver CreateEpochReceiver (string consumerGroupName, string partitionId, Microsoft.Azure.EventHubs.EventPosition eventPosition, long epoch, Microsoft.Azure.EventHubs.ReceiverOptions receiverOptions = null);" />
+      <MemberSignature Language="C#" Value="public Microsoft.Azure.EventHubs.PartitionReceiver CreateEpochReceiver (string consumerGroupName, string partitionId, Microsoft.Azure.EventHubs.EventPosition eventPosition, long epoch, Microsoft.Azure.EventHubs.ReceiverOptions receiverOptions = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class Microsoft.Azure.EventHubs.PartitionReceiver CreateEpochReceiver(string consumerGroupName, string partitionId, class Microsoft.Azure.EventHubs.EventPosition eventPosition, int64 epoch, class Microsoft.Azure.EventHubs.ReceiverOptions receiverOptions) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.EventHubs.EventHubClient.CreateEpochReceiver(System.String,System.String,Microsoft.Azure.EventHubs.EventPosition,System.Int64,Microsoft.Azure.EventHubs.ReceiverOptions)" />
+      <MemberSignature Language="VB.NET" Value="Public Function CreateEpochReceiver (consumerGroupName As String, partitionId As String, eventPosition As EventPosition, epoch As Long, Optional receiverOptions As ReceiverOptions = Nothing) As PartitionReceiver" />
       <MemberSignature Language="F#" Value="member this.CreateEpochReceiver : string * string * Microsoft.Azure.EventHubs.EventPosition * int64 * Microsoft.Azure.EventHubs.ReceiverOptions -&gt; Microsoft.Azure.EventHubs.PartitionReceiver" Usage="eventHubClient.CreateEpochReceiver (consumerGroupName, partitionId, eventPosition, epoch, receiverOptions)" />
-      <MemberSignature Language="C++ WINRT" Value="Microsoft::Azure::EventHubs::PartitionReceiver CreateEpochReceiver(std::wstring const &amp; consumerGroupName, std::wstring const &amp; partitionId, Microsoft::Azure::EventHubs::EventPosition const &amp; eventPosition, long epoch, Microsoft::Azure::EventHubs::ReceiverOptions const &amp; receiverOptions = null);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.EventHubs</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+        <AssemblyVersion>4.3.0.0</AssemblyVersion>
+        <AssemblyVersion>4.3.1.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Azure.EventHubs.PartitionReceiver</ReturnType>
@@ -148,14 +178,13 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.EventHubs.EventHubClient.CreateFromConnectionString(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function CreateFromConnectionString (connectionString As String) As EventHubClient" />
       <MemberSignature Language="F#" Value="static member CreateFromConnectionString : string -&gt; Microsoft.Azure.EventHubs.EventHubClient" Usage="Microsoft.Azure.EventHubs.EventHubClient.CreateFromConnectionString connectionString" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; static Microsoft::Azure::EventHubs::EventHubClient ^ CreateFromConnectionString(System::String ^ connectionString);" />
-      <MemberSignature Language="C++ CX" Value="public:&#xA; static Microsoft::Azure::EventHubs::EventHubClient ^ CreateFromConnectionString(Platform::String ^ connectionString);" />
-      <MemberSignature Language="C++ WINRT" Value=" static Microsoft::Azure::EventHubs::EventHubClient CreateFromConnectionString(std::wstring const &amp; connectionString);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.EventHubs</AssemblyName>
-        <AssemblyVersion>1.0.3.0</AssemblyVersion>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+        <AssemblyVersion>4.3.0.0</AssemblyVersion>
+        <AssemblyVersion>4.3.1.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Azure.EventHubs.EventHubClient</ReturnType>
@@ -164,7 +193,7 @@
         <Parameter Name="connectionString" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="connectionString"></param>
+        <param name="connectionString" />
         <summary>
             Creates a new instance of the Event Hubs client using the specified connection string. You can populate the EntityPath property with the name of the Event Hub.
             </summary>
@@ -178,14 +207,13 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.EventHubs.EventHubClient.CreatePartitionSender(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Function CreatePartitionSender (partitionId As String) As PartitionSender" />
       <MemberSignature Language="F#" Value="member this.CreatePartitionSender : string -&gt; Microsoft.Azure.EventHubs.PartitionSender" Usage="eventHubClient.CreatePartitionSender partitionId" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; Microsoft::Azure::EventHubs::PartitionSender ^ CreatePartitionSender(System::String ^ partitionId);" />
-      <MemberSignature Language="C++ CX" Value="public:&#xA; Microsoft::Azure::EventHubs::PartitionSender ^ CreatePartitionSender(Platform::String ^ partitionId);" />
-      <MemberSignature Language="C++ WINRT" Value="Microsoft::Azure::EventHubs::PartitionSender CreatePartitionSender(std::wstring const &amp; partitionId);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.EventHubs</AssemblyName>
-        <AssemblyVersion>1.0.3.0</AssemblyVersion>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+        <AssemblyVersion>4.3.0.0</AssemblyVersion>
+        <AssemblyVersion>4.3.1.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Azure.EventHubs.PartitionSender</ReturnType>
@@ -206,15 +234,18 @@
       </Docs>
     </Member>
     <Member MemberName="CreateReceiver">
-      <MemberSignature Language="C#" Value="public Microsoft.Azure.EventHubs.PartitionReceiver CreateReceiver (string consumerGroupName, string partitionId, Microsoft.Azure.EventHubs.EventPosition eventPosition, Microsoft.Azure.EventHubs.ReceiverOptions receiverOptions = null);" />
+      <MemberSignature Language="C#" Value="public Microsoft.Azure.EventHubs.PartitionReceiver CreateReceiver (string consumerGroupName, string partitionId, Microsoft.Azure.EventHubs.EventPosition eventPosition, Microsoft.Azure.EventHubs.ReceiverOptions receiverOptions = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class Microsoft.Azure.EventHubs.PartitionReceiver CreateReceiver(string consumerGroupName, string partitionId, class Microsoft.Azure.EventHubs.EventPosition eventPosition, class Microsoft.Azure.EventHubs.ReceiverOptions receiverOptions) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.EventHubs.EventHubClient.CreateReceiver(System.String,System.String,Microsoft.Azure.EventHubs.EventPosition,Microsoft.Azure.EventHubs.ReceiverOptions)" />
+      <MemberSignature Language="VB.NET" Value="Public Function CreateReceiver (consumerGroupName As String, partitionId As String, eventPosition As EventPosition, Optional receiverOptions As ReceiverOptions = Nothing) As PartitionReceiver" />
       <MemberSignature Language="F#" Value="member this.CreateReceiver : string * string * Microsoft.Azure.EventHubs.EventPosition * Microsoft.Azure.EventHubs.ReceiverOptions -&gt; Microsoft.Azure.EventHubs.PartitionReceiver" Usage="eventHubClient.CreateReceiver (consumerGroupName, partitionId, eventPosition, receiverOptions)" />
-      <MemberSignature Language="C++ WINRT" Value="Microsoft::Azure::EventHubs::PartitionReceiver CreateReceiver(std::wstring const &amp; consumerGroupName, std::wstring const &amp; partitionId, Microsoft::Azure::EventHubs::EventPosition const &amp; eventPosition, Microsoft::Azure::EventHubs::ReceiverOptions const &amp; receiverOptions = null);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.EventHubs</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+        <AssemblyVersion>4.3.0.0</AssemblyVersion>
+        <AssemblyVersion>4.3.1.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Azure.EventHubs.PartitionReceiver</ReturnType>
@@ -239,18 +270,129 @@
         <altmember cref="T:Microsoft.Azure.EventHubs.PartitionReceiver" />
       </Docs>
     </Member>
+    <Member MemberName="CreateWithAzureActiveDirectory">
+      <MemberSignature Language="C#" Value="public static Microsoft.Azure.EventHubs.EventHubClient CreateWithAzureActiveDirectory (Uri endpointAddress, string path, Microsoft.Azure.EventHubs.AzureActiveDirectoryTokenProvider.AuthenticationCallback authCallback, string authority, TimeSpan? operationTimeout = default, Microsoft.Azure.EventHubs.TransportType transportType = Microsoft.Azure.EventHubs.TransportType.Amqp);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Microsoft.Azure.EventHubs.EventHubClient CreateWithAzureActiveDirectory(class System.Uri endpointAddress, string path, class Microsoft.Azure.EventHubs.AzureActiveDirectoryTokenProvider/AuthenticationCallback authCallback, string authority, valuetype System.Nullable`1&lt;valuetype System.TimeSpan&gt; operationTimeout, valuetype Microsoft.Azure.EventHubs.TransportType transportType) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Azure.EventHubs.EventHubClient.CreateWithAzureActiveDirectory(System.Uri,System.String,Microsoft.Azure.EventHubs.AzureActiveDirectoryTokenProvider.AuthenticationCallback,System.String,System.Nullable{System.TimeSpan},Microsoft.Azure.EventHubs.TransportType)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function CreateWithAzureActiveDirectory (endpointAddress As Uri, path As String, authCallback As AzureActiveDirectoryTokenProvider.AuthenticationCallback, authority As String, Optional operationTimeout As Nullable(Of TimeSpan) = Nothing, Optional transportType As TransportType = Microsoft.Azure.EventHubs.TransportType.Amqp) As EventHubClient" />
+      <MemberSignature Language="F#" Value="static member CreateWithAzureActiveDirectory : Uri * string * Microsoft.Azure.EventHubs.AzureActiveDirectoryTokenProvider.AuthenticationCallback * string * Nullable&lt;TimeSpan&gt; * Microsoft.Azure.EventHubs.TransportType -&gt; Microsoft.Azure.EventHubs.EventHubClient" Usage="Microsoft.Azure.EventHubs.EventHubClient.CreateWithAzureActiveDirectory (endpointAddress, path, authCallback, authority, operationTimeout, transportType)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Azure.EventHubs</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+        <AssemblyVersion>4.3.0.0</AssemblyVersion>
+        <AssemblyVersion>4.3.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Azure.EventHubs.EventHubClient</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="endpointAddress" Type="System.Uri" />
+        <Parameter Name="path" Type="System.String" />
+        <Parameter Name="authCallback" Type="Microsoft.Azure.EventHubs.AzureActiveDirectoryTokenProvider+AuthenticationCallback" />
+        <Parameter Name="authority" Type="System.String" />
+        <Parameter Name="operationTimeout" Type="System.Nullable&lt;System.TimeSpan&gt;" />
+        <Parameter Name="transportType" Type="Microsoft.Azure.EventHubs.TransportType" />
+      </Parameters>
+      <Docs>
+        <param name="endpointAddress">Fully qualified domain name for Event Hubs. Most likely, {yournamespace}.servicebus.windows.net</param>
+        <param name="path">The path to the Event Hub.</param>
+        <param name="authCallback">The authentication callback.</param>
+        <param name="authority">Address of the authority to issue token.</param>
+        <param name="operationTimeout">Operation timeout for Event Hubs operations.</param>
+        <param name="transportType">Transport type on connection.</param>
+        <summary>Creates a new instance of the 
+            <see cref="T:Microsoft.Azure.EventHubs.EventHubClient" /> by using Azure Active Directory authentication.</summary>
+        <returns>The newly created Event Hub client object.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CreateWithManagedIdentity">
+      <MemberSignature Language="C#" Value="public static Microsoft.Azure.EventHubs.EventHubClient CreateWithManagedIdentity (Uri endpointAddress, string entityPath, TimeSpan? operationTimeout = default, Microsoft.Azure.EventHubs.TransportType transportType = Microsoft.Azure.EventHubs.TransportType.Amqp);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Microsoft.Azure.EventHubs.EventHubClient CreateWithManagedIdentity(class System.Uri endpointAddress, string entityPath, valuetype System.Nullable`1&lt;valuetype System.TimeSpan&gt; operationTimeout, valuetype Microsoft.Azure.EventHubs.TransportType transportType) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Azure.EventHubs.EventHubClient.CreateWithManagedIdentity(System.Uri,System.String,System.Nullable{System.TimeSpan},Microsoft.Azure.EventHubs.TransportType)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function CreateWithManagedIdentity (endpointAddress As Uri, entityPath As String, Optional operationTimeout As Nullable(Of TimeSpan) = Nothing, Optional transportType As TransportType = Microsoft.Azure.EventHubs.TransportType.Amqp) As EventHubClient" />
+      <MemberSignature Language="F#" Value="static member CreateWithManagedIdentity : Uri * string * Nullable&lt;TimeSpan&gt; * Microsoft.Azure.EventHubs.TransportType -&gt; Microsoft.Azure.EventHubs.EventHubClient" Usage="Microsoft.Azure.EventHubs.EventHubClient.CreateWithManagedIdentity (endpointAddress, entityPath, operationTimeout, transportType)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Azure.EventHubs</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+        <AssemblyVersion>4.3.0.0</AssemblyVersion>
+        <AssemblyVersion>4.3.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Azure.EventHubs.EventHubClient</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="endpointAddress" Type="System.Uri" />
+        <Parameter Name="entityPath" Type="System.String" />
+        <Parameter Name="operationTimeout" Type="System.Nullable&lt;System.TimeSpan&gt;" />
+        <Parameter Name="transportType" Type="Microsoft.Azure.EventHubs.TransportType" />
+      </Parameters>
+      <Docs>
+        <param name="endpointAddress">Fully qualified domain name for Event Hubs. Most likely, {yournamespace}.servicebus.windows.net</param>
+        <param name="entityPath">Event Hub path</param>
+        <param name="operationTimeout">Operation timeout for Event Hubs operations.</param>
+        <param name="transportType">Transport type on connection.</param>
+        <summary>
+            Creates a new instance of the <see cref="T:Microsoft.Azure.EventHubs.EventHubClient" /> by using Azure Managed Identity authentication.
+            </summary>
+        <returns />
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CreateWithTokenProvider">
+      <MemberSignature Language="C#" Value="public static Microsoft.Azure.EventHubs.EventHubClient CreateWithTokenProvider (Uri endpointAddress, string entityPath, Microsoft.Azure.EventHubs.ITokenProvider tokenProvider, TimeSpan? operationTimeout = default, Microsoft.Azure.EventHubs.TransportType transportType = Microsoft.Azure.EventHubs.TransportType.Amqp);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Microsoft.Azure.EventHubs.EventHubClient CreateWithTokenProvider(class System.Uri endpointAddress, string entityPath, class Microsoft.Azure.EventHubs.ITokenProvider tokenProvider, valuetype System.Nullable`1&lt;valuetype System.TimeSpan&gt; operationTimeout, valuetype Microsoft.Azure.EventHubs.TransportType transportType) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Azure.EventHubs.EventHubClient.CreateWithTokenProvider(System.Uri,System.String,Microsoft.Azure.EventHubs.ITokenProvider,System.Nullable{System.TimeSpan},Microsoft.Azure.EventHubs.TransportType)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function CreateWithTokenProvider (endpointAddress As Uri, entityPath As String, tokenProvider As ITokenProvider, Optional operationTimeout As Nullable(Of TimeSpan) = Nothing, Optional transportType As TransportType = Microsoft.Azure.EventHubs.TransportType.Amqp) As EventHubClient" />
+      <MemberSignature Language="F#" Value="static member CreateWithTokenProvider : Uri * string * Microsoft.Azure.EventHubs.ITokenProvider * Nullable&lt;TimeSpan&gt; * Microsoft.Azure.EventHubs.TransportType -&gt; Microsoft.Azure.EventHubs.EventHubClient" Usage="Microsoft.Azure.EventHubs.EventHubClient.CreateWithTokenProvider (endpointAddress, entityPath, tokenProvider, operationTimeout, transportType)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Azure.EventHubs</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+        <AssemblyVersion>4.3.0.0</AssemblyVersion>
+        <AssemblyVersion>4.3.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Azure.EventHubs.EventHubClient</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="endpointAddress" Type="System.Uri" />
+        <Parameter Name="entityPath" Type="System.String" />
+        <Parameter Name="tokenProvider" Type="Microsoft.Azure.EventHubs.ITokenProvider" />
+        <Parameter Name="operationTimeout" Type="System.Nullable&lt;System.TimeSpan&gt;" />
+        <Parameter Name="transportType" Type="Microsoft.Azure.EventHubs.TransportType" />
+      </Parameters>
+      <Docs>
+        <param name="endpointAddress">Fully qualified domain name for Event Hubs. Most likely, {yournamespace}.servicebus.windows.net</param>
+        <param name="entityPath">Event Hub path</param>
+        <param name="tokenProvider">Token provider which will generate security tokens for authorization.</param>
+        <param name="operationTimeout">Operation timeout for Event Hubs operations.</param>
+        <param name="transportType">Transport type on connection.</param>
+        <summary>
+            Creates a new instance of the Event Hubs client using the specified endpoint, entity path, and token provider.
+            </summary>
+        <returns />
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
     <Member MemberName="EnableReceiverRuntimeMetric">
       <MemberSignature Language="C#" Value="public bool EnableReceiverRuntimeMetric { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool EnableReceiverRuntimeMetric" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Azure.EventHubs.EventHubClient.EnableReceiverRuntimeMetric" />
       <MemberSignature Language="VB.NET" Value="Public Property EnableReceiverRuntimeMetric As Boolean" />
       <MemberSignature Language="F#" Value="member this.EnableReceiverRuntimeMetric : bool with get, set" Usage="Microsoft.Azure.EventHubs.EventHubClient.EnableReceiverRuntimeMetric" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool EnableReceiverRuntimeMetric { bool get(); void set(bool value); };" />
-      <MemberSignature Language="C++ CX" Value="public:&#xA; property bool EnableReceiverRuntimeMetric { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.EventHubs</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+        <AssemblyVersion>4.3.0.0</AssemblyVersion>
+        <AssemblyVersion>4.3.1.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
@@ -267,13 +409,13 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Azure.EventHubs.EventHubClient.EventHubName" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property EventHubName As String" />
       <MemberSignature Language="F#" Value="member this.EventHubName : string" Usage="Microsoft.Azure.EventHubs.EventHubClient.EventHubName" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ EventHubName { System::String ^ get(); };" />
-      <MemberSignature Language="C++ CX" Value="public:&#xA; property Platform::String ^ EventHubName { Platform::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.EventHubs</AssemblyName>
-        <AssemblyVersion>1.0.3.0</AssemblyVersion>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+        <AssemblyVersion>4.3.0.0</AssemblyVersion>
+        <AssemblyVersion>4.3.1.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -292,18 +434,14 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.EventHubs.EventHubClient.GetPartitionRuntimeInformationAsync(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Function GetPartitionRuntimeInformationAsync (partitionId As String) As Task(Of EventHubPartitionRuntimeInformation)" />
       <MemberSignature Language="F#" Value="member this.GetPartitionRuntimeInformationAsync : string -&gt; System.Threading.Tasks.Task&lt;Microsoft.Azure.EventHubs.EventHubPartitionRuntimeInformation&gt;" Usage="eventHubClient.GetPartitionRuntimeInformationAsync partitionId" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Threading::Tasks::Task&lt;Microsoft::Azure::EventHubs::EventHubPartitionRuntimeInformation ^&gt; ^ GetPartitionRuntimeInformationAsync(System::String ^ partitionId);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.EventHubs</AssemblyName>
-        <AssemblyVersion>1.0.3.0</AssemblyVersion>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+        <AssemblyVersion>4.3.0.0</AssemblyVersion>
+        <AssemblyVersion>4.3.1.0</AssemblyVersion>
       </AssemblyInfo>
-      <Attributes>
-        <Attribute>
-          <AttributeName>System.Runtime.CompilerServices.AsyncStateMachine(typeof(Microsoft.Azure.EventHubs.EventHubClient/&lt;GetPartitionRuntimeInformationAsync&gt;d__30))</AttributeName>
-        </Attribute>
-      </Attributes>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.Azure.EventHubs.EventHubPartitionRuntimeInformation&gt;</ReturnType>
       </ReturnValue>
@@ -323,18 +461,14 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.EventHubs.EventHubClient.GetRuntimeInformationAsync" />
       <MemberSignature Language="VB.NET" Value="Public Function GetRuntimeInformationAsync () As Task(Of EventHubRuntimeInformation)" />
       <MemberSignature Language="F#" Value="member this.GetRuntimeInformationAsync : unit -&gt; System.Threading.Tasks.Task&lt;Microsoft.Azure.EventHubs.EventHubRuntimeInformation&gt;" Usage="eventHubClient.GetRuntimeInformationAsync " />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Threading::Tasks::Task&lt;Microsoft::Azure::EventHubs::EventHubRuntimeInformation ^&gt; ^ GetRuntimeInformationAsync();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.EventHubs</AssemblyName>
-        <AssemblyVersion>1.0.3.0</AssemblyVersion>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+        <AssemblyVersion>4.3.0.0</AssemblyVersion>
+        <AssemblyVersion>4.3.1.0</AssemblyVersion>
       </AssemblyInfo>
-      <Attributes>
-        <Attribute>
-          <AttributeName>System.Runtime.CompilerServices.AsyncStateMachine(typeof(Microsoft.Azure.EventHubs.EventHubClient/&lt;GetRuntimeInformationAsync&gt;d__29))</AttributeName>
-        </Attribute>
-      </Attributes>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.Azure.EventHubs.EventHubRuntimeInformation&gt;</ReturnType>
       </ReturnValue>
@@ -353,12 +487,13 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.EventHubs.EventHubClient.OnCloseAsync" />
       <MemberSignature Language="VB.NET" Value="Protected MustOverride Function OnCloseAsync () As Task" />
       <MemberSignature Language="F#" Value="abstract member OnCloseAsync : unit -&gt; System.Threading.Tasks.Task" Usage="eventHubClient.OnCloseAsync " />
-      <MemberSignature Language="C++ CLI" Value="protected:&#xA; abstract System::Threading::Tasks::Task ^ OnCloseAsync();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.EventHubs</AssemblyName>
-        <AssemblyVersion>1.0.3.0</AssemblyVersion>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+        <AssemblyVersion>4.3.0.0</AssemblyVersion>
+        <AssemblyVersion>4.3.1.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task</ReturnType>
@@ -371,15 +506,18 @@
       </Docs>
     </Member>
     <Member MemberName="OnCreateReceiver">
-      <MemberSignature Language="C#" Value="protected abstract Microsoft.Azure.EventHubs.PartitionReceiver OnCreateReceiver (string consumerGroupName, string partitionId, Microsoft.Azure.EventHubs.EventPosition eventPosition, Nullable&lt;long&gt; epoch, Microsoft.Azure.EventHubs.ReceiverOptions receiverOptions);" />
+      <MemberSignature Language="C#" Value="protected abstract Microsoft.Azure.EventHubs.PartitionReceiver OnCreateReceiver (string consumerGroupName, string partitionId, Microsoft.Azure.EventHubs.EventPosition eventPosition, long? epoch, Microsoft.Azure.EventHubs.ReceiverOptions receiverOptions);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance class Microsoft.Azure.EventHubs.PartitionReceiver OnCreateReceiver(string consumerGroupName, string partitionId, class Microsoft.Azure.EventHubs.EventPosition eventPosition, valuetype System.Nullable`1&lt;int64&gt; epoch, class Microsoft.Azure.EventHubs.ReceiverOptions receiverOptions) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.EventHubs.EventHubClient.OnCreateReceiver(System.String,System.String,Microsoft.Azure.EventHubs.EventPosition,System.Nullable{System.Int64},Microsoft.Azure.EventHubs.ReceiverOptions)" />
+      <MemberSignature Language="VB.NET" Value="Protected MustOverride Function OnCreateReceiver (consumerGroupName As String, partitionId As String, eventPosition As EventPosition, epoch As Nullable(Of Long), receiverOptions As ReceiverOptions) As PartitionReceiver" />
       <MemberSignature Language="F#" Value="abstract member OnCreateReceiver : string * string * Microsoft.Azure.EventHubs.EventPosition * Nullable&lt;int64&gt; * Microsoft.Azure.EventHubs.ReceiverOptions -&gt; Microsoft.Azure.EventHubs.PartitionReceiver" Usage="eventHubClient.OnCreateReceiver (consumerGroupName, partitionId, eventPosition, epoch, receiverOptions)" />
-      <MemberSignature Language="C++ CLI" Value="protected:&#xA; abstract Microsoft::Azure::EventHubs::PartitionReceiver ^ OnCreateReceiver(System::String ^ consumerGroupName, System::String ^ partitionId, Microsoft::Azure::EventHubs::EventPosition ^ eventPosition, Nullable&lt;long&gt; epoch, Microsoft::Azure::EventHubs::ReceiverOptions ^ receiverOptions);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.EventHubs</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+        <AssemblyVersion>4.3.0.0</AssemblyVersion>
+        <AssemblyVersion>4.3.1.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Azure.EventHubs.PartitionReceiver</ReturnType>
@@ -392,11 +530,11 @@
         <Parameter Name="receiverOptions" Type="Microsoft.Azure.EventHubs.ReceiverOptions" />
       </Parameters>
       <Docs>
-        <param name="consumerGroupName"></param>
-        <param name="partitionId"></param>
-        <param name="eventPosition"></param>
-        <param name="epoch"></param>
-        <param name="receiverOptions"></param>
+        <param name="consumerGroupName" />
+        <param name="partitionId" />
+        <param name="eventPosition" />
+        <param name="epoch" />
+        <param name="receiverOptions" />
         <summary />
         <returns />
         <remarks>To be added.</remarks>
@@ -408,12 +546,13 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.EventHubs.EventHubClient.OnGetPartitionRuntimeInformationAsync(System.String)" />
       <MemberSignature Language="VB.NET" Value="Protected MustOverride Function OnGetPartitionRuntimeInformationAsync (partitionId As String) As Task(Of EventHubPartitionRuntimeInformation)" />
       <MemberSignature Language="F#" Value="abstract member OnGetPartitionRuntimeInformationAsync : string -&gt; System.Threading.Tasks.Task&lt;Microsoft.Azure.EventHubs.EventHubPartitionRuntimeInformation&gt;" Usage="eventHubClient.OnGetPartitionRuntimeInformationAsync partitionId" />
-      <MemberSignature Language="C++ CLI" Value="protected:&#xA; abstract System::Threading::Tasks::Task&lt;Microsoft::Azure::EventHubs::EventHubPartitionRuntimeInformation ^&gt; ^ OnGetPartitionRuntimeInformationAsync(System::String ^ partitionId);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.EventHubs</AssemblyName>
-        <AssemblyVersion>1.0.3.0</AssemblyVersion>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+        <AssemblyVersion>4.3.0.0</AssemblyVersion>
+        <AssemblyVersion>4.3.1.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.Azure.EventHubs.EventHubPartitionRuntimeInformation&gt;</ReturnType>
@@ -422,7 +561,7 @@
         <Parameter Name="partitionId" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="partitionId"></param>
+        <param name="partitionId" />
         <summary />
         <returns />
         <remarks>To be added.</remarks>
@@ -434,12 +573,13 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.EventHubs.EventHubClient.OnGetRuntimeInformationAsync" />
       <MemberSignature Language="VB.NET" Value="Protected MustOverride Function OnGetRuntimeInformationAsync () As Task(Of EventHubRuntimeInformation)" />
       <MemberSignature Language="F#" Value="abstract member OnGetRuntimeInformationAsync : unit -&gt; System.Threading.Tasks.Task&lt;Microsoft.Azure.EventHubs.EventHubRuntimeInformation&gt;" Usage="eventHubClient.OnGetRuntimeInformationAsync " />
-      <MemberSignature Language="C++ CLI" Value="protected:&#xA; abstract System::Threading::Tasks::Task&lt;Microsoft::Azure::EventHubs::EventHubRuntimeInformation ^&gt; ^ OnGetRuntimeInformationAsync();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.EventHubs</AssemblyName>
-        <AssemblyVersion>1.0.3.0</AssemblyVersion>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+        <AssemblyVersion>4.3.0.0</AssemblyVersion>
+        <AssemblyVersion>4.3.1.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.Azure.EventHubs.EventHubRuntimeInformation&gt;</ReturnType>
@@ -457,13 +597,13 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.EventHubs.EventHubClient.OnRetryPolicyUpdate" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnRetryPolicyUpdate ()" />
       <MemberSignature Language="F#" Value="override this.OnRetryPolicyUpdate : unit -&gt; unit" Usage="eventHubClient.OnRetryPolicyUpdate " />
-      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnRetryPolicyUpdate();" />
-      <MemberSignature Language="C++ CX" Value="protected:&#xA; override void OnRetryPolicyUpdate();" />
-      <MemberSignature Language="C++ WINRT" Value=" override void OnRetryPolicyUpdate();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.EventHubs</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+        <AssemblyVersion>4.3.0.0</AssemblyVersion>
+        <AssemblyVersion>4.3.1.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -480,13 +620,15 @@
       <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task SendAsync (Microsoft.Azure.EventHubs.EventData eventData);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Threading.Tasks.Task SendAsync(class Microsoft.Azure.EventHubs.EventData eventData) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.EventHubs.EventHubClient.SendAsync(Microsoft.Azure.EventHubs.EventData)" />
+      <MemberSignature Language="VB.NET" Value="Public Function SendAsync (eventData As EventData) As Task" />
       <MemberSignature Language="F#" Value="member this.SendAsync : Microsoft.Azure.EventHubs.EventData -&gt; System.Threading.Tasks.Task" Usage="eventHubClient.SendAsync eventData" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Threading::Tasks::Task ^ SendAsync(Microsoft::Azure::EventHubs::EventData ^ eventData);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.EventHubs</AssemblyName>
-        <AssemblyVersion>1.0.3.0</AssemblyVersion>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+        <AssemblyVersion>4.3.0.0</AssemblyVersion>
+        <AssemblyVersion>4.3.1.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task</ReturnType>
@@ -513,18 +655,16 @@
       <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task SendAsync (Microsoft.Azure.EventHubs.EventDataBatch eventDataBatch);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Threading.Tasks.Task SendAsync(class Microsoft.Azure.EventHubs.EventDataBatch eventDataBatch) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.EventHubs.EventHubClient.SendAsync(Microsoft.Azure.EventHubs.EventDataBatch)" />
+      <MemberSignature Language="VB.NET" Value="Public Function SendAsync (eventDataBatch As EventDataBatch) As Task" />
       <MemberSignature Language="F#" Value="member this.SendAsync : Microsoft.Azure.EventHubs.EventDataBatch -&gt; System.Threading.Tasks.Task" Usage="eventHubClient.SendAsync eventDataBatch" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Threading::Tasks::Task ^ SendAsync(Microsoft::Azure::EventHubs::EventDataBatch ^ eventDataBatch);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.EventHubs</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+        <AssemblyVersion>4.3.0.0</AssemblyVersion>
+        <AssemblyVersion>4.3.1.0</AssemblyVersion>
       </AssemblyInfo>
-      <Attributes>
-        <Attribute>
-          <AttributeName>System.Runtime.CompilerServices.AsyncStateMachine(typeof(Microsoft.Azure.EventHubs.EventHubClient/&lt;SendAsync&gt;d__25))</AttributeName>
-        </Attribute>
-      </Attributes>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task</ReturnType>
       </ReturnValue>
@@ -546,12 +686,13 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.EventHubs.EventHubClient.SendAsync(System.Collections.Generic.IEnumerable{Microsoft.Azure.EventHubs.EventData})" />
       <MemberSignature Language="VB.NET" Value="Public Function SendAsync (eventDatas As IEnumerable(Of EventData)) As Task" />
       <MemberSignature Language="F#" Value="member this.SendAsync : seq&lt;Microsoft.Azure.EventHubs.EventData&gt; -&gt; System.Threading.Tasks.Task" Usage="eventHubClient.SendAsync eventDatas" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Threading::Tasks::Task ^ SendAsync(System::Collections::Generic::IEnumerable&lt;Microsoft::Azure::EventHubs::EventData ^&gt; ^ eventDatas);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.EventHubs</AssemblyName>
-        <AssemblyVersion>1.0.3.0</AssemblyVersion>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+        <AssemblyVersion>4.3.0.0</AssemblyVersion>
+        <AssemblyVersion>4.3.1.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task</ReturnType>
@@ -562,53 +703,55 @@
       <Docs>
         <param name="eventDatas">A batch of events to send to EventHub</param>
         <summary>
-            Send a batch of <see cref="T:Microsoft.Azure.EventHubs.EventData" /> to EventHub. The sent EventData will land on any arbitrarily chosen EventHub partition.
-            This is the most recommended way to send to EventHub.
+             Send a batch of <see cref="T:Microsoft.Azure.EventHubs.EventData" /> to EventHub. The sent EventData will land on any arbitrarily chosen EventHub partition.
+             This is the most recommended way to send to EventHub.
             
-            <para>There are 3 ways to send to EventHubs, to understand this particular type of send refer to the overload <see cref="M:Microsoft.Azure.EventHubs.EventHubClient.SendAsync(Microsoft.Azure.EventHubs.EventData)" />, which is used to send single <see cref="T:Microsoft.Azure.EventHubs.EventData" />.
-            Use this overload if you need to send a batch of <see cref="T:Microsoft.Azure.EventHubs.EventData" />.</para>
+             <para>There are 3 ways to send to EventHubs, to understand this particular type of send refer to the overload <see cref="M:Microsoft.Azure.EventHubs.EventHubClient.SendAsync(Microsoft.Azure.EventHubs.EventData)" />, which is used to send single <see cref="T:Microsoft.Azure.EventHubs.EventData" />.
+             Use this overload if you need to send a batch of <see cref="T:Microsoft.Azure.EventHubs.EventData" />.</para>
             
-            Sending a batch of <see cref="T:Microsoft.Azure.EventHubs.EventData" />'s is useful in the following cases:
-            <para>i.    Efficient send - sending a batch of <see cref="T:Microsoft.Azure.EventHubs.EventData" /> maximizes the overall throughput by optimally using the number of sessions created to EventHub's service.</para><para>ii.   Send multiple <see cref="T:Microsoft.Azure.EventHubs.EventData" />'s in a Transaction. To acheieve ACID properties, the Gateway Service will forward all <see cref="T:Microsoft.Azure.EventHubs.EventData" />'s in the batch to a single EventHub partition.</para></summary>
+             Sending a batch of <see cref="T:Microsoft.Azure.EventHubs.EventData" />'s is useful in the following cases:
+             <para>i.    Efficient send - sending a batch of <see cref="T:Microsoft.Azure.EventHubs.EventData" /> maximizes the overall throughput by optimally using the number of sessions created to EventHub's service.</para><para>ii.   Send multiple <see cref="T:Microsoft.Azure.EventHubs.EventData" />'s in a Transaction. To acheieve ACID properties, the Gateway Service will forward all <see cref="T:Microsoft.Azure.EventHubs.EventData" />'s in the batch to a single EventHub partition.</para></summary>
         <returns>A Task that completes when the send operations is done.</returns>
         <remarks>To be added.</remarks>
         <altmember cref="M:Microsoft.Azure.EventHubs.EventHubClient.SendAsync(Microsoft.Azure.EventHubs.EventData,System.String)" />
-        <altmember cref="M:Microsoft.Azure.EventHubs.PartitionSender.SendAsync(Microsoft.Azure.EventHubs.EventData)" />
         <example>
-            Sample code:
-            <code>
-            var client = EventHubClient.Create("__connectionString__");
-            while (true)
-            {
-                var events = new List&lt;EventData&gt;();
-                for (int count = 1; count &lt; 11; count++)
-                {
-                    var payload = new PayloadEvent(count);
-                    byte[] payloadBytes = Encoding.UTF8.GetBytes(JsonConvert.SerializeObject(payload));
-                    var sendEvent = new EventData(payloadBytes);
-                    var applicationProperties = new Dictionary&lt;string, string&gt;();
-                    applicationProperties["from"] = "csharpClient";
-                    sendEvent.Properties = applicationProperties;
-                    events.Add(sendEvent);
-                }
-                    
-                await client.SendAsync(events);
-                Console.WriteLine("Sent Batch... Size: {0}", events.Count);
-            }
-            </code></example>
+             Sample code:
+             <code>
+             var client = EventHubClient.Create("__connectionString__");
+             while (true)
+             {
+                 var events = new List&lt;EventData&gt;();
+                 for (int count = 1; count &lt; 11; count++)
+                 {
+                     var payload = new PayloadEvent(count);
+                     byte[] payloadBytes = Encoding.UTF8.GetBytes(JsonConvert.SerializeObject(payload));
+                     var sendEvent = new EventData(payloadBytes);
+                     var applicationProperties = new Dictionary&lt;string, string&gt;();
+                     applicationProperties["from"] = "csharpClient";
+                     sendEvent.Properties = applicationProperties;
+                     events.Add(sendEvent);
+                 }
+            
+                 await client.SendAsync(events);
+                 Console.WriteLine("Sent Batch... Size: {0}", events.Count);
+             }
+             </code></example>
+        <altmember cref="M:Microsoft.Azure.EventHubs.PartitionSender.SendAsync(Microsoft.Azure.EventHubs.EventData)" />
       </Docs>
     </Member>
     <Member MemberName="SendAsync">
       <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task SendAsync (Microsoft.Azure.EventHubs.EventData eventData, string partitionKey);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Threading.Tasks.Task SendAsync(class Microsoft.Azure.EventHubs.EventData eventData, string partitionKey) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.EventHubs.EventHubClient.SendAsync(Microsoft.Azure.EventHubs.EventData,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Function SendAsync (eventData As EventData, partitionKey As String) As Task" />
       <MemberSignature Language="F#" Value="member this.SendAsync : Microsoft.Azure.EventHubs.EventData * string -&gt; System.Threading.Tasks.Task" Usage="eventHubClient.SendAsync (eventData, partitionKey)" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Threading::Tasks::Task ^ SendAsync(Microsoft::Azure::EventHubs::EventData ^ eventData, System::String ^ partitionKey);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.EventHubs</AssemblyName>
-        <AssemblyVersion>1.0.3.0</AssemblyVersion>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+        <AssemblyVersion>4.3.0.0</AssemblyVersion>
+        <AssemblyVersion>4.3.1.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task</ReturnType>
@@ -627,7 +770,7 @@
              Use this type of send if:
              <para>a)  There is a need for correlation of events based on Sender instance; The sender can generate a UniqueId and set it as partitionKey - which on the received Message can be used for correlation</para><para>b) The client wants to take control of distribution of data across partitions.</para>
              Multiple PartitionKeys could be mapped to one Partition. EventHubs service uses a proprietary Hash algorithm to map the PartitionKey to a PartitionId.
-             Using this type of send (Sending using a specific partitionKey) could sometimes result in partitions which are not evenly distributed. 
+             Using this type of send (Sending using a specific partitionKey) could sometimes result in partitions which are not evenly distributed.
             </summary>
         <returns>A Task that completes when the send operation is done.</returns>
         <remarks>To be added.</remarks>
@@ -641,18 +784,14 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.EventHubs.EventHubClient.SendAsync(System.Collections.Generic.IEnumerable{Microsoft.Azure.EventHubs.EventData},System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Function SendAsync (eventDatas As IEnumerable(Of EventData), partitionKey As String) As Task" />
       <MemberSignature Language="F#" Value="member this.SendAsync : seq&lt;Microsoft.Azure.EventHubs.EventData&gt; * string -&gt; System.Threading.Tasks.Task" Usage="eventHubClient.SendAsync (eventDatas, partitionKey)" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Threading::Tasks::Task ^ SendAsync(System::Collections::Generic::IEnumerable&lt;Microsoft::Azure::EventHubs::EventData ^&gt; ^ eventDatas, System::String ^ partitionKey);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.EventHubs</AssemblyName>
-        <AssemblyVersion>1.0.3.0</AssemblyVersion>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+        <AssemblyVersion>4.3.0.0</AssemblyVersion>
+        <AssemblyVersion>4.3.1.0</AssemblyVersion>
       </AssemblyInfo>
-      <Attributes>
-        <Attribute>
-          <AttributeName>System.Runtime.CompilerServices.AsyncStateMachine(typeof(Microsoft.Azure.EventHubs.EventHubClient/&lt;SendAsync&gt;d__24))</AttributeName>
-        </Attribute>
-      </Attributes>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task</ReturnType>
       </ReturnValue>
@@ -678,25 +817,29 @@
         <see cref="M:Microsoft.Azure.EventHubs.PartitionSender.SendAsync(Microsoft.Azure.EventHubs.EventData)" />
       </Docs>
     </Member>
-    <Member MemberName="ThisLock">
-      <MemberSignature Language="C#" Value="protected object ThisLock { get; }" />
-      <MemberSignature Language="ILAsm" Value=".property instance object ThisLock" />
-      <MemberSignature Language="DocId" Value="P:Microsoft.Azure.EventHubs.EventHubClient.ThisLock" />
-      <MemberSignature Language="VB.NET" Value="Protected ReadOnly Property ThisLock As Object" />
-      <MemberSignature Language="F#" Value="member this.ThisLock : obj" Usage="Microsoft.Azure.EventHubs.EventHubClient.ThisLock" />
-      <MemberSignature Language="C++ CLI" Value="protected:&#xA; property System::Object ^ ThisLock { System::Object ^ get(); };" />
-      <MemberSignature Language="C++ CX" Value="protected:&#xA; property Platform::Object ^ ThisLock { Platform::Object ^ get(); };" />
+    <Member MemberName="WebProxy">
+      <MemberSignature Language="C#" Value="public System.Net.IWebProxy WebProxy { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Net.IWebProxy WebProxy" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Azure.EventHubs.EventHubClient.WebProxy" />
+      <MemberSignature Language="VB.NET" Value="Public Property WebProxy As IWebProxy" />
+      <MemberSignature Language="F#" Value="member this.WebProxy : System.Net.IWebProxy with get, set" Usage="Microsoft.Azure.EventHubs.EventHubClient.WebProxy" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.EventHubs</AssemblyName>
-        <AssemblyVersion>1.0.3.0</AssemblyVersion>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+        <AssemblyVersion>4.3.0.0</AssemblyVersion>
+        <AssemblyVersion>4.3.1.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
-        <ReturnType>System.Object</ReturnType>
+        <ReturnType>System.Net.IWebProxy</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary />
+        <summary>
+            Gets or sets the web proxy.
+            A proxy is applicable only when transport type is set to AmqpWebSockets.
+            If not set, systemwide proxy settings will be honored.
+            </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>

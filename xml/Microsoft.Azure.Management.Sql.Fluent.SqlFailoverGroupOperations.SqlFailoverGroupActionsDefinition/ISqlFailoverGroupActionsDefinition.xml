@@ -1,15 +1,19 @@
-﻿<Type Name="ISqlFailoverGroupActionsDefinition" FullName="Microsoft.Azure.Management.Sql.Fluent.SqlFailoverGroupOperations.SqlFailoverGroupActionsDefinition.ISqlFailoverGroupActionsDefinition">
+<Type Name="ISqlFailoverGroupActionsDefinition" FullName="Microsoft.Azure.Management.Sql.Fluent.SqlFailoverGroupOperations.SqlFailoverGroupActionsDefinition.ISqlFailoverGroupActionsDefinition">
   <TypeSignature Language="C#" Value="public interface ISqlFailoverGroupActionsDefinition : Microsoft.Azure.Management.ResourceManager.Fluent.Core.IBeta, Microsoft.Azure.Management.Sql.Fluent.SqlChildrenOperations.SqlChildrenActionsDefinition.ISqlChildrenActionsDefinition&lt;Microsoft.Azure.Management.Sql.Fluent.ISqlFailoverGroup&gt;" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract ISqlFailoverGroupActionsDefinition implements class Microsoft.Azure.Management.ResourceManager.Fluent.Core.IBeta, class Microsoft.Azure.Management.Sql.Fluent.SqlChildrenOperations.SqlChildrenActionsDefinition.ISqlChildrenActionsDefinition`1&lt;class Microsoft.Azure.Management.Sql.Fluent.ISqlFailoverGroup&gt;" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Azure.Management.Sql.Fluent.SqlFailoverGroupOperations.SqlFailoverGroupActionsDefinition.ISqlFailoverGroupActionsDefinition" />
   <TypeSignature Language="VB.NET" Value="Public Interface ISqlFailoverGroupActionsDefinition&#xA;Implements IBeta, ISqlChildrenActionsDefinition(Of ISqlFailoverGroup)" />
   <TypeSignature Language="F#" Value="type ISqlFailoverGroupActionsDefinition = interface&#xA;    interface IBeta&#xA;    interface ISqlChildrenActionsDefinition&lt;ISqlFailoverGroup&gt;" />
-  <TypeSignature Language="C++ CLI" Value="public interface class ISqlFailoverGroupActionsDefinition : Microsoft::Azure::Management::ResourceManager::Fluent::Core::IBeta, Microsoft::Azure::Management::Sql::Fluent::SqlChildrenOperations::SqlChildrenActionsDefinition::ISqlChildrenActionsDefinition&lt;Microsoft::Azure::Management::Sql::Fluent::ISqlFailoverGroup ^&gt;" />
-  <TypeSignature Language="C++ CX" Value="public interface class ISqlFailoverGroupActionsDefinition : Microsoft::Azure::Management::ResourceManager::Fluent::Core::IBeta, Microsoft::Azure::Management::Sql::Fluent::SqlChildrenOperations::SqlChildrenActionsDefinition::ISqlChildrenActionsDefinition&lt;Microsoft::Azure::Management::Sql::Fluent::ISqlFailoverGroup ^&gt;" />
-  <TypeSignature Language="C++ WINRT" Value="__interface ISqlFailoverGroupActionsDefinition : Microsoft::Azure::Management::ResourceManager::Fluent::Core::IBeta, Microsoft::Azure::Management::Sql::Fluent::SqlChildrenOperations::SqlChildrenActionsDefinition::ISqlChildrenActionsDefinition&lt;Microsoft::Azure::Management::Sql::Fluent::ISqlFailoverGroup&gt;" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Azure.Management.Sql.Fluent</AssemblyName>
-    <AssemblyVersion>1.0.0.60</AssemblyVersion>
+    <AssemblyVersion>1.0.0.61</AssemblyVersion>
+    <AssemblyVersion>1.0.0.62</AssemblyVersion>
+    <AssemblyVersion>1.0.0.63</AssemblyVersion>
+    <AssemblyVersion>1.0.0.64</AssemblyVersion>
+    <AssemblyVersion>1.0.0.65</AssemblyVersion>
+    <AssemblyVersion>1.0.0.66</AssemblyVersion>
+    <AssemblyVersion>1.0.0.67</AssemblyVersion>
+    <AssemblyVersion>1.0.0.68</AssemblyVersion>
   </AssemblyInfo>
   <Interfaces>
     <Interface>
@@ -20,7 +24,9 @@
     </Interface>
   </Interfaces>
   <Docs>
-    <summary>To be added.</summary>
+    <summary>
+            Grouping of the Azure SQL Failover Group common actions.
+            </summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -30,13 +36,17 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Management.Sql.Fluent.SqlFailoverGroupOperations.SqlFailoverGroupActionsDefinition.ISqlFailoverGroupActionsDefinition.Define(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Function Define (failoverGroupName As String) As IWithReadWriteEndpointPolicy" />
       <MemberSignature Language="F#" Value="abstract member Define : string -&gt; Microsoft.Azure.Management.Sql.Fluent.SqlFailoverGroupOperations.Definition.IWithReadWriteEndpointPolicy" Usage="iSqlFailoverGroupActionsDefinition.Define failoverGroupName" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; Microsoft::Azure::Management::Sql::Fluent::SqlFailoverGroupOperations::Definition::IWithReadWriteEndpointPolicy ^ Define(System::String ^ failoverGroupName);" />
-      <MemberSignature Language="C++ CX" Value="public:&#xA; Microsoft::Azure::Management::Sql::Fluent::SqlFailoverGroupOperations::Definition::IWithReadWriteEndpointPolicy ^ Define(Platform::String ^ failoverGroupName);" />
-      <MemberSignature Language="C++ WINRT" Value="Microsoft::Azure::Management::Sql::Fluent::SqlFailoverGroupOperations::Definition::IWithReadWriteEndpointPolicy Define(std::wstring const &amp; failoverGroupName);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Sql.Fluent</AssemblyName>
-        <AssemblyVersion>1.0.0.60</AssemblyVersion>
+        <AssemblyVersion>1.0.0.61</AssemblyVersion>
+        <AssemblyVersion>1.0.0.62</AssemblyVersion>
+        <AssemblyVersion>1.0.0.63</AssemblyVersion>
+        <AssemblyVersion>1.0.0.64</AssemblyVersion>
+        <AssemblyVersion>1.0.0.65</AssemblyVersion>
+        <AssemblyVersion>1.0.0.66</AssemblyVersion>
+        <AssemblyVersion>1.0.0.67</AssemblyVersion>
+        <AssemblyVersion>1.0.0.68</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Azure.Management.Sql.Fluent.SqlFailoverGroupOperations.Definition.IWithReadWriteEndpointPolicy</ReturnType>
@@ -45,10 +55,13 @@
         <Parameter Name="failoverGroupName" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="failoverGroupName">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="failoverGroupName">The name of the new Failover Group to be created for the selected SQL server.</param>
+        <summary>
+            Begins the definition of a new SQL Failover Group to be added to this server.
+            </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
+        <return>The first stage of the new SQL Failover Group definition.</return>
       </Docs>
     </Member>
     <Member MemberName="Failover">
@@ -57,13 +70,17 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Management.Sql.Fluent.SqlFailoverGroupOperations.SqlFailoverGroupActionsDefinition.ISqlFailoverGroupActionsDefinition.Failover(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Function Failover (failoverGroupName As String) As ISqlFailoverGroup" />
       <MemberSignature Language="F#" Value="abstract member Failover : string -&gt; Microsoft.Azure.Management.Sql.Fluent.ISqlFailoverGroup" Usage="iSqlFailoverGroupActionsDefinition.Failover failoverGroupName" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; Microsoft::Azure::Management::Sql::Fluent::ISqlFailoverGroup ^ Failover(System::String ^ failoverGroupName);" />
-      <MemberSignature Language="C++ CX" Value="public:&#xA; Microsoft::Azure::Management::Sql::Fluent::ISqlFailoverGroup ^ Failover(Platform::String ^ failoverGroupName);" />
-      <MemberSignature Language="C++ WINRT" Value="Microsoft::Azure::Management::Sql::Fluent::ISqlFailoverGroup Failover(std::wstring const &amp; failoverGroupName);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Sql.Fluent</AssemblyName>
-        <AssemblyVersion>1.0.0.60</AssemblyVersion>
+        <AssemblyVersion>1.0.0.61</AssemblyVersion>
+        <AssemblyVersion>1.0.0.62</AssemblyVersion>
+        <AssemblyVersion>1.0.0.63</AssemblyVersion>
+        <AssemblyVersion>1.0.0.64</AssemblyVersion>
+        <AssemblyVersion>1.0.0.65</AssemblyVersion>
+        <AssemblyVersion>1.0.0.66</AssemblyVersion>
+        <AssemblyVersion>1.0.0.67</AssemblyVersion>
+        <AssemblyVersion>1.0.0.68</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Azure.Management.Sql.Fluent.ISqlFailoverGroup</ReturnType>
@@ -72,21 +89,32 @@
         <Parameter Name="failoverGroupName" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="failoverGroupName">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="failoverGroupName">The name of the failover group.</param>
+        <summary>
+            Fails over from the current primary server to this server.
+            </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
+        <return>The SqlFailoverGroup object.</return>
       </Docs>
     </Member>
     <Member MemberName="FailoverAsync">
-      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;Microsoft.Azure.Management.Sql.Fluent.ISqlFailoverGroup&gt; FailoverAsync (string failoverGroupName, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;Microsoft.Azure.Management.Sql.Fluent.ISqlFailoverGroup&gt; FailoverAsync (string failoverGroupName, System.Threading.CancellationToken cancellationToken = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Microsoft.Azure.Management.Sql.Fluent.ISqlFailoverGroup&gt; FailoverAsync(string failoverGroupName, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Management.Sql.Fluent.SqlFailoverGroupOperations.SqlFailoverGroupActionsDefinition.ISqlFailoverGroupActionsDefinition.FailoverAsync(System.String,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Function FailoverAsync (failoverGroupName As String, Optional cancellationToken As CancellationToken = Nothing) As Task(Of ISqlFailoverGroup)" />
       <MemberSignature Language="F#" Value="abstract member FailoverAsync : string * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.Azure.Management.Sql.Fluent.ISqlFailoverGroup&gt;" Usage="iSqlFailoverGroupActionsDefinition.FailoverAsync (failoverGroupName, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Sql.Fluent</AssemblyName>
-        <AssemblyVersion>1.0.0.60</AssemblyVersion>
+        <AssemblyVersion>1.0.0.61</AssemblyVersion>
+        <AssemblyVersion>1.0.0.62</AssemblyVersion>
+        <AssemblyVersion>1.0.0.63</AssemblyVersion>
+        <AssemblyVersion>1.0.0.64</AssemblyVersion>
+        <AssemblyVersion>1.0.0.65</AssemblyVersion>
+        <AssemblyVersion>1.0.0.66</AssemblyVersion>
+        <AssemblyVersion>1.0.0.67</AssemblyVersion>
+        <AssemblyVersion>1.0.0.68</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.Azure.Management.Sql.Fluent.ISqlFailoverGroup&gt;</ReturnType>
@@ -96,11 +124,14 @@
         <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
       </Parameters>
       <Docs>
-        <param name="failoverGroupName">To be added.</param>
         <param name="cancellationToken">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="failoverGroupName">The name of the failover group.</param>
+        <summary>
+            Asynchronously fails over from the current primary server to this server.
+            </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
+        <return>A representation of the deferred computation of this call returning the SqlFailoverGroup object.</return>
       </Docs>
     </Member>
     <Member MemberName="ForceFailoverAllowDataLoss">
@@ -109,13 +140,17 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Management.Sql.Fluent.SqlFailoverGroupOperations.SqlFailoverGroupActionsDefinition.ISqlFailoverGroupActionsDefinition.ForceFailoverAllowDataLoss(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Function ForceFailoverAllowDataLoss (failoverGroupName As String) As ISqlFailoverGroup" />
       <MemberSignature Language="F#" Value="abstract member ForceFailoverAllowDataLoss : string -&gt; Microsoft.Azure.Management.Sql.Fluent.ISqlFailoverGroup" Usage="iSqlFailoverGroupActionsDefinition.ForceFailoverAllowDataLoss failoverGroupName" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; Microsoft::Azure::Management::Sql::Fluent::ISqlFailoverGroup ^ ForceFailoverAllowDataLoss(System::String ^ failoverGroupName);" />
-      <MemberSignature Language="C++ CX" Value="public:&#xA; Microsoft::Azure::Management::Sql::Fluent::ISqlFailoverGroup ^ ForceFailoverAllowDataLoss(Platform::String ^ failoverGroupName);" />
-      <MemberSignature Language="C++ WINRT" Value="Microsoft::Azure::Management::Sql::Fluent::ISqlFailoverGroup ForceFailoverAllowDataLoss(std::wstring const &amp; failoverGroupName);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Sql.Fluent</AssemblyName>
-        <AssemblyVersion>1.0.0.60</AssemblyVersion>
+        <AssemblyVersion>1.0.0.61</AssemblyVersion>
+        <AssemblyVersion>1.0.0.62</AssemblyVersion>
+        <AssemblyVersion>1.0.0.63</AssemblyVersion>
+        <AssemblyVersion>1.0.0.64</AssemblyVersion>
+        <AssemblyVersion>1.0.0.65</AssemblyVersion>
+        <AssemblyVersion>1.0.0.66</AssemblyVersion>
+        <AssemblyVersion>1.0.0.67</AssemblyVersion>
+        <AssemblyVersion>1.0.0.68</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Azure.Management.Sql.Fluent.ISqlFailoverGroup</ReturnType>
@@ -124,21 +159,32 @@
         <Parameter Name="failoverGroupName" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="failoverGroupName">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="failoverGroupName">The name of the failover group.</param>
+        <summary>
+            Fails over from the current primary server to this server. This operation might result in data loss.
+            </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
+        <return>The SqlFailoverGroup object.</return>
       </Docs>
     </Member>
     <Member MemberName="ForceFailoverAllowDataLossAsync">
-      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;Microsoft.Azure.Management.Sql.Fluent.ISqlFailoverGroup&gt; ForceFailoverAllowDataLossAsync (string failoverGroupName, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;Microsoft.Azure.Management.Sql.Fluent.ISqlFailoverGroup&gt; ForceFailoverAllowDataLossAsync (string failoverGroupName, System.Threading.CancellationToken cancellationToken = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Microsoft.Azure.Management.Sql.Fluent.ISqlFailoverGroup&gt; ForceFailoverAllowDataLossAsync(string failoverGroupName, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Management.Sql.Fluent.SqlFailoverGroupOperations.SqlFailoverGroupActionsDefinition.ISqlFailoverGroupActionsDefinition.ForceFailoverAllowDataLossAsync(System.String,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Function ForceFailoverAllowDataLossAsync (failoverGroupName As String, Optional cancellationToken As CancellationToken = Nothing) As Task(Of ISqlFailoverGroup)" />
       <MemberSignature Language="F#" Value="abstract member ForceFailoverAllowDataLossAsync : string * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.Azure.Management.Sql.Fluent.ISqlFailoverGroup&gt;" Usage="iSqlFailoverGroupActionsDefinition.ForceFailoverAllowDataLossAsync (failoverGroupName, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Sql.Fluent</AssemblyName>
-        <AssemblyVersion>1.0.0.60</AssemblyVersion>
+        <AssemblyVersion>1.0.0.61</AssemblyVersion>
+        <AssemblyVersion>1.0.0.62</AssemblyVersion>
+        <AssemblyVersion>1.0.0.63</AssemblyVersion>
+        <AssemblyVersion>1.0.0.64</AssemblyVersion>
+        <AssemblyVersion>1.0.0.65</AssemblyVersion>
+        <AssemblyVersion>1.0.0.66</AssemblyVersion>
+        <AssemblyVersion>1.0.0.67</AssemblyVersion>
+        <AssemblyVersion>1.0.0.68</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.Azure.Management.Sql.Fluent.ISqlFailoverGroup&gt;</ReturnType>
@@ -148,11 +194,14 @@
         <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
       </Parameters>
       <Docs>
-        <param name="failoverGroupName">To be added.</param>
         <param name="cancellationToken">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="failoverGroupName">The name of the failover group.</param>
+        <summary>
+            Fails over from the current primary server to this server. This operation might result in data loss.
+            </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
+        <return>A representation of the deferred computation of this call returning the SqlFailoverGroup object.</return>
       </Docs>
     </Member>
   </Members>

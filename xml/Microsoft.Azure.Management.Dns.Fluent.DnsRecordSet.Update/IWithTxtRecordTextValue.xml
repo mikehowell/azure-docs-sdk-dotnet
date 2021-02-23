@@ -1,20 +1,24 @@
-﻿<Type Name="IWithTxtRecordTextValue" FullName="Microsoft.Azure.Management.Dns.Fluent.DnsRecordSet.Update.IWithTxtRecordTextValue">
+<Type Name="IWithTxtRecordTextValue" FullName="Microsoft.Azure.Management.Dns.Fluent.DnsRecordSet.Update.IWithTxtRecordTextValue">
   <TypeSignature Language="C#" Value="public interface IWithTxtRecordTextValue" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IWithTxtRecordTextValue" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Azure.Management.Dns.Fluent.DnsRecordSet.Update.IWithTxtRecordTextValue" />
   <TypeSignature Language="VB.NET" Value="Public Interface IWithTxtRecordTextValue" />
   <TypeSignature Language="F#" Value="type IWithTxtRecordTextValue = interface" />
-  <TypeSignature Language="C++ CLI" Value="public interface class IWithTxtRecordTextValue" />
-  <TypeSignature Language="C++ CX" Value="public interface class IWithTxtRecordTextValue" />
-  <TypeSignature Language="C++ WINRT" Value="__interface IWithTxtRecordTextValue" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Azure.Management.Dns.Fluent</AssemblyName>
-    <AssemblyVersion>1.0.0.60</AssemblyVersion>
+    <AssemblyVersion>1.0.0.61</AssemblyVersion>
+    <AssemblyVersion>1.0.0.62</AssemblyVersion>
+    <AssemblyVersion>1.0.0.63</AssemblyVersion>
+    <AssemblyVersion>1.0.0.64</AssemblyVersion>
+    <AssemblyVersion>1.0.0.65</AssemblyVersion>
+    <AssemblyVersion>1.0.0.66</AssemblyVersion>
+    <AssemblyVersion>1.0.0.67</AssemblyVersion>
+    <AssemblyVersion>1.0.0.68</AssemblyVersion>
   </AssemblyInfo>
   <Interfaces />
   <Docs>
     <summary>
-            The stage of the SRV record definition allowing to add or remove TXT record.
+            The stage of the Txt record definition allowing to add or remove TXT record.
             </summary>
     <remarks>To be added.</remarks>
   </Docs>
@@ -25,11 +29,17 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Management.Dns.Fluent.DnsRecordSet.Update.IWithTxtRecordTextValue.WithoutText(System.Collections.Generic.IList{System.String})" />
       <MemberSignature Language="VB.NET" Value="Public Function WithoutText (textChunks As IList(Of String)) As IUpdateTxtRecordSet" />
       <MemberSignature Language="F#" Value="abstract member WithoutText : System.Collections.Generic.IList&lt;string&gt; -&gt; Microsoft.Azure.Management.Dns.Fluent.DnsRecordSet.UpdateTxtRecordSet.IUpdateTxtRecordSet" Usage="iWithTxtRecordTextValue.WithoutText textChunks" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; Microsoft::Azure::Management::Dns::Fluent::DnsRecordSet::UpdateTxtRecordSet::IUpdateTxtRecordSet ^ WithoutText(System::Collections::Generic::IList&lt;System::String ^&gt; ^ textChunks);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Dns.Fluent</AssemblyName>
-        <AssemblyVersion>1.0.0.60</AssemblyVersion>
+        <AssemblyVersion>1.0.0.61</AssemblyVersion>
+        <AssemblyVersion>1.0.0.62</AssemblyVersion>
+        <AssemblyVersion>1.0.0.63</AssemblyVersion>
+        <AssemblyVersion>1.0.0.64</AssemblyVersion>
+        <AssemblyVersion>1.0.0.65</AssemblyVersion>
+        <AssemblyVersion>1.0.0.66</AssemblyVersion>
+        <AssemblyVersion>1.0.0.67</AssemblyVersion>
+        <AssemblyVersion>1.0.0.68</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Azure.Management.Dns.Fluent.DnsRecordSet.UpdateTxtRecordSet.IUpdateTxtRecordSet</ReturnType>
@@ -38,10 +48,13 @@
         <Parameter Name="textChunks" Type="System.Collections.Generic.IList&lt;System.String&gt;" />
       </Parameters>
       <Docs>
-        <param name="textChunks">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="textChunks">The text value as list.</param>
+        <summary>
+            Removes a Txt record with the given text (split into 255 char chunks) from this record set.
+            </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
+        <return>The next stage of the record set update.</return>
       </Docs>
     </Member>
     <Member MemberName="WithoutText">
@@ -50,13 +63,17 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Management.Dns.Fluent.DnsRecordSet.Update.IWithTxtRecordTextValue.WithoutText(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Function WithoutText (text As String) As IUpdateTxtRecordSet" />
       <MemberSignature Language="F#" Value="abstract member WithoutText : string -&gt; Microsoft.Azure.Management.Dns.Fluent.DnsRecordSet.UpdateTxtRecordSet.IUpdateTxtRecordSet" Usage="iWithTxtRecordTextValue.WithoutText text" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; Microsoft::Azure::Management::Dns::Fluent::DnsRecordSet::UpdateTxtRecordSet::IUpdateTxtRecordSet ^ WithoutText(System::String ^ text);" />
-      <MemberSignature Language="C++ CX" Value="public:&#xA; Microsoft::Azure::Management::Dns::Fluent::DnsRecordSet::UpdateTxtRecordSet::IUpdateTxtRecordSet ^ WithoutText(Platform::String ^ text);" />
-      <MemberSignature Language="C++ WINRT" Value="Microsoft::Azure::Management::Dns::Fluent::DnsRecordSet::UpdateTxtRecordSet::IUpdateTxtRecordSet WithoutText(std::wstring const &amp; text);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Dns.Fluent</AssemblyName>
-        <AssemblyVersion>1.0.0.60</AssemblyVersion>
+        <AssemblyVersion>1.0.0.61</AssemblyVersion>
+        <AssemblyVersion>1.0.0.62</AssemblyVersion>
+        <AssemblyVersion>1.0.0.63</AssemblyVersion>
+        <AssemblyVersion>1.0.0.64</AssemblyVersion>
+        <AssemblyVersion>1.0.0.65</AssemblyVersion>
+        <AssemblyVersion>1.0.0.66</AssemblyVersion>
+        <AssemblyVersion>1.0.0.67</AssemblyVersion>
+        <AssemblyVersion>1.0.0.68</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Azure.Management.Dns.Fluent.DnsRecordSet.UpdateTxtRecordSet.IUpdateTxtRecordSet</ReturnType>
@@ -80,13 +97,17 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Management.Dns.Fluent.DnsRecordSet.Update.IWithTxtRecordTextValue.WithText(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Function WithText (text As String) As IUpdateTxtRecordSet" />
       <MemberSignature Language="F#" Value="abstract member WithText : string -&gt; Microsoft.Azure.Management.Dns.Fluent.DnsRecordSet.UpdateTxtRecordSet.IUpdateTxtRecordSet" Usage="iWithTxtRecordTextValue.WithText text" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; Microsoft::Azure::Management::Dns::Fluent::DnsRecordSet::UpdateTxtRecordSet::IUpdateTxtRecordSet ^ WithText(System::String ^ text);" />
-      <MemberSignature Language="C++ CX" Value="public:&#xA; Microsoft::Azure::Management::Dns::Fluent::DnsRecordSet::UpdateTxtRecordSet::IUpdateTxtRecordSet ^ WithText(Platform::String ^ text);" />
-      <MemberSignature Language="C++ WINRT" Value="Microsoft::Azure::Management::Dns::Fluent::DnsRecordSet::UpdateTxtRecordSet::IUpdateTxtRecordSet WithText(std::wstring const &amp; text);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Dns.Fluent</AssemblyName>
-        <AssemblyVersion>1.0.0.60</AssemblyVersion>
+        <AssemblyVersion>1.0.0.61</AssemblyVersion>
+        <AssemblyVersion>1.0.0.62</AssemblyVersion>
+        <AssemblyVersion>1.0.0.63</AssemblyVersion>
+        <AssemblyVersion>1.0.0.64</AssemblyVersion>
+        <AssemblyVersion>1.0.0.65</AssemblyVersion>
+        <AssemblyVersion>1.0.0.66</AssemblyVersion>
+        <AssemblyVersion>1.0.0.67</AssemblyVersion>
+        <AssemblyVersion>1.0.0.68</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Azure.Management.Dns.Fluent.DnsRecordSet.UpdateTxtRecordSet.IUpdateTxtRecordSet</ReturnType>

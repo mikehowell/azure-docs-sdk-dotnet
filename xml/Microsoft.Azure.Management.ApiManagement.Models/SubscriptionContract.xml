@@ -1,14 +1,14 @@
-﻿<Type Name="SubscriptionContract" FullName="Microsoft.Azure.Management.ApiManagement.Models.SubscriptionContract">
+<Type Name="SubscriptionContract" FullName="Microsoft.Azure.Management.ApiManagement.Models.SubscriptionContract">
   <TypeSignature Language="C#" Value="public class SubscriptionContract : Microsoft.Azure.Management.ApiManagement.Models.Resource" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit SubscriptionContract extends Microsoft.Azure.Management.ApiManagement.Models.Resource" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Azure.Management.ApiManagement.Models.SubscriptionContract" />
   <TypeSignature Language="VB.NET" Value="Public Class SubscriptionContract&#xA;Inherits Resource" />
   <TypeSignature Language="F#" Value="type SubscriptionContract = class&#xA;    inherit Resource" />
-  <TypeSignature Language="C++ CLI" Value="public ref class SubscriptionContract : Microsoft::Azure::Management::ApiManagement::Models::Resource" />
-  <TypeSignature Language="C++ WINRT" Value="[Windows::Foundation::Metadata::WebHostHidden]&#xA;class SubscriptionContract : Microsoft::Azure::Management::ApiManagement::Models::Resource" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Azure.Management.ApiManagement</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
+    <AssemblyVersion>5.0.0.0</AssemblyVersion>
+    <AssemblyVersion>6.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>Microsoft.Azure.Management.ApiManagement.Models.Resource</BaseTypeName>
@@ -16,7 +16,8 @@
   <Interfaces />
   <Attributes>
     <Attribute>
-      <AttributeName>Microsoft.Rest.Serialization.JsonTransformation</AttributeName>
+      <AttributeName Language="C#">[Microsoft.Rest.Serialization.JsonTransformation]</AttributeName>
+      <AttributeName Language="F#">[&lt;Microsoft.Rest.Serialization.JsonTransformation&gt;]</AttributeName>
     </Attribute>
   </Attributes>
   <Docs>
@@ -31,13 +32,12 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Management.ApiManagement.Models.SubscriptionContract.#ctor" />
       <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; SubscriptionContract();" />
-      <MemberSignature Language="C++ CX" Value="public:&#xA; SubscriptionContract();" />
-      <MemberSignature Language="C++ WINRT" Value=" SubscriptionContract();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.ApiManagement</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
@@ -48,41 +48,38 @@
       </Docs>
     </Member>
     <Member MemberName=".ctor">
-      <MemberSignature Language="C#" Value="public SubscriptionContract (string userId, string productId, Microsoft.Azure.Management.ApiManagement.Models.SubscriptionState state, string primaryKey, string secondaryKey, string id = null, string name = null, string type = null, string displayName = null, Nullable&lt;DateTime&gt; createdDate = null, Nullable&lt;DateTime&gt; startDate = null, Nullable&lt;DateTime&gt; expirationDate = null, Nullable&lt;DateTime&gt; endDate = null, Nullable&lt;DateTime&gt; notificationDate = null, string stateComment = null);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string userId, string productId, valuetype Microsoft.Azure.Management.ApiManagement.Models.SubscriptionState state, string primaryKey, string secondaryKey, string id, string name, string type, string displayName, valuetype System.Nullable`1&lt;valuetype System.DateTime&gt; createdDate, valuetype System.Nullable`1&lt;valuetype System.DateTime&gt; startDate, valuetype System.Nullable`1&lt;valuetype System.DateTime&gt; expirationDate, valuetype System.Nullable`1&lt;valuetype System.DateTime&gt; endDate, valuetype System.Nullable`1&lt;valuetype System.DateTime&gt; notificationDate, string stateComment) cil managed" />
-      <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Management.ApiManagement.Models.SubscriptionContract.#ctor(System.String,System.String,Microsoft.Azure.Management.ApiManagement.Models.SubscriptionState,System.String,System.String,System.String,System.String,System.String,System.String,System.Nullable{System.DateTime},System.Nullable{System.DateTime},System.Nullable{System.DateTime},System.Nullable{System.DateTime},System.Nullable{System.DateTime},System.String)" />
-      <MemberSignature Language="VB.NET" Value="Public Sub New (userId As String, productId As String, state As SubscriptionState, primaryKey As String, secondaryKey As String, Optional id As String = null, Optional name As String = null, Optional type As String = null, Optional displayName As String = null, Optional createdDate As Nullable(Of DateTime) = null, Optional startDate As Nullable(Of DateTime) = null, Optional expirationDate As Nullable(Of DateTime) = null, Optional endDate As Nullable(Of DateTime) = null, Optional notificationDate As Nullable(Of DateTime) = null, Optional stateComment As String = null)" />
-      <MemberSignature Language="F#" Value="new Microsoft.Azure.Management.ApiManagement.Models.SubscriptionContract : string * string * Microsoft.Azure.Management.ApiManagement.Models.SubscriptionState * string * string * string * string * string * string * Nullable&lt;DateTime&gt; * Nullable&lt;DateTime&gt; * Nullable&lt;DateTime&gt; * Nullable&lt;DateTime&gt; * Nullable&lt;DateTime&gt; * string -&gt; Microsoft.Azure.Management.ApiManagement.Models.SubscriptionContract" Usage="new Microsoft.Azure.Management.ApiManagement.Models.SubscriptionContract (userId, productId, state, primaryKey, secondaryKey, id, name, type, displayName, createdDate, startDate, expirationDate, endDate, notificationDate, stateComment)" />
+      <MemberSignature Language="C#" Value="public SubscriptionContract (string scope, Microsoft.Azure.Management.ApiManagement.Models.SubscriptionState state, string id = default, string name = default, string type = default, string ownerId = default, string displayName = default, DateTime? createdDate = default, DateTime? startDate = default, DateTime? expirationDate = default, DateTime? endDate = default, DateTime? notificationDate = default, string primaryKey = default, string secondaryKey = default, string stateComment = default, bool? allowTracing = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string scope, valuetype Microsoft.Azure.Management.ApiManagement.Models.SubscriptionState state, string id, string name, string type, string ownerId, string displayName, valuetype System.Nullable`1&lt;valuetype System.DateTime&gt; createdDate, valuetype System.Nullable`1&lt;valuetype System.DateTime&gt; startDate, valuetype System.Nullable`1&lt;valuetype System.DateTime&gt; expirationDate, valuetype System.Nullable`1&lt;valuetype System.DateTime&gt; endDate, valuetype System.Nullable`1&lt;valuetype System.DateTime&gt; notificationDate, string primaryKey, string secondaryKey, string stateComment, valuetype System.Nullable`1&lt;bool&gt; allowTracing) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Management.ApiManagement.Models.SubscriptionContract.#ctor(System.String,Microsoft.Azure.Management.ApiManagement.Models.SubscriptionState,System.String,System.String,System.String,System.String,System.String,System.Nullable{System.DateTime},System.Nullable{System.DateTime},System.Nullable{System.DateTime},System.Nullable{System.DateTime},System.Nullable{System.DateTime},System.String,System.String,System.String,System.Nullable{System.Boolean})" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (scope As String, state As SubscriptionState, Optional id As String = Nothing, Optional name As String = Nothing, Optional type As String = Nothing, Optional ownerId As String = Nothing, Optional displayName As String = Nothing, Optional createdDate As Nullable(Of DateTime) = Nothing, Optional startDate As Nullable(Of DateTime) = Nothing, Optional expirationDate As Nullable(Of DateTime) = Nothing, Optional endDate As Nullable(Of DateTime) = Nothing, Optional notificationDate As Nullable(Of DateTime) = Nothing, Optional primaryKey As String = Nothing, Optional secondaryKey As String = Nothing, Optional stateComment As String = Nothing, Optional allowTracing As Nullable(Of Boolean) = Nothing)" />
+      <MemberSignature Language="F#" Value="new Microsoft.Azure.Management.ApiManagement.Models.SubscriptionContract : string * Microsoft.Azure.Management.ApiManagement.Models.SubscriptionState * string * string * string * string * string * Nullable&lt;DateTime&gt; * Nullable&lt;DateTime&gt; * Nullable&lt;DateTime&gt; * Nullable&lt;DateTime&gt; * Nullable&lt;DateTime&gt; * string * string * string * Nullable&lt;bool&gt; -&gt; Microsoft.Azure.Management.ApiManagement.Models.SubscriptionContract" Usage="new Microsoft.Azure.Management.ApiManagement.Models.SubscriptionContract (scope, state, id, name, type, ownerId, displayName, createdDate, startDate, expirationDate, endDate, notificationDate, primaryKey, secondaryKey, stateComment, allowTracing)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.ApiManagement</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
-        <Parameter Name="userId" Type="System.String" />
-        <Parameter Name="productId" Type="System.String" />
+        <Parameter Name="scope" Type="System.String" />
         <Parameter Name="state" Type="Microsoft.Azure.Management.ApiManagement.Models.SubscriptionState" />
-        <Parameter Name="primaryKey" Type="System.String" />
-        <Parameter Name="secondaryKey" Type="System.String" />
         <Parameter Name="id" Type="System.String" />
         <Parameter Name="name" Type="System.String" />
         <Parameter Name="type" Type="System.String" />
+        <Parameter Name="ownerId" Type="System.String" />
         <Parameter Name="displayName" Type="System.String" />
         <Parameter Name="createdDate" Type="System.Nullable&lt;System.DateTime&gt;" />
         <Parameter Name="startDate" Type="System.Nullable&lt;System.DateTime&gt;" />
         <Parameter Name="expirationDate" Type="System.Nullable&lt;System.DateTime&gt;" />
         <Parameter Name="endDate" Type="System.Nullable&lt;System.DateTime&gt;" />
         <Parameter Name="notificationDate" Type="System.Nullable&lt;System.DateTime&gt;" />
+        <Parameter Name="primaryKey" Type="System.String" />
+        <Parameter Name="secondaryKey" Type="System.String" />
         <Parameter Name="stateComment" Type="System.String" />
+        <Parameter Name="allowTracing" Type="System.Nullable&lt;System.Boolean&gt;" />
       </Parameters>
       <Docs>
-        <param name="userId">The user resource identifier of the
-            subscription owner. The value is a valid relative URL in the format
-            of /users/{uid} where {uid} is a user identifier.</param>
-        <param name="productId">The product resource identifier of the
-            subscribed product. The value is a valid relative URL in the format
-            of /products/{productId} where {productId} is a product
-            identifier.</param>
+        <param name="scope">Scope like /products/{productId} or /apis or
+            /apis/{apiId}.</param>
         <param name="state">Subscription state. Possible states are *
             active – the subscription is active, * suspended – the subscription
             is blocked, and the subscriber cannot call any APIs of the product,
@@ -93,12 +90,13 @@
             administrator, * expired – the subscription reached its expiration
             date and was deactivated. Possible values include: 'suspended',
             'active', 'expired', 'submitted', 'rejected', 'cancelled'</param>
-        <param name="primaryKey">Subscription primary key.</param>
-        <param name="secondaryKey">Subscription secondary key.</param>
         <param name="id">Resource ID.</param>
         <param name="name">Resource name.</param>
         <param name="type">Resource type for API Management
             resource.</param>
+        <param name="ownerId">The user resource identifier of the
+            subscription owner. The value is a valid relative URL in the format
+            of /users/{userId} where {userId} is a user identifier.</param>
         <param name="displayName">The name of the subscription, or null if
             the subscription has no name.</param>
         <param name="createdDate">Subscription creation date. The date
@@ -130,29 +128,69 @@
             notification date. The date conforms to the following format:
             `yyyy-MM-ddTHH:mm:ssZ` as specified by the ISO 8601 standard.
             </param>
+        <param name="primaryKey">Subscription primary key. This property
+            will not be filled on 'GET' operations! Use '/listSecrets' POST
+            request to get the value.</param>
+        <param name="secondaryKey">Subscription secondary key. This
+            property will not be filled on 'GET' operations! Use '/listSecrets'
+            POST request to get the value.</param>
         <param name="stateComment">Optional subscription comment added by
             an administrator.</param>
+        <param name="allowTracing">Determines whether tracing is
+            enabled</param>
         <summary>
             Initializes a new instance of the SubscriptionContract class.
             </summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
-    <Member MemberName="CreatedDate">
-      <MemberSignature Language="C#" Value="public Nullable&lt;DateTime&gt; CreatedDate { get; }" />
-      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;valuetype System.DateTime&gt; CreatedDate" />
-      <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Management.ApiManagement.Models.SubscriptionContract.CreatedDate" />
-      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property CreatedDate As Nullable(Of DateTime)" />
-      <MemberSignature Language="F#" Value="member this.CreatedDate : Nullable&lt;DateTime&gt;" Usage="Microsoft.Azure.Management.ApiManagement.Models.SubscriptionContract.CreatedDate" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Nullable&lt;DateTime&gt; CreatedDate { Nullable&lt;DateTime&gt; get(); };" />
+    <Member MemberName="AllowTracing">
+      <MemberSignature Language="C#" Value="public bool? AllowTracing { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;bool&gt; AllowTracing" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Management.ApiManagement.Models.SubscriptionContract.AllowTracing" />
+      <MemberSignature Language="VB.NET" Value="Public Property AllowTracing As Nullable(Of Boolean)" />
+      <MemberSignature Language="F#" Value="member this.AllowTracing : Nullable&lt;bool&gt; with get, set" Usage="Microsoft.Azure.Management.ApiManagement.Models.SubscriptionContract.AllowTracing" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.ApiManagement</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="properties.createdDate")</AttributeName>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty(PropertyName="properties.allowTracing")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty(PropertyName="properties.allowTracing")&gt;]</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Nullable&lt;System.Boolean&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets or sets determines whether tracing is enabled
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CreatedDate">
+      <MemberSignature Language="C#" Value="public DateTime? CreatedDate { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;valuetype System.DateTime&gt; CreatedDate" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Management.ApiManagement.Models.SubscriptionContract.CreatedDate" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property CreatedDate As Nullable(Of DateTime)" />
+      <MemberSignature Language="F#" Value="member this.CreatedDate : Nullable&lt;DateTime&gt;" Usage="Microsoft.Azure.Management.ApiManagement.Models.SubscriptionContract.CreatedDate" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Azure.Management.ApiManagement</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty(PropertyName="properties.createdDate")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty(PropertyName="properties.createdDate")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -175,16 +213,17 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Management.ApiManagement.Models.SubscriptionContract.DisplayName" />
       <MemberSignature Language="VB.NET" Value="Public Property DisplayName As String" />
       <MemberSignature Language="F#" Value="member this.DisplayName : string with get, set" Usage="Microsoft.Azure.Management.ApiManagement.Models.SubscriptionContract.DisplayName" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ DisplayName { System::String ^ get(); void set(System::String ^ value); };" />
-      <MemberSignature Language="C++ CX" Value="public:&#xA; property Platform::String ^ DisplayName { Platform::String ^ get(); void set(Platform::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.ApiManagement</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="properties.displayName")</AttributeName>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty(PropertyName="properties.displayName")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty(PropertyName="properties.displayName")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -200,20 +239,22 @@
       </Docs>
     </Member>
     <Member MemberName="EndDate">
-      <MemberSignature Language="C#" Value="public Nullable&lt;DateTime&gt; EndDate { get; set; }" />
+      <MemberSignature Language="C#" Value="public DateTime? EndDate { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;valuetype System.DateTime&gt; EndDate" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Management.ApiManagement.Models.SubscriptionContract.EndDate" />
       <MemberSignature Language="VB.NET" Value="Public Property EndDate As Nullable(Of DateTime)" />
       <MemberSignature Language="F#" Value="member this.EndDate : Nullable&lt;DateTime&gt; with get, set" Usage="Microsoft.Azure.Management.ApiManagement.Models.SubscriptionContract.EndDate" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Nullable&lt;DateTime&gt; EndDate { Nullable&lt;DateTime&gt; get(); void set(Nullable&lt;DateTime&gt; value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.ApiManagement</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="properties.endDate")</AttributeName>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty(PropertyName="properties.endDate")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty(PropertyName="properties.endDate")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -234,20 +275,22 @@
       </Docs>
     </Member>
     <Member MemberName="ExpirationDate">
-      <MemberSignature Language="C#" Value="public Nullable&lt;DateTime&gt; ExpirationDate { get; set; }" />
+      <MemberSignature Language="C#" Value="public DateTime? ExpirationDate { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;valuetype System.DateTime&gt; ExpirationDate" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Management.ApiManagement.Models.SubscriptionContract.ExpirationDate" />
       <MemberSignature Language="VB.NET" Value="Public Property ExpirationDate As Nullable(Of DateTime)" />
       <MemberSignature Language="F#" Value="member this.ExpirationDate : Nullable&lt;DateTime&gt; with get, set" Usage="Microsoft.Azure.Management.ApiManagement.Models.SubscriptionContract.ExpirationDate" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Nullable&lt;DateTime&gt; ExpirationDate { Nullable&lt;DateTime&gt; get(); void set(Nullable&lt;DateTime&gt; value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.ApiManagement</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="properties.expirationDate")</AttributeName>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty(PropertyName="properties.expirationDate")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty(PropertyName="properties.expirationDate")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -267,20 +310,22 @@
       </Docs>
     </Member>
     <Member MemberName="NotificationDate">
-      <MemberSignature Language="C#" Value="public Nullable&lt;DateTime&gt; NotificationDate { get; set; }" />
+      <MemberSignature Language="C#" Value="public DateTime? NotificationDate { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;valuetype System.DateTime&gt; NotificationDate" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Management.ApiManagement.Models.SubscriptionContract.NotificationDate" />
       <MemberSignature Language="VB.NET" Value="Public Property NotificationDate As Nullable(Of DateTime)" />
       <MemberSignature Language="F#" Value="member this.NotificationDate : Nullable&lt;DateTime&gt; with get, set" Usage="Microsoft.Azure.Management.ApiManagement.Models.SubscriptionContract.NotificationDate" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Nullable&lt;DateTime&gt; NotificationDate { Nullable&lt;DateTime&gt; get(); void set(Nullable&lt;DateTime&gt; value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.ApiManagement</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="properties.notificationDate")</AttributeName>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty(PropertyName="properties.notificationDate")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty(PropertyName="properties.notificationDate")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -297,22 +342,77 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <Member MemberName="OwnerId">
+      <MemberSignature Language="C#" Value="public string OwnerId { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string OwnerId" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Management.ApiManagement.Models.SubscriptionContract.OwnerId" />
+      <MemberSignature Language="VB.NET" Value="Public Property OwnerId As String" />
+      <MemberSignature Language="F#" Value="member this.OwnerId : string with get, set" Usage="Microsoft.Azure.Management.ApiManagement.Models.SubscriptionContract.OwnerId" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Azure.Management.ApiManagement</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty(PropertyName="properties.ownerId")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty(PropertyName="properties.ownerId")&gt;]</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets or sets the user resource identifier of the subscription
+            owner. The value is a valid relative URL in the format of
+            /users/{userId} where {userId} is a user identifier.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OwnerIdentifier">
+      <MemberSignature Language="C#" Value="public string OwnerIdentifier { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string OwnerIdentifier" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Management.ApiManagement.Models.SubscriptionContract.OwnerIdentifier" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property OwnerIdentifier As String" />
+      <MemberSignature Language="F#" Value="member this.OwnerIdentifier : string" Usage="Microsoft.Azure.Management.ApiManagement.Models.SubscriptionContract.OwnerIdentifier" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Azure.Management.ApiManagement</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
     <Member MemberName="PrimaryKey">
       <MemberSignature Language="C#" Value="public string PrimaryKey { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string PrimaryKey" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Management.ApiManagement.Models.SubscriptionContract.PrimaryKey" />
       <MemberSignature Language="VB.NET" Value="Public Property PrimaryKey As String" />
       <MemberSignature Language="F#" Value="member this.PrimaryKey : string with get, set" Usage="Microsoft.Azure.Management.ApiManagement.Models.SubscriptionContract.PrimaryKey" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ PrimaryKey { System::String ^ get(); void set(System::String ^ value); };" />
-      <MemberSignature Language="C++ CX" Value="public:&#xA; property Platform::String ^ PrimaryKey { Platform::String ^ get(); void set(Platform::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.ApiManagement</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="properties.primaryKey")</AttributeName>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty(PropertyName="properties.primaryKey")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty(PropertyName="properties.primaryKey")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -320,28 +420,31 @@
       </ReturnValue>
       <Docs>
         <summary>
-            Gets or sets subscription primary key.
+            Gets or sets subscription primary key. This property will not be
+            filled on 'GET' operations! Use '/listSecrets' POST request to get
+            the value.
             </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
-    <Member MemberName="ProductId">
-      <MemberSignature Language="C#" Value="public string ProductId { get; set; }" />
-      <MemberSignature Language="ILAsm" Value=".property instance string ProductId" />
-      <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Management.ApiManagement.Models.SubscriptionContract.ProductId" />
-      <MemberSignature Language="VB.NET" Value="Public Property ProductId As String" />
-      <MemberSignature Language="F#" Value="member this.ProductId : string with get, set" Usage="Microsoft.Azure.Management.ApiManagement.Models.SubscriptionContract.ProductId" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ ProductId { System::String ^ get(); void set(System::String ^ value); };" />
-      <MemberSignature Language="C++ CX" Value="public:&#xA; property Platform::String ^ ProductId { Platform::String ^ get(); void set(Platform::String ^ value); };" />
+    <Member MemberName="Scope">
+      <MemberSignature Language="C#" Value="public string Scope { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Scope" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Management.ApiManagement.Models.SubscriptionContract.Scope" />
+      <MemberSignature Language="VB.NET" Value="Public Property Scope As String" />
+      <MemberSignature Language="F#" Value="member this.Scope : string with get, set" Usage="Microsoft.Azure.Management.ApiManagement.Models.SubscriptionContract.Scope" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.ApiManagement</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="properties.productId")</AttributeName>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty(PropertyName="properties.scope")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty(PropertyName="properties.scope")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -349,26 +452,25 @@
       </ReturnValue>
       <Docs>
         <summary>
-            Gets or sets the product resource identifier of the subscribed
-            product. The value is a valid relative URL in the format of
-            /products/{productId} where {productId} is a product identifier.
+            Gets or sets scope like /products/{productId} or /apis or
+            /apis/{apiId}.
             </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
-    <Member MemberName="ProductIdentifier">
-      <MemberSignature Language="C#" Value="public string ProductIdentifier { get; }" />
-      <MemberSignature Language="ILAsm" Value=".property instance string ProductIdentifier" />
-      <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Management.ApiManagement.Models.SubscriptionContract.ProductIdentifier" />
-      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ProductIdentifier As String" />
-      <MemberSignature Language="F#" Value="member this.ProductIdentifier : string" Usage="Microsoft.Azure.Management.ApiManagement.Models.SubscriptionContract.ProductIdentifier" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ ProductIdentifier { System::String ^ get(); };" />
-      <MemberSignature Language="C++ CX" Value="public:&#xA; property Platform::String ^ ProductIdentifier { Platform::String ^ get(); };" />
+    <Member MemberName="ScopeIdentifier">
+      <MemberSignature Language="C#" Value="public string ScopeIdentifier { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string ScopeIdentifier" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Management.ApiManagement.Models.SubscriptionContract.ScopeIdentifier" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ScopeIdentifier As String" />
+      <MemberSignature Language="F#" Value="member this.ScopeIdentifier : string" Usage="Microsoft.Azure.Management.ApiManagement.Models.SubscriptionContract.ScopeIdentifier" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.ApiManagement</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -385,16 +487,17 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Management.ApiManagement.Models.SubscriptionContract.SecondaryKey" />
       <MemberSignature Language="VB.NET" Value="Public Property SecondaryKey As String" />
       <MemberSignature Language="F#" Value="member this.SecondaryKey : string with get, set" Usage="Microsoft.Azure.Management.ApiManagement.Models.SubscriptionContract.SecondaryKey" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ SecondaryKey { System::String ^ get(); void set(System::String ^ value); };" />
-      <MemberSignature Language="C++ CX" Value="public:&#xA; property Platform::String ^ SecondaryKey { Platform::String ^ get(); void set(Platform::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.ApiManagement</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="properties.secondaryKey")</AttributeName>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty(PropertyName="properties.secondaryKey")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty(PropertyName="properties.secondaryKey")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -402,27 +505,31 @@
       </ReturnValue>
       <Docs>
         <summary>
-            Gets or sets subscription secondary key.
+            Gets or sets subscription secondary key. This property will not be
+            filled on 'GET' operations! Use '/listSecrets' POST request to get
+            the value.
             </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="StartDate">
-      <MemberSignature Language="C#" Value="public Nullable&lt;DateTime&gt; StartDate { get; set; }" />
+      <MemberSignature Language="C#" Value="public DateTime? StartDate { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;valuetype System.DateTime&gt; StartDate" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Management.ApiManagement.Models.SubscriptionContract.StartDate" />
       <MemberSignature Language="VB.NET" Value="Public Property StartDate As Nullable(Of DateTime)" />
       <MemberSignature Language="F#" Value="member this.StartDate : Nullable&lt;DateTime&gt; with get, set" Usage="Microsoft.Azure.Management.ApiManagement.Models.SubscriptionContract.StartDate" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Nullable&lt;DateTime&gt; StartDate { Nullable&lt;DateTime&gt; get(); void set(Nullable&lt;DateTime&gt; value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.ApiManagement</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="properties.startDate")</AttributeName>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty(PropertyName="properties.startDate")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty(PropertyName="properties.startDate")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -447,16 +554,17 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Management.ApiManagement.Models.SubscriptionContract.State" />
       <MemberSignature Language="VB.NET" Value="Public Property State As SubscriptionState" />
       <MemberSignature Language="F#" Value="member this.State : Microsoft.Azure.Management.ApiManagement.Models.SubscriptionState with get, set" Usage="Microsoft.Azure.Management.ApiManagement.Models.SubscriptionContract.State" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Azure::Management::ApiManagement::Models::SubscriptionState State { Microsoft::Azure::Management::ApiManagement::Models::SubscriptionState get(); void set(Microsoft::Azure::Management::ApiManagement::Models::SubscriptionState value); };" />
-      <MemberSignature Language="C++ CX" Value="public:&#xA; property Microsoft::Azure::Management::ApiManagement::Models::SubscriptionState State { Microsoft::Azure::Management::ApiManagement::Models::SubscriptionState get(); void set(Microsoft::Azure::Management::ApiManagement::Models::SubscriptionState value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.ApiManagement</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="properties.state")</AttributeName>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty(PropertyName="properties.state")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty(PropertyName="properties.state")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -485,16 +593,17 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Management.ApiManagement.Models.SubscriptionContract.StateComment" />
       <MemberSignature Language="VB.NET" Value="Public Property StateComment As String" />
       <MemberSignature Language="F#" Value="member this.StateComment : string with get, set" Usage="Microsoft.Azure.Management.ApiManagement.Models.SubscriptionContract.StateComment" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ StateComment { System::String ^ get(); void set(System::String ^ value); };" />
-      <MemberSignature Language="C++ CX" Value="public:&#xA; property Platform::String ^ StateComment { Platform::String ^ get(); void set(Platform::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.ApiManagement</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="properties.stateComment")</AttributeName>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty(PropertyName="properties.stateComment")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty(PropertyName="properties.stateComment")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -509,72 +618,18 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
-    <Member MemberName="UserId">
-      <MemberSignature Language="C#" Value="public string UserId { get; set; }" />
-      <MemberSignature Language="ILAsm" Value=".property instance string UserId" />
-      <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Management.ApiManagement.Models.SubscriptionContract.UserId" />
-      <MemberSignature Language="VB.NET" Value="Public Property UserId As String" />
-      <MemberSignature Language="F#" Value="member this.UserId : string with get, set" Usage="Microsoft.Azure.Management.ApiManagement.Models.SubscriptionContract.UserId" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ UserId { System::String ^ get(); void set(System::String ^ value); };" />
-      <MemberSignature Language="C++ CX" Value="public:&#xA; property Platform::String ^ UserId { Platform::String ^ get(); void set(Platform::String ^ value); };" />
-      <MemberType>Property</MemberType>
-      <AssemblyInfo>
-        <AssemblyName>Microsoft.Azure.Management.ApiManagement</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Attributes>
-        <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="properties.userId")</AttributeName>
-        </Attribute>
-      </Attributes>
-      <ReturnValue>
-        <ReturnType>System.String</ReturnType>
-      </ReturnValue>
-      <Docs>
-        <summary>
-            Gets or sets the user resource identifier of the subscription
-            owner. The value is a valid relative URL in the format of
-            /users/{uid} where {uid} is a user identifier.
-            </summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
-      </Docs>
-    </Member>
-    <Member MemberName="UserIdentifier">
-      <MemberSignature Language="C#" Value="public string UserIdentifier { get; }" />
-      <MemberSignature Language="ILAsm" Value=".property instance string UserIdentifier" />
-      <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Management.ApiManagement.Models.SubscriptionContract.UserIdentifier" />
-      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property UserIdentifier As String" />
-      <MemberSignature Language="F#" Value="member this.UserIdentifier : string" Usage="Microsoft.Azure.Management.ApiManagement.Models.SubscriptionContract.UserIdentifier" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ UserIdentifier { System::String ^ get(); };" />
-      <MemberSignature Language="C++ CX" Value="public:&#xA; property Platform::String ^ UserIdentifier { Platform::String ^ get(); };" />
-      <MemberType>Property</MemberType>
-      <AssemblyInfo>
-        <AssemblyName>Microsoft.Azure.Management.ApiManagement</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <ReturnValue>
-        <ReturnType>System.String</ReturnType>
-      </ReturnValue>
-      <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
-      </Docs>
-    </Member>
     <Member MemberName="Validate">
       <MemberSignature Language="C#" Value="public virtual void Validate ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Validate() cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Management.ApiManagement.Models.SubscriptionContract.Validate" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Sub Validate ()" />
       <MemberSignature Language="F#" Value="abstract member Validate : unit -&gt; unit&#xA;override this.Validate : unit -&gt; unit" Usage="subscriptionContract.Validate " />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Validate();" />
-      <MemberSignature Language="C++ CX" Value="public:&#xA; virtual void Validate();" />
-      <MemberSignature Language="C++ WINRT" Value=" virtual void Validate();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.ApiManagement</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>

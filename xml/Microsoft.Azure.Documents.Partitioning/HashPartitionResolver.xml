@@ -1,17 +1,44 @@
-﻿<Type Name="HashPartitionResolver" FullName="Microsoft.Azure.Documents.Partitioning.HashPartitionResolver">
+<Type Name="HashPartitionResolver" FullName="Microsoft.Azure.Documents.Partitioning.HashPartitionResolver">
   <TypeSignature Language="C#" Value="public class HashPartitionResolver : IDisposable, Microsoft.Azure.Documents.Client.IPartitionResolver" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit HashPartitionResolver extends System.Object implements class Microsoft.Azure.Documents.Client.IPartitionResolver, class System.IDisposable" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Azure.Documents.Partitioning.HashPartitionResolver" />
   <TypeSignature Language="VB.NET" Value="Public Class HashPartitionResolver&#xA;Implements IDisposable, IPartitionResolver" />
   <TypeSignature Language="F#" Value="type HashPartitionResolver = class&#xA;    interface IPartitionResolver&#xA;    interface IDisposable" />
-  <TypeSignature Language="C++ CLI" Value="public ref class HashPartitionResolver : IDisposable, Microsoft::Azure::Documents::Client::IPartitionResolver" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Azure.DocumentDB.Core</AssemblyName>
+    <AssemblyVersion>2.9.2.0</AssemblyVersion>
+    <AssemblyVersion>2.9.3.0</AssemblyVersion>
+    <AssemblyVersion>2.9.4.0</AssemblyVersion>
+    <AssemblyVersion>2.10.1.0</AssemblyVersion>
+    <AssemblyVersion>2.10.3.0</AssemblyVersion>
+    <AssemblyVersion>2.11.0.0</AssemblyVersion>
+    <AssemblyVersion>2.11.1.0</AssemblyVersion>
+    <AssemblyVersion>2.11.2.0</AssemblyVersion>
+    <AssemblyVersion>2.11.3.0</AssemblyVersion>
+    <AssemblyVersion>2.11.4.0</AssemblyVersion>
+    <AssemblyVersion>2.11.5.0</AssemblyVersion>
+    <AssemblyVersion>2.11.6.0</AssemblyVersion>
+    <AssemblyVersion>2.12.0.0</AssemblyVersion>
+    <AssemblyVersion>2.13.0.0</AssemblyVersion>
+    <AssemblyVersion>2.13.1.0</AssemblyVersion>
+  </AssemblyInfo>
   <AssemblyInfo>
     <AssemblyName>Microsoft.Azure.Documents.Client</AssemblyName>
-    <AssemblyVersion>1.18.0.0</AssemblyVersion>
-    <AssemblyVersion>1.19.0.0</AssemblyVersion>
-    <AssemblyVersion>1.20.0.0</AssemblyVersion>
-    <AssemblyVersion>1.21.0.0</AssemblyVersion>
-    <AssemblyVersion>1.22.0.0</AssemblyVersion>
+    <AssemblyVersion>2.9.2.0</AssemblyVersion>
+    <AssemblyVersion>2.9.3.0</AssemblyVersion>
+    <AssemblyVersion>2.9.4.0</AssemblyVersion>
+    <AssemblyVersion>2.10.1.0</AssemblyVersion>
+    <AssemblyVersion>2.10.3.0</AssemblyVersion>
+    <AssemblyVersion>2.11.0.0</AssemblyVersion>
+    <AssemblyVersion>2.11.1.0</AssemblyVersion>
+    <AssemblyVersion>2.11.2.0</AssemblyVersion>
+    <AssemblyVersion>2.11.3.0</AssemblyVersion>
+    <AssemblyVersion>2.11.4.0</AssemblyVersion>
+    <AssemblyVersion>2.11.5.0</AssemblyVersion>
+    <AssemblyVersion>2.11.6.0</AssemblyVersion>
+    <AssemblyVersion>2.12.0.0</AssemblyVersion>
+    <AssemblyVersion>2.13.0.0</AssemblyVersion>
+    <AssemblyVersion>2.13.1.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
@@ -26,7 +53,8 @@
   </Interfaces>
   <Attributes>
     <Attribute>
-      <AttributeName>System.Obsolete("Support for IPartitionResolver based classes is now obsolete. It's recommended that you use partitioned collections for higher storage and throughput.")</AttributeName>
+      <AttributeName Language="C#">[System.Obsolete("Support for IPartitionResolver based classes is now obsolete. It's recommended that you use partitioned collections for higher storage and throughput.")]</AttributeName>
+      <AttributeName Language="F#">[&lt;System.Obsolete("Support for IPartitionResolver based classes is now obsolete. It's recommended that you use partitioned collections for higher storage and throughput.")&gt;]</AttributeName>
     </Attribute>
   </Attributes>
   <Docs>
@@ -54,19 +82,47 @@
   </Docs>
   <Members>
     <Member MemberName=".ctor">
-      <MemberSignature Language="C#" Value="public HashPartitionResolver (Func&lt;object,string&gt; partitionKeyExtractor, System.Collections.Generic.IEnumerable&lt;string&gt; collectionLinks, int numberOfVirtualNodesPerCollection = 128, Microsoft.Azure.Documents.Partitioning.IHashGenerator hashGenerator = null);" />
+      <MemberSignature Language="C#" Value="public HashPartitionResolver (Func&lt;object,string&gt; partitionKeyExtractor, System.Collections.Generic.IEnumerable&lt;string&gt; collectionLinks, int numberOfVirtualNodesPerCollection = 128, Microsoft.Azure.Documents.Partitioning.IHashGenerator hashGenerator = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Func`2&lt;object, string&gt; partitionKeyExtractor, class System.Collections.Generic.IEnumerable`1&lt;string&gt; collectionLinks, int32 numberOfVirtualNodesPerCollection, class Microsoft.Azure.Documents.Partitioning.IHashGenerator hashGenerator) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Documents.Partitioning.HashPartitionResolver.#ctor(System.Func{System.Object,System.String},System.Collections.Generic.IEnumerable{System.String},System.Int32,Microsoft.Azure.Documents.Partitioning.IHashGenerator)" />
-      <MemberSignature Language="VB.NET" Value="Public Sub New (partitionKeyExtractor As Func(Of Object, String), collectionLinks As IEnumerable(Of String), Optional numberOfVirtualNodesPerCollection As Integer = 128, Optional hashGenerator As IHashGenerator = null)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (partitionKeyExtractor As Func(Of Object, String), collectionLinks As IEnumerable(Of String), Optional numberOfVirtualNodesPerCollection As Integer = 128, Optional hashGenerator As IHashGenerator = Nothing)" />
       <MemberSignature Language="F#" Value="new Microsoft.Azure.Documents.Partitioning.HashPartitionResolver : Func&lt;obj, string&gt; * seq&lt;string&gt; * int * Microsoft.Azure.Documents.Partitioning.IHashGenerator -&gt; Microsoft.Azure.Documents.Partitioning.HashPartitionResolver" Usage="new Microsoft.Azure.Documents.Partitioning.HashPartitionResolver (partitionKeyExtractor, collectionLinks, numberOfVirtualNodesPerCollection, hashGenerator)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
+        <AssemblyName>Microsoft.Azure.DocumentDB.Core</AssemblyName>
+        <AssemblyVersion>2.9.2.0</AssemblyVersion>
+        <AssemblyVersion>2.9.3.0</AssemblyVersion>
+        <AssemblyVersion>2.9.4.0</AssemblyVersion>
+        <AssemblyVersion>2.10.1.0</AssemblyVersion>
+        <AssemblyVersion>2.10.3.0</AssemblyVersion>
+        <AssemblyVersion>2.11.0.0</AssemblyVersion>
+        <AssemblyVersion>2.11.1.0</AssemblyVersion>
+        <AssemblyVersion>2.11.2.0</AssemblyVersion>
+        <AssemblyVersion>2.11.3.0</AssemblyVersion>
+        <AssemblyVersion>2.11.4.0</AssemblyVersion>
+        <AssemblyVersion>2.11.5.0</AssemblyVersion>
+        <AssemblyVersion>2.11.6.0</AssemblyVersion>
+        <AssemblyVersion>2.12.0.0</AssemblyVersion>
+        <AssemblyVersion>2.13.0.0</AssemblyVersion>
+        <AssemblyVersion>2.13.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Documents.Client</AssemblyName>
-        <AssemblyVersion>1.18.0.0</AssemblyVersion>
-        <AssemblyVersion>1.19.0.0</AssemblyVersion>
-        <AssemblyVersion>1.20.0.0</AssemblyVersion>
-        <AssemblyVersion>1.21.0.0</AssemblyVersion>
-        <AssemblyVersion>1.22.0.0</AssemblyVersion>
+        <AssemblyVersion>2.9.2.0</AssemblyVersion>
+        <AssemblyVersion>2.9.3.0</AssemblyVersion>
+        <AssemblyVersion>2.9.4.0</AssemblyVersion>
+        <AssemblyVersion>2.10.1.0</AssemblyVersion>
+        <AssemblyVersion>2.10.3.0</AssemblyVersion>
+        <AssemblyVersion>2.11.0.0</AssemblyVersion>
+        <AssemblyVersion>2.11.1.0</AssemblyVersion>
+        <AssemblyVersion>2.11.2.0</AssemblyVersion>
+        <AssemblyVersion>2.11.3.0</AssemblyVersion>
+        <AssemblyVersion>2.11.4.0</AssemblyVersion>
+        <AssemblyVersion>2.11.5.0</AssemblyVersion>
+        <AssemblyVersion>2.11.6.0</AssemblyVersion>
+        <AssemblyVersion>2.12.0.0</AssemblyVersion>
+        <AssemblyVersion>2.13.0.0</AssemblyVersion>
+        <AssemblyVersion>2.13.1.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="partitionKeyExtractor" Type="System.Func&lt;System.Object,System.String&gt;" />
@@ -86,19 +142,47 @@
       </Docs>
     </Member>
     <Member MemberName=".ctor">
-      <MemberSignature Language="C#" Value="public HashPartitionResolver (string partitionKeyPropertyName, System.Collections.Generic.IEnumerable&lt;string&gt; collectionLinks, int numberOfVirtualNodesPerCollection = 128, Microsoft.Azure.Documents.Partitioning.IHashGenerator hashGenerator = null);" />
+      <MemberSignature Language="C#" Value="public HashPartitionResolver (string partitionKeyPropertyName, System.Collections.Generic.IEnumerable&lt;string&gt; collectionLinks, int numberOfVirtualNodesPerCollection = 128, Microsoft.Azure.Documents.Partitioning.IHashGenerator hashGenerator = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string partitionKeyPropertyName, class System.Collections.Generic.IEnumerable`1&lt;string&gt; collectionLinks, int32 numberOfVirtualNodesPerCollection, class Microsoft.Azure.Documents.Partitioning.IHashGenerator hashGenerator) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Documents.Partitioning.HashPartitionResolver.#ctor(System.String,System.Collections.Generic.IEnumerable{System.String},System.Int32,Microsoft.Azure.Documents.Partitioning.IHashGenerator)" />
-      <MemberSignature Language="VB.NET" Value="Public Sub New (partitionKeyPropertyName As String, collectionLinks As IEnumerable(Of String), Optional numberOfVirtualNodesPerCollection As Integer = 128, Optional hashGenerator As IHashGenerator = null)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (partitionKeyPropertyName As String, collectionLinks As IEnumerable(Of String), Optional numberOfVirtualNodesPerCollection As Integer = 128, Optional hashGenerator As IHashGenerator = Nothing)" />
       <MemberSignature Language="F#" Value="new Microsoft.Azure.Documents.Partitioning.HashPartitionResolver : string * seq&lt;string&gt; * int * Microsoft.Azure.Documents.Partitioning.IHashGenerator -&gt; Microsoft.Azure.Documents.Partitioning.HashPartitionResolver" Usage="new Microsoft.Azure.Documents.Partitioning.HashPartitionResolver (partitionKeyPropertyName, collectionLinks, numberOfVirtualNodesPerCollection, hashGenerator)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
+        <AssemblyName>Microsoft.Azure.DocumentDB.Core</AssemblyName>
+        <AssemblyVersion>2.9.2.0</AssemblyVersion>
+        <AssemblyVersion>2.9.3.0</AssemblyVersion>
+        <AssemblyVersion>2.9.4.0</AssemblyVersion>
+        <AssemblyVersion>2.10.1.0</AssemblyVersion>
+        <AssemblyVersion>2.10.3.0</AssemblyVersion>
+        <AssemblyVersion>2.11.0.0</AssemblyVersion>
+        <AssemblyVersion>2.11.1.0</AssemblyVersion>
+        <AssemblyVersion>2.11.2.0</AssemblyVersion>
+        <AssemblyVersion>2.11.3.0</AssemblyVersion>
+        <AssemblyVersion>2.11.4.0</AssemblyVersion>
+        <AssemblyVersion>2.11.5.0</AssemblyVersion>
+        <AssemblyVersion>2.11.6.0</AssemblyVersion>
+        <AssemblyVersion>2.12.0.0</AssemblyVersion>
+        <AssemblyVersion>2.13.0.0</AssemblyVersion>
+        <AssemblyVersion>2.13.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Documents.Client</AssemblyName>
-        <AssemblyVersion>1.18.0.0</AssemblyVersion>
-        <AssemblyVersion>1.19.0.0</AssemblyVersion>
-        <AssemblyVersion>1.20.0.0</AssemblyVersion>
-        <AssemblyVersion>1.21.0.0</AssemblyVersion>
-        <AssemblyVersion>1.22.0.0</AssemblyVersion>
+        <AssemblyVersion>2.9.2.0</AssemblyVersion>
+        <AssemblyVersion>2.9.3.0</AssemblyVersion>
+        <AssemblyVersion>2.9.4.0</AssemblyVersion>
+        <AssemblyVersion>2.10.1.0</AssemblyVersion>
+        <AssemblyVersion>2.10.3.0</AssemblyVersion>
+        <AssemblyVersion>2.11.0.0</AssemblyVersion>
+        <AssemblyVersion>2.11.1.0</AssemblyVersion>
+        <AssemblyVersion>2.11.2.0</AssemblyVersion>
+        <AssemblyVersion>2.11.3.0</AssemblyVersion>
+        <AssemblyVersion>2.11.4.0</AssemblyVersion>
+        <AssemblyVersion>2.11.5.0</AssemblyVersion>
+        <AssemblyVersion>2.11.6.0</AssemblyVersion>
+        <AssemblyVersion>2.12.0.0</AssemblyVersion>
+        <AssemblyVersion>2.13.0.0</AssemblyVersion>
+        <AssemblyVersion>2.13.1.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="partitionKeyPropertyName" Type="System.String" />
@@ -126,15 +210,42 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Documents.Partitioning.HashPartitionResolver.CollectionLinks" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property CollectionLinks As IEnumerable(Of String)" />
       <MemberSignature Language="F#" Value="member this.CollectionLinks : seq&lt;string&gt;" Usage="Microsoft.Azure.Documents.Partitioning.HashPartitionResolver.CollectionLinks" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::Generic::IEnumerable&lt;System::String ^&gt; ^ CollectionLinks { System::Collections::Generic::IEnumerable&lt;System::String ^&gt; ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
+        <AssemblyName>Microsoft.Azure.DocumentDB.Core</AssemblyName>
+        <AssemblyVersion>2.9.2.0</AssemblyVersion>
+        <AssemblyVersion>2.9.3.0</AssemblyVersion>
+        <AssemblyVersion>2.9.4.0</AssemblyVersion>
+        <AssemblyVersion>2.10.1.0</AssemblyVersion>
+        <AssemblyVersion>2.10.3.0</AssemblyVersion>
+        <AssemblyVersion>2.11.0.0</AssemblyVersion>
+        <AssemblyVersion>2.11.1.0</AssemblyVersion>
+        <AssemblyVersion>2.11.2.0</AssemblyVersion>
+        <AssemblyVersion>2.11.3.0</AssemblyVersion>
+        <AssemblyVersion>2.11.4.0</AssemblyVersion>
+        <AssemblyVersion>2.11.5.0</AssemblyVersion>
+        <AssemblyVersion>2.11.6.0</AssemblyVersion>
+        <AssemblyVersion>2.12.0.0</AssemblyVersion>
+        <AssemblyVersion>2.13.0.0</AssemblyVersion>
+        <AssemblyVersion>2.13.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Documents.Client</AssemblyName>
-        <AssemblyVersion>1.18.0.0</AssemblyVersion>
-        <AssemblyVersion>1.19.0.0</AssemblyVersion>
-        <AssemblyVersion>1.20.0.0</AssemblyVersion>
-        <AssemblyVersion>1.21.0.0</AssemblyVersion>
-        <AssemblyVersion>1.22.0.0</AssemblyVersion>
+        <AssemblyVersion>2.9.2.0</AssemblyVersion>
+        <AssemblyVersion>2.9.3.0</AssemblyVersion>
+        <AssemblyVersion>2.9.4.0</AssemblyVersion>
+        <AssemblyVersion>2.10.1.0</AssemblyVersion>
+        <AssemblyVersion>2.10.3.0</AssemblyVersion>
+        <AssemblyVersion>2.11.0.0</AssemblyVersion>
+        <AssemblyVersion>2.11.1.0</AssemblyVersion>
+        <AssemblyVersion>2.11.2.0</AssemblyVersion>
+        <AssemblyVersion>2.11.3.0</AssemblyVersion>
+        <AssemblyVersion>2.11.4.0</AssemblyVersion>
+        <AssemblyVersion>2.11.5.0</AssemblyVersion>
+        <AssemblyVersion>2.11.6.0</AssemblyVersion>
+        <AssemblyVersion>2.12.0.0</AssemblyVersion>
+        <AssemblyVersion>2.13.0.0</AssemblyVersion>
+        <AssemblyVersion>2.13.1.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Collections.Generic.IEnumerable&lt;System.String&gt;</ReturnType>
@@ -153,20 +264,45 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Documents.Partitioning.HashPartitionResolver.Dispose" />
       <MemberSignature Language="VB.NET" Value="Public Sub Dispose ()" />
       <MemberSignature Language="F#" Value="abstract member Dispose : unit -&gt; unit&#xA;override this.Dispose : unit -&gt; unit" Usage="hashPartitionResolver.Dispose " />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Dispose();" />
-      <MemberSignature Language="C++ CX" Value="public:&#xA; void Dispose();" />
-      <MemberSignature Language="C++ WINRT" Value="void Dispose();" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.IDisposable.Dispose</InterfaceMember>
       </Implements>
       <AssemblyInfo>
+        <AssemblyName>Microsoft.Azure.DocumentDB.Core</AssemblyName>
+        <AssemblyVersion>2.9.2.0</AssemblyVersion>
+        <AssemblyVersion>2.9.3.0</AssemblyVersion>
+        <AssemblyVersion>2.9.4.0</AssemblyVersion>
+        <AssemblyVersion>2.10.1.0</AssemblyVersion>
+        <AssemblyVersion>2.10.3.0</AssemblyVersion>
+        <AssemblyVersion>2.11.0.0</AssemblyVersion>
+        <AssemblyVersion>2.11.1.0</AssemblyVersion>
+        <AssemblyVersion>2.11.2.0</AssemblyVersion>
+        <AssemblyVersion>2.11.3.0</AssemblyVersion>
+        <AssemblyVersion>2.11.4.0</AssemblyVersion>
+        <AssemblyVersion>2.11.5.0</AssemblyVersion>
+        <AssemblyVersion>2.11.6.0</AssemblyVersion>
+        <AssemblyVersion>2.12.0.0</AssemblyVersion>
+        <AssemblyVersion>2.13.0.0</AssemblyVersion>
+        <AssemblyVersion>2.13.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Documents.Client</AssemblyName>
-        <AssemblyVersion>1.18.0.0</AssemblyVersion>
-        <AssemblyVersion>1.19.0.0</AssemblyVersion>
-        <AssemblyVersion>1.20.0.0</AssemblyVersion>
-        <AssemblyVersion>1.21.0.0</AssemblyVersion>
-        <AssemblyVersion>1.22.0.0</AssemblyVersion>
+        <AssemblyVersion>2.9.2.0</AssemblyVersion>
+        <AssemblyVersion>2.9.3.0</AssemblyVersion>
+        <AssemblyVersion>2.9.4.0</AssemblyVersion>
+        <AssemblyVersion>2.10.1.0</AssemblyVersion>
+        <AssemblyVersion>2.10.3.0</AssemblyVersion>
+        <AssemblyVersion>2.11.0.0</AssemblyVersion>
+        <AssemblyVersion>2.11.1.0</AssemblyVersion>
+        <AssemblyVersion>2.11.2.0</AssemblyVersion>
+        <AssemblyVersion>2.11.3.0</AssemblyVersion>
+        <AssemblyVersion>2.11.4.0</AssemblyVersion>
+        <AssemblyVersion>2.11.5.0</AssemblyVersion>
+        <AssemblyVersion>2.11.6.0</AssemblyVersion>
+        <AssemblyVersion>2.12.0.0</AssemblyVersion>
+        <AssemblyVersion>2.13.0.0</AssemblyVersion>
+        <AssemblyVersion>2.13.1.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -179,55 +315,51 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
-    <Member MemberName="Finalize">
-      <MemberSignature Language="C#" Value="~HashPartitionResolver ();" />
-      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void Finalize() cil managed" />
-      <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Documents.Partitioning.HashPartitionResolver.Finalize" />
-      <MemberSignature Language="VB.NET" Value="Finalize ()" />
-      <MemberSignature Language="F#" Value="override this.Finalize : unit -&gt; unit" Usage="hashPartitionResolver.Finalize " />
-      <MemberSignature Language="C++ CLI" Value="!HashPartitionResolver ()" />
-      <MemberSignature Language="C++ CX" Value="!HashPartitionResolver ()" />
-      <MemberSignature Language="C++ WINRT" Value="!HashPartitionResolver ()" />
-      <MemberType>Method</MemberType>
-      <AssemblyInfo>
-        <AssemblyName>Microsoft.Azure.Documents.Client</AssemblyName>
-        <AssemblyVersion>1.18.0.0</AssemblyVersion>
-        <AssemblyVersion>1.19.0.0</AssemblyVersion>
-        <AssemblyVersion>1.20.0.0</AssemblyVersion>
-        <AssemblyVersion>1.21.0.0</AssemblyVersion>
-        <AssemblyVersion>1.22.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <ReturnValue>
-        <ReturnType>System.Void</ReturnType>
-      </ReturnValue>
-      <Parameters />
-      <Docs>
-        <summary>
-            Class destructor.
-            </summary>
-        <remarks>To be added.</remarks>
-      </Docs>
-    </Member>
     <Member MemberName="GetPartitionKey">
       <MemberSignature Language="C#" Value="public virtual object GetPartitionKey (object document);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance object GetPartitionKey(object document) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Documents.Partitioning.HashPartitionResolver.GetPartitionKey(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function GetPartitionKey (document As Object) As Object" />
       <MemberSignature Language="F#" Value="abstract member GetPartitionKey : obj -&gt; obj&#xA;override this.GetPartitionKey : obj -&gt; obj" Usage="hashPartitionResolver.GetPartitionKey document" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Object ^ GetPartitionKey(System::Object ^ document);" />
-      <MemberSignature Language="C++ CX" Value="public:&#xA; virtual Platform::Object ^ GetPartitionKey(Platform::Object ^ document);" />
-      <MemberSignature Language="C++ WINRT" Value=" virtual winrt::Windows::Foundation::IInspectable GetPartitionKey(winrt::Windows::Foundation::IInspectable const &amp; document);" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:Microsoft.Azure.Documents.Client.IPartitionResolver.GetPartitionKey(System.Object)</InterfaceMember>
       </Implements>
       <AssemblyInfo>
+        <AssemblyName>Microsoft.Azure.DocumentDB.Core</AssemblyName>
+        <AssemblyVersion>2.9.2.0</AssemblyVersion>
+        <AssemblyVersion>2.9.3.0</AssemblyVersion>
+        <AssemblyVersion>2.9.4.0</AssemblyVersion>
+        <AssemblyVersion>2.10.1.0</AssemblyVersion>
+        <AssemblyVersion>2.10.3.0</AssemblyVersion>
+        <AssemblyVersion>2.11.0.0</AssemblyVersion>
+        <AssemblyVersion>2.11.1.0</AssemblyVersion>
+        <AssemblyVersion>2.11.2.0</AssemblyVersion>
+        <AssemblyVersion>2.11.3.0</AssemblyVersion>
+        <AssemblyVersion>2.11.4.0</AssemblyVersion>
+        <AssemblyVersion>2.11.5.0</AssemblyVersion>
+        <AssemblyVersion>2.11.6.0</AssemblyVersion>
+        <AssemblyVersion>2.12.0.0</AssemblyVersion>
+        <AssemblyVersion>2.13.0.0</AssemblyVersion>
+        <AssemblyVersion>2.13.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Documents.Client</AssemblyName>
-        <AssemblyVersion>1.18.0.0</AssemblyVersion>
-        <AssemblyVersion>1.19.0.0</AssemblyVersion>
-        <AssemblyVersion>1.20.0.0</AssemblyVersion>
-        <AssemblyVersion>1.21.0.0</AssemblyVersion>
-        <AssemblyVersion>1.22.0.0</AssemblyVersion>
+        <AssemblyVersion>2.9.2.0</AssemblyVersion>
+        <AssemblyVersion>2.9.3.0</AssemblyVersion>
+        <AssemblyVersion>2.9.4.0</AssemblyVersion>
+        <AssemblyVersion>2.10.1.0</AssemblyVersion>
+        <AssemblyVersion>2.10.3.0</AssemblyVersion>
+        <AssemblyVersion>2.11.0.0</AssemblyVersion>
+        <AssemblyVersion>2.11.1.0</AssemblyVersion>
+        <AssemblyVersion>2.11.2.0</AssemblyVersion>
+        <AssemblyVersion>2.11.3.0</AssemblyVersion>
+        <AssemblyVersion>2.11.4.0</AssemblyVersion>
+        <AssemblyVersion>2.11.5.0</AssemblyVersion>
+        <AssemblyVersion>2.11.6.0</AssemblyVersion>
+        <AssemblyVersion>2.12.0.0</AssemblyVersion>
+        <AssemblyVersion>2.13.0.0</AssemblyVersion>
+        <AssemblyVersion>2.13.1.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Object</ReturnType>
@@ -252,20 +384,47 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Documents.Partitioning.HashPartitionResolver.HashGenerator" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property HashGenerator As IHashGenerator" />
       <MemberSignature Language="F#" Value="member this.HashGenerator : Microsoft.Azure.Documents.Partitioning.IHashGenerator" Usage="Microsoft.Azure.Documents.Partitioning.HashPartitionResolver.HashGenerator" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Azure::Documents::Partitioning::IHashGenerator ^ HashGenerator { Microsoft::Azure::Documents::Partitioning::IHashGenerator ^ get(); };" />
-      <MemberSignature Language="C++ CX" Value="public:&#xA; property Microsoft::Azure::Documents::Partitioning::IHashGenerator ^ HashGenerator { Microsoft::Azure::Documents::Partitioning::IHashGenerator ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
+        <AssemblyName>Microsoft.Azure.DocumentDB.Core</AssemblyName>
+        <AssemblyVersion>2.9.2.0</AssemblyVersion>
+        <AssemblyVersion>2.9.3.0</AssemblyVersion>
+        <AssemblyVersion>2.9.4.0</AssemblyVersion>
+        <AssemblyVersion>2.10.1.0</AssemblyVersion>
+        <AssemblyVersion>2.10.3.0</AssemblyVersion>
+        <AssemblyVersion>2.11.0.0</AssemblyVersion>
+        <AssemblyVersion>2.11.1.0</AssemblyVersion>
+        <AssemblyVersion>2.11.2.0</AssemblyVersion>
+        <AssemblyVersion>2.11.3.0</AssemblyVersion>
+        <AssemblyVersion>2.11.4.0</AssemblyVersion>
+        <AssemblyVersion>2.11.5.0</AssemblyVersion>
+        <AssemblyVersion>2.11.6.0</AssemblyVersion>
+        <AssemblyVersion>2.12.0.0</AssemblyVersion>
+        <AssemblyVersion>2.13.0.0</AssemblyVersion>
+        <AssemblyVersion>2.13.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Documents.Client</AssemblyName>
-        <AssemblyVersion>1.18.0.0</AssemblyVersion>
-        <AssemblyVersion>1.19.0.0</AssemblyVersion>
-        <AssemblyVersion>1.20.0.0</AssemblyVersion>
-        <AssemblyVersion>1.21.0.0</AssemblyVersion>
-        <AssemblyVersion>1.22.0.0</AssemblyVersion>
+        <AssemblyVersion>2.9.2.0</AssemblyVersion>
+        <AssemblyVersion>2.9.3.0</AssemblyVersion>
+        <AssemblyVersion>2.9.4.0</AssemblyVersion>
+        <AssemblyVersion>2.10.1.0</AssemblyVersion>
+        <AssemblyVersion>2.10.3.0</AssemblyVersion>
+        <AssemblyVersion>2.11.0.0</AssemblyVersion>
+        <AssemblyVersion>2.11.1.0</AssemblyVersion>
+        <AssemblyVersion>2.11.2.0</AssemblyVersion>
+        <AssemblyVersion>2.11.3.0</AssemblyVersion>
+        <AssemblyVersion>2.11.4.0</AssemblyVersion>
+        <AssemblyVersion>2.11.5.0</AssemblyVersion>
+        <AssemblyVersion>2.11.6.0</AssemblyVersion>
+        <AssemblyVersion>2.12.0.0</AssemblyVersion>
+        <AssemblyVersion>2.13.0.0</AssemblyVersion>
+        <AssemblyVersion>2.13.1.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonIgnore</AttributeName>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonIgnore]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonIgnore&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -285,16 +444,42 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Documents.Partitioning.HashPartitionResolver.NumberOfVirtualNodesPerCollection" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property NumberOfVirtualNodesPerCollection As Integer" />
       <MemberSignature Language="F#" Value="member this.NumberOfVirtualNodesPerCollection : int" Usage="Microsoft.Azure.Documents.Partitioning.HashPartitionResolver.NumberOfVirtualNodesPerCollection" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int NumberOfVirtualNodesPerCollection { int get(); };" />
-      <MemberSignature Language="C++ CX" Value="public:&#xA; property int NumberOfVirtualNodesPerCollection { int get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
+        <AssemblyName>Microsoft.Azure.DocumentDB.Core</AssemblyName>
+        <AssemblyVersion>2.9.2.0</AssemblyVersion>
+        <AssemblyVersion>2.9.3.0</AssemblyVersion>
+        <AssemblyVersion>2.9.4.0</AssemblyVersion>
+        <AssemblyVersion>2.10.1.0</AssemblyVersion>
+        <AssemblyVersion>2.10.3.0</AssemblyVersion>
+        <AssemblyVersion>2.11.0.0</AssemblyVersion>
+        <AssemblyVersion>2.11.1.0</AssemblyVersion>
+        <AssemblyVersion>2.11.2.0</AssemblyVersion>
+        <AssemblyVersion>2.11.3.0</AssemblyVersion>
+        <AssemblyVersion>2.11.4.0</AssemblyVersion>
+        <AssemblyVersion>2.11.5.0</AssemblyVersion>
+        <AssemblyVersion>2.11.6.0</AssemblyVersion>
+        <AssemblyVersion>2.12.0.0</AssemblyVersion>
+        <AssemblyVersion>2.13.0.0</AssemblyVersion>
+        <AssemblyVersion>2.13.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Documents.Client</AssemblyName>
-        <AssemblyVersion>1.18.0.0</AssemblyVersion>
-        <AssemblyVersion>1.19.0.0</AssemblyVersion>
-        <AssemblyVersion>1.20.0.0</AssemblyVersion>
-        <AssemblyVersion>1.21.0.0</AssemblyVersion>
-        <AssemblyVersion>1.22.0.0</AssemblyVersion>
+        <AssemblyVersion>2.9.2.0</AssemblyVersion>
+        <AssemblyVersion>2.9.3.0</AssemblyVersion>
+        <AssemblyVersion>2.9.4.0</AssemblyVersion>
+        <AssemblyVersion>2.10.1.0</AssemblyVersion>
+        <AssemblyVersion>2.10.3.0</AssemblyVersion>
+        <AssemblyVersion>2.11.0.0</AssemblyVersion>
+        <AssemblyVersion>2.11.1.0</AssemblyVersion>
+        <AssemblyVersion>2.11.2.0</AssemblyVersion>
+        <AssemblyVersion>2.11.3.0</AssemblyVersion>
+        <AssemblyVersion>2.11.4.0</AssemblyVersion>
+        <AssemblyVersion>2.11.5.0</AssemblyVersion>
+        <AssemblyVersion>2.11.6.0</AssemblyVersion>
+        <AssemblyVersion>2.12.0.0</AssemblyVersion>
+        <AssemblyVersion>2.13.0.0</AssemblyVersion>
+        <AssemblyVersion>2.13.1.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
@@ -313,15 +498,42 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Documents.Partitioning.HashPartitionResolver.PartitionKeyExtractor" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property PartitionKeyExtractor As Func(Of Object, String)" />
       <MemberSignature Language="F#" Value="member this.PartitionKeyExtractor : Func&lt;obj, string&gt;" Usage="Microsoft.Azure.Documents.Partitioning.HashPartitionResolver.PartitionKeyExtractor" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Func&lt;System::Object ^, System::String ^&gt; ^ PartitionKeyExtractor { Func&lt;System::Object ^, System::String ^&gt; ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
+        <AssemblyName>Microsoft.Azure.DocumentDB.Core</AssemblyName>
+        <AssemblyVersion>2.9.2.0</AssemblyVersion>
+        <AssemblyVersion>2.9.3.0</AssemblyVersion>
+        <AssemblyVersion>2.9.4.0</AssemblyVersion>
+        <AssemblyVersion>2.10.1.0</AssemblyVersion>
+        <AssemblyVersion>2.10.3.0</AssemblyVersion>
+        <AssemblyVersion>2.11.0.0</AssemblyVersion>
+        <AssemblyVersion>2.11.1.0</AssemblyVersion>
+        <AssemblyVersion>2.11.2.0</AssemblyVersion>
+        <AssemblyVersion>2.11.3.0</AssemblyVersion>
+        <AssemblyVersion>2.11.4.0</AssemblyVersion>
+        <AssemblyVersion>2.11.5.0</AssemblyVersion>
+        <AssemblyVersion>2.11.6.0</AssemblyVersion>
+        <AssemblyVersion>2.12.0.0</AssemblyVersion>
+        <AssemblyVersion>2.13.0.0</AssemblyVersion>
+        <AssemblyVersion>2.13.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Documents.Client</AssemblyName>
-        <AssemblyVersion>1.18.0.0</AssemblyVersion>
-        <AssemblyVersion>1.19.0.0</AssemblyVersion>
-        <AssemblyVersion>1.20.0.0</AssemblyVersion>
-        <AssemblyVersion>1.21.0.0</AssemblyVersion>
-        <AssemblyVersion>1.22.0.0</AssemblyVersion>
+        <AssemblyVersion>2.9.2.0</AssemblyVersion>
+        <AssemblyVersion>2.9.3.0</AssemblyVersion>
+        <AssemblyVersion>2.9.4.0</AssemblyVersion>
+        <AssemblyVersion>2.10.1.0</AssemblyVersion>
+        <AssemblyVersion>2.10.3.0</AssemblyVersion>
+        <AssemblyVersion>2.11.0.0</AssemblyVersion>
+        <AssemblyVersion>2.11.1.0</AssemblyVersion>
+        <AssemblyVersion>2.11.2.0</AssemblyVersion>
+        <AssemblyVersion>2.11.3.0</AssemblyVersion>
+        <AssemblyVersion>2.11.4.0</AssemblyVersion>
+        <AssemblyVersion>2.11.5.0</AssemblyVersion>
+        <AssemblyVersion>2.11.6.0</AssemblyVersion>
+        <AssemblyVersion>2.12.0.0</AssemblyVersion>
+        <AssemblyVersion>2.13.0.0</AssemblyVersion>
+        <AssemblyVersion>2.13.1.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Func&lt;System.Object,System.String&gt;</ReturnType>
@@ -340,16 +552,42 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Documents.Partitioning.HashPartitionResolver.PartitionKeyPropertyName" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property PartitionKeyPropertyName As String" />
       <MemberSignature Language="F#" Value="member this.PartitionKeyPropertyName : string" Usage="Microsoft.Azure.Documents.Partitioning.HashPartitionResolver.PartitionKeyPropertyName" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ PartitionKeyPropertyName { System::String ^ get(); };" />
-      <MemberSignature Language="C++ CX" Value="public:&#xA; property Platform::String ^ PartitionKeyPropertyName { Platform::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
+        <AssemblyName>Microsoft.Azure.DocumentDB.Core</AssemblyName>
+        <AssemblyVersion>2.9.2.0</AssemblyVersion>
+        <AssemblyVersion>2.9.3.0</AssemblyVersion>
+        <AssemblyVersion>2.9.4.0</AssemblyVersion>
+        <AssemblyVersion>2.10.1.0</AssemblyVersion>
+        <AssemblyVersion>2.10.3.0</AssemblyVersion>
+        <AssemblyVersion>2.11.0.0</AssemblyVersion>
+        <AssemblyVersion>2.11.1.0</AssemblyVersion>
+        <AssemblyVersion>2.11.2.0</AssemblyVersion>
+        <AssemblyVersion>2.11.3.0</AssemblyVersion>
+        <AssemblyVersion>2.11.4.0</AssemblyVersion>
+        <AssemblyVersion>2.11.5.0</AssemblyVersion>
+        <AssemblyVersion>2.11.6.0</AssemblyVersion>
+        <AssemblyVersion>2.12.0.0</AssemblyVersion>
+        <AssemblyVersion>2.13.0.0</AssemblyVersion>
+        <AssemblyVersion>2.13.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Documents.Client</AssemblyName>
-        <AssemblyVersion>1.18.0.0</AssemblyVersion>
-        <AssemblyVersion>1.19.0.0</AssemblyVersion>
-        <AssemblyVersion>1.20.0.0</AssemblyVersion>
-        <AssemblyVersion>1.21.0.0</AssemblyVersion>
-        <AssemblyVersion>1.22.0.0</AssemblyVersion>
+        <AssemblyVersion>2.9.2.0</AssemblyVersion>
+        <AssemblyVersion>2.9.3.0</AssemblyVersion>
+        <AssemblyVersion>2.9.4.0</AssemblyVersion>
+        <AssemblyVersion>2.10.1.0</AssemblyVersion>
+        <AssemblyVersion>2.10.3.0</AssemblyVersion>
+        <AssemblyVersion>2.11.0.0</AssemblyVersion>
+        <AssemblyVersion>2.11.1.0</AssemblyVersion>
+        <AssemblyVersion>2.11.2.0</AssemblyVersion>
+        <AssemblyVersion>2.11.3.0</AssemblyVersion>
+        <AssemblyVersion>2.11.4.0</AssemblyVersion>
+        <AssemblyVersion>2.11.5.0</AssemblyVersion>
+        <AssemblyVersion>2.11.6.0</AssemblyVersion>
+        <AssemblyVersion>2.12.0.0</AssemblyVersion>
+        <AssemblyVersion>2.13.0.0</AssemblyVersion>
+        <AssemblyVersion>2.13.1.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -371,20 +609,45 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Documents.Partitioning.HashPartitionResolver.ResolveForCreate(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function ResolveForCreate (partitionKey As Object) As String" />
       <MemberSignature Language="F#" Value="abstract member ResolveForCreate : obj -&gt; string&#xA;override this.ResolveForCreate : obj -&gt; string" Usage="hashPartitionResolver.ResolveForCreate partitionKey" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::String ^ ResolveForCreate(System::Object ^ partitionKey);" />
-      <MemberSignature Language="C++ CX" Value="public:&#xA; virtual Platform::String ^ ResolveForCreate(Platform::Object ^ partitionKey);" />
-      <MemberSignature Language="C++ WINRT" Value=" virtual std::wstring ResolveForCreate(winrt::Windows::Foundation::IInspectable const &amp; partitionKey);" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:Microsoft.Azure.Documents.Client.IPartitionResolver.ResolveForCreate(System.Object)</InterfaceMember>
       </Implements>
       <AssemblyInfo>
+        <AssemblyName>Microsoft.Azure.DocumentDB.Core</AssemblyName>
+        <AssemblyVersion>2.9.2.0</AssemblyVersion>
+        <AssemblyVersion>2.9.3.0</AssemblyVersion>
+        <AssemblyVersion>2.9.4.0</AssemblyVersion>
+        <AssemblyVersion>2.10.1.0</AssemblyVersion>
+        <AssemblyVersion>2.10.3.0</AssemblyVersion>
+        <AssemblyVersion>2.11.0.0</AssemblyVersion>
+        <AssemblyVersion>2.11.1.0</AssemblyVersion>
+        <AssemblyVersion>2.11.2.0</AssemblyVersion>
+        <AssemblyVersion>2.11.3.0</AssemblyVersion>
+        <AssemblyVersion>2.11.4.0</AssemblyVersion>
+        <AssemblyVersion>2.11.5.0</AssemblyVersion>
+        <AssemblyVersion>2.11.6.0</AssemblyVersion>
+        <AssemblyVersion>2.12.0.0</AssemblyVersion>
+        <AssemblyVersion>2.13.0.0</AssemblyVersion>
+        <AssemblyVersion>2.13.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Documents.Client</AssemblyName>
-        <AssemblyVersion>1.18.0.0</AssemblyVersion>
-        <AssemblyVersion>1.19.0.0</AssemblyVersion>
-        <AssemblyVersion>1.20.0.0</AssemblyVersion>
-        <AssemblyVersion>1.21.0.0</AssemblyVersion>
-        <AssemblyVersion>1.22.0.0</AssemblyVersion>
+        <AssemblyVersion>2.9.2.0</AssemblyVersion>
+        <AssemblyVersion>2.9.3.0</AssemblyVersion>
+        <AssemblyVersion>2.9.4.0</AssemblyVersion>
+        <AssemblyVersion>2.10.1.0</AssemblyVersion>
+        <AssemblyVersion>2.10.3.0</AssemblyVersion>
+        <AssemblyVersion>2.11.0.0</AssemblyVersion>
+        <AssemblyVersion>2.11.1.0</AssemblyVersion>
+        <AssemblyVersion>2.11.2.0</AssemblyVersion>
+        <AssemblyVersion>2.11.3.0</AssemblyVersion>
+        <AssemblyVersion>2.11.4.0</AssemblyVersion>
+        <AssemblyVersion>2.11.5.0</AssemblyVersion>
+        <AssemblyVersion>2.11.6.0</AssemblyVersion>
+        <AssemblyVersion>2.12.0.0</AssemblyVersion>
+        <AssemblyVersion>2.13.0.0</AssemblyVersion>
+        <AssemblyVersion>2.13.1.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -408,18 +671,45 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Documents.Partitioning.HashPartitionResolver.ResolveForRead(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function ResolveForRead (partitionKey As Object) As IEnumerable(Of String)" />
       <MemberSignature Language="F#" Value="abstract member ResolveForRead : obj -&gt; seq&lt;string&gt;&#xA;override this.ResolveForRead : obj -&gt; seq&lt;string&gt;" Usage="hashPartitionResolver.ResolveForRead partitionKey" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Collections::Generic::IEnumerable&lt;System::String ^&gt; ^ ResolveForRead(System::Object ^ partitionKey);" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:Microsoft.Azure.Documents.Client.IPartitionResolver.ResolveForRead(System.Object)</InterfaceMember>
       </Implements>
       <AssemblyInfo>
+        <AssemblyName>Microsoft.Azure.DocumentDB.Core</AssemblyName>
+        <AssemblyVersion>2.9.2.0</AssemblyVersion>
+        <AssemblyVersion>2.9.3.0</AssemblyVersion>
+        <AssemblyVersion>2.9.4.0</AssemblyVersion>
+        <AssemblyVersion>2.10.1.0</AssemblyVersion>
+        <AssemblyVersion>2.10.3.0</AssemblyVersion>
+        <AssemblyVersion>2.11.0.0</AssemblyVersion>
+        <AssemblyVersion>2.11.1.0</AssemblyVersion>
+        <AssemblyVersion>2.11.2.0</AssemblyVersion>
+        <AssemblyVersion>2.11.3.0</AssemblyVersion>
+        <AssemblyVersion>2.11.4.0</AssemblyVersion>
+        <AssemblyVersion>2.11.5.0</AssemblyVersion>
+        <AssemblyVersion>2.11.6.0</AssemblyVersion>
+        <AssemblyVersion>2.12.0.0</AssemblyVersion>
+        <AssemblyVersion>2.13.0.0</AssemblyVersion>
+        <AssemblyVersion>2.13.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Documents.Client</AssemblyName>
-        <AssemblyVersion>1.18.0.0</AssemblyVersion>
-        <AssemblyVersion>1.19.0.0</AssemblyVersion>
-        <AssemblyVersion>1.20.0.0</AssemblyVersion>
-        <AssemblyVersion>1.21.0.0</AssemblyVersion>
-        <AssemblyVersion>1.22.0.0</AssemblyVersion>
+        <AssemblyVersion>2.9.2.0</AssemblyVersion>
+        <AssemblyVersion>2.9.3.0</AssemblyVersion>
+        <AssemblyVersion>2.9.4.0</AssemblyVersion>
+        <AssemblyVersion>2.10.1.0</AssemblyVersion>
+        <AssemblyVersion>2.10.3.0</AssemblyVersion>
+        <AssemblyVersion>2.11.0.0</AssemblyVersion>
+        <AssemblyVersion>2.11.1.0</AssemblyVersion>
+        <AssemblyVersion>2.11.2.0</AssemblyVersion>
+        <AssemblyVersion>2.11.3.0</AssemblyVersion>
+        <AssemblyVersion>2.11.4.0</AssemblyVersion>
+        <AssemblyVersion>2.11.5.0</AssemblyVersion>
+        <AssemblyVersion>2.11.6.0</AssemblyVersion>
+        <AssemblyVersion>2.12.0.0</AssemblyVersion>
+        <AssemblyVersion>2.13.0.0</AssemblyVersion>
+        <AssemblyVersion>2.13.1.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Collections.Generic.IEnumerable&lt;System.String&gt;</ReturnType>

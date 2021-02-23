@@ -1,14 +1,14 @@
-﻿<Type Name="RecipientsContractProperties" FullName="Microsoft.Azure.Management.ApiManagement.Models.RecipientsContractProperties">
+<Type Name="RecipientsContractProperties" FullName="Microsoft.Azure.Management.ApiManagement.Models.RecipientsContractProperties">
   <TypeSignature Language="C#" Value="public class RecipientsContractProperties" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit RecipientsContractProperties extends System.Object" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Azure.Management.ApiManagement.Models.RecipientsContractProperties" />
   <TypeSignature Language="VB.NET" Value="Public Class RecipientsContractProperties" />
   <TypeSignature Language="F#" Value="type RecipientsContractProperties = class" />
-  <TypeSignature Language="C++ CLI" Value="public ref class RecipientsContractProperties" />
-  <TypeSignature Language="C++ WINRT" Value="[Windows::Foundation::Metadata::WebHostHidden]&#xA;class RecipientsContractProperties" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Azure.Management.ApiManagement</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
+    <AssemblyVersion>5.0.0.0</AssemblyVersion>
+    <AssemblyVersion>6.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
@@ -26,13 +26,12 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Management.ApiManagement.Models.RecipientsContractProperties.#ctor" />
       <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; RecipientsContractProperties();" />
-      <MemberSignature Language="C++ CX" Value="public:&#xA; RecipientsContractProperties();" />
-      <MemberSignature Language="C++ WINRT" Value=" RecipientsContractProperties();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.ApiManagement</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
@@ -44,15 +43,17 @@
       </Docs>
     </Member>
     <Member MemberName=".ctor">
-      <MemberSignature Language="C#" Value="public RecipientsContractProperties (System.Collections.Generic.IList&lt;string&gt; emails = null, System.Collections.Generic.IList&lt;string&gt; users = null);" />
+      <MemberSignature Language="C#" Value="public RecipientsContractProperties (System.Collections.Generic.IList&lt;string&gt; emails = default, System.Collections.Generic.IList&lt;string&gt; users = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Collections.Generic.IList`1&lt;string&gt; emails, class System.Collections.Generic.IList`1&lt;string&gt; users) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Management.ApiManagement.Models.RecipientsContractProperties.#ctor(System.Collections.Generic.IList{System.String},System.Collections.Generic.IList{System.String})" />
-      <MemberSignature Language="VB.NET" Value="Public Sub New (Optional emails As IList(Of String) = null, Optional users As IList(Of String) = null)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (Optional emails As IList(Of String) = Nothing, Optional users As IList(Of String) = Nothing)" />
       <MemberSignature Language="F#" Value="new Microsoft.Azure.Management.ApiManagement.Models.RecipientsContractProperties : System.Collections.Generic.IList&lt;string&gt; * System.Collections.Generic.IList&lt;string&gt; -&gt; Microsoft.Azure.Management.ApiManagement.Models.RecipientsContractProperties" Usage="new Microsoft.Azure.Management.ApiManagement.Models.RecipientsContractProperties (emails, users)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.ApiManagement</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="emails" Type="System.Collections.Generic.IList&lt;System.String&gt;" />
@@ -76,15 +77,17 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Management.ApiManagement.Models.RecipientsContractProperties.Emails" />
       <MemberSignature Language="VB.NET" Value="Public Property Emails As IList(Of String)" />
       <MemberSignature Language="F#" Value="member this.Emails : System.Collections.Generic.IList&lt;string&gt; with get, set" Usage="Microsoft.Azure.Management.ApiManagement.Models.RecipientsContractProperties.Emails" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::Generic::IList&lt;System::String ^&gt; ^ Emails { System::Collections::Generic::IList&lt;System::String ^&gt; ^ get(); void set(System::Collections::Generic::IList&lt;System::String ^&gt; ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.ApiManagement</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="emails")</AttributeName>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty(PropertyName="emails")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty(PropertyName="emails")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -104,15 +107,17 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Management.ApiManagement.Models.RecipientsContractProperties.Users" />
       <MemberSignature Language="VB.NET" Value="Public Property Users As IList(Of String)" />
       <MemberSignature Language="F#" Value="member this.Users : System.Collections.Generic.IList&lt;string&gt; with get, set" Usage="Microsoft.Azure.Management.ApiManagement.Models.RecipientsContractProperties.Users" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::Generic::IList&lt;System::String ^&gt; ^ Users { System::Collections::Generic::IList&lt;System::String ^&gt; ^ get(); void set(System::Collections::Generic::IList&lt;System::String ^&gt; ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.ApiManagement</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="users")</AttributeName>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty(PropertyName="users")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty(PropertyName="users")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>

@@ -1,23 +1,42 @@
-﻿<Type Name="OtherExtensions" FullName="Microsoft.Azure.Devices.Common.Extensions.OtherExtensions">
+<Type Name="OtherExtensions" FullName="Microsoft.Azure.Devices.Common.Extensions.OtherExtensions">
   <TypeSignature Language="C#" Value="public static class OtherExtensions" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract sealed beforefieldinit OtherExtensions extends System.Object" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Azure.Devices.Common.Extensions.OtherExtensions" />
   <TypeSignature Language="VB.NET" Value="Public Module OtherExtensions" />
   <TypeSignature Language="F#" Value="type OtherExtensions = class" />
-  <TypeSignature Language="C++ CLI" Value="public ref class OtherExtensions abstract sealed" />
-  <TypeSignature Language="C++ CX" Value="public ref class OtherExtensions abstract sealed" />
-  <TypeSignature Language="C++ WINRT" Value="class OtherExtensions abstract sealed" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Azure.Devices</AssemblyName>
-    <AssemblyVersion>1.0.0.0</AssemblyVersion>
-    <AssemblyVersion>1.16.0.0</AssemblyVersion>
+    <AssemblyVersion>1.18.2.0</AssemblyVersion>
+    <AssemblyVersion>1.18.3.0</AssemblyVersion>
+    <AssemblyVersion>1.18.4.0</AssemblyVersion>
+    <AssemblyVersion>1.19.0.0</AssemblyVersion>
+    <AssemblyVersion>1.20.0.0</AssemblyVersion>
+    <AssemblyVersion>1.20.1.0</AssemblyVersion>
+    <AssemblyVersion>1.21.0.0</AssemblyVersion>
+    <AssemblyVersion>1.22.0.0</AssemblyVersion>
+    <AssemblyVersion>1.27.0.0</AssemblyVersion>
+    <AssemblyVersion>1.27.1.0</AssemblyVersion>
+    <AssemblyVersion>1.27.2.0</AssemblyVersion>
+    <AssemblyVersion>1.27.3.0</AssemblyVersion>
+    <AssemblyVersion>1.28.0.0</AssemblyVersion>
+    <AssemblyVersion>1.28.1.0</AssemblyVersion>
+    <AssemblyVersion>1.29.0.0</AssemblyVersion>
+    <AssemblyVersion>1.30.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
   </Base>
   <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName Language="C#">[System.Obsolete("Not recommended for external use.")]</AttributeName>
+      <AttributeName Language="F#">[&lt;System.Obsolete("Not recommended for external use.")&gt;]</AttributeName>
+    </Attribute>
+  </Attributes>
   <Docs>
-    <summary>To be added.</summary>
+    <summary>
+            Extension helper methods.
+            </summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -27,12 +46,25 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Devices.Common.Extensions.OtherExtensions.GetFirstValueOrNull(System.Net.Http.Headers.HttpHeaders,System.String)" />
       <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function GetFirstValueOrNull (headers As HttpHeaders, name As String) As String" />
       <MemberSignature Language="F#" Value="static member GetFirstValueOrNull : System.Net.Http.Headers.HttpHeaders * string -&gt; string" Usage="Microsoft.Azure.Devices.Common.Extensions.OtherExtensions.GetFirstValueOrNull (headers, name)" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA;[System::Runtime::CompilerServices::Extension]&#xA; static System::String ^ GetFirstValueOrNull(System::Net::Http::Headers::HttpHeaders ^ headers, System::String ^ name);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Devices</AssemblyName>
-        <AssemblyVersion>1.0.0.0</AssemblyVersion>
-        <AssemblyVersion>1.16.0.0</AssemblyVersion>
+        <AssemblyVersion>1.18.2.0</AssemblyVersion>
+        <AssemblyVersion>1.18.3.0</AssemblyVersion>
+        <AssemblyVersion>1.18.4.0</AssemblyVersion>
+        <AssemblyVersion>1.19.0.0</AssemblyVersion>
+        <AssemblyVersion>1.20.0.0</AssemblyVersion>
+        <AssemblyVersion>1.20.1.0</AssemblyVersion>
+        <AssemblyVersion>1.21.0.0</AssemblyVersion>
+        <AssemblyVersion>1.22.0.0</AssemblyVersion>
+        <AssemblyVersion>1.27.0.0</AssemblyVersion>
+        <AssemblyVersion>1.27.1.0</AssemblyVersion>
+        <AssemblyVersion>1.27.2.0</AssemblyVersion>
+        <AssemblyVersion>1.27.3.0</AssemblyVersion>
+        <AssemblyVersion>1.28.0.0</AssemblyVersion>
+        <AssemblyVersion>1.28.1.0</AssemblyVersion>
+        <AssemblyVersion>1.29.0.0</AssemblyVersion>
+        <AssemblyVersion>1.30.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -42,10 +74,12 @@
         <Parameter Name="name" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="headers">To be added.</param>
-        <param name="name">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="headers">The collection of HTTP headers and their values.</param>
+        <param name="name">The header name whose value to get.</param>
+        <summary>
+            Gets the first value associated with the supplied header name.
+            </summary>
+        <returns>The first value corresponding to the supplied header name, if the name is found in the collection; otherwise, an empty string.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -55,12 +89,25 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Devices.Common.Extensions.OtherExtensions.GetValueOrDefault``1(System.Collections.Generic.IDictionary{System.String,System.Object},System.String)" />
       <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function GetValueOrDefault(Of T) (dictionary As IDictionary(Of String, Object), key As String) As T" />
       <MemberSignature Language="F#" Value="static member GetValueOrDefault : System.Collections.Generic.IDictionary&lt;string, obj&gt; * string -&gt; 'T" Usage="Microsoft.Azure.Devices.Common.Extensions.OtherExtensions.GetValueOrDefault (dictionary, key)" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename T&gt;&#xA;[System::Runtime::CompilerServices::Extension]&#xA; static T GetValueOrDefault(System::Collections::Generic::IDictionary&lt;System::String ^, System::Object ^&gt; ^ dictionary, System::String ^ key);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Devices</AssemblyName>
-        <AssemblyVersion>1.0.0.0</AssemblyVersion>
-        <AssemblyVersion>1.16.0.0</AssemblyVersion>
+        <AssemblyVersion>1.18.2.0</AssemblyVersion>
+        <AssemblyVersion>1.18.3.0</AssemblyVersion>
+        <AssemblyVersion>1.18.4.0</AssemblyVersion>
+        <AssemblyVersion>1.19.0.0</AssemblyVersion>
+        <AssemblyVersion>1.20.0.0</AssemblyVersion>
+        <AssemblyVersion>1.20.1.0</AssemblyVersion>
+        <AssemblyVersion>1.21.0.0</AssemblyVersion>
+        <AssemblyVersion>1.22.0.0</AssemblyVersion>
+        <AssemblyVersion>1.27.0.0</AssemblyVersion>
+        <AssemblyVersion>1.27.1.0</AssemblyVersion>
+        <AssemblyVersion>1.27.2.0</AssemblyVersion>
+        <AssemblyVersion>1.27.3.0</AssemblyVersion>
+        <AssemblyVersion>1.28.0.0</AssemblyVersion>
+        <AssemblyVersion>1.28.1.0</AssemblyVersion>
+        <AssemblyVersion>1.29.0.0</AssemblyVersion>
+        <AssemblyVersion>1.30.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>T</ReturnType>
@@ -73,11 +120,13 @@
         <Parameter Name="key" Type="System.String" />
       </Parameters>
       <Docs>
-        <typeparam name="T">To be added.</typeparam>
-        <param name="dictionary">To be added.</param>
-        <param name="key">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <typeparam name="T">The type of the value parameter.</typeparam>
+        <param name="dictionary">The dictionary containing the specified key.</param>
+        <param name="key">The key whose value to get.</param>
+        <summary>
+            Gets the value associated with specified key.
+            </summary>
+        <returns>The value associated with the specified key, if the key is found; otherwise, the default value for the type of the value parameter.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -87,12 +136,25 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Devices.Common.Extensions.OtherExtensions.GetValuesOrNull(System.Net.Http.Headers.HttpHeaders,System.String)" />
       <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function GetValuesOrNull (headers As HttpHeaders, name As String) As IEnumerable(Of String)" />
       <MemberSignature Language="F#" Value="static member GetValuesOrNull : System.Net.Http.Headers.HttpHeaders * string -&gt; seq&lt;string&gt;" Usage="Microsoft.Azure.Devices.Common.Extensions.OtherExtensions.GetValuesOrNull (headers, name)" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA;[System::Runtime::CompilerServices::Extension]&#xA; static System::Collections::Generic::IEnumerable&lt;System::String ^&gt; ^ GetValuesOrNull(System::Net::Http::Headers::HttpHeaders ^ headers, System::String ^ name);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Devices</AssemblyName>
-        <AssemblyVersion>1.0.0.0</AssemblyVersion>
-        <AssemblyVersion>1.16.0.0</AssemblyVersion>
+        <AssemblyVersion>1.18.2.0</AssemblyVersion>
+        <AssemblyVersion>1.18.3.0</AssemblyVersion>
+        <AssemblyVersion>1.18.4.0</AssemblyVersion>
+        <AssemblyVersion>1.19.0.0</AssemblyVersion>
+        <AssemblyVersion>1.20.0.0</AssemblyVersion>
+        <AssemblyVersion>1.20.1.0</AssemblyVersion>
+        <AssemblyVersion>1.21.0.0</AssemblyVersion>
+        <AssemblyVersion>1.22.0.0</AssemblyVersion>
+        <AssemblyVersion>1.27.0.0</AssemblyVersion>
+        <AssemblyVersion>1.27.1.0</AssemblyVersion>
+        <AssemblyVersion>1.27.2.0</AssemblyVersion>
+        <AssemblyVersion>1.27.3.0</AssemblyVersion>
+        <AssemblyVersion>1.28.0.0</AssemblyVersion>
+        <AssemblyVersion>1.28.1.0</AssemblyVersion>
+        <AssemblyVersion>1.29.0.0</AssemblyVersion>
+        <AssemblyVersion>1.30.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Collections.Generic.IEnumerable&lt;System.String&gt;</ReturnType>
@@ -102,10 +164,12 @@
         <Parameter Name="name" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="headers">To be added.</param>
-        <param name="name">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="headers">The collection of HTTP headers and their values.</param>
+        <param name="name">The header name whose value to get.</param>
+        <summary>
+            Gets the values associated with the supplied header name.
+            </summary>
+        <returns>The values corresponding to the supplied header name, if the name is found in the collection; otherwise, null.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

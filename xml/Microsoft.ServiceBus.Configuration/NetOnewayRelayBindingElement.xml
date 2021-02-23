@@ -1,10 +1,9 @@
-﻿<Type Name="NetOnewayRelayBindingElement" FullName="Microsoft.ServiceBus.Configuration.NetOnewayRelayBindingElement">
+<Type Name="NetOnewayRelayBindingElement" FullName="Microsoft.ServiceBus.Configuration.NetOnewayRelayBindingElement">
   <TypeSignature Language="C#" Value="public class NetOnewayRelayBindingElement : System.ServiceModel.Configuration.StandardBindingElement" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit NetOnewayRelayBindingElement extends System.ServiceModel.Configuration.StandardBindingElement" />
   <TypeSignature Language="DocId" Value="T:Microsoft.ServiceBus.Configuration.NetOnewayRelayBindingElement" />
   <TypeSignature Language="VB.NET" Value="Public Class NetOnewayRelayBindingElement&#xA;Inherits StandardBindingElement" />
   <TypeSignature Language="F#" Value="type NetOnewayRelayBindingElement = class&#xA;    inherit StandardBindingElement" />
-  <TypeSignature Language="C++ CLI" Value="public ref class NetOnewayRelayBindingElement : System::ServiceModel::Configuration::StandardBindingElement" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.ServiceBus</AssemblyName>
     <AssemblyVersion>3.0.0.0</AssemblyVersion>
@@ -23,9 +22,6 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.ServiceBus.Configuration.NetOnewayRelayBindingElement.#ctor" />
       <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; NetOnewayRelayBindingElement();" />
-      <MemberSignature Language="C++ CX" Value="public:&#xA; NetOnewayRelayBindingElement();" />
-      <MemberSignature Language="C++ WINRT" Value=" NetOnewayRelayBindingElement();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.ServiceBus</AssemblyName>
@@ -43,9 +39,6 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.ServiceBus.Configuration.NetOnewayRelayBindingElement.#ctor(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (name As String)" />
       <MemberSignature Language="F#" Value="new Microsoft.ServiceBus.Configuration.NetOnewayRelayBindingElement : string -&gt; Microsoft.ServiceBus.Configuration.NetOnewayRelayBindingElement" Usage="new Microsoft.ServiceBus.Configuration.NetOnewayRelayBindingElement name" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; NetOnewayRelayBindingElement(System::String ^ name);" />
-      <MemberSignature Language="C++ CX" Value="public:&#xA; NetOnewayRelayBindingElement(Platform::String ^ name);" />
-      <MemberSignature Language="C++ WINRT" Value=" NetOnewayRelayBindingElement(std::wstring const &amp; name);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.ServiceBus</AssemblyName>
@@ -67,8 +60,6 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.ServiceBus.Configuration.NetOnewayRelayBindingElement.BindingElementType" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides ReadOnly Property BindingElementType As Type" />
       <MemberSignature Language="F#" Value="member this.BindingElementType : Type" Usage="Microsoft.ServiceBus.Configuration.NetOnewayRelayBindingElement.BindingElementType" />
-      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual property Type ^ BindingElementType { Type ^ get(); };" />
-      <MemberSignature Language="C++ CX" Value="protected:&#xA; virtual property Platform::Type ^ BindingElementType { Platform::Type ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.ServiceBus</AssemblyName>
@@ -87,8 +78,8 @@
       <MemberSignature Language="C#" Value="protected override void InitializeFrom (System.ServiceModel.Channels.Binding binding);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void InitializeFrom(class System.ServiceModel.Channels.Binding binding) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.ServiceBus.Configuration.NetOnewayRelayBindingElement.InitializeFrom(System.ServiceModel.Channels.Binding)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub InitializeFrom (binding As Binding)" />
       <MemberSignature Language="F#" Value="override this.InitializeFrom : System.ServiceModel.Channels.Binding -&gt; unit" Usage="netOnewayRelayBindingElement.InitializeFrom binding" />
-      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void InitializeFrom(System::ServiceModel::Channels::Binding ^ binding);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.ServiceBus</AssemblyName>
@@ -112,8 +103,6 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.ServiceBus.Configuration.NetOnewayRelayBindingElement.ListenBacklog" />
       <MemberSignature Language="VB.NET" Value="Public Property ListenBacklog As Integer" />
       <MemberSignature Language="F#" Value="member this.ListenBacklog : int with get, set" Usage="Microsoft.ServiceBus.Configuration.NetOnewayRelayBindingElement.ListenBacklog" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int ListenBacklog { int get(); void set(int value); };" />
-      <MemberSignature Language="C++ CX" Value="public:&#xA; property int ListenBacklog { int get(); void set(int value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.ServiceBus</AssemblyName>
@@ -121,10 +110,12 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>System.Configuration.ConfigurationProperty("listenBacklog", DefaultValue=Mono.Cecil.CustomAttributeArgument)</AttributeName>
+          <AttributeName Language="C#">[System.Configuration.ConfigurationProperty("listenBacklog", DefaultValue=Mono.Cecil.CustomAttributeArgument)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Configuration.ConfigurationProperty("listenBacklog", DefaultValue=Mono.Cecil.CustomAttributeArgument)&gt;]</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.Configuration.IntegerValidator(MinValue=1)</AttributeName>
+          <AttributeName Language="C#">[System.Configuration.IntegerValidator(MinValue=1)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Configuration.IntegerValidator(MinValue=1)&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -142,8 +133,6 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.ServiceBus.Configuration.NetOnewayRelayBindingElement.MaxBufferPoolSize" />
       <MemberSignature Language="VB.NET" Value="Public Property MaxBufferPoolSize As Long" />
       <MemberSignature Language="F#" Value="member this.MaxBufferPoolSize : int64 with get, set" Usage="Microsoft.ServiceBus.Configuration.NetOnewayRelayBindingElement.MaxBufferPoolSize" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property long MaxBufferPoolSize { long get(); void set(long value); };" />
-      <MemberSignature Language="C++ CX" Value="public:&#xA; property long long MaxBufferPoolSize { long long get(); void set(long long value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.ServiceBus</AssemblyName>
@@ -151,10 +140,12 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>System.Configuration.ConfigurationProperty("maxBufferPoolSize", DefaultValue=Mono.Cecil.CustomAttributeArgument)</AttributeName>
+          <AttributeName Language="C#">[System.Configuration.ConfigurationProperty("maxBufferPoolSize", DefaultValue=Mono.Cecil.CustomAttributeArgument)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Configuration.ConfigurationProperty("maxBufferPoolSize", DefaultValue=Mono.Cecil.CustomAttributeArgument)&gt;]</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.Configuration.LongValidator(MinValue=0)</AttributeName>
+          <AttributeName Language="C#">[System.Configuration.LongValidator(MinValue=0)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Configuration.LongValidator(MinValue=0)&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -173,8 +164,6 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.ServiceBus.Configuration.NetOnewayRelayBindingElement.MaxBufferSize" />
       <MemberSignature Language="VB.NET" Value="Public Property MaxBufferSize As Integer" />
       <MemberSignature Language="F#" Value="member this.MaxBufferSize : int with get, set" Usage="Microsoft.ServiceBus.Configuration.NetOnewayRelayBindingElement.MaxBufferSize" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int MaxBufferSize { int get(); void set(int value); };" />
-      <MemberSignature Language="C++ CX" Value="public:&#xA; property int MaxBufferSize { int get(); void set(int value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.ServiceBus</AssemblyName>
@@ -182,10 +171,12 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>System.Configuration.ConfigurationProperty("maxBufferSize", DefaultValue=Mono.Cecil.CustomAttributeArgument)</AttributeName>
+          <AttributeName Language="C#">[System.Configuration.ConfigurationProperty("maxBufferSize", DefaultValue=Mono.Cecil.CustomAttributeArgument)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Configuration.ConfigurationProperty("maxBufferSize", DefaultValue=Mono.Cecil.CustomAttributeArgument)&gt;]</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.Configuration.IntegerValidator(MinValue=1)</AttributeName>
+          <AttributeName Language="C#">[System.Configuration.IntegerValidator(MinValue=1)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Configuration.IntegerValidator(MinValue=1)&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -203,8 +194,6 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.ServiceBus.Configuration.NetOnewayRelayBindingElement.MaxConnections" />
       <MemberSignature Language="VB.NET" Value="Public Property MaxConnections As Integer" />
       <MemberSignature Language="F#" Value="member this.MaxConnections : int with get, set" Usage="Microsoft.ServiceBus.Configuration.NetOnewayRelayBindingElement.MaxConnections" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int MaxConnections { int get(); void set(int value); };" />
-      <MemberSignature Language="C++ CX" Value="public:&#xA; property int MaxConnections { int get(); void set(int value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.ServiceBus</AssemblyName>
@@ -212,10 +201,12 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>System.Configuration.ConfigurationProperty("maxConnections", DefaultValue=Mono.Cecil.CustomAttributeArgument)</AttributeName>
+          <AttributeName Language="C#">[System.Configuration.ConfigurationProperty("maxConnections", DefaultValue=Mono.Cecil.CustomAttributeArgument)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Configuration.ConfigurationProperty("maxConnections", DefaultValue=Mono.Cecil.CustomAttributeArgument)&gt;]</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.Configuration.IntegerValidator(MinValue=1)</AttributeName>
+          <AttributeName Language="C#">[System.Configuration.IntegerValidator(MinValue=1)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Configuration.IntegerValidator(MinValue=1)&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -235,8 +226,6 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.ServiceBus.Configuration.NetOnewayRelayBindingElement.MaxReceivedMessageSize" />
       <MemberSignature Language="VB.NET" Value="Public Property MaxReceivedMessageSize As Long" />
       <MemberSignature Language="F#" Value="member this.MaxReceivedMessageSize : int64 with get, set" Usage="Microsoft.ServiceBus.Configuration.NetOnewayRelayBindingElement.MaxReceivedMessageSize" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property long MaxReceivedMessageSize { long get(); void set(long value); };" />
-      <MemberSignature Language="C++ CX" Value="public:&#xA; property long long MaxReceivedMessageSize { long long get(); void set(long long value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.ServiceBus</AssemblyName>
@@ -244,10 +233,12 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>System.Configuration.ConfigurationProperty("maxReceivedMessageSize", DefaultValue=Mono.Cecil.CustomAttributeArgument)</AttributeName>
+          <AttributeName Language="C#">[System.Configuration.ConfigurationProperty("maxReceivedMessageSize", DefaultValue=Mono.Cecil.CustomAttributeArgument)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Configuration.ConfigurationProperty("maxReceivedMessageSize", DefaultValue=Mono.Cecil.CustomAttributeArgument)&gt;]</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.Configuration.LongValidator(MinValue=1)</AttributeName>
+          <AttributeName Language="C#">[System.Configuration.LongValidator(MinValue=1)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Configuration.LongValidator(MinValue=1)&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -264,8 +255,8 @@
       <MemberSignature Language="C#" Value="protected override void OnApplyConfiguration (System.ServiceModel.Channels.Binding binding);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void OnApplyConfiguration(class System.ServiceModel.Channels.Binding binding) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.ServiceBus.Configuration.NetOnewayRelayBindingElement.OnApplyConfiguration(System.ServiceModel.Channels.Binding)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnApplyConfiguration (binding As Binding)" />
       <MemberSignature Language="F#" Value="override this.OnApplyConfiguration : System.ServiceModel.Channels.Binding -&gt; unit" Usage="netOnewayRelayBindingElement.OnApplyConfiguration binding" />
-      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnApplyConfiguration(System::ServiceModel::Channels::Binding ^ binding);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.ServiceBus</AssemblyName>
@@ -289,7 +280,6 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.ServiceBus.Configuration.NetOnewayRelayBindingElement.Properties" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides ReadOnly Property Properties As ConfigurationPropertyCollection" />
       <MemberSignature Language="F#" Value="member this.Properties : System.Configuration.ConfigurationPropertyCollection" Usage="Microsoft.ServiceBus.Configuration.NetOnewayRelayBindingElement.Properties" />
-      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual property System::Configuration::ConfigurationPropertyCollection ^ Properties { System::Configuration::ConfigurationPropertyCollection ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.ServiceBus</AssemblyName>
@@ -312,7 +302,6 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.ServiceBus.Configuration.NetOnewayRelayBindingElement.ReaderQuotas" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ReaderQuotas As XmlDictionaryReaderQuotasElement" />
       <MemberSignature Language="F#" Value="member this.ReaderQuotas : Microsoft.ServiceBus.Configuration.XmlDictionaryReaderQuotasElement" Usage="Microsoft.ServiceBus.Configuration.NetOnewayRelayBindingElement.ReaderQuotas" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::ServiceBus::Configuration::XmlDictionaryReaderQuotasElement ^ ReaderQuotas { Microsoft::ServiceBus::Configuration::XmlDictionaryReaderQuotasElement ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.ServiceBus</AssemblyName>
@@ -320,7 +309,8 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>System.Configuration.ConfigurationProperty("readerQuotas")</AttributeName>
+          <AttributeName Language="C#">[System.Configuration.ConfigurationProperty("readerQuotas")]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Configuration.ConfigurationProperty("readerQuotas")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -340,7 +330,6 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.ServiceBus.Configuration.NetOnewayRelayBindingElement.Security" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Security As NetOnewayRelaySecurityElement" />
       <MemberSignature Language="F#" Value="member this.Security : Microsoft.ServiceBus.Configuration.NetOnewayRelaySecurityElement" Usage="Microsoft.ServiceBus.Configuration.NetOnewayRelayBindingElement.Security" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::ServiceBus::Configuration::NetOnewayRelaySecurityElement ^ Security { Microsoft::ServiceBus::Configuration::NetOnewayRelaySecurityElement ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.ServiceBus</AssemblyName>
@@ -348,7 +337,8 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>System.Configuration.ConfigurationProperty("security")</AttributeName>
+          <AttributeName Language="C#">[System.Configuration.ConfigurationProperty("security")]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Configuration.ConfigurationProperty("security")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>

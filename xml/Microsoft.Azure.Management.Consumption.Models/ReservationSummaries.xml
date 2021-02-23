@@ -1,15 +1,12 @@
-﻿<Type Name="ReservationSummaries" FullName="Microsoft.Azure.Management.Consumption.Models.ReservationSummaries">
+<Type Name="ReservationSummaries" FullName="Microsoft.Azure.Management.Consumption.Models.ReservationSummaries">
   <TypeSignature Language="C#" Value="public class ReservationSummaries : Microsoft.Azure.Management.Consumption.Models.Resource" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit ReservationSummaries extends Microsoft.Azure.Management.Consumption.Models.Resource" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Azure.Management.Consumption.Models.ReservationSummaries" />
   <TypeSignature Language="VB.NET" Value="Public Class ReservationSummaries&#xA;Inherits Resource" />
   <TypeSignature Language="F#" Value="type ReservationSummaries = class&#xA;    inherit Resource" />
-  <TypeSignature Language="C++ CLI" Value="public ref class ReservationSummaries : Microsoft::Azure::Management::Consumption::Models::Resource" />
-  <TypeSignature Language="C++ WINRT" Value="[Windows::Foundation::Metadata::WebHostHidden]&#xA;class ReservationSummaries : Microsoft::Azure::Management::Consumption::Models::Resource" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Azure.Management.Consumption</AssemblyName>
-    <AssemblyVersion>2.1.0.0</AssemblyVersion>
-    <AssemblyVersion>3.0.0.0</AssemblyVersion>
+    <AssemblyVersion>3.0.1.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>Microsoft.Azure.Management.Consumption.Models.Resource</BaseTypeName>
@@ -17,7 +14,8 @@
   <Interfaces />
   <Attributes>
     <Attribute>
-      <AttributeName>Microsoft.Rest.Serialization.JsonTransformation</AttributeName>
+      <AttributeName Language="C#">[Microsoft.Rest.Serialization.JsonTransformation]</AttributeName>
+      <AttributeName Language="F#">[&lt;Microsoft.Rest.Serialization.JsonTransformation&gt;]</AttributeName>
     </Attribute>
   </Attributes>
   <Docs>
@@ -32,14 +30,10 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Management.Consumption.Models.ReservationSummaries.#ctor" />
       <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; ReservationSummaries();" />
-      <MemberSignature Language="C++ CX" Value="public:&#xA; ReservationSummaries();" />
-      <MemberSignature Language="C++ WINRT" Value=" ReservationSummaries();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Consumption</AssemblyName>
-        <AssemblyVersion>2.1.0.0</AssemblyVersion>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
+        <AssemblyVersion>3.0.1.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
@@ -50,16 +44,15 @@
       </Docs>
     </Member>
     <Member MemberName=".ctor">
-      <MemberSignature Language="C#" Value="public ReservationSummaries (string id = null, string name = null, string type = null, System.Collections.Generic.IDictionary&lt;string,string&gt; tags = null, string reservationOrderId = null, string reservationId = null, string skuName = null, Nullable&lt;decimal&gt; reservedHours = null, Nullable&lt;DateTime&gt; usageDate = null, Nullable&lt;decimal&gt; usedHours = null, Nullable&lt;decimal&gt; minUtilizationPercentage = null, Nullable&lt;decimal&gt; avgUtilizationPercentage = null, Nullable&lt;decimal&gt; maxUtilizationPercentage = null);" />
+      <MemberSignature Language="C#" Value="public ReservationSummaries (string id = default, string name = default, string type = default, System.Collections.Generic.IDictionary&lt;string,string&gt; tags = default, string reservationOrderId = default, string reservationId = default, string skuName = default, decimal? reservedHours = default, DateTime? usageDate = default, decimal? usedHours = default, decimal? minUtilizationPercentage = default, decimal? avgUtilizationPercentage = default, decimal? maxUtilizationPercentage = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string id, string name, string type, class System.Collections.Generic.IDictionary`2&lt;string, string&gt; tags, string reservationOrderId, string reservationId, string skuName, valuetype System.Nullable`1&lt;valuetype System.Decimal&gt; reservedHours, valuetype System.Nullable`1&lt;valuetype System.DateTime&gt; usageDate, valuetype System.Nullable`1&lt;valuetype System.Decimal&gt; usedHours, valuetype System.Nullable`1&lt;valuetype System.Decimal&gt; minUtilizationPercentage, valuetype System.Nullable`1&lt;valuetype System.Decimal&gt; avgUtilizationPercentage, valuetype System.Nullable`1&lt;valuetype System.Decimal&gt; maxUtilizationPercentage) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Management.Consumption.Models.ReservationSummaries.#ctor(System.String,System.String,System.String,System.Collections.Generic.IDictionary{System.String,System.String},System.String,System.String,System.String,System.Nullable{System.Decimal},System.Nullable{System.DateTime},System.Nullable{System.Decimal},System.Nullable{System.Decimal},System.Nullable{System.Decimal},System.Nullable{System.Decimal})" />
-      <MemberSignature Language="VB.NET" Value="Public Sub New (Optional id As String = null, Optional name As String = null, Optional type As String = null, Optional tags As IDictionary(Of String, String) = null, Optional reservationOrderId As String = null, Optional reservationId As String = null, Optional skuName As String = null, Optional reservedHours As Nullable(Of Decimal) = null, Optional usageDate As Nullable(Of DateTime) = null, Optional usedHours As Nullable(Of Decimal) = null, Optional minUtilizationPercentage As Nullable(Of Decimal) = null, Optional avgUtilizationPercentage As Nullable(Of Decimal) = null, Optional maxUtilizationPercentage As Nullable(Of Decimal) = null)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (Optional id As String = Nothing, Optional name As String = Nothing, Optional type As String = Nothing, Optional tags As IDictionary(Of String, String) = Nothing, Optional reservationOrderId As String = Nothing, Optional reservationId As String = Nothing, Optional skuName As String = Nothing, Optional reservedHours As Nullable(Of Decimal) = Nothing, Optional usageDate As Nullable(Of DateTime) = Nothing, Optional usedHours As Nullable(Of Decimal) = Nothing, Optional minUtilizationPercentage As Nullable(Of Decimal) = Nothing, Optional avgUtilizationPercentage As Nullable(Of Decimal) = Nothing, Optional maxUtilizationPercentage As Nullable(Of Decimal) = Nothing)" />
       <MemberSignature Language="F#" Value="new Microsoft.Azure.Management.Consumption.Models.ReservationSummaries : string * string * string * System.Collections.Generic.IDictionary&lt;string, string&gt; * string * string * string * Nullable&lt;decimal&gt; * Nullable&lt;DateTime&gt; * Nullable&lt;decimal&gt; * Nullable&lt;decimal&gt; * Nullable&lt;decimal&gt; * Nullable&lt;decimal&gt; -&gt; Microsoft.Azure.Management.Consumption.Models.ReservationSummaries" Usage="new Microsoft.Azure.Management.Consumption.Models.ReservationSummaries (id, name, type, tags, reservationOrderId, reservationId, skuName, reservedHours, usageDate, usedHours, minUtilizationPercentage, avgUtilizationPercentage, maxUtilizationPercentage)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Consumption</AssemblyName>
-        <AssemblyVersion>2.1.0.0</AssemblyVersion>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
+        <AssemblyVersion>3.0.1.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="id" Type="System.String" />
@@ -119,21 +112,20 @@
       </Docs>
     </Member>
     <Member MemberName="AvgUtilizationPercentage">
-      <MemberSignature Language="C#" Value="public Nullable&lt;decimal&gt; AvgUtilizationPercentage { get; }" />
+      <MemberSignature Language="C#" Value="public decimal? AvgUtilizationPercentage { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;valuetype System.Decimal&gt; AvgUtilizationPercentage" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Management.Consumption.Models.ReservationSummaries.AvgUtilizationPercentage" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property AvgUtilizationPercentage As Nullable(Of Decimal)" />
       <MemberSignature Language="F#" Value="member this.AvgUtilizationPercentage : Nullable&lt;decimal&gt;" Usage="Microsoft.Azure.Management.Consumption.Models.ReservationSummaries.AvgUtilizationPercentage" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Nullable&lt;System::Decimal&gt; AvgUtilizationPercentage { Nullable&lt;System::Decimal&gt; get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Consumption</AssemblyName>
-        <AssemblyVersion>2.1.0.0</AssemblyVersion>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
+        <AssemblyVersion>3.0.1.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="properties.avgUtilizationPercentage")</AttributeName>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty(PropertyName="properties.avgUtilizationPercentage")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty(PropertyName="properties.avgUtilizationPercentage")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -149,21 +141,20 @@
       </Docs>
     </Member>
     <Member MemberName="MaxUtilizationPercentage">
-      <MemberSignature Language="C#" Value="public Nullable&lt;decimal&gt; MaxUtilizationPercentage { get; }" />
+      <MemberSignature Language="C#" Value="public decimal? MaxUtilizationPercentage { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;valuetype System.Decimal&gt; MaxUtilizationPercentage" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Management.Consumption.Models.ReservationSummaries.MaxUtilizationPercentage" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property MaxUtilizationPercentage As Nullable(Of Decimal)" />
       <MemberSignature Language="F#" Value="member this.MaxUtilizationPercentage : Nullable&lt;decimal&gt;" Usage="Microsoft.Azure.Management.Consumption.Models.ReservationSummaries.MaxUtilizationPercentage" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Nullable&lt;System::Decimal&gt; MaxUtilizationPercentage { Nullable&lt;System::Decimal&gt; get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Consumption</AssemblyName>
-        <AssemblyVersion>2.1.0.0</AssemblyVersion>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
+        <AssemblyVersion>3.0.1.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="properties.maxUtilizationPercentage")</AttributeName>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty(PropertyName="properties.maxUtilizationPercentage")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty(PropertyName="properties.maxUtilizationPercentage")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -181,21 +172,20 @@
       </Docs>
     </Member>
     <Member MemberName="MinUtilizationPercentage">
-      <MemberSignature Language="C#" Value="public Nullable&lt;decimal&gt; MinUtilizationPercentage { get; }" />
+      <MemberSignature Language="C#" Value="public decimal? MinUtilizationPercentage { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;valuetype System.Decimal&gt; MinUtilizationPercentage" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Management.Consumption.Models.ReservationSummaries.MinUtilizationPercentage" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property MinUtilizationPercentage As Nullable(Of Decimal)" />
       <MemberSignature Language="F#" Value="member this.MinUtilizationPercentage : Nullable&lt;decimal&gt;" Usage="Microsoft.Azure.Management.Consumption.Models.ReservationSummaries.MinUtilizationPercentage" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Nullable&lt;System::Decimal&gt; MinUtilizationPercentage { Nullable&lt;System::Decimal&gt; get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Consumption</AssemblyName>
-        <AssemblyVersion>2.1.0.0</AssemblyVersion>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
+        <AssemblyVersion>3.0.1.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="properties.minUtilizationPercentage")</AttributeName>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty(PropertyName="properties.minUtilizationPercentage")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty(PropertyName="properties.minUtilizationPercentage")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -218,17 +208,15 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Management.Consumption.Models.ReservationSummaries.ReservationId" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ReservationId As String" />
       <MemberSignature Language="F#" Value="member this.ReservationId : string" Usage="Microsoft.Azure.Management.Consumption.Models.ReservationSummaries.ReservationId" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ ReservationId { System::String ^ get(); };" />
-      <MemberSignature Language="C++ CX" Value="public:&#xA; property Platform::String ^ ReservationId { Platform::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Consumption</AssemblyName>
-        <AssemblyVersion>2.1.0.0</AssemblyVersion>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
+        <AssemblyVersion>3.0.1.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="properties.reservationId")</AttributeName>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty(PropertyName="properties.reservationId")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty(PropertyName="properties.reservationId")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -251,17 +239,15 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Management.Consumption.Models.ReservationSummaries.ReservationOrderId" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ReservationOrderId As String" />
       <MemberSignature Language="F#" Value="member this.ReservationOrderId : string" Usage="Microsoft.Azure.Management.Consumption.Models.ReservationSummaries.ReservationOrderId" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ ReservationOrderId { System::String ^ get(); };" />
-      <MemberSignature Language="C++ CX" Value="public:&#xA; property Platform::String ^ ReservationOrderId { Platform::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Consumption</AssemblyName>
-        <AssemblyVersion>2.1.0.0</AssemblyVersion>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
+        <AssemblyVersion>3.0.1.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="properties.reservationOrderId")</AttributeName>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty(PropertyName="properties.reservationOrderId")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty(PropertyName="properties.reservationOrderId")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -280,21 +266,20 @@
       </Docs>
     </Member>
     <Member MemberName="ReservedHours">
-      <MemberSignature Language="C#" Value="public Nullable&lt;decimal&gt; ReservedHours { get; }" />
+      <MemberSignature Language="C#" Value="public decimal? ReservedHours { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;valuetype System.Decimal&gt; ReservedHours" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Management.Consumption.Models.ReservationSummaries.ReservedHours" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ReservedHours As Nullable(Of Decimal)" />
       <MemberSignature Language="F#" Value="member this.ReservedHours : Nullable&lt;decimal&gt;" Usage="Microsoft.Azure.Management.Consumption.Models.ReservationSummaries.ReservedHours" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Nullable&lt;System::Decimal&gt; ReservedHours { Nullable&lt;System::Decimal&gt; get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Consumption</AssemblyName>
-        <AssemblyVersion>2.1.0.0</AssemblyVersion>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
+        <AssemblyVersion>3.0.1.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="properties.reservedHours")</AttributeName>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty(PropertyName="properties.reservedHours")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty(PropertyName="properties.reservedHours")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -316,17 +301,15 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Management.Consumption.Models.ReservationSummaries.SkuName" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property SkuName As String" />
       <MemberSignature Language="F#" Value="member this.SkuName : string" Usage="Microsoft.Azure.Management.Consumption.Models.ReservationSummaries.SkuName" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ SkuName { System::String ^ get(); };" />
-      <MemberSignature Language="C++ CX" Value="public:&#xA; property Platform::String ^ SkuName { Platform::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Consumption</AssemblyName>
-        <AssemblyVersion>2.1.0.0</AssemblyVersion>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
+        <AssemblyVersion>3.0.1.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="properties.skuName")</AttributeName>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty(PropertyName="properties.skuName")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty(PropertyName="properties.skuName")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -342,21 +325,20 @@
       </Docs>
     </Member>
     <Member MemberName="UsageDate">
-      <MemberSignature Language="C#" Value="public Nullable&lt;DateTime&gt; UsageDate { get; }" />
+      <MemberSignature Language="C#" Value="public DateTime? UsageDate { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;valuetype System.DateTime&gt; UsageDate" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Management.Consumption.Models.ReservationSummaries.UsageDate" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property UsageDate As Nullable(Of DateTime)" />
       <MemberSignature Language="F#" Value="member this.UsageDate : Nullable&lt;DateTime&gt;" Usage="Microsoft.Azure.Management.Consumption.Models.ReservationSummaries.UsageDate" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Nullable&lt;DateTime&gt; UsageDate { Nullable&lt;DateTime&gt; get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Consumption</AssemblyName>
-        <AssemblyVersion>2.1.0.0</AssemblyVersion>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
+        <AssemblyVersion>3.0.1.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="properties.usageDate")</AttributeName>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty(PropertyName="properties.usageDate")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty(PropertyName="properties.usageDate")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -372,21 +354,20 @@
       </Docs>
     </Member>
     <Member MemberName="UsedHours">
-      <MemberSignature Language="C#" Value="public Nullable&lt;decimal&gt; UsedHours { get; }" />
+      <MemberSignature Language="C#" Value="public decimal? UsedHours { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;valuetype System.Decimal&gt; UsedHours" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Management.Consumption.Models.ReservationSummaries.UsedHours" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property UsedHours As Nullable(Of Decimal)" />
       <MemberSignature Language="F#" Value="member this.UsedHours : Nullable&lt;decimal&gt;" Usage="Microsoft.Azure.Management.Consumption.Models.ReservationSummaries.UsedHours" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Nullable&lt;System::Decimal&gt; UsedHours { Nullable&lt;System::Decimal&gt; get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Consumption</AssemblyName>
-        <AssemblyVersion>2.1.0.0</AssemblyVersion>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
+        <AssemblyVersion>3.0.1.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="properties.usedHours")</AttributeName>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty(PropertyName="properties.usedHours")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty(PropertyName="properties.usedHours")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>

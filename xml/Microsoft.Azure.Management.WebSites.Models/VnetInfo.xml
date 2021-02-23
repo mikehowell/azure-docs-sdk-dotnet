@@ -1,23 +1,22 @@
-﻿<Type Name="VnetInfo" FullName="Microsoft.Azure.Management.WebSites.Models.VnetInfo">
+<Type Name="VnetInfo" FullName="Microsoft.Azure.Management.WebSites.Models.VnetInfo">
   <TypeSignature Language="C#" Value="public class VnetInfo : Microsoft.Azure.Management.WebSites.Models.ProxyOnlyResource" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit VnetInfo extends Microsoft.Azure.Management.WebSites.Models.ProxyOnlyResource" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Azure.Management.WebSites.Models.VnetInfo" />
   <TypeSignature Language="VB.NET" Value="Public Class VnetInfo&#xA;Inherits ProxyOnlyResource" />
   <TypeSignature Language="F#" Value="type VnetInfo = class&#xA;    inherit ProxyOnlyResource" />
-  <TypeSignature Language="C++ CLI" Value="public ref class VnetInfo : Microsoft::Azure::Management::WebSites::Models::ProxyOnlyResource" />
-  <TypeSignature Language="C++ WINRT" Value="[Windows::Foundation::Metadata::WebHostHidden]&#xA;class VnetInfo : Microsoft::Azure::Management::WebSites::Models::ProxyOnlyResource" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Azure.Management.Websites</AssemblyName>
-    <AssemblyVersion>1.0.0.0</AssemblyVersion>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
+    <AssemblyVersion>3.1.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
-    <BaseTypeName>Microsoft.Azure.Management.WebSites.Models.Resource</BaseTypeName>
-    <BaseTypeName FrameworkAlternate="azure-dotnet">Microsoft.Azure.Management.WebSites.Models.ProxyOnlyResource</BaseTypeName>
+    <BaseTypeName>Microsoft.Azure.Management.WebSites.Models.ProxyOnlyResource</BaseTypeName>
   </Base>
   <Interfaces />
   <Attributes>
     <Attribute>
-      <AttributeName>Microsoft.Rest.Serialization.JsonTransformation</AttributeName>
+      <AttributeName Language="C#">[Microsoft.Rest.Serialization.JsonTransformation]</AttributeName>
+      <AttributeName Language="F#">[&lt;Microsoft.Rest.Serialization.JsonTransformation&gt;]</AttributeName>
     </Attribute>
   </Attributes>
   <Docs>
@@ -32,13 +31,11 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Management.WebSites.Models.VnetInfo.#ctor" />
       <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; VnetInfo();" />
-      <MemberSignature Language="C++ CX" Value="public:&#xA; VnetInfo();" />
-      <MemberSignature Language="C++ WINRT" Value=" VnetInfo();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Websites</AssemblyName>
-        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>3.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
@@ -49,15 +46,16 @@
       </Docs>
     </Member>
     <Member MemberName=".ctor">
-      <MemberSignature Language="C#" Value="public VnetInfo (string id = null, string name = null, string kind = null, string type = null, string vnetResourceId = null, string certThumbprint = null, byte[] certBlob = null, System.Collections.Generic.IList&lt;Microsoft.Azure.Management.WebSites.Models.VnetRoute&gt; routes = null, Nullable&lt;bool&gt; resyncRequired = null, string dnsServers = null);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string id, string name, string kind, string type, string vnetResourceId, string certThumbprint, unsigned int8[] certBlob, class System.Collections.Generic.IList`1&lt;class Microsoft.Azure.Management.WebSites.Models.VnetRoute&gt; routes, valuetype System.Nullable`1&lt;bool&gt; resyncRequired, string dnsServers) cil managed" />
-      <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Management.WebSites.Models.VnetInfo.#ctor(System.String,System.String,System.String,System.String,System.String,System.String,System.Byte[],System.Collections.Generic.IList{Microsoft.Azure.Management.WebSites.Models.VnetRoute},System.Nullable{System.Boolean},System.String)" />
-      <MemberSignature Language="VB.NET" Value="Public Sub New (Optional id As String = null, Optional name As String = null, Optional kind As String = null, Optional type As String = null, Optional vnetResourceId As String = null, Optional certThumbprint As String = null, Optional certBlob As Byte() = null, Optional routes As IList(Of VnetRoute) = null, Optional resyncRequired As Nullable(Of Boolean) = null, Optional dnsServers As String = null)" />
-      <MemberSignature Language="F#" Value="new Microsoft.Azure.Management.WebSites.Models.VnetInfo : string * string * string * string * string * string * byte[] * System.Collections.Generic.IList&lt;Microsoft.Azure.Management.WebSites.Models.VnetRoute&gt; * Nullable&lt;bool&gt; * string -&gt; Microsoft.Azure.Management.WebSites.Models.VnetInfo" Usage="new Microsoft.Azure.Management.WebSites.Models.VnetInfo (id, name, kind, type, vnetResourceId, certThumbprint, certBlob, routes, resyncRequired, dnsServers)" />
+      <MemberSignature Language="C#" Value="public VnetInfo (string id = default, string name = default, string kind = default, string type = default, string vnetResourceId = default, string certThumbprint = default, string certBlob = default, System.Collections.Generic.IList&lt;Microsoft.Azure.Management.WebSites.Models.VnetRoute&gt; routes = default, bool? resyncRequired = default, string dnsServers = default, bool? isSwift = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string id, string name, string kind, string type, string vnetResourceId, string certThumbprint, string certBlob, class System.Collections.Generic.IList`1&lt;class Microsoft.Azure.Management.WebSites.Models.VnetRoute&gt; routes, valuetype System.Nullable`1&lt;bool&gt; resyncRequired, string dnsServers, valuetype System.Nullable`1&lt;bool&gt; isSwift) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Management.WebSites.Models.VnetInfo.#ctor(System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.Collections.Generic.IList{Microsoft.Azure.Management.WebSites.Models.VnetRoute},System.Nullable{System.Boolean},System.String,System.Nullable{System.Boolean})" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (Optional id As String = Nothing, Optional name As String = Nothing, Optional kind As String = Nothing, Optional type As String = Nothing, Optional vnetResourceId As String = Nothing, Optional certThumbprint As String = Nothing, Optional certBlob As String = Nothing, Optional routes As IList(Of VnetRoute) = Nothing, Optional resyncRequired As Nullable(Of Boolean) = Nothing, Optional dnsServers As String = Nothing, Optional isSwift As Nullable(Of Boolean) = Nothing)" />
+      <MemberSignature Language="F#" Value="new Microsoft.Azure.Management.WebSites.Models.VnetInfo : string * string * string * string * string * string * string * System.Collections.Generic.IList&lt;Microsoft.Azure.Management.WebSites.Models.VnetRoute&gt; * Nullable&lt;bool&gt; * string * Nullable&lt;bool&gt; -&gt; Microsoft.Azure.Management.WebSites.Models.VnetInfo" Usage="new Microsoft.Azure.Management.WebSites.Models.VnetInfo (id, name, kind, type, vnetResourceId, certThumbprint, certBlob, routes, resyncRequired, dnsServers, isSwift)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Websites</AssemblyName>
-        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>3.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="id" Type="System.String" />
@@ -66,10 +64,11 @@
         <Parameter Name="type" Type="System.String" />
         <Parameter Name="vnetResourceId" Type="System.String" />
         <Parameter Name="certThumbprint" Type="System.String" />
-        <Parameter Name="certBlob" Type="System.Byte[]" />
+        <Parameter Name="certBlob" Type="System.String" />
         <Parameter Name="routes" Type="System.Collections.Generic.IList&lt;Microsoft.Azure.Management.WebSites.Models.VnetRoute&gt;" />
         <Parameter Name="resyncRequired" Type="System.Nullable&lt;System.Boolean&gt;" />
         <Parameter Name="dnsServers" Type="System.String" />
+        <Parameter Name="isSwift" Type="System.Nullable&lt;System.Boolean&gt;" />
       </Parameters>
       <Docs>
         <param name="id">Resource Id.</param>
@@ -91,6 +90,8 @@
         <param name="dnsServers">DNS servers to be used by this Virtual
             Network. This should be a comma-separated list of IP
             addresses.</param>
+        <param name="isSwift">Flag that is used to denote if this is VNET
+            injection</param>
         <summary>
             Initializes a new instance of the VnetInfo class.
             </summary>
@@ -98,25 +99,25 @@
       </Docs>
     </Member>
     <Member MemberName="CertBlob">
-      <MemberSignature Language="C#" Value="public byte[] CertBlob { get; set; }" />
-      <MemberSignature Language="ILAsm" Value=".property instance unsigned int8[] CertBlob" />
+      <MemberSignature Language="C#" Value="public string CertBlob { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string CertBlob" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Management.WebSites.Models.VnetInfo.CertBlob" />
-      <MemberSignature Language="VB.NET" Value="Public Property CertBlob As Byte()" />
-      <MemberSignature Language="F#" Value="member this.CertBlob : byte[] with get, set" Usage="Microsoft.Azure.Management.WebSites.Models.VnetInfo.CertBlob" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property cli::array &lt;System::Byte&gt; ^ CertBlob { cli::array &lt;System::Byte&gt; ^ get(); void set(cli::array &lt;System::Byte&gt; ^ value); };" />
-      <MemberSignature Language="C++ CX" Value="public:&#xA; property Platform::Array &lt;byte&gt; ^ CertBlob { Platform::Array &lt;byte&gt; ^ get(); void set(Platform::Array &lt;byte&gt; ^ value); };" />
+      <MemberSignature Language="VB.NET" Value="Public Property CertBlob As String" />
+      <MemberSignature Language="F#" Value="member this.CertBlob : string with get, set" Usage="Microsoft.Azure.Management.WebSites.Models.VnetInfo.CertBlob" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Websites</AssemblyName>
-        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>3.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="properties.certBlob")</AttributeName>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty(PropertyName="properties.certBlob")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty(PropertyName="properties.certBlob")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
-        <ReturnType>System.Byte[]</ReturnType>
+        <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
         <summary>
@@ -134,16 +135,16 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Management.WebSites.Models.VnetInfo.CertThumbprint" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property CertThumbprint As String" />
       <MemberSignature Language="F#" Value="member this.CertThumbprint : string" Usage="Microsoft.Azure.Management.WebSites.Models.VnetInfo.CertThumbprint" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ CertThumbprint { System::String ^ get(); };" />
-      <MemberSignature Language="C++ CX" Value="public:&#xA; property Platform::String ^ CertThumbprint { Platform::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Websites</AssemblyName>
-        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>3.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="properties.certThumbprint")</AttributeName>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty(PropertyName="properties.certThumbprint")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty(PropertyName="properties.certThumbprint")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -163,16 +164,16 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Management.WebSites.Models.VnetInfo.DnsServers" />
       <MemberSignature Language="VB.NET" Value="Public Property DnsServers As String" />
       <MemberSignature Language="F#" Value="member this.DnsServers : string with get, set" Usage="Microsoft.Azure.Management.WebSites.Models.VnetInfo.DnsServers" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ DnsServers { System::String ^ get(); void set(System::String ^ value); };" />
-      <MemberSignature Language="C++ CX" Value="public:&#xA; property Platform::String ^ DnsServers { Platform::String ^ get(); void set(Platform::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Websites</AssemblyName>
-        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>3.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="properties.dnsServers")</AttributeName>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty(PropertyName="properties.dnsServers")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty(PropertyName="properties.dnsServers")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -187,21 +188,51 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <Member MemberName="IsSwift">
+      <MemberSignature Language="C#" Value="public bool? IsSwift { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;bool&gt; IsSwift" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Management.WebSites.Models.VnetInfo.IsSwift" />
+      <MemberSignature Language="VB.NET" Value="Public Property IsSwift As Nullable(Of Boolean)" />
+      <MemberSignature Language="F#" Value="member this.IsSwift : Nullable&lt;bool&gt; with get, set" Usage="Microsoft.Azure.Management.WebSites.Models.VnetInfo.IsSwift" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Azure.Management.Websites</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>3.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty(PropertyName="properties.isSwift")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty(PropertyName="properties.isSwift")&gt;]</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Nullable&lt;System.Boolean&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets or sets flag that is used to denote if this is VNET injection
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
     <Member MemberName="ResyncRequired">
-      <MemberSignature Language="C#" Value="public Nullable&lt;bool&gt; ResyncRequired { get; }" />
+      <MemberSignature Language="C#" Value="public bool? ResyncRequired { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;bool&gt; ResyncRequired" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Management.WebSites.Models.VnetInfo.ResyncRequired" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ResyncRequired As Nullable(Of Boolean)" />
       <MemberSignature Language="F#" Value="member this.ResyncRequired : Nullable&lt;bool&gt;" Usage="Microsoft.Azure.Management.WebSites.Models.VnetInfo.ResyncRequired" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Nullable&lt;bool&gt; ResyncRequired { Nullable&lt;bool&gt; get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Websites</AssemblyName>
-        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>3.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="properties.resyncRequired")</AttributeName>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty(PropertyName="properties.resyncRequired")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty(PropertyName="properties.resyncRequired")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -223,15 +254,16 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Management.WebSites.Models.VnetInfo.Routes" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Routes As IList(Of VnetRoute)" />
       <MemberSignature Language="F#" Value="member this.Routes : System.Collections.Generic.IList&lt;Microsoft.Azure.Management.WebSites.Models.VnetRoute&gt;" Usage="Microsoft.Azure.Management.WebSites.Models.VnetInfo.Routes" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::Generic::IList&lt;Microsoft::Azure::Management::WebSites::Models::VnetRoute ^&gt; ^ Routes { System::Collections::Generic::IList&lt;Microsoft::Azure::Management::WebSites::Models::VnetRoute ^&gt; ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Websites</AssemblyName>
-        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>3.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="properties.routes")</AttributeName>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty(PropertyName="properties.routes")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty(PropertyName="properties.routes")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -251,16 +283,16 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Management.WebSites.Models.VnetInfo.VnetResourceId" />
       <MemberSignature Language="VB.NET" Value="Public Property VnetResourceId As String" />
       <MemberSignature Language="F#" Value="member this.VnetResourceId : string with get, set" Usage="Microsoft.Azure.Management.WebSites.Models.VnetInfo.VnetResourceId" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ VnetResourceId { System::String ^ get(); void set(System::String ^ value); };" />
-      <MemberSignature Language="C++ CX" Value="public:&#xA; property Platform::String ^ VnetResourceId { Platform::String ^ get(); void set(Platform::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Websites</AssemblyName>
-        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>3.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="properties.vnetResourceId")</AttributeName>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty(PropertyName="properties.vnetResourceId")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty(PropertyName="properties.vnetResourceId")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>

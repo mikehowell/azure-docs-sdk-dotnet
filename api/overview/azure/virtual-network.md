@@ -1,17 +1,9 @@
 ---
 title: Azure Virtual Network libraries for .NET
 description: Reference for Azure Virtual Network libraries for .NET
-keywords: Azure, .NET, SDK, API, Virtual Network
-author: camsoper
-ms.author: casoper
-manager: wpickett
 ms.date: 10/19/2017
 ms.topic: reference
-ms.prod: azure
-ms.technology: azure
-ms.devlang: dotnet
 ms.service: virtual-network
-ms.custom: devcenter, svc-overview
 ---
 
 # Azure Virtual Network libraries for .NET
@@ -31,11 +23,12 @@ Install-Package Microsoft.Azure.Management.Network.Fluent
 
 #### .NET Core CLI
 
-```bash
+```dotnetcli
 dotnet add package Microsoft.Azure.Management.Network.Fluent
 ```
 
 ### Code Example
+
 This example shows how you can create a virtual network.
 
 ```csharp

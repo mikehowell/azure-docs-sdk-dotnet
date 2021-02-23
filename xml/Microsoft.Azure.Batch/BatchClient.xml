@@ -1,14 +1,14 @@
-﻿<Type Name="BatchClient" FullName="Microsoft.Azure.Batch.BatchClient">
+<Type Name="BatchClient" FullName="Microsoft.Azure.Batch.BatchClient">
   <TypeSignature Language="C#" Value="public class BatchClient : IDisposable" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit BatchClient extends System.Object implements class System.IDisposable" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Azure.Batch.BatchClient" />
   <TypeSignature Language="VB.NET" Value="Public Class BatchClient&#xA;Implements IDisposable" />
   <TypeSignature Language="F#" Value="type BatchClient = class&#xA;    interface IDisposable" />
-  <TypeSignature Language="C++ CLI" Value="public ref class BatchClient : IDisposable" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Azure.Batch</AssemblyName>
-    <AssemblyVersion>7.1.0.0</AssemblyVersion>
-    <AssemblyVersion>8.0.0.0</AssemblyVersion>
+    <AssemblyVersion>12.0.0.0</AssemblyVersion>
+    <AssemblyVersion>13.0.0.0</AssemblyVersion>
+    <AssemblyVersion>14.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
@@ -31,13 +31,12 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Batch.BatchClient.ApplicationOperations" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ApplicationOperations As ApplicationOperations" />
       <MemberSignature Language="F#" Value="member this.ApplicationOperations : Microsoft.Azure.Batch.ApplicationOperations" Usage="Microsoft.Azure.Batch.BatchClient.ApplicationOperations" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Azure::Batch::ApplicationOperations ^ ApplicationOperations { Microsoft::Azure::Batch::ApplicationOperations ^ get(); };" />
-      <MemberSignature Language="C++ CX" Value="public:&#xA; property Microsoft::Azure::Batch::ApplicationOperations ^ ApplicationOperations { Microsoft::Azure::Batch::ApplicationOperations ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Batch</AssemblyName>
-        <AssemblyVersion>7.1.0.0</AssemblyVersion>
-        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>12.0.0.0</AssemblyVersion>
+        <AssemblyVersion>13.0.0.0</AssemblyVersion>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Azure.Batch.ApplicationOperations</ReturnType>
@@ -56,13 +55,12 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Batch.BatchClient.CertificateOperations" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property CertificateOperations As CertificateOperations" />
       <MemberSignature Language="F#" Value="member this.CertificateOperations : Microsoft.Azure.Batch.CertificateOperations" Usage="Microsoft.Azure.Batch.BatchClient.CertificateOperations" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Azure::Batch::CertificateOperations ^ CertificateOperations { Microsoft::Azure::Batch::CertificateOperations ^ get(); };" />
-      <MemberSignature Language="C++ CX" Value="public:&#xA; property Microsoft::Azure::Batch::CertificateOperations ^ CertificateOperations { Microsoft::Azure::Batch::CertificateOperations ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Batch</AssemblyName>
-        <AssemblyVersion>7.1.0.0</AssemblyVersion>
-        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>12.0.0.0</AssemblyVersion>
+        <AssemblyVersion>13.0.0.0</AssemblyVersion>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Azure.Batch.CertificateOperations</ReturnType>
@@ -75,75 +73,18 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
-    <Member MemberName="Close">
-      <MemberSignature Language="C#" Value="public void Close ();" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Close() cil managed" />
-      <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Batch.BatchClient.Close" />
-      <MemberSignature Language="VB.NET" Value="Public Sub Close ()" />
-      <MemberSignature Language="F#" Value="member this.Close : unit -&gt; unit" Usage="batchClient.Close " />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Close();" />
-      <MemberSignature Language="C++ CX" Value="public:&#xA; void Close();" />
-      <MemberSignature Language="C++ WINRT" Value="void Close();" />
-      <MemberType>Method</MemberType>
-      <AssemblyInfo>
-        <AssemblyName>Microsoft.Azure.Batch</AssemblyName>
-        <AssemblyVersion>7.1.0.0</AssemblyVersion>
-        <AssemblyVersion>8.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <ReturnValue>
-        <ReturnType>System.Void</ReturnType>
-      </ReturnValue>
-      <Parameters />
-      <Docs>
-        <summary>
-            Closes the current instance of <see cref="T:Microsoft.Azure.Batch.BatchClient" />.  
-            Closed instances of <see cref="T:Microsoft.Azure.Batch.BatchClient" /> are unable to make calls to the Batch Service and the behavior and values of any other methods or properties are undefined. 
-            These restrictions also apply immediately to any objects that can trace instantation back to this <see cref="T:Microsoft.Azure.Batch.BatchClient" />.
-            This method is threadsafe and can be called any number of times.
-            </summary>
-        <remarks>To be added.</remarks>
-      </Docs>
-    </Member>
-    <Member MemberName="CloseAsync">
-      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task CloseAsync ();" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Threading.Tasks.Task CloseAsync() cil managed" />
-      <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Batch.BatchClient.CloseAsync" />
-      <MemberSignature Language="VB.NET" Value="Public Function CloseAsync () As Task" />
-      <MemberSignature Language="F#" Value="member this.CloseAsync : unit -&gt; System.Threading.Tasks.Task" Usage="batchClient.CloseAsync " />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Threading::Tasks::Task ^ CloseAsync();" />
-      <MemberType>Method</MemberType>
-      <AssemblyInfo>
-        <AssemblyName>Microsoft.Azure.Batch</AssemblyName>
-        <AssemblyVersion>7.1.0.0</AssemblyVersion>
-        <AssemblyVersion>8.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <ReturnValue>
-        <ReturnType>System.Threading.Tasks.Task</ReturnType>
-      </ReturnValue>
-      <Parameters />
-      <Docs>
-        <summary>
-            Starts an asynchronous operation to close the current instance of <see cref="T:Microsoft.Azure.Batch.BatchClient" />.  
-            Closed instances of <see cref="T:Microsoft.Azure.Batch.BatchClient" /> are unable to make calls to the Batch Service and the behavior and values of any other methods or properties are undefined. 
-            These restrictions also apply immediately to any objects that can trace instantation back to this <see cref="T:Microsoft.Azure.Batch.BatchClient" />.
-            This method is threadsafe and can be called any number of times.
-            </summary>
-        <returns>A <see cref="T:System.Threading.Tasks.Task" /> object that represents the asynchronous operation.</returns>
-        <remarks>To be added.</remarks>
-      </Docs>
-    </Member>
     <Member MemberName="CustomBehaviors">
       <MemberSignature Language="C#" Value="public System.Collections.Generic.IList&lt;Microsoft.Azure.Batch.BatchClientBehavior&gt; CustomBehaviors { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Generic.IList`1&lt;class Microsoft.Azure.Batch.BatchClientBehavior&gt; CustomBehaviors" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Batch.BatchClient.CustomBehaviors" />
       <MemberSignature Language="VB.NET" Value="Public Property CustomBehaviors As IList(Of BatchClientBehavior)" />
       <MemberSignature Language="F#" Value="member this.CustomBehaviors : System.Collections.Generic.IList&lt;Microsoft.Azure.Batch.BatchClientBehavior&gt; with get, set" Usage="Microsoft.Azure.Batch.BatchClient.CustomBehaviors" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::Generic::IList&lt;Microsoft::Azure::Batch::BatchClientBehavior ^&gt; ^ CustomBehaviors { System::Collections::Generic::IList&lt;Microsoft::Azure::Batch::BatchClientBehavior ^&gt; ^ get(); void set(System::Collections::Generic::IList&lt;Microsoft::Azure::Batch::BatchClientBehavior ^&gt; ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Batch</AssemblyName>
-        <AssemblyVersion>7.1.0.0</AssemblyVersion>
-        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>12.0.0.0</AssemblyVersion>
+        <AssemblyVersion>13.0.0.0</AssemblyVersion>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Collections.Generic.IList&lt;Microsoft.Azure.Batch.BatchClientBehavior&gt;</ReturnType>
@@ -165,17 +106,15 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Batch.BatchClient.Dispose" />
       <MemberSignature Language="VB.NET" Value="Public Sub Dispose ()" />
       <MemberSignature Language="F#" Value="abstract member Dispose : unit -&gt; unit&#xA;override this.Dispose : unit -&gt; unit" Usage="batchClient.Dispose " />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Dispose();" />
-      <MemberSignature Language="C++ CX" Value="public:&#xA; void Dispose();" />
-      <MemberSignature Language="C++ WINRT" Value="void Dispose();" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.IDisposable.Dispose</InterfaceMember>
       </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Batch</AssemblyName>
-        <AssemblyVersion>7.1.0.0</AssemblyVersion>
-        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>12.0.0.0</AssemblyVersion>
+        <AssemblyVersion>13.0.0.0</AssemblyVersion>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -183,7 +122,7 @@
       <Parameters />
       <Docs>
         <summary>
-            Calls <see cref="M:Microsoft.Azure.Batch.BatchClient.Close" /> and releases the unmanaged resources and disposes of the managed resources used by the <see cref="T:Microsoft.Azure.Batch.BatchClient" />.
+            Releases the unmanaged resources and disposes of the managed resources used by the <see cref="T:Microsoft.Azure.Batch.BatchClient" />.
             </summary>
         <remarks>To be added.</remarks>
       </Docs>
@@ -194,14 +133,12 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Batch.BatchClient.Dispose(System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Sub Dispose (disposing As Boolean)" />
       <MemberSignature Language="F#" Value="abstract member Dispose : bool -&gt; unit&#xA;override this.Dispose : bool -&gt; unit" Usage="batchClient.Dispose disposing" />
-      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void Dispose(bool disposing);" />
-      <MemberSignature Language="C++ CX" Value="protected:&#xA; virtual void Dispose(bool disposing);" />
-      <MemberSignature Language="C++ WINRT" Value=" virtual void Dispose(bool disposing);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Batch</AssemblyName>
-        <AssemblyVersion>7.1.0.0</AssemblyVersion>
-        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>12.0.0.0</AssemblyVersion>
+        <AssemblyVersion>13.0.0.0</AssemblyVersion>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -225,13 +162,12 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Batch.BatchClient.JobOperations" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property JobOperations As JobOperations" />
       <MemberSignature Language="F#" Value="member this.JobOperations : Microsoft.Azure.Batch.JobOperations" Usage="Microsoft.Azure.Batch.BatchClient.JobOperations" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Azure::Batch::JobOperations ^ JobOperations { Microsoft::Azure::Batch::JobOperations ^ get(); };" />
-      <MemberSignature Language="C++ CX" Value="public:&#xA; property Microsoft::Azure::Batch::JobOperations ^ JobOperations { Microsoft::Azure::Batch::JobOperations ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Batch</AssemblyName>
-        <AssemblyVersion>7.1.0.0</AssemblyVersion>
-        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>12.0.0.0</AssemblyVersion>
+        <AssemblyVersion>13.0.0.0</AssemblyVersion>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Azure.Batch.JobOperations</ReturnType>
@@ -250,13 +186,12 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Batch.BatchClient.JobScheduleOperations" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property JobScheduleOperations As JobScheduleOperations" />
       <MemberSignature Language="F#" Value="member this.JobScheduleOperations : Microsoft.Azure.Batch.JobScheduleOperations" Usage="Microsoft.Azure.Batch.BatchClient.JobScheduleOperations" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Azure::Batch::JobScheduleOperations ^ JobScheduleOperations { Microsoft::Azure::Batch::JobScheduleOperations ^ get(); };" />
-      <MemberSignature Language="C++ CX" Value="public:&#xA; property Microsoft::Azure::Batch::JobScheduleOperations ^ JobScheduleOperations { Microsoft::Azure::Batch::JobScheduleOperations ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Batch</AssemblyName>
-        <AssemblyVersion>7.1.0.0</AssemblyVersion>
-        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>12.0.0.0</AssemblyVersion>
+        <AssemblyVersion>13.0.0.0</AssemblyVersion>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Azure.Batch.JobScheduleOperations</ReturnType>
@@ -275,12 +210,12 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Batch.BatchClient.Open(Microsoft.Azure.Batch.Auth.BatchSharedKeyCredentials)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function Open (credentials As BatchSharedKeyCredentials) As BatchClient" />
       <MemberSignature Language="F#" Value="static member Open : Microsoft.Azure.Batch.Auth.BatchSharedKeyCredentials -&gt; Microsoft.Azure.Batch.BatchClient" Usage="Microsoft.Azure.Batch.BatchClient.Open credentials" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; static Microsoft::Azure::Batch::BatchClient ^ Open(Microsoft::Azure::Batch::Auth::BatchSharedKeyCredentials ^ credentials);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Batch</AssemblyName>
-        <AssemblyVersion>7.1.0.0</AssemblyVersion>
-        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>12.0.0.0</AssemblyVersion>
+        <AssemblyVersion>13.0.0.0</AssemblyVersion>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Azure.Batch.BatchClient</ReturnType>
@@ -294,8 +229,7 @@
             Creates an instance of <see cref="T:Microsoft.Azure.Batch.BatchClient" />.
             </summary>
         <returns>An instance of <see cref="T:Microsoft.Azure.Batch.Protocol.BatchServiceClient" />.</returns>
-        <remarks>
-            This is a blocking call. For a non-blocking equivalent, see <see cref="M:Microsoft.Azure.Batch.BatchClient.OpenAsync(Microsoft.Azure.Batch.Auth.BatchSharedKeyCredentials)" /></remarks>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Open">
@@ -304,12 +238,12 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Batch.BatchClient.Open(Microsoft.Azure.Batch.Auth.BatchTokenCredentials)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function Open (credentials As BatchTokenCredentials) As BatchClient" />
       <MemberSignature Language="F#" Value="static member Open : Microsoft.Azure.Batch.Auth.BatchTokenCredentials -&gt; Microsoft.Azure.Batch.BatchClient" Usage="Microsoft.Azure.Batch.BatchClient.Open credentials" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; static Microsoft::Azure::Batch::BatchClient ^ Open(Microsoft::Azure::Batch::Auth::BatchTokenCredentials ^ credentials);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Batch</AssemblyName>
-        <AssemblyVersion>7.1.0.0</AssemblyVersion>
-        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>12.0.0.0</AssemblyVersion>
+        <AssemblyVersion>13.0.0.0</AssemblyVersion>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Azure.Batch.BatchClient</ReturnType>
@@ -323,8 +257,7 @@
             Creates an instance of <see cref="T:Microsoft.Azure.Batch.BatchClient" />.
             </summary>
         <returns>An instance of <see cref="T:Microsoft.Azure.Batch.Protocol.BatchServiceClient" />.</returns>
-        <remarks>
-            This is a blocking call. For a non-blocking equivalent, see <see cref="M:Microsoft.Azure.Batch.BatchClient.OpenAsync(Microsoft.Azure.Batch.Auth.BatchTokenCredentials)" /></remarks>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Open">
@@ -333,12 +266,12 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Batch.BatchClient.Open(Microsoft.Azure.Batch.Protocol.BatchServiceClient)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function Open (restClient As BatchServiceClient) As BatchClient" />
       <MemberSignature Language="F#" Value="static member Open : Microsoft.Azure.Batch.Protocol.BatchServiceClient -&gt; Microsoft.Azure.Batch.BatchClient" Usage="Microsoft.Azure.Batch.BatchClient.Open restClient" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; static Microsoft::Azure::Batch::BatchClient ^ Open(Microsoft::Azure::Batch::Protocol::BatchServiceClient ^ restClient);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Batch</AssemblyName>
-        <AssemblyVersion>7.1.0.0</AssemblyVersion>
-        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>12.0.0.0</AssemblyVersion>
+        <AssemblyVersion>13.0.0.0</AssemblyVersion>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Azure.Batch.BatchClient</ReturnType>
@@ -355,103 +288,18 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
-    <Member MemberName="OpenAsync">
-      <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task&lt;Microsoft.Azure.Batch.BatchClient&gt; OpenAsync (Microsoft.Azure.Batch.Auth.BatchSharedKeyCredentials credentials);" />
-      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Threading.Tasks.Task`1&lt;class Microsoft.Azure.Batch.BatchClient&gt; OpenAsync(class Microsoft.Azure.Batch.Auth.BatchSharedKeyCredentials credentials) cil managed" />
-      <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Batch.BatchClient.OpenAsync(Microsoft.Azure.Batch.Auth.BatchSharedKeyCredentials)" />
-      <MemberSignature Language="VB.NET" Value="Public Shared Function OpenAsync (credentials As BatchSharedKeyCredentials) As Task(Of BatchClient)" />
-      <MemberSignature Language="F#" Value="static member OpenAsync : Microsoft.Azure.Batch.Auth.BatchSharedKeyCredentials -&gt; System.Threading.Tasks.Task&lt;Microsoft.Azure.Batch.BatchClient&gt;" Usage="Microsoft.Azure.Batch.BatchClient.OpenAsync credentials" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Threading::Tasks::Task&lt;Microsoft::Azure::Batch::BatchClient ^&gt; ^ OpenAsync(Microsoft::Azure::Batch::Auth::BatchSharedKeyCredentials ^ credentials);" />
-      <MemberType>Method</MemberType>
-      <AssemblyInfo>
-        <AssemblyName>Microsoft.Azure.Batch</AssemblyName>
-        <AssemblyVersion>7.1.0.0</AssemblyVersion>
-        <AssemblyVersion>8.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <ReturnValue>
-        <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.Azure.Batch.BatchClient&gt;</ReturnType>
-      </ReturnValue>
-      <Parameters>
-        <Parameter Name="credentials" Type="Microsoft.Azure.Batch.Auth.BatchSharedKeyCredentials" />
-      </Parameters>
-      <Docs>
-        <param name="credentials">The Batch account credentials.</param>
-        <summary>
-            Creates an instance of <see cref="T:Microsoft.Azure.Batch.BatchClient" /> associated with the specified credentials.
-            </summary>
-        <returns>A <see cref="T:System.Threading.Tasks.Task" /> object that represents the asynchronous operation.</returns>
-        <remarks>To be added.</remarks>
-      </Docs>
-    </Member>
-    <Member MemberName="OpenAsync">
-      <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task&lt;Microsoft.Azure.Batch.BatchClient&gt; OpenAsync (Microsoft.Azure.Batch.Auth.BatchTokenCredentials credentials);" />
-      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Threading.Tasks.Task`1&lt;class Microsoft.Azure.Batch.BatchClient&gt; OpenAsync(class Microsoft.Azure.Batch.Auth.BatchTokenCredentials credentials) cil managed" />
-      <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Batch.BatchClient.OpenAsync(Microsoft.Azure.Batch.Auth.BatchTokenCredentials)" />
-      <MemberSignature Language="VB.NET" Value="Public Shared Function OpenAsync (credentials As BatchTokenCredentials) As Task(Of BatchClient)" />
-      <MemberSignature Language="F#" Value="static member OpenAsync : Microsoft.Azure.Batch.Auth.BatchTokenCredentials -&gt; System.Threading.Tasks.Task&lt;Microsoft.Azure.Batch.BatchClient&gt;" Usage="Microsoft.Azure.Batch.BatchClient.OpenAsync credentials" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Threading::Tasks::Task&lt;Microsoft::Azure::Batch::BatchClient ^&gt; ^ OpenAsync(Microsoft::Azure::Batch::Auth::BatchTokenCredentials ^ credentials);" />
-      <MemberType>Method</MemberType>
-      <AssemblyInfo>
-        <AssemblyName>Microsoft.Azure.Batch</AssemblyName>
-        <AssemblyVersion>7.1.0.0</AssemblyVersion>
-        <AssemblyVersion>8.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <ReturnValue>
-        <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.Azure.Batch.BatchClient&gt;</ReturnType>
-      </ReturnValue>
-      <Parameters>
-        <Parameter Name="credentials" Type="Microsoft.Azure.Batch.Auth.BatchTokenCredentials" />
-      </Parameters>
-      <Docs>
-        <param name="credentials">The Azure Active Directory Batch account credentials.</param>
-        <summary>
-            Creates an instance of <see cref="T:Microsoft.Azure.Batch.BatchClient" />.
-            </summary>
-        <returns>A <see cref="T:System.Threading.Tasks.Task" /> object that represents the asynchronous operation.</returns>
-        <remarks>To be added.</remarks>
-      </Docs>
-    </Member>
-    <Member MemberName="OpenAsync">
-      <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task&lt;Microsoft.Azure.Batch.BatchClient&gt; OpenAsync (Microsoft.Azure.Batch.Protocol.BatchServiceClient restClient);" />
-      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Threading.Tasks.Task`1&lt;class Microsoft.Azure.Batch.BatchClient&gt; OpenAsync(class Microsoft.Azure.Batch.Protocol.BatchServiceClient restClient) cil managed" />
-      <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Batch.BatchClient.OpenAsync(Microsoft.Azure.Batch.Protocol.BatchServiceClient)" />
-      <MemberSignature Language="VB.NET" Value="Public Shared Function OpenAsync (restClient As BatchServiceClient) As Task(Of BatchClient)" />
-      <MemberSignature Language="F#" Value="static member OpenAsync : Microsoft.Azure.Batch.Protocol.BatchServiceClient -&gt; System.Threading.Tasks.Task&lt;Microsoft.Azure.Batch.BatchClient&gt;" Usage="Microsoft.Azure.Batch.BatchClient.OpenAsync restClient" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Threading::Tasks::Task&lt;Microsoft::Azure::Batch::BatchClient ^&gt; ^ OpenAsync(Microsoft::Azure::Batch::Protocol::BatchServiceClient ^ restClient);" />
-      <MemberType>Method</MemberType>
-      <AssemblyInfo>
-        <AssemblyName>Microsoft.Azure.Batch</AssemblyName>
-        <AssemblyVersion>7.1.0.0</AssemblyVersion>
-        <AssemblyVersion>8.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <ReturnValue>
-        <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.Azure.Batch.BatchClient&gt;</ReturnType>
-      </ReturnValue>
-      <Parameters>
-        <Parameter Name="restClient" Type="Microsoft.Azure.Batch.Protocol.BatchServiceClient" />
-      </Parameters>
-      <Docs>
-        <param name="restClient">The instance of <see cref="T:Microsoft.Azure.Batch.Protocol.BatchServiceClient" /> to use for all calls made to the Batch Service. It will not be disposed when BatchClient is disposed.</param>
-        <summary>
-            Creates an instance of <see cref="T:Microsoft.Azure.Batch.BatchClient" /> associated with the specified <see cref="T:Microsoft.Azure.Batch.Protocol.BatchServiceClient" />.
-            </summary>
-        <returns>A <see cref="T:System.Threading.Tasks.Task" /> object that represents the asynchronous operation.</returns>
-        <remarks>To be added.</remarks>
-      </Docs>
-    </Member>
     <Member MemberName="PoolOperations">
       <MemberSignature Language="C#" Value="public Microsoft.Azure.Batch.PoolOperations PoolOperations { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Azure.Batch.PoolOperations PoolOperations" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Batch.BatchClient.PoolOperations" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property PoolOperations As PoolOperations" />
       <MemberSignature Language="F#" Value="member this.PoolOperations : Microsoft.Azure.Batch.PoolOperations" Usage="Microsoft.Azure.Batch.BatchClient.PoolOperations" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Azure::Batch::PoolOperations ^ PoolOperations { Microsoft::Azure::Batch::PoolOperations ^ get(); };" />
-      <MemberSignature Language="C++ CX" Value="public:&#xA; property Microsoft::Azure::Batch::PoolOperations ^ PoolOperations { Microsoft::Azure::Batch::PoolOperations ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Batch</AssemblyName>
-        <AssemblyVersion>7.1.0.0</AssemblyVersion>
-        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>12.0.0.0</AssemblyVersion>
+        <AssemblyVersion>13.0.0.0</AssemblyVersion>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Azure.Batch.PoolOperations</ReturnType>
@@ -470,13 +318,12 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Batch.BatchClient.Utilities" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Utilities As Utilities" />
       <MemberSignature Language="F#" Value="member this.Utilities : Microsoft.Azure.Batch.Utilities" Usage="Microsoft.Azure.Batch.BatchClient.Utilities" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Azure::Batch::Utilities ^ Utilities { Microsoft::Azure::Batch::Utilities ^ get(); };" />
-      <MemberSignature Language="C++ CX" Value="public:&#xA; property Microsoft::Azure::Batch::Utilities ^ Utilities { Microsoft::Azure::Batch::Utilities ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Batch</AssemblyName>
-        <AssemblyVersion>7.1.0.0</AssemblyVersion>
-        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>12.0.0.0</AssemblyVersion>
+        <AssemblyVersion>13.0.0.0</AssemblyVersion>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Azure.Batch.Utilities</ReturnType>

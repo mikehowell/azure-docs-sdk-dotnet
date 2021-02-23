@@ -1,14 +1,12 @@
-﻿<Type Name="TensorFlowSettings" FullName="Microsoft.Azure.Management.BatchAI.Models.TensorFlowSettings">
+<Type Name="TensorFlowSettings" FullName="Microsoft.Azure.Management.BatchAI.Models.TensorFlowSettings">
   <TypeSignature Language="C#" Value="public class TensorFlowSettings" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit TensorFlowSettings extends System.Object" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Azure.Management.BatchAI.Models.TensorFlowSettings" />
   <TypeSignature Language="VB.NET" Value="Public Class TensorFlowSettings" />
   <TypeSignature Language="F#" Value="type TensorFlowSettings = class" />
-  <TypeSignature Language="C++ CLI" Value="public ref class TensorFlowSettings" />
-  <TypeSignature Language="C++ WINRT" Value="[Windows::Foundation::Metadata::WebHostHidden]&#xA;class TensorFlowSettings" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Azure.Management.BatchAI</AssemblyName>
-    <AssemblyVersion>1.0.0.0</AssemblyVersion>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
@@ -16,7 +14,7 @@
   <Interfaces />
   <Docs>
     <summary>
-            Specifies the settings for TensorFlow job.
+            TensorFlow job settings.
             </summary>
     <remarks>To be added.</remarks>
   </Docs>
@@ -26,13 +24,10 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Management.BatchAI.Models.TensorFlowSettings.#ctor" />
       <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; TensorFlowSettings();" />
-      <MemberSignature Language="C++ CX" Value="public:&#xA; TensorFlowSettings();" />
-      <MemberSignature Language="C++ WINRT" Value=" TensorFlowSettings();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.BatchAI</AssemblyName>
-        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
@@ -43,39 +38,37 @@
       </Docs>
     </Member>
     <Member MemberName=".ctor">
-      <MemberSignature Language="C#" Value="public TensorFlowSettings (string pythonScriptFilePath, string pythonInterpreterPath = null, string masterCommandLineArgs = null, string workerCommandLineArgs = null, string parameterServerCommandLineArgs = null, Nullable&lt;int&gt; workerCount = null, Nullable&lt;int&gt; parameterServerCount = null);" />
+      <MemberSignature Language="C#" Value="public TensorFlowSettings (string pythonScriptFilePath, string pythonInterpreterPath = default, string masterCommandLineArgs = default, string workerCommandLineArgs = default, string parameterServerCommandLineArgs = default, int? workerCount = default, int? parameterServerCount = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string pythonScriptFilePath, string pythonInterpreterPath, string masterCommandLineArgs, string workerCommandLineArgs, string parameterServerCommandLineArgs, valuetype System.Nullable`1&lt;int32&gt; workerCount, valuetype System.Nullable`1&lt;int32&gt; parameterServerCount) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Management.BatchAI.Models.TensorFlowSettings.#ctor(System.String,System.String,System.String,System.String,System.String,System.Nullable{System.Int32},System.Nullable{System.Int32})" />
-      <MemberSignature Language="VB.NET" Value="Public Sub New (pythonScriptFilePath As String, Optional pythonInterpreterPath As String = null, Optional masterCommandLineArgs As String = null, Optional workerCommandLineArgs As String = null, Optional parameterServerCommandLineArgs As String = null, Optional workerCount As Nullable(Of Integer) = null, Optional parameterServerCount As Nullable(Of Integer) = null)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (pythonScriptFilePath As String, Optional pythonInterpreterPath As String = Nothing, Optional masterCommandLineArgs As String = Nothing, Optional workerCommandLineArgs As String = Nothing, Optional parameterServerCommandLineArgs As String = Nothing, Optional workerCount As Nullable(Of Integer) = Nothing, Optional parameterServerCount As Nullable(Of Integer) = Nothing)" />
       <MemberSignature Language="F#" Value="new Microsoft.Azure.Management.BatchAI.Models.TensorFlowSettings : string * string * string * string * string * Nullable&lt;int&gt; * Nullable&lt;int&gt; -&gt; Microsoft.Azure.Management.BatchAI.Models.TensorFlowSettings" Usage="new Microsoft.Azure.Management.BatchAI.Models.TensorFlowSettings (pythonScriptFilePath, pythonInterpreterPath, masterCommandLineArgs, workerCommandLineArgs, parameterServerCommandLineArgs, workerCount, parameterServerCount)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.BatchAI</AssemblyName>
-        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="pythonScriptFilePath" Type="System.String" />
-        <Parameter Name="masterCommandLineArgs" Type="System.String" />
         <Parameter Name="pythonInterpreterPath" Type="System.String" />
+        <Parameter Name="masterCommandLineArgs" Type="System.String" />
         <Parameter Name="workerCommandLineArgs" Type="System.String" />
         <Parameter Name="parameterServerCommandLineArgs" Type="System.String" />
         <Parameter Name="workerCount" Type="System.Nullable&lt;System.Int32&gt;" />
         <Parameter Name="parameterServerCount" Type="System.Nullable&lt;System.Int32&gt;" />
       </Parameters>
       <Docs>
-        <param name="pythonScriptFilePath">The path and file name of the
-            python script to execute the job.</param>
-        <param name="masterCommandLineArgs">Specifies the command line
-            arguments for the master task.</param>
-        <param name="pythonInterpreterPath">The path to python
-            interpreter.</param>
-        <param name="workerCommandLineArgs">Specifies the command line
-            arguments for the worker task.</param>
-        <param name="parameterServerCommandLineArgs">Specifies the command
-            line arguments for the parameter server task.</param>
-        <param name="workerCount">The number of worker tasks.</param>
-        <param name="parameterServerCount">The number of parmeter server
-            tasks.</param>
+        <param name="pythonScriptFilePath">Python script file path.</param>
+        <param name="pythonInterpreterPath">Python interpreter
+            path.</param>
+        <param name="masterCommandLineArgs">Master command line
+            arguments.</param>
+        <param name="workerCommandLineArgs">Worker command line
+            arguments.</param>
+        <param name="parameterServerCommandLineArgs">Parameter server
+            command line arguments.</param>
+        <param name="workerCount">Worker count.</param>
+        <param name="parameterServerCount">Parameter server count.</param>
         <summary>
             Initializes a new instance of the TensorFlowSettings class.
             </summary>
@@ -88,16 +81,15 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Management.BatchAI.Models.TensorFlowSettings.MasterCommandLineArgs" />
       <MemberSignature Language="VB.NET" Value="Public Property MasterCommandLineArgs As String" />
       <MemberSignature Language="F#" Value="member this.MasterCommandLineArgs : string with get, set" Usage="Microsoft.Azure.Management.BatchAI.Models.TensorFlowSettings.MasterCommandLineArgs" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ MasterCommandLineArgs { System::String ^ get(); void set(System::String ^ value); };" />
-      <MemberSignature Language="C++ CX" Value="public:&#xA; property Platform::String ^ MasterCommandLineArgs { Platform::String ^ get(); void set(Platform::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.BatchAI</AssemblyName>
-        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="masterCommandLineArgs")</AttributeName>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty(PropertyName="masterCommandLineArgs")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty(PropertyName="masterCommandLineArgs")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -105,11 +97,13 @@
       </ReturnValue>
       <Docs>
         <summary>
-            Gets or sets specifies the command line arguments for the master
-            task.
+            Gets or sets master command line arguments.
             </summary>
         <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <remarks>
+            Command line arguments that need to be passed to the python script
+            for the master task.
+            </remarks>
       </Docs>
     </Member>
     <Member MemberName="ParameterServerCommandLineArgs">
@@ -118,16 +112,15 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Management.BatchAI.Models.TensorFlowSettings.ParameterServerCommandLineArgs" />
       <MemberSignature Language="VB.NET" Value="Public Property ParameterServerCommandLineArgs As String" />
       <MemberSignature Language="F#" Value="member this.ParameterServerCommandLineArgs : string with get, set" Usage="Microsoft.Azure.Management.BatchAI.Models.TensorFlowSettings.ParameterServerCommandLineArgs" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ ParameterServerCommandLineArgs { System::String ^ get(); void set(System::String ^ value); };" />
-      <MemberSignature Language="C++ CX" Value="public:&#xA; property Platform::String ^ ParameterServerCommandLineArgs { Platform::String ^ get(); void set(Platform::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.BatchAI</AssemblyName>
-        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="parameterServerCommandLineArgs")</AttributeName>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty(PropertyName="parameterServerCommandLineArgs")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty(PropertyName="parameterServerCommandLineArgs")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -135,30 +128,30 @@
       </ReturnValue>
       <Docs>
         <summary>
-            Gets or sets specifies the command line arguments for the parameter
-            server task.
+            Gets or sets parameter server command line arguments.
             </summary>
         <value>To be added.</value>
         <remarks>
-            This property is optional for single machine training.
+            Command line arguments that need to be passed to the python script
+            for the parameter server. Optional for single process jobs.
             </remarks>
       </Docs>
     </Member>
     <Member MemberName="ParameterServerCount">
-      <MemberSignature Language="C#" Value="public Nullable&lt;int&gt; ParameterServerCount { get; set; }" />
+      <MemberSignature Language="C#" Value="public int? ParameterServerCount { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;int32&gt; ParameterServerCount" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Management.BatchAI.Models.TensorFlowSettings.ParameterServerCount" />
       <MemberSignature Language="VB.NET" Value="Public Property ParameterServerCount As Nullable(Of Integer)" />
       <MemberSignature Language="F#" Value="member this.ParameterServerCount : Nullable&lt;int&gt; with get, set" Usage="Microsoft.Azure.Management.BatchAI.Models.TensorFlowSettings.ParameterServerCount" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Nullable&lt;int&gt; ParameterServerCount { Nullable&lt;int&gt; get(); void set(Nullable&lt;int&gt; value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.BatchAI</AssemblyName>
-        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="parameterServerCount")</AttributeName>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty(PropertyName="parameterServerCount")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty(PropertyName="parameterServerCount")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -166,15 +159,14 @@
       </ReturnValue>
       <Docs>
         <summary>
-            Gets or sets the number of parmeter server tasks.
+            Gets or sets parameter server count.
             </summary>
         <value>To be added.</value>
         <remarks>
-            If specified, the value must be less than or equal to nodeCount. If
-            not specified, the default value is equal to 1 for distributed
-            TensorFlow training (This property is not applicable for single
-            machine training). This property can be specified only for
-            distributed TensorFlow training.
+            The number of parameter server tasks. If specified, the value must
+            be less than or equal to nodeCount. If not specified, the default
+            value is equal to 1 for distributed TensorFlow training. This
+            property can be specified only for distributed TensorFlow training.
             </remarks>
       </Docs>
     </Member>
@@ -184,16 +176,15 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Management.BatchAI.Models.TensorFlowSettings.PythonInterpreterPath" />
       <MemberSignature Language="VB.NET" Value="Public Property PythonInterpreterPath As String" />
       <MemberSignature Language="F#" Value="member this.PythonInterpreterPath : string with get, set" Usage="Microsoft.Azure.Management.BatchAI.Models.TensorFlowSettings.PythonInterpreterPath" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ PythonInterpreterPath { System::String ^ get(); void set(System::String ^ value); };" />
-      <MemberSignature Language="C++ CX" Value="public:&#xA; property Platform::String ^ PythonInterpreterPath { Platform::String ^ get(); void set(Platform::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.BatchAI</AssemblyName>
-        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="pythonInterpreterPath")</AttributeName>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty(PropertyName="pythonInterpreterPath")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty(PropertyName="pythonInterpreterPath")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -201,10 +192,12 @@
       </ReturnValue>
       <Docs>
         <summary>
-            Gets or sets the path to python interpreter.
+            Gets or sets python interpreter path.
             </summary>
         <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <remarks>
+            The path to the Python interpreter.
+            </remarks>
       </Docs>
     </Member>
     <Member MemberName="PythonScriptFilePath">
@@ -213,16 +206,15 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Management.BatchAI.Models.TensorFlowSettings.PythonScriptFilePath" />
       <MemberSignature Language="VB.NET" Value="Public Property PythonScriptFilePath As String" />
       <MemberSignature Language="F#" Value="member this.PythonScriptFilePath : string with get, set" Usage="Microsoft.Azure.Management.BatchAI.Models.TensorFlowSettings.PythonScriptFilePath" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ PythonScriptFilePath { System::String ^ get(); void set(System::String ^ value); };" />
-      <MemberSignature Language="C++ CX" Value="public:&#xA; property Platform::String ^ PythonScriptFilePath { Platform::String ^ get(); void set(Platform::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.BatchAI</AssemblyName>
-        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="pythonScriptFilePath")</AttributeName>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty(PropertyName="pythonScriptFilePath")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty(PropertyName="pythonScriptFilePath")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -230,11 +222,12 @@
       </ReturnValue>
       <Docs>
         <summary>
-            Gets or sets the path and file name of the python script to execute
-            the job.
+            Gets or sets python script file path.
             </summary>
         <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <remarks>
+            The python script to execute.
+            </remarks>
       </Docs>
     </Member>
     <Member MemberName="Validate">
@@ -243,13 +236,10 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Management.BatchAI.Models.TensorFlowSettings.Validate" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Sub Validate ()" />
       <MemberSignature Language="F#" Value="abstract member Validate : unit -&gt; unit&#xA;override this.Validate : unit -&gt; unit" Usage="tensorFlowSettings.Validate " />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Validate();" />
-      <MemberSignature Language="C++ CX" Value="public:&#xA; virtual void Validate();" />
-      <MemberSignature Language="C++ WINRT" Value=" virtual void Validate();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.BatchAI</AssemblyName>
-        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -271,16 +261,15 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Management.BatchAI.Models.TensorFlowSettings.WorkerCommandLineArgs" />
       <MemberSignature Language="VB.NET" Value="Public Property WorkerCommandLineArgs As String" />
       <MemberSignature Language="F#" Value="member this.WorkerCommandLineArgs : string with get, set" Usage="Microsoft.Azure.Management.BatchAI.Models.TensorFlowSettings.WorkerCommandLineArgs" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ WorkerCommandLineArgs { System::String ^ get(); void set(System::String ^ value); };" />
-      <MemberSignature Language="C++ CX" Value="public:&#xA; property Platform::String ^ WorkerCommandLineArgs { Platform::String ^ get(); void set(Platform::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.BatchAI</AssemblyName>
-        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="workerCommandLineArgs")</AttributeName>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty(PropertyName="workerCommandLineArgs")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty(PropertyName="workerCommandLineArgs")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -288,30 +277,30 @@
       </ReturnValue>
       <Docs>
         <summary>
-            Gets or sets specifies the command line arguments for the worker
-            task.
+            Gets or sets worker command line arguments.
             </summary>
         <value>To be added.</value>
         <remarks>
-            This property is optional for single machine training.
+            Command line arguments that need to be passed to the python script
+            for the worker task. Optional for single process jobs.
             </remarks>
       </Docs>
     </Member>
     <Member MemberName="WorkerCount">
-      <MemberSignature Language="C#" Value="public Nullable&lt;int&gt; WorkerCount { get; set; }" />
+      <MemberSignature Language="C#" Value="public int? WorkerCount { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;int32&gt; WorkerCount" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Management.BatchAI.Models.TensorFlowSettings.WorkerCount" />
       <MemberSignature Language="VB.NET" Value="Public Property WorkerCount As Nullable(Of Integer)" />
       <MemberSignature Language="F#" Value="member this.WorkerCount : Nullable&lt;int&gt; with get, set" Usage="Microsoft.Azure.Management.BatchAI.Models.TensorFlowSettings.WorkerCount" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Nullable&lt;int&gt; WorkerCount { Nullable&lt;int&gt; get(); void set(Nullable&lt;int&gt; value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.BatchAI</AssemblyName>
-        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="workerCount")</AttributeName>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty(PropertyName="workerCount")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty(PropertyName="workerCount")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -319,14 +308,14 @@
       </ReturnValue>
       <Docs>
         <summary>
-            Gets or sets the number of worker tasks.
+            Gets or sets worker count.
             </summary>
         <value>To be added.</value>
         <remarks>
-            If specified, the value must be less than or equal to (nodeCount *
-            numberOfGPUs per VM). If not specified, the default value is equal
-            to nodeCount. This property can be specified only for distributed
-            TensorFlow training
+            The number of worker tasks. If specified, the value must be less
+            than or equal to (nodeCount * numberOfGPUs per VM). If not
+            specified, the default value is equal to nodeCount. This property
+            can be specified only for distributed TensorFlow training.
             </remarks>
       </Docs>
     </Member>

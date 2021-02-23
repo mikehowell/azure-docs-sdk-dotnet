@@ -1,14 +1,13 @@
-﻿<Type Name="SiteConfigResource" FullName="Microsoft.Azure.Management.WebSites.Models.SiteConfigResource">
+<Type Name="SiteConfigResource" FullName="Microsoft.Azure.Management.WebSites.Models.SiteConfigResource">
   <TypeSignature Language="C#" Value="public class SiteConfigResource : Microsoft.Azure.Management.WebSites.Models.ProxyOnlyResource" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit SiteConfigResource extends Microsoft.Azure.Management.WebSites.Models.ProxyOnlyResource" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Azure.Management.WebSites.Models.SiteConfigResource" />
   <TypeSignature Language="VB.NET" Value="Public Class SiteConfigResource&#xA;Inherits ProxyOnlyResource" />
   <TypeSignature Language="F#" Value="type SiteConfigResource = class&#xA;    inherit ProxyOnlyResource" />
-  <TypeSignature Language="C++ CLI" Value="public ref class SiteConfigResource : Microsoft::Azure::Management::WebSites::Models::ProxyOnlyResource" />
-  <TypeSignature Language="C++ WINRT" Value="[Windows::Foundation::Metadata::WebHostHidden]&#xA;class SiteConfigResource : Microsoft::Azure::Management::WebSites::Models::ProxyOnlyResource" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Azure.Management.Websites</AssemblyName>
-    <AssemblyVersion>1.0.0.0</AssemblyVersion>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
+    <AssemblyVersion>3.1.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>Microsoft.Azure.Management.WebSites.Models.ProxyOnlyResource</BaseTypeName>
@@ -16,7 +15,8 @@
   <Interfaces />
   <Attributes>
     <Attribute>
-      <AttributeName>Microsoft.Rest.Serialization.JsonTransformation</AttributeName>
+      <AttributeName Language="C#">[Microsoft.Rest.Serialization.JsonTransformation]</AttributeName>
+      <AttributeName Language="F#">[&lt;Microsoft.Rest.Serialization.JsonTransformation&gt;]</AttributeName>
     </Attribute>
   </Attributes>
   <Docs>
@@ -31,13 +31,11 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Management.WebSites.Models.SiteConfigResource.#ctor" />
       <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; SiteConfigResource();" />
-      <MemberSignature Language="C++ CX" Value="public:&#xA; SiteConfigResource();" />
-      <MemberSignature Language="C++ WINRT" Value=" SiteConfigResource();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Websites</AssemblyName>
-        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>3.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
@@ -48,14 +46,16 @@
       </Docs>
     </Member>
     <Member MemberName=".ctor">
-      <MemberSignature Language="C#" Value="public SiteConfigResource (string id = null, string name = null, string kind = null, string type = null, Nullable&lt;int&gt; numberOfWorkers = null, System.Collections.Generic.IList&lt;string&gt; defaultDocuments = null, string netFrameworkVersion = null, string phpVersion = null, string pythonVersion = null, string nodeVersion = null, string linuxFxVersion = null, Nullable&lt;bool&gt; requestTracingEnabled = null, Nullable&lt;DateTime&gt; requestTracingExpirationTime = null, Nullable&lt;bool&gt; remoteDebuggingEnabled = null, string remoteDebuggingVersion = null, Nullable&lt;bool&gt; httpLoggingEnabled = null, Nullable&lt;int&gt; logsDirectorySizeLimit = null, Nullable&lt;bool&gt; detailedErrorLoggingEnabled = null, string publishingUsername = null, System.Collections.Generic.IList&lt;Microsoft.Azure.Management.WebSites.Models.NameValuePair&gt; appSettings = null, System.Collections.Generic.IList&lt;Microsoft.Azure.Management.WebSites.Models.ConnStringInfo&gt; connectionStrings = null, Microsoft.Azure.Management.WebSites.Models.SiteMachineKey machineKey = null, System.Collections.Generic.IList&lt;Microsoft.Azure.Management.WebSites.Models.HandlerMapping&gt; handlerMappings = null, string documentRoot = null, string scmType = null, Nullable&lt;bool&gt; use32BitWorkerProcess = null, Nullable&lt;bool&gt; webSocketsEnabled = null, Nullable&lt;bool&gt; alwaysOn = null, string javaVersion = null, string javaContainer = null, string javaContainerVersion = null, string appCommandLine = null, Nullable&lt;Microsoft.Azure.Management.WebSites.Models.ManagedPipelineMode&gt; managedPipelineMode = null, System.Collections.Generic.IList&lt;Microsoft.Azure.Management.WebSites.Models.VirtualApplication&gt; virtualApplications = null, Nullable&lt;Microsoft.Azure.Management.WebSites.Models.SiteLoadBalancing&gt; loadBalancing = null, Microsoft.Azure.Management.WebSites.Models.Experiments experiments = null, Microsoft.Azure.Management.WebSites.Models.SiteLimits limits = null, Nullable&lt;bool&gt; autoHealEnabled = null, Microsoft.Azure.Management.WebSites.Models.AutoHealRules autoHealRules = null, string tracingOptions = null, string vnetName = null, Microsoft.Azure.Management.WebSites.Models.CorsSettings cors = null, Microsoft.Azure.Management.WebSites.Models.PushSettings push = null, Microsoft.Azure.Management.WebSites.Models.ApiDefinitionInfo apiDefinition = null, string autoSwapSlotName = null, Nullable&lt;bool&gt; localMySqlEnabled = null, System.Collections.Generic.IList&lt;Microsoft.Azure.Management.WebSites.Models.IpSecurityRestriction&gt; ipSecurityRestrictions = null);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string id, string name, string kind, string type, valuetype System.Nullable`1&lt;int32&gt; numberOfWorkers, class System.Collections.Generic.IList`1&lt;string&gt; defaultDocuments, string netFrameworkVersion, string phpVersion, string pythonVersion, string nodeVersion, string linuxFxVersion, valuetype System.Nullable`1&lt;bool&gt; requestTracingEnabled, valuetype System.Nullable`1&lt;valuetype System.DateTime&gt; requestTracingExpirationTime, valuetype System.Nullable`1&lt;bool&gt; remoteDebuggingEnabled, string remoteDebuggingVersion, valuetype System.Nullable`1&lt;bool&gt; httpLoggingEnabled, valuetype System.Nullable`1&lt;int32&gt; logsDirectorySizeLimit, valuetype System.Nullable`1&lt;bool&gt; detailedErrorLoggingEnabled, string publishingUsername, class System.Collections.Generic.IList`1&lt;class Microsoft.Azure.Management.WebSites.Models.NameValuePair&gt; appSettings, class System.Collections.Generic.IList`1&lt;class Microsoft.Azure.Management.WebSites.Models.ConnStringInfo&gt; connectionStrings, class Microsoft.Azure.Management.WebSites.Models.SiteMachineKey machineKey, class System.Collections.Generic.IList`1&lt;class Microsoft.Azure.Management.WebSites.Models.HandlerMapping&gt; handlerMappings, string documentRoot, string scmType, valuetype System.Nullable`1&lt;bool&gt; use32BitWorkerProcess, valuetype System.Nullable`1&lt;bool&gt; webSocketsEnabled, valuetype System.Nullable`1&lt;bool&gt; alwaysOn, string javaVersion, string javaContainer, string javaContainerVersion, string appCommandLine, valuetype System.Nullable`1&lt;valuetype Microsoft.Azure.Management.WebSites.Models.ManagedPipelineMode&gt; managedPipelineMode, class System.Collections.Generic.IList`1&lt;class Microsoft.Azure.Management.WebSites.Models.VirtualApplication&gt; virtualApplications, valuetype System.Nullable`1&lt;valuetype Microsoft.Azure.Management.WebSites.Models.SiteLoadBalancing&gt; loadBalancing, class Microsoft.Azure.Management.WebSites.Models.Experiments experiments, class Microsoft.Azure.Management.WebSites.Models.SiteLimits limits, valuetype System.Nullable`1&lt;bool&gt; autoHealEnabled, class Microsoft.Azure.Management.WebSites.Models.AutoHealRules autoHealRules, string tracingOptions, string vnetName, class Microsoft.Azure.Management.WebSites.Models.CorsSettings cors, class Microsoft.Azure.Management.WebSites.Models.PushSettings push, class Microsoft.Azure.Management.WebSites.Models.ApiDefinitionInfo apiDefinition, string autoSwapSlotName, valuetype System.Nullable`1&lt;bool&gt; localMySqlEnabled, class System.Collections.Generic.IList`1&lt;class Microsoft.Azure.Management.WebSites.Models.IpSecurityRestriction&gt; ipSecurityRestrictions) cil managed" />
-      <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Management.WebSites.Models.SiteConfigResource.#ctor(System.String,System.String,System.String,System.String,System.Nullable{System.Int32},System.Collections.Generic.IList{System.String},System.String,System.String,System.String,System.String,System.String,System.Nullable{System.Boolean},System.Nullable{System.DateTime},System.Nullable{System.Boolean},System.String,System.Nullable{System.Boolean},System.Nullable{System.Int32},System.Nullable{System.Boolean},System.String,System.Collections.Generic.IList{Microsoft.Azure.Management.WebSites.Models.NameValuePair},System.Collections.Generic.IList{Microsoft.Azure.Management.WebSites.Models.ConnStringInfo},Microsoft.Azure.Management.WebSites.Models.SiteMachineKey,System.Collections.Generic.IList{Microsoft.Azure.Management.WebSites.Models.HandlerMapping},System.String,System.String,System.Nullable{System.Boolean},System.Nullable{System.Boolean},System.Nullable{System.Boolean},System.String,System.String,System.String,System.String,System.Nullable{Microsoft.Azure.Management.WebSites.Models.ManagedPipelineMode},System.Collections.Generic.IList{Microsoft.Azure.Management.WebSites.Models.VirtualApplication},System.Nullable{Microsoft.Azure.Management.WebSites.Models.SiteLoadBalancing},Microsoft.Azure.Management.WebSites.Models.Experiments,Microsoft.Azure.Management.WebSites.Models.SiteLimits,System.Nullable{System.Boolean},Microsoft.Azure.Management.WebSites.Models.AutoHealRules,System.String,System.String,Microsoft.Azure.Management.WebSites.Models.CorsSettings,Microsoft.Azure.Management.WebSites.Models.PushSettings,Microsoft.Azure.Management.WebSites.Models.ApiDefinitionInfo,System.String,System.Nullable{System.Boolean},System.Collections.Generic.IList{Microsoft.Azure.Management.WebSites.Models.IpSecurityRestriction})" />
-      <MemberSignature Language="F#" Value="new Microsoft.Azure.Management.WebSites.Models.SiteConfigResource : string * string * string * string * Nullable&lt;int&gt; * System.Collections.Generic.IList&lt;string&gt; * string * string * string * string * string * Nullable&lt;bool&gt; * Nullable&lt;DateTime&gt; * Nullable&lt;bool&gt; * string * Nullable&lt;bool&gt; * Nullable&lt;int&gt; * Nullable&lt;bool&gt; * string * System.Collections.Generic.IList&lt;Microsoft.Azure.Management.WebSites.Models.NameValuePair&gt; * System.Collections.Generic.IList&lt;Microsoft.Azure.Management.WebSites.Models.ConnStringInfo&gt; * Microsoft.Azure.Management.WebSites.Models.SiteMachineKey * System.Collections.Generic.IList&lt;Microsoft.Azure.Management.WebSites.Models.HandlerMapping&gt; * string * string * Nullable&lt;bool&gt; * Nullable&lt;bool&gt; * Nullable&lt;bool&gt; * string * string * string * string * Nullable&lt;Microsoft.Azure.Management.WebSites.Models.ManagedPipelineMode&gt; * System.Collections.Generic.IList&lt;Microsoft.Azure.Management.WebSites.Models.VirtualApplication&gt; * Nullable&lt;Microsoft.Azure.Management.WebSites.Models.SiteLoadBalancing&gt; * Microsoft.Azure.Management.WebSites.Models.Experiments * Microsoft.Azure.Management.WebSites.Models.SiteLimits * Nullable&lt;bool&gt; * Microsoft.Azure.Management.WebSites.Models.AutoHealRules * string * string * Microsoft.Azure.Management.WebSites.Models.CorsSettings * Microsoft.Azure.Management.WebSites.Models.PushSettings * Microsoft.Azure.Management.WebSites.Models.ApiDefinitionInfo * string * Nullable&lt;bool&gt; * System.Collections.Generic.IList&lt;Microsoft.Azure.Management.WebSites.Models.IpSecurityRestriction&gt; -&gt; Microsoft.Azure.Management.WebSites.Models.SiteConfigResource" Usage="new Microsoft.Azure.Management.WebSites.Models.SiteConfigResource (id, name, kind, type, numberOfWorkers, defaultDocuments, netFrameworkVersion, phpVersion, pythonVersion, nodeVersion, linuxFxVersion, requestTracingEnabled, requestTracingExpirationTime, remoteDebuggingEnabled, remoteDebuggingVersion, httpLoggingEnabled, logsDirectorySizeLimit, detailedErrorLoggingEnabled, publishingUsername, appSettings, connectionStrings, machineKey, handlerMappings, documentRoot, scmType, use32BitWorkerProcess, webSocketsEnabled, alwaysOn, javaVersion, javaContainer, javaContainerVersion, appCommandLine, managedPipelineMode, virtualApplications, loadBalancing, experiments, limits, autoHealEnabled, autoHealRules, tracingOptions, vnetName, cors, push, apiDefinition, autoSwapSlotName, localMySqlEnabled, ipSecurityRestrictions)" />
+      <MemberSignature Language="C#" Value="public SiteConfigResource (string id = default, string name = default, string kind = default, string type = default, int? numberOfWorkers = default, System.Collections.Generic.IList&lt;string&gt; defaultDocuments = default, string netFrameworkVersion = default, string phpVersion = default, string pythonVersion = default, string nodeVersion = default, string powerShellVersion = default, string linuxFxVersion = default, string windowsFxVersion = default, bool? requestTracingEnabled = default, DateTime? requestTracingExpirationTime = default, bool? remoteDebuggingEnabled = default, string remoteDebuggingVersion = default, bool? httpLoggingEnabled = default, int? logsDirectorySizeLimit = default, bool? detailedErrorLoggingEnabled = default, string publishingUsername = default, System.Collections.Generic.IList&lt;Microsoft.Azure.Management.WebSites.Models.NameValuePair&gt; appSettings = default, System.Collections.Generic.IList&lt;Microsoft.Azure.Management.WebSites.Models.ConnStringInfo&gt; connectionStrings = default, Microsoft.Azure.Management.WebSites.Models.SiteMachineKey machineKey = default, System.Collections.Generic.IList&lt;Microsoft.Azure.Management.WebSites.Models.HandlerMapping&gt; handlerMappings = default, string documentRoot = default, string scmType = default, bool? use32BitWorkerProcess = default, bool? webSocketsEnabled = default, bool? alwaysOn = default, string javaVersion = default, string javaContainer = default, string javaContainerVersion = default, string appCommandLine = default, Microsoft.Azure.Management.WebSites.Models.ManagedPipelineMode? managedPipelineMode = default, System.Collections.Generic.IList&lt;Microsoft.Azure.Management.WebSites.Models.VirtualApplication&gt; virtualApplications = default, Microsoft.Azure.Management.WebSites.Models.SiteLoadBalancing? loadBalancing = default, Microsoft.Azure.Management.WebSites.Models.Experiments experiments = default, Microsoft.Azure.Management.WebSites.Models.SiteLimits limits = default, bool? autoHealEnabled = default, Microsoft.Azure.Management.WebSites.Models.AutoHealRules autoHealRules = default, string tracingOptions = default, string vnetName = default, Microsoft.Azure.Management.WebSites.Models.CorsSettings cors = default, Microsoft.Azure.Management.WebSites.Models.PushSettings push = default, Microsoft.Azure.Management.WebSites.Models.ApiDefinitionInfo apiDefinition = default, Microsoft.Azure.Management.WebSites.Models.ApiManagementConfig apiManagementConfig = default, string autoSwapSlotName = default, bool? localMySqlEnabled = default, int? managedServiceIdentityId = default, int? xManagedServiceIdentityId = default, System.Collections.Generic.IList&lt;Microsoft.Azure.Management.WebSites.Models.IpSecurityRestriction&gt; ipSecurityRestrictions = default, System.Collections.Generic.IList&lt;Microsoft.Azure.Management.WebSites.Models.IpSecurityRestriction&gt; scmIpSecurityRestrictions = default, bool? scmIpSecurityRestrictionsUseMain = default, bool? http20Enabled = default, string minTlsVersion = default, string ftpsState = default, int? preWarmedInstanceCount = default, string healthCheckPath = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string id, string name, string kind, string type, valuetype System.Nullable`1&lt;int32&gt; numberOfWorkers, class System.Collections.Generic.IList`1&lt;string&gt; defaultDocuments, string netFrameworkVersion, string phpVersion, string pythonVersion, string nodeVersion, string powerShellVersion, string linuxFxVersion, string windowsFxVersion, valuetype System.Nullable`1&lt;bool&gt; requestTracingEnabled, valuetype System.Nullable`1&lt;valuetype System.DateTime&gt; requestTracingExpirationTime, valuetype System.Nullable`1&lt;bool&gt; remoteDebuggingEnabled, string remoteDebuggingVersion, valuetype System.Nullable`1&lt;bool&gt; httpLoggingEnabled, valuetype System.Nullable`1&lt;int32&gt; logsDirectorySizeLimit, valuetype System.Nullable`1&lt;bool&gt; detailedErrorLoggingEnabled, string publishingUsername, class System.Collections.Generic.IList`1&lt;class Microsoft.Azure.Management.WebSites.Models.NameValuePair&gt; appSettings, class System.Collections.Generic.IList`1&lt;class Microsoft.Azure.Management.WebSites.Models.ConnStringInfo&gt; connectionStrings, class Microsoft.Azure.Management.WebSites.Models.SiteMachineKey machineKey, class System.Collections.Generic.IList`1&lt;class Microsoft.Azure.Management.WebSites.Models.HandlerMapping&gt; handlerMappings, string documentRoot, string scmType, valuetype System.Nullable`1&lt;bool&gt; use32BitWorkerProcess, valuetype System.Nullable`1&lt;bool&gt; webSocketsEnabled, valuetype System.Nullable`1&lt;bool&gt; alwaysOn, string javaVersion, string javaContainer, string javaContainerVersion, string appCommandLine, valuetype System.Nullable`1&lt;valuetype Microsoft.Azure.Management.WebSites.Models.ManagedPipelineMode&gt; managedPipelineMode, class System.Collections.Generic.IList`1&lt;class Microsoft.Azure.Management.WebSites.Models.VirtualApplication&gt; virtualApplications, valuetype System.Nullable`1&lt;valuetype Microsoft.Azure.Management.WebSites.Models.SiteLoadBalancing&gt; loadBalancing, class Microsoft.Azure.Management.WebSites.Models.Experiments experiments, class Microsoft.Azure.Management.WebSites.Models.SiteLimits limits, valuetype System.Nullable`1&lt;bool&gt; autoHealEnabled, class Microsoft.Azure.Management.WebSites.Models.AutoHealRules autoHealRules, string tracingOptions, string vnetName, class Microsoft.Azure.Management.WebSites.Models.CorsSettings cors, class Microsoft.Azure.Management.WebSites.Models.PushSettings push, class Microsoft.Azure.Management.WebSites.Models.ApiDefinitionInfo apiDefinition, class Microsoft.Azure.Management.WebSites.Models.ApiManagementConfig apiManagementConfig, string autoSwapSlotName, valuetype System.Nullable`1&lt;bool&gt; localMySqlEnabled, valuetype System.Nullable`1&lt;int32&gt; managedServiceIdentityId, valuetype System.Nullable`1&lt;int32&gt; xManagedServiceIdentityId, class System.Collections.Generic.IList`1&lt;class Microsoft.Azure.Management.WebSites.Models.IpSecurityRestriction&gt; ipSecurityRestrictions, class System.Collections.Generic.IList`1&lt;class Microsoft.Azure.Management.WebSites.Models.IpSecurityRestriction&gt; scmIpSecurityRestrictions, valuetype System.Nullable`1&lt;bool&gt; scmIpSecurityRestrictionsUseMain, valuetype System.Nullable`1&lt;bool&gt; http20Enabled, string minTlsVersion, string ftpsState, valuetype System.Nullable`1&lt;int32&gt; preWarmedInstanceCount, string healthCheckPath) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Management.WebSites.Models.SiteConfigResource.#ctor(System.String,System.String,System.String,System.String,System.Nullable{System.Int32},System.Collections.Generic.IList{System.String},System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.Nullable{System.Boolean},System.Nullable{System.DateTime},System.Nullable{System.Boolean},System.String,System.Nullable{System.Boolean},System.Nullable{System.Int32},System.Nullable{System.Boolean},System.String,System.Collections.Generic.IList{Microsoft.Azure.Management.WebSites.Models.NameValuePair},System.Collections.Generic.IList{Microsoft.Azure.Management.WebSites.Models.ConnStringInfo},Microsoft.Azure.Management.WebSites.Models.SiteMachineKey,System.Collections.Generic.IList{Microsoft.Azure.Management.WebSites.Models.HandlerMapping},System.String,System.String,System.Nullable{System.Boolean},System.Nullable{System.Boolean},System.Nullable{System.Boolean},System.String,System.String,System.String,System.String,System.Nullable{Microsoft.Azure.Management.WebSites.Models.ManagedPipelineMode},System.Collections.Generic.IList{Microsoft.Azure.Management.WebSites.Models.VirtualApplication},System.Nullable{Microsoft.Azure.Management.WebSites.Models.SiteLoadBalancing},Microsoft.Azure.Management.WebSites.Models.Experiments,Microsoft.Azure.Management.WebSites.Models.SiteLimits,System.Nullable{System.Boolean},Microsoft.Azure.Management.WebSites.Models.AutoHealRules,System.String,System.String,Microsoft.Azure.Management.WebSites.Models.CorsSettings,Microsoft.Azure.Management.WebSites.Models.PushSettings,Microsoft.Azure.Management.WebSites.Models.ApiDefinitionInfo,Microsoft.Azure.Management.WebSites.Models.ApiManagementConfig,System.String,System.Nullable{System.Boolean},System.Nullable{System.Int32},System.Nullable{System.Int32},System.Collections.Generic.IList{Microsoft.Azure.Management.WebSites.Models.IpSecurityRestriction},System.Collections.Generic.IList{Microsoft.Azure.Management.WebSites.Models.IpSecurityRestriction},System.Nullable{System.Boolean},System.Nullable{System.Boolean},System.String,System.String,System.Nullable{System.Int32},System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (Optional id As String = Nothing, Optional name As String = Nothing, Optional kind As String = Nothing, Optional type As String = Nothing, Optional numberOfWorkers As Nullable(Of Integer) = Nothing, Optional defaultDocuments As IList(Of String) = Nothing, Optional netFrameworkVersion As String = Nothing, Optional phpVersion As String = Nothing, Optional pythonVersion As String = Nothing, Optional nodeVersion As String = Nothing, Optional powerShellVersion As String = Nothing, Optional linuxFxVersion As String = Nothing, Optional windowsFxVersion As String = Nothing, Optional requestTracingEnabled As Nullable(Of Boolean) = Nothing, Optional requestTracingExpirationTime As Nullable(Of DateTime) = Nothing, Optional remoteDebuggingEnabled As Nullable(Of Boolean) = Nothing, Optional remoteDebuggingVersion As String = Nothing, Optional httpLoggingEnabled As Nullable(Of Boolean) = Nothing, Optional logsDirectorySizeLimit As Nullable(Of Integer) = Nothing, Optional detailedErrorLoggingEnabled As Nullable(Of Boolean) = Nothing, Optional publishingUsername As String = Nothing, Optional appSettings As IList(Of NameValuePair) = Nothing, Optional connectionStrings As IList(Of ConnStringInfo) = Nothing, Optional machineKey As SiteMachineKey = Nothing, Optional handlerMappings As IList(Of HandlerMapping) = Nothing, Optional documentRoot As String = Nothing, Optional scmType As String = Nothing, Optional use32BitWorkerProcess As Nullable(Of Boolean) = Nothing, Optional webSocketsEnabled As Nullable(Of Boolean) = Nothing, Optional alwaysOn As Nullable(Of Boolean) = Nothing, Optional javaVersion As String = Nothing, Optional javaContainer As String = Nothing, Optional javaContainerVersion As String = Nothing, Optional appCommandLine As String = Nothing, Optional managedPipelineMode As Nullable(Of ManagedPipelineMode) = Nothing, Optional virtualApplications As IList(Of VirtualApplication) = Nothing, Optional loadBalancing As Nullable(Of SiteLoadBalancing) = Nothing, Optional experiments As Experiments = Nothing, Optional limits As SiteLimits = Nothing, Optional autoHealEnabled As Nullable(Of Boolean) = Nothing, Optional autoHealRules As AutoHealRules = Nothing, Optional tracingOptions As String = Nothing, Optional vnetName As String = Nothing, Optional cors As CorsSettings = Nothing, Optional push As PushSettings = Nothing, Optional apiDefinition As ApiDefinitionInfo = Nothing, Optional apiManagementConfig As ApiManagementConfig = Nothing, Optional autoSwapSlotName As String = Nothing, Optional localMySqlEnabled As Nullable(Of Boolean) = Nothing, Optional managedServiceIdentityId As Nullable(Of Integer) = Nothing, Optional xManagedServiceIdentityId As Nullable(Of Integer) = Nothing, Optional ipSecurityRestrictions As IList(Of IpSecurityRestriction) = Nothing, Optional scmIpSecurityRestrictions As IList(Of IpSecurityRestriction) = Nothing, Optional scmIpSecurityRestrictionsUseMain As Nullable(Of Boolean) = Nothing, Optional http20Enabled As Nullable(Of Boolean) = Nothing, Optional minTlsVersion As String = Nothing, Optional ftpsState As String = Nothing, Optional preWarmedInstanceCount As Nullable(Of Integer) = Nothing, Optional healthCheckPath As String = Nothing)" />
+      <MemberSignature Language="F#" Value="new Microsoft.Azure.Management.WebSites.Models.SiteConfigResource : string * string * string * string * Nullable&lt;int&gt; * System.Collections.Generic.IList&lt;string&gt; * string * string * string * string * string * string * string * Nullable&lt;bool&gt; * Nullable&lt;DateTime&gt; * Nullable&lt;bool&gt; * string * Nullable&lt;bool&gt; * Nullable&lt;int&gt; * Nullable&lt;bool&gt; * string * System.Collections.Generic.IList&lt;Microsoft.Azure.Management.WebSites.Models.NameValuePair&gt; * System.Collections.Generic.IList&lt;Microsoft.Azure.Management.WebSites.Models.ConnStringInfo&gt; * Microsoft.Azure.Management.WebSites.Models.SiteMachineKey * System.Collections.Generic.IList&lt;Microsoft.Azure.Management.WebSites.Models.HandlerMapping&gt; * string * string * Nullable&lt;bool&gt; * Nullable&lt;bool&gt; * Nullable&lt;bool&gt; * string * string * string * string * Nullable&lt;Microsoft.Azure.Management.WebSites.Models.ManagedPipelineMode&gt; * System.Collections.Generic.IList&lt;Microsoft.Azure.Management.WebSites.Models.VirtualApplication&gt; * Nullable&lt;Microsoft.Azure.Management.WebSites.Models.SiteLoadBalancing&gt; * Microsoft.Azure.Management.WebSites.Models.Experiments * Microsoft.Azure.Management.WebSites.Models.SiteLimits * Nullable&lt;bool&gt; * Microsoft.Azure.Management.WebSites.Models.AutoHealRules * string * string * Microsoft.Azure.Management.WebSites.Models.CorsSettings * Microsoft.Azure.Management.WebSites.Models.PushSettings * Microsoft.Azure.Management.WebSites.Models.ApiDefinitionInfo * Microsoft.Azure.Management.WebSites.Models.ApiManagementConfig * string * Nullable&lt;bool&gt; * Nullable&lt;int&gt; * Nullable&lt;int&gt; * System.Collections.Generic.IList&lt;Microsoft.Azure.Management.WebSites.Models.IpSecurityRestriction&gt; * System.Collections.Generic.IList&lt;Microsoft.Azure.Management.WebSites.Models.IpSecurityRestriction&gt; * Nullable&lt;bool&gt; * Nullable&lt;bool&gt; * string * string * Nullable&lt;int&gt; * string -&gt; Microsoft.Azure.Management.WebSites.Models.SiteConfigResource" Usage="new Microsoft.Azure.Management.WebSites.Models.SiteConfigResource (id, name, kind, type, numberOfWorkers, defaultDocuments, netFrameworkVersion, phpVersion, pythonVersion, nodeVersion, powerShellVersion, linuxFxVersion, windowsFxVersion, requestTracingEnabled, requestTracingExpirationTime, remoteDebuggingEnabled, remoteDebuggingVersion, httpLoggingEnabled, logsDirectorySizeLimit, detailedErrorLoggingEnabled, publishingUsername, appSettings, connectionStrings, machineKey, handlerMappings, documentRoot, scmType, use32BitWorkerProcess, webSocketsEnabled, alwaysOn, javaVersion, javaContainer, javaContainerVersion, appCommandLine, managedPipelineMode, virtualApplications, loadBalancing, experiments, limits, autoHealEnabled, autoHealRules, tracingOptions, vnetName, cors, push, apiDefinition, apiManagementConfig, autoSwapSlotName, localMySqlEnabled, managedServiceIdentityId, xManagedServiceIdentityId, ipSecurityRestrictions, scmIpSecurityRestrictions, scmIpSecurityRestrictionsUseMain, http20Enabled, minTlsVersion, ftpsState, preWarmedInstanceCount, healthCheckPath)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Websites</AssemblyName>
-        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>3.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="id" Type="System.String" />
@@ -68,7 +68,9 @@
         <Parameter Name="phpVersion" Type="System.String" />
         <Parameter Name="pythonVersion" Type="System.String" />
         <Parameter Name="nodeVersion" Type="System.String" />
+        <Parameter Name="powerShellVersion" Type="System.String" />
         <Parameter Name="linuxFxVersion" Type="System.String" />
+        <Parameter Name="windowsFxVersion" Type="System.String" />
         <Parameter Name="requestTracingEnabled" Type="System.Nullable&lt;System.Boolean&gt;" />
         <Parameter Name="requestTracingExpirationTime" Type="System.Nullable&lt;System.DateTime&gt;" />
         <Parameter Name="remoteDebuggingEnabled" Type="System.Nullable&lt;System.Boolean&gt;" />
@@ -102,9 +104,19 @@
         <Parameter Name="cors" Type="Microsoft.Azure.Management.WebSites.Models.CorsSettings" />
         <Parameter Name="push" Type="Microsoft.Azure.Management.WebSites.Models.PushSettings" />
         <Parameter Name="apiDefinition" Type="Microsoft.Azure.Management.WebSites.Models.ApiDefinitionInfo" />
+        <Parameter Name="apiManagementConfig" Type="Microsoft.Azure.Management.WebSites.Models.ApiManagementConfig" />
         <Parameter Name="autoSwapSlotName" Type="System.String" />
         <Parameter Name="localMySqlEnabled" Type="System.Nullable&lt;System.Boolean&gt;" />
+        <Parameter Name="managedServiceIdentityId" Type="System.Nullable&lt;System.Int32&gt;" />
+        <Parameter Name="xManagedServiceIdentityId" Type="System.Nullable&lt;System.Int32&gt;" />
         <Parameter Name="ipSecurityRestrictions" Type="System.Collections.Generic.IList&lt;Microsoft.Azure.Management.WebSites.Models.IpSecurityRestriction&gt;" />
+        <Parameter Name="scmIpSecurityRestrictions" Type="System.Collections.Generic.IList&lt;Microsoft.Azure.Management.WebSites.Models.IpSecurityRestriction&gt;" />
+        <Parameter Name="scmIpSecurityRestrictionsUseMain" Type="System.Nullable&lt;System.Boolean&gt;" />
+        <Parameter Name="http20Enabled" Type="System.Nullable&lt;System.Boolean&gt;" />
+        <Parameter Name="minTlsVersion" Type="System.String" />
+        <Parameter Name="ftpsState" Type="System.String" />
+        <Parameter Name="preWarmedInstanceCount" Type="System.Nullable&lt;System.Int32&gt;" />
+        <Parameter Name="healthCheckPath" Type="System.String" />
       </Parameters>
       <Docs>
         <param name="id">Resource Id.</param>
@@ -117,7 +129,10 @@
         <param name="phpVersion">Version of PHP.</param>
         <param name="pythonVersion">Version of Python.</param>
         <param name="nodeVersion">Version of Node.js.</param>
+        <param name="powerShellVersion">Version of PowerShell.</param>
         <param name="linuxFxVersion">Linux App Framework and
+            version</param>
+        <param name="windowsFxVersion">Xenon App Framework and
             version</param>
         <param name="requestTracingEnabled">&lt;code&gt;true&lt;/code&gt;
             if request tracing is enabled; otherwise,
@@ -146,7 +161,7 @@
         <param name="scmType">SCM type. Possible values include: 'None',
             'Dropbox', 'Tfs', 'LocalGit', 'GitHub', 'CodePlexGit',
             'CodePlexHg', 'BitbucketGit', 'BitbucketHg', 'ExternalGit',
-            'ExternalHg', 'OneDrive', 'VSO'</param>
+            'ExternalHg', 'OneDrive', 'VSO', 'VSTSRM'</param>
         <param name="use32BitWorkerProcess">&lt;code&gt;true&lt;/code&gt;
             to use 32-bit worker process; otherwise,
             &lt;code&gt;false&lt;/code&gt;.</param>
@@ -165,7 +180,7 @@
         <param name="loadBalancing">Site load balancing. Possible values
             include: 'WeightedRoundRobin', 'LeastRequests',
             'LeastResponseTime', 'WeightedTotalTraffic', 'RequestHash'</param>
-        <param name="experiments">This is work around for polymophic
+        <param name="experiments">This is work around for polymorphic
             types.</param>
         <param name="limits">Site limits.</param>
         <param name="autoHealEnabled">&lt;code&gt;true&lt;/code&gt; if Auto
@@ -178,12 +193,33 @@
         <param name="push">Push endpoint settings.</param>
         <param name="apiDefinition">Information about the formal API
             definition for the app.</param>
+        <param name="apiManagementConfig">Azure API management settings
+            linked to the app.</param>
         <param name="autoSwapSlotName">Auto-swap slot name.</param>
         <param name="localMySqlEnabled">&lt;code&gt;true&lt;/code&gt; to
             enable local MySQL; otherwise,
             &lt;code&gt;false&lt;/code&gt;.</param>
-        <param name="ipSecurityRestrictions">IP security
-            restrictions.</param>
+        <param name="managedServiceIdentityId">Managed Service Identity
+            Id</param>
+        <param name="xManagedServiceIdentityId">Explicit Managed Service
+            Identity Id</param>
+        <param name="ipSecurityRestrictions">IP security restrictions for
+            main.</param>
+        <param name="scmIpSecurityRestrictions">IP security restrictions
+            for scm.</param>
+        <param name="scmIpSecurityRestrictionsUseMain">IP security
+            restrictions for scm to use main.</param>
+        <param name="http20Enabled">Http20Enabled: configures a web site to
+            allow clients to connect over http2.0</param>
+        <param name="minTlsVersion">MinTlsVersion: configures the minimum
+            version of TLS required for SSL requests. Possible values include:
+            '1.0', '1.1', '1.2'</param>
+        <param name="ftpsState">State of FTP / FTPS service. Possible
+            values include: 'AllAllowed', 'FtpsOnly', 'Disabled'</param>
+        <param name="preWarmedInstanceCount">Number of preWarmed instances.
+            This setting only applies to the Consumption and Elastic
+            Plans</param>
+        <param name="healthCheckPath">Health check path</param>
         <summary>
             Initializes a new instance of the SiteConfigResource class.
             </summary>
@@ -191,20 +227,21 @@
       </Docs>
     </Member>
     <Member MemberName="AlwaysOn">
-      <MemberSignature Language="C#" Value="public Nullable&lt;bool&gt; AlwaysOn { get; set; }" />
+      <MemberSignature Language="C#" Value="public bool? AlwaysOn { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;bool&gt; AlwaysOn" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Management.WebSites.Models.SiteConfigResource.AlwaysOn" />
       <MemberSignature Language="VB.NET" Value="Public Property AlwaysOn As Nullable(Of Boolean)" />
       <MemberSignature Language="F#" Value="member this.AlwaysOn : Nullable&lt;bool&gt; with get, set" Usage="Microsoft.Azure.Management.WebSites.Models.SiteConfigResource.AlwaysOn" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Nullable&lt;bool&gt; AlwaysOn { Nullable&lt;bool&gt; get(); void set(Nullable&lt;bool&gt; value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Websites</AssemblyName>
-        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>3.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="properties.alwaysOn")</AttributeName>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty(PropertyName="properties.alwaysOn")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty(PropertyName="properties.alwaysOn")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -226,15 +263,16 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Management.WebSites.Models.SiteConfigResource.ApiDefinition" />
       <MemberSignature Language="VB.NET" Value="Public Property ApiDefinition As ApiDefinitionInfo" />
       <MemberSignature Language="F#" Value="member this.ApiDefinition : Microsoft.Azure.Management.WebSites.Models.ApiDefinitionInfo with get, set" Usage="Microsoft.Azure.Management.WebSites.Models.SiteConfigResource.ApiDefinition" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Azure::Management::WebSites::Models::ApiDefinitionInfo ^ ApiDefinition { Microsoft::Azure::Management::WebSites::Models::ApiDefinitionInfo ^ get(); void set(Microsoft::Azure::Management::WebSites::Models::ApiDefinitionInfo ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Websites</AssemblyName>
-        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>3.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="properties.apiDefinition")</AttributeName>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty(PropertyName="properties.apiDefinition")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty(PropertyName="properties.apiDefinition")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -249,22 +287,51 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <Member MemberName="ApiManagementConfig">
+      <MemberSignature Language="C#" Value="public Microsoft.Azure.Management.WebSites.Models.ApiManagementConfig ApiManagementConfig { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Azure.Management.WebSites.Models.ApiManagementConfig ApiManagementConfig" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Management.WebSites.Models.SiteConfigResource.ApiManagementConfig" />
+      <MemberSignature Language="VB.NET" Value="Public Property ApiManagementConfig As ApiManagementConfig" />
+      <MemberSignature Language="F#" Value="member this.ApiManagementConfig : Microsoft.Azure.Management.WebSites.Models.ApiManagementConfig with get, set" Usage="Microsoft.Azure.Management.WebSites.Models.SiteConfigResource.ApiManagementConfig" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Azure.Management.Websites</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>3.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty(PropertyName="properties.apiManagementConfig")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty(PropertyName="properties.apiManagementConfig")&gt;]</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Azure.Management.WebSites.Models.ApiManagementConfig</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets or sets azure API management settings linked to the app.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
     <Member MemberName="AppCommandLine">
       <MemberSignature Language="C#" Value="public string AppCommandLine { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string AppCommandLine" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Management.WebSites.Models.SiteConfigResource.AppCommandLine" />
       <MemberSignature Language="VB.NET" Value="Public Property AppCommandLine As String" />
       <MemberSignature Language="F#" Value="member this.AppCommandLine : string with get, set" Usage="Microsoft.Azure.Management.WebSites.Models.SiteConfigResource.AppCommandLine" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ AppCommandLine { System::String ^ get(); void set(System::String ^ value); };" />
-      <MemberSignature Language="C++ CX" Value="public:&#xA; property Platform::String ^ AppCommandLine { Platform::String ^ get(); void set(Platform::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Websites</AssemblyName>
-        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>3.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="properties.appCommandLine")</AttributeName>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty(PropertyName="properties.appCommandLine")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty(PropertyName="properties.appCommandLine")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -284,15 +351,16 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Management.WebSites.Models.SiteConfigResource.AppSettings" />
       <MemberSignature Language="VB.NET" Value="Public Property AppSettings As IList(Of NameValuePair)" />
       <MemberSignature Language="F#" Value="member this.AppSettings : System.Collections.Generic.IList&lt;Microsoft.Azure.Management.WebSites.Models.NameValuePair&gt; with get, set" Usage="Microsoft.Azure.Management.WebSites.Models.SiteConfigResource.AppSettings" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::Generic::IList&lt;Microsoft::Azure::Management::WebSites::Models::NameValuePair ^&gt; ^ AppSettings { System::Collections::Generic::IList&lt;Microsoft::Azure::Management::WebSites::Models::NameValuePair ^&gt; ^ get(); void set(System::Collections::Generic::IList&lt;Microsoft::Azure::Management::WebSites::Models::NameValuePair ^&gt; ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Websites</AssemblyName>
-        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>3.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="properties.appSettings")</AttributeName>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty(PropertyName="properties.appSettings")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty(PropertyName="properties.appSettings")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -307,20 +375,21 @@
       </Docs>
     </Member>
     <Member MemberName="AutoHealEnabled">
-      <MemberSignature Language="C#" Value="public Nullable&lt;bool&gt; AutoHealEnabled { get; set; }" />
+      <MemberSignature Language="C#" Value="public bool? AutoHealEnabled { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;bool&gt; AutoHealEnabled" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Management.WebSites.Models.SiteConfigResource.AutoHealEnabled" />
       <MemberSignature Language="VB.NET" Value="Public Property AutoHealEnabled As Nullable(Of Boolean)" />
       <MemberSignature Language="F#" Value="member this.AutoHealEnabled : Nullable&lt;bool&gt; with get, set" Usage="Microsoft.Azure.Management.WebSites.Models.SiteConfigResource.AutoHealEnabled" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Nullable&lt;bool&gt; AutoHealEnabled { Nullable&lt;bool&gt; get(); void set(Nullable&lt;bool&gt; value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Websites</AssemblyName>
-        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>3.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="properties.autoHealEnabled")</AttributeName>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty(PropertyName="properties.autoHealEnabled")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty(PropertyName="properties.autoHealEnabled")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -342,15 +411,16 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Management.WebSites.Models.SiteConfigResource.AutoHealRules" />
       <MemberSignature Language="VB.NET" Value="Public Property AutoHealRules As AutoHealRules" />
       <MemberSignature Language="F#" Value="member this.AutoHealRules : Microsoft.Azure.Management.WebSites.Models.AutoHealRules with get, set" Usage="Microsoft.Azure.Management.WebSites.Models.SiteConfigResource.AutoHealRules" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Azure::Management::WebSites::Models::AutoHealRules ^ AutoHealRules { Microsoft::Azure::Management::WebSites::Models::AutoHealRules ^ get(); void set(Microsoft::Azure::Management::WebSites::Models::AutoHealRules ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Websites</AssemblyName>
-        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>3.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="properties.autoHealRules")</AttributeName>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty(PropertyName="properties.autoHealRules")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty(PropertyName="properties.autoHealRules")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -370,16 +440,16 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Management.WebSites.Models.SiteConfigResource.AutoSwapSlotName" />
       <MemberSignature Language="VB.NET" Value="Public Property AutoSwapSlotName As String" />
       <MemberSignature Language="F#" Value="member this.AutoSwapSlotName : string with get, set" Usage="Microsoft.Azure.Management.WebSites.Models.SiteConfigResource.AutoSwapSlotName" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ AutoSwapSlotName { System::String ^ get(); void set(System::String ^ value); };" />
-      <MemberSignature Language="C++ CX" Value="public:&#xA; property Platform::String ^ AutoSwapSlotName { Platform::String ^ get(); void set(Platform::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Websites</AssemblyName>
-        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>3.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="properties.autoSwapSlotName")</AttributeName>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty(PropertyName="properties.autoSwapSlotName")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty(PropertyName="properties.autoSwapSlotName")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -399,15 +469,16 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Management.WebSites.Models.SiteConfigResource.ConnectionStrings" />
       <MemberSignature Language="VB.NET" Value="Public Property ConnectionStrings As IList(Of ConnStringInfo)" />
       <MemberSignature Language="F#" Value="member this.ConnectionStrings : System.Collections.Generic.IList&lt;Microsoft.Azure.Management.WebSites.Models.ConnStringInfo&gt; with get, set" Usage="Microsoft.Azure.Management.WebSites.Models.SiteConfigResource.ConnectionStrings" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::Generic::IList&lt;Microsoft::Azure::Management::WebSites::Models::ConnStringInfo ^&gt; ^ ConnectionStrings { System::Collections::Generic::IList&lt;Microsoft::Azure::Management::WebSites::Models::ConnStringInfo ^&gt; ^ get(); void set(System::Collections::Generic::IList&lt;Microsoft::Azure::Management::WebSites::Models::ConnStringInfo ^&gt; ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Websites</AssemblyName>
-        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>3.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="properties.connectionStrings")</AttributeName>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty(PropertyName="properties.connectionStrings")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty(PropertyName="properties.connectionStrings")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -427,15 +498,16 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Management.WebSites.Models.SiteConfigResource.Cors" />
       <MemberSignature Language="VB.NET" Value="Public Property Cors As CorsSettings" />
       <MemberSignature Language="F#" Value="member this.Cors : Microsoft.Azure.Management.WebSites.Models.CorsSettings with get, set" Usage="Microsoft.Azure.Management.WebSites.Models.SiteConfigResource.Cors" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Azure::Management::WebSites::Models::CorsSettings ^ Cors { Microsoft::Azure::Management::WebSites::Models::CorsSettings ^ get(); void set(Microsoft::Azure::Management::WebSites::Models::CorsSettings ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Websites</AssemblyName>
-        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>3.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="properties.cors")</AttributeName>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty(PropertyName="properties.cors")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty(PropertyName="properties.cors")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -455,15 +527,16 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Management.WebSites.Models.SiteConfigResource.DefaultDocuments" />
       <MemberSignature Language="VB.NET" Value="Public Property DefaultDocuments As IList(Of String)" />
       <MemberSignature Language="F#" Value="member this.DefaultDocuments : System.Collections.Generic.IList&lt;string&gt; with get, set" Usage="Microsoft.Azure.Management.WebSites.Models.SiteConfigResource.DefaultDocuments" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::Generic::IList&lt;System::String ^&gt; ^ DefaultDocuments { System::Collections::Generic::IList&lt;System::String ^&gt; ^ get(); void set(System::Collections::Generic::IList&lt;System::String ^&gt; ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Websites</AssemblyName>
-        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>3.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="properties.defaultDocuments")</AttributeName>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty(PropertyName="properties.defaultDocuments")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty(PropertyName="properties.defaultDocuments")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -478,20 +551,21 @@
       </Docs>
     </Member>
     <Member MemberName="DetailedErrorLoggingEnabled">
-      <MemberSignature Language="C#" Value="public Nullable&lt;bool&gt; DetailedErrorLoggingEnabled { get; set; }" />
+      <MemberSignature Language="C#" Value="public bool? DetailedErrorLoggingEnabled { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;bool&gt; DetailedErrorLoggingEnabled" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Management.WebSites.Models.SiteConfigResource.DetailedErrorLoggingEnabled" />
       <MemberSignature Language="VB.NET" Value="Public Property DetailedErrorLoggingEnabled As Nullable(Of Boolean)" />
       <MemberSignature Language="F#" Value="member this.DetailedErrorLoggingEnabled : Nullable&lt;bool&gt; with get, set" Usage="Microsoft.Azure.Management.WebSites.Models.SiteConfigResource.DetailedErrorLoggingEnabled" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Nullable&lt;bool&gt; DetailedErrorLoggingEnabled { Nullable&lt;bool&gt; get(); void set(Nullable&lt;bool&gt; value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Websites</AssemblyName>
-        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>3.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="properties.detailedErrorLoggingEnabled")</AttributeName>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty(PropertyName="properties.detailedErrorLoggingEnabled")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty(PropertyName="properties.detailedErrorLoggingEnabled")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -513,16 +587,16 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Management.WebSites.Models.SiteConfigResource.DocumentRoot" />
       <MemberSignature Language="VB.NET" Value="Public Property DocumentRoot As String" />
       <MemberSignature Language="F#" Value="member this.DocumentRoot : string with get, set" Usage="Microsoft.Azure.Management.WebSites.Models.SiteConfigResource.DocumentRoot" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ DocumentRoot { System::String ^ get(); void set(System::String ^ value); };" />
-      <MemberSignature Language="C++ CX" Value="public:&#xA; property Platform::String ^ DocumentRoot { Platform::String ^ get(); void set(Platform::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Websites</AssemblyName>
-        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>3.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="properties.documentRoot")</AttributeName>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty(PropertyName="properties.documentRoot")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty(PropertyName="properties.documentRoot")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -542,15 +616,16 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Management.WebSites.Models.SiteConfigResource.Experiments" />
       <MemberSignature Language="VB.NET" Value="Public Property Experiments As Experiments" />
       <MemberSignature Language="F#" Value="member this.Experiments : Microsoft.Azure.Management.WebSites.Models.Experiments with get, set" Usage="Microsoft.Azure.Management.WebSites.Models.SiteConfigResource.Experiments" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Azure::Management::WebSites::Models::Experiments ^ Experiments { Microsoft::Azure::Management::WebSites::Models::Experiments ^ get(); void set(Microsoft::Azure::Management::WebSites::Models::Experiments ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Websites</AssemblyName>
-        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>3.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="properties.experiments")</AttributeName>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty(PropertyName="properties.experiments")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty(PropertyName="properties.experiments")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -558,7 +633,37 @@
       </ReturnValue>
       <Docs>
         <summary>
-            Gets or sets this is work around for polymophic types.
+            Gets or sets this is work around for polymorphic types.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="FtpsState">
+      <MemberSignature Language="C#" Value="public string FtpsState { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string FtpsState" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Management.WebSites.Models.SiteConfigResource.FtpsState" />
+      <MemberSignature Language="VB.NET" Value="Public Property FtpsState As String" />
+      <MemberSignature Language="F#" Value="member this.FtpsState : string with get, set" Usage="Microsoft.Azure.Management.WebSites.Models.SiteConfigResource.FtpsState" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Azure.Management.Websites</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>3.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty(PropertyName="properties.ftpsState")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty(PropertyName="properties.ftpsState")&gt;]</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets or sets state of FTP / FTPS service. Possible values include:
+            'AllAllowed', 'FtpsOnly', 'Disabled'
             </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
@@ -570,15 +675,16 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Management.WebSites.Models.SiteConfigResource.HandlerMappings" />
       <MemberSignature Language="VB.NET" Value="Public Property HandlerMappings As IList(Of HandlerMapping)" />
       <MemberSignature Language="F#" Value="member this.HandlerMappings : System.Collections.Generic.IList&lt;Microsoft.Azure.Management.WebSites.Models.HandlerMapping&gt; with get, set" Usage="Microsoft.Azure.Management.WebSites.Models.SiteConfigResource.HandlerMappings" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::Generic::IList&lt;Microsoft::Azure::Management::WebSites::Models::HandlerMapping ^&gt; ^ HandlerMappings { System::Collections::Generic::IList&lt;Microsoft::Azure::Management::WebSites::Models::HandlerMapping ^&gt; ^ get(); void set(System::Collections::Generic::IList&lt;Microsoft::Azure::Management::WebSites::Models::HandlerMapping ^&gt; ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Websites</AssemblyName>
-        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>3.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="properties.handlerMappings")</AttributeName>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty(PropertyName="properties.handlerMappings")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty(PropertyName="properties.handlerMappings")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -592,21 +698,81 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <Member MemberName="HealthCheckPath">
+      <MemberSignature Language="C#" Value="public string HealthCheckPath { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string HealthCheckPath" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Management.WebSites.Models.SiteConfigResource.HealthCheckPath" />
+      <MemberSignature Language="VB.NET" Value="Public Property HealthCheckPath As String" />
+      <MemberSignature Language="F#" Value="member this.HealthCheckPath : string with get, set" Usage="Microsoft.Azure.Management.WebSites.Models.SiteConfigResource.HealthCheckPath" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Azure.Management.Websites</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>3.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty(PropertyName="properties.healthCheckPath")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty(PropertyName="properties.healthCheckPath")&gt;]</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets or sets health check path
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Http20Enabled">
+      <MemberSignature Language="C#" Value="public bool? Http20Enabled { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;bool&gt; Http20Enabled" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Management.WebSites.Models.SiteConfigResource.Http20Enabled" />
+      <MemberSignature Language="VB.NET" Value="Public Property Http20Enabled As Nullable(Of Boolean)" />
+      <MemberSignature Language="F#" Value="member this.Http20Enabled : Nullable&lt;bool&gt; with get, set" Usage="Microsoft.Azure.Management.WebSites.Models.SiteConfigResource.Http20Enabled" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Azure.Management.Websites</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>3.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty(PropertyName="properties.http20Enabled")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty(PropertyName="properties.http20Enabled")&gt;]</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Nullable&lt;System.Boolean&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets or sets http20Enabled: configures a web site to allow clients
+            to connect over http2.0
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
     <Member MemberName="HttpLoggingEnabled">
-      <MemberSignature Language="C#" Value="public Nullable&lt;bool&gt; HttpLoggingEnabled { get; set; }" />
+      <MemberSignature Language="C#" Value="public bool? HttpLoggingEnabled { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;bool&gt; HttpLoggingEnabled" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Management.WebSites.Models.SiteConfigResource.HttpLoggingEnabled" />
       <MemberSignature Language="VB.NET" Value="Public Property HttpLoggingEnabled As Nullable(Of Boolean)" />
       <MemberSignature Language="F#" Value="member this.HttpLoggingEnabled : Nullable&lt;bool&gt; with get, set" Usage="Microsoft.Azure.Management.WebSites.Models.SiteConfigResource.HttpLoggingEnabled" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Nullable&lt;bool&gt; HttpLoggingEnabled { Nullable&lt;bool&gt; get(); void set(Nullable&lt;bool&gt; value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Websites</AssemblyName>
-        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>3.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="properties.httpLoggingEnabled")</AttributeName>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty(PropertyName="properties.httpLoggingEnabled")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty(PropertyName="properties.httpLoggingEnabled")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -628,15 +794,16 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Management.WebSites.Models.SiteConfigResource.IpSecurityRestrictions" />
       <MemberSignature Language="VB.NET" Value="Public Property IpSecurityRestrictions As IList(Of IpSecurityRestriction)" />
       <MemberSignature Language="F#" Value="member this.IpSecurityRestrictions : System.Collections.Generic.IList&lt;Microsoft.Azure.Management.WebSites.Models.IpSecurityRestriction&gt; with get, set" Usage="Microsoft.Azure.Management.WebSites.Models.SiteConfigResource.IpSecurityRestrictions" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::Generic::IList&lt;Microsoft::Azure::Management::WebSites::Models::IpSecurityRestriction ^&gt; ^ IpSecurityRestrictions { System::Collections::Generic::IList&lt;Microsoft::Azure::Management::WebSites::Models::IpSecurityRestriction ^&gt; ^ get(); void set(System::Collections::Generic::IList&lt;Microsoft::Azure::Management::WebSites::Models::IpSecurityRestriction ^&gt; ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Websites</AssemblyName>
-        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>3.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="properties.ipSecurityRestrictions")</AttributeName>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty(PropertyName="properties.ipSecurityRestrictions")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty(PropertyName="properties.ipSecurityRestrictions")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -644,7 +811,7 @@
       </ReturnValue>
       <Docs>
         <summary>
-            Gets or sets IP security restrictions.
+            Gets or sets IP security restrictions for main.
             </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
@@ -656,16 +823,16 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Management.WebSites.Models.SiteConfigResource.JavaContainer" />
       <MemberSignature Language="VB.NET" Value="Public Property JavaContainer As String" />
       <MemberSignature Language="F#" Value="member this.JavaContainer : string with get, set" Usage="Microsoft.Azure.Management.WebSites.Models.SiteConfigResource.JavaContainer" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ JavaContainer { System::String ^ get(); void set(System::String ^ value); };" />
-      <MemberSignature Language="C++ CX" Value="public:&#xA; property Platform::String ^ JavaContainer { Platform::String ^ get(); void set(Platform::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Websites</AssemblyName>
-        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>3.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="properties.javaContainer")</AttributeName>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty(PropertyName="properties.javaContainer")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty(PropertyName="properties.javaContainer")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -685,16 +852,16 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Management.WebSites.Models.SiteConfigResource.JavaContainerVersion" />
       <MemberSignature Language="VB.NET" Value="Public Property JavaContainerVersion As String" />
       <MemberSignature Language="F#" Value="member this.JavaContainerVersion : string with get, set" Usage="Microsoft.Azure.Management.WebSites.Models.SiteConfigResource.JavaContainerVersion" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ JavaContainerVersion { System::String ^ get(); void set(System::String ^ value); };" />
-      <MemberSignature Language="C++ CX" Value="public:&#xA; property Platform::String ^ JavaContainerVersion { Platform::String ^ get(); void set(Platform::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Websites</AssemblyName>
-        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>3.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="properties.javaContainerVersion")</AttributeName>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty(PropertyName="properties.javaContainerVersion")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty(PropertyName="properties.javaContainerVersion")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -714,16 +881,16 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Management.WebSites.Models.SiteConfigResource.JavaVersion" />
       <MemberSignature Language="VB.NET" Value="Public Property JavaVersion As String" />
       <MemberSignature Language="F#" Value="member this.JavaVersion : string with get, set" Usage="Microsoft.Azure.Management.WebSites.Models.SiteConfigResource.JavaVersion" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ JavaVersion { System::String ^ get(); void set(System::String ^ value); };" />
-      <MemberSignature Language="C++ CX" Value="public:&#xA; property Platform::String ^ JavaVersion { Platform::String ^ get(); void set(Platform::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Websites</AssemblyName>
-        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>3.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="properties.javaVersion")</AttributeName>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty(PropertyName="properties.javaVersion")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty(PropertyName="properties.javaVersion")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -743,15 +910,16 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Management.WebSites.Models.SiteConfigResource.Limits" />
       <MemberSignature Language="VB.NET" Value="Public Property Limits As SiteLimits" />
       <MemberSignature Language="F#" Value="member this.Limits : Microsoft.Azure.Management.WebSites.Models.SiteLimits with get, set" Usage="Microsoft.Azure.Management.WebSites.Models.SiteConfigResource.Limits" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Azure::Management::WebSites::Models::SiteLimits ^ Limits { Microsoft::Azure::Management::WebSites::Models::SiteLimits ^ get(); void set(Microsoft::Azure::Management::WebSites::Models::SiteLimits ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Websites</AssemblyName>
-        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>3.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="properties.limits")</AttributeName>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty(PropertyName="properties.limits")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty(PropertyName="properties.limits")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -771,16 +939,16 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Management.WebSites.Models.SiteConfigResource.LinuxFxVersion" />
       <MemberSignature Language="VB.NET" Value="Public Property LinuxFxVersion As String" />
       <MemberSignature Language="F#" Value="member this.LinuxFxVersion : string with get, set" Usage="Microsoft.Azure.Management.WebSites.Models.SiteConfigResource.LinuxFxVersion" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ LinuxFxVersion { System::String ^ get(); void set(System::String ^ value); };" />
-      <MemberSignature Language="C++ CX" Value="public:&#xA; property Platform::String ^ LinuxFxVersion { Platform::String ^ get(); void set(Platform::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Websites</AssemblyName>
-        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>3.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="properties.linuxFxVersion")</AttributeName>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty(PropertyName="properties.linuxFxVersion")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty(PropertyName="properties.linuxFxVersion")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -795,20 +963,21 @@
       </Docs>
     </Member>
     <Member MemberName="LoadBalancing">
-      <MemberSignature Language="C#" Value="public Nullable&lt;Microsoft.Azure.Management.WebSites.Models.SiteLoadBalancing&gt; LoadBalancing { get; set; }" />
+      <MemberSignature Language="C#" Value="public Microsoft.Azure.Management.WebSites.Models.SiteLoadBalancing? LoadBalancing { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;valuetype Microsoft.Azure.Management.WebSites.Models.SiteLoadBalancing&gt; LoadBalancing" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Management.WebSites.Models.SiteConfigResource.LoadBalancing" />
       <MemberSignature Language="VB.NET" Value="Public Property LoadBalancing As Nullable(Of SiteLoadBalancing)" />
       <MemberSignature Language="F#" Value="member this.LoadBalancing : Nullable&lt;Microsoft.Azure.Management.WebSites.Models.SiteLoadBalancing&gt; with get, set" Usage="Microsoft.Azure.Management.WebSites.Models.SiteConfigResource.LoadBalancing" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Nullable&lt;Microsoft::Azure::Management::WebSites::Models::SiteLoadBalancing&gt; LoadBalancing { Nullable&lt;Microsoft::Azure::Management::WebSites::Models::SiteLoadBalancing&gt; get(); void set(Nullable&lt;Microsoft::Azure::Management::WebSites::Models::SiteLoadBalancing&gt; value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Websites</AssemblyName>
-        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>3.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="properties.loadBalancing")</AttributeName>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty(PropertyName="properties.loadBalancing")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty(PropertyName="properties.loadBalancing")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -825,20 +994,21 @@
       </Docs>
     </Member>
     <Member MemberName="LocalMySqlEnabled">
-      <MemberSignature Language="C#" Value="public Nullable&lt;bool&gt; LocalMySqlEnabled { get; set; }" />
+      <MemberSignature Language="C#" Value="public bool? LocalMySqlEnabled { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;bool&gt; LocalMySqlEnabled" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Management.WebSites.Models.SiteConfigResource.LocalMySqlEnabled" />
       <MemberSignature Language="VB.NET" Value="Public Property LocalMySqlEnabled As Nullable(Of Boolean)" />
       <MemberSignature Language="F#" Value="member this.LocalMySqlEnabled : Nullable&lt;bool&gt; with get, set" Usage="Microsoft.Azure.Management.WebSites.Models.SiteConfigResource.LocalMySqlEnabled" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Nullable&lt;bool&gt; LocalMySqlEnabled { Nullable&lt;bool&gt; get(); void set(Nullable&lt;bool&gt; value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Websites</AssemblyName>
-        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>3.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="properties.localMySqlEnabled")</AttributeName>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty(PropertyName="properties.localMySqlEnabled")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty(PropertyName="properties.localMySqlEnabled")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -855,20 +1025,21 @@
       </Docs>
     </Member>
     <Member MemberName="LogsDirectorySizeLimit">
-      <MemberSignature Language="C#" Value="public Nullable&lt;int&gt; LogsDirectorySizeLimit { get; set; }" />
+      <MemberSignature Language="C#" Value="public int? LogsDirectorySizeLimit { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;int32&gt; LogsDirectorySizeLimit" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Management.WebSites.Models.SiteConfigResource.LogsDirectorySizeLimit" />
       <MemberSignature Language="VB.NET" Value="Public Property LogsDirectorySizeLimit As Nullable(Of Integer)" />
       <MemberSignature Language="F#" Value="member this.LogsDirectorySizeLimit : Nullable&lt;int&gt; with get, set" Usage="Microsoft.Azure.Management.WebSites.Models.SiteConfigResource.LogsDirectorySizeLimit" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Nullable&lt;int&gt; LogsDirectorySizeLimit { Nullable&lt;int&gt; get(); void set(Nullable&lt;int&gt; value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Websites</AssemblyName>
-        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>3.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="properties.logsDirectorySizeLimit")</AttributeName>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty(PropertyName="properties.logsDirectorySizeLimit")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty(PropertyName="properties.logsDirectorySizeLimit")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -888,15 +1059,16 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Management.WebSites.Models.SiteConfigResource.MachineKey" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property MachineKey As SiteMachineKey" />
       <MemberSignature Language="F#" Value="member this.MachineKey : Microsoft.Azure.Management.WebSites.Models.SiteMachineKey" Usage="Microsoft.Azure.Management.WebSites.Models.SiteConfigResource.MachineKey" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Azure::Management::WebSites::Models::SiteMachineKey ^ MachineKey { Microsoft::Azure::Management::WebSites::Models::SiteMachineKey ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Websites</AssemblyName>
-        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>3.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="properties.machineKey")</AttributeName>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty(PropertyName="properties.machineKey")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty(PropertyName="properties.machineKey")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -911,20 +1083,21 @@
       </Docs>
     </Member>
     <Member MemberName="ManagedPipelineMode">
-      <MemberSignature Language="C#" Value="public Nullable&lt;Microsoft.Azure.Management.WebSites.Models.ManagedPipelineMode&gt; ManagedPipelineMode { get; set; }" />
+      <MemberSignature Language="C#" Value="public Microsoft.Azure.Management.WebSites.Models.ManagedPipelineMode? ManagedPipelineMode { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;valuetype Microsoft.Azure.Management.WebSites.Models.ManagedPipelineMode&gt; ManagedPipelineMode" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Management.WebSites.Models.SiteConfigResource.ManagedPipelineMode" />
       <MemberSignature Language="VB.NET" Value="Public Property ManagedPipelineMode As Nullable(Of ManagedPipelineMode)" />
       <MemberSignature Language="F#" Value="member this.ManagedPipelineMode : Nullable&lt;Microsoft.Azure.Management.WebSites.Models.ManagedPipelineMode&gt; with get, set" Usage="Microsoft.Azure.Management.WebSites.Models.SiteConfigResource.ManagedPipelineMode" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Nullable&lt;Microsoft::Azure::Management::WebSites::Models::ManagedPipelineMode&gt; ManagedPipelineMode { Nullable&lt;Microsoft::Azure::Management::WebSites::Models::ManagedPipelineMode&gt; get(); void set(Nullable&lt;Microsoft::Azure::Management::WebSites::Models::ManagedPipelineMode&gt; value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Websites</AssemblyName>
-        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>3.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="properties.managedPipelineMode")</AttributeName>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty(PropertyName="properties.managedPipelineMode")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty(PropertyName="properties.managedPipelineMode")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -939,22 +1112,82 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <Member MemberName="ManagedServiceIdentityId">
+      <MemberSignature Language="C#" Value="public int? ManagedServiceIdentityId { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;int32&gt; ManagedServiceIdentityId" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Management.WebSites.Models.SiteConfigResource.ManagedServiceIdentityId" />
+      <MemberSignature Language="VB.NET" Value="Public Property ManagedServiceIdentityId As Nullable(Of Integer)" />
+      <MemberSignature Language="F#" Value="member this.ManagedServiceIdentityId : Nullable&lt;int&gt; with get, set" Usage="Microsoft.Azure.Management.WebSites.Models.SiteConfigResource.ManagedServiceIdentityId" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Azure.Management.Websites</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>3.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty(PropertyName="properties.managedServiceIdentityId")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty(PropertyName="properties.managedServiceIdentityId")&gt;]</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Nullable&lt;System.Int32&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets or sets managed Service Identity Id
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="MinTlsVersion">
+      <MemberSignature Language="C#" Value="public string MinTlsVersion { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string MinTlsVersion" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Management.WebSites.Models.SiteConfigResource.MinTlsVersion" />
+      <MemberSignature Language="VB.NET" Value="Public Property MinTlsVersion As String" />
+      <MemberSignature Language="F#" Value="member this.MinTlsVersion : string with get, set" Usage="Microsoft.Azure.Management.WebSites.Models.SiteConfigResource.MinTlsVersion" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Azure.Management.Websites</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>3.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty(PropertyName="properties.minTlsVersion")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty(PropertyName="properties.minTlsVersion")&gt;]</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets or sets minTlsVersion: configures the minimum version of TLS
+            required for SSL requests. Possible values include: '1.0', '1.1',
+            '1.2'
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
     <Member MemberName="NetFrameworkVersion">
       <MemberSignature Language="C#" Value="public string NetFrameworkVersion { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string NetFrameworkVersion" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Management.WebSites.Models.SiteConfigResource.NetFrameworkVersion" />
       <MemberSignature Language="VB.NET" Value="Public Property NetFrameworkVersion As String" />
       <MemberSignature Language="F#" Value="member this.NetFrameworkVersion : string with get, set" Usage="Microsoft.Azure.Management.WebSites.Models.SiteConfigResource.NetFrameworkVersion" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ NetFrameworkVersion { System::String ^ get(); void set(System::String ^ value); };" />
-      <MemberSignature Language="C++ CX" Value="public:&#xA; property Platform::String ^ NetFrameworkVersion { Platform::String ^ get(); void set(Platform::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Websites</AssemblyName>
-        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>3.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="properties.netFrameworkVersion")</AttributeName>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty(PropertyName="properties.netFrameworkVersion")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty(PropertyName="properties.netFrameworkVersion")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -974,16 +1207,16 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Management.WebSites.Models.SiteConfigResource.NodeVersion" />
       <MemberSignature Language="VB.NET" Value="Public Property NodeVersion As String" />
       <MemberSignature Language="F#" Value="member this.NodeVersion : string with get, set" Usage="Microsoft.Azure.Management.WebSites.Models.SiteConfigResource.NodeVersion" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ NodeVersion { System::String ^ get(); void set(System::String ^ value); };" />
-      <MemberSignature Language="C++ CX" Value="public:&#xA; property Platform::String ^ NodeVersion { Platform::String ^ get(); void set(Platform::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Websites</AssemblyName>
-        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>3.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="properties.nodeVersion")</AttributeName>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty(PropertyName="properties.nodeVersion")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty(PropertyName="properties.nodeVersion")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -998,20 +1231,21 @@
       </Docs>
     </Member>
     <Member MemberName="NumberOfWorkers">
-      <MemberSignature Language="C#" Value="public Nullable&lt;int&gt; NumberOfWorkers { get; set; }" />
+      <MemberSignature Language="C#" Value="public int? NumberOfWorkers { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;int32&gt; NumberOfWorkers" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Management.WebSites.Models.SiteConfigResource.NumberOfWorkers" />
       <MemberSignature Language="VB.NET" Value="Public Property NumberOfWorkers As Nullable(Of Integer)" />
       <MemberSignature Language="F#" Value="member this.NumberOfWorkers : Nullable&lt;int&gt; with get, set" Usage="Microsoft.Azure.Management.WebSites.Models.SiteConfigResource.NumberOfWorkers" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Nullable&lt;int&gt; NumberOfWorkers { Nullable&lt;int&gt; get(); void set(Nullable&lt;int&gt; value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Websites</AssemblyName>
-        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>3.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="properties.numberOfWorkers")</AttributeName>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty(PropertyName="properties.numberOfWorkers")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty(PropertyName="properties.numberOfWorkers")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -1031,16 +1265,16 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Management.WebSites.Models.SiteConfigResource.PhpVersion" />
       <MemberSignature Language="VB.NET" Value="Public Property PhpVersion As String" />
       <MemberSignature Language="F#" Value="member this.PhpVersion : string with get, set" Usage="Microsoft.Azure.Management.WebSites.Models.SiteConfigResource.PhpVersion" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ PhpVersion { System::String ^ get(); void set(System::String ^ value); };" />
-      <MemberSignature Language="C++ CX" Value="public:&#xA; property Platform::String ^ PhpVersion { Platform::String ^ get(); void set(Platform::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Websites</AssemblyName>
-        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>3.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="properties.phpVersion")</AttributeName>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty(PropertyName="properties.phpVersion")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty(PropertyName="properties.phpVersion")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -1054,22 +1288,81 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <Member MemberName="PowerShellVersion">
+      <MemberSignature Language="C#" Value="public string PowerShellVersion { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string PowerShellVersion" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Management.WebSites.Models.SiteConfigResource.PowerShellVersion" />
+      <MemberSignature Language="VB.NET" Value="Public Property PowerShellVersion As String" />
+      <MemberSignature Language="F#" Value="member this.PowerShellVersion : string with get, set" Usage="Microsoft.Azure.Management.WebSites.Models.SiteConfigResource.PowerShellVersion" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Azure.Management.Websites</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>3.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty(PropertyName="properties.powerShellVersion")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty(PropertyName="properties.powerShellVersion")&gt;]</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets or sets version of PowerShell.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PreWarmedInstanceCount">
+      <MemberSignature Language="C#" Value="public int? PreWarmedInstanceCount { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;int32&gt; PreWarmedInstanceCount" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Management.WebSites.Models.SiteConfigResource.PreWarmedInstanceCount" />
+      <MemberSignature Language="VB.NET" Value="Public Property PreWarmedInstanceCount As Nullable(Of Integer)" />
+      <MemberSignature Language="F#" Value="member this.PreWarmedInstanceCount : Nullable&lt;int&gt; with get, set" Usage="Microsoft.Azure.Management.WebSites.Models.SiteConfigResource.PreWarmedInstanceCount" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Azure.Management.Websites</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>3.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty(PropertyName="properties.preWarmedInstanceCount")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty(PropertyName="properties.preWarmedInstanceCount")&gt;]</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Nullable&lt;System.Int32&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets or sets number of preWarmed instances.
+            This setting only applies to the Consumption and Elastic Plans
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
     <Member MemberName="PublishingUsername">
       <MemberSignature Language="C#" Value="public string PublishingUsername { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string PublishingUsername" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Management.WebSites.Models.SiteConfigResource.PublishingUsername" />
       <MemberSignature Language="VB.NET" Value="Public Property PublishingUsername As String" />
       <MemberSignature Language="F#" Value="member this.PublishingUsername : string with get, set" Usage="Microsoft.Azure.Management.WebSites.Models.SiteConfigResource.PublishingUsername" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ PublishingUsername { System::String ^ get(); void set(System::String ^ value); };" />
-      <MemberSignature Language="C++ CX" Value="public:&#xA; property Platform::String ^ PublishingUsername { Platform::String ^ get(); void set(Platform::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Websites</AssemblyName>
-        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>3.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="properties.publishingUsername")</AttributeName>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty(PropertyName="properties.publishingUsername")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty(PropertyName="properties.publishingUsername")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -1089,15 +1382,16 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Management.WebSites.Models.SiteConfigResource.Push" />
       <MemberSignature Language="VB.NET" Value="Public Property Push As PushSettings" />
       <MemberSignature Language="F#" Value="member this.Push : Microsoft.Azure.Management.WebSites.Models.PushSettings with get, set" Usage="Microsoft.Azure.Management.WebSites.Models.SiteConfigResource.Push" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Azure::Management::WebSites::Models::PushSettings ^ Push { Microsoft::Azure::Management::WebSites::Models::PushSettings ^ get(); void set(Microsoft::Azure::Management::WebSites::Models::PushSettings ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Websites</AssemblyName>
-        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>3.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="properties.push")</AttributeName>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty(PropertyName="properties.push")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty(PropertyName="properties.push")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -1117,16 +1411,16 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Management.WebSites.Models.SiteConfigResource.PythonVersion" />
       <MemberSignature Language="VB.NET" Value="Public Property PythonVersion As String" />
       <MemberSignature Language="F#" Value="member this.PythonVersion : string with get, set" Usage="Microsoft.Azure.Management.WebSites.Models.SiteConfigResource.PythonVersion" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ PythonVersion { System::String ^ get(); void set(System::String ^ value); };" />
-      <MemberSignature Language="C++ CX" Value="public:&#xA; property Platform::String ^ PythonVersion { Platform::String ^ get(); void set(Platform::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Websites</AssemblyName>
-        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>3.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="properties.pythonVersion")</AttributeName>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty(PropertyName="properties.pythonVersion")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty(PropertyName="properties.pythonVersion")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -1141,20 +1435,21 @@
       </Docs>
     </Member>
     <Member MemberName="RemoteDebuggingEnabled">
-      <MemberSignature Language="C#" Value="public Nullable&lt;bool&gt; RemoteDebuggingEnabled { get; set; }" />
+      <MemberSignature Language="C#" Value="public bool? RemoteDebuggingEnabled { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;bool&gt; RemoteDebuggingEnabled" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Management.WebSites.Models.SiteConfigResource.RemoteDebuggingEnabled" />
       <MemberSignature Language="VB.NET" Value="Public Property RemoteDebuggingEnabled As Nullable(Of Boolean)" />
       <MemberSignature Language="F#" Value="member this.RemoteDebuggingEnabled : Nullable&lt;bool&gt; with get, set" Usage="Microsoft.Azure.Management.WebSites.Models.SiteConfigResource.RemoteDebuggingEnabled" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Nullable&lt;bool&gt; RemoteDebuggingEnabled { Nullable&lt;bool&gt; get(); void set(Nullable&lt;bool&gt; value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Websites</AssemblyName>
-        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>3.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="properties.remoteDebuggingEnabled")</AttributeName>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty(PropertyName="properties.remoteDebuggingEnabled")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty(PropertyName="properties.remoteDebuggingEnabled")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -1176,16 +1471,16 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Management.WebSites.Models.SiteConfigResource.RemoteDebuggingVersion" />
       <MemberSignature Language="VB.NET" Value="Public Property RemoteDebuggingVersion As String" />
       <MemberSignature Language="F#" Value="member this.RemoteDebuggingVersion : string with get, set" Usage="Microsoft.Azure.Management.WebSites.Models.SiteConfigResource.RemoteDebuggingVersion" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ RemoteDebuggingVersion { System::String ^ get(); void set(System::String ^ value); };" />
-      <MemberSignature Language="C++ CX" Value="public:&#xA; property Platform::String ^ RemoteDebuggingVersion { Platform::String ^ get(); void set(Platform::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Websites</AssemblyName>
-        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>3.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="properties.remoteDebuggingVersion")</AttributeName>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty(PropertyName="properties.remoteDebuggingVersion")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty(PropertyName="properties.remoteDebuggingVersion")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -1200,20 +1495,21 @@
       </Docs>
     </Member>
     <Member MemberName="RequestTracingEnabled">
-      <MemberSignature Language="C#" Value="public Nullable&lt;bool&gt; RequestTracingEnabled { get; set; }" />
+      <MemberSignature Language="C#" Value="public bool? RequestTracingEnabled { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;bool&gt; RequestTracingEnabled" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Management.WebSites.Models.SiteConfigResource.RequestTracingEnabled" />
       <MemberSignature Language="VB.NET" Value="Public Property RequestTracingEnabled As Nullable(Of Boolean)" />
       <MemberSignature Language="F#" Value="member this.RequestTracingEnabled : Nullable&lt;bool&gt; with get, set" Usage="Microsoft.Azure.Management.WebSites.Models.SiteConfigResource.RequestTracingEnabled" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Nullable&lt;bool&gt; RequestTracingEnabled { Nullable&lt;bool&gt; get(); void set(Nullable&lt;bool&gt; value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Websites</AssemblyName>
-        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>3.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="properties.requestTracingEnabled")</AttributeName>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty(PropertyName="properties.requestTracingEnabled")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty(PropertyName="properties.requestTracingEnabled")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -1230,20 +1526,21 @@
       </Docs>
     </Member>
     <Member MemberName="RequestTracingExpirationTime">
-      <MemberSignature Language="C#" Value="public Nullable&lt;DateTime&gt; RequestTracingExpirationTime { get; set; }" />
+      <MemberSignature Language="C#" Value="public DateTime? RequestTracingExpirationTime { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;valuetype System.DateTime&gt; RequestTracingExpirationTime" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Management.WebSites.Models.SiteConfigResource.RequestTracingExpirationTime" />
       <MemberSignature Language="VB.NET" Value="Public Property RequestTracingExpirationTime As Nullable(Of DateTime)" />
       <MemberSignature Language="F#" Value="member this.RequestTracingExpirationTime : Nullable&lt;DateTime&gt; with get, set" Usage="Microsoft.Azure.Management.WebSites.Models.SiteConfigResource.RequestTracingExpirationTime" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Nullable&lt;DateTime&gt; RequestTracingExpirationTime { Nullable&lt;DateTime&gt; get(); void set(Nullable&lt;DateTime&gt; value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Websites</AssemblyName>
-        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>3.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="properties.requestTracingExpirationTime")</AttributeName>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty(PropertyName="properties.requestTracingExpirationTime")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty(PropertyName="properties.requestTracingExpirationTime")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -1257,22 +1554,80 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <Member MemberName="ScmIpSecurityRestrictions">
+      <MemberSignature Language="C#" Value="public System.Collections.Generic.IList&lt;Microsoft.Azure.Management.WebSites.Models.IpSecurityRestriction&gt; ScmIpSecurityRestrictions { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Generic.IList`1&lt;class Microsoft.Azure.Management.WebSites.Models.IpSecurityRestriction&gt; ScmIpSecurityRestrictions" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Management.WebSites.Models.SiteConfigResource.ScmIpSecurityRestrictions" />
+      <MemberSignature Language="VB.NET" Value="Public Property ScmIpSecurityRestrictions As IList(Of IpSecurityRestriction)" />
+      <MemberSignature Language="F#" Value="member this.ScmIpSecurityRestrictions : System.Collections.Generic.IList&lt;Microsoft.Azure.Management.WebSites.Models.IpSecurityRestriction&gt; with get, set" Usage="Microsoft.Azure.Management.WebSites.Models.SiteConfigResource.ScmIpSecurityRestrictions" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Azure.Management.Websites</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>3.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty(PropertyName="properties.scmIpSecurityRestrictions")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty(PropertyName="properties.scmIpSecurityRestrictions")&gt;]</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.IList&lt;Microsoft.Azure.Management.WebSites.Models.IpSecurityRestriction&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets or sets IP security restrictions for scm.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ScmIpSecurityRestrictionsUseMain">
+      <MemberSignature Language="C#" Value="public bool? ScmIpSecurityRestrictionsUseMain { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;bool&gt; ScmIpSecurityRestrictionsUseMain" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Management.WebSites.Models.SiteConfigResource.ScmIpSecurityRestrictionsUseMain" />
+      <MemberSignature Language="VB.NET" Value="Public Property ScmIpSecurityRestrictionsUseMain As Nullable(Of Boolean)" />
+      <MemberSignature Language="F#" Value="member this.ScmIpSecurityRestrictionsUseMain : Nullable&lt;bool&gt; with get, set" Usage="Microsoft.Azure.Management.WebSites.Models.SiteConfigResource.ScmIpSecurityRestrictionsUseMain" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Azure.Management.Websites</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>3.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty(PropertyName="properties.scmIpSecurityRestrictionsUseMain")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty(PropertyName="properties.scmIpSecurityRestrictionsUseMain")&gt;]</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Nullable&lt;System.Boolean&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets or sets IP security restrictions for scm to use main.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
     <Member MemberName="ScmType">
       <MemberSignature Language="C#" Value="public string ScmType { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string ScmType" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Management.WebSites.Models.SiteConfigResource.ScmType" />
       <MemberSignature Language="VB.NET" Value="Public Property ScmType As String" />
       <MemberSignature Language="F#" Value="member this.ScmType : string with get, set" Usage="Microsoft.Azure.Management.WebSites.Models.SiteConfigResource.ScmType" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ ScmType { System::String ^ get(); void set(System::String ^ value); };" />
-      <MemberSignature Language="C++ CX" Value="public:&#xA; property Platform::String ^ ScmType { Platform::String ^ get(); void set(Platform::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Websites</AssemblyName>
-        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>3.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="properties.scmType")</AttributeName>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty(PropertyName="properties.scmType")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty(PropertyName="properties.scmType")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -1283,7 +1638,7 @@
             Gets or sets SCM type. Possible values include: 'None', 'Dropbox',
             'Tfs', 'LocalGit', 'GitHub', 'CodePlexGit', 'CodePlexHg',
             'BitbucketGit', 'BitbucketHg', 'ExternalGit', 'ExternalHg',
-            'OneDrive', 'VSO'
+            'OneDrive', 'VSO', 'VSTSRM'
             </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
@@ -1295,16 +1650,16 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Management.WebSites.Models.SiteConfigResource.TracingOptions" />
       <MemberSignature Language="VB.NET" Value="Public Property TracingOptions As String" />
       <MemberSignature Language="F#" Value="member this.TracingOptions : string with get, set" Usage="Microsoft.Azure.Management.WebSites.Models.SiteConfigResource.TracingOptions" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ TracingOptions { System::String ^ get(); void set(System::String ^ value); };" />
-      <MemberSignature Language="C++ CX" Value="public:&#xA; property Platform::String ^ TracingOptions { Platform::String ^ get(); void set(Platform::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Websites</AssemblyName>
-        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>3.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="properties.tracingOptions")</AttributeName>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty(PropertyName="properties.tracingOptions")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty(PropertyName="properties.tracingOptions")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -1319,20 +1674,21 @@
       </Docs>
     </Member>
     <Member MemberName="Use32BitWorkerProcess">
-      <MemberSignature Language="C#" Value="public Nullable&lt;bool&gt; Use32BitWorkerProcess { get; set; }" />
+      <MemberSignature Language="C#" Value="public bool? Use32BitWorkerProcess { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;bool&gt; Use32BitWorkerProcess" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Management.WebSites.Models.SiteConfigResource.Use32BitWorkerProcess" />
       <MemberSignature Language="VB.NET" Value="Public Property Use32BitWorkerProcess As Nullable(Of Boolean)" />
       <MemberSignature Language="F#" Value="member this.Use32BitWorkerProcess : Nullable&lt;bool&gt; with get, set" Usage="Microsoft.Azure.Management.WebSites.Models.SiteConfigResource.Use32BitWorkerProcess" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Nullable&lt;bool&gt; Use32BitWorkerProcess { Nullable&lt;bool&gt; get(); void set(Nullable&lt;bool&gt; value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Websites</AssemblyName>
-        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>3.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="properties.use32BitWorkerProcess")</AttributeName>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty(PropertyName="properties.use32BitWorkerProcess")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty(PropertyName="properties.use32BitWorkerProcess")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -1348,21 +1704,48 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <Member MemberName="Validate">
+      <MemberSignature Language="C#" Value="public virtual void Validate ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Validate() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Management.WebSites.Models.SiteConfigResource.Validate" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Sub Validate ()" />
+      <MemberSignature Language="F#" Value="abstract member Validate : unit -&gt; unit&#xA;override this.Validate : unit -&gt; unit" Usage="siteConfigResource.Validate " />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Azure.Management.Websites</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>3.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>
+            Validate the object.
+            </summary>
+        <remarks>To be added.</remarks>
+        <exception cref="T:Microsoft.Rest.ValidationException">
+            Thrown if validation fails
+            </exception>
+      </Docs>
+    </Member>
     <Member MemberName="VirtualApplications">
       <MemberSignature Language="C#" Value="public System.Collections.Generic.IList&lt;Microsoft.Azure.Management.WebSites.Models.VirtualApplication&gt; VirtualApplications { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Generic.IList`1&lt;class Microsoft.Azure.Management.WebSites.Models.VirtualApplication&gt; VirtualApplications" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Management.WebSites.Models.SiteConfigResource.VirtualApplications" />
       <MemberSignature Language="VB.NET" Value="Public Property VirtualApplications As IList(Of VirtualApplication)" />
       <MemberSignature Language="F#" Value="member this.VirtualApplications : System.Collections.Generic.IList&lt;Microsoft.Azure.Management.WebSites.Models.VirtualApplication&gt; with get, set" Usage="Microsoft.Azure.Management.WebSites.Models.SiteConfigResource.VirtualApplications" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::Generic::IList&lt;Microsoft::Azure::Management::WebSites::Models::VirtualApplication ^&gt; ^ VirtualApplications { System::Collections::Generic::IList&lt;Microsoft::Azure::Management::WebSites::Models::VirtualApplication ^&gt; ^ get(); void set(System::Collections::Generic::IList&lt;Microsoft::Azure::Management::WebSites::Models::VirtualApplication ^&gt; ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Websites</AssemblyName>
-        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>3.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="properties.virtualApplications")</AttributeName>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty(PropertyName="properties.virtualApplications")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty(PropertyName="properties.virtualApplications")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -1382,16 +1765,16 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Management.WebSites.Models.SiteConfigResource.VnetName" />
       <MemberSignature Language="VB.NET" Value="Public Property VnetName As String" />
       <MemberSignature Language="F#" Value="member this.VnetName : string with get, set" Usage="Microsoft.Azure.Management.WebSites.Models.SiteConfigResource.VnetName" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ VnetName { System::String ^ get(); void set(System::String ^ value); };" />
-      <MemberSignature Language="C++ CX" Value="public:&#xA; property Platform::String ^ VnetName { Platform::String ^ get(); void set(Platform::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Websites</AssemblyName>
-        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>3.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="properties.vnetName")</AttributeName>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty(PropertyName="properties.vnetName")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty(PropertyName="properties.vnetName")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -1406,20 +1789,21 @@
       </Docs>
     </Member>
     <Member MemberName="WebSocketsEnabled">
-      <MemberSignature Language="C#" Value="public Nullable&lt;bool&gt; WebSocketsEnabled { get; set; }" />
+      <MemberSignature Language="C#" Value="public bool? WebSocketsEnabled { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;bool&gt; WebSocketsEnabled" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Management.WebSites.Models.SiteConfigResource.WebSocketsEnabled" />
       <MemberSignature Language="VB.NET" Value="Public Property WebSocketsEnabled As Nullable(Of Boolean)" />
       <MemberSignature Language="F#" Value="member this.WebSocketsEnabled : Nullable&lt;bool&gt; with get, set" Usage="Microsoft.Azure.Management.WebSites.Models.SiteConfigResource.WebSocketsEnabled" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Nullable&lt;bool&gt; WebSocketsEnabled { Nullable&lt;bool&gt; get(); void set(Nullable&lt;bool&gt; value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Websites</AssemblyName>
-        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>3.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="properties.webSocketsEnabled")</AttributeName>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty(PropertyName="properties.webSocketsEnabled")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty(PropertyName="properties.webSocketsEnabled")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -1430,6 +1814,64 @@
             Gets or sets &amp;lt;code&amp;gt;true&amp;lt;/code&amp;gt; if
             WebSocket is enabled; otherwise,
             &amp;lt;code&amp;gt;false&amp;lt;/code&amp;gt;.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="WindowsFxVersion">
+      <MemberSignature Language="C#" Value="public string WindowsFxVersion { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string WindowsFxVersion" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Management.WebSites.Models.SiteConfigResource.WindowsFxVersion" />
+      <MemberSignature Language="VB.NET" Value="Public Property WindowsFxVersion As String" />
+      <MemberSignature Language="F#" Value="member this.WindowsFxVersion : string with get, set" Usage="Microsoft.Azure.Management.WebSites.Models.SiteConfigResource.WindowsFxVersion" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Azure.Management.Websites</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>3.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty(PropertyName="properties.windowsFxVersion")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty(PropertyName="properties.windowsFxVersion")&gt;]</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets or sets xenon App Framework and version
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="XManagedServiceIdentityId">
+      <MemberSignature Language="C#" Value="public int? XManagedServiceIdentityId { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;int32&gt; XManagedServiceIdentityId" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Management.WebSites.Models.SiteConfigResource.XManagedServiceIdentityId" />
+      <MemberSignature Language="VB.NET" Value="Public Property XManagedServiceIdentityId As Nullable(Of Integer)" />
+      <MemberSignature Language="F#" Value="member this.XManagedServiceIdentityId : Nullable&lt;int&gt; with get, set" Usage="Microsoft.Azure.Management.WebSites.Models.SiteConfigResource.XManagedServiceIdentityId" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Azure.Management.Websites</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>3.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty(PropertyName="properties.xManagedServiceIdentityId")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty(PropertyName="properties.xManagedServiceIdentityId")&gt;]</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Nullable&lt;System.Int32&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets or sets explicit Managed Service Identity Id
             </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>

@@ -1,4 +1,4 @@
-﻿<Type Name="CjkBigramTokenFilter" FullName="Microsoft.Azure.Search.Models.CjkBigramTokenFilter">
+<Type Name="CjkBigramTokenFilter" FullName="Microsoft.Azure.Search.Models.CjkBigramTokenFilter">
   <TypeSignature Language="C#" Value="public class CjkBigramTokenFilter : Microsoft.Azure.Search.Models.TokenFilter" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit CjkBigramTokenFilter extends Microsoft.Azure.Search.Models.TokenFilter" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Azure.Search.Models.CjkBigramTokenFilter" />
@@ -6,7 +6,7 @@
   <TypeSignature Language="F#" Value="type CjkBigramTokenFilter = class&#xA;    inherit TokenFilter" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Azure.Search.Service</AssemblyName>
-    <AssemblyVersion>5.0.0.0</AssemblyVersion>
+    <AssemblyVersion>10.1.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>Microsoft.Azure.Search.Models.TokenFilter</BaseTypeName>
@@ -14,7 +14,8 @@
   <Interfaces />
   <Attributes>
     <Attribute>
-      <AttributeName>Newtonsoft.Json.JsonObject("#Microsoft.Azure.Search.CjkBigramTokenFilter")</AttributeName>
+      <AttributeName Language="C#">[Newtonsoft.Json.JsonObject("#Microsoft.Azure.Search.CjkBigramTokenFilter")]</AttributeName>
+      <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonObject("#Microsoft.Azure.Search.CjkBigramTokenFilter")&gt;]</AttributeName>
     </Attribute>
   </Attributes>
   <Docs>
@@ -33,7 +34,7 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Search.Service</AssemblyName>
-        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>10.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
@@ -44,15 +45,15 @@
       </Docs>
     </Member>
     <Member MemberName=".ctor">
-      <MemberSignature Language="C#" Value="public CjkBigramTokenFilter (string name, System.Collections.Generic.IList&lt;Microsoft.Azure.Search.Models.CjkBigramTokenFilterScripts&gt; ignoreScripts = null, Nullable&lt;bool&gt; outputUnigrams = null);" />
+      <MemberSignature Language="C#" Value="public CjkBigramTokenFilter (string name, System.Collections.Generic.IList&lt;Microsoft.Azure.Search.Models.CjkBigramTokenFilterScripts&gt; ignoreScripts = default, bool? outputUnigrams = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string name, class System.Collections.Generic.IList`1&lt;valuetype Microsoft.Azure.Search.Models.CjkBigramTokenFilterScripts&gt; ignoreScripts, valuetype System.Nullable`1&lt;bool&gt; outputUnigrams) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Search.Models.CjkBigramTokenFilter.#ctor(System.String,System.Collections.Generic.IList{Microsoft.Azure.Search.Models.CjkBigramTokenFilterScripts},System.Nullable{System.Boolean})" />
-      <MemberSignature Language="VB.NET" Value="Public Sub New (name As String, Optional ignoreScripts As IList(Of CjkBigramTokenFilterScripts) = null, Optional outputUnigrams As Nullable(Of Boolean) = null)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (name As String, Optional ignoreScripts As IList(Of CjkBigramTokenFilterScripts) = Nothing, Optional outputUnigrams As Nullable(Of Boolean) = Nothing)" />
       <MemberSignature Language="F#" Value="new Microsoft.Azure.Search.Models.CjkBigramTokenFilter : string * System.Collections.Generic.IList&lt;Microsoft.Azure.Search.Models.CjkBigramTokenFilterScripts&gt; * Nullable&lt;bool&gt; -&gt; Microsoft.Azure.Search.Models.CjkBigramTokenFilter" Usage="new Microsoft.Azure.Search.Models.CjkBigramTokenFilter (name, ignoreScripts, outputUnigrams)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Search.Service</AssemblyName>
-        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>10.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="name" Type="System.String" />
@@ -83,11 +84,12 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Search.Service</AssemblyName>
-        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>10.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="ignoreScripts")</AttributeName>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty(PropertyName="ignoreScripts")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty(PropertyName="ignoreScripts")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -102,7 +104,7 @@
       </Docs>
     </Member>
     <Member MemberName="OutputUnigrams">
-      <MemberSignature Language="C#" Value="public Nullable&lt;bool&gt; OutputUnigrams { get; set; }" />
+      <MemberSignature Language="C#" Value="public bool? OutputUnigrams { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;bool&gt; OutputUnigrams" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Search.Models.CjkBigramTokenFilter.OutputUnigrams" />
       <MemberSignature Language="VB.NET" Value="Public Property OutputUnigrams As Nullable(Of Boolean)" />
@@ -110,11 +112,12 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Search.Service</AssemblyName>
-        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>10.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="outputUnigrams")</AttributeName>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty(PropertyName="outputUnigrams")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty(PropertyName="outputUnigrams")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -138,7 +141,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Search.Service</AssemblyName>
-        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>10.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>

@@ -1,11 +1,9 @@
-﻿<Type Name="VolumeInner" FullName="Microsoft.Azure.Management.StorSimple.Fluent.Models.VolumeInner">
+<Type Name="VolumeInner" FullName="Microsoft.Azure.Management.StorSimple.Fluent.Models.VolumeInner">
   <TypeSignature Language="C#" Value="public class VolumeInner : Microsoft.Azure.Management.StorSimple.Fluent.Models.BaseModel" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit VolumeInner extends Microsoft.Azure.Management.StorSimple.Fluent.Models.BaseModel" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Azure.Management.StorSimple.Fluent.Models.VolumeInner" />
   <TypeSignature Language="VB.NET" Value="Public Class VolumeInner&#xA;Inherits BaseModel" />
   <TypeSignature Language="F#" Value="type VolumeInner = class&#xA;    inherit BaseModel" />
-  <TypeSignature Language="C++ CLI" Value="public ref class VolumeInner : Microsoft::Azure::Management::StorSimple::Fluent::Models::BaseModel" />
-  <TypeSignature Language="C++ WINRT" Value="[Windows::Foundation::Metadata::WebHostHidden]&#xA;class VolumeInner : Microsoft::Azure::Management::StorSimple::Fluent::Models::BaseModel" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Azure.Management.StorSimple.Fluent</AssemblyName>
     <AssemblyVersion>1.0.0.60</AssemblyVersion>
@@ -16,7 +14,8 @@
   <Interfaces />
   <Attributes>
     <Attribute>
-      <AttributeName>Microsoft.Rest.Serialization.JsonTransformation</AttributeName>
+      <AttributeName Language="C#">[Microsoft.Rest.Serialization.JsonTransformation]</AttributeName>
+      <AttributeName Language="F#">[&lt;Microsoft.Rest.Serialization.JsonTransformation&gt;]</AttributeName>
     </Attribute>
   </Attributes>
   <Docs>
@@ -29,9 +28,6 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Management.StorSimple.Fluent.Models.VolumeInner.#ctor" />
       <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; VolumeInner();" />
-      <MemberSignature Language="C++ CX" Value="public:&#xA; VolumeInner();" />
-      <MemberSignature Language="C++ WINRT" Value=" VolumeInner();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.StorSimple.Fluent</AssemblyName>
@@ -44,9 +40,10 @@
       </Docs>
     </Member>
     <Member MemberName=".ctor">
-      <MemberSignature Language="C#" Value="public VolumeInner (long sizeInBytes, Microsoft.Azure.Management.StorSimple.Fluent.Models.VolumeType volumeType, System.Collections.Generic.IList&lt;string&gt; accessControlRecordIds, Microsoft.Azure.Management.StorSimple.Fluent.Models.VolumeStatus volumeStatus, Microsoft.Azure.Management.StorSimple.Fluent.Models.MonitoringStatus monitoringStatus, string id = null, string name = null, string type = null, Nullable&lt;Microsoft.Azure.Management.StorSimple.Fluent.Models.Kind&gt; kind = null, string volumeContainerId = null, Nullable&lt;Microsoft.Azure.Management.StorSimple.Fluent.Models.OperationStatus&gt; operationStatus = null, Nullable&lt;Microsoft.Azure.Management.StorSimple.Fluent.Models.BackupStatus&gt; backupStatus = null, System.Collections.Generic.IList&lt;string&gt; backupPolicyIds = null);" />
+      <MemberSignature Language="C#" Value="public VolumeInner (long sizeInBytes, Microsoft.Azure.Management.StorSimple.Fluent.Models.VolumeType volumeType, System.Collections.Generic.IList&lt;string&gt; accessControlRecordIds, Microsoft.Azure.Management.StorSimple.Fluent.Models.VolumeStatus volumeStatus, Microsoft.Azure.Management.StorSimple.Fluent.Models.MonitoringStatus monitoringStatus, string id = default, string name = default, string type = default, Microsoft.Azure.Management.StorSimple.Fluent.Models.Kind? kind = default, string volumeContainerId = default, Microsoft.Azure.Management.StorSimple.Fluent.Models.OperationStatus? operationStatus = default, Microsoft.Azure.Management.StorSimple.Fluent.Models.BackupStatus? backupStatus = default, System.Collections.Generic.IList&lt;string&gt; backupPolicyIds = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(int64 sizeInBytes, valuetype Microsoft.Azure.Management.StorSimple.Fluent.Models.VolumeType volumeType, class System.Collections.Generic.IList`1&lt;string&gt; accessControlRecordIds, valuetype Microsoft.Azure.Management.StorSimple.Fluent.Models.VolumeStatus volumeStatus, valuetype Microsoft.Azure.Management.StorSimple.Fluent.Models.MonitoringStatus monitoringStatus, string id, string name, string type, valuetype System.Nullable`1&lt;valuetype Microsoft.Azure.Management.StorSimple.Fluent.Models.Kind&gt; kind, string volumeContainerId, valuetype System.Nullable`1&lt;valuetype Microsoft.Azure.Management.StorSimple.Fluent.Models.OperationStatus&gt; operationStatus, valuetype System.Nullable`1&lt;valuetype Microsoft.Azure.Management.StorSimple.Fluent.Models.BackupStatus&gt; backupStatus, class System.Collections.Generic.IList`1&lt;string&gt; backupPolicyIds) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Management.StorSimple.Fluent.Models.VolumeInner.#ctor(System.Int64,Microsoft.Azure.Management.StorSimple.Fluent.Models.VolumeType,System.Collections.Generic.IList{System.String},Microsoft.Azure.Management.StorSimple.Fluent.Models.VolumeStatus,Microsoft.Azure.Management.StorSimple.Fluent.Models.MonitoringStatus,System.String,System.String,System.String,System.Nullable{Microsoft.Azure.Management.StorSimple.Fluent.Models.Kind},System.String,System.Nullable{Microsoft.Azure.Management.StorSimple.Fluent.Models.OperationStatus},System.Nullable{Microsoft.Azure.Management.StorSimple.Fluent.Models.BackupStatus},System.Collections.Generic.IList{System.String})" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (sizeInBytes As Long, volumeType As VolumeType, accessControlRecordIds As IList(Of String), volumeStatus As VolumeStatus, monitoringStatus As MonitoringStatus, Optional id As String = Nothing, Optional name As String = Nothing, Optional type As String = Nothing, Optional kind As Nullable(Of Kind) = Nothing, Optional volumeContainerId As String = Nothing, Optional operationStatus As Nullable(Of OperationStatus) = Nothing, Optional backupStatus As Nullable(Of BackupStatus) = Nothing, Optional backupPolicyIds As IList(Of String) = Nothing)" />
       <MemberSignature Language="F#" Value="new Microsoft.Azure.Management.StorSimple.Fluent.Models.VolumeInner : int64 * Microsoft.Azure.Management.StorSimple.Fluent.Models.VolumeType * System.Collections.Generic.IList&lt;string&gt; * Microsoft.Azure.Management.StorSimple.Fluent.Models.VolumeStatus * Microsoft.Azure.Management.StorSimple.Fluent.Models.MonitoringStatus * string * string * string * Nullable&lt;Microsoft.Azure.Management.StorSimple.Fluent.Models.Kind&gt; * string * Nullable&lt;Microsoft.Azure.Management.StorSimple.Fluent.Models.OperationStatus&gt; * Nullable&lt;Microsoft.Azure.Management.StorSimple.Fluent.Models.BackupStatus&gt; * System.Collections.Generic.IList&lt;string&gt; -&gt; Microsoft.Azure.Management.StorSimple.Fluent.Models.VolumeInner" Usage="new Microsoft.Azure.Management.StorSimple.Fluent.Models.VolumeInner (sizeInBytes, volumeType, accessControlRecordIds, volumeStatus, monitoringStatus, id, name, type, kind, volumeContainerId, operationStatus, backupStatus, backupPolicyIds)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
@@ -92,7 +89,6 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Management.StorSimple.Fluent.Models.VolumeInner.AccessControlRecordIds" />
       <MemberSignature Language="VB.NET" Value="Public Property AccessControlRecordIds As IList(Of String)" />
       <MemberSignature Language="F#" Value="member this.AccessControlRecordIds : System.Collections.Generic.IList&lt;string&gt; with get, set" Usage="Microsoft.Azure.Management.StorSimple.Fluent.Models.VolumeInner.AccessControlRecordIds" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::Generic::IList&lt;System::String ^&gt; ^ AccessControlRecordIds { System::Collections::Generic::IList&lt;System::String ^&gt; ^ get(); void set(System::Collections::Generic::IList&lt;System::String ^&gt; ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.StorSimple.Fluent</AssemblyName>
@@ -100,7 +96,8 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="properties.accessControlRecordIds")</AttributeName>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty(PropertyName="properties.accessControlRecordIds")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty(PropertyName="properties.accessControlRecordIds")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -118,7 +115,6 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Management.StorSimple.Fluent.Models.VolumeInner.BackupPolicyIds" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property BackupPolicyIds As IList(Of String)" />
       <MemberSignature Language="F#" Value="member this.BackupPolicyIds : System.Collections.Generic.IList&lt;string&gt;" Usage="Microsoft.Azure.Management.StorSimple.Fluent.Models.VolumeInner.BackupPolicyIds" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::Generic::IList&lt;System::String ^&gt; ^ BackupPolicyIds { System::Collections::Generic::IList&lt;System::String ^&gt; ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.StorSimple.Fluent</AssemblyName>
@@ -126,7 +122,8 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="properties.backupPolicyIds")</AttributeName>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty(PropertyName="properties.backupPolicyIds")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty(PropertyName="properties.backupPolicyIds")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -139,12 +136,11 @@
       </Docs>
     </Member>
     <Member MemberName="BackupStatus">
-      <MemberSignature Language="C#" Value="public Nullable&lt;Microsoft.Azure.Management.StorSimple.Fluent.Models.BackupStatus&gt; BackupStatus { get; }" />
+      <MemberSignature Language="C#" Value="public Microsoft.Azure.Management.StorSimple.Fluent.Models.BackupStatus? BackupStatus { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;valuetype Microsoft.Azure.Management.StorSimple.Fluent.Models.BackupStatus&gt; BackupStatus" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Management.StorSimple.Fluent.Models.VolumeInner.BackupStatus" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property BackupStatus As Nullable(Of BackupStatus)" />
       <MemberSignature Language="F#" Value="member this.BackupStatus : Nullable&lt;Microsoft.Azure.Management.StorSimple.Fluent.Models.BackupStatus&gt;" Usage="Microsoft.Azure.Management.StorSimple.Fluent.Models.VolumeInner.BackupStatus" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Nullable&lt;Microsoft::Azure::Management::StorSimple::Fluent::Models::BackupStatus&gt; BackupStatus { Nullable&lt;Microsoft::Azure::Management::StorSimple::Fluent::Models::BackupStatus&gt; get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.StorSimple.Fluent</AssemblyName>
@@ -152,7 +148,8 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="properties.backupStatus")</AttributeName>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty(PropertyName="properties.backupStatus")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty(PropertyName="properties.backupStatus")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -170,8 +167,6 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Management.StorSimple.Fluent.Models.VolumeInner.MonitoringStatus" />
       <MemberSignature Language="VB.NET" Value="Public Property MonitoringStatus As MonitoringStatus" />
       <MemberSignature Language="F#" Value="member this.MonitoringStatus : Microsoft.Azure.Management.StorSimple.Fluent.Models.MonitoringStatus with get, set" Usage="Microsoft.Azure.Management.StorSimple.Fluent.Models.VolumeInner.MonitoringStatus" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Azure::Management::StorSimple::Fluent::Models::MonitoringStatus MonitoringStatus { Microsoft::Azure::Management::StorSimple::Fluent::Models::MonitoringStatus get(); void set(Microsoft::Azure::Management::StorSimple::Fluent::Models::MonitoringStatus value); };" />
-      <MemberSignature Language="C++ CX" Value="public:&#xA; property Microsoft::Azure::Management::StorSimple::Fluent::Models::MonitoringStatus MonitoringStatus { Microsoft::Azure::Management::StorSimple::Fluent::Models::MonitoringStatus get(); void set(Microsoft::Azure::Management::StorSimple::Fluent::Models::MonitoringStatus value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.StorSimple.Fluent</AssemblyName>
@@ -179,7 +174,8 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="properties.monitoringStatus")</AttributeName>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty(PropertyName="properties.monitoringStatus")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty(PropertyName="properties.monitoringStatus")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -192,12 +188,11 @@
       </Docs>
     </Member>
     <Member MemberName="OperationStatus">
-      <MemberSignature Language="C#" Value="public Nullable&lt;Microsoft.Azure.Management.StorSimple.Fluent.Models.OperationStatus&gt; OperationStatus { get; }" />
+      <MemberSignature Language="C#" Value="public Microsoft.Azure.Management.StorSimple.Fluent.Models.OperationStatus? OperationStatus { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;valuetype Microsoft.Azure.Management.StorSimple.Fluent.Models.OperationStatus&gt; OperationStatus" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Management.StorSimple.Fluent.Models.VolumeInner.OperationStatus" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property OperationStatus As Nullable(Of OperationStatus)" />
       <MemberSignature Language="F#" Value="member this.OperationStatus : Nullable&lt;Microsoft.Azure.Management.StorSimple.Fluent.Models.OperationStatus&gt;" Usage="Microsoft.Azure.Management.StorSimple.Fluent.Models.VolumeInner.OperationStatus" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Nullable&lt;Microsoft::Azure::Management::StorSimple::Fluent::Models::OperationStatus&gt; OperationStatus { Nullable&lt;Microsoft::Azure::Management::StorSimple::Fluent::Models::OperationStatus&gt; get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.StorSimple.Fluent</AssemblyName>
@@ -205,7 +200,8 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="properties.operationStatus")</AttributeName>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty(PropertyName="properties.operationStatus")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty(PropertyName="properties.operationStatus")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -223,8 +219,6 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Management.StorSimple.Fluent.Models.VolumeInner.SizeInBytes" />
       <MemberSignature Language="VB.NET" Value="Public Property SizeInBytes As Long" />
       <MemberSignature Language="F#" Value="member this.SizeInBytes : int64 with get, set" Usage="Microsoft.Azure.Management.StorSimple.Fluent.Models.VolumeInner.SizeInBytes" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property long SizeInBytes { long get(); void set(long value); };" />
-      <MemberSignature Language="C++ CX" Value="public:&#xA; property long long SizeInBytes { long long get(); void set(long long value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.StorSimple.Fluent</AssemblyName>
@@ -232,7 +226,8 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="properties.sizeInBytes")</AttributeName>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty(PropertyName="properties.sizeInBytes")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty(PropertyName="properties.sizeInBytes")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -250,9 +245,6 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Management.StorSimple.Fluent.Models.VolumeInner.Validate" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Sub Validate ()" />
       <MemberSignature Language="F#" Value="abstract member Validate : unit -&gt; unit&#xA;override this.Validate : unit -&gt; unit" Usage="volumeInner.Validate " />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Validate();" />
-      <MemberSignature Language="C++ CX" Value="public:&#xA; virtual void Validate();" />
-      <MemberSignature Language="C++ WINRT" Value=" virtual void Validate();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.StorSimple.Fluent</AssemblyName>
@@ -273,8 +265,6 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Management.StorSimple.Fluent.Models.VolumeInner.VolumeContainerId" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property VolumeContainerId As String" />
       <MemberSignature Language="F#" Value="member this.VolumeContainerId : string" Usage="Microsoft.Azure.Management.StorSimple.Fluent.Models.VolumeInner.VolumeContainerId" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ VolumeContainerId { System::String ^ get(); };" />
-      <MemberSignature Language="C++ CX" Value="public:&#xA; property Platform::String ^ VolumeContainerId { Platform::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.StorSimple.Fluent</AssemblyName>
@@ -282,7 +272,8 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="properties.volumeContainerId")</AttributeName>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty(PropertyName="properties.volumeContainerId")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty(PropertyName="properties.volumeContainerId")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -300,8 +291,6 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Management.StorSimple.Fluent.Models.VolumeInner.VolumeStatus" />
       <MemberSignature Language="VB.NET" Value="Public Property VolumeStatus As VolumeStatus" />
       <MemberSignature Language="F#" Value="member this.VolumeStatus : Microsoft.Azure.Management.StorSimple.Fluent.Models.VolumeStatus with get, set" Usage="Microsoft.Azure.Management.StorSimple.Fluent.Models.VolumeInner.VolumeStatus" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Azure::Management::StorSimple::Fluent::Models::VolumeStatus VolumeStatus { Microsoft::Azure::Management::StorSimple::Fluent::Models::VolumeStatus get(); void set(Microsoft::Azure::Management::StorSimple::Fluent::Models::VolumeStatus value); };" />
-      <MemberSignature Language="C++ CX" Value="public:&#xA; property Microsoft::Azure::Management::StorSimple::Fluent::Models::VolumeStatus VolumeStatus { Microsoft::Azure::Management::StorSimple::Fluent::Models::VolumeStatus get(); void set(Microsoft::Azure::Management::StorSimple::Fluent::Models::VolumeStatus value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.StorSimple.Fluent</AssemblyName>
@@ -309,7 +298,8 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="properties.volumeStatus")</AttributeName>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty(PropertyName="properties.volumeStatus")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty(PropertyName="properties.volumeStatus")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -327,8 +317,6 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Management.StorSimple.Fluent.Models.VolumeInner.VolumeType" />
       <MemberSignature Language="VB.NET" Value="Public Property VolumeType As VolumeType" />
       <MemberSignature Language="F#" Value="member this.VolumeType : Microsoft.Azure.Management.StorSimple.Fluent.Models.VolumeType with get, set" Usage="Microsoft.Azure.Management.StorSimple.Fluent.Models.VolumeInner.VolumeType" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Azure::Management::StorSimple::Fluent::Models::VolumeType VolumeType { Microsoft::Azure::Management::StorSimple::Fluent::Models::VolumeType get(); void set(Microsoft::Azure::Management::StorSimple::Fluent::Models::VolumeType value); };" />
-      <MemberSignature Language="C++ CX" Value="public:&#xA; property Microsoft::Azure::Management::StorSimple::Fluent::Models::VolumeType VolumeType { Microsoft::Azure::Management::StorSimple::Fluent::Models::VolumeType get(); void set(Microsoft::Azure::Management::StorSimple::Fluent::Models::VolumeType value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.StorSimple.Fluent</AssemblyName>
@@ -336,7 +324,8 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="properties.volumeType")</AttributeName>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty(PropertyName="properties.volumeType")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty(PropertyName="properties.volumeType")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>

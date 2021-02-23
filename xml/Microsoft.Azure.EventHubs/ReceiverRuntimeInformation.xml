@@ -1,15 +1,15 @@
-﻿<Type Name="ReceiverRuntimeInformation" FullName="Microsoft.Azure.EventHubs.ReceiverRuntimeInformation">
+<Type Name="ReceiverRuntimeInformation" FullName="Microsoft.Azure.EventHubs.ReceiverRuntimeInformation">
   <TypeSignature Language="C#" Value="public class ReceiverRuntimeInformation" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit ReceiverRuntimeInformation extends System.Object" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Azure.EventHubs.ReceiverRuntimeInformation" />
   <TypeSignature Language="VB.NET" Value="Public Class ReceiverRuntimeInformation" />
   <TypeSignature Language="F#" Value="type ReceiverRuntimeInformation = class" />
-  <TypeSignature Language="C++ CLI" Value="public ref class ReceiverRuntimeInformation" />
-  <TypeSignature Language="C++ CX" Value="[Windows::Foundation::Metadata::WebHostHidden]&#xA;public ref class ReceiverRuntimeInformation" />
-  <TypeSignature Language="C++ WINRT" Value="[Windows::Foundation::Metadata::WebHostHidden]&#xA;class ReceiverRuntimeInformation" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Azure.EventHubs</AssemblyName>
-    <AssemblyVersion>2.0.0.0</AssemblyVersion>
+    <AssemblyVersion>4.1.0.0</AssemblyVersion>
+    <AssemblyVersion>4.2.0.0</AssemblyVersion>
+    <AssemblyVersion>4.3.0.0</AssemblyVersion>
+    <AssemblyVersion>4.3.1.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
@@ -20,18 +20,44 @@
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public ReceiverRuntimeInformation (string partitionId);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string partitionId) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Azure.EventHubs.ReceiverRuntimeInformation.#ctor(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (partitionId As String)" />
+      <MemberSignature Language="F#" Value="new Microsoft.Azure.EventHubs.ReceiverRuntimeInformation : string -&gt; Microsoft.Azure.EventHubs.ReceiverRuntimeInformation" Usage="new Microsoft.Azure.EventHubs.ReceiverRuntimeInformation partitionId" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Azure.EventHubs</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+        <AssemblyVersion>4.3.0.0</AssemblyVersion>
+        <AssemblyVersion>4.3.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="partitionId" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="partitionId" />
+        <summary>
+            Construct a new instance for the given partition.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
     <Member MemberName="LastEnqueuedOffset">
       <MemberSignature Language="C#" Value="public string LastEnqueuedOffset { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string LastEnqueuedOffset" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Azure.EventHubs.ReceiverRuntimeInformation.LastEnqueuedOffset" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property LastEnqueuedOffset As String" />
       <MemberSignature Language="F#" Value="member this.LastEnqueuedOffset : string" Usage="Microsoft.Azure.EventHubs.ReceiverRuntimeInformation.LastEnqueuedOffset" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ LastEnqueuedOffset { System::String ^ get(); };" />
-      <MemberSignature Language="C++ CX" Value="public:&#xA; property Platform::String ^ LastEnqueuedOffset { Platform::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.EventHubs</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+        <AssemblyVersion>4.3.0.0</AssemblyVersion>
+        <AssemblyVersion>4.3.1.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -48,11 +74,13 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Azure.EventHubs.ReceiverRuntimeInformation.LastEnqueuedTimeUtc" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property LastEnqueuedTimeUtc As DateTime" />
       <MemberSignature Language="F#" Value="member this.LastEnqueuedTimeUtc : DateTime" Usage="Microsoft.Azure.EventHubs.ReceiverRuntimeInformation.LastEnqueuedTimeUtc" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property DateTime LastEnqueuedTimeUtc { DateTime get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.EventHubs</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+        <AssemblyVersion>4.3.0.0</AssemblyVersion>
+        <AssemblyVersion>4.3.1.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.DateTime</ReturnType>
@@ -69,12 +97,13 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Azure.EventHubs.ReceiverRuntimeInformation.LastSequenceNumber" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property LastSequenceNumber As Long" />
       <MemberSignature Language="F#" Value="member this.LastSequenceNumber : int64" Usage="Microsoft.Azure.EventHubs.ReceiverRuntimeInformation.LastSequenceNumber" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property long LastSequenceNumber { long get(); };" />
-      <MemberSignature Language="C++ CX" Value="public:&#xA; property long long LastSequenceNumber { long long get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.EventHubs</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+        <AssemblyVersion>4.3.0.0</AssemblyVersion>
+        <AssemblyVersion>4.3.1.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int64</ReturnType>
@@ -91,12 +120,13 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Azure.EventHubs.ReceiverRuntimeInformation.PartitionId" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property PartitionId As String" />
       <MemberSignature Language="F#" Value="member this.PartitionId : string" Usage="Microsoft.Azure.EventHubs.ReceiverRuntimeInformation.PartitionId" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ PartitionId { System::String ^ get(); };" />
-      <MemberSignature Language="C++ CX" Value="public:&#xA; property Platform::String ^ PartitionId { Platform::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.EventHubs</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+        <AssemblyVersion>4.3.0.0</AssemblyVersion>
+        <AssemblyVersion>4.3.1.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -113,11 +143,13 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Azure.EventHubs.ReceiverRuntimeInformation.RetrievalTime" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property RetrievalTime As DateTime" />
       <MemberSignature Language="F#" Value="member this.RetrievalTime : DateTime" Usage="Microsoft.Azure.EventHubs.ReceiverRuntimeInformation.RetrievalTime" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property DateTime RetrievalTime { DateTime get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.EventHubs</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+        <AssemblyVersion>4.3.0.0</AssemblyVersion>
+        <AssemblyVersion>4.3.1.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.DateTime</ReturnType>
@@ -125,6 +157,34 @@
       <Docs>
         <summary>Gets the time of when the runtime info was retrieved.</summary>
         <value>The enqueued time of the last event.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Update">
+      <MemberSignature Language="C#" Value="public void Update (Microsoft.Azure.EventHubs.EventData updateFrom);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Update(class Microsoft.Azure.EventHubs.EventData updateFrom) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Azure.EventHubs.ReceiverRuntimeInformation.Update(Microsoft.Azure.EventHubs.EventData)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Update (updateFrom As EventData)" />
+      <MemberSignature Language="F#" Value="member this.Update : Microsoft.Azure.EventHubs.EventData -&gt; unit" Usage="receiverRuntimeInformation.Update updateFrom" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Azure.EventHubs</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+        <AssemblyVersion>4.3.0.0</AssemblyVersion>
+        <AssemblyVersion>4.3.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="updateFrom" Type="Microsoft.Azure.EventHubs.EventData" />
+      </Parameters>
+      <Docs>
+        <param name="updateFrom" />
+        <summary>
+            Update the properties of this instance with the values from the given event.
+            </summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

@@ -1,14 +1,14 @@
-﻿<Type Name="PortalSigninSettings" FullName="Microsoft.Azure.Management.ApiManagement.Models.PortalSigninSettings">
+<Type Name="PortalSigninSettings" FullName="Microsoft.Azure.Management.ApiManagement.Models.PortalSigninSettings">
   <TypeSignature Language="C#" Value="public class PortalSigninSettings : Microsoft.Azure.Management.ApiManagement.Models.Resource" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit PortalSigninSettings extends Microsoft.Azure.Management.ApiManagement.Models.Resource" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Azure.Management.ApiManagement.Models.PortalSigninSettings" />
   <TypeSignature Language="VB.NET" Value="Public Class PortalSigninSettings&#xA;Inherits Resource" />
   <TypeSignature Language="F#" Value="type PortalSigninSettings = class&#xA;    inherit Resource" />
-  <TypeSignature Language="C++ CLI" Value="public ref class PortalSigninSettings : Microsoft::Azure::Management::ApiManagement::Models::Resource" />
-  <TypeSignature Language="C++ WINRT" Value="[Windows::Foundation::Metadata::WebHostHidden]&#xA;class PortalSigninSettings : Microsoft::Azure::Management::ApiManagement::Models::Resource" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Azure.Management.ApiManagement</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
+    <AssemblyVersion>5.0.0.0</AssemblyVersion>
+    <AssemblyVersion>6.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>Microsoft.Azure.Management.ApiManagement.Models.Resource</BaseTypeName>
@@ -16,7 +16,8 @@
   <Interfaces />
   <Attributes>
     <Attribute>
-      <AttributeName>Microsoft.Rest.Serialization.JsonTransformation</AttributeName>
+      <AttributeName Language="C#">[Microsoft.Rest.Serialization.JsonTransformation]</AttributeName>
+      <AttributeName Language="F#">[&lt;Microsoft.Rest.Serialization.JsonTransformation&gt;]</AttributeName>
     </Attribute>
   </Attributes>
   <Docs>
@@ -31,13 +32,12 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Management.ApiManagement.Models.PortalSigninSettings.#ctor" />
       <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; PortalSigninSettings();" />
-      <MemberSignature Language="C++ CX" Value="public:&#xA; PortalSigninSettings();" />
-      <MemberSignature Language="C++ WINRT" Value=" PortalSigninSettings();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.ApiManagement</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
@@ -48,15 +48,17 @@
       </Docs>
     </Member>
     <Member MemberName=".ctor">
-      <MemberSignature Language="C#" Value="public PortalSigninSettings (string id = null, string name = null, string type = null, Nullable&lt;bool&gt; enabled = null);" />
+      <MemberSignature Language="C#" Value="public PortalSigninSettings (string id = default, string name = default, string type = default, bool? enabled = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string id, string name, string type, valuetype System.Nullable`1&lt;bool&gt; enabled) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Management.ApiManagement.Models.PortalSigninSettings.#ctor(System.String,System.String,System.String,System.Nullable{System.Boolean})" />
-      <MemberSignature Language="VB.NET" Value="Public Sub New (Optional id As String = null, Optional name As String = null, Optional type As String = null, Optional enabled As Nullable(Of Boolean) = null)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (Optional id As String = Nothing, Optional name As String = Nothing, Optional type As String = Nothing, Optional enabled As Nullable(Of Boolean) = Nothing)" />
       <MemberSignature Language="F#" Value="new Microsoft.Azure.Management.ApiManagement.Models.PortalSigninSettings : string * string * string * Nullable&lt;bool&gt; -&gt; Microsoft.Azure.Management.ApiManagement.Models.PortalSigninSettings" Usage="new Microsoft.Azure.Management.ApiManagement.Models.PortalSigninSettings (id, name, type, enabled)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.ApiManagement</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="id" Type="System.String" />
@@ -78,20 +80,22 @@
       </Docs>
     </Member>
     <Member MemberName="Enabled">
-      <MemberSignature Language="C#" Value="public Nullable&lt;bool&gt; Enabled { get; set; }" />
+      <MemberSignature Language="C#" Value="public bool? Enabled { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;bool&gt; Enabled" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Management.ApiManagement.Models.PortalSigninSettings.Enabled" />
       <MemberSignature Language="VB.NET" Value="Public Property Enabled As Nullable(Of Boolean)" />
       <MemberSignature Language="F#" Value="member this.Enabled : Nullable&lt;bool&gt; with get, set" Usage="Microsoft.Azure.Management.ApiManagement.Models.PortalSigninSettings.Enabled" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Nullable&lt;bool&gt; Enabled { Nullable&lt;bool&gt; get(); void set(Nullable&lt;bool&gt; value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.ApiManagement</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="properties.enabled")</AttributeName>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty(PropertyName="properties.enabled")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty(PropertyName="properties.enabled")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>

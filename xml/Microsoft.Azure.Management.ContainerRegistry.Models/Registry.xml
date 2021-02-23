@@ -1,14 +1,12 @@
-﻿<Type Name="Registry" FullName="Microsoft.Azure.Management.ContainerRegistry.Models.Registry">
+<Type Name="Registry" FullName="Microsoft.Azure.Management.ContainerRegistry.Models.Registry">
   <TypeSignature Language="C#" Value="public class Registry : Microsoft.Azure.Management.ContainerRegistry.Models.Resource" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit Registry extends Microsoft.Azure.Management.ContainerRegistry.Models.Resource" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Azure.Management.ContainerRegistry.Models.Registry" />
   <TypeSignature Language="VB.NET" Value="Public Class Registry&#xA;Inherits Resource" />
   <TypeSignature Language="F#" Value="type Registry = class&#xA;    inherit Resource" />
-  <TypeSignature Language="C++ CLI" Value="public ref class Registry : Microsoft::Azure::Management::ContainerRegistry::Models::Resource" />
-  <TypeSignature Language="C++ WINRT" Value="[Windows::Foundation::Metadata::WebHostHidden]&#xA;class Registry : Microsoft::Azure::Management::ContainerRegistry::Models::Resource" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Azure.Management.ContainerRegistry</AssemblyName>
-    <AssemblyVersion>2.0.0.0</AssemblyVersion>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>Microsoft.Azure.Management.ContainerRegistry.Models.Resource</BaseTypeName>
@@ -16,7 +14,8 @@
   <Interfaces />
   <Attributes>
     <Attribute>
-      <AttributeName>Microsoft.Rest.Serialization.JsonTransformation</AttributeName>
+      <AttributeName Language="C#">[Microsoft.Rest.Serialization.JsonTransformation]</AttributeName>
+      <AttributeName Language="F#">[&lt;Microsoft.Rest.Serialization.JsonTransformation&gt;]</AttributeName>
     </Attribute>
   </Attributes>
   <Docs>
@@ -31,13 +30,10 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Management.ContainerRegistry.Models.Registry.#ctor" />
       <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; Registry();" />
-      <MemberSignature Language="C++ CX" Value="public:&#xA; Registry();" />
-      <MemberSignature Language="C++ WINRT" Value=" Registry();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.ContainerRegistry</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
@@ -48,14 +44,15 @@
       </Docs>
     </Member>
     <Member MemberName=".ctor">
-      <MemberSignature Language="C#" Value="public Registry (string location, Microsoft.Azure.Management.ContainerRegistry.Models.Sku sku, string id = null, string name = null, string type = null, System.Collections.Generic.IDictionary&lt;string,string&gt; tags = null, string loginServer = null, Nullable&lt;DateTime&gt; creationDate = null, string provisioningState = null, Microsoft.Azure.Management.ContainerRegistry.Models.Status status = null, Nullable&lt;bool&gt; adminUserEnabled = null, Microsoft.Azure.Management.ContainerRegistry.Models.StorageAccountProperties storageAccount = null);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string location, class Microsoft.Azure.Management.ContainerRegistry.Models.Sku sku, string id, string name, string type, class System.Collections.Generic.IDictionary`2&lt;string, string&gt; tags, string loginServer, valuetype System.Nullable`1&lt;valuetype System.DateTime&gt; creationDate, string provisioningState, class Microsoft.Azure.Management.ContainerRegistry.Models.Status status, valuetype System.Nullable`1&lt;bool&gt; adminUserEnabled, class Microsoft.Azure.Management.ContainerRegistry.Models.StorageAccountProperties storageAccount) cil managed" />
-      <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Management.ContainerRegistry.Models.Registry.#ctor(System.String,Microsoft.Azure.Management.ContainerRegistry.Models.Sku,System.String,System.String,System.String,System.Collections.Generic.IDictionary{System.String,System.String},System.String,System.Nullable{System.DateTime},System.String,Microsoft.Azure.Management.ContainerRegistry.Models.Status,System.Nullable{System.Boolean},Microsoft.Azure.Management.ContainerRegistry.Models.StorageAccountProperties)" />
-      <MemberSignature Language="F#" Value="new Microsoft.Azure.Management.ContainerRegistry.Models.Registry : string * Microsoft.Azure.Management.ContainerRegistry.Models.Sku * string * string * string * System.Collections.Generic.IDictionary&lt;string, string&gt; * string * Nullable&lt;DateTime&gt; * string * Microsoft.Azure.Management.ContainerRegistry.Models.Status * Nullable&lt;bool&gt; * Microsoft.Azure.Management.ContainerRegistry.Models.StorageAccountProperties -&gt; Microsoft.Azure.Management.ContainerRegistry.Models.Registry" Usage="new Microsoft.Azure.Management.ContainerRegistry.Models.Registry (location, sku, id, name, type, tags, loginServer, creationDate, provisioningState, status, adminUserEnabled, storageAccount)" />
+      <MemberSignature Language="C#" Value="public Registry (string location, Microsoft.Azure.Management.ContainerRegistry.Models.Sku sku, string id = default, string name = default, string type = default, System.Collections.Generic.IDictionary&lt;string,string&gt; tags = default, string loginServer = default, DateTime? creationDate = default, string provisioningState = default, Microsoft.Azure.Management.ContainerRegistry.Models.Status status = default, bool? adminUserEnabled = default, Microsoft.Azure.Management.ContainerRegistry.Models.StorageAccountProperties storageAccount = default, Microsoft.Azure.Management.ContainerRegistry.Models.NetworkRuleSet networkRuleSet = default, Microsoft.Azure.Management.ContainerRegistry.Models.Policies policies = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string location, class Microsoft.Azure.Management.ContainerRegistry.Models.Sku sku, string id, string name, string type, class System.Collections.Generic.IDictionary`2&lt;string, string&gt; tags, string loginServer, valuetype System.Nullable`1&lt;valuetype System.DateTime&gt; creationDate, string provisioningState, class Microsoft.Azure.Management.ContainerRegistry.Models.Status status, valuetype System.Nullable`1&lt;bool&gt; adminUserEnabled, class Microsoft.Azure.Management.ContainerRegistry.Models.StorageAccountProperties storageAccount, class Microsoft.Azure.Management.ContainerRegistry.Models.NetworkRuleSet networkRuleSet, class Microsoft.Azure.Management.ContainerRegistry.Models.Policies policies) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Management.ContainerRegistry.Models.Registry.#ctor(System.String,Microsoft.Azure.Management.ContainerRegistry.Models.Sku,System.String,System.String,System.String,System.Collections.Generic.IDictionary{System.String,System.String},System.String,System.Nullable{System.DateTime},System.String,Microsoft.Azure.Management.ContainerRegistry.Models.Status,System.Nullable{System.Boolean},Microsoft.Azure.Management.ContainerRegistry.Models.StorageAccountProperties,Microsoft.Azure.Management.ContainerRegistry.Models.NetworkRuleSet,Microsoft.Azure.Management.ContainerRegistry.Models.Policies)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (location As String, sku As Sku, Optional id As String = Nothing, Optional name As String = Nothing, Optional type As String = Nothing, Optional tags As IDictionary(Of String, String) = Nothing, Optional loginServer As String = Nothing, Optional creationDate As Nullable(Of DateTime) = Nothing, Optional provisioningState As String = Nothing, Optional status As Status = Nothing, Optional adminUserEnabled As Nullable(Of Boolean) = Nothing, Optional storageAccount As StorageAccountProperties = Nothing, Optional networkRuleSet As NetworkRuleSet = Nothing, Optional policies As Policies = Nothing)" />
+      <MemberSignature Language="F#" Value="new Microsoft.Azure.Management.ContainerRegistry.Models.Registry : string * Microsoft.Azure.Management.ContainerRegistry.Models.Sku * string * string * string * System.Collections.Generic.IDictionary&lt;string, string&gt; * string * Nullable&lt;DateTime&gt; * string * Microsoft.Azure.Management.ContainerRegistry.Models.Status * Nullable&lt;bool&gt; * Microsoft.Azure.Management.ContainerRegistry.Models.StorageAccountProperties * Microsoft.Azure.Management.ContainerRegistry.Models.NetworkRuleSet * Microsoft.Azure.Management.ContainerRegistry.Models.Policies -&gt; Microsoft.Azure.Management.ContainerRegistry.Models.Registry" Usage="new Microsoft.Azure.Management.ContainerRegistry.Models.Registry (location, sku, id, name, type, tags, loginServer, creationDate, provisioningState, status, adminUserEnabled, storageAccount, networkRuleSet, policies)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.ContainerRegistry</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="location" Type="System.String" />
@@ -70,6 +67,8 @@
         <Parameter Name="status" Type="Microsoft.Azure.Management.ContainerRegistry.Models.Status" />
         <Parameter Name="adminUserEnabled" Type="System.Nullable&lt;System.Boolean&gt;" />
         <Parameter Name="storageAccount" Type="Microsoft.Azure.Management.ContainerRegistry.Models.StorageAccountProperties" />
+        <Parameter Name="networkRuleSet" Type="Microsoft.Azure.Management.ContainerRegistry.Models.NetworkRuleSet" />
+        <Parameter Name="policies" Type="Microsoft.Azure.Management.ContainerRegistry.Models.Policies" />
       </Parameters>
       <Docs>
         <param name="location">The location of the resource. This cannot be
@@ -93,6 +92,10 @@
             admin user is enabled.</param>
         <param name="storageAccount">The properties of the storage account
             for the container registry. Only applicable to Classic SKU.</param>
+        <param name="networkRuleSet">The network rule set for a container
+            registry.</param>
+        <param name="policies">The policies for a container
+            registry.</param>
         <summary>
             Initializes a new instance of the Registry class.
             </summary>
@@ -100,20 +103,20 @@
       </Docs>
     </Member>
     <Member MemberName="AdminUserEnabled">
-      <MemberSignature Language="C#" Value="public Nullable&lt;bool&gt; AdminUserEnabled { get; set; }" />
+      <MemberSignature Language="C#" Value="public bool? AdminUserEnabled { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;bool&gt; AdminUserEnabled" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Management.ContainerRegistry.Models.Registry.AdminUserEnabled" />
       <MemberSignature Language="VB.NET" Value="Public Property AdminUserEnabled As Nullable(Of Boolean)" />
       <MemberSignature Language="F#" Value="member this.AdminUserEnabled : Nullable&lt;bool&gt; with get, set" Usage="Microsoft.Azure.Management.ContainerRegistry.Models.Registry.AdminUserEnabled" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Nullable&lt;bool&gt; AdminUserEnabled { Nullable&lt;bool&gt; get(); void set(Nullable&lt;bool&gt; value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.ContainerRegistry</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="properties.adminUserEnabled")</AttributeName>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty(PropertyName="properties.adminUserEnabled")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty(PropertyName="properties.adminUserEnabled")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -129,20 +132,20 @@
       </Docs>
     </Member>
     <Member MemberName="CreationDate">
-      <MemberSignature Language="C#" Value="public Nullable&lt;DateTime&gt; CreationDate { get; }" />
+      <MemberSignature Language="C#" Value="public DateTime? CreationDate { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;valuetype System.DateTime&gt; CreationDate" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Management.ContainerRegistry.Models.Registry.CreationDate" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property CreationDate As Nullable(Of DateTime)" />
       <MemberSignature Language="F#" Value="member this.CreationDate : Nullable&lt;DateTime&gt;" Usage="Microsoft.Azure.Management.ContainerRegistry.Models.Registry.CreationDate" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Nullable&lt;DateTime&gt; CreationDate { Nullable&lt;DateTime&gt; get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.ContainerRegistry</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="properties.creationDate")</AttributeName>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty(PropertyName="properties.creationDate")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty(PropertyName="properties.creationDate")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -162,16 +165,15 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Management.ContainerRegistry.Models.Registry.LoginServer" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property LoginServer As String" />
       <MemberSignature Language="F#" Value="member this.LoginServer : string" Usage="Microsoft.Azure.Management.ContainerRegistry.Models.Registry.LoginServer" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ LoginServer { System::String ^ get(); };" />
-      <MemberSignature Language="C++ CX" Value="public:&#xA; property Platform::String ^ LoginServer { Platform::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.ContainerRegistry</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="properties.loginServer")</AttributeName>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty(PropertyName="properties.loginServer")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty(PropertyName="properties.loginServer")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -185,22 +187,77 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <Member MemberName="NetworkRuleSet">
+      <MemberSignature Language="C#" Value="public Microsoft.Azure.Management.ContainerRegistry.Models.NetworkRuleSet NetworkRuleSet { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Azure.Management.ContainerRegistry.Models.NetworkRuleSet NetworkRuleSet" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Management.ContainerRegistry.Models.Registry.NetworkRuleSet" />
+      <MemberSignature Language="VB.NET" Value="Public Property NetworkRuleSet As NetworkRuleSet" />
+      <MemberSignature Language="F#" Value="member this.NetworkRuleSet : Microsoft.Azure.Management.ContainerRegistry.Models.NetworkRuleSet with get, set" Usage="Microsoft.Azure.Management.ContainerRegistry.Models.Registry.NetworkRuleSet" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Azure.Management.ContainerRegistry</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty(PropertyName="properties.networkRuleSet")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty(PropertyName="properties.networkRuleSet")&gt;]</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Azure.Management.ContainerRegistry.Models.NetworkRuleSet</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets or sets the network rule set for a container registry.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Policies">
+      <MemberSignature Language="C#" Value="public Microsoft.Azure.Management.ContainerRegistry.Models.Policies Policies { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Azure.Management.ContainerRegistry.Models.Policies Policies" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Management.ContainerRegistry.Models.Registry.Policies" />
+      <MemberSignature Language="VB.NET" Value="Public Property Policies As Policies" />
+      <MemberSignature Language="F#" Value="member this.Policies : Microsoft.Azure.Management.ContainerRegistry.Models.Policies with get, set" Usage="Microsoft.Azure.Management.ContainerRegistry.Models.Registry.Policies" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Azure.Management.ContainerRegistry</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty(PropertyName="properties.policies")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty(PropertyName="properties.policies")&gt;]</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Azure.Management.ContainerRegistry.Models.Policies</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets or sets the policies for a container registry.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
     <Member MemberName="ProvisioningState">
       <MemberSignature Language="C#" Value="public string ProvisioningState { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string ProvisioningState" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Management.ContainerRegistry.Models.Registry.ProvisioningState" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ProvisioningState As String" />
       <MemberSignature Language="F#" Value="member this.ProvisioningState : string" Usage="Microsoft.Azure.Management.ContainerRegistry.Models.Registry.ProvisioningState" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ ProvisioningState { System::String ^ get(); };" />
-      <MemberSignature Language="C++ CX" Value="public:&#xA; property Platform::String ^ ProvisioningState { Platform::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.ContainerRegistry</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="properties.provisioningState")</AttributeName>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty(PropertyName="properties.provisioningState")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty(PropertyName="properties.provisioningState")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -222,15 +279,15 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Management.ContainerRegistry.Models.Registry.Sku" />
       <MemberSignature Language="VB.NET" Value="Public Property Sku As Sku" />
       <MemberSignature Language="F#" Value="member this.Sku : Microsoft.Azure.Management.ContainerRegistry.Models.Sku with get, set" Usage="Microsoft.Azure.Management.ContainerRegistry.Models.Registry.Sku" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Azure::Management::ContainerRegistry::Models::Sku ^ Sku { Microsoft::Azure::Management::ContainerRegistry::Models::Sku ^ get(); void set(Microsoft::Azure::Management::ContainerRegistry::Models::Sku ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.ContainerRegistry</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="sku")</AttributeName>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty(PropertyName="sku")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty(PropertyName="sku")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -250,15 +307,15 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Management.ContainerRegistry.Models.Registry.Status" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Status As Status" />
       <MemberSignature Language="F#" Value="member this.Status : Microsoft.Azure.Management.ContainerRegistry.Models.Status" Usage="Microsoft.Azure.Management.ContainerRegistry.Models.Registry.Status" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Azure::Management::ContainerRegistry::Models::Status ^ Status { Microsoft::Azure::Management::ContainerRegistry::Models::Status ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.ContainerRegistry</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="properties.status")</AttributeName>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty(PropertyName="properties.status")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty(PropertyName="properties.status")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -279,15 +336,15 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Management.ContainerRegistry.Models.Registry.StorageAccount" />
       <MemberSignature Language="VB.NET" Value="Public Property StorageAccount As StorageAccountProperties" />
       <MemberSignature Language="F#" Value="member this.StorageAccount : Microsoft.Azure.Management.ContainerRegistry.Models.StorageAccountProperties with get, set" Usage="Microsoft.Azure.Management.ContainerRegistry.Models.Registry.StorageAccount" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Azure::Management::ContainerRegistry::Models::StorageAccountProperties ^ StorageAccount { Microsoft::Azure::Management::ContainerRegistry::Models::StorageAccountProperties ^ get(); void set(Microsoft::Azure::Management::ContainerRegistry::Models::StorageAccountProperties ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.ContainerRegistry</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="properties.storageAccount")</AttributeName>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty(PropertyName="properties.storageAccount")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty(PropertyName="properties.storageAccount")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -308,13 +365,10 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Management.ContainerRegistry.Models.Registry.Validate" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub Validate ()" />
       <MemberSignature Language="F#" Value="override this.Validate : unit -&gt; unit" Usage="registry.Validate " />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void Validate();" />
-      <MemberSignature Language="C++ CX" Value="public:&#xA; override void Validate();" />
-      <MemberSignature Language="C++ WINRT" Value=" override void Validate();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.ContainerRegistry</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>

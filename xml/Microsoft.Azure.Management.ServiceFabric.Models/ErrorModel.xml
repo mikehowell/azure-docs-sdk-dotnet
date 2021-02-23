@@ -1,11 +1,9 @@
-﻿<Type Name="ErrorModel" FullName="Microsoft.Azure.Management.ServiceFabric.Models.ErrorModel">
+<Type Name="ErrorModel" FullName="Microsoft.Azure.Management.ServiceFabric.Models.ErrorModel">
   <TypeSignature Language="C#" Value="public class ErrorModel" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit ErrorModel extends System.Object" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Azure.Management.ServiceFabric.Models.ErrorModel" />
   <TypeSignature Language="VB.NET" Value="Public Class ErrorModel" />
   <TypeSignature Language="F#" Value="type ErrorModel = class" />
-  <TypeSignature Language="C++ CLI" Value="public ref class ErrorModel" />
-  <TypeSignature Language="C++ WINRT" Value="[Windows::Foundation::Metadata::WebHostHidden]&#xA;class ErrorModel" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Azure.Management.ServiceFabric</AssemblyName>
     <AssemblyVersion>1.0.0.0</AssemblyVersion>
@@ -16,7 +14,7 @@
   <Interfaces />
   <Docs>
     <summary>
-            The structure of the error
+            The structure of the error.
             </summary>
     <remarks>To be added.</remarks>
   </Docs>
@@ -26,9 +24,6 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Management.ServiceFabric.Models.ErrorModel.#ctor" />
       <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; ErrorModel();" />
-      <MemberSignature Language="C++ CX" Value="public:&#xA; ErrorModel();" />
-      <MemberSignature Language="C++ WINRT" Value=" ErrorModel();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.ServiceFabric</AssemblyName>
@@ -43,12 +38,11 @@
       </Docs>
     </Member>
     <Member MemberName=".ctor">
-      <MemberSignature Language="C#" Value="public ErrorModel (Microsoft.Azure.Management.ServiceFabric.Models.ErrorModelError error = null);" />
+      <MemberSignature Language="C#" Value="public ErrorModel (Microsoft.Azure.Management.ServiceFabric.Models.ErrorModelError error = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class Microsoft.Azure.Management.ServiceFabric.Models.ErrorModelError error) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Management.ServiceFabric.Models.ErrorModel.#ctor(Microsoft.Azure.Management.ServiceFabric.Models.ErrorModelError)" />
-      <MemberSignature Language="VB.NET" Value="Public Sub New (Optional error As ErrorModelError = null)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (Optional error As ErrorModelError = Nothing)" />
       <MemberSignature Language="F#" Value="new Microsoft.Azure.Management.ServiceFabric.Models.ErrorModel : Microsoft.Azure.Management.ServiceFabric.Models.ErrorModelError -&gt; Microsoft.Azure.Management.ServiceFabric.Models.ErrorModel" Usage="new Microsoft.Azure.Management.ServiceFabric.Models.ErrorModel error" />
-      <MemberSignature Language="C++ WINRT" Value=" ErrorModel(Microsoft::Azure::Management::ServiceFabric::Models::ErrorModelError const &amp; error = null);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.ServiceFabric</AssemblyName>
@@ -58,7 +52,7 @@
         <Parameter Name="error" Type="Microsoft.Azure.Management.ServiceFabric.Models.ErrorModelError" />
       </Parameters>
       <Docs>
-        <param name="error">The error detail </param>
+        <param name="error">The error details.</param>
         <summary>
             Initializes a new instance of the ErrorModel class.
             </summary>
@@ -71,7 +65,6 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Management.ServiceFabric.Models.ErrorModel.Error" />
       <MemberSignature Language="VB.NET" Value="Public Property Error As ErrorModelError" />
       <MemberSignature Language="F#" Value="member this.Error : Microsoft.Azure.Management.ServiceFabric.Models.ErrorModelError with get, set" Usage="Microsoft.Azure.Management.ServiceFabric.Models.ErrorModel.Error" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Azure::Management::ServiceFabric::Models::ErrorModelError ^ Error { Microsoft::Azure::Management::ServiceFabric::Models::ErrorModelError ^ get(); void set(Microsoft::Azure::Management::ServiceFabric::Models::ErrorModelError ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.ServiceFabric</AssemblyName>
@@ -79,7 +72,8 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="error")</AttributeName>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty(PropertyName="error")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty(PropertyName="error")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -87,7 +81,7 @@
       </ReturnValue>
       <Docs>
         <summary>
-            Gets or sets the error detail
+            Gets or sets the error details.
             </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>

@@ -1,19 +1,25 @@
-﻿<Type Name="IWithRemoteNetwork" FullName="Microsoft.Azure.Management.Network.Fluent.NetworkPeering.Definition.IWithRemoteNetwork">
+<Type Name="IWithRemoteNetwork" FullName="Microsoft.Azure.Management.Network.Fluent.NetworkPeering.Definition.IWithRemoteNetwork">
   <TypeSignature Language="C#" Value="public interface IWithRemoteNetwork" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IWithRemoteNetwork" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Azure.Management.Network.Fluent.NetworkPeering.Definition.IWithRemoteNetwork" />
   <TypeSignature Language="VB.NET" Value="Public Interface IWithRemoteNetwork" />
   <TypeSignature Language="F#" Value="type IWithRemoteNetwork = interface" />
-  <TypeSignature Language="C++ CLI" Value="public interface class IWithRemoteNetwork" />
-  <TypeSignature Language="C++ CX" Value="public interface class IWithRemoteNetwork" />
-  <TypeSignature Language="C++ WINRT" Value="__interface IWithRemoteNetwork" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Azure.Management.Network.Fluent</AssemblyName>
-    <AssemblyVersion>1.0.0.60</AssemblyVersion>
+    <AssemblyVersion>1.0.0.61</AssemblyVersion>
+    <AssemblyVersion>1.0.0.62</AssemblyVersion>
+    <AssemblyVersion>1.0.0.63</AssemblyVersion>
+    <AssemblyVersion>1.0.0.64</AssemblyVersion>
+    <AssemblyVersion>1.0.0.65</AssemblyVersion>
+    <AssemblyVersion>1.0.0.66</AssemblyVersion>
+    <AssemblyVersion>1.0.0.67</AssemblyVersion>
+    <AssemblyVersion>1.0.0.68</AssemblyVersion>
   </AssemblyInfo>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
+    <summary>
+            The stage of a network peering definition allowing to specify the remote virtual network.
+            </summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -23,13 +29,17 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Management.Network.Fluent.NetworkPeering.Definition.IWithRemoteNetwork.WithRemoteNetwork(Microsoft.Azure.Management.Network.Fluent.INetwork)" />
       <MemberSignature Language="VB.NET" Value="Public Function WithRemoteNetwork (network As INetwork) As IWithCreate" />
       <MemberSignature Language="F#" Value="abstract member WithRemoteNetwork : Microsoft.Azure.Management.Network.Fluent.INetwork -&gt; Microsoft.Azure.Management.Network.Fluent.NetworkPeering.Definition.IWithCreate" Usage="iWithRemoteNetwork.WithRemoteNetwork network" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; Microsoft::Azure::Management::Network::Fluent::NetworkPeering::Definition::IWithCreate ^ WithRemoteNetwork(Microsoft::Azure::Management::Network::Fluent::INetwork ^ network);" />
-      <MemberSignature Language="C++ CX" Value="public:&#xA; Microsoft::Azure::Management::Network::Fluent::NetworkPeering::Definition::IWithCreate ^ WithRemoteNetwork(Microsoft::Azure::Management::Network::Fluent::INetwork ^ network);" />
-      <MemberSignature Language="C++ WINRT" Value="Microsoft::Azure::Management::Network::Fluent::NetworkPeering::Definition::IWithCreate WithRemoteNetwork(Microsoft::Azure::Management::Network::Fluent::INetwork const &amp; network);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Network.Fluent</AssemblyName>
-        <AssemblyVersion>1.0.0.60</AssemblyVersion>
+        <AssemblyVersion>1.0.0.61</AssemblyVersion>
+        <AssemblyVersion>1.0.0.62</AssemblyVersion>
+        <AssemblyVersion>1.0.0.63</AssemblyVersion>
+        <AssemblyVersion>1.0.0.64</AssemblyVersion>
+        <AssemblyVersion>1.0.0.65</AssemblyVersion>
+        <AssemblyVersion>1.0.0.66</AssemblyVersion>
+        <AssemblyVersion>1.0.0.67</AssemblyVersion>
+        <AssemblyVersion>1.0.0.68</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Azure.Management.Network.Fluent.NetworkPeering.Definition.IWithCreate</ReturnType>
@@ -38,10 +48,14 @@
         <Parameter Name="network" Type="Microsoft.Azure.Management.Network.Fluent.INetwork" />
       </Parameters>
       <Docs>
-        <param name="network">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="network">An existing network.</param>
+        <summary>
+            Specifies the remote network to peer with.
+            The remote network will have the matching peering associated with it automatically.
+            </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
+        <return>The next stage of the definition.</return>
       </Docs>
     </Member>
     <Member MemberName="WithRemoteNetwork">
@@ -50,13 +64,17 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Management.Network.Fluent.NetworkPeering.Definition.IWithRemoteNetwork.WithRemoteNetwork(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Function WithRemoteNetwork (resourceId As String) As IWithCreate" />
       <MemberSignature Language="F#" Value="abstract member WithRemoteNetwork : string -&gt; Microsoft.Azure.Management.Network.Fluent.NetworkPeering.Definition.IWithCreate" Usage="iWithRemoteNetwork.WithRemoteNetwork resourceId" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; Microsoft::Azure::Management::Network::Fluent::NetworkPeering::Definition::IWithCreate ^ WithRemoteNetwork(System::String ^ resourceId);" />
-      <MemberSignature Language="C++ CX" Value="public:&#xA; Microsoft::Azure::Management::Network::Fluent::NetworkPeering::Definition::IWithCreate ^ WithRemoteNetwork(Platform::String ^ resourceId);" />
-      <MemberSignature Language="C++ WINRT" Value="Microsoft::Azure::Management::Network::Fluent::NetworkPeering::Definition::IWithCreate WithRemoteNetwork(std::wstring const &amp; resourceId);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Network.Fluent</AssemblyName>
-        <AssemblyVersion>1.0.0.60</AssemblyVersion>
+        <AssemblyVersion>1.0.0.61</AssemblyVersion>
+        <AssemblyVersion>1.0.0.62</AssemblyVersion>
+        <AssemblyVersion>1.0.0.63</AssemblyVersion>
+        <AssemblyVersion>1.0.0.64</AssemblyVersion>
+        <AssemblyVersion>1.0.0.65</AssemblyVersion>
+        <AssemblyVersion>1.0.0.66</AssemblyVersion>
+        <AssemblyVersion>1.0.0.67</AssemblyVersion>
+        <AssemblyVersion>1.0.0.68</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Azure.Management.Network.Fluent.NetworkPeering.Definition.IWithCreate</ReturnType>
@@ -65,10 +83,14 @@
         <Parameter Name="resourceId" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="resourceId">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="resourceId">The resource ID of an existing network.</param>
+        <summary>
+            Specifies the remote network to peer with.
+            The remote network will have the matching peering associated with it automatically.
+            </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
+        <return>The next stage of the definition.</return>
       </Docs>
     </Member>
   </Members>

@@ -1,17 +1,15 @@
-﻿<Type Name="VirtualNetworkGatewaySku" FullName="Microsoft.Azure.Management.Network.Models.VirtualNetworkGatewaySku">
+<Type Name="VirtualNetworkGatewaySku" FullName="Microsoft.Azure.Management.Network.Models.VirtualNetworkGatewaySku">
   <TypeSignature Language="C#" Value="public class VirtualNetworkGatewaySku" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit VirtualNetworkGatewaySku extends System.Object" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Azure.Management.Network.Models.VirtualNetworkGatewaySku" />
   <TypeSignature Language="VB.NET" Value="Public Class VirtualNetworkGatewaySku" />
   <TypeSignature Language="F#" Value="type VirtualNetworkGatewaySku = class" />
-  <TypeSignature Language="C++ CLI" Value="public ref class VirtualNetworkGatewaySku" />
-  <TypeSignature Language="C++ WINRT" Value="[Windows::Foundation::Metadata::WebHostHidden]&#xA;class VirtualNetworkGatewaySku" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Azure.Management.Network</AssemblyName>
-    <AssemblyVersion>14.0.0.0</AssemblyVersion>
-    <AssemblyVersion>16.0.0.0</AssemblyVersion>
-    <AssemblyVersion>17.0.0.0</AssemblyVersion>
-    <AssemblyVersion>18.0.0.0</AssemblyVersion>
+    <AssemblyVersion>20.0.0.0</AssemblyVersion>
+    <AssemblyVersion>20.0.1.0</AssemblyVersion>
+    <AssemblyVersion>20.0.2.0</AssemblyVersion>
+    <AssemblyVersion>20.0.3.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
@@ -19,7 +17,7 @@
   <Interfaces />
   <Docs>
     <summary>
-            VirtualNetworkGatewaySku details
+            VirtualNetworkGatewaySku details.
             </summary>
     <remarks>To be added.</remarks>
   </Docs>
@@ -29,16 +27,13 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Management.Network.Models.VirtualNetworkGatewaySku.#ctor" />
       <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; VirtualNetworkGatewaySku();" />
-      <MemberSignature Language="C++ CX" Value="public:&#xA; VirtualNetworkGatewaySku();" />
-      <MemberSignature Language="C++ WINRT" Value=" VirtualNetworkGatewaySku();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Network</AssemblyName>
-        <AssemblyVersion>14.0.0.0</AssemblyVersion>
-        <AssemblyVersion>16.0.0.0</AssemblyVersion>
-        <AssemblyVersion>17.0.0.0</AssemblyVersion>
-        <AssemblyVersion>18.0.0.0</AssemblyVersion>
+        <AssemblyVersion>20.0.0.0</AssemblyVersion>
+        <AssemblyVersion>20.0.1.0</AssemblyVersion>
+        <AssemblyVersion>20.0.2.0</AssemblyVersion>
+        <AssemblyVersion>20.0.3.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
@@ -49,18 +44,18 @@
       </Docs>
     </Member>
     <Member MemberName=".ctor">
-      <MemberSignature Language="C#" Value="public VirtualNetworkGatewaySku (string name = null, string tier = null, Nullable&lt;int&gt; capacity = null);" />
+      <MemberSignature Language="C#" Value="public VirtualNetworkGatewaySku (string name = default, string tier = default, int? capacity = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string name, string tier, valuetype System.Nullable`1&lt;int32&gt; capacity) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Management.Network.Models.VirtualNetworkGatewaySku.#ctor(System.String,System.String,System.Nullable{System.Int32})" />
-      <MemberSignature Language="VB.NET" Value="Public Sub New (Optional name As String = null, Optional tier As String = null, Optional capacity As Nullable(Of Integer) = null)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (Optional name As String = Nothing, Optional tier As String = Nothing, Optional capacity As Nullable(Of Integer) = Nothing)" />
       <MemberSignature Language="F#" Value="new Microsoft.Azure.Management.Network.Models.VirtualNetworkGatewaySku : string * string * Nullable&lt;int&gt; -&gt; Microsoft.Azure.Management.Network.Models.VirtualNetworkGatewaySku" Usage="new Microsoft.Azure.Management.Network.Models.VirtualNetworkGatewaySku (name, tier, capacity)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Network</AssemblyName>
-        <AssemblyVersion>14.0.0.0</AssemblyVersion>
-        <AssemblyVersion>16.0.0.0</AssemblyVersion>
-        <AssemblyVersion>17.0.0.0</AssemblyVersion>
-        <AssemblyVersion>18.0.0.0</AssemblyVersion>
+        <AssemblyVersion>20.0.0.0</AssemblyVersion>
+        <AssemblyVersion>20.0.1.0</AssemblyVersion>
+        <AssemblyVersion>20.0.2.0</AssemblyVersion>
+        <AssemblyVersion>20.0.3.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="name" Type="System.String" />
@@ -70,10 +65,14 @@
       <Docs>
         <param name="name">Gateway SKU name. Possible values include:
             'Basic', 'HighPerformance', 'Standard', 'UltraPerformance',
-            'VpnGw1', 'VpnGw2', 'VpnGw3'</param>
+            'VpnGw1', 'VpnGw2', 'VpnGw3', 'VpnGw4', 'VpnGw5', 'VpnGw1AZ',
+            'VpnGw2AZ', 'VpnGw3AZ', 'VpnGw4AZ', 'VpnGw5AZ', 'ErGw1AZ',
+            'ErGw2AZ', 'ErGw3AZ'</param>
         <param name="tier">Gateway SKU tier. Possible values include:
             'Basic', 'HighPerformance', 'Standard', 'UltraPerformance',
-            'VpnGw1', 'VpnGw2', 'VpnGw3'</param>
+            'VpnGw1', 'VpnGw2', 'VpnGw3', 'VpnGw4', 'VpnGw5', 'VpnGw1AZ',
+            'VpnGw2AZ', 'VpnGw3AZ', 'VpnGw4AZ', 'VpnGw5AZ', 'ErGw1AZ',
+            'ErGw2AZ', 'ErGw3AZ'</param>
         <param name="capacity">The capacity.</param>
         <summary>
             Initializes a new instance of the VirtualNetworkGatewaySku class.
@@ -82,23 +81,23 @@
       </Docs>
     </Member>
     <Member MemberName="Capacity">
-      <MemberSignature Language="C#" Value="public Nullable&lt;int&gt; Capacity { get; set; }" />
+      <MemberSignature Language="C#" Value="public int? Capacity { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;int32&gt; Capacity" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Management.Network.Models.VirtualNetworkGatewaySku.Capacity" />
-      <MemberSignature Language="VB.NET" Value="Public Property Capacity As Nullable(Of Integer)" />
-      <MemberSignature Language="F#" Value="member this.Capacity : Nullable&lt;int&gt; with get, set" Usage="Microsoft.Azure.Management.Network.Models.VirtualNetworkGatewaySku.Capacity" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Nullable&lt;int&gt; Capacity { Nullable&lt;int&gt; get(); void set(Nullable&lt;int&gt; value); };" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Capacity As Nullable(Of Integer)" />
+      <MemberSignature Language="F#" Value="member this.Capacity : Nullable&lt;int&gt;" Usage="Microsoft.Azure.Management.Network.Models.VirtualNetworkGatewaySku.Capacity" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Network</AssemblyName>
-        <AssemblyVersion>14.0.0.0</AssemblyVersion>
-        <AssemblyVersion>16.0.0.0</AssemblyVersion>
-        <AssemblyVersion>17.0.0.0</AssemblyVersion>
-        <AssemblyVersion>18.0.0.0</AssemblyVersion>
+        <AssemblyVersion>20.0.0.0</AssemblyVersion>
+        <AssemblyVersion>20.0.1.0</AssemblyVersion>
+        <AssemblyVersion>20.0.2.0</AssemblyVersion>
+        <AssemblyVersion>20.0.3.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="capacity")</AttributeName>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty(PropertyName="capacity")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty(PropertyName="capacity")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -106,7 +105,7 @@
       </ReturnValue>
       <Docs>
         <summary>
-            Gets or sets the capacity.
+            Gets the capacity.
             </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
@@ -118,19 +117,18 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Management.Network.Models.VirtualNetworkGatewaySku.Name" />
       <MemberSignature Language="VB.NET" Value="Public Property Name As String" />
       <MemberSignature Language="F#" Value="member this.Name : string with get, set" Usage="Microsoft.Azure.Management.Network.Models.VirtualNetworkGatewaySku.Name" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Name { System::String ^ get(); void set(System::String ^ value); };" />
-      <MemberSignature Language="C++ CX" Value="public:&#xA; property Platform::String ^ Name { Platform::String ^ get(); void set(Platform::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Network</AssemblyName>
-        <AssemblyVersion>14.0.0.0</AssemblyVersion>
-        <AssemblyVersion>16.0.0.0</AssemblyVersion>
-        <AssemblyVersion>17.0.0.0</AssemblyVersion>
-        <AssemblyVersion>18.0.0.0</AssemblyVersion>
+        <AssemblyVersion>20.0.0.0</AssemblyVersion>
+        <AssemblyVersion>20.0.1.0</AssemblyVersion>
+        <AssemblyVersion>20.0.2.0</AssemblyVersion>
+        <AssemblyVersion>20.0.3.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="name")</AttributeName>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty(PropertyName="name")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty(PropertyName="name")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -140,7 +138,8 @@
         <summary>
             Gets or sets gateway SKU name. Possible values include: 'Basic',
             'HighPerformance', 'Standard', 'UltraPerformance', 'VpnGw1',
-            'VpnGw2', 'VpnGw3'
+            'VpnGw2', 'VpnGw3', 'VpnGw4', 'VpnGw5', 'VpnGw1AZ', 'VpnGw2AZ',
+            'VpnGw3AZ', 'VpnGw4AZ', 'VpnGw5AZ', 'ErGw1AZ', 'ErGw2AZ', 'ErGw3AZ'
             </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
@@ -152,19 +151,18 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Management.Network.Models.VirtualNetworkGatewaySku.Tier" />
       <MemberSignature Language="VB.NET" Value="Public Property Tier As String" />
       <MemberSignature Language="F#" Value="member this.Tier : string with get, set" Usage="Microsoft.Azure.Management.Network.Models.VirtualNetworkGatewaySku.Tier" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Tier { System::String ^ get(); void set(System::String ^ value); };" />
-      <MemberSignature Language="C++ CX" Value="public:&#xA; property Platform::String ^ Tier { Platform::String ^ get(); void set(Platform::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Network</AssemblyName>
-        <AssemblyVersion>14.0.0.0</AssemblyVersion>
-        <AssemblyVersion>16.0.0.0</AssemblyVersion>
-        <AssemblyVersion>17.0.0.0</AssemblyVersion>
-        <AssemblyVersion>18.0.0.0</AssemblyVersion>
+        <AssemblyVersion>20.0.0.0</AssemblyVersion>
+        <AssemblyVersion>20.0.1.0</AssemblyVersion>
+        <AssemblyVersion>20.0.2.0</AssemblyVersion>
+        <AssemblyVersion>20.0.3.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="tier")</AttributeName>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty(PropertyName="tier")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty(PropertyName="tier")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -174,7 +172,8 @@
         <summary>
             Gets or sets gateway SKU tier. Possible values include: 'Basic',
             'HighPerformance', 'Standard', 'UltraPerformance', 'VpnGw1',
-            'VpnGw2', 'VpnGw3'
+            'VpnGw2', 'VpnGw3', 'VpnGw4', 'VpnGw5', 'VpnGw1AZ', 'VpnGw2AZ',
+            'VpnGw3AZ', 'VpnGw4AZ', 'VpnGw5AZ', 'ErGw1AZ', 'ErGw2AZ', 'ErGw3AZ'
             </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>

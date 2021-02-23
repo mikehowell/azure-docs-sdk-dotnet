@@ -1,13 +1,12 @@
-﻿<Type Name="CrossDomainController" FullName="Microsoft.Azure.Mobile.Server.Controllers.CrossDomainController">
+<Type Name="CrossDomainController" FullName="Microsoft.Azure.Mobile.Server.Controllers.CrossDomainController">
   <TypeSignature Language="C#" Value="public class CrossDomainController : System.Web.Http.ApiController" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit CrossDomainController extends System.Web.Http.ApiController" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Azure.Mobile.Server.Controllers.CrossDomainController" />
   <TypeSignature Language="VB.NET" Value="Public Class CrossDomainController&#xA;Inherits ApiController" />
   <TypeSignature Language="F#" Value="type CrossDomainController = class&#xA;    inherit ApiController" />
-  <TypeSignature Language="C++ CLI" Value="public ref class CrossDomainController : System::Web::Http::ApiController" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Azure.Mobile.Server.CrossDomain</AssemblyName>
-    <AssemblyVersion>2.0.0.0</AssemblyVersion>
+    <AssemblyVersion>2.0.3.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Web.Http.ApiController</BaseTypeName>
@@ -15,10 +14,12 @@
   <Interfaces />
   <Attributes>
     <Attribute>
-      <AttributeName>Microsoft.Azure.Mobile.Server.Config.MobileAppController</AttributeName>
+      <AttributeName Language="C#">[Microsoft.Azure.Mobile.Server.Config.MobileAppController]</AttributeName>
+      <AttributeName Language="F#">[&lt;Microsoft.Azure.Mobile.Server.Config.MobileAppController&gt;]</AttributeName>
     </Attribute>
     <Attribute>
-      <AttributeName>System.Web.Http.Description.ApiExplorerSettings(IgnoreApi=true)</AttributeName>
+      <AttributeName Language="C#">[System.Web.Http.Description.ApiExplorerSettings(IgnoreApi=true)]</AttributeName>
+      <AttributeName Language="F#">[&lt;System.Web.Http.Description.ApiExplorerSettings(IgnoreApi=true)&gt;]</AttributeName>
     </Attribute>
   </Attributes>
   <Docs>
@@ -33,13 +34,10 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Mobile.Server.Controllers.CrossDomainController.#ctor" />
       <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; CrossDomainController();" />
-      <MemberSignature Language="C++ CX" Value="public:&#xA; CrossDomainController();" />
-      <MemberSignature Language="C++ WINRT" Value=" CrossDomainController();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Mobile.Server.CrossDomain</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.3.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
@@ -53,21 +51,19 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Mobile.Server.Controllers.CrossDomainController.Bridge(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Function Bridge (origin As String) As Task(Of IHttpActionResult)" />
       <MemberSignature Language="F#" Value="member this.Bridge : string -&gt; System.Threading.Tasks.Task&lt;System.Web.Http.IHttpActionResult&gt;" Usage="crossDomainController.Bridge origin" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Threading::Tasks::Task&lt;System::Web::Http::IHttpActionResult ^&gt; ^ Bridge(System::String ^ origin);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Mobile.Server.CrossDomain</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.3.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>System.Runtime.CompilerServices.AsyncStateMachine(typeof(Microsoft.Azure.Mobile.Server.Controllers.CrossDomainController/&lt;Bridge&gt;d__2))</AttributeName>
+          <AttributeName Language="C#">[System.Web.Http.AllowAnonymous]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Web.Http.AllowAnonymous&gt;]</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.Web.Http.AllowAnonymous</AttributeName>
-        </Attribute>
-        <Attribute>
-          <AttributeName>System.Web.Http.HttpGet</AttributeName>
+          <AttributeName Language="C#">[System.Web.Http.HttpGet]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Web.Http.HttpGet&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -93,11 +89,10 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Mobile.Server.Controllers.CrossDomainController.Initialize(System.Web.Http.Controllers.HttpControllerContext)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub Initialize (controllerContext As HttpControllerContext)" />
       <MemberSignature Language="F#" Value="override this.Initialize : System.Web.Http.Controllers.HttpControllerContext -&gt; unit" Usage="crossDomainController.Initialize controllerContext" />
-      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void Initialize(System::Web::Http::Controllers::HttpControllerContext ^ controllerContext);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Mobile.Server.CrossDomain</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.3.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -117,21 +112,19 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Mobile.Server.Controllers.CrossDomainController.LoginReceiver(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Function LoginReceiver (completionOrigin As String) As Task(Of IHttpActionResult)" />
       <MemberSignature Language="F#" Value="member this.LoginReceiver : string -&gt; System.Threading.Tasks.Task&lt;System.Web.Http.IHttpActionResult&gt;" Usage="crossDomainController.LoginReceiver completionOrigin" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Threading::Tasks::Task&lt;System::Web::Http::IHttpActionResult ^&gt; ^ LoginReceiver(System::String ^ completionOrigin);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Mobile.Server.CrossDomain</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.3.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>System.Runtime.CompilerServices.AsyncStateMachine(typeof(Microsoft.Azure.Mobile.Server.Controllers.CrossDomainController/&lt;LoginReceiver&gt;d__3))</AttributeName>
+          <AttributeName Language="C#">[System.Web.Http.AllowAnonymous]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Web.Http.AllowAnonymous&gt;]</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.Web.Http.AllowAnonymous</AttributeName>
-        </Attribute>
-        <Attribute>
-          <AttributeName>System.Web.Http.HttpGet</AttributeName>
+          <AttributeName Language="C#">[System.Web.Http.HttpGet]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Web.Http.HttpGet&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -141,7 +134,8 @@
         <Parameter Name="completionOrigin" Type="System.String">
           <Attributes>
             <Attribute>
-              <AttributeName>System.Web.Http.FromUri(Name="completion_origin")</AttributeName>
+              <AttributeName Language="C#">[System.Web.Http.FromUri(Name="completion_origin")]</AttributeName>
+              <AttributeName Language="F#">[&lt;System.Web.Http.FromUri(Name="completion_origin")&gt;]</AttributeName>
             </Attribute>
           </Attributes>
         </Parameter>

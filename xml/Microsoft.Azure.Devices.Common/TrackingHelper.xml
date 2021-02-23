@@ -1,24 +1,45 @@
-﻿<Type Name="TrackingHelper" FullName="Microsoft.Azure.Devices.Common.TrackingHelper">
+<Type Name="TrackingHelper" FullName="Microsoft.Azure.Devices.Common.TrackingHelper">
   <TypeSignature Language="C#" Value="public static class TrackingHelper" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract sealed beforefieldinit TrackingHelper extends System.Object" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Azure.Devices.Common.TrackingHelper" />
   <TypeSignature Language="VB.NET" Value="Public Module TrackingHelper" />
   <TypeSignature Language="F#" Value="type TrackingHelper = class" />
-  <TypeSignature Language="C++ CLI" Value="public ref class TrackingHelper abstract sealed" />
-  <TypeSignature Language="C++ CX" Value="public ref class TrackingHelper abstract sealed" />
-  <TypeSignature Language="C++ WINRT" Value="class TrackingHelper abstract sealed" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Azure.Devices</AssemblyName>
-    <AssemblyVersion>1.0.0.0</AssemblyVersion>
-    <AssemblyVersion>1.16.0.0</AssemblyVersion>
+    <AssemblyVersion>1.18.2.0</AssemblyVersion>
+    <AssemblyVersion>1.18.3.0</AssemblyVersion>
+    <AssemblyVersion>1.18.4.0</AssemblyVersion>
+    <AssemblyVersion>1.19.0.0</AssemblyVersion>
+    <AssemblyVersion>1.20.0.0</AssemblyVersion>
+    <AssemblyVersion>1.20.1.0</AssemblyVersion>
+    <AssemblyVersion>1.21.0.0</AssemblyVersion>
+    <AssemblyVersion>1.22.0.0</AssemblyVersion>
+    <AssemblyVersion>1.27.0.0</AssemblyVersion>
+    <AssemblyVersion>1.27.1.0</AssemblyVersion>
+    <AssemblyVersion>1.27.2.0</AssemblyVersion>
+    <AssemblyVersion>1.27.3.0</AssemblyVersion>
+    <AssemblyVersion>1.28.0.0</AssemblyVersion>
+    <AssemblyVersion>1.28.1.0</AssemblyVersion>
+    <AssemblyVersion>1.29.0.0</AssemblyVersion>
+    <AssemblyVersion>1.30.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
   </Base>
   <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName Language="C#">[System.Obsolete("This is for internal use only. SDK will not support this for external usage.")]</AttributeName>
+      <AttributeName Language="F#">[&lt;System.Obsolete("This is for internal use only. SDK will not support this for external usage.")&gt;]</AttributeName>
+    </Attribute>
+  </Attributes>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>
+            Generates tracking Id with gateway, backend, partition and timestamp data.
+            </summary>
+    <remarks>
+            Tracking Id format is [GUID][-G:GatewayId][-B:BackendId][-P:PartitionId][-TimeStamp:Timestamp]
+            </remarks>
   </Docs>
   <Members>
     <Member MemberName="CheckAndAddGatewayIdToTrackingId">
@@ -27,14 +48,25 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Devices.Common.TrackingHelper.CheckAndAddGatewayIdToTrackingId(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Function CheckAndAddGatewayIdToTrackingId (trackingId As String) As String" />
       <MemberSignature Language="F#" Value="static member CheckAndAddGatewayIdToTrackingId : string -&gt; string" Usage="Microsoft.Azure.Devices.Common.TrackingHelper.CheckAndAddGatewayIdToTrackingId trackingId" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::String ^ CheckAndAddGatewayIdToTrackingId(System::String ^ trackingId);" />
-      <MemberSignature Language="C++ CX" Value="public:&#xA; static Platform::String ^ CheckAndAddGatewayIdToTrackingId(Platform::String ^ trackingId);" />
-      <MemberSignature Language="C++ WINRT" Value=" static std::wstring CheckAndAddGatewayIdToTrackingId(std::wstring const &amp; trackingId);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Devices</AssemblyName>
-        <AssemblyVersion>1.0.0.0</AssemblyVersion>
-        <AssemblyVersion>1.16.0.0</AssemblyVersion>
+        <AssemblyVersion>1.18.2.0</AssemblyVersion>
+        <AssemblyVersion>1.18.3.0</AssemblyVersion>
+        <AssemblyVersion>1.18.4.0</AssemblyVersion>
+        <AssemblyVersion>1.19.0.0</AssemblyVersion>
+        <AssemblyVersion>1.20.0.0</AssemblyVersion>
+        <AssemblyVersion>1.20.1.0</AssemblyVersion>
+        <AssemblyVersion>1.21.0.0</AssemblyVersion>
+        <AssemblyVersion>1.22.0.0</AssemblyVersion>
+        <AssemblyVersion>1.27.0.0</AssemblyVersion>
+        <AssemblyVersion>1.27.1.0</AssemblyVersion>
+        <AssemblyVersion>1.27.2.0</AssemblyVersion>
+        <AssemblyVersion>1.27.3.0</AssemblyVersion>
+        <AssemblyVersion>1.28.0.0</AssemblyVersion>
+        <AssemblyVersion>1.28.1.0</AssemblyVersion>
+        <AssemblyVersion>1.29.0.0</AssemblyVersion>
+        <AssemblyVersion>1.30.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -43,9 +75,11 @@
         <Parameter Name="trackingId" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="trackingId">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="trackingId">Tracking Id.</param>
+        <summary>
+            Generates a tracking Id with gateway details if not already there in the tracking Id.
+            </summary>
+        <returns>A tracking Id with gateway details.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -55,19 +89,33 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.Azure.Devices.Common.TrackingHelper.GatewayId" />
       <MemberSignature Language="VB.NET" Value="Public GatewayId As String " />
       <MemberSignature Language="F#" Value=" staticval mutable GatewayId : string" Usage="Microsoft.Azure.Devices.Common.TrackingHelper.GatewayId" />
-      <MemberSignature Language="C++ CLI" Value="public: static System::String ^ GatewayId;" />
-      <MemberSignature Language="C++ WINRT" Value="static std::wstring GatewayId;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Devices</AssemblyName>
-        <AssemblyVersion>1.0.0.0</AssemblyVersion>
-        <AssemblyVersion>1.16.0.0</AssemblyVersion>
+        <AssemblyVersion>1.18.2.0</AssemblyVersion>
+        <AssemblyVersion>1.18.3.0</AssemblyVersion>
+        <AssemblyVersion>1.18.4.0</AssemblyVersion>
+        <AssemblyVersion>1.19.0.0</AssemblyVersion>
+        <AssemblyVersion>1.20.0.0</AssemblyVersion>
+        <AssemblyVersion>1.20.1.0</AssemblyVersion>
+        <AssemblyVersion>1.21.0.0</AssemblyVersion>
+        <AssemblyVersion>1.22.0.0</AssemblyVersion>
+        <AssemblyVersion>1.27.0.0</AssemblyVersion>
+        <AssemblyVersion>1.27.1.0</AssemblyVersion>
+        <AssemblyVersion>1.27.2.0</AssemblyVersion>
+        <AssemblyVersion>1.27.3.0</AssemblyVersion>
+        <AssemblyVersion>1.28.0.0</AssemblyVersion>
+        <AssemblyVersion>1.28.1.0</AssemblyVersion>
+        <AssemblyVersion>1.29.0.0</AssemblyVersion>
+        <AssemblyVersion>1.30.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+            Gateway Id.
+            </summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -77,22 +125,35 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Devices.Common.TrackingHelper.GenerateTrackingId" />
       <MemberSignature Language="VB.NET" Value="Public Function GenerateTrackingId () As String" />
       <MemberSignature Language="F#" Value="static member GenerateTrackingId : unit -&gt; string" Usage="Microsoft.Azure.Devices.Common.TrackingHelper.GenerateTrackingId " />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::String ^ GenerateTrackingId();" />
-      <MemberSignature Language="C++ CX" Value="public:&#xA; static Platform::String ^ GenerateTrackingId();" />
-      <MemberSignature Language="C++ WINRT" Value=" static std::wstring GenerateTrackingId();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Devices</AssemblyName>
-        <AssemblyVersion>1.0.0.0</AssemblyVersion>
-        <AssemblyVersion>1.16.0.0</AssemblyVersion>
+        <AssemblyVersion>1.18.2.0</AssemblyVersion>
+        <AssemblyVersion>1.18.3.0</AssemblyVersion>
+        <AssemblyVersion>1.18.4.0</AssemblyVersion>
+        <AssemblyVersion>1.19.0.0</AssemblyVersion>
+        <AssemblyVersion>1.20.0.0</AssemblyVersion>
+        <AssemblyVersion>1.20.1.0</AssemblyVersion>
+        <AssemblyVersion>1.21.0.0</AssemblyVersion>
+        <AssemblyVersion>1.22.0.0</AssemblyVersion>
+        <AssemblyVersion>1.27.0.0</AssemblyVersion>
+        <AssemblyVersion>1.27.1.0</AssemblyVersion>
+        <AssemblyVersion>1.27.2.0</AssemblyVersion>
+        <AssemblyVersion>1.27.3.0</AssemblyVersion>
+        <AssemblyVersion>1.28.0.0</AssemblyVersion>
+        <AssemblyVersion>1.28.1.0</AssemblyVersion>
+        <AssemblyVersion>1.29.0.0</AssemblyVersion>
+        <AssemblyVersion>1.30.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>
+            Generates a tracking Id. Not used.
+            </summary>
+        <returns>A tracking Id.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -102,12 +163,25 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Devices.Common.TrackingHelper.GenerateTrackingId(Microsoft.Azure.Amqp.AmqpException)" />
       <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function GenerateTrackingId (exception As AmqpException) As String" />
       <MemberSignature Language="F#" Value="static member GenerateTrackingId : Microsoft.Azure.Amqp.AmqpException -&gt; string" Usage="Microsoft.Azure.Devices.Common.TrackingHelper.GenerateTrackingId exception" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA;[System::Runtime::CompilerServices::Extension]&#xA; static System::String ^ GenerateTrackingId(Microsoft::Azure::Amqp::AmqpException ^ exception);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Devices</AssemblyName>
-        <AssemblyVersion>1.0.0.0</AssemblyVersion>
-        <AssemblyVersion>1.16.0.0</AssemblyVersion>
+        <AssemblyVersion>1.18.2.0</AssemblyVersion>
+        <AssemblyVersion>1.18.3.0</AssemblyVersion>
+        <AssemblyVersion>1.18.4.0</AssemblyVersion>
+        <AssemblyVersion>1.19.0.0</AssemblyVersion>
+        <AssemblyVersion>1.20.0.0</AssemblyVersion>
+        <AssemblyVersion>1.20.1.0</AssemblyVersion>
+        <AssemblyVersion>1.21.0.0</AssemblyVersion>
+        <AssemblyVersion>1.22.0.0</AssemblyVersion>
+        <AssemblyVersion>1.27.0.0</AssemblyVersion>
+        <AssemblyVersion>1.27.1.0</AssemblyVersion>
+        <AssemblyVersion>1.27.2.0</AssemblyVersion>
+        <AssemblyVersion>1.27.3.0</AssemblyVersion>
+        <AssemblyVersion>1.28.0.0</AssemblyVersion>
+        <AssemblyVersion>1.28.1.0</AssemblyVersion>
+        <AssemblyVersion>1.29.0.0</AssemblyVersion>
+        <AssemblyVersion>1.30.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -117,8 +191,10 @@
       </Parameters>
       <Docs>
         <param name="exception">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>
+            Generates a tracking Id. Not used.
+            </summary>
+        <returns>A tracking Id.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -128,14 +204,25 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Devices.Common.TrackingHelper.GenerateTrackingId(System.String,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Function GenerateTrackingId (backendId As String, partitionId As String) As String" />
       <MemberSignature Language="F#" Value="static member GenerateTrackingId : string * string -&gt; string" Usage="Microsoft.Azure.Devices.Common.TrackingHelper.GenerateTrackingId (backendId, partitionId)" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::String ^ GenerateTrackingId(System::String ^ backendId, System::String ^ partitionId);" />
-      <MemberSignature Language="C++ CX" Value="public:&#xA; static Platform::String ^ GenerateTrackingId(Platform::String ^ backendId, Platform::String ^ partitionId);" />
-      <MemberSignature Language="C++ WINRT" Value=" static std::wstring GenerateTrackingId(std::wstring const &amp; backendId, std::wstring const &amp; partitionId);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Devices</AssemblyName>
-        <AssemblyVersion>1.0.0.0</AssemblyVersion>
-        <AssemblyVersion>1.16.0.0</AssemblyVersion>
+        <AssemblyVersion>1.18.2.0</AssemblyVersion>
+        <AssemblyVersion>1.18.3.0</AssemblyVersion>
+        <AssemblyVersion>1.18.4.0</AssemblyVersion>
+        <AssemblyVersion>1.19.0.0</AssemblyVersion>
+        <AssemblyVersion>1.20.0.0</AssemblyVersion>
+        <AssemblyVersion>1.20.1.0</AssemblyVersion>
+        <AssemblyVersion>1.21.0.0</AssemblyVersion>
+        <AssemblyVersion>1.22.0.0</AssemblyVersion>
+        <AssemblyVersion>1.27.0.0</AssemblyVersion>
+        <AssemblyVersion>1.27.1.0</AssemblyVersion>
+        <AssemblyVersion>1.27.2.0</AssemblyVersion>
+        <AssemblyVersion>1.27.3.0</AssemblyVersion>
+        <AssemblyVersion>1.28.0.0</AssemblyVersion>
+        <AssemblyVersion>1.28.1.0</AssemblyVersion>
+        <AssemblyVersion>1.29.0.0</AssemblyVersion>
+        <AssemblyVersion>1.30.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -147,8 +234,10 @@
       <Docs>
         <param name="backendId">To be added.</param>
         <param name="partitionId">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>
+            Generates a tracking Id. Not used.
+            </summary>
+        <returns>A tracking Id.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -158,12 +247,25 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Devices.Common.TrackingHelper.GenerateTrackingId(Microsoft.Azure.Amqp.AmqpException,System.String,System.String)" />
       <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function GenerateTrackingId (exception As AmqpException, backendId As String, partitionId As String) As String" />
       <MemberSignature Language="F#" Value="static member GenerateTrackingId : Microsoft.Azure.Amqp.AmqpException * string * string -&gt; string" Usage="Microsoft.Azure.Devices.Common.TrackingHelper.GenerateTrackingId (exception, backendId, partitionId)" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA;[System::Runtime::CompilerServices::Extension]&#xA; static System::String ^ GenerateTrackingId(Microsoft::Azure::Amqp::AmqpException ^ exception, System::String ^ backendId, System::String ^ partitionId);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Devices</AssemblyName>
-        <AssemblyVersion>1.0.0.0</AssemblyVersion>
-        <AssemblyVersion>1.16.0.0</AssemblyVersion>
+        <AssemblyVersion>1.18.2.0</AssemblyVersion>
+        <AssemblyVersion>1.18.3.0</AssemblyVersion>
+        <AssemblyVersion>1.18.4.0</AssemblyVersion>
+        <AssemblyVersion>1.19.0.0</AssemblyVersion>
+        <AssemblyVersion>1.20.0.0</AssemblyVersion>
+        <AssemblyVersion>1.20.1.0</AssemblyVersion>
+        <AssemblyVersion>1.21.0.0</AssemblyVersion>
+        <AssemblyVersion>1.22.0.0</AssemblyVersion>
+        <AssemblyVersion>1.27.0.0</AssemblyVersion>
+        <AssemblyVersion>1.27.1.0</AssemblyVersion>
+        <AssemblyVersion>1.27.2.0</AssemblyVersion>
+        <AssemblyVersion>1.27.3.0</AssemblyVersion>
+        <AssemblyVersion>1.28.0.0</AssemblyVersion>
+        <AssemblyVersion>1.28.1.0</AssemblyVersion>
+        <AssemblyVersion>1.29.0.0</AssemblyVersion>
+        <AssemblyVersion>1.30.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -177,8 +279,10 @@
         <param name="exception">To be added.</param>
         <param name="backendId">To be added.</param>
         <param name="partitionId">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>
+            Generates a tracking Id. Not used.
+            </summary>
+        <returns>A tracking Id.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -188,14 +292,25 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Devices.Common.TrackingHelper.GenerateTrackingId(System.String,System.String,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Function GenerateTrackingId (gatewayId As String, backendId As String, partitionId As String) As String" />
       <MemberSignature Language="F#" Value="static member GenerateTrackingId : string * string * string -&gt; string" Usage="Microsoft.Azure.Devices.Common.TrackingHelper.GenerateTrackingId (gatewayId, backendId, partitionId)" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::String ^ GenerateTrackingId(System::String ^ gatewayId, System::String ^ backendId, System::String ^ partitionId);" />
-      <MemberSignature Language="C++ CX" Value="public:&#xA; static Platform::String ^ GenerateTrackingId(Platform::String ^ gatewayId, Platform::String ^ backendId, Platform::String ^ partitionId);" />
-      <MemberSignature Language="C++ WINRT" Value=" static std::wstring GenerateTrackingId(std::wstring const &amp; gatewayId, std::wstring const &amp; backendId, std::wstring const &amp; partitionId);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Devices</AssemblyName>
-        <AssemblyVersion>1.0.0.0</AssemblyVersion>
-        <AssemblyVersion>1.16.0.0</AssemblyVersion>
+        <AssemblyVersion>1.18.2.0</AssemblyVersion>
+        <AssemblyVersion>1.18.3.0</AssemblyVersion>
+        <AssemblyVersion>1.18.4.0</AssemblyVersion>
+        <AssemblyVersion>1.19.0.0</AssemblyVersion>
+        <AssemblyVersion>1.20.0.0</AssemblyVersion>
+        <AssemblyVersion>1.20.1.0</AssemblyVersion>
+        <AssemblyVersion>1.21.0.0</AssemblyVersion>
+        <AssemblyVersion>1.22.0.0</AssemblyVersion>
+        <AssemblyVersion>1.27.0.0</AssemblyVersion>
+        <AssemblyVersion>1.27.1.0</AssemblyVersion>
+        <AssemblyVersion>1.27.2.0</AssemblyVersion>
+        <AssemblyVersion>1.27.3.0</AssemblyVersion>
+        <AssemblyVersion>1.28.0.0</AssemblyVersion>
+        <AssemblyVersion>1.28.1.0</AssemblyVersion>
+        <AssemblyVersion>1.29.0.0</AssemblyVersion>
+        <AssemblyVersion>1.30.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -209,9 +324,13 @@
         <param name="gatewayId">To be added.</param>
         <param name="backendId">To be added.</param>
         <param name="partitionId">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <summary>
+            Generates a unique tracking Id with gateway, backend, partition and timestamp information.
+            </summary>
+        <returns>A tracking Id.</returns>
+        <remarks>
+            Tracking Id format is [GUID][-G:GatewayId][-B:BackendId][-P:PartitionId][-TimeStamp:Timestamp]
+            </remarks>
       </Docs>
     </Member>
     <Member MemberName="GenerateTrackingId">
@@ -220,12 +339,25 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Devices.Common.TrackingHelper.GenerateTrackingId(Microsoft.Azure.Amqp.AmqpException,System.String,System.String,System.String)" />
       <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function GenerateTrackingId (exception As AmqpException, gatewayId As String, backendId As String, partitionId As String) As String" />
       <MemberSignature Language="F#" Value="static member GenerateTrackingId : Microsoft.Azure.Amqp.AmqpException * string * string * string -&gt; string" Usage="Microsoft.Azure.Devices.Common.TrackingHelper.GenerateTrackingId (exception, gatewayId, backendId, partitionId)" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA;[System::Runtime::CompilerServices::Extension]&#xA; static System::String ^ GenerateTrackingId(Microsoft::Azure::Amqp::AmqpException ^ exception, System::String ^ gatewayId, System::String ^ backendId, System::String ^ partitionId);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Devices</AssemblyName>
-        <AssemblyVersion>1.0.0.0</AssemblyVersion>
-        <AssemblyVersion>1.16.0.0</AssemblyVersion>
+        <AssemblyVersion>1.18.2.0</AssemblyVersion>
+        <AssemblyVersion>1.18.3.0</AssemblyVersion>
+        <AssemblyVersion>1.18.4.0</AssemblyVersion>
+        <AssemblyVersion>1.19.0.0</AssemblyVersion>
+        <AssemblyVersion>1.20.0.0</AssemblyVersion>
+        <AssemblyVersion>1.20.1.0</AssemblyVersion>
+        <AssemblyVersion>1.21.0.0</AssemblyVersion>
+        <AssemblyVersion>1.22.0.0</AssemblyVersion>
+        <AssemblyVersion>1.27.0.0</AssemblyVersion>
+        <AssemblyVersion>1.27.1.0</AssemblyVersion>
+        <AssemblyVersion>1.27.2.0</AssemblyVersion>
+        <AssemblyVersion>1.27.3.0</AssemblyVersion>
+        <AssemblyVersion>1.28.0.0</AssemblyVersion>
+        <AssemblyVersion>1.28.1.0</AssemblyVersion>
+        <AssemblyVersion>1.29.0.0</AssemblyVersion>
+        <AssemblyVersion>1.30.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -241,8 +373,10 @@
         <param name="gatewayId">To be added.</param>
         <param name="backendId">To be added.</param>
         <param name="partitionId">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>
+            Generates a tracking Id. Not used.
+            </summary>
+        <returns>A tracking Id.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -252,12 +386,25 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Devices.Common.TrackingHelper.GetErrorCodeFromAmqpError(Microsoft.Azure.Amqp.Framing.Error)" />
       <MemberSignature Language="VB.NET" Value="Public Function GetErrorCodeFromAmqpError (ex As Error) As ErrorCode" />
       <MemberSignature Language="F#" Value="static member GetErrorCodeFromAmqpError : Microsoft.Azure.Amqp.Framing.Error -&gt; Microsoft.Azure.Devices.Common.Exceptions.ErrorCode" Usage="Microsoft.Azure.Devices.Common.TrackingHelper.GetErrorCodeFromAmqpError ex" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; static Microsoft::Azure::Devices::Common::Exceptions::ErrorCode GetErrorCodeFromAmqpError(Microsoft::Azure::Amqp::Framing::Error ^ ex);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Devices</AssemblyName>
-        <AssemblyVersion>1.0.0.0</AssemblyVersion>
-        <AssemblyVersion>1.16.0.0</AssemblyVersion>
+        <AssemblyVersion>1.18.2.0</AssemblyVersion>
+        <AssemblyVersion>1.18.3.0</AssemblyVersion>
+        <AssemblyVersion>1.18.4.0</AssemblyVersion>
+        <AssemblyVersion>1.19.0.0</AssemblyVersion>
+        <AssemblyVersion>1.20.0.0</AssemblyVersion>
+        <AssemblyVersion>1.20.1.0</AssemblyVersion>
+        <AssemblyVersion>1.21.0.0</AssemblyVersion>
+        <AssemblyVersion>1.22.0.0</AssemblyVersion>
+        <AssemblyVersion>1.27.0.0</AssemblyVersion>
+        <AssemblyVersion>1.27.1.0</AssemblyVersion>
+        <AssemblyVersion>1.27.2.0</AssemblyVersion>
+        <AssemblyVersion>1.27.3.0</AssemblyVersion>
+        <AssemblyVersion>1.28.0.0</AssemblyVersion>
+        <AssemblyVersion>1.28.1.0</AssemblyVersion>
+        <AssemblyVersion>1.29.0.0</AssemblyVersion>
+        <AssemblyVersion>1.30.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Azure.Devices.Common.Exceptions.ErrorCode</ReturnType>
@@ -267,8 +414,10 @@
       </Parameters>
       <Docs>
         <param name="ex">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>
+            Gets AMQP error code. Not used.
+            </summary>
+        <returns>Error code.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -278,13 +427,25 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Devices.Common.TrackingHelper.GetGatewayId(Microsoft.Azure.Amqp.AmqpLink)" />
       <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function GetGatewayId (link As AmqpLink) As String" />
       <MemberSignature Language="F#" Value="static member GetGatewayId : Microsoft.Azure.Amqp.AmqpLink -&gt; string" Usage="Microsoft.Azure.Devices.Common.TrackingHelper.GetGatewayId link" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA;[System::Runtime::CompilerServices::Extension]&#xA; static System::String ^ GetGatewayId(Microsoft::Azure::Amqp::AmqpLink ^ link);" />
-      <MemberSignature Language="C++ CX" Value="public:&#xA;[System::Runtime::CompilerServices::Extension]&#xA; static Platform::String ^ GetGatewayId(Microsoft::Azure::Amqp::AmqpLink ^ link);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Devices</AssemblyName>
-        <AssemblyVersion>1.0.0.0</AssemblyVersion>
-        <AssemblyVersion>1.16.0.0</AssemblyVersion>
+        <AssemblyVersion>1.18.2.0</AssemblyVersion>
+        <AssemblyVersion>1.18.3.0</AssemblyVersion>
+        <AssemblyVersion>1.18.4.0</AssemblyVersion>
+        <AssemblyVersion>1.19.0.0</AssemblyVersion>
+        <AssemblyVersion>1.20.0.0</AssemblyVersion>
+        <AssemblyVersion>1.20.1.0</AssemblyVersion>
+        <AssemblyVersion>1.21.0.0</AssemblyVersion>
+        <AssemblyVersion>1.22.0.0</AssemblyVersion>
+        <AssemblyVersion>1.27.0.0</AssemblyVersion>
+        <AssemblyVersion>1.27.1.0</AssemblyVersion>
+        <AssemblyVersion>1.27.2.0</AssemblyVersion>
+        <AssemblyVersion>1.27.3.0</AssemblyVersion>
+        <AssemblyVersion>1.28.0.0</AssemblyVersion>
+        <AssemblyVersion>1.28.1.0</AssemblyVersion>
+        <AssemblyVersion>1.29.0.0</AssemblyVersion>
+        <AssemblyVersion>1.30.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -294,8 +455,10 @@
       </Parameters>
       <Docs>
         <param name="link">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>
+            Generates a tracking Id. Not used.
+            </summary>
+        <returns>A tracking Id.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -303,13 +466,27 @@
       <MemberSignature Language="C#" Value="public static string GetTrackingId (this Microsoft.Azure.Amqp.AmqpException amqpException);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig string GetTrackingId(class Microsoft.Azure.Amqp.AmqpException amqpException) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Devices.Common.TrackingHelper.GetTrackingId(Microsoft.Azure.Amqp.AmqpException)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function GetTrackingId (amqpException As AmqpException) As String" />
       <MemberSignature Language="F#" Value="static member GetTrackingId : Microsoft.Azure.Amqp.AmqpException -&gt; string" Usage="Microsoft.Azure.Devices.Common.TrackingHelper.GetTrackingId amqpException" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA;[System::Runtime::CompilerServices::Extension]&#xA; static System::String ^ GetTrackingId(Microsoft::Azure::Amqp::AmqpException ^ amqpException);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Devices</AssemblyName>
-        <AssemblyVersion>1.0.0.0</AssemblyVersion>
-        <AssemblyVersion>1.16.0.0</AssemblyVersion>
+        <AssemblyVersion>1.18.2.0</AssemblyVersion>
+        <AssemblyVersion>1.18.3.0</AssemblyVersion>
+        <AssemblyVersion>1.18.4.0</AssemblyVersion>
+        <AssemblyVersion>1.19.0.0</AssemblyVersion>
+        <AssemblyVersion>1.20.0.0</AssemblyVersion>
+        <AssemblyVersion>1.20.1.0</AssemblyVersion>
+        <AssemblyVersion>1.21.0.0</AssemblyVersion>
+        <AssemblyVersion>1.22.0.0</AssemblyVersion>
+        <AssemblyVersion>1.27.0.0</AssemblyVersion>
+        <AssemblyVersion>1.27.1.0</AssemblyVersion>
+        <AssemblyVersion>1.27.2.0</AssemblyVersion>
+        <AssemblyVersion>1.27.3.0</AssemblyVersion>
+        <AssemblyVersion>1.28.0.0</AssemblyVersion>
+        <AssemblyVersion>1.28.1.0</AssemblyVersion>
+        <AssemblyVersion>1.29.0.0</AssemblyVersion>
+        <AssemblyVersion>1.30.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -319,8 +496,10 @@
       </Parameters>
       <Docs>
         <param name="amqpException">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>
+            Generates a tracking Id. Not used.
+            </summary>
+        <returns>A tracking Id.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -330,12 +509,25 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Devices.Common.TrackingHelper.SetErrorCode(Microsoft.Azure.Amqp.AmqpException)" />
       <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Sub SetErrorCode (exception As AmqpException)" />
       <MemberSignature Language="F#" Value="static member SetErrorCode : Microsoft.Azure.Amqp.AmqpException -&gt; unit" Usage="Microsoft.Azure.Devices.Common.TrackingHelper.SetErrorCode exception" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA;[System::Runtime::CompilerServices::Extension]&#xA; static void SetErrorCode(Microsoft::Azure::Amqp::AmqpException ^ exception);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Devices</AssemblyName>
-        <AssemblyVersion>1.0.0.0</AssemblyVersion>
-        <AssemblyVersion>1.16.0.0</AssemblyVersion>
+        <AssemblyVersion>1.18.2.0</AssemblyVersion>
+        <AssemblyVersion>1.18.3.0</AssemblyVersion>
+        <AssemblyVersion>1.18.4.0</AssemblyVersion>
+        <AssemblyVersion>1.19.0.0</AssemblyVersion>
+        <AssemblyVersion>1.20.0.0</AssemblyVersion>
+        <AssemblyVersion>1.20.1.0</AssemblyVersion>
+        <AssemblyVersion>1.21.0.0</AssemblyVersion>
+        <AssemblyVersion>1.22.0.0</AssemblyVersion>
+        <AssemblyVersion>1.27.0.0</AssemblyVersion>
+        <AssemblyVersion>1.27.1.0</AssemblyVersion>
+        <AssemblyVersion>1.27.2.0</AssemblyVersion>
+        <AssemblyVersion>1.27.3.0</AssemblyVersion>
+        <AssemblyVersion>1.28.0.0</AssemblyVersion>
+        <AssemblyVersion>1.28.1.0</AssemblyVersion>
+        <AssemblyVersion>1.29.0.0</AssemblyVersion>
+        <AssemblyVersion>1.30.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -345,7 +537,9 @@
       </Parameters>
       <Docs>
         <param name="exception">To be added.</param>
-        <summary>To be added.</summary>
+        <summary>
+            Sets error code from AMQP exception. Not used.
+            </summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

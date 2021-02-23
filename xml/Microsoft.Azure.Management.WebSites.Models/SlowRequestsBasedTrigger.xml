@@ -1,14 +1,13 @@
-﻿<Type Name="SlowRequestsBasedTrigger" FullName="Microsoft.Azure.Management.WebSites.Models.SlowRequestsBasedTrigger">
+<Type Name="SlowRequestsBasedTrigger" FullName="Microsoft.Azure.Management.WebSites.Models.SlowRequestsBasedTrigger">
   <TypeSignature Language="C#" Value="public class SlowRequestsBasedTrigger" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit SlowRequestsBasedTrigger extends System.Object" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Azure.Management.WebSites.Models.SlowRequestsBasedTrigger" />
   <TypeSignature Language="VB.NET" Value="Public Class SlowRequestsBasedTrigger" />
   <TypeSignature Language="F#" Value="type SlowRequestsBasedTrigger = class" />
-  <TypeSignature Language="C++ CLI" Value="public ref class SlowRequestsBasedTrigger" />
-  <TypeSignature Language="C++ WINRT" Value="[Windows::Foundation::Metadata::WebHostHidden]&#xA;class SlowRequestsBasedTrigger" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Azure.Management.Websites</AssemblyName>
-    <AssemblyVersion>1.0.0.0</AssemblyVersion>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
+    <AssemblyVersion>3.1.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
@@ -26,13 +25,11 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Management.WebSites.Models.SlowRequestsBasedTrigger.#ctor" />
       <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; SlowRequestsBasedTrigger();" />
-      <MemberSignature Language="C++ CX" Value="public:&#xA; SlowRequestsBasedTrigger();" />
-      <MemberSignature Language="C++ WINRT" Value=" SlowRequestsBasedTrigger();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Websites</AssemblyName>
-        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>3.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
@@ -43,15 +40,16 @@
       </Docs>
     </Member>
     <Member MemberName=".ctor">
-      <MemberSignature Language="C#" Value="public SlowRequestsBasedTrigger (string timeTaken = null, Nullable&lt;int&gt; count = null, string timeInterval = null);" />
+      <MemberSignature Language="C#" Value="public SlowRequestsBasedTrigger (string timeTaken = default, int? count = default, string timeInterval = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string timeTaken, valuetype System.Nullable`1&lt;int32&gt; count, string timeInterval) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Management.WebSites.Models.SlowRequestsBasedTrigger.#ctor(System.String,System.Nullable{System.Int32},System.String)" />
-      <MemberSignature Language="VB.NET" Value="Public Sub New (Optional timeTaken As String = null, Optional count As Nullable(Of Integer) = null, Optional timeInterval As String = null)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (Optional timeTaken As String = Nothing, Optional count As Nullable(Of Integer) = Nothing, Optional timeInterval As String = Nothing)" />
       <MemberSignature Language="F#" Value="new Microsoft.Azure.Management.WebSites.Models.SlowRequestsBasedTrigger : string * Nullable&lt;int&gt; * string -&gt; Microsoft.Azure.Management.WebSites.Models.SlowRequestsBasedTrigger" Usage="new Microsoft.Azure.Management.WebSites.Models.SlowRequestsBasedTrigger (timeTaken, count, timeInterval)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Websites</AssemblyName>
-        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>3.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="timeTaken" Type="System.String" />
@@ -60,7 +58,7 @@
       </Parameters>
       <Docs>
         <param name="timeTaken">Time taken.</param>
-        <param name="count">Count.</param>
+        <param name="count">Request Count.</param>
         <param name="timeInterval">Time interval.</param>
         <summary>
             Initializes a new instance of the SlowRequestsBasedTrigger class.
@@ -69,20 +67,21 @@
       </Docs>
     </Member>
     <Member MemberName="Count">
-      <MemberSignature Language="C#" Value="public Nullable&lt;int&gt; Count { get; set; }" />
+      <MemberSignature Language="C#" Value="public int? Count { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;int32&gt; Count" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Management.WebSites.Models.SlowRequestsBasedTrigger.Count" />
       <MemberSignature Language="VB.NET" Value="Public Property Count As Nullable(Of Integer)" />
       <MemberSignature Language="F#" Value="member this.Count : Nullable&lt;int&gt; with get, set" Usage="Microsoft.Azure.Management.WebSites.Models.SlowRequestsBasedTrigger.Count" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Nullable&lt;int&gt; Count { Nullable&lt;int&gt; get(); void set(Nullable&lt;int&gt; value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Websites</AssemblyName>
-        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>3.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="count")</AttributeName>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty(PropertyName="count")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty(PropertyName="count")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -90,7 +89,7 @@
       </ReturnValue>
       <Docs>
         <summary>
-            Gets or sets count.
+            Gets or sets request Count.
             </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
@@ -102,16 +101,16 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Management.WebSites.Models.SlowRequestsBasedTrigger.TimeInterval" />
       <MemberSignature Language="VB.NET" Value="Public Property TimeInterval As String" />
       <MemberSignature Language="F#" Value="member this.TimeInterval : string with get, set" Usage="Microsoft.Azure.Management.WebSites.Models.SlowRequestsBasedTrigger.TimeInterval" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ TimeInterval { System::String ^ get(); void set(System::String ^ value); };" />
-      <MemberSignature Language="C++ CX" Value="public:&#xA; property Platform::String ^ TimeInterval { Platform::String ^ get(); void set(Platform::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Websites</AssemblyName>
-        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>3.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="timeInterval")</AttributeName>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty(PropertyName="timeInterval")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty(PropertyName="timeInterval")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -131,16 +130,16 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Management.WebSites.Models.SlowRequestsBasedTrigger.TimeTaken" />
       <MemberSignature Language="VB.NET" Value="Public Property TimeTaken As String" />
       <MemberSignature Language="F#" Value="member this.TimeTaken : string with get, set" Usage="Microsoft.Azure.Management.WebSites.Models.SlowRequestsBasedTrigger.TimeTaken" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ TimeTaken { System::String ^ get(); void set(System::String ^ value); };" />
-      <MemberSignature Language="C++ CX" Value="public:&#xA; property Platform::String ^ TimeTaken { Platform::String ^ get(); void set(Platform::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Websites</AssemblyName>
-        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>3.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="timeTaken")</AttributeName>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty(PropertyName="timeTaken")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty(PropertyName="timeTaken")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>

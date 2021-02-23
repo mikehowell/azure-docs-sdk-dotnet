@@ -1,25 +1,27 @@
-﻿<Type Name="RunbookCreateOrUpdateParameters" FullName="Microsoft.Azure.Management.Automation.Models.RunbookCreateOrUpdateParameters">
-  <TypeSignature Language="C#" Value="public class RunbookCreateOrUpdateParameters" />
-  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit RunbookCreateOrUpdateParameters extends System.Object" />
+<Type Name="RunbookCreateOrUpdateParameters" FullName="Microsoft.Azure.Management.Automation.Models.RunbookCreateOrUpdateParameters">
+  <TypeSignature Language="C#" Value="public class RunbookCreateOrUpdateParameters : Microsoft.Azure.Management.Automation.Models.ResourceCreateOrUpdateParameterBase" FrameworkAlternate="azure-dotnet" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit RunbookCreateOrUpdateParameters extends Microsoft.Azure.Management.Automation.Models.ResourceCreateOrUpdateParameterBase" FrameworkAlternate="azure-dotnet" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Azure.Management.Automation.Models.RunbookCreateOrUpdateParameters" />
-  <TypeSignature Language="VB.NET" Value="Public Class RunbookCreateOrUpdateParameters" />
-  <TypeSignature Language="F#" Value="type RunbookCreateOrUpdateParameters = class" />
-  <TypeSignature Language="C++ CLI" Value="public ref class RunbookCreateOrUpdateParameters" />
-  <TypeSignature Language="C++ WINRT" Value="[Windows::Foundation::Metadata::WebHostHidden]&#xA;class RunbookCreateOrUpdateParameters" />
+  <TypeSignature Language="VB.NET" Value="Public Class RunbookCreateOrUpdateParameters&#xA;Inherits ResourceCreateOrUpdateParameterBase" FrameworkAlternate="azure-dotnet" />
+  <TypeSignature Language="F#" Value="type RunbookCreateOrUpdateParameters = class&#xA;    inherit ResourceCreateOrUpdateParameterBase" FrameworkAlternate="azure-dotnet" />
+  <TypeSignature Language="C#" Value="public class RunbookCreateOrUpdateParameters" FrameworkAlternate="azure-dotnet-preview" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit RunbookCreateOrUpdateParameters extends System.Object" FrameworkAlternate="azure-dotnet-preview" />
+  <TypeSignature Language="VB.NET" Value="Public Class RunbookCreateOrUpdateParameters" FrameworkAlternate="azure-dotnet-preview" />
+  <TypeSignature Language="F#" Value="type RunbookCreateOrUpdateParameters = class" FrameworkAlternate="azure-dotnet-preview" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Azure.Management.Automation</AssemblyName>
     <AssemblyVersion>2.0.0.0</AssemblyVersion>
-    <AssemblyVersion>3.0.0.0</AssemblyVersion>
     <AssemblyVersion>3.0.1.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>Microsoft.Azure.Management.Automation.Models.ResourceCreateOrUpdateParameterBase</BaseTypeName>
-    <BaseTypeName FrameworkAlternate="azure-dotnet">System.Object</BaseTypeName>
+    <BaseTypeName FrameworkAlternate="azure-dotnet-preview">System.Object</BaseTypeName>
   </Base>
   <Interfaces />
   <Attributes>
-    <Attribute>
-      <AttributeName>Microsoft.Rest.Serialization.JsonTransformation</AttributeName>
+    <Attribute FrameworkAlternate="azure-dotnet-preview">
+      <AttributeName Language="C#">[Microsoft.Rest.Serialization.JsonTransformation]</AttributeName>
+      <AttributeName Language="F#">[&lt;Microsoft.Rest.Serialization.JsonTransformation&gt;]</AttributeName>
     </Attribute>
   </Attributes>
   <Docs>
@@ -34,14 +36,10 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Management.Automation.Models.RunbookCreateOrUpdateParameters.#ctor" />
       <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; RunbookCreateOrUpdateParameters();" />
-      <MemberSignature Language="C++ CX" Value="public:&#xA; RunbookCreateOrUpdateParameters();" />
-      <MemberSignature Language="C++ WINRT" Value=" RunbookCreateOrUpdateParameters();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Automation</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>3.0.1.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
@@ -54,28 +52,47 @@
       </Docs>
     </Member>
     <Member MemberName=".ctor">
-      <MemberSignature Language="C#" Value="public RunbookCreateOrUpdateParameters (string runbookType, Nullable&lt;bool&gt; logVerbose = null, Nullable&lt;bool&gt; logProgress = null, Microsoft.Azure.Management.Automation.Models.RunbookDraft draft = null, Microsoft.Azure.Management.Automation.Models.ContentLink publishContentLink = null, string description = null, Nullable&lt;int&gt; logActivityTrace = null, string name = null, string location = null, System.Collections.Generic.IDictionary&lt;string,string&gt; tags = null);" />
+      <MemberSignature Language="C#" Value="public RunbookCreateOrUpdateParameters (Microsoft.Azure.Management.Automation.Models.RunbookCreateOrUpdateProperties properties);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class Microsoft.Azure.Management.Automation.Models.RunbookCreateOrUpdateProperties properties) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Management.Automation.Models.RunbookCreateOrUpdateParameters.#ctor(Microsoft.Azure.Management.Automation.Models.RunbookCreateOrUpdateProperties)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (properties As RunbookCreateOrUpdateProperties)" />
+      <MemberSignature Language="F#" Value="new Microsoft.Azure.Management.Automation.Models.RunbookCreateOrUpdateParameters : Microsoft.Azure.Management.Automation.Models.RunbookCreateOrUpdateProperties -&gt; Microsoft.Azure.Management.Automation.Models.RunbookCreateOrUpdateParameters" Usage="new Microsoft.Azure.Management.Automation.Models.RunbookCreateOrUpdateParameters properties" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Azure.Management.Automation</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="properties" Type="Microsoft.Azure.Management.Automation.Models.RunbookCreateOrUpdateProperties" Index="0" FrameworkAlternate="azure-dotnet" />
+      </Parameters>
+      <Docs>
+        <param name="properties">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public RunbookCreateOrUpdateParameters (string runbookType, bool? logVerbose = default, bool? logProgress = default, Microsoft.Azure.Management.Automation.Models.RunbookDraft draft = default, Microsoft.Azure.Management.Automation.Models.ContentLink publishContentLink = default, string description = default, int? logActivityTrace = default, string name = default, string location = default, System.Collections.Generic.IDictionary&lt;string,string&gt; tags = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string runbookType, valuetype System.Nullable`1&lt;bool&gt; logVerbose, valuetype System.Nullable`1&lt;bool&gt; logProgress, class Microsoft.Azure.Management.Automation.Models.RunbookDraft draft, class Microsoft.Azure.Management.Automation.Models.ContentLink publishContentLink, string description, valuetype System.Nullable`1&lt;int32&gt; logActivityTrace, string name, string location, class System.Collections.Generic.IDictionary`2&lt;string, string&gt; tags) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Management.Automation.Models.RunbookCreateOrUpdateParameters.#ctor(System.String,System.Nullable{System.Boolean},System.Nullable{System.Boolean},Microsoft.Azure.Management.Automation.Models.RunbookDraft,Microsoft.Azure.Management.Automation.Models.ContentLink,System.String,System.Nullable{System.Int32},System.String,System.String,System.Collections.Generic.IDictionary{System.String,System.String})" />
-      <MemberSignature Language="VB.NET" Value="Public Sub New (runbookType As String, Optional logVerbose As Nullable(Of Boolean) = null, Optional logProgress As Nullable(Of Boolean) = null, Optional draft As RunbookDraft = null, Optional publishContentLink As ContentLink = null, Optional description As String = null, Optional logActivityTrace As Nullable(Of Integer) = null, Optional name As String = null, Optional location As String = null, Optional tags As IDictionary(Of String, String) = null)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (runbookType As String, Optional logVerbose As Nullable(Of Boolean) = Nothing, Optional logProgress As Nullable(Of Boolean) = Nothing, Optional draft As RunbookDraft = Nothing, Optional publishContentLink As ContentLink = Nothing, Optional description As String = Nothing, Optional logActivityTrace As Nullable(Of Integer) = Nothing, Optional name As String = Nothing, Optional location As String = Nothing, Optional tags As IDictionary(Of String, String) = Nothing)" />
       <MemberSignature Language="F#" Value="new Microsoft.Azure.Management.Automation.Models.RunbookCreateOrUpdateParameters : string * Nullable&lt;bool&gt; * Nullable&lt;bool&gt; * Microsoft.Azure.Management.Automation.Models.RunbookDraft * Microsoft.Azure.Management.Automation.Models.ContentLink * string * Nullable&lt;int&gt; * string * string * System.Collections.Generic.IDictionary&lt;string, string&gt; -&gt; Microsoft.Azure.Management.Automation.Models.RunbookCreateOrUpdateParameters" Usage="new Microsoft.Azure.Management.Automation.Models.RunbookCreateOrUpdateParameters (runbookType, logVerbose, logProgress, draft, publishContentLink, description, logActivityTrace, name, location, tags)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Automation</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>3.0.1.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
-        <Parameter Name="runbookType" Type="System.String" />
-        <Parameter Name="logVerbose" Type="System.Nullable&lt;System.Boolean&gt;" />
-        <Parameter Name="logProgress" Type="System.Nullable&lt;System.Boolean&gt;" />
-        <Parameter Name="draft" Type="Microsoft.Azure.Management.Automation.Models.RunbookDraft" />
-        <Parameter Name="publishContentLink" Type="Microsoft.Azure.Management.Automation.Models.ContentLink" />
-        <Parameter Name="description" Type="System.String" />
-        <Parameter Name="logActivityTrace" Type="System.Nullable&lt;System.Int32&gt;" />
-        <Parameter Name="name" Type="System.String" />
-        <Parameter Name="location" Type="System.String" />
-        <Parameter Name="tags" Type="System.Collections.Generic.IDictionary&lt;System.String,System.String&gt;" />
+        <Parameter Name="runbookType" Type="System.String" Index="0" FrameworkAlternate="azure-dotnet-preview" />
+        <Parameter Name="logVerbose" Type="System.Nullable&lt;System.Boolean&gt;" Index="1" FrameworkAlternate="azure-dotnet-preview" />
+        <Parameter Name="logProgress" Type="System.Nullable&lt;System.Boolean&gt;" Index="2" FrameworkAlternate="azure-dotnet-preview" />
+        <Parameter Name="draft" Type="Microsoft.Azure.Management.Automation.Models.RunbookDraft" Index="3" FrameworkAlternate="azure-dotnet-preview" />
+        <Parameter Name="publishContentLink" Type="Microsoft.Azure.Management.Automation.Models.ContentLink" Index="4" FrameworkAlternate="azure-dotnet-preview" />
+        <Parameter Name="description" Type="System.String" Index="5" FrameworkAlternate="azure-dotnet-preview" />
+        <Parameter Name="logActivityTrace" Type="System.Nullable&lt;System.Int32&gt;" Index="6" FrameworkAlternate="azure-dotnet-preview" />
+        <Parameter Name="name" Type="System.String" Index="7" FrameworkAlternate="azure-dotnet-preview" />
+        <Parameter Name="location" Type="System.String" Index="8" FrameworkAlternate="azure-dotnet-preview" />
+        <Parameter Name="tags" Type="System.Collections.Generic.IDictionary&lt;System.String,System.String&gt;" Index="9" FrameworkAlternate="azure-dotnet-preview" />
       </Parameters>
       <Docs>
         <param name="runbookType">Gets or sets the type of the runbook.
@@ -109,17 +126,15 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Management.Automation.Models.RunbookCreateOrUpdateParameters.Description" />
       <MemberSignature Language="VB.NET" Value="Public Property Description As String" />
       <MemberSignature Language="F#" Value="member this.Description : string with get, set" Usage="Microsoft.Azure.Management.Automation.Models.RunbookCreateOrUpdateParameters.Description" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Description { System::String ^ get(); void set(System::String ^ value); };" />
-      <MemberSignature Language="C++ CX" Value="public:&#xA; property Platform::String ^ Description { Platform::String ^ get(); void set(Platform::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Automation</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>3.0.1.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="properties.description")</AttributeName>
+        <Attribute FrameworkAlternate="azure-dotnet-preview">
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty(PropertyName="properties.description")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty(PropertyName="properties.description")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -139,16 +154,15 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Management.Automation.Models.RunbookCreateOrUpdateParameters.Draft" />
       <MemberSignature Language="VB.NET" Value="Public Property Draft As RunbookDraft" />
       <MemberSignature Language="F#" Value="member this.Draft : Microsoft.Azure.Management.Automation.Models.RunbookDraft with get, set" Usage="Microsoft.Azure.Management.Automation.Models.RunbookCreateOrUpdateParameters.Draft" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Azure::Management::Automation::Models::RunbookDraft ^ Draft { Microsoft::Azure::Management::Automation::Models::RunbookDraft ^ get(); void set(Microsoft::Azure::Management::Automation::Models::RunbookDraft ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Automation</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>3.0.1.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="properties.draft")</AttributeName>
+        <Attribute FrameworkAlternate="azure-dotnet-preview">
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty(PropertyName="properties.draft")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty(PropertyName="properties.draft")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -168,17 +182,15 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Management.Automation.Models.RunbookCreateOrUpdateParameters.Location" />
       <MemberSignature Language="VB.NET" Value="Public Property Location As String" />
       <MemberSignature Language="F#" Value="member this.Location : string with get, set" Usage="Microsoft.Azure.Management.Automation.Models.RunbookCreateOrUpdateParameters.Location" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Location { System::String ^ get(); void set(System::String ^ value); };" />
-      <MemberSignature Language="C++ CX" Value="public:&#xA; property Platform::String ^ Location { Platform::String ^ get(); void set(Platform::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Automation</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>3.0.1.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="location")</AttributeName>
+        <Attribute FrameworkAlternate="azure-dotnet-preview">
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty(PropertyName="location")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty(PropertyName="location")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -193,21 +205,20 @@
       </Docs>
     </Member>
     <Member MemberName="LogActivityTrace">
-      <MemberSignature Language="C#" Value="public Nullable&lt;int&gt; LogActivityTrace { get; set; }" />
+      <MemberSignature Language="C#" Value="public int? LogActivityTrace { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;int32&gt; LogActivityTrace" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Management.Automation.Models.RunbookCreateOrUpdateParameters.LogActivityTrace" />
       <MemberSignature Language="VB.NET" Value="Public Property LogActivityTrace As Nullable(Of Integer)" />
       <MemberSignature Language="F#" Value="member this.LogActivityTrace : Nullable&lt;int&gt; with get, set" Usage="Microsoft.Azure.Management.Automation.Models.RunbookCreateOrUpdateParameters.LogActivityTrace" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Nullable&lt;int&gt; LogActivityTrace { Nullable&lt;int&gt; get(); void set(Nullable&lt;int&gt; value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Automation</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>3.0.1.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="properties.logActivityTrace")</AttributeName>
+        <Attribute FrameworkAlternate="azure-dotnet-preview">
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty(PropertyName="properties.logActivityTrace")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty(PropertyName="properties.logActivityTrace")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -222,21 +233,20 @@
       </Docs>
     </Member>
     <Member MemberName="LogProgress">
-      <MemberSignature Language="C#" Value="public Nullable&lt;bool&gt; LogProgress { get; set; }" />
+      <MemberSignature Language="C#" Value="public bool? LogProgress { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;bool&gt; LogProgress" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Management.Automation.Models.RunbookCreateOrUpdateParameters.LogProgress" />
       <MemberSignature Language="VB.NET" Value="Public Property LogProgress As Nullable(Of Boolean)" />
       <MemberSignature Language="F#" Value="member this.LogProgress : Nullable&lt;bool&gt; with get, set" Usage="Microsoft.Azure.Management.Automation.Models.RunbookCreateOrUpdateParameters.LogProgress" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Nullable&lt;bool&gt; LogProgress { Nullable&lt;bool&gt; get(); void set(Nullable&lt;bool&gt; value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Automation</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>3.0.1.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="properties.logProgress")</AttributeName>
+        <Attribute FrameworkAlternate="azure-dotnet-preview">
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty(PropertyName="properties.logProgress")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty(PropertyName="properties.logProgress")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -251,21 +261,20 @@
       </Docs>
     </Member>
     <Member MemberName="LogVerbose">
-      <MemberSignature Language="C#" Value="public Nullable&lt;bool&gt; LogVerbose { get; set; }" />
+      <MemberSignature Language="C#" Value="public bool? LogVerbose { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;bool&gt; LogVerbose" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Management.Automation.Models.RunbookCreateOrUpdateParameters.LogVerbose" />
       <MemberSignature Language="VB.NET" Value="Public Property LogVerbose As Nullable(Of Boolean)" />
       <MemberSignature Language="F#" Value="member this.LogVerbose : Nullable&lt;bool&gt; with get, set" Usage="Microsoft.Azure.Management.Automation.Models.RunbookCreateOrUpdateParameters.LogVerbose" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Nullable&lt;bool&gt; LogVerbose { Nullable&lt;bool&gt; get(); void set(Nullable&lt;bool&gt; value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Automation</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>3.0.1.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="properties.logVerbose")</AttributeName>
+        <Attribute FrameworkAlternate="azure-dotnet-preview">
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty(PropertyName="properties.logVerbose")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty(PropertyName="properties.logVerbose")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -285,17 +294,15 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Management.Automation.Models.RunbookCreateOrUpdateParameters.Name" />
       <MemberSignature Language="VB.NET" Value="Public Property Name As String" />
       <MemberSignature Language="F#" Value="member this.Name : string with get, set" Usage="Microsoft.Azure.Management.Automation.Models.RunbookCreateOrUpdateParameters.Name" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Name { System::String ^ get(); void set(System::String ^ value); };" />
-      <MemberSignature Language="C++ CX" Value="public:&#xA; property Platform::String ^ Name { Platform::String ^ get(); void set(Platform::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Automation</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>3.0.1.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="name")</AttributeName>
+        <Attribute FrameworkAlternate="azure-dotnet-preview">
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty(PropertyName="name")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty(PropertyName="name")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -309,22 +316,41 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <Member MemberName="Properties">
+      <MemberSignature Language="C#" Value="public Microsoft.Azure.Management.Automation.Models.RunbookCreateOrUpdateProperties Properties { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Azure.Management.Automation.Models.RunbookCreateOrUpdateProperties Properties" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Management.Automation.Models.RunbookCreateOrUpdateParameters.Properties" />
+      <MemberSignature Language="VB.NET" Value="Public Property Properties As RunbookCreateOrUpdateProperties" />
+      <MemberSignature Language="F#" Value="member this.Properties : Microsoft.Azure.Management.Automation.Models.RunbookCreateOrUpdateProperties with get, set" Usage="Microsoft.Azure.Management.Automation.Models.RunbookCreateOrUpdateParameters.Properties" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Azure.Management.Automation</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Azure.Management.Automation.Models.RunbookCreateOrUpdateProperties</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
     <Member MemberName="PublishContentLink">
       <MemberSignature Language="C#" Value="public Microsoft.Azure.Management.Automation.Models.ContentLink PublishContentLink { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Azure.Management.Automation.Models.ContentLink PublishContentLink" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Management.Automation.Models.RunbookCreateOrUpdateParameters.PublishContentLink" />
       <MemberSignature Language="VB.NET" Value="Public Property PublishContentLink As ContentLink" />
       <MemberSignature Language="F#" Value="member this.PublishContentLink : Microsoft.Azure.Management.Automation.Models.ContentLink with get, set" Usage="Microsoft.Azure.Management.Automation.Models.RunbookCreateOrUpdateParameters.PublishContentLink" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Azure::Management::Automation::Models::ContentLink ^ PublishContentLink { Microsoft::Azure::Management::Automation::Models::ContentLink ^ get(); void set(Microsoft::Azure::Management::Automation::Models::ContentLink ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Automation</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>3.0.1.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="properties.publishContentLink")</AttributeName>
+        <Attribute FrameworkAlternate="azure-dotnet-preview">
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty(PropertyName="properties.publishContentLink")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty(PropertyName="properties.publishContentLink")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -344,17 +370,15 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Management.Automation.Models.RunbookCreateOrUpdateParameters.RunbookType" />
       <MemberSignature Language="VB.NET" Value="Public Property RunbookType As String" />
       <MemberSignature Language="F#" Value="member this.RunbookType : string with get, set" Usage="Microsoft.Azure.Management.Automation.Models.RunbookCreateOrUpdateParameters.RunbookType" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ RunbookType { System::String ^ get(); void set(System::String ^ value); };" />
-      <MemberSignature Language="C++ CX" Value="public:&#xA; property Platform::String ^ RunbookType { Platform::String ^ get(); void set(Platform::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Automation</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>3.0.1.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="properties.runbookType")</AttributeName>
+        <Attribute FrameworkAlternate="azure-dotnet-preview">
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty(PropertyName="properties.runbookType")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty(PropertyName="properties.runbookType")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -376,16 +400,15 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Management.Automation.Models.RunbookCreateOrUpdateParameters.Tags" />
       <MemberSignature Language="VB.NET" Value="Public Property Tags As IDictionary(Of String, String)" />
       <MemberSignature Language="F#" Value="member this.Tags : System.Collections.Generic.IDictionary&lt;string, string&gt; with get, set" Usage="Microsoft.Azure.Management.Automation.Models.RunbookCreateOrUpdateParameters.Tags" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::Generic::IDictionary&lt;System::String ^, System::String ^&gt; ^ Tags { System::Collections::Generic::IDictionary&lt;System::String ^, System::String ^&gt; ^ get(); void set(System::Collections::Generic::IDictionary&lt;System::String ^, System::String ^&gt; ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Automation</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>3.0.1.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="tags")</AttributeName>
+        <Attribute FrameworkAlternate="azure-dotnet-preview">
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty(PropertyName="tags")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty(PropertyName="tags")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -405,13 +428,9 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Management.Automation.Models.RunbookCreateOrUpdateParameters.Validate" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Sub Validate ()" />
       <MemberSignature Language="F#" Value="abstract member Validate : unit -&gt; unit&#xA;override this.Validate : unit -&gt; unit" Usage="runbookCreateOrUpdateParameters.Validate " />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Validate();" />
-      <MemberSignature Language="C++ CX" Value="public:&#xA; virtual void Validate();" />
-      <MemberSignature Language="C++ WINRT" Value=" virtual void Validate();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Automation</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>3.0.1.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>

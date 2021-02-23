@@ -1,17 +1,12 @@
-﻿<Type Name="UsageDetailsOperationsExtensions" FullName="Microsoft.Azure.Management.Consumption.UsageDetailsOperationsExtensions">
+<Type Name="UsageDetailsOperationsExtensions" FullName="Microsoft.Azure.Management.Consumption.UsageDetailsOperationsExtensions">
   <TypeSignature Language="C#" Value="public static class UsageDetailsOperationsExtensions" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract sealed beforefieldinit UsageDetailsOperationsExtensions extends System.Object" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Azure.Management.Consumption.UsageDetailsOperationsExtensions" />
   <TypeSignature Language="VB.NET" Value="Public Module UsageDetailsOperationsExtensions" />
   <TypeSignature Language="F#" Value="type UsageDetailsOperationsExtensions = class" />
-  <TypeSignature Language="C++ CLI" Value="public ref class UsageDetailsOperationsExtensions abstract sealed" />
-  <TypeSignature Language="C++ CX" Value="public ref class UsageDetailsOperationsExtensions abstract sealed" />
-  <TypeSignature Language="C++ WINRT" Value="class UsageDetailsOperationsExtensions abstract sealed" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Azure.Management.Consumption</AssemblyName>
-    <AssemblyVersion>2.0.0.0</AssemblyVersion>
-    <AssemblyVersion>2.1.0.0</AssemblyVersion>
-    <AssemblyVersion>3.0.0.0</AssemblyVersion>
+    <AssemblyVersion>3.0.1.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
@@ -25,15 +20,15 @@
   </Docs>
   <Members>
     <Member MemberName="List">
-      <MemberSignature Language="C#" Value="public static Microsoft.Rest.Azure.IPage&lt;Microsoft.Azure.Management.Consumption.Models.UsageDetail&gt; List (this Microsoft.Azure.Management.Consumption.IUsageDetailsOperations operations, string expand = null, string filter = null, string skiptoken = null, Nullable&lt;int&gt; top = null);" />
+      <MemberSignature Language="C#" Value="public static Microsoft.Rest.Azure.IPage&lt;Microsoft.Azure.Management.Consumption.Models.UsageDetail&gt; List (this Microsoft.Azure.Management.Consumption.IUsageDetailsOperations operations, string expand = default, string filter = default, string skiptoken = default, int? top = default);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Microsoft.Rest.Azure.IPage`1&lt;class Microsoft.Azure.Management.Consumption.Models.UsageDetail&gt; List(class Microsoft.Azure.Management.Consumption.IUsageDetailsOperations operations, string expand, string filter, string skiptoken, valuetype System.Nullable`1&lt;int32&gt; top) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Management.Consumption.UsageDetailsOperationsExtensions.List(Microsoft.Azure.Management.Consumption.IUsageDetailsOperations,System.String,System.String,System.String,System.Nullable{System.Int32})" />
-      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function List (operations As IUsageDetailsOperations, Optional expand As String = null, Optional filter As String = null, Optional skiptoken As String = null, Optional top As Nullable(Of Integer) = null) As IPage(Of UsageDetail)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function List (operations As IUsageDetailsOperations, Optional expand As String = Nothing, Optional filter As String = Nothing, Optional skiptoken As String = Nothing, Optional top As Nullable(Of Integer) = Nothing) As IPage(Of UsageDetail)" />
       <MemberSignature Language="F#" Value="static member List : Microsoft.Azure.Management.Consumption.IUsageDetailsOperations * string * string * string * Nullable&lt;int&gt; -&gt; Microsoft.Rest.Azure.IPage&lt;Microsoft.Azure.Management.Consumption.Models.UsageDetail&gt;" Usage="Microsoft.Azure.Management.Consumption.UsageDetailsOperationsExtensions.List (operations, expand, filter, skiptoken, top)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Consumption</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
+        <AssemblyVersion>3.0.1.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Rest.Azure.IPage&lt;Microsoft.Azure.Management.Consumption.Models.UsageDetail&gt;</ReturnType>
@@ -80,20 +75,16 @@
       </Docs>
     </Member>
     <Member MemberName="ListAsync">
-      <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task&lt;Microsoft.Rest.Azure.IPage&lt;Microsoft.Azure.Management.Consumption.Models.UsageDetail&gt;&gt; ListAsync (this Microsoft.Azure.Management.Consumption.IUsageDetailsOperations operations, string expand = null, string filter = null, string skiptoken = null, Nullable&lt;int&gt; top = null, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task&lt;Microsoft.Rest.Azure.IPage&lt;Microsoft.Azure.Management.Consumption.Models.UsageDetail&gt;&gt; ListAsync (this Microsoft.Azure.Management.Consumption.IUsageDetailsOperations operations, string expand = default, string filter = default, string skiptoken = default, int? top = default, System.Threading.CancellationToken cancellationToken = default);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Threading.Tasks.Task`1&lt;class Microsoft.Rest.Azure.IPage`1&lt;class Microsoft.Azure.Management.Consumption.Models.UsageDetail&gt;&gt; ListAsync(class Microsoft.Azure.Management.Consumption.IUsageDetailsOperations operations, string expand, string filter, string skiptoken, valuetype System.Nullable`1&lt;int32&gt; top, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Management.Consumption.UsageDetailsOperationsExtensions.ListAsync(Microsoft.Azure.Management.Consumption.IUsageDetailsOperations,System.String,System.String,System.String,System.Nullable{System.Int32},System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function ListAsync (operations As IUsageDetailsOperations, Optional expand As String = Nothing, Optional filter As String = Nothing, Optional skiptoken As String = Nothing, Optional top As Nullable(Of Integer) = Nothing, Optional cancellationToken As CancellationToken = Nothing) As Task(Of IPage(Of UsageDetail))" />
       <MemberSignature Language="F#" Value="static member ListAsync : Microsoft.Azure.Management.Consumption.IUsageDetailsOperations * string * string * string * Nullable&lt;int&gt; * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.Rest.Azure.IPage&lt;Microsoft.Azure.Management.Consumption.Models.UsageDetail&gt;&gt;" Usage="Microsoft.Azure.Management.Consumption.UsageDetailsOperationsExtensions.ListAsync (operations, expand, filter, skiptoken, top, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Consumption</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
+        <AssemblyVersion>3.0.1.0</AssemblyVersion>
       </AssemblyInfo>
-      <Attributes>
-        <Attribute>
-          <AttributeName>System.Runtime.CompilerServices.AsyncStateMachine(typeof(Microsoft.Azure.Management.Consumption.UsageDetailsOperationsExtensions/&lt;ListAsync&gt;d__1))</AttributeName>
-        </Attribute>
-      </Attributes>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.Rest.Azure.IPage&lt;Microsoft.Azure.Management.Consumption.Models.UsageDetail&gt;&gt;</ReturnType>
       </ReturnValue>
@@ -143,15 +134,15 @@
       </Docs>
     </Member>
     <Member MemberName="ListByBillingPeriod">
-      <MemberSignature Language="C#" Value="public static Microsoft.Rest.Azure.IPage&lt;Microsoft.Azure.Management.Consumption.Models.UsageDetail&gt; ListByBillingPeriod (this Microsoft.Azure.Management.Consumption.IUsageDetailsOperations operations, string billingPeriodName, string expand = null, string filter = null, string skiptoken = null, Nullable&lt;int&gt; top = null);" />
+      <MemberSignature Language="C#" Value="public static Microsoft.Rest.Azure.IPage&lt;Microsoft.Azure.Management.Consumption.Models.UsageDetail&gt; ListByBillingPeriod (this Microsoft.Azure.Management.Consumption.IUsageDetailsOperations operations, string billingPeriodName, string expand = default, string filter = default, string skiptoken = default, int? top = default);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Microsoft.Rest.Azure.IPage`1&lt;class Microsoft.Azure.Management.Consumption.Models.UsageDetail&gt; ListByBillingPeriod(class Microsoft.Azure.Management.Consumption.IUsageDetailsOperations operations, string billingPeriodName, string expand, string filter, string skiptoken, valuetype System.Nullable`1&lt;int32&gt; top) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Management.Consumption.UsageDetailsOperationsExtensions.ListByBillingPeriod(Microsoft.Azure.Management.Consumption.IUsageDetailsOperations,System.String,System.String,System.String,System.String,System.Nullable{System.Int32})" />
-      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function ListByBillingPeriod (operations As IUsageDetailsOperations, billingPeriodName As String, Optional expand As String = null, Optional filter As String = null, Optional skiptoken As String = null, Optional top As Nullable(Of Integer) = null) As IPage(Of UsageDetail)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function ListByBillingPeriod (operations As IUsageDetailsOperations, billingPeriodName As String, Optional expand As String = Nothing, Optional filter As String = Nothing, Optional skiptoken As String = Nothing, Optional top As Nullable(Of Integer) = Nothing) As IPage(Of UsageDetail)" />
       <MemberSignature Language="F#" Value="static member ListByBillingPeriod : Microsoft.Azure.Management.Consumption.IUsageDetailsOperations * string * string * string * string * Nullable&lt;int&gt; -&gt; Microsoft.Rest.Azure.IPage&lt;Microsoft.Azure.Management.Consumption.Models.UsageDetail&gt;" Usage="Microsoft.Azure.Management.Consumption.UsageDetailsOperationsExtensions.ListByBillingPeriod (operations, billingPeriodName, expand, filter, skiptoken, top)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Consumption</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
+        <AssemblyVersion>3.0.1.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Rest.Azure.IPage&lt;Microsoft.Azure.Management.Consumption.Models.UsageDetail&gt;</ReturnType>
@@ -202,20 +193,16 @@
       </Docs>
     </Member>
     <Member MemberName="ListByBillingPeriodAsync">
-      <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task&lt;Microsoft.Rest.Azure.IPage&lt;Microsoft.Azure.Management.Consumption.Models.UsageDetail&gt;&gt; ListByBillingPeriodAsync (this Microsoft.Azure.Management.Consumption.IUsageDetailsOperations operations, string billingPeriodName, string expand = null, string filter = null, string skiptoken = null, Nullable&lt;int&gt; top = null, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task&lt;Microsoft.Rest.Azure.IPage&lt;Microsoft.Azure.Management.Consumption.Models.UsageDetail&gt;&gt; ListByBillingPeriodAsync (this Microsoft.Azure.Management.Consumption.IUsageDetailsOperations operations, string billingPeriodName, string expand = default, string filter = default, string skiptoken = default, int? top = default, System.Threading.CancellationToken cancellationToken = default);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Threading.Tasks.Task`1&lt;class Microsoft.Rest.Azure.IPage`1&lt;class Microsoft.Azure.Management.Consumption.Models.UsageDetail&gt;&gt; ListByBillingPeriodAsync(class Microsoft.Azure.Management.Consumption.IUsageDetailsOperations operations, string billingPeriodName, string expand, string filter, string skiptoken, valuetype System.Nullable`1&lt;int32&gt; top, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Management.Consumption.UsageDetailsOperationsExtensions.ListByBillingPeriodAsync(Microsoft.Azure.Management.Consumption.IUsageDetailsOperations,System.String,System.String,System.String,System.String,System.Nullable{System.Int32},System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function ListByBillingPeriodAsync (operations As IUsageDetailsOperations, billingPeriodName As String, Optional expand As String = Nothing, Optional filter As String = Nothing, Optional skiptoken As String = Nothing, Optional top As Nullable(Of Integer) = Nothing, Optional cancellationToken As CancellationToken = Nothing) As Task(Of IPage(Of UsageDetail))" />
       <MemberSignature Language="F#" Value="static member ListByBillingPeriodAsync : Microsoft.Azure.Management.Consumption.IUsageDetailsOperations * string * string * string * string * Nullable&lt;int&gt; * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.Rest.Azure.IPage&lt;Microsoft.Azure.Management.Consumption.Models.UsageDetail&gt;&gt;" Usage="Microsoft.Azure.Management.Consumption.UsageDetailsOperationsExtensions.ListByBillingPeriodAsync (operations, billingPeriodName, expand, filter, skiptoken, top, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Consumption</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
+        <AssemblyVersion>3.0.1.0</AssemblyVersion>
       </AssemblyInfo>
-      <Attributes>
-        <Attribute>
-          <AttributeName>System.Runtime.CompilerServices.AsyncStateMachine(typeof(Microsoft.Azure.Management.Consumption.UsageDetailsOperationsExtensions/&lt;ListByBillingPeriodAsync&gt;d__3))</AttributeName>
-        </Attribute>
-      </Attributes>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.Rest.Azure.IPage&lt;Microsoft.Azure.Management.Consumption.Models.UsageDetail&gt;&gt;</ReturnType>
       </ReturnValue>
@@ -274,11 +261,10 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Management.Consumption.UsageDetailsOperationsExtensions.ListByBillingPeriodNext(Microsoft.Azure.Management.Consumption.IUsageDetailsOperations,System.String)" />
       <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function ListByBillingPeriodNext (operations As IUsageDetailsOperations, nextPageLink As String) As IPage(Of UsageDetail)" />
       <MemberSignature Language="F#" Value="static member ListByBillingPeriodNext : Microsoft.Azure.Management.Consumption.IUsageDetailsOperations * string -&gt; Microsoft.Rest.Azure.IPage&lt;Microsoft.Azure.Management.Consumption.Models.UsageDetail&gt;" Usage="Microsoft.Azure.Management.Consumption.UsageDetailsOperationsExtensions.ListByBillingPeriodNext (operations, nextPageLink)" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA;[System::Runtime::CompilerServices::Extension]&#xA; static Microsoft::Rest::Azure::IPage&lt;Microsoft::Azure::Management::Consumption::Models::UsageDetail ^&gt; ^ ListByBillingPeriodNext(Microsoft::Azure::Management::Consumption::IUsageDetailsOperations ^ operations, System::String ^ nextPageLink);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Consumption</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
+        <AssemblyVersion>3.0.1.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Rest.Azure.IPage&lt;Microsoft.Azure.Management.Consumption.Models.UsageDetail&gt;</ReturnType>
@@ -303,20 +289,16 @@
       </Docs>
     </Member>
     <Member MemberName="ListByBillingPeriodNextAsync">
-      <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task&lt;Microsoft.Rest.Azure.IPage&lt;Microsoft.Azure.Management.Consumption.Models.UsageDetail&gt;&gt; ListByBillingPeriodNextAsync (this Microsoft.Azure.Management.Consumption.IUsageDetailsOperations operations, string nextPageLink, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task&lt;Microsoft.Rest.Azure.IPage&lt;Microsoft.Azure.Management.Consumption.Models.UsageDetail&gt;&gt; ListByBillingPeriodNextAsync (this Microsoft.Azure.Management.Consumption.IUsageDetailsOperations operations, string nextPageLink, System.Threading.CancellationToken cancellationToken = default);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Threading.Tasks.Task`1&lt;class Microsoft.Rest.Azure.IPage`1&lt;class Microsoft.Azure.Management.Consumption.Models.UsageDetail&gt;&gt; ListByBillingPeriodNextAsync(class Microsoft.Azure.Management.Consumption.IUsageDetailsOperations operations, string nextPageLink, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Management.Consumption.UsageDetailsOperationsExtensions.ListByBillingPeriodNextAsync(Microsoft.Azure.Management.Consumption.IUsageDetailsOperations,System.String,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function ListByBillingPeriodNextAsync (operations As IUsageDetailsOperations, nextPageLink As String, Optional cancellationToken As CancellationToken = Nothing) As Task(Of IPage(Of UsageDetail))" />
       <MemberSignature Language="F#" Value="static member ListByBillingPeriodNextAsync : Microsoft.Azure.Management.Consumption.IUsageDetailsOperations * string * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.Rest.Azure.IPage&lt;Microsoft.Azure.Management.Consumption.Models.UsageDetail&gt;&gt;" Usage="Microsoft.Azure.Management.Consumption.UsageDetailsOperationsExtensions.ListByBillingPeriodNextAsync (operations, nextPageLink, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Consumption</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
+        <AssemblyVersion>3.0.1.0</AssemblyVersion>
       </AssemblyInfo>
-      <Attributes>
-        <Attribute>
-          <AttributeName>System.Runtime.CompilerServices.AsyncStateMachine(typeof(Microsoft.Azure.Management.Consumption.UsageDetailsOperationsExtensions/&lt;ListByBillingPeriodNextAsync&gt;d__7))</AttributeName>
-        </Attribute>
-      </Attributes>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.Rest.Azure.IPage&lt;Microsoft.Azure.Management.Consumption.Models.UsageDetail&gt;&gt;</ReturnType>
       </ReturnValue>
@@ -349,13 +331,10 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Management.Consumption.UsageDetailsOperationsExtensions.ListNext(Microsoft.Azure.Management.Consumption.IUsageDetailsOperations,System.String)" />
       <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function ListNext (operations As IUsageDetailsOperations, nextPageLink As String) As IPage(Of UsageDetail)" />
       <MemberSignature Language="F#" Value="static member ListNext : Microsoft.Azure.Management.Consumption.IUsageDetailsOperations * string -&gt; Microsoft.Rest.Azure.IPage&lt;Microsoft.Azure.Management.Consumption.Models.UsageDetail&gt;" Usage="Microsoft.Azure.Management.Consumption.UsageDetailsOperationsExtensions.ListNext (operations, nextPageLink)" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA;[System::Runtime::CompilerServices::Extension]&#xA; static Microsoft::Rest::Azure::IPage&lt;Microsoft::Azure::Management::Consumption::Models::UsageDetail ^&gt; ^ ListNext(Microsoft::Azure::Management::Consumption::IUsageDetailsOperations ^ operations, System::String ^ nextPageLink);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Consumption</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
-        <AssemblyVersion>2.1.0.0</AssemblyVersion>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
+        <AssemblyVersion>3.0.1.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Rest.Azure.IPage&lt;Microsoft.Azure.Management.Consumption.Models.UsageDetail&gt;</ReturnType>
@@ -380,22 +359,16 @@
       </Docs>
     </Member>
     <Member MemberName="ListNextAsync">
-      <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task&lt;Microsoft.Rest.Azure.IPage&lt;Microsoft.Azure.Management.Consumption.Models.UsageDetail&gt;&gt; ListNextAsync (this Microsoft.Azure.Management.Consumption.IUsageDetailsOperations operations, string nextPageLink, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task&lt;Microsoft.Rest.Azure.IPage&lt;Microsoft.Azure.Management.Consumption.Models.UsageDetail&gt;&gt; ListNextAsync (this Microsoft.Azure.Management.Consumption.IUsageDetailsOperations operations, string nextPageLink, System.Threading.CancellationToken cancellationToken = default);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Threading.Tasks.Task`1&lt;class Microsoft.Rest.Azure.IPage`1&lt;class Microsoft.Azure.Management.Consumption.Models.UsageDetail&gt;&gt; ListNextAsync(class Microsoft.Azure.Management.Consumption.IUsageDetailsOperations operations, string nextPageLink, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Management.Consumption.UsageDetailsOperationsExtensions.ListNextAsync(Microsoft.Azure.Management.Consumption.IUsageDetailsOperations,System.String,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function ListNextAsync (operations As IUsageDetailsOperations, nextPageLink As String, Optional cancellationToken As CancellationToken = Nothing) As Task(Of IPage(Of UsageDetail))" />
       <MemberSignature Language="F#" Value="static member ListNextAsync : Microsoft.Azure.Management.Consumption.IUsageDetailsOperations * string * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.Rest.Azure.IPage&lt;Microsoft.Azure.Management.Consumption.Models.UsageDetail&gt;&gt;" Usage="Microsoft.Azure.Management.Consumption.UsageDetailsOperationsExtensions.ListNextAsync (operations, nextPageLink, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Consumption</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
-        <AssemblyVersion>2.1.0.0</AssemblyVersion>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
+        <AssemblyVersion>3.0.1.0</AssemblyVersion>
       </AssemblyInfo>
-      <Attributes>
-        <Attribute>
-          <AttributeName>System.Runtime.CompilerServices.AsyncStateMachine(typeof(Microsoft.Azure.Management.Consumption.UsageDetailsOperationsExtensions/&lt;ListNextAsync&gt;d__5))</AttributeName>
-        </Attribute>
-      </Attributes>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.Rest.Azure.IPage&lt;Microsoft.Azure.Management.Consumption.Models.UsageDetail&gt;&gt;</ReturnType>
       </ReturnValue>

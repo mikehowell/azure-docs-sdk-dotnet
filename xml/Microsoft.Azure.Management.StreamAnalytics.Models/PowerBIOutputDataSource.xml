@@ -1,11 +1,9 @@
-﻿<Type Name="PowerBIOutputDataSource" FullName="Microsoft.Azure.Management.StreamAnalytics.Models.PowerBIOutputDataSource">
+<Type Name="PowerBIOutputDataSource" FullName="Microsoft.Azure.Management.StreamAnalytics.Models.PowerBIOutputDataSource">
   <TypeSignature Language="C#" Value="public class PowerBIOutputDataSource : Microsoft.Azure.Management.StreamAnalytics.Models.OutputDataSource" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit PowerBIOutputDataSource extends Microsoft.Azure.Management.StreamAnalytics.Models.OutputDataSource" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Azure.Management.StreamAnalytics.Models.PowerBIOutputDataSource" />
   <TypeSignature Language="VB.NET" Value="Public Class PowerBIOutputDataSource&#xA;Inherits OutputDataSource" />
   <TypeSignature Language="F#" Value="type PowerBIOutputDataSource = class&#xA;    inherit OutputDataSource" />
-  <TypeSignature Language="C++ CLI" Value="public ref class PowerBIOutputDataSource : Microsoft::Azure::Management::StreamAnalytics::Models::OutputDataSource" />
-  <TypeSignature Language="C++ WINRT" Value="[Windows::Foundation::Metadata::WebHostHidden]&#xA;class PowerBIOutputDataSource : Microsoft::Azure::Management::StreamAnalytics::Models::OutputDataSource" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Azure.Management.StreamAnalytics</AssemblyName>
     <AssemblyVersion>2.0.0.0</AssemblyVersion>
@@ -16,10 +14,12 @@
   <Interfaces />
   <Attributes>
     <Attribute>
-      <AttributeName>Microsoft.Rest.Serialization.JsonTransformation</AttributeName>
+      <AttributeName Language="C#">[Microsoft.Rest.Serialization.JsonTransformation]</AttributeName>
+      <AttributeName Language="F#">[&lt;Microsoft.Rest.Serialization.JsonTransformation&gt;]</AttributeName>
     </Attribute>
     <Attribute>
-      <AttributeName>Newtonsoft.Json.JsonObject("PowerBI")</AttributeName>
+      <AttributeName Language="C#">[Newtonsoft.Json.JsonObject("PowerBI")]</AttributeName>
+      <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonObject("PowerBI")&gt;]</AttributeName>
     </Attribute>
   </Attributes>
   <Docs>
@@ -34,9 +34,6 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Management.StreamAnalytics.Models.PowerBIOutputDataSource.#ctor" />
       <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; PowerBIOutputDataSource();" />
-      <MemberSignature Language="C++ CX" Value="public:&#xA; PowerBIOutputDataSource();" />
-      <MemberSignature Language="C++ WINRT" Value=" PowerBIOutputDataSource();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.StreamAnalytics</AssemblyName>
@@ -51,12 +48,11 @@
       </Docs>
     </Member>
     <Member MemberName=".ctor">
-      <MemberSignature Language="C#" Value="public PowerBIOutputDataSource (string refreshToken = null, string tokenUserPrincipalName = null, string tokenUserDisplayName = null, string dataset = null, string table = null, string groupId = null, string groupName = null);" />
+      <MemberSignature Language="C#" Value="public PowerBIOutputDataSource (string refreshToken = default, string tokenUserPrincipalName = default, string tokenUserDisplayName = default, string dataset = default, string table = default, string groupId = default, string groupName = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string refreshToken, string tokenUserPrincipalName, string tokenUserDisplayName, string dataset, string table, string groupId, string groupName) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Management.StreamAnalytics.Models.PowerBIOutputDataSource.#ctor(System.String,System.String,System.String,System.String,System.String,System.String,System.String)" />
-      <MemberSignature Language="VB.NET" Value="Public Sub New (Optional refreshToken As String = null, Optional tokenUserPrincipalName As String = null, Optional tokenUserDisplayName As String = null, Optional dataset As String = null, Optional table As String = null, Optional groupId As String = null, Optional groupName As String = null)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (Optional refreshToken As String = Nothing, Optional tokenUserPrincipalName As String = Nothing, Optional tokenUserDisplayName As String = Nothing, Optional dataset As String = Nothing, Optional table As String = Nothing, Optional groupId As String = Nothing, Optional groupName As String = Nothing)" />
       <MemberSignature Language="F#" Value="new Microsoft.Azure.Management.StreamAnalytics.Models.PowerBIOutputDataSource : string * string * string * string * string * string * string -&gt; Microsoft.Azure.Management.StreamAnalytics.Models.PowerBIOutputDataSource" Usage="new Microsoft.Azure.Management.StreamAnalytics.Models.PowerBIOutputDataSource (refreshToken, tokenUserPrincipalName, tokenUserDisplayName, dataset, table, groupId, groupName)" />
-      <MemberSignature Language="C++ WINRT" Value=" PowerBIOutputDataSource(std::wstring const &amp; refreshToken = null, std::wstring const &amp; tokenUserPrincipalName = null, std::wstring const &amp; tokenUserDisplayName = null, std::wstring const &amp; dataset = null, std::wstring const &amp; table = null, std::wstring const &amp; groupId = null, std::wstring const &amp; groupName = null);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.StreamAnalytics</AssemblyName>
@@ -109,8 +105,6 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Management.StreamAnalytics.Models.PowerBIOutputDataSource.Dataset" />
       <MemberSignature Language="VB.NET" Value="Public Property Dataset As String" />
       <MemberSignature Language="F#" Value="member this.Dataset : string with get, set" Usage="Microsoft.Azure.Management.StreamAnalytics.Models.PowerBIOutputDataSource.Dataset" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Dataset { System::String ^ get(); void set(System::String ^ value); };" />
-      <MemberSignature Language="C++ CX" Value="public:&#xA; property Platform::String ^ Dataset { Platform::String ^ get(); void set(Platform::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.StreamAnalytics</AssemblyName>
@@ -118,7 +112,8 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="properties.dataset")</AttributeName>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty(PropertyName="properties.dataset")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty(PropertyName="properties.dataset")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -139,8 +134,6 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Management.StreamAnalytics.Models.PowerBIOutputDataSource.GroupId" />
       <MemberSignature Language="VB.NET" Value="Public Property GroupId As String" />
       <MemberSignature Language="F#" Value="member this.GroupId : string with get, set" Usage="Microsoft.Azure.Management.StreamAnalytics.Models.PowerBIOutputDataSource.GroupId" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ GroupId { System::String ^ get(); void set(System::String ^ value); };" />
-      <MemberSignature Language="C++ CX" Value="public:&#xA; property Platform::String ^ GroupId { Platform::String ^ get(); void set(Platform::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.StreamAnalytics</AssemblyName>
@@ -148,7 +141,8 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="properties.groupId")</AttributeName>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty(PropertyName="properties.groupId")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty(PropertyName="properties.groupId")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -168,8 +162,6 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Management.StreamAnalytics.Models.PowerBIOutputDataSource.GroupName" />
       <MemberSignature Language="VB.NET" Value="Public Property GroupName As String" />
       <MemberSignature Language="F#" Value="member this.GroupName : string with get, set" Usage="Microsoft.Azure.Management.StreamAnalytics.Models.PowerBIOutputDataSource.GroupName" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ GroupName { System::String ^ get(); void set(System::String ^ value); };" />
-      <MemberSignature Language="C++ CX" Value="public:&#xA; property Platform::String ^ GroupName { Platform::String ^ get(); void set(Platform::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.StreamAnalytics</AssemblyName>
@@ -177,7 +169,8 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="properties.groupName")</AttributeName>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty(PropertyName="properties.groupName")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty(PropertyName="properties.groupName")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -198,8 +191,6 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Management.StreamAnalytics.Models.PowerBIOutputDataSource.RefreshToken" />
       <MemberSignature Language="VB.NET" Value="Public Property RefreshToken As String" />
       <MemberSignature Language="F#" Value="member this.RefreshToken : string with get, set" Usage="Microsoft.Azure.Management.StreamAnalytics.Models.PowerBIOutputDataSource.RefreshToken" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ RefreshToken { System::String ^ get(); void set(System::String ^ value); };" />
-      <MemberSignature Language="C++ CX" Value="public:&#xA; property Platform::String ^ RefreshToken { Platform::String ^ get(); void set(Platform::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.StreamAnalytics</AssemblyName>
@@ -207,7 +198,8 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="properties.refreshToken")</AttributeName>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty(PropertyName="properties.refreshToken")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty(PropertyName="properties.refreshToken")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -233,8 +225,6 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Management.StreamAnalytics.Models.PowerBIOutputDataSource.Table" />
       <MemberSignature Language="VB.NET" Value="Public Property Table As String" />
       <MemberSignature Language="F#" Value="member this.Table : string with get, set" Usage="Microsoft.Azure.Management.StreamAnalytics.Models.PowerBIOutputDataSource.Table" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Table { System::String ^ get(); void set(System::String ^ value); };" />
-      <MemberSignature Language="C++ CX" Value="public:&#xA; property Platform::String ^ Table { Platform::String ^ get(); void set(Platform::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.StreamAnalytics</AssemblyName>
@@ -242,7 +232,8 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="properties.table")</AttributeName>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty(PropertyName="properties.table")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty(PropertyName="properties.table")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -263,8 +254,6 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Management.StreamAnalytics.Models.PowerBIOutputDataSource.TokenUserDisplayName" />
       <MemberSignature Language="VB.NET" Value="Public Property TokenUserDisplayName As String" />
       <MemberSignature Language="F#" Value="member this.TokenUserDisplayName : string with get, set" Usage="Microsoft.Azure.Management.StreamAnalytics.Models.PowerBIOutputDataSource.TokenUserDisplayName" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ TokenUserDisplayName { System::String ^ get(); void set(System::String ^ value); };" />
-      <MemberSignature Language="C++ CX" Value="public:&#xA; property Platform::String ^ TokenUserDisplayName { Platform::String ^ get(); void set(Platform::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.StreamAnalytics</AssemblyName>
@@ -272,7 +261,8 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="properties.tokenUserDisplayName")</AttributeName>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty(PropertyName="properties.tokenUserDisplayName")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty(PropertyName="properties.tokenUserDisplayName")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -294,8 +284,6 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Management.StreamAnalytics.Models.PowerBIOutputDataSource.TokenUserPrincipalName" />
       <MemberSignature Language="VB.NET" Value="Public Property TokenUserPrincipalName As String" />
       <MemberSignature Language="F#" Value="member this.TokenUserPrincipalName : string with get, set" Usage="Microsoft.Azure.Management.StreamAnalytics.Models.PowerBIOutputDataSource.TokenUserPrincipalName" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ TokenUserPrincipalName { System::String ^ get(); void set(System::String ^ value); };" />
-      <MemberSignature Language="C++ CX" Value="public:&#xA; property Platform::String ^ TokenUserPrincipalName { Platform::String ^ get(); void set(Platform::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.StreamAnalytics</AssemblyName>
@@ -303,7 +291,8 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="properties.tokenUserPrincipalName")</AttributeName>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty(PropertyName="properties.tokenUserPrincipalName")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty(PropertyName="properties.tokenUserPrincipalName")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>

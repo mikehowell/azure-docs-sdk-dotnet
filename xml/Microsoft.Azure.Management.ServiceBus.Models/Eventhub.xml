@@ -1,14 +1,12 @@
-﻿<Type Name="Eventhub" FullName="Microsoft.Azure.Management.ServiceBus.Models.Eventhub">
+<Type Name="Eventhub" FullName="Microsoft.Azure.Management.ServiceBus.Models.Eventhub">
   <TypeSignature Language="C#" Value="public class Eventhub : Microsoft.Azure.Management.ServiceBus.Models.Resource" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit Eventhub extends Microsoft.Azure.Management.ServiceBus.Models.Resource" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Azure.Management.ServiceBus.Models.Eventhub" />
   <TypeSignature Language="VB.NET" Value="Public Class Eventhub&#xA;Inherits Resource" />
   <TypeSignature Language="F#" Value="type Eventhub = class&#xA;    inherit Resource" />
-  <TypeSignature Language="C++ CLI" Value="public ref class Eventhub : Microsoft::Azure::Management::ServiceBus::Models::Resource" />
-  <TypeSignature Language="C++ WINRT" Value="[Windows::Foundation::Metadata::WebHostHidden]&#xA;class Eventhub : Microsoft::Azure::Management::ServiceBus::Models::Resource" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Azure.Management.ServiceBus</AssemblyName>
-    <AssemblyVersion>1.0.0.0</AssemblyVersion>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>Microsoft.Azure.Management.ServiceBus.Models.Resource</BaseTypeName>
@@ -16,7 +14,8 @@
   <Interfaces />
   <Attributes>
     <Attribute>
-      <AttributeName>Microsoft.Rest.Serialization.JsonTransformation</AttributeName>
+      <AttributeName Language="C#">[Microsoft.Rest.Serialization.JsonTransformation]</AttributeName>
+      <AttributeName Language="F#">[&lt;Microsoft.Rest.Serialization.JsonTransformation&gt;]</AttributeName>
     </Attribute>
   </Attributes>
   <Docs>
@@ -31,13 +30,10 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Management.ServiceBus.Models.Eventhub.#ctor" />
       <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; Eventhub();" />
-      <MemberSignature Language="C++ CX" Value="public:&#xA; Eventhub();" />
-      <MemberSignature Language="C++ WINRT" Value=" Eventhub();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.ServiceBus</AssemblyName>
-        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
@@ -48,14 +44,15 @@
       </Docs>
     </Member>
     <Member MemberName=".ctor">
-      <MemberSignature Language="C#" Value="public Eventhub (string id = null, string name = null, string type = null, System.Collections.Generic.IList&lt;string&gt; partitionIds = null, Nullable&lt;DateTime&gt; createdAt = null, Nullable&lt;DateTime&gt; updatedAt = null, Nullable&lt;long&gt; messageRetentionInDays = null, Nullable&lt;long&gt; partitionCount = null, Nullable&lt;Microsoft.Azure.Management.ServiceBus.Models.EntityStatus&gt; status = null, Microsoft.Azure.Management.ServiceBus.Models.CaptureDescription captureDescription = null);" />
+      <MemberSignature Language="C#" Value="public Eventhub (string id = default, string name = default, string type = default, System.Collections.Generic.IList&lt;string&gt; partitionIds = default, DateTime? createdAt = default, DateTime? updatedAt = default, long? messageRetentionInDays = default, long? partitionCount = default, Microsoft.Azure.Management.ServiceBus.Models.EntityStatus? status = default, Microsoft.Azure.Management.ServiceBus.Models.CaptureDescription captureDescription = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string id, string name, string type, class System.Collections.Generic.IList`1&lt;string&gt; partitionIds, valuetype System.Nullable`1&lt;valuetype System.DateTime&gt; createdAt, valuetype System.Nullable`1&lt;valuetype System.DateTime&gt; updatedAt, valuetype System.Nullable`1&lt;int64&gt; messageRetentionInDays, valuetype System.Nullable`1&lt;int64&gt; partitionCount, valuetype System.Nullable`1&lt;valuetype Microsoft.Azure.Management.ServiceBus.Models.EntityStatus&gt; status, class Microsoft.Azure.Management.ServiceBus.Models.CaptureDescription captureDescription) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Management.ServiceBus.Models.Eventhub.#ctor(System.String,System.String,System.String,System.Collections.Generic.IList{System.String},System.Nullable{System.DateTime},System.Nullable{System.DateTime},System.Nullable{System.Int64},System.Nullable{System.Int64},System.Nullable{Microsoft.Azure.Management.ServiceBus.Models.EntityStatus},Microsoft.Azure.Management.ServiceBus.Models.CaptureDescription)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (Optional id As String = Nothing, Optional name As String = Nothing, Optional type As String = Nothing, Optional partitionIds As IList(Of String) = Nothing, Optional createdAt As Nullable(Of DateTime) = Nothing, Optional updatedAt As Nullable(Of DateTime) = Nothing, Optional messageRetentionInDays As Nullable(Of Long) = Nothing, Optional partitionCount As Nullable(Of Long) = Nothing, Optional status As Nullable(Of EntityStatus) = Nothing, Optional captureDescription As CaptureDescription = Nothing)" />
       <MemberSignature Language="F#" Value="new Microsoft.Azure.Management.ServiceBus.Models.Eventhub : string * string * string * System.Collections.Generic.IList&lt;string&gt; * Nullable&lt;DateTime&gt; * Nullable&lt;DateTime&gt; * Nullable&lt;int64&gt; * Nullable&lt;int64&gt; * Nullable&lt;Microsoft.Azure.Management.ServiceBus.Models.EntityStatus&gt; * Microsoft.Azure.Management.ServiceBus.Models.CaptureDescription -&gt; Microsoft.Azure.Management.ServiceBus.Models.Eventhub" Usage="new Microsoft.Azure.Management.ServiceBus.Models.Eventhub (id, name, type, partitionIds, createdAt, updatedAt, messageRetentionInDays, partitionCount, status, captureDescription)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.ServiceBus</AssemblyName>
-        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="id" Type="System.String" />
@@ -101,15 +98,15 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Management.ServiceBus.Models.Eventhub.CaptureDescription" />
       <MemberSignature Language="VB.NET" Value="Public Property CaptureDescription As CaptureDescription" />
       <MemberSignature Language="F#" Value="member this.CaptureDescription : Microsoft.Azure.Management.ServiceBus.Models.CaptureDescription with get, set" Usage="Microsoft.Azure.Management.ServiceBus.Models.Eventhub.CaptureDescription" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Azure::Management::ServiceBus::Models::CaptureDescription ^ CaptureDescription { Microsoft::Azure::Management::ServiceBus::Models::CaptureDescription ^ get(); void set(Microsoft::Azure::Management::ServiceBus::Models::CaptureDescription ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.ServiceBus</AssemblyName>
-        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="properties.captureDescription")</AttributeName>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty(PropertyName="properties.captureDescription")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty(PropertyName="properties.captureDescription")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -124,20 +121,20 @@
       </Docs>
     </Member>
     <Member MemberName="CreatedAt">
-      <MemberSignature Language="C#" Value="public Nullable&lt;DateTime&gt; CreatedAt { get; }" />
+      <MemberSignature Language="C#" Value="public DateTime? CreatedAt { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;valuetype System.DateTime&gt; CreatedAt" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Management.ServiceBus.Models.Eventhub.CreatedAt" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property CreatedAt As Nullable(Of DateTime)" />
       <MemberSignature Language="F#" Value="member this.CreatedAt : Nullable&lt;DateTime&gt;" Usage="Microsoft.Azure.Management.ServiceBus.Models.Eventhub.CreatedAt" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Nullable&lt;DateTime&gt; CreatedAt { Nullable&lt;DateTime&gt; get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.ServiceBus</AssemblyName>
-        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="properties.createdAt")</AttributeName>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty(PropertyName="properties.createdAt")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty(PropertyName="properties.createdAt")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -152,20 +149,20 @@
       </Docs>
     </Member>
     <Member MemberName="MessageRetentionInDays">
-      <MemberSignature Language="C#" Value="public Nullable&lt;long&gt; MessageRetentionInDays { get; set; }" />
+      <MemberSignature Language="C#" Value="public long? MessageRetentionInDays { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;int64&gt; MessageRetentionInDays" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Management.ServiceBus.Models.Eventhub.MessageRetentionInDays" />
       <MemberSignature Language="VB.NET" Value="Public Property MessageRetentionInDays As Nullable(Of Long)" />
       <MemberSignature Language="F#" Value="member this.MessageRetentionInDays : Nullable&lt;int64&gt; with get, set" Usage="Microsoft.Azure.Management.ServiceBus.Models.Eventhub.MessageRetentionInDays" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Nullable&lt;long&gt; MessageRetentionInDays { Nullable&lt;long&gt; get(); void set(Nullable&lt;long&gt; value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.ServiceBus</AssemblyName>
-        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="properties.messageRetentionInDays")</AttributeName>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty(PropertyName="properties.messageRetentionInDays")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty(PropertyName="properties.messageRetentionInDays")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -181,20 +178,20 @@
       </Docs>
     </Member>
     <Member MemberName="PartitionCount">
-      <MemberSignature Language="C#" Value="public Nullable&lt;long&gt; PartitionCount { get; set; }" />
+      <MemberSignature Language="C#" Value="public long? PartitionCount { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;int64&gt; PartitionCount" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Management.ServiceBus.Models.Eventhub.PartitionCount" />
       <MemberSignature Language="VB.NET" Value="Public Property PartitionCount As Nullable(Of Long)" />
       <MemberSignature Language="F#" Value="member this.PartitionCount : Nullable&lt;int64&gt; with get, set" Usage="Microsoft.Azure.Management.ServiceBus.Models.Eventhub.PartitionCount" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Nullable&lt;long&gt; PartitionCount { Nullable&lt;long&gt; get(); void set(Nullable&lt;long&gt; value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.ServiceBus</AssemblyName>
-        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="properties.partitionCount")</AttributeName>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty(PropertyName="properties.partitionCount")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty(PropertyName="properties.partitionCount")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -215,15 +212,15 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Management.ServiceBus.Models.Eventhub.PartitionIds" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property PartitionIds As IList(Of String)" />
       <MemberSignature Language="F#" Value="member this.PartitionIds : System.Collections.Generic.IList&lt;string&gt;" Usage="Microsoft.Azure.Management.ServiceBus.Models.Eventhub.PartitionIds" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::Generic::IList&lt;System::String ^&gt; ^ PartitionIds { System::Collections::Generic::IList&lt;System::String ^&gt; ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.ServiceBus</AssemblyName>
-        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="properties.partitionIds")</AttributeName>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty(PropertyName="properties.partitionIds")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty(PropertyName="properties.partitionIds")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -238,20 +235,20 @@
       </Docs>
     </Member>
     <Member MemberName="Status">
-      <MemberSignature Language="C#" Value="public Nullable&lt;Microsoft.Azure.Management.ServiceBus.Models.EntityStatus&gt; Status { get; set; }" />
+      <MemberSignature Language="C#" Value="public Microsoft.Azure.Management.ServiceBus.Models.EntityStatus? Status { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;valuetype Microsoft.Azure.Management.ServiceBus.Models.EntityStatus&gt; Status" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Management.ServiceBus.Models.Eventhub.Status" />
       <MemberSignature Language="VB.NET" Value="Public Property Status As Nullable(Of EntityStatus)" />
       <MemberSignature Language="F#" Value="member this.Status : Nullable&lt;Microsoft.Azure.Management.ServiceBus.Models.EntityStatus&gt; with get, set" Usage="Microsoft.Azure.Management.ServiceBus.Models.Eventhub.Status" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Nullable&lt;Microsoft::Azure::Management::ServiceBus::Models::EntityStatus&gt; Status { Nullable&lt;Microsoft::Azure::Management::ServiceBus::Models::EntityStatus&gt; get(); void set(Nullable&lt;Microsoft::Azure::Management::ServiceBus::Models::EntityStatus&gt; value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.ServiceBus</AssemblyName>
-        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="properties.status")</AttributeName>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty(PropertyName="properties.status")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty(PropertyName="properties.status")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -269,20 +266,20 @@
       </Docs>
     </Member>
     <Member MemberName="UpdatedAt">
-      <MemberSignature Language="C#" Value="public Nullable&lt;DateTime&gt; UpdatedAt { get; }" />
+      <MemberSignature Language="C#" Value="public DateTime? UpdatedAt { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;valuetype System.DateTime&gt; UpdatedAt" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Management.ServiceBus.Models.Eventhub.UpdatedAt" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property UpdatedAt As Nullable(Of DateTime)" />
       <MemberSignature Language="F#" Value="member this.UpdatedAt : Nullable&lt;DateTime&gt;" Usage="Microsoft.Azure.Management.ServiceBus.Models.Eventhub.UpdatedAt" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Nullable&lt;DateTime&gt; UpdatedAt { Nullable&lt;DateTime&gt; get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.ServiceBus</AssemblyName>
-        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="properties.updatedAt")</AttributeName>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty(PropertyName="properties.updatedAt")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty(PropertyName="properties.updatedAt")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -302,13 +299,10 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Management.ServiceBus.Models.Eventhub.Validate" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Sub Validate ()" />
       <MemberSignature Language="F#" Value="abstract member Validate : unit -&gt; unit&#xA;override this.Validate : unit -&gt; unit" Usage="eventhub.Validate " />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Validate();" />
-      <MemberSignature Language="C++ CX" Value="public:&#xA; virtual void Validate();" />
-      <MemberSignature Language="C++ WINRT" Value=" virtual void Validate();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.ServiceBus</AssemblyName>
-        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>

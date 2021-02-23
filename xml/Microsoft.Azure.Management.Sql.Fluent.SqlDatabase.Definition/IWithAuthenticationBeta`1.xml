@@ -1,15 +1,19 @@
-﻿<Type Name="IWithAuthenticationBeta&lt;ParentT&gt;" FullName="Microsoft.Azure.Management.Sql.Fluent.SqlDatabase.Definition.IWithAuthenticationBeta&lt;ParentT&gt;">
+<Type Name="IWithAuthenticationBeta&lt;ParentT&gt;" FullName="Microsoft.Azure.Management.Sql.Fluent.SqlDatabase.Definition.IWithAuthenticationBeta&lt;ParentT&gt;">
   <TypeSignature Language="C#" Value="public interface IWithAuthenticationBeta&lt;ParentT&gt; : Microsoft.Azure.Management.ResourceManager.Fluent.Core.IBeta" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IWithAuthenticationBeta`1&lt;ParentT&gt; implements class Microsoft.Azure.Management.ResourceManager.Fluent.Core.IBeta" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Azure.Management.Sql.Fluent.SqlDatabase.Definition.IWithAuthenticationBeta`1" />
   <TypeSignature Language="VB.NET" Value="Public Interface IWithAuthenticationBeta(Of ParentT)&#xA;Implements IBeta" />
   <TypeSignature Language="F#" Value="type IWithAuthenticationBeta&lt;'ParentT&gt; = interface&#xA;    interface IBeta" />
-  <TypeSignature Language="C++ CLI" Value="generic &lt;typename ParentT&gt;&#xA;public interface class IWithAuthenticationBeta : Microsoft::Azure::Management::ResourceManager::Fluent::Core::IBeta" />
-  <TypeSignature Language="C++ CX" Value="public interface class IWithAuthenticationBeta : Microsoft::Azure::Management::ResourceManager::Fluent::Core::IBeta" />
-  <TypeSignature Language="C++ WINRT" Value="template &lt;typename ParentT&gt;&#xA;__interface IWithAuthenticationBeta : Microsoft::Azure::Management::ResourceManager::Fluent::Core::IBeta" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Azure.Management.Sql.Fluent</AssemblyName>
-    <AssemblyVersion>1.0.0.60</AssemblyVersion>
+    <AssemblyVersion>1.0.0.61</AssemblyVersion>
+    <AssemblyVersion>1.0.0.62</AssemblyVersion>
+    <AssemblyVersion>1.0.0.63</AssemblyVersion>
+    <AssemblyVersion>1.0.0.64</AssemblyVersion>
+    <AssemblyVersion>1.0.0.65</AssemblyVersion>
+    <AssemblyVersion>1.0.0.66</AssemblyVersion>
+    <AssemblyVersion>1.0.0.67</AssemblyVersion>
+    <AssemblyVersion>1.0.0.68</AssemblyVersion>
   </AssemblyInfo>
   <TypeParameters>
     <TypeParameter Name="ParentT" />
@@ -20,8 +24,10 @@
     </Interface>
   </Interfaces>
   <Docs>
-    <typeparam name="ParentT">To be added.</typeparam>
-    <summary>To be added.</summary>
+    <typeparam name="ParentT">The stage of the parent definition to return to after attaching this definition.</typeparam>
+    <summary>
+            Sets the authentication type and SQL or Active Directory administrator login and password.
+            </summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -31,13 +37,17 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Management.Sql.Fluent.SqlDatabase.Definition.IWithAuthenticationBeta`1.WithActiveDirectoryLoginAndPassword(System.String,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Function WithActiveDirectoryLoginAndPassword (administratorLogin As String, administratorPassword As String) As IWithAttachAllOptions(Of ParentT)" />
       <MemberSignature Language="F#" Value="abstract member WithActiveDirectoryLoginAndPassword : string * string -&gt; Microsoft.Azure.Management.Sql.Fluent.SqlDatabase.Definition.IWithAttachAllOptions&lt;'ParentT&gt;" Usage="iWithAuthenticationBeta.WithActiveDirectoryLoginAndPassword (administratorLogin, administratorPassword)" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; Microsoft::Azure::Management::Sql::Fluent::SqlDatabase::Definition::IWithAttachAllOptions&lt;ParentT&gt; ^ WithActiveDirectoryLoginAndPassword(System::String ^ administratorLogin, System::String ^ administratorPassword);" />
-      <MemberSignature Language="C++ CX" Value="public:&#xA; Microsoft::Azure::Management::Sql::Fluent::SqlDatabase::Definition::IWithAttachAllOptions&lt;ParentT&gt; ^ WithActiveDirectoryLoginAndPassword(Platform::String ^ administratorLogin, Platform::String ^ administratorPassword);" />
-      <MemberSignature Language="C++ WINRT" Value="Microsoft::Azure::Management::Sql::Fluent::SqlDatabase::Definition::IWithAttachAllOptions&lt;ParentT&gt; WithActiveDirectoryLoginAndPassword(std::wstring const &amp; administratorLogin, std::wstring const &amp; administratorPassword);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Sql.Fluent</AssemblyName>
-        <AssemblyVersion>1.0.0.60</AssemblyVersion>
+        <AssemblyVersion>1.0.0.61</AssemblyVersion>
+        <AssemblyVersion>1.0.0.62</AssemblyVersion>
+        <AssemblyVersion>1.0.0.63</AssemblyVersion>
+        <AssemblyVersion>1.0.0.64</AssemblyVersion>
+        <AssemblyVersion>1.0.0.65</AssemblyVersion>
+        <AssemblyVersion>1.0.0.66</AssemblyVersion>
+        <AssemblyVersion>1.0.0.67</AssemblyVersion>
+        <AssemblyVersion>1.0.0.68</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Azure.Management.Sql.Fluent.SqlDatabase.Definition.IWithAttachAllOptions&lt;ParentT&gt;</ReturnType>
@@ -47,11 +57,12 @@
         <Parameter Name="administratorPassword" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="administratorLogin">To be added.</param>
-        <param name="administratorPassword">To be added.</param>
+        <param name="administratorLogin">The Active Directory administrator login.</param>
+        <param name="administratorPassword">The Active Directory administrator password.</param>
         <summary>To be added.</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
+        <return>Next definition stage.</return>
       </Docs>
     </Member>
     <Member MemberName="WithSqlAdministratorLoginAndPassword">
@@ -60,13 +71,17 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Management.Sql.Fluent.SqlDatabase.Definition.IWithAuthenticationBeta`1.WithSqlAdministratorLoginAndPassword(System.String,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Function WithSqlAdministratorLoginAndPassword (administratorLogin As String, administratorPassword As String) As IWithAttachAllOptions(Of ParentT)" />
       <MemberSignature Language="F#" Value="abstract member WithSqlAdministratorLoginAndPassword : string * string -&gt; Microsoft.Azure.Management.Sql.Fluent.SqlDatabase.Definition.IWithAttachAllOptions&lt;'ParentT&gt;" Usage="iWithAuthenticationBeta.WithSqlAdministratorLoginAndPassword (administratorLogin, administratorPassword)" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; Microsoft::Azure::Management::Sql::Fluent::SqlDatabase::Definition::IWithAttachAllOptions&lt;ParentT&gt; ^ WithSqlAdministratorLoginAndPassword(System::String ^ administratorLogin, System::String ^ administratorPassword);" />
-      <MemberSignature Language="C++ CX" Value="public:&#xA; Microsoft::Azure::Management::Sql::Fluent::SqlDatabase::Definition::IWithAttachAllOptions&lt;ParentT&gt; ^ WithSqlAdministratorLoginAndPassword(Platform::String ^ administratorLogin, Platform::String ^ administratorPassword);" />
-      <MemberSignature Language="C++ WINRT" Value="Microsoft::Azure::Management::Sql::Fluent::SqlDatabase::Definition::IWithAttachAllOptions&lt;ParentT&gt; WithSqlAdministratorLoginAndPassword(std::wstring const &amp; administratorLogin, std::wstring const &amp; administratorPassword);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Sql.Fluent</AssemblyName>
-        <AssemblyVersion>1.0.0.60</AssemblyVersion>
+        <AssemblyVersion>1.0.0.61</AssemblyVersion>
+        <AssemblyVersion>1.0.0.62</AssemblyVersion>
+        <AssemblyVersion>1.0.0.63</AssemblyVersion>
+        <AssemblyVersion>1.0.0.64</AssemblyVersion>
+        <AssemblyVersion>1.0.0.65</AssemblyVersion>
+        <AssemblyVersion>1.0.0.66</AssemblyVersion>
+        <AssemblyVersion>1.0.0.67</AssemblyVersion>
+        <AssemblyVersion>1.0.0.68</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Azure.Management.Sql.Fluent.SqlDatabase.Definition.IWithAttachAllOptions&lt;ParentT&gt;</ReturnType>
@@ -76,11 +91,12 @@
         <Parameter Name="administratorPassword" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="administratorLogin">To be added.</param>
-        <param name="administratorPassword">To be added.</param>
+        <param name="administratorLogin">The SQL administrator login.</param>
+        <param name="administratorPassword">The SQL administrator password.</param>
         <summary>To be added.</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
+        <return>Next definition stage.</return>
       </Docs>
     </Member>
   </Members>

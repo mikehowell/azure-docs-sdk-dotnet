@@ -1,17 +1,13 @@
-﻿<Type Name="WebHookEventSubscriptionDestination" FullName="Microsoft.Azure.Management.EventGrid.Models.WebHookEventSubscriptionDestination">
+<Type Name="WebHookEventSubscriptionDestination" FullName="Microsoft.Azure.Management.EventGrid.Models.WebHookEventSubscriptionDestination">
   <TypeSignature Language="C#" Value="public class WebHookEventSubscriptionDestination : Microsoft.Azure.Management.EventGrid.Models.EventSubscriptionDestination" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit WebHookEventSubscriptionDestination extends Microsoft.Azure.Management.EventGrid.Models.EventSubscriptionDestination" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Azure.Management.EventGrid.Models.WebHookEventSubscriptionDestination" />
   <TypeSignature Language="VB.NET" Value="Public Class WebHookEventSubscriptionDestination&#xA;Inherits EventSubscriptionDestination" />
   <TypeSignature Language="F#" Value="type WebHookEventSubscriptionDestination = class&#xA;    inherit EventSubscriptionDestination" />
-  <TypeSignature Language="C++ CLI" Value="public ref class WebHookEventSubscriptionDestination : Microsoft::Azure::Management::EventGrid::Models::EventSubscriptionDestination" />
-  <TypeSignature Language="C++ WINRT" Value="[Windows::Foundation::Metadata::WebHostHidden]&#xA;class WebHookEventSubscriptionDestination : Microsoft::Azure::Management::EventGrid::Models::EventSubscriptionDestination" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Azure.Management.EventGrid</AssemblyName>
-    <AssemblyVersion>1.0.0.0</AssemblyVersion>
-    <AssemblyVersion>1.1.0.0</AssemblyVersion>
-    <AssemblyVersion>1.2.0.0</AssemblyVersion>
-    <AssemblyVersion>1.3.0.0</AssemblyVersion>
+    <AssemblyVersion>5.0.0.0</AssemblyVersion>
+    <AssemblyVersion>6.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>Microsoft.Azure.Management.EventGrid.Models.EventSubscriptionDestination</BaseTypeName>
@@ -19,15 +15,17 @@
   <Interfaces />
   <Attributes>
     <Attribute>
-      <AttributeName>Microsoft.Rest.Serialization.JsonTransformation</AttributeName>
+      <AttributeName Language="C#">[Microsoft.Rest.Serialization.JsonTransformation]</AttributeName>
+      <AttributeName Language="F#">[&lt;Microsoft.Rest.Serialization.JsonTransformation&gt;]</AttributeName>
     </Attribute>
     <Attribute>
-      <AttributeName>Newtonsoft.Json.JsonObject("WebHook")</AttributeName>
+      <AttributeName Language="C#">[Newtonsoft.Json.JsonObject("WebHook")]</AttributeName>
+      <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonObject("WebHook")&gt;]</AttributeName>
     </Attribute>
   </Attributes>
   <Docs>
     <summary>
-            Information about the webhook destination for an event subscription
+            Information about the webhook destination for an event subscription.
             </summary>
     <remarks>To be added.</remarks>
   </Docs>
@@ -37,16 +35,11 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Management.EventGrid.Models.WebHookEventSubscriptionDestination.#ctor" />
       <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; WebHookEventSubscriptionDestination();" />
-      <MemberSignature Language="C++ CX" Value="public:&#xA; WebHookEventSubscriptionDestination();" />
-      <MemberSignature Language="C++ WINRT" Value=" WebHookEventSubscriptionDestination();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.EventGrid</AssemblyName>
-        <AssemblyVersion>1.0.0.0</AssemblyVersion>
-        <AssemblyVersion>1.1.0.0</AssemblyVersion>
-        <AssemblyVersion>1.2.0.0</AssemblyVersion>
-        <AssemblyVersion>1.3.0.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
@@ -58,33 +51,106 @@
       </Docs>
     </Member>
     <Member MemberName=".ctor">
-      <MemberSignature Language="C#" Value="public WebHookEventSubscriptionDestination (string endpointUrl = null, string endpointBaseUrl = null);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string endpointUrl, string endpointBaseUrl) cil managed" />
-      <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Management.EventGrid.Models.WebHookEventSubscriptionDestination.#ctor(System.String,System.String)" />
-      <MemberSignature Language="VB.NET" Value="Public Sub New (Optional endpointUrl As String = null, Optional endpointBaseUrl As String = null)" />
-      <MemberSignature Language="F#" Value="new Microsoft.Azure.Management.EventGrid.Models.WebHookEventSubscriptionDestination : string * string -&gt; Microsoft.Azure.Management.EventGrid.Models.WebHookEventSubscriptionDestination" Usage="new Microsoft.Azure.Management.EventGrid.Models.WebHookEventSubscriptionDestination (endpointUrl, endpointBaseUrl)" />
-      <MemberSignature Language="C++ WINRT" Value=" WebHookEventSubscriptionDestination(std::wstring const &amp; endpointUrl = null, std::wstring const &amp; endpointBaseUrl = null);" />
+      <MemberSignature Language="C#" Value="public WebHookEventSubscriptionDestination (string endpointUrl = default, string endpointBaseUrl = default, int? maxEventsPerBatch = default, int? preferredBatchSizeInKilobytes = default, string azureActiveDirectoryTenantId = default, string azureActiveDirectoryApplicationIdOrUri = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string endpointUrl, string endpointBaseUrl, valuetype System.Nullable`1&lt;int32&gt; maxEventsPerBatch, valuetype System.Nullable`1&lt;int32&gt; preferredBatchSizeInKilobytes, string azureActiveDirectoryTenantId, string azureActiveDirectoryApplicationIdOrUri) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Management.EventGrid.Models.WebHookEventSubscriptionDestination.#ctor(System.String,System.String,System.Nullable{System.Int32},System.Nullable{System.Int32},System.String,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (Optional endpointUrl As String = Nothing, Optional endpointBaseUrl As String = Nothing, Optional maxEventsPerBatch As Nullable(Of Integer) = Nothing, Optional preferredBatchSizeInKilobytes As Nullable(Of Integer) = Nothing, Optional azureActiveDirectoryTenantId As String = Nothing, Optional azureActiveDirectoryApplicationIdOrUri As String = Nothing)" />
+      <MemberSignature Language="F#" Value="new Microsoft.Azure.Management.EventGrid.Models.WebHookEventSubscriptionDestination : string * string * Nullable&lt;int&gt; * Nullable&lt;int&gt; * string * string -&gt; Microsoft.Azure.Management.EventGrid.Models.WebHookEventSubscriptionDestination" Usage="new Microsoft.Azure.Management.EventGrid.Models.WebHookEventSubscriptionDestination (endpointUrl, endpointBaseUrl, maxEventsPerBatch, preferredBatchSizeInKilobytes, azureActiveDirectoryTenantId, azureActiveDirectoryApplicationIdOrUri)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.EventGrid</AssemblyName>
-        <AssemblyVersion>1.0.0.0</AssemblyVersion>
-        <AssemblyVersion>1.1.0.0</AssemblyVersion>
-        <AssemblyVersion>1.2.0.0</AssemblyVersion>
-        <AssemblyVersion>1.3.0.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="endpointUrl" Type="System.String" />
         <Parameter Name="endpointBaseUrl" Type="System.String" />
+        <Parameter Name="maxEventsPerBatch" Type="System.Nullable&lt;System.Int32&gt;" />
+        <Parameter Name="preferredBatchSizeInKilobytes" Type="System.Nullable&lt;System.Int32&gt;" />
+        <Parameter Name="azureActiveDirectoryTenantId" Type="System.String" />
+        <Parameter Name="azureActiveDirectoryApplicationIdOrUri" Type="System.String" />
       </Parameters>
       <Docs>
         <param name="endpointUrl">The URL that represents the endpoint of
             the destination of an event subscription.</param>
         <param name="endpointBaseUrl">The base URL that represents the
             endpoint of the destination of an event subscription.</param>
+        <param name="maxEventsPerBatch">Maximum number of events per
+            batch.</param>
+        <param name="preferredBatchSizeInKilobytes">Preferred batch size in
+            Kilobytes.</param>
+        <param name="azureActiveDirectoryTenantId">The Azure Active
+            Directory Tenant ID to get the access token that will be included
+            as the bearer token in delivery requests.</param>
+        <param name="azureActiveDirectoryApplicationIdOrUri">The Azure
+            Active Directory Application ID or URI to get the access token that
+            will be included as the bearer token in delivery requests.</param>
         <summary>
             Initializes a new instance of the
             WebHookEventSubscriptionDestination class.
             </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AzureActiveDirectoryApplicationIdOrUri">
+      <MemberSignature Language="C#" Value="public string AzureActiveDirectoryApplicationIdOrUri { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string AzureActiveDirectoryApplicationIdOrUri" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Management.EventGrid.Models.WebHookEventSubscriptionDestination.AzureActiveDirectoryApplicationIdOrUri" />
+      <MemberSignature Language="VB.NET" Value="Public Property AzureActiveDirectoryApplicationIdOrUri As String" />
+      <MemberSignature Language="F#" Value="member this.AzureActiveDirectoryApplicationIdOrUri : string with get, set" Usage="Microsoft.Azure.Management.EventGrid.Models.WebHookEventSubscriptionDestination.AzureActiveDirectoryApplicationIdOrUri" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Azure.Management.EventGrid</AssemblyName>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty(PropertyName="properties.azureActiveDirectoryApplicationIdOrUri")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty(PropertyName="properties.azureActiveDirectoryApplicationIdOrUri")&gt;]</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets or sets the Azure Active Directory Application ID or URI to
+            get the access token that will be included as the bearer token in
+            delivery requests.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AzureActiveDirectoryTenantId">
+      <MemberSignature Language="C#" Value="public string AzureActiveDirectoryTenantId { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string AzureActiveDirectoryTenantId" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Management.EventGrid.Models.WebHookEventSubscriptionDestination.AzureActiveDirectoryTenantId" />
+      <MemberSignature Language="VB.NET" Value="Public Property AzureActiveDirectoryTenantId As String" />
+      <MemberSignature Language="F#" Value="member this.AzureActiveDirectoryTenantId : string with get, set" Usage="Microsoft.Azure.Management.EventGrid.Models.WebHookEventSubscriptionDestination.AzureActiveDirectoryTenantId" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Azure.Management.EventGrid</AssemblyName>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty(PropertyName="properties.azureActiveDirectoryTenantId")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty(PropertyName="properties.azureActiveDirectoryTenantId")&gt;]</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets or sets the Azure Active Directory Tenant ID to get the access
+            token that will be included as the bearer token in delivery
+            requests.
+            </summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -94,19 +160,16 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Management.EventGrid.Models.WebHookEventSubscriptionDestination.EndpointBaseUrl" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property EndpointBaseUrl As String" />
       <MemberSignature Language="F#" Value="member this.EndpointBaseUrl : string" Usage="Microsoft.Azure.Management.EventGrid.Models.WebHookEventSubscriptionDestination.EndpointBaseUrl" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ EndpointBaseUrl { System::String ^ get(); };" />
-      <MemberSignature Language="C++ CX" Value="public:&#xA; property Platform::String ^ EndpointBaseUrl { Platform::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.EventGrid</AssemblyName>
-        <AssemblyVersion>1.0.0.0</AssemblyVersion>
-        <AssemblyVersion>1.1.0.0</AssemblyVersion>
-        <AssemblyVersion>1.2.0.0</AssemblyVersion>
-        <AssemblyVersion>1.3.0.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="properties.endpointBaseUrl")</AttributeName>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty(PropertyName="properties.endpointBaseUrl")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty(PropertyName="properties.endpointBaseUrl")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -127,19 +190,16 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Management.EventGrid.Models.WebHookEventSubscriptionDestination.EndpointUrl" />
       <MemberSignature Language="VB.NET" Value="Public Property EndpointUrl As String" />
       <MemberSignature Language="F#" Value="member this.EndpointUrl : string with get, set" Usage="Microsoft.Azure.Management.EventGrid.Models.WebHookEventSubscriptionDestination.EndpointUrl" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ EndpointUrl { System::String ^ get(); void set(System::String ^ value); };" />
-      <MemberSignature Language="C++ CX" Value="public:&#xA; property Platform::String ^ EndpointUrl { Platform::String ^ get(); void set(Platform::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.EventGrid</AssemblyName>
-        <AssemblyVersion>1.0.0.0</AssemblyVersion>
-        <AssemblyVersion>1.1.0.0</AssemblyVersion>
-        <AssemblyVersion>1.2.0.0</AssemblyVersion>
-        <AssemblyVersion>1.3.0.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="properties.endpointUrl")</AttributeName>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty(PropertyName="properties.endpointUrl")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty(PropertyName="properties.endpointUrl")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -149,6 +209,64 @@
         <summary>
             Gets or sets the URL that represents the endpoint of the
             destination of an event subscription.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="MaxEventsPerBatch">
+      <MemberSignature Language="C#" Value="public int? MaxEventsPerBatch { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;int32&gt; MaxEventsPerBatch" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Management.EventGrid.Models.WebHookEventSubscriptionDestination.MaxEventsPerBatch" />
+      <MemberSignature Language="VB.NET" Value="Public Property MaxEventsPerBatch As Nullable(Of Integer)" />
+      <MemberSignature Language="F#" Value="member this.MaxEventsPerBatch : Nullable&lt;int&gt; with get, set" Usage="Microsoft.Azure.Management.EventGrid.Models.WebHookEventSubscriptionDestination.MaxEventsPerBatch" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Azure.Management.EventGrid</AssemblyName>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty(PropertyName="properties.maxEventsPerBatch")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty(PropertyName="properties.maxEventsPerBatch")&gt;]</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Nullable&lt;System.Int32&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets or sets maximum number of events per batch.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PreferredBatchSizeInKilobytes">
+      <MemberSignature Language="C#" Value="public int? PreferredBatchSizeInKilobytes { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;int32&gt; PreferredBatchSizeInKilobytes" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Management.EventGrid.Models.WebHookEventSubscriptionDestination.PreferredBatchSizeInKilobytes" />
+      <MemberSignature Language="VB.NET" Value="Public Property PreferredBatchSizeInKilobytes As Nullable(Of Integer)" />
+      <MemberSignature Language="F#" Value="member this.PreferredBatchSizeInKilobytes : Nullable&lt;int&gt; with get, set" Usage="Microsoft.Azure.Management.EventGrid.Models.WebHookEventSubscriptionDestination.PreferredBatchSizeInKilobytes" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Azure.Management.EventGrid</AssemblyName>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty(PropertyName="properties.preferredBatchSizeInKilobytes")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty(PropertyName="properties.preferredBatchSizeInKilobytes")&gt;]</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Nullable&lt;System.Int32&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets or sets preferred batch size in Kilobytes.
             </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>

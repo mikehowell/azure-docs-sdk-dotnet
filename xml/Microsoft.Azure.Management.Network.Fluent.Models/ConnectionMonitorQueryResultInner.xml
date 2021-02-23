@@ -1,4 +1,4 @@
-﻿<Type Name="ConnectionMonitorQueryResultInner" FullName="Microsoft.Azure.Management.Network.Fluent.Models.ConnectionMonitorQueryResultInner">
+<Type Name="ConnectionMonitorQueryResultInner" FullName="Microsoft.Azure.Management.Network.Fluent.Models.ConnectionMonitorQueryResultInner">
   <TypeSignature Language="C#" Value="public class ConnectionMonitorQueryResultInner" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit ConnectionMonitorQueryResultInner extends System.Object" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Azure.Management.Network.Fluent.Models.ConnectionMonitorQueryResultInner" />
@@ -6,14 +6,23 @@
   <TypeSignature Language="F#" Value="type ConnectionMonitorQueryResultInner = class" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Azure.Management.Network.Fluent</AssemblyName>
-    <AssemblyVersion>1.0.0.60</AssemblyVersion>
+    <AssemblyVersion>1.0.0.61</AssemblyVersion>
+    <AssemblyVersion>1.0.0.62</AssemblyVersion>
+    <AssemblyVersion>1.0.0.63</AssemblyVersion>
+    <AssemblyVersion>1.0.0.64</AssemblyVersion>
+    <AssemblyVersion>1.0.0.65</AssemblyVersion>
+    <AssemblyVersion>1.0.0.66</AssemblyVersion>
+    <AssemblyVersion>1.0.0.67</AssemblyVersion>
+    <AssemblyVersion>1.0.0.68</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
+    <summary>
+            List of connection states snapshots.
+            </summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -25,33 +34,54 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Network.Fluent</AssemblyName>
-        <AssemblyVersion>1.0.0.60</AssemblyVersion>
+        <AssemblyVersion>1.0.0.61</AssemblyVersion>
+        <AssemblyVersion>1.0.0.62</AssemblyVersion>
+        <AssemblyVersion>1.0.0.63</AssemblyVersion>
+        <AssemblyVersion>1.0.0.64</AssemblyVersion>
+        <AssemblyVersion>1.0.0.65</AssemblyVersion>
+        <AssemblyVersion>1.0.0.66</AssemblyVersion>
+        <AssemblyVersion>1.0.0.67</AssemblyVersion>
+        <AssemblyVersion>1.0.0.68</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+            Initializes a new instance of the ConnectionMonitorQueryResultInner
+            class.
+            </summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
-      <MemberSignature Language="C#" Value="public ConnectionMonitorQueryResultInner (Microsoft.Azure.Management.Network.Fluent.Models.ConnectionMonitorSourceStatus sourceStatus = null, System.Collections.Generic.IList&lt;Microsoft.Azure.Management.Network.Fluent.Models.ConnectionStateSnapshot&gt; states = null);" />
+      <MemberSignature Language="C#" Value="public ConnectionMonitorQueryResultInner (Microsoft.Azure.Management.Network.Fluent.Models.ConnectionMonitorSourceStatus sourceStatus = default, System.Collections.Generic.IList&lt;Microsoft.Azure.Management.Network.Fluent.Models.ConnectionStateSnapshot&gt; states = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class Microsoft.Azure.Management.Network.Fluent.Models.ConnectionMonitorSourceStatus sourceStatus, class System.Collections.Generic.IList`1&lt;class Microsoft.Azure.Management.Network.Fluent.Models.ConnectionStateSnapshot&gt; states) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Management.Network.Fluent.Models.ConnectionMonitorQueryResultInner.#ctor(Microsoft.Azure.Management.Network.Fluent.Models.ConnectionMonitorSourceStatus,System.Collections.Generic.IList{Microsoft.Azure.Management.Network.Fluent.Models.ConnectionStateSnapshot})" />
-      <MemberSignature Language="VB.NET" Value="Public Sub New (Optional sourceStatus As ConnectionMonitorSourceStatus = null, Optional states As IList(Of ConnectionStateSnapshot) = null)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (Optional sourceStatus As ConnectionMonitorSourceStatus = Nothing, Optional states As IList(Of ConnectionStateSnapshot) = Nothing)" />
       <MemberSignature Language="F#" Value="new Microsoft.Azure.Management.Network.Fluent.Models.ConnectionMonitorQueryResultInner : Microsoft.Azure.Management.Network.Fluent.Models.ConnectionMonitorSourceStatus * System.Collections.Generic.IList&lt;Microsoft.Azure.Management.Network.Fluent.Models.ConnectionStateSnapshot&gt; -&gt; Microsoft.Azure.Management.Network.Fluent.Models.ConnectionMonitorQueryResultInner" Usage="new Microsoft.Azure.Management.Network.Fluent.Models.ConnectionMonitorQueryResultInner (sourceStatus, states)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Network.Fluent</AssemblyName>
-        <AssemblyVersion>1.0.0.60</AssemblyVersion>
+        <AssemblyVersion>1.0.0.61</AssemblyVersion>
+        <AssemblyVersion>1.0.0.62</AssemblyVersion>
+        <AssemblyVersion>1.0.0.63</AssemblyVersion>
+        <AssemblyVersion>1.0.0.64</AssemblyVersion>
+        <AssemblyVersion>1.0.0.65</AssemblyVersion>
+        <AssemblyVersion>1.0.0.66</AssemblyVersion>
+        <AssemblyVersion>1.0.0.67</AssemblyVersion>
+        <AssemblyVersion>1.0.0.68</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="sourceStatus" Type="Microsoft.Azure.Management.Network.Fluent.Models.ConnectionMonitorSourceStatus" />
         <Parameter Name="states" Type="System.Collections.Generic.IList&lt;Microsoft.Azure.Management.Network.Fluent.Models.ConnectionStateSnapshot&gt;" />
       </Parameters>
       <Docs>
-        <param name="sourceStatus">To be added.</param>
-        <param name="states">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="sourceStatus">Status of connection monitor source.
+            Possible values include: 'Unknown', 'Active', 'Inactive'</param>
+        <param name="states">Information about connection states.</param>
+        <summary>
+            Initializes a new instance of the ConnectionMonitorQueryResultInner
+            class.
+            </summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -64,18 +94,29 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Network.Fluent</AssemblyName>
-        <AssemblyVersion>1.0.0.60</AssemblyVersion>
+        <AssemblyVersion>1.0.0.61</AssemblyVersion>
+        <AssemblyVersion>1.0.0.62</AssemblyVersion>
+        <AssemblyVersion>1.0.0.63</AssemblyVersion>
+        <AssemblyVersion>1.0.0.64</AssemblyVersion>
+        <AssemblyVersion>1.0.0.65</AssemblyVersion>
+        <AssemblyVersion>1.0.0.66</AssemblyVersion>
+        <AssemblyVersion>1.0.0.67</AssemblyVersion>
+        <AssemblyVersion>1.0.0.68</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="sourceStatus")</AttributeName>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty(PropertyName="sourceStatus")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty(PropertyName="sourceStatus")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
         <ReturnType>Microsoft.Azure.Management.Network.Fluent.Models.ConnectionMonitorSourceStatus</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+            Gets or sets status of connection monitor source. Possible values
+            include: 'Unknown', 'Active', 'Inactive'
+            </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -89,18 +130,28 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Network.Fluent</AssemblyName>
-        <AssemblyVersion>1.0.0.60</AssemblyVersion>
+        <AssemblyVersion>1.0.0.61</AssemblyVersion>
+        <AssemblyVersion>1.0.0.62</AssemblyVersion>
+        <AssemblyVersion>1.0.0.63</AssemblyVersion>
+        <AssemblyVersion>1.0.0.64</AssemblyVersion>
+        <AssemblyVersion>1.0.0.65</AssemblyVersion>
+        <AssemblyVersion>1.0.0.66</AssemblyVersion>
+        <AssemblyVersion>1.0.0.67</AssemblyVersion>
+        <AssemblyVersion>1.0.0.68</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="states")</AttributeName>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty(PropertyName="states")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty(PropertyName="states")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
         <ReturnType>System.Collections.Generic.IList&lt;Microsoft.Azure.Management.Network.Fluent.Models.ConnectionStateSnapshot&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+            Gets or sets information about connection states.
+            </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>

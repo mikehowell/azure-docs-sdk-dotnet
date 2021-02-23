@@ -1,22 +1,21 @@
-﻿<Type Name="AzureTableSource" FullName="Microsoft.Azure.Management.DataFactory.Models.AzureTableSource">
-  <TypeSignature Language="C#" Value="public class AzureTableSource : Microsoft.Azure.Management.DataFactory.Models.CopySource" />
-  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit AzureTableSource extends Microsoft.Azure.Management.DataFactory.Models.CopySource" />
+<Type Name="AzureTableSource" FullName="Microsoft.Azure.Management.DataFactory.Models.AzureTableSource">
+  <TypeSignature Language="C#" Value="public class AzureTableSource : Microsoft.Azure.Management.DataFactory.Models.TabularSource" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit AzureTableSource extends Microsoft.Azure.Management.DataFactory.Models.TabularSource" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Azure.Management.DataFactory.Models.AzureTableSource" />
-  <TypeSignature Language="VB.NET" Value="Public Class AzureTableSource&#xA;Inherits CopySource" />
-  <TypeSignature Language="F#" Value="type AzureTableSource = class&#xA;    inherit CopySource" />
-  <TypeSignature Language="C++ CLI" Value="public ref class AzureTableSource : Microsoft::Azure::Management::DataFactory::Models::CopySource" />
-  <TypeSignature Language="C++ WINRT" Value="[Windows::Foundation::Metadata::WebHostHidden]&#xA;class AzureTableSource : Microsoft::Azure::Management::DataFactory::Models::CopySource" />
+  <TypeSignature Language="VB.NET" Value="Public Class AzureTableSource&#xA;Inherits TabularSource" />
+  <TypeSignature Language="F#" Value="type AzureTableSource = class&#xA;    inherit TabularSource" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Azure.Management.DataFactory</AssemblyName>
-    <AssemblyVersion>0.2.0.0</AssemblyVersion>
-    <AssemblyVersion>0.3.0.0</AssemblyVersion>
-    <AssemblyVersion>0.4.0.0</AssemblyVersion>
-    <AssemblyVersion>0.5.0.0</AssemblyVersion>
-    <AssemblyVersion>0.6.0.0</AssemblyVersion>
-    <AssemblyVersion>0.7.0.0</AssemblyVersion>
+    <AssemblyVersion>4.3.0.0</AssemblyVersion>
+    <AssemblyVersion>4.9.0.0</AssemblyVersion>
+    <AssemblyVersion>4.10.0.0</AssemblyVersion>
+    <AssemblyVersion>4.11.0.0</AssemblyVersion>
+    <AssemblyVersion>4.12.0.0</AssemblyVersion>
+    <AssemblyVersion>4.13.0.0</AssemblyVersion>
+    <AssemblyVersion>4.14.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
-    <BaseTypeName>Microsoft.Azure.Management.DataFactory.Models.CopySource</BaseTypeName>
+    <BaseTypeName>Microsoft.Azure.Management.DataFactory.Models.TabularSource</BaseTypeName>
   </Base>
   <Interfaces />
   <Docs>
@@ -31,18 +30,16 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Management.DataFactory.Models.AzureTableSource.#ctor" />
       <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; AzureTableSource();" />
-      <MemberSignature Language="C++ CX" Value="public:&#xA; AzureTableSource();" />
-      <MemberSignature Language="C++ WINRT" Value=" AzureTableSource();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.DataFactory</AssemblyName>
-        <AssemblyVersion>0.2.0.0</AssemblyVersion>
-        <AssemblyVersion>0.3.0.0</AssemblyVersion>
-        <AssemblyVersion>0.4.0.0</AssemblyVersion>
-        <AssemblyVersion>0.5.0.0</AssemblyVersion>
-        <AssemblyVersion>0.6.0.0</AssemblyVersion>
-        <AssemblyVersion>0.7.0.0</AssemblyVersion>
+        <AssemblyVersion>4.3.0.0</AssemblyVersion>
+        <AssemblyVersion>4.9.0.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
+        <AssemblyVersion>4.11.0.0</AssemblyVersion>
+        <AssemblyVersion>4.12.0.0</AssemblyVersion>
+        <AssemblyVersion>4.13.0.0</AssemblyVersion>
+        <AssemblyVersion>4.14.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
@@ -53,24 +50,29 @@
       </Docs>
     </Member>
     <Member MemberName=".ctor">
-      <MemberSignature Language="C#" Value="public AzureTableSource (System.Collections.Generic.IDictionary&lt;string,object&gt; additionalProperties = null, object sourceRetryCount = null, object sourceRetryWait = null, object azureTableSourceQuery = null, object azureTableSourceIgnoreTableNotFound = null);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Collections.Generic.IDictionary`2&lt;string, object&gt; additionalProperties, object sourceRetryCount, object sourceRetryWait, object azureTableSourceQuery, object azureTableSourceIgnoreTableNotFound) cil managed" />
-      <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Management.DataFactory.Models.AzureTableSource.#ctor(System.Collections.Generic.IDictionary{System.String,System.Object},System.Object,System.Object,System.Object,System.Object)" />
-      <MemberSignature Language="VB.NET" Value="Public Sub New (Optional additionalProperties As IDictionary(Of String, Object) = null, Optional sourceRetryCount As Object = null, Optional sourceRetryWait As Object = null, Optional azureTableSourceQuery As Object = null, Optional azureTableSourceIgnoreTableNotFound As Object = null)" />
-      <MemberSignature Language="F#" Value="new Microsoft.Azure.Management.DataFactory.Models.AzureTableSource : System.Collections.Generic.IDictionary&lt;string, obj&gt; * obj * obj * obj * obj -&gt; Microsoft.Azure.Management.DataFactory.Models.AzureTableSource" Usage="new Microsoft.Azure.Management.DataFactory.Models.AzureTableSource (additionalProperties, sourceRetryCount, sourceRetryWait, azureTableSourceQuery, azureTableSourceIgnoreTableNotFound)" />
+      <MemberSignature Language="C#" Value="public AzureTableSource (System.Collections.Generic.IDictionary&lt;string,object&gt; additionalProperties = default, object sourceRetryCount = default, object sourceRetryWait = default, object maxConcurrentConnections = default, object queryTimeout = default, System.Collections.Generic.IList&lt;Microsoft.Azure.Management.DataFactory.Models.AdditionalColumns&gt; additionalColumns = default, object azureTableSourceQuery = default, object azureTableSourceIgnoreTableNotFound = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Collections.Generic.IDictionary`2&lt;string, object&gt; additionalProperties, object sourceRetryCount, object sourceRetryWait, object maxConcurrentConnections, object queryTimeout, class System.Collections.Generic.IList`1&lt;class Microsoft.Azure.Management.DataFactory.Models.AdditionalColumns&gt; additionalColumns, object azureTableSourceQuery, object azureTableSourceIgnoreTableNotFound) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Management.DataFactory.Models.AzureTableSource.#ctor(System.Collections.Generic.IDictionary{System.String,System.Object},System.Object,System.Object,System.Object,System.Object,System.Collections.Generic.IList{Microsoft.Azure.Management.DataFactory.Models.AdditionalColumns},System.Object,System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (Optional additionalProperties As IDictionary(Of String, Object) = Nothing, Optional sourceRetryCount As Object = Nothing, Optional sourceRetryWait As Object = Nothing, Optional maxConcurrentConnections As Object = Nothing, Optional queryTimeout As Object = Nothing, Optional additionalColumns As IList(Of AdditionalColumns) = Nothing, Optional azureTableSourceQuery As Object = Nothing, Optional azureTableSourceIgnoreTableNotFound As Object = Nothing)" />
+      <MemberSignature Language="F#" Value="new Microsoft.Azure.Management.DataFactory.Models.AzureTableSource : System.Collections.Generic.IDictionary&lt;string, obj&gt; * obj * obj * obj * obj * System.Collections.Generic.IList&lt;Microsoft.Azure.Management.DataFactory.Models.AdditionalColumns&gt; * obj * obj -&gt; Microsoft.Azure.Management.DataFactory.Models.AzureTableSource" Usage="new Microsoft.Azure.Management.DataFactory.Models.AzureTableSource (additionalProperties, sourceRetryCount, sourceRetryWait, maxConcurrentConnections, queryTimeout, additionalColumns, azureTableSourceQuery, azureTableSourceIgnoreTableNotFound)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.DataFactory</AssemblyName>
-        <AssemblyVersion>0.3.0.0</AssemblyVersion>
-        <AssemblyVersion>0.4.0.0</AssemblyVersion>
-        <AssemblyVersion>0.5.0.0</AssemblyVersion>
-        <AssemblyVersion>0.6.0.0</AssemblyVersion>
-        <AssemblyVersion>0.7.0.0</AssemblyVersion>
+        <AssemblyVersion>4.3.0.0</AssemblyVersion>
+        <AssemblyVersion>4.9.0.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
+        <AssemblyVersion>4.11.0.0</AssemblyVersion>
+        <AssemblyVersion>4.12.0.0</AssemblyVersion>
+        <AssemblyVersion>4.13.0.0</AssemblyVersion>
+        <AssemblyVersion>4.14.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="additionalProperties" Type="System.Collections.Generic.IDictionary&lt;System.String,System.Object&gt;" />
         <Parameter Name="sourceRetryCount" Type="System.Object" />
         <Parameter Name="sourceRetryWait" Type="System.Object" />
+        <Parameter Name="maxConcurrentConnections" Type="System.Object" />
+        <Parameter Name="queryTimeout" Type="System.Object" />
+        <Parameter Name="additionalColumns" Type="System.Collections.Generic.IList&lt;Microsoft.Azure.Management.DataFactory.Models.AdditionalColumns&gt;" />
         <Parameter Name="azureTableSourceQuery" Type="System.Object" />
         <Parameter Name="azureTableSourceIgnoreTableNotFound" Type="System.Object" />
       </Parameters>
@@ -82,6 +84,15 @@
         <param name="sourceRetryWait">Source retry wait. Type: string (or
             Expression with resultType string), pattern:
             ((\d+)\.)?(\d\d):(60|([0-5][0-9])):(60|([0-5][0-9])).</param>
+        <param name="maxConcurrentConnections">The maximum concurrent
+            connection count for the source data store. Type: integer (or
+            Expression with resultType integer).</param>
+        <param name="queryTimeout">Query timeout. Type: string (or
+            Expression with resultType string), pattern:
+            ((\d+)\.)?(\d\d):(60|([0-5][0-9])):(60|([0-5][0-9])).</param>
+        <param name="additionalColumns">Specifies the additional columns to
+            be added to source data. Type: array of objects (or Expression with
+            resultType array of objects).</param>
         <param name="azureTableSourceQuery">Azure Table source query. Type:
             string (or Expression with resultType string).</param>
         <param name="azureTableSourceIgnoreTableNotFound">Azure Table
@@ -99,21 +110,21 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Management.DataFactory.Models.AzureTableSource.AzureTableSourceIgnoreTableNotFound" />
       <MemberSignature Language="VB.NET" Value="Public Property AzureTableSourceIgnoreTableNotFound As Object" />
       <MemberSignature Language="F#" Value="member this.AzureTableSourceIgnoreTableNotFound : obj with get, set" Usage="Microsoft.Azure.Management.DataFactory.Models.AzureTableSource.AzureTableSourceIgnoreTableNotFound" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ AzureTableSourceIgnoreTableNotFound { System::Object ^ get(); void set(System::Object ^ value); };" />
-      <MemberSignature Language="C++ CX" Value="public:&#xA; property Platform::Object ^ AzureTableSourceIgnoreTableNotFound { Platform::Object ^ get(); void set(Platform::Object ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.DataFactory</AssemblyName>
-        <AssemblyVersion>0.2.0.0</AssemblyVersion>
-        <AssemblyVersion>0.3.0.0</AssemblyVersion>
-        <AssemblyVersion>0.4.0.0</AssemblyVersion>
-        <AssemblyVersion>0.5.0.0</AssemblyVersion>
-        <AssemblyVersion>0.6.0.0</AssemblyVersion>
-        <AssemblyVersion>0.7.0.0</AssemblyVersion>
+        <AssemblyVersion>4.3.0.0</AssemblyVersion>
+        <AssemblyVersion>4.9.0.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
+        <AssemblyVersion>4.11.0.0</AssemblyVersion>
+        <AssemblyVersion>4.12.0.0</AssemblyVersion>
+        <AssemblyVersion>4.13.0.0</AssemblyVersion>
+        <AssemblyVersion>4.14.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="azureTableSourceIgnoreTableNotFound")</AttributeName>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty(PropertyName="azureTableSourceIgnoreTableNotFound")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty(PropertyName="azureTableSourceIgnoreTableNotFound")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -134,21 +145,21 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Management.DataFactory.Models.AzureTableSource.AzureTableSourceQuery" />
       <MemberSignature Language="VB.NET" Value="Public Property AzureTableSourceQuery As Object" />
       <MemberSignature Language="F#" Value="member this.AzureTableSourceQuery : obj with get, set" Usage="Microsoft.Azure.Management.DataFactory.Models.AzureTableSource.AzureTableSourceQuery" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ AzureTableSourceQuery { System::Object ^ get(); void set(System::Object ^ value); };" />
-      <MemberSignature Language="C++ CX" Value="public:&#xA; property Platform::Object ^ AzureTableSourceQuery { Platform::Object ^ get(); void set(Platform::Object ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.DataFactory</AssemblyName>
-        <AssemblyVersion>0.2.0.0</AssemblyVersion>
-        <AssemblyVersion>0.3.0.0</AssemblyVersion>
-        <AssemblyVersion>0.4.0.0</AssemblyVersion>
-        <AssemblyVersion>0.5.0.0</AssemblyVersion>
-        <AssemblyVersion>0.6.0.0</AssemblyVersion>
-        <AssemblyVersion>0.7.0.0</AssemblyVersion>
+        <AssemblyVersion>4.3.0.0</AssemblyVersion>
+        <AssemblyVersion>4.9.0.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
+        <AssemblyVersion>4.11.0.0</AssemblyVersion>
+        <AssemblyVersion>4.12.0.0</AssemblyVersion>
+        <AssemblyVersion>4.13.0.0</AssemblyVersion>
+        <AssemblyVersion>4.14.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="azureTableSourceQuery")</AttributeName>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty(PropertyName="azureTableSourceQuery")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty(PropertyName="azureTableSourceQuery")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>

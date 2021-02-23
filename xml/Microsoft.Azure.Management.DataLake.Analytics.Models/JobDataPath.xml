@@ -1,11 +1,9 @@
-﻿<Type Name="JobDataPath" FullName="Microsoft.Azure.Management.DataLake.Analytics.Models.JobDataPath">
+<Type Name="JobDataPath" FullName="Microsoft.Azure.Management.DataLake.Analytics.Models.JobDataPath">
   <TypeSignature Language="C#" Value="public class JobDataPath" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit JobDataPath extends System.Object" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Azure.Management.DataLake.Analytics.Models.JobDataPath" />
   <TypeSignature Language="VB.NET" Value="Public Class JobDataPath" />
   <TypeSignature Language="F#" Value="type JobDataPath = class" />
-  <TypeSignature Language="C++ CLI" Value="public ref class JobDataPath" />
-  <TypeSignature Language="C++ WINRT" Value="[Windows::Foundation::Metadata::WebHostHidden]&#xA;class JobDataPath" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Azure.Management.DataLake.Analytics</AssemblyName>
     <AssemblyVersion>3.0.0.0</AssemblyVersion>
@@ -26,9 +24,6 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Management.DataLake.Analytics.Models.JobDataPath.#ctor" />
       <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; JobDataPath();" />
-      <MemberSignature Language="C++ CX" Value="public:&#xA; JobDataPath();" />
-      <MemberSignature Language="C++ WINRT" Value=" JobDataPath();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.DataLake.Analytics</AssemblyName>
@@ -43,10 +38,10 @@
       </Docs>
     </Member>
     <Member MemberName=".ctor">
-      <MemberSignature Language="C#" Value="public JobDataPath (Nullable&lt;Guid&gt; jobId = null, string command = null, System.Collections.Generic.IList&lt;string&gt; paths = null);" />
+      <MemberSignature Language="C#" Value="public JobDataPath (Guid? jobId = default, string command = default, System.Collections.Generic.IList&lt;string&gt; paths = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(valuetype System.Nullable`1&lt;valuetype System.Guid&gt; jobId, string command, class System.Collections.Generic.IList`1&lt;string&gt; paths) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Management.DataLake.Analytics.Models.JobDataPath.#ctor(System.Nullable{System.Guid},System.String,System.Collections.Generic.IList{System.String})" />
-      <MemberSignature Language="VB.NET" Value="Public Sub New (Optional jobId As Nullable(Of Guid) = null, Optional command As String = null, Optional paths As IList(Of String) = null)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (Optional jobId As Nullable(Of Guid) = Nothing, Optional command As String = Nothing, Optional paths As IList(Of String) = Nothing)" />
       <MemberSignature Language="F#" Value="new Microsoft.Azure.Management.DataLake.Analytics.Models.JobDataPath : Nullable&lt;Guid&gt; * string * System.Collections.Generic.IList&lt;string&gt; -&gt; Microsoft.Azure.Management.DataLake.Analytics.Models.JobDataPath" Usage="new Microsoft.Azure.Management.DataLake.Analytics.Models.JobDataPath (jobId, command, paths)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
@@ -59,10 +54,10 @@
         <Parameter Name="paths" Type="System.Collections.Generic.IList&lt;System.String&gt;" />
       </Parameters>
       <Docs>
-        <param name="jobId">the id of the job this data is for.</param>
-        <param name="command">the command that this job data relates
+        <param name="jobId">The ID of the job this data is for.</param>
+        <param name="command">The command that this job data relates
             to.</param>
-        <param name="paths">the list of paths to all of the job
+        <param name="paths">The list of paths to all of the job
             data.</param>
         <summary>
             Initializes a new instance of the JobDataPath class.
@@ -76,8 +71,6 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Management.DataLake.Analytics.Models.JobDataPath.Command" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Command As String" />
       <MemberSignature Language="F#" Value="member this.Command : string" Usage="Microsoft.Azure.Management.DataLake.Analytics.Models.JobDataPath.Command" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Command { System::String ^ get(); };" />
-      <MemberSignature Language="C++ CX" Value="public:&#xA; property Platform::String ^ Command { Platform::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.DataLake.Analytics</AssemblyName>
@@ -85,7 +78,8 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="command")</AttributeName>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty(PropertyName="command")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty(PropertyName="command")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -100,12 +94,11 @@
       </Docs>
     </Member>
     <Member MemberName="JobId">
-      <MemberSignature Language="C#" Value="public Nullable&lt;Guid&gt; JobId { get; }" />
+      <MemberSignature Language="C#" Value="public Guid? JobId { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;valuetype System.Guid&gt; JobId" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Management.DataLake.Analytics.Models.JobDataPath.JobId" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property JobId As Nullable(Of Guid)" />
       <MemberSignature Language="F#" Value="member this.JobId : Nullable&lt;Guid&gt;" Usage="Microsoft.Azure.Management.DataLake.Analytics.Models.JobDataPath.JobId" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Nullable&lt;Guid&gt; JobId { Nullable&lt;Guid&gt; get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.DataLake.Analytics</AssemblyName>
@@ -113,7 +106,8 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="jobId")</AttributeName>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty(PropertyName="jobId")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty(PropertyName="jobId")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -121,7 +115,7 @@
       </ReturnValue>
       <Docs>
         <summary>
-            Gets the id of the job this data is for.
+            Gets the ID of the job this data is for.
             </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
@@ -133,7 +127,6 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Management.DataLake.Analytics.Models.JobDataPath.Paths" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Paths As IList(Of String)" />
       <MemberSignature Language="F#" Value="member this.Paths : System.Collections.Generic.IList&lt;string&gt;" Usage="Microsoft.Azure.Management.DataLake.Analytics.Models.JobDataPath.Paths" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::Generic::IList&lt;System::String ^&gt; ^ Paths { System::Collections::Generic::IList&lt;System::String ^&gt; ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.DataLake.Analytics</AssemblyName>
@@ -141,7 +134,8 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="paths")</AttributeName>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty(PropertyName="paths")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty(PropertyName="paths")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>

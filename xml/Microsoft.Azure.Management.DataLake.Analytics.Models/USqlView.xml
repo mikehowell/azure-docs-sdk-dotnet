@@ -1,11 +1,9 @@
-﻿<Type Name="USqlView" FullName="Microsoft.Azure.Management.DataLake.Analytics.Models.USqlView">
+<Type Name="USqlView" FullName="Microsoft.Azure.Management.DataLake.Analytics.Models.USqlView">
   <TypeSignature Language="C#" Value="public class USqlView : Microsoft.Azure.Management.DataLake.Analytics.Models.CatalogItem" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit USqlView extends Microsoft.Azure.Management.DataLake.Analytics.Models.CatalogItem" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Azure.Management.DataLake.Analytics.Models.USqlView" />
   <TypeSignature Language="VB.NET" Value="Public Class USqlView&#xA;Inherits CatalogItem" />
   <TypeSignature Language="F#" Value="type USqlView = class&#xA;    inherit CatalogItem" />
-  <TypeSignature Language="C++ CLI" Value="public ref class USqlView : Microsoft::Azure::Management::DataLake::Analytics::Models::CatalogItem" />
-  <TypeSignature Language="C++ WINRT" Value="[Windows::Foundation::Metadata::WebHostHidden]&#xA;class USqlView : Microsoft::Azure::Management::DataLake::Analytics::Models::CatalogItem" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Azure.Management.DataLake.Analytics</AssemblyName>
     <AssemblyVersion>3.0.0.0</AssemblyVersion>
@@ -26,9 +24,6 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Management.DataLake.Analytics.Models.USqlView.#ctor" />
       <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; USqlView();" />
-      <MemberSignature Language="C++ CX" Value="public:&#xA; USqlView();" />
-      <MemberSignature Language="C++ WINRT" Value=" USqlView();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.DataLake.Analytics</AssemblyName>
@@ -43,10 +38,10 @@
       </Docs>
     </Member>
     <Member MemberName=".ctor">
-      <MemberSignature Language="C#" Value="public USqlView (string computeAccountName = null, Nullable&lt;Guid&gt; version = null, string databaseName = null, string schemaName = null, string name = null, string definition = null);" />
+      <MemberSignature Language="C#" Value="public USqlView (string computeAccountName = default, Guid? version = default, string databaseName = default, string schemaName = default, string name = default, string definition = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string computeAccountName, valuetype System.Nullable`1&lt;valuetype System.Guid&gt; version, string databaseName, string schemaName, string name, string definition) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Management.DataLake.Analytics.Models.USqlView.#ctor(System.String,System.Nullable{System.Guid},System.String,System.String,System.String,System.String)" />
-      <MemberSignature Language="VB.NET" Value="Public Sub New (Optional computeAccountName As String = null, Optional version As Nullable(Of Guid) = null, Optional databaseName As String = null, Optional schemaName As String = null, Optional name As String = null, Optional definition As String = null)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (Optional computeAccountName As String = Nothing, Optional version As Nullable(Of Guid) = Nothing, Optional databaseName As String = Nothing, Optional schemaName As String = Nothing, Optional name As String = Nothing, Optional definition As String = Nothing)" />
       <MemberSignature Language="F#" Value="new Microsoft.Azure.Management.DataLake.Analytics.Models.USqlView : string * Nullable&lt;Guid&gt; * string * string * string * string -&gt; Microsoft.Azure.Management.DataLake.Analytics.Models.USqlView" Usage="new Microsoft.Azure.Management.DataLake.Analytics.Models.USqlView (computeAccountName, version, databaseName, schemaName, name, definition)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
@@ -82,8 +77,6 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Management.DataLake.Analytics.Models.USqlView.DatabaseName" />
       <MemberSignature Language="VB.NET" Value="Public Property DatabaseName As String" />
       <MemberSignature Language="F#" Value="member this.DatabaseName : string with get, set" Usage="Microsoft.Azure.Management.DataLake.Analytics.Models.USqlView.DatabaseName" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ DatabaseName { System::String ^ get(); void set(System::String ^ value); };" />
-      <MemberSignature Language="C++ CX" Value="public:&#xA; property Platform::String ^ DatabaseName { Platform::String ^ get(); void set(Platform::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.DataLake.Analytics</AssemblyName>
@@ -91,7 +84,8 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="databaseName")</AttributeName>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty(PropertyName="databaseName")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty(PropertyName="databaseName")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -111,8 +105,6 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Management.DataLake.Analytics.Models.USqlView.Definition" />
       <MemberSignature Language="VB.NET" Value="Public Property Definition As String" />
       <MemberSignature Language="F#" Value="member this.Definition : string with get, set" Usage="Microsoft.Azure.Management.DataLake.Analytics.Models.USqlView.Definition" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Definition { System::String ^ get(); void set(System::String ^ value); };" />
-      <MemberSignature Language="C++ CX" Value="public:&#xA; property Platform::String ^ Definition { Platform::String ^ get(); void set(Platform::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.DataLake.Analytics</AssemblyName>
@@ -120,7 +112,8 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="definition")</AttributeName>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty(PropertyName="definition")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty(PropertyName="definition")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -140,8 +133,6 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Management.DataLake.Analytics.Models.USqlView.Name" />
       <MemberSignature Language="VB.NET" Value="Public Property Name As String" />
       <MemberSignature Language="F#" Value="member this.Name : string with get, set" Usage="Microsoft.Azure.Management.DataLake.Analytics.Models.USqlView.Name" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Name { System::String ^ get(); void set(System::String ^ value); };" />
-      <MemberSignature Language="C++ CX" Value="public:&#xA; property Platform::String ^ Name { Platform::String ^ get(); void set(Platform::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.DataLake.Analytics</AssemblyName>
@@ -149,7 +140,8 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="viewName")</AttributeName>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty(PropertyName="viewName")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty(PropertyName="viewName")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -169,8 +161,6 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Management.DataLake.Analytics.Models.USqlView.SchemaName" />
       <MemberSignature Language="VB.NET" Value="Public Property SchemaName As String" />
       <MemberSignature Language="F#" Value="member this.SchemaName : string with get, set" Usage="Microsoft.Azure.Management.DataLake.Analytics.Models.USqlView.SchemaName" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ SchemaName { System::String ^ get(); void set(System::String ^ value); };" />
-      <MemberSignature Language="C++ CX" Value="public:&#xA; property Platform::String ^ SchemaName { Platform::String ^ get(); void set(Platform::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.DataLake.Analytics</AssemblyName>
@@ -178,7 +168,8 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="schemaName")</AttributeName>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty(PropertyName="schemaName")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty(PropertyName="schemaName")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>

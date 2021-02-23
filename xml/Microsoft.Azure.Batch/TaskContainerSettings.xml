@@ -1,14 +1,14 @@
-﻿<Type Name="TaskContainerSettings" FullName="Microsoft.Azure.Batch.TaskContainerSettings">
+<Type Name="TaskContainerSettings" FullName="Microsoft.Azure.Batch.TaskContainerSettings">
   <TypeSignature Language="C#" Value="public class TaskContainerSettings" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit TaskContainerSettings extends System.Object" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Azure.Batch.TaskContainerSettings" />
   <TypeSignature Language="VB.NET" Value="Public Class TaskContainerSettings" />
-  <TypeSignature Language="F#" Value="type TaskContainerSettings = class&#xA;    interface ITransportObjectProvider&lt;TaskContainerSettings&gt;&#xA;    interface IPropertyMetadata&#xA;    interface IModifiable&#xA;    interface IReadOnly" />
-  <TypeSignature Language="C++ CLI" Value="public ref class TaskContainerSettings" />
-  <TypeSignature Language="C++ WINRT" Value="[Windows::Foundation::Metadata::WebHostHidden]&#xA;class TaskContainerSettings" />
+  <TypeSignature Language="F#" Value="type TaskContainerSettings = class" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Azure.Batch</AssemblyName>
-    <AssemblyVersion>8.0.0.0</AssemblyVersion>
+    <AssemblyVersion>12.0.0.0</AssemblyVersion>
+    <AssemblyVersion>13.0.0.0</AssemblyVersion>
+    <AssemblyVersion>14.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
@@ -22,26 +22,29 @@
   </Docs>
   <Members>
     <Member MemberName=".ctor">
-      <MemberSignature Language="C#" Value="public TaskContainerSettings (string imageName, string containerRunOptions = null, Microsoft.Azure.Batch.ContainerRegistry registry = null);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string imageName, string containerRunOptions, class Microsoft.Azure.Batch.ContainerRegistry registry) cil managed" />
-      <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Batch.TaskContainerSettings.#ctor(System.String,System.String,Microsoft.Azure.Batch.ContainerRegistry)" />
-      <MemberSignature Language="VB.NET" Value="Public Sub New (imageName As String, Optional containerRunOptions As String = null, Optional registry As ContainerRegistry = null)" />
-      <MemberSignature Language="F#" Value="new Microsoft.Azure.Batch.TaskContainerSettings : string * string * Microsoft.Azure.Batch.ContainerRegistry -&gt; Microsoft.Azure.Batch.TaskContainerSettings" Usage="new Microsoft.Azure.Batch.TaskContainerSettings (imageName, containerRunOptions, registry)" />
-      <MemberSignature Language="C++ WINRT" Value=" TaskContainerSettings(std::wstring const &amp; imageName, std::wstring const &amp; containerRunOptions = null, Microsoft::Azure::Batch::ContainerRegistry const &amp; registry = null);" />
+      <MemberSignature Language="C#" Value="public TaskContainerSettings (string imageName, string containerRunOptions = default, Microsoft.Azure.Batch.ContainerRegistry registry = default, Microsoft.Azure.Batch.Common.ContainerWorkingDirectory? workingDirectory = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string imageName, string containerRunOptions, class Microsoft.Azure.Batch.ContainerRegistry registry, valuetype System.Nullable`1&lt;valuetype Microsoft.Azure.Batch.Common.ContainerWorkingDirectory&gt; workingDirectory) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Batch.TaskContainerSettings.#ctor(System.String,System.String,Microsoft.Azure.Batch.ContainerRegistry,System.Nullable{Microsoft.Azure.Batch.Common.ContainerWorkingDirectory})" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (imageName As String, Optional containerRunOptions As String = Nothing, Optional registry As ContainerRegistry = Nothing, Optional workingDirectory As Nullable(Of ContainerWorkingDirectory) = Nothing)" />
+      <MemberSignature Language="F#" Value="new Microsoft.Azure.Batch.TaskContainerSettings : string * string * Microsoft.Azure.Batch.ContainerRegistry * Nullable&lt;Microsoft.Azure.Batch.Common.ContainerWorkingDirectory&gt; -&gt; Microsoft.Azure.Batch.TaskContainerSettings" Usage="new Microsoft.Azure.Batch.TaskContainerSettings (imageName, containerRunOptions, registry, workingDirectory)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Batch</AssemblyName>
-        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>12.0.0.0</AssemblyVersion>
+        <AssemblyVersion>13.0.0.0</AssemblyVersion>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="imageName" Type="System.String" />
         <Parameter Name="containerRunOptions" Type="System.String" />
         <Parameter Name="registry" Type="Microsoft.Azure.Batch.ContainerRegistry" />
+        <Parameter Name="workingDirectory" Type="System.Nullable&lt;Microsoft.Azure.Batch.Common.ContainerWorkingDirectory&gt;" />
       </Parameters>
       <Docs>
         <param name="imageName">The image to use to create the container in which the task will run.</param>
         <param name="containerRunOptions">Additional options to the container create command.</param>
         <param name="registry">The private registry which contains the container image.</param>
+        <param name="workingDirectory">The location of the container task working directory.</param>
         <summary>
             Initializes a new instance of the <see cref="T:Microsoft.Azure.Batch.TaskContainerSettings" /> class.
             </summary>
@@ -54,12 +57,12 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Batch.TaskContainerSettings.ContainerRunOptions" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ContainerRunOptions As String" />
       <MemberSignature Language="F#" Value="member this.ContainerRunOptions : string" Usage="Microsoft.Azure.Batch.TaskContainerSettings.ContainerRunOptions" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ ContainerRunOptions { System::String ^ get(); };" />
-      <MemberSignature Language="C++ CX" Value="public:&#xA; property Platform::String ^ ContainerRunOptions { Platform::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Batch</AssemblyName>
-        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>12.0.0.0</AssemblyVersion>
+        <AssemblyVersion>13.0.0.0</AssemblyVersion>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -81,12 +84,12 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Batch.TaskContainerSettings.ImageName" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ImageName As String" />
       <MemberSignature Language="F#" Value="member this.ImageName : string" Usage="Microsoft.Azure.Batch.TaskContainerSettings.ImageName" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ ImageName { System::String ^ get(); };" />
-      <MemberSignature Language="C++ CX" Value="public:&#xA; property Platform::String ^ ImageName { Platform::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Batch</AssemblyName>
-        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>12.0.0.0</AssemblyVersion>
+        <AssemblyVersion>13.0.0.0</AssemblyVersion>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -108,11 +111,12 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Batch.TaskContainerSettings.Registry" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Registry As ContainerRegistry" />
       <MemberSignature Language="F#" Value="member this.Registry : Microsoft.Azure.Batch.ContainerRegistry" Usage="Microsoft.Azure.Batch.TaskContainerSettings.Registry" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Azure::Batch::ContainerRegistry ^ Registry { Microsoft::Azure::Batch::ContainerRegistry ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Batch</AssemblyName>
-        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>12.0.0.0</AssemblyVersion>
+        <AssemblyVersion>13.0.0.0</AssemblyVersion>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Azure.Batch.ContainerRegistry</ReturnType>
@@ -124,6 +128,32 @@
         <value>To be added.</value>
         <remarks>
             This setting can be omitted if was already provided at pool creation.
+            </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="WorkingDirectory">
+      <MemberSignature Language="C#" Value="public Microsoft.Azure.Batch.Common.ContainerWorkingDirectory? WorkingDirectory { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;valuetype Microsoft.Azure.Batch.Common.ContainerWorkingDirectory&gt; WorkingDirectory" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Batch.TaskContainerSettings.WorkingDirectory" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property WorkingDirectory As Nullable(Of ContainerWorkingDirectory)" />
+      <MemberSignature Language="F#" Value="member this.WorkingDirectory : Nullable&lt;Microsoft.Azure.Batch.Common.ContainerWorkingDirectory&gt;" Usage="Microsoft.Azure.Batch.TaskContainerSettings.WorkingDirectory" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Azure.Batch</AssemblyName>
+        <AssemblyVersion>12.0.0.0</AssemblyVersion>
+        <AssemblyVersion>13.0.0.0</AssemblyVersion>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Nullable&lt;Microsoft.Azure.Batch.Common.ContainerWorkingDirectory&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets the location of the container task working directory.
+            </summary>
+        <value>To be added.</value>
+        <remarks>
+            If not specified, the default is <see cref="F:Microsoft.Azure.Batch.Common.ContainerWorkingDirectory.TaskWorkingDirectory" />.
             </remarks>
       </Docs>
     </Member>

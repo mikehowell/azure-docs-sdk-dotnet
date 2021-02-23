@@ -1,22 +1,23 @@
-﻿<Type Name="StorageAccountType" FullName="Microsoft.Azure.Management.Batch.Models.StorageAccountType">
+<Type Name="StorageAccountType" FullName="Microsoft.Azure.Management.Batch.Models.StorageAccountType">
   <TypeSignature Language="C#" Value="public enum StorageAccountType" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed StorageAccountType extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Azure.Management.Batch.Models.StorageAccountType" />
   <TypeSignature Language="VB.NET" Value="Public Enum StorageAccountType" />
   <TypeSignature Language="F#" Value="type StorageAccountType = " />
-  <TypeSignature Language="C++ CLI" Value="public enum class StorageAccountType" />
-  <TypeSignature Language="C++ CX" Value="public enum class StorageAccountType" />
-  <TypeSignature Language="C++ WINRT" Value="enum StorageAccountType" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Azure.Management.Batch</AssemblyName>
-    <AssemblyVersion>6.0.0.0</AssemblyVersion>
+    <AssemblyVersion>9.0.0.0</AssemblyVersion>
+    <AssemblyVersion>10.0.0.0</AssemblyVersion>
+    <AssemblyVersion>11.0.0.0</AssemblyVersion>
+    <AssemblyVersion>13.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Attributes>
     <Attribute>
-      <AttributeName>Newtonsoft.Json.JsonConverter(typeof(Newtonsoft.Json.Converters.StringEnumConverter))</AttributeName>
+      <AttributeName Language="C#">[Newtonsoft.Json.JsonConverter(typeof(Newtonsoft.Json.Converters.StringEnumConverter))]</AttributeName>
+      <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonConverter(typeof(Newtonsoft.Json.Converters.StringEnumConverter))&gt;]</AttributeName>
     </Attribute>
   </Attributes>
   <Docs>
@@ -32,17 +33,18 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.Azure.Management.Batch.Models.StorageAccountType.PremiumLRS" />
       <MemberSignature Language="VB.NET" Value="PremiumLRS" />
       <MemberSignature Language="F#" Value="PremiumLRS = 1" Usage="Microsoft.Azure.Management.Batch.Models.StorageAccountType.PremiumLRS" />
-      <MemberSignature Language="C++ CLI" Value="PremiumLRS" />
-      <MemberSignature Language="C++ CX" Value="PremiumLRS" />
-      <MemberSignature Language="C++ WINRT" Value="PremiumLRS" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Batch</AssemblyName>
-        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+        <AssemblyVersion>11.0.0.0</AssemblyVersion>
+        <AssemblyVersion>13.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>System.Runtime.Serialization.EnumMember(Value="Premium_LRS")</AttributeName>
+          <AttributeName Language="C#">[System.Runtime.Serialization.EnumMember(Value="Premium_LRS")]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Runtime.Serialization.EnumMember(Value="Premium_LRS")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -50,7 +52,9 @@
       </ReturnValue>
       <MemberValue>1</MemberValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+            The data disk should use premium locally redundant storage.
+            </summary>
       </Docs>
     </Member>
     <Member MemberName="StandardLRS">
@@ -59,17 +63,18 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.Azure.Management.Batch.Models.StorageAccountType.StandardLRS" />
       <MemberSignature Language="VB.NET" Value="StandardLRS" />
       <MemberSignature Language="F#" Value="StandardLRS = 0" Usage="Microsoft.Azure.Management.Batch.Models.StorageAccountType.StandardLRS" />
-      <MemberSignature Language="C++ CLI" Value="StandardLRS" />
-      <MemberSignature Language="C++ CX" Value="StandardLRS" />
-      <MemberSignature Language="C++ WINRT" Value="StandardLRS" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Batch</AssemblyName>
-        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+        <AssemblyVersion>11.0.0.0</AssemblyVersion>
+        <AssemblyVersion>13.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>System.Runtime.Serialization.EnumMember(Value="Standard_LRS")</AttributeName>
+          <AttributeName Language="C#">[System.Runtime.Serialization.EnumMember(Value="Standard_LRS")]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Runtime.Serialization.EnumMember(Value="Standard_LRS")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -77,7 +82,9 @@
       </ReturnValue>
       <MemberValue>0</MemberValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+            The data disk should use standard locally redundant storage.
+            </summary>
       </Docs>
     </Member>
   </Members>

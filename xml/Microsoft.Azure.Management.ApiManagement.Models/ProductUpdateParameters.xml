@@ -1,14 +1,14 @@
-﻿<Type Name="ProductUpdateParameters" FullName="Microsoft.Azure.Management.ApiManagement.Models.ProductUpdateParameters">
+<Type Name="ProductUpdateParameters" FullName="Microsoft.Azure.Management.ApiManagement.Models.ProductUpdateParameters">
   <TypeSignature Language="C#" Value="public class ProductUpdateParameters" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit ProductUpdateParameters extends System.Object" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Azure.Management.ApiManagement.Models.ProductUpdateParameters" />
   <TypeSignature Language="VB.NET" Value="Public Class ProductUpdateParameters" />
   <TypeSignature Language="F#" Value="type ProductUpdateParameters = class" />
-  <TypeSignature Language="C++ CLI" Value="public ref class ProductUpdateParameters" />
-  <TypeSignature Language="C++ WINRT" Value="[Windows::Foundation::Metadata::WebHostHidden]&#xA;class ProductUpdateParameters" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Azure.Management.ApiManagement</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
+    <AssemblyVersion>5.0.0.0</AssemblyVersion>
+    <AssemblyVersion>6.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
@@ -16,7 +16,8 @@
   <Interfaces />
   <Attributes>
     <Attribute>
-      <AttributeName>Microsoft.Rest.Serialization.JsonTransformation</AttributeName>
+      <AttributeName Language="C#">[Microsoft.Rest.Serialization.JsonTransformation]</AttributeName>
+      <AttributeName Language="F#">[&lt;Microsoft.Rest.Serialization.JsonTransformation&gt;]</AttributeName>
     </Attribute>
   </Attributes>
   <Docs>
@@ -31,13 +32,12 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Management.ApiManagement.Models.ProductUpdateParameters.#ctor" />
       <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; ProductUpdateParameters();" />
-      <MemberSignature Language="C++ CX" Value="public:&#xA; ProductUpdateParameters();" />
-      <MemberSignature Language="C++ WINRT" Value=" ProductUpdateParameters();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.ApiManagement</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
@@ -48,15 +48,17 @@
       </Docs>
     </Member>
     <Member MemberName=".ctor">
-      <MemberSignature Language="C#" Value="public ProductUpdateParameters (string description = null, string terms = null, Nullable&lt;bool&gt; subscriptionRequired = null, Nullable&lt;bool&gt; approvalRequired = null, Nullable&lt;int&gt; subscriptionsLimit = null, Nullable&lt;Microsoft.Azure.Management.ApiManagement.Models.ProductState&gt; state = null, string displayName = null);" />
+      <MemberSignature Language="C#" Value="public ProductUpdateParameters (string description = default, string terms = default, bool? subscriptionRequired = default, bool? approvalRequired = default, int? subscriptionsLimit = default, Microsoft.Azure.Management.ApiManagement.Models.ProductState? state = default, string displayName = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string description, string terms, valuetype System.Nullable`1&lt;bool&gt; subscriptionRequired, valuetype System.Nullable`1&lt;bool&gt; approvalRequired, valuetype System.Nullable`1&lt;int32&gt; subscriptionsLimit, valuetype System.Nullable`1&lt;valuetype Microsoft.Azure.Management.ApiManagement.Models.ProductState&gt; state, string displayName) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Management.ApiManagement.Models.ProductUpdateParameters.#ctor(System.String,System.String,System.Nullable{System.Boolean},System.Nullable{System.Boolean},System.Nullable{System.Int32},System.Nullable{Microsoft.Azure.Management.ApiManagement.Models.ProductState},System.String)" />
-      <MemberSignature Language="VB.NET" Value="Public Sub New (Optional description As String = null, Optional terms As String = null, Optional subscriptionRequired As Nullable(Of Boolean) = null, Optional approvalRequired As Nullable(Of Boolean) = null, Optional subscriptionsLimit As Nullable(Of Integer) = null, Optional state As Nullable(Of ProductState) = null, Optional displayName As String = null)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (Optional description As String = Nothing, Optional terms As String = Nothing, Optional subscriptionRequired As Nullable(Of Boolean) = Nothing, Optional approvalRequired As Nullable(Of Boolean) = Nothing, Optional subscriptionsLimit As Nullable(Of Integer) = Nothing, Optional state As Nullable(Of ProductState) = Nothing, Optional displayName As String = Nothing)" />
       <MemberSignature Language="F#" Value="new Microsoft.Azure.Management.ApiManagement.Models.ProductUpdateParameters : string * string * Nullable&lt;bool&gt; * Nullable&lt;bool&gt; * Nullable&lt;int&gt; * Nullable&lt;Microsoft.Azure.Management.ApiManagement.Models.ProductState&gt; * string -&gt; Microsoft.Azure.Management.ApiManagement.Models.ProductUpdateParameters" Usage="new Microsoft.Azure.Management.ApiManagement.Models.ProductUpdateParameters (description, terms, subscriptionRequired, approvalRequired, subscriptionsLimit, state, displayName)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.ApiManagement</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="description" Type="System.String" />
@@ -83,15 +85,15 @@
             subscription key. If property is omitted when creating a new
             product it's value is assumed to be true.</param>
         <param name="approvalRequired">whether subscription approval is
-            required. If false, new subscriptions will be approved
+            required. If false, new subscriptions will be approved
             automatically enabling developers to call the product’s APIs
-            immediately after subscribing. If true, administrators must
+            immediately after subscribing. If true, administrators must
             manually approve the subscription before the developer can any of
             the product’s APIs. Can be present only if subscriptionRequired
             property is present and has a value of false.</param>
         <param name="subscriptionsLimit">Whether the number of
             subscriptions a user can have to this product at the same time. Set
-            to null or omit to allow unlimited per user subscriptions. Can be
+            to null or omit to allow unlimited per user subscriptions. Can be
             present only if subscriptionRequired property is present and has a
             value of false.</param>
         <param name="state">whether product is published or not. Published
@@ -107,20 +109,22 @@
       </Docs>
     </Member>
     <Member MemberName="ApprovalRequired">
-      <MemberSignature Language="C#" Value="public Nullable&lt;bool&gt; ApprovalRequired { get; set; }" />
+      <MemberSignature Language="C#" Value="public bool? ApprovalRequired { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;bool&gt; ApprovalRequired" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Management.ApiManagement.Models.ProductUpdateParameters.ApprovalRequired" />
       <MemberSignature Language="VB.NET" Value="Public Property ApprovalRequired As Nullable(Of Boolean)" />
       <MemberSignature Language="F#" Value="member this.ApprovalRequired : Nullable&lt;bool&gt; with get, set" Usage="Microsoft.Azure.Management.ApiManagement.Models.ProductUpdateParameters.ApprovalRequired" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Nullable&lt;bool&gt; ApprovalRequired { Nullable&lt;bool&gt; get(); void set(Nullable&lt;bool&gt; value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.ApiManagement</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="properties.approvalRequired")</AttributeName>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty(PropertyName="properties.approvalRequired")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty(PropertyName="properties.approvalRequired")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -128,10 +132,10 @@
       </ReturnValue>
       <Docs>
         <summary>
-            Gets or sets whether subscription approval is required. If false,
+            Gets or sets whether subscription approval is required. If false,
             new subscriptions will be approved automatically enabling
             developers to call the product’s APIs immediately after
-            subscribing. If true, administrators must manually approve the
+            subscribing. If true, administrators must manually approve the
             subscription before the developer can any of the product’s APIs.
             Can be present only if subscriptionRequired property is present and
             has a value of false.
@@ -146,16 +150,17 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Management.ApiManagement.Models.ProductUpdateParameters.Description" />
       <MemberSignature Language="VB.NET" Value="Public Property Description As String" />
       <MemberSignature Language="F#" Value="member this.Description : string with get, set" Usage="Microsoft.Azure.Management.ApiManagement.Models.ProductUpdateParameters.Description" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Description { System::String ^ get(); void set(System::String ^ value); };" />
-      <MemberSignature Language="C++ CX" Value="public:&#xA; property Platform::String ^ Description { Platform::String ^ get(); void set(Platform::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.ApiManagement</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="properties.description")</AttributeName>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty(PropertyName="properties.description")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty(PropertyName="properties.description")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -175,16 +180,17 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Management.ApiManagement.Models.ProductUpdateParameters.DisplayName" />
       <MemberSignature Language="VB.NET" Value="Public Property DisplayName As String" />
       <MemberSignature Language="F#" Value="member this.DisplayName : string with get, set" Usage="Microsoft.Azure.Management.ApiManagement.Models.ProductUpdateParameters.DisplayName" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ DisplayName { System::String ^ get(); void set(System::String ^ value); };" />
-      <MemberSignature Language="C++ CX" Value="public:&#xA; property Platform::String ^ DisplayName { Platform::String ^ get(); void set(Platform::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.ApiManagement</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="properties.displayName")</AttributeName>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty(PropertyName="properties.displayName")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty(PropertyName="properties.displayName")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -199,20 +205,22 @@
       </Docs>
     </Member>
     <Member MemberName="State">
-      <MemberSignature Language="C#" Value="public Nullable&lt;Microsoft.Azure.Management.ApiManagement.Models.ProductState&gt; State { get; set; }" />
+      <MemberSignature Language="C#" Value="public Microsoft.Azure.Management.ApiManagement.Models.ProductState? State { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;valuetype Microsoft.Azure.Management.ApiManagement.Models.ProductState&gt; State" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Management.ApiManagement.Models.ProductUpdateParameters.State" />
       <MemberSignature Language="VB.NET" Value="Public Property State As Nullable(Of ProductState)" />
       <MemberSignature Language="F#" Value="member this.State : Nullable&lt;Microsoft.Azure.Management.ApiManagement.Models.ProductState&gt; with get, set" Usage="Microsoft.Azure.Management.ApiManagement.Models.ProductUpdateParameters.State" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Nullable&lt;Microsoft::Azure::Management::ApiManagement::Models::ProductState&gt; State { Nullable&lt;Microsoft::Azure::Management::ApiManagement::Models::ProductState&gt; get(); void set(Nullable&lt;Microsoft::Azure::Management::ApiManagement::Models::ProductState&gt; value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.ApiManagement</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="properties.state")</AttributeName>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty(PropertyName="properties.state")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty(PropertyName="properties.state")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -231,20 +239,22 @@
       </Docs>
     </Member>
     <Member MemberName="SubscriptionRequired">
-      <MemberSignature Language="C#" Value="public Nullable&lt;bool&gt; SubscriptionRequired { get; set; }" />
+      <MemberSignature Language="C#" Value="public bool? SubscriptionRequired { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;bool&gt; SubscriptionRequired" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Management.ApiManagement.Models.ProductUpdateParameters.SubscriptionRequired" />
       <MemberSignature Language="VB.NET" Value="Public Property SubscriptionRequired As Nullable(Of Boolean)" />
       <MemberSignature Language="F#" Value="member this.SubscriptionRequired : Nullable&lt;bool&gt; with get, set" Usage="Microsoft.Azure.Management.ApiManagement.Models.ProductUpdateParameters.SubscriptionRequired" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Nullable&lt;bool&gt; SubscriptionRequired { Nullable&lt;bool&gt; get(); void set(Nullable&lt;bool&gt; value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.ApiManagement</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="properties.subscriptionRequired")</AttributeName>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty(PropertyName="properties.subscriptionRequired")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty(PropertyName="properties.subscriptionRequired")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -266,20 +276,22 @@
       </Docs>
     </Member>
     <Member MemberName="SubscriptionsLimit">
-      <MemberSignature Language="C#" Value="public Nullable&lt;int&gt; SubscriptionsLimit { get; set; }" />
+      <MemberSignature Language="C#" Value="public int? SubscriptionsLimit { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;int32&gt; SubscriptionsLimit" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Management.ApiManagement.Models.ProductUpdateParameters.SubscriptionsLimit" />
       <MemberSignature Language="VB.NET" Value="Public Property SubscriptionsLimit As Nullable(Of Integer)" />
       <MemberSignature Language="F#" Value="member this.SubscriptionsLimit : Nullable&lt;int&gt; with get, set" Usage="Microsoft.Azure.Management.ApiManagement.Models.ProductUpdateParameters.SubscriptionsLimit" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Nullable&lt;int&gt; SubscriptionsLimit { Nullable&lt;int&gt; get(); void set(Nullable&lt;int&gt; value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.ApiManagement</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="properties.subscriptionsLimit")</AttributeName>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty(PropertyName="properties.subscriptionsLimit")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty(PropertyName="properties.subscriptionsLimit")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -288,7 +300,7 @@
       <Docs>
         <summary>
             Gets or sets whether the number of subscriptions a user can have to
-            this product at the same time. Set to null or omit to allow
+            this product at the same time. Set to null or omit to allow
             unlimited per user subscriptions. Can be present only if
             subscriptionRequired property is present and has a value of false.
             </summary>
@@ -302,16 +314,17 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Management.ApiManagement.Models.ProductUpdateParameters.Terms" />
       <MemberSignature Language="VB.NET" Value="Public Property Terms As String" />
       <MemberSignature Language="F#" Value="member this.Terms : string with get, set" Usage="Microsoft.Azure.Management.ApiManagement.Models.ProductUpdateParameters.Terms" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Terms { System::String ^ get(); void set(System::String ^ value); };" />
-      <MemberSignature Language="C++ CX" Value="public:&#xA; property Platform::String ^ Terms { Platform::String ^ get(); void set(Platform::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.ApiManagement</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="properties.terms")</AttributeName>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty(PropertyName="properties.terms")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty(PropertyName="properties.terms")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -325,34 +338,6 @@
             </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
-      </Docs>
-    </Member>
-    <Member MemberName="Validate">
-      <MemberSignature Language="C#" Value="public virtual void Validate ();" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Validate() cil managed" />
-      <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Management.ApiManagement.Models.ProductUpdateParameters.Validate" />
-      <MemberSignature Language="VB.NET" Value="Public Overridable Sub Validate ()" />
-      <MemberSignature Language="F#" Value="abstract member Validate : unit -&gt; unit&#xA;override this.Validate : unit -&gt; unit" Usage="productUpdateParameters.Validate " />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Validate();" />
-      <MemberSignature Language="C++ CX" Value="public:&#xA; virtual void Validate();" />
-      <MemberSignature Language="C++ WINRT" Value=" virtual void Validate();" />
-      <MemberType>Method</MemberType>
-      <AssemblyInfo>
-        <AssemblyName>Microsoft.Azure.Management.ApiManagement</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <ReturnValue>
-        <ReturnType>System.Void</ReturnType>
-      </ReturnValue>
-      <Parameters />
-      <Docs>
-        <summary>
-            Validate the object.
-            </summary>
-        <remarks>To be added.</remarks>
-        <exception cref="T:Microsoft.Rest.ValidationException">
-            Thrown if validation fails
-            </exception>
       </Docs>
     </Member>
   </Members>

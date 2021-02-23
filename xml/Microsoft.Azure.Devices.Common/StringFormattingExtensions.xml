@@ -1,27 +1,32 @@
-﻿<Type Name="StringFormattingExtensions" FullName="Microsoft.Azure.Devices.Common.StringFormattingExtensions">
+<Type Name="StringFormattingExtensions" FullName="Microsoft.Azure.Devices.Common.StringFormattingExtensions">
   <TypeSignature Language="C#" Value="public static class StringFormattingExtensions" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract sealed beforefieldinit StringFormattingExtensions extends System.Object" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Azure.Devices.Common.StringFormattingExtensions" />
   <TypeSignature Language="VB.NET" Value="Public Module StringFormattingExtensions" />
   <TypeSignature Language="F#" Value="type StringFormattingExtensions = class" />
-  <TypeSignature Language="C++ CLI" Value="public ref class StringFormattingExtensions abstract sealed" />
-  <TypeSignature Language="C++ CX" Value="public ref class StringFormattingExtensions abstract sealed" />
-  <TypeSignature Language="C++ WINRT" Value="class StringFormattingExtensions abstract sealed" />
-  <AssemblyInfo>
-    <AssemblyName>Microsoft.Azure.Devices</AssemblyName>
-    <AssemblyVersion>1.0.0.0</AssemblyVersion>
-  </AssemblyInfo>
   <AssemblyInfo>
     <AssemblyName>Microsoft.Azure.Devices.Shared</AssemblyName>
-    <AssemblyVersion>1.0.0.0</AssemblyVersion>
-    <AssemblyVersion>1.15.0.0</AssemblyVersion>
+    <AssemblyVersion>1.16.0.0</AssemblyVersion>
+    <AssemblyVersion>1.16.1.0</AssemblyVersion>
+    <AssemblyVersion>1.17.0.0</AssemblyVersion>
+    <AssemblyVersion>1.18.0.0</AssemblyVersion>
+    <AssemblyVersion>1.19.0.0</AssemblyVersion>
+    <AssemblyVersion>1.20.0.0</AssemblyVersion>
+    <AssemblyVersion>1.20.1.0</AssemblyVersion>
+    <AssemblyVersion>1.25.0.0</AssemblyVersion>
+    <AssemblyVersion>1.25.1.0</AssemblyVersion>
+    <AssemblyVersion>1.26.0.0</AssemblyVersion>
+    <AssemblyVersion>1.27.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
+    <summary>
+            String extension class for common operations.
+            This class is used by the SDK and should not be directly used by applications.
+            </summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -31,17 +36,20 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Devices.Common.StringFormattingExtensions.FormatErrorForUser(System.String,System.String,System.Int32)" />
       <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function FormatErrorForUser (message As String, activityId As String, errorCode As Integer) As String" />
       <MemberSignature Language="F#" Value="static member FormatErrorForUser : string * string * int -&gt; string" Usage="Microsoft.Azure.Devices.Common.StringFormattingExtensions.FormatErrorForUser (message, activityId, errorCode)" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA;[System::Runtime::CompilerServices::Extension]&#xA; static System::String ^ FormatErrorForUser(System::String ^ message, System::String ^ activityId, int errorCode);" />
-      <MemberSignature Language="C++ CX" Value="public:&#xA;[System::Runtime::CompilerServices::Extension]&#xA; static Platform::String ^ FormatErrorForUser(Platform::String ^ message, Platform::String ^ activityId, int errorCode);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
-        <AssemblyName>Microsoft.Azure.Devices</AssemblyName>
-        <AssemblyVersion>1.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Devices.Shared</AssemblyName>
-        <AssemblyVersion>1.0.0.0</AssemblyVersion>
-        <AssemblyVersion>1.15.0.0</AssemblyVersion>
+        <AssemblyVersion>1.16.0.0</AssemblyVersion>
+        <AssemblyVersion>1.16.1.0</AssemblyVersion>
+        <AssemblyVersion>1.17.0.0</AssemblyVersion>
+        <AssemblyVersion>1.18.0.0</AssemblyVersion>
+        <AssemblyVersion>1.19.0.0</AssemblyVersion>
+        <AssemblyVersion>1.20.0.0</AssemblyVersion>
+        <AssemblyVersion>1.20.1.0</AssemblyVersion>
+        <AssemblyVersion>1.25.0.0</AssemblyVersion>
+        <AssemblyVersion>1.25.1.0</AssemblyVersion>
+        <AssemblyVersion>1.26.0.0</AssemblyVersion>
+        <AssemblyVersion>1.27.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -52,11 +60,13 @@
         <Parameter Name="errorCode" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="message">To be added.</param>
-        <param name="activityId">To be added.</param>
-        <param name="errorCode">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="message">The message.</param>
+        <param name="activityId">The activity ID.</param>
+        <param name="errorCode">The error code.</param>
+        <summary>
+            Format string to be displayed as an error.
+            </summary>
+        <returns>A copy of format in which the format item or items have been replaced by the string representation of arg0.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -66,16 +76,20 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Devices.Common.StringFormattingExtensions.FormatForUser(System.String,System.Object[])" />
       <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function FormatForUser (format As String, ParamArray args As Object()) As String" />
       <MemberSignature Language="F#" Value="static member FormatForUser : string * obj[] -&gt; string" Usage="Microsoft.Azure.Devices.Common.StringFormattingExtensions.FormatForUser (format, args)" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA;[System::Runtime::CompilerServices::Extension]&#xA; static System::String ^ FormatForUser(System::String ^ format, ... cli::array &lt;System::Object ^&gt; ^ args);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
-        <AssemblyName>Microsoft.Azure.Devices</AssemblyName>
-        <AssemblyVersion>1.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Devices.Shared</AssemblyName>
-        <AssemblyVersion>1.0.0.0</AssemblyVersion>
-        <AssemblyVersion>1.15.0.0</AssemblyVersion>
+        <AssemblyVersion>1.16.0.0</AssemblyVersion>
+        <AssemblyVersion>1.16.1.0</AssemblyVersion>
+        <AssemblyVersion>1.17.0.0</AssemblyVersion>
+        <AssemblyVersion>1.18.0.0</AssemblyVersion>
+        <AssemblyVersion>1.19.0.0</AssemblyVersion>
+        <AssemblyVersion>1.20.0.0</AssemblyVersion>
+        <AssemblyVersion>1.20.1.0</AssemblyVersion>
+        <AssemblyVersion>1.25.0.0</AssemblyVersion>
+        <AssemblyVersion>1.25.1.0</AssemblyVersion>
+        <AssemblyVersion>1.26.0.0</AssemblyVersion>
+        <AssemblyVersion>1.27.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -84,17 +98,20 @@
         <Parameter Name="format" Type="System.String" RefType="this" />
         <Parameter Name="args" Type="System.Object[]">
           <Attributes>
-            <Attribute>
-              <AttributeName>System.ParamArray</AttributeName>
+            <Attribute FrameworkAlternate="azure-dotnet">
+              <AttributeName Language="C#">[System.ParamArray]</AttributeName>
+              <AttributeName Language="F#">[&lt;System.ParamArray&gt;]</AttributeName>
             </Attribute>
           </Attributes>
         </Parameter>
       </Parameters>
       <Docs>
-        <param name="format">To be added.</param>
-        <param name="args">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="format">A composite format string.</param>
+        <param name="args">The object to format.</param>
+        <summary>
+            Format string to be displayed.
+            </summary>
+        <returns>A copy of format in which the format item or items have been replaced by the string representation of arg0.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -104,16 +121,20 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Devices.Common.StringFormattingExtensions.FormatInvariant(System.String,System.Object[])" />
       <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function FormatInvariant (format As String, ParamArray args As Object()) As String" />
       <MemberSignature Language="F#" Value="static member FormatInvariant : string * obj[] -&gt; string" Usage="Microsoft.Azure.Devices.Common.StringFormattingExtensions.FormatInvariant (format, args)" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA;[System::Runtime::CompilerServices::Extension]&#xA; static System::String ^ FormatInvariant(System::String ^ format, ... cli::array &lt;System::Object ^&gt; ^ args);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
-        <AssemblyName>Microsoft.Azure.Devices</AssemblyName>
-        <AssemblyVersion>1.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Devices.Shared</AssemblyName>
-        <AssemblyVersion>1.0.0.0</AssemblyVersion>
-        <AssemblyVersion>1.15.0.0</AssemblyVersion>
+        <AssemblyVersion>1.16.0.0</AssemblyVersion>
+        <AssemblyVersion>1.16.1.0</AssemblyVersion>
+        <AssemblyVersion>1.17.0.0</AssemblyVersion>
+        <AssemblyVersion>1.18.0.0</AssemblyVersion>
+        <AssemblyVersion>1.19.0.0</AssemblyVersion>
+        <AssemblyVersion>1.20.0.0</AssemblyVersion>
+        <AssemblyVersion>1.20.1.0</AssemblyVersion>
+        <AssemblyVersion>1.25.0.0</AssemblyVersion>
+        <AssemblyVersion>1.25.1.0</AssemblyVersion>
+        <AssemblyVersion>1.26.0.0</AssemblyVersion>
+        <AssemblyVersion>1.27.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -122,17 +143,20 @@
         <Parameter Name="format" Type="System.String" RefType="this" />
         <Parameter Name="args" Type="System.Object[]">
           <Attributes>
-            <Attribute>
-              <AttributeName>System.ParamArray</AttributeName>
+            <Attribute FrameworkAlternate="azure-dotnet">
+              <AttributeName Language="C#">[System.ParamArray]</AttributeName>
+              <AttributeName Language="F#">[&lt;System.ParamArray&gt;]</AttributeName>
             </Attribute>
           </Attributes>
         </Parameter>
       </Parameters>
       <Docs>
-        <param name="format">To be added.</param>
-        <param name="args">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="format">A composite format string.</param>
+        <param name="args">The object to format.</param>
+        <summary>
+            Format string to be displayed.
+            </summary>
+        <returns>A copy of format in which the format item or items have been replaced by the string representation of arg0.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -142,17 +166,20 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Devices.Common.StringFormattingExtensions.Truncate(System.String,System.Int32)" />
       <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function Truncate (message As String, maximumSize As Integer) As String" />
       <MemberSignature Language="F#" Value="static member Truncate : string * int -&gt; string" Usage="Microsoft.Azure.Devices.Common.StringFormattingExtensions.Truncate (message, maximumSize)" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA;[System::Runtime::CompilerServices::Extension]&#xA; static System::String ^ Truncate(System::String ^ message, int maximumSize);" />
-      <MemberSignature Language="C++ CX" Value="public:&#xA;[System::Runtime::CompilerServices::Extension]&#xA; static Platform::String ^ Truncate(Platform::String ^ message, int maximumSize);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
-        <AssemblyName>Microsoft.Azure.Devices</AssemblyName>
-        <AssemblyVersion>1.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Devices.Shared</AssemblyName>
-        <AssemblyVersion>1.0.0.0</AssemblyVersion>
-        <AssemblyVersion>1.15.0.0</AssemblyVersion>
+        <AssemblyVersion>1.16.0.0</AssemblyVersion>
+        <AssemblyVersion>1.16.1.0</AssemblyVersion>
+        <AssemblyVersion>1.17.0.0</AssemblyVersion>
+        <AssemblyVersion>1.18.0.0</AssemblyVersion>
+        <AssemblyVersion>1.19.0.0</AssemblyVersion>
+        <AssemblyVersion>1.20.0.0</AssemblyVersion>
+        <AssemblyVersion>1.20.1.0</AssemblyVersion>
+        <AssemblyVersion>1.25.0.0</AssemblyVersion>
+        <AssemblyVersion>1.25.1.0</AssemblyVersion>
+        <AssemblyVersion>1.26.0.0</AssemblyVersion>
+        <AssemblyVersion>1.27.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -162,10 +189,12 @@
         <Parameter Name="maximumSize" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="message">To be added.</param>
-        <param name="maximumSize">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="message">The message.</param>
+        <param name="maximumSize">The maximum string length.</param>
+        <summary>
+            Truncates a string.
+            </summary>
+        <returns>The truncated string.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

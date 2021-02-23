@@ -1,15 +1,14 @@
-﻿<Type Name="AutoUserSpecification" FullName="Microsoft.Azure.Batch.Protocol.Models.AutoUserSpecification">
+<Type Name="AutoUserSpecification" FullName="Microsoft.Azure.Batch.Protocol.Models.AutoUserSpecification">
   <TypeSignature Language="C#" Value="public class AutoUserSpecification" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit AutoUserSpecification extends System.Object" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Azure.Batch.Protocol.Models.AutoUserSpecification" />
   <TypeSignature Language="VB.NET" Value="Public Class AutoUserSpecification" />
   <TypeSignature Language="F#" Value="type AutoUserSpecification = class" />
-  <TypeSignature Language="C++ CLI" Value="public ref class AutoUserSpecification" />
-  <TypeSignature Language="C++ WINRT" Value="[Windows::Foundation::Metadata::WebHostHidden]&#xA;class AutoUserSpecification" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Azure.Batch</AssemblyName>
-    <AssemblyVersion>7.1.0.0</AssemblyVersion>
-    <AssemblyVersion>8.0.0.0</AssemblyVersion>
+    <AssemblyVersion>12.0.0.0</AssemblyVersion>
+    <AssemblyVersion>13.0.0.0</AssemblyVersion>
+    <AssemblyVersion>14.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
@@ -17,7 +16,7 @@
   <Interfaces />
   <Docs>
     <summary>
-            Specifies the parameters for the auto user that runs a task on the
+            Specifies the parameters for the auto user that runs a Task on the
             Batch service.
             </summary>
     <remarks>To be added.</remarks>
@@ -28,14 +27,12 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Batch.Protocol.Models.AutoUserSpecification.#ctor" />
       <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; AutoUserSpecification();" />
-      <MemberSignature Language="C++ CX" Value="public:&#xA; AutoUserSpecification();" />
-      <MemberSignature Language="C++ WINRT" Value=" AutoUserSpecification();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Batch</AssemblyName>
-        <AssemblyVersion>7.1.0.0</AssemblyVersion>
-        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>12.0.0.0</AssemblyVersion>
+        <AssemblyVersion>13.0.0.0</AssemblyVersion>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
@@ -46,16 +43,17 @@
       </Docs>
     </Member>
     <Member MemberName=".ctor">
-      <MemberSignature Language="C#" Value="public AutoUserSpecification (Nullable&lt;Microsoft.Azure.Batch.Protocol.Models.AutoUserScope&gt; scope = null, Nullable&lt;Microsoft.Azure.Batch.Protocol.Models.ElevationLevel&gt; elevationLevel = null);" />
+      <MemberSignature Language="C#" Value="public AutoUserSpecification (Microsoft.Azure.Batch.Protocol.Models.AutoUserScope? scope = default, Microsoft.Azure.Batch.Protocol.Models.ElevationLevel? elevationLevel = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(valuetype System.Nullable`1&lt;valuetype Microsoft.Azure.Batch.Protocol.Models.AutoUserScope&gt; scope, valuetype System.Nullable`1&lt;valuetype Microsoft.Azure.Batch.Protocol.Models.ElevationLevel&gt; elevationLevel) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Batch.Protocol.Models.AutoUserSpecification.#ctor(System.Nullable{Microsoft.Azure.Batch.Protocol.Models.AutoUserScope},System.Nullable{Microsoft.Azure.Batch.Protocol.Models.ElevationLevel})" />
-      <MemberSignature Language="VB.NET" Value="Public Sub New (Optional scope As Nullable(Of AutoUserScope) = null, Optional elevationLevel As Nullable(Of ElevationLevel) = null)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (Optional scope As Nullable(Of AutoUserScope) = Nothing, Optional elevationLevel As Nullable(Of ElevationLevel) = Nothing)" />
       <MemberSignature Language="F#" Value="new Microsoft.Azure.Batch.Protocol.Models.AutoUserSpecification : Nullable&lt;Microsoft.Azure.Batch.Protocol.Models.AutoUserScope&gt; * Nullable&lt;Microsoft.Azure.Batch.Protocol.Models.ElevationLevel&gt; -&gt; Microsoft.Azure.Batch.Protocol.Models.AutoUserSpecification" Usage="new Microsoft.Azure.Batch.Protocol.Models.AutoUserSpecification (scope, elevationLevel)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Batch</AssemblyName>
-        <AssemblyVersion>7.1.0.0</AssemblyVersion>
-        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>12.0.0.0</AssemblyVersion>
+        <AssemblyVersion>13.0.0.0</AssemblyVersion>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="scope" Type="System.Nullable&lt;Microsoft.Azure.Batch.Protocol.Models.AutoUserScope&gt;" />
@@ -72,21 +70,22 @@
       </Docs>
     </Member>
     <Member MemberName="ElevationLevel">
-      <MemberSignature Language="C#" Value="public Nullable&lt;Microsoft.Azure.Batch.Protocol.Models.ElevationLevel&gt; ElevationLevel { get; set; }" />
+      <MemberSignature Language="C#" Value="public Microsoft.Azure.Batch.Protocol.Models.ElevationLevel? ElevationLevel { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;valuetype Microsoft.Azure.Batch.Protocol.Models.ElevationLevel&gt; ElevationLevel" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Batch.Protocol.Models.AutoUserSpecification.ElevationLevel" />
       <MemberSignature Language="VB.NET" Value="Public Property ElevationLevel As Nullable(Of ElevationLevel)" />
       <MemberSignature Language="F#" Value="member this.ElevationLevel : Nullable&lt;Microsoft.Azure.Batch.Protocol.Models.ElevationLevel&gt; with get, set" Usage="Microsoft.Azure.Batch.Protocol.Models.AutoUserSpecification.ElevationLevel" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Nullable&lt;Microsoft::Azure::Batch::Protocol::Models::ElevationLevel&gt; ElevationLevel { Nullable&lt;Microsoft::Azure::Batch::Protocol::Models::ElevationLevel&gt; get(); void set(Nullable&lt;Microsoft::Azure::Batch::Protocol::Models::ElevationLevel&gt; value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Batch</AssemblyName>
-        <AssemblyVersion>7.1.0.0</AssemblyVersion>
-        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>12.0.0.0</AssemblyVersion>
+        <AssemblyVersion>13.0.0.0</AssemblyVersion>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="elevationLevel")</AttributeName>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty(PropertyName="elevationLevel")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty(PropertyName="elevationLevel")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -104,21 +103,22 @@
       </Docs>
     </Member>
     <Member MemberName="Scope">
-      <MemberSignature Language="C#" Value="public Nullable&lt;Microsoft.Azure.Batch.Protocol.Models.AutoUserScope&gt; Scope { get; set; }" />
+      <MemberSignature Language="C#" Value="public Microsoft.Azure.Batch.Protocol.Models.AutoUserScope? Scope { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;valuetype Microsoft.Azure.Batch.Protocol.Models.AutoUserScope&gt; Scope" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Batch.Protocol.Models.AutoUserSpecification.Scope" />
       <MemberSignature Language="VB.NET" Value="Public Property Scope As Nullable(Of AutoUserScope)" />
       <MemberSignature Language="F#" Value="member this.Scope : Nullable&lt;Microsoft.Azure.Batch.Protocol.Models.AutoUserScope&gt; with get, set" Usage="Microsoft.Azure.Batch.Protocol.Models.AutoUserSpecification.Scope" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Nullable&lt;Microsoft::Azure::Batch::Protocol::Models::AutoUserScope&gt; Scope { Nullable&lt;Microsoft::Azure::Batch::Protocol::Models::AutoUserScope&gt; get(); void set(Nullable&lt;Microsoft::Azure::Batch::Protocol::Models::AutoUserScope&gt; value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Batch</AssemblyName>
-        <AssemblyVersion>7.1.0.0</AssemblyVersion>
-        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>12.0.0.0</AssemblyVersion>
+        <AssemblyVersion>13.0.0.0</AssemblyVersion>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="scope")</AttributeName>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty(PropertyName="scope")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty(PropertyName="scope")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -130,7 +130,13 @@
             </summary>
         <value>To be added.</value>
         <remarks>
-            The default value is task. Possible values include: 'task', 'pool'
+            The default value is pool. If the pool is running Windows a value
+            of Task should be specified if stricter isolation between tasks is
+            required. For example, if the task mutates the registry in a way
+            which could impact other tasks, or if certificates have been
+            specified on the pool which should not be accessible by normal
+            tasks but should be accessible by StartTasks. Possible values
+            include: 'task', 'pool'
             </remarks>
       </Docs>
     </Member>

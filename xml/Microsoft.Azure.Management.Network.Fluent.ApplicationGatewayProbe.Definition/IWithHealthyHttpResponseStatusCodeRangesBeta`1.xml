@@ -1,15 +1,19 @@
-﻿<Type Name="IWithHealthyHttpResponseStatusCodeRangesBeta&lt;ReturnT&gt;" FullName="Microsoft.Azure.Management.Network.Fluent.ApplicationGatewayProbe.Definition.IWithHealthyHttpResponseStatusCodeRangesBeta&lt;ReturnT&gt;">
+<Type Name="IWithHealthyHttpResponseStatusCodeRangesBeta&lt;ReturnT&gt;" FullName="Microsoft.Azure.Management.Network.Fluent.ApplicationGatewayProbe.Definition.IWithHealthyHttpResponseStatusCodeRangesBeta&lt;ReturnT&gt;">
   <TypeSignature Language="C#" Value="public interface IWithHealthyHttpResponseStatusCodeRangesBeta&lt;ReturnT&gt; : Microsoft.Azure.Management.ResourceManager.Fluent.Core.IBeta" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IWithHealthyHttpResponseStatusCodeRangesBeta`1&lt;ReturnT&gt; implements class Microsoft.Azure.Management.ResourceManager.Fluent.Core.IBeta" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Azure.Management.Network.Fluent.ApplicationGatewayProbe.Definition.IWithHealthyHttpResponseStatusCodeRangesBeta`1" />
   <TypeSignature Language="VB.NET" Value="Public Interface IWithHealthyHttpResponseStatusCodeRangesBeta(Of ReturnT)&#xA;Implements IBeta" />
   <TypeSignature Language="F#" Value="type IWithHealthyHttpResponseStatusCodeRangesBeta&lt;'ReturnT&gt; = interface&#xA;    interface IBeta" />
-  <TypeSignature Language="C++ CLI" Value="generic &lt;typename ReturnT&gt;&#xA;public interface class IWithHealthyHttpResponseStatusCodeRangesBeta : Microsoft::Azure::Management::ResourceManager::Fluent::Core::IBeta" />
-  <TypeSignature Language="C++ CX" Value="public interface class IWithHealthyHttpResponseStatusCodeRangesBeta : Microsoft::Azure::Management::ResourceManager::Fluent::Core::IBeta" />
-  <TypeSignature Language="C++ WINRT" Value="template &lt;typename ReturnT&gt;&#xA;__interface IWithHealthyHttpResponseStatusCodeRangesBeta : Microsoft::Azure::Management::ResourceManager::Fluent::Core::IBeta" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Azure.Management.Network.Fluent</AssemblyName>
-    <AssemblyVersion>1.0.0.60</AssemblyVersion>
+    <AssemblyVersion>1.0.0.61</AssemblyVersion>
+    <AssemblyVersion>1.0.0.62</AssemblyVersion>
+    <AssemblyVersion>1.0.0.63</AssemblyVersion>
+    <AssemblyVersion>1.0.0.64</AssemblyVersion>
+    <AssemblyVersion>1.0.0.65</AssemblyVersion>
+    <AssemblyVersion>1.0.0.66</AssemblyVersion>
+    <AssemblyVersion>1.0.0.67</AssemblyVersion>
+    <AssemblyVersion>1.0.0.68</AssemblyVersion>
   </AssemblyInfo>
   <TypeParameters>
     <TypeParameter Name="ReturnT" />
@@ -20,8 +24,10 @@
     </Interface>
   </Interfaces>
   <Docs>
-    <typeparam name="ReturnT">To be added.</typeparam>
-    <summary>To be added.</summary>
+    <typeparam name="ReturnT">The stage of the parent application gateway definition to return to after attaching this definition.</typeparam>
+    <summary>
+            The stage of an application gateway probe definition allowing to specify healthy HTTP response status code ranges.
+            </summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -31,13 +37,17 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Management.Network.Fluent.ApplicationGatewayProbe.Definition.IWithHealthyHttpResponseStatusCodeRangesBeta`1.WithHealthyHttpResponseStatusCodeRange(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Function WithHealthyHttpResponseStatusCodeRange (range As String) As IWithAttach(Of ReturnT)" />
       <MemberSignature Language="F#" Value="abstract member WithHealthyHttpResponseStatusCodeRange : string -&gt; Microsoft.Azure.Management.Network.Fluent.ApplicationGatewayProbe.Definition.IWithAttach&lt;'ReturnT&gt;" Usage="iWithHealthyHttpResponseStatusCodeRangesBeta.WithHealthyHttpResponseStatusCodeRange range" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; Microsoft::Azure::Management::Network::Fluent::ApplicationGatewayProbe::Definition::IWithAttach&lt;ReturnT&gt; ^ WithHealthyHttpResponseStatusCodeRange(System::String ^ range);" />
-      <MemberSignature Language="C++ CX" Value="public:&#xA; Microsoft::Azure::Management::Network::Fluent::ApplicationGatewayProbe::Definition::IWithAttach&lt;ReturnT&gt; ^ WithHealthyHttpResponseStatusCodeRange(Platform::String ^ range);" />
-      <MemberSignature Language="C++ WINRT" Value="Microsoft::Azure::Management::Network::Fluent::ApplicationGatewayProbe::Definition::IWithAttach&lt;ReturnT&gt; WithHealthyHttpResponseStatusCodeRange(std::wstring const &amp; range);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Network.Fluent</AssemblyName>
-        <AssemblyVersion>1.0.0.60</AssemblyVersion>
+        <AssemblyVersion>1.0.0.61</AssemblyVersion>
+        <AssemblyVersion>1.0.0.62</AssemblyVersion>
+        <AssemblyVersion>1.0.0.63</AssemblyVersion>
+        <AssemblyVersion>1.0.0.64</AssemblyVersion>
+        <AssemblyVersion>1.0.0.65</AssemblyVersion>
+        <AssemblyVersion>1.0.0.66</AssemblyVersion>
+        <AssemblyVersion>1.0.0.67</AssemblyVersion>
+        <AssemblyVersion>1.0.0.68</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Azure.Management.Network.Fluent.ApplicationGatewayProbe.Definition.IWithAttach&lt;ReturnT&gt;</ReturnType>
@@ -46,10 +56,13 @@
         <Parameter Name="range" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="range">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="range">A number range expressed in the format "###-###", for example "200-399", which is the default.</param>
+        <summary>
+            Adds the specified range of the backend's HTTP response status codes that are to be considered healthy.
+            </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
+        <return>The next stage of the definition.</return>
       </Docs>
     </Member>
     <Member MemberName="WithHealthyHttpResponseStatusCodeRange">
@@ -58,13 +71,17 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Management.Network.Fluent.ApplicationGatewayProbe.Definition.IWithHealthyHttpResponseStatusCodeRangesBeta`1.WithHealthyHttpResponseStatusCodeRange(System.Int32,System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Function WithHealthyHttpResponseStatusCodeRange (from As Integer, to As Integer) As IWithAttach(Of ReturnT)" />
       <MemberSignature Language="F#" Value="abstract member WithHealthyHttpResponseStatusCodeRange : int * int -&gt; Microsoft.Azure.Management.Network.Fluent.ApplicationGatewayProbe.Definition.IWithAttach&lt;'ReturnT&gt;" Usage="iWithHealthyHttpResponseStatusCodeRangesBeta.WithHealthyHttpResponseStatusCodeRange (from, to)" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; Microsoft::Azure::Management::Network::Fluent::ApplicationGatewayProbe::Definition::IWithAttach&lt;ReturnT&gt; ^ WithHealthyHttpResponseStatusCodeRange(int from, int to);" />
-      <MemberSignature Language="C++ CX" Value="public:&#xA; Microsoft::Azure::Management::Network::Fluent::ApplicationGatewayProbe::Definition::IWithAttach&lt;ReturnT&gt; ^ WithHealthyHttpResponseStatusCodeRange(int from, int to);" />
-      <MemberSignature Language="C++ WINRT" Value="Microsoft::Azure::Management::Network::Fluent::ApplicationGatewayProbe::Definition::IWithAttach&lt;ReturnT&gt; WithHealthyHttpResponseStatusCodeRange(int from, int to);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Network.Fluent</AssemblyName>
-        <AssemblyVersion>1.0.0.60</AssemblyVersion>
+        <AssemblyVersion>1.0.0.61</AssemblyVersion>
+        <AssemblyVersion>1.0.0.62</AssemblyVersion>
+        <AssemblyVersion>1.0.0.63</AssemblyVersion>
+        <AssemblyVersion>1.0.0.64</AssemblyVersion>
+        <AssemblyVersion>1.0.0.65</AssemblyVersion>
+        <AssemblyVersion>1.0.0.66</AssemblyVersion>
+        <AssemblyVersion>1.0.0.67</AssemblyVersion>
+        <AssemblyVersion>1.0.0.68</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Azure.Management.Network.Fluent.ApplicationGatewayProbe.Definition.IWithAttach&lt;ReturnT&gt;</ReturnType>
@@ -74,11 +91,14 @@
         <Parameter Name="to" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="from">To be added.</param>
-        <param name="to">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="from">The lowest number in the range.</param>
+        <param name="to">The highest number in the range.</param>
+        <summary>
+            Adds the specified range of the backend's HTTP response status codes that are to be considered healthy.
+            </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
+        <return>The next stage of the definition.</return>
       </Docs>
     </Member>
     <Member MemberName="WithHealthyHttpResponseStatusCodeRanges">
@@ -87,11 +107,17 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Management.Network.Fluent.ApplicationGatewayProbe.Definition.IWithHealthyHttpResponseStatusCodeRangesBeta`1.WithHealthyHttpResponseStatusCodeRanges(System.Collections.Generic.ISet{System.String})" />
       <MemberSignature Language="VB.NET" Value="Public Function WithHealthyHttpResponseStatusCodeRanges (ranges As ISet(Of String)) As IWithAttach(Of ReturnT)" />
       <MemberSignature Language="F#" Value="abstract member WithHealthyHttpResponseStatusCodeRanges : System.Collections.Generic.ISet&lt;string&gt; -&gt; Microsoft.Azure.Management.Network.Fluent.ApplicationGatewayProbe.Definition.IWithAttach&lt;'ReturnT&gt;" Usage="iWithHealthyHttpResponseStatusCodeRangesBeta.WithHealthyHttpResponseStatusCodeRanges ranges" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; Microsoft::Azure::Management::Network::Fluent::ApplicationGatewayProbe::Definition::IWithAttach&lt;ReturnT&gt; ^ WithHealthyHttpResponseStatusCodeRanges(System::Collections::Generic::ISet&lt;System::String ^&gt; ^ ranges);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Network.Fluent</AssemblyName>
-        <AssemblyVersion>1.0.0.60</AssemblyVersion>
+        <AssemblyVersion>1.0.0.61</AssemblyVersion>
+        <AssemblyVersion>1.0.0.62</AssemblyVersion>
+        <AssemblyVersion>1.0.0.63</AssemblyVersion>
+        <AssemblyVersion>1.0.0.64</AssemblyVersion>
+        <AssemblyVersion>1.0.0.65</AssemblyVersion>
+        <AssemblyVersion>1.0.0.66</AssemblyVersion>
+        <AssemblyVersion>1.0.0.67</AssemblyVersion>
+        <AssemblyVersion>1.0.0.68</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Azure.Management.Network.Fluent.ApplicationGatewayProbe.Definition.IWithAttach&lt;ReturnT&gt;</ReturnType>
@@ -100,10 +126,13 @@
         <Parameter Name="ranges" Type="System.Collections.Generic.ISet&lt;System.String&gt;" />
       </Parameters>
       <Docs>
-        <param name="ranges">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="ranges">Number ranges expressed in the format "###-###", for example "200-399", which is the default.</param>
+        <summary>
+            Specifies the ranges of the backend's HTTP response status codes that are to be considered healthy.
+            </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
+        <return>The next stage of the definition.</return>
       </Docs>
     </Member>
   </Members>

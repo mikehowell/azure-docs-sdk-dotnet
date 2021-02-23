@@ -1,10 +1,9 @@
-﻿<Type Name="IpFilterAuthorizationRule" FullName="Microsoft.ServiceBus.Messaging.IpFilterAuthorizationRule">
-  <TypeSignature Language="C#" Value="public class IpFilterAuthorizationRule : Microsoft.ServiceBus.Messaging.AuthorizationRule, IEquatable&lt;Microsoft.ServiceBus.Messaging.IpFilterAuthorizationRule&gt;" />
-  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit IpFilterAuthorizationRule extends Microsoft.ServiceBus.Messaging.AuthorizationRule implements class System.IEquatable`1&lt;class Microsoft.ServiceBus.Messaging.IpFilterAuthorizationRule&gt;" />
+<Type Name="IpFilterAuthorizationRule" FullName="Microsoft.ServiceBus.Messaging.IpFilterAuthorizationRule">
+  <TypeSignature Language="C#" Value="public class IpFilterAuthorizationRule : Microsoft.ServiceBus.Messaging.AuthorizationRule" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit IpFilterAuthorizationRule extends Microsoft.ServiceBus.Messaging.AuthorizationRule" />
   <TypeSignature Language="DocId" Value="T:Microsoft.ServiceBus.Messaging.IpFilterAuthorizationRule" />
-  <TypeSignature Language="VB.NET" Value="Public Class IpFilterAuthorizationRule&#xA;Inherits AuthorizationRule&#xA;Implements IEquatable(Of IpFilterAuthorizationRule)" />
-  <TypeSignature Language="F#" Value="type IpFilterAuthorizationRule = class&#xA;    inherit AuthorizationRule&#xA;    interface IEquatable&lt;IpFilterAuthorizationRule&gt;" />
-  <TypeSignature Language="C++ CLI" Value="public ref class IpFilterAuthorizationRule : Microsoft::ServiceBus::Messaging::AuthorizationRule, IEquatable&lt;Microsoft::ServiceBus::Messaging::IpFilterAuthorizationRule ^&gt;" />
+  <TypeSignature Language="VB.NET" Value="Public Class IpFilterAuthorizationRule&#xA;Inherits AuthorizationRule" />
+  <TypeSignature Language="F#" Value="type IpFilterAuthorizationRule = class&#xA;    inherit AuthorizationRule" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.ServiceBus</AssemblyName>
     <AssemblyVersion>3.0.0.0</AssemblyVersion>
@@ -12,14 +11,11 @@
   <Base>
     <BaseTypeName>Microsoft.ServiceBus.Messaging.AuthorizationRule</BaseTypeName>
   </Base>
-  <Interfaces>
-    <Interface>
-      <InterfaceName>System.IEquatable&lt;Microsoft.ServiceBus.Messaging.IpFilterAuthorizationRule&gt;</InterfaceName>
-    </Interface>
-  </Interfaces>
+  <Interfaces />
   <Attributes>
     <Attribute>
-      <AttributeName>System.Runtime.Serialization.DataContract(Name="IpFilterAuthorizationRule", Namespace="http://schemas.microsoft.com/netservices/2010/10/servicebus/connect")</AttributeName>
+      <AttributeName Language="C#">[System.Runtime.Serialization.DataContract(Name="IpFilterAuthorizationRule", Namespace="http://schemas.microsoft.com/netservices/2010/10/servicebus/connect")]</AttributeName>
+      <AttributeName Language="F#">[&lt;System.Runtime.Serialization.DataContract(Name="IpFilterAuthorizationRule", Namespace="http://schemas.microsoft.com/netservices/2010/10/servicebus/connect")&gt;]</AttributeName>
     </Attribute>
   </Attributes>
   <Docs>
@@ -33,9 +29,6 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.ServiceBus.Messaging.IpFilterAuthorizationRule.#ctor(System.String,Microsoft.ServiceBus.Messaging.IpFilterActionType,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (filterName As String, action As IpFilterActionType, ipMask As String)" />
       <MemberSignature Language="F#" Value="new Microsoft.ServiceBus.Messaging.IpFilterAuthorizationRule : string * Microsoft.ServiceBus.Messaging.IpFilterActionType * string -&gt; Microsoft.ServiceBus.Messaging.IpFilterAuthorizationRule" Usage="new Microsoft.ServiceBus.Messaging.IpFilterAuthorizationRule (filterName, action, ipMask)" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; IpFilterAuthorizationRule(System::String ^ filterName, Microsoft::ServiceBus::Messaging::IpFilterActionType action, System::String ^ ipMask);" />
-      <MemberSignature Language="C++ CX" Value="public:&#xA; IpFilterAuthorizationRule(Platform::String ^ filterName, Microsoft::ServiceBus::Messaging::IpFilterActionType action, Platform::String ^ ipMask);" />
-      <MemberSignature Language="C++ WINRT" Value=" IpFilterAuthorizationRule(std::wstring const &amp; filterName, Microsoft::ServiceBus::Messaging::IpFilterActionType action, std::wstring const &amp; ipMask);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.ServiceBus</AssemblyName>
@@ -60,8 +53,6 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.ServiceBus.Messaging.IpFilterAuthorizationRule.Action" />
       <MemberSignature Language="VB.NET" Value="Public Property Action As IpFilterActionType" />
       <MemberSignature Language="F#" Value="member this.Action : Microsoft.ServiceBus.Messaging.IpFilterActionType with get, set" Usage="Microsoft.ServiceBus.Messaging.IpFilterAuthorizationRule.Action" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::ServiceBus::Messaging::IpFilterActionType Action { Microsoft::ServiceBus::Messaging::IpFilterActionType get(); void set(Microsoft::ServiceBus::Messaging::IpFilterActionType value); };" />
-      <MemberSignature Language="C++ CX" Value="public:&#xA; property Microsoft::ServiceBus::Messaging::IpFilterActionType Action { Microsoft::ServiceBus::Messaging::IpFilterActionType get(); void set(Microsoft::ServiceBus::Messaging::IpFilterActionType value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.ServiceBus</AssemblyName>
@@ -69,7 +60,8 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>System.Runtime.Serialization.DataMember(IsRequired=true, Name="Action", Order=1002)</AttributeName>
+          <AttributeName Language="C#">[System.Runtime.Serialization.DataMember(IsRequired=true, Name="Action", Order=1002)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Runtime.Serialization.DataMember(IsRequired=true, Name="Action", Order=1002)&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -82,42 +74,11 @@
       </Docs>
     </Member>
     <Member MemberName="Equals">
-      <MemberSignature Language="C#" Value="public bool Equals (Microsoft.ServiceBus.Messaging.IpFilterAuthorizationRule other);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool Equals(class Microsoft.ServiceBus.Messaging.IpFilterAuthorizationRule other) cil managed" />
-      <MemberSignature Language="DocId" Value="M:Microsoft.ServiceBus.Messaging.IpFilterAuthorizationRule.Equals(Microsoft.ServiceBus.Messaging.IpFilterAuthorizationRule)" />
-      <MemberSignature Language="VB.NET" Value="Public Function Equals (other As IpFilterAuthorizationRule) As Boolean" />
-      <MemberSignature Language="F#" Value="override this.Equals : Microsoft.ServiceBus.Messaging.IpFilterAuthorizationRule -&gt; bool" Usage="ipFilterAuthorizationRule.Equals other" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual bool Equals(Microsoft::ServiceBus::Messaging::IpFilterAuthorizationRule ^ other);" />
-      <MemberType>Method</MemberType>
-      <Implements>
-        <InterfaceMember>M:System.IEquatable`1.Equals(`0)</InterfaceMember>
-      </Implements>
-      <AssemblyInfo>
-        <AssemblyName>Microsoft.ServiceBus</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <ReturnValue>
-        <ReturnType>System.Boolean</ReturnType>
-      </ReturnValue>
-      <Parameters>
-        <Parameter Name="other" Type="Microsoft.ServiceBus.Messaging.IpFilterAuthorizationRule" />
-      </Parameters>
-      <Docs>
-        <param name="other">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
-      </Docs>
-    </Member>
-    <Member MemberName="Equals">
       <MemberSignature Language="C#" Value="public override bool Equals (object obj);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance bool Equals(object obj) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.ServiceBus.Messaging.IpFilterAuthorizationRule.Equals(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function Equals (obj As Object) As Boolean" />
       <MemberSignature Language="F#" Value="override this.Equals : obj -&gt; bool" Usage="ipFilterAuthorizationRule.Equals obj" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool Equals(System::Object ^ obj);" />
-      <MemberSignature Language="C++ CX" Value="public:&#xA; override bool Equals(Platform::Object ^ obj);" />
-      <MemberSignature Language="C++ WINRT" Value=" override bool Equals(winrt::Windows::Foundation::IInspectable const &amp; obj);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.ServiceBus</AssemblyName>
@@ -142,9 +103,6 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.ServiceBus.Messaging.IpFilterAuthorizationRule.GetHashCode" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function GetHashCode () As Integer" />
       <MemberSignature Language="F#" Value="override this.GetHashCode : unit -&gt; int" Usage="ipFilterAuthorizationRule.GetHashCode " />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; override int GetHashCode();" />
-      <MemberSignature Language="C++ CX" Value="public:&#xA; override int GetHashCode();" />
-      <MemberSignature Language="C++ WINRT" Value=" override int GetHashCode();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.ServiceBus</AssemblyName>
@@ -166,8 +124,6 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.ServiceBus.Messaging.IpFilterAuthorizationRule.IpMaskString" />
       <MemberSignature Language="VB.NET" Value="Public Property IpMaskString As String" />
       <MemberSignature Language="F#" Value="member this.IpMaskString : string with get, set" Usage="Microsoft.ServiceBus.Messaging.IpFilterAuthorizationRule.IpMaskString" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ IpMaskString { System::String ^ get(); void set(System::String ^ value); };" />
-      <MemberSignature Language="C++ CX" Value="public:&#xA; property Platform::String ^ IpMaskString { Platform::String ^ get(); void set(Platform::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.ServiceBus</AssemblyName>
@@ -188,7 +144,6 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.ServiceBus.Messaging.IpFilterAuthorizationRule.IsInRange(System.Net.IPAddress)" />
       <MemberSignature Language="VB.NET" Value="Public Function IsInRange (ipAddr As IPAddress) As Boolean" />
       <MemberSignature Language="F#" Value="member this.IsInRange : System.Net.IPAddress -&gt; bool" Usage="ipFilterAuthorizationRule.IsInRange ipAddr" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; bool IsInRange(System::Net::IPAddress ^ ipAddr);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.ServiceBus</AssemblyName>
@@ -213,8 +168,6 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.ServiceBus.Messaging.IpFilterAuthorizationRule.KeyName" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Property KeyName As String" />
       <MemberSignature Language="F#" Value="member this.KeyName : string with get, set" Usage="Microsoft.ServiceBus.Messaging.IpFilterAuthorizationRule.KeyName" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ KeyName { System::String ^ get(); void set(System::String ^ value); };" />
-      <MemberSignature Language="C++ CX" Value="public:&#xA; virtual property Platform::String ^ KeyName { Platform::String ^ get(); void set(Platform::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.ServiceBus</AssemblyName>

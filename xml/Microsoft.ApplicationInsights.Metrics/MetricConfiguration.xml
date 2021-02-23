@@ -1,4 +1,4 @@
-﻿<Type Name="MetricConfiguration" FullName="Microsoft.ApplicationInsights.Metrics.MetricConfiguration">
+<Type Name="MetricConfiguration" FullName="Microsoft.ApplicationInsights.Metrics.MetricConfiguration">
   <TypeSignature Language="C#" Value="public class MetricConfiguration : IEquatable&lt;Microsoft.ApplicationInsights.Metrics.MetricConfiguration&gt;" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit MetricConfiguration extends System.Object implements class System.IEquatable`1&lt;class Microsoft.ApplicationInsights.Metrics.MetricConfiguration&gt;" />
   <TypeSignature Language="DocId" Value="T:Microsoft.ApplicationInsights.Metrics.MetricConfiguration" />
@@ -6,7 +6,15 @@
   <TypeSignature Language="F#" Value="type MetricConfiguration = class&#xA;    interface IEquatable&lt;MetricConfiguration&gt;" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.ApplicationInsights</AssemblyName>
-    <AssemblyVersion>2.6.0.0</AssemblyVersion>
+    <AssemblyVersion>2.11.0.0</AssemblyVersion>
+    <AssemblyVersion>2.12.0.21496</AssemblyVersion>
+    <AssemblyVersion>2.12.1.36699</AssemblyVersion>
+    <AssemblyVersion>2.13.0.10578</AssemblyVersion>
+    <AssemblyVersion>2.13.1.12554</AssemblyVersion>
+    <AssemblyVersion>2.14.0.17971</AssemblyVersion>
+    <AssemblyVersion>2.15.0.44797</AssemblyVersion>
+    <AssemblyVersion>2.16.0.18277</AssemblyVersion>
+    <AssemblyVersion>2.17.0.146</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
@@ -17,10 +25,49 @@
     </Interface>
   </Interfaces>
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Encapsulates the configuration for a metric and its respective data time series.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public MetricConfiguration (int seriesCountLimit, System.Collections.Generic.IEnumerable&lt;int&gt; valuesPerDimensionLimits, Microsoft.ApplicationInsights.Metrics.IMetricSeriesConfiguration seriesConfig);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(int32 seriesCountLimit, class System.Collections.Generic.IEnumerable`1&lt;int32&gt; valuesPerDimensionLimits, class Microsoft.ApplicationInsights.Metrics.IMetricSeriesConfiguration seriesConfig) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.ApplicationInsights.Metrics.MetricConfiguration.#ctor(System.Int32,System.Collections.Generic.IEnumerable{System.Int32},Microsoft.ApplicationInsights.Metrics.IMetricSeriesConfiguration)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (seriesCountLimit As Integer, valuesPerDimensionLimits As IEnumerable(Of Integer), seriesConfig As IMetricSeriesConfiguration)" />
+      <MemberSignature Language="F#" Value="new Microsoft.ApplicationInsights.Metrics.MetricConfiguration : int * seq&lt;int&gt; * Microsoft.ApplicationInsights.Metrics.IMetricSeriesConfiguration -&gt; Microsoft.ApplicationInsights.Metrics.MetricConfiguration" Usage="new Microsoft.ApplicationInsights.Metrics.MetricConfiguration (seriesCountLimit, valuesPerDimensionLimits, seriesConfig)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.ApplicationInsights</AssemblyName>
+        <AssemblyVersion>2.11.0.0</AssemblyVersion>
+        <AssemblyVersion>2.12.0.21496</AssemblyVersion>
+        <AssemblyVersion>2.12.1.36699</AssemblyVersion>
+        <AssemblyVersion>2.13.0.10578</AssemblyVersion>
+        <AssemblyVersion>2.13.1.12554</AssemblyVersion>
+        <AssemblyVersion>2.14.0.17971</AssemblyVersion>
+        <AssemblyVersion>2.15.0.44797</AssemblyVersion>
+        <AssemblyVersion>2.16.0.18277</AssemblyVersion>
+        <AssemblyVersion>2.17.0.146</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="seriesCountLimit" Type="System.Int32" />
+        <Parameter Name="valuesPerDimensionLimits" Type="System.Collections.Generic.IEnumerable&lt;System.Int32&gt;" />
+        <Parameter Name="seriesConfig" Type="Microsoft.ApplicationInsights.Metrics.IMetricSeriesConfiguration" />
+      </Parameters>
+      <Docs>
+        <param name="seriesCountLimit">How many data time series a metric can contain as a maximum.
+            Once this limit is reached, calls to <c>TrackValue(..)</c>, <c>TryGetDataSeries(..)</c> and similar
+            that would normally result in new series will return <c>false</c>.</param>
+        <param name="valuesPerDimensionLimits">How many different values each of the dimensions of a metric can
+            have as a maximum. If this enumeration contains less elements than the number of supported dimensions,
+            then the last specified element is replicated for subsequent dimensions. If this enumeration contains
+            too many elements, superfluous elements are ignored.
+            Once this limit is reached, calls to <c>TrackValue(..)</c>, <c>TryGetDataSeries(..)</c> and similar
+            that would normally result in new series will return <c>false</c>.</param>
+        <param name="seriesConfig">The configuration for how each series of this metric should be aggregated.</param>
+        <summary>Creates a new instance of <c>MetricConfiguration</c>.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public MetricConfiguration (int seriesCountLimit, int valuesPerDimensionLimit, Microsoft.ApplicationInsights.Metrics.IMetricSeriesConfiguration seriesConfig);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(int32 seriesCountLimit, int32 valuesPerDimensionLimit, class Microsoft.ApplicationInsights.Metrics.IMetricSeriesConfiguration seriesConfig) cil managed" />
@@ -30,7 +77,15 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.ApplicationInsights</AssemblyName>
-        <AssemblyVersion>2.6.0.0</AssemblyVersion>
+        <AssemblyVersion>2.11.0.0</AssemblyVersion>
+        <AssemblyVersion>2.12.0.21496</AssemblyVersion>
+        <AssemblyVersion>2.12.1.36699</AssemblyVersion>
+        <AssemblyVersion>2.13.0.10578</AssemblyVersion>
+        <AssemblyVersion>2.13.1.12554</AssemblyVersion>
+        <AssemblyVersion>2.14.0.17971</AssemblyVersion>
+        <AssemblyVersion>2.15.0.44797</AssemblyVersion>
+        <AssemblyVersion>2.16.0.18277</AssemblyVersion>
+        <AssemblyVersion>2.17.0.146</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="seriesCountLimit" Type="System.Int32" />
@@ -38,10 +93,15 @@
         <Parameter Name="seriesConfig" Type="Microsoft.ApplicationInsights.Metrics.IMetricSeriesConfiguration" />
       </Parameters>
       <Docs>
-        <param name="seriesCountLimit">To be added.</param>
-        <param name="valuesPerDimensionLimit">To be added.</param>
-        <param name="seriesConfig">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="seriesCountLimit">How many data time series a metric can contain as a maximum.
+            Once this limit is reached, calls to <c>TrackValue(..)</c>, <c>TryGetDataSeries(..)</c> and similar
+            that would normally result in new series will return <c>false</c>.</param>
+        <param name="valuesPerDimensionLimit">How many different values each of the dimensions of a metric can
+            have as a maximum.
+            Once this limit is reached, calls to <c>TrackValue(..)</c>, <c>TryGetDataSeries(..)</c> and similar
+            that would normally result in new series will return <c>false</c>.</param>
+        <param name="seriesConfig">The configuration for how each series of this metric should be aggregated.</param>
+        <summary>Creates a new instance of <c>MetricConfiguration</c>.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -57,7 +117,15 @@
       </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.ApplicationInsights</AssemblyName>
-        <AssemblyVersion>2.6.0.0</AssemblyVersion>
+        <AssemblyVersion>2.11.0.0</AssemblyVersion>
+        <AssemblyVersion>2.12.0.21496</AssemblyVersion>
+        <AssemblyVersion>2.12.1.36699</AssemblyVersion>
+        <AssemblyVersion>2.13.0.10578</AssemblyVersion>
+        <AssemblyVersion>2.13.1.12554</AssemblyVersion>
+        <AssemblyVersion>2.14.0.17971</AssemblyVersion>
+        <AssemblyVersion>2.15.0.44797</AssemblyVersion>
+        <AssemblyVersion>2.16.0.18277</AssemblyVersion>
+        <AssemblyVersion>2.17.0.146</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
@@ -66,9 +134,9 @@
         <Parameter Name="other" Type="Microsoft.ApplicationInsights.Metrics.MetricConfiguration" />
       </Parameters>
       <Docs>
-        <param name="other">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="other">A configuration object.</param>
+        <summary>Gets whether tho objects describe identical configuration.</summary>
+        <returns>Whether tho objects describe identical configuration.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -81,7 +149,15 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.ApplicationInsights</AssemblyName>
-        <AssemblyVersion>2.6.0.0</AssemblyVersion>
+        <AssemblyVersion>2.11.0.0</AssemblyVersion>
+        <AssemblyVersion>2.12.0.21496</AssemblyVersion>
+        <AssemblyVersion>2.12.1.36699</AssemblyVersion>
+        <AssemblyVersion>2.13.0.10578</AssemblyVersion>
+        <AssemblyVersion>2.13.1.12554</AssemblyVersion>
+        <AssemblyVersion>2.14.0.17971</AssemblyVersion>
+        <AssemblyVersion>2.15.0.44797</AssemblyVersion>
+        <AssemblyVersion>2.16.0.18277</AssemblyVersion>
+        <AssemblyVersion>2.17.0.146</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
@@ -90,9 +166,9 @@
         <Parameter Name="obj" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="obj">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="obj">A configuration object.</param>
+        <summary>Gets whether tho objects describe identical configuration.</summary>
+        <returns>Whether tho objects describe identical configuration.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -105,15 +181,57 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.ApplicationInsights</AssemblyName>
-        <AssemblyVersion>2.6.0.0</AssemblyVersion>
+        <AssemblyVersion>2.11.0.0</AssemblyVersion>
+        <AssemblyVersion>2.12.0.21496</AssemblyVersion>
+        <AssemblyVersion>2.12.1.36699</AssemblyVersion>
+        <AssemblyVersion>2.13.0.10578</AssemblyVersion>
+        <AssemblyVersion>2.13.1.12554</AssemblyVersion>
+        <AssemblyVersion>2.14.0.17971</AssemblyVersion>
+        <AssemblyVersion>2.15.0.44797</AssemblyVersion>
+        <AssemblyVersion>2.16.0.18277</AssemblyVersion>
+        <AssemblyVersion>2.17.0.146</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>Gets the Hash Code for this object.</summary>
+        <returns>The Hash Code for this object.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetValuesPerDimensionLimit">
+      <MemberSignature Language="C#" Value="public int GetValuesPerDimensionLimit (int dimensionNumber);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance int32 GetValuesPerDimensionLimit(int32 dimensionNumber) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.ApplicationInsights.Metrics.MetricConfiguration.GetValuesPerDimensionLimit(System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetValuesPerDimensionLimit (dimensionNumber As Integer) As Integer" />
+      <MemberSignature Language="F#" Value="member this.GetValuesPerDimensionLimit : int -&gt; int" Usage="metricConfiguration.GetValuesPerDimensionLimit dimensionNumber" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.ApplicationInsights</AssemblyName>
+        <AssemblyVersion>2.11.0.0</AssemblyVersion>
+        <AssemblyVersion>2.12.0.21496</AssemblyVersion>
+        <AssemblyVersion>2.12.1.36699</AssemblyVersion>
+        <AssemblyVersion>2.13.0.10578</AssemblyVersion>
+        <AssemblyVersion>2.13.1.12554</AssemblyVersion>
+        <AssemblyVersion>2.14.0.17971</AssemblyVersion>
+        <AssemblyVersion>2.15.0.44797</AssemblyVersion>
+        <AssemblyVersion>2.16.0.18277</AssemblyVersion>
+        <AssemblyVersion>2.17.0.146</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="dimensionNumber" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="dimensionNumber">1-based dimension number. Currently it can be <c>1</c>...<c>10</c>.</param>
+        <summary>
+            Gets the maximum number of distinct values for a dimension identified by the specified 1-based dimension index.
+            </summary>
+        <returns>The maximum number of distinct values for the specified dimension.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -126,13 +244,21 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.ApplicationInsights</AssemblyName>
-        <AssemblyVersion>2.6.0.0</AssemblyVersion>
+        <AssemblyVersion>2.11.0.0</AssemblyVersion>
+        <AssemblyVersion>2.12.0.21496</AssemblyVersion>
+        <AssemblyVersion>2.12.1.36699</AssemblyVersion>
+        <AssemblyVersion>2.13.0.10578</AssemblyVersion>
+        <AssemblyVersion>2.13.1.12554</AssemblyVersion>
+        <AssemblyVersion>2.14.0.17971</AssemblyVersion>
+        <AssemblyVersion>2.15.0.44797</AssemblyVersion>
+        <AssemblyVersion>2.16.0.18277</AssemblyVersion>
+        <AssemblyVersion>2.17.0.146</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.ApplicationInsights.Metrics.IMetricSeriesConfiguration</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Gets the configuration for how each series of this metric should be aggregated.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -146,33 +272,23 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.ApplicationInsights</AssemblyName>
-        <AssemblyVersion>2.6.0.0</AssemblyVersion>
+        <AssemblyVersion>2.11.0.0</AssemblyVersion>
+        <AssemblyVersion>2.12.0.21496</AssemblyVersion>
+        <AssemblyVersion>2.12.1.36699</AssemblyVersion>
+        <AssemblyVersion>2.13.0.10578</AssemblyVersion>
+        <AssemblyVersion>2.13.1.12554</AssemblyVersion>
+        <AssemblyVersion>2.14.0.17971</AssemblyVersion>
+        <AssemblyVersion>2.15.0.44797</AssemblyVersion>
+        <AssemblyVersion>2.16.0.18277</AssemblyVersion>
+        <AssemblyVersion>2.17.0.146</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
-      </Docs>
-    </Member>
-    <Member MemberName="ValuesPerDimensionLimit">
-      <MemberSignature Language="C#" Value="public int ValuesPerDimensionLimit { get; }" />
-      <MemberSignature Language="ILAsm" Value=".property instance int32 ValuesPerDimensionLimit" />
-      <MemberSignature Language="DocId" Value="P:Microsoft.ApplicationInsights.Metrics.MetricConfiguration.ValuesPerDimensionLimit" />
-      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ValuesPerDimensionLimit As Integer" />
-      <MemberSignature Language="F#" Value="member this.ValuesPerDimensionLimit : int" Usage="Microsoft.ApplicationInsights.Metrics.MetricConfiguration.ValuesPerDimensionLimit" />
-      <MemberType>Property</MemberType>
-      <AssemblyInfo>
-        <AssemblyName>Microsoft.ApplicationInsights</AssemblyName>
-        <AssemblyVersion>2.6.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <ReturnValue>
-        <ReturnType>System.Int32</ReturnType>
-      </ReturnValue>
-      <Docs>
-        <summary>To be added.</summary>
+        <summary>Gets how many data time series a metric can contain as a maximum.
+            Once this limit is reached, calls to <c>TrackValue(..)</c>, <c>TryGetDataSeries(..)</c> and similar
+            that would normally result in new series will return <c>false</c>.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>

@@ -1,12 +1,9 @@
-﻿<Type Name="ActorTypeInformation" FullName="Microsoft.ServiceFabric.Actors.Runtime.ActorTypeInformation">
+<Type Name="ActorTypeInformation" FullName="Microsoft.ServiceFabric.Actors.Runtime.ActorTypeInformation">
   <TypeSignature Language="C#" Value="public sealed class ActorTypeInformation" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit ActorTypeInformation extends System.Object" />
   <TypeSignature Language="DocId" Value="T:Microsoft.ServiceFabric.Actors.Runtime.ActorTypeInformation" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class ActorTypeInformation" />
   <TypeSignature Language="F#" Value="type ActorTypeInformation = class" />
-  <TypeSignature Language="C++ CLI" Value="public ref class ActorTypeInformation sealed" />
-  <TypeSignature Language="C++ CX" Value="public ref class ActorTypeInformation sealed" />
-  <TypeSignature Language="C++ WINRT" Value="class ActorTypeInformation sealed" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.ServiceFabric.Actors</AssemblyName>
     <AssemblyVersion>6.0.0.0</AssemblyVersion>
@@ -27,9 +24,6 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.ServiceFabric.Actors.Runtime.ActorTypeInformation.#ctor" />
       <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; ActorTypeInformation();" />
-      <MemberSignature Language="C++ CX" Value="public:&#xA; ActorTypeInformation();" />
-      <MemberSignature Language="C++ WINRT" Value=" ActorTypeInformation();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.ServiceFabric.Actors</AssemblyName>
@@ -38,7 +32,7 @@
       <Parameters />
       <Docs>
         <summary>
-            Initializes a new instance of the ActorTypeInformation class.
+            Initializes a new instance of the <see cref="T:Microsoft.ServiceFabric.Actors.Runtime.ActorTypeInformation" /> class.
             </summary>
         <remarks>To be added.</remarks>
       </Docs>
@@ -49,7 +43,6 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.ServiceFabric.Actors.Runtime.ActorTypeInformation.EventInterfaceTypes" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property EventInterfaceTypes As IEnumerable(Of Type)" />
       <MemberSignature Language="F#" Value="member this.EventInterfaceTypes : seq&lt;Type&gt;" Usage="Microsoft.ServiceFabric.Actors.Runtime.ActorTypeInformation.EventInterfaceTypes" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::Generic::IEnumerable&lt;Type ^&gt; ^ EventInterfaceTypes { System::Collections::Generic::IEnumerable&lt;Type ^&gt; ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.ServiceFabric.Actors</AssemblyName>
@@ -72,8 +65,6 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.ServiceFabric.Actors.Runtime.ActorTypeInformation.Get(System.Type)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function Get (actorType As Type) As ActorTypeInformation" />
       <MemberSignature Language="F#" Value="static member Get : Type -&gt; Microsoft.ServiceFabric.Actors.Runtime.ActorTypeInformation" Usage="Microsoft.ServiceFabric.Actors.Runtime.ActorTypeInformation.Get actorType" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; static Microsoft::ServiceFabric::Actors::Runtime::ActorTypeInformation ^ Get(Type ^ actorType);" />
-      <MemberSignature Language="C++ CX" Value="public:&#xA; static Microsoft::ServiceFabric::Actors::Runtime::ActorTypeInformation ^ Get(Platform::Type ^ actorType);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.ServiceFabric.Actors</AssemblyName>
@@ -95,9 +86,9 @@
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentException">
           <para>When <see cref="P:System.Type.BaseType" /> for actorType is not of type <see cref="T:Microsoft.ServiceFabric.Actors.Runtime.Actor" />.</para>
-          <para>When actorType does not implement an interface deriving from <see cref="T:Microsoft.ServiceFabric.Actors.IActor" /> 
+          <para>When actorType does not implement an interface deriving from <see cref="T:Microsoft.ServiceFabric.Actors.IActor" />
             and is not marked as abstract.</para>
-          <para>When actorType implements more than one interface which derives from <see cref="T:Microsoft.ServiceFabric.Actors.IActor" /> 
+          <para>When actorType implements more than one interface which derives from <see cref="T:Microsoft.ServiceFabric.Actors.IActor" />
             but doesn't have <see cref="T:Microsoft.ServiceFabric.Actors.Runtime.ActorServiceAttribute" />.</para>
         </exception>
       </Docs>
@@ -108,8 +99,6 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.ServiceFabric.Actors.Runtime.ActorTypeInformation.ImplementationType" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ImplementationType As Type" />
       <MemberSignature Language="F#" Value="member this.ImplementationType : Type" Usage="Microsoft.ServiceFabric.Actors.Runtime.ActorTypeInformation.ImplementationType" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Type ^ ImplementationType { Type ^ get(); };" />
-      <MemberSignature Language="C++ CX" Value="public:&#xA; property Platform::Type ^ ImplementationType { Platform::Type ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.ServiceFabric.Actors</AssemblyName>
@@ -132,7 +121,6 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.ServiceFabric.Actors.Runtime.ActorTypeInformation.InterfaceTypes" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property InterfaceTypes As IEnumerable(Of Type)" />
       <MemberSignature Language="F#" Value="member this.InterfaceTypes : seq&lt;Type&gt;" Usage="Microsoft.ServiceFabric.Actors.Runtime.ActorTypeInformation.InterfaceTypes" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::Generic::IEnumerable&lt;Type ^&gt; ^ InterfaceTypes { System::Collections::Generic::IEnumerable&lt;Type ^&gt; ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.ServiceFabric.Actors</AssemblyName>
@@ -155,8 +143,6 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.ServiceFabric.Actors.Runtime.ActorTypeInformation.IsAbstract" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsAbstract As Boolean" />
       <MemberSignature Language="F#" Value="member this.IsAbstract : bool" Usage="Microsoft.ServiceFabric.Actors.Runtime.ActorTypeInformation.IsAbstract" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsAbstract { bool get(); };" />
-      <MemberSignature Language="C++ CX" Value="public:&#xA; property bool IsAbstract { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.ServiceFabric.Actors</AssemblyName>
@@ -167,7 +153,7 @@
       </ReturnValue>
       <Docs>
         <summary>
-            Gets a value whether the class implementing actor is abstract.
+            Gets a value indicating whether the class implementing actor is abstract.
             </summary>
         <value>true if the class implementing actor is abstract, otherwise false.</value>
         <remarks>To be added.</remarks>
@@ -179,8 +165,6 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.ServiceFabric.Actors.Runtime.ActorTypeInformation.IsRemindable" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsRemindable As Boolean" />
       <MemberSignature Language="F#" Value="member this.IsRemindable : bool" Usage="Microsoft.ServiceFabric.Actors.Runtime.ActorTypeInformation.IsRemindable" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsRemindable { bool get(); };" />
-      <MemberSignature Language="C++ CX" Value="public:&#xA; property bool IsRemindable { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.ServiceFabric.Actors</AssemblyName>
@@ -191,7 +175,7 @@
       </ReturnValue>
       <Docs>
         <summary>
-            Gets a value whether the actor class implements <see cref="T:Microsoft.ServiceFabric.Actors.Runtime.IRemindable" />.
+            Gets a value indicating whether the actor class implements <see cref="T:Microsoft.ServiceFabric.Actors.Runtime.IRemindable" />.
             </summary>
         <value>true if the actor class implements <see cref="T:Microsoft.ServiceFabric.Actors.Runtime.IRemindable" />, otherwise false.</value>
         <remarks>To be added.</remarks>
@@ -203,8 +187,6 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.ServiceFabric.Actors.Runtime.ActorTypeInformation.ServiceName" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ServiceName As String" />
       <MemberSignature Language="F#" Value="member this.ServiceName : string" Usage="Microsoft.ServiceFabric.Actors.Runtime.ActorTypeInformation.ServiceName" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ ServiceName { System::String ^ get(); };" />
-      <MemberSignature Language="C++ CX" Value="public:&#xA; property Platform::String ^ ServiceName { Platform::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.ServiceFabric.Actors</AssemblyName>
@@ -227,8 +209,6 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.ServiceFabric.Actors.Runtime.ActorTypeInformation.StatePersistence" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property StatePersistence As StatePersistence" />
       <MemberSignature Language="F#" Value="member this.StatePersistence : Microsoft.ServiceFabric.Actors.Runtime.StatePersistence" Usage="Microsoft.ServiceFabric.Actors.Runtime.ActorTypeInformation.StatePersistence" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::ServiceFabric::Actors::Runtime::StatePersistence StatePersistence { Microsoft::ServiceFabric::Actors::Runtime::StatePersistence get(); };" />
-      <MemberSignature Language="C++ CX" Value="public:&#xA; property Microsoft::ServiceFabric::Actors::Runtime::StatePersistence StatePersistence { Microsoft::ServiceFabric::Actors::Runtime::StatePersistence get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.ServiceFabric.Actors</AssemblyName>
@@ -250,9 +230,7 @@
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool TryGet(class System.Type actorType, [out] class Microsoft.ServiceFabric.Actors.Runtime.ActorTypeInformation&amp; actorTypeInformation) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.ServiceFabric.Actors.Runtime.ActorTypeInformation.TryGet(System.Type,Microsoft.ServiceFabric.Actors.Runtime.ActorTypeInformation@)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function TryGet (actorType As Type, ByRef actorTypeInformation As ActorTypeInformation) As Boolean" />
-      <MemberSignature Language="F#" Value="static member TryGet : Type *  -&gt; bool" Usage="Microsoft.ServiceFabric.Actors.Runtime.ActorTypeInformation.TryGet (actorType, actorTypeInformation)" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool TryGet(Type ^ actorType, [Runtime::InteropServices::Out] Microsoft::ServiceFabric::Actors::Runtime::ActorTypeInformation ^ % actorTypeInformation);" />
-      <MemberSignature Language="C++ CX" Value="public:&#xA; static bool TryGet(Platform::Type ^ actorType, [Runtime::InteropServices::Out] Microsoft::ServiceFabric::Actors::Runtime::ActorTypeInformation ^ &amp;  actorTypeInformation);" />
+      <MemberSignature Language="F#" Value="static member TryGet : Type * ActorTypeInformation -&gt; bool" Usage="Microsoft.ServiceFabric.Actors.Runtime.ActorTypeInformation.TryGet (actorType, actorTypeInformation)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.ServiceFabric.Actors</AssemblyName>
@@ -263,7 +241,7 @@
       </ReturnValue>
       <Parameters>
         <Parameter Name="actorType" Type="System.Type" />
-        <Parameter Name="actorTypeInformation" Type="Microsoft.ServiceFabric.Actors.Runtime.ActorTypeInformation&amp;" RefType="out" />
+        <Parameter Name="actorTypeInformation" Type="Microsoft.ServiceFabric.Actors.Runtime.ActorTypeInformation" RefType="out" />
       </Parameters>
       <Docs>
         <param name="actorType">The type of class implementing the actor to create ActorTypeInforamtion for.</param>
@@ -278,7 +256,7 @@
           <para>Creation of ActorTypeInformation from actorType will fail when </para>
           <para>1. <see cref="P:System.Type.BaseType" /> for actorType is not of type <see cref="T:Microsoft.ServiceFabric.Actors.Runtime.Actor" />.</para>
           <para>2. actorType does not implement an interface deriving from <see cref="T:Microsoft.ServiceFabric.Actors.IActor" /> and is not marked as abstract.</para>
-          <para>3. actorType implements more than one interface which derives from <see cref="T:Microsoft.ServiceFabric.Actors.IActor" /> 
+          <para>3. actorType implements more than one interface which derives from <see cref="T:Microsoft.ServiceFabric.Actors.IActor" />
             but doesn't have <see cref="T:Microsoft.ServiceFabric.Actors.Runtime.ActorServiceAttribute" />.</para>
         </remarks>
       </Docs>

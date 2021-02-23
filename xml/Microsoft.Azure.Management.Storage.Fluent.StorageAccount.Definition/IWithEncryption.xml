@@ -1,15 +1,19 @@
-﻿<Type Name="IWithEncryption" FullName="Microsoft.Azure.Management.Storage.Fluent.StorageAccount.Definition.IWithEncryption">
+<Type Name="IWithEncryption" FullName="Microsoft.Azure.Management.Storage.Fluent.StorageAccount.Definition.IWithEncryption">
   <TypeSignature Language="C#" Value="public interface IWithEncryption : Microsoft.Azure.Management.ResourceManager.Fluent.Core.IBeta, Microsoft.Azure.Management.Storage.Fluent.StorageAccount.Definition.IWithEncryptionBeta" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IWithEncryption implements class Microsoft.Azure.Management.ResourceManager.Fluent.Core.IBeta, class Microsoft.Azure.Management.Storage.Fluent.StorageAccount.Definition.IWithEncryptionBeta" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Azure.Management.Storage.Fluent.StorageAccount.Definition.IWithEncryption" />
   <TypeSignature Language="VB.NET" Value="Public Interface IWithEncryption&#xA;Implements IBeta, IWithEncryptionBeta" />
   <TypeSignature Language="F#" Value="type IWithEncryption = interface&#xA;    interface IWithEncryptionBeta&#xA;    interface IBeta" />
-  <TypeSignature Language="C++ CLI" Value="public interface class IWithEncryption : Microsoft::Azure::Management::ResourceManager::Fluent::Core::IBeta, Microsoft::Azure::Management::Storage::Fluent::StorageAccount::Definition::IWithEncryptionBeta" />
-  <TypeSignature Language="C++ CX" Value="public interface class IWithEncryption : Microsoft::Azure::Management::ResourceManager::Fluent::Core::IBeta, Microsoft::Azure::Management::Storage::Fluent::StorageAccount::Definition::IWithEncryptionBeta" />
-  <TypeSignature Language="C++ WINRT" Value="__interface IWithEncryption : Microsoft::Azure::Management::ResourceManager::Fluent::Core::IBeta, Microsoft::Azure::Management::Storage::Fluent::StorageAccount::Definition::IWithEncryptionBeta" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Azure.Management.Storage.Fluent</AssemblyName>
-    <AssemblyVersion>1.0.0.60</AssemblyVersion>
+    <AssemblyVersion>1.0.0.61</AssemblyVersion>
+    <AssemblyVersion>1.0.0.62</AssemblyVersion>
+    <AssemblyVersion>1.0.0.63</AssemblyVersion>
+    <AssemblyVersion>1.0.0.64</AssemblyVersion>
+    <AssemblyVersion>1.0.0.65</AssemblyVersion>
+    <AssemblyVersion>1.0.0.66</AssemblyVersion>
+    <AssemblyVersion>1.0.0.67</AssemblyVersion>
+    <AssemblyVersion>1.0.0.68</AssemblyVersion>
   </AssemblyInfo>
   <Interfaces>
     <Interface>
@@ -21,7 +25,7 @@
   </Interfaces>
   <Docs>
     <summary>
-            A storage account definition specifying encryption setting.
+            The stage of a storage account definition allowing to specify encryption settings.
             </summary>
     <remarks>To be added.</remarks>
   </Docs>
@@ -32,17 +36,22 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Management.Storage.Fluent.StorageAccount.Definition.IWithEncryption.WithEncryption" />
       <MemberSignature Language="VB.NET" Value="Public Function WithEncryption () As IWithCreate" />
       <MemberSignature Language="F#" Value="abstract member WithEncryption : unit -&gt; Microsoft.Azure.Management.Storage.Fluent.StorageAccount.Definition.IWithCreate" Usage="iWithEncryption.WithEncryption " />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; Microsoft::Azure::Management::Storage::Fluent::StorageAccount::Definition::IWithCreate ^ WithEncryption();" />
-      <MemberSignature Language="C++ CX" Value="public:&#xA; Microsoft::Azure::Management::Storage::Fluent::StorageAccount::Definition::IWithCreate ^ WithEncryption();" />
-      <MemberSignature Language="C++ WINRT" Value="Microsoft::Azure::Management::Storage::Fluent::StorageAccount::Definition::IWithCreate WithEncryption();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Storage.Fluent</AssemblyName>
-        <AssemblyVersion>1.0.0.60</AssemblyVersion>
+        <AssemblyVersion>1.0.0.61</AssemblyVersion>
+        <AssemblyVersion>1.0.0.62</AssemblyVersion>
+        <AssemblyVersion>1.0.0.63</AssemblyVersion>
+        <AssemblyVersion>1.0.0.64</AssemblyVersion>
+        <AssemblyVersion>1.0.0.65</AssemblyVersion>
+        <AssemblyVersion>1.0.0.66</AssemblyVersion>
+        <AssemblyVersion>1.0.0.67</AssemblyVersion>
+        <AssemblyVersion>1.0.0.68</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>System.Obsolete("IWithEncryption.WithEncryption() is deprecated, use IWithEncryption.withBlobEncryption() instead.")</AttributeName>
+          <AttributeName Language="C#">[System.Obsolete("IWithEncryption.WithEncryption() is deprecated, use IWithEncryption.withBlobEncryption() instead.")]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Obsolete("IWithEncryption.WithEncryption() is deprecated, use IWithEncryption.withBlobEncryption() instead.")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -50,9 +59,13 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+            Specifies that encryption needs be enabled for blob service.
+            </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
+        <deprecated>Use  WithEncryption.WithBlobEncryption() instead.</deprecated>
+        <return>The next stage of storage account definition.</return>
       </Docs>
     </Member>
   </Members>

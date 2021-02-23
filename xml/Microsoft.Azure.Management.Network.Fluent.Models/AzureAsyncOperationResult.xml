@@ -1,14 +1,19 @@
-﻿<Type Name="AzureAsyncOperationResult" FullName="Microsoft.Azure.Management.Network.Fluent.Models.AzureAsyncOperationResult">
+<Type Name="AzureAsyncOperationResult" FullName="Microsoft.Azure.Management.Network.Fluent.Models.AzureAsyncOperationResult">
   <TypeSignature Language="C#" Value="public class AzureAsyncOperationResult" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit AzureAsyncOperationResult extends System.Object" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Azure.Management.Network.Fluent.Models.AzureAsyncOperationResult" />
   <TypeSignature Language="VB.NET" Value="Public Class AzureAsyncOperationResult" />
   <TypeSignature Language="F#" Value="type AzureAsyncOperationResult = class" />
-  <TypeSignature Language="C++ CLI" Value="public ref class AzureAsyncOperationResult" />
-  <TypeSignature Language="C++ WINRT" Value="[Windows::Foundation::Metadata::WebHostHidden]&#xA;class AzureAsyncOperationResult" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Azure.Management.Network.Fluent</AssemblyName>
-    <AssemblyVersion>1.0.0.60</AssemblyVersion>
+    <AssemblyVersion>1.0.0.61</AssemblyVersion>
+    <AssemblyVersion>1.0.0.62</AssemblyVersion>
+    <AssemblyVersion>1.0.0.63</AssemblyVersion>
+    <AssemblyVersion>1.0.0.64</AssemblyVersion>
+    <AssemblyVersion>1.0.0.65</AssemblyVersion>
+    <AssemblyVersion>1.0.0.66</AssemblyVersion>
+    <AssemblyVersion>1.0.0.67</AssemblyVersion>
+    <AssemblyVersion>1.0.0.68</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
@@ -33,13 +38,17 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Management.Network.Fluent.Models.AzureAsyncOperationResult.#ctor" />
       <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; AzureAsyncOperationResult();" />
-      <MemberSignature Language="C++ CX" Value="public:&#xA; AzureAsyncOperationResult();" />
-      <MemberSignature Language="C++ WINRT" Value=" AzureAsyncOperationResult();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Network.Fluent</AssemblyName>
-        <AssemblyVersion>1.0.0.60</AssemblyVersion>
+        <AssemblyVersion>1.0.0.61</AssemblyVersion>
+        <AssemblyVersion>1.0.0.62</AssemblyVersion>
+        <AssemblyVersion>1.0.0.63</AssemblyVersion>
+        <AssemblyVersion>1.0.0.64</AssemblyVersion>
+        <AssemblyVersion>1.0.0.65</AssemblyVersion>
+        <AssemblyVersion>1.0.0.66</AssemblyVersion>
+        <AssemblyVersion>1.0.0.67</AssemblyVersion>
+        <AssemblyVersion>1.0.0.68</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
@@ -50,23 +59,35 @@
       </Docs>
     </Member>
     <Member MemberName=".ctor">
-      <MemberSignature Language="C#" Value="public AzureAsyncOperationResult (Microsoft.Azure.Management.Network.Fluent.Models.NetworkOperationStatus status = null, Microsoft.Azure.Management.Network.Fluent.Models.Error error = null);" />
+      <MemberSignature Language="C#" Value="public AzureAsyncOperationResult (Microsoft.Azure.Management.Network.Fluent.Models.NetworkOperationStatus status = default, Microsoft.Azure.Management.Network.Fluent.Models.Error error = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class Microsoft.Azure.Management.Network.Fluent.Models.NetworkOperationStatus status, class Microsoft.Azure.Management.Network.Fluent.Models.Error error) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Management.Network.Fluent.Models.AzureAsyncOperationResult.#ctor(Microsoft.Azure.Management.Network.Fluent.Models.NetworkOperationStatus,Microsoft.Azure.Management.Network.Fluent.Models.Error)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (Optional status As NetworkOperationStatus = Nothing, Optional error As Error = Nothing)" />
       <MemberSignature Language="F#" Value="new Microsoft.Azure.Management.Network.Fluent.Models.AzureAsyncOperationResult : Microsoft.Azure.Management.Network.Fluent.Models.NetworkOperationStatus * Microsoft.Azure.Management.Network.Fluent.Models.Error -&gt; Microsoft.Azure.Management.Network.Fluent.Models.AzureAsyncOperationResult" Usage="new Microsoft.Azure.Management.Network.Fluent.Models.AzureAsyncOperationResult (status, error)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Network.Fluent</AssemblyName>
-        <AssemblyVersion>1.0.0.60</AssemblyVersion>
+        <AssemblyVersion>1.0.0.61</AssemblyVersion>
+        <AssemblyVersion>1.0.0.62</AssemblyVersion>
+        <AssemblyVersion>1.0.0.63</AssemblyVersion>
+        <AssemblyVersion>1.0.0.64</AssemblyVersion>
+        <AssemblyVersion>1.0.0.65</AssemblyVersion>
+        <AssemblyVersion>1.0.0.66</AssemblyVersion>
+        <AssemblyVersion>1.0.0.67</AssemblyVersion>
+        <AssemblyVersion>1.0.0.68</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="status" Type="Microsoft.Azure.Management.Network.Fluent.Models.NetworkOperationStatus" />
         <Parameter Name="error" Type="Microsoft.Azure.Management.Network.Fluent.Models.Error" />
       </Parameters>
       <Docs>
-        <param name="status">To be added.</param>
-        <param name="error">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="status">Status of the Azure async operation. Possible
+            values include: 'InProgress', 'Succeeded', 'Failed'</param>
+        <param name="error">Details of the error occurred during specified
+            asynchronous operation.</param>
+        <summary>
+            Initializes a new instance of the AzureAsyncOperationResult class.
+            </summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -76,22 +97,32 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Management.Network.Fluent.Models.AzureAsyncOperationResult.Error" />
       <MemberSignature Language="VB.NET" Value="Public Property Error As Error" />
       <MemberSignature Language="F#" Value="member this.Error : Microsoft.Azure.Management.Network.Fluent.Models.Error with get, set" Usage="Microsoft.Azure.Management.Network.Fluent.Models.AzureAsyncOperationResult.Error" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Azure::Management::Network::Fluent::Models::Error ^ Error { Microsoft::Azure::Management::Network::Fluent::Models::Error ^ get(); void set(Microsoft::Azure::Management::Network::Fluent::Models::Error ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Network.Fluent</AssemblyName>
-        <AssemblyVersion>1.0.0.60</AssemblyVersion>
+        <AssemblyVersion>1.0.0.61</AssemblyVersion>
+        <AssemblyVersion>1.0.0.62</AssemblyVersion>
+        <AssemblyVersion>1.0.0.63</AssemblyVersion>
+        <AssemblyVersion>1.0.0.64</AssemblyVersion>
+        <AssemblyVersion>1.0.0.65</AssemblyVersion>
+        <AssemblyVersion>1.0.0.66</AssemblyVersion>
+        <AssemblyVersion>1.0.0.67</AssemblyVersion>
+        <AssemblyVersion>1.0.0.68</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="error")</AttributeName>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty(PropertyName="error")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty(PropertyName="error")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
         <ReturnType>Microsoft.Azure.Management.Network.Fluent.Models.Error</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+            Gets or sets details of the error occurred during specified
+            asynchronous operation.
+            </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -102,16 +133,22 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Management.Network.Fluent.Models.AzureAsyncOperationResult.Status" />
       <MemberSignature Language="VB.NET" Value="Public Property Status As NetworkOperationStatus" />
       <MemberSignature Language="F#" Value="member this.Status : Microsoft.Azure.Management.Network.Fluent.Models.NetworkOperationStatus with get, set" Usage="Microsoft.Azure.Management.Network.Fluent.Models.AzureAsyncOperationResult.Status" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Status { System::String ^ get(); void set(System::String ^ value); };" />
-      <MemberSignature Language="C++ CX" Value="public:&#xA; property Platform::String ^ Status { Platform::String ^ get(); void set(Platform::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Network.Fluent</AssemblyName>
-        <AssemblyVersion>1.0.0.60</AssemblyVersion>
+        <AssemblyVersion>1.0.0.61</AssemblyVersion>
+        <AssemblyVersion>1.0.0.62</AssemblyVersion>
+        <AssemblyVersion>1.0.0.63</AssemblyVersion>
+        <AssemblyVersion>1.0.0.64</AssemblyVersion>
+        <AssemblyVersion>1.0.0.65</AssemblyVersion>
+        <AssemblyVersion>1.0.0.66</AssemblyVersion>
+        <AssemblyVersion>1.0.0.67</AssemblyVersion>
+        <AssemblyVersion>1.0.0.68</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="status")</AttributeName>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty(PropertyName="status")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty(PropertyName="status")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -120,7 +157,6 @@
       <Docs>
         <summary>
             Gets or sets status of the Azure async operation. Possible values
-            are: 'InProgress', 'Succeeded', and 'Failed'. Possible values
             include: 'InProgress', 'Succeeded', 'Failed'
             </summary>
         <value>To be added.</value>

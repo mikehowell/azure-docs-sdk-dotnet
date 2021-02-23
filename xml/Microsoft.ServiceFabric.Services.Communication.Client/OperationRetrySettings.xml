@@ -1,12 +1,9 @@
-﻿<Type Name="OperationRetrySettings" FullName="Microsoft.ServiceFabric.Services.Communication.Client.OperationRetrySettings">
+<Type Name="OperationRetrySettings" FullName="Microsoft.ServiceFabric.Services.Communication.Client.OperationRetrySettings">
   <TypeSignature Language="C#" Value="public sealed class OperationRetrySettings" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit OperationRetrySettings extends System.Object" />
   <TypeSignature Language="DocId" Value="T:Microsoft.ServiceFabric.Services.Communication.Client.OperationRetrySettings" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class OperationRetrySettings" />
   <TypeSignature Language="F#" Value="type OperationRetrySettings = class" />
-  <TypeSignature Language="C++ CLI" Value="public ref class OperationRetrySettings sealed" />
-  <TypeSignature Language="C++ CX" Value="public ref class OperationRetrySettings sealed" />
-  <TypeSignature Language="C++ WINRT" Value="class OperationRetrySettings sealed" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.ServiceFabric.Services</AssemblyName>
     <AssemblyVersion>6.0.0.0</AssemblyVersion>
@@ -28,9 +25,6 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.ServiceFabric.Services.Communication.Client.OperationRetrySettings.#ctor" />
       <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; OperationRetrySettings();" />
-      <MemberSignature Language="C++ CX" Value="public:&#xA; OperationRetrySettings();" />
-      <MemberSignature Language="C++ WINRT" Value=" OperationRetrySettings();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.ServiceFabric.Services</AssemblyName>
@@ -39,20 +33,66 @@
       <Parameters />
       <Docs>
         <summary>
-            Instantiates OperationRetrySettings with default values for the retry settings.
-            The default values for MaxRetryBackoffIntervalOnTransientErrors, NonTransientErrors
-            are 2 seconds. The default value for MaxRetryCount is 10.
+            Initializes a new instance of the <see cref="T:Microsoft.ServiceFabric.Services.Communication.Client.OperationRetrySettings" /> class
+            with default values for the retry settings.
+            The default value for MaxRetryCount is 10. Default Value for ClientRetryTimeout is infinite which means indefinte retry for non-transient errors.
             </summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
-      <MemberSignature Language="C#" Value="public OperationRetrySettings (TimeSpan maxRetryBackoffIntervalOnTransientErrors, TimeSpan maxRetryBackoffIntervalOnNonTransientErrors, int defaultMaxRetryCount);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(valuetype System.TimeSpan maxRetryBackoffIntervalOnTransientErrors, valuetype System.TimeSpan maxRetryBackoffIntervalOnNonTransientErrors, int32 defaultMaxRetryCount) cil managed" />
-      <MemberSignature Language="DocId" Value="M:Microsoft.ServiceFabric.Services.Communication.Client.OperationRetrySettings.#ctor(System.TimeSpan,System.TimeSpan,System.Int32)" />
-      <MemberSignature Language="VB.NET" Value="Public Sub New (maxRetryBackoffIntervalOnTransientErrors As TimeSpan, maxRetryBackoffIntervalOnNonTransientErrors As TimeSpan, defaultMaxRetryCount As Integer)" />
-      <MemberSignature Language="F#" Value="new Microsoft.ServiceFabric.Services.Communication.Client.OperationRetrySettings : TimeSpan * TimeSpan * int -&gt; Microsoft.ServiceFabric.Services.Communication.Client.OperationRetrySettings" Usage="new Microsoft.ServiceFabric.Services.Communication.Client.OperationRetrySettings (maxRetryBackoffIntervalOnTransientErrors, maxRetryBackoffIntervalOnNonTransientErrors, defaultMaxRetryCount)" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; OperationRetrySettings(TimeSpan maxRetryBackoffIntervalOnTransientErrors, TimeSpan maxRetryBackoffIntervalOnNonTransientErrors, int defaultMaxRetryCount);" />
+      <MemberSignature Language="C#" Value="public OperationRetrySettings (Microsoft.ServiceFabric.Services.Communication.Client.IRetryPolicy retryPolicy);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class Microsoft.ServiceFabric.Services.Communication.Client.IRetryPolicy retryPolicy) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.ServiceFabric.Services.Communication.Client.OperationRetrySettings.#ctor(Microsoft.ServiceFabric.Services.Communication.Client.IRetryPolicy)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (retryPolicy As IRetryPolicy)" />
+      <MemberSignature Language="F#" Value="new Microsoft.ServiceFabric.Services.Communication.Client.OperationRetrySettings : Microsoft.ServiceFabric.Services.Communication.Client.IRetryPolicy -&gt; Microsoft.ServiceFabric.Services.Communication.Client.OperationRetrySettings" Usage="new Microsoft.ServiceFabric.Services.Communication.Client.OperationRetrySettings retryPolicy" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.ServiceFabric.Services</AssemblyName>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="retryPolicy" Type="Microsoft.ServiceFabric.Services.Communication.Client.IRetryPolicy" />
+      </Parameters>
+      <Docs>
+        <param name="retryPolicy">Specifies the Retry Policy to be used for the communication between client and service.
+            </param>
+        <summary>
+            Initializes a new instance of the <see cref="T:Microsoft.ServiceFabric.Services.Communication.Client.OperationRetrySettings" /> class
+            with the retry Policy supplied.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public OperationRetrySettings (TimeSpan clientRetryTimeout);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(valuetype System.TimeSpan clientRetryTimeout) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.ServiceFabric.Services.Communication.Client.OperationRetrySettings.#ctor(System.TimeSpan)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (clientRetryTimeout As TimeSpan)" />
+      <MemberSignature Language="F#" Value="new Microsoft.ServiceFabric.Services.Communication.Client.OperationRetrySettings : TimeSpan -&gt; Microsoft.ServiceFabric.Services.Communication.Client.OperationRetrySettings" Usage="new Microsoft.ServiceFabric.Services.Communication.Client.OperationRetrySettings clientRetryTimeout" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.ServiceFabric.Services</AssemblyName>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="clientRetryTimeout" Type="System.TimeSpan" />
+      </Parameters>
+      <Docs>
+        <param name="clientRetryTimeout">Specifies the maximum time client retries the call before quitting</param>
+        <summary>
+            Initializes a new instance of the <see cref="T:Microsoft.ServiceFabric.Services.Communication.Client.OperationRetrySettings" /> class
+             The default value for MaxRetryCount is 10 .
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public OperationRetrySettings (TimeSpan maxRetryBackoffIntervalOnTransientErrors, TimeSpan maxRetryBackoffIntervalOnNonTransientErrors, int defaultMaxRetryCountForTransientErrors, int defaultMaxRetryCountForNonTransientErrors = 2147483647);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(valuetype System.TimeSpan maxRetryBackoffIntervalOnTransientErrors, valuetype System.TimeSpan maxRetryBackoffIntervalOnNonTransientErrors, int32 defaultMaxRetryCountForTransientErrors, int32 defaultMaxRetryCountForNonTransientErrors) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.ServiceFabric.Services.Communication.Client.OperationRetrySettings.#ctor(System.TimeSpan,System.TimeSpan,System.Int32,System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (maxRetryBackoffIntervalOnTransientErrors As TimeSpan, maxRetryBackoffIntervalOnNonTransientErrors As TimeSpan, defaultMaxRetryCountForTransientErrors As Integer, Optional defaultMaxRetryCountForNonTransientErrors As Integer = 2147483647)" />
+      <MemberSignature Language="F#" Value="new Microsoft.ServiceFabric.Services.Communication.Client.OperationRetrySettings : TimeSpan * TimeSpan * int * int -&gt; Microsoft.ServiceFabric.Services.Communication.Client.OperationRetrySettings" Usage="new Microsoft.ServiceFabric.Services.Communication.Client.OperationRetrySettings (maxRetryBackoffIntervalOnTransientErrors, maxRetryBackoffIntervalOnNonTransientErrors, defaultMaxRetryCountForTransientErrors, defaultMaxRetryCountForNonTransientErrors)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.ServiceFabric.Services</AssemblyName>
@@ -61,7 +101,8 @@
       <Parameters>
         <Parameter Name="maxRetryBackoffIntervalOnTransientErrors" Type="System.TimeSpan" />
         <Parameter Name="maxRetryBackoffIntervalOnNonTransientErrors" Type="System.TimeSpan" />
-        <Parameter Name="defaultMaxRetryCount" Type="System.Int32" />
+        <Parameter Name="defaultMaxRetryCountForTransientErrors" Type="System.Int32" />
+        <Parameter Name="defaultMaxRetryCountForNonTransientErrors" Type="System.Int32" />
       </Parameters>
       <Docs>
         <param name="maxRetryBackoffIntervalOnTransientErrors">
@@ -70,23 +111,49 @@
         <param name="maxRetryBackoffIntervalOnNonTransientErrors">
             Specifies the maximum interval to back-off before retrying incase of Non transient errors
             </param>
-        <param name="defaultMaxRetryCount">
-            Specifies the maximum number of times to retry.
+        <param name="defaultMaxRetryCountForTransientErrors">
+            Specifies the maximum number of times to retry for transient errors.
+            </param>
+        <param name="defaultMaxRetryCountForNonTransientErrors">
+            Specifies the maximum number of times to retry for non-transient errors.
             </param>
         <summary>
-            Instantiates OperationRetrySettings with the supplied settings.
+            Initializes a new instance of the <see cref="T:Microsoft.ServiceFabric.Services.Communication.Client.OperationRetrySettings" /> class with the supplied settings.
             </summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
-    <Member MemberName="DefaultMaxRetryCount">
-      <MemberSignature Language="C#" Value="public int DefaultMaxRetryCount { get; }" />
-      <MemberSignature Language="ILAsm" Value=".property instance int32 DefaultMaxRetryCount" />
-      <MemberSignature Language="DocId" Value="P:Microsoft.ServiceFabric.Services.Communication.Client.OperationRetrySettings.DefaultMaxRetryCount" />
-      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property DefaultMaxRetryCount As Integer" />
-      <MemberSignature Language="F#" Value="member this.DefaultMaxRetryCount : int" Usage="Microsoft.ServiceFabric.Services.Communication.Client.OperationRetrySettings.DefaultMaxRetryCount" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int DefaultMaxRetryCount { int get(); };" />
-      <MemberSignature Language="C++ CX" Value="public:&#xA; property int DefaultMaxRetryCount { int get(); };" />
+    <Member MemberName="ClientRetryTimeout">
+      <MemberSignature Language="C#" Value="public TimeSpan ClientRetryTimeout { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.TimeSpan ClientRetryTimeout" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.ServiceFabric.Services.Communication.Client.OperationRetrySettings.ClientRetryTimeout" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ClientRetryTimeout As TimeSpan" />
+      <MemberSignature Language="F#" Value="member this.ClientRetryTimeout : TimeSpan" Usage="Microsoft.ServiceFabric.Services.Communication.Client.OperationRetrySettings.ClientRetryTimeout" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.ServiceFabric.Services</AssemblyName>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.TimeSpan</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets the timeout for the client side retry.
+            If you specify ClientRetryTimeout, cancellation token, and use MaxRetryCount for Exception Handling, then whichever will be come first, will be honoured.
+            ClientRetryTimeout is useful in the cases where communication between client and service is not working and calls are getting retried.
+            In those cases, you can use this timeout to come out of the retry loop.
+            </summary>
+        <value>Amount of time we retry before throwing the OperationCancelledException to the user Api.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DefaultMaxRetryCountForNonTransientErrors">
+      <MemberSignature Language="C#" Value="public int DefaultMaxRetryCountForNonTransientErrors { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 DefaultMaxRetryCountForNonTransientErrors" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.ServiceFabric.Services.Communication.Client.OperationRetrySettings.DefaultMaxRetryCountForNonTransientErrors" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property DefaultMaxRetryCountForNonTransientErrors As Integer" />
+      <MemberSignature Language="F#" Value="member this.DefaultMaxRetryCountForNonTransientErrors : int" Usage="Microsoft.ServiceFabric.Services.Communication.Client.OperationRetrySettings.DefaultMaxRetryCountForNonTransientErrors" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.ServiceFabric.Services</AssemblyName>
@@ -97,7 +164,29 @@
       </ReturnValue>
       <Docs>
         <summary>
-            Specifies the maximum number of times to retry.
+            Gets the maximum number of times to retry for non -transient errors.
+            </summary>
+        <value>Maximum number of times to retry a specific non-transient exception.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DefaultMaxRetryCountForTransientErrors">
+      <MemberSignature Language="C#" Value="public int DefaultMaxRetryCountForTransientErrors { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 DefaultMaxRetryCountForTransientErrors" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.ServiceFabric.Services.Communication.Client.OperationRetrySettings.DefaultMaxRetryCountForTransientErrors" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property DefaultMaxRetryCountForTransientErrors As Integer" />
+      <MemberSignature Language="F#" Value="member this.DefaultMaxRetryCountForTransientErrors : int" Usage="Microsoft.ServiceFabric.Services.Communication.Client.OperationRetrySettings.DefaultMaxRetryCountForTransientErrors" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.ServiceFabric.Services</AssemblyName>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets the maximum number of times to retry for transient errors.
             </summary>
         <value>Maximum number of times to retry a specific exception.</value>
         <remarks>To be added.</remarks>
@@ -109,7 +198,6 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.ServiceFabric.Services.Communication.Client.OperationRetrySettings.MaxRetryBackoffIntervalOnNonTransientErrors" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property MaxRetryBackoffIntervalOnNonTransientErrors As TimeSpan" />
       <MemberSignature Language="F#" Value="member this.MaxRetryBackoffIntervalOnNonTransientErrors : TimeSpan" Usage="Microsoft.ServiceFabric.Services.Communication.Client.OperationRetrySettings.MaxRetryBackoffIntervalOnNonTransientErrors" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property TimeSpan MaxRetryBackoffIntervalOnNonTransientErrors { TimeSpan get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.ServiceFabric.Services</AssemblyName>
@@ -120,7 +208,7 @@
       </ReturnValue>
       <Docs>
         <summary>
-            Specifies the maximum interval to back-off before retrying in-case of Non transient errors
+            Gets the maximum interval to back-off before retrying in-case of Non transient errors
             </summary>
         <value>Maximum retry interval to back-off on non transient errors</value>
         <remarks>To be added.</remarks>
@@ -132,7 +220,6 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.ServiceFabric.Services.Communication.Client.OperationRetrySettings.MaxRetryBackoffIntervalOnTransientErrors" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property MaxRetryBackoffIntervalOnTransientErrors As TimeSpan" />
       <MemberSignature Language="F#" Value="member this.MaxRetryBackoffIntervalOnTransientErrors : TimeSpan" Usage="Microsoft.ServiceFabric.Services.Communication.Client.OperationRetrySettings.MaxRetryBackoffIntervalOnTransientErrors" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property TimeSpan MaxRetryBackoffIntervalOnTransientErrors { TimeSpan get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.ServiceFabric.Services</AssemblyName>
@@ -143,9 +230,31 @@
       </ReturnValue>
       <Docs>
         <summary>
-            Specifies the maximum interval to back-off before retrying in-case of Transient errors
+            Gets the maximum interval to back-off before retrying in-case of Transient errors
             </summary>
         <value>Maximum retry interval to back-off on transient errors</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RetryPolicy">
+      <MemberSignature Language="C#" Value="public Microsoft.ServiceFabric.Services.Communication.Client.IRetryPolicy RetryPolicy { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.ServiceFabric.Services.Communication.Client.IRetryPolicy RetryPolicy" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.ServiceFabric.Services.Communication.Client.OperationRetrySettings.RetryPolicy" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property RetryPolicy As IRetryPolicy" />
+      <MemberSignature Language="F#" Value="member this.RetryPolicy : Microsoft.ServiceFabric.Services.Communication.Client.IRetryPolicy" Usage="Microsoft.ServiceFabric.Services.Communication.Client.OperationRetrySettings.RetryPolicy" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.ServiceFabric.Services</AssemblyName>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.ServiceFabric.Services.Communication.Client.IRetryPolicy</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets the Retry Policy to be used for the communication between client and service.
+            </summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

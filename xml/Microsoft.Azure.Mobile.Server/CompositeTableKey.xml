@@ -1,14 +1,12 @@
-﻿<Type Name="CompositeTableKey" FullName="Microsoft.Azure.Mobile.Server.CompositeTableKey">
+<Type Name="CompositeTableKey" FullName="Microsoft.Azure.Mobile.Server.CompositeTableKey">
   <TypeSignature Language="C#" Value="public class CompositeTableKey" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit CompositeTableKey extends System.Object" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Azure.Mobile.Server.CompositeTableKey" />
   <TypeSignature Language="VB.NET" Value="Public Class CompositeTableKey" />
   <TypeSignature Language="F#" Value="type CompositeTableKey = class" />
-  <TypeSignature Language="C++ CLI" Value="public ref class CompositeTableKey" />
-  <TypeSignature Language="C++ WINRT" Value="[Windows::Foundation::Metadata::WebHostHidden]&#xA;class CompositeTableKey" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Azure.Mobile.Server.Tables</AssemblyName>
-    <AssemblyVersion>2.0.0.0</AssemblyVersion>
+    <AssemblyVersion>2.0.3.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
@@ -29,17 +27,17 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Mobile.Server.CompositeTableKey.#ctor(System.String[])" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (ParamArray segments As String())" />
       <MemberSignature Language="F#" Value="new Microsoft.Azure.Mobile.Server.CompositeTableKey : string[] -&gt; Microsoft.Azure.Mobile.Server.CompositeTableKey" Usage="new Microsoft.Azure.Mobile.Server.CompositeTableKey segments" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; CompositeTableKey(... cli::array &lt;System::String ^&gt; ^ segments);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Mobile.Server.Tables</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.3.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="segments" Type="System.String[]">
           <Attributes>
             <Attribute>
-              <AttributeName>System.ParamArray</AttributeName>
+              <AttributeName Language="C#">[System.ParamArray]</AttributeName>
+              <AttributeName Language="F#">[&lt;System.ParamArray&gt;]</AttributeName>
             </Attribute>
           </Attributes>
         </Parameter>
@@ -59,12 +57,10 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Mobile.Server.CompositeTableKey.Parse(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function Parse (tableKey As String) As CompositeTableKey" />
       <MemberSignature Language="F#" Value="static member Parse : string -&gt; Microsoft.Azure.Mobile.Server.CompositeTableKey" Usage="Microsoft.Azure.Mobile.Server.CompositeTableKey.Parse tableKey" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; static Microsoft::Azure::Mobile::Server::CompositeTableKey ^ Parse(System::String ^ tableKey);" />
-      <MemberSignature Language="C++ WINRT" Value=" static Microsoft::Azure::Mobile::Server::CompositeTableKey Parse(std::wstring const &amp; tableKey);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Mobile.Server.Tables</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.3.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Azure.Mobile.Server.CompositeTableKey</ReturnType>
@@ -88,11 +84,10 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Mobile.Server.CompositeTableKey.Segments" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Segments As Collection(Of String)" />
       <MemberSignature Language="F#" Value="member this.Segments : System.Collections.ObjectModel.Collection&lt;string&gt;" Usage="Microsoft.Azure.Mobile.Server.CompositeTableKey.Segments" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::ObjectModel::Collection&lt;System::String ^&gt; ^ Segments { System::Collections::ObjectModel::Collection&lt;System::String ^&gt; ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Mobile.Server.Tables</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.3.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Collections.ObjectModel.Collection&lt;System.String&gt;</ReturnType>
@@ -111,13 +106,10 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Mobile.Server.CompositeTableKey.ToString" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function ToString () As String" />
       <MemberSignature Language="F#" Value="override this.ToString : unit -&gt; string" Usage="compositeTableKey.ToString " />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::String ^ ToString();" />
-      <MemberSignature Language="C++ CX" Value="public:&#xA; override Platform::String ^ ToString();" />
-      <MemberSignature Language="C++ WINRT" Value=" override std::wstring ToString();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Mobile.Server.Tables</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.3.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -136,20 +128,18 @@
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool TryParse(string tableKey, [out] class Microsoft.Azure.Mobile.Server.CompositeTableKey&amp; compositeTableKey) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Mobile.Server.CompositeTableKey.TryParse(System.String,Microsoft.Azure.Mobile.Server.CompositeTableKey@)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function TryParse (tableKey As String, ByRef compositeTableKey As CompositeTableKey) As Boolean" />
-      <MemberSignature Language="F#" Value="static member TryParse : string *  -&gt; bool" Usage="Microsoft.Azure.Mobile.Server.CompositeTableKey.TryParse (tableKey, compositeTableKey)" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool TryParse(System::String ^ tableKey, [Runtime::InteropServices::Out] Microsoft::Azure::Mobile::Server::CompositeTableKey ^ % compositeTableKey);" />
-      <MemberSignature Language="C++ WINRT" Value=" static bool TryParse(std::wstring const &amp; tableKey, [Runtime::InteropServices::Out] Microsoft::Azure::Mobile::Server::CompositeTableKey const &amp; &amp; compositeTableKey);" />
+      <MemberSignature Language="F#" Value="static member TryParse : string * CompositeTableKey -&gt; bool" Usage="Microsoft.Azure.Mobile.Server.CompositeTableKey.TryParse (tableKey, compositeTableKey)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Mobile.Server.Tables</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.3.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Parameters>
         <Parameter Name="tableKey" Type="System.String" />
-        <Parameter Name="compositeTableKey" Type="Microsoft.Azure.Mobile.Server.CompositeTableKey&amp;" RefType="out" />
+        <Parameter Name="compositeTableKey" Type="Microsoft.Azure.Mobile.Server.CompositeTableKey" RefType="out" />
       </Parameters>
       <Docs>
         <param name="tableKey">The value containing the composite key.</param>

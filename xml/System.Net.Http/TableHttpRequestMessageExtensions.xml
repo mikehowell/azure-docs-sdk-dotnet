@@ -1,13 +1,12 @@
-﻿<Type Name="TableHttpRequestMessageExtensions" FullName="System.Net.Http.TableHttpRequestMessageExtensions">
+<Type Name="TableHttpRequestMessageExtensions" FullName="System.Net.Http.TableHttpRequestMessageExtensions">
   <TypeSignature Language="C#" Value="public static class TableHttpRequestMessageExtensions" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract sealed beforefieldinit TableHttpRequestMessageExtensions extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.Net.Http.TableHttpRequestMessageExtensions" />
   <TypeSignature Language="VB.NET" Value="Public Module TableHttpRequestMessageExtensions" />
   <TypeSignature Language="F#" Value="type TableHttpRequestMessageExtensions = class" />
-  <TypeSignature Language="C++ CLI" Value="public ref class TableHttpRequestMessageExtensions abstract sealed" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Azure.Mobile.Server.Tables</AssemblyName>
-    <AssemblyVersion>2.0.0.0</AssemblyVersion>
+    <AssemblyVersion>2.0.3.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
@@ -15,7 +14,8 @@
   <Interfaces />
   <Attributes>
     <Attribute>
-      <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
+      <AttributeName Language="C#">[System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)]</AttributeName>
+      <AttributeName Language="F#">[&lt;System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)&gt;]</AttributeName>
     </Attribute>
   </Attributes>
   <Docs>
@@ -32,11 +32,10 @@
       <MemberSignature Language="DocId" Value="M:System.Net.Http.TableHttpRequestMessageExtensions.AreDeletedRowsRequested(System.Net.Http.HttpRequestMessage)" />
       <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function AreDeletedRowsRequested (request As HttpRequestMessage) As Boolean" />
       <MemberSignature Language="F#" Value="static member AreDeletedRowsRequested : System.Net.Http.HttpRequestMessage -&gt; bool" Usage="System.Net.Http.TableHttpRequestMessageExtensions.AreDeletedRowsRequested request" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA;[System::Runtime::CompilerServices::Extension]&#xA; static bool AreDeletedRowsRequested(System::Net::Http::HttpRequestMessage ^ request);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Mobile.Server.Tables</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.3.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
@@ -59,15 +58,15 @@
       <MemberSignature Language="DocId" Value="M:System.Net.Http.TableHttpRequestMessageExtensions.GetVersionFromIfMatch(System.Net.Http.HttpRequestMessage)" />
       <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function GetVersionFromIfMatch (request As HttpRequestMessage) As Byte()" />
       <MemberSignature Language="F#" Value="static member GetVersionFromIfMatch : System.Net.Http.HttpRequestMessage -&gt; byte[]" Usage="System.Net.Http.TableHttpRequestMessageExtensions.GetVersionFromIfMatch request" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA;[System::Runtime::CompilerServices::Extension]&#xA; static cli::array &lt;System::Byte&gt; ^ GetVersionFromIfMatch(System::Net::Http::HttpRequestMessage ^ request);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Mobile.Server.Tables</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.3.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Reliability", "CA2000:Dispose objects before losing scope", Justification="Response is disposed by caller.")</AttributeName>
+          <AttributeName Language="C#">[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Reliability", "CA2000:Dispose objects before losing scope", Justification="Response is disposed by caller.")]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Reliability", "CA2000:Dispose objects before losing scope", Justification="Response is disposed by caller.")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -77,7 +76,7 @@
         <Parameter Name="request" Type="System.Net.Http.HttpRequestMessage" RefType="this" />
       </Parameters>
       <Docs>
-        <param name="request"></param>
+        <param name="request" />
         <summary>
             Gets the version of a table item from the HTTP <c>IfMatch</c> header. If the <c>IfMatch</c> contains an invalid value then
             an <see cref="T:System.Web.Http.HttpResponseException" /> is thrown containing an <see cref="T:System.Net.Http.HttpResponseMessage" /> with status code <see cref="F:System.Net.HttpStatusCode.BadRequest" />.
@@ -91,16 +90,16 @@
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Collections.Generic.IList`1&lt;string&gt; SetSelectedProperties(class System.Net.Http.HttpRequestMessage request, class System.Type data, [out] bool&amp; isModified) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Net.Http.TableHttpRequestMessageExtensions.SetSelectedProperties(System.Net.Http.HttpRequestMessage,System.Type,System.Boolean@)" />
       <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function SetSelectedProperties (request As HttpRequestMessage, data As Type, ByRef isModified As Boolean) As IList(Of String)" />
-      <MemberSignature Language="F#" Value="static member SetSelectedProperties : System.Net.Http.HttpRequestMessage * Type *  -&gt; System.Collections.Generic.IList&lt;string&gt;" Usage="System.Net.Http.TableHttpRequestMessageExtensions.SetSelectedProperties (request, data, isModified)" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA;[System::Runtime::CompilerServices::Extension]&#xA; static System::Collections::Generic::IList&lt;System::String ^&gt; ^ SetSelectedProperties(System::Net::Http::HttpRequestMessage ^ request, Type ^ data, [Runtime::InteropServices::Out] bool % isModified);" />
+      <MemberSignature Language="F#" Value="static member SetSelectedProperties : System.Net.Http.HttpRequestMessage * Type * bool -&gt; System.Collections.Generic.IList&lt;string&gt;" Usage="System.Net.Http.TableHttpRequestMessageExtensions.SetSelectedProperties (request, data, isModified)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Mobile.Server.Tables</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.3.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Design", "CA1021:AvoidOutParameters", Justification="It's ok to have an out parameter here.")</AttributeName>
+          <AttributeName Language="C#">[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Design", "CA1021:AvoidOutParameters", Justification="It's ok to have an out parameter here.")]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Design", "CA1021:AvoidOutParameters", Justification="It's ok to have an out parameter here.")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -109,7 +108,7 @@
       <Parameters>
         <Parameter Name="request" Type="System.Net.Http.HttpRequestMessage" RefType="this" />
         <Parameter Name="data" Type="System.Type" />
-        <Parameter Name="isModified" Type="System.Boolean&amp;" RefType="out" />
+        <Parameter Name="isModified" Type="System.Boolean" RefType="out" />
       </Parameters>
       <Docs>
         <param name="request">The <see cref="T:System.Net.Http.HttpRequestMessage" />request</param>
@@ -129,16 +128,16 @@
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Collections.Generic.IList`1&lt;string&gt; SetSelectedProperties(class System.Net.Http.HttpRequestMessage request, class System.Type data, class System.Collections.Generic.IDictionary`2&lt;string, string&gt; systemPropertyMap, [out] bool&amp; isModified) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Net.Http.TableHttpRequestMessageExtensions.SetSelectedProperties(System.Net.Http.HttpRequestMessage,System.Type,System.Collections.Generic.IDictionary{System.String,System.String},System.Boolean@)" />
       <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function SetSelectedProperties (request As HttpRequestMessage, data As Type, systemPropertyMap As IDictionary(Of String, String), ByRef isModified As Boolean) As IList(Of String)" />
-      <MemberSignature Language="F#" Value="static member SetSelectedProperties : System.Net.Http.HttpRequestMessage * Type * System.Collections.Generic.IDictionary&lt;string, string&gt; *  -&gt; System.Collections.Generic.IList&lt;string&gt;" Usage="System.Net.Http.TableHttpRequestMessageExtensions.SetSelectedProperties (request, data, systemPropertyMap, isModified)" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA;[System::Runtime::CompilerServices::Extension]&#xA; static System::Collections::Generic::IList&lt;System::String ^&gt; ^ SetSelectedProperties(System::Net::Http::HttpRequestMessage ^ request, Type ^ data, System::Collections::Generic::IDictionary&lt;System::String ^, System::String ^&gt; ^ systemPropertyMap, [Runtime::InteropServices::Out] bool % isModified);" />
+      <MemberSignature Language="F#" Value="static member SetSelectedProperties : System.Net.Http.HttpRequestMessage * Type * System.Collections.Generic.IDictionary&lt;string, string&gt; * bool -&gt; System.Collections.Generic.IList&lt;string&gt;" Usage="System.Net.Http.TableHttpRequestMessageExtensions.SetSelectedProperties (request, data, systemPropertyMap, isModified)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Mobile.Server.Tables</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.3.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Design", "CA1021:AvoidOutParameters", Justification="It's ok to have an out parameter here.")</AttributeName>
+          <AttributeName Language="C#">[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Design", "CA1021:AvoidOutParameters", Justification="It's ok to have an out parameter here.")]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Design", "CA1021:AvoidOutParameters", Justification="It's ok to have an out parameter here.")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -148,7 +147,7 @@
         <Parameter Name="request" Type="System.Net.Http.HttpRequestMessage" RefType="this" />
         <Parameter Name="data" Type="System.Type" />
         <Parameter Name="systemPropertyMap" Type="System.Collections.Generic.IDictionary&lt;System.String,System.String&gt;" />
-        <Parameter Name="isModified" Type="System.Boolean&amp;" RefType="out" />
+        <Parameter Name="isModified" Type="System.Boolean" RefType="out" />
       </Parameters>
       <Docs>
         <param name="request">The <see cref="T:System.Net.Http.HttpRequestMessage" />request</param>

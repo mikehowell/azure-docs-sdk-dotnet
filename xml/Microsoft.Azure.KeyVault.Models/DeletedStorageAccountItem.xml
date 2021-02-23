@@ -1,14 +1,14 @@
-﻿<Type Name="DeletedStorageAccountItem" FullName="Microsoft.Azure.KeyVault.Models.DeletedStorageAccountItem">
+<Type Name="DeletedStorageAccountItem" FullName="Microsoft.Azure.KeyVault.Models.DeletedStorageAccountItem">
   <TypeSignature Language="C#" Value="public class DeletedStorageAccountItem : Microsoft.Azure.KeyVault.Models.StorageAccountItem" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit DeletedStorageAccountItem extends Microsoft.Azure.KeyVault.Models.StorageAccountItem" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Azure.KeyVault.Models.DeletedStorageAccountItem" />
   <TypeSignature Language="VB.NET" Value="Public Class DeletedStorageAccountItem&#xA;Inherits StorageAccountItem" />
   <TypeSignature Language="F#" Value="type DeletedStorageAccountItem = class&#xA;    inherit StorageAccountItem" />
-  <TypeSignature Language="C++ CLI" Value="public ref class DeletedStorageAccountItem : Microsoft::Azure::KeyVault::Models::StorageAccountItem" />
-  <TypeSignature Language="C++ WINRT" Value="[Windows::Foundation::Metadata::WebHostHidden]&#xA;class DeletedStorageAccountItem : Microsoft::Azure::KeyVault::Models::StorageAccountItem" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Azure.KeyVault</AssemblyName>
     <AssemblyVersion>3.0.0.0</AssemblyVersion>
+    <AssemblyVersion>3.0.4.0</AssemblyVersion>
+    <AssemblyVersion>3.0.5.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>Microsoft.Azure.KeyVault.Models.StorageAccountItem</BaseTypeName>
@@ -27,13 +27,12 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.KeyVault.Models.DeletedStorageAccountItem.#ctor" />
       <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; DeletedStorageAccountItem();" />
-      <MemberSignature Language="C++ CX" Value="public:&#xA; DeletedStorageAccountItem();" />
-      <MemberSignature Language="C++ WINRT" Value=" DeletedStorageAccountItem();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.KeyVault</AssemblyName>
         <AssemblyVersion>3.0.0.0</AssemblyVersion>
+        <AssemblyVersion>3.0.4.0</AssemblyVersion>
+        <AssemblyVersion>3.0.5.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
@@ -44,15 +43,17 @@
       </Docs>
     </Member>
     <Member MemberName=".ctor">
-      <MemberSignature Language="C#" Value="public DeletedStorageAccountItem (string id = null, string resourceId = null, Microsoft.Azure.KeyVault.Models.StorageAccountAttributes attributes = null, System.Collections.Generic.IDictionary&lt;string,string&gt; tags = null, string recoveryId = null, Nullable&lt;DateTime&gt; scheduledPurgeDate = null, Nullable&lt;DateTime&gt; deletedDate = null);" />
+      <MemberSignature Language="C#" Value="public DeletedStorageAccountItem (string id = default, string resourceId = default, Microsoft.Azure.KeyVault.Models.StorageAccountAttributes attributes = default, System.Collections.Generic.IDictionary&lt;string,string&gt; tags = default, string recoveryId = default, DateTime? scheduledPurgeDate = default, DateTime? deletedDate = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string id, string resourceId, class Microsoft.Azure.KeyVault.Models.StorageAccountAttributes attributes, class System.Collections.Generic.IDictionary`2&lt;string, string&gt; tags, string recoveryId, valuetype System.Nullable`1&lt;valuetype System.DateTime&gt; scheduledPurgeDate, valuetype System.Nullable`1&lt;valuetype System.DateTime&gt; deletedDate) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.KeyVault.Models.DeletedStorageAccountItem.#ctor(System.String,System.String,Microsoft.Azure.KeyVault.Models.StorageAccountAttributes,System.Collections.Generic.IDictionary{System.String,System.String},System.String,System.Nullable{System.DateTime},System.Nullable{System.DateTime})" />
-      <MemberSignature Language="VB.NET" Value="Public Sub New (Optional id As String = null, Optional resourceId As String = null, Optional attributes As StorageAccountAttributes = null, Optional tags As IDictionary(Of String, String) = null, Optional recoveryId As String = null, Optional scheduledPurgeDate As Nullable(Of DateTime) = null, Optional deletedDate As Nullable(Of DateTime) = null)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (Optional id As String = Nothing, Optional resourceId As String = Nothing, Optional attributes As StorageAccountAttributes = Nothing, Optional tags As IDictionary(Of String, String) = Nothing, Optional recoveryId As String = Nothing, Optional scheduledPurgeDate As Nullable(Of DateTime) = Nothing, Optional deletedDate As Nullable(Of DateTime) = Nothing)" />
       <MemberSignature Language="F#" Value="new Microsoft.Azure.KeyVault.Models.DeletedStorageAccountItem : string * string * Microsoft.Azure.KeyVault.Models.StorageAccountAttributes * System.Collections.Generic.IDictionary&lt;string, string&gt; * string * Nullable&lt;DateTime&gt; * Nullable&lt;DateTime&gt; -&gt; Microsoft.Azure.KeyVault.Models.DeletedStorageAccountItem" Usage="new Microsoft.Azure.KeyVault.Models.DeletedStorageAccountItem (id, resourceId, attributes, tags, recoveryId, scheduledPurgeDate, deletedDate)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.KeyVault</AssemblyName>
         <AssemblyVersion>3.0.0.0</AssemblyVersion>
+        <AssemblyVersion>3.0.4.0</AssemblyVersion>
+        <AssemblyVersion>3.0.5.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="id" Type="System.String" />
@@ -83,23 +84,26 @@
       </Docs>
     </Member>
     <Member MemberName="DeletedDate">
-      <MemberSignature Language="C#" Value="public Nullable&lt;DateTime&gt; DeletedDate { get; }" />
+      <MemberSignature Language="C#" Value="public DateTime? DeletedDate { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;valuetype System.DateTime&gt; DeletedDate" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Azure.KeyVault.Models.DeletedStorageAccountItem.DeletedDate" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property DeletedDate As Nullable(Of DateTime)" />
       <MemberSignature Language="F#" Value="member this.DeletedDate : Nullable&lt;DateTime&gt;" Usage="Microsoft.Azure.KeyVault.Models.DeletedStorageAccountItem.DeletedDate" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Nullable&lt;DateTime&gt; DeletedDate { Nullable&lt;DateTime&gt; get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.KeyVault</AssemblyName>
         <AssemblyVersion>3.0.0.0</AssemblyVersion>
+        <AssemblyVersion>3.0.4.0</AssemblyVersion>
+        <AssemblyVersion>3.0.5.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonConverter(typeof(Microsoft.Rest.Serialization.UnixTimeJsonConverter))</AttributeName>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonConverter(typeof(Microsoft.Rest.Serialization.UnixTimeJsonConverter))]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonConverter(typeof(Microsoft.Rest.Serialization.UnixTimeJsonConverter))&gt;]</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="deletedDate")</AttributeName>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty(PropertyName="deletedDate")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty(PropertyName="deletedDate")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -119,16 +123,17 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Azure.KeyVault.Models.DeletedStorageAccountItem.RecoveryId" />
       <MemberSignature Language="VB.NET" Value="Public Property RecoveryId As String" />
       <MemberSignature Language="F#" Value="member this.RecoveryId : string with get, set" Usage="Microsoft.Azure.KeyVault.Models.DeletedStorageAccountItem.RecoveryId" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ RecoveryId { System::String ^ get(); void set(System::String ^ value); };" />
-      <MemberSignature Language="C++ CX" Value="public:&#xA; property Platform::String ^ RecoveryId { Platform::String ^ get(); void set(Platform::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.KeyVault</AssemblyName>
         <AssemblyVersion>3.0.0.0</AssemblyVersion>
+        <AssemblyVersion>3.0.4.0</AssemblyVersion>
+        <AssemblyVersion>3.0.5.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="recoveryId")</AttributeName>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty(PropertyName="recoveryId")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty(PropertyName="recoveryId")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -144,23 +149,26 @@
       </Docs>
     </Member>
     <Member MemberName="ScheduledPurgeDate">
-      <MemberSignature Language="C#" Value="public Nullable&lt;DateTime&gt; ScheduledPurgeDate { get; }" />
+      <MemberSignature Language="C#" Value="public DateTime? ScheduledPurgeDate { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;valuetype System.DateTime&gt; ScheduledPurgeDate" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Azure.KeyVault.Models.DeletedStorageAccountItem.ScheduledPurgeDate" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ScheduledPurgeDate As Nullable(Of DateTime)" />
       <MemberSignature Language="F#" Value="member this.ScheduledPurgeDate : Nullable&lt;DateTime&gt;" Usage="Microsoft.Azure.KeyVault.Models.DeletedStorageAccountItem.ScheduledPurgeDate" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Nullable&lt;DateTime&gt; ScheduledPurgeDate { Nullable&lt;DateTime&gt; get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.KeyVault</AssemblyName>
         <AssemblyVersion>3.0.0.0</AssemblyVersion>
+        <AssemblyVersion>3.0.4.0</AssemblyVersion>
+        <AssemblyVersion>3.0.5.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonConverter(typeof(Microsoft.Rest.Serialization.UnixTimeJsonConverter))</AttributeName>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonConverter(typeof(Microsoft.Rest.Serialization.UnixTimeJsonConverter))]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonConverter(typeof(Microsoft.Rest.Serialization.UnixTimeJsonConverter))&gt;]</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="scheduledPurgeDate")</AttributeName>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty(PropertyName="scheduledPurgeDate")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty(PropertyName="scheduledPurgeDate")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>

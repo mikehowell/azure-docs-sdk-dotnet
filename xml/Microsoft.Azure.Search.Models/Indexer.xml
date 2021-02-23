@@ -1,4 +1,4 @@
-﻿<Type Name="Indexer" FullName="Microsoft.Azure.Search.Models.Indexer">
+<Type Name="Indexer" FullName="Microsoft.Azure.Search.Models.Indexer">
   <TypeSignature Language="C#" Value="public class Indexer : Microsoft.Azure.Search.Models.IResourceWithETag" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit Indexer extends System.Object implements class Microsoft.Azure.Search.Models.IResourceWithETag" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Azure.Search.Models.Indexer" />
@@ -6,7 +6,7 @@
   <TypeSignature Language="F#" Value="type Indexer = class&#xA;    interface IResourceWithETag" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Azure.Search.Service</AssemblyName>
-    <AssemblyVersion>5.0.0.0</AssemblyVersion>
+    <AssemblyVersion>10.1.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
@@ -18,7 +18,7 @@
   </Interfaces>
   <Docs>
     <summary>
-            Represents an Azure Search indexer.
+            Represents an indexer.
             <see href="https://docs.microsoft.com/rest/api/searchservice/Indexer-operations" /></summary>
     <remarks>To be added.</remarks>
   </Docs>
@@ -31,7 +31,7 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Search.Service</AssemblyName>
-        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>10.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
@@ -42,24 +42,26 @@
       </Docs>
     </Member>
     <Member MemberName=".ctor">
-      <MemberSignature Language="C#" Value="public Indexer (string name, string dataSourceName, string targetIndexName, string description = null, Microsoft.Azure.Search.Models.IndexingSchedule schedule = null, Microsoft.Azure.Search.Models.IndexingParameters parameters = null, System.Collections.Generic.IList&lt;Microsoft.Azure.Search.Models.FieldMapping&gt; fieldMappings = null, Nullable&lt;bool&gt; isDisabled = null, string eTag = null);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string name, string dataSourceName, string targetIndexName, string description, class Microsoft.Azure.Search.Models.IndexingSchedule schedule, class Microsoft.Azure.Search.Models.IndexingParameters parameters, class System.Collections.Generic.IList`1&lt;class Microsoft.Azure.Search.Models.FieldMapping&gt; fieldMappings, valuetype System.Nullable`1&lt;bool&gt; isDisabled, string eTag) cil managed" />
-      <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Search.Models.Indexer.#ctor(System.String,System.String,System.String,System.String,Microsoft.Azure.Search.Models.IndexingSchedule,Microsoft.Azure.Search.Models.IndexingParameters,System.Collections.Generic.IList{Microsoft.Azure.Search.Models.FieldMapping},System.Nullable{System.Boolean},System.String)" />
-      <MemberSignature Language="VB.NET" Value="Public Sub New (name As String, dataSourceName As String, targetIndexName As String, Optional description As String = null, Optional schedule As IndexingSchedule = null, Optional parameters As IndexingParameters = null, Optional fieldMappings As IList(Of FieldMapping) = null, Optional isDisabled As Nullable(Of Boolean) = null, Optional eTag As String = null)" />
-      <MemberSignature Language="F#" Value="new Microsoft.Azure.Search.Models.Indexer : string * string * string * string * Microsoft.Azure.Search.Models.IndexingSchedule * Microsoft.Azure.Search.Models.IndexingParameters * System.Collections.Generic.IList&lt;Microsoft.Azure.Search.Models.FieldMapping&gt; * Nullable&lt;bool&gt; * string -&gt; Microsoft.Azure.Search.Models.Indexer" Usage="new Microsoft.Azure.Search.Models.Indexer (name, dataSourceName, targetIndexName, description, schedule, parameters, fieldMappings, isDisabled, eTag)" />
+      <MemberSignature Language="C#" Value="public Indexer (string name, string dataSourceName, string targetIndexName, string description = default, string skillsetName = default, Microsoft.Azure.Search.Models.IndexingSchedule schedule = default, Microsoft.Azure.Search.Models.IndexingParameters parameters = default, System.Collections.Generic.IList&lt;Microsoft.Azure.Search.Models.FieldMapping&gt; fieldMappings = default, System.Collections.Generic.IList&lt;Microsoft.Azure.Search.Models.FieldMapping&gt; outputFieldMappings = default, bool? isDisabled = default, string eTag = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string name, string dataSourceName, string targetIndexName, string description, string skillsetName, class Microsoft.Azure.Search.Models.IndexingSchedule schedule, class Microsoft.Azure.Search.Models.IndexingParameters parameters, class System.Collections.Generic.IList`1&lt;class Microsoft.Azure.Search.Models.FieldMapping&gt; fieldMappings, class System.Collections.Generic.IList`1&lt;class Microsoft.Azure.Search.Models.FieldMapping&gt; outputFieldMappings, valuetype System.Nullable`1&lt;bool&gt; isDisabled, string eTag) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Search.Models.Indexer.#ctor(System.String,System.String,System.String,System.String,System.String,Microsoft.Azure.Search.Models.IndexingSchedule,Microsoft.Azure.Search.Models.IndexingParameters,System.Collections.Generic.IList{Microsoft.Azure.Search.Models.FieldMapping},System.Collections.Generic.IList{Microsoft.Azure.Search.Models.FieldMapping},System.Nullable{System.Boolean},System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (name As String, dataSourceName As String, targetIndexName As String, Optional description As String = Nothing, Optional skillsetName As String = Nothing, Optional schedule As IndexingSchedule = Nothing, Optional parameters As IndexingParameters = Nothing, Optional fieldMappings As IList(Of FieldMapping) = Nothing, Optional outputFieldMappings As IList(Of FieldMapping) = Nothing, Optional isDisabled As Nullable(Of Boolean) = Nothing, Optional eTag As String = Nothing)" />
+      <MemberSignature Language="F#" Value="new Microsoft.Azure.Search.Models.Indexer : string * string * string * string * string * Microsoft.Azure.Search.Models.IndexingSchedule * Microsoft.Azure.Search.Models.IndexingParameters * System.Collections.Generic.IList&lt;Microsoft.Azure.Search.Models.FieldMapping&gt; * System.Collections.Generic.IList&lt;Microsoft.Azure.Search.Models.FieldMapping&gt; * Nullable&lt;bool&gt; * string -&gt; Microsoft.Azure.Search.Models.Indexer" Usage="new Microsoft.Azure.Search.Models.Indexer (name, dataSourceName, targetIndexName, description, skillsetName, schedule, parameters, fieldMappings, outputFieldMappings, isDisabled, eTag)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Search.Service</AssemblyName>
-        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>10.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="name" Type="System.String" />
         <Parameter Name="dataSourceName" Type="System.String" />
         <Parameter Name="targetIndexName" Type="System.String" />
         <Parameter Name="description" Type="System.String" />
+        <Parameter Name="skillsetName" Type="System.String" />
         <Parameter Name="schedule" Type="Microsoft.Azure.Search.Models.IndexingSchedule" />
         <Parameter Name="parameters" Type="Microsoft.Azure.Search.Models.IndexingParameters" />
         <Parameter Name="fieldMappings" Type="System.Collections.Generic.IList&lt;Microsoft.Azure.Search.Models.FieldMapping&gt;" />
+        <Parameter Name="outputFieldMappings" Type="System.Collections.Generic.IList&lt;Microsoft.Azure.Search.Models.FieldMapping&gt;" />
         <Parameter Name="isDisabled" Type="System.Nullable&lt;System.Boolean&gt;" />
         <Parameter Name="eTag" Type="System.String" />
       </Parameters>
@@ -70,10 +72,14 @@
         <param name="targetIndexName">The name of the index to which this
             indexer writes data.</param>
         <param name="description">The description of the indexer.</param>
+        <param name="skillsetName">The name of the skillset executing with
+            this indexer.</param>
         <param name="schedule">The schedule for this indexer.</param>
         <param name="parameters">Parameters for indexer execution.</param>
         <param name="fieldMappings">Defines mappings between fields in the
             data source and corresponding target fields in the index.</param>
+        <param name="outputFieldMappings">Output field mappings are applied
+            after enrichment and immediately before indexing.</param>
         <param name="isDisabled">A value indicating whether the indexer is
             disabled. Default is false.</param>
         <param name="eTag">The ETag of the Indexer.</param>
@@ -92,11 +98,12 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Search.Service</AssemblyName>
-        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>10.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="dataSourceName")</AttributeName>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty(PropertyName="dataSourceName")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty(PropertyName="dataSourceName")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -120,11 +127,12 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Search.Service</AssemblyName>
-        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>10.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="description")</AttributeName>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty(PropertyName="description")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty(PropertyName="description")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -147,11 +155,12 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Search.Service</AssemblyName>
-        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>10.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="@odata.etag")</AttributeName>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty(PropertyName="@odata.etag")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty(PropertyName="@odata.etag")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -174,11 +183,12 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Search.Service</AssemblyName>
-        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>10.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="fieldMappings")</AttributeName>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty(PropertyName="fieldMappings")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty(PropertyName="fieldMappings")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -194,7 +204,7 @@
       </Docs>
     </Member>
     <Member MemberName="IsDisabled">
-      <MemberSignature Language="C#" Value="public Nullable&lt;bool&gt; IsDisabled { get; set; }" />
+      <MemberSignature Language="C#" Value="public bool? IsDisabled { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;bool&gt; IsDisabled" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Search.Models.Indexer.IsDisabled" />
       <MemberSignature Language="VB.NET" Value="Public Property IsDisabled As Nullable(Of Boolean)" />
@@ -202,11 +212,12 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Search.Service</AssemblyName>
-        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>10.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="disabled")</AttributeName>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty(PropertyName="disabled")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty(PropertyName="disabled")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -230,11 +241,12 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Search.Service</AssemblyName>
-        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>10.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="name")</AttributeName>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty(PropertyName="name")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty(PropertyName="name")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -243,6 +255,35 @@
       <Docs>
         <summary>
             Gets or sets the name of the indexer.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OutputFieldMappings">
+      <MemberSignature Language="C#" Value="public System.Collections.Generic.IList&lt;Microsoft.Azure.Search.Models.FieldMapping&gt; OutputFieldMappings { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Generic.IList`1&lt;class Microsoft.Azure.Search.Models.FieldMapping&gt; OutputFieldMappings" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Search.Models.Indexer.OutputFieldMappings" />
+      <MemberSignature Language="VB.NET" Value="Public Property OutputFieldMappings As IList(Of FieldMapping)" />
+      <MemberSignature Language="F#" Value="member this.OutputFieldMappings : System.Collections.Generic.IList&lt;Microsoft.Azure.Search.Models.FieldMapping&gt; with get, set" Usage="Microsoft.Azure.Search.Models.Indexer.OutputFieldMappings" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Azure.Search.Service</AssemblyName>
+        <AssemblyVersion>10.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty(PropertyName="outputFieldMappings")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty(PropertyName="outputFieldMappings")&gt;]</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.IList&lt;Microsoft.Azure.Search.Models.FieldMapping&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets or sets output field mappings are applied after enrichment and
+            immediately before indexing.
             </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
@@ -257,11 +298,12 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Search.Service</AssemblyName>
-        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>10.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="parameters")</AttributeName>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty(PropertyName="parameters")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty(PropertyName="parameters")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -284,11 +326,12 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Search.Service</AssemblyName>
-        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>10.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="schedule")</AttributeName>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty(PropertyName="schedule")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty(PropertyName="schedule")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -297,6 +340,34 @@
       <Docs>
         <summary>
             Gets or sets the schedule for this indexer.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SkillsetName">
+      <MemberSignature Language="C#" Value="public string SkillsetName { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string SkillsetName" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Search.Models.Indexer.SkillsetName" />
+      <MemberSignature Language="VB.NET" Value="Public Property SkillsetName As String" />
+      <MemberSignature Language="F#" Value="member this.SkillsetName : string with get, set" Usage="Microsoft.Azure.Search.Models.Indexer.SkillsetName" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Azure.Search.Service</AssemblyName>
+        <AssemblyVersion>10.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty(PropertyName="skillsetName")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty(PropertyName="skillsetName")&gt;]</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets or sets the name of the skillset executing with this indexer.
             </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
@@ -311,11 +382,12 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Search.Service</AssemblyName>
-        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>10.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="targetIndexName")</AttributeName>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty(PropertyName="targetIndexName")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty(PropertyName="targetIndexName")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -339,7 +411,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Search.Service</AssemblyName>
-        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>10.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>

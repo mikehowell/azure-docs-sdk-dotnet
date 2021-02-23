@@ -1,11 +1,9 @@
-﻿<Type Name="RoleAssignmentFilter" FullName="Microsoft.Azure.Management.Authorization.Models.RoleAssignmentFilter">
+<Type Name="RoleAssignmentFilter" FullName="Microsoft.Azure.Management.Authorization.Models.RoleAssignmentFilter">
   <TypeSignature Language="C#" Value="public class RoleAssignmentFilter" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit RoleAssignmentFilter extends System.Object" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Azure.Management.Authorization.Models.RoleAssignmentFilter" />
   <TypeSignature Language="VB.NET" Value="Public Class RoleAssignmentFilter" />
   <TypeSignature Language="F#" Value="type RoleAssignmentFilter = class" />
-  <TypeSignature Language="C++ CLI" Value="public ref class RoleAssignmentFilter" />
-  <TypeSignature Language="C++ WINRT" Value="[Windows::Foundation::Metadata::WebHostHidden]&#xA;class RoleAssignmentFilter" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Azure.Management.Authorization</AssemblyName>
     <AssemblyVersion>2.0.0.0</AssemblyVersion>
@@ -26,9 +24,6 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Management.Authorization.Models.RoleAssignmentFilter.#ctor" />
       <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; RoleAssignmentFilter();" />
-      <MemberSignature Language="C++ CX" Value="public:&#xA; RoleAssignmentFilter();" />
-      <MemberSignature Language="C++ WINRT" Value=" RoleAssignmentFilter();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Authorization</AssemblyName>
@@ -43,10 +38,10 @@
       </Docs>
     </Member>
     <Member MemberName=".ctor">
-      <MemberSignature Language="C#" Value="public RoleAssignmentFilter (string principalId = null, Nullable&lt;bool&gt; canDelegate = null);" />
+      <MemberSignature Language="C#" Value="public RoleAssignmentFilter (string principalId = default, bool? canDelegate = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string principalId, valuetype System.Nullable`1&lt;bool&gt; canDelegate) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Management.Authorization.Models.RoleAssignmentFilter.#ctor(System.String,System.Nullable{System.Boolean})" />
-      <MemberSignature Language="VB.NET" Value="Public Sub New (Optional principalId As String = null, Optional canDelegate As Nullable(Of Boolean) = null)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (Optional principalId As String = Nothing, Optional canDelegate As Nullable(Of Boolean) = Nothing)" />
       <MemberSignature Language="F#" Value="new Microsoft.Azure.Management.Authorization.Models.RoleAssignmentFilter : string * Nullable&lt;bool&gt; -&gt; Microsoft.Azure.Management.Authorization.Models.RoleAssignmentFilter" Usage="new Microsoft.Azure.Management.Authorization.Models.RoleAssignmentFilter (principalId, canDelegate)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
@@ -60,8 +55,8 @@
       <Docs>
         <param name="principalId">Returns role assignment of the specific
             principal.</param>
-        <param name="canDelegate">The Delegation flag for the
-            roleassignment</param>
+        <param name="canDelegate">The Delegation flag for the role
+            assignment</param>
         <summary>
             Initializes a new instance of the RoleAssignmentFilter class.
             </summary>
@@ -74,9 +69,6 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Management.Authorization.Models.RoleAssignmentFilter.AssignedTo(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Function AssignedTo (principalId As String) As Boolean" />
       <MemberSignature Language="F#" Value="member this.AssignedTo : string -&gt; bool" Usage="roleAssignmentFilter.AssignedTo principalId" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; bool AssignedTo(System::String ^ principalId);" />
-      <MemberSignature Language="C++ CX" Value="public:&#xA; bool AssignedTo(Platform::String ^ principalId);" />
-      <MemberSignature Language="C++ WINRT" Value="bool AssignedTo(std::wstring const &amp; principalId);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Authorization</AssemblyName>
@@ -84,7 +76,8 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Microsoft.Rest.Azure.OData.ODataMethod("assignedTo")</AttributeName>
+          <AttributeName Language="C#">[Microsoft.Rest.Azure.OData.ODataMethod("assignedTo")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Microsoft.Rest.Azure.OData.ODataMethod("assignedTo")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -106,9 +99,6 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Management.Authorization.Models.RoleAssignmentFilter.AtScope" />
       <MemberSignature Language="VB.NET" Value="Public Function AtScope () As Boolean" />
       <MemberSignature Language="F#" Value="member this.AtScope : unit -&gt; bool" Usage="roleAssignmentFilter.AtScope " />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; bool AtScope();" />
-      <MemberSignature Language="C++ CX" Value="public:&#xA; bool AtScope();" />
-      <MemberSignature Language="C++ WINRT" Value="bool AtScope();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Authorization</AssemblyName>
@@ -116,7 +106,8 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Microsoft.Rest.Azure.OData.ODataMethod("atScope")</AttributeName>
+          <AttributeName Language="C#">[Microsoft.Rest.Azure.OData.ODataMethod("atScope")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Microsoft.Rest.Azure.OData.ODataMethod("atScope")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -130,12 +121,11 @@
       </Docs>
     </Member>
     <Member MemberName="CanDelegate">
-      <MemberSignature Language="C#" Value="public Nullable&lt;bool&gt; CanDelegate { get; set; }" />
+      <MemberSignature Language="C#" Value="public bool? CanDelegate { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;bool&gt; CanDelegate" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Management.Authorization.Models.RoleAssignmentFilter.CanDelegate" />
       <MemberSignature Language="VB.NET" Value="Public Property CanDelegate As Nullable(Of Boolean)" />
       <MemberSignature Language="F#" Value="member this.CanDelegate : Nullable&lt;bool&gt; with get, set" Usage="Microsoft.Azure.Management.Authorization.Models.RoleAssignmentFilter.CanDelegate" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Nullable&lt;bool&gt; CanDelegate { Nullable&lt;bool&gt; get(); void set(Nullable&lt;bool&gt; value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Authorization</AssemblyName>
@@ -143,7 +133,8 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="canDelegate")</AttributeName>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty(PropertyName="canDelegate")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty(PropertyName="canDelegate")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -151,7 +142,7 @@
       </ReturnValue>
       <Docs>
         <summary>
-            Gets or sets the Delegation flag for the roleassignment
+            Gets or sets the Delegation flag for the role assignment
             </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
@@ -163,8 +154,6 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Management.Authorization.Models.RoleAssignmentFilter.PrincipalId" />
       <MemberSignature Language="VB.NET" Value="Public Property PrincipalId As String" />
       <MemberSignature Language="F#" Value="member this.PrincipalId : string with get, set" Usage="Microsoft.Azure.Management.Authorization.Models.RoleAssignmentFilter.PrincipalId" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ PrincipalId { System::String ^ get(); void set(System::String ^ value); };" />
-      <MemberSignature Language="C++ CX" Value="public:&#xA; property Platform::String ^ PrincipalId { Platform::String ^ get(); void set(Platform::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Authorization</AssemblyName>
@@ -172,7 +161,8 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="principalId")</AttributeName>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty(PropertyName="principalId")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty(PropertyName="principalId")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>

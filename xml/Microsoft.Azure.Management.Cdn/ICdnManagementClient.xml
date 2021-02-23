@@ -1,14 +1,14 @@
-﻿<Type Name="ICdnManagementClient" FullName="Microsoft.Azure.Management.Cdn.ICdnManagementClient">
+<Type Name="ICdnManagementClient" FullName="Microsoft.Azure.Management.Cdn.ICdnManagementClient">
   <TypeSignature Language="C#" Value="public interface ICdnManagementClient : IDisposable" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract ICdnManagementClient implements class System.IDisposable" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Azure.Management.Cdn.ICdnManagementClient" />
   <TypeSignature Language="VB.NET" Value="Public Interface ICdnManagementClient&#xA;Implements IDisposable" />
   <TypeSignature Language="F#" Value="type ICdnManagementClient = interface&#xA;    interface IDisposable" />
-  <TypeSignature Language="C++ CLI" Value="public interface class ICdnManagementClient : IDisposable" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Azure.Management.Cdn</AssemblyName>
-    <AssemblyVersion>3.0.0.0</AssemblyVersion>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
+    <AssemblyVersion>6.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Interfaces>
     <Interface>
@@ -17,9 +17,7 @@
   </Interfaces>
   <Docs>
     <summary>
-            Use these APIs to manage Azure CDN resources through the Azure Resource
-            Manager. You must make sure that requests made to these resources are
-            secure.
+            Cdn Management Client
             </summary>
     <remarks>To be added.</remarks>
   </Docs>
@@ -30,20 +28,129 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Management.Cdn.ICdnManagementClient.AcceptLanguage" />
       <MemberSignature Language="VB.NET" Value="Public Property AcceptLanguage As String" />
       <MemberSignature Language="F#" Value="member this.AcceptLanguage : string with get, set" Usage="Microsoft.Azure.Management.Cdn.ICdnManagementClient.AcceptLanguage" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ AcceptLanguage { System::String ^ get(); void set(System::String ^ value); };" />
-      <MemberSignature Language="C++ CX" Value="public:&#xA; property Platform::String ^ AcceptLanguage { Platform::String ^ get(); void set(Platform::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Cdn</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
         <summary>
-            Gets or sets the preferred language for the response.
+            The preferred language for the response.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AFDCustomDomains">
+      <MemberSignature Language="C#" Value="public Microsoft.Azure.Management.Cdn.IAFDCustomDomainsOperations AFDCustomDomains { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Azure.Management.Cdn.IAFDCustomDomainsOperations AFDCustomDomains" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Management.Cdn.ICdnManagementClient.AFDCustomDomains" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property AFDCustomDomains As IAFDCustomDomainsOperations" />
+      <MemberSignature Language="F#" Value="member this.AFDCustomDomains : Microsoft.Azure.Management.Cdn.IAFDCustomDomainsOperations" Usage="Microsoft.Azure.Management.Cdn.ICdnManagementClient.AFDCustomDomains" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Azure.Management.Cdn</AssemblyName>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Azure.Management.Cdn.IAFDCustomDomainsOperations</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets the IAFDCustomDomainsOperations.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AFDEndpoints">
+      <MemberSignature Language="C#" Value="public Microsoft.Azure.Management.Cdn.IAFDEndpointsOperations AFDEndpoints { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Azure.Management.Cdn.IAFDEndpointsOperations AFDEndpoints" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Management.Cdn.ICdnManagementClient.AFDEndpoints" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property AFDEndpoints As IAFDEndpointsOperations" />
+      <MemberSignature Language="F#" Value="member this.AFDEndpoints : Microsoft.Azure.Management.Cdn.IAFDEndpointsOperations" Usage="Microsoft.Azure.Management.Cdn.ICdnManagementClient.AFDEndpoints" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Azure.Management.Cdn</AssemblyName>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Azure.Management.Cdn.IAFDEndpointsOperations</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets the IAFDEndpointsOperations.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AFDOriginGroups">
+      <MemberSignature Language="C#" Value="public Microsoft.Azure.Management.Cdn.IAFDOriginGroupsOperations AFDOriginGroups { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Azure.Management.Cdn.IAFDOriginGroupsOperations AFDOriginGroups" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Management.Cdn.ICdnManagementClient.AFDOriginGroups" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property AFDOriginGroups As IAFDOriginGroupsOperations" />
+      <MemberSignature Language="F#" Value="member this.AFDOriginGroups : Microsoft.Azure.Management.Cdn.IAFDOriginGroupsOperations" Usage="Microsoft.Azure.Management.Cdn.ICdnManagementClient.AFDOriginGroups" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Azure.Management.Cdn</AssemblyName>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Azure.Management.Cdn.IAFDOriginGroupsOperations</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets the IAFDOriginGroupsOperations.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AFDOrigins">
+      <MemberSignature Language="C#" Value="public Microsoft.Azure.Management.Cdn.IAFDOriginsOperations AFDOrigins { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Azure.Management.Cdn.IAFDOriginsOperations AFDOrigins" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Management.Cdn.ICdnManagementClient.AFDOrigins" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property AFDOrigins As IAFDOriginsOperations" />
+      <MemberSignature Language="F#" Value="member this.AFDOrigins : Microsoft.Azure.Management.Cdn.IAFDOriginsOperations" Usage="Microsoft.Azure.Management.Cdn.ICdnManagementClient.AFDOrigins" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Azure.Management.Cdn</AssemblyName>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Azure.Management.Cdn.IAFDOriginsOperations</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets the IAFDOriginsOperations.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AFDProfiles">
+      <MemberSignature Language="C#" Value="public Microsoft.Azure.Management.Cdn.IAFDProfilesOperations AFDProfiles { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Azure.Management.Cdn.IAFDProfilesOperations AFDProfiles" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Management.Cdn.ICdnManagementClient.AFDProfiles" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property AFDProfiles As IAFDProfilesOperations" />
+      <MemberSignature Language="F#" Value="member this.AFDProfiles : Microsoft.Azure.Management.Cdn.IAFDProfilesOperations" Usage="Microsoft.Azure.Management.Cdn.ICdnManagementClient.AFDProfiles" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Azure.Management.Cdn</AssemblyName>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Azure.Management.Cdn.IAFDProfilesOperations</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets the IAFDProfilesOperations.
             </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
@@ -55,13 +162,12 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Management.Cdn.ICdnManagementClient.ApiVersion" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ApiVersion As String" />
       <MemberSignature Language="F#" Value="member this.ApiVersion : string" Usage="Microsoft.Azure.Management.Cdn.ICdnManagementClient.ApiVersion" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ ApiVersion { System::String ^ get(); };" />
-      <MemberSignature Language="C++ CX" Value="public:&#xA; property Platform::String ^ ApiVersion { Platform::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Cdn</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -69,7 +175,7 @@
       <Docs>
         <summary>
             Version of the API to be used with the client request. Current
-            version is 2017-04-02.
+            version is 2020-09-01.
             </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
@@ -81,12 +187,12 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Management.Cdn.ICdnManagementClient.BaseUri" />
       <MemberSignature Language="VB.NET" Value="Public Property BaseUri As Uri" />
       <MemberSignature Language="F#" Value="member this.BaseUri : Uri with get, set" Usage="Microsoft.Azure.Management.Cdn.ICdnManagementClient.BaseUri" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Uri ^ BaseUri { Uri ^ get(); void set(Uri ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Cdn</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Uri</ReturnType>
@@ -100,15 +206,55 @@
       </Docs>
     </Member>
     <Member MemberName="CheckNameAvailabilityWithHttpMessagesAsync">
-      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;Microsoft.Rest.Azure.AzureOperationResponse&lt;Microsoft.Azure.Management.Cdn.Models.CheckNameAvailabilityOutput&gt;&gt; CheckNameAvailabilityWithHttpMessagesAsync (string name, System.Collections.Generic.Dictionary&lt;string,System.Collections.Generic.List&lt;string&gt;&gt; customHeaders = null, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;Microsoft.Rest.Azure.AzureOperationResponse&lt;Microsoft.Azure.Management.Cdn.Models.CheckNameAvailabilityOutput&gt;&gt; CheckNameAvailabilityWithHttpMessagesAsync (string name, System.Collections.Generic.Dictionary&lt;string,System.Collections.Generic.List&lt;string&gt;&gt; customHeaders = default, System.Threading.CancellationToken cancellationToken = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Microsoft.Rest.Azure.AzureOperationResponse`1&lt;class Microsoft.Azure.Management.Cdn.Models.CheckNameAvailabilityOutput&gt;&gt; CheckNameAvailabilityWithHttpMessagesAsync(string name, class System.Collections.Generic.Dictionary`2&lt;string, class System.Collections.Generic.List`1&lt;string&gt;&gt; customHeaders, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Management.Cdn.ICdnManagementClient.CheckNameAvailabilityWithHttpMessagesAsync(System.String,System.Collections.Generic.Dictionary{System.String,System.Collections.Generic.List{System.String}},System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Function CheckNameAvailabilityWithHttpMessagesAsync (name As String, Optional customHeaders As Dictionary(Of String, List(Of String)) = Nothing, Optional cancellationToken As CancellationToken = Nothing) As Task(Of AzureOperationResponse(Of CheckNameAvailabilityOutput))" />
       <MemberSignature Language="F#" Value="abstract member CheckNameAvailabilityWithHttpMessagesAsync : string * System.Collections.Generic.Dictionary&lt;string, System.Collections.Generic.List&lt;string&gt;&gt; * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.Rest.Azure.AzureOperationResponse&lt;Microsoft.Azure.Management.Cdn.Models.CheckNameAvailabilityOutput&gt;&gt;" Usage="iCdnManagementClient.CheckNameAvailabilityWithHttpMessagesAsync (name, customHeaders, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Cdn</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.Rest.Azure.AzureOperationResponse&lt;Microsoft.Azure.Management.Cdn.Models.CheckNameAvailabilityOutput&gt;&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="name" Type="System.String" />
+        <Parameter Name="customHeaders" Type="System.Collections.Generic.Dictionary&lt;System.String,System.Collections.Generic.List&lt;System.String&gt;&gt;" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="name">
+            The resource name to validate.
+            </param>
+        <param name="customHeaders">
+            The headers that will be added to request.
+            </param>
+        <param name="cancellationToken">
+            The cancellation token.
+            </param>
+        <summary>
+            Check the availability of a resource name. This is needed for
+            resources where name is globally unique, such as a CDN endpoint.
+            </summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CheckNameAvailabilityWithSubscriptionWithHttpMessagesAsync">
+      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;Microsoft.Rest.Azure.AzureOperationResponse&lt;Microsoft.Azure.Management.Cdn.Models.CheckNameAvailabilityOutput&gt;&gt; CheckNameAvailabilityWithSubscriptionWithHttpMessagesAsync (string name, System.Collections.Generic.Dictionary&lt;string,System.Collections.Generic.List&lt;string&gt;&gt; customHeaders = default, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Microsoft.Rest.Azure.AzureOperationResponse`1&lt;class Microsoft.Azure.Management.Cdn.Models.CheckNameAvailabilityOutput&gt;&gt; CheckNameAvailabilityWithSubscriptionWithHttpMessagesAsync(string name, class System.Collections.Generic.Dictionary`2&lt;string, class System.Collections.Generic.List`1&lt;string&gt;&gt; customHeaders, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Management.Cdn.ICdnManagementClient.CheckNameAvailabilityWithSubscriptionWithHttpMessagesAsync(System.String,System.Collections.Generic.Dictionary{System.String,System.Collections.Generic.List{System.String}},System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Function CheckNameAvailabilityWithSubscriptionWithHttpMessagesAsync (name As String, Optional customHeaders As Dictionary(Of String, List(Of String)) = Nothing, Optional cancellationToken As CancellationToken = Nothing) As Task(Of AzureOperationResponse(Of CheckNameAvailabilityOutput))" />
+      <MemberSignature Language="F#" Value="abstract member CheckNameAvailabilityWithSubscriptionWithHttpMessagesAsync : string * System.Collections.Generic.Dictionary&lt;string, System.Collections.Generic.List&lt;string&gt;&gt; * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.Rest.Azure.AzureOperationResponse&lt;Microsoft.Azure.Management.Cdn.Models.CheckNameAvailabilityOutput&gt;&gt;" Usage="iCdnManagementClient.CheckNameAvailabilityWithSubscriptionWithHttpMessagesAsync (name, customHeaders, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Azure.Management.Cdn</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.Rest.Azure.AzureOperationResponse&lt;Microsoft.Azure.Management.Cdn.Models.CheckNameAvailabilityOutput&gt;&gt;</ReturnType>
@@ -142,13 +288,12 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Management.Cdn.ICdnManagementClient.Credentials" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Credentials As ServiceClientCredentials" />
       <MemberSignature Language="F#" Value="member this.Credentials : Microsoft.Rest.ServiceClientCredentials" Usage="Microsoft.Azure.Management.Cdn.ICdnManagementClient.Credentials" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Rest::ServiceClientCredentials ^ Credentials { Microsoft::Rest::ServiceClientCredentials ^ get(); };" />
-      <MemberSignature Language="C++ CX" Value="public:&#xA; property Microsoft::Rest::ServiceClientCredentials ^ Credentials { Microsoft::Rest::ServiceClientCredentials ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Cdn</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Rest.ServiceClientCredentials</ReturnType>
@@ -167,13 +312,12 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Management.Cdn.ICdnManagementClient.CustomDomains" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property CustomDomains As ICustomDomainsOperations" />
       <MemberSignature Language="F#" Value="member this.CustomDomains : Microsoft.Azure.Management.Cdn.ICustomDomainsOperations" Usage="Microsoft.Azure.Management.Cdn.ICdnManagementClient.CustomDomains" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Azure::Management::Cdn::ICustomDomainsOperations ^ CustomDomains { Microsoft::Azure::Management::Cdn::ICustomDomainsOperations ^ get(); };" />
-      <MemberSignature Language="C++ CX" Value="public:&#xA; property Microsoft::Azure::Management::Cdn::ICustomDomainsOperations ^ CustomDomains { Microsoft::Azure::Management::Cdn::ICustomDomainsOperations ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Cdn</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Azure.Management.Cdn.ICustomDomainsOperations</ReturnType>
@@ -192,12 +336,12 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Management.Cdn.ICdnManagementClient.DeserializationSettings" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property DeserializationSettings As JsonSerializerSettings" />
       <MemberSignature Language="F#" Value="member this.DeserializationSettings : Newtonsoft.Json.JsonSerializerSettings" Usage="Microsoft.Azure.Management.Cdn.ICdnManagementClient.DeserializationSettings" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Newtonsoft::Json::JsonSerializerSettings ^ DeserializationSettings { Newtonsoft::Json::JsonSerializerSettings ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Cdn</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Newtonsoft.Json.JsonSerializerSettings</ReturnType>
@@ -216,13 +360,12 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Management.Cdn.ICdnManagementClient.EdgeNodes" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property EdgeNodes As IEdgeNodesOperations" />
       <MemberSignature Language="F#" Value="member this.EdgeNodes : Microsoft.Azure.Management.Cdn.IEdgeNodesOperations" Usage="Microsoft.Azure.Management.Cdn.ICdnManagementClient.EdgeNodes" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Azure::Management::Cdn::IEdgeNodesOperations ^ EdgeNodes { Microsoft::Azure::Management::Cdn::IEdgeNodesOperations ^ get(); };" />
-      <MemberSignature Language="C++ CX" Value="public:&#xA; property Microsoft::Azure::Management::Cdn::IEdgeNodesOperations ^ EdgeNodes { Microsoft::Azure::Management::Cdn::IEdgeNodesOperations ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Cdn</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Azure.Management.Cdn.IEdgeNodesOperations</ReturnType>
@@ -241,13 +384,12 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Management.Cdn.ICdnManagementClient.Endpoints" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Endpoints As IEndpointsOperations" />
       <MemberSignature Language="F#" Value="member this.Endpoints : Microsoft.Azure.Management.Cdn.IEndpointsOperations" Usage="Microsoft.Azure.Management.Cdn.ICdnManagementClient.Endpoints" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Azure::Management::Cdn::IEndpointsOperations ^ Endpoints { Microsoft::Azure::Management::Cdn::IEndpointsOperations ^ get(); };" />
-      <MemberSignature Language="C++ CX" Value="public:&#xA; property Microsoft::Azure::Management::Cdn::IEndpointsOperations ^ Endpoints { Microsoft::Azure::Management::Cdn::IEndpointsOperations ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Cdn</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Azure.Management.Cdn.IEndpointsOperations</ReturnType>
@@ -261,50 +403,96 @@
       </Docs>
     </Member>
     <Member MemberName="GenerateClientRequestId">
-      <MemberSignature Language="C#" Value="public Nullable&lt;bool&gt; GenerateClientRequestId { get; set; }" />
+      <MemberSignature Language="C#" Value="public bool? GenerateClientRequestId { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;bool&gt; GenerateClientRequestId" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Management.Cdn.ICdnManagementClient.GenerateClientRequestId" />
       <MemberSignature Language="VB.NET" Value="Public Property GenerateClientRequestId As Nullable(Of Boolean)" />
       <MemberSignature Language="F#" Value="member this.GenerateClientRequestId : Nullable&lt;bool&gt; with get, set" Usage="Microsoft.Azure.Management.Cdn.ICdnManagementClient.GenerateClientRequestId" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Nullable&lt;bool&gt; GenerateClientRequestId { Nullable&lt;bool&gt; get(); void set(Nullable&lt;bool&gt; value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Cdn</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Nullable&lt;System.Boolean&gt;</ReturnType>
       </ReturnValue>
       <Docs>
         <summary>
-            When set to true a unique x-ms-client-request-id value is generated
-            and included in each request. Default is true.
+            Whether a unique x-ms-client-request-id should be generated. When
+            set to true a unique x-ms-client-request-id value is generated and
+            included in each request. Default is true.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="LogAnalytics">
+      <MemberSignature Language="C#" Value="public Microsoft.Azure.Management.Cdn.ILogAnalyticsOperations LogAnalytics { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Azure.Management.Cdn.ILogAnalyticsOperations LogAnalytics" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Management.Cdn.ICdnManagementClient.LogAnalytics" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property LogAnalytics As ILogAnalyticsOperations" />
+      <MemberSignature Language="F#" Value="member this.LogAnalytics : Microsoft.Azure.Management.Cdn.ILogAnalyticsOperations" Usage="Microsoft.Azure.Management.Cdn.ICdnManagementClient.LogAnalytics" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Azure.Management.Cdn</AssemblyName>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Azure.Management.Cdn.ILogAnalyticsOperations</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets the ILogAnalyticsOperations.
             </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="LongRunningOperationRetryTimeout">
-      <MemberSignature Language="C#" Value="public Nullable&lt;int&gt; LongRunningOperationRetryTimeout { get; set; }" />
+      <MemberSignature Language="C#" Value="public int? LongRunningOperationRetryTimeout { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;int32&gt; LongRunningOperationRetryTimeout" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Management.Cdn.ICdnManagementClient.LongRunningOperationRetryTimeout" />
       <MemberSignature Language="VB.NET" Value="Public Property LongRunningOperationRetryTimeout As Nullable(Of Integer)" />
       <MemberSignature Language="F#" Value="member this.LongRunningOperationRetryTimeout : Nullable&lt;int&gt; with get, set" Usage="Microsoft.Azure.Management.Cdn.ICdnManagementClient.LongRunningOperationRetryTimeout" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Nullable&lt;int&gt; LongRunningOperationRetryTimeout { Nullable&lt;int&gt; get(); void set(Nullable&lt;int&gt; value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Cdn</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Nullable&lt;System.Int32&gt;</ReturnType>
       </ReturnValue>
       <Docs>
         <summary>
-            Gets or sets the retry timeout in seconds for Long Running
-            Operations. Default value is 30.
+            The retry timeout in seconds for Long Running Operations. Default
+            value is 30.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ManagedRuleSets">
+      <MemberSignature Language="C#" Value="public Microsoft.Azure.Management.Cdn.IManagedRuleSetsOperations ManagedRuleSets { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Azure.Management.Cdn.IManagedRuleSetsOperations ManagedRuleSets" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Management.Cdn.ICdnManagementClient.ManagedRuleSets" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ManagedRuleSets As IManagedRuleSetsOperations" />
+      <MemberSignature Language="F#" Value="member this.ManagedRuleSets : Microsoft.Azure.Management.Cdn.IManagedRuleSetsOperations" Usage="Microsoft.Azure.Management.Cdn.ICdnManagementClient.ManagedRuleSets" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Azure.Management.Cdn</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Azure.Management.Cdn.IManagedRuleSetsOperations</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets the IManagedRuleSetsOperations.
             </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
@@ -316,12 +504,11 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Management.Cdn.ICdnManagementClient.Operations" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Operations As IOperations" />
       <MemberSignature Language="F#" Value="member this.Operations : Microsoft.Azure.Management.Cdn.IOperations" Usage="Microsoft.Azure.Management.Cdn.ICdnManagementClient.Operations" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Azure::Management::Cdn::IOperations ^ Operations { Microsoft::Azure::Management::Cdn::IOperations ^ get(); };" />
-      <MemberSignature Language="C++ CX" Value="public:&#xA; property Microsoft::Azure::Management::Cdn::IOperations ^ Operations { Microsoft::Azure::Management::Cdn::IOperations ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Cdn</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Azure.Management.Cdn.IOperations</ReturnType>
@@ -334,19 +521,41 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <Member MemberName="OriginGroups">
+      <MemberSignature Language="C#" Value="public Microsoft.Azure.Management.Cdn.IOriginGroupsOperations OriginGroups { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Azure.Management.Cdn.IOriginGroupsOperations OriginGroups" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Management.Cdn.ICdnManagementClient.OriginGroups" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property OriginGroups As IOriginGroupsOperations" />
+      <MemberSignature Language="F#" Value="member this.OriginGroups : Microsoft.Azure.Management.Cdn.IOriginGroupsOperations" Usage="Microsoft.Azure.Management.Cdn.ICdnManagementClient.OriginGroups" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Azure.Management.Cdn</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Azure.Management.Cdn.IOriginGroupsOperations</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets the IOriginGroupsOperations.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
     <Member MemberName="Origins">
       <MemberSignature Language="C#" Value="public Microsoft.Azure.Management.Cdn.IOriginsOperations Origins { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Azure.Management.Cdn.IOriginsOperations Origins" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Management.Cdn.ICdnManagementClient.Origins" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Origins As IOriginsOperations" />
       <MemberSignature Language="F#" Value="member this.Origins : Microsoft.Azure.Management.Cdn.IOriginsOperations" Usage="Microsoft.Azure.Management.Cdn.ICdnManagementClient.Origins" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Azure::Management::Cdn::IOriginsOperations ^ Origins { Microsoft::Azure::Management::Cdn::IOriginsOperations ^ get(); };" />
-      <MemberSignature Language="C++ CX" Value="public:&#xA; property Microsoft::Azure::Management::Cdn::IOriginsOperations ^ Origins { Microsoft::Azure::Management::Cdn::IOriginsOperations ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Cdn</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Azure.Management.Cdn.IOriginsOperations</ReturnType>
@@ -359,19 +568,41 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <Member MemberName="Policies">
+      <MemberSignature Language="C#" Value="public Microsoft.Azure.Management.Cdn.IPoliciesOperations Policies { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Azure.Management.Cdn.IPoliciesOperations Policies" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Management.Cdn.ICdnManagementClient.Policies" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Policies As IPoliciesOperations" />
+      <MemberSignature Language="F#" Value="member this.Policies : Microsoft.Azure.Management.Cdn.IPoliciesOperations" Usage="Microsoft.Azure.Management.Cdn.ICdnManagementClient.Policies" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Azure.Management.Cdn</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Azure.Management.Cdn.IPoliciesOperations</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets the IPoliciesOperations.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
     <Member MemberName="Profiles">
       <MemberSignature Language="C#" Value="public Microsoft.Azure.Management.Cdn.IProfilesOperations Profiles { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Azure.Management.Cdn.IProfilesOperations Profiles" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Management.Cdn.ICdnManagementClient.Profiles" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Profiles As IProfilesOperations" />
       <MemberSignature Language="F#" Value="member this.Profiles : Microsoft.Azure.Management.Cdn.IProfilesOperations" Usage="Microsoft.Azure.Management.Cdn.ICdnManagementClient.Profiles" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Azure::Management::Cdn::IProfilesOperations ^ Profiles { Microsoft::Azure::Management::Cdn::IProfilesOperations ^ get(); };" />
-      <MemberSignature Language="C++ CX" Value="public:&#xA; property Microsoft::Azure::Management::Cdn::IProfilesOperations ^ Profiles { Microsoft::Azure::Management::Cdn::IProfilesOperations ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Cdn</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Azure.Management.Cdn.IProfilesOperations</ReturnType>
@@ -390,12 +621,11 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Management.Cdn.ICdnManagementClient.ResourceUsage" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ResourceUsage As IResourceUsageOperations" />
       <MemberSignature Language="F#" Value="member this.ResourceUsage : Microsoft.Azure.Management.Cdn.IResourceUsageOperations" Usage="Microsoft.Azure.Management.Cdn.ICdnManagementClient.ResourceUsage" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Azure::Management::Cdn::IResourceUsageOperations ^ ResourceUsage { Microsoft::Azure::Management::Cdn::IResourceUsageOperations ^ get(); };" />
-      <MemberSignature Language="C++ CX" Value="public:&#xA; property Microsoft::Azure::Management::Cdn::IResourceUsageOperations ^ ResourceUsage { Microsoft::Azure::Management::Cdn::IResourceUsageOperations ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Cdn</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Azure.Management.Cdn.IResourceUsageOperations</ReturnType>
@@ -408,18 +638,128 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <Member MemberName="Routes">
+      <MemberSignature Language="C#" Value="public Microsoft.Azure.Management.Cdn.IRoutesOperations Routes { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Azure.Management.Cdn.IRoutesOperations Routes" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Management.Cdn.ICdnManagementClient.Routes" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Routes As IRoutesOperations" />
+      <MemberSignature Language="F#" Value="member this.Routes : Microsoft.Azure.Management.Cdn.IRoutesOperations" Usage="Microsoft.Azure.Management.Cdn.ICdnManagementClient.Routes" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Azure.Management.Cdn</AssemblyName>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Azure.Management.Cdn.IRoutesOperations</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets the IRoutesOperations.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Rules">
+      <MemberSignature Language="C#" Value="public Microsoft.Azure.Management.Cdn.IRulesOperations Rules { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Azure.Management.Cdn.IRulesOperations Rules" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Management.Cdn.ICdnManagementClient.Rules" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Rules As IRulesOperations" />
+      <MemberSignature Language="F#" Value="member this.Rules : Microsoft.Azure.Management.Cdn.IRulesOperations" Usage="Microsoft.Azure.Management.Cdn.ICdnManagementClient.Rules" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Azure.Management.Cdn</AssemblyName>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Azure.Management.Cdn.IRulesOperations</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets the IRulesOperations.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RuleSets">
+      <MemberSignature Language="C#" Value="public Microsoft.Azure.Management.Cdn.IRuleSetsOperations RuleSets { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Azure.Management.Cdn.IRuleSetsOperations RuleSets" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Management.Cdn.ICdnManagementClient.RuleSets" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property RuleSets As IRuleSetsOperations" />
+      <MemberSignature Language="F#" Value="member this.RuleSets : Microsoft.Azure.Management.Cdn.IRuleSetsOperations" Usage="Microsoft.Azure.Management.Cdn.ICdnManagementClient.RuleSets" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Azure.Management.Cdn</AssemblyName>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Azure.Management.Cdn.IRuleSetsOperations</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets the IRuleSetsOperations.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Secrets">
+      <MemberSignature Language="C#" Value="public Microsoft.Azure.Management.Cdn.ISecretsOperations Secrets { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Azure.Management.Cdn.ISecretsOperations Secrets" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Management.Cdn.ICdnManagementClient.Secrets" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Secrets As ISecretsOperations" />
+      <MemberSignature Language="F#" Value="member this.Secrets : Microsoft.Azure.Management.Cdn.ISecretsOperations" Usage="Microsoft.Azure.Management.Cdn.ICdnManagementClient.Secrets" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Azure.Management.Cdn</AssemblyName>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Azure.Management.Cdn.ISecretsOperations</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets the ISecretsOperations.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SecurityPolicies">
+      <MemberSignature Language="C#" Value="public Microsoft.Azure.Management.Cdn.ISecurityPoliciesOperations SecurityPolicies { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Azure.Management.Cdn.ISecurityPoliciesOperations SecurityPolicies" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Management.Cdn.ICdnManagementClient.SecurityPolicies" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property SecurityPolicies As ISecurityPoliciesOperations" />
+      <MemberSignature Language="F#" Value="member this.SecurityPolicies : Microsoft.Azure.Management.Cdn.ISecurityPoliciesOperations" Usage="Microsoft.Azure.Management.Cdn.ICdnManagementClient.SecurityPolicies" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Azure.Management.Cdn</AssemblyName>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Azure.Management.Cdn.ISecurityPoliciesOperations</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets the ISecurityPoliciesOperations.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
     <Member MemberName="SerializationSettings">
       <MemberSignature Language="C#" Value="public Newtonsoft.Json.JsonSerializerSettings SerializationSettings { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class Newtonsoft.Json.JsonSerializerSettings SerializationSettings" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Management.Cdn.ICdnManagementClient.SerializationSettings" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property SerializationSettings As JsonSerializerSettings" />
       <MemberSignature Language="F#" Value="member this.SerializationSettings : Newtonsoft.Json.JsonSerializerSettings" Usage="Microsoft.Azure.Management.Cdn.ICdnManagementClient.SerializationSettings" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Newtonsoft::Json::JsonSerializerSettings ^ SerializationSettings { Newtonsoft::Json::JsonSerializerSettings ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Cdn</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Newtonsoft.Json.JsonSerializerSettings</ReturnType>
@@ -438,13 +778,12 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Management.Cdn.ICdnManagementClient.SubscriptionId" />
       <MemberSignature Language="VB.NET" Value="Public Property SubscriptionId As String" />
       <MemberSignature Language="F#" Value="member this.SubscriptionId : string with get, set" Usage="Microsoft.Azure.Management.Cdn.ICdnManagementClient.SubscriptionId" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ SubscriptionId { System::String ^ get(); void set(System::String ^ value); };" />
-      <MemberSignature Language="C++ CX" Value="public:&#xA; property Platform::String ^ SubscriptionId { Platform::String ^ get(); void set(Platform::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Cdn</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -457,15 +796,39 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <Member MemberName="Validate">
+      <MemberSignature Language="C#" Value="public Microsoft.Azure.Management.Cdn.IValidateOperations Validate { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Azure.Management.Cdn.IValidateOperations Validate" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Management.Cdn.ICdnManagementClient.Validate" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Validate As IValidateOperations" />
+      <MemberSignature Language="F#" Value="member this.Validate : Microsoft.Azure.Management.Cdn.IValidateOperations" Usage="Microsoft.Azure.Management.Cdn.ICdnManagementClient.Validate" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Azure.Management.Cdn</AssemblyName>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Azure.Management.Cdn.IValidateOperations</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets the IValidateOperations.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
     <Member MemberName="ValidateProbeWithHttpMessagesAsync">
-      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;Microsoft.Rest.Azure.AzureOperationResponse&lt;Microsoft.Azure.Management.Cdn.Models.ValidateProbeOutput&gt;&gt; ValidateProbeWithHttpMessagesAsync (string probeURL, System.Collections.Generic.Dictionary&lt;string,System.Collections.Generic.List&lt;string&gt;&gt; customHeaders = null, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;Microsoft.Rest.Azure.AzureOperationResponse&lt;Microsoft.Azure.Management.Cdn.Models.ValidateProbeOutput&gt;&gt; ValidateProbeWithHttpMessagesAsync (string probeURL, System.Collections.Generic.Dictionary&lt;string,System.Collections.Generic.List&lt;string&gt;&gt; customHeaders = default, System.Threading.CancellationToken cancellationToken = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Microsoft.Rest.Azure.AzureOperationResponse`1&lt;class Microsoft.Azure.Management.Cdn.Models.ValidateProbeOutput&gt;&gt; ValidateProbeWithHttpMessagesAsync(string probeURL, class System.Collections.Generic.Dictionary`2&lt;string, class System.Collections.Generic.List`1&lt;string&gt;&gt; customHeaders, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Management.Cdn.ICdnManagementClient.ValidateProbeWithHttpMessagesAsync(System.String,System.Collections.Generic.Dictionary{System.String,System.Collections.Generic.List{System.String}},System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Function ValidateProbeWithHttpMessagesAsync (probeURL As String, Optional customHeaders As Dictionary(Of String, List(Of String)) = Nothing, Optional cancellationToken As CancellationToken = Nothing) As Task(Of AzureOperationResponse(Of ValidateProbeOutput))" />
       <MemberSignature Language="F#" Value="abstract member ValidateProbeWithHttpMessagesAsync : string * System.Collections.Generic.Dictionary&lt;string, System.Collections.Generic.List&lt;string&gt;&gt; * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.Rest.Azure.AzureOperationResponse&lt;Microsoft.Azure.Management.Cdn.Models.ValidateProbeOutput&gt;&gt;" Usage="iCdnManagementClient.ValidateProbeWithHttpMessagesAsync (probeURL, customHeaders, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Cdn</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.Rest.Azure.AzureOperationResponse&lt;Microsoft.Azure.Management.Cdn.Models.ValidateProbeOutput&gt;&gt;</ReturnType>

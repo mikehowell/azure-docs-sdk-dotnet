@@ -1,4 +1,4 @@
-﻿<Type Name="NGramTokenizer" FullName="Microsoft.Azure.Search.Models.NGramTokenizer">
+<Type Name="NGramTokenizer" FullName="Microsoft.Azure.Search.Models.NGramTokenizer">
   <TypeSignature Language="C#" Value="public class NGramTokenizer : Microsoft.Azure.Search.Models.Tokenizer" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit NGramTokenizer extends Microsoft.Azure.Search.Models.Tokenizer" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Azure.Search.Models.NGramTokenizer" />
@@ -6,7 +6,7 @@
   <TypeSignature Language="F#" Value="type NGramTokenizer = class&#xA;    inherit Tokenizer" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Azure.Search.Service</AssemblyName>
-    <AssemblyVersion>5.0.0.0</AssemblyVersion>
+    <AssemblyVersion>10.1.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>Microsoft.Azure.Search.Models.Tokenizer</BaseTypeName>
@@ -14,7 +14,8 @@
   <Interfaces />
   <Attributes>
     <Attribute>
-      <AttributeName>Newtonsoft.Json.JsonObject("#Microsoft.Azure.Search.NGramTokenizer")</AttributeName>
+      <AttributeName Language="C#">[Newtonsoft.Json.JsonObject("#Microsoft.Azure.Search.NGramTokenizer")]</AttributeName>
+      <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonObject("#Microsoft.Azure.Search.NGramTokenizer")&gt;]</AttributeName>
     </Attribute>
   </Attributes>
   <Docs>
@@ -33,7 +34,7 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Search.Service</AssemblyName>
-        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>10.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
@@ -44,15 +45,15 @@
       </Docs>
     </Member>
     <Member MemberName=".ctor">
-      <MemberSignature Language="C#" Value="public NGramTokenizer (string name, Nullable&lt;int&gt; minGram = null, Nullable&lt;int&gt; maxGram = null, System.Collections.Generic.IList&lt;Microsoft.Azure.Search.Models.TokenCharacterKind&gt; tokenChars = null);" />
+      <MemberSignature Language="C#" Value="public NGramTokenizer (string name, int? minGram = default, int? maxGram = default, System.Collections.Generic.IList&lt;Microsoft.Azure.Search.Models.TokenCharacterKind&gt; tokenChars = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string name, valuetype System.Nullable`1&lt;int32&gt; minGram, valuetype System.Nullable`1&lt;int32&gt; maxGram, class System.Collections.Generic.IList`1&lt;valuetype Microsoft.Azure.Search.Models.TokenCharacterKind&gt; tokenChars) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Search.Models.NGramTokenizer.#ctor(System.String,System.Nullable{System.Int32},System.Nullable{System.Int32},System.Collections.Generic.IList{Microsoft.Azure.Search.Models.TokenCharacterKind})" />
-      <MemberSignature Language="VB.NET" Value="Public Sub New (name As String, Optional minGram As Nullable(Of Integer) = null, Optional maxGram As Nullable(Of Integer) = null, Optional tokenChars As IList(Of TokenCharacterKind) = null)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (name As String, Optional minGram As Nullable(Of Integer) = Nothing, Optional maxGram As Nullable(Of Integer) = Nothing, Optional tokenChars As IList(Of TokenCharacterKind) = Nothing)" />
       <MemberSignature Language="F#" Value="new Microsoft.Azure.Search.Models.NGramTokenizer : string * Nullable&lt;int&gt; * Nullable&lt;int&gt; * System.Collections.Generic.IList&lt;Microsoft.Azure.Search.Models.TokenCharacterKind&gt; -&gt; Microsoft.Azure.Search.Models.NGramTokenizer" Usage="new Microsoft.Azure.Search.Models.NGramTokenizer (name, minGram, maxGram, tokenChars)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Search.Service</AssemblyName>
-        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>10.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="name" Type="System.String" />
@@ -78,7 +79,7 @@
       </Docs>
     </Member>
     <Member MemberName="MaxGram">
-      <MemberSignature Language="C#" Value="public Nullable&lt;int&gt; MaxGram { get; set; }" />
+      <MemberSignature Language="C#" Value="public int? MaxGram { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;int32&gt; MaxGram" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Search.Models.NGramTokenizer.MaxGram" />
       <MemberSignature Language="VB.NET" Value="Public Property MaxGram As Nullable(Of Integer)" />
@@ -86,11 +87,12 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Search.Service</AssemblyName>
-        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>10.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="maxGram")</AttributeName>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty(PropertyName="maxGram")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty(PropertyName="maxGram")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -106,7 +108,7 @@
       </Docs>
     </Member>
     <Member MemberName="MinGram">
-      <MemberSignature Language="C#" Value="public Nullable&lt;int&gt; MinGram { get; set; }" />
+      <MemberSignature Language="C#" Value="public int? MinGram { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;int32&gt; MinGram" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Search.Models.NGramTokenizer.MinGram" />
       <MemberSignature Language="VB.NET" Value="Public Property MinGram As Nullable(Of Integer)" />
@@ -114,11 +116,12 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Search.Service</AssemblyName>
-        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>10.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="minGram")</AttributeName>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty(PropertyName="minGram")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty(PropertyName="minGram")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -142,11 +145,12 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Search.Service</AssemblyName>
-        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>10.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="tokenChars")</AttributeName>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty(PropertyName="tokenChars")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty(PropertyName="tokenChars")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -169,7 +173,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Search.Service</AssemblyName>
-        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>10.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>

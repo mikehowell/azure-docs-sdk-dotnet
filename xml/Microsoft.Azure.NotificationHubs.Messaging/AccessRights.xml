@@ -1,26 +1,29 @@
-﻿<Type Name="AccessRights" FullName="Microsoft.Azure.NotificationHubs.Messaging.AccessRights">
+<Type Name="AccessRights" FullName="Microsoft.Azure.NotificationHubs.Messaging.AccessRights">
   <TypeSignature Language="C#" Value="public enum AccessRights" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed AccessRights extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Azure.NotificationHubs.Messaging.AccessRights" />
   <TypeSignature Language="VB.NET" Value="Public Enum AccessRights" />
   <TypeSignature Language="F#" Value="type AccessRights = " />
-  <TypeSignature Language="C++ CLI" Value="public enum class AccessRights" />
-  <TypeSignature Language="C++ CX" Value="public enum class AccessRights" />
-  <TypeSignature Language="C++ WINRT" Value="enum AccessRights" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Azure.NotificationHubs</AssemblyName>
-    <AssemblyVersion>2.16.0.0</AssemblyVersion>
+    <AssemblyVersion>3.2.1.0</AssemblyVersion>
+    <AssemblyVersion>3.3.0.0</AssemblyVersion>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+    <AssemblyVersion>4.1.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Attributes>
     <Attribute>
-      <AttributeName>System.Runtime.Serialization.DataContract(Name="AccessRights", Namespace="http://schemas.microsoft.com/netservices/2010/10/servicebus/connect")</AttributeName>
+      <AttributeName Language="C#">[System.Runtime.Serialization.DataContract(Name="AccessRights", Namespace="http://schemas.microsoft.com/netservices/2010/10/servicebus/connect")]</AttributeName>
+      <AttributeName Language="F#">[&lt;System.Runtime.Serialization.DataContract(Name="AccessRights", Namespace="http://schemas.microsoft.com/netservices/2010/10/servicebus/connect")&gt;]</AttributeName>
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Specifies the possible access rights for a user.</summary>
+    <summary>
+            Specifies the possible access rights for a user.
+            </summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -30,17 +33,18 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.Azure.NotificationHubs.Messaging.AccessRights.Listen" />
       <MemberSignature Language="VB.NET" Value="Listen" />
       <MemberSignature Language="F#" Value="Listen = 2" Usage="Microsoft.Azure.NotificationHubs.Messaging.AccessRights.Listen" />
-      <MemberSignature Language="C++ CLI" Value="Listen" />
-      <MemberSignature Language="C++ CX" Value="Listen" />
-      <MemberSignature Language="C++ WINRT" Value="Listen" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.NotificationHubs</AssemblyName>
-        <AssemblyVersion>2.16.0.0</AssemblyVersion>
+        <AssemblyVersion>3.2.1.0</AssemblyVersion>
+        <AssemblyVersion>3.3.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>System.Runtime.Serialization.EnumMember</AttributeName>
+          <AttributeName Language="C#">[System.Runtime.Serialization.EnumMember]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Runtime.Serialization.EnumMember&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -48,7 +52,9 @@
       </ReturnValue>
       <MemberValue>2</MemberValue>
       <Docs>
-        <summary>The access right is Listen.</summary>
+        <summary>
+            Right to receive messages only.
+            </summary>
       </Docs>
     </Member>
     <Member MemberName="Manage">
@@ -57,17 +63,18 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.Azure.NotificationHubs.Messaging.AccessRights.Manage" />
       <MemberSignature Language="VB.NET" Value="Manage" />
       <MemberSignature Language="F#" Value="Manage = 0" Usage="Microsoft.Azure.NotificationHubs.Messaging.AccessRights.Manage" />
-      <MemberSignature Language="C++ CLI" Value="Manage" />
-      <MemberSignature Language="C++ CX" Value="Manage" />
-      <MemberSignature Language="C++ WINRT" Value="Manage" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.NotificationHubs</AssemblyName>
-        <AssemblyVersion>2.16.0.0</AssemblyVersion>
+        <AssemblyVersion>3.2.1.0</AssemblyVersion>
+        <AssemblyVersion>3.3.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>System.Runtime.Serialization.EnumMember</AttributeName>
+          <AttributeName Language="C#">[System.Runtime.Serialization.EnumMember]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Runtime.Serialization.EnumMember&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -75,7 +82,9 @@
       </ReturnValue>
       <MemberValue>0</MemberValue>
       <Docs>
-        <summary>The access right is Manage.</summary>
+        <summary>
+            Allows management operations such as udpating and deleting on the notification hub.  Manage also include Send and Listen rights.
+            </summary>
       </Docs>
     </Member>
     <Member MemberName="Send">
@@ -84,17 +93,18 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.Azure.NotificationHubs.Messaging.AccessRights.Send" />
       <MemberSignature Language="VB.NET" Value="Send" />
       <MemberSignature Language="F#" Value="Send = 1" Usage="Microsoft.Azure.NotificationHubs.Messaging.AccessRights.Send" />
-      <MemberSignature Language="C++ CLI" Value="Send" />
-      <MemberSignature Language="C++ CX" Value="Send" />
-      <MemberSignature Language="C++ WINRT" Value="Send" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.NotificationHubs</AssemblyName>
-        <AssemblyVersion>2.16.0.0</AssemblyVersion>
+        <AssemblyVersion>3.2.1.0</AssemblyVersion>
+        <AssemblyVersion>3.3.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>System.Runtime.Serialization.EnumMember</AttributeName>
+          <AttributeName Language="C#">[System.Runtime.Serialization.EnumMember]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Runtime.Serialization.EnumMember&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -102,7 +112,9 @@
       </ReturnValue>
       <MemberValue>1</MemberValue>
       <Docs>
-        <summary>The access right is Send.</summary>
+        <summary>
+            Right to send messages only.
+            </summary>
       </Docs>
     </Member>
   </Members>

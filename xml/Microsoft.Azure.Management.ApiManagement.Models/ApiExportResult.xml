@@ -1,14 +1,14 @@
-﻿<Type Name="ApiExportResult" FullName="Microsoft.Azure.Management.ApiManagement.Models.ApiExportResult">
+<Type Name="ApiExportResult" FullName="Microsoft.Azure.Management.ApiManagement.Models.ApiExportResult">
   <TypeSignature Language="C#" Value="public class ApiExportResult" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit ApiExportResult extends System.Object" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Azure.Management.ApiManagement.Models.ApiExportResult" />
   <TypeSignature Language="VB.NET" Value="Public Class ApiExportResult" />
   <TypeSignature Language="F#" Value="type ApiExportResult = class" />
-  <TypeSignature Language="C++ CLI" Value="public ref class ApiExportResult" />
-  <TypeSignature Language="C++ WINRT" Value="[Windows::Foundation::Metadata::WebHostHidden]&#xA;class ApiExportResult" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Azure.Management.ApiManagement</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
+    <AssemblyVersion>5.0.0.0</AssemblyVersion>
+    <AssemblyVersion>6.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
@@ -16,7 +16,7 @@
   <Interfaces />
   <Docs>
     <summary>
-            API Export result Blob Uri.
+            API Export result.
             </summary>
     <remarks>To be added.</remarks>
   </Docs>
@@ -26,13 +26,12 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Management.ApiManagement.Models.ApiExportResult.#ctor" />
       <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; ApiExportResult();" />
-      <MemberSignature Language="C++ CX" Value="public:&#xA; ApiExportResult();" />
-      <MemberSignature Language="C++ WINRT" Value=" ApiExportResult();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.ApiManagement</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
@@ -43,46 +42,54 @@
       </Docs>
     </Member>
     <Member MemberName=".ctor">
-      <MemberSignature Language="C#" Value="public ApiExportResult (string link = null);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string link) cil managed" />
-      <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Management.ApiManagement.Models.ApiExportResult.#ctor(System.String)" />
-      <MemberSignature Language="VB.NET" Value="Public Sub New (Optional link As String = null)" />
-      <MemberSignature Language="F#" Value="new Microsoft.Azure.Management.ApiManagement.Models.ApiExportResult : string -&gt; Microsoft.Azure.Management.ApiManagement.Models.ApiExportResult" Usage="new Microsoft.Azure.Management.ApiManagement.Models.ApiExportResult link" />
-      <MemberSignature Language="C++ WINRT" Value=" ApiExportResult(std::wstring const &amp; link = null);" />
+      <MemberSignature Language="C#" Value="public ApiExportResult (string id = default, string exportResultFormat = default, Microsoft.Azure.Management.ApiManagement.Models.ApiExportResultValue value = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string id, string exportResultFormat, class Microsoft.Azure.Management.ApiManagement.Models.ApiExportResultValue value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Management.ApiManagement.Models.ApiExportResult.#ctor(System.String,System.String,Microsoft.Azure.Management.ApiManagement.Models.ApiExportResultValue)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (Optional id As String = Nothing, Optional exportResultFormat As String = Nothing, Optional value As ApiExportResultValue = Nothing)" />
+      <MemberSignature Language="F#" Value="new Microsoft.Azure.Management.ApiManagement.Models.ApiExportResult : string * string * Microsoft.Azure.Management.ApiManagement.Models.ApiExportResultValue -&gt; Microsoft.Azure.Management.ApiManagement.Models.ApiExportResult" Usage="new Microsoft.Azure.Management.ApiManagement.Models.ApiExportResult (id, exportResultFormat, value)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.ApiManagement</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
-        <Parameter Name="link" Type="System.String" />
+        <Parameter Name="id" Type="System.String" />
+        <Parameter Name="exportResultFormat" Type="System.String" />
+        <Parameter Name="value" Type="Microsoft.Azure.Management.ApiManagement.Models.ApiExportResultValue" />
       </Parameters>
       <Docs>
-        <param name="link">Link to the Storage Blob containing the result
-            of the export operation. The Blob Uri is only valid for 5
-            minutes.</param>
+        <param name="id">ResourceId of the API which was exported.</param>
+        <param name="exportResultFormat">Format in which the Api Details
+            are exported to the Storage Blob with Sas Key valid for 5 minutes.
+            Possible values include: 'Swagger', 'Wsdl', 'Wadl',
+            'OpenApi'</param>
+        <param name="value">The object defining the schema of the exported
+            Api Detail</param>
         <summary>
             Initializes a new instance of the ApiExportResult class.
             </summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
-    <Member MemberName="Link">
-      <MemberSignature Language="C#" Value="public string Link { get; set; }" />
-      <MemberSignature Language="ILAsm" Value=".property instance string Link" />
-      <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Management.ApiManagement.Models.ApiExportResult.Link" />
-      <MemberSignature Language="VB.NET" Value="Public Property Link As String" />
-      <MemberSignature Language="F#" Value="member this.Link : string with get, set" Usage="Microsoft.Azure.Management.ApiManagement.Models.ApiExportResult.Link" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Link { System::String ^ get(); void set(System::String ^ value); };" />
-      <MemberSignature Language="C++ CX" Value="public:&#xA; property Platform::String ^ Link { Platform::String ^ get(); void set(Platform::String ^ value); };" />
+    <Member MemberName="ExportResultFormat">
+      <MemberSignature Language="C#" Value="public string ExportResultFormat { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string ExportResultFormat" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Management.ApiManagement.Models.ApiExportResult.ExportResultFormat" />
+      <MemberSignature Language="VB.NET" Value="Public Property ExportResultFormat As String" />
+      <MemberSignature Language="F#" Value="member this.ExportResultFormat : string with get, set" Usage="Microsoft.Azure.Management.ApiManagement.Models.ApiExportResult.ExportResultFormat" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.ApiManagement</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="link")</AttributeName>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty(PropertyName="format")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty(PropertyName="format")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -90,8 +97,70 @@
       </ReturnValue>
       <Docs>
         <summary>
-            Gets or sets link to the Storage Blob containing the result of the
-            export operation. The Blob Uri is only valid for 5 minutes.
+            Gets or sets format in which the Api Details are exported to the
+            Storage Blob with Sas Key valid for 5 minutes. Possible values
+            include: 'Swagger', 'Wsdl', 'Wadl', 'OpenApi'
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Id">
+      <MemberSignature Language="C#" Value="public string Id { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Id" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Management.ApiManagement.Models.ApiExportResult.Id" />
+      <MemberSignature Language="VB.NET" Value="Public Property Id As String" />
+      <MemberSignature Language="F#" Value="member this.Id : string with get, set" Usage="Microsoft.Azure.Management.ApiManagement.Models.ApiExportResult.Id" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Azure.Management.ApiManagement</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty(PropertyName="id")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty(PropertyName="id")&gt;]</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets or sets resourceId of the API which was exported.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Value">
+      <MemberSignature Language="C#" Value="public Microsoft.Azure.Management.ApiManagement.Models.ApiExportResultValue Value { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Azure.Management.ApiManagement.Models.ApiExportResultValue Value" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Management.ApiManagement.Models.ApiExportResult.Value" />
+      <MemberSignature Language="VB.NET" Value="Public Property Value As ApiExportResultValue" />
+      <MemberSignature Language="F#" Value="member this.Value : Microsoft.Azure.Management.ApiManagement.Models.ApiExportResultValue with get, set" Usage="Microsoft.Azure.Management.ApiManagement.Models.ApiExportResult.Value" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Azure.Management.ApiManagement</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty(PropertyName="value")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty(PropertyName="value")&gt;]</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Azure.Management.ApiManagement.Models.ApiExportResultValue</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets or sets the object defining the schema of the exported Api
+            Detail
             </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>

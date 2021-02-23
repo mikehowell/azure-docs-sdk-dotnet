@@ -1,13 +1,12 @@
-﻿<Type Name="FabricClient+ClusterManagementClient" FullName="System.Fabric.FabricClient+ClusterManagementClient">
+<Type Name="FabricClient+ClusterManagementClient" FullName="System.Fabric.FabricClient+ClusterManagementClient">
   <TypeSignature Language="C#" Value="public sealed class FabricClient.ClusterManagementClient" />
   <TypeSignature Language="ILAsm" Value=".class nested public auto ansi sealed beforefieldinit FabricClient/ClusterManagementClient extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.Fabric.FabricClient.ClusterManagementClient" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class FabricClient.ClusterManagementClient" />
   <TypeSignature Language="F#" Value="type FabricClient.ClusterManagementClient = class" />
-  <TypeSignature Language="C++ CLI" Value="public: ref class FabricClient::ClusterManagementClient sealed" />
   <AssemblyInfo>
     <AssemblyName>System.Fabric</AssemblyName>
-    <AssemblyVersion>6.0.0.0</AssemblyVersion>
+    <AssemblyVersion>7.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
@@ -29,11 +28,10 @@
       <MemberSignature Language="DocId" Value="M:System.Fabric.FabricClient.ClusterManagementClient.ActivateNodeAsync(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Function ActivateNodeAsync (nodeName As String) As Task" />
       <MemberSignature Language="F#" Value="member this.ActivateNodeAsync : string -&gt; System.Threading.Tasks.Task" Usage="clusterManagementClient.ActivateNodeAsync nodeName" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Threading::Tasks::Task ^ ActivateNodeAsync(System::String ^ nodeName);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Fabric</AssemblyName>
-        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task</ReturnType>
@@ -75,12 +73,12 @@
       <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task ActivateNodeAsync (string nodeName, TimeSpan timeout, System.Threading.CancellationToken cancellationToken);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Threading.Tasks.Task ActivateNodeAsync(string nodeName, valuetype System.TimeSpan timeout, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Fabric.FabricClient.ClusterManagementClient.ActivateNodeAsync(System.String,System.TimeSpan,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Function ActivateNodeAsync (nodeName As String, timeout As TimeSpan, cancellationToken As CancellationToken) As Task" />
       <MemberSignature Language="F#" Value="member this.ActivateNodeAsync : string * TimeSpan * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task" Usage="clusterManagementClient.ActivateNodeAsync (nodeName, timeout, cancellationToken)" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Threading::Tasks::Task ^ ActivateNodeAsync(System::String ^ nodeName, TimeSpan timeout, System::Threading::CancellationToken cancellationToken);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Fabric</AssemblyName>
-        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task</ReturnType>
@@ -126,19 +124,80 @@
         </exception>
       </Docs>
     </Member>
+    <Member MemberName="AddConfigurationParameterOverridesAsync">
+      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task AddConfigurationParameterOverridesAsync (string nodeName, System.Collections.Generic.IList&lt;System.Fabric.Description.ConfigParameterOverride&gt; configurationOverrideList, bool force);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Threading.Tasks.Task AddConfigurationParameterOverridesAsync(string nodeName, class System.Collections.Generic.IList`1&lt;class System.Fabric.Description.ConfigParameterOverride&gt; configurationOverrideList, bool force) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Fabric.FabricClient.ClusterManagementClient.AddConfigurationParameterOverridesAsync(System.String,System.Collections.Generic.IList{System.Fabric.Description.ConfigParameterOverride},System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Public Function AddConfigurationParameterOverridesAsync (nodeName As String, configurationOverrideList As IList(Of ConfigParameterOverride), force As Boolean) As Task" />
+      <MemberSignature Language="F#" Value="member this.AddConfigurationParameterOverridesAsync : string * System.Collections.Generic.IList&lt;System.Fabric.Description.ConfigParameterOverride&gt; * bool -&gt; System.Threading.Tasks.Task" Usage="clusterManagementClient.AddConfigurationParameterOverridesAsync (nodeName, configurationOverrideList, force)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Fabric</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="nodeName" Type="System.String" />
+        <Parameter Name="configurationOverrideList" Type="System.Collections.Generic.IList&lt;System.Fabric.Description.ConfigParameterOverride&gt;" />
+        <Parameter Name="force" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="nodeName" />
+        <param name="configurationOverrideList" />
+        <param name="force" />
+        <summary>
+            Adds configuration override
+            </summary>
+        <returns />
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AddConfigurationParameterOverridesAsync">
+      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task AddConfigurationParameterOverridesAsync (string nodeName, System.Collections.Generic.IList&lt;System.Fabric.Description.ConfigParameterOverride&gt; configurationOverrideList, bool force, TimeSpan timeout, System.Threading.CancellationToken cancellationToken);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Threading.Tasks.Task AddConfigurationParameterOverridesAsync(string nodeName, class System.Collections.Generic.IList`1&lt;class System.Fabric.Description.ConfigParameterOverride&gt; configurationOverrideList, bool force, valuetype System.TimeSpan timeout, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Fabric.FabricClient.ClusterManagementClient.AddConfigurationParameterOverridesAsync(System.String,System.Collections.Generic.IList{System.Fabric.Description.ConfigParameterOverride},System.Boolean,System.TimeSpan,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Function AddConfigurationParameterOverridesAsync (nodeName As String, configurationOverrideList As IList(Of ConfigParameterOverride), force As Boolean, timeout As TimeSpan, cancellationToken As CancellationToken) As Task" />
+      <MemberSignature Language="F#" Value="member this.AddConfigurationParameterOverridesAsync : string * System.Collections.Generic.IList&lt;System.Fabric.Description.ConfigParameterOverride&gt; * bool * TimeSpan * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task" Usage="clusterManagementClient.AddConfigurationParameterOverridesAsync (nodeName, configurationOverrideList, force, timeout, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Fabric</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="nodeName" Type="System.String" />
+        <Parameter Name="configurationOverrideList" Type="System.Collections.Generic.IList&lt;System.Fabric.Description.ConfigParameterOverride&gt;" />
+        <Parameter Name="force" Type="System.Boolean" />
+        <Parameter Name="timeout" Type="System.TimeSpan" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="nodeName" />
+        <param name="configurationOverrideList" />
+        <param name="force" />
+        <param name="timeout" />
+        <param name="cancellationToken" />
+        <summary>
+            Adds configuration override
+            </summary>
+        <returns />
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
     <Member MemberName="CopyClusterPackage">
       <MemberSignature Language="C#" Value="public void CopyClusterPackage (string imageStoreConnectionString, string clusterManifestPath, string clusterManifestPathInImageStore, string codePackagePath, string codePackagePathInImageStore);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void CopyClusterPackage(string imageStoreConnectionString, string clusterManifestPath, string clusterManifestPathInImageStore, string codePackagePath, string codePackagePathInImageStore) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Fabric.FabricClient.ClusterManagementClient.CopyClusterPackage(System.String,System.String,System.String,System.String,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub CopyClusterPackage (imageStoreConnectionString As String, clusterManifestPath As String, clusterManifestPathInImageStore As String, codePackagePath As String, codePackagePathInImageStore As String)" />
       <MemberSignature Language="F#" Value="member this.CopyClusterPackage : string * string * string * string * string -&gt; unit" Usage="clusterManagementClient.CopyClusterPackage (imageStoreConnectionString, clusterManifestPath, clusterManifestPathInImageStore, codePackagePath, codePackagePathInImageStore)" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; void CopyClusterPackage(System::String ^ imageStoreConnectionString, System::String ^ clusterManifestPath, System::String ^ clusterManifestPathInImageStore, System::String ^ codePackagePath, System::String ^ codePackagePathInImageStore);" />
-      <MemberSignature Language="C++ CX" Value="public:&#xA; void CopyClusterPackage(Platform::String ^ imageStoreConnectionString, Platform::String ^ clusterManifestPath, Platform::String ^ clusterManifestPathInImageStore, Platform::String ^ codePackagePath, Platform::String ^ codePackagePathInImageStore);" />
-      <MemberSignature Language="C++ WINRT" Value="void CopyClusterPackage(std::wstring const &amp; imageStoreConnectionString, std::wstring const &amp; clusterManifestPath, std::wstring const &amp; clusterManifestPathInImageStore, std::wstring const &amp; codePackagePath, std::wstring const &amp; codePackagePathInImageStore);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Fabric</AssemblyName>
-        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -200,11 +259,10 @@
       <MemberSignature Language="DocId" Value="M:System.Fabric.FabricClient.ClusterManagementClient.CopyClusterPackage(System.String,System.String,System.String,System.String,System.String,System.TimeSpan)" />
       <MemberSignature Language="VB.NET" Value="Public Sub CopyClusterPackage (imageStoreConnectionString As String, clusterManifestPath As String, clusterManifestPathInImageStore As String, codePackagePath As String, codePackagePathInImageStore As String, timeout As TimeSpan)" />
       <MemberSignature Language="F#" Value="member this.CopyClusterPackage : string * string * string * string * string * TimeSpan -&gt; unit" Usage="clusterManagementClient.CopyClusterPackage (imageStoreConnectionString, clusterManifestPath, clusterManifestPathInImageStore, codePackagePath, codePackagePathInImageStore, timeout)" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; void CopyClusterPackage(System::String ^ imageStoreConnectionString, System::String ^ clusterManifestPath, System::String ^ clusterManifestPathInImageStore, System::String ^ codePackagePath, System::String ^ codePackagePathInImageStore, TimeSpan timeout);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Fabric</AssemblyName>
-        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -270,11 +328,10 @@
       <MemberSignature Language="DocId" Value="M:System.Fabric.FabricClient.ClusterManagementClient.DeactivateNodeAsync(System.String,System.Fabric.NodeDeactivationIntent)" />
       <MemberSignature Language="VB.NET" Value="Public Function DeactivateNodeAsync (nodeName As String, deactivationIntent As NodeDeactivationIntent) As Task" />
       <MemberSignature Language="F#" Value="member this.DeactivateNodeAsync : string * System.Fabric.NodeDeactivationIntent -&gt; System.Threading.Tasks.Task" Usage="clusterManagementClient.DeactivateNodeAsync (nodeName, deactivationIntent)" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Threading::Tasks::Task ^ DeactivateNodeAsync(System::String ^ nodeName, System::Fabric::NodeDeactivationIntent deactivationIntent);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Fabric</AssemblyName>
-        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task</ReturnType>
@@ -322,12 +379,12 @@
       <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task DeactivateNodeAsync (string nodeName, System.Fabric.NodeDeactivationIntent deactivationIntent, TimeSpan timeout, System.Threading.CancellationToken cancellationToken);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Threading.Tasks.Task DeactivateNodeAsync(string nodeName, valuetype System.Fabric.NodeDeactivationIntent deactivationIntent, valuetype System.TimeSpan timeout, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Fabric.FabricClient.ClusterManagementClient.DeactivateNodeAsync(System.String,System.Fabric.NodeDeactivationIntent,System.TimeSpan,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Function DeactivateNodeAsync (nodeName As String, deactivationIntent As NodeDeactivationIntent, timeout As TimeSpan, cancellationToken As CancellationToken) As Task" />
       <MemberSignature Language="F#" Value="member this.DeactivateNodeAsync : string * System.Fabric.NodeDeactivationIntent * TimeSpan * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task" Usage="clusterManagementClient.DeactivateNodeAsync (nodeName, deactivationIntent, timeout, cancellationToken)" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Threading::Tasks::Task ^ DeactivateNodeAsync(System::String ^ nodeName, System::Fabric::NodeDeactivationIntent deactivationIntent, TimeSpan timeout, System::Threading::CancellationToken cancellationToken);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Fabric</AssemblyName>
-        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task</ReturnType>
@@ -385,11 +442,10 @@
       <MemberSignature Language="DocId" Value="M:System.Fabric.FabricClient.ClusterManagementClient.GetClusterConfigurationAsync" />
       <MemberSignature Language="VB.NET" Value="Public Function GetClusterConfigurationAsync () As Task(Of String)" />
       <MemberSignature Language="F#" Value="member this.GetClusterConfigurationAsync : unit -&gt; System.Threading.Tasks.Task&lt;string&gt;" Usage="clusterManagementClient.GetClusterConfigurationAsync " />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Threading::Tasks::Task&lt;System::String ^&gt; ^ GetClusterConfigurationAsync();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Fabric</AssemblyName>
-        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;System.String&gt;</ReturnType>
@@ -411,11 +467,10 @@
       <MemberSignature Language="DocId" Value="M:System.Fabric.FabricClient.ClusterManagementClient.GetClusterConfigurationAsync(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Function GetClusterConfigurationAsync (apiVersion As String) As Task(Of String)" />
       <MemberSignature Language="F#" Value="member this.GetClusterConfigurationAsync : string -&gt; System.Threading.Tasks.Task&lt;string&gt;" Usage="clusterManagementClient.GetClusterConfigurationAsync apiVersion" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Threading::Tasks::Task&lt;System::String ^&gt; ^ GetClusterConfigurationAsync(System::String ^ apiVersion);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Fabric</AssemblyName>
-        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;System.String&gt;</ReturnType>
@@ -438,12 +493,12 @@
       <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;string&gt; GetClusterConfigurationAsync (TimeSpan timeout, System.Threading.CancellationToken cancellationToken);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Threading.Tasks.Task`1&lt;string&gt; GetClusterConfigurationAsync(valuetype System.TimeSpan timeout, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Fabric.FabricClient.ClusterManagementClient.GetClusterConfigurationAsync(System.TimeSpan,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetClusterConfigurationAsync (timeout As TimeSpan, cancellationToken As CancellationToken) As Task(Of String)" />
       <MemberSignature Language="F#" Value="member this.GetClusterConfigurationAsync : TimeSpan * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;string&gt;" Usage="clusterManagementClient.GetClusterConfigurationAsync (timeout, cancellationToken)" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Threading::Tasks::Task&lt;System::String ^&gt; ^ GetClusterConfigurationAsync(TimeSpan timeout, System::Threading::CancellationToken cancellationToken);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Fabric</AssemblyName>
-        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;System.String&gt;</ReturnType>
@@ -473,12 +528,12 @@
       <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;string&gt; GetClusterConfigurationAsync (string apiVersion, TimeSpan timeout, System.Threading.CancellationToken cancellationToken);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Threading.Tasks.Task`1&lt;string&gt; GetClusterConfigurationAsync(string apiVersion, valuetype System.TimeSpan timeout, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Fabric.FabricClient.ClusterManagementClient.GetClusterConfigurationAsync(System.String,System.TimeSpan,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetClusterConfigurationAsync (apiVersion As String, timeout As TimeSpan, cancellationToken As CancellationToken) As Task(Of String)" />
       <MemberSignature Language="F#" Value="member this.GetClusterConfigurationAsync : string * TimeSpan * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;string&gt;" Usage="clusterManagementClient.GetClusterConfigurationAsync (apiVersion, timeout, cancellationToken)" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Threading::Tasks::Task&lt;System::String ^&gt; ^ GetClusterConfigurationAsync(System::String ^ apiVersion, TimeSpan timeout, System::Threading::CancellationToken cancellationToken);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Fabric</AssemblyName>
-        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;System.String&gt;</ReturnType>
@@ -512,11 +567,10 @@
       <MemberSignature Language="DocId" Value="M:System.Fabric.FabricClient.ClusterManagementClient.GetClusterConfigurationUpgradeStatusAsync" />
       <MemberSignature Language="VB.NET" Value="Public Function GetClusterConfigurationUpgradeStatusAsync () As Task(Of FabricOrchestrationUpgradeProgress)" />
       <MemberSignature Language="F#" Value="member this.GetClusterConfigurationUpgradeStatusAsync : unit -&gt; System.Threading.Tasks.Task&lt;System.Fabric.FabricOrchestrationUpgradeProgress&gt;" Usage="clusterManagementClient.GetClusterConfigurationUpgradeStatusAsync " />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Threading::Tasks::Task&lt;System::Fabric::FabricOrchestrationUpgradeProgress ^&gt; ^ GetClusterConfigurationUpgradeStatusAsync();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Fabric</AssemblyName>
-        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;System.Fabric.FabricOrchestrationUpgradeProgress&gt;</ReturnType>
@@ -534,12 +588,12 @@
       <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;System.Fabric.FabricOrchestrationUpgradeProgress&gt; GetClusterConfigurationUpgradeStatusAsync (System.Threading.CancellationToken cancellationToken);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Threading.Tasks.Task`1&lt;class System.Fabric.FabricOrchestrationUpgradeProgress&gt; GetClusterConfigurationUpgradeStatusAsync(valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Fabric.FabricClient.ClusterManagementClient.GetClusterConfigurationUpgradeStatusAsync(System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetClusterConfigurationUpgradeStatusAsync (cancellationToken As CancellationToken) As Task(Of FabricOrchestrationUpgradeProgress)" />
       <MemberSignature Language="F#" Value="member this.GetClusterConfigurationUpgradeStatusAsync : System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;System.Fabric.FabricOrchestrationUpgradeProgress&gt;" Usage="clusterManagementClient.GetClusterConfigurationUpgradeStatusAsync cancellationToken" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Threading::Tasks::Task&lt;System::Fabric::FabricOrchestrationUpgradeProgress ^&gt; ^ GetClusterConfigurationUpgradeStatusAsync(System::Threading::CancellationToken cancellationToken);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Fabric</AssemblyName>
-        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;System.Fabric.FabricOrchestrationUpgradeProgress&gt;</ReturnType>
@@ -548,7 +602,7 @@
         <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
       </Parameters>
       <Docs>
-        <param name="cancellationToken"></param>
+        <param name="cancellationToken" />
         <summary>
             Obtains the status of an upgrade in progress.
             </summary>
@@ -562,11 +616,10 @@
       <MemberSignature Language="DocId" Value="M:System.Fabric.FabricClient.ClusterManagementClient.GetClusterConfigurationUpgradeStatusAsync(System.TimeSpan)" />
       <MemberSignature Language="VB.NET" Value="Public Function GetClusterConfigurationUpgradeStatusAsync (timeout As TimeSpan) As Task(Of FabricOrchestrationUpgradeProgress)" />
       <MemberSignature Language="F#" Value="member this.GetClusterConfigurationUpgradeStatusAsync : TimeSpan -&gt; System.Threading.Tasks.Task&lt;System.Fabric.FabricOrchestrationUpgradeProgress&gt;" Usage="clusterManagementClient.GetClusterConfigurationUpgradeStatusAsync timeout" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Threading::Tasks::Task&lt;System::Fabric::FabricOrchestrationUpgradeProgress ^&gt; ^ GetClusterConfigurationUpgradeStatusAsync(TimeSpan timeout);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Fabric</AssemblyName>
-        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;System.Fabric.FabricOrchestrationUpgradeProgress&gt;</ReturnType>
@@ -589,12 +642,12 @@
       <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;System.Fabric.FabricOrchestrationUpgradeProgress&gt; GetClusterConfigurationUpgradeStatusAsync (TimeSpan timeout, System.Threading.CancellationToken cancellationToken);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Threading.Tasks.Task`1&lt;class System.Fabric.FabricOrchestrationUpgradeProgress&gt; GetClusterConfigurationUpgradeStatusAsync(valuetype System.TimeSpan timeout, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Fabric.FabricClient.ClusterManagementClient.GetClusterConfigurationUpgradeStatusAsync(System.TimeSpan,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetClusterConfigurationUpgradeStatusAsync (timeout As TimeSpan, cancellationToken As CancellationToken) As Task(Of FabricOrchestrationUpgradeProgress)" />
       <MemberSignature Language="F#" Value="member this.GetClusterConfigurationUpgradeStatusAsync : TimeSpan * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;System.Fabric.FabricOrchestrationUpgradeProgress&gt;" Usage="clusterManagementClient.GetClusterConfigurationUpgradeStatusAsync (timeout, cancellationToken)" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Threading::Tasks::Task&lt;System::Fabric::FabricOrchestrationUpgradeProgress ^&gt; ^ GetClusterConfigurationUpgradeStatusAsync(TimeSpan timeout, System::Threading::CancellationToken cancellationToken);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Fabric</AssemblyName>
-        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;System.Fabric.FabricOrchestrationUpgradeProgress&gt;</ReturnType>
@@ -624,11 +677,10 @@
       <MemberSignature Language="DocId" Value="M:System.Fabric.FabricClient.ClusterManagementClient.GetClusterManifestAsync" />
       <MemberSignature Language="VB.NET" Value="Public Function GetClusterManifestAsync () As Task(Of String)" />
       <MemberSignature Language="F#" Value="member this.GetClusterManifestAsync : unit -&gt; System.Threading.Tasks.Task&lt;string&gt;" Usage="clusterManagementClient.GetClusterManifestAsync " />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Threading::Tasks::Task&lt;System::String ^&gt; ^ GetClusterManifestAsync();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Fabric</AssemblyName>
-        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;System.String&gt;</ReturnType>
@@ -651,12 +703,12 @@
       <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;string&gt; GetClusterManifestAsync (TimeSpan timeout, System.Threading.CancellationToken cancellationToken);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Threading.Tasks.Task`1&lt;string&gt; GetClusterManifestAsync(valuetype System.TimeSpan timeout, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Fabric.FabricClient.ClusterManagementClient.GetClusterManifestAsync(System.TimeSpan,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetClusterManifestAsync (timeout As TimeSpan, cancellationToken As CancellationToken) As Task(Of String)" />
       <MemberSignature Language="F#" Value="member this.GetClusterManifestAsync : TimeSpan * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;string&gt;" Usage="clusterManagementClient.GetClusterManifestAsync (timeout, cancellationToken)" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Threading::Tasks::Task&lt;System::String ^&gt; ^ GetClusterManifestAsync(TimeSpan timeout, System::Threading::CancellationToken cancellationToken);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Fabric</AssemblyName>
-        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;System.String&gt;</ReturnType>
@@ -690,12 +742,12 @@
       <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;string&gt; GetClusterManifestAsync (System.Fabric.Description.ClusterManifestQueryDescription queryDescription, TimeSpan timeout, System.Threading.CancellationToken cancellationToken);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Threading.Tasks.Task`1&lt;string&gt; GetClusterManifestAsync(class System.Fabric.Description.ClusterManifestQueryDescription queryDescription, valuetype System.TimeSpan timeout, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Fabric.FabricClient.ClusterManagementClient.GetClusterManifestAsync(System.Fabric.Description.ClusterManifestQueryDescription,System.TimeSpan,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetClusterManifestAsync (queryDescription As ClusterManifestQueryDescription, timeout As TimeSpan, cancellationToken As CancellationToken) As Task(Of String)" />
       <MemberSignature Language="F#" Value="member this.GetClusterManifestAsync : System.Fabric.Description.ClusterManifestQueryDescription * TimeSpan * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;string&gt;" Usage="clusterManagementClient.GetClusterManifestAsync (queryDescription, timeout, cancellationToken)" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Threading::Tasks::Task&lt;System::String ^&gt; ^ GetClusterManifestAsync(System::Fabric::Description::ClusterManifestQueryDescription ^ queryDescription, TimeSpan timeout, System::Threading::CancellationToken cancellationToken);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Fabric</AssemblyName>
-        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;System.String&gt;</ReturnType>
@@ -729,17 +781,72 @@
         </exception>
       </Docs>
     </Member>
+    <Member MemberName="GetConfigurationOverridesAsync">
+      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;System.Fabric.Description.ConfigParameterOverrideList&gt; GetConfigurationOverridesAsync (string nodeName);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Threading.Tasks.Task`1&lt;class System.Fabric.Description.ConfigParameterOverrideList&gt; GetConfigurationOverridesAsync(string nodeName) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Fabric.FabricClient.ClusterManagementClient.GetConfigurationOverridesAsync(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetConfigurationOverridesAsync (nodeName As String) As Task(Of ConfigParameterOverrideList)" />
+      <MemberSignature Language="F#" Value="member this.GetConfigurationOverridesAsync : string -&gt; System.Threading.Tasks.Task&lt;System.Fabric.Description.ConfigParameterOverrideList&gt;" Usage="clusterManagementClient.GetConfigurationOverridesAsync nodeName" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Fabric</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;System.Fabric.Description.ConfigParameterOverrideList&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="nodeName" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="nodeName" />
+        <summary>
+            Gets configuration override
+            </summary>
+        <returns />
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetConfigurationOverridesAsync">
+      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;System.Fabric.Description.ConfigParameterOverrideList&gt; GetConfigurationOverridesAsync (string nodeName, TimeSpan timeout, System.Threading.CancellationToken cancellationToken);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Threading.Tasks.Task`1&lt;class System.Fabric.Description.ConfigParameterOverrideList&gt; GetConfigurationOverridesAsync(string nodeName, valuetype System.TimeSpan timeout, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Fabric.FabricClient.ClusterManagementClient.GetConfigurationOverridesAsync(System.String,System.TimeSpan,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetConfigurationOverridesAsync (nodeName As String, timeout As TimeSpan, cancellationToken As CancellationToken) As Task(Of ConfigParameterOverrideList)" />
+      <MemberSignature Language="F#" Value="member this.GetConfigurationOverridesAsync : string * TimeSpan * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;System.Fabric.Description.ConfigParameterOverrideList&gt;" Usage="clusterManagementClient.GetConfigurationOverridesAsync (nodeName, timeout, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Fabric</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;System.Fabric.Description.ConfigParameterOverrideList&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="nodeName" Type="System.String" />
+        <Parameter Name="timeout" Type="System.TimeSpan" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="nodeName" />
+        <param name="timeout" />
+        <param name="cancellationToken" />
+        <summary>
+            Gets configuration override
+            </summary>
+        <returns />
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
     <Member MemberName="GetFabricUpgradeProgressAsync">
       <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;System.Fabric.FabricUpgradeProgress&gt; GetFabricUpgradeProgressAsync ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Threading.Tasks.Task`1&lt;class System.Fabric.FabricUpgradeProgress&gt; GetFabricUpgradeProgressAsync() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Fabric.FabricClient.ClusterManagementClient.GetFabricUpgradeProgressAsync" />
       <MemberSignature Language="VB.NET" Value="Public Function GetFabricUpgradeProgressAsync () As Task(Of FabricUpgradeProgress)" />
       <MemberSignature Language="F#" Value="member this.GetFabricUpgradeProgressAsync : unit -&gt; System.Threading.Tasks.Task&lt;System.Fabric.FabricUpgradeProgress&gt;" Usage="clusterManagementClient.GetFabricUpgradeProgressAsync " />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Threading::Tasks::Task&lt;System::Fabric::FabricUpgradeProgress ^&gt; ^ GetFabricUpgradeProgressAsync();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Fabric</AssemblyName>
-        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;System.Fabric.FabricUpgradeProgress&gt;</ReturnType>
@@ -762,12 +869,12 @@
       <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;System.Fabric.FabricUpgradeProgress&gt; GetFabricUpgradeProgressAsync (TimeSpan timeout, System.Threading.CancellationToken cancellationToken);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Threading.Tasks.Task`1&lt;class System.Fabric.FabricUpgradeProgress&gt; GetFabricUpgradeProgressAsync(valuetype System.TimeSpan timeout, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Fabric.FabricClient.ClusterManagementClient.GetFabricUpgradeProgressAsync(System.TimeSpan,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetFabricUpgradeProgressAsync (timeout As TimeSpan, cancellationToken As CancellationToken) As Task(Of FabricUpgradeProgress)" />
       <MemberSignature Language="F#" Value="member this.GetFabricUpgradeProgressAsync : TimeSpan * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;System.Fabric.FabricUpgradeProgress&gt;" Usage="clusterManagementClient.GetFabricUpgradeProgressAsync (timeout, cancellationToken)" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Threading::Tasks::Task&lt;System::Fabric::FabricUpgradeProgress ^&gt; ^ GetFabricUpgradeProgressAsync(TimeSpan timeout, System::Threading::CancellationToken cancellationToken);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Fabric</AssemblyName>
-        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;System.Fabric.FabricUpgradeProgress&gt;</ReturnType>
@@ -801,11 +908,10 @@
       <MemberSignature Language="DocId" Value="M:System.Fabric.FabricClient.ClusterManagementClient.GetUpgradeOrchestrationServiceStateAsync" />
       <MemberSignature Language="VB.NET" Value="Public Function GetUpgradeOrchestrationServiceStateAsync () As Task(Of String)" />
       <MemberSignature Language="F#" Value="member this.GetUpgradeOrchestrationServiceStateAsync : unit -&gt; System.Threading.Tasks.Task&lt;string&gt;" Usage="clusterManagementClient.GetUpgradeOrchestrationServiceStateAsync " />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Threading::Tasks::Task&lt;System::String ^&gt; ^ GetUpgradeOrchestrationServiceStateAsync();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Fabric</AssemblyName>
-        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;System.String&gt;</ReturnType>
@@ -825,12 +931,12 @@
       <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;string&gt; GetUpgradeOrchestrationServiceStateAsync (TimeSpan timeout, System.Threading.CancellationToken cancellationToken);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Threading.Tasks.Task`1&lt;string&gt; GetUpgradeOrchestrationServiceStateAsync(valuetype System.TimeSpan timeout, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Fabric.FabricClient.ClusterManagementClient.GetUpgradeOrchestrationServiceStateAsync(System.TimeSpan,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetUpgradeOrchestrationServiceStateAsync (timeout As TimeSpan, cancellationToken As CancellationToken) As Task(Of String)" />
       <MemberSignature Language="F#" Value="member this.GetUpgradeOrchestrationServiceStateAsync : TimeSpan * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;string&gt;" Usage="clusterManagementClient.GetUpgradeOrchestrationServiceStateAsync (timeout, cancellationToken)" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Threading::Tasks::Task&lt;System::String ^&gt; ^ GetUpgradeOrchestrationServiceStateAsync(TimeSpan timeout, System::Threading::CancellationToken cancellationToken);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Fabric</AssemblyName>
-        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;System.String&gt;</ReturnType>
@@ -862,11 +968,10 @@
       <MemberSignature Language="DocId" Value="M:System.Fabric.FabricClient.ClusterManagementClient.MoveNextFabricUpgradeDomainAsync(System.Fabric.FabricUpgradeProgress)" />
       <MemberSignature Language="VB.NET" Value="Public Function MoveNextFabricUpgradeDomainAsync (upgradeProgress As FabricUpgradeProgress) As Task" />
       <MemberSignature Language="F#" Value="member this.MoveNextFabricUpgradeDomainAsync : System.Fabric.FabricUpgradeProgress -&gt; System.Threading.Tasks.Task" Usage="clusterManagementClient.MoveNextFabricUpgradeDomainAsync upgradeProgress" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Threading::Tasks::Task ^ MoveNextFabricUpgradeDomainAsync(System::Fabric::FabricUpgradeProgress ^ upgradeProgress);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Fabric</AssemblyName>
-        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task</ReturnType>
@@ -896,12 +1001,12 @@
       <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task MoveNextFabricUpgradeDomainAsync (System.Fabric.FabricUpgradeProgress upgradeProgress, TimeSpan timeout, System.Threading.CancellationToken cancellationToken);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Threading.Tasks.Task MoveNextFabricUpgradeDomainAsync(class System.Fabric.FabricUpgradeProgress upgradeProgress, valuetype System.TimeSpan timeout, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Fabric.FabricClient.ClusterManagementClient.MoveNextFabricUpgradeDomainAsync(System.Fabric.FabricUpgradeProgress,System.TimeSpan,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Function MoveNextFabricUpgradeDomainAsync (upgradeProgress As FabricUpgradeProgress, timeout As TimeSpan, cancellationToken As CancellationToken) As Task" />
       <MemberSignature Language="F#" Value="member this.MoveNextFabricUpgradeDomainAsync : System.Fabric.FabricUpgradeProgress * TimeSpan * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task" Usage="clusterManagementClient.MoveNextFabricUpgradeDomainAsync (upgradeProgress, timeout, cancellationToken)" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Threading::Tasks::Task ^ MoveNextFabricUpgradeDomainAsync(System::Fabric::FabricUpgradeProgress ^ upgradeProgress, TimeSpan timeout, System::Threading::CancellationToken cancellationToken);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Fabric</AssemblyName>
-        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task</ReturnType>
@@ -941,11 +1046,10 @@
       <MemberSignature Language="DocId" Value="M:System.Fabric.FabricClient.ClusterManagementClient.ProvisionFabricAsync(System.String,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Function ProvisionFabricAsync (patchFilePath As String, clusterManifestFilePath As String) As Task" />
       <MemberSignature Language="F#" Value="member this.ProvisionFabricAsync : string * string -&gt; System.Threading.Tasks.Task" Usage="clusterManagementClient.ProvisionFabricAsync (patchFilePath, clusterManifestFilePath)" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Threading::Tasks::Task ^ ProvisionFabricAsync(System::String ^ patchFilePath, System::String ^ clusterManifestFilePath);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Fabric</AssemblyName>
-        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task</ReturnType>
@@ -981,12 +1085,12 @@
       <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task ProvisionFabricAsync (string patchFilePath, string clusterManifestFilePath, TimeSpan timeout, System.Threading.CancellationToken cancellationToken);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Threading.Tasks.Task ProvisionFabricAsync(string patchFilePath, string clusterManifestFilePath, valuetype System.TimeSpan timeout, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Fabric.FabricClient.ClusterManagementClient.ProvisionFabricAsync(System.String,System.String,System.TimeSpan,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Function ProvisionFabricAsync (patchFilePath As String, clusterManifestFilePath As String, timeout As TimeSpan, cancellationToken As CancellationToken) As Task" />
       <MemberSignature Language="F#" Value="member this.ProvisionFabricAsync : string * string * TimeSpan * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task" Usage="clusterManagementClient.ProvisionFabricAsync (patchFilePath, clusterManifestFilePath, timeout, cancellationToken)" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Threading::Tasks::Task ^ ProvisionFabricAsync(System::String ^ patchFilePath, System::String ^ clusterManifestFilePath, TimeSpan timeout, System::Threading::CancellationToken cancellationToken);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Fabric</AssemblyName>
-        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task</ReturnType>
@@ -1034,11 +1138,10 @@
       <MemberSignature Language="DocId" Value="M:System.Fabric.FabricClient.ClusterManagementClient.RecoverPartitionAsync(System.Guid)" />
       <MemberSignature Language="VB.NET" Value="Public Function RecoverPartitionAsync (partitionId As Guid) As Task" />
       <MemberSignature Language="F#" Value="member this.RecoverPartitionAsync : Guid -&gt; System.Threading.Tasks.Task" Usage="clusterManagementClient.RecoverPartitionAsync partitionId" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Threading::Tasks::Task ^ RecoverPartitionAsync(Guid partitionId);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Fabric</AssemblyName>
-        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task</ReturnType>
@@ -1076,12 +1179,12 @@
       <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task RecoverPartitionAsync (Guid partitionId, TimeSpan timeout, System.Threading.CancellationToken cancellationToken);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Threading.Tasks.Task RecoverPartitionAsync(valuetype System.Guid partitionId, valuetype System.TimeSpan timeout, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Fabric.FabricClient.ClusterManagementClient.RecoverPartitionAsync(System.Guid,System.TimeSpan,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Function RecoverPartitionAsync (partitionId As Guid, timeout As TimeSpan, cancellationToken As CancellationToken) As Task" />
       <MemberSignature Language="F#" Value="member this.RecoverPartitionAsync : Guid * TimeSpan * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task" Usage="clusterManagementClient.RecoverPartitionAsync (partitionId, timeout, cancellationToken)" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Threading::Tasks::Task ^ RecoverPartitionAsync(Guid partitionId, TimeSpan timeout, System::Threading::CancellationToken cancellationToken);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Fabric</AssemblyName>
-        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task</ReturnType>
@@ -1129,11 +1232,10 @@
       <MemberSignature Language="DocId" Value="M:System.Fabric.FabricClient.ClusterManagementClient.RecoverPartitionsAsync" />
       <MemberSignature Language="VB.NET" Value="Public Function RecoverPartitionsAsync () As Task" />
       <MemberSignature Language="F#" Value="member this.RecoverPartitionsAsync : unit -&gt; System.Threading.Tasks.Task" Usage="clusterManagementClient.RecoverPartitionsAsync " />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Threading::Tasks::Task ^ RecoverPartitionsAsync();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Fabric</AssemblyName>
-        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task</ReturnType>
@@ -1168,12 +1270,12 @@
       <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task RecoverPartitionsAsync (TimeSpan timeout, System.Threading.CancellationToken cancellationToken);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Threading.Tasks.Task RecoverPartitionsAsync(valuetype System.TimeSpan timeout, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Fabric.FabricClient.ClusterManagementClient.RecoverPartitionsAsync(System.TimeSpan,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Function RecoverPartitionsAsync (timeout As TimeSpan, cancellationToken As CancellationToken) As Task" />
       <MemberSignature Language="F#" Value="member this.RecoverPartitionsAsync : TimeSpan * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task" Usage="clusterManagementClient.RecoverPartitionsAsync (timeout, cancellationToken)" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Threading::Tasks::Task ^ RecoverPartitionsAsync(TimeSpan timeout, System::Threading::CancellationToken cancellationToken);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Fabric</AssemblyName>
-        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task</ReturnType>
@@ -1219,11 +1321,10 @@
       <MemberSignature Language="DocId" Value="M:System.Fabric.FabricClient.ClusterManagementClient.RecoverServicePartitionsAsync(System.Uri)" />
       <MemberSignature Language="VB.NET" Value="Public Function RecoverServicePartitionsAsync (serviceName As Uri) As Task" />
       <MemberSignature Language="F#" Value="member this.RecoverServicePartitionsAsync : Uri -&gt; System.Threading.Tasks.Task" Usage="clusterManagementClient.RecoverServicePartitionsAsync serviceName" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Threading::Tasks::Task ^ RecoverServicePartitionsAsync(Uri ^ serviceName);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Fabric</AssemblyName>
-        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task</ReturnType>
@@ -1263,12 +1364,12 @@
       <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task RecoverServicePartitionsAsync (Uri serviceName, TimeSpan timeout, System.Threading.CancellationToken cancellationToken);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Threading.Tasks.Task RecoverServicePartitionsAsync(class System.Uri serviceName, valuetype System.TimeSpan timeout, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Fabric.FabricClient.ClusterManagementClient.RecoverServicePartitionsAsync(System.Uri,System.TimeSpan,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Function RecoverServicePartitionsAsync (serviceName As Uri, timeout As TimeSpan, cancellationToken As CancellationToken) As Task" />
       <MemberSignature Language="F#" Value="member this.RecoverServicePartitionsAsync : Uri * TimeSpan * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task" Usage="clusterManagementClient.RecoverServicePartitionsAsync (serviceName, timeout, cancellationToken)" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Threading::Tasks::Task ^ RecoverServicePartitionsAsync(Uri ^ serviceName, TimeSpan timeout, System::Threading::CancellationToken cancellationToken);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Fabric</AssemblyName>
-        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task</ReturnType>
@@ -1318,11 +1419,10 @@
       <MemberSignature Language="DocId" Value="M:System.Fabric.FabricClient.ClusterManagementClient.RecoverSystemPartitionsAsync" />
       <MemberSignature Language="VB.NET" Value="Public Function RecoverSystemPartitionsAsync () As Task" />
       <MemberSignature Language="F#" Value="member this.RecoverSystemPartitionsAsync : unit -&gt; System.Threading.Tasks.Task" Usage="clusterManagementClient.RecoverSystemPartitionsAsync " />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Threading::Tasks::Task ^ RecoverSystemPartitionsAsync();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Fabric</AssemblyName>
-        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task</ReturnType>
@@ -1357,12 +1457,12 @@
       <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task RecoverSystemPartitionsAsync (TimeSpan timeout, System.Threading.CancellationToken cancellationToken);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Threading.Tasks.Task RecoverSystemPartitionsAsync(valuetype System.TimeSpan timeout, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Fabric.FabricClient.ClusterManagementClient.RecoverSystemPartitionsAsync(System.TimeSpan,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Function RecoverSystemPartitionsAsync (timeout As TimeSpan, cancellationToken As CancellationToken) As Task" />
       <MemberSignature Language="F#" Value="member this.RecoverSystemPartitionsAsync : TimeSpan * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task" Usage="clusterManagementClient.RecoverSystemPartitionsAsync (timeout, cancellationToken)" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Threading::Tasks::Task ^ RecoverSystemPartitionsAsync(TimeSpan timeout, System::Threading::CancellationToken cancellationToken);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Fabric</AssemblyName>
-        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task</ReturnType>
@@ -1408,13 +1508,10 @@
       <MemberSignature Language="DocId" Value="M:System.Fabric.FabricClient.ClusterManagementClient.RemoveClusterPackage(System.String,System.String,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub RemoveClusterPackage (imageStoreConnectionString As String, clusterManifestPathInImageStore As String, codePackagePathInImageStore As String)" />
       <MemberSignature Language="F#" Value="member this.RemoveClusterPackage : string * string * string -&gt; unit" Usage="clusterManagementClient.RemoveClusterPackage (imageStoreConnectionString, clusterManifestPathInImageStore, codePackagePathInImageStore)" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; void RemoveClusterPackage(System::String ^ imageStoreConnectionString, System::String ^ clusterManifestPathInImageStore, System::String ^ codePackagePathInImageStore);" />
-      <MemberSignature Language="C++ CX" Value="public:&#xA; void RemoveClusterPackage(Platform::String ^ imageStoreConnectionString, Platform::String ^ clusterManifestPathInImageStore, Platform::String ^ codePackagePathInImageStore);" />
-      <MemberSignature Language="C++ WINRT" Value="void RemoveClusterPackage(std::wstring const &amp; imageStoreConnectionString, std::wstring const &amp; clusterManifestPathInImageStore, std::wstring const &amp; codePackagePathInImageStore);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Fabric</AssemblyName>
-        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -1453,17 +1550,72 @@
         </exception>
       </Docs>
     </Member>
+    <Member MemberName="RemoveConfigurationOverridesAsync">
+      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task RemoveConfigurationOverridesAsync (string nodeName);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Threading.Tasks.Task RemoveConfigurationOverridesAsync(string nodeName) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Fabric.FabricClient.ClusterManagementClient.RemoveConfigurationOverridesAsync(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Function RemoveConfigurationOverridesAsync (nodeName As String) As Task" />
+      <MemberSignature Language="F#" Value="member this.RemoveConfigurationOverridesAsync : string -&gt; System.Threading.Tasks.Task" Usage="clusterManagementClient.RemoveConfigurationOverridesAsync nodeName" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Fabric</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="nodeName" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="nodeName" />
+        <summary>
+            Removes configuration override
+            </summary>
+        <returns />
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RemoveConfigurationOverridesAsync">
+      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task RemoveConfigurationOverridesAsync (string nodeName, TimeSpan timeout, System.Threading.CancellationToken cancellationToken);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Threading.Tasks.Task RemoveConfigurationOverridesAsync(string nodeName, valuetype System.TimeSpan timeout, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Fabric.FabricClient.ClusterManagementClient.RemoveConfigurationOverridesAsync(System.String,System.TimeSpan,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Function RemoveConfigurationOverridesAsync (nodeName As String, timeout As TimeSpan, cancellationToken As CancellationToken) As Task" />
+      <MemberSignature Language="F#" Value="member this.RemoveConfigurationOverridesAsync : string * TimeSpan * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task" Usage="clusterManagementClient.RemoveConfigurationOverridesAsync (nodeName, timeout, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Fabric</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="nodeName" Type="System.String" />
+        <Parameter Name="timeout" Type="System.TimeSpan" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="nodeName" />
+        <param name="timeout" />
+        <param name="cancellationToken" />
+        <summary>
+            Removes configuration override
+            </summary>
+        <returns />
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
     <Member MemberName="RemoveNodeStateAsync">
       <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task RemoveNodeStateAsync (string nodeName);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Threading.Tasks.Task RemoveNodeStateAsync(string nodeName) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Fabric.FabricClient.ClusterManagementClient.RemoveNodeStateAsync(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Function RemoveNodeStateAsync (nodeName As String) As Task" />
       <MemberSignature Language="F#" Value="member this.RemoveNodeStateAsync : string -&gt; System.Threading.Tasks.Task" Usage="clusterManagementClient.RemoveNodeStateAsync nodeName" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Threading::Tasks::Task ^ RemoveNodeStateAsync(System::String ^ nodeName);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Fabric</AssemblyName>
-        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task</ReturnType>
@@ -1491,6 +1643,12 @@
           <para>
                 NOTE: This API must be called only after it has been determined that the state on that node has been lost. </para>
           <para>
+                Starting from Service Fabric 6.5, in order to use this API for seed nodes, please change the seed nodes to regular (non-seed) nodes and then invoke this API to remove the node state. </para>
+          <para>
+                If the cluster is running on Azure, after the seed node goes down, Service Fabric will try to change it to a non-seed node automatically. To make this happen, make sure the number of non-seed nodes in the primary node type is no less than the number of Down seed nodes. If necessary, add more nodes to the primary node type to achieve this. </para>
+          <para>
+                For standalone cluster, if the Down seed node is not expected to come back up with its state intact, please remove the node from the cluster, See <see href="https://docs.microsoft.com/en-us/azure/service-fabric/service-fabric-cluster-windows-server-add-remove-nodes/" /></para>
+          <para>
                 If this API is called and then the node comes back with its state intact it is Undefined Behavior</para>
         </remarks>
         <exception cref="T:System.Fabric.FabricObjectClosedException">
@@ -1511,12 +1669,12 @@
       <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task RemoveNodeStateAsync (string nodeName, TimeSpan timeout, System.Threading.CancellationToken cancellationToken);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Threading.Tasks.Task RemoveNodeStateAsync(string nodeName, valuetype System.TimeSpan timeout, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Fabric.FabricClient.ClusterManagementClient.RemoveNodeStateAsync(System.String,System.TimeSpan,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Function RemoveNodeStateAsync (nodeName As String, timeout As TimeSpan, cancellationToken As CancellationToken) As Task" />
       <MemberSignature Language="F#" Value="member this.RemoveNodeStateAsync : string * TimeSpan * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task" Usage="clusterManagementClient.RemoveNodeStateAsync (nodeName, timeout, cancellationToken)" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Threading::Tasks::Task ^ RemoveNodeStateAsync(System::String ^ nodeName, TimeSpan timeout, System::Threading::CancellationToken cancellationToken);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Fabric</AssemblyName>
-        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task</ReturnType>
@@ -1552,6 +1710,12 @@
           <para>
                 NOTE: This API must be called only after it has been determined that the state on that node has been lost. </para>
           <para>
+                Starting from Service Fabric 6.5, in order to use this API for seed nodes, please change the seed nodes to regular (non-seed) nodes and then invoke this API to remove the node state. </para>
+          <para>
+                If the cluster is running on Azure, after the seed node goes down, Service Fabric will try to change it to a non-seed node automatically. To make this happen, make sure the number of non-seed nodes in the primary node type is no less than the number of Down seed nodes. If necessary, add more nodes to the primary node type to achieve this. </para>
+          <para>
+                For standalone cluster, if the Down seed node is not expected to come back up with its state intact, please remove the node from the cluster, See <see href="https://docs.microsoft.com/en-us/azure/service-fabric/service-fabric-cluster-windows-server-add-remove-nodes/" /></para>
+          <para>
                 If this API is called and then the node comes back with its state intact it is Undefined Behavior</para>
         </remarks>
         <exception cref="T:System.Fabric.FabricObjectClosedException">
@@ -1574,11 +1738,10 @@
       <MemberSignature Language="DocId" Value="M:System.Fabric.FabricClient.ClusterManagementClient.ResetPartitionLoadAsync(System.Guid)" />
       <MemberSignature Language="VB.NET" Value="Public Function ResetPartitionLoadAsync (partitionId As Guid) As Task" />
       <MemberSignature Language="F#" Value="member this.ResetPartitionLoadAsync : Guid -&gt; System.Threading.Tasks.Task" Usage="clusterManagementClient.ResetPartitionLoadAsync partitionId" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Threading::Tasks::Task ^ ResetPartitionLoadAsync(Guid partitionId);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Fabric</AssemblyName>
-        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task</ReturnType>
@@ -1605,12 +1768,12 @@
       <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task ResetPartitionLoadAsync (Guid partitionId, TimeSpan timeout, System.Threading.CancellationToken cancellationToken);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Threading.Tasks.Task ResetPartitionLoadAsync(valuetype System.Guid partitionId, valuetype System.TimeSpan timeout, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Fabric.FabricClient.ClusterManagementClient.ResetPartitionLoadAsync(System.Guid,System.TimeSpan,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Function ResetPartitionLoadAsync (partitionId As Guid, timeout As TimeSpan, cancellationToken As CancellationToken) As Task" />
       <MemberSignature Language="F#" Value="member this.ResetPartitionLoadAsync : Guid * TimeSpan * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task" Usage="clusterManagementClient.ResetPartitionLoadAsync (partitionId, timeout, cancellationToken)" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Threading::Tasks::Task ^ ResetPartitionLoadAsync(Guid partitionId, TimeSpan timeout, System::Threading::CancellationToken cancellationToken);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Fabric</AssemblyName>
-        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task</ReturnType>
@@ -1647,11 +1810,10 @@
       <MemberSignature Language="DocId" Value="M:System.Fabric.FabricClient.ClusterManagementClient.RollbackFabricUpgradeAsync" />
       <MemberSignature Language="VB.NET" Value="Public Function RollbackFabricUpgradeAsync () As Task" />
       <MemberSignature Language="F#" Value="member this.RollbackFabricUpgradeAsync : unit -&gt; System.Threading.Tasks.Task" Usage="clusterManagementClient.RollbackFabricUpgradeAsync " />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Threading::Tasks::Task ^ RollbackFabricUpgradeAsync();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Fabric</AssemblyName>
-        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task</ReturnType>
@@ -1671,12 +1833,12 @@
       <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task RollbackFabricUpgradeAsync (TimeSpan timeout, System.Threading.CancellationToken cancellationToken);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Threading.Tasks.Task RollbackFabricUpgradeAsync(valuetype System.TimeSpan timeout, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Fabric.FabricClient.ClusterManagementClient.RollbackFabricUpgradeAsync(System.TimeSpan,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Function RollbackFabricUpgradeAsync (timeout As TimeSpan, cancellationToken As CancellationToken) As Task" />
       <MemberSignature Language="F#" Value="member this.RollbackFabricUpgradeAsync : TimeSpan * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task" Usage="clusterManagementClient.RollbackFabricUpgradeAsync (timeout, cancellationToken)" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Threading::Tasks::Task ^ RollbackFabricUpgradeAsync(TimeSpan timeout, System::Threading::CancellationToken cancellationToken);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Fabric</AssemblyName>
-        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task</ReturnType>
@@ -1707,11 +1869,10 @@
       <MemberSignature Language="DocId" Value="M:System.Fabric.FabricClient.ClusterManagementClient.SetUpgradeOrchestrationServiceStateAsync(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Function SetUpgradeOrchestrationServiceStateAsync (state As String) As Task(Of FabricUpgradeOrchestrationServiceState)" />
       <MemberSignature Language="F#" Value="member this.SetUpgradeOrchestrationServiceStateAsync : string -&gt; System.Threading.Tasks.Task&lt;System.Fabric.FabricUpgradeOrchestrationServiceState&gt;" Usage="clusterManagementClient.SetUpgradeOrchestrationServiceStateAsync state" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Threading::Tasks::Task&lt;System::Fabric::FabricUpgradeOrchestrationServiceState ^&gt; ^ SetUpgradeOrchestrationServiceStateAsync(System::String ^ state);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Fabric</AssemblyName>
-        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;System.Fabric.FabricUpgradeOrchestrationServiceState&gt;</ReturnType>
@@ -1732,12 +1893,12 @@
       <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;System.Fabric.FabricUpgradeOrchestrationServiceState&gt; SetUpgradeOrchestrationServiceStateAsync (string state, TimeSpan timeout, System.Threading.CancellationToken cancellationToken);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Threading.Tasks.Task`1&lt;class System.Fabric.FabricUpgradeOrchestrationServiceState&gt; SetUpgradeOrchestrationServiceStateAsync(string state, valuetype System.TimeSpan timeout, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Fabric.FabricClient.ClusterManagementClient.SetUpgradeOrchestrationServiceStateAsync(System.String,System.TimeSpan,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Function SetUpgradeOrchestrationServiceStateAsync (state As String, timeout As TimeSpan, cancellationToken As CancellationToken) As Task(Of FabricUpgradeOrchestrationServiceState)" />
       <MemberSignature Language="F#" Value="member this.SetUpgradeOrchestrationServiceStateAsync : string * TimeSpan * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;System.Fabric.FabricUpgradeOrchestrationServiceState&gt;" Usage="clusterManagementClient.SetUpgradeOrchestrationServiceStateAsync (state, timeout, cancellationToken)" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Threading::Tasks::Task&lt;System::Fabric::FabricUpgradeOrchestrationServiceState ^&gt; ^ SetUpgradeOrchestrationServiceStateAsync(System::String ^ state, TimeSpan timeout, System::Threading::CancellationToken cancellationToken);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Fabric</AssemblyName>
-        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;System.Fabric.FabricUpgradeOrchestrationServiceState&gt;</ReturnType>
@@ -1771,11 +1932,10 @@
       <MemberSignature Language="DocId" Value="M:System.Fabric.FabricClient.ClusterManagementClient.ToggleVerboseServicePlacementHealthReportingAsync(System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public Function ToggleVerboseServicePlacementHealthReportingAsync (enabled As Boolean) As Task" />
       <MemberSignature Language="F#" Value="member this.ToggleVerboseServicePlacementHealthReportingAsync : bool -&gt; System.Threading.Tasks.Task" Usage="clusterManagementClient.ToggleVerboseServicePlacementHealthReportingAsync enabled" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Threading::Tasks::Task ^ ToggleVerboseServicePlacementHealthReportingAsync(bool enabled);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Fabric</AssemblyName>
-        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task</ReturnType>
@@ -1806,12 +1966,12 @@
       <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task ToggleVerboseServicePlacementHealthReportingAsync (bool enabled, TimeSpan timeout, System.Threading.CancellationToken cancellationToken);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Threading.Tasks.Task ToggleVerboseServicePlacementHealthReportingAsync(bool enabled, valuetype System.TimeSpan timeout, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Fabric.FabricClient.ClusterManagementClient.ToggleVerboseServicePlacementHealthReportingAsync(System.Boolean,System.TimeSpan,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Function ToggleVerboseServicePlacementHealthReportingAsync (enabled As Boolean, timeout As TimeSpan, cancellationToken As CancellationToken) As Task" />
       <MemberSignature Language="F#" Value="member this.ToggleVerboseServicePlacementHealthReportingAsync : bool * TimeSpan * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task" Usage="clusterManagementClient.ToggleVerboseServicePlacementHealthReportingAsync (enabled, timeout, cancellationToken)" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Threading::Tasks::Task ^ ToggleVerboseServicePlacementHealthReportingAsync(bool enabled, TimeSpan timeout, System::Threading::CancellationToken cancellationToken);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Fabric</AssemblyName>
-        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task</ReturnType>
@@ -1852,11 +2012,10 @@
       <MemberSignature Language="DocId" Value="M:System.Fabric.FabricClient.ClusterManagementClient.UnprovisionFabricAsync(System.String,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Function UnprovisionFabricAsync (codeVersion As String, configVersion As String) As Task" />
       <MemberSignature Language="F#" Value="member this.UnprovisionFabricAsync : string * string -&gt; System.Threading.Tasks.Task" Usage="clusterManagementClient.UnprovisionFabricAsync (codeVersion, configVersion)" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Threading::Tasks::Task ^ UnprovisionFabricAsync(System::String ^ codeVersion, System::String ^ configVersion);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Fabric</AssemblyName>
-        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task</ReturnType>
@@ -1891,12 +2050,12 @@
       <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task UnprovisionFabricAsync (string codeVersion, string configVersion, TimeSpan timeout, System.Threading.CancellationToken cancellationToken);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Threading.Tasks.Task UnprovisionFabricAsync(string codeVersion, string configVersion, valuetype System.TimeSpan timeout, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Fabric.FabricClient.ClusterManagementClient.UnprovisionFabricAsync(System.String,System.String,System.TimeSpan,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Function UnprovisionFabricAsync (codeVersion As String, configVersion As String, timeout As TimeSpan, cancellationToken As CancellationToken) As Task" />
       <MemberSignature Language="F#" Value="member this.UnprovisionFabricAsync : string * string * TimeSpan * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task" Usage="clusterManagementClient.UnprovisionFabricAsync (codeVersion, configVersion, timeout, cancellationToken)" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Threading::Tasks::Task ^ UnprovisionFabricAsync(System::String ^ codeVersion, System::String ^ configVersion, TimeSpan timeout, System::Threading::CancellationToken cancellationToken);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Fabric</AssemblyName>
-        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task</ReturnType>
@@ -1938,11 +2097,10 @@
       <MemberSignature Language="DocId" Value="M:System.Fabric.FabricClient.ClusterManagementClient.UpdateFabricUpgradeAsync(System.Fabric.Description.FabricUpgradeUpdateDescription)" />
       <MemberSignature Language="VB.NET" Value="Public Function UpdateFabricUpgradeAsync (updateDescription As FabricUpgradeUpdateDescription) As Task" />
       <MemberSignature Language="F#" Value="member this.UpdateFabricUpgradeAsync : System.Fabric.Description.FabricUpgradeUpdateDescription -&gt; System.Threading.Tasks.Task" Usage="clusterManagementClient.UpdateFabricUpgradeAsync updateDescription" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Threading::Tasks::Task ^ UpdateFabricUpgradeAsync(System::Fabric::Description::FabricUpgradeUpdateDescription ^ updateDescription);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Fabric</AssemblyName>
-        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task</ReturnType>
@@ -1967,12 +2125,12 @@
       <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task UpdateFabricUpgradeAsync (System.Fabric.Description.FabricUpgradeUpdateDescription updateDescription, TimeSpan timeout, System.Threading.CancellationToken cancellationToken);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Threading.Tasks.Task UpdateFabricUpgradeAsync(class System.Fabric.Description.FabricUpgradeUpdateDescription updateDescription, valuetype System.TimeSpan timeout, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Fabric.FabricClient.ClusterManagementClient.UpdateFabricUpgradeAsync(System.Fabric.Description.FabricUpgradeUpdateDescription,System.TimeSpan,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Function UpdateFabricUpgradeAsync (updateDescription As FabricUpgradeUpdateDescription, timeout As TimeSpan, cancellationToken As CancellationToken) As Task" />
       <MemberSignature Language="F#" Value="member this.UpdateFabricUpgradeAsync : System.Fabric.Description.FabricUpgradeUpdateDescription * TimeSpan * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task" Usage="clusterManagementClient.UpdateFabricUpgradeAsync (updateDescription, timeout, cancellationToken)" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Threading::Tasks::Task ^ UpdateFabricUpgradeAsync(System::Fabric::Description::FabricUpgradeUpdateDescription ^ updateDescription, TimeSpan timeout, System::Threading::CancellationToken cancellationToken);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Fabric</AssemblyName>
-        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task</ReturnType>
@@ -2001,17 +2159,59 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <Member MemberName="UpdatePartitionLoadAsync">
+      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;System.Fabric.Query.UpdatePartitionLoadResultList&gt; UpdatePartitionLoadAsync (System.Fabric.Description.UpdatePartitionLoadQueryDescription updatePartitionLoadQueryDescription, TimeSpan timeout, System.Threading.CancellationToken cancellationToken);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Threading.Tasks.Task`1&lt;class System.Fabric.Query.UpdatePartitionLoadResultList&gt; UpdatePartitionLoadAsync(class System.Fabric.Description.UpdatePartitionLoadQueryDescription updatePartitionLoadQueryDescription, valuetype System.TimeSpan timeout, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Fabric.FabricClient.ClusterManagementClient.UpdatePartitionLoadAsync(System.Fabric.Description.UpdatePartitionLoadQueryDescription,System.TimeSpan,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Function UpdatePartitionLoadAsync (updatePartitionLoadQueryDescription As UpdatePartitionLoadQueryDescription, timeout As TimeSpan, cancellationToken As CancellationToken) As Task(Of UpdatePartitionLoadResultList)" />
+      <MemberSignature Language="F#" Value="member this.UpdatePartitionLoadAsync : System.Fabric.Description.UpdatePartitionLoadQueryDescription * TimeSpan * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;System.Fabric.Query.UpdatePartitionLoadResultList&gt;" Usage="clusterManagementClient.UpdatePartitionLoadAsync (updatePartitionLoadQueryDescription, timeout, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Fabric</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;System.Fabric.Query.UpdatePartitionLoadResultList&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="updatePartitionLoadQueryDescription" Type="System.Fabric.Description.UpdatePartitionLoadQueryDescription" />
+        <Parameter Name="timeout" Type="System.TimeSpan" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="updatePartitionLoadQueryDescription">
+          <para>Query description <see cref="T:System.Fabric.Description.UpdatePartitionLoadQueryDescription" /> contains the list of partitions with their metric load descriptions as well as settings for paging output results. </para>
+        </param>
+        <param name="timeout">
+          <para> The length of time within which the async method must complete in order for the method to not time out.</para>
+        </param>
+        <param name="cancellationToken">
+          <para>A cancellation token for this method. </para>
+        </param>
+        <summary>
+          <para> 
+            Updates partitions reported metric load information. If the output list of partitions do not fit in a page, one page of results is returned as well as a
+            continuation token which can be used to get the next page.
+            </para>
+        </summary>
+        <returns>
+          <para>A <see cref="T:System.Threading.Tasks.Task" /> that represents the asynchronous query operation.
+            The value of TResult parameter is an <see cref="T:System.Fabric.Query.UpdatePartitionLoadResultList" /> that represents the list of
+            output information per partition (partition ID with corresponding ErrorCode as an update result) that fit the page. </para>
+        </returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
     <Member MemberName="UpgradeConfigurationAsync">
       <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task UpgradeConfigurationAsync (System.Fabric.Description.ConfigurationUpgradeDescription description);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Threading.Tasks.Task UpgradeConfigurationAsync(class System.Fabric.Description.ConfigurationUpgradeDescription description) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Fabric.FabricClient.ClusterManagementClient.UpgradeConfigurationAsync(System.Fabric.Description.ConfigurationUpgradeDescription)" />
       <MemberSignature Language="VB.NET" Value="Public Function UpgradeConfigurationAsync (description As ConfigurationUpgradeDescription) As Task" />
       <MemberSignature Language="F#" Value="member this.UpgradeConfigurationAsync : System.Fabric.Description.ConfigurationUpgradeDescription -&gt; System.Threading.Tasks.Task" Usage="clusterManagementClient.UpgradeConfigurationAsync description" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Threading::Tasks::Task ^ UpgradeConfigurationAsync(System::Fabric::Description::ConfigurationUpgradeDescription ^ description);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Fabric</AssemblyName>
-        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task</ReturnType>
@@ -2037,12 +2237,12 @@
       <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task UpgradeConfigurationAsync (System.Fabric.Description.ConfigurationUpgradeDescription description, System.Threading.CancellationToken cancellationToken);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Threading.Tasks.Task UpgradeConfigurationAsync(class System.Fabric.Description.ConfigurationUpgradeDescription description, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Fabric.FabricClient.ClusterManagementClient.UpgradeConfigurationAsync(System.Fabric.Description.ConfigurationUpgradeDescription,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Function UpgradeConfigurationAsync (description As ConfigurationUpgradeDescription, cancellationToken As CancellationToken) As Task" />
       <MemberSignature Language="F#" Value="member this.UpgradeConfigurationAsync : System.Fabric.Description.ConfigurationUpgradeDescription * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task" Usage="clusterManagementClient.UpgradeConfigurationAsync (description, cancellationToken)" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Threading::Tasks::Task ^ UpgradeConfigurationAsync(System::Fabric::Description::ConfigurationUpgradeDescription ^ description, System::Threading::CancellationToken cancellationToken);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Fabric</AssemblyName>
-        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task</ReturnType>
@@ -2074,11 +2274,10 @@
       <MemberSignature Language="DocId" Value="M:System.Fabric.FabricClient.ClusterManagementClient.UpgradeConfigurationAsync(System.Fabric.Description.ConfigurationUpgradeDescription,System.TimeSpan)" />
       <MemberSignature Language="VB.NET" Value="Public Function UpgradeConfigurationAsync (description As ConfigurationUpgradeDescription, timeout As TimeSpan) As Task" />
       <MemberSignature Language="F#" Value="member this.UpgradeConfigurationAsync : System.Fabric.Description.ConfigurationUpgradeDescription * TimeSpan -&gt; System.Threading.Tasks.Task" Usage="clusterManagementClient.UpgradeConfigurationAsync (description, timeout)" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Threading::Tasks::Task ^ UpgradeConfigurationAsync(System::Fabric::Description::ConfigurationUpgradeDescription ^ description, TimeSpan timeout);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Fabric</AssemblyName>
-        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task</ReturnType>
@@ -2107,12 +2306,12 @@
       <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task UpgradeConfigurationAsync (System.Fabric.Description.ConfigurationUpgradeDescription description, TimeSpan timeout, System.Threading.CancellationToken cancellationToken);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Threading.Tasks.Task UpgradeConfigurationAsync(class System.Fabric.Description.ConfigurationUpgradeDescription description, valuetype System.TimeSpan timeout, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Fabric.FabricClient.ClusterManagementClient.UpgradeConfigurationAsync(System.Fabric.Description.ConfigurationUpgradeDescription,System.TimeSpan,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Function UpgradeConfigurationAsync (description As ConfigurationUpgradeDescription, timeout As TimeSpan, cancellationToken As CancellationToken) As Task" />
       <MemberSignature Language="F#" Value="member this.UpgradeConfigurationAsync : System.Fabric.Description.ConfigurationUpgradeDescription * TimeSpan * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task" Usage="clusterManagementClient.UpgradeConfigurationAsync (description, timeout, cancellationToken)" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Threading::Tasks::Task ^ UpgradeConfigurationAsync(System::Fabric::Description::ConfigurationUpgradeDescription ^ description, TimeSpan timeout, System::Threading::CancellationToken cancellationToken);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Fabric</AssemblyName>
-        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task</ReturnType>
@@ -2148,11 +2347,10 @@
       <MemberSignature Language="DocId" Value="M:System.Fabric.FabricClient.ClusterManagementClient.UpgradeFabricAsync(System.Fabric.Description.FabricUpgradeDescription)" />
       <MemberSignature Language="VB.NET" Value="Public Function UpgradeFabricAsync (upgradeDescription As FabricUpgradeDescription) As Task" />
       <MemberSignature Language="F#" Value="member this.UpgradeFabricAsync : System.Fabric.Description.FabricUpgradeDescription -&gt; System.Threading.Tasks.Task" Usage="clusterManagementClient.UpgradeFabricAsync upgradeDescription" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Threading::Tasks::Task ^ UpgradeFabricAsync(System::Fabric::Description::FabricUpgradeDescription ^ upgradeDescription);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Fabric</AssemblyName>
-        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task</ReturnType>
@@ -2180,12 +2378,12 @@
       <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task UpgradeFabricAsync (System.Fabric.Description.FabricUpgradeDescription upgradeDescription, TimeSpan timeout, System.Threading.CancellationToken cancellationToken);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Threading.Tasks.Task UpgradeFabricAsync(class System.Fabric.Description.FabricUpgradeDescription upgradeDescription, valuetype System.TimeSpan timeout, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Fabric.FabricClient.ClusterManagementClient.UpgradeFabricAsync(System.Fabric.Description.FabricUpgradeDescription,System.TimeSpan,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Function UpgradeFabricAsync (upgradeDescription As FabricUpgradeDescription, timeout As TimeSpan, cancellationToken As CancellationToken) As Task" />
       <MemberSignature Language="F#" Value="member this.UpgradeFabricAsync : System.Fabric.Description.FabricUpgradeDescription * TimeSpan * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task" Usage="clusterManagementClient.UpgradeFabricAsync (upgradeDescription, timeout, cancellationToken)" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Threading::Tasks::Task ^ UpgradeFabricAsync(System::Fabric::Description::FabricUpgradeDescription ^ upgradeDescription, TimeSpan timeout, System::Threading::CancellationToken cancellationToken);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Fabric</AssemblyName>
-        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task</ReturnType>

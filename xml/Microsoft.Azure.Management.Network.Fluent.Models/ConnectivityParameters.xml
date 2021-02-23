@@ -1,4 +1,4 @@
-﻿<Type Name="ConnectivityParameters" FullName="Microsoft.Azure.Management.Network.Fluent.Models.ConnectivityParameters">
+<Type Name="ConnectivityParameters" FullName="Microsoft.Azure.Management.Network.Fluent.Models.ConnectivityParameters">
   <TypeSignature Language="C#" Value="public class ConnectivityParameters" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit ConnectivityParameters extends System.Object" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Azure.Management.Network.Fluent.Models.ConnectivityParameters" />
@@ -6,14 +6,23 @@
   <TypeSignature Language="F#" Value="type ConnectivityParameters = class" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Azure.Management.Network.Fluent</AssemblyName>
-    <AssemblyVersion>1.0.0.60</AssemblyVersion>
+    <AssemblyVersion>1.0.0.61</AssemblyVersion>
+    <AssemblyVersion>1.0.0.62</AssemblyVersion>
+    <AssemblyVersion>1.0.0.63</AssemblyVersion>
+    <AssemblyVersion>1.0.0.64</AssemblyVersion>
+    <AssemblyVersion>1.0.0.65</AssemblyVersion>
+    <AssemblyVersion>1.0.0.66</AssemblyVersion>
+    <AssemblyVersion>1.0.0.67</AssemblyVersion>
+    <AssemblyVersion>1.0.0.68</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
+    <summary>
+            Parameters that determine how the connectivity check will be performed.
+            </summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -25,36 +34,60 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Network.Fluent</AssemblyName>
-        <AssemblyVersion>1.0.0.60</AssemblyVersion>
+        <AssemblyVersion>1.0.0.61</AssemblyVersion>
+        <AssemblyVersion>1.0.0.62</AssemblyVersion>
+        <AssemblyVersion>1.0.0.63</AssemblyVersion>
+        <AssemblyVersion>1.0.0.64</AssemblyVersion>
+        <AssemblyVersion>1.0.0.65</AssemblyVersion>
+        <AssemblyVersion>1.0.0.66</AssemblyVersion>
+        <AssemblyVersion>1.0.0.67</AssemblyVersion>
+        <AssemblyVersion>1.0.0.68</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+            Initializes a new instance of the ConnectivityParameters class.
+            </summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
-      <MemberSignature Language="C#" Value="public ConnectivityParameters (Microsoft.Azure.Management.Network.Fluent.Models.ConnectivitySource source, Microsoft.Azure.Management.Network.Fluent.Models.ConnectivityDestination destination, Microsoft.Azure.Management.Network.Fluent.Models.Protocol protocol = null, Microsoft.Azure.Management.Network.Fluent.Models.ProtocolConfiguration protocolConfiguration = null);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class Microsoft.Azure.Management.Network.Fluent.Models.ConnectivitySource source, class Microsoft.Azure.Management.Network.Fluent.Models.ConnectivityDestination destination, class Microsoft.Azure.Management.Network.Fluent.Models.Protocol protocol, class Microsoft.Azure.Management.Network.Fluent.Models.ProtocolConfiguration protocolConfiguration) cil managed" />
-      <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Management.Network.Fluent.Models.ConnectivityParameters.#ctor(Microsoft.Azure.Management.Network.Fluent.Models.ConnectivitySource,Microsoft.Azure.Management.Network.Fluent.Models.ConnectivityDestination,Microsoft.Azure.Management.Network.Fluent.Models.Protocol,Microsoft.Azure.Management.Network.Fluent.Models.ProtocolConfiguration)" />
-      <MemberSignature Language="F#" Value="new Microsoft.Azure.Management.Network.Fluent.Models.ConnectivityParameters : Microsoft.Azure.Management.Network.Fluent.Models.ConnectivitySource * Microsoft.Azure.Management.Network.Fluent.Models.ConnectivityDestination * Microsoft.Azure.Management.Network.Fluent.Models.Protocol * Microsoft.Azure.Management.Network.Fluent.Models.ProtocolConfiguration -&gt; Microsoft.Azure.Management.Network.Fluent.Models.ConnectivityParameters" Usage="new Microsoft.Azure.Management.Network.Fluent.Models.ConnectivityParameters (source, destination, protocol, protocolConfiguration)" />
+      <MemberSignature Language="C#" Value="public ConnectivityParameters (Microsoft.Azure.Management.Network.Fluent.Models.ConnectivitySource source, Microsoft.Azure.Management.Network.Fluent.Models.ConnectivityDestination destination, Microsoft.Azure.Management.Network.Fluent.Models.Protocol protocol = default, Microsoft.Azure.Management.Network.Fluent.Models.ProtocolConfiguration protocolConfiguration = default, Microsoft.Azure.Management.Network.Fluent.Models.IPVersion preferredIPVersion = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class Microsoft.Azure.Management.Network.Fluent.Models.ConnectivitySource source, class Microsoft.Azure.Management.Network.Fluent.Models.ConnectivityDestination destination, class Microsoft.Azure.Management.Network.Fluent.Models.Protocol protocol, class Microsoft.Azure.Management.Network.Fluent.Models.ProtocolConfiguration protocolConfiguration, class Microsoft.Azure.Management.Network.Fluent.Models.IPVersion preferredIPVersion) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Management.Network.Fluent.Models.ConnectivityParameters.#ctor(Microsoft.Azure.Management.Network.Fluent.Models.ConnectivitySource,Microsoft.Azure.Management.Network.Fluent.Models.ConnectivityDestination,Microsoft.Azure.Management.Network.Fluent.Models.Protocol,Microsoft.Azure.Management.Network.Fluent.Models.ProtocolConfiguration,Microsoft.Azure.Management.Network.Fluent.Models.IPVersion)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (source As ConnectivitySource, destination As ConnectivityDestination, Optional protocol As Protocol = Nothing, Optional protocolConfiguration As ProtocolConfiguration = Nothing, Optional preferredIPVersion As IPVersion = Nothing)" />
+      <MemberSignature Language="F#" Value="new Microsoft.Azure.Management.Network.Fluent.Models.ConnectivityParameters : Microsoft.Azure.Management.Network.Fluent.Models.ConnectivitySource * Microsoft.Azure.Management.Network.Fluent.Models.ConnectivityDestination * Microsoft.Azure.Management.Network.Fluent.Models.Protocol * Microsoft.Azure.Management.Network.Fluent.Models.ProtocolConfiguration * Microsoft.Azure.Management.Network.Fluent.Models.IPVersion -&gt; Microsoft.Azure.Management.Network.Fluent.Models.ConnectivityParameters" Usage="new Microsoft.Azure.Management.Network.Fluent.Models.ConnectivityParameters (source, destination, protocol, protocolConfiguration, preferredIPVersion)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Network.Fluent</AssemblyName>
-        <AssemblyVersion>1.0.0.60</AssemblyVersion>
+        <AssemblyVersion>1.0.0.63</AssemblyVersion>
+        <AssemblyVersion>1.0.0.64</AssemblyVersion>
+        <AssemblyVersion>1.0.0.65</AssemblyVersion>
+        <AssemblyVersion>1.0.0.66</AssemblyVersion>
+        <AssemblyVersion>1.0.0.67</AssemblyVersion>
+        <AssemblyVersion>1.0.0.68</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="source" Type="Microsoft.Azure.Management.Network.Fluent.Models.ConnectivitySource" />
         <Parameter Name="destination" Type="Microsoft.Azure.Management.Network.Fluent.Models.ConnectivityDestination" />
         <Parameter Name="protocol" Type="Microsoft.Azure.Management.Network.Fluent.Models.Protocol" />
         <Parameter Name="protocolConfiguration" Type="Microsoft.Azure.Management.Network.Fluent.Models.ProtocolConfiguration" />
+        <Parameter Name="preferredIPVersion" Type="Microsoft.Azure.Management.Network.Fluent.Models.IPVersion" />
       </Parameters>
       <Docs>
-        <param name="source">To be added.</param>
-        <param name="destination">To be added.</param>
-        <param name="protocol">To be added.</param>
-        <param name="protocolConfiguration">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="source">Describes the source of the
+            connection.</param>
+        <param name="destination">Describes the destination of
+            connection.</param>
+        <param name="protocol">Network protocol. Possible values include:
+            'Tcp', 'Http', 'Https', 'Icmp'</param>
+        <param name="protocolConfiguration">Configuration of the
+            protocol.</param>
+        <param name="preferredIPVersion">Preferred IP version of the
+            connection. Possible values include: 'IPv4', 'IPv6'</param>
+        <summary>
+            Initializes a new instance of the ConnectivityParameters class.
+            </summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -67,18 +100,62 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Network.Fluent</AssemblyName>
-        <AssemblyVersion>1.0.0.60</AssemblyVersion>
+        <AssemblyVersion>1.0.0.61</AssemblyVersion>
+        <AssemblyVersion>1.0.0.62</AssemblyVersion>
+        <AssemblyVersion>1.0.0.63</AssemblyVersion>
+        <AssemblyVersion>1.0.0.64</AssemblyVersion>
+        <AssemblyVersion>1.0.0.65</AssemblyVersion>
+        <AssemblyVersion>1.0.0.66</AssemblyVersion>
+        <AssemblyVersion>1.0.0.67</AssemblyVersion>
+        <AssemblyVersion>1.0.0.68</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="destination")</AttributeName>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty(PropertyName="destination")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty(PropertyName="destination")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
         <ReturnType>Microsoft.Azure.Management.Network.Fluent.Models.ConnectivityDestination</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+            Gets or sets describes the destination of connection.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PreferredIPVersion">
+      <MemberSignature Language="C#" Value="public Microsoft.Azure.Management.Network.Fluent.Models.IPVersion PreferredIPVersion { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Azure.Management.Network.Fluent.Models.IPVersion PreferredIPVersion" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Management.Network.Fluent.Models.ConnectivityParameters.PreferredIPVersion" />
+      <MemberSignature Language="VB.NET" Value="Public Property PreferredIPVersion As IPVersion" />
+      <MemberSignature Language="F#" Value="member this.PreferredIPVersion : Microsoft.Azure.Management.Network.Fluent.Models.IPVersion with get, set" Usage="Microsoft.Azure.Management.Network.Fluent.Models.ConnectivityParameters.PreferredIPVersion" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Azure.Management.Network.Fluent</AssemblyName>
+        <AssemblyVersion>1.0.0.63</AssemblyVersion>
+        <AssemblyVersion>1.0.0.64</AssemblyVersion>
+        <AssemblyVersion>1.0.0.65</AssemblyVersion>
+        <AssemblyVersion>1.0.0.66</AssemblyVersion>
+        <AssemblyVersion>1.0.0.67</AssemblyVersion>
+        <AssemblyVersion>1.0.0.68</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty(PropertyName="preferredIPVersion")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty(PropertyName="preferredIPVersion")&gt;]</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Azure.Management.Network.Fluent.Models.IPVersion</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets or sets preferred IP version of the connection. Possible
+            values include: 'IPv4', 'IPv6'
+            </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -92,18 +169,29 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Network.Fluent</AssemblyName>
-        <AssemblyVersion>1.0.0.60</AssemblyVersion>
+        <AssemblyVersion>1.0.0.61</AssemblyVersion>
+        <AssemblyVersion>1.0.0.62</AssemblyVersion>
+        <AssemblyVersion>1.0.0.63</AssemblyVersion>
+        <AssemblyVersion>1.0.0.64</AssemblyVersion>
+        <AssemblyVersion>1.0.0.65</AssemblyVersion>
+        <AssemblyVersion>1.0.0.66</AssemblyVersion>
+        <AssemblyVersion>1.0.0.67</AssemblyVersion>
+        <AssemblyVersion>1.0.0.68</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="protocol")</AttributeName>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty(PropertyName="protocol")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty(PropertyName="protocol")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
         <ReturnType>Microsoft.Azure.Management.Network.Fluent.Models.Protocol</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+            Gets or sets network protocol. Possible values include: 'Tcp',
+            'Http', 'Https', 'Icmp'
+            </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -117,18 +205,28 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Network.Fluent</AssemblyName>
-        <AssemblyVersion>1.0.0.60</AssemblyVersion>
+        <AssemblyVersion>1.0.0.61</AssemblyVersion>
+        <AssemblyVersion>1.0.0.62</AssemblyVersion>
+        <AssemblyVersion>1.0.0.63</AssemblyVersion>
+        <AssemblyVersion>1.0.0.64</AssemblyVersion>
+        <AssemblyVersion>1.0.0.65</AssemblyVersion>
+        <AssemblyVersion>1.0.0.66</AssemblyVersion>
+        <AssemblyVersion>1.0.0.67</AssemblyVersion>
+        <AssemblyVersion>1.0.0.68</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="protocolConfiguration")</AttributeName>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty(PropertyName="protocolConfiguration")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty(PropertyName="protocolConfiguration")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
         <ReturnType>Microsoft.Azure.Management.Network.Fluent.Models.ProtocolConfiguration</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+            Gets or sets configuration of the protocol.
+            </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -142,18 +240,28 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Network.Fluent</AssemblyName>
-        <AssemblyVersion>1.0.0.60</AssemblyVersion>
+        <AssemblyVersion>1.0.0.61</AssemblyVersion>
+        <AssemblyVersion>1.0.0.62</AssemblyVersion>
+        <AssemblyVersion>1.0.0.63</AssemblyVersion>
+        <AssemblyVersion>1.0.0.64</AssemblyVersion>
+        <AssemblyVersion>1.0.0.65</AssemblyVersion>
+        <AssemblyVersion>1.0.0.66</AssemblyVersion>
+        <AssemblyVersion>1.0.0.67</AssemblyVersion>
+        <AssemblyVersion>1.0.0.68</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="source")</AttributeName>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty(PropertyName="source")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty(PropertyName="source")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
         <ReturnType>Microsoft.Azure.Management.Network.Fluent.Models.ConnectivitySource</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+            Gets or sets describes the source of the connection.
+            </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -167,15 +275,27 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Network.Fluent</AssemblyName>
-        <AssemblyVersion>1.0.0.60</AssemblyVersion>
+        <AssemblyVersion>1.0.0.61</AssemblyVersion>
+        <AssemblyVersion>1.0.0.62</AssemblyVersion>
+        <AssemblyVersion>1.0.0.63</AssemblyVersion>
+        <AssemblyVersion>1.0.0.64</AssemblyVersion>
+        <AssemblyVersion>1.0.0.65</AssemblyVersion>
+        <AssemblyVersion>1.0.0.66</AssemblyVersion>
+        <AssemblyVersion>1.0.0.67</AssemblyVersion>
+        <AssemblyVersion>1.0.0.68</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+            Validate the object.
+            </summary>
         <remarks>To be added.</remarks>
+        <exception cref="T:Microsoft.Rest.ValidationException">
+            Thrown if validation fails
+            </exception>
       </Docs>
     </Member>
   </Members>

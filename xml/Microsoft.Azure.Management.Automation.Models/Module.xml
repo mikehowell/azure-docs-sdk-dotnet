@@ -1,25 +1,27 @@
-﻿<Type Name="Module" FullName="Microsoft.Azure.Management.Automation.Models.Module">
-  <TypeSignature Language="C#" Value="public class Module : Microsoft.Azure.Management.Automation.Models.Resource" />
-  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit Module extends Microsoft.Azure.Management.Automation.Models.Resource" />
+<Type Name="Module" FullName="Microsoft.Azure.Management.Automation.Models.Module">
+  <TypeSignature Language="C#" Value="public class Module : Microsoft.Azure.Management.Automation.Models.ResourceBase" FrameworkAlternate="azure-dotnet" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit Module extends Microsoft.Azure.Management.Automation.Models.ResourceBase" FrameworkAlternate="azure-dotnet" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Azure.Management.Automation.Models.Module" />
-  <TypeSignature Language="VB.NET" Value="Public Class Module&#xA;Inherits Resource" />
-  <TypeSignature Language="F#" Value="type Module = class&#xA;    inherit Resource" />
-  <TypeSignature Language="C++ CLI" Value="public ref class Module : Microsoft::Azure::Management::Automation::Models::Resource" />
-  <TypeSignature Language="C++ WINRT" Value="[Windows::Foundation::Metadata::WebHostHidden]&#xA;class Module : Microsoft::Azure::Management::Automation::Models::Resource" />
+  <TypeSignature Language="VB.NET" Value="Public Class Module&#xA;Inherits ResourceBase" FrameworkAlternate="azure-dotnet" />
+  <TypeSignature Language="F#" Value="type Module = class&#xA;    inherit ResourceBase" FrameworkAlternate="azure-dotnet" />
+  <TypeSignature Language="C#" Value="public class Module : Microsoft.Azure.Management.Automation.Models.TrackedResource" FrameworkAlternate="azure-dotnet-preview" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit Module extends Microsoft.Azure.Management.Automation.Models.TrackedResource" FrameworkAlternate="azure-dotnet-preview" />
+  <TypeSignature Language="VB.NET" Value="Public Class Module&#xA;Inherits TrackedResource" FrameworkAlternate="azure-dotnet-preview" />
+  <TypeSignature Language="F#" Value="type Module = class&#xA;    inherit TrackedResource" FrameworkAlternate="azure-dotnet-preview" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Azure.Management.Automation</AssemblyName>
     <AssemblyVersion>2.0.0.0</AssemblyVersion>
-    <AssemblyVersion>3.0.0.0</AssemblyVersion>
     <AssemblyVersion>3.0.1.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>Microsoft.Azure.Management.Automation.Models.ResourceBase</BaseTypeName>
-    <BaseTypeName FrameworkAlternate="azure-dotnet">Microsoft.Azure.Management.Automation.Models.Resource</BaseTypeName>
+    <BaseTypeName FrameworkAlternate="azure-dotnet-preview">Microsoft.Azure.Management.Automation.Models.TrackedResource</BaseTypeName>
   </Base>
   <Interfaces />
   <Attributes>
-    <Attribute>
-      <AttributeName>Microsoft.Rest.Serialization.JsonTransformation</AttributeName>
+    <Attribute FrameworkAlternate="azure-dotnet-preview">
+      <AttributeName Language="C#">[Microsoft.Rest.Serialization.JsonTransformation]</AttributeName>
+      <AttributeName Language="F#">[&lt;Microsoft.Rest.Serialization.JsonTransformation&gt;]</AttributeName>
     </Attribute>
   </Attributes>
   <Docs>
@@ -34,14 +36,10 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Management.Automation.Models.Module.#ctor" />
       <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; Module();" />
-      <MemberSignature Language="C++ CX" Value="public:&#xA; Module();" />
-      <MemberSignature Language="C++ WINRT" Value=" Module();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Automation</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>3.0.1.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
@@ -53,40 +51,43 @@
       </Docs>
     </Member>
     <Member MemberName=".ctor">
-      <MemberSignature Language="C#" Value="public Module (string location, string id = null, string name = null, string type = null, System.Collections.Generic.IDictionary&lt;string,string&gt; tags = null, Nullable&lt;bool&gt; isGlobal = null, string version = null, Nullable&lt;long&gt; sizeInBytes = null, Nullable&lt;int&gt; activityCount = null, Nullable&lt;Microsoft.Azure.Management.Automation.Models.ModuleProvisioningState&gt; provisioningState = null, Microsoft.Azure.Management.Automation.Models.ContentLink contentLink = null, Microsoft.Azure.Management.Automation.Models.ModuleErrorInfo error = null, Nullable&lt;DateTime&gt; creationTime = null, Nullable&lt;DateTime&gt; lastModifiedTime = null, string description = null, string etag = null);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string location, string id, string name, string type, class System.Collections.Generic.IDictionary`2&lt;string, string&gt; tags, valuetype System.Nullable`1&lt;bool&gt; isGlobal, string version, valuetype System.Nullable`1&lt;int64&gt; sizeInBytes, valuetype System.Nullable`1&lt;int32&gt; activityCount, valuetype System.Nullable`1&lt;valuetype Microsoft.Azure.Management.Automation.Models.ModuleProvisioningState&gt; provisioningState, class Microsoft.Azure.Management.Automation.Models.ContentLink contentLink, class Microsoft.Azure.Management.Automation.Models.ModuleErrorInfo error, valuetype System.Nullable`1&lt;valuetype System.DateTime&gt; creationTime, valuetype System.Nullable`1&lt;valuetype System.DateTime&gt; lastModifiedTime, string description, string etag) cil managed" />
-      <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Management.Automation.Models.Module.#ctor(System.String,System.String,System.String,System.String,System.Collections.Generic.IDictionary{System.String,System.String},System.Nullable{System.Boolean},System.String,System.Nullable{System.Int64},System.Nullable{System.Int32},System.Nullable{Microsoft.Azure.Management.Automation.Models.ModuleProvisioningState},Microsoft.Azure.Management.Automation.Models.ContentLink,Microsoft.Azure.Management.Automation.Models.ModuleErrorInfo,System.Nullable{System.DateTime},System.Nullable{System.DateTime},System.String,System.String)" />
-      <MemberSignature Language="F#" Value="new Microsoft.Azure.Management.Automation.Models.Module : string * string * string * string * System.Collections.Generic.IDictionary&lt;string, string&gt; * Nullable&lt;bool&gt; * string * Nullable&lt;int64&gt; * Nullable&lt;int&gt; * Nullable&lt;Microsoft.Azure.Management.Automation.Models.ModuleProvisioningState&gt; * Microsoft.Azure.Management.Automation.Models.ContentLink * Microsoft.Azure.Management.Automation.Models.ModuleErrorInfo * Nullable&lt;DateTime&gt; * Nullable&lt;DateTime&gt; * string * string -&gt; Microsoft.Azure.Management.Automation.Models.Module" Usage="new Microsoft.Azure.Management.Automation.Models.Module (location, id, name, type, tags, isGlobal, version, sizeInBytes, activityCount, provisioningState, contentLink, error, creationTime, lastModifiedTime, description, etag)" />
+      <MemberSignature Language="C#" Value="public Module (string id = default, string name = default, string type = default, System.Collections.Generic.IDictionary&lt;string,string&gt; tags = default, string location = default, bool? isGlobal = default, string version = default, long? sizeInBytes = default, int? activityCount = default, Microsoft.Azure.Management.Automation.Models.ModuleProvisioningState? provisioningState = default, Microsoft.Azure.Management.Automation.Models.ContentLink contentLink = default, Microsoft.Azure.Management.Automation.Models.ModuleErrorInfo error = default, DateTimeOffset creationTime = default, DateTimeOffset lastModifiedTime = default, string description = default, bool? isComposite = default, string etag = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string id, string name, string type, class System.Collections.Generic.IDictionary`2&lt;string, string&gt; tags, string location, valuetype System.Nullable`1&lt;bool&gt; isGlobal, string version, valuetype System.Nullable`1&lt;int64&gt; sizeInBytes, valuetype System.Nullable`1&lt;int32&gt; activityCount, valuetype System.Nullable`1&lt;valuetype Microsoft.Azure.Management.Automation.Models.ModuleProvisioningState&gt; provisioningState, class Microsoft.Azure.Management.Automation.Models.ContentLink contentLink, class Microsoft.Azure.Management.Automation.Models.ModuleErrorInfo error, valuetype System.DateTimeOffset creationTime, valuetype System.DateTimeOffset lastModifiedTime, string description, valuetype System.Nullable`1&lt;bool&gt; isComposite, string etag) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Management.Automation.Models.Module.#ctor(System.String,System.String,System.String,System.Collections.Generic.IDictionary{System.String,System.String},System.String,System.Nullable{System.Boolean},System.String,System.Nullable{System.Int64},System.Nullable{System.Int32},System.Nullable{Microsoft.Azure.Management.Automation.Models.ModuleProvisioningState},Microsoft.Azure.Management.Automation.Models.ContentLink,Microsoft.Azure.Management.Automation.Models.ModuleErrorInfo,System.DateTimeOffset,System.DateTimeOffset,System.String,System.Nullable{System.Boolean},System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (Optional id As String = Nothing, Optional name As String = Nothing, Optional type As String = Nothing, Optional tags As IDictionary(Of String, String) = Nothing, Optional location As String = Nothing, Optional isGlobal As Nullable(Of Boolean) = Nothing, Optional version As String = Nothing, Optional sizeInBytes As Nullable(Of Long) = Nothing, Optional activityCount As Nullable(Of Integer) = Nothing, Optional provisioningState As Nullable(Of ModuleProvisioningState) = Nothing, Optional contentLink As ContentLink = Nothing, Optional error As ModuleErrorInfo = Nothing, Optional creationTime As DateTimeOffset = Nothing, Optional lastModifiedTime As DateTimeOffset = Nothing, Optional description As String = Nothing, Optional isComposite As Nullable(Of Boolean) = Nothing, Optional etag As String = Nothing)" />
+      <MemberSignature Language="F#" Value="new Microsoft.Azure.Management.Automation.Models.Module : string * string * string * System.Collections.Generic.IDictionary&lt;string, string&gt; * string * Nullable&lt;bool&gt; * string * Nullable&lt;int64&gt; * Nullable&lt;int&gt; * Nullable&lt;Microsoft.Azure.Management.Automation.Models.ModuleProvisioningState&gt; * Microsoft.Azure.Management.Automation.Models.ContentLink * Microsoft.Azure.Management.Automation.Models.ModuleErrorInfo * DateTimeOffset * DateTimeOffset * string * Nullable&lt;bool&gt; * string -&gt; Microsoft.Azure.Management.Automation.Models.Module" Usage="new Microsoft.Azure.Management.Automation.Models.Module (id, name, type, tags, location, isGlobal, version, sizeInBytes, activityCount, provisioningState, contentLink, error, creationTime, lastModifiedTime, description, isComposite, etag)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Automation</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>3.0.1.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
-        <Parameter Name="location" Type="System.String" />
-        <Parameter Name="id" Type="System.String" />
-        <Parameter Name="name" Type="System.String" />
-        <Parameter Name="type" Type="System.String" />
-        <Parameter Name="tags" Type="System.Collections.Generic.IDictionary&lt;System.String,System.String&gt;" />
-        <Parameter Name="isGlobal" Type="System.Nullable&lt;System.Boolean&gt;" />
-        <Parameter Name="version" Type="System.String" />
-        <Parameter Name="sizeInBytes" Type="System.Nullable&lt;System.Int64&gt;" />
-        <Parameter Name="activityCount" Type="System.Nullable&lt;System.Int32&gt;" />
-        <Parameter Name="provisioningState" Type="System.Nullable&lt;Microsoft.Azure.Management.Automation.Models.ModuleProvisioningState&gt;" />
-        <Parameter Name="contentLink" Type="Microsoft.Azure.Management.Automation.Models.ContentLink" />
-        <Parameter Name="error" Type="Microsoft.Azure.Management.Automation.Models.ModuleErrorInfo" />
-        <Parameter Name="creationTime" Type="System.Nullable&lt;System.DateTime&gt;" />
-        <Parameter Name="lastModifiedTime" Type="System.Nullable&lt;System.DateTime&gt;" />
-        <Parameter Name="description" Type="System.String" />
-        <Parameter Name="etag" Type="System.String" />
+        <Parameter Name="id" Type="System.String" Index="0" FrameworkAlternate="azure-dotnet-preview" />
+        <Parameter Name="name" Type="System.String" Index="1" FrameworkAlternate="azure-dotnet-preview" />
+        <Parameter Name="type" Type="System.String" Index="2" FrameworkAlternate="azure-dotnet-preview" />
+        <Parameter Name="tags" Type="System.Collections.Generic.IDictionary&lt;System.String,System.String&gt;" Index="3" FrameworkAlternate="azure-dotnet-preview" />
+        <Parameter Name="location" Type="System.String" Index="4" FrameworkAlternate="azure-dotnet-preview" />
+        <Parameter Name="isGlobal" Type="System.Nullable&lt;System.Boolean&gt;" Index="5" FrameworkAlternate="azure-dotnet-preview" />
+        <Parameter Name="version" Type="System.String" Index="6" FrameworkAlternate="azure-dotnet-preview" />
+        <Parameter Name="sizeInBytes" Type="System.Nullable&lt;System.Int64&gt;" Index="7" FrameworkAlternate="azure-dotnet-preview" />
+        <Parameter Name="activityCount" Type="System.Nullable&lt;System.Int32&gt;" Index="8" FrameworkAlternate="azure-dotnet-preview" />
+        <Parameter Name="provisioningState" Type="System.Nullable&lt;Microsoft.Azure.Management.Automation.Models.ModuleProvisioningState&gt;" Index="9" FrameworkAlternate="azure-dotnet-preview" />
+        <Parameter Name="contentLink" Type="Microsoft.Azure.Management.Automation.Models.ContentLink" Index="10" FrameworkAlternate="azure-dotnet-preview" />
+        <Parameter Name="error" Type="Microsoft.Azure.Management.Automation.Models.ModuleErrorInfo" Index="11" FrameworkAlternate="azure-dotnet-preview" />
+        <Parameter Name="creationTime" Type="System.DateTimeOffset" Index="12" FrameworkAlternate="azure-dotnet-preview" />
+        <Parameter Name="lastModifiedTime" Type="System.DateTimeOffset" Index="13" FrameworkAlternate="azure-dotnet-preview" />
+        <Parameter Name="description" Type="System.String" Index="14" FrameworkAlternate="azure-dotnet-preview" />
+        <Parameter Name="isComposite" Type="System.Nullable&lt;System.Boolean&gt;" Index="15" FrameworkAlternate="azure-dotnet-preview" />
+        <Parameter Name="etag" Type="System.String" Index="16" FrameworkAlternate="azure-dotnet-preview" />
       </Parameters>
       <Docs>
-        <param name="location">Resource location</param>
-        <param name="id">Resource Id</param>
-        <param name="name">Resource name</param>
-        <param name="type">Resource type</param>
-        <param name="tags">Resource tags</param>
+        <param name="id">Fully qualified resource Id for the
+            resource</param>
+        <param name="name">The name of the resource</param>
+        <param name="type">The type of the resource.</param>
+        <param name="tags">Resource tags.</param>
+        <param name="location">The Azure Region where the resource
+            lives</param>
         <param name="isGlobal">Gets or sets the isGlobal flag of the
             module.</param>
         <param name="version">Gets or sets the version of the
@@ -110,6 +111,8 @@
         <param name="lastModifiedTime">Gets or sets the last modified
             time.</param>
         <param name="description">Gets or sets the description.</param>
+        <param name="isComposite">Gets or sets type of module, if its
+            composite or not.</param>
         <param name="etag">Gets or sets the etag of the resource.</param>
         <summary>
             Initializes a new instance of the Module class.
@@ -118,21 +121,20 @@
       </Docs>
     </Member>
     <Member MemberName="ActivityCount">
-      <MemberSignature Language="C#" Value="public Nullable&lt;int&gt; ActivityCount { get; set; }" />
+      <MemberSignature Language="C#" Value="public int? ActivityCount { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;int32&gt; ActivityCount" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Management.Automation.Models.Module.ActivityCount" />
       <MemberSignature Language="VB.NET" Value="Public Property ActivityCount As Nullable(Of Integer)" />
       <MemberSignature Language="F#" Value="member this.ActivityCount : Nullable&lt;int&gt; with get, set" Usage="Microsoft.Azure.Management.Automation.Models.Module.ActivityCount" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Nullable&lt;int&gt; ActivityCount { Nullable&lt;int&gt; get(); void set(Nullable&lt;int&gt; value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Automation</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>3.0.1.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="properties.activityCount")</AttributeName>
+        <Attribute FrameworkAlternate="azure-dotnet-preview">
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty(PropertyName="properties.activityCount")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty(PropertyName="properties.activityCount")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -152,16 +154,15 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Management.Automation.Models.Module.ContentLink" />
       <MemberSignature Language="VB.NET" Value="Public Property ContentLink As ContentLink" />
       <MemberSignature Language="F#" Value="member this.ContentLink : Microsoft.Azure.Management.Automation.Models.ContentLink with get, set" Usage="Microsoft.Azure.Management.Automation.Models.Module.ContentLink" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Azure::Management::Automation::Models::ContentLink ^ ContentLink { Microsoft::Azure::Management::Automation::Models::ContentLink ^ get(); void set(Microsoft::Azure::Management::Automation::Models::ContentLink ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Automation</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>3.0.1.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="properties.contentLink")</AttributeName>
+        <Attribute FrameworkAlternate="azure-dotnet-preview">
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty(PropertyName="properties.contentLink")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty(PropertyName="properties.contentLink")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -176,25 +177,24 @@
       </Docs>
     </Member>
     <Member MemberName="CreationTime">
-      <MemberSignature Language="C#" Value="public Nullable&lt;DateTime&gt; CreationTime { get; set; }" />
-      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;valuetype System.DateTime&gt; CreationTime" />
+      <MemberSignature Language="C#" Value="public DateTimeOffset CreationTime { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.DateTimeOffset CreationTime" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Management.Automation.Models.Module.CreationTime" />
-      <MemberSignature Language="VB.NET" Value="Public Property CreationTime As Nullable(Of DateTime)" />
-      <MemberSignature Language="F#" Value="member this.CreationTime : Nullable&lt;DateTime&gt; with get, set" Usage="Microsoft.Azure.Management.Automation.Models.Module.CreationTime" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Nullable&lt;DateTime&gt; CreationTime { Nullable&lt;DateTime&gt; get(); void set(Nullable&lt;DateTime&gt; value); };" />
+      <MemberSignature Language="VB.NET" Value="Public Property CreationTime As DateTimeOffset" />
+      <MemberSignature Language="F#" Value="member this.CreationTime : DateTimeOffset with get, set" Usage="Microsoft.Azure.Management.Automation.Models.Module.CreationTime" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Automation</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>3.0.1.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="properties.creationTime")</AttributeName>
+        <Attribute FrameworkAlternate="azure-dotnet-preview">
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty(PropertyName="properties.creationTime")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty(PropertyName="properties.creationTime")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
-        <ReturnType>System.Nullable&lt;System.DateTime&gt;</ReturnType>
+        <ReturnType>System.DateTimeOffset</ReturnType>
       </ReturnValue>
       <Docs>
         <summary>
@@ -210,17 +210,15 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Management.Automation.Models.Module.Description" />
       <MemberSignature Language="VB.NET" Value="Public Property Description As String" />
       <MemberSignature Language="F#" Value="member this.Description : string with get, set" Usage="Microsoft.Azure.Management.Automation.Models.Module.Description" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Description { System::String ^ get(); void set(System::String ^ value); };" />
-      <MemberSignature Language="C++ CX" Value="public:&#xA; property Platform::String ^ Description { Platform::String ^ get(); void set(Platform::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Automation</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>3.0.1.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="properties.description")</AttributeName>
+        <Attribute FrameworkAlternate="azure-dotnet-preview">
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty(PropertyName="properties.description")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty(PropertyName="properties.description")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -240,16 +238,15 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Management.Automation.Models.Module.Error" />
       <MemberSignature Language="VB.NET" Value="Public Property Error As ModuleErrorInfo" />
       <MemberSignature Language="F#" Value="member this.Error : Microsoft.Azure.Management.Automation.Models.ModuleErrorInfo with get, set" Usage="Microsoft.Azure.Management.Automation.Models.Module.Error" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Azure::Management::Automation::Models::ModuleErrorInfo ^ Error { Microsoft::Azure::Management::Automation::Models::ModuleErrorInfo ^ get(); void set(Microsoft::Azure::Management::Automation::Models::ModuleErrorInfo ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Automation</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>3.0.1.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="properties.error")</AttributeName>
+        <Attribute FrameworkAlternate="azure-dotnet-preview">
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty(PropertyName="properties.error")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty(PropertyName="properties.error")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -269,17 +266,15 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Management.Automation.Models.Module.Etag" />
       <MemberSignature Language="VB.NET" Value="Public Property Etag As String" />
       <MemberSignature Language="F#" Value="member this.Etag : string with get, set" Usage="Microsoft.Azure.Management.Automation.Models.Module.Etag" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Etag { System::String ^ get(); void set(System::String ^ value); };" />
-      <MemberSignature Language="C++ CX" Value="public:&#xA; property Platform::String ^ Etag { Platform::String ^ get(); void set(Platform::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Automation</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>3.0.1.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="etag")</AttributeName>
+        <Attribute FrameworkAlternate="azure-dotnet-preview">
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty(PropertyName="etag")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty(PropertyName="etag")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -293,22 +288,49 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <Member MemberName="IsComposite">
+      <MemberSignature Language="C#" Value="public bool? IsComposite { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;bool&gt; IsComposite" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Management.Automation.Models.Module.IsComposite" />
+      <MemberSignature Language="VB.NET" Value="Public Property IsComposite As Nullable(Of Boolean)" />
+      <MemberSignature Language="F#" Value="member this.IsComposite : Nullable&lt;bool&gt; with get, set" Usage="Microsoft.Azure.Management.Automation.Models.Module.IsComposite" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Azure.Management.Automation</AssemblyName>
+        <AssemblyVersion>3.0.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="azure-dotnet-preview">
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty(PropertyName="properties.isComposite")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty(PropertyName="properties.isComposite")&gt;]</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Nullable&lt;System.Boolean&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets or sets type of module, if its composite or not.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
     <Member MemberName="IsGlobal">
-      <MemberSignature Language="C#" Value="public Nullable&lt;bool&gt; IsGlobal { get; set; }" />
+      <MemberSignature Language="C#" Value="public bool? IsGlobal { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;bool&gt; IsGlobal" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Management.Automation.Models.Module.IsGlobal" />
       <MemberSignature Language="VB.NET" Value="Public Property IsGlobal As Nullable(Of Boolean)" />
       <MemberSignature Language="F#" Value="member this.IsGlobal : Nullable&lt;bool&gt; with get, set" Usage="Microsoft.Azure.Management.Automation.Models.Module.IsGlobal" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Nullable&lt;bool&gt; IsGlobal { Nullable&lt;bool&gt; get(); void set(Nullable&lt;bool&gt; value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Automation</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>3.0.1.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="properties.isGlobal")</AttributeName>
+        <Attribute FrameworkAlternate="azure-dotnet-preview">
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty(PropertyName="properties.isGlobal")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty(PropertyName="properties.isGlobal")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -323,25 +345,24 @@
       </Docs>
     </Member>
     <Member MemberName="LastModifiedTime">
-      <MemberSignature Language="C#" Value="public Nullable&lt;DateTime&gt; LastModifiedTime { get; set; }" />
-      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;valuetype System.DateTime&gt; LastModifiedTime" />
+      <MemberSignature Language="C#" Value="public DateTimeOffset LastModifiedTime { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.DateTimeOffset LastModifiedTime" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Management.Automation.Models.Module.LastModifiedTime" />
-      <MemberSignature Language="VB.NET" Value="Public Property LastModifiedTime As Nullable(Of DateTime)" />
-      <MemberSignature Language="F#" Value="member this.LastModifiedTime : Nullable&lt;DateTime&gt; with get, set" Usage="Microsoft.Azure.Management.Automation.Models.Module.LastModifiedTime" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Nullable&lt;DateTime&gt; LastModifiedTime { Nullable&lt;DateTime&gt; get(); void set(Nullable&lt;DateTime&gt; value); };" />
+      <MemberSignature Language="VB.NET" Value="Public Property LastModifiedTime As DateTimeOffset" />
+      <MemberSignature Language="F#" Value="member this.LastModifiedTime : DateTimeOffset with get, set" Usage="Microsoft.Azure.Management.Automation.Models.Module.LastModifiedTime" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Automation</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>3.0.1.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="properties.lastModifiedTime")</AttributeName>
+        <Attribute FrameworkAlternate="azure-dotnet-preview">
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty(PropertyName="properties.lastModifiedTime")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty(PropertyName="properties.lastModifiedTime")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
-        <ReturnType>System.Nullable&lt;System.DateTime&gt;</ReturnType>
+        <ReturnType>System.DateTimeOffset</ReturnType>
       </ReturnValue>
       <Docs>
         <summary>
@@ -351,22 +372,41 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <Member MemberName="Properties">
+      <MemberSignature Language="C#" Value="public Microsoft.Azure.Management.Automation.Models.ModuleProperties Properties { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Azure.Management.Automation.Models.ModuleProperties Properties" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Management.Automation.Models.Module.Properties" />
+      <MemberSignature Language="VB.NET" Value="Public Property Properties As ModuleProperties" />
+      <MemberSignature Language="F#" Value="member this.Properties : Microsoft.Azure.Management.Automation.Models.ModuleProperties with get, set" Usage="Microsoft.Azure.Management.Automation.Models.Module.Properties" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Azure.Management.Automation</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Azure.Management.Automation.Models.ModuleProperties</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
     <Member MemberName="ProvisioningState">
-      <MemberSignature Language="C#" Value="public Nullable&lt;Microsoft.Azure.Management.Automation.Models.ModuleProvisioningState&gt; ProvisioningState { get; set; }" />
+      <MemberSignature Language="C#" Value="public Microsoft.Azure.Management.Automation.Models.ModuleProvisioningState? ProvisioningState { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;valuetype Microsoft.Azure.Management.Automation.Models.ModuleProvisioningState&gt; ProvisioningState" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Management.Automation.Models.Module.ProvisioningState" />
       <MemberSignature Language="VB.NET" Value="Public Property ProvisioningState As Nullable(Of ModuleProvisioningState)" />
       <MemberSignature Language="F#" Value="member this.ProvisioningState : Nullable&lt;Microsoft.Azure.Management.Automation.Models.ModuleProvisioningState&gt; with get, set" Usage="Microsoft.Azure.Management.Automation.Models.Module.ProvisioningState" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Nullable&lt;Microsoft::Azure::Management::Automation::Models::ModuleProvisioningState&gt; ProvisioningState { Nullable&lt;Microsoft::Azure::Management::Automation::Models::ModuleProvisioningState&gt; get(); void set(Nullable&lt;Microsoft::Azure::Management::Automation::Models::ModuleProvisioningState&gt; value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Automation</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>3.0.1.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="properties.provisioningState")</AttributeName>
+        <Attribute FrameworkAlternate="azure-dotnet-preview">
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty(PropertyName="properties.provisioningState")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty(PropertyName="properties.provisioningState")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -387,21 +427,20 @@
       </Docs>
     </Member>
     <Member MemberName="SizeInBytes">
-      <MemberSignature Language="C#" Value="public Nullable&lt;long&gt; SizeInBytes { get; set; }" />
+      <MemberSignature Language="C#" Value="public long? SizeInBytes { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;int64&gt; SizeInBytes" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Management.Automation.Models.Module.SizeInBytes" />
       <MemberSignature Language="VB.NET" Value="Public Property SizeInBytes As Nullable(Of Long)" />
       <MemberSignature Language="F#" Value="member this.SizeInBytes : Nullable&lt;int64&gt; with get, set" Usage="Microsoft.Azure.Management.Automation.Models.Module.SizeInBytes" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Nullable&lt;long&gt; SizeInBytes { Nullable&lt;long&gt; get(); void set(Nullable&lt;long&gt; value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Automation</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>3.0.1.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="properties.sizeInBytes")</AttributeName>
+        <Attribute FrameworkAlternate="azure-dotnet-preview">
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty(PropertyName="properties.sizeInBytes")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty(PropertyName="properties.sizeInBytes")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -416,18 +455,14 @@
       </Docs>
     </Member>
     <Member MemberName="Validate">
-      <MemberSignature Language="C#" Value="public override void Validate ();" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void Validate() cil managed" />
+      <MemberSignature Language="C#" Value="public virtual void Validate ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Validate() cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Management.Automation.Models.Module.Validate" />
-      <MemberSignature Language="VB.NET" Value="Public Overrides Sub Validate ()" />
-      <MemberSignature Language="F#" Value="override this.Validate : unit -&gt; unit" Usage="module.Validate " />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void Validate();" />
-      <MemberSignature Language="C++ CX" Value="public:&#xA; override void Validate();" />
-      <MemberSignature Language="C++ WINRT" Value=" override void Validate();" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Sub Validate ()" />
+      <MemberSignature Language="F#" Value="abstract member Validate : unit -&gt; unit&#xA;override this.Validate : unit -&gt; unit" Usage="module.Validate " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Automation</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>3.0.1.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -450,17 +485,15 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Management.Automation.Models.Module.Version" />
       <MemberSignature Language="VB.NET" Value="Public Property Version As String" />
       <MemberSignature Language="F#" Value="member this.Version : string with get, set" Usage="Microsoft.Azure.Management.Automation.Models.Module.Version" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Version { System::String ^ get(); void set(System::String ^ value); };" />
-      <MemberSignature Language="C++ CX" Value="public:&#xA; property Platform::String ^ Version { Platform::String ^ get(); void set(Platform::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Automation</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>3.0.1.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="properties.version")</AttributeName>
+        <Attribute FrameworkAlternate="azure-dotnet-preview">
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty(PropertyName="properties.version")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty(PropertyName="properties.version")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>

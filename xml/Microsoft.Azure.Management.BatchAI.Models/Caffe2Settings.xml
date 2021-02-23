@@ -1,14 +1,12 @@
-﻿<Type Name="Caffe2Settings" FullName="Microsoft.Azure.Management.BatchAI.Models.Caffe2Settings">
+<Type Name="Caffe2Settings" FullName="Microsoft.Azure.Management.BatchAI.Models.Caffe2Settings">
   <TypeSignature Language="C#" Value="public class Caffe2Settings" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit Caffe2Settings extends System.Object" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Azure.Management.BatchAI.Models.Caffe2Settings" />
   <TypeSignature Language="VB.NET" Value="Public Class Caffe2Settings" />
   <TypeSignature Language="F#" Value="type Caffe2Settings = class" />
-  <TypeSignature Language="C++ CLI" Value="public ref class Caffe2Settings" />
-  <TypeSignature Language="C++ WINRT" Value="[Windows::Foundation::Metadata::WebHostHidden]&#xA;class Caffe2Settings" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Azure.Management.BatchAI</AssemblyName>
-    <AssemblyVersion>1.0.0.0</AssemblyVersion>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
@@ -16,7 +14,7 @@
   <Interfaces />
   <Docs>
     <summary>
-            Specifies the settings for Caffe2 job.
+            Caffe2 job settings.
             </summary>
     <remarks>To be added.</remarks>
   </Docs>
@@ -26,13 +24,10 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Management.BatchAI.Models.Caffe2Settings.#ctor" />
       <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; Caffe2Settings();" />
-      <MemberSignature Language="C++ CX" Value="public:&#xA; Caffe2Settings();" />
-      <MemberSignature Language="C++ WINRT" Value=" Caffe2Settings();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.BatchAI</AssemblyName>
-        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
@@ -43,16 +38,15 @@
       </Docs>
     </Member>
     <Member MemberName=".ctor">
-      <MemberSignature Language="C#" Value="public Caffe2Settings (string pythonScriptFilePath, string pythonInterpreterPath = null, string commandLineArgs = null);" />
+      <MemberSignature Language="C#" Value="public Caffe2Settings (string pythonScriptFilePath, string pythonInterpreterPath = default, string commandLineArgs = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string pythonScriptFilePath, string pythonInterpreterPath, string commandLineArgs) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Management.BatchAI.Models.Caffe2Settings.#ctor(System.String,System.String,System.String)" />
-      <MemberSignature Language="VB.NET" Value="Public Sub New (pythonScriptFilePath As String, Optional pythonInterpreterPath As String = null, Optional commandLineArgs As String = null)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (pythonScriptFilePath As String, Optional pythonInterpreterPath As String = Nothing, Optional commandLineArgs As String = Nothing)" />
       <MemberSignature Language="F#" Value="new Microsoft.Azure.Management.BatchAI.Models.Caffe2Settings : string * string * string -&gt; Microsoft.Azure.Management.BatchAI.Models.Caffe2Settings" Usage="new Microsoft.Azure.Management.BatchAI.Models.Caffe2Settings (pythonScriptFilePath, pythonInterpreterPath, commandLineArgs)" />
-      <MemberSignature Language="C++ WINRT" Value=" Caffe2Settings(std::wstring const &amp; pythonScriptFilePath, std::wstring const &amp; pythonInterpreterPath = null, std::wstring const &amp; commandLineArgs = null);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.BatchAI</AssemblyName>
-        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="pythonScriptFilePath" Type="System.String" />
@@ -60,12 +54,10 @@
         <Parameter Name="commandLineArgs" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="pythonScriptFilePath">The path and file name of the
-            python script to execute the job.</param>
-        <param name="pythonInterpreterPath">The path to python
-            interpreter.</param>
-        <param name="commandLineArgs">Command line arguments that needs to
-            be passed to the python script</param>
+        <param name="pythonScriptFilePath">Python script file path.</param>
+        <param name="pythonInterpreterPath">Python interpreter
+            path.</param>
+        <param name="commandLineArgs">Command line arguments.</param>
         <summary>
             Initializes a new instance of the Caffe2Settings class.
             </summary>
@@ -78,16 +70,15 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Management.BatchAI.Models.Caffe2Settings.CommandLineArgs" />
       <MemberSignature Language="VB.NET" Value="Public Property CommandLineArgs As String" />
       <MemberSignature Language="F#" Value="member this.CommandLineArgs : string with get, set" Usage="Microsoft.Azure.Management.BatchAI.Models.Caffe2Settings.CommandLineArgs" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ CommandLineArgs { System::String ^ get(); void set(System::String ^ value); };" />
-      <MemberSignature Language="C++ CX" Value="public:&#xA; property Platform::String ^ CommandLineArgs { Platform::String ^ get(); void set(Platform::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.BatchAI</AssemblyName>
-        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="commandLineArgs")</AttributeName>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty(PropertyName="commandLineArgs")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty(PropertyName="commandLineArgs")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -95,11 +86,12 @@
       </ReturnValue>
       <Docs>
         <summary>
-            Gets or sets command line arguments that needs to be passed to the
-            python script
+            Gets or sets command line arguments.
             </summary>
         <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <remarks>
+            Command line arguments that need to be passed to the python script.
+            </remarks>
       </Docs>
     </Member>
     <Member MemberName="PythonInterpreterPath">
@@ -108,16 +100,15 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Management.BatchAI.Models.Caffe2Settings.PythonInterpreterPath" />
       <MemberSignature Language="VB.NET" Value="Public Property PythonInterpreterPath As String" />
       <MemberSignature Language="F#" Value="member this.PythonInterpreterPath : string with get, set" Usage="Microsoft.Azure.Management.BatchAI.Models.Caffe2Settings.PythonInterpreterPath" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ PythonInterpreterPath { System::String ^ get(); void set(System::String ^ value); };" />
-      <MemberSignature Language="C++ CX" Value="public:&#xA; property Platform::String ^ PythonInterpreterPath { Platform::String ^ get(); void set(Platform::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.BatchAI</AssemblyName>
-        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="pythonInterpreterPath")</AttributeName>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty(PropertyName="pythonInterpreterPath")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty(PropertyName="pythonInterpreterPath")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -125,10 +116,12 @@
       </ReturnValue>
       <Docs>
         <summary>
-            Gets or sets the path to python interpreter.
+            Gets or sets python interpreter path.
             </summary>
         <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <remarks>
+            The path to the Python interpreter.
+            </remarks>
       </Docs>
     </Member>
     <Member MemberName="PythonScriptFilePath">
@@ -137,16 +130,15 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Management.BatchAI.Models.Caffe2Settings.PythonScriptFilePath" />
       <MemberSignature Language="VB.NET" Value="Public Property PythonScriptFilePath As String" />
       <MemberSignature Language="F#" Value="member this.PythonScriptFilePath : string with get, set" Usage="Microsoft.Azure.Management.BatchAI.Models.Caffe2Settings.PythonScriptFilePath" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ PythonScriptFilePath { System::String ^ get(); void set(System::String ^ value); };" />
-      <MemberSignature Language="C++ CX" Value="public:&#xA; property Platform::String ^ PythonScriptFilePath { Platform::String ^ get(); void set(Platform::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.BatchAI</AssemblyName>
-        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="pythonScriptFilePath")</AttributeName>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty(PropertyName="pythonScriptFilePath")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty(PropertyName="pythonScriptFilePath")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -154,11 +146,12 @@
       </ReturnValue>
       <Docs>
         <summary>
-            Gets or sets the path and file name of the python script to execute
-            the job.
+            Gets or sets python script file path.
             </summary>
         <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <remarks>
+            The python script to execute.
+            </remarks>
       </Docs>
     </Member>
     <Member MemberName="Validate">
@@ -167,13 +160,10 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Management.BatchAI.Models.Caffe2Settings.Validate" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Sub Validate ()" />
       <MemberSignature Language="F#" Value="abstract member Validate : unit -&gt; unit&#xA;override this.Validate : unit -&gt; unit" Usage="caffe2Settings.Validate " />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Validate();" />
-      <MemberSignature Language="C++ CX" Value="public:&#xA; virtual void Validate();" />
-      <MemberSignature Language="C++ WINRT" Value=" virtual void Validate();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.BatchAI</AssemblyName>
-        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>

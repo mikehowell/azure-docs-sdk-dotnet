@@ -1,13 +1,12 @@
-﻿<Type Name="HealthReport" FullName="System.Fabric.Health.HealthReport">
+<Type Name="HealthReport" FullName="System.Fabric.Health.HealthReport">
   <TypeSignature Language="C#" Value="public abstract class HealthReport" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit HealthReport extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.Fabric.Health.HealthReport" />
   <TypeSignature Language="VB.NET" Value="Public MustInherit Class HealthReport" />
   <TypeSignature Language="F#" Value="type HealthReport = class" />
-  <TypeSignature Language="C++ CLI" Value="public ref class HealthReport abstract" />
   <AssemblyInfo>
     <AssemblyName>System.Fabric</AssemblyName>
-    <AssemblyVersion>6.0.0.0</AssemblyVersion>
+    <AssemblyVersion>7.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
@@ -15,25 +14,32 @@
   <Interfaces />
   <Attributes>
     <Attribute>
-      <AttributeName>System.Runtime.Serialization.KnownType(typeof(System.Fabric.Health.ApplicationHealthReport))</AttributeName>
+      <AttributeName Language="C#">[System.Runtime.Serialization.KnownType(typeof(System.Fabric.Health.ApplicationHealthReport))]</AttributeName>
+      <AttributeName Language="F#">[&lt;System.Runtime.Serialization.KnownType(typeof(System.Fabric.Health.ApplicationHealthReport))&gt;]</AttributeName>
     </Attribute>
     <Attribute>
-      <AttributeName>System.Runtime.Serialization.KnownType(typeof(System.Fabric.Health.ClusterHealthReport))</AttributeName>
+      <AttributeName Language="C#">[System.Runtime.Serialization.KnownType(typeof(System.Fabric.Health.ClusterHealthReport))]</AttributeName>
+      <AttributeName Language="F#">[&lt;System.Runtime.Serialization.KnownType(typeof(System.Fabric.Health.ClusterHealthReport))&gt;]</AttributeName>
     </Attribute>
     <Attribute>
-      <AttributeName>System.Runtime.Serialization.KnownType(typeof(System.Fabric.Health.NodeHealthReport))</AttributeName>
+      <AttributeName Language="C#">[System.Runtime.Serialization.KnownType(typeof(System.Fabric.Health.NodeHealthReport))]</AttributeName>
+      <AttributeName Language="F#">[&lt;System.Runtime.Serialization.KnownType(typeof(System.Fabric.Health.NodeHealthReport))&gt;]</AttributeName>
     </Attribute>
     <Attribute>
-      <AttributeName>System.Runtime.Serialization.KnownType(typeof(System.Fabric.Health.PartitionHealthReport))</AttributeName>
+      <AttributeName Language="C#">[System.Runtime.Serialization.KnownType(typeof(System.Fabric.Health.PartitionHealthReport))]</AttributeName>
+      <AttributeName Language="F#">[&lt;System.Runtime.Serialization.KnownType(typeof(System.Fabric.Health.PartitionHealthReport))&gt;]</AttributeName>
     </Attribute>
     <Attribute>
-      <AttributeName>System.Runtime.Serialization.KnownType(typeof(System.Fabric.Health.ServiceHealthReport))</AttributeName>
+      <AttributeName Language="C#">[System.Runtime.Serialization.KnownType(typeof(System.Fabric.Health.ServiceHealthReport))]</AttributeName>
+      <AttributeName Language="F#">[&lt;System.Runtime.Serialization.KnownType(typeof(System.Fabric.Health.ServiceHealthReport))&gt;]</AttributeName>
     </Attribute>
     <Attribute>
-      <AttributeName>System.Runtime.Serialization.KnownType(typeof(System.Fabric.Health.StatelessServiceInstanceHealthReport))</AttributeName>
+      <AttributeName Language="C#">[System.Runtime.Serialization.KnownType(typeof(System.Fabric.Health.StatelessServiceInstanceHealthReport))]</AttributeName>
+      <AttributeName Language="F#">[&lt;System.Runtime.Serialization.KnownType(typeof(System.Fabric.Health.StatelessServiceInstanceHealthReport))&gt;]</AttributeName>
     </Attribute>
     <Attribute>
-      <AttributeName>System.Runtime.Serialization.KnownType(typeof(System.Fabric.Health.StatefulServiceReplicaHealthReport))</AttributeName>
+      <AttributeName Language="C#">[System.Runtime.Serialization.KnownType(typeof(System.Fabric.Health.StatefulServiceReplicaHealthReport))]</AttributeName>
+      <AttributeName Language="F#">[&lt;System.Runtime.Serialization.KnownType(typeof(System.Fabric.Health.StatefulServiceReplicaHealthReport))&gt;]</AttributeName>
     </Attribute>
   </Attributes>
   <Docs>
@@ -59,12 +65,12 @@
       <MemberSignature Language="C#" Value="protected HealthReport (System.Fabric.Health.HealthReportKind kind, System.Fabric.Health.HealthInformation healthInformation);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor(valuetype System.Fabric.Health.HealthReportKind kind, class System.Fabric.Health.HealthInformation healthInformation) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Fabric.Health.HealthReport.#ctor(System.Fabric.Health.HealthReportKind,System.Fabric.Health.HealthInformation)" />
+      <MemberSignature Language="VB.NET" Value="Protected Sub New (kind As HealthReportKind, healthInformation As HealthInformation)" />
       <MemberSignature Language="F#" Value="new System.Fabric.Health.HealthReport : System.Fabric.Health.HealthReportKind * System.Fabric.Health.HealthInformation -&gt; System.Fabric.Health.HealthReport" Usage="new System.Fabric.Health.HealthReport (kind, healthInformation)" />
-      <MemberSignature Language="C++ CLI" Value="protected:&#xA; HealthReport(System::Fabric::Health::HealthReportKind kind, System::Fabric::Health::HealthInformation ^ healthInformation);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Fabric</AssemblyName>
-        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="kind" Type="System.Fabric.Health.HealthReportKind" />
@@ -89,11 +95,10 @@
       <MemberSignature Language="DocId" Value="P:System.Fabric.Health.HealthReport.HealthInformation" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property HealthInformation As HealthInformation" />
       <MemberSignature Language="F#" Value="member this.HealthInformation : System.Fabric.Health.HealthInformation" Usage="System.Fabric.Health.HealthReport.HealthInformation" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Fabric::Health::HealthInformation ^ HealthInformation { System::Fabric::Health::HealthInformation ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Fabric</AssemblyName>
-        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Fabric.Health.HealthInformation</ReturnType>
@@ -114,11 +119,10 @@
       <MemberSignature Language="DocId" Value="P:System.Fabric.Health.HealthReport.Kind" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Kind As HealthReportKind" />
       <MemberSignature Language="F#" Value="member this.Kind : System.Fabric.Health.HealthReportKind" Usage="System.Fabric.Health.HealthReport.Kind" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Fabric::Health::HealthReportKind Kind { System::Fabric::Health::HealthReportKind get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Fabric</AssemblyName>
-        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Fabric.Health.HealthReportKind</ReturnType>

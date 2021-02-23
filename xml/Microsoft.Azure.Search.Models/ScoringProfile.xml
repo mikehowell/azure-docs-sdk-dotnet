@@ -1,4 +1,4 @@
-﻿<Type Name="ScoringProfile" FullName="Microsoft.Azure.Search.Models.ScoringProfile">
+<Type Name="ScoringProfile" FullName="Microsoft.Azure.Search.Models.ScoringProfile">
   <TypeSignature Language="C#" Value="public class ScoringProfile" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit ScoringProfile extends System.Object" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Azure.Search.Models.ScoringProfile" />
@@ -6,7 +6,7 @@
   <TypeSignature Language="F#" Value="type ScoringProfile = class" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Azure.Search.Service</AssemblyName>
-    <AssemblyVersion>5.0.0.0</AssemblyVersion>
+    <AssemblyVersion>10.1.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
@@ -14,8 +14,8 @@
   <Interfaces />
   <Docs>
     <summary>
-            Defines parameters for an Azure Search index that influence scoring in
-            search queries.
+            Defines parameters for a search index that influence scoring in search
+            queries.
             <see href="https://docs.microsoft.com/rest/api/searchservice/Add-scoring-profiles-to-a-search-index" /></summary>
     <remarks>To be added.</remarks>
   </Docs>
@@ -28,7 +28,7 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Search.Service</AssemblyName>
-        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>10.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
@@ -39,14 +39,15 @@
       </Docs>
     </Member>
     <Member MemberName=".ctor">
-      <MemberSignature Language="C#" Value="public ScoringProfile (string name, Microsoft.Azure.Search.Models.TextWeights textWeights = null, System.Collections.Generic.IList&lt;Microsoft.Azure.Search.Models.ScoringFunction&gt; functions = null, Nullable&lt;Microsoft.Azure.Search.Models.ScoringFunctionAggregation&gt; functionAggregation = null);" />
+      <MemberSignature Language="C#" Value="public ScoringProfile (string name, Microsoft.Azure.Search.Models.TextWeights textWeights = default, System.Collections.Generic.IList&lt;Microsoft.Azure.Search.Models.ScoringFunction&gt; functions = default, Microsoft.Azure.Search.Models.ScoringFunctionAggregation? functionAggregation = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string name, class Microsoft.Azure.Search.Models.TextWeights textWeights, class System.Collections.Generic.IList`1&lt;class Microsoft.Azure.Search.Models.ScoringFunction&gt; functions, valuetype System.Nullable`1&lt;valuetype Microsoft.Azure.Search.Models.ScoringFunctionAggregation&gt; functionAggregation) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Search.Models.ScoringProfile.#ctor(System.String,Microsoft.Azure.Search.Models.TextWeights,System.Collections.Generic.IList{Microsoft.Azure.Search.Models.ScoringFunction},System.Nullable{Microsoft.Azure.Search.Models.ScoringFunctionAggregation})" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (name As String, Optional textWeights As TextWeights = Nothing, Optional functions As IList(Of ScoringFunction) = Nothing, Optional functionAggregation As Nullable(Of ScoringFunctionAggregation) = Nothing)" />
       <MemberSignature Language="F#" Value="new Microsoft.Azure.Search.Models.ScoringProfile : string * Microsoft.Azure.Search.Models.TextWeights * System.Collections.Generic.IList&lt;Microsoft.Azure.Search.Models.ScoringFunction&gt; * Nullable&lt;Microsoft.Azure.Search.Models.ScoringFunctionAggregation&gt; -&gt; Microsoft.Azure.Search.Models.ScoringProfile" Usage="new Microsoft.Azure.Search.Models.ScoringProfile (name, textWeights, functions, functionAggregation)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Search.Service</AssemblyName>
-        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>10.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="name" Type="System.String" />
@@ -72,7 +73,7 @@
       </Docs>
     </Member>
     <Member MemberName="FunctionAggregation">
-      <MemberSignature Language="C#" Value="public Nullable&lt;Microsoft.Azure.Search.Models.ScoringFunctionAggregation&gt; FunctionAggregation { get; set; }" />
+      <MemberSignature Language="C#" Value="public Microsoft.Azure.Search.Models.ScoringFunctionAggregation? FunctionAggregation { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;valuetype Microsoft.Azure.Search.Models.ScoringFunctionAggregation&gt; FunctionAggregation" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Search.Models.ScoringProfile.FunctionAggregation" />
       <MemberSignature Language="VB.NET" Value="Public Property FunctionAggregation As Nullable(Of ScoringFunctionAggregation)" />
@@ -80,11 +81,12 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Search.Service</AssemblyName>
-        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>10.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="functionAggregation")</AttributeName>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty(PropertyName="functionAggregation")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty(PropertyName="functionAggregation")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -110,11 +112,12 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Search.Service</AssemblyName>
-        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>10.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="functions")</AttributeName>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty(PropertyName="functions")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty(PropertyName="functions")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -138,11 +141,12 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Search.Service</AssemblyName>
-        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>10.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="name")</AttributeName>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty(PropertyName="name")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty(PropertyName="name")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -165,11 +169,12 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Search.Service</AssemblyName>
-        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>10.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="text")</AttributeName>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty(PropertyName="text")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty(PropertyName="text")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -193,7 +198,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Search.Service</AssemblyName>
-        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>10.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>

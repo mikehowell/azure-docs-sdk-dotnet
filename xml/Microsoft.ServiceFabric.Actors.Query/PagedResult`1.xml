@@ -1,10 +1,9 @@
-﻿<Type Name="PagedResult&lt;T&gt;" FullName="Microsoft.ServiceFabric.Actors.Query.PagedResult&lt;T&gt;">
+<Type Name="PagedResult&lt;T&gt;" FullName="Microsoft.ServiceFabric.Actors.Query.PagedResult&lt;T&gt;">
   <TypeSignature Language="C#" Value="public sealed class PagedResult&lt;T&gt; where T : class" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit PagedResult`1&lt;class T&gt; extends System.Object" />
   <TypeSignature Language="DocId" Value="T:Microsoft.ServiceFabric.Actors.Query.PagedResult`1" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class PagedResult(Of T)" />
   <TypeSignature Language="F#" Value="type PagedResult&lt;'T (requires 'T : null)&gt; = class" />
-  <TypeSignature Language="C++ CLI" Value="generic &lt;typename T&gt;&#xA; where T : classpublic ref class PagedResult sealed" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.ServiceFabric.Actors</AssemblyName>
     <AssemblyVersion>6.0.0.0</AssemblyVersion>
@@ -22,10 +21,12 @@
   <Interfaces />
   <Attributes>
     <Attribute>
-      <AttributeName>System.Runtime.Serialization.DataContract(Name="PagedResult", Namespace="urn:actors")</AttributeName>
+      <AttributeName Language="C#">[System.Runtime.Serialization.DataContract(Name="PagedResult", Namespace="urn:actors")]</AttributeName>
+      <AttributeName Language="F#">[&lt;System.Runtime.Serialization.DataContract(Name="PagedResult", Namespace="urn:actors")&gt;]</AttributeName>
     </Attribute>
     <Attribute>
-      <AttributeName>System.Runtime.Serialization.KnownType(typeof(System.Collections.Generic.List`1&lt;Microsoft.ServiceFabric.Actors.Query.ActorInformation&gt;))</AttributeName>
+      <AttributeName Language="C#">[System.Runtime.Serialization.KnownType(typeof(System.Collections.Generic.List`1&lt;Microsoft.ServiceFabric.Actors.Query.ActorInformation&gt;))]</AttributeName>
+      <AttributeName Language="F#">[&lt;System.Runtime.Serialization.KnownType(typeof(System.Collections.Generic.List`1&lt;Microsoft.ServiceFabric.Actors.Query.ActorInformation&gt;))&gt;]</AttributeName>
     </Attribute>
   </Attributes>
   <Docs>
@@ -42,9 +43,6 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.ServiceFabric.Actors.Query.PagedResult`1.#ctor" />
       <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; PagedResult();" />
-      <MemberSignature Language="C++ CX" Value="public:&#xA; PagedResult();" />
-      <MemberSignature Language="C++ WINRT" Value=" PagedResult();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.ServiceFabric.Actors</AssemblyName>
@@ -53,7 +51,7 @@
       <Parameters />
       <Docs>
         <summary>
-            Creates a new instance of <see cref="T:Microsoft.ServiceFabric.Actors.Query.PagedResult`1" /> class.
+            Initializes a new instance of the <see cref="T:Microsoft.ServiceFabric.Actors.Query.PagedResult`1" /> class.
             </summary>
         <remarks>To be added.</remarks>
       </Docs>
@@ -64,7 +62,6 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.ServiceFabric.Actors.Query.PagedResult`1.ContinuationToken" />
       <MemberSignature Language="VB.NET" Value="Public Property ContinuationToken As ContinuationToken" />
       <MemberSignature Language="F#" Value="member this.ContinuationToken : Microsoft.ServiceFabric.Actors.Query.ContinuationToken with get, set" Usage="Microsoft.ServiceFabric.Actors.Query.PagedResult&lt;'T (requires 'T : null)&gt;.ContinuationToken" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::ServiceFabric::Actors::Query::ContinuationToken ^ ContinuationToken { Microsoft::ServiceFabric::Actors::Query::ContinuationToken ^ get(); void set(Microsoft::ServiceFabric::Actors::Query::ContinuationToken ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.ServiceFabric.Actors</AssemblyName>
@@ -72,7 +69,8 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>System.Runtime.Serialization.DataMember(IsRequired=false, Name="ContinuationToken", Order=1)</AttributeName>
+          <AttributeName Language="C#">[System.Runtime.Serialization.DataMember(IsRequired=false, Name="ContinuationToken", Order=1)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Runtime.Serialization.DataMember(IsRequired=false, Name="ContinuationToken", Order=1)&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -83,7 +81,7 @@
             Gets or sets a continuation token indicating if more items need to be fetched by calling the method again.
             </summary>
         <value>ConinutationToken signifying if the method which returned
-            the <see cref="T:Microsoft.ServiceFabric.Actors.Query.PagedResult`1" /> 
+            the <see cref="T:Microsoft.ServiceFabric.Actors.Query.PagedResult`1" />
             needs to called again to get more results </value>
         <remarks>A null value of continuation token means that the result contains all the items
             and no calls to method needs to be made to fetch more items.</remarks>
@@ -95,7 +93,6 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.ServiceFabric.Actors.Query.PagedResult`1.Items" />
       <MemberSignature Language="VB.NET" Value="Public Property Items As IEnumerable(Of T)" />
       <MemberSignature Language="F#" Value="member this.Items : seq&lt;'T (requires 'T : null)&gt; with get, set" Usage="Microsoft.ServiceFabric.Actors.Query.PagedResult&lt;'T (requires 'T : null)&gt;.Items" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::Generic::IEnumerable&lt;T&gt; ^ Items { System::Collections::Generic::IEnumerable&lt;T&gt; ^ get(); void set(System::Collections::Generic::IEnumerable&lt;T&gt; ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.ServiceFabric.Actors</AssemblyName>
@@ -103,7 +100,8 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>System.Runtime.Serialization.DataMember(IsRequired=true, Name="Items", Order=0)</AttributeName>
+          <AttributeName Language="C#">[System.Runtime.Serialization.DataMember(IsRequired=true, Name="Items", Order=0)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Runtime.Serialization.DataMember(IsRequired=true, Name="Items", Order=0)&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -113,7 +111,7 @@
         <summary>
             Gets or sets Enumerator to iterate over the results.
             </summary>
-        <value>An Enumerator, which supports a simple iteration over 
+        <value>An Enumerator, which supports a simple iteration over
             the collection.</value>
         <remarks>To be added.</remarks>
       </Docs>

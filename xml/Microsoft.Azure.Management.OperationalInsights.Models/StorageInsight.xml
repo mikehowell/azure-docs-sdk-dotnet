@@ -1,14 +1,14 @@
-﻿<Type Name="StorageInsight" FullName="Microsoft.Azure.Management.OperationalInsights.Models.StorageInsight">
+<Type Name="StorageInsight" FullName="Microsoft.Azure.Management.OperationalInsights.Models.StorageInsight">
   <TypeSignature Language="C#" Value="public class StorageInsight : Microsoft.Azure.Management.OperationalInsights.Models.ProxyResource" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit StorageInsight extends Microsoft.Azure.Management.OperationalInsights.Models.ProxyResource" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Azure.Management.OperationalInsights.Models.StorageInsight" />
   <TypeSignature Language="VB.NET" Value="Public Class StorageInsight&#xA;Inherits ProxyResource" />
   <TypeSignature Language="F#" Value="type StorageInsight = class&#xA;    inherit ProxyResource" />
-  <TypeSignature Language="C++ CLI" Value="public ref class StorageInsight : Microsoft::Azure::Management::OperationalInsights::Models::ProxyResource" />
-  <TypeSignature Language="C++ WINRT" Value="[Windows::Foundation::Metadata::WebHostHidden]&#xA;class StorageInsight : Microsoft::Azure::Management::OperationalInsights::Models::ProxyResource" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Azure.Management.OperationalInsights</AssemblyName>
-    <AssemblyVersion>0.18.0.0</AssemblyVersion>
+    <AssemblyVersion>0.19.0.0</AssemblyVersion>
+    <AssemblyVersion>0.20.0.0</AssemblyVersion>
+    <AssemblyVersion>0.21.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>Microsoft.Azure.Management.OperationalInsights.Models.ProxyResource</BaseTypeName>
@@ -16,7 +16,8 @@
   <Interfaces />
   <Attributes>
     <Attribute>
-      <AttributeName>Microsoft.Rest.Serialization.JsonTransformation</AttributeName>
+      <AttributeName Language="C#">[Microsoft.Rest.Serialization.JsonTransformation]</AttributeName>
+      <AttributeName Language="F#">[&lt;Microsoft.Rest.Serialization.JsonTransformation&gt;]</AttributeName>
     </Attribute>
   </Attributes>
   <Docs>
@@ -31,13 +32,12 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Management.OperationalInsights.Models.StorageInsight.#ctor" />
       <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; StorageInsight();" />
-      <MemberSignature Language="C++ CX" Value="public:&#xA; StorageInsight();" />
-      <MemberSignature Language="C++ WINRT" Value=" StorageInsight();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.OperationalInsights</AssemblyName>
-        <AssemblyVersion>0.18.0.0</AssemblyVersion>
+        <AssemblyVersion>0.19.0.0</AssemblyVersion>
+        <AssemblyVersion>0.20.0.0</AssemblyVersion>
+        <AssemblyVersion>0.21.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
@@ -48,39 +48,44 @@
       </Docs>
     </Member>
     <Member MemberName=".ctor">
-      <MemberSignature Language="C#" Value="public StorageInsight (Microsoft.Azure.Management.OperationalInsights.Models.StorageAccount storageAccount, string id = null, string name = null, string type = null, System.Collections.Generic.IDictionary&lt;string,string&gt; tags = null, System.Collections.Generic.IList&lt;string&gt; containers = null, System.Collections.Generic.IList&lt;string&gt; tables = null, Microsoft.Azure.Management.OperationalInsights.Models.StorageInsightStatus status = null, string eTag = null);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class Microsoft.Azure.Management.OperationalInsights.Models.StorageAccount storageAccount, string id, string name, string type, class System.Collections.Generic.IDictionary`2&lt;string, string&gt; tags, class System.Collections.Generic.IList`1&lt;string&gt; containers, class System.Collections.Generic.IList`1&lt;string&gt; tables, class Microsoft.Azure.Management.OperationalInsights.Models.StorageInsightStatus status, string eTag) cil managed" />
-      <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Management.OperationalInsights.Models.StorageInsight.#ctor(Microsoft.Azure.Management.OperationalInsights.Models.StorageAccount,System.String,System.String,System.String,System.Collections.Generic.IDictionary{System.String,System.String},System.Collections.Generic.IList{System.String},System.Collections.Generic.IList{System.String},Microsoft.Azure.Management.OperationalInsights.Models.StorageInsightStatus,System.String)" />
-      <MemberSignature Language="F#" Value="new Microsoft.Azure.Management.OperationalInsights.Models.StorageInsight : Microsoft.Azure.Management.OperationalInsights.Models.StorageAccount * string * string * string * System.Collections.Generic.IDictionary&lt;string, string&gt; * System.Collections.Generic.IList&lt;string&gt; * System.Collections.Generic.IList&lt;string&gt; * Microsoft.Azure.Management.OperationalInsights.Models.StorageInsightStatus * string -&gt; Microsoft.Azure.Management.OperationalInsights.Models.StorageInsight" Usage="new Microsoft.Azure.Management.OperationalInsights.Models.StorageInsight (storageAccount, id, name, type, tags, containers, tables, status, eTag)" />
+      <MemberSignature Language="C#" Value="public StorageInsight (Microsoft.Azure.Management.OperationalInsights.Models.StorageAccount storageAccount, string id = default, string name = default, string type = default, System.Collections.Generic.IList&lt;string&gt; containers = default, System.Collections.Generic.IList&lt;string&gt; tables = default, Microsoft.Azure.Management.OperationalInsights.Models.StorageInsightStatus status = default, string eTag = default, System.Collections.Generic.IDictionary&lt;string,string&gt; tags = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class Microsoft.Azure.Management.OperationalInsights.Models.StorageAccount storageAccount, string id, string name, string type, class System.Collections.Generic.IList`1&lt;string&gt; containers, class System.Collections.Generic.IList`1&lt;string&gt; tables, class Microsoft.Azure.Management.OperationalInsights.Models.StorageInsightStatus status, string eTag, class System.Collections.Generic.IDictionary`2&lt;string, string&gt; tags) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Management.OperationalInsights.Models.StorageInsight.#ctor(Microsoft.Azure.Management.OperationalInsights.Models.StorageAccount,System.String,System.String,System.String,System.Collections.Generic.IList{System.String},System.Collections.Generic.IList{System.String},Microsoft.Azure.Management.OperationalInsights.Models.StorageInsightStatus,System.String,System.Collections.Generic.IDictionary{System.String,System.String})" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (storageAccount As StorageAccount, Optional id As String = Nothing, Optional name As String = Nothing, Optional type As String = Nothing, Optional containers As IList(Of String) = Nothing, Optional tables As IList(Of String) = Nothing, Optional status As StorageInsightStatus = Nothing, Optional eTag As String = Nothing, Optional tags As IDictionary(Of String, String) = Nothing)" />
+      <MemberSignature Language="F#" Value="new Microsoft.Azure.Management.OperationalInsights.Models.StorageInsight : Microsoft.Azure.Management.OperationalInsights.Models.StorageAccount * string * string * string * System.Collections.Generic.IList&lt;string&gt; * System.Collections.Generic.IList&lt;string&gt; * Microsoft.Azure.Management.OperationalInsights.Models.StorageInsightStatus * string * System.Collections.Generic.IDictionary&lt;string, string&gt; -&gt; Microsoft.Azure.Management.OperationalInsights.Models.StorageInsight" Usage="new Microsoft.Azure.Management.OperationalInsights.Models.StorageInsight (storageAccount, id, name, type, containers, tables, status, eTag, tags)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.OperationalInsights</AssemblyName>
-        <AssemblyVersion>0.18.0.0</AssemblyVersion>
+        <AssemblyVersion>0.20.0.0</AssemblyVersion>
+        <AssemblyVersion>0.21.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="storageAccount" Type="Microsoft.Azure.Management.OperationalInsights.Models.StorageAccount" />
         <Parameter Name="id" Type="System.String" />
         <Parameter Name="name" Type="System.String" />
         <Parameter Name="type" Type="System.String" />
-        <Parameter Name="tags" Type="System.Collections.Generic.IDictionary&lt;System.String,System.String&gt;" />
         <Parameter Name="containers" Type="System.Collections.Generic.IList&lt;System.String&gt;" />
         <Parameter Name="tables" Type="System.Collections.Generic.IList&lt;System.String&gt;" />
         <Parameter Name="status" Type="Microsoft.Azure.Management.OperationalInsights.Models.StorageInsightStatus" />
         <Parameter Name="eTag" Type="System.String" />
+        <Parameter Name="tags" Type="System.Collections.Generic.IDictionary&lt;System.String,System.String&gt;" />
       </Parameters>
       <Docs>
         <param name="storageAccount">The storage account connection
             details</param>
-        <param name="id">Resource ID.</param>
-        <param name="name">Resource name.</param>
-        <param name="type">Resource type.</param>
-        <param name="tags">Resource tags</param>
+        <param name="id">Fully qualified resource Id for the resource. Ex -
+            /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/{resourceProviderNamespace}/{resourceType}/{resourceName}</param>
+        <param name="name">The name of the resource</param>
+        <param name="type">The type of the resource. Ex-
+            Microsoft.Compute/virtualMachines or
+            Microsoft.Storage/storageAccounts.</param>
         <param name="containers">The names of the blob containers that the
             workspace should read</param>
         <param name="tables">The names of the Azure tables that the
             workspace should read</param>
         <param name="status">The status of the storage insight</param>
         <param name="eTag">The ETag of the storage insight.</param>
+        <param name="tags">Resource tags.</param>
         <summary>
             Initializes a new instance of the StorageInsight class.
             </summary>
@@ -93,15 +98,17 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Management.OperationalInsights.Models.StorageInsight.Containers" />
       <MemberSignature Language="VB.NET" Value="Public Property Containers As IList(Of String)" />
       <MemberSignature Language="F#" Value="member this.Containers : System.Collections.Generic.IList&lt;string&gt; with get, set" Usage="Microsoft.Azure.Management.OperationalInsights.Models.StorageInsight.Containers" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::Generic::IList&lt;System::String ^&gt; ^ Containers { System::Collections::Generic::IList&lt;System::String ^&gt; ^ get(); void set(System::Collections::Generic::IList&lt;System::String ^&gt; ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.OperationalInsights</AssemblyName>
-        <AssemblyVersion>0.18.0.0</AssemblyVersion>
+        <AssemblyVersion>0.19.0.0</AssemblyVersion>
+        <AssemblyVersion>0.20.0.0</AssemblyVersion>
+        <AssemblyVersion>0.21.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="properties.containers")</AttributeName>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty(PropertyName="properties.containers")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty(PropertyName="properties.containers")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -122,16 +129,17 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Management.OperationalInsights.Models.StorageInsight.ETag" />
       <MemberSignature Language="VB.NET" Value="Public Property ETag As String" />
       <MemberSignature Language="F#" Value="member this.ETag : string with get, set" Usage="Microsoft.Azure.Management.OperationalInsights.Models.StorageInsight.ETag" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ ETag { System::String ^ get(); void set(System::String ^ value); };" />
-      <MemberSignature Language="C++ CX" Value="public:&#xA; property Platform::String ^ ETag { Platform::String ^ get(); void set(Platform::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.OperationalInsights</AssemblyName>
-        <AssemblyVersion>0.18.0.0</AssemblyVersion>
+        <AssemblyVersion>0.19.0.0</AssemblyVersion>
+        <AssemblyVersion>0.20.0.0</AssemblyVersion>
+        <AssemblyVersion>0.21.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="eTag")</AttributeName>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty(PropertyName="eTag")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty(PropertyName="eTag")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -151,15 +159,17 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Management.OperationalInsights.Models.StorageInsight.Status" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Status As StorageInsightStatus" />
       <MemberSignature Language="F#" Value="member this.Status : Microsoft.Azure.Management.OperationalInsights.Models.StorageInsightStatus" Usage="Microsoft.Azure.Management.OperationalInsights.Models.StorageInsight.Status" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Azure::Management::OperationalInsights::Models::StorageInsightStatus ^ Status { Microsoft::Azure::Management::OperationalInsights::Models::StorageInsightStatus ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.OperationalInsights</AssemblyName>
-        <AssemblyVersion>0.18.0.0</AssemblyVersion>
+        <AssemblyVersion>0.19.0.0</AssemblyVersion>
+        <AssemblyVersion>0.20.0.0</AssemblyVersion>
+        <AssemblyVersion>0.21.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="properties.status")</AttributeName>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty(PropertyName="properties.status")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty(PropertyName="properties.status")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -179,15 +189,17 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Management.OperationalInsights.Models.StorageInsight.StorageAccount" />
       <MemberSignature Language="VB.NET" Value="Public Property StorageAccount As StorageAccount" />
       <MemberSignature Language="F#" Value="member this.StorageAccount : Microsoft.Azure.Management.OperationalInsights.Models.StorageAccount with get, set" Usage="Microsoft.Azure.Management.OperationalInsights.Models.StorageInsight.StorageAccount" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Azure::Management::OperationalInsights::Models::StorageAccount ^ StorageAccount { Microsoft::Azure::Management::OperationalInsights::Models::StorageAccount ^ get(); void set(Microsoft::Azure::Management::OperationalInsights::Models::StorageAccount ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.OperationalInsights</AssemblyName>
-        <AssemblyVersion>0.18.0.0</AssemblyVersion>
+        <AssemblyVersion>0.19.0.0</AssemblyVersion>
+        <AssemblyVersion>0.20.0.0</AssemblyVersion>
+        <AssemblyVersion>0.21.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="properties.storageAccount")</AttributeName>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty(PropertyName="properties.storageAccount")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty(PropertyName="properties.storageAccount")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -207,15 +219,17 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Management.OperationalInsights.Models.StorageInsight.Tables" />
       <MemberSignature Language="VB.NET" Value="Public Property Tables As IList(Of String)" />
       <MemberSignature Language="F#" Value="member this.Tables : System.Collections.Generic.IList&lt;string&gt; with get, set" Usage="Microsoft.Azure.Management.OperationalInsights.Models.StorageInsight.Tables" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::Generic::IList&lt;System::String ^&gt; ^ Tables { System::Collections::Generic::IList&lt;System::String ^&gt; ^ get(); void set(System::Collections::Generic::IList&lt;System::String ^&gt; ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.OperationalInsights</AssemblyName>
-        <AssemblyVersion>0.18.0.0</AssemblyVersion>
+        <AssemblyVersion>0.19.0.0</AssemblyVersion>
+        <AssemblyVersion>0.20.0.0</AssemblyVersion>
+        <AssemblyVersion>0.21.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="properties.tables")</AttributeName>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty(PropertyName="properties.tables")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty(PropertyName="properties.tables")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -230,19 +244,47 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <Member MemberName="Tags">
+      <MemberSignature Language="C#" Value="public System.Collections.Generic.IDictionary&lt;string,string&gt; Tags { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Generic.IDictionary`2&lt;string, string&gt; Tags" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Management.OperationalInsights.Models.StorageInsight.Tags" />
+      <MemberSignature Language="VB.NET" Value="Public Property Tags As IDictionary(Of String, String)" />
+      <MemberSignature Language="F#" Value="member this.Tags : System.Collections.Generic.IDictionary&lt;string, string&gt; with get, set" Usage="Microsoft.Azure.Management.OperationalInsights.Models.StorageInsight.Tags" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Azure.Management.OperationalInsights</AssemblyName>
+        <AssemblyVersion>0.20.0.0</AssemblyVersion>
+        <AssemblyVersion>0.21.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty(PropertyName="tags")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty(PropertyName="tags")&gt;]</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.IDictionary&lt;System.String,System.String&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets or sets resource tags.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
     <Member MemberName="Validate">
       <MemberSignature Language="C#" Value="public virtual void Validate ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Validate() cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Management.OperationalInsights.Models.StorageInsight.Validate" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Sub Validate ()" />
       <MemberSignature Language="F#" Value="abstract member Validate : unit -&gt; unit&#xA;override this.Validate : unit -&gt; unit" Usage="storageInsight.Validate " />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Validate();" />
-      <MemberSignature Language="C++ CX" Value="public:&#xA; virtual void Validate();" />
-      <MemberSignature Language="C++ WINRT" Value=" virtual void Validate();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.OperationalInsights</AssemblyName>
-        <AssemblyVersion>0.18.0.0</AssemblyVersion>
+        <AssemblyVersion>0.19.0.0</AssemblyVersion>
+        <AssemblyVersion>0.20.0.0</AssemblyVersion>
+        <AssemblyVersion>0.21.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>

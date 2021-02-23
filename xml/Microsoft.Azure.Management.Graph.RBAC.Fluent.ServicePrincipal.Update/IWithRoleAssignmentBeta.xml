@@ -1,15 +1,19 @@
-﻿<Type Name="IWithRoleAssignmentBeta" FullName="Microsoft.Azure.Management.Graph.RBAC.Fluent.ServicePrincipal.Update.IWithRoleAssignmentBeta">
+<Type Name="IWithRoleAssignmentBeta" FullName="Microsoft.Azure.Management.Graph.RBAC.Fluent.ServicePrincipal.Update.IWithRoleAssignmentBeta">
   <TypeSignature Language="C#" Value="public interface IWithRoleAssignmentBeta : Microsoft.Azure.Management.ResourceManager.Fluent.Core.IBeta" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IWithRoleAssignmentBeta implements class Microsoft.Azure.Management.ResourceManager.Fluent.Core.IBeta" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Azure.Management.Graph.RBAC.Fluent.ServicePrincipal.Update.IWithRoleAssignmentBeta" />
   <TypeSignature Language="VB.NET" Value="Public Interface IWithRoleAssignmentBeta&#xA;Implements IBeta" />
   <TypeSignature Language="F#" Value="type IWithRoleAssignmentBeta = interface&#xA;    interface IBeta" />
-  <TypeSignature Language="C++ CLI" Value="public interface class IWithRoleAssignmentBeta : Microsoft::Azure::Management::ResourceManager::Fluent::Core::IBeta" />
-  <TypeSignature Language="C++ CX" Value="public interface class IWithRoleAssignmentBeta : Microsoft::Azure::Management::ResourceManager::Fluent::Core::IBeta" />
-  <TypeSignature Language="C++ WINRT" Value="__interface IWithRoleAssignmentBeta : Microsoft::Azure::Management::ResourceManager::Fluent::Core::IBeta" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Azure.Management.Graph.RBAC.Fluent</AssemblyName>
-    <AssemblyVersion>1.0.0.60</AssemblyVersion>
+    <AssemblyVersion>1.0.0.61</AssemblyVersion>
+    <AssemblyVersion>1.0.0.62</AssemblyVersion>
+    <AssemblyVersion>1.0.0.63</AssemblyVersion>
+    <AssemblyVersion>1.0.0.64</AssemblyVersion>
+    <AssemblyVersion>1.0.0.65</AssemblyVersion>
+    <AssemblyVersion>1.0.0.66</AssemblyVersion>
+    <AssemblyVersion>1.0.0.67</AssemblyVersion>
+    <AssemblyVersion>1.0.0.68</AssemblyVersion>
   </AssemblyInfo>
   <Interfaces>
     <Interface>
@@ -17,7 +21,9 @@
     </Interface>
   </Interfaces>
   <Docs>
-    <summary>To be added.</summary>
+    <summary>
+            A service principal update allowing role assignments to be added.
+            </summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -27,12 +33,17 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Management.Graph.RBAC.Fluent.ServicePrincipal.Update.IWithRoleAssignmentBeta.WithNewRole(Microsoft.Azure.Management.Graph.RBAC.Fluent.BuiltInRole,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Function WithNewRole (role As BuiltInRole, scope As String) As IUpdate" />
       <MemberSignature Language="F#" Value="abstract member WithNewRole : Microsoft.Azure.Management.Graph.RBAC.Fluent.BuiltInRole * string -&gt; Microsoft.Azure.Management.Graph.RBAC.Fluent.ServicePrincipal.Update.IUpdate" Usage="iWithRoleAssignmentBeta.WithNewRole (role, scope)" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; Microsoft::Azure::Management::Graph::RBAC::Fluent::ServicePrincipal::Update::IUpdate ^ WithNewRole(Microsoft::Azure::Management::Graph::RBAC::Fluent::BuiltInRole ^ role, System::String ^ scope);" />
-      <MemberSignature Language="C++ WINRT" Value="Microsoft::Azure::Management::Graph::RBAC::Fluent::ServicePrincipal::Update::IUpdate WithNewRole(Microsoft::Azure::Management::Graph::RBAC::Fluent::BuiltInRole const &amp; role, std::wstring const &amp; scope);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Graph.RBAC.Fluent</AssemblyName>
-        <AssemblyVersion>1.0.0.60</AssemblyVersion>
+        <AssemblyVersion>1.0.0.61</AssemblyVersion>
+        <AssemblyVersion>1.0.0.62</AssemblyVersion>
+        <AssemblyVersion>1.0.0.63</AssemblyVersion>
+        <AssemblyVersion>1.0.0.64</AssemblyVersion>
+        <AssemblyVersion>1.0.0.65</AssemblyVersion>
+        <AssemblyVersion>1.0.0.66</AssemblyVersion>
+        <AssemblyVersion>1.0.0.67</AssemblyVersion>
+        <AssemblyVersion>1.0.0.68</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Azure.Management.Graph.RBAC.Fluent.ServicePrincipal.Update.IUpdate</ReturnType>
@@ -42,11 +53,14 @@
         <Parameter Name="scope" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="role">To be added.</param>
-        <param name="scope">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="role">The role to assign to the service principal.</param>
+        <param name="scope">The scope the service principal can access.</param>
+        <summary>
+            Assigns a new role to the service principal.
+            </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
+        <return>The next stage of the service principal update.</return>
       </Docs>
     </Member>
     <Member MemberName="WithNewRoleInResourceGroup">
@@ -55,12 +69,17 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Management.Graph.RBAC.Fluent.ServicePrincipal.Update.IWithRoleAssignmentBeta.WithNewRoleInResourceGroup(Microsoft.Azure.Management.Graph.RBAC.Fluent.BuiltInRole,Microsoft.Azure.Management.ResourceManager.Fluent.IResourceGroup)" />
       <MemberSignature Language="VB.NET" Value="Public Function WithNewRoleInResourceGroup (role As BuiltInRole, resourceGroup As IResourceGroup) As IUpdate" />
       <MemberSignature Language="F#" Value="abstract member WithNewRoleInResourceGroup : Microsoft.Azure.Management.Graph.RBAC.Fluent.BuiltInRole * Microsoft.Azure.Management.ResourceManager.Fluent.IResourceGroup -&gt; Microsoft.Azure.Management.Graph.RBAC.Fluent.ServicePrincipal.Update.IUpdate" Usage="iWithRoleAssignmentBeta.WithNewRoleInResourceGroup (role, resourceGroup)" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; Microsoft::Azure::Management::Graph::RBAC::Fluent::ServicePrincipal::Update::IUpdate ^ WithNewRoleInResourceGroup(Microsoft::Azure::Management::Graph::RBAC::Fluent::BuiltInRole ^ role, Microsoft::Azure::Management::ResourceManager::Fluent::IResourceGroup ^ resourceGroup);" />
-      <MemberSignature Language="C++ WINRT" Value="Microsoft::Azure::Management::Graph::RBAC::Fluent::ServicePrincipal::Update::IUpdate WithNewRoleInResourceGroup(Microsoft::Azure::Management::Graph::RBAC::Fluent::BuiltInRole const &amp; role, Microsoft::Azure::Management::ResourceManager::Fluent::IResourceGroup const &amp; resourceGroup);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Graph.RBAC.Fluent</AssemblyName>
-        <AssemblyVersion>1.0.0.60</AssemblyVersion>
+        <AssemblyVersion>1.0.0.61</AssemblyVersion>
+        <AssemblyVersion>1.0.0.62</AssemblyVersion>
+        <AssemblyVersion>1.0.0.63</AssemblyVersion>
+        <AssemblyVersion>1.0.0.64</AssemblyVersion>
+        <AssemblyVersion>1.0.0.65</AssemblyVersion>
+        <AssemblyVersion>1.0.0.66</AssemblyVersion>
+        <AssemblyVersion>1.0.0.67</AssemblyVersion>
+        <AssemblyVersion>1.0.0.68</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Azure.Management.Graph.RBAC.Fluent.ServicePrincipal.Update.IUpdate</ReturnType>
@@ -70,11 +89,14 @@
         <Parameter Name="resourceGroup" Type="Microsoft.Azure.Management.ResourceManager.Fluent.IResourceGroup" />
       </Parameters>
       <Docs>
-        <param name="role">To be added.</param>
-        <param name="resourceGroup">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="role">The role to assign to the service principal.</param>
+        <param name="resourceGroup">The resource group the service principal can access.</param>
+        <summary>
+            Assigns a new role to the service principal.
+            </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
+        <return>The next stage of the service principal update.</return>
       </Docs>
     </Member>
     <Member MemberName="WithNewRoleInSubscription">
@@ -83,12 +105,17 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Management.Graph.RBAC.Fluent.ServicePrincipal.Update.IWithRoleAssignmentBeta.WithNewRoleInSubscription(Microsoft.Azure.Management.Graph.RBAC.Fluent.BuiltInRole,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Function WithNewRoleInSubscription (role As BuiltInRole, subscriptionId As String) As IUpdate" />
       <MemberSignature Language="F#" Value="abstract member WithNewRoleInSubscription : Microsoft.Azure.Management.Graph.RBAC.Fluent.BuiltInRole * string -&gt; Microsoft.Azure.Management.Graph.RBAC.Fluent.ServicePrincipal.Update.IUpdate" Usage="iWithRoleAssignmentBeta.WithNewRoleInSubscription (role, subscriptionId)" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; Microsoft::Azure::Management::Graph::RBAC::Fluent::ServicePrincipal::Update::IUpdate ^ WithNewRoleInSubscription(Microsoft::Azure::Management::Graph::RBAC::Fluent::BuiltInRole ^ role, System::String ^ subscriptionId);" />
-      <MemberSignature Language="C++ WINRT" Value="Microsoft::Azure::Management::Graph::RBAC::Fluent::ServicePrincipal::Update::IUpdate WithNewRoleInSubscription(Microsoft::Azure::Management::Graph::RBAC::Fluent::BuiltInRole const &amp; role, std::wstring const &amp; subscriptionId);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Graph.RBAC.Fluent</AssemblyName>
-        <AssemblyVersion>1.0.0.60</AssemblyVersion>
+        <AssemblyVersion>1.0.0.61</AssemblyVersion>
+        <AssemblyVersion>1.0.0.62</AssemblyVersion>
+        <AssemblyVersion>1.0.0.63</AssemblyVersion>
+        <AssemblyVersion>1.0.0.64</AssemblyVersion>
+        <AssemblyVersion>1.0.0.65</AssemblyVersion>
+        <AssemblyVersion>1.0.0.66</AssemblyVersion>
+        <AssemblyVersion>1.0.0.67</AssemblyVersion>
+        <AssemblyVersion>1.0.0.68</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Azure.Management.Graph.RBAC.Fluent.ServicePrincipal.Update.IUpdate</ReturnType>
@@ -98,11 +125,14 @@
         <Parameter Name="subscriptionId" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="role">To be added.</param>
-        <param name="subscriptionId">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="role">The role to assign to the service principal.</param>
+        <param name="subscriptionId">The subscription the service principal can access.</param>
+        <summary>
+            Assigns a new role to the service principal.
+            </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
+        <return>The next stage of the service principal update.</return>
       </Docs>
     </Member>
     <Member MemberName="WithoutRole">
@@ -111,13 +141,17 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Management.Graph.RBAC.Fluent.ServicePrincipal.Update.IWithRoleAssignmentBeta.WithoutRole(Microsoft.Azure.Management.Graph.RBAC.Fluent.IRoleAssignment)" />
       <MemberSignature Language="VB.NET" Value="Public Function WithoutRole (roleAssignment As IRoleAssignment) As IUpdate" />
       <MemberSignature Language="F#" Value="abstract member WithoutRole : Microsoft.Azure.Management.Graph.RBAC.Fluent.IRoleAssignment -&gt; Microsoft.Azure.Management.Graph.RBAC.Fluent.ServicePrincipal.Update.IUpdate" Usage="iWithRoleAssignmentBeta.WithoutRole roleAssignment" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; Microsoft::Azure::Management::Graph::RBAC::Fluent::ServicePrincipal::Update::IUpdate ^ WithoutRole(Microsoft::Azure::Management::Graph::RBAC::Fluent::IRoleAssignment ^ roleAssignment);" />
-      <MemberSignature Language="C++ CX" Value="public:&#xA; Microsoft::Azure::Management::Graph::RBAC::Fluent::ServicePrincipal::Update::IUpdate ^ WithoutRole(Microsoft::Azure::Management::Graph::RBAC::Fluent::IRoleAssignment ^ roleAssignment);" />
-      <MemberSignature Language="C++ WINRT" Value="Microsoft::Azure::Management::Graph::RBAC::Fluent::ServicePrincipal::Update::IUpdate WithoutRole(Microsoft::Azure::Management::Graph::RBAC::Fluent::IRoleAssignment const &amp; roleAssignment);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Graph.RBAC.Fluent</AssemblyName>
-        <AssemblyVersion>1.0.0.60</AssemblyVersion>
+        <AssemblyVersion>1.0.0.61</AssemblyVersion>
+        <AssemblyVersion>1.0.0.62</AssemblyVersion>
+        <AssemblyVersion>1.0.0.63</AssemblyVersion>
+        <AssemblyVersion>1.0.0.64</AssemblyVersion>
+        <AssemblyVersion>1.0.0.65</AssemblyVersion>
+        <AssemblyVersion>1.0.0.66</AssemblyVersion>
+        <AssemblyVersion>1.0.0.67</AssemblyVersion>
+        <AssemblyVersion>1.0.0.68</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Azure.Management.Graph.RBAC.Fluent.ServicePrincipal.Update.IUpdate</ReturnType>
@@ -126,10 +160,13 @@
         <Parameter Name="roleAssignment" Type="Microsoft.Azure.Management.Graph.RBAC.Fluent.IRoleAssignment" />
       </Parameters>
       <Docs>
-        <param name="roleAssignment">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="roleAssignment">The role assignment to remove.</param>
+        <summary>
+            Removes a role from the service principal.
+            </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
+        <return>The next stage of the service principal update.</return>
       </Docs>
     </Member>
   </Members>

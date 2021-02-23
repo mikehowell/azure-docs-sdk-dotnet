@@ -1,14 +1,11 @@
-﻿<Type Name="DscMetaConfiguration" FullName="Microsoft.Azure.Management.Automation.Models.DscMetaConfiguration">
+<Type Name="DscMetaConfiguration" FullName="Microsoft.Azure.Management.Automation.Models.DscMetaConfiguration">
   <TypeSignature Language="C#" Value="public class DscMetaConfiguration" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit DscMetaConfiguration extends System.Object" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Azure.Management.Automation.Models.DscMetaConfiguration" />
   <TypeSignature Language="VB.NET" Value="Public Class DscMetaConfiguration" />
   <TypeSignature Language="F#" Value="type DscMetaConfiguration = class" />
-  <TypeSignature Language="C++ CLI" Value="public ref class DscMetaConfiguration" />
-  <TypeSignature Language="C++ WINRT" Value="[Windows::Foundation::Metadata::WebHostHidden]&#xA;class DscMetaConfiguration" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Azure.Management.Automation</AssemblyName>
-    <AssemblyVersion>3.0.0.0</AssemblyVersion>
     <AssemblyVersion>3.0.1.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -27,13 +24,9 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Management.Automation.Models.DscMetaConfiguration.#ctor" />
       <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; DscMetaConfiguration();" />
-      <MemberSignature Language="C++ CX" Value="public:&#xA; DscMetaConfiguration();" />
-      <MemberSignature Language="C++ WINRT" Value=" DscMetaConfiguration();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Automation</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>3.0.1.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
@@ -45,15 +38,14 @@
       </Docs>
     </Member>
     <Member MemberName=".ctor">
-      <MemberSignature Language="C#" Value="public DscMetaConfiguration (Nullable&lt;int&gt; configurationModeFrequencyMins = null, Nullable&lt;bool&gt; rebootNodeIfNeeded = null, string configurationMode = null, string actionAfterReboot = null, string certificateId = null, Nullable&lt;int&gt; refreshFrequencyMins = null, Nullable&lt;bool&gt; allowModuleOverwrite = null);" />
+      <MemberSignature Language="C#" Value="public DscMetaConfiguration (int? configurationModeFrequencyMins = default, bool? rebootNodeIfNeeded = default, string configurationMode = default, string actionAfterReboot = default, string certificateId = default, int? refreshFrequencyMins = default, bool? allowModuleOverwrite = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(valuetype System.Nullable`1&lt;int32&gt; configurationModeFrequencyMins, valuetype System.Nullable`1&lt;bool&gt; rebootNodeIfNeeded, string configurationMode, string actionAfterReboot, string certificateId, valuetype System.Nullable`1&lt;int32&gt; refreshFrequencyMins, valuetype System.Nullable`1&lt;bool&gt; allowModuleOverwrite) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Management.Automation.Models.DscMetaConfiguration.#ctor(System.Nullable{System.Int32},System.Nullable{System.Boolean},System.String,System.String,System.String,System.Nullable{System.Int32},System.Nullable{System.Boolean})" />
-      <MemberSignature Language="VB.NET" Value="Public Sub New (Optional configurationModeFrequencyMins As Nullable(Of Integer) = null, Optional rebootNodeIfNeeded As Nullable(Of Boolean) = null, Optional configurationMode As String = null, Optional actionAfterReboot As String = null, Optional certificateId As String = null, Optional refreshFrequencyMins As Nullable(Of Integer) = null, Optional allowModuleOverwrite As Nullable(Of Boolean) = null)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (Optional configurationModeFrequencyMins As Nullable(Of Integer) = Nothing, Optional rebootNodeIfNeeded As Nullable(Of Boolean) = Nothing, Optional configurationMode As String = Nothing, Optional actionAfterReboot As String = Nothing, Optional certificateId As String = Nothing, Optional refreshFrequencyMins As Nullable(Of Integer) = Nothing, Optional allowModuleOverwrite As Nullable(Of Boolean) = Nothing)" />
       <MemberSignature Language="F#" Value="new Microsoft.Azure.Management.Automation.Models.DscMetaConfiguration : Nullable&lt;int&gt; * Nullable&lt;bool&gt; * string * string * string * Nullable&lt;int&gt; * Nullable&lt;bool&gt; -&gt; Microsoft.Azure.Management.Automation.Models.DscMetaConfiguration" Usage="new Microsoft.Azure.Management.Automation.Models.DscMetaConfiguration (configurationModeFrequencyMins, rebootNodeIfNeeded, configurationMode, actionAfterReboot, certificateId, refreshFrequencyMins, allowModuleOverwrite)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Automation</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>3.0.1.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
@@ -93,17 +85,15 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Management.Automation.Models.DscMetaConfiguration.ActionAfterReboot" />
       <MemberSignature Language="VB.NET" Value="Public Property ActionAfterReboot As String" />
       <MemberSignature Language="F#" Value="member this.ActionAfterReboot : string with get, set" Usage="Microsoft.Azure.Management.Automation.Models.DscMetaConfiguration.ActionAfterReboot" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ ActionAfterReboot { System::String ^ get(); void set(System::String ^ value); };" />
-      <MemberSignature Language="C++ CX" Value="public:&#xA; property Platform::String ^ ActionAfterReboot { Platform::String ^ get(); void set(Platform::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Automation</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>3.0.1.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="actionAfterReboot")</AttributeName>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty(PropertyName="actionAfterReboot")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty(PropertyName="actionAfterReboot")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -118,21 +108,20 @@
       </Docs>
     </Member>
     <Member MemberName="AllowModuleOverwrite">
-      <MemberSignature Language="C#" Value="public Nullable&lt;bool&gt; AllowModuleOverwrite { get; set; }" />
+      <MemberSignature Language="C#" Value="public bool? AllowModuleOverwrite { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;bool&gt; AllowModuleOverwrite" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Management.Automation.Models.DscMetaConfiguration.AllowModuleOverwrite" />
       <MemberSignature Language="VB.NET" Value="Public Property AllowModuleOverwrite As Nullable(Of Boolean)" />
       <MemberSignature Language="F#" Value="member this.AllowModuleOverwrite : Nullable&lt;bool&gt; with get, set" Usage="Microsoft.Azure.Management.Automation.Models.DscMetaConfiguration.AllowModuleOverwrite" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Nullable&lt;bool&gt; AllowModuleOverwrite { Nullable&lt;bool&gt; get(); void set(Nullable&lt;bool&gt; value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Automation</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>3.0.1.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="allowModuleOverwrite")</AttributeName>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty(PropertyName="allowModuleOverwrite")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty(PropertyName="allowModuleOverwrite")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -153,17 +142,15 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Management.Automation.Models.DscMetaConfiguration.CertificateId" />
       <MemberSignature Language="VB.NET" Value="Public Property CertificateId As String" />
       <MemberSignature Language="F#" Value="member this.CertificateId : string with get, set" Usage="Microsoft.Azure.Management.Automation.Models.DscMetaConfiguration.CertificateId" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ CertificateId { System::String ^ get(); void set(System::String ^ value); };" />
-      <MemberSignature Language="C++ CX" Value="public:&#xA; property Platform::String ^ CertificateId { Platform::String ^ get(); void set(Platform::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Automation</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>3.0.1.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="certificateId")</AttributeName>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty(PropertyName="certificateId")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty(PropertyName="certificateId")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -183,17 +170,15 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Management.Automation.Models.DscMetaConfiguration.ConfigurationMode" />
       <MemberSignature Language="VB.NET" Value="Public Property ConfigurationMode As String" />
       <MemberSignature Language="F#" Value="member this.ConfigurationMode : string with get, set" Usage="Microsoft.Azure.Management.Automation.Models.DscMetaConfiguration.ConfigurationMode" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ ConfigurationMode { System::String ^ get(); void set(System::String ^ value); };" />
-      <MemberSignature Language="C++ CX" Value="public:&#xA; property Platform::String ^ ConfigurationMode { Platform::String ^ get(); void set(Platform::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Automation</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>3.0.1.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="configurationMode")</AttributeName>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty(PropertyName="configurationMode")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty(PropertyName="configurationMode")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -208,21 +193,20 @@
       </Docs>
     </Member>
     <Member MemberName="ConfigurationModeFrequencyMins">
-      <MemberSignature Language="C#" Value="public Nullable&lt;int&gt; ConfigurationModeFrequencyMins { get; set; }" />
+      <MemberSignature Language="C#" Value="public int? ConfigurationModeFrequencyMins { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;int32&gt; ConfigurationModeFrequencyMins" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Management.Automation.Models.DscMetaConfiguration.ConfigurationModeFrequencyMins" />
       <MemberSignature Language="VB.NET" Value="Public Property ConfigurationModeFrequencyMins As Nullable(Of Integer)" />
       <MemberSignature Language="F#" Value="member this.ConfigurationModeFrequencyMins : Nullable&lt;int&gt; with get, set" Usage="Microsoft.Azure.Management.Automation.Models.DscMetaConfiguration.ConfigurationModeFrequencyMins" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Nullable&lt;int&gt; ConfigurationModeFrequencyMins { Nullable&lt;int&gt; get(); void set(Nullable&lt;int&gt; value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Automation</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>3.0.1.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="configurationModeFrequencyMins")</AttributeName>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty(PropertyName="configurationModeFrequencyMins")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty(PropertyName="configurationModeFrequencyMins")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -238,21 +222,20 @@
       </Docs>
     </Member>
     <Member MemberName="RebootNodeIfNeeded">
-      <MemberSignature Language="C#" Value="public Nullable&lt;bool&gt; RebootNodeIfNeeded { get; set; }" />
+      <MemberSignature Language="C#" Value="public bool? RebootNodeIfNeeded { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;bool&gt; RebootNodeIfNeeded" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Management.Automation.Models.DscMetaConfiguration.RebootNodeIfNeeded" />
       <MemberSignature Language="VB.NET" Value="Public Property RebootNodeIfNeeded As Nullable(Of Boolean)" />
       <MemberSignature Language="F#" Value="member this.RebootNodeIfNeeded : Nullable&lt;bool&gt; with get, set" Usage="Microsoft.Azure.Management.Automation.Models.DscMetaConfiguration.RebootNodeIfNeeded" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Nullable&lt;bool&gt; RebootNodeIfNeeded { Nullable&lt;bool&gt; get(); void set(Nullable&lt;bool&gt; value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Automation</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>3.0.1.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="rebootNodeIfNeeded")</AttributeName>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty(PropertyName="rebootNodeIfNeeded")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty(PropertyName="rebootNodeIfNeeded")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -268,21 +251,20 @@
       </Docs>
     </Member>
     <Member MemberName="RefreshFrequencyMins">
-      <MemberSignature Language="C#" Value="public Nullable&lt;int&gt; RefreshFrequencyMins { get; set; }" />
+      <MemberSignature Language="C#" Value="public int? RefreshFrequencyMins { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;int32&gt; RefreshFrequencyMins" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Management.Automation.Models.DscMetaConfiguration.RefreshFrequencyMins" />
       <MemberSignature Language="VB.NET" Value="Public Property RefreshFrequencyMins As Nullable(Of Integer)" />
       <MemberSignature Language="F#" Value="member this.RefreshFrequencyMins : Nullable&lt;int&gt; with get, set" Usage="Microsoft.Azure.Management.Automation.Models.DscMetaConfiguration.RefreshFrequencyMins" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Nullable&lt;int&gt; RefreshFrequencyMins { Nullable&lt;int&gt; get(); void set(Nullable&lt;int&gt; value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Automation</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>3.0.1.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="refreshFrequencyMins")</AttributeName>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty(PropertyName="refreshFrequencyMins")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty(PropertyName="refreshFrequencyMins")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>

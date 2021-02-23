@@ -1,13 +1,12 @@
-﻿<Type Name="TemplatePushMessage" FullName="Microsoft.Azure.Mobile.Server.TemplatePushMessage">
+<Type Name="TemplatePushMessage" FullName="Microsoft.Azure.Mobile.Server.TemplatePushMessage">
   <TypeSignature Language="C#" Value="public class TemplatePushMessage : System.Collections.Generic.Dictionary&lt;string,string&gt;, Microsoft.Azure.Mobile.Server.Notifications.IPushMessage" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable beforefieldinit TemplatePushMessage extends System.Collections.Generic.Dictionary`2&lt;string, string&gt; implements class Microsoft.Azure.Mobile.Server.Notifications.IPushMessage" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Azure.Mobile.Server.TemplatePushMessage" />
   <TypeSignature Language="VB.NET" Value="Public Class TemplatePushMessage&#xA;Inherits Dictionary(Of String, String)&#xA;Implements IPushMessage" />
   <TypeSignature Language="F#" Value="type TemplatePushMessage = class&#xA;    inherit Dictionary&lt;string, string&gt;&#xA;    interface IPushMessage" />
-  <TypeSignature Language="C++ CLI" Value="public ref class TemplatePushMessage : System::Collections::Generic::Dictionary&lt;System::String ^, System::String ^&gt;, Microsoft::Azure::Mobile::Server::Notifications::IPushMessage" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Azure.Mobile.Server.Notifications</AssemblyName>
-    <AssemblyVersion>2.0.0.0</AssemblyVersion>
+    <AssemblyVersion>2.0.3.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Collections.Generic.Dictionary&lt;System.String,System.String&gt;</BaseTypeName>
@@ -23,7 +22,12 @@
   </Interfaces>
   <Attributes>
     <Attribute>
-      <AttributeName>System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Naming", "CA1710:IdentifiersShouldHaveCorrectSuffix", Justification="This describes a message.")</AttributeName>
+      <AttributeName Language="C#">[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Naming", "CA1710:IdentifiersShouldHaveCorrectSuffix", Justification="This describes a message.")]</AttributeName>
+      <AttributeName Language="F#">[&lt;System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Naming", "CA1710:IdentifiersShouldHaveCorrectSuffix", Justification="This describes a message.")&gt;]</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName Language="C#">[System.Serializable]</AttributeName>
+      <AttributeName Language="F#">[&lt;System.Serializable&gt;]</AttributeName>
     </Attribute>
   </Attributes>
   <Docs>
@@ -45,13 +49,10 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Mobile.Server.TemplatePushMessage.#ctor" />
       <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; TemplatePushMessage();" />
-      <MemberSignature Language="C++ CX" Value="public:&#xA; TemplatePushMessage();" />
-      <MemberSignature Language="C++ WINRT" Value=" TemplatePushMessage();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Mobile.Server.Notifications</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.3.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
@@ -67,11 +68,10 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Mobile.Server.TemplatePushMessage.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)" />
       <MemberSignature Language="VB.NET" Value="Protected Sub New (info As SerializationInfo, context As StreamingContext)" />
       <MemberSignature Language="F#" Value="new Microsoft.Azure.Mobile.Server.TemplatePushMessage : System.Runtime.Serialization.SerializationInfo * System.Runtime.Serialization.StreamingContext -&gt; Microsoft.Azure.Mobile.Server.TemplatePushMessage" Usage="new Microsoft.Azure.Mobile.Server.TemplatePushMessage (info, context)" />
-      <MemberSignature Language="C++ CLI" Value="protected:&#xA; TemplatePushMessage(System::Runtime::Serialization::SerializationInfo ^ info, System::Runtime::Serialization::StreamingContext context);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Mobile.Server.Notifications</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.3.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="info" Type="System.Runtime.Serialization.SerializationInfo" />

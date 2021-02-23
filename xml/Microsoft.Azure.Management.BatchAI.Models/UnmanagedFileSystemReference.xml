@@ -1,14 +1,12 @@
-﻿<Type Name="UnmanagedFileSystemReference" FullName="Microsoft.Azure.Management.BatchAI.Models.UnmanagedFileSystemReference">
+<Type Name="UnmanagedFileSystemReference" FullName="Microsoft.Azure.Management.BatchAI.Models.UnmanagedFileSystemReference">
   <TypeSignature Language="C#" Value="public class UnmanagedFileSystemReference" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit UnmanagedFileSystemReference extends System.Object" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Azure.Management.BatchAI.Models.UnmanagedFileSystemReference" />
   <TypeSignature Language="VB.NET" Value="Public Class UnmanagedFileSystemReference" />
   <TypeSignature Language="F#" Value="type UnmanagedFileSystemReference = class" />
-  <TypeSignature Language="C++ CLI" Value="public ref class UnmanagedFileSystemReference" />
-  <TypeSignature Language="C++ WINRT" Value="[Windows::Foundation::Metadata::WebHostHidden]&#xA;class UnmanagedFileSystemReference" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Azure.Management.BatchAI</AssemblyName>
-    <AssemblyVersion>1.0.0.0</AssemblyVersion>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
@@ -16,7 +14,7 @@
   <Interfaces />
   <Docs>
     <summary>
-            Details of the file system to mount on the compute cluster nodes.
+            Unmananged file system mounting configuration.
             </summary>
     <remarks>To be added.</remarks>
   </Docs>
@@ -26,13 +24,10 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Management.BatchAI.Models.UnmanagedFileSystemReference.#ctor" />
       <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; UnmanagedFileSystemReference();" />
-      <MemberSignature Language="C++ CX" Value="public:&#xA; UnmanagedFileSystemReference();" />
-      <MemberSignature Language="C++ WINRT" Value=" UnmanagedFileSystemReference();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.BatchAI</AssemblyName>
-        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
@@ -49,23 +44,18 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Management.BatchAI.Models.UnmanagedFileSystemReference.#ctor(System.String,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (mountCommand As String, relativeMountPath As String)" />
       <MemberSignature Language="F#" Value="new Microsoft.Azure.Management.BatchAI.Models.UnmanagedFileSystemReference : string * string -&gt; Microsoft.Azure.Management.BatchAI.Models.UnmanagedFileSystemReference" Usage="new Microsoft.Azure.Management.BatchAI.Models.UnmanagedFileSystemReference (mountCommand, relativeMountPath)" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; UnmanagedFileSystemReference(System::String ^ mountCommand, System::String ^ relativeMountPath);" />
-      <MemberSignature Language="C++ CX" Value="public:&#xA; UnmanagedFileSystemReference(Platform::String ^ mountCommand, Platform::String ^ relativeMountPath);" />
-      <MemberSignature Language="C++ WINRT" Value=" UnmanagedFileSystemReference(std::wstring const &amp; mountCommand, std::wstring const &amp; relativeMountPath);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.BatchAI</AssemblyName>
-        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="mountCommand" Type="System.String" />
         <Parameter Name="relativeMountPath" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="mountCommand">Command used to mount the unmanaged file
-            system.</param>
-        <param name="relativeMountPath">Specifies the relative path on the
-            compute cluster node where the file system will be mounted.</param>
+        <param name="mountCommand">Mount command.</param>
+        <param name="relativeMountPath">Relative mount path.</param>
         <summary>
             Initializes a new instance of the UnmanagedFileSystemReference
             class.
@@ -79,16 +69,15 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Management.BatchAI.Models.UnmanagedFileSystemReference.MountCommand" />
       <MemberSignature Language="VB.NET" Value="Public Property MountCommand As String" />
       <MemberSignature Language="F#" Value="member this.MountCommand : string with get, set" Usage="Microsoft.Azure.Management.BatchAI.Models.UnmanagedFileSystemReference.MountCommand" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ MountCommand { System::String ^ get(); void set(System::String ^ value); };" />
-      <MemberSignature Language="C++ CX" Value="public:&#xA; property Platform::String ^ MountCommand { Platform::String ^ get(); void set(Platform::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.BatchAI</AssemblyName>
-        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="mountCommand")</AttributeName>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty(PropertyName="mountCommand")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty(PropertyName="mountCommand")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -96,10 +85,13 @@
       </ReturnValue>
       <Docs>
         <summary>
-            Gets or sets command used to mount the unmanaged file system.
+            Gets or sets mount command.
             </summary>
         <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <remarks>
+            Mount command line. Note, Batch AI will append mount path to the
+            command on its own.
+            </remarks>
       </Docs>
     </Member>
     <Member MemberName="RelativeMountPath">
@@ -108,16 +100,15 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Management.BatchAI.Models.UnmanagedFileSystemReference.RelativeMountPath" />
       <MemberSignature Language="VB.NET" Value="Public Property RelativeMountPath As String" />
       <MemberSignature Language="F#" Value="member this.RelativeMountPath : string with get, set" Usage="Microsoft.Azure.Management.BatchAI.Models.UnmanagedFileSystemReference.RelativeMountPath" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ RelativeMountPath { System::String ^ get(); void set(System::String ^ value); };" />
-      <MemberSignature Language="C++ CX" Value="public:&#xA; property Platform::String ^ RelativeMountPath { Platform::String ^ get(); void set(Platform::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.BatchAI</AssemblyName>
-        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="relativeMountPath")</AttributeName>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty(PropertyName="relativeMountPath")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty(PropertyName="relativeMountPath")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -125,14 +116,15 @@
       </ReturnValue>
       <Docs>
         <summary>
-            Gets or sets specifies the relative path on the compute cluster
-            node where the file system will be mounted.
+            Gets or sets relative mount path.
             </summary>
         <value>To be added.</value>
         <remarks>
-            Note that all cluster level unmanaged file system will be mounted
-            under $AZ_BATCHAI_MOUNT_ROOT location and job level unmanaged file
-            system will be mounted under $AZ_BATCHAI_JOB_MOUNT_ROOT.
+            The relative path on the compute node where the unmanaged file
+            system will be mounted. Note that all cluster level unmanaged file
+            systems will be mounted under $AZ_BATCHAI_MOUNT_ROOT location and
+            all job level unmanaged file systems will be mounted under
+            $AZ_BATCHAI_JOB_MOUNT_ROOT.
             </remarks>
       </Docs>
     </Member>
@@ -142,13 +134,10 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Management.BatchAI.Models.UnmanagedFileSystemReference.Validate" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Sub Validate ()" />
       <MemberSignature Language="F#" Value="abstract member Validate : unit -&gt; unit&#xA;override this.Validate : unit -&gt; unit" Usage="unmanagedFileSystemReference.Validate " />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Validate();" />
-      <MemberSignature Language="C++ CX" Value="public:&#xA; virtual void Validate();" />
-      <MemberSignature Language="C++ WINRT" Value=" virtual void Validate();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.BatchAI</AssemblyName>
-        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>

@@ -1,11 +1,9 @@
-﻿<Type Name="ElasticPool" FullName="Microsoft.Azure.Management.Sql.Models.ElasticPool">
+<Type Name="ElasticPool" FullName="Microsoft.Azure.Management.Sql.Models.ElasticPool">
   <TypeSignature Language="C#" Value="public class ElasticPool : Microsoft.Azure.Management.Sql.Models.TrackedResource" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit ElasticPool extends Microsoft.Azure.Management.Sql.Models.TrackedResource" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Azure.Management.Sql.Models.ElasticPool" />
   <TypeSignature Language="VB.NET" Value="Public Class ElasticPool&#xA;Inherits TrackedResource" />
   <TypeSignature Language="F#" Value="type ElasticPool = class&#xA;    inherit TrackedResource" />
-  <TypeSignature Language="C++ CLI" Value="public ref class ElasticPool : Microsoft::Azure::Management::Sql::Models::TrackedResource" />
-  <TypeSignature Language="C++ WINRT" Value="[Windows::Foundation::Metadata::WebHostHidden]&#xA;class ElasticPool : Microsoft::Azure::Management::Sql::Models::TrackedResource" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Azure.Management.Sql</AssemblyName>
     <AssemblyVersion>1.0.0.0</AssemblyVersion>
@@ -16,7 +14,8 @@
   <Interfaces />
   <Attributes>
     <Attribute>
-      <AttributeName>Microsoft.Rest.Serialization.JsonTransformation</AttributeName>
+      <AttributeName Language="C#">[Microsoft.Rest.Serialization.JsonTransformation]</AttributeName>
+      <AttributeName Language="F#">[&lt;Microsoft.Rest.Serialization.JsonTransformation&gt;]</AttributeName>
     </Attribute>
   </Attributes>
   <Docs>
@@ -31,9 +30,6 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Management.Sql.Models.ElasticPool.#ctor" />
       <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; ElasticPool();" />
-      <MemberSignature Language="C++ CX" Value="public:&#xA; ElasticPool();" />
-      <MemberSignature Language="C++ WINRT" Value=" ElasticPool();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Sql</AssemblyName>
@@ -48,10 +44,11 @@
       </Docs>
     </Member>
     <Member MemberName=".ctor">
-      <MemberSignature Language="C#" Value="public ElasticPool (string location, string id = null, string name = null, string type = null, System.Collections.Generic.IDictionary&lt;string,string&gt; tags = null, Microsoft.Azure.Management.Sql.Models.Sku sku = null, string kind = null, string state = null, Nullable&lt;DateTime&gt; creationDate = null, Nullable&lt;long&gt; maxSizeBytes = null, Microsoft.Azure.Management.Sql.Models.ElasticPoolPerDatabaseSettings perDatabaseSettings = null, Nullable&lt;bool&gt; zoneRedundant = null, string licenseType = null);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string location, string id, string name, string type, class System.Collections.Generic.IDictionary`2&lt;string, string&gt; tags, class Microsoft.Azure.Management.Sql.Models.Sku sku, string kind, string state, valuetype System.Nullable`1&lt;valuetype System.DateTime&gt; creationDate, valuetype System.Nullable`1&lt;int64&gt; maxSizeBytes, class Microsoft.Azure.Management.Sql.Models.ElasticPoolPerDatabaseSettings perDatabaseSettings, valuetype System.Nullable`1&lt;bool&gt; zoneRedundant, string licenseType) cil managed" />
-      <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Management.Sql.Models.ElasticPool.#ctor(System.String,System.String,System.String,System.String,System.Collections.Generic.IDictionary{System.String,System.String},Microsoft.Azure.Management.Sql.Models.Sku,System.String,System.String,System.Nullable{System.DateTime},System.Nullable{System.Int64},Microsoft.Azure.Management.Sql.Models.ElasticPoolPerDatabaseSettings,System.Nullable{System.Boolean},System.String)" />
-      <MemberSignature Language="F#" Value="new Microsoft.Azure.Management.Sql.Models.ElasticPool : string * string * string * string * System.Collections.Generic.IDictionary&lt;string, string&gt; * Microsoft.Azure.Management.Sql.Models.Sku * string * string * Nullable&lt;DateTime&gt; * Nullable&lt;int64&gt; * Microsoft.Azure.Management.Sql.Models.ElasticPoolPerDatabaseSettings * Nullable&lt;bool&gt; * string -&gt; Microsoft.Azure.Management.Sql.Models.ElasticPool" Usage="new Microsoft.Azure.Management.Sql.Models.ElasticPool (location, id, name, type, tags, sku, kind, state, creationDate, maxSizeBytes, perDatabaseSettings, zoneRedundant, licenseType)" />
+      <MemberSignature Language="C#" Value="public ElasticPool (string location, string id = default, string name = default, string type = default, System.Collections.Generic.IDictionary&lt;string,string&gt; tags = default, Microsoft.Azure.Management.Sql.Models.Sku sku = default, string kind = default, string state = default, DateTime? creationDate = default, long? maxSizeBytes = default, Microsoft.Azure.Management.Sql.Models.ElasticPoolPerDatabaseSettings perDatabaseSettings = default, bool? zoneRedundant = default, string licenseType = default, string maintenanceConfigurationId = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string location, string id, string name, string type, class System.Collections.Generic.IDictionary`2&lt;string, string&gt; tags, class Microsoft.Azure.Management.Sql.Models.Sku sku, string kind, string state, valuetype System.Nullable`1&lt;valuetype System.DateTime&gt; creationDate, valuetype System.Nullable`1&lt;int64&gt; maxSizeBytes, class Microsoft.Azure.Management.Sql.Models.ElasticPoolPerDatabaseSettings perDatabaseSettings, valuetype System.Nullable`1&lt;bool&gt; zoneRedundant, string licenseType, string maintenanceConfigurationId) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Management.Sql.Models.ElasticPool.#ctor(System.String,System.String,System.String,System.String,System.Collections.Generic.IDictionary{System.String,System.String},Microsoft.Azure.Management.Sql.Models.Sku,System.String,System.String,System.Nullable{System.DateTime},System.Nullable{System.Int64},Microsoft.Azure.Management.Sql.Models.ElasticPoolPerDatabaseSettings,System.Nullable{System.Boolean},System.String,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (location As String, Optional id As String = Nothing, Optional name As String = Nothing, Optional type As String = Nothing, Optional tags As IDictionary(Of String, String) = Nothing, Optional sku As Sku = Nothing, Optional kind As String = Nothing, Optional state As String = Nothing, Optional creationDate As Nullable(Of DateTime) = Nothing, Optional maxSizeBytes As Nullable(Of Long) = Nothing, Optional perDatabaseSettings As ElasticPoolPerDatabaseSettings = Nothing, Optional zoneRedundant As Nullable(Of Boolean) = Nothing, Optional licenseType As String = Nothing, Optional maintenanceConfigurationId As String = Nothing)" />
+      <MemberSignature Language="F#" Value="new Microsoft.Azure.Management.Sql.Models.ElasticPool : string * string * string * string * System.Collections.Generic.IDictionary&lt;string, string&gt; * Microsoft.Azure.Management.Sql.Models.Sku * string * string * Nullable&lt;DateTime&gt; * Nullable&lt;int64&gt; * Microsoft.Azure.Management.Sql.Models.ElasticPoolPerDatabaseSettings * Nullable&lt;bool&gt; * string * string -&gt; Microsoft.Azure.Management.Sql.Models.ElasticPool" Usage="new Microsoft.Azure.Management.Sql.Models.ElasticPool (location, id, name, type, tags, sku, kind, state, creationDate, maxSizeBytes, perDatabaseSettings, zoneRedundant, licenseType, maintenanceConfigurationId)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Sql</AssemblyName>
@@ -71,6 +68,7 @@
         <Parameter Name="perDatabaseSettings" Type="Microsoft.Azure.Management.Sql.Models.ElasticPoolPerDatabaseSettings" />
         <Parameter Name="zoneRedundant" Type="System.Nullable&lt;System.Boolean&gt;" />
         <Parameter Name="licenseType" Type="System.String" />
+        <Parameter Name="maintenanceConfigurationId" Type="System.String" />
       </Parameters>
       <Docs>
         <param name="location">Resource location.</param>
@@ -78,36 +76,49 @@
         <param name="name">Resource name.</param>
         <param name="type">Resource type.</param>
         <param name="tags">Resource tags.</param>
-        <param name="sku">To be added.</param>
+        <param name="sku">The elastic pool SKU.
+            
+             The list of SKUs may vary by region and support offer. To determine
+             the SKUs (including the SKU name, tier/edition, family, and
+             capacity) that are available to your subscription in an Azure
+             region, use the `Capabilities_ListByLocation` REST API or the
+             following command:
+            
+             ```azurecli
+             az sql elastic-pool list-editions -l &lt;location&gt; -o table
+             ````
+             </param>
         <param name="kind">Kind of elastic pool. This is metadata used for
-            the Azure portal experience.</param>
+             the Azure portal experience.</param>
         <param name="state">The state of the elastic pool. Possible values
-            include: 'Creating', 'Ready', 'Disabled'</param>
+             include: 'Creating', 'Ready', 'Disabled'</param>
         <param name="creationDate">The creation date of the elastic pool
-            (ISO8601 format).</param>
+             (ISO8601 format).</param>
         <param name="maxSizeBytes">The storage limit for the database
-            elastic pool in bytes.</param>
+             elastic pool in bytes.</param>
         <param name="perDatabaseSettings">The per database settings for the
-            elastic pool.</param>
+             elastic pool.</param>
         <param name="zoneRedundant">Whether or not this elastic pool is
-            zone redundant, which means the replicas of this elastic pool will
-            be spread across multiple availability zones.</param>
+             zone redundant, which means the replicas of this elastic pool will
+             be spread across multiple availability zones.</param>
         <param name="licenseType">The license type to apply for this
-            elastic pool. Possible values include: 'LicenseIncluded',
-            'BasePrice'</param>
+             elastic pool. Possible values include: 'LicenseIncluded',
+             'BasePrice'</param>
+        <param name="maintenanceConfigurationId">Maintenance configuration
+             id assigned to the elastic pool. This configuration defines the
+             period when the maintenance updates will be rolled out.</param>
         <summary>
-            Initializes a new instance of the ElasticPool class.
-            </summary>
+             Initializes a new instance of the ElasticPool class.
+             </summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="CreationDate">
-      <MemberSignature Language="C#" Value="public Nullable&lt;DateTime&gt; CreationDate { get; }" />
+      <MemberSignature Language="C#" Value="public DateTime? CreationDate { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;valuetype System.DateTime&gt; CreationDate" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Management.Sql.Models.ElasticPool.CreationDate" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property CreationDate As Nullable(Of DateTime)" />
       <MemberSignature Language="F#" Value="member this.CreationDate : Nullable&lt;DateTime&gt;" Usage="Microsoft.Azure.Management.Sql.Models.ElasticPool.CreationDate" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Nullable&lt;DateTime&gt; CreationDate { Nullable&lt;DateTime&gt; get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Sql</AssemblyName>
@@ -115,7 +126,8 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="properties.creationDate")</AttributeName>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty(PropertyName="properties.creationDate")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty(PropertyName="properties.creationDate")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -130,12 +142,11 @@
       </Docs>
     </Member>
     <Member MemberName="DatabaseDtuMax">
-      <MemberSignature Language="C#" Value="public Nullable&lt;int&gt; DatabaseDtuMax { get; set; }" />
+      <MemberSignature Language="C#" Value="public int? DatabaseDtuMax { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;int32&gt; DatabaseDtuMax" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Management.Sql.Models.ElasticPool.DatabaseDtuMax" />
       <MemberSignature Language="VB.NET" Value="Public Property DatabaseDtuMax As Nullable(Of Integer)" />
       <MemberSignature Language="F#" Value="member this.DatabaseDtuMax : Nullable&lt;int&gt; with get, set" Usage="Microsoft.Azure.Management.Sql.Models.ElasticPool.DatabaseDtuMax" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Nullable&lt;int&gt; DatabaseDtuMax { Nullable&lt;int&gt; get(); void set(Nullable&lt;int&gt; value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Sql</AssemblyName>
@@ -143,7 +154,8 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonIgnore</AttributeName>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonIgnore]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonIgnore&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -158,12 +170,11 @@
       </Docs>
     </Member>
     <Member MemberName="DatabaseDtuMin">
-      <MemberSignature Language="C#" Value="public Nullable&lt;int&gt; DatabaseDtuMin { get; set; }" />
+      <MemberSignature Language="C#" Value="public int? DatabaseDtuMin { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;int32&gt; DatabaseDtuMin" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Management.Sql.Models.ElasticPool.DatabaseDtuMin" />
       <MemberSignature Language="VB.NET" Value="Public Property DatabaseDtuMin As Nullable(Of Integer)" />
       <MemberSignature Language="F#" Value="member this.DatabaseDtuMin : Nullable&lt;int&gt; with get, set" Usage="Microsoft.Azure.Management.Sql.Models.ElasticPool.DatabaseDtuMin" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Nullable&lt;int&gt; DatabaseDtuMin { Nullable&lt;int&gt; get(); void set(Nullable&lt;int&gt; value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Sql</AssemblyName>
@@ -171,7 +182,8 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonIgnore</AttributeName>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonIgnore]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonIgnore&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -186,12 +198,11 @@
       </Docs>
     </Member>
     <Member MemberName="Dtu">
-      <MemberSignature Language="C#" Value="public Nullable&lt;int&gt; Dtu { get; }" />
+      <MemberSignature Language="C#" Value="public int? Dtu { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;int32&gt; Dtu" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Management.Sql.Models.ElasticPool.Dtu" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Dtu As Nullable(Of Integer)" />
       <MemberSignature Language="F#" Value="member this.Dtu : Nullable&lt;int&gt;" Usage="Microsoft.Azure.Management.Sql.Models.ElasticPool.Dtu" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Nullable&lt;int&gt; Dtu { Nullable&lt;int&gt; get(); void set(Nullable&lt;int&gt; value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Sql</AssemblyName>
@@ -199,7 +210,8 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonIgnore</AttributeName>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonIgnore]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonIgnore&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -219,8 +231,6 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Management.Sql.Models.ElasticPool.Edition" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Edition As String" />
       <MemberSignature Language="F#" Value="member this.Edition : string" Usage="Microsoft.Azure.Management.Sql.Models.ElasticPool.Edition" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Edition { System::String ^ get(); void set(System::String ^ value); };" />
-      <MemberSignature Language="C++ CX" Value="public:&#xA; property Platform::String ^ Edition { Platform::String ^ get(); void set(Platform::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Sql</AssemblyName>
@@ -228,7 +238,8 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonIgnore</AttributeName>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonIgnore]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonIgnore&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -248,8 +259,6 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Management.Sql.Models.ElasticPool.Kind" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Kind As String" />
       <MemberSignature Language="F#" Value="member this.Kind : string" Usage="Microsoft.Azure.Management.Sql.Models.ElasticPool.Kind" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Kind { System::String ^ get(); };" />
-      <MemberSignature Language="C++ CX" Value="public:&#xA; property Platform::String ^ Kind { Platform::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Sql</AssemblyName>
@@ -257,7 +266,8 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="kind")</AttributeName>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty(PropertyName="kind")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty(PropertyName="kind")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -285,7 +295,8 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="properties.licenseType")</AttributeName>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty(PropertyName="properties.licenseType")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty(PropertyName="properties.licenseType")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -300,8 +311,38 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <Member MemberName="MaintenanceConfigurationId">
+      <MemberSignature Language="C#" Value="public string MaintenanceConfigurationId { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string MaintenanceConfigurationId" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Management.Sql.Models.ElasticPool.MaintenanceConfigurationId" />
+      <MemberSignature Language="VB.NET" Value="Public Property MaintenanceConfigurationId As String" />
+      <MemberSignature Language="F#" Value="member this.MaintenanceConfigurationId : string with get, set" Usage="Microsoft.Azure.Management.Sql.Models.ElasticPool.MaintenanceConfigurationId" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Azure.Management.Sql</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty(PropertyName="properties.maintenanceConfigurationId")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty(PropertyName="properties.maintenanceConfigurationId")&gt;]</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets or sets maintenance configuration id assigned to the elastic
+            pool. This configuration defines the period when the maintenance
+            updates will be rolled out.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
     <Member MemberName="MaxSizeBytes">
-      <MemberSignature Language="C#" Value="public Nullable&lt;long&gt; MaxSizeBytes { get; set; }" />
+      <MemberSignature Language="C#" Value="public long? MaxSizeBytes { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;int64&gt; MaxSizeBytes" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Management.Sql.Models.ElasticPool.MaxSizeBytes" />
       <MemberSignature Language="VB.NET" Value="Public Property MaxSizeBytes As Nullable(Of Long)" />
@@ -313,7 +354,8 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="properties.maxSizeBytes")</AttributeName>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty(PropertyName="properties.maxSizeBytes")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty(PropertyName="properties.maxSizeBytes")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -341,7 +383,8 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="properties.perDatabaseSettings")</AttributeName>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty(PropertyName="properties.perDatabaseSettings")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty(PropertyName="properties.perDatabaseSettings")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -368,14 +411,29 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="sku")</AttributeName>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty(PropertyName="sku")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty(PropertyName="sku")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
         <ReturnType>Microsoft.Azure.Management.Sql.Models.Sku</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary />
+        <summary>
+             Gets or sets the elastic pool SKU.
+            
+             The list of SKUs may vary by region and support offer. To determine
+             the SKUs (including the SKU name, tier/edition, family, and
+             capacity) that are available to your subscription in an Azure
+             region, use the `Capabilities_ListByLocation` REST API or the
+             following command:
+            
+             ```azurecli
+             az sql elastic-pool list-editions -l &amp;lt;location&amp;gt; -o
+             table
+             ````
+            
+             </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -386,8 +444,6 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Management.Sql.Models.ElasticPool.State" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property State As String" />
       <MemberSignature Language="F#" Value="member this.State : string" Usage="Microsoft.Azure.Management.Sql.Models.ElasticPool.State" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ State { System::String ^ get(); };" />
-      <MemberSignature Language="C++ CX" Value="public:&#xA; property Platform::String ^ State { Platform::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Sql</AssemblyName>
@@ -395,7 +451,8 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="properties.state")</AttributeName>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty(PropertyName="properties.state")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty(PropertyName="properties.state")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -411,12 +468,11 @@
       </Docs>
     </Member>
     <Member MemberName="StorageMB">
-      <MemberSignature Language="C#" Value="public Nullable&lt;int&gt; StorageMB { get; set; }" />
+      <MemberSignature Language="C#" Value="public int? StorageMB { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;int32&gt; StorageMB" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Management.Sql.Models.ElasticPool.StorageMB" />
       <MemberSignature Language="VB.NET" Value="Public Property StorageMB As Nullable(Of Integer)" />
       <MemberSignature Language="F#" Value="member this.StorageMB : Nullable&lt;int&gt; with get, set" Usage="Microsoft.Azure.Management.Sql.Models.ElasticPool.StorageMB" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Nullable&lt;int&gt; StorageMB { Nullable&lt;int&gt; get(); void set(Nullable&lt;int&gt; value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Sql</AssemblyName>
@@ -424,7 +480,8 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonIgnore</AttributeName>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonIgnore]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonIgnore&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -444,9 +501,6 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Management.Sql.Models.ElasticPool.Validate" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub Validate ()" />
       <MemberSignature Language="F#" Value="override this.Validate : unit -&gt; unit" Usage="elasticPool.Validate " />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void Validate();" />
-      <MemberSignature Language="C++ CX" Value="public:&#xA; override void Validate();" />
-      <MemberSignature Language="C++ WINRT" Value=" override void Validate();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Sql</AssemblyName>
@@ -467,12 +521,11 @@
       </Docs>
     </Member>
     <Member MemberName="ZoneRedundant">
-      <MemberSignature Language="C#" Value="public Nullable&lt;bool&gt; ZoneRedundant { get; set; }" />
+      <MemberSignature Language="C#" Value="public bool? ZoneRedundant { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;bool&gt; ZoneRedundant" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Management.Sql.Models.ElasticPool.ZoneRedundant" />
       <MemberSignature Language="VB.NET" Value="Public Property ZoneRedundant As Nullable(Of Boolean)" />
       <MemberSignature Language="F#" Value="member this.ZoneRedundant : Nullable&lt;bool&gt; with get, set" Usage="Microsoft.Azure.Management.Sql.Models.ElasticPool.ZoneRedundant" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Nullable&lt;bool&gt; ZoneRedundant { Nullable&lt;bool&gt; get(); void set(Nullable&lt;bool&gt; value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Sql</AssemblyName>
@@ -480,7 +533,8 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="properties.zoneRedundant")</AttributeName>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty(PropertyName="properties.zoneRedundant")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty(PropertyName="properties.zoneRedundant")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>

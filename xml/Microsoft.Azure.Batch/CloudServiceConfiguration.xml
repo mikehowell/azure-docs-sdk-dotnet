@@ -1,15 +1,14 @@
-﻿<Type Name="CloudServiceConfiguration" FullName="Microsoft.Azure.Batch.CloudServiceConfiguration">
+<Type Name="CloudServiceConfiguration" FullName="Microsoft.Azure.Batch.CloudServiceConfiguration">
   <TypeSignature Language="C#" Value="public class CloudServiceConfiguration" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit CloudServiceConfiguration extends System.Object" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Azure.Batch.CloudServiceConfiguration" />
   <TypeSignature Language="VB.NET" Value="Public Class CloudServiceConfiguration" />
-  <TypeSignature Language="F#" Value="type CloudServiceConfiguration = class&#xA;    interface ITransportObjectProvider&lt;CloudServiceConfiguration&gt;&#xA;    interface IPropertyMetadata&#xA;    interface IModifiable&#xA;    interface IReadOnly" />
-  <TypeSignature Language="C++ CLI" Value="public ref class CloudServiceConfiguration" />
-  <TypeSignature Language="C++ WINRT" Value="[Windows::Foundation::Metadata::WebHostHidden]&#xA;class CloudServiceConfiguration" />
+  <TypeSignature Language="F#" Value="type CloudServiceConfiguration = class" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Azure.Batch</AssemblyName>
-    <AssemblyVersion>7.1.0.0</AssemblyVersion>
-    <AssemblyVersion>8.0.0.0</AssemblyVersion>
+    <AssemblyVersion>12.0.0.0</AssemblyVersion>
+    <AssemblyVersion>13.0.0.0</AssemblyVersion>
+    <AssemblyVersion>14.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
@@ -23,55 +22,29 @@
   </Docs>
   <Members>
     <Member MemberName=".ctor">
-      <MemberSignature Language="C#" Value="public CloudServiceConfiguration (string osFamily, string targetOSVersion = null);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string osFamily, string targetOSVersion) cil managed" />
+      <MemberSignature Language="C#" Value="public CloudServiceConfiguration (string osFamily, string osVersion = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string osFamily, string osVersion) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Batch.CloudServiceConfiguration.#ctor(System.String,System.String)" />
-      <MemberSignature Language="VB.NET" Value="Public Sub New (osFamily As String, Optional targetOSVersion As String = null)" />
-      <MemberSignature Language="F#" Value="new Microsoft.Azure.Batch.CloudServiceConfiguration : string * string -&gt; Microsoft.Azure.Batch.CloudServiceConfiguration" Usage="new Microsoft.Azure.Batch.CloudServiceConfiguration (osFamily, targetOSVersion)" />
-      <MemberSignature Language="C++ WINRT" Value=" CloudServiceConfiguration(std::wstring const &amp; osFamily, std::wstring const &amp; targetOSVersion = null);" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (osFamily As String, Optional osVersion As String = Nothing)" />
+      <MemberSignature Language="F#" Value="new Microsoft.Azure.Batch.CloudServiceConfiguration : string * string -&gt; Microsoft.Azure.Batch.CloudServiceConfiguration" Usage="new Microsoft.Azure.Batch.CloudServiceConfiguration (osFamily, osVersion)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Batch</AssemblyName>
-        <AssemblyVersion>7.1.0.0</AssemblyVersion>
-        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>12.0.0.0</AssemblyVersion>
+        <AssemblyVersion>13.0.0.0</AssemblyVersion>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="osFamily" Type="System.String" />
-        <Parameter Name="targetOSVersion" Type="System.String" />
+        <Parameter Name="osVersion" Type="System.String" />
       </Parameters>
       <Docs>
         <param name="osFamily">The Azure Guest OS family to be installed on the virtual machines in the pool.</param>
-        <param name="targetOSVersion">The Azure Guest OS version to be installed on the virtual machines in the pool. If no value is provided, the 
+        <param name="osVersion">The Azure Guest OS version to be installed on the virtual machines in the pool. If no value is provided, the 
             Batch service will default to "'*", which specifies the latest operating system version for the <see cref="P:Microsoft.Azure.Batch.CloudServiceConfiguration.OSFamily" />.</param>
         <summary>
             Initializes a new instance of the <see cref="T:Microsoft.Azure.Batch.CloudServiceConfiguration" /> class.
             </summary>
-        <remarks>To be added.</remarks>
-      </Docs>
-    </Member>
-    <Member MemberName="CurrentOSVersion">
-      <MemberSignature Language="C#" Value="public string CurrentOSVersion { get; }" />
-      <MemberSignature Language="ILAsm" Value=".property instance string CurrentOSVersion" />
-      <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Batch.CloudServiceConfiguration.CurrentOSVersion" />
-      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property CurrentOSVersion As String" />
-      <MemberSignature Language="F#" Value="member this.CurrentOSVersion : string" Usage="Microsoft.Azure.Batch.CloudServiceConfiguration.CurrentOSVersion" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ CurrentOSVersion { System::String ^ get(); };" />
-      <MemberSignature Language="C++ CX" Value="public:&#xA; property Platform::String ^ CurrentOSVersion { Platform::String ^ get(); };" />
-      <MemberType>Property</MemberType>
-      <AssemblyInfo>
-        <AssemblyName>Microsoft.Azure.Batch</AssemblyName>
-        <AssemblyVersion>7.1.0.0</AssemblyVersion>
-        <AssemblyVersion>8.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <ReturnValue>
-        <ReturnType>System.String</ReturnType>
-      </ReturnValue>
-      <Docs>
-        <summary>
-            Gets the Azure Guest OS version currently installed on the virtual machines in the pool. This may differ from 
-            <see cref="P:Microsoft.Azure.Batch.CloudServiceConfiguration.TargetOSVersion" /> if the pool state is <see cref="F:Microsoft.Azure.Batch.Common.PoolState.Upgrading" />.
-            </summary>
-        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -81,13 +54,12 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Batch.CloudServiceConfiguration.OSFamily" />
       <MemberSignature Language="VB.NET" Value="Public Property OSFamily As String" />
       <MemberSignature Language="F#" Value="member this.OSFamily : string with get, set" Usage="Microsoft.Azure.Batch.CloudServiceConfiguration.OSFamily" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ OSFamily { System::String ^ get(); void set(System::String ^ value); };" />
-      <MemberSignature Language="C++ CX" Value="public:&#xA; property Platform::String ^ OSFamily { Platform::String ^ get(); void set(Platform::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Batch</AssemblyName>
-        <AssemblyVersion>7.1.0.0</AssemblyVersion>
-        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>12.0.0.0</AssemblyVersion>
+        <AssemblyVersion>13.0.0.0</AssemblyVersion>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -102,19 +74,18 @@
             </remarks>
       </Docs>
     </Member>
-    <Member MemberName="TargetOSVersion">
-      <MemberSignature Language="C#" Value="public string TargetOSVersion { get; set; }" />
-      <MemberSignature Language="ILAsm" Value=".property instance string TargetOSVersion" />
-      <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Batch.CloudServiceConfiguration.TargetOSVersion" />
-      <MemberSignature Language="VB.NET" Value="Public Property TargetOSVersion As String" />
-      <MemberSignature Language="F#" Value="member this.TargetOSVersion : string with get, set" Usage="Microsoft.Azure.Batch.CloudServiceConfiguration.TargetOSVersion" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ TargetOSVersion { System::String ^ get(); void set(System::String ^ value); };" />
-      <MemberSignature Language="C++ CX" Value="public:&#xA; property Platform::String ^ TargetOSVersion { Platform::String ^ get(); void set(Platform::String ^ value); };" />
+    <Member MemberName="OSVersion">
+      <MemberSignature Language="C#" Value="public string OSVersion { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string OSVersion" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Batch.CloudServiceConfiguration.OSVersion" />
+      <MemberSignature Language="VB.NET" Value="Public Property OSVersion As String" />
+      <MemberSignature Language="F#" Value="member this.OSVersion : string with get, set" Usage="Microsoft.Azure.Batch.CloudServiceConfiguration.OSVersion" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Batch</AssemblyName>
-        <AssemblyVersion>7.1.0.0</AssemblyVersion>
-        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>12.0.0.0</AssemblyVersion>
+        <AssemblyVersion>13.0.0.0</AssemblyVersion>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>

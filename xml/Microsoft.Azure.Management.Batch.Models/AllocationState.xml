@@ -1,22 +1,23 @@
-﻿<Type Name="AllocationState" FullName="Microsoft.Azure.Management.Batch.Models.AllocationState">
+<Type Name="AllocationState" FullName="Microsoft.Azure.Management.Batch.Models.AllocationState">
   <TypeSignature Language="C#" Value="public enum AllocationState" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed AllocationState extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Azure.Management.Batch.Models.AllocationState" />
   <TypeSignature Language="VB.NET" Value="Public Enum AllocationState" />
   <TypeSignature Language="F#" Value="type AllocationState = " />
-  <TypeSignature Language="C++ CLI" Value="public enum class AllocationState" />
-  <TypeSignature Language="C++ CX" Value="public enum class AllocationState" />
-  <TypeSignature Language="C++ WINRT" Value="enum AllocationState" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Azure.Management.Batch</AssemblyName>
-    <AssemblyVersion>6.0.0.0</AssemblyVersion>
+    <AssemblyVersion>9.0.0.0</AssemblyVersion>
+    <AssemblyVersion>10.0.0.0</AssemblyVersion>
+    <AssemblyVersion>11.0.0.0</AssemblyVersion>
+    <AssemblyVersion>13.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Attributes>
     <Attribute>
-      <AttributeName>Newtonsoft.Json.JsonConverter(typeof(Newtonsoft.Json.Converters.StringEnumConverter))</AttributeName>
+      <AttributeName Language="C#">[Newtonsoft.Json.JsonConverter(typeof(Newtonsoft.Json.Converters.StringEnumConverter))]</AttributeName>
+      <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonConverter(typeof(Newtonsoft.Json.Converters.StringEnumConverter))&gt;]</AttributeName>
     </Attribute>
   </Attributes>
   <Docs>
@@ -32,17 +33,18 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.Azure.Management.Batch.Models.AllocationState.Resizing" />
       <MemberSignature Language="VB.NET" Value="Resizing" />
       <MemberSignature Language="F#" Value="Resizing = 1" Usage="Microsoft.Azure.Management.Batch.Models.AllocationState.Resizing" />
-      <MemberSignature Language="C++ CLI" Value="Resizing" />
-      <MemberSignature Language="C++ CX" Value="Resizing" />
-      <MemberSignature Language="C++ WINRT" Value="Resizing" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Batch</AssemblyName>
-        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+        <AssemblyVersion>11.0.0.0</AssemblyVersion>
+        <AssemblyVersion>13.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>System.Runtime.Serialization.EnumMember(Value="Resizing")</AttributeName>
+          <AttributeName Language="C#">[System.Runtime.Serialization.EnumMember(Value="Resizing")]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Runtime.Serialization.EnumMember(Value="Resizing")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -50,7 +52,10 @@
       </ReturnValue>
       <MemberValue>1</MemberValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+            The pool is resizing; that is, compute nodes are being added to or
+            removed from the pool.
+            </summary>
       </Docs>
     </Member>
     <Member MemberName="Steady">
@@ -59,17 +64,18 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.Azure.Management.Batch.Models.AllocationState.Steady" />
       <MemberSignature Language="VB.NET" Value="Steady" />
       <MemberSignature Language="F#" Value="Steady = 0" Usage="Microsoft.Azure.Management.Batch.Models.AllocationState.Steady" />
-      <MemberSignature Language="C++ CLI" Value="Steady" />
-      <MemberSignature Language="C++ CX" Value="Steady" />
-      <MemberSignature Language="C++ WINRT" Value="Steady" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Batch</AssemblyName>
-        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+        <AssemblyVersion>11.0.0.0</AssemblyVersion>
+        <AssemblyVersion>13.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>System.Runtime.Serialization.EnumMember(Value="Steady")</AttributeName>
+          <AttributeName Language="C#">[System.Runtime.Serialization.EnumMember(Value="Steady")]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Runtime.Serialization.EnumMember(Value="Steady")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -77,7 +83,12 @@
       </ReturnValue>
       <MemberValue>0</MemberValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+            The pool is not resizing. There are no changes to the number of
+            nodes in the pool in progress. A pool enters this state when it is
+            created and when no operations are being performed on the pool to
+            change the number of nodes.
+            </summary>
       </Docs>
     </Member>
     <Member MemberName="Stopping">
@@ -86,17 +97,18 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.Azure.Management.Batch.Models.AllocationState.Stopping" />
       <MemberSignature Language="VB.NET" Value="Stopping" />
       <MemberSignature Language="F#" Value="Stopping = 2" Usage="Microsoft.Azure.Management.Batch.Models.AllocationState.Stopping" />
-      <MemberSignature Language="C++ CLI" Value="Stopping" />
-      <MemberSignature Language="C++ CX" Value="Stopping" />
-      <MemberSignature Language="C++ WINRT" Value="Stopping" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Batch</AssemblyName>
-        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+        <AssemblyVersion>11.0.0.0</AssemblyVersion>
+        <AssemblyVersion>13.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>System.Runtime.Serialization.EnumMember(Value="Stopping")</AttributeName>
+          <AttributeName Language="C#">[System.Runtime.Serialization.EnumMember(Value="Stopping")]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Runtime.Serialization.EnumMember(Value="Stopping")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -104,7 +116,10 @@
       </ReturnValue>
       <MemberValue>2</MemberValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+            The pool was resizing, but the user has requested that the resize
+            be stopped, but the stop request has not yet been completed.
+            </summary>
       </Docs>
     </Member>
   </Members>

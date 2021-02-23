@@ -1,11 +1,9 @@
-﻿<Type Name="ClusterCodeVersionsResult" FullName="Microsoft.Azure.Management.ServiceFabric.Models.ClusterCodeVersionsResult">
+<Type Name="ClusterCodeVersionsResult" FullName="Microsoft.Azure.Management.ServiceFabric.Models.ClusterCodeVersionsResult">
   <TypeSignature Language="C#" Value="public class ClusterCodeVersionsResult" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit ClusterCodeVersionsResult extends System.Object" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Azure.Management.ServiceFabric.Models.ClusterCodeVersionsResult" />
   <TypeSignature Language="VB.NET" Value="Public Class ClusterCodeVersionsResult" />
   <TypeSignature Language="F#" Value="type ClusterCodeVersionsResult = class" />
-  <TypeSignature Language="C++ CLI" Value="public ref class ClusterCodeVersionsResult" />
-  <TypeSignature Language="C++ WINRT" Value="[Windows::Foundation::Metadata::WebHostHidden]&#xA;class ClusterCodeVersionsResult" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Azure.Management.ServiceFabric</AssemblyName>
     <AssemblyVersion>1.0.0.0</AssemblyVersion>
@@ -16,12 +14,13 @@
   <Interfaces />
   <Attributes>
     <Attribute>
-      <AttributeName>Microsoft.Rest.Serialization.JsonTransformation</AttributeName>
+      <AttributeName Language="C#">[Microsoft.Rest.Serialization.JsonTransformation]</AttributeName>
+      <AttributeName Language="F#">[&lt;Microsoft.Rest.Serialization.JsonTransformation&gt;]</AttributeName>
     </Attribute>
   </Attributes>
   <Docs>
     <summary>
-            The result of the ServiceFabric runtime versions
+            The result of the Service Fabric runtime versions
             </summary>
     <remarks>To be added.</remarks>
   </Docs>
@@ -31,9 +30,6 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Management.ServiceFabric.Models.ClusterCodeVersionsResult.#ctor" />
       <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; ClusterCodeVersionsResult();" />
-      <MemberSignature Language="C++ CX" Value="public:&#xA; ClusterCodeVersionsResult();" />
-      <MemberSignature Language="C++ WINRT" Value=" ClusterCodeVersionsResult();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.ServiceFabric</AssemblyName>
@@ -48,12 +44,11 @@
       </Docs>
     </Member>
     <Member MemberName=".ctor">
-      <MemberSignature Language="C#" Value="public ClusterCodeVersionsResult (string id = null, string name = null, string type = null, string codeVersion = null, string supportExpiryUtc = null, string environment = null);" />
+      <MemberSignature Language="C#" Value="public ClusterCodeVersionsResult (string id = default, string name = default, string type = default, string codeVersion = default, string supportExpiryUtc = default, string environment = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string id, string name, string type, string codeVersion, string supportExpiryUtc, string environment) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Management.ServiceFabric.Models.ClusterCodeVersionsResult.#ctor(System.String,System.String,System.String,System.String,System.String,System.String)" />
-      <MemberSignature Language="VB.NET" Value="Public Sub New (Optional id As String = null, Optional name As String = null, Optional type As String = null, Optional codeVersion As String = null, Optional supportExpiryUtc As String = null, Optional environment As String = null)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (Optional id As String = Nothing, Optional name As String = Nothing, Optional type As String = Nothing, Optional codeVersion As String = Nothing, Optional supportExpiryUtc As String = Nothing, Optional environment As String = Nothing)" />
       <MemberSignature Language="F#" Value="new Microsoft.Azure.Management.ServiceFabric.Models.ClusterCodeVersionsResult : string * string * string * string * string * string -&gt; Microsoft.Azure.Management.ServiceFabric.Models.ClusterCodeVersionsResult" Usage="new Microsoft.Azure.Management.ServiceFabric.Models.ClusterCodeVersionsResult (id, name, type, codeVersion, supportExpiryUtc, environment)" />
-      <MemberSignature Language="C++ WINRT" Value=" ClusterCodeVersionsResult(std::wstring const &amp; id = null, std::wstring const &amp; name = null, std::wstring const &amp; type = null, std::wstring const &amp; codeVersion = null, std::wstring const &amp; supportExpiryUtc = null, std::wstring const &amp; environment = null);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.ServiceFabric</AssemblyName>
@@ -71,12 +66,13 @@
         <param name="id">The identification of the result</param>
         <param name="name">The name of the result</param>
         <param name="type">The result resource type</param>
-        <param name="codeVersion">The ServiceFabric runtime version of the
-            cluster</param>
+        <param name="codeVersion">The Service Fabric runtime version of the
+            cluster.</param>
         <param name="supportExpiryUtc">The date of expiry of support of the
-            version</param>
-        <param name="environment">Cluster operating system. Possible values
-            include: 'Windows', 'Linux'</param>
+            version.</param>
+        <param name="environment">Indicates if this version is for Windows
+            or Linux operating system. Possible values include: 'Windows',
+            'Linux'</param>
         <summary>
             Initializes a new instance of the ClusterCodeVersionsResult class.
             </summary>
@@ -89,8 +85,6 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Management.ServiceFabric.Models.ClusterCodeVersionsResult.CodeVersion" />
       <MemberSignature Language="VB.NET" Value="Public Property CodeVersion As String" />
       <MemberSignature Language="F#" Value="member this.CodeVersion : string with get, set" Usage="Microsoft.Azure.Management.ServiceFabric.Models.ClusterCodeVersionsResult.CodeVersion" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ CodeVersion { System::String ^ get(); void set(System::String ^ value); };" />
-      <MemberSignature Language="C++ CX" Value="public:&#xA; property Platform::String ^ CodeVersion { Platform::String ^ get(); void set(Platform::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.ServiceFabric</AssemblyName>
@@ -98,7 +92,8 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="properties.codeVersion")</AttributeName>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty(PropertyName="properties.codeVersion")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty(PropertyName="properties.codeVersion")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -106,7 +101,7 @@
       </ReturnValue>
       <Docs>
         <summary>
-            Gets or sets the ServiceFabric runtime version of the cluster
+            Gets or sets the Service Fabric runtime version of the cluster.
             </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
@@ -118,8 +113,6 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Management.ServiceFabric.Models.ClusterCodeVersionsResult.Environment" />
       <MemberSignature Language="VB.NET" Value="Public Property Environment As String" />
       <MemberSignature Language="F#" Value="member this.Environment : string with get, set" Usage="Microsoft.Azure.Management.ServiceFabric.Models.ClusterCodeVersionsResult.Environment" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Environment { System::String ^ get(); void set(System::String ^ value); };" />
-      <MemberSignature Language="C++ CX" Value="public:&#xA; property Platform::String ^ Environment { Platform::String ^ get(); void set(Platform::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.ServiceFabric</AssemblyName>
@@ -127,7 +120,8 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="properties.environment")</AttributeName>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty(PropertyName="properties.environment")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty(PropertyName="properties.environment")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -135,8 +129,8 @@
       </ReturnValue>
       <Docs>
         <summary>
-            Gets or sets cluster operating system. Possible values include:
-            'Windows', 'Linux'
+            Gets or sets indicates if this version is for Windows or Linux
+            operating system. Possible values include: 'Windows', 'Linux'
             </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
@@ -148,8 +142,6 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Management.ServiceFabric.Models.ClusterCodeVersionsResult.Id" />
       <MemberSignature Language="VB.NET" Value="Public Property Id As String" />
       <MemberSignature Language="F#" Value="member this.Id : string with get, set" Usage="Microsoft.Azure.Management.ServiceFabric.Models.ClusterCodeVersionsResult.Id" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Id { System::String ^ get(); void set(System::String ^ value); };" />
-      <MemberSignature Language="C++ CX" Value="public:&#xA; property Platform::String ^ Id { Platform::String ^ get(); void set(Platform::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.ServiceFabric</AssemblyName>
@@ -157,7 +149,8 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="id")</AttributeName>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty(PropertyName="id")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty(PropertyName="id")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -177,8 +170,6 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Management.ServiceFabric.Models.ClusterCodeVersionsResult.Name" />
       <MemberSignature Language="VB.NET" Value="Public Property Name As String" />
       <MemberSignature Language="F#" Value="member this.Name : string with get, set" Usage="Microsoft.Azure.Management.ServiceFabric.Models.ClusterCodeVersionsResult.Name" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Name { System::String ^ get(); void set(System::String ^ value); };" />
-      <MemberSignature Language="C++ CX" Value="public:&#xA; property Platform::String ^ Name { Platform::String ^ get(); void set(Platform::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.ServiceFabric</AssemblyName>
@@ -186,7 +177,8 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="name")</AttributeName>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty(PropertyName="name")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty(PropertyName="name")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -206,8 +198,6 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Management.ServiceFabric.Models.ClusterCodeVersionsResult.SupportExpiryUtc" />
       <MemberSignature Language="VB.NET" Value="Public Property SupportExpiryUtc As String" />
       <MemberSignature Language="F#" Value="member this.SupportExpiryUtc : string with get, set" Usage="Microsoft.Azure.Management.ServiceFabric.Models.ClusterCodeVersionsResult.SupportExpiryUtc" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ SupportExpiryUtc { System::String ^ get(); void set(System::String ^ value); };" />
-      <MemberSignature Language="C++ CX" Value="public:&#xA; property Platform::String ^ SupportExpiryUtc { Platform::String ^ get(); void set(Platform::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.ServiceFabric</AssemblyName>
@@ -215,7 +205,8 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="properties.supportExpiryUtc")</AttributeName>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty(PropertyName="properties.supportExpiryUtc")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty(PropertyName="properties.supportExpiryUtc")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -223,7 +214,7 @@
       </ReturnValue>
       <Docs>
         <summary>
-            Gets or sets the date of expiry of support of the version
+            Gets or sets the date of expiry of support of the version.
             </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
@@ -235,8 +226,6 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Management.ServiceFabric.Models.ClusterCodeVersionsResult.Type" />
       <MemberSignature Language="VB.NET" Value="Public Property Type As String" />
       <MemberSignature Language="F#" Value="member this.Type : string with get, set" Usage="Microsoft.Azure.Management.ServiceFabric.Models.ClusterCodeVersionsResult.Type" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Type { System::String ^ get(); void set(System::String ^ value); };" />
-      <MemberSignature Language="C++ CX" Value="public:&#xA; property Platform::String ^ Type { Platform::String ^ get(); void set(Platform::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.ServiceFabric</AssemblyName>
@@ -244,7 +233,8 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="type")</AttributeName>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty(PropertyName="type")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty(PropertyName="type")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>

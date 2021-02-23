@@ -1,14 +1,17 @@
-﻿<Type Name="NetworkRuleSet" FullName="Microsoft.Azure.Management.Storage.Models.NetworkRuleSet">
+<Type Name="NetworkRuleSet" FullName="Microsoft.Azure.Management.Storage.Models.NetworkRuleSet">
   <TypeSignature Language="C#" Value="public class NetworkRuleSet" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit NetworkRuleSet extends System.Object" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Azure.Management.Storage.Models.NetworkRuleSet" />
   <TypeSignature Language="VB.NET" Value="Public Class NetworkRuleSet" />
   <TypeSignature Language="F#" Value="type NetworkRuleSet = class" />
-  <TypeSignature Language="C++ CLI" Value="public ref class NetworkRuleSet" />
-  <TypeSignature Language="C++ WINRT" Value="[Windows::Foundation::Metadata::WebHostHidden]&#xA;class NetworkRuleSet" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Azure.Management.Storage</AssemblyName>
-    <AssemblyVersion>7.0.0.0</AssemblyVersion>
+    <AssemblyVersion>14.0.0.0</AssemblyVersion>
+    <AssemblyVersion>15.0.0.0</AssemblyVersion>
+    <AssemblyVersion>16.0.0.0</AssemblyVersion>
+    <AssemblyVersion>17.0.0.0</AssemblyVersion>
+    <AssemblyVersion>18.0.0.0</AssemblyVersion>
+    <AssemblyVersion>19.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
@@ -26,13 +29,15 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Management.Storage.Models.NetworkRuleSet.#ctor" />
       <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; NetworkRuleSet();" />
-      <MemberSignature Language="C++ CX" Value="public:&#xA; NetworkRuleSet();" />
-      <MemberSignature Language="C++ WINRT" Value=" NetworkRuleSet();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Storage</AssemblyName>
-        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+        <AssemblyVersion>16.0.0.0</AssemblyVersion>
+        <AssemblyVersion>17.0.0.0</AssemblyVersion>
+        <AssemblyVersion>18.0.0.0</AssemblyVersion>
+        <AssemblyVersion>19.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
@@ -43,18 +48,21 @@
       </Docs>
     </Member>
     <Member MemberName=".ctor">
-      <MemberSignature Language="C#" Value="public NetworkRuleSet (Microsoft.Azure.Management.Storage.Models.DefaultAction defaultAction, string bypass = null, System.Collections.Generic.IList&lt;Microsoft.Azure.Management.Storage.Models.VirtualNetworkRule&gt; virtualNetworkRules = null, System.Collections.Generic.IList&lt;Microsoft.Azure.Management.Storage.Models.IPRule&gt; ipRules = null);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(valuetype Microsoft.Azure.Management.Storage.Models.DefaultAction defaultAction, string bypass, class System.Collections.Generic.IList`1&lt;class Microsoft.Azure.Management.Storage.Models.VirtualNetworkRule&gt; virtualNetworkRules, class System.Collections.Generic.IList`1&lt;class Microsoft.Azure.Management.Storage.Models.IPRule&gt; ipRules) cil managed" />
-      <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Management.Storage.Models.NetworkRuleSet.#ctor(Microsoft.Azure.Management.Storage.Models.DefaultAction,System.String,System.Collections.Generic.IList{Microsoft.Azure.Management.Storage.Models.VirtualNetworkRule},System.Collections.Generic.IList{Microsoft.Azure.Management.Storage.Models.IPRule})" />
-      <MemberSignature Language="F#" Value="new Microsoft.Azure.Management.Storage.Models.NetworkRuleSet : Microsoft.Azure.Management.Storage.Models.DefaultAction * string * System.Collections.Generic.IList&lt;Microsoft.Azure.Management.Storage.Models.VirtualNetworkRule&gt; * System.Collections.Generic.IList&lt;Microsoft.Azure.Management.Storage.Models.IPRule&gt; -&gt; Microsoft.Azure.Management.Storage.Models.NetworkRuleSet" Usage="new Microsoft.Azure.Management.Storage.Models.NetworkRuleSet (defaultAction, bypass, virtualNetworkRules, ipRules)" />
+      <MemberSignature Language="C#" Value="public NetworkRuleSet (Microsoft.Azure.Management.Storage.Models.DefaultAction defaultAction, string bypass = default, System.Collections.Generic.IList&lt;Microsoft.Azure.Management.Storage.Models.ResourceAccessRule&gt; resourceAccessRules = default, System.Collections.Generic.IList&lt;Microsoft.Azure.Management.Storage.Models.VirtualNetworkRule&gt; virtualNetworkRules = default, System.Collections.Generic.IList&lt;Microsoft.Azure.Management.Storage.Models.IPRule&gt; ipRules = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(valuetype Microsoft.Azure.Management.Storage.Models.DefaultAction defaultAction, string bypass, class System.Collections.Generic.IList`1&lt;class Microsoft.Azure.Management.Storage.Models.ResourceAccessRule&gt; resourceAccessRules, class System.Collections.Generic.IList`1&lt;class Microsoft.Azure.Management.Storage.Models.VirtualNetworkRule&gt; virtualNetworkRules, class System.Collections.Generic.IList`1&lt;class Microsoft.Azure.Management.Storage.Models.IPRule&gt; ipRules) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Management.Storage.Models.NetworkRuleSet.#ctor(Microsoft.Azure.Management.Storage.Models.DefaultAction,System.String,System.Collections.Generic.IList{Microsoft.Azure.Management.Storage.Models.ResourceAccessRule},System.Collections.Generic.IList{Microsoft.Azure.Management.Storage.Models.VirtualNetworkRule},System.Collections.Generic.IList{Microsoft.Azure.Management.Storage.Models.IPRule})" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (defaultAction As DefaultAction, Optional bypass As String = Nothing, Optional resourceAccessRules As IList(Of ResourceAccessRule) = Nothing, Optional virtualNetworkRules As IList(Of VirtualNetworkRule) = Nothing, Optional ipRules As IList(Of IPRule) = Nothing)" />
+      <MemberSignature Language="F#" Value="new Microsoft.Azure.Management.Storage.Models.NetworkRuleSet : Microsoft.Azure.Management.Storage.Models.DefaultAction * string * System.Collections.Generic.IList&lt;Microsoft.Azure.Management.Storage.Models.ResourceAccessRule&gt; * System.Collections.Generic.IList&lt;Microsoft.Azure.Management.Storage.Models.VirtualNetworkRule&gt; * System.Collections.Generic.IList&lt;Microsoft.Azure.Management.Storage.Models.IPRule&gt; -&gt; Microsoft.Azure.Management.Storage.Models.NetworkRuleSet" Usage="new Microsoft.Azure.Management.Storage.Models.NetworkRuleSet (defaultAction, bypass, resourceAccessRules, virtualNetworkRules, ipRules)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Storage</AssemblyName>
-        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>18.0.0.0</AssemblyVersion>
+        <AssemblyVersion>19.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="defaultAction" Type="Microsoft.Azure.Management.Storage.Models.DefaultAction" />
         <Parameter Name="bypass" Type="System.String" />
+        <Parameter Name="resourceAccessRules" Type="System.Collections.Generic.IList&lt;Microsoft.Azure.Management.Storage.Models.ResourceAccessRule&gt;" />
         <Parameter Name="virtualNetworkRules" Type="System.Collections.Generic.IList&lt;Microsoft.Azure.Management.Storage.Models.VirtualNetworkRule&gt;" />
         <Parameter Name="ipRules" Type="System.Collections.Generic.IList&lt;Microsoft.Azure.Management.Storage.Models.IPRule&gt;" />
       </Parameters>
@@ -67,6 +75,8 @@
             of Logging|Metrics|AzureServices (For example, "Logging, Metrics"),
             or None to bypass none of those traffics. Possible values include:
             'None', 'Logging', 'Metrics', 'AzureServices'</param>
+        <param name="resourceAccessRules">Sets the resource access
+            rules</param>
         <param name="virtualNetworkRules">Sets the virtual network
             rules</param>
         <param name="ipRules">Sets the IP ACL rules</param>
@@ -82,16 +92,20 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Management.Storage.Models.NetworkRuleSet.Bypass" />
       <MemberSignature Language="VB.NET" Value="Public Property Bypass As String" />
       <MemberSignature Language="F#" Value="member this.Bypass : string with get, set" Usage="Microsoft.Azure.Management.Storage.Models.NetworkRuleSet.Bypass" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Bypass { System::String ^ get(); void set(System::String ^ value); };" />
-      <MemberSignature Language="C++ CX" Value="public:&#xA; property Platform::String ^ Bypass { Platform::String ^ get(); void set(Platform::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Storage</AssemblyName>
-        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+        <AssemblyVersion>16.0.0.0</AssemblyVersion>
+        <AssemblyVersion>17.0.0.0</AssemblyVersion>
+        <AssemblyVersion>18.0.0.0</AssemblyVersion>
+        <AssemblyVersion>19.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="bypass")</AttributeName>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty(PropertyName="bypass")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty(PropertyName="bypass")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -115,16 +129,20 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Management.Storage.Models.NetworkRuleSet.DefaultAction" />
       <MemberSignature Language="VB.NET" Value="Public Property DefaultAction As DefaultAction" />
       <MemberSignature Language="F#" Value="member this.DefaultAction : Microsoft.Azure.Management.Storage.Models.DefaultAction with get, set" Usage="Microsoft.Azure.Management.Storage.Models.NetworkRuleSet.DefaultAction" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Azure::Management::Storage::Models::DefaultAction DefaultAction { Microsoft::Azure::Management::Storage::Models::DefaultAction get(); void set(Microsoft::Azure::Management::Storage::Models::DefaultAction value); };" />
-      <MemberSignature Language="C++ CX" Value="public:&#xA; property Microsoft::Azure::Management::Storage::Models::DefaultAction DefaultAction { Microsoft::Azure::Management::Storage::Models::DefaultAction get(); void set(Microsoft::Azure::Management::Storage::Models::DefaultAction value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Storage</AssemblyName>
-        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+        <AssemblyVersion>16.0.0.0</AssemblyVersion>
+        <AssemblyVersion>17.0.0.0</AssemblyVersion>
+        <AssemblyVersion>18.0.0.0</AssemblyVersion>
+        <AssemblyVersion>19.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="defaultAction")</AttributeName>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty(PropertyName="defaultAction")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty(PropertyName="defaultAction")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -145,15 +163,20 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Management.Storage.Models.NetworkRuleSet.IpRules" />
       <MemberSignature Language="VB.NET" Value="Public Property IpRules As IList(Of IPRule)" />
       <MemberSignature Language="F#" Value="member this.IpRules : System.Collections.Generic.IList&lt;Microsoft.Azure.Management.Storage.Models.IPRule&gt; with get, set" Usage="Microsoft.Azure.Management.Storage.Models.NetworkRuleSet.IpRules" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::Generic::IList&lt;Microsoft::Azure::Management::Storage::Models::IPRule ^&gt; ^ IpRules { System::Collections::Generic::IList&lt;Microsoft::Azure::Management::Storage::Models::IPRule ^&gt; ^ get(); void set(System::Collections::Generic::IList&lt;Microsoft::Azure::Management::Storage::Models::IPRule ^&gt; ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Storage</AssemblyName>
-        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+        <AssemblyVersion>16.0.0.0</AssemblyVersion>
+        <AssemblyVersion>17.0.0.0</AssemblyVersion>
+        <AssemblyVersion>18.0.0.0</AssemblyVersion>
+        <AssemblyVersion>19.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="ipRules")</AttributeName>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty(PropertyName="ipRules")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty(PropertyName="ipRules")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -167,19 +190,50 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <Member MemberName="ResourceAccessRules">
+      <MemberSignature Language="C#" Value="public System.Collections.Generic.IList&lt;Microsoft.Azure.Management.Storage.Models.ResourceAccessRule&gt; ResourceAccessRules { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Generic.IList`1&lt;class Microsoft.Azure.Management.Storage.Models.ResourceAccessRule&gt; ResourceAccessRules" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Management.Storage.Models.NetworkRuleSet.ResourceAccessRules" />
+      <MemberSignature Language="VB.NET" Value="Public Property ResourceAccessRules As IList(Of ResourceAccessRule)" />
+      <MemberSignature Language="F#" Value="member this.ResourceAccessRules : System.Collections.Generic.IList&lt;Microsoft.Azure.Management.Storage.Models.ResourceAccessRule&gt; with get, set" Usage="Microsoft.Azure.Management.Storage.Models.NetworkRuleSet.ResourceAccessRules" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Azure.Management.Storage</AssemblyName>
+        <AssemblyVersion>18.0.0.0</AssemblyVersion>
+        <AssemblyVersion>19.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty(PropertyName="resourceAccessRules")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty(PropertyName="resourceAccessRules")&gt;]</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.IList&lt;Microsoft.Azure.Management.Storage.Models.ResourceAccessRule&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets or sets sets the resource access rules
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
     <Member MemberName="Validate">
       <MemberSignature Language="C#" Value="public virtual void Validate ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Validate() cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Management.Storage.Models.NetworkRuleSet.Validate" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Sub Validate ()" />
       <MemberSignature Language="F#" Value="abstract member Validate : unit -&gt; unit&#xA;override this.Validate : unit -&gt; unit" Usage="networkRuleSet.Validate " />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Validate();" />
-      <MemberSignature Language="C++ CX" Value="public:&#xA; virtual void Validate();" />
-      <MemberSignature Language="C++ WINRT" Value=" virtual void Validate();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Storage</AssemblyName>
-        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+        <AssemblyVersion>16.0.0.0</AssemblyVersion>
+        <AssemblyVersion>17.0.0.0</AssemblyVersion>
+        <AssemblyVersion>18.0.0.0</AssemblyVersion>
+        <AssemblyVersion>19.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -201,15 +255,20 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Management.Storage.Models.NetworkRuleSet.VirtualNetworkRules" />
       <MemberSignature Language="VB.NET" Value="Public Property VirtualNetworkRules As IList(Of VirtualNetworkRule)" />
       <MemberSignature Language="F#" Value="member this.VirtualNetworkRules : System.Collections.Generic.IList&lt;Microsoft.Azure.Management.Storage.Models.VirtualNetworkRule&gt; with get, set" Usage="Microsoft.Azure.Management.Storage.Models.NetworkRuleSet.VirtualNetworkRules" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::Generic::IList&lt;Microsoft::Azure::Management::Storage::Models::VirtualNetworkRule ^&gt; ^ VirtualNetworkRules { System::Collections::Generic::IList&lt;Microsoft::Azure::Management::Storage::Models::VirtualNetworkRule ^&gt; ^ get(); void set(System::Collections::Generic::IList&lt;Microsoft::Azure::Management::Storage::Models::VirtualNetworkRule ^&gt; ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Storage</AssemblyName>
-        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+        <AssemblyVersion>16.0.0.0</AssemblyVersion>
+        <AssemblyVersion>17.0.0.0</AssemblyVersion>
+        <AssemblyVersion>18.0.0.0</AssemblyVersion>
+        <AssemblyVersion>19.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="virtualNetworkRules")</AttributeName>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty(PropertyName="virtualNetworkRules")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty(PropertyName="virtualNetworkRules")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>

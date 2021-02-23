@@ -1,17 +1,9 @@
 ---
 title: Azure Recovery Services and Backup libraries for .NET
 description: Reference for Azure Recovery Services and Backup libraries for .NET
-keywords: Azure, .NET, SDK, API, Recovery Services, Backup
-author: camsoper
-ms.author: casoper
-manager: wpickett
 ms.date: 10/19/2017
 ms.topic: reference
-ms.prod: azure
-ms.technology: azure
-ms.devlang: dotnet
-ms.service: recovery-services
-ms.custom: devcenter, svc-overview
+ms.service: backup
 ---
 
 # Azure Recovery Services and Backup libraries for .NET
@@ -33,14 +25,13 @@ Install-Package Microsoft.Azure.Management.RecoveryServices.Backup
 
 #### .NET Core CLI
 
-```bash
+```dotnetcli
 dotnet add package Microsoft.Azure.Management.RecoveryServices
 dotnet add package Microsoft.Azure.Management.RecoveryServices.Backup
 ```
 
 > [!div class="nextstepaction"]
 > [Explore the management APIs](/dotnet/api/overview/azure/recoveryservices/management)
-
 
 ## Code Example
 

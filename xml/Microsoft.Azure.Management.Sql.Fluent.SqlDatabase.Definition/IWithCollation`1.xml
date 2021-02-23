@@ -1,23 +1,29 @@
-﻿<Type Name="IWithCollation&lt;ParentT&gt;" FullName="Microsoft.Azure.Management.Sql.Fluent.SqlDatabase.Definition.IWithCollation&lt;ParentT&gt;">
+<Type Name="IWithCollation&lt;ParentT&gt;" FullName="Microsoft.Azure.Management.Sql.Fluent.SqlDatabase.Definition.IWithCollation&lt;ParentT&gt;">
   <TypeSignature Language="C#" Value="public interface IWithCollation&lt;ParentT&gt;" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IWithCollation`1&lt;ParentT&gt;" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Azure.Management.Sql.Fluent.SqlDatabase.Definition.IWithCollation`1" />
   <TypeSignature Language="VB.NET" Value="Public Interface IWithCollation(Of ParentT)" />
   <TypeSignature Language="F#" Value="type IWithCollation&lt;'ParentT&gt; = interface" />
-  <TypeSignature Language="C++ CLI" Value="generic &lt;typename ParentT&gt;&#xA;public interface class IWithCollation" />
-  <TypeSignature Language="C++ CX" Value="public interface class IWithCollation" />
-  <TypeSignature Language="C++ WINRT" Value="template &lt;typename ParentT&gt;&#xA;__interface IWithCollation" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Azure.Management.Sql.Fluent</AssemblyName>
-    <AssemblyVersion>1.0.0.60</AssemblyVersion>
+    <AssemblyVersion>1.0.0.61</AssemblyVersion>
+    <AssemblyVersion>1.0.0.62</AssemblyVersion>
+    <AssemblyVersion>1.0.0.63</AssemblyVersion>
+    <AssemblyVersion>1.0.0.64</AssemblyVersion>
+    <AssemblyVersion>1.0.0.65</AssemblyVersion>
+    <AssemblyVersion>1.0.0.66</AssemblyVersion>
+    <AssemblyVersion>1.0.0.67</AssemblyVersion>
+    <AssemblyVersion>1.0.0.68</AssemblyVersion>
   </AssemblyInfo>
   <TypeParameters>
     <TypeParameter Name="ParentT" />
   </TypeParameters>
   <Interfaces />
   <Docs>
-    <typeparam name="ParentT">To be added.</typeparam>
-    <summary>To be added.</summary>
+    <typeparam name="ParentT">The stage of the parent definition to return to after attaching this definition.</typeparam>
+    <summary>
+            The SQL Database definition to set the collation for database.
+            </summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -27,13 +33,17 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Management.Sql.Fluent.SqlDatabase.Definition.IWithCollation`1.WithCollation(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Function WithCollation (collation As String) As IWithAttachAllOptions(Of ParentT)" />
       <MemberSignature Language="F#" Value="abstract member WithCollation : string -&gt; Microsoft.Azure.Management.Sql.Fluent.SqlDatabase.Definition.IWithAttachAllOptions&lt;'ParentT&gt;" Usage="iWithCollation.WithCollation collation" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; Microsoft::Azure::Management::Sql::Fluent::SqlDatabase::Definition::IWithAttachAllOptions&lt;ParentT&gt; ^ WithCollation(System::String ^ collation);" />
-      <MemberSignature Language="C++ CX" Value="public:&#xA; Microsoft::Azure::Management::Sql::Fluent::SqlDatabase::Definition::IWithAttachAllOptions&lt;ParentT&gt; ^ WithCollation(Platform::String ^ collation);" />
-      <MemberSignature Language="C++ WINRT" Value="Microsoft::Azure::Management::Sql::Fluent::SqlDatabase::Definition::IWithAttachAllOptions&lt;ParentT&gt; WithCollation(std::wstring const &amp; collation);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Sql.Fluent</AssemblyName>
-        <AssemblyVersion>1.0.0.60</AssemblyVersion>
+        <AssemblyVersion>1.0.0.61</AssemblyVersion>
+        <AssemblyVersion>1.0.0.62</AssemblyVersion>
+        <AssemblyVersion>1.0.0.63</AssemblyVersion>
+        <AssemblyVersion>1.0.0.64</AssemblyVersion>
+        <AssemblyVersion>1.0.0.65</AssemblyVersion>
+        <AssemblyVersion>1.0.0.66</AssemblyVersion>
+        <AssemblyVersion>1.0.0.67</AssemblyVersion>
+        <AssemblyVersion>1.0.0.68</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Azure.Management.Sql.Fluent.SqlDatabase.Definition.IWithAttachAllOptions&lt;ParentT&gt;</ReturnType>
@@ -42,10 +52,13 @@
         <Parameter Name="collation" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="collation">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="collation">Collation to be set for database.</param>
+        <summary>
+            Sets the collation for the SQL Database.
+            </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
+        <return>The next stage of the definition.</return>
       </Docs>
     </Member>
   </Members>

@@ -1,15 +1,12 @@
-﻿<Type Name="WebhookCreateOrUpdateParameters" FullName="Microsoft.Azure.Management.Automation.Models.WebhookCreateOrUpdateParameters">
+<Type Name="WebhookCreateOrUpdateParameters" FullName="Microsoft.Azure.Management.Automation.Models.WebhookCreateOrUpdateParameters">
   <TypeSignature Language="C#" Value="public class WebhookCreateOrUpdateParameters" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit WebhookCreateOrUpdateParameters extends System.Object" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Azure.Management.Automation.Models.WebhookCreateOrUpdateParameters" />
   <TypeSignature Language="VB.NET" Value="Public Class WebhookCreateOrUpdateParameters" />
   <TypeSignature Language="F#" Value="type WebhookCreateOrUpdateParameters = class" />
-  <TypeSignature Language="C++ CLI" Value="public ref class WebhookCreateOrUpdateParameters" />
-  <TypeSignature Language="C++ WINRT" Value="[Windows::Foundation::Metadata::WebHostHidden]&#xA;class WebhookCreateOrUpdateParameters" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Azure.Management.Automation</AssemblyName>
     <AssemblyVersion>2.0.0.0</AssemblyVersion>
-    <AssemblyVersion>3.0.0.0</AssemblyVersion>
     <AssemblyVersion>3.0.1.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -17,8 +14,9 @@
   </Base>
   <Interfaces />
   <Attributes>
-    <Attribute>
-      <AttributeName>Microsoft.Rest.Serialization.JsonTransformation</AttributeName>
+    <Attribute FrameworkAlternate="azure-dotnet-preview">
+      <AttributeName Language="C#">[Microsoft.Rest.Serialization.JsonTransformation]</AttributeName>
+      <AttributeName Language="F#">[&lt;Microsoft.Rest.Serialization.JsonTransformation&gt;]</AttributeName>
     </Attribute>
   </Attributes>
   <Docs>
@@ -33,14 +31,10 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Management.Automation.Models.WebhookCreateOrUpdateParameters.#ctor" />
       <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; WebhookCreateOrUpdateParameters();" />
-      <MemberSignature Language="C++ CX" Value="public:&#xA; WebhookCreateOrUpdateParameters();" />
-      <MemberSignature Language="C++ WINRT" Value=" WebhookCreateOrUpdateParameters();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Automation</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>3.0.1.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
@@ -53,25 +47,46 @@
       </Docs>
     </Member>
     <Member MemberName=".ctor">
-      <MemberSignature Language="C#" Value="public WebhookCreateOrUpdateParameters (string name, Nullable&lt;bool&gt; isEnabled = null, string uri = null, Nullable&lt;DateTime&gt; expiryTime = null, System.Collections.Generic.IDictionary&lt;string,string&gt; parameters = null, Microsoft.Azure.Management.Automation.Models.RunbookAssociationProperty runbook = null, string runOn = null);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string name, valuetype System.Nullable`1&lt;bool&gt; isEnabled, string uri, valuetype System.Nullable`1&lt;valuetype System.DateTime&gt; expiryTime, class System.Collections.Generic.IDictionary`2&lt;string, string&gt; parameters, class Microsoft.Azure.Management.Automation.Models.RunbookAssociationProperty runbook, string runOn) cil managed" />
-      <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Management.Automation.Models.WebhookCreateOrUpdateParameters.#ctor(System.String,System.Nullable{System.Boolean},System.String,System.Nullable{System.DateTime},System.Collections.Generic.IDictionary{System.String,System.String},Microsoft.Azure.Management.Automation.Models.RunbookAssociationProperty,System.String)" />
-      <MemberSignature Language="VB.NET" Value="Public Sub New (name As String, Optional isEnabled As Nullable(Of Boolean) = null, Optional uri As String = null, Optional expiryTime As Nullable(Of DateTime) = null, Optional parameters As IDictionary(Of String, String) = null, Optional runbook As RunbookAssociationProperty = null, Optional runOn As String = null)" />
-      <MemberSignature Language="F#" Value="new Microsoft.Azure.Management.Automation.Models.WebhookCreateOrUpdateParameters : string * Nullable&lt;bool&gt; * string * Nullable&lt;DateTime&gt; * System.Collections.Generic.IDictionary&lt;string, string&gt; * Microsoft.Azure.Management.Automation.Models.RunbookAssociationProperty * string -&gt; Microsoft.Azure.Management.Automation.Models.WebhookCreateOrUpdateParameters" Usage="new Microsoft.Azure.Management.Automation.Models.WebhookCreateOrUpdateParameters (name, isEnabled, uri, expiryTime, parameters, runbook, runOn)" />
+      <MemberSignature Language="C#" Value="public WebhookCreateOrUpdateParameters (string name, Microsoft.Azure.Management.Automation.Models.WebhookCreateOrUpdateProperties properties);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string name, class Microsoft.Azure.Management.Automation.Models.WebhookCreateOrUpdateProperties properties) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Management.Automation.Models.WebhookCreateOrUpdateParameters.#ctor(System.String,Microsoft.Azure.Management.Automation.Models.WebhookCreateOrUpdateProperties)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (name As String, properties As WebhookCreateOrUpdateProperties)" />
+      <MemberSignature Language="F#" Value="new Microsoft.Azure.Management.Automation.Models.WebhookCreateOrUpdateParameters : string * Microsoft.Azure.Management.Automation.Models.WebhookCreateOrUpdateProperties -&gt; Microsoft.Azure.Management.Automation.Models.WebhookCreateOrUpdateParameters" Usage="new Microsoft.Azure.Management.Automation.Models.WebhookCreateOrUpdateParameters (name, properties)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Automation</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="name" Type="System.String" Index="0" FrameworkAlternate="azure-dotnet" />
+        <Parameter Name="properties" Type="Microsoft.Azure.Management.Automation.Models.WebhookCreateOrUpdateProperties" Index="1" FrameworkAlternate="azure-dotnet" />
+      </Parameters>
+      <Docs>
+        <param name="name">To be added.</param>
+        <param name="properties">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public WebhookCreateOrUpdateParameters (string name, bool? isEnabled = default, string uri = default, DateTimeOffset expiryTime = default, System.Collections.Generic.IDictionary&lt;string,string&gt; parameters = default, Microsoft.Azure.Management.Automation.Models.RunbookAssociationProperty runbook = default, string runOn = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string name, valuetype System.Nullable`1&lt;bool&gt; isEnabled, string uri, valuetype System.DateTimeOffset expiryTime, class System.Collections.Generic.IDictionary`2&lt;string, string&gt; parameters, class Microsoft.Azure.Management.Automation.Models.RunbookAssociationProperty runbook, string runOn) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Management.Automation.Models.WebhookCreateOrUpdateParameters.#ctor(System.String,System.Nullable{System.Boolean},System.String,System.DateTimeOffset,System.Collections.Generic.IDictionary{System.String,System.String},Microsoft.Azure.Management.Automation.Models.RunbookAssociationProperty,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (name As String, Optional isEnabled As Nullable(Of Boolean) = Nothing, Optional uri As String = Nothing, Optional expiryTime As DateTimeOffset = Nothing, Optional parameters As IDictionary(Of String, String) = Nothing, Optional runbook As RunbookAssociationProperty = Nothing, Optional runOn As String = Nothing)" />
+      <MemberSignature Language="F#" Value="new Microsoft.Azure.Management.Automation.Models.WebhookCreateOrUpdateParameters : string * Nullable&lt;bool&gt; * string * DateTimeOffset * System.Collections.Generic.IDictionary&lt;string, string&gt; * Microsoft.Azure.Management.Automation.Models.RunbookAssociationProperty * string -&gt; Microsoft.Azure.Management.Automation.Models.WebhookCreateOrUpdateParameters" Usage="new Microsoft.Azure.Management.Automation.Models.WebhookCreateOrUpdateParameters (name, isEnabled, uri, expiryTime, parameters, runbook, runOn)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Azure.Management.Automation</AssemblyName>
         <AssemblyVersion>3.0.1.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
-        <Parameter Name="name" Type="System.String" />
-        <Parameter Name="isEnabled" Type="System.Nullable&lt;System.Boolean&gt;" />
-        <Parameter Name="uri" Type="System.String" />
-        <Parameter Name="expiryTime" Type="System.Nullable&lt;System.DateTime&gt;" />
-        <Parameter Name="parameters" Type="System.Collections.Generic.IDictionary&lt;System.String,System.String&gt;" />
-        <Parameter Name="runbook" Type="Microsoft.Azure.Management.Automation.Models.RunbookAssociationProperty" />
-        <Parameter Name="runOn" Type="System.String" />
+        <Parameter Name="name" Type="System.String" Index="0" FrameworkAlternate="azure-dotnet-preview" />
+        <Parameter Name="isEnabled" Type="System.Nullable&lt;System.Boolean&gt;" Index="1" FrameworkAlternate="azure-dotnet-preview" />
+        <Parameter Name="uri" Type="System.String" Index="2" FrameworkAlternate="azure-dotnet-preview" />
+        <Parameter Name="expiryTime" Type="System.DateTimeOffset" Index="3" FrameworkAlternate="azure-dotnet-preview" />
+        <Parameter Name="parameters" Type="System.Collections.Generic.IDictionary&lt;System.String,System.String&gt;" Index="4" FrameworkAlternate="azure-dotnet-preview" />
+        <Parameter Name="runbook" Type="Microsoft.Azure.Management.Automation.Models.RunbookAssociationProperty" Index="5" FrameworkAlternate="azure-dotnet-preview" />
+        <Parameter Name="runOn" Type="System.String" Index="6" FrameworkAlternate="azure-dotnet-preview" />
       </Parameters>
       <Docs>
         <param name="name">Gets or sets the name of the webhook.</param>
@@ -92,25 +107,24 @@
       </Docs>
     </Member>
     <Member MemberName="ExpiryTime">
-      <MemberSignature Language="C#" Value="public Nullable&lt;DateTime&gt; ExpiryTime { get; set; }" />
-      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;valuetype System.DateTime&gt; ExpiryTime" />
+      <MemberSignature Language="C#" Value="public DateTimeOffset ExpiryTime { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.DateTimeOffset ExpiryTime" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Management.Automation.Models.WebhookCreateOrUpdateParameters.ExpiryTime" />
-      <MemberSignature Language="VB.NET" Value="Public Property ExpiryTime As Nullable(Of DateTime)" />
-      <MemberSignature Language="F#" Value="member this.ExpiryTime : Nullable&lt;DateTime&gt; with get, set" Usage="Microsoft.Azure.Management.Automation.Models.WebhookCreateOrUpdateParameters.ExpiryTime" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Nullable&lt;DateTime&gt; ExpiryTime { Nullable&lt;DateTime&gt; get(); void set(Nullable&lt;DateTime&gt; value); };" />
+      <MemberSignature Language="VB.NET" Value="Public Property ExpiryTime As DateTimeOffset" />
+      <MemberSignature Language="F#" Value="member this.ExpiryTime : DateTimeOffset with get, set" Usage="Microsoft.Azure.Management.Automation.Models.WebhookCreateOrUpdateParameters.ExpiryTime" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Automation</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>3.0.1.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="properties.expiryTime")</AttributeName>
+        <Attribute FrameworkAlternate="azure-dotnet-preview">
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty(PropertyName="properties.expiryTime")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty(PropertyName="properties.expiryTime")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
-        <ReturnType>System.Nullable&lt;System.DateTime&gt;</ReturnType>
+        <ReturnType>System.DateTimeOffset</ReturnType>
       </ReturnValue>
       <Docs>
         <summary>
@@ -121,21 +135,20 @@
       </Docs>
     </Member>
     <Member MemberName="IsEnabled">
-      <MemberSignature Language="C#" Value="public Nullable&lt;bool&gt; IsEnabled { get; set; }" />
+      <MemberSignature Language="C#" Value="public bool? IsEnabled { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;bool&gt; IsEnabled" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Management.Automation.Models.WebhookCreateOrUpdateParameters.IsEnabled" />
       <MemberSignature Language="VB.NET" Value="Public Property IsEnabled As Nullable(Of Boolean)" />
       <MemberSignature Language="F#" Value="member this.IsEnabled : Nullable&lt;bool&gt; with get, set" Usage="Microsoft.Azure.Management.Automation.Models.WebhookCreateOrUpdateParameters.IsEnabled" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Nullable&lt;bool&gt; IsEnabled { Nullable&lt;bool&gt; get(); void set(Nullable&lt;bool&gt; value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Automation</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>3.0.1.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="properties.isEnabled")</AttributeName>
+        <Attribute FrameworkAlternate="azure-dotnet-preview">
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty(PropertyName="properties.isEnabled")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty(PropertyName="properties.isEnabled")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -155,18 +168,16 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Management.Automation.Models.WebhookCreateOrUpdateParameters.Name" />
       <MemberSignature Language="VB.NET" Value="Public Property Name As String" />
       <MemberSignature Language="F#" Value="member this.Name : string with get, set" Usage="Microsoft.Azure.Management.Automation.Models.WebhookCreateOrUpdateParameters.Name" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Name { System::String ^ get(); void set(System::String ^ value); };" />
-      <MemberSignature Language="C++ CX" Value="public:&#xA; property Platform::String ^ Name { Platform::String ^ get(); void set(Platform::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Automation</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>3.0.1.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="name")</AttributeName>
+        <Attribute FrameworkAlternate="azure-dotnet-preview">
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty(PropertyName="name")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty(PropertyName="name")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -186,16 +197,15 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Management.Automation.Models.WebhookCreateOrUpdateParameters.Parameters" />
       <MemberSignature Language="VB.NET" Value="Public Property Parameters As IDictionary(Of String, String)" />
       <MemberSignature Language="F#" Value="member this.Parameters : System.Collections.Generic.IDictionary&lt;string, string&gt; with get, set" Usage="Microsoft.Azure.Management.Automation.Models.WebhookCreateOrUpdateParameters.Parameters" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::Generic::IDictionary&lt;System::String ^, System::String ^&gt; ^ Parameters { System::Collections::Generic::IDictionary&lt;System::String ^, System::String ^&gt; ^ get(); void set(System::Collections::Generic::IDictionary&lt;System::String ^, System::String ^&gt; ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Automation</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>3.0.1.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="properties.parameters")</AttributeName>
+        <Attribute FrameworkAlternate="azure-dotnet-preview">
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty(PropertyName="properties.parameters")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty(PropertyName="properties.parameters")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -209,22 +219,41 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <Member MemberName="Properties">
+      <MemberSignature Language="C#" Value="public Microsoft.Azure.Management.Automation.Models.WebhookCreateOrUpdateProperties Properties { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Azure.Management.Automation.Models.WebhookCreateOrUpdateProperties Properties" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Management.Automation.Models.WebhookCreateOrUpdateParameters.Properties" />
+      <MemberSignature Language="VB.NET" Value="Public Property Properties As WebhookCreateOrUpdateProperties" />
+      <MemberSignature Language="F#" Value="member this.Properties : Microsoft.Azure.Management.Automation.Models.WebhookCreateOrUpdateProperties with get, set" Usage="Microsoft.Azure.Management.Automation.Models.WebhookCreateOrUpdateParameters.Properties" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Azure.Management.Automation</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Azure.Management.Automation.Models.WebhookCreateOrUpdateProperties</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
     <Member MemberName="Runbook">
       <MemberSignature Language="C#" Value="public Microsoft.Azure.Management.Automation.Models.RunbookAssociationProperty Runbook { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Azure.Management.Automation.Models.RunbookAssociationProperty Runbook" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Management.Automation.Models.WebhookCreateOrUpdateParameters.Runbook" />
       <MemberSignature Language="VB.NET" Value="Public Property Runbook As RunbookAssociationProperty" />
       <MemberSignature Language="F#" Value="member this.Runbook : Microsoft.Azure.Management.Automation.Models.RunbookAssociationProperty with get, set" Usage="Microsoft.Azure.Management.Automation.Models.WebhookCreateOrUpdateParameters.Runbook" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Azure::Management::Automation::Models::RunbookAssociationProperty ^ Runbook { Microsoft::Azure::Management::Automation::Models::RunbookAssociationProperty ^ get(); void set(Microsoft::Azure::Management::Automation::Models::RunbookAssociationProperty ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Automation</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>3.0.1.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="properties.runbook")</AttributeName>
+        <Attribute FrameworkAlternate="azure-dotnet-preview">
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty(PropertyName="properties.runbook")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty(PropertyName="properties.runbook")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -244,17 +273,15 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Management.Automation.Models.WebhookCreateOrUpdateParameters.RunOn" />
       <MemberSignature Language="VB.NET" Value="Public Property RunOn As String" />
       <MemberSignature Language="F#" Value="member this.RunOn : string with get, set" Usage="Microsoft.Azure.Management.Automation.Models.WebhookCreateOrUpdateParameters.RunOn" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ RunOn { System::String ^ get(); void set(System::String ^ value); };" />
-      <MemberSignature Language="C++ CX" Value="public:&#xA; property Platform::String ^ RunOn { Platform::String ^ get(); void set(Platform::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Automation</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>3.0.1.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="properties.runOn")</AttributeName>
+        <Attribute FrameworkAlternate="azure-dotnet-preview">
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty(PropertyName="properties.runOn")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty(PropertyName="properties.runOn")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -275,17 +302,15 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Management.Automation.Models.WebhookCreateOrUpdateParameters.Uri" />
       <MemberSignature Language="VB.NET" Value="Public Property Uri As String" />
       <MemberSignature Language="F#" Value="member this.Uri : string with get, set" Usage="Microsoft.Azure.Management.Automation.Models.WebhookCreateOrUpdateParameters.Uri" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Uri { System::String ^ get(); void set(System::String ^ value); };" />
-      <MemberSignature Language="C++ CX" Value="public:&#xA; property Platform::String ^ Uri { Platform::String ^ get(); void set(Platform::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Automation</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>3.0.1.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="properties.uri")</AttributeName>
+        <Attribute FrameworkAlternate="azure-dotnet-preview">
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty(PropertyName="properties.uri")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty(PropertyName="properties.uri")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -305,13 +330,9 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Management.Automation.Models.WebhookCreateOrUpdateParameters.Validate" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Sub Validate ()" />
       <MemberSignature Language="F#" Value="abstract member Validate : unit -&gt; unit&#xA;override this.Validate : unit -&gt; unit" Usage="webhookCreateOrUpdateParameters.Validate " />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Validate();" />
-      <MemberSignature Language="C++ CX" Value="public:&#xA; virtual void Validate();" />
-      <MemberSignature Language="C++ WINRT" Value=" virtual void Validate();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Automation</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>3.0.1.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>

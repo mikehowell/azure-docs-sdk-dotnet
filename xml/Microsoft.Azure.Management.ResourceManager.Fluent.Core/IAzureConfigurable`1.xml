@@ -1,13 +1,19 @@
-﻿<Type Name="IAzureConfigurable&lt;T&gt;" FullName="Microsoft.Azure.Management.ResourceManager.Fluent.Core.IAzureConfigurable&lt;T&gt;">
+<Type Name="IAzureConfigurable&lt;T&gt;" FullName="Microsoft.Azure.Management.ResourceManager.Fluent.Core.IAzureConfigurable&lt;T&gt;">
   <TypeSignature Language="C#" Value="public interface IAzureConfigurable&lt;T&gt; where T : IAzureConfigurable&lt;T&gt;" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IAzureConfigurable`1&lt;(class Microsoft.Azure.Management.ResourceManager.Fluent.Core.IAzureConfigurable`1&lt;!T&gt;) T&gt;" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Azure.Management.ResourceManager.Fluent.Core.IAzureConfigurable`1" />
   <TypeSignature Language="VB.NET" Value="Public Interface IAzureConfigurable(Of T)" />
   <TypeSignature Language="F#" Value="type IAzureConfigurable&lt;'T (requires 'T :&gt; IAzureConfigurable&lt;'T&gt;)&gt; = interface" />
-  <TypeSignature Language="C++ CLI" Value="generic &lt;typename T&gt;&#xA; where T : IAzureConfigurable&lt;T&gt;public interface class IAzureConfigurable" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Azure.Management.ResourceManager.Fluent</AssemblyName>
-    <AssemblyVersion>1.0.0.60</AssemblyVersion>
+    <AssemblyVersion>1.0.0.61</AssemblyVersion>
+    <AssemblyVersion>1.0.0.62</AssemblyVersion>
+    <AssemblyVersion>1.0.0.63</AssemblyVersion>
+    <AssemblyVersion>1.0.0.64</AssemblyVersion>
+    <AssemblyVersion>1.0.0.65</AssemblyVersion>
+    <AssemblyVersion>1.0.0.66</AssemblyVersion>
+    <AssemblyVersion>1.0.0.67</AssemblyVersion>
+    <AssemblyVersion>1.0.0.68</AssemblyVersion>
   </AssemblyInfo>
   <TypeParameters>
     <TypeParameter Name="T">
@@ -27,12 +33,19 @@
       <MemberSignature Language="C#" Value="public T WithDelegatingHandler (System.Net.Http.DelegatingHandler delegatingHandler);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance !T WithDelegatingHandler(class System.Net.Http.DelegatingHandler delegatingHandler) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Management.ResourceManager.Fluent.Core.IAzureConfigurable`1.WithDelegatingHandler(System.Net.Http.DelegatingHandler)" />
+      <MemberSignature Language="VB.NET" Value="Public Function WithDelegatingHandler (delegatingHandler As DelegatingHandler) As T" />
       <MemberSignature Language="F#" Value="abstract member WithDelegatingHandler : System.Net.Http.DelegatingHandler -&gt; 'T" Usage="iAzureConfigurable.WithDelegatingHandler delegatingHandler" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; T WithDelegatingHandler(System::Net::Http::DelegatingHandler ^ delegatingHandler);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.ResourceManager.Fluent</AssemblyName>
-        <AssemblyVersion>1.0.0.60</AssemblyVersion>
+        <AssemblyVersion>1.0.0.61</AssemblyVersion>
+        <AssemblyVersion>1.0.0.62</AssemblyVersion>
+        <AssemblyVersion>1.0.0.63</AssemblyVersion>
+        <AssemblyVersion>1.0.0.64</AssemblyVersion>
+        <AssemblyVersion>1.0.0.65</AssemblyVersion>
+        <AssemblyVersion>1.0.0.66</AssemblyVersion>
+        <AssemblyVersion>1.0.0.67</AssemblyVersion>
+        <AssemblyVersion>1.0.0.68</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>T</ReturnType>
@@ -53,11 +66,17 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Management.ResourceManager.Fluent.Core.IAzureConfigurable`1.WithDelegatingHandlers(System.Net.Http.DelegatingHandler[])" />
       <MemberSignature Language="VB.NET" Value="Public Function WithDelegatingHandlers (ParamArray delegatingHandlers As DelegatingHandler()) As T" />
       <MemberSignature Language="F#" Value="abstract member WithDelegatingHandlers : System.Net.Http.DelegatingHandler[] -&gt; 'T" Usage="iAzureConfigurable.WithDelegatingHandlers delegatingHandlers" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; T WithDelegatingHandlers(... cli::array &lt;System::Net::Http::DelegatingHandler ^&gt; ^ delegatingHandlers);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.ResourceManager.Fluent</AssemblyName>
-        <AssemblyVersion>1.0.0.60</AssemblyVersion>
+        <AssemblyVersion>1.0.0.61</AssemblyVersion>
+        <AssemblyVersion>1.0.0.62</AssemblyVersion>
+        <AssemblyVersion>1.0.0.63</AssemblyVersion>
+        <AssemblyVersion>1.0.0.64</AssemblyVersion>
+        <AssemblyVersion>1.0.0.65</AssemblyVersion>
+        <AssemblyVersion>1.0.0.66</AssemblyVersion>
+        <AssemblyVersion>1.0.0.67</AssemblyVersion>
+        <AssemblyVersion>1.0.0.68</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>T</ReturnType>
@@ -66,7 +85,8 @@
         <Parameter Name="delegatingHandlers" Type="System.Net.Http.DelegatingHandler[]">
           <Attributes>
             <Attribute>
-              <AttributeName>System.ParamArray</AttributeName>
+              <AttributeName Language="C#">[System.ParamArray]</AttributeName>
+              <AttributeName Language="F#">[&lt;System.ParamArray&gt;]</AttributeName>
             </Attribute>
           </Attributes>
         </Parameter>
@@ -78,17 +98,47 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <Member MemberName="WithHttpClient">
+      <MemberSignature Language="C#" Value="public T WithHttpClient (System.Net.Http.HttpClient httpClient);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance !T WithHttpClient(class System.Net.Http.HttpClient httpClient) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Management.ResourceManager.Fluent.Core.IAzureConfigurable`1.WithHttpClient(System.Net.Http.HttpClient)" />
+      <MemberSignature Language="VB.NET" Value="Public Function WithHttpClient (httpClient As HttpClient) As T" />
+      <MemberSignature Language="F#" Value="abstract member WithHttpClient : System.Net.Http.HttpClient -&gt; 'T" Usage="iAzureConfigurable.WithHttpClient httpClient" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Azure.Management.ResourceManager.Fluent</AssemblyName>
+        <AssemblyVersion>1.0.0.68</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>T</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="httpClient" Type="System.Net.Http.HttpClient" />
+      </Parameters>
+      <Docs>
+        <param name="httpClient">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
     <Member MemberName="WithLogLevel">
       <MemberSignature Language="C#" Value="public T WithLogLevel (Microsoft.Azure.Management.ResourceManager.Fluent.Core.HttpLoggingDelegatingHandler.Level level);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance !T WithLogLevel(valuetype Microsoft.Azure.Management.ResourceManager.Fluent.Core.HttpLoggingDelegatingHandler/Level level) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Management.ResourceManager.Fluent.Core.IAzureConfigurable`1.WithLogLevel(Microsoft.Azure.Management.ResourceManager.Fluent.Core.HttpLoggingDelegatingHandler.Level)" />
+      <MemberSignature Language="VB.NET" Value="Public Function WithLogLevel (level As HttpLoggingDelegatingHandler.Level) As T" />
       <MemberSignature Language="F#" Value="abstract member WithLogLevel : Microsoft.Azure.Management.ResourceManager.Fluent.Core.HttpLoggingDelegatingHandler.Level -&gt; 'T" Usage="iAzureConfigurable.WithLogLevel level" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; T WithLogLevel(Microsoft::Azure::Management::ResourceManager::Fluent::Core::HttpLoggingDelegatingHandler::Level level);" />
-      <MemberSignature Language="C++ WINRT" Value="T WithLogLevel(Microsoft::Azure::Management::ResourceManager::Fluent::Core::HttpLoggingDelegatingHandler::Level level);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.ResourceManager.Fluent</AssemblyName>
-        <AssemblyVersion>1.0.0.60</AssemblyVersion>
+        <AssemblyVersion>1.0.0.61</AssemblyVersion>
+        <AssemblyVersion>1.0.0.62</AssemblyVersion>
+        <AssemblyVersion>1.0.0.63</AssemblyVersion>
+        <AssemblyVersion>1.0.0.64</AssemblyVersion>
+        <AssemblyVersion>1.0.0.65</AssemblyVersion>
+        <AssemblyVersion>1.0.0.66</AssemblyVersion>
+        <AssemblyVersion>1.0.0.67</AssemblyVersion>
+        <AssemblyVersion>1.0.0.68</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>T</ReturnType>
@@ -107,13 +157,19 @@
       <MemberSignature Language="C#" Value="public T WithRetryPolicy (Microsoft.Rest.TransientFaultHandling.RetryPolicy retryPolicy);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance !T WithRetryPolicy(class Microsoft.Rest.TransientFaultHandling.RetryPolicy retryPolicy) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Management.ResourceManager.Fluent.Core.IAzureConfigurable`1.WithRetryPolicy(Microsoft.Rest.TransientFaultHandling.RetryPolicy)" />
+      <MemberSignature Language="VB.NET" Value="Public Function WithRetryPolicy (retryPolicy As RetryPolicy) As T" />
       <MemberSignature Language="F#" Value="abstract member WithRetryPolicy : Microsoft.Rest.TransientFaultHandling.RetryPolicy -&gt; 'T" Usage="iAzureConfigurable.WithRetryPolicy retryPolicy" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; T WithRetryPolicy(Microsoft::Rest::TransientFaultHandling::RetryPolicy ^ retryPolicy);" />
-      <MemberSignature Language="C++ WINRT" Value="T WithRetryPolicy(Microsoft::Rest::TransientFaultHandling::RetryPolicy const &amp; retryPolicy);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.ResourceManager.Fluent</AssemblyName>
-        <AssemblyVersion>1.0.0.60</AssemblyVersion>
+        <AssemblyVersion>1.0.0.61</AssemblyVersion>
+        <AssemblyVersion>1.0.0.62</AssemblyVersion>
+        <AssemblyVersion>1.0.0.63</AssemblyVersion>
+        <AssemblyVersion>1.0.0.64</AssemblyVersion>
+        <AssemblyVersion>1.0.0.65</AssemblyVersion>
+        <AssemblyVersion>1.0.0.66</AssemblyVersion>
+        <AssemblyVersion>1.0.0.67</AssemblyVersion>
+        <AssemblyVersion>1.0.0.68</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>T</ReturnType>
@@ -134,13 +190,17 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Management.ResourceManager.Fluent.Core.IAzureConfigurable`1.WithUserAgent(System.String,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Function WithUserAgent (product As String, version As String) As T" />
       <MemberSignature Language="F#" Value="abstract member WithUserAgent : string * string -&gt; 'T" Usage="iAzureConfigurable.WithUserAgent (product, version)" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; T WithUserAgent(System::String ^ product, System::String ^ version);" />
-      <MemberSignature Language="C++ CX" Value="public:&#xA; T WithUserAgent(Platform::String ^ product, Platform::String ^ version);" />
-      <MemberSignature Language="C++ WINRT" Value="T WithUserAgent(std::wstring const &amp; product, std::wstring const &amp; version);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.ResourceManager.Fluent</AssemblyName>
-        <AssemblyVersion>1.0.0.60</AssemblyVersion>
+        <AssemblyVersion>1.0.0.61</AssemblyVersion>
+        <AssemblyVersion>1.0.0.62</AssemblyVersion>
+        <AssemblyVersion>1.0.0.63</AssemblyVersion>
+        <AssemblyVersion>1.0.0.64</AssemblyVersion>
+        <AssemblyVersion>1.0.0.65</AssemblyVersion>
+        <AssemblyVersion>1.0.0.66</AssemblyVersion>
+        <AssemblyVersion>1.0.0.67</AssemblyVersion>
+        <AssemblyVersion>1.0.0.68</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>T</ReturnType>

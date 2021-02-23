@@ -1,15 +1,15 @@
-﻿<Type Name="BaselineResponse" FullName="Microsoft.Azure.Management.Monitor.Models.BaselineResponse">
+<Type Name="BaselineResponse" FullName="Microsoft.Azure.Management.Monitor.Models.BaselineResponse">
   <TypeSignature Language="C#" Value="public class BaselineResponse" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit BaselineResponse extends System.Object" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Azure.Management.Monitor.Models.BaselineResponse" />
   <TypeSignature Language="VB.NET" Value="Public Class BaselineResponse" />
   <TypeSignature Language="F#" Value="type BaselineResponse = class" />
-  <TypeSignature Language="C++ CLI" Value="public ref class BaselineResponse" />
-  <TypeSignature Language="C++ WINRT" Value="[Windows::Foundation::Metadata::WebHostHidden]&#xA;class BaselineResponse" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Azure.Management.Monitor</AssemblyName>
-    <AssemblyVersion>0.19.0.0</AssemblyVersion>
-    <AssemblyVersion>0.19.1.0</AssemblyVersion>
+    <AssemblyVersion>0.24.1.0</AssemblyVersion>
+    <AssemblyVersion>0.25.0.0</AssemblyVersion>
+    <AssemblyVersion>0.25.1.0</AssemblyVersion>
+    <AssemblyVersion>0.25.2.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
@@ -17,7 +17,8 @@
   <Interfaces />
   <Attributes>
     <Attribute>
-      <AttributeName>Microsoft.Rest.Serialization.JsonTransformation</AttributeName>
+      <AttributeName Language="C#">[Microsoft.Rest.Serialization.JsonTransformation]</AttributeName>
+      <AttributeName Language="F#">[&lt;Microsoft.Rest.Serialization.JsonTransformation&gt;]</AttributeName>
     </Attribute>
   </Attributes>
   <Docs>
@@ -32,14 +33,13 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Management.Monitor.Models.BaselineResponse.#ctor" />
       <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; BaselineResponse();" />
-      <MemberSignature Language="C++ CX" Value="public:&#xA; BaselineResponse();" />
-      <MemberSignature Language="C++ WINRT" Value=" BaselineResponse();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Monitor</AssemblyName>
-        <AssemblyVersion>0.19.0.0</AssemblyVersion>
-        <AssemblyVersion>0.19.1.0</AssemblyVersion>
+        <AssemblyVersion>0.24.1.0</AssemblyVersion>
+        <AssemblyVersion>0.25.0.0</AssemblyVersion>
+        <AssemblyVersion>0.25.1.0</AssemblyVersion>
+        <AssemblyVersion>0.25.2.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
@@ -50,16 +50,18 @@
       </Docs>
     </Member>
     <Member MemberName=".ctor">
-      <MemberSignature Language="C#" Value="public BaselineResponse (string id = null, string type = null, Microsoft.Azure.Management.Monitor.Models.LocalizableString name = null, string timespan = null, Nullable&lt;TimeSpan&gt; interval = null, string aggregation = null, System.Collections.Generic.IList&lt;Nullable&lt;DateTime&gt;&gt; timestamps = null, System.Collections.Generic.IList&lt;Microsoft.Azure.Management.Monitor.Models.Baseline&gt; baseline = null, System.Collections.Generic.IList&lt;Microsoft.Azure.Management.Monitor.Models.BaselineMetadataValue&gt; metadata = null);" />
+      <MemberSignature Language="C#" Value="public BaselineResponse (string id = default, string type = default, Microsoft.Azure.Management.Monitor.Models.LocalizableString name = default, string timespan = default, TimeSpan? interval = default, string aggregation = default, System.Collections.Generic.IList&lt;DateTime?&gt; timestamps = default, System.Collections.Generic.IList&lt;Microsoft.Azure.Management.Monitor.Models.Baseline&gt; baseline = default, System.Collections.Generic.IList&lt;Microsoft.Azure.Management.Monitor.Models.BaselineMetadataValue&gt; metadata = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string id, string type, class Microsoft.Azure.Management.Monitor.Models.LocalizableString name, string timespan, valuetype System.Nullable`1&lt;valuetype System.TimeSpan&gt; interval, string aggregation, class System.Collections.Generic.IList`1&lt;valuetype System.Nullable`1&lt;valuetype System.DateTime&gt;&gt; timestamps, class System.Collections.Generic.IList`1&lt;class Microsoft.Azure.Management.Monitor.Models.Baseline&gt; baseline, class System.Collections.Generic.IList`1&lt;class Microsoft.Azure.Management.Monitor.Models.BaselineMetadataValue&gt; metadata) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Management.Monitor.Models.BaselineResponse.#ctor(System.String,System.String,Microsoft.Azure.Management.Monitor.Models.LocalizableString,System.String,System.Nullable{System.TimeSpan},System.String,System.Collections.Generic.IList{System.Nullable{System.DateTime}},System.Collections.Generic.IList{Microsoft.Azure.Management.Monitor.Models.Baseline},System.Collections.Generic.IList{Microsoft.Azure.Management.Monitor.Models.BaselineMetadataValue})" />
-      <MemberSignature Language="VB.NET" Value="Public Sub New (Optional id As String = null, Optional type As String = null, Optional name As LocalizableString = null, Optional timespan As String = null, Optional interval As Nullable(Of TimeSpan) = null, Optional aggregation As String = null, Optional timestamps As IList(Of Nullable(Of DateTime)) = null, Optional baseline As IList(Of Baseline) = null, Optional metadata As IList(Of BaselineMetadataValue) = null)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (Optional id As String = Nothing, Optional type As String = Nothing, Optional name As LocalizableString = Nothing, Optional timespan As String = Nothing, Optional interval As Nullable(Of TimeSpan) = Nothing, Optional aggregation As String = Nothing, Optional timestamps As IList(Of Nullable(Of DateTime)) = Nothing, Optional baseline As IList(Of Baseline) = Nothing, Optional metadata As IList(Of BaselineMetadataValue) = Nothing)" />
       <MemberSignature Language="F#" Value="new Microsoft.Azure.Management.Monitor.Models.BaselineResponse : string * string * Microsoft.Azure.Management.Monitor.Models.LocalizableString * string * Nullable&lt;TimeSpan&gt; * string * System.Collections.Generic.IList&lt;Nullable&lt;DateTime&gt;&gt; * System.Collections.Generic.IList&lt;Microsoft.Azure.Management.Monitor.Models.Baseline&gt; * System.Collections.Generic.IList&lt;Microsoft.Azure.Management.Monitor.Models.BaselineMetadataValue&gt; -&gt; Microsoft.Azure.Management.Monitor.Models.BaselineResponse" Usage="new Microsoft.Azure.Management.Monitor.Models.BaselineResponse (id, type, name, timespan, interval, aggregation, timestamps, baseline, metadata)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Monitor</AssemblyName>
-        <AssemblyVersion>0.19.0.0</AssemblyVersion>
-        <AssemblyVersion>0.19.1.0</AssemblyVersion>
+        <AssemblyVersion>0.24.1.0</AssemblyVersion>
+        <AssemblyVersion>0.25.0.0</AssemblyVersion>
+        <AssemblyVersion>0.25.1.0</AssemblyVersion>
+        <AssemblyVersion>0.25.2.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="id" Type="System.String" />
@@ -79,7 +81,7 @@
         <param name="name">the name and the display name of the metric,
             i.e. it is localizable string.</param>
         <param name="timespan">The timespan for which the data was
-            retrieved. Its value consists of two datatimes concatenated,
+            retrieved. Its value consists of two datetimes concatenated,
             separated by '/'.  This may be adjusted in the future and returned
             back from what was originally requested.</param>
         <param name="interval">The interval (window size) for which the
@@ -105,17 +107,18 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Management.Monitor.Models.BaselineResponse.Aggregation" />
       <MemberSignature Language="VB.NET" Value="Public Property Aggregation As String" />
       <MemberSignature Language="F#" Value="member this.Aggregation : string with get, set" Usage="Microsoft.Azure.Management.Monitor.Models.BaselineResponse.Aggregation" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Aggregation { System::String ^ get(); void set(System::String ^ value); };" />
-      <MemberSignature Language="C++ CX" Value="public:&#xA; property Platform::String ^ Aggregation { Platform::String ^ get(); void set(Platform::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Monitor</AssemblyName>
-        <AssemblyVersion>0.19.0.0</AssemblyVersion>
-        <AssemblyVersion>0.19.1.0</AssemblyVersion>
+        <AssemblyVersion>0.24.1.0</AssemblyVersion>
+        <AssemblyVersion>0.25.0.0</AssemblyVersion>
+        <AssemblyVersion>0.25.1.0</AssemblyVersion>
+        <AssemblyVersion>0.25.2.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="properties.aggregation")</AttributeName>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty(PropertyName="properties.aggregation")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty(PropertyName="properties.aggregation")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -135,16 +138,18 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Management.Monitor.Models.BaselineResponse.Baseline" />
       <MemberSignature Language="VB.NET" Value="Public Property Baseline As IList(Of Baseline)" />
       <MemberSignature Language="F#" Value="member this.Baseline : System.Collections.Generic.IList&lt;Microsoft.Azure.Management.Monitor.Models.Baseline&gt; with get, set" Usage="Microsoft.Azure.Management.Monitor.Models.BaselineResponse.Baseline" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::Generic::IList&lt;Microsoft::Azure::Management::Monitor::Models::Baseline ^&gt; ^ Baseline { System::Collections::Generic::IList&lt;Microsoft::Azure::Management::Monitor::Models::Baseline ^&gt; ^ get(); void set(System::Collections::Generic::IList&lt;Microsoft::Azure::Management::Monitor::Models::Baseline ^&gt; ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Monitor</AssemblyName>
-        <AssemblyVersion>0.19.0.0</AssemblyVersion>
-        <AssemblyVersion>0.19.1.0</AssemblyVersion>
+        <AssemblyVersion>0.24.1.0</AssemblyVersion>
+        <AssemblyVersion>0.25.0.0</AssemblyVersion>
+        <AssemblyVersion>0.25.1.0</AssemblyVersion>
+        <AssemblyVersion>0.25.2.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="properties.baseline")</AttributeName>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty(PropertyName="properties.baseline")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty(PropertyName="properties.baseline")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -164,17 +169,18 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Management.Monitor.Models.BaselineResponse.Id" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Id As String" />
       <MemberSignature Language="F#" Value="member this.Id : string" Usage="Microsoft.Azure.Management.Monitor.Models.BaselineResponse.Id" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Id { System::String ^ get(); };" />
-      <MemberSignature Language="C++ CX" Value="public:&#xA; property Platform::String ^ Id { Platform::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Monitor</AssemblyName>
-        <AssemblyVersion>0.19.0.0</AssemblyVersion>
-        <AssemblyVersion>0.19.1.0</AssemblyVersion>
+        <AssemblyVersion>0.24.1.0</AssemblyVersion>
+        <AssemblyVersion>0.25.0.0</AssemblyVersion>
+        <AssemblyVersion>0.25.1.0</AssemblyVersion>
+        <AssemblyVersion>0.25.2.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="id")</AttributeName>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty(PropertyName="id")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty(PropertyName="id")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -189,21 +195,23 @@
       </Docs>
     </Member>
     <Member MemberName="Interval">
-      <MemberSignature Language="C#" Value="public Nullable&lt;TimeSpan&gt; Interval { get; set; }" />
+      <MemberSignature Language="C#" Value="public TimeSpan? Interval { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;valuetype System.TimeSpan&gt; Interval" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Management.Monitor.Models.BaselineResponse.Interval" />
       <MemberSignature Language="VB.NET" Value="Public Property Interval As Nullable(Of TimeSpan)" />
       <MemberSignature Language="F#" Value="member this.Interval : Nullable&lt;TimeSpan&gt; with get, set" Usage="Microsoft.Azure.Management.Monitor.Models.BaselineResponse.Interval" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Nullable&lt;TimeSpan&gt; Interval { Nullable&lt;TimeSpan&gt; get(); void set(Nullable&lt;TimeSpan&gt; value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Monitor</AssemblyName>
-        <AssemblyVersion>0.19.0.0</AssemblyVersion>
-        <AssemblyVersion>0.19.1.0</AssemblyVersion>
+        <AssemblyVersion>0.24.1.0</AssemblyVersion>
+        <AssemblyVersion>0.25.0.0</AssemblyVersion>
+        <AssemblyVersion>0.25.1.0</AssemblyVersion>
+        <AssemblyVersion>0.25.2.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="properties.interval")</AttributeName>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty(PropertyName="properties.interval")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty(PropertyName="properties.interval")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -226,16 +234,18 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Management.Monitor.Models.BaselineResponse.Metadata" />
       <MemberSignature Language="VB.NET" Value="Public Property Metadata As IList(Of BaselineMetadataValue)" />
       <MemberSignature Language="F#" Value="member this.Metadata : System.Collections.Generic.IList&lt;Microsoft.Azure.Management.Monitor.Models.BaselineMetadataValue&gt; with get, set" Usage="Microsoft.Azure.Management.Monitor.Models.BaselineResponse.Metadata" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::Generic::IList&lt;Microsoft::Azure::Management::Monitor::Models::BaselineMetadataValue ^&gt; ^ Metadata { System::Collections::Generic::IList&lt;Microsoft::Azure::Management::Monitor::Models::BaselineMetadataValue ^&gt; ^ get(); void set(System::Collections::Generic::IList&lt;Microsoft::Azure::Management::Monitor::Models::BaselineMetadataValue ^&gt; ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Monitor</AssemblyName>
-        <AssemblyVersion>0.19.0.0</AssemblyVersion>
-        <AssemblyVersion>0.19.1.0</AssemblyVersion>
+        <AssemblyVersion>0.24.1.0</AssemblyVersion>
+        <AssemblyVersion>0.25.0.0</AssemblyVersion>
+        <AssemblyVersion>0.25.1.0</AssemblyVersion>
+        <AssemblyVersion>0.25.2.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="properties.metadata")</AttributeName>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty(PropertyName="properties.metadata")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty(PropertyName="properties.metadata")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -255,16 +265,18 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Management.Monitor.Models.BaselineResponse.Name" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Name As LocalizableString" />
       <MemberSignature Language="F#" Value="member this.Name : Microsoft.Azure.Management.Monitor.Models.LocalizableString" Usage="Microsoft.Azure.Management.Monitor.Models.BaselineResponse.Name" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Azure::Management::Monitor::Models::LocalizableString ^ Name { Microsoft::Azure::Management::Monitor::Models::LocalizableString ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Monitor</AssemblyName>
-        <AssemblyVersion>0.19.0.0</AssemblyVersion>
-        <AssemblyVersion>0.19.1.0</AssemblyVersion>
+        <AssemblyVersion>0.24.1.0</AssemblyVersion>
+        <AssemblyVersion>0.25.0.0</AssemblyVersion>
+        <AssemblyVersion>0.25.1.0</AssemblyVersion>
+        <AssemblyVersion>0.25.2.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="name")</AttributeName>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty(PropertyName="name")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty(PropertyName="name")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -285,17 +297,18 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Management.Monitor.Models.BaselineResponse.Timespan" />
       <MemberSignature Language="VB.NET" Value="Public Property Timespan As String" />
       <MemberSignature Language="F#" Value="member this.Timespan : string with get, set" Usage="Microsoft.Azure.Management.Monitor.Models.BaselineResponse.Timespan" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Timespan { System::String ^ get(); void set(System::String ^ value); };" />
-      <MemberSignature Language="C++ CX" Value="public:&#xA; property Platform::String ^ Timespan { Platform::String ^ get(); void set(Platform::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Monitor</AssemblyName>
-        <AssemblyVersion>0.19.0.0</AssemblyVersion>
-        <AssemblyVersion>0.19.1.0</AssemblyVersion>
+        <AssemblyVersion>0.24.1.0</AssemblyVersion>
+        <AssemblyVersion>0.25.0.0</AssemblyVersion>
+        <AssemblyVersion>0.25.1.0</AssemblyVersion>
+        <AssemblyVersion>0.25.2.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="properties.timespan")</AttributeName>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty(PropertyName="properties.timespan")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty(PropertyName="properties.timespan")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -304,7 +317,7 @@
       <Docs>
         <summary>
             Gets or sets the timespan for which the data was retrieved. Its
-            value consists of two datatimes concatenated, separated by '/'.
+            value consists of two datetimes concatenated, separated by '/'.
             This may be adjusted in the future and returned back from what was
             originally requested.
             </summary>
@@ -313,21 +326,23 @@
       </Docs>
     </Member>
     <Member MemberName="Timestamps">
-      <MemberSignature Language="C#" Value="public System.Collections.Generic.IList&lt;Nullable&lt;DateTime&gt;&gt; Timestamps { get; set; }" />
+      <MemberSignature Language="C#" Value="public System.Collections.Generic.IList&lt;DateTime?&gt; Timestamps { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Generic.IList`1&lt;valuetype System.Nullable`1&lt;valuetype System.DateTime&gt;&gt; Timestamps" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Management.Monitor.Models.BaselineResponse.Timestamps" />
       <MemberSignature Language="VB.NET" Value="Public Property Timestamps As IList(Of Nullable(Of DateTime))" />
       <MemberSignature Language="F#" Value="member this.Timestamps : System.Collections.Generic.IList&lt;Nullable&lt;DateTime&gt;&gt; with get, set" Usage="Microsoft.Azure.Management.Monitor.Models.BaselineResponse.Timestamps" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::Generic::IList&lt;Nullable&lt;DateTime&gt;&gt; ^ Timestamps { System::Collections::Generic::IList&lt;Nullable&lt;DateTime&gt;&gt; ^ get(); void set(System::Collections::Generic::IList&lt;Nullable&lt;DateTime&gt;&gt; ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Monitor</AssemblyName>
-        <AssemblyVersion>0.19.0.0</AssemblyVersion>
-        <AssemblyVersion>0.19.1.0</AssemblyVersion>
+        <AssemblyVersion>0.24.1.0</AssemblyVersion>
+        <AssemblyVersion>0.25.0.0</AssemblyVersion>
+        <AssemblyVersion>0.25.1.0</AssemblyVersion>
+        <AssemblyVersion>0.25.2.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="properties.timestamps")</AttributeName>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty(PropertyName="properties.timestamps")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty(PropertyName="properties.timestamps")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -347,17 +362,18 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Management.Monitor.Models.BaselineResponse.Type" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Type As String" />
       <MemberSignature Language="F#" Value="member this.Type : string" Usage="Microsoft.Azure.Management.Monitor.Models.BaselineResponse.Type" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Type { System::String ^ get(); };" />
-      <MemberSignature Language="C++ CX" Value="public:&#xA; property Platform::String ^ Type { Platform::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Monitor</AssemblyName>
-        <AssemblyVersion>0.19.0.0</AssemblyVersion>
-        <AssemblyVersion>0.19.1.0</AssemblyVersion>
+        <AssemblyVersion>0.24.1.0</AssemblyVersion>
+        <AssemblyVersion>0.25.0.0</AssemblyVersion>
+        <AssemblyVersion>0.25.1.0</AssemblyVersion>
+        <AssemblyVersion>0.25.2.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="type")</AttributeName>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty(PropertyName="type")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty(PropertyName="type")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -377,14 +393,13 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Management.Monitor.Models.BaselineResponse.Validate" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Sub Validate ()" />
       <MemberSignature Language="F#" Value="abstract member Validate : unit -&gt; unit&#xA;override this.Validate : unit -&gt; unit" Usage="baselineResponse.Validate " />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Validate();" />
-      <MemberSignature Language="C++ CX" Value="public:&#xA; virtual void Validate();" />
-      <MemberSignature Language="C++ WINRT" Value=" virtual void Validate();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Monitor</AssemblyName>
-        <AssemblyVersion>0.19.0.0</AssemblyVersion>
-        <AssemblyVersion>0.19.1.0</AssemblyVersion>
+        <AssemblyVersion>0.24.1.0</AssemblyVersion>
+        <AssemblyVersion>0.25.0.0</AssemblyVersion>
+        <AssemblyVersion>0.25.1.0</AssemblyVersion>
+        <AssemblyVersion>0.25.2.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>

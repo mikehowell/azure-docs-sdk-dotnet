@@ -1,12 +1,9 @@
-﻿<Type Name="ServiceProxy" FullName="Microsoft.ServiceFabric.Services.Remoting.Client.ServiceProxy">
+<Type Name="ServiceProxy" FullName="Microsoft.ServiceFabric.Services.Remoting.Client.ServiceProxy">
   <TypeSignature Language="C#" Value="public abstract class ServiceProxy : Microsoft.ServiceFabric.Services.Remoting.Builder.ProxyBase, Microsoft.ServiceFabric.Services.Remoting.Client.IServiceProxy" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit ServiceProxy extends Microsoft.ServiceFabric.Services.Remoting.Builder.ProxyBase implements class Microsoft.ServiceFabric.Services.Remoting.Client.IServiceProxy" />
   <TypeSignature Language="DocId" Value="T:Microsoft.ServiceFabric.Services.Remoting.Client.ServiceProxy" />
   <TypeSignature Language="VB.NET" Value="Public MustInherit Class ServiceProxy&#xA;Inherits ProxyBase&#xA;Implements IServiceProxy" />
   <TypeSignature Language="F#" Value="type ServiceProxy = class&#xA;    inherit ProxyBase&#xA;    interface IServiceProxy" />
-  <TypeSignature Language="C++ CLI" Value="public ref class ServiceProxy abstract : Microsoft::ServiceFabric::Services::Remoting::Builder::ProxyBase, Microsoft::ServiceFabric::Services::Remoting::Client::IServiceProxy" />
-  <TypeSignature Language="C++ CX" Value="[Windows::Foundation::Metadata::WebHostHidden]&#xA;public ref class ServiceProxy abstract : Microsoft::ServiceFabric::Services::Remoting::Builder::ProxyBase, Microsoft::ServiceFabric::Services::Remoting::Client::IServiceProxy" />
-  <TypeSignature Language="C++ WINRT" Value="[Windows::Foundation::Metadata::WebHostHidden]&#xA;class ServiceProxy abstract : Microsoft::ServiceFabric::Services::Remoting::Builder::ProxyBase, Microsoft::ServiceFabric::Services::Remoting::Client::IServiceProxy" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.ServiceFabric.Services.Remoting</AssemblyName>
     <AssemblyVersion>6.0.0.0</AssemblyVersion>
@@ -31,9 +28,6 @@
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.ServiceFabric.Services.Remoting.Client.ServiceProxy.#ctor" />
       <MemberSignature Language="VB.NET" Value="Protected Sub New ()" />
-      <MemberSignature Language="C++ CLI" Value="protected:&#xA; ServiceProxy();" />
-      <MemberSignature Language="C++ CX" Value="protected:&#xA; ServiceProxy();" />
-      <MemberSignature Language="C++ WINRT" Value=" ServiceProxy();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.ServiceFabric.Services.Remoting</AssemblyName>
@@ -46,9 +40,10 @@
       </Docs>
     </Member>
     <Member MemberName="Create&lt;TServiceInterface&gt;">
-      <MemberSignature Language="C#" Value="public static TServiceInterface Create&lt;TServiceInterface&gt; (Uri serviceUri, Microsoft.ServiceFabric.Services.Client.ServicePartitionKey partitionKey = null, Microsoft.ServiceFabric.Services.Communication.Client.TargetReplicaSelector targetReplicaSelector = Microsoft.ServiceFabric.Services.Communication.Client.TargetReplicaSelector.PrimaryReplica, string listenerName = null) where TServiceInterface : Microsoft.ServiceFabric.Services.Remoting.IService;" />
+      <MemberSignature Language="C#" Value="public static TServiceInterface Create&lt;TServiceInterface&gt; (Uri serviceUri, Microsoft.ServiceFabric.Services.Client.ServicePartitionKey partitionKey = default, Microsoft.ServiceFabric.Services.Communication.Client.TargetReplicaSelector targetReplicaSelector = Microsoft.ServiceFabric.Services.Communication.Client.TargetReplicaSelector.PrimaryReplica, string listenerName = default) where TServiceInterface : Microsoft.ServiceFabric.Services.Remoting.IService;" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig !!TServiceInterface Create&lt;(class Microsoft.ServiceFabric.Services.Remoting.IService) TServiceInterface&gt;(class System.Uri serviceUri, class Microsoft.ServiceFabric.Services.Client.ServicePartitionKey partitionKey, valuetype Microsoft.ServiceFabric.Services.Communication.Client.TargetReplicaSelector targetReplicaSelector, string listenerName) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.ServiceFabric.Services.Remoting.Client.ServiceProxy.Create``1(System.Uri,Microsoft.ServiceFabric.Services.Client.ServicePartitionKey,Microsoft.ServiceFabric.Services.Communication.Client.TargetReplicaSelector,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function Create(Of TServiceInterface As IService) (serviceUri As Uri, Optional partitionKey As ServicePartitionKey = Nothing, Optional targetReplicaSelector As TargetReplicaSelector = Microsoft.ServiceFabric.Services.Communication.Client.TargetReplicaSelector.PrimaryReplica, Optional listenerName As String = Nothing) As TServiceInterface" />
       <MemberSignature Language="F#" Value="static member Create : Uri * Microsoft.ServiceFabric.Services.Client.ServicePartitionKey * Microsoft.ServiceFabric.Services.Communication.Client.TargetReplicaSelector * string -&gt; 'ServiceInterface (requires 'ServiceInterface :&gt; Microsoft.ServiceFabric.Services.Remoting.IService)" Usage="Microsoft.ServiceFabric.Services.Remoting.Client.ServiceProxy.Create (serviceUri, partitionKey, targetReplicaSelector, listenerName)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -72,18 +67,18 @@
         <Parameter Name="listenerName" Type="System.String" />
       </Parameters>
       <Docs>
-        <typeparam name="TServiceInterface">Interface that is being remoted.</typeparam>
+        <typeparam name="TServiceInterface">Interface that is being remoted</typeparam>
         <param name="serviceUri">Uri of the Service.</param>
-        <param name="partitionKey">The Partition key that determines which service partition is responsible for handling requests from this service proxy.</param>
+        <param name="partitionKey">The Partition key that determines which service partition is responsible for handling requests from this service proxy</param>
         <param name="targetReplicaSelector">Determines which replica or instance of the service partition the client should connect to.</param>
-        <param name="listenerName">This parameter is Optional if the service has a single communication listener. The endpoints from the service are of the form {"Endpoints":{"Listener1":"Endpoint1","Listener2":"Endpoint2" ...}}. When the service exposes multiple endpoints, this parameter identifies which of those endpoints to use for the remoting communication.</param>
-        <summary>
-            Creates a proxy to communicate to the specified service using the remoted interface TServiceInterface that 
-            the service implements.
-            <typeparam name="TServiceInterface">Interface that is being remoted</typeparam><param name="serviceUri">Uri of the Service.</param><param name="partitionKey">The Partition key that determines which service partition is responsible for handling requests from this service proxy</param><param name="targetReplicaSelector">Determines which replica or instance of the service partition the client should connect to.</param><param name="listenerName">This parameter is Optional if the service has a single communication listener. The endpoints from the service
+        <param name="listenerName">This parameter is Optional if the service has a single communication listener. The endpoints from the service
             are of the form {"Endpoints":{"Listener1":"Endpoint1","Listener2":"Endpoint2" ...}}. When the service exposes multiple endpoints, this parameter
             identifies which of those endpoints to use for the remoting communication.
-            </param><returns>The proxy that implement the interface that is being remoted. The returned object also implement <see cref="T:Microsoft.ServiceFabric.Services.Remoting.Client.IServiceProxy" /> interface.</returns></summary>
+            </param>
+        <summary>
+            Creates a proxy to communicate to the specified service using the remoted interface TServiceInterface that
+            the service implements.
+            </summary>
         <returns>The proxy that implement the interface that is being remoted. The returned object also implement <see cref="T:Microsoft.ServiceFabric.Services.Remoting.Client.IServiceProxy" /> interface.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -94,8 +89,6 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.ServiceFabric.Services.Remoting.Client.ServiceProxy.ServiceInterfaceType" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ServiceInterfaceType As Type" />
       <MemberSignature Language="F#" Value="member this.ServiceInterfaceType : Type" Usage="Microsoft.ServiceFabric.Services.Remoting.Client.ServiceProxy.ServiceInterfaceType" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Type ^ ServiceInterfaceType { Type ^ get(); };" />
-      <MemberSignature Language="C++ CX" Value="public:&#xA; property Platform::Type ^ ServiceInterfaceType { Platform::Type ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.ServiceFabric.Services.Remoting</AssemblyName>
@@ -106,7 +99,7 @@
       </ReturnValue>
       <Docs>
         <summary>
-            The interface type that is being remoted.
+            Gets the interface type that is being remoted.
             </summary>
         <value>Service interface type</value>
         <remarks>To be added.</remarks>
@@ -118,8 +111,6 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.ServiceFabric.Services.Remoting.Client.ServiceProxy.ServicePartitionClient" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ServicePartitionClient As IServiceRemotingPartitionClient" />
       <MemberSignature Language="F#" Value="member this.ServicePartitionClient : Microsoft.ServiceFabric.Services.Remoting.V1.Client.IServiceRemotingPartitionClient" Usage="Microsoft.ServiceFabric.Services.Remoting.Client.ServiceProxy.ServicePartitionClient" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::ServiceFabric::Services::Remoting::V1::Client::IServiceRemotingPartitionClient ^ ServicePartitionClient { Microsoft::ServiceFabric::Services::Remoting::V1::Client::IServiceRemotingPartitionClient ^ get(); };" />
-      <MemberSignature Language="C++ CX" Value="public:&#xA; property Microsoft::ServiceFabric::Services::Remoting::V1::Client::IServiceRemotingPartitionClient ^ ServicePartitionClient { Microsoft::ServiceFabric::Services::Remoting::V1::Client::IServiceRemotingPartitionClient ^ get(); };" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:Microsoft.ServiceFabric.Services.Remoting.Client.IServiceProxy.ServicePartitionClient</InterfaceMember>
@@ -133,7 +124,7 @@
       </ReturnValue>
       <Docs>
         <summary>
-            The V1 Service partition client used to send requests to the service.
+            Gets the V1 Service partition client used to send requests to the service.
             </summary>
         <value>ServicePartitionClient used by the ServiceProxy</value>
         <remarks>To be added.</remarks>
@@ -145,8 +136,6 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.ServiceFabric.Services.Remoting.Client.ServiceProxy.ServicePartitionClient2" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ServicePartitionClient2 As IServiceRemotingPartitionClient" />
       <MemberSignature Language="F#" Value="member this.ServicePartitionClient2 : Microsoft.ServiceFabric.Services.Remoting.V2.Client.IServiceRemotingPartitionClient" Usage="Microsoft.ServiceFabric.Services.Remoting.Client.ServiceProxy.ServicePartitionClient2" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::ServiceFabric::Services::Remoting::V2::Client::IServiceRemotingPartitionClient ^ ServicePartitionClient2 { Microsoft::ServiceFabric::Services::Remoting::V2::Client::IServiceRemotingPartitionClient ^ get(); };" />
-      <MemberSignature Language="C++ CX" Value="public:&#xA; property Microsoft::ServiceFabric::Services::Remoting::V2::Client::IServiceRemotingPartitionClient ^ ServicePartitionClient2 { Microsoft::ServiceFabric::Services::Remoting::V2::Client::IServiceRemotingPartitionClient ^ get(); };" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:Microsoft.ServiceFabric.Services.Remoting.Client.IServiceProxy.ServicePartitionClient2</InterfaceMember>
@@ -160,7 +149,7 @@
       </ReturnValue>
       <Docs>
         <summary>
-            The V2 Service partition client used to send requests to the service.
+            Gets the V2 Service partition client used to send requests to the service.
             </summary>
         <value>ServicePartitionClient used by the ServiceProxy</value>
         <remarks>To be added.</remarks>

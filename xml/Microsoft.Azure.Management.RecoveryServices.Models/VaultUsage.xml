@@ -1,14 +1,14 @@
-﻿<Type Name="VaultUsage" FullName="Microsoft.Azure.Management.RecoveryServices.Models.VaultUsage">
+<Type Name="VaultUsage" FullName="Microsoft.Azure.Management.RecoveryServices.Models.VaultUsage">
   <TypeSignature Language="C#" Value="public class VaultUsage" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit VaultUsage extends System.Object" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Azure.Management.RecoveryServices.Models.VaultUsage" />
   <TypeSignature Language="VB.NET" Value="Public Class VaultUsage" />
   <TypeSignature Language="F#" Value="type VaultUsage = class" />
-  <TypeSignature Language="C++ CLI" Value="public ref class VaultUsage" />
-  <TypeSignature Language="C++ WINRT" Value="[Windows::Foundation::Metadata::WebHostHidden]&#xA;class VaultUsage" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Azure.Management.RecoveryServices</AssemblyName>
     <AssemblyVersion>4.2.0.0</AssemblyVersion>
+    <AssemblyVersion>4.3.0.0</AssemblyVersion>
+    <AssemblyVersion>4.3.1.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
@@ -26,13 +26,12 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Management.RecoveryServices.Models.VaultUsage.#ctor" />
       <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; VaultUsage();" />
-      <MemberSignature Language="C++ CX" Value="public:&#xA; VaultUsage();" />
-      <MemberSignature Language="C++ WINRT" Value=" VaultUsage();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.RecoveryServices</AssemblyName>
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
+        <AssemblyVersion>4.3.0.0</AssemblyVersion>
+        <AssemblyVersion>4.3.1.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
@@ -43,15 +42,17 @@
       </Docs>
     </Member>
     <Member MemberName=".ctor">
-      <MemberSignature Language="C#" Value="public VaultUsage (string unit = null, string quotaPeriod = null, Nullable&lt;DateTime&gt; nextResetTime = null, Nullable&lt;long&gt; currentValue = null, Nullable&lt;long&gt; limit = null, Microsoft.Azure.Management.RecoveryServices.Models.NameInfo name = null);" />
+      <MemberSignature Language="C#" Value="public VaultUsage (string unit = default, string quotaPeriod = default, DateTime? nextResetTime = default, long? currentValue = default, long? limit = default, Microsoft.Azure.Management.RecoveryServices.Models.NameInfo name = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string unit, string quotaPeriod, valuetype System.Nullable`1&lt;valuetype System.DateTime&gt; nextResetTime, valuetype System.Nullable`1&lt;int64&gt; currentValue, valuetype System.Nullable`1&lt;int64&gt; limit, class Microsoft.Azure.Management.RecoveryServices.Models.NameInfo name) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Management.RecoveryServices.Models.VaultUsage.#ctor(System.String,System.String,System.Nullable{System.DateTime},System.Nullable{System.Int64},System.Nullable{System.Int64},Microsoft.Azure.Management.RecoveryServices.Models.NameInfo)" />
-      <MemberSignature Language="VB.NET" Value="Public Sub New (Optional unit As String = null, Optional quotaPeriod As String = null, Optional nextResetTime As Nullable(Of DateTime) = null, Optional currentValue As Nullable(Of Long) = null, Optional limit As Nullable(Of Long) = null, Optional name As NameInfo = null)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (Optional unit As String = Nothing, Optional quotaPeriod As String = Nothing, Optional nextResetTime As Nullable(Of DateTime) = Nothing, Optional currentValue As Nullable(Of Long) = Nothing, Optional limit As Nullable(Of Long) = Nothing, Optional name As NameInfo = Nothing)" />
       <MemberSignature Language="F#" Value="new Microsoft.Azure.Management.RecoveryServices.Models.VaultUsage : string * string * Nullable&lt;DateTime&gt; * Nullable&lt;int64&gt; * Nullable&lt;int64&gt; * Microsoft.Azure.Management.RecoveryServices.Models.NameInfo -&gt; Microsoft.Azure.Management.RecoveryServices.Models.VaultUsage" Usage="new Microsoft.Azure.Management.RecoveryServices.Models.VaultUsage (unit, quotaPeriod, nextResetTime, currentValue, limit, name)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.RecoveryServices</AssemblyName>
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
+        <AssemblyVersion>4.3.0.0</AssemblyVersion>
+        <AssemblyVersion>4.3.1.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="unit" Type="System.String" />
@@ -77,20 +78,22 @@
       </Docs>
     </Member>
     <Member MemberName="CurrentValue">
-      <MemberSignature Language="C#" Value="public Nullable&lt;long&gt; CurrentValue { get; set; }" />
+      <MemberSignature Language="C#" Value="public long? CurrentValue { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;int64&gt; CurrentValue" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Management.RecoveryServices.Models.VaultUsage.CurrentValue" />
       <MemberSignature Language="VB.NET" Value="Public Property CurrentValue As Nullable(Of Long)" />
       <MemberSignature Language="F#" Value="member this.CurrentValue : Nullable&lt;int64&gt; with get, set" Usage="Microsoft.Azure.Management.RecoveryServices.Models.VaultUsage.CurrentValue" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Nullable&lt;long&gt; CurrentValue { Nullable&lt;long&gt; get(); void set(Nullable&lt;long&gt; value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.RecoveryServices</AssemblyName>
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
+        <AssemblyVersion>4.3.0.0</AssemblyVersion>
+        <AssemblyVersion>4.3.1.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="currentValue")</AttributeName>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty(PropertyName="currentValue")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty(PropertyName="currentValue")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -105,20 +108,22 @@
       </Docs>
     </Member>
     <Member MemberName="Limit">
-      <MemberSignature Language="C#" Value="public Nullable&lt;long&gt; Limit { get; set; }" />
+      <MemberSignature Language="C#" Value="public long? Limit { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;int64&gt; Limit" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Management.RecoveryServices.Models.VaultUsage.Limit" />
       <MemberSignature Language="VB.NET" Value="Public Property Limit As Nullable(Of Long)" />
       <MemberSignature Language="F#" Value="member this.Limit : Nullable&lt;int64&gt; with get, set" Usage="Microsoft.Azure.Management.RecoveryServices.Models.VaultUsage.Limit" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Nullable&lt;long&gt; Limit { Nullable&lt;long&gt; get(); void set(Nullable&lt;long&gt; value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.RecoveryServices</AssemblyName>
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
+        <AssemblyVersion>4.3.0.0</AssemblyVersion>
+        <AssemblyVersion>4.3.1.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="limit")</AttributeName>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty(PropertyName="limit")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty(PropertyName="limit")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -138,15 +143,17 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Management.RecoveryServices.Models.VaultUsage.Name" />
       <MemberSignature Language="VB.NET" Value="Public Property Name As NameInfo" />
       <MemberSignature Language="F#" Value="member this.Name : Microsoft.Azure.Management.RecoveryServices.Models.NameInfo with get, set" Usage="Microsoft.Azure.Management.RecoveryServices.Models.VaultUsage.Name" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Azure::Management::RecoveryServices::Models::NameInfo ^ Name { Microsoft::Azure::Management::RecoveryServices::Models::NameInfo ^ get(); void set(Microsoft::Azure::Management::RecoveryServices::Models::NameInfo ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.RecoveryServices</AssemblyName>
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
+        <AssemblyVersion>4.3.0.0</AssemblyVersion>
+        <AssemblyVersion>4.3.1.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="name")</AttributeName>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty(PropertyName="name")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty(PropertyName="name")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -161,20 +168,22 @@
       </Docs>
     </Member>
     <Member MemberName="NextResetTime">
-      <MemberSignature Language="C#" Value="public Nullable&lt;DateTime&gt; NextResetTime { get; set; }" />
+      <MemberSignature Language="C#" Value="public DateTime? NextResetTime { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;valuetype System.DateTime&gt; NextResetTime" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Management.RecoveryServices.Models.VaultUsage.NextResetTime" />
       <MemberSignature Language="VB.NET" Value="Public Property NextResetTime As Nullable(Of DateTime)" />
       <MemberSignature Language="F#" Value="member this.NextResetTime : Nullable&lt;DateTime&gt; with get, set" Usage="Microsoft.Azure.Management.RecoveryServices.Models.VaultUsage.NextResetTime" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Nullable&lt;DateTime&gt; NextResetTime { Nullable&lt;DateTime&gt; get(); void set(Nullable&lt;DateTime&gt; value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.RecoveryServices</AssemblyName>
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
+        <AssemblyVersion>4.3.0.0</AssemblyVersion>
+        <AssemblyVersion>4.3.1.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="nextResetTime")</AttributeName>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty(PropertyName="nextResetTime")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty(PropertyName="nextResetTime")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -194,16 +203,17 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Management.RecoveryServices.Models.VaultUsage.QuotaPeriod" />
       <MemberSignature Language="VB.NET" Value="Public Property QuotaPeriod As String" />
       <MemberSignature Language="F#" Value="member this.QuotaPeriod : string with get, set" Usage="Microsoft.Azure.Management.RecoveryServices.Models.VaultUsage.QuotaPeriod" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ QuotaPeriod { System::String ^ get(); void set(System::String ^ value); };" />
-      <MemberSignature Language="C++ CX" Value="public:&#xA; property Platform::String ^ QuotaPeriod { Platform::String ^ get(); void set(Platform::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.RecoveryServices</AssemblyName>
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
+        <AssemblyVersion>4.3.0.0</AssemblyVersion>
+        <AssemblyVersion>4.3.1.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="quotaPeriod")</AttributeName>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty(PropertyName="quotaPeriod")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty(PropertyName="quotaPeriod")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -223,16 +233,17 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Management.RecoveryServices.Models.VaultUsage.Unit" />
       <MemberSignature Language="VB.NET" Value="Public Property Unit As String" />
       <MemberSignature Language="F#" Value="member this.Unit : string with get, set" Usage="Microsoft.Azure.Management.RecoveryServices.Models.VaultUsage.Unit" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Unit { System::String ^ get(); void set(System::String ^ value); };" />
-      <MemberSignature Language="C++ CX" Value="public:&#xA; property Platform::String ^ Unit { Platform::String ^ get(); void set(Platform::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.RecoveryServices</AssemblyName>
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
+        <AssemblyVersion>4.3.0.0</AssemblyVersion>
+        <AssemblyVersion>4.3.1.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="unit")</AttributeName>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty(PropertyName="unit")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty(PropertyName="unit")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>

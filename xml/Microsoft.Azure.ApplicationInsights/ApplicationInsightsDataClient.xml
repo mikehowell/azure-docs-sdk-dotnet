@@ -1,4 +1,4 @@
-﻿<Type Name="ApplicationInsightsDataClient" FullName="Microsoft.Azure.ApplicationInsights.ApplicationInsightsDataClient">
+<Type Name="ApplicationInsightsDataClient" FullName="Microsoft.Azure.ApplicationInsights.ApplicationInsightsDataClient">
   <TypeSignature Language="C#" Value="public class ApplicationInsightsDataClient : Microsoft.Rest.ServiceClient&lt;Microsoft.Azure.ApplicationInsights.ApplicationInsightsDataClient&gt;, IDisposable, Microsoft.Azure.ApplicationInsights.IApplicationInsightsDataClient" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit ApplicationInsightsDataClient extends Microsoft.Rest.ServiceClient`1&lt;class Microsoft.Azure.ApplicationInsights.ApplicationInsightsDataClient&gt; implements class Microsoft.Azure.ApplicationInsights.IApplicationInsightsDataClient, class System.IDisposable" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Azure.ApplicationInsights.ApplicationInsightsDataClient" />
@@ -71,7 +71,8 @@
         <Parameter Name="handlers" Type="System.Net.Http.DelegatingHandler[]">
           <Attributes>
             <Attribute>
-              <AttributeName>System.ParamArray</AttributeName>
+              <AttributeName Language="C#">[System.ParamArray]</AttributeName>
+              <AttributeName Language="F#">[&lt;System.ParamArray&gt;]</AttributeName>
             </Attribute>
           </Attributes>
         </Parameter>
@@ -102,7 +103,8 @@
         <Parameter Name="handlers" Type="System.Net.Http.DelegatingHandler[]">
           <Attributes>
             <Attribute>
-              <AttributeName>System.ParamArray</AttributeName>
+              <AttributeName Language="C#">[System.ParamArray]</AttributeName>
+              <AttributeName Language="F#">[&lt;System.ParamArray&gt;]</AttributeName>
             </Attribute>
           </Attributes>
         </Parameter>
@@ -139,7 +141,8 @@
         <Parameter Name="handlers" Type="System.Net.Http.DelegatingHandler[]">
           <Attributes>
             <Attribute>
-              <AttributeName>System.ParamArray</AttributeName>
+              <AttributeName Language="C#">[System.ParamArray]</AttributeName>
+              <AttributeName Language="F#">[&lt;System.ParamArray&gt;]</AttributeName>
             </Attribute>
           </Attributes>
         </Parameter>
@@ -173,7 +176,8 @@
         <Parameter Name="handlers" Type="System.Net.Http.DelegatingHandler[]">
           <Attributes>
             <Attribute>
-              <AttributeName>System.ParamArray</AttributeName>
+              <AttributeName Language="C#">[System.ParamArray]</AttributeName>
+              <AttributeName Language="F#">[&lt;System.ParamArray&gt;]</AttributeName>
             </Attribute>
           </Attributes>
         </Parameter>
@@ -211,7 +215,8 @@
         <Parameter Name="handlers" Type="System.Net.Http.DelegatingHandler[]">
           <Attributes>
             <Attribute>
-              <AttributeName>System.ParamArray</AttributeName>
+              <AttributeName Language="C#">[System.ParamArray]</AttributeName>
+              <AttributeName Language="F#">[&lt;System.ParamArray&gt;]</AttributeName>
             </Attribute>
           </Attributes>
         </Parameter>
@@ -252,7 +257,8 @@
         <Parameter Name="handlers" Type="System.Net.Http.DelegatingHandler[]">
           <Attributes>
             <Attribute>
-              <AttributeName>System.ParamArray</AttributeName>
+              <AttributeName Language="C#">[System.ParamArray]</AttributeName>
+              <AttributeName Language="F#">[&lt;System.ParamArray&gt;]</AttributeName>
             </Attribute>
           </Attributes>
         </Parameter>
@@ -293,7 +299,8 @@
         <Parameter Name="handlers" Type="System.Net.Http.DelegatingHandler[]">
           <Attributes>
             <Attribute>
-              <AttributeName>System.ParamArray</AttributeName>
+              <AttributeName Language="C#">[System.ParamArray]</AttributeName>
+              <AttributeName Language="F#">[&lt;System.ParamArray&gt;]</AttributeName>
             </Attribute>
           </Attributes>
         </Parameter>
@@ -335,7 +342,8 @@
         <Parameter Name="handlers" Type="System.Net.Http.DelegatingHandler[]">
           <Attributes>
             <Attribute>
-              <AttributeName>System.ParamArray</AttributeName>
+              <AttributeName Language="C#">[System.ParamArray]</AttributeName>
+              <AttributeName Language="F#">[&lt;System.ParamArray&gt;]</AttributeName>
             </Attribute>
           </Attributes>
         </Parameter>
@@ -481,9 +489,10 @@
       </Docs>
     </Member>
     <Member MemberName="GetAvailabilityResultEventsWithHttpMessagesAsync">
-      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;Microsoft.Rest.HttpOperationResponse&lt;Microsoft.Azure.ApplicationInsights.Models.EventsResults&lt;Microsoft.Azure.ApplicationInsights.Models.EventsAvailabilityResultResult&gt;&gt;&gt; GetAvailabilityResultEventsWithHttpMessagesAsync (Nullable&lt;TimeSpan&gt; timespan = null, string filter = null, string search = null, string orderby = null, string select = null, Nullable&lt;int&gt; skip = null, Nullable&lt;int&gt; top = null, string format = null, Nullable&lt;bool&gt; count = null, string apply = null, System.Collections.Generic.Dictionary&lt;string,System.Collections.Generic.List&lt;string&gt;&gt; customHeaders = null, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;Microsoft.Rest.HttpOperationResponse&lt;Microsoft.Azure.ApplicationInsights.Models.EventsResults&lt;Microsoft.Azure.ApplicationInsights.Models.EventsAvailabilityResultResult&gt;&gt;&gt; GetAvailabilityResultEventsWithHttpMessagesAsync (TimeSpan? timespan = default, string filter = default, string search = default, string orderby = default, string select = default, int? skip = default, int? top = default, string format = default, bool? count = default, string apply = default, System.Collections.Generic.Dictionary&lt;string,System.Collections.Generic.List&lt;string&gt;&gt; customHeaders = default, System.Threading.CancellationToken cancellationToken = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Microsoft.Rest.HttpOperationResponse`1&lt;class Microsoft.Azure.ApplicationInsights.Models.EventsResults`1&lt;class Microsoft.Azure.ApplicationInsights.Models.EventsAvailabilityResultResult&gt;&gt;&gt; GetAvailabilityResultEventsWithHttpMessagesAsync(valuetype System.Nullable`1&lt;valuetype System.TimeSpan&gt; timespan, string filter, string search, string orderby, string select, valuetype System.Nullable`1&lt;int32&gt; skip, valuetype System.Nullable`1&lt;int32&gt; top, string format, valuetype System.Nullable`1&lt;bool&gt; count, string apply, class System.Collections.Generic.Dictionary`2&lt;string, class System.Collections.Generic.List`1&lt;string&gt;&gt; customHeaders, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.ApplicationInsights.ApplicationInsightsDataClient.GetAvailabilityResultEventsWithHttpMessagesAsync(System.Nullable{System.TimeSpan},System.String,System.String,System.String,System.String,System.Nullable{System.Int32},System.Nullable{System.Int32},System.String,System.Nullable{System.Boolean},System.String,System.Collections.Generic.Dictionary{System.String,System.Collections.Generic.List{System.String}},System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetAvailabilityResultEventsWithHttpMessagesAsync (Optional timespan As Nullable(Of TimeSpan) = Nothing, Optional filter As String = Nothing, Optional search As String = Nothing, Optional orderby As String = Nothing, Optional select As String = Nothing, Optional skip As Nullable(Of Integer) = Nothing, Optional top As Nullable(Of Integer) = Nothing, Optional format As String = Nothing, Optional count As Nullable(Of Boolean) = Nothing, Optional apply As String = Nothing, Optional customHeaders As Dictionary(Of String, List(Of String)) = Nothing, Optional cancellationToken As CancellationToken = Nothing) As Task(Of HttpOperationResponse(Of EventsResults(Of EventsAvailabilityResultResult)))" />
       <MemberSignature Language="F#" Value="abstract member GetAvailabilityResultEventsWithHttpMessagesAsync : Nullable&lt;TimeSpan&gt; * string * string * string * string * Nullable&lt;int&gt; * Nullable&lt;int&gt; * string * Nullable&lt;bool&gt; * string * System.Collections.Generic.Dictionary&lt;string, System.Collections.Generic.List&lt;string&gt;&gt; * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.Rest.HttpOperationResponse&lt;Microsoft.Azure.ApplicationInsights.Models.EventsResults&lt;Microsoft.Azure.ApplicationInsights.Models.EventsAvailabilityResultResult&gt;&gt;&gt;&#xA;override this.GetAvailabilityResultEventsWithHttpMessagesAsync : Nullable&lt;TimeSpan&gt; * string * string * string * string * Nullable&lt;int&gt; * Nullable&lt;int&gt; * string * Nullable&lt;bool&gt; * string * System.Collections.Generic.Dictionary&lt;string, System.Collections.Generic.List&lt;string&gt;&gt; * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.Rest.HttpOperationResponse&lt;Microsoft.Azure.ApplicationInsights.Models.EventsResults&lt;Microsoft.Azure.ApplicationInsights.Models.EventsAvailabilityResultResult&gt;&gt;&gt;" Usage="applicationInsightsDataClient.GetAvailabilityResultEventsWithHttpMessagesAsync (timespan, filter, search, orderby, select, skip, top, format, count, apply, customHeaders, cancellationToken)" />
       <MemberType>Method</MemberType>
       <Implements>
@@ -493,11 +502,6 @@
         <AssemblyName>Microsoft.Azure.ApplicationInsights</AssemblyName>
         <AssemblyVersion>0.9.0.0</AssemblyVersion>
       </AssemblyInfo>
-      <Attributes>
-        <Attribute>
-          <AttributeName>System.Runtime.CompilerServices.AsyncStateMachine(typeof(Microsoft.Azure.ApplicationInsights.ApplicationInsightsDataClient/&lt;GetAvailabilityResultEventsWithHttpMessagesAsync&gt;d__36))</AttributeName>
-        </Attribute>
-      </Attributes>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.Rest.HttpOperationResponse&lt;Microsoft.Azure.ApplicationInsights.Models.EventsResults&lt;Microsoft.Azure.ApplicationInsights.Models.EventsAvailabilityResultResult&gt;&gt;&gt;</ReturnType>
       </ReturnValue>
@@ -567,9 +571,10 @@
       </Docs>
     </Member>
     <Member MemberName="GetAvailabilityResultEventWithHttpMessagesAsync">
-      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;Microsoft.Rest.HttpOperationResponse&lt;Microsoft.Azure.ApplicationInsights.Models.EventsResults&lt;Microsoft.Azure.ApplicationInsights.Models.EventsAvailabilityResultResult&gt;&gt;&gt; GetAvailabilityResultEventWithHttpMessagesAsync (string eventId, Nullable&lt;TimeSpan&gt; timespan = null, System.Collections.Generic.Dictionary&lt;string,System.Collections.Generic.List&lt;string&gt;&gt; customHeaders = null, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;Microsoft.Rest.HttpOperationResponse&lt;Microsoft.Azure.ApplicationInsights.Models.EventsResults&lt;Microsoft.Azure.ApplicationInsights.Models.EventsAvailabilityResultResult&gt;&gt;&gt; GetAvailabilityResultEventWithHttpMessagesAsync (string eventId, TimeSpan? timespan = default, System.Collections.Generic.Dictionary&lt;string,System.Collections.Generic.List&lt;string&gt;&gt; customHeaders = default, System.Threading.CancellationToken cancellationToken = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Microsoft.Rest.HttpOperationResponse`1&lt;class Microsoft.Azure.ApplicationInsights.Models.EventsResults`1&lt;class Microsoft.Azure.ApplicationInsights.Models.EventsAvailabilityResultResult&gt;&gt;&gt; GetAvailabilityResultEventWithHttpMessagesAsync(string eventId, valuetype System.Nullable`1&lt;valuetype System.TimeSpan&gt; timespan, class System.Collections.Generic.Dictionary`2&lt;string, class System.Collections.Generic.List`1&lt;string&gt;&gt; customHeaders, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.ApplicationInsights.ApplicationInsightsDataClient.GetAvailabilityResultEventWithHttpMessagesAsync(System.String,System.Nullable{System.TimeSpan},System.Collections.Generic.Dictionary{System.String,System.Collections.Generic.List{System.String}},System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetAvailabilityResultEventWithHttpMessagesAsync (eventId As String, Optional timespan As Nullable(Of TimeSpan) = Nothing, Optional customHeaders As Dictionary(Of String, List(Of String)) = Nothing, Optional cancellationToken As CancellationToken = Nothing) As Task(Of HttpOperationResponse(Of EventsResults(Of EventsAvailabilityResultResult)))" />
       <MemberSignature Language="F#" Value="abstract member GetAvailabilityResultEventWithHttpMessagesAsync : string * Nullable&lt;TimeSpan&gt; * System.Collections.Generic.Dictionary&lt;string, System.Collections.Generic.List&lt;string&gt;&gt; * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.Rest.HttpOperationResponse&lt;Microsoft.Azure.ApplicationInsights.Models.EventsResults&lt;Microsoft.Azure.ApplicationInsights.Models.EventsAvailabilityResultResult&gt;&gt;&gt;&#xA;override this.GetAvailabilityResultEventWithHttpMessagesAsync : string * Nullable&lt;TimeSpan&gt; * System.Collections.Generic.Dictionary&lt;string, System.Collections.Generic.List&lt;string&gt;&gt; * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.Rest.HttpOperationResponse&lt;Microsoft.Azure.ApplicationInsights.Models.EventsResults&lt;Microsoft.Azure.ApplicationInsights.Models.EventsAvailabilityResultResult&gt;&gt;&gt;" Usage="applicationInsightsDataClient.GetAvailabilityResultEventWithHttpMessagesAsync (eventId, timespan, customHeaders, cancellationToken)" />
       <MemberType>Method</MemberType>
       <Implements>
@@ -579,11 +584,6 @@
         <AssemblyName>Microsoft.Azure.ApplicationInsights</AssemblyName>
         <AssemblyVersion>0.9.0.0</AssemblyVersion>
       </AssemblyInfo>
-      <Attributes>
-        <Attribute>
-          <AttributeName>System.Runtime.CompilerServices.AsyncStateMachine(typeof(Microsoft.Azure.ApplicationInsights.ApplicationInsightsDataClient/&lt;GetAvailabilityResultEventWithHttpMessagesAsync&gt;d__37))</AttributeName>
-        </Attribute>
-      </Attributes>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.Rest.HttpOperationResponse&lt;Microsoft.Azure.ApplicationInsights.Models.EventsResults&lt;Microsoft.Azure.ApplicationInsights.Models.EventsAvailabilityResultResult&gt;&gt;&gt;</ReturnType>
       </ReturnValue>
@@ -618,9 +618,10 @@
       </Docs>
     </Member>
     <Member MemberName="GetBrowserTimingEventsWithHttpMessagesAsync">
-      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;Microsoft.Rest.HttpOperationResponse&lt;Microsoft.Azure.ApplicationInsights.Models.EventsResults&lt;Microsoft.Azure.ApplicationInsights.Models.EventsBrowserTimingResult&gt;&gt;&gt; GetBrowserTimingEventsWithHttpMessagesAsync (Nullable&lt;TimeSpan&gt; timespan = null, string filter = null, string search = null, string orderby = null, string select = null, Nullable&lt;int&gt; skip = null, Nullable&lt;int&gt; top = null, string format = null, Nullable&lt;bool&gt; count = null, string apply = null, System.Collections.Generic.Dictionary&lt;string,System.Collections.Generic.List&lt;string&gt;&gt; customHeaders = null, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;Microsoft.Rest.HttpOperationResponse&lt;Microsoft.Azure.ApplicationInsights.Models.EventsResults&lt;Microsoft.Azure.ApplicationInsights.Models.EventsBrowserTimingResult&gt;&gt;&gt; GetBrowserTimingEventsWithHttpMessagesAsync (TimeSpan? timespan = default, string filter = default, string search = default, string orderby = default, string select = default, int? skip = default, int? top = default, string format = default, bool? count = default, string apply = default, System.Collections.Generic.Dictionary&lt;string,System.Collections.Generic.List&lt;string&gt;&gt; customHeaders = default, System.Threading.CancellationToken cancellationToken = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Microsoft.Rest.HttpOperationResponse`1&lt;class Microsoft.Azure.ApplicationInsights.Models.EventsResults`1&lt;class Microsoft.Azure.ApplicationInsights.Models.EventsBrowserTimingResult&gt;&gt;&gt; GetBrowserTimingEventsWithHttpMessagesAsync(valuetype System.Nullable`1&lt;valuetype System.TimeSpan&gt; timespan, string filter, string search, string orderby, string select, valuetype System.Nullable`1&lt;int32&gt; skip, valuetype System.Nullable`1&lt;int32&gt; top, string format, valuetype System.Nullable`1&lt;bool&gt; count, string apply, class System.Collections.Generic.Dictionary`2&lt;string, class System.Collections.Generic.List`1&lt;string&gt;&gt; customHeaders, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.ApplicationInsights.ApplicationInsightsDataClient.GetBrowserTimingEventsWithHttpMessagesAsync(System.Nullable{System.TimeSpan},System.String,System.String,System.String,System.String,System.Nullable{System.Int32},System.Nullable{System.Int32},System.String,System.Nullable{System.Boolean},System.String,System.Collections.Generic.Dictionary{System.String,System.Collections.Generic.List{System.String}},System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetBrowserTimingEventsWithHttpMessagesAsync (Optional timespan As Nullable(Of TimeSpan) = Nothing, Optional filter As String = Nothing, Optional search As String = Nothing, Optional orderby As String = Nothing, Optional select As String = Nothing, Optional skip As Nullable(Of Integer) = Nothing, Optional top As Nullable(Of Integer) = Nothing, Optional format As String = Nothing, Optional count As Nullable(Of Boolean) = Nothing, Optional apply As String = Nothing, Optional customHeaders As Dictionary(Of String, List(Of String)) = Nothing, Optional cancellationToken As CancellationToken = Nothing) As Task(Of HttpOperationResponse(Of EventsResults(Of EventsBrowserTimingResult)))" />
       <MemberSignature Language="F#" Value="abstract member GetBrowserTimingEventsWithHttpMessagesAsync : Nullable&lt;TimeSpan&gt; * string * string * string * string * Nullable&lt;int&gt; * Nullable&lt;int&gt; * string * Nullable&lt;bool&gt; * string * System.Collections.Generic.Dictionary&lt;string, System.Collections.Generic.List&lt;string&gt;&gt; * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.Rest.HttpOperationResponse&lt;Microsoft.Azure.ApplicationInsights.Models.EventsResults&lt;Microsoft.Azure.ApplicationInsights.Models.EventsBrowserTimingResult&gt;&gt;&gt;&#xA;override this.GetBrowserTimingEventsWithHttpMessagesAsync : Nullable&lt;TimeSpan&gt; * string * string * string * string * Nullable&lt;int&gt; * Nullable&lt;int&gt; * string * Nullable&lt;bool&gt; * string * System.Collections.Generic.Dictionary&lt;string, System.Collections.Generic.List&lt;string&gt;&gt; * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.Rest.HttpOperationResponse&lt;Microsoft.Azure.ApplicationInsights.Models.EventsResults&lt;Microsoft.Azure.ApplicationInsights.Models.EventsBrowserTimingResult&gt;&gt;&gt;" Usage="applicationInsightsDataClient.GetBrowserTimingEventsWithHttpMessagesAsync (timespan, filter, search, orderby, select, skip, top, format, count, apply, customHeaders, cancellationToken)" />
       <MemberType>Method</MemberType>
       <Implements>
@@ -630,11 +631,6 @@
         <AssemblyName>Microsoft.Azure.ApplicationInsights</AssemblyName>
         <AssemblyVersion>0.9.0.0</AssemblyVersion>
       </AssemblyInfo>
-      <Attributes>
-        <Attribute>
-          <AttributeName>System.Runtime.CompilerServices.AsyncStateMachine(typeof(Microsoft.Azure.ApplicationInsights.ApplicationInsightsDataClient/&lt;GetBrowserTimingEventsWithHttpMessagesAsync&gt;d__28))</AttributeName>
-        </Attribute>
-      </Attributes>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.Rest.HttpOperationResponse&lt;Microsoft.Azure.ApplicationInsights.Models.EventsResults&lt;Microsoft.Azure.ApplicationInsights.Models.EventsBrowserTimingResult&gt;&gt;&gt;</ReturnType>
       </ReturnValue>
@@ -704,9 +700,10 @@
       </Docs>
     </Member>
     <Member MemberName="GetBrowserTimingEventWithHttpMessagesAsync">
-      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;Microsoft.Rest.HttpOperationResponse&lt;Microsoft.Azure.ApplicationInsights.Models.EventsResults&lt;Microsoft.Azure.ApplicationInsights.Models.EventsBrowserTimingResult&gt;&gt;&gt; GetBrowserTimingEventWithHttpMessagesAsync (string eventId, Nullable&lt;TimeSpan&gt; timespan = null, System.Collections.Generic.Dictionary&lt;string,System.Collections.Generic.List&lt;string&gt;&gt; customHeaders = null, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;Microsoft.Rest.HttpOperationResponse&lt;Microsoft.Azure.ApplicationInsights.Models.EventsResults&lt;Microsoft.Azure.ApplicationInsights.Models.EventsBrowserTimingResult&gt;&gt;&gt; GetBrowserTimingEventWithHttpMessagesAsync (string eventId, TimeSpan? timespan = default, System.Collections.Generic.Dictionary&lt;string,System.Collections.Generic.List&lt;string&gt;&gt; customHeaders = default, System.Threading.CancellationToken cancellationToken = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Microsoft.Rest.HttpOperationResponse`1&lt;class Microsoft.Azure.ApplicationInsights.Models.EventsResults`1&lt;class Microsoft.Azure.ApplicationInsights.Models.EventsBrowserTimingResult&gt;&gt;&gt; GetBrowserTimingEventWithHttpMessagesAsync(string eventId, valuetype System.Nullable`1&lt;valuetype System.TimeSpan&gt; timespan, class System.Collections.Generic.Dictionary`2&lt;string, class System.Collections.Generic.List`1&lt;string&gt;&gt; customHeaders, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.ApplicationInsights.ApplicationInsightsDataClient.GetBrowserTimingEventWithHttpMessagesAsync(System.String,System.Nullable{System.TimeSpan},System.Collections.Generic.Dictionary{System.String,System.Collections.Generic.List{System.String}},System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetBrowserTimingEventWithHttpMessagesAsync (eventId As String, Optional timespan As Nullable(Of TimeSpan) = Nothing, Optional customHeaders As Dictionary(Of String, List(Of String)) = Nothing, Optional cancellationToken As CancellationToken = Nothing) As Task(Of HttpOperationResponse(Of EventsResults(Of EventsBrowserTimingResult)))" />
       <MemberSignature Language="F#" Value="abstract member GetBrowserTimingEventWithHttpMessagesAsync : string * Nullable&lt;TimeSpan&gt; * System.Collections.Generic.Dictionary&lt;string, System.Collections.Generic.List&lt;string&gt;&gt; * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.Rest.HttpOperationResponse&lt;Microsoft.Azure.ApplicationInsights.Models.EventsResults&lt;Microsoft.Azure.ApplicationInsights.Models.EventsBrowserTimingResult&gt;&gt;&gt;&#xA;override this.GetBrowserTimingEventWithHttpMessagesAsync : string * Nullable&lt;TimeSpan&gt; * System.Collections.Generic.Dictionary&lt;string, System.Collections.Generic.List&lt;string&gt;&gt; * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.Rest.HttpOperationResponse&lt;Microsoft.Azure.ApplicationInsights.Models.EventsResults&lt;Microsoft.Azure.ApplicationInsights.Models.EventsBrowserTimingResult&gt;&gt;&gt;" Usage="applicationInsightsDataClient.GetBrowserTimingEventWithHttpMessagesAsync (eventId, timespan, customHeaders, cancellationToken)" />
       <MemberType>Method</MemberType>
       <Implements>
@@ -716,11 +713,6 @@
         <AssemblyName>Microsoft.Azure.ApplicationInsights</AssemblyName>
         <AssemblyVersion>0.9.0.0</AssemblyVersion>
       </AssemblyInfo>
-      <Attributes>
-        <Attribute>
-          <AttributeName>System.Runtime.CompilerServices.AsyncStateMachine(typeof(Microsoft.Azure.ApplicationInsights.ApplicationInsightsDataClient/&lt;GetBrowserTimingEventWithHttpMessagesAsync&gt;d__29))</AttributeName>
-        </Attribute>
-      </Attributes>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.Rest.HttpOperationResponse&lt;Microsoft.Azure.ApplicationInsights.Models.EventsResults&lt;Microsoft.Azure.ApplicationInsights.Models.EventsBrowserTimingResult&gt;&gt;&gt;</ReturnType>
       </ReturnValue>
@@ -755,9 +747,10 @@
       </Docs>
     </Member>
     <Member MemberName="GetCustomEventsWithHttpMessagesAsync">
-      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;Microsoft.Rest.HttpOperationResponse&lt;Microsoft.Azure.ApplicationInsights.Models.EventsResults&lt;Microsoft.Azure.ApplicationInsights.Models.EventsCustomEventResult&gt;&gt;&gt; GetCustomEventsWithHttpMessagesAsync (Nullable&lt;TimeSpan&gt; timespan = null, string filter = null, string search = null, string orderby = null, string select = null, Nullable&lt;int&gt; skip = null, Nullable&lt;int&gt; top = null, string format = null, Nullable&lt;bool&gt; count = null, string apply = null, System.Collections.Generic.Dictionary&lt;string,System.Collections.Generic.List&lt;string&gt;&gt; customHeaders = null, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;Microsoft.Rest.HttpOperationResponse&lt;Microsoft.Azure.ApplicationInsights.Models.EventsResults&lt;Microsoft.Azure.ApplicationInsights.Models.EventsCustomEventResult&gt;&gt;&gt; GetCustomEventsWithHttpMessagesAsync (TimeSpan? timespan = default, string filter = default, string search = default, string orderby = default, string select = default, int? skip = default, int? top = default, string format = default, bool? count = default, string apply = default, System.Collections.Generic.Dictionary&lt;string,System.Collections.Generic.List&lt;string&gt;&gt; customHeaders = default, System.Threading.CancellationToken cancellationToken = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Microsoft.Rest.HttpOperationResponse`1&lt;class Microsoft.Azure.ApplicationInsights.Models.EventsResults`1&lt;class Microsoft.Azure.ApplicationInsights.Models.EventsCustomEventResult&gt;&gt;&gt; GetCustomEventsWithHttpMessagesAsync(valuetype System.Nullable`1&lt;valuetype System.TimeSpan&gt; timespan, string filter, string search, string orderby, string select, valuetype System.Nullable`1&lt;int32&gt; skip, valuetype System.Nullable`1&lt;int32&gt; top, string format, valuetype System.Nullable`1&lt;bool&gt; count, string apply, class System.Collections.Generic.Dictionary`2&lt;string, class System.Collections.Generic.List`1&lt;string&gt;&gt; customHeaders, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.ApplicationInsights.ApplicationInsightsDataClient.GetCustomEventsWithHttpMessagesAsync(System.Nullable{System.TimeSpan},System.String,System.String,System.String,System.String,System.Nullable{System.Int32},System.Nullable{System.Int32},System.String,System.Nullable{System.Boolean},System.String,System.Collections.Generic.Dictionary{System.String,System.Collections.Generic.List{System.String}},System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetCustomEventsWithHttpMessagesAsync (Optional timespan As Nullable(Of TimeSpan) = Nothing, Optional filter As String = Nothing, Optional search As String = Nothing, Optional orderby As String = Nothing, Optional select As String = Nothing, Optional skip As Nullable(Of Integer) = Nothing, Optional top As Nullable(Of Integer) = Nothing, Optional format As String = Nothing, Optional count As Nullable(Of Boolean) = Nothing, Optional apply As String = Nothing, Optional customHeaders As Dictionary(Of String, List(Of String)) = Nothing, Optional cancellationToken As CancellationToken = Nothing) As Task(Of HttpOperationResponse(Of EventsResults(Of EventsCustomEventResult)))" />
       <MemberSignature Language="F#" Value="abstract member GetCustomEventsWithHttpMessagesAsync : Nullable&lt;TimeSpan&gt; * string * string * string * string * Nullable&lt;int&gt; * Nullable&lt;int&gt; * string * Nullable&lt;bool&gt; * string * System.Collections.Generic.Dictionary&lt;string, System.Collections.Generic.List&lt;string&gt;&gt; * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.Rest.HttpOperationResponse&lt;Microsoft.Azure.ApplicationInsights.Models.EventsResults&lt;Microsoft.Azure.ApplicationInsights.Models.EventsCustomEventResult&gt;&gt;&gt;&#xA;override this.GetCustomEventsWithHttpMessagesAsync : Nullable&lt;TimeSpan&gt; * string * string * string * string * Nullable&lt;int&gt; * Nullable&lt;int&gt; * string * Nullable&lt;bool&gt; * string * System.Collections.Generic.Dictionary&lt;string, System.Collections.Generic.List&lt;string&gt;&gt; * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.Rest.HttpOperationResponse&lt;Microsoft.Azure.ApplicationInsights.Models.EventsResults&lt;Microsoft.Azure.ApplicationInsights.Models.EventsCustomEventResult&gt;&gt;&gt;" Usage="applicationInsightsDataClient.GetCustomEventsWithHttpMessagesAsync (timespan, filter, search, orderby, select, skip, top, format, count, apply, customHeaders, cancellationToken)" />
       <MemberType>Method</MemberType>
       <Implements>
@@ -767,11 +760,6 @@
         <AssemblyName>Microsoft.Azure.ApplicationInsights</AssemblyName>
         <AssemblyVersion>0.9.0.0</AssemblyVersion>
       </AssemblyInfo>
-      <Attributes>
-        <Attribute>
-          <AttributeName>System.Runtime.CompilerServices.AsyncStateMachine(typeof(Microsoft.Azure.ApplicationInsights.ApplicationInsightsDataClient/&lt;GetCustomEventsWithHttpMessagesAsync&gt;d__24))</AttributeName>
-        </Attribute>
-      </Attributes>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.Rest.HttpOperationResponse&lt;Microsoft.Azure.ApplicationInsights.Models.EventsResults&lt;Microsoft.Azure.ApplicationInsights.Models.EventsCustomEventResult&gt;&gt;&gt;</ReturnType>
       </ReturnValue>
@@ -841,9 +829,10 @@
       </Docs>
     </Member>
     <Member MemberName="GetCustomEventWithHttpMessagesAsync">
-      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;Microsoft.Rest.HttpOperationResponse&lt;Microsoft.Azure.ApplicationInsights.Models.EventsResults&lt;Microsoft.Azure.ApplicationInsights.Models.EventsCustomEventResult&gt;&gt;&gt; GetCustomEventWithHttpMessagesAsync (string eventId, Nullable&lt;TimeSpan&gt; timespan = null, System.Collections.Generic.Dictionary&lt;string,System.Collections.Generic.List&lt;string&gt;&gt; customHeaders = null, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;Microsoft.Rest.HttpOperationResponse&lt;Microsoft.Azure.ApplicationInsights.Models.EventsResults&lt;Microsoft.Azure.ApplicationInsights.Models.EventsCustomEventResult&gt;&gt;&gt; GetCustomEventWithHttpMessagesAsync (string eventId, TimeSpan? timespan = default, System.Collections.Generic.Dictionary&lt;string,System.Collections.Generic.List&lt;string&gt;&gt; customHeaders = default, System.Threading.CancellationToken cancellationToken = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Microsoft.Rest.HttpOperationResponse`1&lt;class Microsoft.Azure.ApplicationInsights.Models.EventsResults`1&lt;class Microsoft.Azure.ApplicationInsights.Models.EventsCustomEventResult&gt;&gt;&gt; GetCustomEventWithHttpMessagesAsync(string eventId, valuetype System.Nullable`1&lt;valuetype System.TimeSpan&gt; timespan, class System.Collections.Generic.Dictionary`2&lt;string, class System.Collections.Generic.List`1&lt;string&gt;&gt; customHeaders, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.ApplicationInsights.ApplicationInsightsDataClient.GetCustomEventWithHttpMessagesAsync(System.String,System.Nullable{System.TimeSpan},System.Collections.Generic.Dictionary{System.String,System.Collections.Generic.List{System.String}},System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetCustomEventWithHttpMessagesAsync (eventId As String, Optional timespan As Nullable(Of TimeSpan) = Nothing, Optional customHeaders As Dictionary(Of String, List(Of String)) = Nothing, Optional cancellationToken As CancellationToken = Nothing) As Task(Of HttpOperationResponse(Of EventsResults(Of EventsCustomEventResult)))" />
       <MemberSignature Language="F#" Value="abstract member GetCustomEventWithHttpMessagesAsync : string * Nullable&lt;TimeSpan&gt; * System.Collections.Generic.Dictionary&lt;string, System.Collections.Generic.List&lt;string&gt;&gt; * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.Rest.HttpOperationResponse&lt;Microsoft.Azure.ApplicationInsights.Models.EventsResults&lt;Microsoft.Azure.ApplicationInsights.Models.EventsCustomEventResult&gt;&gt;&gt;&#xA;override this.GetCustomEventWithHttpMessagesAsync : string * Nullable&lt;TimeSpan&gt; * System.Collections.Generic.Dictionary&lt;string, System.Collections.Generic.List&lt;string&gt;&gt; * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.Rest.HttpOperationResponse&lt;Microsoft.Azure.ApplicationInsights.Models.EventsResults&lt;Microsoft.Azure.ApplicationInsights.Models.EventsCustomEventResult&gt;&gt;&gt;" Usage="applicationInsightsDataClient.GetCustomEventWithHttpMessagesAsync (eventId, timespan, customHeaders, cancellationToken)" />
       <MemberType>Method</MemberType>
       <Implements>
@@ -853,11 +842,6 @@
         <AssemblyName>Microsoft.Azure.ApplicationInsights</AssemblyName>
         <AssemblyVersion>0.9.0.0</AssemblyVersion>
       </AssemblyInfo>
-      <Attributes>
-        <Attribute>
-          <AttributeName>System.Runtime.CompilerServices.AsyncStateMachine(typeof(Microsoft.Azure.ApplicationInsights.ApplicationInsightsDataClient/&lt;GetCustomEventWithHttpMessagesAsync&gt;d__25))</AttributeName>
-        </Attribute>
-      </Attributes>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.Rest.HttpOperationResponse&lt;Microsoft.Azure.ApplicationInsights.Models.EventsResults&lt;Microsoft.Azure.ApplicationInsights.Models.EventsCustomEventResult&gt;&gt;&gt;</ReturnType>
       </ReturnValue>
@@ -892,9 +876,10 @@
       </Docs>
     </Member>
     <Member MemberName="GetCustomMetricEventsWithHttpMessagesAsync">
-      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;Microsoft.Rest.HttpOperationResponse&lt;Microsoft.Azure.ApplicationInsights.Models.EventsResults&lt;Microsoft.Azure.ApplicationInsights.Models.EventsCustomMetricResult&gt;&gt;&gt; GetCustomMetricEventsWithHttpMessagesAsync (Nullable&lt;TimeSpan&gt; timespan = null, string filter = null, string search = null, string orderby = null, string select = null, Nullable&lt;int&gt; skip = null, Nullable&lt;int&gt; top = null, string format = null, Nullable&lt;bool&gt; count = null, string apply = null, System.Collections.Generic.Dictionary&lt;string,System.Collections.Generic.List&lt;string&gt;&gt; customHeaders = null, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;Microsoft.Rest.HttpOperationResponse&lt;Microsoft.Azure.ApplicationInsights.Models.EventsResults&lt;Microsoft.Azure.ApplicationInsights.Models.EventsCustomMetricResult&gt;&gt;&gt; GetCustomMetricEventsWithHttpMessagesAsync (TimeSpan? timespan = default, string filter = default, string search = default, string orderby = default, string select = default, int? skip = default, int? top = default, string format = default, bool? count = default, string apply = default, System.Collections.Generic.Dictionary&lt;string,System.Collections.Generic.List&lt;string&gt;&gt; customHeaders = default, System.Threading.CancellationToken cancellationToken = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Microsoft.Rest.HttpOperationResponse`1&lt;class Microsoft.Azure.ApplicationInsights.Models.EventsResults`1&lt;class Microsoft.Azure.ApplicationInsights.Models.EventsCustomMetricResult&gt;&gt;&gt; GetCustomMetricEventsWithHttpMessagesAsync(valuetype System.Nullable`1&lt;valuetype System.TimeSpan&gt; timespan, string filter, string search, string orderby, string select, valuetype System.Nullable`1&lt;int32&gt; skip, valuetype System.Nullable`1&lt;int32&gt; top, string format, valuetype System.Nullable`1&lt;bool&gt; count, string apply, class System.Collections.Generic.Dictionary`2&lt;string, class System.Collections.Generic.List`1&lt;string&gt;&gt; customHeaders, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.ApplicationInsights.ApplicationInsightsDataClient.GetCustomMetricEventsWithHttpMessagesAsync(System.Nullable{System.TimeSpan},System.String,System.String,System.String,System.String,System.Nullable{System.Int32},System.Nullable{System.Int32},System.String,System.Nullable{System.Boolean},System.String,System.Collections.Generic.Dictionary{System.String,System.Collections.Generic.List{System.String}},System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetCustomMetricEventsWithHttpMessagesAsync (Optional timespan As Nullable(Of TimeSpan) = Nothing, Optional filter As String = Nothing, Optional search As String = Nothing, Optional orderby As String = Nothing, Optional select As String = Nothing, Optional skip As Nullable(Of Integer) = Nothing, Optional top As Nullable(Of Integer) = Nothing, Optional format As String = Nothing, Optional count As Nullable(Of Boolean) = Nothing, Optional apply As String = Nothing, Optional customHeaders As Dictionary(Of String, List(Of String)) = Nothing, Optional cancellationToken As CancellationToken = Nothing) As Task(Of HttpOperationResponse(Of EventsResults(Of EventsCustomMetricResult)))" />
       <MemberSignature Language="F#" Value="abstract member GetCustomMetricEventsWithHttpMessagesAsync : Nullable&lt;TimeSpan&gt; * string * string * string * string * Nullable&lt;int&gt; * Nullable&lt;int&gt; * string * Nullable&lt;bool&gt; * string * System.Collections.Generic.Dictionary&lt;string, System.Collections.Generic.List&lt;string&gt;&gt; * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.Rest.HttpOperationResponse&lt;Microsoft.Azure.ApplicationInsights.Models.EventsResults&lt;Microsoft.Azure.ApplicationInsights.Models.EventsCustomMetricResult&gt;&gt;&gt;&#xA;override this.GetCustomMetricEventsWithHttpMessagesAsync : Nullable&lt;TimeSpan&gt; * string * string * string * string * Nullable&lt;int&gt; * Nullable&lt;int&gt; * string * Nullable&lt;bool&gt; * string * System.Collections.Generic.Dictionary&lt;string, System.Collections.Generic.List&lt;string&gt;&gt; * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.Rest.HttpOperationResponse&lt;Microsoft.Azure.ApplicationInsights.Models.EventsResults&lt;Microsoft.Azure.ApplicationInsights.Models.EventsCustomMetricResult&gt;&gt;&gt;" Usage="applicationInsightsDataClient.GetCustomMetricEventsWithHttpMessagesAsync (timespan, filter, search, orderby, select, skip, top, format, count, apply, customHeaders, cancellationToken)" />
       <MemberType>Method</MemberType>
       <Implements>
@@ -904,11 +889,6 @@
         <AssemblyName>Microsoft.Azure.ApplicationInsights</AssemblyName>
         <AssemblyVersion>0.9.0.0</AssemblyVersion>
       </AssemblyInfo>
-      <Attributes>
-        <Attribute>
-          <AttributeName>System.Runtime.CompilerServices.AsyncStateMachine(typeof(Microsoft.Azure.ApplicationInsights.ApplicationInsightsDataClient/&lt;GetCustomMetricEventsWithHttpMessagesAsync&gt;d__40))</AttributeName>
-        </Attribute>
-      </Attributes>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.Rest.HttpOperationResponse&lt;Microsoft.Azure.ApplicationInsights.Models.EventsResults&lt;Microsoft.Azure.ApplicationInsights.Models.EventsCustomMetricResult&gt;&gt;&gt;</ReturnType>
       </ReturnValue>
@@ -978,9 +958,10 @@
       </Docs>
     </Member>
     <Member MemberName="GetCustomMetricEventWithHttpMessagesAsync">
-      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;Microsoft.Rest.HttpOperationResponse&lt;Microsoft.Azure.ApplicationInsights.Models.EventsResults&lt;Microsoft.Azure.ApplicationInsights.Models.EventsCustomMetricResult&gt;&gt;&gt; GetCustomMetricEventWithHttpMessagesAsync (string eventId, Nullable&lt;TimeSpan&gt; timespan = null, System.Collections.Generic.Dictionary&lt;string,System.Collections.Generic.List&lt;string&gt;&gt; customHeaders = null, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;Microsoft.Rest.HttpOperationResponse&lt;Microsoft.Azure.ApplicationInsights.Models.EventsResults&lt;Microsoft.Azure.ApplicationInsights.Models.EventsCustomMetricResult&gt;&gt;&gt; GetCustomMetricEventWithHttpMessagesAsync (string eventId, TimeSpan? timespan = default, System.Collections.Generic.Dictionary&lt;string,System.Collections.Generic.List&lt;string&gt;&gt; customHeaders = default, System.Threading.CancellationToken cancellationToken = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Microsoft.Rest.HttpOperationResponse`1&lt;class Microsoft.Azure.ApplicationInsights.Models.EventsResults`1&lt;class Microsoft.Azure.ApplicationInsights.Models.EventsCustomMetricResult&gt;&gt;&gt; GetCustomMetricEventWithHttpMessagesAsync(string eventId, valuetype System.Nullable`1&lt;valuetype System.TimeSpan&gt; timespan, class System.Collections.Generic.Dictionary`2&lt;string, class System.Collections.Generic.List`1&lt;string&gt;&gt; customHeaders, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.ApplicationInsights.ApplicationInsightsDataClient.GetCustomMetricEventWithHttpMessagesAsync(System.String,System.Nullable{System.TimeSpan},System.Collections.Generic.Dictionary{System.String,System.Collections.Generic.List{System.String}},System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetCustomMetricEventWithHttpMessagesAsync (eventId As String, Optional timespan As Nullable(Of TimeSpan) = Nothing, Optional customHeaders As Dictionary(Of String, List(Of String)) = Nothing, Optional cancellationToken As CancellationToken = Nothing) As Task(Of HttpOperationResponse(Of EventsResults(Of EventsCustomMetricResult)))" />
       <MemberSignature Language="F#" Value="abstract member GetCustomMetricEventWithHttpMessagesAsync : string * Nullable&lt;TimeSpan&gt; * System.Collections.Generic.Dictionary&lt;string, System.Collections.Generic.List&lt;string&gt;&gt; * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.Rest.HttpOperationResponse&lt;Microsoft.Azure.ApplicationInsights.Models.EventsResults&lt;Microsoft.Azure.ApplicationInsights.Models.EventsCustomMetricResult&gt;&gt;&gt;&#xA;override this.GetCustomMetricEventWithHttpMessagesAsync : string * Nullable&lt;TimeSpan&gt; * System.Collections.Generic.Dictionary&lt;string, System.Collections.Generic.List&lt;string&gt;&gt; * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.Rest.HttpOperationResponse&lt;Microsoft.Azure.ApplicationInsights.Models.EventsResults&lt;Microsoft.Azure.ApplicationInsights.Models.EventsCustomMetricResult&gt;&gt;&gt;" Usage="applicationInsightsDataClient.GetCustomMetricEventWithHttpMessagesAsync (eventId, timespan, customHeaders, cancellationToken)" />
       <MemberType>Method</MemberType>
       <Implements>
@@ -990,11 +971,6 @@
         <AssemblyName>Microsoft.Azure.ApplicationInsights</AssemblyName>
         <AssemblyVersion>0.9.0.0</AssemblyVersion>
       </AssemblyInfo>
-      <Attributes>
-        <Attribute>
-          <AttributeName>System.Runtime.CompilerServices.AsyncStateMachine(typeof(Microsoft.Azure.ApplicationInsights.ApplicationInsightsDataClient/&lt;GetCustomMetricEventWithHttpMessagesAsync&gt;d__41))</AttributeName>
-        </Attribute>
-      </Attributes>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.Rest.HttpOperationResponse&lt;Microsoft.Azure.ApplicationInsights.Models.EventsResults&lt;Microsoft.Azure.ApplicationInsights.Models.EventsCustomMetricResult&gt;&gt;&gt;</ReturnType>
       </ReturnValue>
@@ -1029,9 +1005,10 @@
       </Docs>
     </Member>
     <Member MemberName="GetDependencyEventsWithHttpMessagesAsync">
-      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;Microsoft.Rest.HttpOperationResponse&lt;Microsoft.Azure.ApplicationInsights.Models.EventsResults&lt;Microsoft.Azure.ApplicationInsights.Models.EventsDependencyResult&gt;&gt;&gt; GetDependencyEventsWithHttpMessagesAsync (Nullable&lt;TimeSpan&gt; timespan = null, string filter = null, string search = null, string orderby = null, string select = null, Nullable&lt;int&gt; skip = null, Nullable&lt;int&gt; top = null, string format = null, Nullable&lt;bool&gt; count = null, string apply = null, System.Collections.Generic.Dictionary&lt;string,System.Collections.Generic.List&lt;string&gt;&gt; customHeaders = null, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;Microsoft.Rest.HttpOperationResponse&lt;Microsoft.Azure.ApplicationInsights.Models.EventsResults&lt;Microsoft.Azure.ApplicationInsights.Models.EventsDependencyResult&gt;&gt;&gt; GetDependencyEventsWithHttpMessagesAsync (TimeSpan? timespan = default, string filter = default, string search = default, string orderby = default, string select = default, int? skip = default, int? top = default, string format = default, bool? count = default, string apply = default, System.Collections.Generic.Dictionary&lt;string,System.Collections.Generic.List&lt;string&gt;&gt; customHeaders = default, System.Threading.CancellationToken cancellationToken = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Microsoft.Rest.HttpOperationResponse`1&lt;class Microsoft.Azure.ApplicationInsights.Models.EventsResults`1&lt;class Microsoft.Azure.ApplicationInsights.Models.EventsDependencyResult&gt;&gt;&gt; GetDependencyEventsWithHttpMessagesAsync(valuetype System.Nullable`1&lt;valuetype System.TimeSpan&gt; timespan, string filter, string search, string orderby, string select, valuetype System.Nullable`1&lt;int32&gt; skip, valuetype System.Nullable`1&lt;int32&gt; top, string format, valuetype System.Nullable`1&lt;bool&gt; count, string apply, class System.Collections.Generic.Dictionary`2&lt;string, class System.Collections.Generic.List`1&lt;string&gt;&gt; customHeaders, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.ApplicationInsights.ApplicationInsightsDataClient.GetDependencyEventsWithHttpMessagesAsync(System.Nullable{System.TimeSpan},System.String,System.String,System.String,System.String,System.Nullable{System.Int32},System.Nullable{System.Int32},System.String,System.Nullable{System.Boolean},System.String,System.Collections.Generic.Dictionary{System.String,System.Collections.Generic.List{System.String}},System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetDependencyEventsWithHttpMessagesAsync (Optional timespan As Nullable(Of TimeSpan) = Nothing, Optional filter As String = Nothing, Optional search As String = Nothing, Optional orderby As String = Nothing, Optional select As String = Nothing, Optional skip As Nullable(Of Integer) = Nothing, Optional top As Nullable(Of Integer) = Nothing, Optional format As String = Nothing, Optional count As Nullable(Of Boolean) = Nothing, Optional apply As String = Nothing, Optional customHeaders As Dictionary(Of String, List(Of String)) = Nothing, Optional cancellationToken As CancellationToken = Nothing) As Task(Of HttpOperationResponse(Of EventsResults(Of EventsDependencyResult)))" />
       <MemberSignature Language="F#" Value="abstract member GetDependencyEventsWithHttpMessagesAsync : Nullable&lt;TimeSpan&gt; * string * string * string * string * Nullable&lt;int&gt; * Nullable&lt;int&gt; * string * Nullable&lt;bool&gt; * string * System.Collections.Generic.Dictionary&lt;string, System.Collections.Generic.List&lt;string&gt;&gt; * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.Rest.HttpOperationResponse&lt;Microsoft.Azure.ApplicationInsights.Models.EventsResults&lt;Microsoft.Azure.ApplicationInsights.Models.EventsDependencyResult&gt;&gt;&gt;&#xA;override this.GetDependencyEventsWithHttpMessagesAsync : Nullable&lt;TimeSpan&gt; * string * string * string * string * Nullable&lt;int&gt; * Nullable&lt;int&gt; * string * Nullable&lt;bool&gt; * string * System.Collections.Generic.Dictionary&lt;string, System.Collections.Generic.List&lt;string&gt;&gt; * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.Rest.HttpOperationResponse&lt;Microsoft.Azure.ApplicationInsights.Models.EventsResults&lt;Microsoft.Azure.ApplicationInsights.Models.EventsDependencyResult&gt;&gt;&gt;" Usage="applicationInsightsDataClient.GetDependencyEventsWithHttpMessagesAsync (timespan, filter, search, orderby, select, skip, top, format, count, apply, customHeaders, cancellationToken)" />
       <MemberType>Method</MemberType>
       <Implements>
@@ -1041,11 +1018,6 @@
         <AssemblyName>Microsoft.Azure.ApplicationInsights</AssemblyName>
         <AssemblyVersion>0.9.0.0</AssemblyVersion>
       </AssemblyInfo>
-      <Attributes>
-        <Attribute>
-          <AttributeName>System.Runtime.CompilerServices.AsyncStateMachine(typeof(Microsoft.Azure.ApplicationInsights.ApplicationInsightsDataClient/&lt;GetDependencyEventsWithHttpMessagesAsync&gt;d__32))</AttributeName>
-        </Attribute>
-      </Attributes>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.Rest.HttpOperationResponse&lt;Microsoft.Azure.ApplicationInsights.Models.EventsResults&lt;Microsoft.Azure.ApplicationInsights.Models.EventsDependencyResult&gt;&gt;&gt;</ReturnType>
       </ReturnValue>
@@ -1115,9 +1087,10 @@
       </Docs>
     </Member>
     <Member MemberName="GetDependencyEventWithHttpMessagesAsync">
-      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;Microsoft.Rest.HttpOperationResponse&lt;Microsoft.Azure.ApplicationInsights.Models.EventsResults&lt;Microsoft.Azure.ApplicationInsights.Models.EventsDependencyResult&gt;&gt;&gt; GetDependencyEventWithHttpMessagesAsync (string eventId, Nullable&lt;TimeSpan&gt; timespan = null, System.Collections.Generic.Dictionary&lt;string,System.Collections.Generic.List&lt;string&gt;&gt; customHeaders = null, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;Microsoft.Rest.HttpOperationResponse&lt;Microsoft.Azure.ApplicationInsights.Models.EventsResults&lt;Microsoft.Azure.ApplicationInsights.Models.EventsDependencyResult&gt;&gt;&gt; GetDependencyEventWithHttpMessagesAsync (string eventId, TimeSpan? timespan = default, System.Collections.Generic.Dictionary&lt;string,System.Collections.Generic.List&lt;string&gt;&gt; customHeaders = default, System.Threading.CancellationToken cancellationToken = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Microsoft.Rest.HttpOperationResponse`1&lt;class Microsoft.Azure.ApplicationInsights.Models.EventsResults`1&lt;class Microsoft.Azure.ApplicationInsights.Models.EventsDependencyResult&gt;&gt;&gt; GetDependencyEventWithHttpMessagesAsync(string eventId, valuetype System.Nullable`1&lt;valuetype System.TimeSpan&gt; timespan, class System.Collections.Generic.Dictionary`2&lt;string, class System.Collections.Generic.List`1&lt;string&gt;&gt; customHeaders, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.ApplicationInsights.ApplicationInsightsDataClient.GetDependencyEventWithHttpMessagesAsync(System.String,System.Nullable{System.TimeSpan},System.Collections.Generic.Dictionary{System.String,System.Collections.Generic.List{System.String}},System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetDependencyEventWithHttpMessagesAsync (eventId As String, Optional timespan As Nullable(Of TimeSpan) = Nothing, Optional customHeaders As Dictionary(Of String, List(Of String)) = Nothing, Optional cancellationToken As CancellationToken = Nothing) As Task(Of HttpOperationResponse(Of EventsResults(Of EventsDependencyResult)))" />
       <MemberSignature Language="F#" Value="abstract member GetDependencyEventWithHttpMessagesAsync : string * Nullable&lt;TimeSpan&gt; * System.Collections.Generic.Dictionary&lt;string, System.Collections.Generic.List&lt;string&gt;&gt; * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.Rest.HttpOperationResponse&lt;Microsoft.Azure.ApplicationInsights.Models.EventsResults&lt;Microsoft.Azure.ApplicationInsights.Models.EventsDependencyResult&gt;&gt;&gt;&#xA;override this.GetDependencyEventWithHttpMessagesAsync : string * Nullable&lt;TimeSpan&gt; * System.Collections.Generic.Dictionary&lt;string, System.Collections.Generic.List&lt;string&gt;&gt; * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.Rest.HttpOperationResponse&lt;Microsoft.Azure.ApplicationInsights.Models.EventsResults&lt;Microsoft.Azure.ApplicationInsights.Models.EventsDependencyResult&gt;&gt;&gt;" Usage="applicationInsightsDataClient.GetDependencyEventWithHttpMessagesAsync (eventId, timespan, customHeaders, cancellationToken)" />
       <MemberType>Method</MemberType>
       <Implements>
@@ -1127,11 +1100,6 @@
         <AssemblyName>Microsoft.Azure.ApplicationInsights</AssemblyName>
         <AssemblyVersion>0.9.0.0</AssemblyVersion>
       </AssemblyInfo>
-      <Attributes>
-        <Attribute>
-          <AttributeName>System.Runtime.CompilerServices.AsyncStateMachine(typeof(Microsoft.Azure.ApplicationInsights.ApplicationInsightsDataClient/&lt;GetDependencyEventWithHttpMessagesAsync&gt;d__33))</AttributeName>
-        </Attribute>
-      </Attributes>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.Rest.HttpOperationResponse&lt;Microsoft.Azure.ApplicationInsights.Models.EventsResults&lt;Microsoft.Azure.ApplicationInsights.Models.EventsDependencyResult&gt;&gt;&gt;</ReturnType>
       </ReturnValue>
@@ -1166,9 +1134,10 @@
       </Docs>
     </Member>
     <Member MemberName="GetEventsMetadataODataWithHttpMessagesAsync">
-      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;Microsoft.Rest.HttpOperationResponse&lt;object&gt;&gt; GetEventsMetadataODataWithHttpMessagesAsync (System.Collections.Generic.Dictionary&lt;string,System.Collections.Generic.List&lt;string&gt;&gt; customHeaders = null, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;Microsoft.Rest.HttpOperationResponse&lt;object&gt;&gt; GetEventsMetadataODataWithHttpMessagesAsync (System.Collections.Generic.Dictionary&lt;string,System.Collections.Generic.List&lt;string&gt;&gt; customHeaders = default, System.Threading.CancellationToken cancellationToken = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Microsoft.Rest.HttpOperationResponse`1&lt;object&gt;&gt; GetEventsMetadataODataWithHttpMessagesAsync(class System.Collections.Generic.Dictionary`2&lt;string, class System.Collections.Generic.List`1&lt;string&gt;&gt; customHeaders, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.ApplicationInsights.ApplicationInsightsDataClient.GetEventsMetadataODataWithHttpMessagesAsync(System.Collections.Generic.Dictionary{System.String,System.Collections.Generic.List{System.String}},System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetEventsMetadataODataWithHttpMessagesAsync (Optional customHeaders As Dictionary(Of String, List(Of String)) = Nothing, Optional cancellationToken As CancellationToken = Nothing) As Task(Of HttpOperationResponse(Of Object))" />
       <MemberSignature Language="F#" Value="abstract member GetEventsMetadataODataWithHttpMessagesAsync : System.Collections.Generic.Dictionary&lt;string, System.Collections.Generic.List&lt;string&gt;&gt; * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.Rest.HttpOperationResponse&lt;obj&gt;&gt;&#xA;override this.GetEventsMetadataODataWithHttpMessagesAsync : System.Collections.Generic.Dictionary&lt;string, System.Collections.Generic.List&lt;string&gt;&gt; * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.Rest.HttpOperationResponse&lt;obj&gt;&gt;" Usage="applicationInsightsDataClient.GetEventsMetadataODataWithHttpMessagesAsync (customHeaders, cancellationToken)" />
       <MemberType>Method</MemberType>
       <Implements>
@@ -1178,11 +1147,6 @@
         <AssemblyName>Microsoft.Azure.ApplicationInsights</AssemblyName>
         <AssemblyVersion>0.9.0.0</AssemblyVersion>
       </AssemblyInfo>
-      <Attributes>
-        <Attribute>
-          <AttributeName>System.Runtime.CompilerServices.AsyncStateMachine(typeof(Microsoft.Azure.ApplicationInsights.ApplicationInsightsDataClient/&lt;GetEventsMetadataODataWithHttpMessagesAsync&gt;d__77))</AttributeName>
-        </Attribute>
-      </Attributes>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.Rest.HttpOperationResponse&lt;System.Object&gt;&gt;</ReturnType>
       </ReturnValue>
@@ -1222,9 +1186,10 @@
       </Docs>
     </Member>
     <Member MemberName="GetEventsWithHttpMessagesAsync">
-      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;Microsoft.Rest.HttpOperationResponse&lt;Microsoft.Azure.ApplicationInsights.Models.EventsResults&gt;&gt; GetEventsWithHttpMessagesAsync (Microsoft.Azure.ApplicationInsights.Models.EventType eventType, Nullable&lt;TimeSpan&gt; timespan = null, string filter = null, string search = null, string orderby = null, string select = null, Nullable&lt;int&gt; skip = null, Nullable&lt;int&gt; top = null, string format = null, Nullable&lt;bool&gt; count = null, string apply = null, System.Collections.Generic.Dictionary&lt;string,System.Collections.Generic.List&lt;string&gt;&gt; customHeaders = null, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;Microsoft.Rest.HttpOperationResponse&lt;Microsoft.Azure.ApplicationInsights.Models.EventsResults&gt;&gt; GetEventsWithHttpMessagesAsync (Microsoft.Azure.ApplicationInsights.Models.EventType eventType, TimeSpan? timespan = default, string filter = default, string search = default, string orderby = default, string select = default, int? skip = default, int? top = default, string format = default, bool? count = default, string apply = default, System.Collections.Generic.Dictionary&lt;string,System.Collections.Generic.List&lt;string&gt;&gt; customHeaders = default, System.Threading.CancellationToken cancellationToken = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Microsoft.Rest.HttpOperationResponse`1&lt;class Microsoft.Azure.ApplicationInsights.Models.EventsResults&gt;&gt; GetEventsWithHttpMessagesAsync(valuetype Microsoft.Azure.ApplicationInsights.Models.EventType eventType, valuetype System.Nullable`1&lt;valuetype System.TimeSpan&gt; timespan, string filter, string search, string orderby, string select, valuetype System.Nullable`1&lt;int32&gt; skip, valuetype System.Nullable`1&lt;int32&gt; top, string format, valuetype System.Nullable`1&lt;bool&gt; count, string apply, class System.Collections.Generic.Dictionary`2&lt;string, class System.Collections.Generic.List`1&lt;string&gt;&gt; customHeaders, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.ApplicationInsights.ApplicationInsightsDataClient.GetEventsWithHttpMessagesAsync(Microsoft.Azure.ApplicationInsights.Models.EventType,System.Nullable{System.TimeSpan},System.String,System.String,System.String,System.String,System.Nullable{System.Int32},System.Nullable{System.Int32},System.String,System.Nullable{System.Boolean},System.String,System.Collections.Generic.Dictionary{System.String,System.Collections.Generic.List{System.String}},System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetEventsWithHttpMessagesAsync (eventType As EventType, Optional timespan As Nullable(Of TimeSpan) = Nothing, Optional filter As String = Nothing, Optional search As String = Nothing, Optional orderby As String = Nothing, Optional select As String = Nothing, Optional skip As Nullable(Of Integer) = Nothing, Optional top As Nullable(Of Integer) = Nothing, Optional format As String = Nothing, Optional count As Nullable(Of Boolean) = Nothing, Optional apply As String = Nothing, Optional customHeaders As Dictionary(Of String, List(Of String)) = Nothing, Optional cancellationToken As CancellationToken = Nothing) As Task(Of HttpOperationResponse(Of EventsResults))" />
       <MemberSignature Language="F#" Value="abstract member GetEventsWithHttpMessagesAsync : Microsoft.Azure.ApplicationInsights.Models.EventType * Nullable&lt;TimeSpan&gt; * string * string * string * string * Nullable&lt;int&gt; * Nullable&lt;int&gt; * string * Nullable&lt;bool&gt; * string * System.Collections.Generic.Dictionary&lt;string, System.Collections.Generic.List&lt;string&gt;&gt; * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.Rest.HttpOperationResponse&lt;Microsoft.Azure.ApplicationInsights.Models.EventsResults&gt;&gt;&#xA;override this.GetEventsWithHttpMessagesAsync : Microsoft.Azure.ApplicationInsights.Models.EventType * Nullable&lt;TimeSpan&gt; * string * string * string * string * Nullable&lt;int&gt; * Nullable&lt;int&gt; * string * Nullable&lt;bool&gt; * string * System.Collections.Generic.Dictionary&lt;string, System.Collections.Generic.List&lt;string&gt;&gt; * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.Rest.HttpOperationResponse&lt;Microsoft.Azure.ApplicationInsights.Models.EventsResults&gt;&gt;" Usage="applicationInsightsDataClient.GetEventsWithHttpMessagesAsync (eventType, timespan, filter, search, orderby, select, skip, top, format, count, apply, customHeaders, cancellationToken)" />
       <MemberType>Method</MemberType>
       <Implements>
@@ -1234,11 +1199,6 @@
         <AssemblyName>Microsoft.Azure.ApplicationInsights</AssemblyName>
         <AssemblyVersion>0.9.0.0</AssemblyVersion>
       </AssemblyInfo>
-      <Attributes>
-        <Attribute>
-          <AttributeName>System.Runtime.CompilerServices.AsyncStateMachine(typeof(Microsoft.Azure.ApplicationInsights.ApplicationInsightsDataClient/&lt;GetEventsWithHttpMessagesAsync&gt;d__75))</AttributeName>
-        </Attribute>
-      </Attributes>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.Rest.HttpOperationResponse&lt;Microsoft.Azure.ApplicationInsights.Models.EventsResults&gt;&gt;</ReturnType>
       </ReturnValue>
@@ -1331,9 +1291,10 @@
       </Docs>
     </Member>
     <Member MemberName="GetEventWithHttpMessagesAsync">
-      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;Microsoft.Rest.HttpOperationResponse&lt;Microsoft.Azure.ApplicationInsights.Models.EventsResults&gt;&gt; GetEventWithHttpMessagesAsync (Microsoft.Azure.ApplicationInsights.Models.EventType eventType, string eventId, Nullable&lt;TimeSpan&gt; timespan = null, System.Collections.Generic.Dictionary&lt;string,System.Collections.Generic.List&lt;string&gt;&gt; customHeaders = null, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;Microsoft.Rest.HttpOperationResponse&lt;Microsoft.Azure.ApplicationInsights.Models.EventsResults&gt;&gt; GetEventWithHttpMessagesAsync (Microsoft.Azure.ApplicationInsights.Models.EventType eventType, string eventId, TimeSpan? timespan = default, System.Collections.Generic.Dictionary&lt;string,System.Collections.Generic.List&lt;string&gt;&gt; customHeaders = default, System.Threading.CancellationToken cancellationToken = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Microsoft.Rest.HttpOperationResponse`1&lt;class Microsoft.Azure.ApplicationInsights.Models.EventsResults&gt;&gt; GetEventWithHttpMessagesAsync(valuetype Microsoft.Azure.ApplicationInsights.Models.EventType eventType, string eventId, valuetype System.Nullable`1&lt;valuetype System.TimeSpan&gt; timespan, class System.Collections.Generic.Dictionary`2&lt;string, class System.Collections.Generic.List`1&lt;string&gt;&gt; customHeaders, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.ApplicationInsights.ApplicationInsightsDataClient.GetEventWithHttpMessagesAsync(Microsoft.Azure.ApplicationInsights.Models.EventType,System.String,System.Nullable{System.TimeSpan},System.Collections.Generic.Dictionary{System.String,System.Collections.Generic.List{System.String}},System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetEventWithHttpMessagesAsync (eventType As EventType, eventId As String, Optional timespan As Nullable(Of TimeSpan) = Nothing, Optional customHeaders As Dictionary(Of String, List(Of String)) = Nothing, Optional cancellationToken As CancellationToken = Nothing) As Task(Of HttpOperationResponse(Of EventsResults))" />
       <MemberSignature Language="F#" Value="abstract member GetEventWithHttpMessagesAsync : Microsoft.Azure.ApplicationInsights.Models.EventType * string * Nullable&lt;TimeSpan&gt; * System.Collections.Generic.Dictionary&lt;string, System.Collections.Generic.List&lt;string&gt;&gt; * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.Rest.HttpOperationResponse&lt;Microsoft.Azure.ApplicationInsights.Models.EventsResults&gt;&gt;&#xA;override this.GetEventWithHttpMessagesAsync : Microsoft.Azure.ApplicationInsights.Models.EventType * string * Nullable&lt;TimeSpan&gt; * System.Collections.Generic.Dictionary&lt;string, System.Collections.Generic.List&lt;string&gt;&gt; * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.Rest.HttpOperationResponse&lt;Microsoft.Azure.ApplicationInsights.Models.EventsResults&gt;&gt;" Usage="applicationInsightsDataClient.GetEventWithHttpMessagesAsync (eventType, eventId, timespan, customHeaders, cancellationToken)" />
       <MemberType>Method</MemberType>
       <Implements>
@@ -1343,11 +1304,6 @@
         <AssemblyName>Microsoft.Azure.ApplicationInsights</AssemblyName>
         <AssemblyVersion>0.9.0.0</AssemblyVersion>
       </AssemblyInfo>
-      <Attributes>
-        <Attribute>
-          <AttributeName>System.Runtime.CompilerServices.AsyncStateMachine(typeof(Microsoft.Azure.ApplicationInsights.ApplicationInsightsDataClient/&lt;GetEventWithHttpMessagesAsync&gt;d__76))</AttributeName>
-        </Attribute>
-      </Attributes>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.Rest.HttpOperationResponse&lt;Microsoft.Azure.ApplicationInsights.Models.EventsResults&gt;&gt;</ReturnType>
       </ReturnValue>
@@ -1406,9 +1362,10 @@
       </Docs>
     </Member>
     <Member MemberName="GetExceptionEventsWithHttpMessagesAsync">
-      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;Microsoft.Rest.HttpOperationResponse&lt;Microsoft.Azure.ApplicationInsights.Models.EventsResults&lt;Microsoft.Azure.ApplicationInsights.Models.EventsExceptionResult&gt;&gt;&gt; GetExceptionEventsWithHttpMessagesAsync (Nullable&lt;TimeSpan&gt; timespan = null, string filter = null, string search = null, string orderby = null, string select = null, Nullable&lt;int&gt; skip = null, Nullable&lt;int&gt; top = null, string format = null, Nullable&lt;bool&gt; count = null, string apply = null, System.Collections.Generic.Dictionary&lt;string,System.Collections.Generic.List&lt;string&gt;&gt; customHeaders = null, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;Microsoft.Rest.HttpOperationResponse&lt;Microsoft.Azure.ApplicationInsights.Models.EventsResults&lt;Microsoft.Azure.ApplicationInsights.Models.EventsExceptionResult&gt;&gt;&gt; GetExceptionEventsWithHttpMessagesAsync (TimeSpan? timespan = default, string filter = default, string search = default, string orderby = default, string select = default, int? skip = default, int? top = default, string format = default, bool? count = default, string apply = default, System.Collections.Generic.Dictionary&lt;string,System.Collections.Generic.List&lt;string&gt;&gt; customHeaders = default, System.Threading.CancellationToken cancellationToken = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Microsoft.Rest.HttpOperationResponse`1&lt;class Microsoft.Azure.ApplicationInsights.Models.EventsResults`1&lt;class Microsoft.Azure.ApplicationInsights.Models.EventsExceptionResult&gt;&gt;&gt; GetExceptionEventsWithHttpMessagesAsync(valuetype System.Nullable`1&lt;valuetype System.TimeSpan&gt; timespan, string filter, string search, string orderby, string select, valuetype System.Nullable`1&lt;int32&gt; skip, valuetype System.Nullable`1&lt;int32&gt; top, string format, valuetype System.Nullable`1&lt;bool&gt; count, string apply, class System.Collections.Generic.Dictionary`2&lt;string, class System.Collections.Generic.List`1&lt;string&gt;&gt; customHeaders, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.ApplicationInsights.ApplicationInsightsDataClient.GetExceptionEventsWithHttpMessagesAsync(System.Nullable{System.TimeSpan},System.String,System.String,System.String,System.String,System.Nullable{System.Int32},System.Nullable{System.Int32},System.String,System.Nullable{System.Boolean},System.String,System.Collections.Generic.Dictionary{System.String,System.Collections.Generic.List{System.String}},System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetExceptionEventsWithHttpMessagesAsync (Optional timespan As Nullable(Of TimeSpan) = Nothing, Optional filter As String = Nothing, Optional search As String = Nothing, Optional orderby As String = Nothing, Optional select As String = Nothing, Optional skip As Nullable(Of Integer) = Nothing, Optional top As Nullable(Of Integer) = Nothing, Optional format As String = Nothing, Optional count As Nullable(Of Boolean) = Nothing, Optional apply As String = Nothing, Optional customHeaders As Dictionary(Of String, List(Of String)) = Nothing, Optional cancellationToken As CancellationToken = Nothing) As Task(Of HttpOperationResponse(Of EventsResults(Of EventsExceptionResult)))" />
       <MemberSignature Language="F#" Value="abstract member GetExceptionEventsWithHttpMessagesAsync : Nullable&lt;TimeSpan&gt; * string * string * string * string * Nullable&lt;int&gt; * Nullable&lt;int&gt; * string * Nullable&lt;bool&gt; * string * System.Collections.Generic.Dictionary&lt;string, System.Collections.Generic.List&lt;string&gt;&gt; * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.Rest.HttpOperationResponse&lt;Microsoft.Azure.ApplicationInsights.Models.EventsResults&lt;Microsoft.Azure.ApplicationInsights.Models.EventsExceptionResult&gt;&gt;&gt;&#xA;override this.GetExceptionEventsWithHttpMessagesAsync : Nullable&lt;TimeSpan&gt; * string * string * string * string * Nullable&lt;int&gt; * Nullable&lt;int&gt; * string * Nullable&lt;bool&gt; * string * System.Collections.Generic.Dictionary&lt;string, System.Collections.Generic.List&lt;string&gt;&gt; * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.Rest.HttpOperationResponse&lt;Microsoft.Azure.ApplicationInsights.Models.EventsResults&lt;Microsoft.Azure.ApplicationInsights.Models.EventsExceptionResult&gt;&gt;&gt;" Usage="applicationInsightsDataClient.GetExceptionEventsWithHttpMessagesAsync (timespan, filter, search, orderby, select, skip, top, format, count, apply, customHeaders, cancellationToken)" />
       <MemberType>Method</MemberType>
       <Implements>
@@ -1418,11 +1375,6 @@
         <AssemblyName>Microsoft.Azure.ApplicationInsights</AssemblyName>
         <AssemblyVersion>0.9.0.0</AssemblyVersion>
       </AssemblyInfo>
-      <Attributes>
-        <Attribute>
-          <AttributeName>System.Runtime.CompilerServices.AsyncStateMachine(typeof(Microsoft.Azure.ApplicationInsights.ApplicationInsightsDataClient/&lt;GetExceptionEventsWithHttpMessagesAsync&gt;d__34))</AttributeName>
-        </Attribute>
-      </Attributes>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.Rest.HttpOperationResponse&lt;Microsoft.Azure.ApplicationInsights.Models.EventsResults&lt;Microsoft.Azure.ApplicationInsights.Models.EventsExceptionResult&gt;&gt;&gt;</ReturnType>
       </ReturnValue>
@@ -1492,9 +1444,10 @@
       </Docs>
     </Member>
     <Member MemberName="GetExceptionEventWithHttpMessagesAsync">
-      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;Microsoft.Rest.HttpOperationResponse&lt;Microsoft.Azure.ApplicationInsights.Models.EventsResults&lt;Microsoft.Azure.ApplicationInsights.Models.EventsExceptionResult&gt;&gt;&gt; GetExceptionEventWithHttpMessagesAsync (string eventId, Nullable&lt;TimeSpan&gt; timespan = null, System.Collections.Generic.Dictionary&lt;string,System.Collections.Generic.List&lt;string&gt;&gt; customHeaders = null, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;Microsoft.Rest.HttpOperationResponse&lt;Microsoft.Azure.ApplicationInsights.Models.EventsResults&lt;Microsoft.Azure.ApplicationInsights.Models.EventsExceptionResult&gt;&gt;&gt; GetExceptionEventWithHttpMessagesAsync (string eventId, TimeSpan? timespan = default, System.Collections.Generic.Dictionary&lt;string,System.Collections.Generic.List&lt;string&gt;&gt; customHeaders = default, System.Threading.CancellationToken cancellationToken = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Microsoft.Rest.HttpOperationResponse`1&lt;class Microsoft.Azure.ApplicationInsights.Models.EventsResults`1&lt;class Microsoft.Azure.ApplicationInsights.Models.EventsExceptionResult&gt;&gt;&gt; GetExceptionEventWithHttpMessagesAsync(string eventId, valuetype System.Nullable`1&lt;valuetype System.TimeSpan&gt; timespan, class System.Collections.Generic.Dictionary`2&lt;string, class System.Collections.Generic.List`1&lt;string&gt;&gt; customHeaders, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.ApplicationInsights.ApplicationInsightsDataClient.GetExceptionEventWithHttpMessagesAsync(System.String,System.Nullable{System.TimeSpan},System.Collections.Generic.Dictionary{System.String,System.Collections.Generic.List{System.String}},System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetExceptionEventWithHttpMessagesAsync (eventId As String, Optional timespan As Nullable(Of TimeSpan) = Nothing, Optional customHeaders As Dictionary(Of String, List(Of String)) = Nothing, Optional cancellationToken As CancellationToken = Nothing) As Task(Of HttpOperationResponse(Of EventsResults(Of EventsExceptionResult)))" />
       <MemberSignature Language="F#" Value="abstract member GetExceptionEventWithHttpMessagesAsync : string * Nullable&lt;TimeSpan&gt; * System.Collections.Generic.Dictionary&lt;string, System.Collections.Generic.List&lt;string&gt;&gt; * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.Rest.HttpOperationResponse&lt;Microsoft.Azure.ApplicationInsights.Models.EventsResults&lt;Microsoft.Azure.ApplicationInsights.Models.EventsExceptionResult&gt;&gt;&gt;&#xA;override this.GetExceptionEventWithHttpMessagesAsync : string * Nullable&lt;TimeSpan&gt; * System.Collections.Generic.Dictionary&lt;string, System.Collections.Generic.List&lt;string&gt;&gt; * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.Rest.HttpOperationResponse&lt;Microsoft.Azure.ApplicationInsights.Models.EventsResults&lt;Microsoft.Azure.ApplicationInsights.Models.EventsExceptionResult&gt;&gt;&gt;" Usage="applicationInsightsDataClient.GetExceptionEventWithHttpMessagesAsync (eventId, timespan, customHeaders, cancellationToken)" />
       <MemberType>Method</MemberType>
       <Implements>
@@ -1504,11 +1457,6 @@
         <AssemblyName>Microsoft.Azure.ApplicationInsights</AssemblyName>
         <AssemblyVersion>0.9.0.0</AssemblyVersion>
       </AssemblyInfo>
-      <Attributes>
-        <Attribute>
-          <AttributeName>System.Runtime.CompilerServices.AsyncStateMachine(typeof(Microsoft.Azure.ApplicationInsights.ApplicationInsightsDataClient/&lt;GetExceptionEventWithHttpMessagesAsync&gt;d__35))</AttributeName>
-        </Attribute>
-      </Attributes>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.Rest.HttpOperationResponse&lt;Microsoft.Azure.ApplicationInsights.Models.EventsResults&lt;Microsoft.Azure.ApplicationInsights.Models.EventsExceptionResult&gt;&gt;&gt;</ReturnType>
       </ReturnValue>
@@ -1543,9 +1491,10 @@
       </Docs>
     </Member>
     <Member MemberName="GetIntervaledMetricWithHttpMessagesAsync">
-      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;Microsoft.Rest.HttpOperationResponse&lt;Microsoft.Azure.ApplicationInsights.Models.MetricsIntervaledResult&gt;&gt; GetIntervaledMetricWithHttpMessagesAsync (string metricId, Nullable&lt;TimeSpan&gt; timespan = null, Nullable&lt;TimeSpan&gt; interval = null, System.Collections.Generic.IList&lt;string&gt; aggregation = null, System.Collections.Generic.IList&lt;string&gt; segment = null, Nullable&lt;int&gt; top = null, string orderby = null, string filter = null, System.Collections.Generic.Dictionary&lt;string,System.Collections.Generic.List&lt;string&gt;&gt; customHeaders = null, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;Microsoft.Rest.HttpOperationResponse&lt;Microsoft.Azure.ApplicationInsights.Models.MetricsIntervaledResult&gt;&gt; GetIntervaledMetricWithHttpMessagesAsync (string metricId, TimeSpan? timespan = default, TimeSpan? interval = default, System.Collections.Generic.IList&lt;string&gt; aggregation = default, System.Collections.Generic.IList&lt;string&gt; segment = default, int? top = default, string orderby = default, string filter = default, System.Collections.Generic.Dictionary&lt;string,System.Collections.Generic.List&lt;string&gt;&gt; customHeaders = default, System.Threading.CancellationToken cancellationToken = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Microsoft.Rest.HttpOperationResponse`1&lt;class Microsoft.Azure.ApplicationInsights.Models.MetricsIntervaledResult&gt;&gt; GetIntervaledMetricWithHttpMessagesAsync(string metricId, valuetype System.Nullable`1&lt;valuetype System.TimeSpan&gt; timespan, valuetype System.Nullable`1&lt;valuetype System.TimeSpan&gt; interval, class System.Collections.Generic.IList`1&lt;string&gt; aggregation, class System.Collections.Generic.IList`1&lt;string&gt; segment, valuetype System.Nullable`1&lt;int32&gt; top, string orderby, string filter, class System.Collections.Generic.Dictionary`2&lt;string, class System.Collections.Generic.List`1&lt;string&gt;&gt; customHeaders, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.ApplicationInsights.ApplicationInsightsDataClient.GetIntervaledMetricWithHttpMessagesAsync(System.String,System.Nullable{System.TimeSpan},System.Nullable{System.TimeSpan},System.Collections.Generic.IList{System.String},System.Collections.Generic.IList{System.String},System.Nullable{System.Int32},System.String,System.String,System.Collections.Generic.Dictionary{System.String,System.Collections.Generic.List{System.String}},System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetIntervaledMetricWithHttpMessagesAsync (metricId As String, Optional timespan As Nullable(Of TimeSpan) = Nothing, Optional interval As Nullable(Of TimeSpan) = Nothing, Optional aggregation As IList(Of String) = Nothing, Optional segment As IList(Of String) = Nothing, Optional top As Nullable(Of Integer) = Nothing, Optional orderby As String = Nothing, Optional filter As String = Nothing, Optional customHeaders As Dictionary(Of String, List(Of String)) = Nothing, Optional cancellationToken As CancellationToken = Nothing) As Task(Of HttpOperationResponse(Of MetricsIntervaledResult))" />
       <MemberSignature Language="F#" Value="abstract member GetIntervaledMetricWithHttpMessagesAsync : string * Nullable&lt;TimeSpan&gt; * Nullable&lt;TimeSpan&gt; * System.Collections.Generic.IList&lt;string&gt; * System.Collections.Generic.IList&lt;string&gt; * Nullable&lt;int&gt; * string * string * System.Collections.Generic.Dictionary&lt;string, System.Collections.Generic.List&lt;string&gt;&gt; * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.Rest.HttpOperationResponse&lt;Microsoft.Azure.ApplicationInsights.Models.MetricsIntervaledResult&gt;&gt;&#xA;override this.GetIntervaledMetricWithHttpMessagesAsync : string * Nullable&lt;TimeSpan&gt; * Nullable&lt;TimeSpan&gt; * System.Collections.Generic.IList&lt;string&gt; * System.Collections.Generic.IList&lt;string&gt; * Nullable&lt;int&gt; * string * string * System.Collections.Generic.Dictionary&lt;string, System.Collections.Generic.List&lt;string&gt;&gt; * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.Rest.HttpOperationResponse&lt;Microsoft.Azure.ApplicationInsights.Models.MetricsIntervaledResult&gt;&gt;" Usage="applicationInsightsDataClient.GetIntervaledMetricWithHttpMessagesAsync (metricId, timespan, interval, aggregation, segment, top, orderby, filter, customHeaders, cancellationToken)" />
       <MemberType>Method</MemberType>
       <Implements>
@@ -1555,11 +1504,6 @@
         <AssemblyName>Microsoft.Azure.ApplicationInsights</AssemblyName>
         <AssemblyVersion>0.9.0.0</AssemblyVersion>
       </AssemblyInfo>
-      <Attributes>
-        <Attribute>
-          <AttributeName>System.Runtime.CompilerServices.AsyncStateMachine(typeof(Microsoft.Azure.ApplicationInsights.ApplicationInsightsDataClient/&lt;GetIntervaledMetricWithHttpMessagesAsync&gt;d__18))</AttributeName>
-        </Attribute>
-      </Attributes>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.Rest.HttpOperationResponse&lt;Microsoft.Azure.ApplicationInsights.Models.MetricsIntervaledResult&gt;&gt;</ReturnType>
       </ReturnValue>
@@ -1658,9 +1602,10 @@
       </Docs>
     </Member>
     <Member MemberName="GetIntervaledSegmentedMetricWithHttpMessagesAsync">
-      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;Microsoft.Rest.HttpOperationResponse&lt;Microsoft.Azure.ApplicationInsights.Models.MetricsIntervaledSegmentedResult&gt;&gt; GetIntervaledSegmentedMetricWithHttpMessagesAsync (string metricId, Nullable&lt;TimeSpan&gt; timespan = null, Nullable&lt;TimeSpan&gt; interval = null, System.Collections.Generic.IList&lt;string&gt; aggregation = null, System.Collections.Generic.IList&lt;string&gt; segment = null, Nullable&lt;int&gt; top = null, string orderby = null, string filter = null, System.Collections.Generic.Dictionary&lt;string,System.Collections.Generic.List&lt;string&gt;&gt; customHeaders = null, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;Microsoft.Rest.HttpOperationResponse&lt;Microsoft.Azure.ApplicationInsights.Models.MetricsIntervaledSegmentedResult&gt;&gt; GetIntervaledSegmentedMetricWithHttpMessagesAsync (string metricId, TimeSpan? timespan = default, TimeSpan? interval = default, System.Collections.Generic.IList&lt;string&gt; aggregation = default, System.Collections.Generic.IList&lt;string&gt; segment = default, int? top = default, string orderby = default, string filter = default, System.Collections.Generic.Dictionary&lt;string,System.Collections.Generic.List&lt;string&gt;&gt; customHeaders = default, System.Threading.CancellationToken cancellationToken = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Microsoft.Rest.HttpOperationResponse`1&lt;class Microsoft.Azure.ApplicationInsights.Models.MetricsIntervaledSegmentedResult&gt;&gt; GetIntervaledSegmentedMetricWithHttpMessagesAsync(string metricId, valuetype System.Nullable`1&lt;valuetype System.TimeSpan&gt; timespan, valuetype System.Nullable`1&lt;valuetype System.TimeSpan&gt; interval, class System.Collections.Generic.IList`1&lt;string&gt; aggregation, class System.Collections.Generic.IList`1&lt;string&gt; segment, valuetype System.Nullable`1&lt;int32&gt; top, string orderby, string filter, class System.Collections.Generic.Dictionary`2&lt;string, class System.Collections.Generic.List`1&lt;string&gt;&gt; customHeaders, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.ApplicationInsights.ApplicationInsightsDataClient.GetIntervaledSegmentedMetricWithHttpMessagesAsync(System.String,System.Nullable{System.TimeSpan},System.Nullable{System.TimeSpan},System.Collections.Generic.IList{System.String},System.Collections.Generic.IList{System.String},System.Nullable{System.Int32},System.String,System.String,System.Collections.Generic.Dictionary{System.String,System.Collections.Generic.List{System.String}},System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetIntervaledSegmentedMetricWithHttpMessagesAsync (metricId As String, Optional timespan As Nullable(Of TimeSpan) = Nothing, Optional interval As Nullable(Of TimeSpan) = Nothing, Optional aggregation As IList(Of String) = Nothing, Optional segment As IList(Of String) = Nothing, Optional top As Nullable(Of Integer) = Nothing, Optional orderby As String = Nothing, Optional filter As String = Nothing, Optional customHeaders As Dictionary(Of String, List(Of String)) = Nothing, Optional cancellationToken As CancellationToken = Nothing) As Task(Of HttpOperationResponse(Of MetricsIntervaledSegmentedResult))" />
       <MemberSignature Language="F#" Value="abstract member GetIntervaledSegmentedMetricWithHttpMessagesAsync : string * Nullable&lt;TimeSpan&gt; * Nullable&lt;TimeSpan&gt; * System.Collections.Generic.IList&lt;string&gt; * System.Collections.Generic.IList&lt;string&gt; * Nullable&lt;int&gt; * string * string * System.Collections.Generic.Dictionary&lt;string, System.Collections.Generic.List&lt;string&gt;&gt; * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.Rest.HttpOperationResponse&lt;Microsoft.Azure.ApplicationInsights.Models.MetricsIntervaledSegmentedResult&gt;&gt;&#xA;override this.GetIntervaledSegmentedMetricWithHttpMessagesAsync : string * Nullable&lt;TimeSpan&gt; * Nullable&lt;TimeSpan&gt; * System.Collections.Generic.IList&lt;string&gt; * System.Collections.Generic.IList&lt;string&gt; * Nullable&lt;int&gt; * string * string * System.Collections.Generic.Dictionary&lt;string, System.Collections.Generic.List&lt;string&gt;&gt; * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.Rest.HttpOperationResponse&lt;Microsoft.Azure.ApplicationInsights.Models.MetricsIntervaledSegmentedResult&gt;&gt;" Usage="applicationInsightsDataClient.GetIntervaledSegmentedMetricWithHttpMessagesAsync (metricId, timespan, interval, aggregation, segment, top, orderby, filter, customHeaders, cancellationToken)" />
       <MemberType>Method</MemberType>
       <Implements>
@@ -1670,11 +1615,6 @@
         <AssemblyName>Microsoft.Azure.ApplicationInsights</AssemblyName>
         <AssemblyVersion>0.9.0.0</AssemblyVersion>
       </AssemblyInfo>
-      <Attributes>
-        <Attribute>
-          <AttributeName>System.Runtime.CompilerServices.AsyncStateMachine(typeof(Microsoft.Azure.ApplicationInsights.ApplicationInsightsDataClient/&lt;GetIntervaledSegmentedMetricWithHttpMessagesAsync&gt;d__21))</AttributeName>
-        </Attribute>
-      </Attributes>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.Rest.HttpOperationResponse&lt;Microsoft.Azure.ApplicationInsights.Models.MetricsIntervaledSegmentedResult&gt;&gt;</ReturnType>
       </ReturnValue>
@@ -1773,9 +1713,10 @@
       </Docs>
     </Member>
     <Member MemberName="GetMetricsMetadataWithHttpMessagesAsync">
-      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;Microsoft.Rest.HttpOperationResponse&lt;object&gt;&gt; GetMetricsMetadataWithHttpMessagesAsync (System.Collections.Generic.Dictionary&lt;string,System.Collections.Generic.List&lt;string&gt;&gt; customHeaders = null, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;Microsoft.Rest.HttpOperationResponse&lt;object&gt;&gt; GetMetricsMetadataWithHttpMessagesAsync (System.Collections.Generic.Dictionary&lt;string,System.Collections.Generic.List&lt;string&gt;&gt; customHeaders = default, System.Threading.CancellationToken cancellationToken = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Microsoft.Rest.HttpOperationResponse`1&lt;object&gt;&gt; GetMetricsMetadataWithHttpMessagesAsync(class System.Collections.Generic.Dictionary`2&lt;string, class System.Collections.Generic.List`1&lt;string&gt;&gt; customHeaders, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.ApplicationInsights.ApplicationInsightsDataClient.GetMetricsMetadataWithHttpMessagesAsync(System.Collections.Generic.Dictionary{System.String,System.Collections.Generic.List{System.String}},System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetMetricsMetadataWithHttpMessagesAsync (Optional customHeaders As Dictionary(Of String, List(Of String)) = Nothing, Optional cancellationToken As CancellationToken = Nothing) As Task(Of HttpOperationResponse(Of Object))" />
       <MemberSignature Language="F#" Value="abstract member GetMetricsMetadataWithHttpMessagesAsync : System.Collections.Generic.Dictionary&lt;string, System.Collections.Generic.List&lt;string&gt;&gt; * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.Rest.HttpOperationResponse&lt;obj&gt;&gt;&#xA;override this.GetMetricsMetadataWithHttpMessagesAsync : System.Collections.Generic.Dictionary&lt;string, System.Collections.Generic.List&lt;string&gt;&gt; * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.Rest.HttpOperationResponse&lt;obj&gt;&gt;" Usage="applicationInsightsDataClient.GetMetricsMetadataWithHttpMessagesAsync (customHeaders, cancellationToken)" />
       <MemberType>Method</MemberType>
       <Implements>
@@ -1785,11 +1726,6 @@
         <AssemblyName>Microsoft.Azure.ApplicationInsights</AssemblyName>
         <AssemblyVersion>0.9.0.0</AssemblyVersion>
       </AssemblyInfo>
-      <Attributes>
-        <Attribute>
-          <AttributeName>System.Runtime.CompilerServices.AsyncStateMachine(typeof(Microsoft.Azure.ApplicationInsights.ApplicationInsightsDataClient/&lt;GetMetricsMetadataWithHttpMessagesAsync&gt;d__74))</AttributeName>
-        </Attribute>
-      </Attributes>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.Rest.HttpOperationResponse&lt;System.Object&gt;&gt;</ReturnType>
       </ReturnValue>
@@ -1829,9 +1765,10 @@
       </Docs>
     </Member>
     <Member MemberName="GetMetricSummaryWithHttpMessagesAsync">
-      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;Microsoft.Rest.HttpOperationResponse&lt;Microsoft.Azure.ApplicationInsights.Models.MetricsSummaryResult&gt;&gt; GetMetricSummaryWithHttpMessagesAsync (string metricId, Nullable&lt;TimeSpan&gt; timespan = null, System.Collections.Generic.IList&lt;string&gt; aggregation = null, Nullable&lt;int&gt; top = null, string orderby = null, string filter = null, System.Collections.Generic.Dictionary&lt;string,System.Collections.Generic.List&lt;string&gt;&gt; customHeaders = null, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;Microsoft.Rest.HttpOperationResponse&lt;Microsoft.Azure.ApplicationInsights.Models.MetricsSummaryResult&gt;&gt; GetMetricSummaryWithHttpMessagesAsync (string metricId, TimeSpan? timespan = default, System.Collections.Generic.IList&lt;string&gt; aggregation = default, int? top = default, string orderby = default, string filter = default, System.Collections.Generic.Dictionary&lt;string,System.Collections.Generic.List&lt;string&gt;&gt; customHeaders = default, System.Threading.CancellationToken cancellationToken = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Microsoft.Rest.HttpOperationResponse`1&lt;class Microsoft.Azure.ApplicationInsights.Models.MetricsSummaryResult&gt;&gt; GetMetricSummaryWithHttpMessagesAsync(string metricId, valuetype System.Nullable`1&lt;valuetype System.TimeSpan&gt; timespan, class System.Collections.Generic.IList`1&lt;string&gt; aggregation, valuetype System.Nullable`1&lt;int32&gt; top, string orderby, string filter, class System.Collections.Generic.Dictionary`2&lt;string, class System.Collections.Generic.List`1&lt;string&gt;&gt; customHeaders, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.ApplicationInsights.ApplicationInsightsDataClient.GetMetricSummaryWithHttpMessagesAsync(System.String,System.Nullable{System.TimeSpan},System.Collections.Generic.IList{System.String},System.Nullable{System.Int32},System.String,System.String,System.Collections.Generic.Dictionary{System.String,System.Collections.Generic.List{System.String}},System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetMetricSummaryWithHttpMessagesAsync (metricId As String, Optional timespan As Nullable(Of TimeSpan) = Nothing, Optional aggregation As IList(Of String) = Nothing, Optional top As Nullable(Of Integer) = Nothing, Optional orderby As String = Nothing, Optional filter As String = Nothing, Optional customHeaders As Dictionary(Of String, List(Of String)) = Nothing, Optional cancellationToken As CancellationToken = Nothing) As Task(Of HttpOperationResponse(Of MetricsSummaryResult))" />
       <MemberSignature Language="F#" Value="abstract member GetMetricSummaryWithHttpMessagesAsync : string * Nullable&lt;TimeSpan&gt; * System.Collections.Generic.IList&lt;string&gt; * Nullable&lt;int&gt; * string * string * System.Collections.Generic.Dictionary&lt;string, System.Collections.Generic.List&lt;string&gt;&gt; * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.Rest.HttpOperationResponse&lt;Microsoft.Azure.ApplicationInsights.Models.MetricsSummaryResult&gt;&gt;&#xA;override this.GetMetricSummaryWithHttpMessagesAsync : string * Nullable&lt;TimeSpan&gt; * System.Collections.Generic.IList&lt;string&gt; * Nullable&lt;int&gt; * string * string * System.Collections.Generic.Dictionary&lt;string, System.Collections.Generic.List&lt;string&gt;&gt; * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.Rest.HttpOperationResponse&lt;Microsoft.Azure.ApplicationInsights.Models.MetricsSummaryResult&gt;&gt;" Usage="applicationInsightsDataClient.GetMetricSummaryWithHttpMessagesAsync (metricId, timespan, aggregation, top, orderby, filter, customHeaders, cancellationToken)" />
       <MemberType>Method</MemberType>
       <Implements>
@@ -1841,11 +1778,6 @@
         <AssemblyName>Microsoft.Azure.ApplicationInsights</AssemblyName>
         <AssemblyVersion>0.9.0.0</AssemblyVersion>
       </AssemblyInfo>
-      <Attributes>
-        <Attribute>
-          <AttributeName>System.Runtime.CompilerServices.AsyncStateMachine(typeof(Microsoft.Azure.ApplicationInsights.ApplicationInsightsDataClient/&lt;GetMetricSummaryWithHttpMessagesAsync&gt;d__17))</AttributeName>
-        </Attribute>
-      </Attributes>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.Rest.HttpOperationResponse&lt;Microsoft.Azure.ApplicationInsights.Models.MetricsSummaryResult&gt;&gt;</ReturnType>
       </ReturnValue>
@@ -1927,9 +1859,10 @@
       </Docs>
     </Member>
     <Member MemberName="GetMetricsWithHttpMessagesAsync">
-      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;Microsoft.Rest.HttpOperationResponse&lt;System.Collections.Generic.IList&lt;Microsoft.Azure.ApplicationInsights.Models.MetricsResultsItem&gt;&gt;&gt; GetMetricsWithHttpMessagesAsync (System.Collections.Generic.IList&lt;Microsoft.Azure.ApplicationInsights.Models.MetricsPostBodySchema&gt; body, System.Collections.Generic.Dictionary&lt;string,System.Collections.Generic.List&lt;string&gt;&gt; customHeaders = null, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;Microsoft.Rest.HttpOperationResponse&lt;System.Collections.Generic.IList&lt;Microsoft.Azure.ApplicationInsights.Models.MetricsResultsItem&gt;&gt;&gt; GetMetricsWithHttpMessagesAsync (System.Collections.Generic.IList&lt;Microsoft.Azure.ApplicationInsights.Models.MetricsPostBodySchema&gt; body, System.Collections.Generic.Dictionary&lt;string,System.Collections.Generic.List&lt;string&gt;&gt; customHeaders = default, System.Threading.CancellationToken cancellationToken = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Microsoft.Rest.HttpOperationResponse`1&lt;class System.Collections.Generic.IList`1&lt;class Microsoft.Azure.ApplicationInsights.Models.MetricsResultsItem&gt;&gt;&gt; GetMetricsWithHttpMessagesAsync(class System.Collections.Generic.IList`1&lt;class Microsoft.Azure.ApplicationInsights.Models.MetricsPostBodySchema&gt; body, class System.Collections.Generic.Dictionary`2&lt;string, class System.Collections.Generic.List`1&lt;string&gt;&gt; customHeaders, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.ApplicationInsights.ApplicationInsightsDataClient.GetMetricsWithHttpMessagesAsync(System.Collections.Generic.IList{Microsoft.Azure.ApplicationInsights.Models.MetricsPostBodySchema},System.Collections.Generic.Dictionary{System.String,System.Collections.Generic.List{System.String}},System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetMetricsWithHttpMessagesAsync (body As IList(Of MetricsPostBodySchema), Optional customHeaders As Dictionary(Of String, List(Of String)) = Nothing, Optional cancellationToken As CancellationToken = Nothing) As Task(Of HttpOperationResponse(Of IList(Of MetricsResultsItem)))" />
       <MemberSignature Language="F#" Value="abstract member GetMetricsWithHttpMessagesAsync : System.Collections.Generic.IList&lt;Microsoft.Azure.ApplicationInsights.Models.MetricsPostBodySchema&gt; * System.Collections.Generic.Dictionary&lt;string, System.Collections.Generic.List&lt;string&gt;&gt; * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.Rest.HttpOperationResponse&lt;System.Collections.Generic.IList&lt;Microsoft.Azure.ApplicationInsights.Models.MetricsResultsItem&gt;&gt;&gt;&#xA;override this.GetMetricsWithHttpMessagesAsync : System.Collections.Generic.IList&lt;Microsoft.Azure.ApplicationInsights.Models.MetricsPostBodySchema&gt; * System.Collections.Generic.Dictionary&lt;string, System.Collections.Generic.List&lt;string&gt;&gt; * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.Rest.HttpOperationResponse&lt;System.Collections.Generic.IList&lt;Microsoft.Azure.ApplicationInsights.Models.MetricsResultsItem&gt;&gt;&gt;" Usage="applicationInsightsDataClient.GetMetricsWithHttpMessagesAsync (body, customHeaders, cancellationToken)" />
       <MemberType>Method</MemberType>
       <Implements>
@@ -1939,11 +1872,6 @@
         <AssemblyName>Microsoft.Azure.ApplicationInsights</AssemblyName>
         <AssemblyVersion>0.9.0.0</AssemblyVersion>
       </AssemblyInfo>
-      <Attributes>
-        <Attribute>
-          <AttributeName>System.Runtime.CompilerServices.AsyncStateMachine(typeof(Microsoft.Azure.ApplicationInsights.ApplicationInsightsDataClient/&lt;GetMetricsWithHttpMessagesAsync&gt;d__73))</AttributeName>
-        </Attribute>
-      </Attributes>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.Rest.HttpOperationResponse&lt;System.Collections.Generic.IList&lt;Microsoft.Azure.ApplicationInsights.Models.MetricsResultsItem&gt;&gt;&gt;</ReturnType>
       </ReturnValue>
@@ -1987,9 +1915,10 @@
       </Docs>
     </Member>
     <Member MemberName="GetMetricWithHttpMessagesAsync">
-      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;Microsoft.Rest.HttpOperationResponse&lt;Microsoft.Azure.ApplicationInsights.Models.MetricsResult&gt;&gt; GetMetricWithHttpMessagesAsync (string metricId, Nullable&lt;TimeSpan&gt; timespan = null, Nullable&lt;TimeSpan&gt; interval = null, System.Collections.Generic.IList&lt;string&gt; aggregation = null, System.Collections.Generic.IList&lt;string&gt; segment = null, Nullable&lt;int&gt; top = null, string orderby = null, string filter = null, System.Collections.Generic.Dictionary&lt;string,System.Collections.Generic.List&lt;string&gt;&gt; customHeaders = null, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;Microsoft.Rest.HttpOperationResponse&lt;Microsoft.Azure.ApplicationInsights.Models.MetricsResult&gt;&gt; GetMetricWithHttpMessagesAsync (string metricId, TimeSpan? timespan = default, TimeSpan? interval = default, System.Collections.Generic.IList&lt;string&gt; aggregation = default, System.Collections.Generic.IList&lt;string&gt; segment = default, int? top = default, string orderby = default, string filter = default, System.Collections.Generic.Dictionary&lt;string,System.Collections.Generic.List&lt;string&gt;&gt; customHeaders = default, System.Threading.CancellationToken cancellationToken = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Microsoft.Rest.HttpOperationResponse`1&lt;class Microsoft.Azure.ApplicationInsights.Models.MetricsResult&gt;&gt; GetMetricWithHttpMessagesAsync(string metricId, valuetype System.Nullable`1&lt;valuetype System.TimeSpan&gt; timespan, valuetype System.Nullable`1&lt;valuetype System.TimeSpan&gt; interval, class System.Collections.Generic.IList`1&lt;string&gt; aggregation, class System.Collections.Generic.IList`1&lt;string&gt; segment, valuetype System.Nullable`1&lt;int32&gt; top, string orderby, string filter, class System.Collections.Generic.Dictionary`2&lt;string, class System.Collections.Generic.List`1&lt;string&gt;&gt; customHeaders, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.ApplicationInsights.ApplicationInsightsDataClient.GetMetricWithHttpMessagesAsync(System.String,System.Nullable{System.TimeSpan},System.Nullable{System.TimeSpan},System.Collections.Generic.IList{System.String},System.Collections.Generic.IList{System.String},System.Nullable{System.Int32},System.String,System.String,System.Collections.Generic.Dictionary{System.String,System.Collections.Generic.List{System.String}},System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetMetricWithHttpMessagesAsync (metricId As String, Optional timespan As Nullable(Of TimeSpan) = Nothing, Optional interval As Nullable(Of TimeSpan) = Nothing, Optional aggregation As IList(Of String) = Nothing, Optional segment As IList(Of String) = Nothing, Optional top As Nullable(Of Integer) = Nothing, Optional orderby As String = Nothing, Optional filter As String = Nothing, Optional customHeaders As Dictionary(Of String, List(Of String)) = Nothing, Optional cancellationToken As CancellationToken = Nothing) As Task(Of HttpOperationResponse(Of MetricsResult))" />
       <MemberSignature Language="F#" Value="abstract member GetMetricWithHttpMessagesAsync : string * Nullable&lt;TimeSpan&gt; * Nullable&lt;TimeSpan&gt; * System.Collections.Generic.IList&lt;string&gt; * System.Collections.Generic.IList&lt;string&gt; * Nullable&lt;int&gt; * string * string * System.Collections.Generic.Dictionary&lt;string, System.Collections.Generic.List&lt;string&gt;&gt; * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.Rest.HttpOperationResponse&lt;Microsoft.Azure.ApplicationInsights.Models.MetricsResult&gt;&gt;&#xA;override this.GetMetricWithHttpMessagesAsync : string * Nullable&lt;TimeSpan&gt; * Nullable&lt;TimeSpan&gt; * System.Collections.Generic.IList&lt;string&gt; * System.Collections.Generic.IList&lt;string&gt; * Nullable&lt;int&gt; * string * string * System.Collections.Generic.Dictionary&lt;string, System.Collections.Generic.List&lt;string&gt;&gt; * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.Rest.HttpOperationResponse&lt;Microsoft.Azure.ApplicationInsights.Models.MetricsResult&gt;&gt;" Usage="applicationInsightsDataClient.GetMetricWithHttpMessagesAsync (metricId, timespan, interval, aggregation, segment, top, orderby, filter, customHeaders, cancellationToken)" />
       <MemberType>Method</MemberType>
       <Implements>
@@ -1999,11 +1928,6 @@
         <AssemblyName>Microsoft.Azure.ApplicationInsights</AssemblyName>
         <AssemblyVersion>0.9.0.0</AssemblyVersion>
       </AssemblyInfo>
-      <Attributes>
-        <Attribute>
-          <AttributeName>System.Runtime.CompilerServices.AsyncStateMachine(typeof(Microsoft.Azure.ApplicationInsights.ApplicationInsightsDataClient/&lt;GetMetricWithHttpMessagesAsync&gt;d__72))</AttributeName>
-        </Attribute>
-      </Attributes>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.Rest.HttpOperationResponse&lt;Microsoft.Azure.ApplicationInsights.Models.MetricsResult&gt;&gt;</ReturnType>
       </ReturnValue>
@@ -2114,9 +2038,10 @@
       </Docs>
     </Member>
     <Member MemberName="GetPageViewEventsWithHttpMessagesAsync">
-      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;Microsoft.Rest.HttpOperationResponse&lt;Microsoft.Azure.ApplicationInsights.Models.EventsResults&lt;Microsoft.Azure.ApplicationInsights.Models.EventsPageViewResult&gt;&gt;&gt; GetPageViewEventsWithHttpMessagesAsync (Nullable&lt;TimeSpan&gt; timespan = null, string filter = null, string search = null, string orderby = null, string select = null, Nullable&lt;int&gt; skip = null, Nullable&lt;int&gt; top = null, string format = null, Nullable&lt;bool&gt; count = null, string apply = null, System.Collections.Generic.Dictionary&lt;string,System.Collections.Generic.List&lt;string&gt;&gt; customHeaders = null, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;Microsoft.Rest.HttpOperationResponse&lt;Microsoft.Azure.ApplicationInsights.Models.EventsResults&lt;Microsoft.Azure.ApplicationInsights.Models.EventsPageViewResult&gt;&gt;&gt; GetPageViewEventsWithHttpMessagesAsync (TimeSpan? timespan = default, string filter = default, string search = default, string orderby = default, string select = default, int? skip = default, int? top = default, string format = default, bool? count = default, string apply = default, System.Collections.Generic.Dictionary&lt;string,System.Collections.Generic.List&lt;string&gt;&gt; customHeaders = default, System.Threading.CancellationToken cancellationToken = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Microsoft.Rest.HttpOperationResponse`1&lt;class Microsoft.Azure.ApplicationInsights.Models.EventsResults`1&lt;class Microsoft.Azure.ApplicationInsights.Models.EventsPageViewResult&gt;&gt;&gt; GetPageViewEventsWithHttpMessagesAsync(valuetype System.Nullable`1&lt;valuetype System.TimeSpan&gt; timespan, string filter, string search, string orderby, string select, valuetype System.Nullable`1&lt;int32&gt; skip, valuetype System.Nullable`1&lt;int32&gt; top, string format, valuetype System.Nullable`1&lt;bool&gt; count, string apply, class System.Collections.Generic.Dictionary`2&lt;string, class System.Collections.Generic.List`1&lt;string&gt;&gt; customHeaders, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.ApplicationInsights.ApplicationInsightsDataClient.GetPageViewEventsWithHttpMessagesAsync(System.Nullable{System.TimeSpan},System.String,System.String,System.String,System.String,System.Nullable{System.Int32},System.Nullable{System.Int32},System.String,System.Nullable{System.Boolean},System.String,System.Collections.Generic.Dictionary{System.String,System.Collections.Generic.List{System.String}},System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetPageViewEventsWithHttpMessagesAsync (Optional timespan As Nullable(Of TimeSpan) = Nothing, Optional filter As String = Nothing, Optional search As String = Nothing, Optional orderby As String = Nothing, Optional select As String = Nothing, Optional skip As Nullable(Of Integer) = Nothing, Optional top As Nullable(Of Integer) = Nothing, Optional format As String = Nothing, Optional count As Nullable(Of Boolean) = Nothing, Optional apply As String = Nothing, Optional customHeaders As Dictionary(Of String, List(Of String)) = Nothing, Optional cancellationToken As CancellationToken = Nothing) As Task(Of HttpOperationResponse(Of EventsResults(Of EventsPageViewResult)))" />
       <MemberSignature Language="F#" Value="abstract member GetPageViewEventsWithHttpMessagesAsync : Nullable&lt;TimeSpan&gt; * string * string * string * string * Nullable&lt;int&gt; * Nullable&lt;int&gt; * string * Nullable&lt;bool&gt; * string * System.Collections.Generic.Dictionary&lt;string, System.Collections.Generic.List&lt;string&gt;&gt; * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.Rest.HttpOperationResponse&lt;Microsoft.Azure.ApplicationInsights.Models.EventsResults&lt;Microsoft.Azure.ApplicationInsights.Models.EventsPageViewResult&gt;&gt;&gt;&#xA;override this.GetPageViewEventsWithHttpMessagesAsync : Nullable&lt;TimeSpan&gt; * string * string * string * string * Nullable&lt;int&gt; * Nullable&lt;int&gt; * string * Nullable&lt;bool&gt; * string * System.Collections.Generic.Dictionary&lt;string, System.Collections.Generic.List&lt;string&gt;&gt; * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.Rest.HttpOperationResponse&lt;Microsoft.Azure.ApplicationInsights.Models.EventsResults&lt;Microsoft.Azure.ApplicationInsights.Models.EventsPageViewResult&gt;&gt;&gt;" Usage="applicationInsightsDataClient.GetPageViewEventsWithHttpMessagesAsync (timespan, filter, search, orderby, select, skip, top, format, count, apply, customHeaders, cancellationToken)" />
       <MemberType>Method</MemberType>
       <Implements>
@@ -2126,11 +2051,6 @@
         <AssemblyName>Microsoft.Azure.ApplicationInsights</AssemblyName>
         <AssemblyVersion>0.9.0.0</AssemblyVersion>
       </AssemblyInfo>
-      <Attributes>
-        <Attribute>
-          <AttributeName>System.Runtime.CompilerServices.AsyncStateMachine(typeof(Microsoft.Azure.ApplicationInsights.ApplicationInsightsDataClient/&lt;GetPageViewEventsWithHttpMessagesAsync&gt;d__26))</AttributeName>
-        </Attribute>
-      </Attributes>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.Rest.HttpOperationResponse&lt;Microsoft.Azure.ApplicationInsights.Models.EventsResults&lt;Microsoft.Azure.ApplicationInsights.Models.EventsPageViewResult&gt;&gt;&gt;</ReturnType>
       </ReturnValue>
@@ -2200,9 +2120,10 @@
       </Docs>
     </Member>
     <Member MemberName="GetPageViewEventWithHttpMessagesAsync">
-      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;Microsoft.Rest.HttpOperationResponse&lt;Microsoft.Azure.ApplicationInsights.Models.EventsResults&lt;Microsoft.Azure.ApplicationInsights.Models.EventsPageViewResult&gt;&gt;&gt; GetPageViewEventWithHttpMessagesAsync (string eventId, Nullable&lt;TimeSpan&gt; timespan = null, System.Collections.Generic.Dictionary&lt;string,System.Collections.Generic.List&lt;string&gt;&gt; customHeaders = null, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;Microsoft.Rest.HttpOperationResponse&lt;Microsoft.Azure.ApplicationInsights.Models.EventsResults&lt;Microsoft.Azure.ApplicationInsights.Models.EventsPageViewResult&gt;&gt;&gt; GetPageViewEventWithHttpMessagesAsync (string eventId, TimeSpan? timespan = default, System.Collections.Generic.Dictionary&lt;string,System.Collections.Generic.List&lt;string&gt;&gt; customHeaders = default, System.Threading.CancellationToken cancellationToken = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Microsoft.Rest.HttpOperationResponse`1&lt;class Microsoft.Azure.ApplicationInsights.Models.EventsResults`1&lt;class Microsoft.Azure.ApplicationInsights.Models.EventsPageViewResult&gt;&gt;&gt; GetPageViewEventWithHttpMessagesAsync(string eventId, valuetype System.Nullable`1&lt;valuetype System.TimeSpan&gt; timespan, class System.Collections.Generic.Dictionary`2&lt;string, class System.Collections.Generic.List`1&lt;string&gt;&gt; customHeaders, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.ApplicationInsights.ApplicationInsightsDataClient.GetPageViewEventWithHttpMessagesAsync(System.String,System.Nullable{System.TimeSpan},System.Collections.Generic.Dictionary{System.String,System.Collections.Generic.List{System.String}},System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetPageViewEventWithHttpMessagesAsync (eventId As String, Optional timespan As Nullable(Of TimeSpan) = Nothing, Optional customHeaders As Dictionary(Of String, List(Of String)) = Nothing, Optional cancellationToken As CancellationToken = Nothing) As Task(Of HttpOperationResponse(Of EventsResults(Of EventsPageViewResult)))" />
       <MemberSignature Language="F#" Value="abstract member GetPageViewEventWithHttpMessagesAsync : string * Nullable&lt;TimeSpan&gt; * System.Collections.Generic.Dictionary&lt;string, System.Collections.Generic.List&lt;string&gt;&gt; * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.Rest.HttpOperationResponse&lt;Microsoft.Azure.ApplicationInsights.Models.EventsResults&lt;Microsoft.Azure.ApplicationInsights.Models.EventsPageViewResult&gt;&gt;&gt;&#xA;override this.GetPageViewEventWithHttpMessagesAsync : string * Nullable&lt;TimeSpan&gt; * System.Collections.Generic.Dictionary&lt;string, System.Collections.Generic.List&lt;string&gt;&gt; * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.Rest.HttpOperationResponse&lt;Microsoft.Azure.ApplicationInsights.Models.EventsResults&lt;Microsoft.Azure.ApplicationInsights.Models.EventsPageViewResult&gt;&gt;&gt;" Usage="applicationInsightsDataClient.GetPageViewEventWithHttpMessagesAsync (eventId, timespan, customHeaders, cancellationToken)" />
       <MemberType>Method</MemberType>
       <Implements>
@@ -2212,11 +2133,6 @@
         <AssemblyName>Microsoft.Azure.ApplicationInsights</AssemblyName>
         <AssemblyVersion>0.9.0.0</AssemblyVersion>
       </AssemblyInfo>
-      <Attributes>
-        <Attribute>
-          <AttributeName>System.Runtime.CompilerServices.AsyncStateMachine(typeof(Microsoft.Azure.ApplicationInsights.ApplicationInsightsDataClient/&lt;GetPageViewEventWithHttpMessagesAsync&gt;d__27))</AttributeName>
-        </Attribute>
-      </Attributes>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.Rest.HttpOperationResponse&lt;Microsoft.Azure.ApplicationInsights.Models.EventsResults&lt;Microsoft.Azure.ApplicationInsights.Models.EventsPageViewResult&gt;&gt;&gt;</ReturnType>
       </ReturnValue>
@@ -2251,9 +2167,10 @@
       </Docs>
     </Member>
     <Member MemberName="GetPerformanceCounterEventsWithHttpMessagesAsync">
-      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;Microsoft.Rest.HttpOperationResponse&lt;Microsoft.Azure.ApplicationInsights.Models.EventsResults&lt;Microsoft.Azure.ApplicationInsights.Models.EventsPerformanceCounterResult&gt;&gt;&gt; GetPerformanceCounterEventsWithHttpMessagesAsync (Nullable&lt;TimeSpan&gt; timespan = null, string filter = null, string search = null, string orderby = null, string select = null, Nullable&lt;int&gt; skip = null, Nullable&lt;int&gt; top = null, string format = null, Nullable&lt;bool&gt; count = null, string apply = null, System.Collections.Generic.Dictionary&lt;string,System.Collections.Generic.List&lt;string&gt;&gt; customHeaders = null, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;Microsoft.Rest.HttpOperationResponse&lt;Microsoft.Azure.ApplicationInsights.Models.EventsResults&lt;Microsoft.Azure.ApplicationInsights.Models.EventsPerformanceCounterResult&gt;&gt;&gt; GetPerformanceCounterEventsWithHttpMessagesAsync (TimeSpan? timespan = default, string filter = default, string search = default, string orderby = default, string select = default, int? skip = default, int? top = default, string format = default, bool? count = default, string apply = default, System.Collections.Generic.Dictionary&lt;string,System.Collections.Generic.List&lt;string&gt;&gt; customHeaders = default, System.Threading.CancellationToken cancellationToken = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Microsoft.Rest.HttpOperationResponse`1&lt;class Microsoft.Azure.ApplicationInsights.Models.EventsResults`1&lt;class Microsoft.Azure.ApplicationInsights.Models.EventsPerformanceCounterResult&gt;&gt;&gt; GetPerformanceCounterEventsWithHttpMessagesAsync(valuetype System.Nullable`1&lt;valuetype System.TimeSpan&gt; timespan, string filter, string search, string orderby, string select, valuetype System.Nullable`1&lt;int32&gt; skip, valuetype System.Nullable`1&lt;int32&gt; top, string format, valuetype System.Nullable`1&lt;bool&gt; count, string apply, class System.Collections.Generic.Dictionary`2&lt;string, class System.Collections.Generic.List`1&lt;string&gt;&gt; customHeaders, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.ApplicationInsights.ApplicationInsightsDataClient.GetPerformanceCounterEventsWithHttpMessagesAsync(System.Nullable{System.TimeSpan},System.String,System.String,System.String,System.String,System.Nullable{System.Int32},System.Nullable{System.Int32},System.String,System.Nullable{System.Boolean},System.String,System.Collections.Generic.Dictionary{System.String,System.Collections.Generic.List{System.String}},System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetPerformanceCounterEventsWithHttpMessagesAsync (Optional timespan As Nullable(Of TimeSpan) = Nothing, Optional filter As String = Nothing, Optional search As String = Nothing, Optional orderby As String = Nothing, Optional select As String = Nothing, Optional skip As Nullable(Of Integer) = Nothing, Optional top As Nullable(Of Integer) = Nothing, Optional format As String = Nothing, Optional count As Nullable(Of Boolean) = Nothing, Optional apply As String = Nothing, Optional customHeaders As Dictionary(Of String, List(Of String)) = Nothing, Optional cancellationToken As CancellationToken = Nothing) As Task(Of HttpOperationResponse(Of EventsResults(Of EventsPerformanceCounterResult)))" />
       <MemberSignature Language="F#" Value="abstract member GetPerformanceCounterEventsWithHttpMessagesAsync : Nullable&lt;TimeSpan&gt; * string * string * string * string * Nullable&lt;int&gt; * Nullable&lt;int&gt; * string * Nullable&lt;bool&gt; * string * System.Collections.Generic.Dictionary&lt;string, System.Collections.Generic.List&lt;string&gt;&gt; * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.Rest.HttpOperationResponse&lt;Microsoft.Azure.ApplicationInsights.Models.EventsResults&lt;Microsoft.Azure.ApplicationInsights.Models.EventsPerformanceCounterResult&gt;&gt;&gt;&#xA;override this.GetPerformanceCounterEventsWithHttpMessagesAsync : Nullable&lt;TimeSpan&gt; * string * string * string * string * Nullable&lt;int&gt; * Nullable&lt;int&gt; * string * Nullable&lt;bool&gt; * string * System.Collections.Generic.Dictionary&lt;string, System.Collections.Generic.List&lt;string&gt;&gt; * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.Rest.HttpOperationResponse&lt;Microsoft.Azure.ApplicationInsights.Models.EventsResults&lt;Microsoft.Azure.ApplicationInsights.Models.EventsPerformanceCounterResult&gt;&gt;&gt;" Usage="applicationInsightsDataClient.GetPerformanceCounterEventsWithHttpMessagesAsync (timespan, filter, search, orderby, select, skip, top, format, count, apply, customHeaders, cancellationToken)" />
       <MemberType>Method</MemberType>
       <Implements>
@@ -2263,11 +2180,6 @@
         <AssemblyName>Microsoft.Azure.ApplicationInsights</AssemblyName>
         <AssemblyVersion>0.9.0.0</AssemblyVersion>
       </AssemblyInfo>
-      <Attributes>
-        <Attribute>
-          <AttributeName>System.Runtime.CompilerServices.AsyncStateMachine(typeof(Microsoft.Azure.ApplicationInsights.ApplicationInsightsDataClient/&lt;GetPerformanceCounterEventsWithHttpMessagesAsync&gt;d__38))</AttributeName>
-        </Attribute>
-      </Attributes>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.Rest.HttpOperationResponse&lt;Microsoft.Azure.ApplicationInsights.Models.EventsResults&lt;Microsoft.Azure.ApplicationInsights.Models.EventsPerformanceCounterResult&gt;&gt;&gt;</ReturnType>
       </ReturnValue>
@@ -2337,9 +2249,10 @@
       </Docs>
     </Member>
     <Member MemberName="GetPerformanceCounterEventWithHttpMessagesAsync">
-      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;Microsoft.Rest.HttpOperationResponse&lt;Microsoft.Azure.ApplicationInsights.Models.EventsResults&lt;Microsoft.Azure.ApplicationInsights.Models.EventsPerformanceCounterResult&gt;&gt;&gt; GetPerformanceCounterEventWithHttpMessagesAsync (string eventId, Nullable&lt;TimeSpan&gt; timespan = null, System.Collections.Generic.Dictionary&lt;string,System.Collections.Generic.List&lt;string&gt;&gt; customHeaders = null, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;Microsoft.Rest.HttpOperationResponse&lt;Microsoft.Azure.ApplicationInsights.Models.EventsResults&lt;Microsoft.Azure.ApplicationInsights.Models.EventsPerformanceCounterResult&gt;&gt;&gt; GetPerformanceCounterEventWithHttpMessagesAsync (string eventId, TimeSpan? timespan = default, System.Collections.Generic.Dictionary&lt;string,System.Collections.Generic.List&lt;string&gt;&gt; customHeaders = default, System.Threading.CancellationToken cancellationToken = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Microsoft.Rest.HttpOperationResponse`1&lt;class Microsoft.Azure.ApplicationInsights.Models.EventsResults`1&lt;class Microsoft.Azure.ApplicationInsights.Models.EventsPerformanceCounterResult&gt;&gt;&gt; GetPerformanceCounterEventWithHttpMessagesAsync(string eventId, valuetype System.Nullable`1&lt;valuetype System.TimeSpan&gt; timespan, class System.Collections.Generic.Dictionary`2&lt;string, class System.Collections.Generic.List`1&lt;string&gt;&gt; customHeaders, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.ApplicationInsights.ApplicationInsightsDataClient.GetPerformanceCounterEventWithHttpMessagesAsync(System.String,System.Nullable{System.TimeSpan},System.Collections.Generic.Dictionary{System.String,System.Collections.Generic.List{System.String}},System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetPerformanceCounterEventWithHttpMessagesAsync (eventId As String, Optional timespan As Nullable(Of TimeSpan) = Nothing, Optional customHeaders As Dictionary(Of String, List(Of String)) = Nothing, Optional cancellationToken As CancellationToken = Nothing) As Task(Of HttpOperationResponse(Of EventsResults(Of EventsPerformanceCounterResult)))" />
       <MemberSignature Language="F#" Value="abstract member GetPerformanceCounterEventWithHttpMessagesAsync : string * Nullable&lt;TimeSpan&gt; * System.Collections.Generic.Dictionary&lt;string, System.Collections.Generic.List&lt;string&gt;&gt; * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.Rest.HttpOperationResponse&lt;Microsoft.Azure.ApplicationInsights.Models.EventsResults&lt;Microsoft.Azure.ApplicationInsights.Models.EventsPerformanceCounterResult&gt;&gt;&gt;&#xA;override this.GetPerformanceCounterEventWithHttpMessagesAsync : string * Nullable&lt;TimeSpan&gt; * System.Collections.Generic.Dictionary&lt;string, System.Collections.Generic.List&lt;string&gt;&gt; * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.Rest.HttpOperationResponse&lt;Microsoft.Azure.ApplicationInsights.Models.EventsResults&lt;Microsoft.Azure.ApplicationInsights.Models.EventsPerformanceCounterResult&gt;&gt;&gt;" Usage="applicationInsightsDataClient.GetPerformanceCounterEventWithHttpMessagesAsync (eventId, timespan, customHeaders, cancellationToken)" />
       <MemberType>Method</MemberType>
       <Implements>
@@ -2349,11 +2262,6 @@
         <AssemblyName>Microsoft.Azure.ApplicationInsights</AssemblyName>
         <AssemblyVersion>0.9.0.0</AssemblyVersion>
       </AssemblyInfo>
-      <Attributes>
-        <Attribute>
-          <AttributeName>System.Runtime.CompilerServices.AsyncStateMachine(typeof(Microsoft.Azure.ApplicationInsights.ApplicationInsightsDataClient/&lt;GetPerformanceCounterEventWithHttpMessagesAsync&gt;d__39))</AttributeName>
-        </Attribute>
-      </Attributes>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.Rest.HttpOperationResponse&lt;Microsoft.Azure.ApplicationInsights.Models.EventsResults&lt;Microsoft.Azure.ApplicationInsights.Models.EventsPerformanceCounterResult&gt;&gt;&gt;</ReturnType>
       </ReturnValue>
@@ -2388,9 +2296,10 @@
       </Docs>
     </Member>
     <Member MemberName="GetQuerySchemaWithHttpMessagesAsync">
-      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;Microsoft.Rest.HttpOperationResponse&lt;Microsoft.Azure.ApplicationInsights.Models.QueryResults&gt;&gt; GetQuerySchemaWithHttpMessagesAsync (System.Collections.Generic.Dictionary&lt;string,System.Collections.Generic.List&lt;string&gt;&gt; customHeaders = null, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;Microsoft.Rest.HttpOperationResponse&lt;Microsoft.Azure.ApplicationInsights.Models.QueryResults&gt;&gt; GetQuerySchemaWithHttpMessagesAsync (System.Collections.Generic.Dictionary&lt;string,System.Collections.Generic.List&lt;string&gt;&gt; customHeaders = default, System.Threading.CancellationToken cancellationToken = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Microsoft.Rest.HttpOperationResponse`1&lt;class Microsoft.Azure.ApplicationInsights.Models.QueryResults&gt;&gt; GetQuerySchemaWithHttpMessagesAsync(class System.Collections.Generic.Dictionary`2&lt;string, class System.Collections.Generic.List`1&lt;string&gt;&gt; customHeaders, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.ApplicationInsights.ApplicationInsightsDataClient.GetQuerySchemaWithHttpMessagesAsync(System.Collections.Generic.Dictionary{System.String,System.Collections.Generic.List{System.String}},System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetQuerySchemaWithHttpMessagesAsync (Optional customHeaders As Dictionary(Of String, List(Of String)) = Nothing, Optional cancellationToken As CancellationToken = Nothing) As Task(Of HttpOperationResponse(Of QueryResults))" />
       <MemberSignature Language="F#" Value="abstract member GetQuerySchemaWithHttpMessagesAsync : System.Collections.Generic.Dictionary&lt;string, System.Collections.Generic.List&lt;string&gt;&gt; * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.Rest.HttpOperationResponse&lt;Microsoft.Azure.ApplicationInsights.Models.QueryResults&gt;&gt;&#xA;override this.GetQuerySchemaWithHttpMessagesAsync : System.Collections.Generic.Dictionary&lt;string, System.Collections.Generic.List&lt;string&gt;&gt; * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.Rest.HttpOperationResponse&lt;Microsoft.Azure.ApplicationInsights.Models.QueryResults&gt;&gt;" Usage="applicationInsightsDataClient.GetQuerySchemaWithHttpMessagesAsync (customHeaders, cancellationToken)" />
       <MemberType>Method</MemberType>
       <Implements>
@@ -2400,11 +2309,6 @@
         <AssemblyName>Microsoft.Azure.ApplicationInsights</AssemblyName>
         <AssemblyVersion>0.9.0.0</AssemblyVersion>
       </AssemblyInfo>
-      <Attributes>
-        <Attribute>
-          <AttributeName>System.Runtime.CompilerServices.AsyncStateMachine(typeof(Microsoft.Azure.ApplicationInsights.ApplicationInsightsDataClient/&lt;GetQuerySchemaWithHttpMessagesAsync&gt;d__79))</AttributeName>
-        </Attribute>
-      </Attributes>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.Rest.HttpOperationResponse&lt;Microsoft.Azure.ApplicationInsights.Models.QueryResults&gt;&gt;</ReturnType>
       </ReturnValue>
@@ -2444,9 +2348,10 @@
       </Docs>
     </Member>
     <Member MemberName="GetRequestEventsWithHttpMessagesAsync">
-      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;Microsoft.Rest.HttpOperationResponse&lt;Microsoft.Azure.ApplicationInsights.Models.EventsResults&lt;Microsoft.Azure.ApplicationInsights.Models.EventsRequestResult&gt;&gt;&gt; GetRequestEventsWithHttpMessagesAsync (Nullable&lt;TimeSpan&gt; timespan = null, string filter = null, string search = null, string orderby = null, string select = null, Nullable&lt;int&gt; skip = null, Nullable&lt;int&gt; top = null, string format = null, Nullable&lt;bool&gt; count = null, string apply = null, System.Collections.Generic.Dictionary&lt;string,System.Collections.Generic.List&lt;string&gt;&gt; customHeaders = null, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;Microsoft.Rest.HttpOperationResponse&lt;Microsoft.Azure.ApplicationInsights.Models.EventsResults&lt;Microsoft.Azure.ApplicationInsights.Models.EventsRequestResult&gt;&gt;&gt; GetRequestEventsWithHttpMessagesAsync (TimeSpan? timespan = default, string filter = default, string search = default, string orderby = default, string select = default, int? skip = default, int? top = default, string format = default, bool? count = default, string apply = default, System.Collections.Generic.Dictionary&lt;string,System.Collections.Generic.List&lt;string&gt;&gt; customHeaders = default, System.Threading.CancellationToken cancellationToken = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Microsoft.Rest.HttpOperationResponse`1&lt;class Microsoft.Azure.ApplicationInsights.Models.EventsResults`1&lt;class Microsoft.Azure.ApplicationInsights.Models.EventsRequestResult&gt;&gt;&gt; GetRequestEventsWithHttpMessagesAsync(valuetype System.Nullable`1&lt;valuetype System.TimeSpan&gt; timespan, string filter, string search, string orderby, string select, valuetype System.Nullable`1&lt;int32&gt; skip, valuetype System.Nullable`1&lt;int32&gt; top, string format, valuetype System.Nullable`1&lt;bool&gt; count, string apply, class System.Collections.Generic.Dictionary`2&lt;string, class System.Collections.Generic.List`1&lt;string&gt;&gt; customHeaders, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.ApplicationInsights.ApplicationInsightsDataClient.GetRequestEventsWithHttpMessagesAsync(System.Nullable{System.TimeSpan},System.String,System.String,System.String,System.String,System.Nullable{System.Int32},System.Nullable{System.Int32},System.String,System.Nullable{System.Boolean},System.String,System.Collections.Generic.Dictionary{System.String,System.Collections.Generic.List{System.String}},System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetRequestEventsWithHttpMessagesAsync (Optional timespan As Nullable(Of TimeSpan) = Nothing, Optional filter As String = Nothing, Optional search As String = Nothing, Optional orderby As String = Nothing, Optional select As String = Nothing, Optional skip As Nullable(Of Integer) = Nothing, Optional top As Nullable(Of Integer) = Nothing, Optional format As String = Nothing, Optional count As Nullable(Of Boolean) = Nothing, Optional apply As String = Nothing, Optional customHeaders As Dictionary(Of String, List(Of String)) = Nothing, Optional cancellationToken As CancellationToken = Nothing) As Task(Of HttpOperationResponse(Of EventsResults(Of EventsRequestResult)))" />
       <MemberSignature Language="F#" Value="abstract member GetRequestEventsWithHttpMessagesAsync : Nullable&lt;TimeSpan&gt; * string * string * string * string * Nullable&lt;int&gt; * Nullable&lt;int&gt; * string * Nullable&lt;bool&gt; * string * System.Collections.Generic.Dictionary&lt;string, System.Collections.Generic.List&lt;string&gt;&gt; * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.Rest.HttpOperationResponse&lt;Microsoft.Azure.ApplicationInsights.Models.EventsResults&lt;Microsoft.Azure.ApplicationInsights.Models.EventsRequestResult&gt;&gt;&gt;&#xA;override this.GetRequestEventsWithHttpMessagesAsync : Nullable&lt;TimeSpan&gt; * string * string * string * string * Nullable&lt;int&gt; * Nullable&lt;int&gt; * string * Nullable&lt;bool&gt; * string * System.Collections.Generic.Dictionary&lt;string, System.Collections.Generic.List&lt;string&gt;&gt; * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.Rest.HttpOperationResponse&lt;Microsoft.Azure.ApplicationInsights.Models.EventsResults&lt;Microsoft.Azure.ApplicationInsights.Models.EventsRequestResult&gt;&gt;&gt;" Usage="applicationInsightsDataClient.GetRequestEventsWithHttpMessagesAsync (timespan, filter, search, orderby, select, skip, top, format, count, apply, customHeaders, cancellationToken)" />
       <MemberType>Method</MemberType>
       <Implements>
@@ -2456,11 +2361,6 @@
         <AssemblyName>Microsoft.Azure.ApplicationInsights</AssemblyName>
         <AssemblyVersion>0.9.0.0</AssemblyVersion>
       </AssemblyInfo>
-      <Attributes>
-        <Attribute>
-          <AttributeName>System.Runtime.CompilerServices.AsyncStateMachine(typeof(Microsoft.Azure.ApplicationInsights.ApplicationInsightsDataClient/&lt;GetRequestEventsWithHttpMessagesAsync&gt;d__30))</AttributeName>
-        </Attribute>
-      </Attributes>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.Rest.HttpOperationResponse&lt;Microsoft.Azure.ApplicationInsights.Models.EventsResults&lt;Microsoft.Azure.ApplicationInsights.Models.EventsRequestResult&gt;&gt;&gt;</ReturnType>
       </ReturnValue>
@@ -2530,9 +2430,10 @@
       </Docs>
     </Member>
     <Member MemberName="GetRequestEventWithHttpMessagesAsync">
-      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;Microsoft.Rest.HttpOperationResponse&lt;Microsoft.Azure.ApplicationInsights.Models.EventsResults&lt;Microsoft.Azure.ApplicationInsights.Models.EventsRequestResult&gt;&gt;&gt; GetRequestEventWithHttpMessagesAsync (string eventId, Nullable&lt;TimeSpan&gt; timespan = null, System.Collections.Generic.Dictionary&lt;string,System.Collections.Generic.List&lt;string&gt;&gt; customHeaders = null, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;Microsoft.Rest.HttpOperationResponse&lt;Microsoft.Azure.ApplicationInsights.Models.EventsResults&lt;Microsoft.Azure.ApplicationInsights.Models.EventsRequestResult&gt;&gt;&gt; GetRequestEventWithHttpMessagesAsync (string eventId, TimeSpan? timespan = default, System.Collections.Generic.Dictionary&lt;string,System.Collections.Generic.List&lt;string&gt;&gt; customHeaders = default, System.Threading.CancellationToken cancellationToken = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Microsoft.Rest.HttpOperationResponse`1&lt;class Microsoft.Azure.ApplicationInsights.Models.EventsResults`1&lt;class Microsoft.Azure.ApplicationInsights.Models.EventsRequestResult&gt;&gt;&gt; GetRequestEventWithHttpMessagesAsync(string eventId, valuetype System.Nullable`1&lt;valuetype System.TimeSpan&gt; timespan, class System.Collections.Generic.Dictionary`2&lt;string, class System.Collections.Generic.List`1&lt;string&gt;&gt; customHeaders, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.ApplicationInsights.ApplicationInsightsDataClient.GetRequestEventWithHttpMessagesAsync(System.String,System.Nullable{System.TimeSpan},System.Collections.Generic.Dictionary{System.String,System.Collections.Generic.List{System.String}},System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetRequestEventWithHttpMessagesAsync (eventId As String, Optional timespan As Nullable(Of TimeSpan) = Nothing, Optional customHeaders As Dictionary(Of String, List(Of String)) = Nothing, Optional cancellationToken As CancellationToken = Nothing) As Task(Of HttpOperationResponse(Of EventsResults(Of EventsRequestResult)))" />
       <MemberSignature Language="F#" Value="abstract member GetRequestEventWithHttpMessagesAsync : string * Nullable&lt;TimeSpan&gt; * System.Collections.Generic.Dictionary&lt;string, System.Collections.Generic.List&lt;string&gt;&gt; * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.Rest.HttpOperationResponse&lt;Microsoft.Azure.ApplicationInsights.Models.EventsResults&lt;Microsoft.Azure.ApplicationInsights.Models.EventsRequestResult&gt;&gt;&gt;&#xA;override this.GetRequestEventWithHttpMessagesAsync : string * Nullable&lt;TimeSpan&gt; * System.Collections.Generic.Dictionary&lt;string, System.Collections.Generic.List&lt;string&gt;&gt; * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.Rest.HttpOperationResponse&lt;Microsoft.Azure.ApplicationInsights.Models.EventsResults&lt;Microsoft.Azure.ApplicationInsights.Models.EventsRequestResult&gt;&gt;&gt;" Usage="applicationInsightsDataClient.GetRequestEventWithHttpMessagesAsync (eventId, timespan, customHeaders, cancellationToken)" />
       <MemberType>Method</MemberType>
       <Implements>
@@ -2542,11 +2443,6 @@
         <AssemblyName>Microsoft.Azure.ApplicationInsights</AssemblyName>
         <AssemblyVersion>0.9.0.0</AssemblyVersion>
       </AssemblyInfo>
-      <Attributes>
-        <Attribute>
-          <AttributeName>System.Runtime.CompilerServices.AsyncStateMachine(typeof(Microsoft.Azure.ApplicationInsights.ApplicationInsightsDataClient/&lt;GetRequestEventWithHttpMessagesAsync&gt;d__31))</AttributeName>
-        </Attribute>
-      </Attributes>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.Rest.HttpOperationResponse&lt;Microsoft.Azure.ApplicationInsights.Models.EventsResults&lt;Microsoft.Azure.ApplicationInsights.Models.EventsRequestResult&gt;&gt;&gt;</ReturnType>
       </ReturnValue>
@@ -2581,9 +2477,10 @@
       </Docs>
     </Member>
     <Member MemberName="GetSegmentedMetricWithHttpMessagesAsync">
-      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;Microsoft.Rest.HttpOperationResponse&lt;Microsoft.Azure.ApplicationInsights.Models.MetricsSegmentedResult&gt;&gt; GetSegmentedMetricWithHttpMessagesAsync (string metricId, Nullable&lt;TimeSpan&gt; timespan = null, System.Collections.Generic.IList&lt;string&gt; aggregation = null, System.Collections.Generic.IList&lt;string&gt; segment = null, Nullable&lt;int&gt; top = null, string orderby = null, string filter = null, System.Collections.Generic.Dictionary&lt;string,System.Collections.Generic.List&lt;string&gt;&gt; customHeaders = null, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;Microsoft.Rest.HttpOperationResponse&lt;Microsoft.Azure.ApplicationInsights.Models.MetricsSegmentedResult&gt;&gt; GetSegmentedMetricWithHttpMessagesAsync (string metricId, TimeSpan? timespan = default, System.Collections.Generic.IList&lt;string&gt; aggregation = default, System.Collections.Generic.IList&lt;string&gt; segment = default, int? top = default, string orderby = default, string filter = default, System.Collections.Generic.Dictionary&lt;string,System.Collections.Generic.List&lt;string&gt;&gt; customHeaders = default, System.Threading.CancellationToken cancellationToken = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Microsoft.Rest.HttpOperationResponse`1&lt;class Microsoft.Azure.ApplicationInsights.Models.MetricsSegmentedResult&gt;&gt; GetSegmentedMetricWithHttpMessagesAsync(string metricId, valuetype System.Nullable`1&lt;valuetype System.TimeSpan&gt; timespan, class System.Collections.Generic.IList`1&lt;string&gt; aggregation, class System.Collections.Generic.IList`1&lt;string&gt; segment, valuetype System.Nullable`1&lt;int32&gt; top, string orderby, string filter, class System.Collections.Generic.Dictionary`2&lt;string, class System.Collections.Generic.List`1&lt;string&gt;&gt; customHeaders, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.ApplicationInsights.ApplicationInsightsDataClient.GetSegmentedMetricWithHttpMessagesAsync(System.String,System.Nullable{System.TimeSpan},System.Collections.Generic.IList{System.String},System.Collections.Generic.IList{System.String},System.Nullable{System.Int32},System.String,System.String,System.Collections.Generic.Dictionary{System.String,System.Collections.Generic.List{System.String}},System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetSegmentedMetricWithHttpMessagesAsync (metricId As String, Optional timespan As Nullable(Of TimeSpan) = Nothing, Optional aggregation As IList(Of String) = Nothing, Optional segment As IList(Of String) = Nothing, Optional top As Nullable(Of Integer) = Nothing, Optional orderby As String = Nothing, Optional filter As String = Nothing, Optional customHeaders As Dictionary(Of String, List(Of String)) = Nothing, Optional cancellationToken As CancellationToken = Nothing) As Task(Of HttpOperationResponse(Of MetricsSegmentedResult))" />
       <MemberSignature Language="F#" Value="abstract member GetSegmentedMetricWithHttpMessagesAsync : string * Nullable&lt;TimeSpan&gt; * System.Collections.Generic.IList&lt;string&gt; * System.Collections.Generic.IList&lt;string&gt; * Nullable&lt;int&gt; * string * string * System.Collections.Generic.Dictionary&lt;string, System.Collections.Generic.List&lt;string&gt;&gt; * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.Rest.HttpOperationResponse&lt;Microsoft.Azure.ApplicationInsights.Models.MetricsSegmentedResult&gt;&gt;&#xA;override this.GetSegmentedMetricWithHttpMessagesAsync : string * Nullable&lt;TimeSpan&gt; * System.Collections.Generic.IList&lt;string&gt; * System.Collections.Generic.IList&lt;string&gt; * Nullable&lt;int&gt; * string * string * System.Collections.Generic.Dictionary&lt;string, System.Collections.Generic.List&lt;string&gt;&gt; * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.Rest.HttpOperationResponse&lt;Microsoft.Azure.ApplicationInsights.Models.MetricsSegmentedResult&gt;&gt;" Usage="applicationInsightsDataClient.GetSegmentedMetricWithHttpMessagesAsync (metricId, timespan, aggregation, segment, top, orderby, filter, customHeaders, cancellationToken)" />
       <MemberType>Method</MemberType>
       <Implements>
@@ -2593,11 +2490,6 @@
         <AssemblyName>Microsoft.Azure.ApplicationInsights</AssemblyName>
         <AssemblyVersion>0.9.0.0</AssemblyVersion>
       </AssemblyInfo>
-      <Attributes>
-        <Attribute>
-          <AttributeName>System.Runtime.CompilerServices.AsyncStateMachine(typeof(Microsoft.Azure.ApplicationInsights.ApplicationInsightsDataClient/&lt;GetSegmentedMetricWithHttpMessagesAsync&gt;d__19))</AttributeName>
-        </Attribute>
-      </Attributes>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.Rest.HttpOperationResponse&lt;Microsoft.Azure.ApplicationInsights.Models.MetricsSegmentedResult&gt;&gt;</ReturnType>
       </ReturnValue>
@@ -2687,9 +2579,10 @@
       </Docs>
     </Member>
     <Member MemberName="GetTraceEventsWithHttpMessagesAsync">
-      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;Microsoft.Rest.HttpOperationResponse&lt;Microsoft.Azure.ApplicationInsights.Models.EventsResults&lt;Microsoft.Azure.ApplicationInsights.Models.EventsTraceResult&gt;&gt;&gt; GetTraceEventsWithHttpMessagesAsync (Nullable&lt;TimeSpan&gt; timespan = null, string filter = null, string search = null, string orderby = null, string select = null, Nullable&lt;int&gt; skip = null, Nullable&lt;int&gt; top = null, string format = null, Nullable&lt;bool&gt; count = null, string apply = null, System.Collections.Generic.Dictionary&lt;string,System.Collections.Generic.List&lt;string&gt;&gt; customHeaders = null, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;Microsoft.Rest.HttpOperationResponse&lt;Microsoft.Azure.ApplicationInsights.Models.EventsResults&lt;Microsoft.Azure.ApplicationInsights.Models.EventsTraceResult&gt;&gt;&gt; GetTraceEventsWithHttpMessagesAsync (TimeSpan? timespan = default, string filter = default, string search = default, string orderby = default, string select = default, int? skip = default, int? top = default, string format = default, bool? count = default, string apply = default, System.Collections.Generic.Dictionary&lt;string,System.Collections.Generic.List&lt;string&gt;&gt; customHeaders = default, System.Threading.CancellationToken cancellationToken = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Microsoft.Rest.HttpOperationResponse`1&lt;class Microsoft.Azure.ApplicationInsights.Models.EventsResults`1&lt;class Microsoft.Azure.ApplicationInsights.Models.EventsTraceResult&gt;&gt;&gt; GetTraceEventsWithHttpMessagesAsync(valuetype System.Nullable`1&lt;valuetype System.TimeSpan&gt; timespan, string filter, string search, string orderby, string select, valuetype System.Nullable`1&lt;int32&gt; skip, valuetype System.Nullable`1&lt;int32&gt; top, string format, valuetype System.Nullable`1&lt;bool&gt; count, string apply, class System.Collections.Generic.Dictionary`2&lt;string, class System.Collections.Generic.List`1&lt;string&gt;&gt; customHeaders, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.ApplicationInsights.ApplicationInsightsDataClient.GetTraceEventsWithHttpMessagesAsync(System.Nullable{System.TimeSpan},System.String,System.String,System.String,System.String,System.Nullable{System.Int32},System.Nullable{System.Int32},System.String,System.Nullable{System.Boolean},System.String,System.Collections.Generic.Dictionary{System.String,System.Collections.Generic.List{System.String}},System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetTraceEventsWithHttpMessagesAsync (Optional timespan As Nullable(Of TimeSpan) = Nothing, Optional filter As String = Nothing, Optional search As String = Nothing, Optional orderby As String = Nothing, Optional select As String = Nothing, Optional skip As Nullable(Of Integer) = Nothing, Optional top As Nullable(Of Integer) = Nothing, Optional format As String = Nothing, Optional count As Nullable(Of Boolean) = Nothing, Optional apply As String = Nothing, Optional customHeaders As Dictionary(Of String, List(Of String)) = Nothing, Optional cancellationToken As CancellationToken = Nothing) As Task(Of HttpOperationResponse(Of EventsResults(Of EventsTraceResult)))" />
       <MemberSignature Language="F#" Value="abstract member GetTraceEventsWithHttpMessagesAsync : Nullable&lt;TimeSpan&gt; * string * string * string * string * Nullable&lt;int&gt; * Nullable&lt;int&gt; * string * Nullable&lt;bool&gt; * string * System.Collections.Generic.Dictionary&lt;string, System.Collections.Generic.List&lt;string&gt;&gt; * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.Rest.HttpOperationResponse&lt;Microsoft.Azure.ApplicationInsights.Models.EventsResults&lt;Microsoft.Azure.ApplicationInsights.Models.EventsTraceResult&gt;&gt;&gt;&#xA;override this.GetTraceEventsWithHttpMessagesAsync : Nullable&lt;TimeSpan&gt; * string * string * string * string * Nullable&lt;int&gt; * Nullable&lt;int&gt; * string * Nullable&lt;bool&gt; * string * System.Collections.Generic.Dictionary&lt;string, System.Collections.Generic.List&lt;string&gt;&gt; * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.Rest.HttpOperationResponse&lt;Microsoft.Azure.ApplicationInsights.Models.EventsResults&lt;Microsoft.Azure.ApplicationInsights.Models.EventsTraceResult&gt;&gt;&gt;" Usage="applicationInsightsDataClient.GetTraceEventsWithHttpMessagesAsync (timespan, filter, search, orderby, select, skip, top, format, count, apply, customHeaders, cancellationToken)" />
       <MemberType>Method</MemberType>
       <Implements>
@@ -2699,11 +2592,6 @@
         <AssemblyName>Microsoft.Azure.ApplicationInsights</AssemblyName>
         <AssemblyVersion>0.9.0.0</AssemblyVersion>
       </AssemblyInfo>
-      <Attributes>
-        <Attribute>
-          <AttributeName>System.Runtime.CompilerServices.AsyncStateMachine(typeof(Microsoft.Azure.ApplicationInsights.ApplicationInsightsDataClient/&lt;GetTraceEventsWithHttpMessagesAsync&gt;d__22))</AttributeName>
-        </Attribute>
-      </Attributes>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.Rest.HttpOperationResponse&lt;Microsoft.Azure.ApplicationInsights.Models.EventsResults&lt;Microsoft.Azure.ApplicationInsights.Models.EventsTraceResult&gt;&gt;&gt;</ReturnType>
       </ReturnValue>
@@ -2773,9 +2661,10 @@
       </Docs>
     </Member>
     <Member MemberName="GetTraceEventWithHttpMessagesAsync">
-      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;Microsoft.Rest.HttpOperationResponse&lt;Microsoft.Azure.ApplicationInsights.Models.EventsResults&lt;Microsoft.Azure.ApplicationInsights.Models.EventsTraceResult&gt;&gt;&gt; GetTraceEventWithHttpMessagesAsync (string eventId, Nullable&lt;TimeSpan&gt; timespan = null, System.Collections.Generic.Dictionary&lt;string,System.Collections.Generic.List&lt;string&gt;&gt; customHeaders = null, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;Microsoft.Rest.HttpOperationResponse&lt;Microsoft.Azure.ApplicationInsights.Models.EventsResults&lt;Microsoft.Azure.ApplicationInsights.Models.EventsTraceResult&gt;&gt;&gt; GetTraceEventWithHttpMessagesAsync (string eventId, TimeSpan? timespan = default, System.Collections.Generic.Dictionary&lt;string,System.Collections.Generic.List&lt;string&gt;&gt; customHeaders = default, System.Threading.CancellationToken cancellationToken = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Microsoft.Rest.HttpOperationResponse`1&lt;class Microsoft.Azure.ApplicationInsights.Models.EventsResults`1&lt;class Microsoft.Azure.ApplicationInsights.Models.EventsTraceResult&gt;&gt;&gt; GetTraceEventWithHttpMessagesAsync(string eventId, valuetype System.Nullable`1&lt;valuetype System.TimeSpan&gt; timespan, class System.Collections.Generic.Dictionary`2&lt;string, class System.Collections.Generic.List`1&lt;string&gt;&gt; customHeaders, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.ApplicationInsights.ApplicationInsightsDataClient.GetTraceEventWithHttpMessagesAsync(System.String,System.Nullable{System.TimeSpan},System.Collections.Generic.Dictionary{System.String,System.Collections.Generic.List{System.String}},System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetTraceEventWithHttpMessagesAsync (eventId As String, Optional timespan As Nullable(Of TimeSpan) = Nothing, Optional customHeaders As Dictionary(Of String, List(Of String)) = Nothing, Optional cancellationToken As CancellationToken = Nothing) As Task(Of HttpOperationResponse(Of EventsResults(Of EventsTraceResult)))" />
       <MemberSignature Language="F#" Value="abstract member GetTraceEventWithHttpMessagesAsync : string * Nullable&lt;TimeSpan&gt; * System.Collections.Generic.Dictionary&lt;string, System.Collections.Generic.List&lt;string&gt;&gt; * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.Rest.HttpOperationResponse&lt;Microsoft.Azure.ApplicationInsights.Models.EventsResults&lt;Microsoft.Azure.ApplicationInsights.Models.EventsTraceResult&gt;&gt;&gt;&#xA;override this.GetTraceEventWithHttpMessagesAsync : string * Nullable&lt;TimeSpan&gt; * System.Collections.Generic.Dictionary&lt;string, System.Collections.Generic.List&lt;string&gt;&gt; * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.Rest.HttpOperationResponse&lt;Microsoft.Azure.ApplicationInsights.Models.EventsResults&lt;Microsoft.Azure.ApplicationInsights.Models.EventsTraceResult&gt;&gt;&gt;" Usage="applicationInsightsDataClient.GetTraceEventWithHttpMessagesAsync (eventId, timespan, customHeaders, cancellationToken)" />
       <MemberType>Method</MemberType>
       <Implements>
@@ -2785,11 +2674,6 @@
         <AssemblyName>Microsoft.Azure.ApplicationInsights</AssemblyName>
         <AssemblyVersion>0.9.0.0</AssemblyVersion>
       </AssemblyInfo>
-      <Attributes>
-        <Attribute>
-          <AttributeName>System.Runtime.CompilerServices.AsyncStateMachine(typeof(Microsoft.Azure.ApplicationInsights.ApplicationInsightsDataClient/&lt;GetTraceEventWithHttpMessagesAsync&gt;d__23))</AttributeName>
-        </Attribute>
-      </Attributes>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.Rest.HttpOperationResponse&lt;Microsoft.Azure.ApplicationInsights.Models.EventsResults&lt;Microsoft.Azure.ApplicationInsights.Models.EventsTraceResult&gt;&gt;&gt;</ReturnType>
       </ReturnValue>
@@ -2870,9 +2754,10 @@
       </Docs>
     </Member>
     <Member MemberName="QueryWithHttpMessagesAsync">
-      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;Microsoft.Rest.HttpOperationResponse&lt;Microsoft.Azure.ApplicationInsights.Models.QueryResults&gt;&gt; QueryWithHttpMessagesAsync (string query, Nullable&lt;TimeSpan&gt; timespan = null, Nullable&lt;TimeSpan&gt; timespan1 = null, System.Collections.Generic.IList&lt;string&gt; applications = null, System.Collections.Generic.Dictionary&lt;string,System.Collections.Generic.List&lt;string&gt;&gt; customHeaders = null, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;Microsoft.Rest.HttpOperationResponse&lt;Microsoft.Azure.ApplicationInsights.Models.QueryResults&gt;&gt; QueryWithHttpMessagesAsync (string query, TimeSpan? timespan = default, TimeSpan? timespan1 = default, System.Collections.Generic.IList&lt;string&gt; applications = default, System.Collections.Generic.Dictionary&lt;string,System.Collections.Generic.List&lt;string&gt;&gt; customHeaders = default, System.Threading.CancellationToken cancellationToken = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Microsoft.Rest.HttpOperationResponse`1&lt;class Microsoft.Azure.ApplicationInsights.Models.QueryResults&gt;&gt; QueryWithHttpMessagesAsync(string query, valuetype System.Nullable`1&lt;valuetype System.TimeSpan&gt; timespan, valuetype System.Nullable`1&lt;valuetype System.TimeSpan&gt; timespan1, class System.Collections.Generic.IList`1&lt;string&gt; applications, class System.Collections.Generic.Dictionary`2&lt;string, class System.Collections.Generic.List`1&lt;string&gt;&gt; customHeaders, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.ApplicationInsights.ApplicationInsightsDataClient.QueryWithHttpMessagesAsync(System.String,System.Nullable{System.TimeSpan},System.Nullable{System.TimeSpan},System.Collections.Generic.IList{System.String},System.Collections.Generic.Dictionary{System.String,System.Collections.Generic.List{System.String}},System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Function QueryWithHttpMessagesAsync (query As String, Optional timespan As Nullable(Of TimeSpan) = Nothing, Optional timespan1 As Nullable(Of TimeSpan) = Nothing, Optional applications As IList(Of String) = Nothing, Optional customHeaders As Dictionary(Of String, List(Of String)) = Nothing, Optional cancellationToken As CancellationToken = Nothing) As Task(Of HttpOperationResponse(Of QueryResults))" />
       <MemberSignature Language="F#" Value="abstract member QueryWithHttpMessagesAsync : string * Nullable&lt;TimeSpan&gt; * Nullable&lt;TimeSpan&gt; * System.Collections.Generic.IList&lt;string&gt; * System.Collections.Generic.Dictionary&lt;string, System.Collections.Generic.List&lt;string&gt;&gt; * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.Rest.HttpOperationResponse&lt;Microsoft.Azure.ApplicationInsights.Models.QueryResults&gt;&gt;&#xA;override this.QueryWithHttpMessagesAsync : string * Nullable&lt;TimeSpan&gt; * Nullable&lt;TimeSpan&gt; * System.Collections.Generic.IList&lt;string&gt; * System.Collections.Generic.Dictionary&lt;string, System.Collections.Generic.List&lt;string&gt;&gt; * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.Rest.HttpOperationResponse&lt;Microsoft.Azure.ApplicationInsights.Models.QueryResults&gt;&gt;" Usage="applicationInsightsDataClient.QueryWithHttpMessagesAsync (query, timespan, timespan1, applications, customHeaders, cancellationToken)" />
       <MemberType>Method</MemberType>
       <Implements>
@@ -2882,11 +2767,6 @@
         <AssemblyName>Microsoft.Azure.ApplicationInsights</AssemblyName>
         <AssemblyVersion>0.9.0.0</AssemblyVersion>
       </AssemblyInfo>
-      <Attributes>
-        <Attribute>
-          <AttributeName>System.Runtime.CompilerServices.AsyncStateMachine(typeof(Microsoft.Azure.ApplicationInsights.ApplicationInsightsDataClient/&lt;QueryWithHttpMessagesAsync&gt;d__78))</AttributeName>
-        </Attribute>
-      </Attributes>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.Rest.HttpOperationResponse&lt;Microsoft.Azure.ApplicationInsights.Models.QueryResults&gt;&gt;</ReturnType>
       </ReturnValue>

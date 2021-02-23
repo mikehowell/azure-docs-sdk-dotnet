@@ -1,11 +1,9 @@
-﻿<Type Name="AccessControlRecordInner" FullName="Microsoft.Azure.Management.StorSimple.Fluent.Models.AccessControlRecordInner">
+<Type Name="AccessControlRecordInner" FullName="Microsoft.Azure.Management.StorSimple.Fluent.Models.AccessControlRecordInner">
   <TypeSignature Language="C#" Value="public class AccessControlRecordInner : Microsoft.Azure.Management.StorSimple.Fluent.Models.BaseModel" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit AccessControlRecordInner extends Microsoft.Azure.Management.StorSimple.Fluent.Models.BaseModel" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Azure.Management.StorSimple.Fluent.Models.AccessControlRecordInner" />
   <TypeSignature Language="VB.NET" Value="Public Class AccessControlRecordInner&#xA;Inherits BaseModel" />
   <TypeSignature Language="F#" Value="type AccessControlRecordInner = class&#xA;    inherit BaseModel" />
-  <TypeSignature Language="C++ CLI" Value="public ref class AccessControlRecordInner : Microsoft::Azure::Management::StorSimple::Fluent::Models::BaseModel" />
-  <TypeSignature Language="C++ WINRT" Value="[Windows::Foundation::Metadata::WebHostHidden]&#xA;class AccessControlRecordInner : Microsoft::Azure::Management::StorSimple::Fluent::Models::BaseModel" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Azure.Management.StorSimple.Fluent</AssemblyName>
     <AssemblyVersion>1.0.0.60</AssemblyVersion>
@@ -16,7 +14,8 @@
   <Interfaces />
   <Attributes>
     <Attribute>
-      <AttributeName>Microsoft.Rest.Serialization.JsonTransformation</AttributeName>
+      <AttributeName Language="C#">[Microsoft.Rest.Serialization.JsonTransformation]</AttributeName>
+      <AttributeName Language="F#">[&lt;Microsoft.Rest.Serialization.JsonTransformation&gt;]</AttributeName>
     </Attribute>
   </Attributes>
   <Docs>
@@ -29,9 +28,6 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Management.StorSimple.Fluent.Models.AccessControlRecordInner.#ctor" />
       <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; AccessControlRecordInner();" />
-      <MemberSignature Language="C++ CX" Value="public:&#xA; AccessControlRecordInner();" />
-      <MemberSignature Language="C++ WINRT" Value=" AccessControlRecordInner();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.StorSimple.Fluent</AssemblyName>
@@ -44,10 +40,10 @@
       </Docs>
     </Member>
     <Member MemberName=".ctor">
-      <MemberSignature Language="C#" Value="public AccessControlRecordInner (string initiatorName, string id = null, string name = null, string type = null, Nullable&lt;Microsoft.Azure.Management.StorSimple.Fluent.Models.Kind&gt; kind = null, Nullable&lt;int&gt; volumeCount = null);" />
+      <MemberSignature Language="C#" Value="public AccessControlRecordInner (string initiatorName, string id = default, string name = default, string type = default, Microsoft.Azure.Management.StorSimple.Fluent.Models.Kind? kind = default, int? volumeCount = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string initiatorName, string id, string name, string type, valuetype System.Nullable`1&lt;valuetype Microsoft.Azure.Management.StorSimple.Fluent.Models.Kind&gt; kind, valuetype System.Nullable`1&lt;int32&gt; volumeCount) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Management.StorSimple.Fluent.Models.AccessControlRecordInner.#ctor(System.String,System.String,System.String,System.String,System.Nullable{Microsoft.Azure.Management.StorSimple.Fluent.Models.Kind},System.Nullable{System.Int32})" />
-      <MemberSignature Language="VB.NET" Value="Public Sub New (initiatorName As String, Optional id As String = null, Optional name As String = null, Optional type As String = null, Optional kind As Nullable(Of Kind) = null, Optional volumeCount As Nullable(Of Integer) = null)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (initiatorName As String, Optional id As String = Nothing, Optional name As String = Nothing, Optional type As String = Nothing, Optional kind As Nullable(Of Kind) = Nothing, Optional volumeCount As Nullable(Of Integer) = Nothing)" />
       <MemberSignature Language="F#" Value="new Microsoft.Azure.Management.StorSimple.Fluent.Models.AccessControlRecordInner : string * string * string * string * Nullable&lt;Microsoft.Azure.Management.StorSimple.Fluent.Models.Kind&gt; * Nullable&lt;int&gt; -&gt; Microsoft.Azure.Management.StorSimple.Fluent.Models.AccessControlRecordInner" Usage="new Microsoft.Azure.Management.StorSimple.Fluent.Models.AccessControlRecordInner (initiatorName, id, name, type, kind, volumeCount)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
@@ -79,8 +75,6 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Management.StorSimple.Fluent.Models.AccessControlRecordInner.InitiatorName" />
       <MemberSignature Language="VB.NET" Value="Public Property InitiatorName As String" />
       <MemberSignature Language="F#" Value="member this.InitiatorName : string with get, set" Usage="Microsoft.Azure.Management.StorSimple.Fluent.Models.AccessControlRecordInner.InitiatorName" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ InitiatorName { System::String ^ get(); void set(System::String ^ value); };" />
-      <MemberSignature Language="C++ CX" Value="public:&#xA; property Platform::String ^ InitiatorName { Platform::String ^ get(); void set(Platform::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.StorSimple.Fluent</AssemblyName>
@@ -88,7 +82,8 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="properties.initiatorName")</AttributeName>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty(PropertyName="properties.initiatorName")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty(PropertyName="properties.initiatorName")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -106,9 +101,6 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Management.StorSimple.Fluent.Models.AccessControlRecordInner.Validate" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Sub Validate ()" />
       <MemberSignature Language="F#" Value="abstract member Validate : unit -&gt; unit&#xA;override this.Validate : unit -&gt; unit" Usage="accessControlRecordInner.Validate " />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Validate();" />
-      <MemberSignature Language="C++ CX" Value="public:&#xA; virtual void Validate();" />
-      <MemberSignature Language="C++ WINRT" Value=" virtual void Validate();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.StorSimple.Fluent</AssemblyName>
@@ -124,12 +116,11 @@
       </Docs>
     </Member>
     <Member MemberName="VolumeCount">
-      <MemberSignature Language="C#" Value="public Nullable&lt;int&gt; VolumeCount { get; }" />
+      <MemberSignature Language="C#" Value="public int? VolumeCount { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;int32&gt; VolumeCount" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Management.StorSimple.Fluent.Models.AccessControlRecordInner.VolumeCount" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property VolumeCount As Nullable(Of Integer)" />
       <MemberSignature Language="F#" Value="member this.VolumeCount : Nullable&lt;int&gt;" Usage="Microsoft.Azure.Management.StorSimple.Fluent.Models.AccessControlRecordInner.VolumeCount" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Nullable&lt;int&gt; VolumeCount { Nullable&lt;int&gt; get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.StorSimple.Fluent</AssemblyName>
@@ -137,7 +128,8 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="properties.volumeCount")</AttributeName>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty(PropertyName="properties.volumeCount")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty(PropertyName="properties.volumeCount")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>

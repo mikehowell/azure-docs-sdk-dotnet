@@ -1,22 +1,23 @@
-﻿<Type Name="ElevationLevel" FullName="Microsoft.Azure.Management.Batch.Models.ElevationLevel">
+<Type Name="ElevationLevel" FullName="Microsoft.Azure.Management.Batch.Models.ElevationLevel">
   <TypeSignature Language="C#" Value="public enum ElevationLevel" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed ElevationLevel extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Azure.Management.Batch.Models.ElevationLevel" />
   <TypeSignature Language="VB.NET" Value="Public Enum ElevationLevel" />
   <TypeSignature Language="F#" Value="type ElevationLevel = " />
-  <TypeSignature Language="C++ CLI" Value="public enum class ElevationLevel" />
-  <TypeSignature Language="C++ CX" Value="public enum class ElevationLevel" />
-  <TypeSignature Language="C++ WINRT" Value="enum ElevationLevel" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Azure.Management.Batch</AssemblyName>
-    <AssemblyVersion>6.0.0.0</AssemblyVersion>
+    <AssemblyVersion>9.0.0.0</AssemblyVersion>
+    <AssemblyVersion>10.0.0.0</AssemblyVersion>
+    <AssemblyVersion>11.0.0.0</AssemblyVersion>
+    <AssemblyVersion>13.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Attributes>
     <Attribute>
-      <AttributeName>Newtonsoft.Json.JsonConverter(typeof(Newtonsoft.Json.Converters.StringEnumConverter))</AttributeName>
+      <AttributeName Language="C#">[Newtonsoft.Json.JsonConverter(typeof(Newtonsoft.Json.Converters.StringEnumConverter))]</AttributeName>
+      <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonConverter(typeof(Newtonsoft.Json.Converters.StringEnumConverter))&gt;]</AttributeName>
     </Attribute>
   </Attributes>
   <Docs>
@@ -32,17 +33,18 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.Azure.Management.Batch.Models.ElevationLevel.Admin" />
       <MemberSignature Language="VB.NET" Value="Admin" />
       <MemberSignature Language="F#" Value="Admin = 1" Usage="Microsoft.Azure.Management.Batch.Models.ElevationLevel.Admin" />
-      <MemberSignature Language="C++ CLI" Value="Admin" />
-      <MemberSignature Language="C++ CX" Value="Admin" />
-      <MemberSignature Language="C++ WINRT" Value="Admin" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Batch</AssemblyName>
-        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+        <AssemblyVersion>11.0.0.0</AssemblyVersion>
+        <AssemblyVersion>13.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>System.Runtime.Serialization.EnumMember(Value="Admin")</AttributeName>
+          <AttributeName Language="C#">[System.Runtime.Serialization.EnumMember(Value="Admin")]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Runtime.Serialization.EnumMember(Value="Admin")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -50,7 +52,10 @@
       </ReturnValue>
       <MemberValue>1</MemberValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+            The user is a user with elevated access and operates with full
+            Administrator permissions.
+            </summary>
       </Docs>
     </Member>
     <Member MemberName="NonAdmin">
@@ -59,17 +64,18 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.Azure.Management.Batch.Models.ElevationLevel.NonAdmin" />
       <MemberSignature Language="VB.NET" Value="NonAdmin" />
       <MemberSignature Language="F#" Value="NonAdmin = 0" Usage="Microsoft.Azure.Management.Batch.Models.ElevationLevel.NonAdmin" />
-      <MemberSignature Language="C++ CLI" Value="NonAdmin" />
-      <MemberSignature Language="C++ CX" Value="NonAdmin" />
-      <MemberSignature Language="C++ WINRT" Value="NonAdmin" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Batch</AssemblyName>
-        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+        <AssemblyVersion>11.0.0.0</AssemblyVersion>
+        <AssemblyVersion>13.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>System.Runtime.Serialization.EnumMember(Value="NonAdmin")</AttributeName>
+          <AttributeName Language="C#">[System.Runtime.Serialization.EnumMember(Value="NonAdmin")]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Runtime.Serialization.EnumMember(Value="NonAdmin")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -77,7 +83,9 @@
       </ReturnValue>
       <MemberValue>0</MemberValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+            The user is a standard user without elevated access.
+            </summary>
       </Docs>
     </Member>
   </Members>

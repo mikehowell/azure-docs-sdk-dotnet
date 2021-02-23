@@ -1,11 +1,9 @@
-﻿<Type Name="CloudAppliance" FullName="Microsoft.Azure.Management.StorSimple8000Series.Models.CloudAppliance">
+<Type Name="CloudAppliance" FullName="Microsoft.Azure.Management.StorSimple8000Series.Models.CloudAppliance">
   <TypeSignature Language="C#" Value="public class CloudAppliance" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit CloudAppliance extends System.Object" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Azure.Management.StorSimple8000Series.Models.CloudAppliance" />
   <TypeSignature Language="VB.NET" Value="Public Class CloudAppliance" />
   <TypeSignature Language="F#" Value="type CloudAppliance = class" />
-  <TypeSignature Language="C++ CLI" Value="public ref class CloudAppliance" />
-  <TypeSignature Language="C++ WINRT" Value="[Windows::Foundation::Metadata::WebHostHidden]&#xA;class CloudAppliance" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Azure.Management.StorSimple8000Series</AssemblyName>
     <AssemblyVersion>1.0.0.0</AssemblyVersion>
@@ -26,9 +24,6 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Management.StorSimple8000Series.Models.CloudAppliance.#ctor" />
       <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; CloudAppliance();" />
-      <MemberSignature Language="C++ CX" Value="public:&#xA; CloudAppliance();" />
-      <MemberSignature Language="C++ WINRT" Value=" CloudAppliance();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.StorSimple8000Series</AssemblyName>
@@ -43,10 +38,10 @@
       </Docs>
     </Member>
     <Member MemberName=".ctor">
-      <MemberSignature Language="C#" Value="public CloudAppliance (string name, string vnetRegion, string vnetName = null, Nullable&lt;bool&gt; isVnetDnsConfigured = null, Nullable&lt;bool&gt; isVnetExpressConfigured = null, string subnetName = null, string storageAccountName = null, string storageAccountType = null, string vmType = null, string vmImageName = null, string modelNumber = null);" />
+      <MemberSignature Language="C#" Value="public CloudAppliance (string name, string vnetRegion, string vnetName = default, bool? isVnetDnsConfigured = default, bool? isVnetExpressConfigured = default, string subnetName = default, string storageAccountName = default, string storageAccountType = default, string vmType = default, string vmImageName = default, string modelNumber = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string name, string vnetRegion, string vnetName, valuetype System.Nullable`1&lt;bool&gt; isVnetDnsConfigured, valuetype System.Nullable`1&lt;bool&gt; isVnetExpressConfigured, string subnetName, string storageAccountName, string storageAccountType, string vmType, string vmImageName, string modelNumber) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Management.StorSimple8000Series.Models.CloudAppliance.#ctor(System.String,System.String,System.String,System.Nullable{System.Boolean},System.Nullable{System.Boolean},System.String,System.String,System.String,System.String,System.String,System.String)" />
-      <MemberSignature Language="VB.NET" Value="Public Sub New (name As String, vnetRegion As String, Optional vnetName As String = null, Optional isVnetDnsConfigured As Nullable(Of Boolean) = null, Optional isVnetExpressConfigured As Nullable(Of Boolean) = null, Optional subnetName As String = null, Optional storageAccountName As String = null, Optional storageAccountType As String = null, Optional vmType As String = null, Optional vmImageName As String = null, Optional modelNumber As String = null)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (name As String, vnetRegion As String, Optional vnetName As String = Nothing, Optional isVnetDnsConfigured As Nullable(Of Boolean) = Nothing, Optional isVnetExpressConfigured As Nullable(Of Boolean) = Nothing, Optional subnetName As String = Nothing, Optional storageAccountName As String = Nothing, Optional storageAccountType As String = Nothing, Optional vmType As String = Nothing, Optional vmImageName As String = Nothing, Optional modelNumber As String = Nothing)" />
       <MemberSignature Language="F#" Value="new Microsoft.Azure.Management.StorSimple8000Series.Models.CloudAppliance : string * string * string * Nullable&lt;bool&gt; * Nullable&lt;bool&gt; * string * string * string * string * string * string -&gt; Microsoft.Azure.Management.StorSimple8000Series.Models.CloudAppliance" Usage="new Microsoft.Azure.Management.StorSimple8000Series.Models.CloudAppliance (name, vnetRegion, vnetName, isVnetDnsConfigured, isVnetExpressConfigured, subnetName, storageAccountName, storageAccountType, vmType, vmImageName, modelNumber)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
@@ -90,12 +85,11 @@
       </Docs>
     </Member>
     <Member MemberName="IsVnetDnsConfigured">
-      <MemberSignature Language="C#" Value="public Nullable&lt;bool&gt; IsVnetDnsConfigured { get; set; }" />
+      <MemberSignature Language="C#" Value="public bool? IsVnetDnsConfigured { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;bool&gt; IsVnetDnsConfigured" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Management.StorSimple8000Series.Models.CloudAppliance.IsVnetDnsConfigured" />
       <MemberSignature Language="VB.NET" Value="Public Property IsVnetDnsConfigured As Nullable(Of Boolean)" />
       <MemberSignature Language="F#" Value="member this.IsVnetDnsConfigured : Nullable&lt;bool&gt; with get, set" Usage="Microsoft.Azure.Management.StorSimple8000Series.Models.CloudAppliance.IsVnetDnsConfigured" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Nullable&lt;bool&gt; IsVnetDnsConfigured { Nullable&lt;bool&gt; get(); void set(Nullable&lt;bool&gt; value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.StorSimple8000Series</AssemblyName>
@@ -103,7 +97,8 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="isVnetDnsConfigured")</AttributeName>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty(PropertyName="isVnetDnsConfigured")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty(PropertyName="isVnetDnsConfigured")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -119,12 +114,11 @@
       </Docs>
     </Member>
     <Member MemberName="IsVnetExpressConfigured">
-      <MemberSignature Language="C#" Value="public Nullable&lt;bool&gt; IsVnetExpressConfigured { get; set; }" />
+      <MemberSignature Language="C#" Value="public bool? IsVnetExpressConfigured { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;bool&gt; IsVnetExpressConfigured" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Management.StorSimple8000Series.Models.CloudAppliance.IsVnetExpressConfigured" />
       <MemberSignature Language="VB.NET" Value="Public Property IsVnetExpressConfigured As Nullable(Of Boolean)" />
       <MemberSignature Language="F#" Value="member this.IsVnetExpressConfigured : Nullable&lt;bool&gt; with get, set" Usage="Microsoft.Azure.Management.StorSimple8000Series.Models.CloudAppliance.IsVnetExpressConfigured" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Nullable&lt;bool&gt; IsVnetExpressConfigured { Nullable&lt;bool&gt; get(); void set(Nullable&lt;bool&gt; value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.StorSimple8000Series</AssemblyName>
@@ -132,7 +126,8 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="isVnetExpressConfigured")</AttributeName>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty(PropertyName="isVnetExpressConfigured")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty(PropertyName="isVnetExpressConfigured")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -153,8 +148,6 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Management.StorSimple8000Series.Models.CloudAppliance.ModelNumber" />
       <MemberSignature Language="VB.NET" Value="Public Property ModelNumber As String" />
       <MemberSignature Language="F#" Value="member this.ModelNumber : string with get, set" Usage="Microsoft.Azure.Management.StorSimple8000Series.Models.CloudAppliance.ModelNumber" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ ModelNumber { System::String ^ get(); void set(System::String ^ value); };" />
-      <MemberSignature Language="C++ CX" Value="public:&#xA; property Platform::String ^ ModelNumber { Platform::String ^ get(); void set(Platform::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.StorSimple8000Series</AssemblyName>
@@ -162,7 +155,8 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="modelNumber")</AttributeName>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty(PropertyName="modelNumber")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty(PropertyName="modelNumber")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -182,8 +176,6 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Management.StorSimple8000Series.Models.CloudAppliance.Name" />
       <MemberSignature Language="VB.NET" Value="Public Property Name As String" />
       <MemberSignature Language="F#" Value="member this.Name : string with get, set" Usage="Microsoft.Azure.Management.StorSimple8000Series.Models.CloudAppliance.Name" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Name { System::String ^ get(); void set(System::String ^ value); };" />
-      <MemberSignature Language="C++ CX" Value="public:&#xA; property Platform::String ^ Name { Platform::String ^ get(); void set(Platform::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.StorSimple8000Series</AssemblyName>
@@ -191,7 +183,8 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="name")</AttributeName>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty(PropertyName="name")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty(PropertyName="name")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -211,8 +204,6 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Management.StorSimple8000Series.Models.CloudAppliance.StorageAccountName" />
       <MemberSignature Language="VB.NET" Value="Public Property StorageAccountName As String" />
       <MemberSignature Language="F#" Value="member this.StorageAccountName : string with get, set" Usage="Microsoft.Azure.Management.StorSimple8000Series.Models.CloudAppliance.StorageAccountName" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ StorageAccountName { System::String ^ get(); void set(System::String ^ value); };" />
-      <MemberSignature Language="C++ CX" Value="public:&#xA; property Platform::String ^ StorageAccountName { Platform::String ^ get(); void set(Platform::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.StorSimple8000Series</AssemblyName>
@@ -220,7 +211,8 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="storageAccountName")</AttributeName>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty(PropertyName="storageAccountName")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty(PropertyName="storageAccountName")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -240,8 +232,6 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Management.StorSimple8000Series.Models.CloudAppliance.StorageAccountType" />
       <MemberSignature Language="VB.NET" Value="Public Property StorageAccountType As String" />
       <MemberSignature Language="F#" Value="member this.StorageAccountType : string with get, set" Usage="Microsoft.Azure.Management.StorSimple8000Series.Models.CloudAppliance.StorageAccountType" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ StorageAccountType { System::String ^ get(); void set(System::String ^ value); };" />
-      <MemberSignature Language="C++ CX" Value="public:&#xA; property Platform::String ^ StorageAccountType { Platform::String ^ get(); void set(Platform::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.StorSimple8000Series</AssemblyName>
@@ -249,7 +239,8 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="storageAccountType")</AttributeName>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty(PropertyName="storageAccountType")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty(PropertyName="storageAccountType")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -269,8 +260,6 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Management.StorSimple8000Series.Models.CloudAppliance.SubnetName" />
       <MemberSignature Language="VB.NET" Value="Public Property SubnetName As String" />
       <MemberSignature Language="F#" Value="member this.SubnetName : string with get, set" Usage="Microsoft.Azure.Management.StorSimple8000Series.Models.CloudAppliance.SubnetName" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ SubnetName { System::String ^ get(); void set(System::String ^ value); };" />
-      <MemberSignature Language="C++ CX" Value="public:&#xA; property Platform::String ^ SubnetName { Platform::String ^ get(); void set(Platform::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.StorSimple8000Series</AssemblyName>
@@ -278,7 +267,8 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="subnetName")</AttributeName>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty(PropertyName="subnetName")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty(PropertyName="subnetName")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -298,9 +288,6 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Management.StorSimple8000Series.Models.CloudAppliance.Validate" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Sub Validate ()" />
       <MemberSignature Language="F#" Value="abstract member Validate : unit -&gt; unit&#xA;override this.Validate : unit -&gt; unit" Usage="cloudAppliance.Validate " />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Validate();" />
-      <MemberSignature Language="C++ CX" Value="public:&#xA; virtual void Validate();" />
-      <MemberSignature Language="C++ WINRT" Value=" virtual void Validate();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.StorSimple8000Series</AssemblyName>
@@ -326,8 +313,6 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Management.StorSimple8000Series.Models.CloudAppliance.VmImageName" />
       <MemberSignature Language="VB.NET" Value="Public Property VmImageName As String" />
       <MemberSignature Language="F#" Value="member this.VmImageName : string with get, set" Usage="Microsoft.Azure.Management.StorSimple8000Series.Models.CloudAppliance.VmImageName" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ VmImageName { System::String ^ get(); void set(System::String ^ value); };" />
-      <MemberSignature Language="C++ CX" Value="public:&#xA; property Platform::String ^ VmImageName { Platform::String ^ get(); void set(Platform::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.StorSimple8000Series</AssemblyName>
@@ -335,7 +320,8 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="vmImageName")</AttributeName>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty(PropertyName="vmImageName")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty(PropertyName="vmImageName")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -355,8 +341,6 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Management.StorSimple8000Series.Models.CloudAppliance.VmType" />
       <MemberSignature Language="VB.NET" Value="Public Property VmType As String" />
       <MemberSignature Language="F#" Value="member this.VmType : string with get, set" Usage="Microsoft.Azure.Management.StorSimple8000Series.Models.CloudAppliance.VmType" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ VmType { System::String ^ get(); void set(System::String ^ value); };" />
-      <MemberSignature Language="C++ CX" Value="public:&#xA; property Platform::String ^ VmType { Platform::String ^ get(); void set(Platform::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.StorSimple8000Series</AssemblyName>
@@ -364,7 +348,8 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="vmType")</AttributeName>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty(PropertyName="vmType")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty(PropertyName="vmType")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -384,8 +369,6 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Management.StorSimple8000Series.Models.CloudAppliance.VnetName" />
       <MemberSignature Language="VB.NET" Value="Public Property VnetName As String" />
       <MemberSignature Language="F#" Value="member this.VnetName : string with get, set" Usage="Microsoft.Azure.Management.StorSimple8000Series.Models.CloudAppliance.VnetName" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ VnetName { System::String ^ get(); void set(System::String ^ value); };" />
-      <MemberSignature Language="C++ CX" Value="public:&#xA; property Platform::String ^ VnetName { Platform::String ^ get(); void set(Platform::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.StorSimple8000Series</AssemblyName>
@@ -393,7 +376,8 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="vnetName")</AttributeName>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty(PropertyName="vnetName")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty(PropertyName="vnetName")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -413,8 +397,6 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Management.StorSimple8000Series.Models.CloudAppliance.VnetRegion" />
       <MemberSignature Language="VB.NET" Value="Public Property VnetRegion As String" />
       <MemberSignature Language="F#" Value="member this.VnetRegion : string with get, set" Usage="Microsoft.Azure.Management.StorSimple8000Series.Models.CloudAppliance.VnetRegion" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ VnetRegion { System::String ^ get(); void set(System::String ^ value); };" />
-      <MemberSignature Language="C++ CX" Value="public:&#xA; property Platform::String ^ VnetRegion { Platform::String ^ get(); void set(Platform::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.StorSimple8000Series</AssemblyName>
@@ -422,7 +404,8 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="vnetRegion")</AttributeName>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty(PropertyName="vnetRegion")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty(PropertyName="vnetRegion")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>

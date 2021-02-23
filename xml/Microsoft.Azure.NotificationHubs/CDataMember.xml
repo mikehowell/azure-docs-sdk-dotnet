@@ -1,13 +1,15 @@
-﻿<Type Name="CDataMember" FullName="Microsoft.Azure.NotificationHubs.CDataMember">
+<Type Name="CDataMember" FullName="Microsoft.Azure.NotificationHubs.CDataMember">
   <TypeSignature Language="C#" Value="public sealed class CDataMember : System.Xml.Serialization.IXmlSerializable" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit CDataMember extends System.Object implements class System.Xml.Serialization.IXmlSerializable" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Azure.NotificationHubs.CDataMember" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class CDataMember&#xA;Implements IXmlSerializable" />
   <TypeSignature Language="F#" Value="type CDataMember = class&#xA;    interface IXmlSerializable" />
-  <TypeSignature Language="C++ CLI" Value="public ref class CDataMember sealed : System::Xml::Serialization::IXmlSerializable" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Azure.NotificationHubs</AssemblyName>
-    <AssemblyVersion>2.16.0.0</AssemblyVersion>
+    <AssemblyVersion>3.2.1.0</AssemblyVersion>
+    <AssemblyVersion>3.3.0.0</AssemblyVersion>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+    <AssemblyVersion>4.1.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
@@ -19,11 +21,15 @@
   </Interfaces>
   <Attributes>
     <Attribute>
-      <AttributeName>System.Xml.Serialization.XmlSchemaProvider("GenerateSchema")</AttributeName>
+      <AttributeName Language="C#">[System.Xml.Serialization.XmlSchemaProvider("GenerateSchema")]</AttributeName>
+      <AttributeName Language="F#">[&lt;System.Xml.Serialization.XmlSchemaProvider("GenerateSchema")&gt;]</AttributeName>
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Represents the notifications of the <see cref="T:Microsoft.Azure.NotificationHubs.CDataMember" />.</summary>
+    <summary>
+            Represents the body part of Template registration descriptions. The body tag within a template XML description can be any string value
+            and is treated as a CData section.
+            </summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -32,17 +38,19 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.NotificationHubs.CDataMember.#ctor" />
       <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; CDataMember();" />
-      <MemberSignature Language="C++ CX" Value="public:&#xA; CDataMember();" />
-      <MemberSignature Language="C++ WINRT" Value=" CDataMember();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.NotificationHubs</AssemblyName>
-        <AssemblyVersion>2.16.0.0</AssemblyVersion>
+        <AssemblyVersion>3.2.1.0</AssemblyVersion>
+        <AssemblyVersion>3.3.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>Initializes a new instance of the <see cref="T:Microsoft.Azure.NotificationHubs.CDataMember" /> class.</summary>
+        <summary>
+            Initializes a new instance of the <see cref="T:Microsoft.Azure.NotificationHubs.CDataMember" /> class.
+            </summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -52,20 +60,22 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.NotificationHubs.CDataMember.#ctor(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (value As String)" />
       <MemberSignature Language="F#" Value="new Microsoft.Azure.NotificationHubs.CDataMember : string -&gt; Microsoft.Azure.NotificationHubs.CDataMember" Usage="new Microsoft.Azure.NotificationHubs.CDataMember value" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; CDataMember(System::String ^ value);" />
-      <MemberSignature Language="C++ CX" Value="public:&#xA; CDataMember(Platform::String ^ value);" />
-      <MemberSignature Language="C++ WINRT" Value=" CDataMember(std::wstring const &amp; value);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.NotificationHubs</AssemblyName>
-        <AssemblyVersion>2.16.0.0</AssemblyVersion>
+        <AssemblyVersion>3.2.1.0</AssemblyVersion>
+        <AssemblyVersion>3.3.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="value" Type="System.String" />
       </Parameters>
       <Docs>
         <param name="value">The specified value.</param>
-        <summary>Initializes a new instance of the <see cref="T:Microsoft.Azure.NotificationHubs.CDataMember" /> class with the specified value.</summary>
+        <summary>
+            Initializes a new instance of the <see cref="T:Microsoft.Azure.NotificationHubs.CDataMember" /> class with the specified value.
+            </summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -75,11 +85,13 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.NotificationHubs.CDataMember.GenerateSchema(System.Xml.Schema.XmlSchemaSet)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function GenerateSchema (xs As XmlSchemaSet) As XmlQualifiedName" />
       <MemberSignature Language="F#" Value="static member GenerateSchema : System.Xml.Schema.XmlSchemaSet -&gt; System.Xml.XmlQualifiedName" Usage="Microsoft.Azure.NotificationHubs.CDataMember.GenerateSchema xs" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Xml::XmlQualifiedName ^ GenerateSchema(System::Xml::Schema::XmlSchemaSet ^ xs);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.NotificationHubs</AssemblyName>
-        <AssemblyVersion>2.16.0.0</AssemblyVersion>
+        <AssemblyVersion>3.2.1.0</AssemblyVersion>
+        <AssemblyVersion>3.3.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Xml.XmlQualifiedName</ReturnType>
@@ -89,8 +101,12 @@
       </Parameters>
       <Docs>
         <param name="xs">The XML schema.</param>
-        <summary>Generates the schema representation for the XML schema conversion.</summary>
-        <returns>The schema representation for the XML schema conversion.</returns>
+        <summary>
+            Generates the schema representation for the XML schema conversion.
+            </summary>
+        <returns>
+            The schema representation for the XML schema conversion.
+            </returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -100,22 +116,28 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.NotificationHubs.CDataMember.GetSchema" />
       <MemberSignature Language="VB.NET" Value="Public Function GetSchema () As XmlSchema" />
       <MemberSignature Language="F#" Value="abstract member GetSchema : unit -&gt; System.Xml.Schema.XmlSchema&#xA;override this.GetSchema : unit -&gt; System.Xml.Schema.XmlSchema" Usage="cDataMember.GetSchema " />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Xml::Schema::XmlSchema ^ GetSchema();" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Xml.Serialization.IXmlSerializable.GetSchema</InterfaceMember>
       </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.NotificationHubs</AssemblyName>
-        <AssemblyVersion>2.16.0.0</AssemblyVersion>
+        <AssemblyVersion>3.2.1.0</AssemblyVersion>
+        <AssemblyVersion>3.3.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Xml.Schema.XmlSchema</ReturnType>
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Returns schema representation for the XML schemas.</summary>
-        <returns>The schema representation for the XML schemas.</returns>
+        <summary>
+            Returns schema representation for the XML schemas.
+            </summary>
+        <returns>
+            The schema representation for the XML schemas.
+            </returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -125,11 +147,13 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.NotificationHubs.CDataMember.op_Implicit(Microsoft.Azure.NotificationHubs.CDataMember)~System.String" />
       <MemberSignature Language="VB.NET" Value="Public Shared Widening Operator CType (value As CDataMember) As String" />
       <MemberSignature Language="F#" Value="static member op_Implicit : Microsoft.Azure.NotificationHubs.CDataMember -&gt; string" Usage="Microsoft.Azure.NotificationHubs.CDataMember.op_Implicit value" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; static operator System::String ^(Microsoft::Azure::NotificationHubs::CDataMember ^ value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.NotificationHubs</AssemblyName>
-        <AssemblyVersion>2.16.0.0</AssemblyVersion>
+        <AssemblyVersion>3.2.1.0</AssemblyVersion>
+        <AssemblyVersion>3.3.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -139,8 +163,12 @@
       </Parameters>
       <Docs>
         <param name="value">The value to be converted.</param>
-        <summary>Converts the specified value to a <see cref="T:Microsoft.Azure.NotificationHubs.CDataMember" /> object.</summary>
-        <returns>The value to converts the <see cref="T:Microsoft.Azure.NotificationHubs.CDataMember" /> object.</returns>
+        <summary>
+            Converts the specified value to a <see cref="T:Microsoft.Azure.NotificationHubs.CDataMember" /> object.
+            </summary>
+        <returns>
+            The value to converts the <see cref="T:Microsoft.Azure.NotificationHubs.CDataMember" /> object.
+            </returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -150,11 +178,13 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.NotificationHubs.CDataMember.op_Implicit(System.String)~Microsoft.Azure.NotificationHubs.CDataMember" />
       <MemberSignature Language="VB.NET" Value="Public Shared Widening Operator CType (value As String) As CDataMember" />
       <MemberSignature Language="F#" Value="static member op_Implicit : string -&gt; Microsoft.Azure.NotificationHubs.CDataMember" Usage="Microsoft.Azure.NotificationHubs.CDataMember.op_Implicit value" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; static operator Microsoft::Azure::NotificationHubs::CDataMember ^(System::String ^ value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.NotificationHubs</AssemblyName>
-        <AssemblyVersion>2.16.0.0</AssemblyVersion>
+        <AssemblyVersion>3.2.1.0</AssemblyVersion>
+        <AssemblyVersion>3.3.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Azure.NotificationHubs.CDataMember</ReturnType>
@@ -164,8 +194,12 @@
       </Parameters>
       <Docs>
         <param name="value">The value to be converted.</param>
-        <summary>Converts the <see cref="T:Microsoft.Azure.NotificationHubs.CDataMember" /> object to a specified value.</summary>
-        <returns>The converted <see cref="T:Microsoft.Azure.NotificationHubs.CDataMember" /> object to a specified value.</returns>
+        <summary>
+            Converts the <see cref="T:Microsoft.Azure.NotificationHubs.CDataMember" /> object to a specified value.
+            </summary>
+        <returns>
+            The converted <see cref="T:Microsoft.Azure.NotificationHubs.CDataMember" /> object to a specified value.
+            </returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -175,14 +209,16 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.NotificationHubs.CDataMember.ReadXml(System.Xml.XmlReader)" />
       <MemberSignature Language="VB.NET" Value="Public Sub ReadXml (reader As XmlReader)" />
       <MemberSignature Language="F#" Value="abstract member ReadXml : System.Xml.XmlReader -&gt; unit&#xA;override this.ReadXml : System.Xml.XmlReader -&gt; unit" Usage="cDataMember.ReadXml reader" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void ReadXml(System::Xml::XmlReader ^ reader);" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Xml.Serialization.IXmlSerializable.ReadXml(System.Xml.XmlReader)</InterfaceMember>
       </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.NotificationHubs</AssemblyName>
-        <AssemblyVersion>2.16.0.0</AssemblyVersion>
+        <AssemblyVersion>3.2.1.0</AssemblyVersion>
+        <AssemblyVersion>3.3.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -192,7 +228,9 @@
       </Parameters>
       <Docs>
         <param name="reader">The XML reader to read the data.</param>
-        <summary>Reads XML schema from its XML representation.</summary>
+        <summary>
+            Reads XML schema from its XML representation.
+            </summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -202,21 +240,25 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.NotificationHubs.CDataMember.ToString" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function ToString () As String" />
       <MemberSignature Language="F#" Value="override this.ToString : unit -&gt; string" Usage="cDataMember.ToString " />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::String ^ ToString();" />
-      <MemberSignature Language="C++ CX" Value="public:&#xA; override Platform::String ^ ToString();" />
-      <MemberSignature Language="C++ WINRT" Value=" override std::wstring ToString();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.NotificationHubs</AssemblyName>
-        <AssemblyVersion>2.16.0.0</AssemblyVersion>
+        <AssemblyVersion>3.2.1.0</AssemblyVersion>
+        <AssemblyVersion>3.3.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Returns a string that represents the current object.</summary>
-        <returns>A string that represents the current object.</returns>
+        <summary>
+            Returns a string that represents the current object.
+            </summary>
+        <returns>
+            A string that represents the current object.
+            </returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -226,19 +268,24 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Azure.NotificationHubs.CDataMember.Value" />
       <MemberSignature Language="VB.NET" Value="Public Property Value As String" />
       <MemberSignature Language="F#" Value="member this.Value : string with get, set" Usage="Microsoft.Azure.NotificationHubs.CDataMember.Value" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Value { System::String ^ get(); void set(System::String ^ value); };" />
-      <MemberSignature Language="C++ CX" Value="public:&#xA; property Platform::String ^ Value { Platform::String ^ get(); void set(Platform::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.NotificationHubs</AssemblyName>
-        <AssemblyVersion>2.16.0.0</AssemblyVersion>
+        <AssemblyVersion>3.2.1.0</AssemblyVersion>
+        <AssemblyVersion>3.3.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the value of the <see cref="T:Microsoft.Azure.NotificationHubs.CDataMember" />.</summary>
-        <value>The value of the <see cref="T:Microsoft.Azure.NotificationHubs.CDataMember" />.</value>
+        <summary>
+            Gets or sets the member value.
+            </summary>
+        <value>
+            The member value.
+            </value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -248,14 +295,16 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.NotificationHubs.CDataMember.WriteXml(System.Xml.XmlWriter)" />
       <MemberSignature Language="VB.NET" Value="Public Sub WriteXml (writer As XmlWriter)" />
       <MemberSignature Language="F#" Value="abstract member WriteXml : System.Xml.XmlWriter -&gt; unit&#xA;override this.WriteXml : System.Xml.XmlWriter -&gt; unit" Usage="cDataMember.WriteXml writer" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void WriteXml(System::Xml::XmlWriter ^ writer);" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Xml.Serialization.IXmlSerializable.WriteXml(System.Xml.XmlWriter)</InterfaceMember>
       </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.NotificationHubs</AssemblyName>
-        <AssemblyVersion>2.16.0.0</AssemblyVersion>
+        <AssemblyVersion>3.2.1.0</AssemblyVersion>
+        <AssemblyVersion>3.3.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -265,7 +314,9 @@
       </Parameters>
       <Docs>
         <param name="writer">The XML writer to write.</param>
-        <summary>Writes XML data into its XML representation.</summary>
+        <summary>
+            Writes XML data into its XML representation.
+            </summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

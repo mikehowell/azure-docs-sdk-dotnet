@@ -1,11 +1,9 @@
-﻿<Type Name="WcfServiceRemotingProviderAttribute" FullName="Microsoft.ServiceFabric.Services.Remoting.Wcf.WcfServiceRemotingProviderAttribute">
+<Type Name="WcfServiceRemotingProviderAttribute" FullName="Microsoft.ServiceFabric.Services.Remoting.Wcf.WcfServiceRemotingProviderAttribute">
   <TypeSignature Language="C#" Value="public sealed class WcfServiceRemotingProviderAttribute : Microsoft.ServiceFabric.Services.Remoting.ServiceRemotingProviderAttribute" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit WcfServiceRemotingProviderAttribute extends Microsoft.ServiceFabric.Services.Remoting.ServiceRemotingProviderAttribute" />
   <TypeSignature Language="DocId" Value="T:Microsoft.ServiceFabric.Services.Remoting.Wcf.WcfServiceRemotingProviderAttribute" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class WcfServiceRemotingProviderAttribute&#xA;Inherits ServiceRemotingProviderAttribute" />
   <TypeSignature Language="F#" Value="type WcfServiceRemotingProviderAttribute = class&#xA;    inherit ServiceRemotingProviderAttribute" />
-  <TypeSignature Language="C++ CLI" Value="public ref class WcfServiceRemotingProviderAttribute sealed : Microsoft::ServiceFabric::Services::Remoting::ServiceRemotingProviderAttribute" />
-  <TypeSignature Language="C++ CX" Value="public ref class WcfServiceRemotingProviderAttribute sealed : Microsoft::ServiceFabric::Services::Remoting::ServiceRemotingProviderAttribute" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.ServiceFabric.Services.Wcf</AssemblyName>
     <AssemblyVersion>6.0.0.0</AssemblyVersion>
@@ -16,12 +14,13 @@
   <Interfaces />
   <Attributes>
     <Attribute>
-      <AttributeName>System.AttributeUsage(System.AttributeTargets.Assembly)</AttributeName>
+      <AttributeName Language="C#">[System.AttributeUsage(System.AttributeTargets.Assembly)]</AttributeName>
+      <AttributeName Language="F#">[&lt;System.AttributeUsage(System.AttributeTargets.Assembly)&gt;]</AttributeName>
     </Attribute>
   </Attributes>
   <Docs>
     <summary>
-                Sets WCF as the default service remoting transport provider in the assembly.
+            This attributes allows to set WCF transport as the default service remoting transport provider in the assembly and customization for it.
             </summary>
     <remarks>To be added.</remarks>
   </Docs>
@@ -31,9 +30,6 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.ServiceFabric.Services.Remoting.Wcf.WcfServiceRemotingProviderAttribute.#ctor" />
       <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; WcfServiceRemotingProviderAttribute();" />
-      <MemberSignature Language="C++ CX" Value="public:&#xA; WcfServiceRemotingProviderAttribute();" />
-      <MemberSignature Language="C++ WINRT" Value=" WcfServiceRemotingProviderAttribute();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.ServiceFabric.Services.Wcf</AssemblyName>
@@ -42,8 +38,7 @@
       <Parameters />
       <Docs>
         <summary>
-            Constructs a <see cref="T:Microsoft.ServiceFabric.Services.Remoting.Wcf.WcfServiceRemotingProviderAttribute" /> which can be used
-            to set WCF transport as the default service remoting transport provider in the assembly.
+            Initializes a new instance of the <see cref="T:Microsoft.ServiceFabric.Services.Remoting.Wcf.WcfServiceRemotingProviderAttribute" /> class.
             </summary>
         <remarks>To be added.</remarks>
       </Docs>
@@ -54,8 +49,6 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.ServiceFabric.Services.Remoting.Wcf.WcfServiceRemotingProviderAttribute.CloseTimeoutInMilliSeconds" />
       <MemberSignature Language="VB.NET" Value="Public Property CloseTimeoutInMilliSeconds As Long" />
       <MemberSignature Language="F#" Value="member this.CloseTimeoutInMilliSeconds : int64 with get, set" Usage="Microsoft.ServiceFabric.Services.Remoting.Wcf.WcfServiceRemotingProviderAttribute.CloseTimeoutInMilliSeconds" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property long CloseTimeoutInMilliSeconds { long get(); void set(long value); };" />
-      <MemberSignature Language="C++ CX" Value="public:&#xA; property long long CloseTimeoutInMilliSeconds { long long get(); void set(long long value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.ServiceFabric.Services.Wcf</AssemblyName>
@@ -80,9 +73,6 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.ServiceFabric.Services.Remoting.Wcf.WcfServiceRemotingProviderAttribute.CreateServiceRemotingClientFactory(Microsoft.ServiceFabric.Services.Remoting.V1.IServiceRemotingCallbackClient)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function CreateServiceRemotingClientFactory (callbackClient As IServiceRemotingCallbackClient) As IServiceRemotingClientFactory" />
       <MemberSignature Language="F#" Value="override this.CreateServiceRemotingClientFactory : Microsoft.ServiceFabric.Services.Remoting.V1.IServiceRemotingCallbackClient -&gt; Microsoft.ServiceFabric.Services.Remoting.V1.Client.IServiceRemotingClientFactory" Usage="wcfServiceRemotingProviderAttribute.CreateServiceRemotingClientFactory callbackClient" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; override Microsoft::ServiceFabric::Services::Remoting::V1::Client::IServiceRemotingClientFactory ^ CreateServiceRemotingClientFactory(Microsoft::ServiceFabric::Services::Remoting::V1::IServiceRemotingCallbackClient ^ callbackClient);" />
-      <MemberSignature Language="C++ CX" Value="public:&#xA; override Microsoft::ServiceFabric::Services::Remoting::V1::Client::IServiceRemotingClientFactory ^ CreateServiceRemotingClientFactory(Microsoft::ServiceFabric::Services::Remoting::V1::IServiceRemotingCallbackClient ^ callbackClient);" />
-      <MemberSignature Language="C++ WINRT" Value=" override Microsoft::ServiceFabric::Services::Remoting::V1::Client::IServiceRemotingClientFactory CreateServiceRemotingClientFactory(Microsoft::ServiceFabric::Services::Remoting::V1::IServiceRemotingCallbackClient const &amp; callbackClient);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.ServiceFabric.Services.Wcf</AssemblyName>
@@ -99,8 +89,8 @@
                 Client implementation where the callbacks should be dispatched.
             </param>
         <summary>
-                Creates a V1 service remoting client factory that can be used by the 
-                <see cref="T:Microsoft.ServiceFabric.Services.Remoting.Client.ServiceProxyFactory" /> 
+                Creates a V1 service remoting client factory that can be used by the
+                <see cref="T:Microsoft.ServiceFabric.Services.Remoting.Client.ServiceProxyFactory" />
                 to create a proxy for the remoted interface of the service.
             </summary>
         <returns>
@@ -115,9 +105,6 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.ServiceFabric.Services.Remoting.Wcf.WcfServiceRemotingProviderAttribute.CreateServiceRemotingClientFactoryV2(Microsoft.ServiceFabric.Services.Remoting.V2.Client.IServiceRemotingCallbackMessageHandler)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function CreateServiceRemotingClientFactoryV2 (callbackMessageHandler As IServiceRemotingCallbackMessageHandler) As IServiceRemotingClientFactory" />
       <MemberSignature Language="F#" Value="override this.CreateServiceRemotingClientFactoryV2 : Microsoft.ServiceFabric.Services.Remoting.V2.Client.IServiceRemotingCallbackMessageHandler -&gt; Microsoft.ServiceFabric.Services.Remoting.V2.Client.IServiceRemotingClientFactory" Usage="wcfServiceRemotingProviderAttribute.CreateServiceRemotingClientFactoryV2 callbackMessageHandler" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; override Microsoft::ServiceFabric::Services::Remoting::V2::Client::IServiceRemotingClientFactory ^ CreateServiceRemotingClientFactoryV2(Microsoft::ServiceFabric::Services::Remoting::V2::Client::IServiceRemotingCallbackMessageHandler ^ callbackMessageHandler);" />
-      <MemberSignature Language="C++ CX" Value="public:&#xA; override Microsoft::ServiceFabric::Services::Remoting::V2::Client::IServiceRemotingClientFactory ^ CreateServiceRemotingClientFactoryV2(Microsoft::ServiceFabric::Services::Remoting::V2::Client::IServiceRemotingCallbackMessageHandler ^ callbackMessageHandler);" />
-      <MemberSignature Language="C++ WINRT" Value=" override Microsoft::ServiceFabric::Services::Remoting::V2::Client::IServiceRemotingClientFactory CreateServiceRemotingClientFactoryV2(Microsoft::ServiceFabric::Services::Remoting::V2::Client::IServiceRemotingCallbackMessageHandler const &amp; callbackMessageHandler);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.ServiceFabric.Services.Wcf</AssemblyName>
@@ -134,8 +121,8 @@
                 Client implementation where the callbacks should be dispatched.
             </param>
         <summary>
-                Creates a service remoting client factory that can be used by the 
-                <see cref="T:Microsoft.ServiceFabric.Services.Remoting.Client.ServiceProxyFactory" /> 
+                Creates a service remoting client factory that can be used by the
+                <see cref="T:Microsoft.ServiceFabric.Services.Remoting.Client.ServiceProxyFactory" />
                 to create a proxy for the remoted interface of the service.
             </summary>
         <returns>
@@ -148,8 +135,8 @@
       <MemberSignature Language="C#" Value="public override Microsoft.ServiceFabric.Services.Remoting.Runtime.IServiceRemotingListener CreateServiceRemotingListener (System.Fabric.ServiceContext serviceContext, Microsoft.ServiceFabric.Services.Remoting.IService serviceImplementation);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class Microsoft.ServiceFabric.Services.Remoting.Runtime.IServiceRemotingListener CreateServiceRemotingListener(class System.Fabric.ServiceContext serviceContext, class Microsoft.ServiceFabric.Services.Remoting.IService serviceImplementation) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.ServiceFabric.Services.Remoting.Wcf.WcfServiceRemotingProviderAttribute.CreateServiceRemotingListener(System.Fabric.ServiceContext,Microsoft.ServiceFabric.Services.Remoting.IService)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function CreateServiceRemotingListener (serviceContext As ServiceContext, serviceImplementation As IService) As IServiceRemotingListener" />
       <MemberSignature Language="F#" Value="override this.CreateServiceRemotingListener : System.Fabric.ServiceContext * Microsoft.ServiceFabric.Services.Remoting.IService -&gt; Microsoft.ServiceFabric.Services.Remoting.Runtime.IServiceRemotingListener" Usage="wcfServiceRemotingProviderAttribute.CreateServiceRemotingListener (serviceContext, serviceImplementation)" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; override Microsoft::ServiceFabric::Services::Remoting::Runtime::IServiceRemotingListener ^ CreateServiceRemotingListener(System::Fabric::ServiceContext ^ serviceContext, Microsoft::ServiceFabric::Services::Remoting::IService ^ serviceImplementation);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.ServiceFabric.Services.Wcf</AssemblyName>
@@ -178,37 +165,26 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
-    <Member MemberName="CreateServiceRemotingListenerV2">
-      <MemberSignature Language="C#" Value="public override Microsoft.ServiceFabric.Services.Remoting.Runtime.IServiceRemotingListener CreateServiceRemotingListenerV2 (System.Fabric.ServiceContext serviceContext, Microsoft.ServiceFabric.Services.Remoting.IService serviceImplementation);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class Microsoft.ServiceFabric.Services.Remoting.Runtime.IServiceRemotingListener CreateServiceRemotingListenerV2(class System.Fabric.ServiceContext serviceContext, class Microsoft.ServiceFabric.Services.Remoting.IService serviceImplementation) cil managed" />
-      <MemberSignature Language="DocId" Value="M:Microsoft.ServiceFabric.Services.Remoting.Wcf.WcfServiceRemotingProviderAttribute.CreateServiceRemotingListenerV2(System.Fabric.ServiceContext,Microsoft.ServiceFabric.Services.Remoting.IService)" />
-      <MemberSignature Language="F#" Value="override this.CreateServiceRemotingListenerV2 : System.Fabric.ServiceContext * Microsoft.ServiceFabric.Services.Remoting.IService -&gt; Microsoft.ServiceFabric.Services.Remoting.Runtime.IServiceRemotingListener" Usage="wcfServiceRemotingProviderAttribute.CreateServiceRemotingListenerV2 (serviceContext, serviceImplementation)" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; override Microsoft::ServiceFabric::Services::Remoting::Runtime::IServiceRemotingListener ^ CreateServiceRemotingListenerV2(System::Fabric::ServiceContext ^ serviceContext, Microsoft::ServiceFabric::Services::Remoting::IService ^ serviceImplementation);" />
+    <Member MemberName="CreateServiceRemotingListeners">
+      <MemberSignature Language="C#" Value="public override System.Collections.Generic.Dictionary&lt;string,Func&lt;System.Fabric.ServiceContext,Microsoft.ServiceFabric.Services.Remoting.IService,Microsoft.ServiceFabric.Services.Remoting.Runtime.IServiceRemotingListener&gt;&gt; CreateServiceRemotingListeners ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class System.Collections.Generic.Dictionary`2&lt;string, class System.Func`3&lt;class System.Fabric.ServiceContext, class Microsoft.ServiceFabric.Services.Remoting.IService, class Microsoft.ServiceFabric.Services.Remoting.Runtime.IServiceRemotingListener&gt;&gt; CreateServiceRemotingListeners() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.ServiceFabric.Services.Remoting.Wcf.WcfServiceRemotingProviderAttribute.CreateServiceRemotingListeners" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function CreateServiceRemotingListeners () As Dictionary(Of String, Func(Of ServiceContext, IService, IServiceRemotingListener))" />
+      <MemberSignature Language="F#" Value="override this.CreateServiceRemotingListeners : unit -&gt; System.Collections.Generic.Dictionary&lt;string, Func&lt;System.Fabric.ServiceContext, Microsoft.ServiceFabric.Services.Remoting.IService, Microsoft.ServiceFabric.Services.Remoting.Runtime.IServiceRemotingListener&gt;&gt;" Usage="wcfServiceRemotingProviderAttribute.CreateServiceRemotingListeners " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.ServiceFabric.Services.Wcf</AssemblyName>
         <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
-        <ReturnType>Microsoft.ServiceFabric.Services.Remoting.Runtime.IServiceRemotingListener</ReturnType>
+        <ReturnType>System.Collections.Generic.Dictionary&lt;System.String,System.Func&lt;System.Fabric.ServiceContext,Microsoft.ServiceFabric.Services.Remoting.IService,Microsoft.ServiceFabric.Services.Remoting.Runtime.IServiceRemotingListener&gt;&gt;</ReturnType>
       </ReturnValue>
-      <Parameters>
-        <Parameter Name="serviceContext" Type="System.Fabric.ServiceContext" />
-        <Parameter Name="serviceImplementation" Type="Microsoft.ServiceFabric.Services.Remoting.IService" />
-      </Parameters>
+      <Parameters />
       <Docs>
-        <param name="serviceContext">
-                The context of the service for which the remoting listener is being constructed.
-            </param>
-        <param name="serviceImplementation">
-                The service implementation object.
-            </param>
         <summary>
-                Creates a V2 service remoting listener for remoting the service interface.
+            Returns the func method that creates the remoting listeners.
             </summary>
-        <returns>
-                A <see cref="T:Microsoft.ServiceFabric.Services.Remoting.V2.Wcf.Runtime.WcfServiceRemotingListener" /> for the specified service.
-            </returns>
+        <returns>Func to create Remoting Listener</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -218,8 +194,6 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.ServiceFabric.Services.Remoting.Wcf.WcfServiceRemotingProviderAttribute.MaxMessageSize" />
       <MemberSignature Language="VB.NET" Value="Public Property MaxMessageSize As Long" />
       <MemberSignature Language="F#" Value="member this.MaxMessageSize : int64 with get, set" Usage="Microsoft.ServiceFabric.Services.Remoting.Wcf.WcfServiceRemotingProviderAttribute.MaxMessageSize" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property long MaxMessageSize { long get(); void set(long value); };" />
-      <MemberSignature Language="C++ CX" Value="public:&#xA; property long long MaxMessageSize { long long get(); void set(long long value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.ServiceFabric.Services.Wcf</AssemblyName>
@@ -244,8 +218,6 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.ServiceFabric.Services.Remoting.Wcf.WcfServiceRemotingProviderAttribute.OpenTimeoutInMilliSeconds" />
       <MemberSignature Language="VB.NET" Value="Public Property OpenTimeoutInMilliSeconds As Long" />
       <MemberSignature Language="F#" Value="member this.OpenTimeoutInMilliSeconds : int64 with get, set" Usage="Microsoft.ServiceFabric.Services.Remoting.Wcf.WcfServiceRemotingProviderAttribute.OpenTimeoutInMilliSeconds" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property long OpenTimeoutInMilliSeconds { long get(); void set(long value); };" />
-      <MemberSignature Language="C++ CX" Value="public:&#xA; property long long OpenTimeoutInMilliSeconds { long long get(); void set(long long value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.ServiceFabric.Services.Wcf</AssemblyName>

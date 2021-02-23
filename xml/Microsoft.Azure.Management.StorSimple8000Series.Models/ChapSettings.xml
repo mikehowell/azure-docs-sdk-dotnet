@@ -1,11 +1,9 @@
-﻿<Type Name="ChapSettings" FullName="Microsoft.Azure.Management.StorSimple8000Series.Models.ChapSettings">
+<Type Name="ChapSettings" FullName="Microsoft.Azure.Management.StorSimple8000Series.Models.ChapSettings">
   <TypeSignature Language="C#" Value="public class ChapSettings" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit ChapSettings extends System.Object" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Azure.Management.StorSimple8000Series.Models.ChapSettings" />
   <TypeSignature Language="VB.NET" Value="Public Class ChapSettings" />
   <TypeSignature Language="F#" Value="type ChapSettings = class" />
-  <TypeSignature Language="C++ CLI" Value="public ref class ChapSettings" />
-  <TypeSignature Language="C++ WINRT" Value="[Windows::Foundation::Metadata::WebHostHidden]&#xA;class ChapSettings" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Azure.Management.StorSimple8000Series</AssemblyName>
     <AssemblyVersion>1.0.0.0</AssemblyVersion>
@@ -26,9 +24,6 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Management.StorSimple8000Series.Models.ChapSettings.#ctor" />
       <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; ChapSettings();" />
-      <MemberSignature Language="C++ CX" Value="public:&#xA; ChapSettings();" />
-      <MemberSignature Language="C++ WINRT" Value=" ChapSettings();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.StorSimple8000Series</AssemblyName>
@@ -43,12 +38,11 @@
       </Docs>
     </Member>
     <Member MemberName=".ctor">
-      <MemberSignature Language="C#" Value="public ChapSettings (string initiatorUser = null, Microsoft.Azure.Management.StorSimple8000Series.Models.AsymmetricEncryptedSecret initiatorSecret = null, string targetUser = null, Microsoft.Azure.Management.StorSimple8000Series.Models.AsymmetricEncryptedSecret targetSecret = null);" />
+      <MemberSignature Language="C#" Value="public ChapSettings (string initiatorUser = default, Microsoft.Azure.Management.StorSimple8000Series.Models.AsymmetricEncryptedSecret initiatorSecret = default, string targetUser = default, Microsoft.Azure.Management.StorSimple8000Series.Models.AsymmetricEncryptedSecret targetSecret = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string initiatorUser, class Microsoft.Azure.Management.StorSimple8000Series.Models.AsymmetricEncryptedSecret initiatorSecret, string targetUser, class Microsoft.Azure.Management.StorSimple8000Series.Models.AsymmetricEncryptedSecret targetSecret) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Management.StorSimple8000Series.Models.ChapSettings.#ctor(System.String,Microsoft.Azure.Management.StorSimple8000Series.Models.AsymmetricEncryptedSecret,System.String,Microsoft.Azure.Management.StorSimple8000Series.Models.AsymmetricEncryptedSecret)" />
-      <MemberSignature Language="VB.NET" Value="Public Sub New (Optional initiatorUser As String = null, Optional initiatorSecret As AsymmetricEncryptedSecret = null, Optional targetUser As String = null, Optional targetSecret As AsymmetricEncryptedSecret = null)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (Optional initiatorUser As String = Nothing, Optional initiatorSecret As AsymmetricEncryptedSecret = Nothing, Optional targetUser As String = Nothing, Optional targetSecret As AsymmetricEncryptedSecret = Nothing)" />
       <MemberSignature Language="F#" Value="new Microsoft.Azure.Management.StorSimple8000Series.Models.ChapSettings : string * Microsoft.Azure.Management.StorSimple8000Series.Models.AsymmetricEncryptedSecret * string * Microsoft.Azure.Management.StorSimple8000Series.Models.AsymmetricEncryptedSecret -&gt; Microsoft.Azure.Management.StorSimple8000Series.Models.ChapSettings" Usage="new Microsoft.Azure.Management.StorSimple8000Series.Models.ChapSettings (initiatorUser, initiatorSecret, targetUser, targetSecret)" />
-      <MemberSignature Language="C++ WINRT" Value=" ChapSettings(std::wstring const &amp; initiatorUser = null, Microsoft::Azure::Management::StorSimple8000Series::Models::AsymmetricEncryptedSecret const &amp; initiatorSecret = null, std::wstring const &amp; targetUser = null, Microsoft::Azure::Management::StorSimple8000Series::Models::AsymmetricEncryptedSecret const &amp; targetSecret = null);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.StorSimple8000Series</AssemblyName>
@@ -77,7 +71,6 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Management.StorSimple8000Series.Models.ChapSettings.InitiatorSecret" />
       <MemberSignature Language="VB.NET" Value="Public Property InitiatorSecret As AsymmetricEncryptedSecret" />
       <MemberSignature Language="F#" Value="member this.InitiatorSecret : Microsoft.Azure.Management.StorSimple8000Series.Models.AsymmetricEncryptedSecret with get, set" Usage="Microsoft.Azure.Management.StorSimple8000Series.Models.ChapSettings.InitiatorSecret" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Azure::Management::StorSimple8000Series::Models::AsymmetricEncryptedSecret ^ InitiatorSecret { Microsoft::Azure::Management::StorSimple8000Series::Models::AsymmetricEncryptedSecret ^ get(); void set(Microsoft::Azure::Management::StorSimple8000Series::Models::AsymmetricEncryptedSecret ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.StorSimple8000Series</AssemblyName>
@@ -85,7 +78,8 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="initiatorSecret")</AttributeName>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty(PropertyName="initiatorSecret")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty(PropertyName="initiatorSecret")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -105,8 +99,6 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Management.StorSimple8000Series.Models.ChapSettings.InitiatorUser" />
       <MemberSignature Language="VB.NET" Value="Public Property InitiatorUser As String" />
       <MemberSignature Language="F#" Value="member this.InitiatorUser : string with get, set" Usage="Microsoft.Azure.Management.StorSimple8000Series.Models.ChapSettings.InitiatorUser" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ InitiatorUser { System::String ^ get(); void set(System::String ^ value); };" />
-      <MemberSignature Language="C++ CX" Value="public:&#xA; property Platform::String ^ InitiatorUser { Platform::String ^ get(); void set(Platform::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.StorSimple8000Series</AssemblyName>
@@ -114,7 +106,8 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="initiatorUser")</AttributeName>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty(PropertyName="initiatorUser")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty(PropertyName="initiatorUser")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -134,7 +127,6 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Management.StorSimple8000Series.Models.ChapSettings.TargetSecret" />
       <MemberSignature Language="VB.NET" Value="Public Property TargetSecret As AsymmetricEncryptedSecret" />
       <MemberSignature Language="F#" Value="member this.TargetSecret : Microsoft.Azure.Management.StorSimple8000Series.Models.AsymmetricEncryptedSecret with get, set" Usage="Microsoft.Azure.Management.StorSimple8000Series.Models.ChapSettings.TargetSecret" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Azure::Management::StorSimple8000Series::Models::AsymmetricEncryptedSecret ^ TargetSecret { Microsoft::Azure::Management::StorSimple8000Series::Models::AsymmetricEncryptedSecret ^ get(); void set(Microsoft::Azure::Management::StorSimple8000Series::Models::AsymmetricEncryptedSecret ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.StorSimple8000Series</AssemblyName>
@@ -142,7 +134,8 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="targetSecret")</AttributeName>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty(PropertyName="targetSecret")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty(PropertyName="targetSecret")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -162,8 +155,6 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Management.StorSimple8000Series.Models.ChapSettings.TargetUser" />
       <MemberSignature Language="VB.NET" Value="Public Property TargetUser As String" />
       <MemberSignature Language="F#" Value="member this.TargetUser : string with get, set" Usage="Microsoft.Azure.Management.StorSimple8000Series.Models.ChapSettings.TargetUser" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ TargetUser { System::String ^ get(); void set(System::String ^ value); };" />
-      <MemberSignature Language="C++ CX" Value="public:&#xA; property Platform::String ^ TargetUser { Platform::String ^ get(); void set(Platform::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.StorSimple8000Series</AssemblyName>
@@ -171,7 +162,8 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="targetUser")</AttributeName>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty(PropertyName="targetUser")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty(PropertyName="targetUser")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -191,9 +183,6 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Management.StorSimple8000Series.Models.ChapSettings.Validate" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Sub Validate ()" />
       <MemberSignature Language="F#" Value="abstract member Validate : unit -&gt; unit&#xA;override this.Validate : unit -&gt; unit" Usage="chapSettings.Validate " />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Validate();" />
-      <MemberSignature Language="C++ CX" Value="public:&#xA; virtual void Validate();" />
-      <MemberSignature Language="C++ WINRT" Value=" virtual void Validate();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.StorSimple8000Series</AssemblyName>

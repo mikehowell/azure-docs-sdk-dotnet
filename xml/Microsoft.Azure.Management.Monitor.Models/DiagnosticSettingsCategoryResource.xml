@@ -1,15 +1,15 @@
-﻿<Type Name="DiagnosticSettingsCategoryResource" FullName="Microsoft.Azure.Management.Monitor.Models.DiagnosticSettingsCategoryResource">
+<Type Name="DiagnosticSettingsCategoryResource" FullName="Microsoft.Azure.Management.Monitor.Models.DiagnosticSettingsCategoryResource">
   <TypeSignature Language="C#" Value="public class DiagnosticSettingsCategoryResource : Microsoft.Azure.Management.Monitor.Models.ProxyOnlyResource" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit DiagnosticSettingsCategoryResource extends Microsoft.Azure.Management.Monitor.Models.ProxyOnlyResource" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Azure.Management.Monitor.Models.DiagnosticSettingsCategoryResource" />
   <TypeSignature Language="VB.NET" Value="Public Class DiagnosticSettingsCategoryResource&#xA;Inherits ProxyOnlyResource" />
   <TypeSignature Language="F#" Value="type DiagnosticSettingsCategoryResource = class&#xA;    inherit ProxyOnlyResource" />
-  <TypeSignature Language="C++ CLI" Value="public ref class DiagnosticSettingsCategoryResource : Microsoft::Azure::Management::Monitor::Models::ProxyOnlyResource" />
-  <TypeSignature Language="C++ WINRT" Value="[Windows::Foundation::Metadata::WebHostHidden]&#xA;class DiagnosticSettingsCategoryResource : Microsoft::Azure::Management::Monitor::Models::ProxyOnlyResource" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Azure.Management.Monitor</AssemblyName>
-    <AssemblyVersion>0.19.0.0</AssemblyVersion>
-    <AssemblyVersion>0.19.1.0</AssemblyVersion>
+    <AssemblyVersion>0.24.1.0</AssemblyVersion>
+    <AssemblyVersion>0.25.0.0</AssemblyVersion>
+    <AssemblyVersion>0.25.1.0</AssemblyVersion>
+    <AssemblyVersion>0.25.2.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>Microsoft.Azure.Management.Monitor.Models.ProxyOnlyResource</BaseTypeName>
@@ -17,7 +17,8 @@
   <Interfaces />
   <Attributes>
     <Attribute>
-      <AttributeName>Microsoft.Rest.Serialization.JsonTransformation</AttributeName>
+      <AttributeName Language="C#">[Microsoft.Rest.Serialization.JsonTransformation]</AttributeName>
+      <AttributeName Language="F#">[&lt;Microsoft.Rest.Serialization.JsonTransformation&gt;]</AttributeName>
     </Attribute>
   </Attributes>
   <Docs>
@@ -32,14 +33,13 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Management.Monitor.Models.DiagnosticSettingsCategoryResource.#ctor" />
       <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; DiagnosticSettingsCategoryResource();" />
-      <MemberSignature Language="C++ CX" Value="public:&#xA; DiagnosticSettingsCategoryResource();" />
-      <MemberSignature Language="C++ WINRT" Value=" DiagnosticSettingsCategoryResource();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Monitor</AssemblyName>
-        <AssemblyVersion>0.19.0.0</AssemblyVersion>
-        <AssemblyVersion>0.19.1.0</AssemblyVersion>
+        <AssemblyVersion>0.24.1.0</AssemblyVersion>
+        <AssemblyVersion>0.25.0.0</AssemblyVersion>
+        <AssemblyVersion>0.25.1.0</AssemblyVersion>
+        <AssemblyVersion>0.25.2.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
@@ -51,16 +51,18 @@
       </Docs>
     </Member>
     <Member MemberName=".ctor">
-      <MemberSignature Language="C#" Value="public DiagnosticSettingsCategoryResource (string id = null, string name = null, string type = null, Microsoft.Azure.Management.Monitor.Models.CategoryType categoryType = Microsoft.Azure.Management.Monitor.Models.CategoryType.Metrics);" />
+      <MemberSignature Language="C#" Value="public DiagnosticSettingsCategoryResource (string id = default, string name = default, string type = default, Microsoft.Azure.Management.Monitor.Models.CategoryType categoryType = Microsoft.Azure.Management.Monitor.Models.CategoryType.Metrics);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string id, string name, string type, valuetype Microsoft.Azure.Management.Monitor.Models.CategoryType categoryType) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Management.Monitor.Models.DiagnosticSettingsCategoryResource.#ctor(System.String,System.String,System.String,Microsoft.Azure.Management.Monitor.Models.CategoryType)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (Optional id As String = Nothing, Optional name As String = Nothing, Optional type As String = Nothing, Optional categoryType As CategoryType = Microsoft.Azure.Management.Monitor.Models.CategoryType.Metrics)" />
       <MemberSignature Language="F#" Value="new Microsoft.Azure.Management.Monitor.Models.DiagnosticSettingsCategoryResource : string * string * string * Microsoft.Azure.Management.Monitor.Models.CategoryType -&gt; Microsoft.Azure.Management.Monitor.Models.DiagnosticSettingsCategoryResource" Usage="new Microsoft.Azure.Management.Monitor.Models.DiagnosticSettingsCategoryResource (id, name, type, categoryType)" />
-      <MemberSignature Language="C++ WINRT" Value=" DiagnosticSettingsCategoryResource(std::wstring const &amp; id = null, std::wstring const &amp; name = null, std::wstring const &amp; type = null, Microsoft::Azure::Management::Monitor::Models::CategoryType categoryType = Microsoft.Azure.Management.Monitor.Models.CategoryType.Metrics);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Monitor</AssemblyName>
-        <AssemblyVersion>0.19.0.0</AssemblyVersion>
-        <AssemblyVersion>0.19.1.0</AssemblyVersion>
+        <AssemblyVersion>0.24.1.0</AssemblyVersion>
+        <AssemblyVersion>0.25.0.0</AssemblyVersion>
+        <AssemblyVersion>0.25.1.0</AssemblyVersion>
+        <AssemblyVersion>0.25.2.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="id" Type="System.String" />
@@ -87,17 +89,18 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Management.Monitor.Models.DiagnosticSettingsCategoryResource.CategoryType" />
       <MemberSignature Language="VB.NET" Value="Public Property CategoryType As CategoryType" />
       <MemberSignature Language="F#" Value="member this.CategoryType : Microsoft.Azure.Management.Monitor.Models.CategoryType with get, set" Usage="Microsoft.Azure.Management.Monitor.Models.DiagnosticSettingsCategoryResource.CategoryType" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Azure::Management::Monitor::Models::CategoryType CategoryType { Microsoft::Azure::Management::Monitor::Models::CategoryType get(); void set(Microsoft::Azure::Management::Monitor::Models::CategoryType value); };" />
-      <MemberSignature Language="C++ CX" Value="public:&#xA; property Microsoft::Azure::Management::Monitor::Models::CategoryType CategoryType { Microsoft::Azure::Management::Monitor::Models::CategoryType get(); void set(Microsoft::Azure::Management::Monitor::Models::CategoryType value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Monitor</AssemblyName>
-        <AssemblyVersion>0.19.0.0</AssemblyVersion>
-        <AssemblyVersion>0.19.1.0</AssemblyVersion>
+        <AssemblyVersion>0.24.1.0</AssemblyVersion>
+        <AssemblyVersion>0.25.0.0</AssemblyVersion>
+        <AssemblyVersion>0.25.1.0</AssemblyVersion>
+        <AssemblyVersion>0.25.2.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="properties.categoryType")</AttributeName>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty(PropertyName="properties.categoryType")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty(PropertyName="properties.categoryType")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>

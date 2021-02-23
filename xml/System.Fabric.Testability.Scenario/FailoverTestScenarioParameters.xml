@@ -1,13 +1,12 @@
-﻿<Type Name="FailoverTestScenarioParameters" FullName="System.Fabric.Testability.Scenario.FailoverTestScenarioParameters">
+<Type Name="FailoverTestScenarioParameters" FullName="System.Fabric.Testability.Scenario.FailoverTestScenarioParameters">
   <TypeSignature Language="C#" Value="public class FailoverTestScenarioParameters : System.Fabric.Testability.Scenario.TestScenarioParameters" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable beforefieldinit FailoverTestScenarioParameters extends System.Fabric.Testability.Scenario.TestScenarioParameters" />
   <TypeSignature Language="DocId" Value="T:System.Fabric.Testability.Scenario.FailoverTestScenarioParameters" />
   <TypeSignature Language="VB.NET" Value="Public Class FailoverTestScenarioParameters&#xA;Inherits TestScenarioParameters" />
   <TypeSignature Language="F#" Value="type FailoverTestScenarioParameters = class&#xA;    inherit TestScenarioParameters" />
-  <TypeSignature Language="C++ CLI" Value="public ref class FailoverTestScenarioParameters : System::Fabric::Testability::Scenario::TestScenarioParameters" />
   <AssemblyInfo>
     <AssemblyName>System.Fabric</AssemblyName>
-    <AssemblyVersion>6.0.0.0</AssemblyVersion>
+    <AssemblyVersion>7.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Fabric.Testability.Scenario.TestScenarioParameters</BaseTypeName>
@@ -15,7 +14,12 @@
   <Interfaces />
   <Attributes>
     <Attribute>
-      <AttributeName>System.Obsolete("FailoverTestScenario and FailoverTestScenarioParameters are deprecated.  Please use Chaos instead https://docs.microsoft.com/azure/service-fabric/service-fabric-controlled-chaos")</AttributeName>
+      <AttributeName Language="C#">[System.Obsolete("FailoverTestScenario and FailoverTestScenarioParameters are deprecated.  Please use Chaos instead https://docs.microsoft.com/azure/service-fabric/service-fabric-controlled-chaos")]</AttributeName>
+      <AttributeName Language="F#">[&lt;System.Obsolete("FailoverTestScenario and FailoverTestScenarioParameters are deprecated.  Please use Chaos instead https://docs.microsoft.com/azure/service-fabric/service-fabric-controlled-chaos")&gt;]</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName Language="C#">[System.Serializable]</AttributeName>
+      <AttributeName Language="F#">[&lt;System.Serializable&gt;]</AttributeName>
     </Attribute>
   </Attributes>
   <Docs>
@@ -29,12 +33,12 @@
       <MemberSignature Language="C#" Value="public FailoverTestScenarioParameters (System.Fabric.PartitionSelector partitionSelector, TimeSpan timeToRun, TimeSpan maxServiceStabilizationTimeout);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Fabric.PartitionSelector partitionSelector, valuetype System.TimeSpan timeToRun, valuetype System.TimeSpan maxServiceStabilizationTimeout) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Fabric.Testability.Scenario.FailoverTestScenarioParameters.#ctor(System.Fabric.PartitionSelector,System.TimeSpan,System.TimeSpan)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (partitionSelector As PartitionSelector, timeToRun As TimeSpan, maxServiceStabilizationTimeout As TimeSpan)" />
       <MemberSignature Language="F#" Value="new System.Fabric.Testability.Scenario.FailoverTestScenarioParameters : System.Fabric.PartitionSelector * TimeSpan * TimeSpan -&gt; System.Fabric.Testability.Scenario.FailoverTestScenarioParameters" Usage="new System.Fabric.Testability.Scenario.FailoverTestScenarioParameters (partitionSelector, timeToRun, maxServiceStabilizationTimeout)" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; FailoverTestScenarioParameters(System::Fabric::PartitionSelector ^ partitionSelector, TimeSpan timeToRun, TimeSpan maxServiceStabilizationTimeout);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Fabric</AssemblyName>
-        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="partitionSelector" Type="System.Fabric.PartitionSelector" />
@@ -57,11 +61,10 @@
       <MemberSignature Language="DocId" Value="P:System.Fabric.Testability.Scenario.FailoverTestScenarioParameters.MaxServiceStabilizationTimeout" />
       <MemberSignature Language="VB.NET" Value="Public Property MaxServiceStabilizationTimeout As TimeSpan" />
       <MemberSignature Language="F#" Value="member this.MaxServiceStabilizationTimeout : TimeSpan with get, set" Usage="System.Fabric.Testability.Scenario.FailoverTestScenarioParameters.MaxServiceStabilizationTimeout" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property TimeSpan MaxServiceStabilizationTimeout { TimeSpan get(); void set(TimeSpan value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Fabric</AssemblyName>
-        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.TimeSpan</ReturnType>
@@ -82,11 +85,10 @@
       <MemberSignature Language="DocId" Value="P:System.Fabric.Testability.Scenario.FailoverTestScenarioParameters.PartitionSelector" />
       <MemberSignature Language="VB.NET" Value="Public Property PartitionSelector As PartitionSelector" />
       <MemberSignature Language="F#" Value="member this.PartitionSelector : System.Fabric.PartitionSelector with get, set" Usage="System.Fabric.Testability.Scenario.FailoverTestScenarioParameters.PartitionSelector" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Fabric::PartitionSelector ^ PartitionSelector { System::Fabric::PartitionSelector ^ get(); void set(System::Fabric::PartitionSelector ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Fabric</AssemblyName>
-        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Fabric.PartitionSelector</ReturnType>

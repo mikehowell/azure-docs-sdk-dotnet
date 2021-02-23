@@ -1,23 +1,22 @@
-﻿<Type Name="PremierAddOnOffer" FullName="Microsoft.Azure.Management.WebSites.Models.PremierAddOnOffer">
+<Type Name="PremierAddOnOffer" FullName="Microsoft.Azure.Management.WebSites.Models.PremierAddOnOffer">
   <TypeSignature Language="C#" Value="public class PremierAddOnOffer : Microsoft.Azure.Management.WebSites.Models.ProxyOnlyResource" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit PremierAddOnOffer extends Microsoft.Azure.Management.WebSites.Models.ProxyOnlyResource" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Azure.Management.WebSites.Models.PremierAddOnOffer" />
   <TypeSignature Language="VB.NET" Value="Public Class PremierAddOnOffer&#xA;Inherits ProxyOnlyResource" />
   <TypeSignature Language="F#" Value="type PremierAddOnOffer = class&#xA;    inherit ProxyOnlyResource" />
-  <TypeSignature Language="C++ CLI" Value="public ref class PremierAddOnOffer : Microsoft::Azure::Management::WebSites::Models::ProxyOnlyResource" />
-  <TypeSignature Language="C++ WINRT" Value="[Windows::Foundation::Metadata::WebHostHidden]&#xA;class PremierAddOnOffer : Microsoft::Azure::Management::WebSites::Models::ProxyOnlyResource" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Azure.Management.Websites</AssemblyName>
-    <AssemblyVersion>1.0.0.0</AssemblyVersion>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
+    <AssemblyVersion>3.1.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
-    <BaseTypeName>Microsoft.Azure.Management.WebSites.Models.Resource</BaseTypeName>
-    <BaseTypeName FrameworkAlternate="azure-dotnet">Microsoft.Azure.Management.WebSites.Models.ProxyOnlyResource</BaseTypeName>
+    <BaseTypeName>Microsoft.Azure.Management.WebSites.Models.ProxyOnlyResource</BaseTypeName>
   </Base>
   <Interfaces />
   <Attributes>
     <Attribute>
-      <AttributeName>Microsoft.Rest.Serialization.JsonTransformation</AttributeName>
+      <AttributeName Language="C#">[Microsoft.Rest.Serialization.JsonTransformation]</AttributeName>
+      <AttributeName Language="F#">[&lt;Microsoft.Rest.Serialization.JsonTransformation&gt;]</AttributeName>
     </Attribute>
   </Attributes>
   <Docs>
@@ -32,13 +31,11 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Management.WebSites.Models.PremierAddOnOffer.#ctor" />
       <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; PremierAddOnOffer();" />
-      <MemberSignature Language="C++ CX" Value="public:&#xA; PremierAddOnOffer();" />
-      <MemberSignature Language="C++ WINRT" Value=" PremierAddOnOffer();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Websites</AssemblyName>
-        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>3.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
@@ -49,15 +46,16 @@
       </Docs>
     </Member>
     <Member MemberName=".ctor">
-      <MemberSignature Language="C#" Value="public PremierAddOnOffer (string id = null, string name = null, string kind = null, string type = null, string sku = null, string product = null, string vendor = null, string premierAddOnOfferName = null, Nullable&lt;bool&gt; promoCodeRequired = null, Nullable&lt;int&gt; quota = null, Nullable&lt;Microsoft.Azure.Management.WebSites.Models.AppServicePlanRestrictions&gt; webHostingPlanRestrictions = null, string privacyPolicyUrl = null, string legalTermsUrl = null, string marketplacePublisher = null, string marketplaceOffer = null);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string id, string name, string kind, string type, string sku, string product, string vendor, string premierAddOnOfferName, valuetype System.Nullable`1&lt;bool&gt; promoCodeRequired, valuetype System.Nullable`1&lt;int32&gt; quota, valuetype System.Nullable`1&lt;valuetype Microsoft.Azure.Management.WebSites.Models.AppServicePlanRestrictions&gt; webHostingPlanRestrictions, string privacyPolicyUrl, string legalTermsUrl, string marketplacePublisher, string marketplaceOffer) cil managed" />
-      <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Management.WebSites.Models.PremierAddOnOffer.#ctor(System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.Nullable{System.Boolean},System.Nullable{System.Int32},System.Nullable{Microsoft.Azure.Management.WebSites.Models.AppServicePlanRestrictions},System.String,System.String,System.String,System.String)" />
-      <MemberSignature Language="VB.NET" Value="Public Sub New (Optional id As String = null, Optional name As String = null, Optional kind As String = null, Optional type As String = null, Optional sku As String = null, Optional product As String = null, Optional vendor As String = null, Optional premierAddOnOfferName As String = null, Optional promoCodeRequired As Nullable(Of Boolean) = null, Optional quota As Nullable(Of Integer) = null, Optional webHostingPlanRestrictions As Nullable(Of AppServicePlanRestrictions) = null, Optional privacyPolicyUrl As String = null, Optional legalTermsUrl As String = null, Optional marketplacePublisher As String = null, Optional marketplaceOffer As String = null)" />
-      <MemberSignature Language="F#" Value="new Microsoft.Azure.Management.WebSites.Models.PremierAddOnOffer : string * string * string * string * string * string * string * string * Nullable&lt;bool&gt; * Nullable&lt;int&gt; * Nullable&lt;Microsoft.Azure.Management.WebSites.Models.AppServicePlanRestrictions&gt; * string * string * string * string -&gt; Microsoft.Azure.Management.WebSites.Models.PremierAddOnOffer" Usage="new Microsoft.Azure.Management.WebSites.Models.PremierAddOnOffer (id, name, kind, type, sku, product, vendor, premierAddOnOfferName, promoCodeRequired, quota, webHostingPlanRestrictions, privacyPolicyUrl, legalTermsUrl, marketplacePublisher, marketplaceOffer)" />
+      <MemberSignature Language="C#" Value="public PremierAddOnOffer (string id = default, string name = default, string kind = default, string type = default, string sku = default, string product = default, string vendor = default, bool? promoCodeRequired = default, int? quota = default, Microsoft.Azure.Management.WebSites.Models.AppServicePlanRestrictions? webHostingPlanRestrictions = default, string privacyPolicyUrl = default, string legalTermsUrl = default, string marketplacePublisher = default, string marketplaceOffer = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string id, string name, string kind, string type, string sku, string product, string vendor, valuetype System.Nullable`1&lt;bool&gt; promoCodeRequired, valuetype System.Nullable`1&lt;int32&gt; quota, valuetype System.Nullable`1&lt;valuetype Microsoft.Azure.Management.WebSites.Models.AppServicePlanRestrictions&gt; webHostingPlanRestrictions, string privacyPolicyUrl, string legalTermsUrl, string marketplacePublisher, string marketplaceOffer) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Management.WebSites.Models.PremierAddOnOffer.#ctor(System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.Nullable{System.Boolean},System.Nullable{System.Int32},System.Nullable{Microsoft.Azure.Management.WebSites.Models.AppServicePlanRestrictions},System.String,System.String,System.String,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (Optional id As String = Nothing, Optional name As String = Nothing, Optional kind As String = Nothing, Optional type As String = Nothing, Optional sku As String = Nothing, Optional product As String = Nothing, Optional vendor As String = Nothing, Optional promoCodeRequired As Nullable(Of Boolean) = Nothing, Optional quota As Nullable(Of Integer) = Nothing, Optional webHostingPlanRestrictions As Nullable(Of AppServicePlanRestrictions) = Nothing, Optional privacyPolicyUrl As String = Nothing, Optional legalTermsUrl As String = Nothing, Optional marketplacePublisher As String = Nothing, Optional marketplaceOffer As String = Nothing)" />
+      <MemberSignature Language="F#" Value="new Microsoft.Azure.Management.WebSites.Models.PremierAddOnOffer : string * string * string * string * string * string * string * Nullable&lt;bool&gt; * Nullable&lt;int&gt; * Nullable&lt;Microsoft.Azure.Management.WebSites.Models.AppServicePlanRestrictions&gt; * string * string * string * string -&gt; Microsoft.Azure.Management.WebSites.Models.PremierAddOnOffer" Usage="new Microsoft.Azure.Management.WebSites.Models.PremierAddOnOffer (id, name, kind, type, sku, product, vendor, promoCodeRequired, quota, webHostingPlanRestrictions, privacyPolicyUrl, legalTermsUrl, marketplacePublisher, marketplaceOffer)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Websites</AssemblyName>
-        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>3.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="id" Type="System.String" />
@@ -67,7 +65,6 @@
         <Parameter Name="sku" Type="System.String" />
         <Parameter Name="product" Type="System.String" />
         <Parameter Name="vendor" Type="System.String" />
-        <Parameter Name="premierAddOnOfferName" Type="System.String" />
         <Parameter Name="promoCodeRequired" Type="System.Nullable&lt;System.Boolean&gt;" />
         <Parameter Name="quota" Type="System.Nullable&lt;System.Int32&gt;" />
         <Parameter Name="webHostingPlanRestrictions" Type="System.Nullable&lt;Microsoft.Azure.Management.WebSites.Models.AppServicePlanRestrictions&gt;" />
@@ -81,14 +78,13 @@
         <param name="name">Resource Name.</param>
         <param name="kind">Kind of resource.</param>
         <param name="type">Resource type.</param>
-        <param name="sku">SKU.</param>
-        <param name="product">Product.</param>
-        <param name="vendor">Vendor.</param>
-        <param name="premierAddOnOfferName">Name.</param>
+        <param name="sku">Premier add on SKU.</param>
+        <param name="product">Premier add on offer Product.</param>
+        <param name="vendor">Premier add on offer Vendor.</param>
         <param name="promoCodeRequired">&lt;code&gt;true&lt;/code&gt; if
             promotion code is required; otherwise,
             &lt;code&gt;false&lt;/code&gt;.</param>
-        <param name="quota">Quota.</param>
+        <param name="quota">Premier add on offer Quota.</param>
         <param name="webHostingPlanRestrictions">App Service plans this
             offer is restricted to. Possible values include: 'None', 'Free',
             'Shared', 'Basic', 'Standard', 'Premium'</param>
@@ -108,16 +104,16 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Management.WebSites.Models.PremierAddOnOffer.LegalTermsUrl" />
       <MemberSignature Language="VB.NET" Value="Public Property LegalTermsUrl As String" />
       <MemberSignature Language="F#" Value="member this.LegalTermsUrl : string with get, set" Usage="Microsoft.Azure.Management.WebSites.Models.PremierAddOnOffer.LegalTermsUrl" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ LegalTermsUrl { System::String ^ get(); void set(System::String ^ value); };" />
-      <MemberSignature Language="C++ CX" Value="public:&#xA; property Platform::String ^ LegalTermsUrl { Platform::String ^ get(); void set(Platform::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Websites</AssemblyName>
-        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>3.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="properties.legalTermsUrl")</AttributeName>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty(PropertyName="properties.legalTermsUrl")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty(PropertyName="properties.legalTermsUrl")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -137,16 +133,16 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Management.WebSites.Models.PremierAddOnOffer.MarketplaceOffer" />
       <MemberSignature Language="VB.NET" Value="Public Property MarketplaceOffer As String" />
       <MemberSignature Language="F#" Value="member this.MarketplaceOffer : string with get, set" Usage="Microsoft.Azure.Management.WebSites.Models.PremierAddOnOffer.MarketplaceOffer" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ MarketplaceOffer { System::String ^ get(); void set(System::String ^ value); };" />
-      <MemberSignature Language="C++ CX" Value="public:&#xA; property Platform::String ^ MarketplaceOffer { Platform::String ^ get(); void set(Platform::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Websites</AssemblyName>
-        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>3.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="properties.marketplaceOffer")</AttributeName>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty(PropertyName="properties.marketplaceOffer")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty(PropertyName="properties.marketplaceOffer")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -166,16 +162,16 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Management.WebSites.Models.PremierAddOnOffer.MarketplacePublisher" />
       <MemberSignature Language="VB.NET" Value="Public Property MarketplacePublisher As String" />
       <MemberSignature Language="F#" Value="member this.MarketplacePublisher : string with get, set" Usage="Microsoft.Azure.Management.WebSites.Models.PremierAddOnOffer.MarketplacePublisher" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ MarketplacePublisher { System::String ^ get(); void set(System::String ^ value); };" />
-      <MemberSignature Language="C++ CX" Value="public:&#xA; property Platform::String ^ MarketplacePublisher { Platform::String ^ get(); void set(Platform::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Websites</AssemblyName>
-        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>3.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="properties.marketplacePublisher")</AttributeName>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty(PropertyName="properties.marketplacePublisher")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty(PropertyName="properties.marketplacePublisher")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -189,51 +185,22 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
-    <Member MemberName="PremierAddOnOfferName">
-      <MemberSignature Language="C#" Value="public string PremierAddOnOfferName { get; set; }" />
-      <MemberSignature Language="ILAsm" Value=".property instance string PremierAddOnOfferName" />
-      <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Management.WebSites.Models.PremierAddOnOffer.PremierAddOnOfferName" />
-      <MemberSignature Language="VB.NET" Value="Public Property PremierAddOnOfferName As String" />
-      <MemberSignature Language="F#" Value="member this.PremierAddOnOfferName : string with get, set" Usage="Microsoft.Azure.Management.WebSites.Models.PremierAddOnOffer.PremierAddOnOfferName" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ PremierAddOnOfferName { System::String ^ get(); void set(System::String ^ value); };" />
-      <MemberSignature Language="C++ CX" Value="public:&#xA; property Platform::String ^ PremierAddOnOfferName { Platform::String ^ get(); void set(Platform::String ^ value); };" />
-      <MemberType>Property</MemberType>
-      <AssemblyInfo>
-        <AssemblyName>Microsoft.Azure.Management.Websites</AssemblyName>
-        <AssemblyVersion>1.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Attributes>
-        <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="properties.name")</AttributeName>
-        </Attribute>
-      </Attributes>
-      <ReturnValue>
-        <ReturnType>System.String</ReturnType>
-      </ReturnValue>
-      <Docs>
-        <summary>
-            Gets or sets name.
-            </summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
-      </Docs>
-    </Member>
     <Member MemberName="PrivacyPolicyUrl">
       <MemberSignature Language="C#" Value="public string PrivacyPolicyUrl { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string PrivacyPolicyUrl" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Management.WebSites.Models.PremierAddOnOffer.PrivacyPolicyUrl" />
       <MemberSignature Language="VB.NET" Value="Public Property PrivacyPolicyUrl As String" />
       <MemberSignature Language="F#" Value="member this.PrivacyPolicyUrl : string with get, set" Usage="Microsoft.Azure.Management.WebSites.Models.PremierAddOnOffer.PrivacyPolicyUrl" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ PrivacyPolicyUrl { System::String ^ get(); void set(System::String ^ value); };" />
-      <MemberSignature Language="C++ CX" Value="public:&#xA; property Platform::String ^ PrivacyPolicyUrl { Platform::String ^ get(); void set(Platform::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Websites</AssemblyName>
-        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>3.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="properties.privacyPolicyUrl")</AttributeName>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty(PropertyName="properties.privacyPolicyUrl")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty(PropertyName="properties.privacyPolicyUrl")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -253,16 +220,16 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Management.WebSites.Models.PremierAddOnOffer.Product" />
       <MemberSignature Language="VB.NET" Value="Public Property Product As String" />
       <MemberSignature Language="F#" Value="member this.Product : string with get, set" Usage="Microsoft.Azure.Management.WebSites.Models.PremierAddOnOffer.Product" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Product { System::String ^ get(); void set(System::String ^ value); };" />
-      <MemberSignature Language="C++ CX" Value="public:&#xA; property Platform::String ^ Product { Platform::String ^ get(); void set(Platform::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Websites</AssemblyName>
-        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>3.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="properties.product")</AttributeName>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty(PropertyName="properties.product")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty(PropertyName="properties.product")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -270,27 +237,28 @@
       </ReturnValue>
       <Docs>
         <summary>
-            Gets or sets product.
+            Gets or sets premier add on offer Product.
             </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="PromoCodeRequired">
-      <MemberSignature Language="C#" Value="public Nullable&lt;bool&gt; PromoCodeRequired { get; set; }" />
+      <MemberSignature Language="C#" Value="public bool? PromoCodeRequired { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;bool&gt; PromoCodeRequired" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Management.WebSites.Models.PremierAddOnOffer.PromoCodeRequired" />
       <MemberSignature Language="VB.NET" Value="Public Property PromoCodeRequired As Nullable(Of Boolean)" />
       <MemberSignature Language="F#" Value="member this.PromoCodeRequired : Nullable&lt;bool&gt; with get, set" Usage="Microsoft.Azure.Management.WebSites.Models.PremierAddOnOffer.PromoCodeRequired" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Nullable&lt;bool&gt; PromoCodeRequired { Nullable&lt;bool&gt; get(); void set(Nullable&lt;bool&gt; value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Websites</AssemblyName>
-        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>3.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="properties.promoCodeRequired")</AttributeName>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty(PropertyName="properties.promoCodeRequired")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty(PropertyName="properties.promoCodeRequired")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -307,20 +275,21 @@
       </Docs>
     </Member>
     <Member MemberName="Quota">
-      <MemberSignature Language="C#" Value="public Nullable&lt;int&gt; Quota { get; set; }" />
+      <MemberSignature Language="C#" Value="public int? Quota { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;int32&gt; Quota" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Management.WebSites.Models.PremierAddOnOffer.Quota" />
       <MemberSignature Language="VB.NET" Value="Public Property Quota As Nullable(Of Integer)" />
       <MemberSignature Language="F#" Value="member this.Quota : Nullable&lt;int&gt; with get, set" Usage="Microsoft.Azure.Management.WebSites.Models.PremierAddOnOffer.Quota" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Nullable&lt;int&gt; Quota { Nullable&lt;int&gt; get(); void set(Nullable&lt;int&gt; value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Websites</AssemblyName>
-        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>3.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="properties.quota")</AttributeName>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty(PropertyName="properties.quota")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty(PropertyName="properties.quota")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -328,7 +297,7 @@
       </ReturnValue>
       <Docs>
         <summary>
-            Gets or sets quota.
+            Gets or sets premier add on offer Quota.
             </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
@@ -340,16 +309,16 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Management.WebSites.Models.PremierAddOnOffer.Sku" />
       <MemberSignature Language="VB.NET" Value="Public Property Sku As String" />
       <MemberSignature Language="F#" Value="member this.Sku : string with get, set" Usage="Microsoft.Azure.Management.WebSites.Models.PremierAddOnOffer.Sku" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Sku { System::String ^ get(); void set(System::String ^ value); };" />
-      <MemberSignature Language="C++ CX" Value="public:&#xA; property Platform::String ^ Sku { Platform::String ^ get(); void set(Platform::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Websites</AssemblyName>
-        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>3.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="properties.sku")</AttributeName>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty(PropertyName="properties.sku")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty(PropertyName="properties.sku")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -357,7 +326,7 @@
       </ReturnValue>
       <Docs>
         <summary>
-            Gets or sets SKU.
+            Gets or sets premier add on SKU.
             </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
@@ -369,16 +338,16 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Management.WebSites.Models.PremierAddOnOffer.Vendor" />
       <MemberSignature Language="VB.NET" Value="Public Property Vendor As String" />
       <MemberSignature Language="F#" Value="member this.Vendor : string with get, set" Usage="Microsoft.Azure.Management.WebSites.Models.PremierAddOnOffer.Vendor" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Vendor { System::String ^ get(); void set(System::String ^ value); };" />
-      <MemberSignature Language="C++ CX" Value="public:&#xA; property Platform::String ^ Vendor { Platform::String ^ get(); void set(Platform::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Websites</AssemblyName>
-        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>3.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="properties.vendor")</AttributeName>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty(PropertyName="properties.vendor")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty(PropertyName="properties.vendor")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -386,27 +355,28 @@
       </ReturnValue>
       <Docs>
         <summary>
-            Gets or sets vendor.
+            Gets or sets premier add on offer Vendor.
             </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="WebHostingPlanRestrictions">
-      <MemberSignature Language="C#" Value="public Nullable&lt;Microsoft.Azure.Management.WebSites.Models.AppServicePlanRestrictions&gt; WebHostingPlanRestrictions { get; set; }" />
+      <MemberSignature Language="C#" Value="public Microsoft.Azure.Management.WebSites.Models.AppServicePlanRestrictions? WebHostingPlanRestrictions { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;valuetype Microsoft.Azure.Management.WebSites.Models.AppServicePlanRestrictions&gt; WebHostingPlanRestrictions" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Management.WebSites.Models.PremierAddOnOffer.WebHostingPlanRestrictions" />
       <MemberSignature Language="VB.NET" Value="Public Property WebHostingPlanRestrictions As Nullable(Of AppServicePlanRestrictions)" />
       <MemberSignature Language="F#" Value="member this.WebHostingPlanRestrictions : Nullable&lt;Microsoft.Azure.Management.WebSites.Models.AppServicePlanRestrictions&gt; with get, set" Usage="Microsoft.Azure.Management.WebSites.Models.PremierAddOnOffer.WebHostingPlanRestrictions" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Nullable&lt;Microsoft::Azure::Management::WebSites::Models::AppServicePlanRestrictions&gt; WebHostingPlanRestrictions { Nullable&lt;Microsoft::Azure::Management::WebSites::Models::AppServicePlanRestrictions&gt; get(); void set(Nullable&lt;Microsoft::Azure::Management::WebSites::Models::AppServicePlanRestrictions&gt; value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Websites</AssemblyName>
-        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>3.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="properties.webHostingPlanRestrictions")</AttributeName>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty(PropertyName="properties.webHostingPlanRestrictions")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty(PropertyName="properties.webHostingPlanRestrictions")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>

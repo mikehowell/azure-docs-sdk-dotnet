@@ -1,15 +1,12 @@
-﻿<Type Name="MarketplacesOperationsExtensions" FullName="Microsoft.Azure.Management.Consumption.MarketplacesOperationsExtensions">
+<Type Name="MarketplacesOperationsExtensions" FullName="Microsoft.Azure.Management.Consumption.MarketplacesOperationsExtensions">
   <TypeSignature Language="C#" Value="public static class MarketplacesOperationsExtensions" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract sealed beforefieldinit MarketplacesOperationsExtensions extends System.Object" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Azure.Management.Consumption.MarketplacesOperationsExtensions" />
   <TypeSignature Language="VB.NET" Value="Public Module MarketplacesOperationsExtensions" />
   <TypeSignature Language="F#" Value="type MarketplacesOperationsExtensions = class" />
-  <TypeSignature Language="C++ CLI" Value="public ref class MarketplacesOperationsExtensions abstract sealed" />
-  <TypeSignature Language="C++ CX" Value="public ref class MarketplacesOperationsExtensions abstract sealed" />
-  <TypeSignature Language="C++ WINRT" Value="class MarketplacesOperationsExtensions abstract sealed" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Azure.Management.Consumption</AssemblyName>
-    <AssemblyVersion>3.0.0.0</AssemblyVersion>
+    <AssemblyVersion>3.0.1.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
@@ -23,15 +20,15 @@
   </Docs>
   <Members>
     <Member MemberName="List">
-      <MemberSignature Language="C#" Value="public static Microsoft.Rest.Azure.IPage&lt;Microsoft.Azure.Management.Consumption.Models.Marketplace&gt; List (this Microsoft.Azure.Management.Consumption.IMarketplacesOperations operations, Microsoft.Rest.Azure.OData.ODataQuery&lt;Microsoft.Azure.Management.Consumption.Models.Marketplace&gt; odataQuery = null, string skiptoken = null);" />
+      <MemberSignature Language="C#" Value="public static Microsoft.Rest.Azure.IPage&lt;Microsoft.Azure.Management.Consumption.Models.Marketplace&gt; List (this Microsoft.Azure.Management.Consumption.IMarketplacesOperations operations, Microsoft.Rest.Azure.OData.ODataQuery&lt;Microsoft.Azure.Management.Consumption.Models.Marketplace&gt; odataQuery = default, string skiptoken = default);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Microsoft.Rest.Azure.IPage`1&lt;class Microsoft.Azure.Management.Consumption.Models.Marketplace&gt; List(class Microsoft.Azure.Management.Consumption.IMarketplacesOperations operations, class Microsoft.Rest.Azure.OData.ODataQuery`1&lt;class Microsoft.Azure.Management.Consumption.Models.Marketplace&gt; odataQuery, string skiptoken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Management.Consumption.MarketplacesOperationsExtensions.List(Microsoft.Azure.Management.Consumption.IMarketplacesOperations,Microsoft.Rest.Azure.OData.ODataQuery{Microsoft.Azure.Management.Consumption.Models.Marketplace},System.String)" />
-      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function List (operations As IMarketplacesOperations, Optional odataQuery As ODataQuery(Of Marketplace) = null, Optional skiptoken As String = null) As IPage(Of Marketplace)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function List (operations As IMarketplacesOperations, Optional odataQuery As ODataQuery(Of Marketplace) = Nothing, Optional skiptoken As String = Nothing) As IPage(Of Marketplace)" />
       <MemberSignature Language="F#" Value="static member List : Microsoft.Azure.Management.Consumption.IMarketplacesOperations * Microsoft.Rest.Azure.OData.ODataQuery&lt;Microsoft.Azure.Management.Consumption.Models.Marketplace&gt; * string -&gt; Microsoft.Rest.Azure.IPage&lt;Microsoft.Azure.Management.Consumption.Models.Marketplace&gt;" Usage="Microsoft.Azure.Management.Consumption.MarketplacesOperationsExtensions.List (operations, odataQuery, skiptoken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Consumption</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
+        <AssemblyVersion>3.0.1.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Rest.Azure.IPage&lt;Microsoft.Azure.Management.Consumption.Models.Marketplace&gt;</ReturnType>
@@ -63,20 +60,16 @@
       </Docs>
     </Member>
     <Member MemberName="ListAsync">
-      <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task&lt;Microsoft.Rest.Azure.IPage&lt;Microsoft.Azure.Management.Consumption.Models.Marketplace&gt;&gt; ListAsync (this Microsoft.Azure.Management.Consumption.IMarketplacesOperations operations, Microsoft.Rest.Azure.OData.ODataQuery&lt;Microsoft.Azure.Management.Consumption.Models.Marketplace&gt; odataQuery = null, string skiptoken = null, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task&lt;Microsoft.Rest.Azure.IPage&lt;Microsoft.Azure.Management.Consumption.Models.Marketplace&gt;&gt; ListAsync (this Microsoft.Azure.Management.Consumption.IMarketplacesOperations operations, Microsoft.Rest.Azure.OData.ODataQuery&lt;Microsoft.Azure.Management.Consumption.Models.Marketplace&gt; odataQuery = default, string skiptoken = default, System.Threading.CancellationToken cancellationToken = default);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Threading.Tasks.Task`1&lt;class Microsoft.Rest.Azure.IPage`1&lt;class Microsoft.Azure.Management.Consumption.Models.Marketplace&gt;&gt; ListAsync(class Microsoft.Azure.Management.Consumption.IMarketplacesOperations operations, class Microsoft.Rest.Azure.OData.ODataQuery`1&lt;class Microsoft.Azure.Management.Consumption.Models.Marketplace&gt; odataQuery, string skiptoken, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Management.Consumption.MarketplacesOperationsExtensions.ListAsync(Microsoft.Azure.Management.Consumption.IMarketplacesOperations,Microsoft.Rest.Azure.OData.ODataQuery{Microsoft.Azure.Management.Consumption.Models.Marketplace},System.String,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function ListAsync (operations As IMarketplacesOperations, Optional odataQuery As ODataQuery(Of Marketplace) = Nothing, Optional skiptoken As String = Nothing, Optional cancellationToken As CancellationToken = Nothing) As Task(Of IPage(Of Marketplace))" />
       <MemberSignature Language="F#" Value="static member ListAsync : Microsoft.Azure.Management.Consumption.IMarketplacesOperations * Microsoft.Rest.Azure.OData.ODataQuery&lt;Microsoft.Azure.Management.Consumption.Models.Marketplace&gt; * string * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.Rest.Azure.IPage&lt;Microsoft.Azure.Management.Consumption.Models.Marketplace&gt;&gt;" Usage="Microsoft.Azure.Management.Consumption.MarketplacesOperationsExtensions.ListAsync (operations, odataQuery, skiptoken, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Consumption</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
+        <AssemblyVersion>3.0.1.0</AssemblyVersion>
       </AssemblyInfo>
-      <Attributes>
-        <Attribute>
-          <AttributeName>System.Runtime.CompilerServices.AsyncStateMachine(typeof(Microsoft.Azure.Management.Consumption.MarketplacesOperationsExtensions/&lt;ListAsync&gt;d__1))</AttributeName>
-        </Attribute>
-      </Attributes>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.Rest.Azure.IPage&lt;Microsoft.Azure.Management.Consumption.Models.Marketplace&gt;&gt;</ReturnType>
       </ReturnValue>
@@ -111,15 +104,15 @@
       </Docs>
     </Member>
     <Member MemberName="ListByBillingPeriod">
-      <MemberSignature Language="C#" Value="public static Microsoft.Rest.Azure.IPage&lt;Microsoft.Azure.Management.Consumption.Models.Marketplace&gt; ListByBillingPeriod (this Microsoft.Azure.Management.Consumption.IMarketplacesOperations operations, string billingPeriodName, Microsoft.Rest.Azure.OData.ODataQuery&lt;Microsoft.Azure.Management.Consumption.Models.Marketplace&gt; odataQuery = null, string skiptoken = null);" />
+      <MemberSignature Language="C#" Value="public static Microsoft.Rest.Azure.IPage&lt;Microsoft.Azure.Management.Consumption.Models.Marketplace&gt; ListByBillingPeriod (this Microsoft.Azure.Management.Consumption.IMarketplacesOperations operations, string billingPeriodName, Microsoft.Rest.Azure.OData.ODataQuery&lt;Microsoft.Azure.Management.Consumption.Models.Marketplace&gt; odataQuery = default, string skiptoken = default);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Microsoft.Rest.Azure.IPage`1&lt;class Microsoft.Azure.Management.Consumption.Models.Marketplace&gt; ListByBillingPeriod(class Microsoft.Azure.Management.Consumption.IMarketplacesOperations operations, string billingPeriodName, class Microsoft.Rest.Azure.OData.ODataQuery`1&lt;class Microsoft.Azure.Management.Consumption.Models.Marketplace&gt; odataQuery, string skiptoken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Management.Consumption.MarketplacesOperationsExtensions.ListByBillingPeriod(Microsoft.Azure.Management.Consumption.IMarketplacesOperations,System.String,Microsoft.Rest.Azure.OData.ODataQuery{Microsoft.Azure.Management.Consumption.Models.Marketplace},System.String)" />
-      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function ListByBillingPeriod (operations As IMarketplacesOperations, billingPeriodName As String, Optional odataQuery As ODataQuery(Of Marketplace) = null, Optional skiptoken As String = null) As IPage(Of Marketplace)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function ListByBillingPeriod (operations As IMarketplacesOperations, billingPeriodName As String, Optional odataQuery As ODataQuery(Of Marketplace) = Nothing, Optional skiptoken As String = Nothing) As IPage(Of Marketplace)" />
       <MemberSignature Language="F#" Value="static member ListByBillingPeriod : Microsoft.Azure.Management.Consumption.IMarketplacesOperations * string * Microsoft.Rest.Azure.OData.ODataQuery&lt;Microsoft.Azure.Management.Consumption.Models.Marketplace&gt; * string -&gt; Microsoft.Rest.Azure.IPage&lt;Microsoft.Azure.Management.Consumption.Models.Marketplace&gt;" Usage="Microsoft.Azure.Management.Consumption.MarketplacesOperationsExtensions.ListByBillingPeriod (operations, billingPeriodName, odataQuery, skiptoken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Consumption</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
+        <AssemblyVersion>3.0.1.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Rest.Azure.IPage&lt;Microsoft.Azure.Management.Consumption.Models.Marketplace&gt;</ReturnType>
@@ -155,20 +148,16 @@
       </Docs>
     </Member>
     <Member MemberName="ListByBillingPeriodAsync">
-      <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task&lt;Microsoft.Rest.Azure.IPage&lt;Microsoft.Azure.Management.Consumption.Models.Marketplace&gt;&gt; ListByBillingPeriodAsync (this Microsoft.Azure.Management.Consumption.IMarketplacesOperations operations, string billingPeriodName, Microsoft.Rest.Azure.OData.ODataQuery&lt;Microsoft.Azure.Management.Consumption.Models.Marketplace&gt; odataQuery = null, string skiptoken = null, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task&lt;Microsoft.Rest.Azure.IPage&lt;Microsoft.Azure.Management.Consumption.Models.Marketplace&gt;&gt; ListByBillingPeriodAsync (this Microsoft.Azure.Management.Consumption.IMarketplacesOperations operations, string billingPeriodName, Microsoft.Rest.Azure.OData.ODataQuery&lt;Microsoft.Azure.Management.Consumption.Models.Marketplace&gt; odataQuery = default, string skiptoken = default, System.Threading.CancellationToken cancellationToken = default);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Threading.Tasks.Task`1&lt;class Microsoft.Rest.Azure.IPage`1&lt;class Microsoft.Azure.Management.Consumption.Models.Marketplace&gt;&gt; ListByBillingPeriodAsync(class Microsoft.Azure.Management.Consumption.IMarketplacesOperations operations, string billingPeriodName, class Microsoft.Rest.Azure.OData.ODataQuery`1&lt;class Microsoft.Azure.Management.Consumption.Models.Marketplace&gt; odataQuery, string skiptoken, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Management.Consumption.MarketplacesOperationsExtensions.ListByBillingPeriodAsync(Microsoft.Azure.Management.Consumption.IMarketplacesOperations,System.String,Microsoft.Rest.Azure.OData.ODataQuery{Microsoft.Azure.Management.Consumption.Models.Marketplace},System.String,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function ListByBillingPeriodAsync (operations As IMarketplacesOperations, billingPeriodName As String, Optional odataQuery As ODataQuery(Of Marketplace) = Nothing, Optional skiptoken As String = Nothing, Optional cancellationToken As CancellationToken = Nothing) As Task(Of IPage(Of Marketplace))" />
       <MemberSignature Language="F#" Value="static member ListByBillingPeriodAsync : Microsoft.Azure.Management.Consumption.IMarketplacesOperations * string * Microsoft.Rest.Azure.OData.ODataQuery&lt;Microsoft.Azure.Management.Consumption.Models.Marketplace&gt; * string * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.Rest.Azure.IPage&lt;Microsoft.Azure.Management.Consumption.Models.Marketplace&gt;&gt;" Usage="Microsoft.Azure.Management.Consumption.MarketplacesOperationsExtensions.ListByBillingPeriodAsync (operations, billingPeriodName, odataQuery, skiptoken, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Consumption</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
+        <AssemblyVersion>3.0.1.0</AssemblyVersion>
       </AssemblyInfo>
-      <Attributes>
-        <Attribute>
-          <AttributeName>System.Runtime.CompilerServices.AsyncStateMachine(typeof(Microsoft.Azure.Management.Consumption.MarketplacesOperationsExtensions/&lt;ListByBillingPeriodAsync&gt;d__3))</AttributeName>
-        </Attribute>
-      </Attributes>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.Rest.Azure.IPage&lt;Microsoft.Azure.Management.Consumption.Models.Marketplace&gt;&gt;</ReturnType>
       </ReturnValue>
@@ -212,11 +201,10 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Management.Consumption.MarketplacesOperationsExtensions.ListByBillingPeriodNext(Microsoft.Azure.Management.Consumption.IMarketplacesOperations,System.String)" />
       <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function ListByBillingPeriodNext (operations As IMarketplacesOperations, nextPageLink As String) As IPage(Of Marketplace)" />
       <MemberSignature Language="F#" Value="static member ListByBillingPeriodNext : Microsoft.Azure.Management.Consumption.IMarketplacesOperations * string -&gt; Microsoft.Rest.Azure.IPage&lt;Microsoft.Azure.Management.Consumption.Models.Marketplace&gt;" Usage="Microsoft.Azure.Management.Consumption.MarketplacesOperationsExtensions.ListByBillingPeriodNext (operations, nextPageLink)" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA;[System::Runtime::CompilerServices::Extension]&#xA; static Microsoft::Rest::Azure::IPage&lt;Microsoft::Azure::Management::Consumption::Models::Marketplace ^&gt; ^ ListByBillingPeriodNext(Microsoft::Azure::Management::Consumption::IMarketplacesOperations ^ operations, System::String ^ nextPageLink);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Consumption</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
+        <AssemblyVersion>3.0.1.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Rest.Azure.IPage&lt;Microsoft.Azure.Management.Consumption.Models.Marketplace&gt;</ReturnType>
@@ -241,20 +229,16 @@
       </Docs>
     </Member>
     <Member MemberName="ListByBillingPeriodNextAsync">
-      <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task&lt;Microsoft.Rest.Azure.IPage&lt;Microsoft.Azure.Management.Consumption.Models.Marketplace&gt;&gt; ListByBillingPeriodNextAsync (this Microsoft.Azure.Management.Consumption.IMarketplacesOperations operations, string nextPageLink, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task&lt;Microsoft.Rest.Azure.IPage&lt;Microsoft.Azure.Management.Consumption.Models.Marketplace&gt;&gt; ListByBillingPeriodNextAsync (this Microsoft.Azure.Management.Consumption.IMarketplacesOperations operations, string nextPageLink, System.Threading.CancellationToken cancellationToken = default);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Threading.Tasks.Task`1&lt;class Microsoft.Rest.Azure.IPage`1&lt;class Microsoft.Azure.Management.Consumption.Models.Marketplace&gt;&gt; ListByBillingPeriodNextAsync(class Microsoft.Azure.Management.Consumption.IMarketplacesOperations operations, string nextPageLink, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Management.Consumption.MarketplacesOperationsExtensions.ListByBillingPeriodNextAsync(Microsoft.Azure.Management.Consumption.IMarketplacesOperations,System.String,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function ListByBillingPeriodNextAsync (operations As IMarketplacesOperations, nextPageLink As String, Optional cancellationToken As CancellationToken = Nothing) As Task(Of IPage(Of Marketplace))" />
       <MemberSignature Language="F#" Value="static member ListByBillingPeriodNextAsync : Microsoft.Azure.Management.Consumption.IMarketplacesOperations * string * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.Rest.Azure.IPage&lt;Microsoft.Azure.Management.Consumption.Models.Marketplace&gt;&gt;" Usage="Microsoft.Azure.Management.Consumption.MarketplacesOperationsExtensions.ListByBillingPeriodNextAsync (operations, nextPageLink, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Consumption</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
+        <AssemblyVersion>3.0.1.0</AssemblyVersion>
       </AssemblyInfo>
-      <Attributes>
-        <Attribute>
-          <AttributeName>System.Runtime.CompilerServices.AsyncStateMachine(typeof(Microsoft.Azure.Management.Consumption.MarketplacesOperationsExtensions/&lt;ListByBillingPeriodNextAsync&gt;d__7))</AttributeName>
-        </Attribute>
-      </Attributes>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.Rest.Azure.IPage&lt;Microsoft.Azure.Management.Consumption.Models.Marketplace&gt;&gt;</ReturnType>
       </ReturnValue>
@@ -287,11 +271,10 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Management.Consumption.MarketplacesOperationsExtensions.ListNext(Microsoft.Azure.Management.Consumption.IMarketplacesOperations,System.String)" />
       <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function ListNext (operations As IMarketplacesOperations, nextPageLink As String) As IPage(Of Marketplace)" />
       <MemberSignature Language="F#" Value="static member ListNext : Microsoft.Azure.Management.Consumption.IMarketplacesOperations * string -&gt; Microsoft.Rest.Azure.IPage&lt;Microsoft.Azure.Management.Consumption.Models.Marketplace&gt;" Usage="Microsoft.Azure.Management.Consumption.MarketplacesOperationsExtensions.ListNext (operations, nextPageLink)" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA;[System::Runtime::CompilerServices::Extension]&#xA; static Microsoft::Rest::Azure::IPage&lt;Microsoft::Azure::Management::Consumption::Models::Marketplace ^&gt; ^ ListNext(Microsoft::Azure::Management::Consumption::IMarketplacesOperations ^ operations, System::String ^ nextPageLink);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Consumption</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
+        <AssemblyVersion>3.0.1.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Rest.Azure.IPage&lt;Microsoft.Azure.Management.Consumption.Models.Marketplace&gt;</ReturnType>
@@ -316,20 +299,16 @@
       </Docs>
     </Member>
     <Member MemberName="ListNextAsync">
-      <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task&lt;Microsoft.Rest.Azure.IPage&lt;Microsoft.Azure.Management.Consumption.Models.Marketplace&gt;&gt; ListNextAsync (this Microsoft.Azure.Management.Consumption.IMarketplacesOperations operations, string nextPageLink, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task&lt;Microsoft.Rest.Azure.IPage&lt;Microsoft.Azure.Management.Consumption.Models.Marketplace&gt;&gt; ListNextAsync (this Microsoft.Azure.Management.Consumption.IMarketplacesOperations operations, string nextPageLink, System.Threading.CancellationToken cancellationToken = default);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Threading.Tasks.Task`1&lt;class Microsoft.Rest.Azure.IPage`1&lt;class Microsoft.Azure.Management.Consumption.Models.Marketplace&gt;&gt; ListNextAsync(class Microsoft.Azure.Management.Consumption.IMarketplacesOperations operations, string nextPageLink, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Management.Consumption.MarketplacesOperationsExtensions.ListNextAsync(Microsoft.Azure.Management.Consumption.IMarketplacesOperations,System.String,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function ListNextAsync (operations As IMarketplacesOperations, nextPageLink As String, Optional cancellationToken As CancellationToken = Nothing) As Task(Of IPage(Of Marketplace))" />
       <MemberSignature Language="F#" Value="static member ListNextAsync : Microsoft.Azure.Management.Consumption.IMarketplacesOperations * string * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.Rest.Azure.IPage&lt;Microsoft.Azure.Management.Consumption.Models.Marketplace&gt;&gt;" Usage="Microsoft.Azure.Management.Consumption.MarketplacesOperationsExtensions.ListNextAsync (operations, nextPageLink, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Consumption</AssemblyName>
-        <AssemblyVersion>3.0.0.0</AssemblyVersion>
+        <AssemblyVersion>3.0.1.0</AssemblyVersion>
       </AssemblyInfo>
-      <Attributes>
-        <Attribute>
-          <AttributeName>System.Runtime.CompilerServices.AsyncStateMachine(typeof(Microsoft.Azure.Management.Consumption.MarketplacesOperationsExtensions/&lt;ListNextAsync&gt;d__5))</AttributeName>
-        </Attribute>
-      </Attributes>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.Rest.Azure.IPage&lt;Microsoft.Azure.Management.Consumption.Models.Marketplace&gt;&gt;</ReturnType>
       </ReturnValue>

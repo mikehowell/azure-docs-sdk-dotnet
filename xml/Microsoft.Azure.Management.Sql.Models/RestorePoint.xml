@@ -1,11 +1,9 @@
-﻿<Type Name="RestorePoint" FullName="Microsoft.Azure.Management.Sql.Models.RestorePoint">
+<Type Name="RestorePoint" FullName="Microsoft.Azure.Management.Sql.Models.RestorePoint">
   <TypeSignature Language="C#" Value="public class RestorePoint : Microsoft.Azure.Management.Sql.Models.ProxyResource" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit RestorePoint extends Microsoft.Azure.Management.Sql.Models.ProxyResource" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Azure.Management.Sql.Models.RestorePoint" />
   <TypeSignature Language="VB.NET" Value="Public Class RestorePoint&#xA;Inherits ProxyResource" />
   <TypeSignature Language="F#" Value="type RestorePoint = class&#xA;    inherit ProxyResource" />
-  <TypeSignature Language="C++ CLI" Value="public ref class RestorePoint : Microsoft::Azure::Management::Sql::Models::ProxyResource" />
-  <TypeSignature Language="C++ WINRT" Value="[Windows::Foundation::Metadata::WebHostHidden]&#xA;class RestorePoint : Microsoft::Azure::Management::Sql::Models::ProxyResource" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Azure.Management.Sql</AssemblyName>
     <AssemblyVersion>1.0.0.0</AssemblyVersion>
@@ -16,7 +14,8 @@
   <Interfaces />
   <Attributes>
     <Attribute>
-      <AttributeName>Microsoft.Rest.Serialization.JsonTransformation</AttributeName>
+      <AttributeName Language="C#">[Microsoft.Rest.Serialization.JsonTransformation]</AttributeName>
+      <AttributeName Language="F#">[&lt;Microsoft.Rest.Serialization.JsonTransformation&gt;]</AttributeName>
     </Attribute>
   </Attributes>
   <Docs>
@@ -31,9 +30,6 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Management.Sql.Models.RestorePoint.#ctor" />
       <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; RestorePoint();" />
-      <MemberSignature Language="C++ CX" Value="public:&#xA; RestorePoint();" />
-      <MemberSignature Language="C++ WINRT" Value=" RestorePoint();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Sql</AssemblyName>
@@ -48,10 +44,10 @@
       </Docs>
     </Member>
     <Member MemberName=".ctor">
-      <MemberSignature Language="C#" Value="public RestorePoint (string id = null, string name = null, string type = null, string location = null, Nullable&lt;Microsoft.Azure.Management.Sql.Models.RestorePointType&gt; restorePointType = null, Nullable&lt;DateTime&gt; earliestRestoreDate = null, Nullable&lt;DateTime&gt; restorePointCreationDate = null, string restorePointLabel = null);" />
+      <MemberSignature Language="C#" Value="public RestorePoint (string id = default, string name = default, string type = default, string location = default, Microsoft.Azure.Management.Sql.Models.RestorePointType? restorePointType = default, DateTime? earliestRestoreDate = default, DateTime? restorePointCreationDate = default, string restorePointLabel = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string id, string name, string type, string location, valuetype System.Nullable`1&lt;valuetype Microsoft.Azure.Management.Sql.Models.RestorePointType&gt; restorePointType, valuetype System.Nullable`1&lt;valuetype System.DateTime&gt; earliestRestoreDate, valuetype System.Nullable`1&lt;valuetype System.DateTime&gt; restorePointCreationDate, string restorePointLabel) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Management.Sql.Models.RestorePoint.#ctor(System.String,System.String,System.String,System.String,System.Nullable{Microsoft.Azure.Management.Sql.Models.RestorePointType},System.Nullable{System.DateTime},System.Nullable{System.DateTime},System.String)" />
-      <MemberSignature Language="VB.NET" Value="Public Sub New (Optional id As String = null, Optional name As String = null, Optional type As String = null, Optional location As String = null, Optional restorePointType As Nullable(Of RestorePointType) = null, Optional earliestRestoreDate As Nullable(Of DateTime) = null, Optional restorePointCreationDate As Nullable(Of DateTime) = null, Optional restorePointLabel As String = null)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (Optional id As String = Nothing, Optional name As String = Nothing, Optional type As String = Nothing, Optional location As String = Nothing, Optional restorePointType As Nullable(Of RestorePointType) = Nothing, Optional earliestRestoreDate As Nullable(Of DateTime) = Nothing, Optional restorePointCreationDate As Nullable(Of DateTime) = Nothing, Optional restorePointLabel As String = Nothing)" />
       <MemberSignature Language="F#" Value="new Microsoft.Azure.Management.Sql.Models.RestorePoint : string * string * string * string * Nullable&lt;Microsoft.Azure.Management.Sql.Models.RestorePointType&gt; * Nullable&lt;DateTime&gt; * Nullable&lt;DateTime&gt; * string -&gt; Microsoft.Azure.Management.Sql.Models.RestorePoint" Usage="new Microsoft.Azure.Management.Sql.Models.RestorePoint (id, name, type, location, restorePointType, earliestRestoreDate, restorePointCreationDate, restorePointLabel)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
@@ -88,12 +84,11 @@
       </Docs>
     </Member>
     <Member MemberName="EarliestRestoreDate">
-      <MemberSignature Language="C#" Value="public Nullable&lt;DateTime&gt; EarliestRestoreDate { get; }" />
+      <MemberSignature Language="C#" Value="public DateTime? EarliestRestoreDate { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;valuetype System.DateTime&gt; EarliestRestoreDate" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Management.Sql.Models.RestorePoint.EarliestRestoreDate" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property EarliestRestoreDate As Nullable(Of DateTime)" />
       <MemberSignature Language="F#" Value="member this.EarliestRestoreDate : Nullable&lt;DateTime&gt;" Usage="Microsoft.Azure.Management.Sql.Models.RestorePoint.EarliestRestoreDate" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Nullable&lt;DateTime&gt; EarliestRestoreDate { Nullable&lt;DateTime&gt; get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Sql</AssemblyName>
@@ -101,7 +96,8 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="properties.earliestRestoreDate")</AttributeName>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty(PropertyName="properties.earliestRestoreDate")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty(PropertyName="properties.earliestRestoreDate")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -121,8 +117,6 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Management.Sql.Models.RestorePoint.Location" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Location As String" />
       <MemberSignature Language="F#" Value="member this.Location : string" Usage="Microsoft.Azure.Management.Sql.Models.RestorePoint.Location" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Location { System::String ^ get(); };" />
-      <MemberSignature Language="C++ CX" Value="public:&#xA; property Platform::String ^ Location { Platform::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Sql</AssemblyName>
@@ -130,7 +124,8 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="location")</AttributeName>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty(PropertyName="location")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty(PropertyName="location")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -145,12 +140,11 @@
       </Docs>
     </Member>
     <Member MemberName="RestorePointCreationDate">
-      <MemberSignature Language="C#" Value="public Nullable&lt;DateTime&gt; RestorePointCreationDate { get; }" />
+      <MemberSignature Language="C#" Value="public DateTime? RestorePointCreationDate { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;valuetype System.DateTime&gt; RestorePointCreationDate" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Management.Sql.Models.RestorePoint.RestorePointCreationDate" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property RestorePointCreationDate As Nullable(Of DateTime)" />
       <MemberSignature Language="F#" Value="member this.RestorePointCreationDate : Nullable&lt;DateTime&gt;" Usage="Microsoft.Azure.Management.Sql.Models.RestorePoint.RestorePointCreationDate" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Nullable&lt;DateTime&gt; RestorePointCreationDate { Nullable&lt;DateTime&gt; get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Sql</AssemblyName>
@@ -158,7 +152,8 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="properties.restorePointCreationDate")</AttributeName>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty(PropertyName="properties.restorePointCreationDate")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty(PropertyName="properties.restorePointCreationDate")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -178,8 +173,6 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Management.Sql.Models.RestorePoint.RestorePointLabel" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property RestorePointLabel As String" />
       <MemberSignature Language="F#" Value="member this.RestorePointLabel : string" Usage="Microsoft.Azure.Management.Sql.Models.RestorePoint.RestorePointLabel" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ RestorePointLabel { System::String ^ get(); };" />
-      <MemberSignature Language="C++ CX" Value="public:&#xA; property Platform::String ^ RestorePointLabel { Platform::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Sql</AssemblyName>
@@ -187,7 +180,8 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="properties.restorePointLabel")</AttributeName>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty(PropertyName="properties.restorePointLabel")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty(PropertyName="properties.restorePointLabel")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -202,12 +196,11 @@
       </Docs>
     </Member>
     <Member MemberName="RestorePointType">
-      <MemberSignature Language="C#" Value="public Nullable&lt;Microsoft.Azure.Management.Sql.Models.RestorePointType&gt; RestorePointType { get; }" />
+      <MemberSignature Language="C#" Value="public Microsoft.Azure.Management.Sql.Models.RestorePointType? RestorePointType { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;valuetype Microsoft.Azure.Management.Sql.Models.RestorePointType&gt; RestorePointType" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Management.Sql.Models.RestorePoint.RestorePointType" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property RestorePointType As Nullable(Of RestorePointType)" />
       <MemberSignature Language="F#" Value="member this.RestorePointType : Nullable&lt;Microsoft.Azure.Management.Sql.Models.RestorePointType&gt;" Usage="Microsoft.Azure.Management.Sql.Models.RestorePoint.RestorePointType" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Nullable&lt;Microsoft::Azure::Management::Sql::Models::RestorePointType&gt; RestorePointType { Nullable&lt;Microsoft::Azure::Management::Sql::Models::RestorePointType&gt; get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Sql</AssemblyName>
@@ -215,7 +208,8 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="properties.restorePointType")</AttributeName>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty(PropertyName="properties.restorePointType")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty(PropertyName="properties.restorePointType")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>

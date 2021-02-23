@@ -1,14 +1,13 @@
-﻿<Type Name="CsmOperationDescription" FullName="Microsoft.Azure.Management.WebSites.Models.CsmOperationDescription">
+<Type Name="CsmOperationDescription" FullName="Microsoft.Azure.Management.WebSites.Models.CsmOperationDescription">
   <TypeSignature Language="C#" Value="public class CsmOperationDescription" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit CsmOperationDescription extends System.Object" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Azure.Management.WebSites.Models.CsmOperationDescription" />
   <TypeSignature Language="VB.NET" Value="Public Class CsmOperationDescription" />
   <TypeSignature Language="F#" Value="type CsmOperationDescription = class" />
-  <TypeSignature Language="C++ CLI" Value="public ref class CsmOperationDescription" />
-  <TypeSignature Language="C++ WINRT" Value="[Windows::Foundation::Metadata::WebHostHidden]&#xA;class CsmOperationDescription" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Azure.Management.Websites</AssemblyName>
-    <AssemblyVersion>1.0.0.0</AssemblyVersion>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
+    <AssemblyVersion>3.1.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
@@ -27,13 +26,11 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Management.WebSites.Models.CsmOperationDescription.#ctor" />
       <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; CsmOperationDescription();" />
-      <MemberSignature Language="C++ CX" Value="public:&#xA; CsmOperationDescription();" />
-      <MemberSignature Language="C++ WINRT" Value=" CsmOperationDescription();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Websites</AssemblyName>
-        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>3.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
@@ -44,16 +41,16 @@
       </Docs>
     </Member>
     <Member MemberName=".ctor">
-      <MemberSignature Language="C#" Value="public CsmOperationDescription (string name = null, Microsoft.Azure.Management.WebSites.Models.CsmOperationDisplay display = null, string origin = null, Microsoft.Azure.Management.WebSites.Models.CsmOperationDescriptionProperties properties = null);" />
+      <MemberSignature Language="C#" Value="public CsmOperationDescription (string name = default, Microsoft.Azure.Management.WebSites.Models.CsmOperationDisplay display = default, string origin = default, Microsoft.Azure.Management.WebSites.Models.CsmOperationDescriptionProperties properties = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string name, class Microsoft.Azure.Management.WebSites.Models.CsmOperationDisplay display, string origin, class Microsoft.Azure.Management.WebSites.Models.CsmOperationDescriptionProperties properties) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Management.WebSites.Models.CsmOperationDescription.#ctor(System.String,Microsoft.Azure.Management.WebSites.Models.CsmOperationDisplay,System.String,Microsoft.Azure.Management.WebSites.Models.CsmOperationDescriptionProperties)" />
-      <MemberSignature Language="VB.NET" Value="Public Sub New (Optional name As String = null, Optional display As CsmOperationDisplay = null, Optional origin As String = null, Optional properties As CsmOperationDescriptionProperties = null)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (Optional name As String = Nothing, Optional display As CsmOperationDisplay = Nothing, Optional origin As String = Nothing, Optional properties As CsmOperationDescriptionProperties = Nothing)" />
       <MemberSignature Language="F#" Value="new Microsoft.Azure.Management.WebSites.Models.CsmOperationDescription : string * Microsoft.Azure.Management.WebSites.Models.CsmOperationDisplay * string * Microsoft.Azure.Management.WebSites.Models.CsmOperationDescriptionProperties -&gt; Microsoft.Azure.Management.WebSites.Models.CsmOperationDescription" Usage="new Microsoft.Azure.Management.WebSites.Models.CsmOperationDescription (name, display, origin, properties)" />
-      <MemberSignature Language="C++ WINRT" Value=" CsmOperationDescription(std::wstring const &amp; name = null, Microsoft::Azure::Management::WebSites::Models::CsmOperationDisplay const &amp; display = null, std::wstring const &amp; origin = null, Microsoft::Azure::Management::WebSites::Models::CsmOperationDescriptionProperties const &amp; properties = null);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Websites</AssemblyName>
-        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>3.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="name" Type="System.String" />
@@ -78,15 +75,16 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Management.WebSites.Models.CsmOperationDescription.Display" />
       <MemberSignature Language="VB.NET" Value="Public Property Display As CsmOperationDisplay" />
       <MemberSignature Language="F#" Value="member this.Display : Microsoft.Azure.Management.WebSites.Models.CsmOperationDisplay with get, set" Usage="Microsoft.Azure.Management.WebSites.Models.CsmOperationDescription.Display" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Azure::Management::WebSites::Models::CsmOperationDisplay ^ Display { Microsoft::Azure::Management::WebSites::Models::CsmOperationDisplay ^ get(); void set(Microsoft::Azure::Management::WebSites::Models::CsmOperationDisplay ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Websites</AssemblyName>
-        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>3.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="display")</AttributeName>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty(PropertyName="display")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty(PropertyName="display")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -104,16 +102,16 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Management.WebSites.Models.CsmOperationDescription.Name" />
       <MemberSignature Language="VB.NET" Value="Public Property Name As String" />
       <MemberSignature Language="F#" Value="member this.Name : string with get, set" Usage="Microsoft.Azure.Management.WebSites.Models.CsmOperationDescription.Name" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Name { System::String ^ get(); void set(System::String ^ value); };" />
-      <MemberSignature Language="C++ CX" Value="public:&#xA; property Platform::String ^ Name { Platform::String ^ get(); void set(Platform::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Websites</AssemblyName>
-        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>3.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="name")</AttributeName>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty(PropertyName="name")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty(PropertyName="name")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -131,16 +129,16 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Management.WebSites.Models.CsmOperationDescription.Origin" />
       <MemberSignature Language="VB.NET" Value="Public Property Origin As String" />
       <MemberSignature Language="F#" Value="member this.Origin : string with get, set" Usage="Microsoft.Azure.Management.WebSites.Models.CsmOperationDescription.Origin" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Origin { System::String ^ get(); void set(System::String ^ value); };" />
-      <MemberSignature Language="C++ CX" Value="public:&#xA; property Platform::String ^ Origin { Platform::String ^ get(); void set(Platform::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Websites</AssemblyName>
-        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>3.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="origin")</AttributeName>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty(PropertyName="origin")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty(PropertyName="origin")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -158,15 +156,16 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Management.WebSites.Models.CsmOperationDescription.Properties" />
       <MemberSignature Language="VB.NET" Value="Public Property Properties As CsmOperationDescriptionProperties" />
       <MemberSignature Language="F#" Value="member this.Properties : Microsoft.Azure.Management.WebSites.Models.CsmOperationDescriptionProperties with get, set" Usage="Microsoft.Azure.Management.WebSites.Models.CsmOperationDescription.Properties" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Azure::Management::WebSites::Models::CsmOperationDescriptionProperties ^ Properties { Microsoft::Azure::Management::WebSites::Models::CsmOperationDescriptionProperties ^ get(); void set(Microsoft::Azure::Management::WebSites::Models::CsmOperationDescriptionProperties ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Websites</AssemblyName>
-        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>3.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="properties")</AttributeName>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty(PropertyName="properties")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty(PropertyName="properties")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>

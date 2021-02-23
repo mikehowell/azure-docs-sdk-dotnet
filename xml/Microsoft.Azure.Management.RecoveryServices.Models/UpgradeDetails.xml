@@ -1,14 +1,14 @@
-﻿<Type Name="UpgradeDetails" FullName="Microsoft.Azure.Management.RecoveryServices.Models.UpgradeDetails">
+<Type Name="UpgradeDetails" FullName="Microsoft.Azure.Management.RecoveryServices.Models.UpgradeDetails">
   <TypeSignature Language="C#" Value="public class UpgradeDetails" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit UpgradeDetails extends System.Object" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Azure.Management.RecoveryServices.Models.UpgradeDetails" />
   <TypeSignature Language="VB.NET" Value="Public Class UpgradeDetails" />
   <TypeSignature Language="F#" Value="type UpgradeDetails = class" />
-  <TypeSignature Language="C++ CLI" Value="public ref class UpgradeDetails" />
-  <TypeSignature Language="C++ WINRT" Value="[Windows::Foundation::Metadata::WebHostHidden]&#xA;class UpgradeDetails" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Azure.Management.RecoveryServices</AssemblyName>
     <AssemblyVersion>4.2.0.0</AssemblyVersion>
+    <AssemblyVersion>4.3.0.0</AssemblyVersion>
+    <AssemblyVersion>4.3.1.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
@@ -26,13 +26,12 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Management.RecoveryServices.Models.UpgradeDetails.#ctor" />
       <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; UpgradeDetails();" />
-      <MemberSignature Language="C++ CX" Value="public:&#xA; UpgradeDetails();" />
-      <MemberSignature Language="C++ WINRT" Value=" UpgradeDetails();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.RecoveryServices</AssemblyName>
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
+        <AssemblyVersion>4.3.0.0</AssemblyVersion>
+        <AssemblyVersion>4.3.1.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
@@ -43,15 +42,17 @@
       </Docs>
     </Member>
     <Member MemberName=".ctor">
-      <MemberSignature Language="C#" Value="public UpgradeDetails (string operationId = null, Nullable&lt;DateTime&gt; startTimeUtc = null, Nullable&lt;DateTime&gt; lastUpdatedTimeUtc = null, Nullable&lt;DateTime&gt; endTimeUtc = null, string status = null, string message = null, string triggerType = null, string upgradedResourceId = null, string previousResourceId = null);" />
+      <MemberSignature Language="C#" Value="public UpgradeDetails (string operationId = default, DateTime? startTimeUtc = default, DateTime? lastUpdatedTimeUtc = default, DateTime? endTimeUtc = default, string status = default, string message = default, string triggerType = default, string upgradedResourceId = default, string previousResourceId = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string operationId, valuetype System.Nullable`1&lt;valuetype System.DateTime&gt; startTimeUtc, valuetype System.Nullable`1&lt;valuetype System.DateTime&gt; lastUpdatedTimeUtc, valuetype System.Nullable`1&lt;valuetype System.DateTime&gt; endTimeUtc, string status, string message, string triggerType, string upgradedResourceId, string previousResourceId) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Management.RecoveryServices.Models.UpgradeDetails.#ctor(System.String,System.Nullable{System.DateTime},System.Nullable{System.DateTime},System.Nullable{System.DateTime},System.String,System.String,System.String,System.String,System.String)" />
-      <MemberSignature Language="VB.NET" Value="Public Sub New (Optional operationId As String = null, Optional startTimeUtc As Nullable(Of DateTime) = null, Optional lastUpdatedTimeUtc As Nullable(Of DateTime) = null, Optional endTimeUtc As Nullable(Of DateTime) = null, Optional status As String = null, Optional message As String = null, Optional triggerType As String = null, Optional upgradedResourceId As String = null, Optional previousResourceId As String = null)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (Optional operationId As String = Nothing, Optional startTimeUtc As Nullable(Of DateTime) = Nothing, Optional lastUpdatedTimeUtc As Nullable(Of DateTime) = Nothing, Optional endTimeUtc As Nullable(Of DateTime) = Nothing, Optional status As String = Nothing, Optional message As String = Nothing, Optional triggerType As String = Nothing, Optional upgradedResourceId As String = Nothing, Optional previousResourceId As String = Nothing)" />
       <MemberSignature Language="F#" Value="new Microsoft.Azure.Management.RecoveryServices.Models.UpgradeDetails : string * Nullable&lt;DateTime&gt; * Nullable&lt;DateTime&gt; * Nullable&lt;DateTime&gt; * string * string * string * string * string -&gt; Microsoft.Azure.Management.RecoveryServices.Models.UpgradeDetails" Usage="new Microsoft.Azure.Management.RecoveryServices.Models.UpgradeDetails (operationId, startTimeUtc, lastUpdatedTimeUtc, endTimeUtc, status, message, triggerType, upgradedResourceId, previousResourceId)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.RecoveryServices</AssemblyName>
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
+        <AssemblyVersion>4.3.0.0</AssemblyVersion>
+        <AssemblyVersion>4.3.1.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="operationId" Type="System.String" />
@@ -78,9 +79,8 @@
             'Failed'</param>
         <param name="message">Message to the user containing information
             about the upgrade operation.</param>
-        <param name="triggerType">The way the vault upgradation was
-            triggered. Possible values include: 'UserTriggered',
-            'ForcedUpgrade'</param>
+        <param name="triggerType">The way the vault upgrade was triggered.
+            Possible values include: 'UserTriggered', 'ForcedUpgrade'</param>
         <param name="upgradedResourceId">Resource ID of the upgraded
             vault.</param>
         <param name="previousResourceId">Resource ID of the vault before
@@ -92,20 +92,22 @@
       </Docs>
     </Member>
     <Member MemberName="EndTimeUtc">
-      <MemberSignature Language="C#" Value="public Nullable&lt;DateTime&gt; EndTimeUtc { get; }" />
+      <MemberSignature Language="C#" Value="public DateTime? EndTimeUtc { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;valuetype System.DateTime&gt; EndTimeUtc" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Management.RecoveryServices.Models.UpgradeDetails.EndTimeUtc" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property EndTimeUtc As Nullable(Of DateTime)" />
       <MemberSignature Language="F#" Value="member this.EndTimeUtc : Nullable&lt;DateTime&gt;" Usage="Microsoft.Azure.Management.RecoveryServices.Models.UpgradeDetails.EndTimeUtc" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Nullable&lt;DateTime&gt; EndTimeUtc { Nullable&lt;DateTime&gt; get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.RecoveryServices</AssemblyName>
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
+        <AssemblyVersion>4.3.0.0</AssemblyVersion>
+        <AssemblyVersion>4.3.1.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="endTimeUtc")</AttributeName>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty(PropertyName="endTimeUtc")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty(PropertyName="endTimeUtc")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -120,20 +122,22 @@
       </Docs>
     </Member>
     <Member MemberName="LastUpdatedTimeUtc">
-      <MemberSignature Language="C#" Value="public Nullable&lt;DateTime&gt; LastUpdatedTimeUtc { get; }" />
+      <MemberSignature Language="C#" Value="public DateTime? LastUpdatedTimeUtc { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;valuetype System.DateTime&gt; LastUpdatedTimeUtc" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Management.RecoveryServices.Models.UpgradeDetails.LastUpdatedTimeUtc" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property LastUpdatedTimeUtc As Nullable(Of DateTime)" />
       <MemberSignature Language="F#" Value="member this.LastUpdatedTimeUtc : Nullable&lt;DateTime&gt;" Usage="Microsoft.Azure.Management.RecoveryServices.Models.UpgradeDetails.LastUpdatedTimeUtc" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Nullable&lt;DateTime&gt; LastUpdatedTimeUtc { Nullable&lt;DateTime&gt; get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.RecoveryServices</AssemblyName>
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
+        <AssemblyVersion>4.3.0.0</AssemblyVersion>
+        <AssemblyVersion>4.3.1.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="lastUpdatedTimeUtc")</AttributeName>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty(PropertyName="lastUpdatedTimeUtc")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty(PropertyName="lastUpdatedTimeUtc")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -154,16 +158,17 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Management.RecoveryServices.Models.UpgradeDetails.Message" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Message As String" />
       <MemberSignature Language="F#" Value="member this.Message : string" Usage="Microsoft.Azure.Management.RecoveryServices.Models.UpgradeDetails.Message" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Message { System::String ^ get(); };" />
-      <MemberSignature Language="C++ CX" Value="public:&#xA; property Platform::String ^ Message { Platform::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.RecoveryServices</AssemblyName>
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
+        <AssemblyVersion>4.3.0.0</AssemblyVersion>
+        <AssemblyVersion>4.3.1.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="message")</AttributeName>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty(PropertyName="message")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty(PropertyName="message")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -184,16 +189,17 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Management.RecoveryServices.Models.UpgradeDetails.OperationId" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property OperationId As String" />
       <MemberSignature Language="F#" Value="member this.OperationId : string" Usage="Microsoft.Azure.Management.RecoveryServices.Models.UpgradeDetails.OperationId" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ OperationId { System::String ^ get(); };" />
-      <MemberSignature Language="C++ CX" Value="public:&#xA; property Platform::String ^ OperationId { Platform::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.RecoveryServices</AssemblyName>
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
+        <AssemblyVersion>4.3.0.0</AssemblyVersion>
+        <AssemblyVersion>4.3.1.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="operationId")</AttributeName>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty(PropertyName="operationId")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty(PropertyName="operationId")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -213,16 +219,17 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Management.RecoveryServices.Models.UpgradeDetails.PreviousResourceId" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property PreviousResourceId As String" />
       <MemberSignature Language="F#" Value="member this.PreviousResourceId : string" Usage="Microsoft.Azure.Management.RecoveryServices.Models.UpgradeDetails.PreviousResourceId" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ PreviousResourceId { System::String ^ get(); };" />
-      <MemberSignature Language="C++ CX" Value="public:&#xA; property Platform::String ^ PreviousResourceId { Platform::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.RecoveryServices</AssemblyName>
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
+        <AssemblyVersion>4.3.0.0</AssemblyVersion>
+        <AssemblyVersion>4.3.1.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="previousResourceId")</AttributeName>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty(PropertyName="previousResourceId")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty(PropertyName="previousResourceId")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -237,20 +244,22 @@
       </Docs>
     </Member>
     <Member MemberName="StartTimeUtc">
-      <MemberSignature Language="C#" Value="public Nullable&lt;DateTime&gt; StartTimeUtc { get; }" />
+      <MemberSignature Language="C#" Value="public DateTime? StartTimeUtc { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;valuetype System.DateTime&gt; StartTimeUtc" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Management.RecoveryServices.Models.UpgradeDetails.StartTimeUtc" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property StartTimeUtc As Nullable(Of DateTime)" />
       <MemberSignature Language="F#" Value="member this.StartTimeUtc : Nullable&lt;DateTime&gt;" Usage="Microsoft.Azure.Management.RecoveryServices.Models.UpgradeDetails.StartTimeUtc" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Nullable&lt;DateTime&gt; StartTimeUtc { Nullable&lt;DateTime&gt; get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.RecoveryServices</AssemblyName>
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
+        <AssemblyVersion>4.3.0.0</AssemblyVersion>
+        <AssemblyVersion>4.3.1.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="startTimeUtc")</AttributeName>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty(PropertyName="startTimeUtc")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty(PropertyName="startTimeUtc")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -270,16 +279,17 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Management.RecoveryServices.Models.UpgradeDetails.Status" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Status As String" />
       <MemberSignature Language="F#" Value="member this.Status : string" Usage="Microsoft.Azure.Management.RecoveryServices.Models.UpgradeDetails.Status" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Status { System::String ^ get(); };" />
-      <MemberSignature Language="C++ CX" Value="public:&#xA; property Platform::String ^ Status { Platform::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.RecoveryServices</AssemblyName>
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
+        <AssemblyVersion>4.3.0.0</AssemblyVersion>
+        <AssemblyVersion>4.3.1.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="status")</AttributeName>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty(PropertyName="status")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty(PropertyName="status")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -300,16 +310,17 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Management.RecoveryServices.Models.UpgradeDetails.TriggerType" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property TriggerType As String" />
       <MemberSignature Language="F#" Value="member this.TriggerType : string" Usage="Microsoft.Azure.Management.RecoveryServices.Models.UpgradeDetails.TriggerType" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ TriggerType { System::String ^ get(); };" />
-      <MemberSignature Language="C++ CX" Value="public:&#xA; property Platform::String ^ TriggerType { Platform::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.RecoveryServices</AssemblyName>
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
+        <AssemblyVersion>4.3.0.0</AssemblyVersion>
+        <AssemblyVersion>4.3.1.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="triggerType")</AttributeName>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty(PropertyName="triggerType")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty(PropertyName="triggerType")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -317,7 +328,7 @@
       </ReturnValue>
       <Docs>
         <summary>
-            Gets the way the vault upgradation was triggered. Possible values
+            Gets the way the vault upgrade was triggered. Possible values
             include: 'UserTriggered', 'ForcedUpgrade'
             </summary>
         <value>To be added.</value>
@@ -330,16 +341,17 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Management.RecoveryServices.Models.UpgradeDetails.UpgradedResourceId" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property UpgradedResourceId As String" />
       <MemberSignature Language="F#" Value="member this.UpgradedResourceId : string" Usage="Microsoft.Azure.Management.RecoveryServices.Models.UpgradeDetails.UpgradedResourceId" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ UpgradedResourceId { System::String ^ get(); };" />
-      <MemberSignature Language="C++ CX" Value="public:&#xA; property Platform::String ^ UpgradedResourceId { Platform::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.RecoveryServices</AssemblyName>
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
+        <AssemblyVersion>4.3.0.0</AssemblyVersion>
+        <AssemblyVersion>4.3.1.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="upgradedResourceId")</AttributeName>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty(PropertyName="upgradedResourceId")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty(PropertyName="upgradedResourceId")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>

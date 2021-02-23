@@ -1,15 +1,14 @@
-﻿<Type Name="TaskUpdateParameter" FullName="Microsoft.Azure.Batch.Protocol.Models.TaskUpdateParameter">
+<Type Name="TaskUpdateParameter" FullName="Microsoft.Azure.Batch.Protocol.Models.TaskUpdateParameter">
   <TypeSignature Language="C#" Value="public class TaskUpdateParameter" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit TaskUpdateParameter extends System.Object" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Azure.Batch.Protocol.Models.TaskUpdateParameter" />
   <TypeSignature Language="VB.NET" Value="Public Class TaskUpdateParameter" />
   <TypeSignature Language="F#" Value="type TaskUpdateParameter = class" />
-  <TypeSignature Language="C++ CLI" Value="public ref class TaskUpdateParameter" />
-  <TypeSignature Language="C++ WINRT" Value="[Windows::Foundation::Metadata::WebHostHidden]&#xA;class TaskUpdateParameter" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Azure.Batch</AssemblyName>
-    <AssemblyVersion>7.1.0.0</AssemblyVersion>
-    <AssemblyVersion>8.0.0.0</AssemblyVersion>
+    <AssemblyVersion>12.0.0.0</AssemblyVersion>
+    <AssemblyVersion>13.0.0.0</AssemblyVersion>
+    <AssemblyVersion>14.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
@@ -17,7 +16,7 @@
   <Interfaces />
   <Docs>
     <summary>
-            The set of changes to be made to a task.
+            The set of changes to be made to a Task.
             </summary>
     <remarks>To be added.</remarks>
   </Docs>
@@ -27,14 +26,12 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Batch.Protocol.Models.TaskUpdateParameter.#ctor" />
       <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; TaskUpdateParameter();" />
-      <MemberSignature Language="C++ CX" Value="public:&#xA; TaskUpdateParameter();" />
-      <MemberSignature Language="C++ WINRT" Value=" TaskUpdateParameter();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Batch</AssemblyName>
-        <AssemblyVersion>7.1.0.0</AssemblyVersion>
-        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>12.0.0.0</AssemblyVersion>
+        <AssemblyVersion>13.0.0.0</AssemblyVersion>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
@@ -45,24 +42,24 @@
       </Docs>
     </Member>
     <Member MemberName=".ctor">
-      <MemberSignature Language="C#" Value="public TaskUpdateParameter (Microsoft.Azure.Batch.Protocol.Models.TaskConstraints constraints = null);" />
+      <MemberSignature Language="C#" Value="public TaskUpdateParameter (Microsoft.Azure.Batch.Protocol.Models.TaskConstraints constraints = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class Microsoft.Azure.Batch.Protocol.Models.TaskConstraints constraints) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Batch.Protocol.Models.TaskUpdateParameter.#ctor(Microsoft.Azure.Batch.Protocol.Models.TaskConstraints)" />
-      <MemberSignature Language="VB.NET" Value="Public Sub New (Optional constraints As TaskConstraints = null)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (Optional constraints As TaskConstraints = Nothing)" />
       <MemberSignature Language="F#" Value="new Microsoft.Azure.Batch.Protocol.Models.TaskUpdateParameter : Microsoft.Azure.Batch.Protocol.Models.TaskConstraints -&gt; Microsoft.Azure.Batch.Protocol.Models.TaskUpdateParameter" Usage="new Microsoft.Azure.Batch.Protocol.Models.TaskUpdateParameter constraints" />
-      <MemberSignature Language="C++ WINRT" Value=" TaskUpdateParameter(Microsoft::Azure::Batch::Protocol::Models::TaskConstraints const &amp; constraints = null);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Batch</AssemblyName>
-        <AssemblyVersion>7.1.0.0</AssemblyVersion>
-        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>12.0.0.0</AssemblyVersion>
+        <AssemblyVersion>13.0.0.0</AssemblyVersion>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="constraints" Type="Microsoft.Azure.Batch.Protocol.Models.TaskConstraints" />
       </Parameters>
       <Docs>
         <param name="constraints">Constraints that apply to this
-            task.</param>
+            Task.</param>
         <summary>
             Initializes a new instance of the TaskUpdateParameter class.
             </summary>
@@ -75,16 +72,17 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Batch.Protocol.Models.TaskUpdateParameter.Constraints" />
       <MemberSignature Language="VB.NET" Value="Public Property Constraints As TaskConstraints" />
       <MemberSignature Language="F#" Value="member this.Constraints : Microsoft.Azure.Batch.Protocol.Models.TaskConstraints with get, set" Usage="Microsoft.Azure.Batch.Protocol.Models.TaskUpdateParameter.Constraints" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Azure::Batch::Protocol::Models::TaskConstraints ^ Constraints { Microsoft::Azure::Batch::Protocol::Models::TaskConstraints ^ get(); void set(Microsoft::Azure::Batch::Protocol::Models::TaskConstraints ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Batch</AssemblyName>
-        <AssemblyVersion>7.1.0.0</AssemblyVersion>
-        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>12.0.0.0</AssemblyVersion>
+        <AssemblyVersion>13.0.0.0</AssemblyVersion>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="constraints")</AttributeName>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty(PropertyName="constraints")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty(PropertyName="constraints")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -92,13 +90,13 @@
       </ReturnValue>
       <Docs>
         <summary>
-            Gets or sets constraints that apply to this task.
+            Gets or sets constraints that apply to this Task.
             </summary>
         <value>To be added.</value>
         <remarks>
-            If omitted, the task is given the default constraints. For
-            multi-instance tasks, updating the retention time applies only to
-            the primary task and not subtasks.
+            If omitted, the Task is given the default constraints. For
+            multi-instance Tasks, updating the retention time applies only to
+            the primary Task and not subtasks.
             </remarks>
       </Docs>
     </Member>

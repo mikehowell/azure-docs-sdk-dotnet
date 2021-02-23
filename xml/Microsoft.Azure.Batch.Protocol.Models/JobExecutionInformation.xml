@@ -1,15 +1,14 @@
-﻿<Type Name="JobExecutionInformation" FullName="Microsoft.Azure.Batch.Protocol.Models.JobExecutionInformation">
+<Type Name="JobExecutionInformation" FullName="Microsoft.Azure.Batch.Protocol.Models.JobExecutionInformation">
   <TypeSignature Language="C#" Value="public class JobExecutionInformation" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit JobExecutionInformation extends System.Object" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Azure.Batch.Protocol.Models.JobExecutionInformation" />
   <TypeSignature Language="VB.NET" Value="Public Class JobExecutionInformation" />
   <TypeSignature Language="F#" Value="type JobExecutionInformation = class" />
-  <TypeSignature Language="C++ CLI" Value="public ref class JobExecutionInformation" />
-  <TypeSignature Language="C++ WINRT" Value="[Windows::Foundation::Metadata::WebHostHidden]&#xA;class JobExecutionInformation" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Azure.Batch</AssemblyName>
-    <AssemblyVersion>7.1.0.0</AssemblyVersion>
-    <AssemblyVersion>8.0.0.0</AssemblyVersion>
+    <AssemblyVersion>12.0.0.0</AssemblyVersion>
+    <AssemblyVersion>13.0.0.0</AssemblyVersion>
+    <AssemblyVersion>14.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
@@ -17,7 +16,7 @@
   <Interfaces />
   <Docs>
     <summary>
-            Contains information about the execution of a job in the Azure Batch
+            Contains information about the execution of a Job in the Azure Batch
             service.
             </summary>
     <remarks>To be added.</remarks>
@@ -28,14 +27,12 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Batch.Protocol.Models.JobExecutionInformation.#ctor" />
       <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; JobExecutionInformation();" />
-      <MemberSignature Language="C++ CX" Value="public:&#xA; JobExecutionInformation();" />
-      <MemberSignature Language="C++ WINRT" Value=" JobExecutionInformation();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Batch</AssemblyName>
-        <AssemblyVersion>7.1.0.0</AssemblyVersion>
-        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>12.0.0.0</AssemblyVersion>
+        <AssemblyVersion>13.0.0.0</AssemblyVersion>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
@@ -46,16 +43,17 @@
       </Docs>
     </Member>
     <Member MemberName=".ctor">
-      <MemberSignature Language="C#" Value="public JobExecutionInformation (DateTime startTime, Nullable&lt;DateTime&gt; endTime = null, string poolId = null, Microsoft.Azure.Batch.Protocol.Models.JobSchedulingError schedulingError = null, string terminateReason = null);" />
+      <MemberSignature Language="C#" Value="public JobExecutionInformation (DateTime startTime, DateTime? endTime = default, string poolId = default, Microsoft.Azure.Batch.Protocol.Models.JobSchedulingError schedulingError = default, string terminateReason = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(valuetype System.DateTime startTime, valuetype System.Nullable`1&lt;valuetype System.DateTime&gt; endTime, string poolId, class Microsoft.Azure.Batch.Protocol.Models.JobSchedulingError schedulingError, string terminateReason) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Batch.Protocol.Models.JobExecutionInformation.#ctor(System.DateTime,System.Nullable{System.DateTime},System.String,Microsoft.Azure.Batch.Protocol.Models.JobSchedulingError,System.String)" />
-      <MemberSignature Language="VB.NET" Value="Public Sub New (startTime As DateTime, Optional endTime As Nullable(Of DateTime) = null, Optional poolId As String = null, Optional schedulingError As JobSchedulingError = null, Optional terminateReason As String = null)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (startTime As DateTime, Optional endTime As Nullable(Of DateTime) = Nothing, Optional poolId As String = Nothing, Optional schedulingError As JobSchedulingError = Nothing, Optional terminateReason As String = Nothing)" />
       <MemberSignature Language="F#" Value="new Microsoft.Azure.Batch.Protocol.Models.JobExecutionInformation : DateTime * Nullable&lt;DateTime&gt; * string * Microsoft.Azure.Batch.Protocol.Models.JobSchedulingError * string -&gt; Microsoft.Azure.Batch.Protocol.Models.JobExecutionInformation" Usage="new Microsoft.Azure.Batch.Protocol.Models.JobExecutionInformation (startTime, endTime, poolId, schedulingError, terminateReason)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Batch</AssemblyName>
-        <AssemblyVersion>7.1.0.0</AssemblyVersion>
-        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>12.0.0.0</AssemblyVersion>
+        <AssemblyVersion>13.0.0.0</AssemblyVersion>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="startTime" Type="System.DateTime" />
@@ -65,14 +63,14 @@
         <Parameter Name="terminateReason" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="startTime">The start time of the job.</param>
-        <param name="endTime">The completion time of the job.</param>
-        <param name="poolId">The ID of the pool to which this job is
+        <param name="startTime">The start time of the Job.</param>
+        <param name="endTime">The completion time of the Job.</param>
+        <param name="poolId">The ID of the Pool to which this Job is
             assigned.</param>
         <param name="schedulingError">Details of any error encountered by
-            the service in starting the job.</param>
+            the service in starting the Job.</param>
         <param name="terminateReason">A string describing the reason the
-            job ended.</param>
+            Job ended.</param>
         <summary>
             Initializes a new instance of the JobExecutionInformation class.
             </summary>
@@ -80,21 +78,22 @@
       </Docs>
     </Member>
     <Member MemberName="EndTime">
-      <MemberSignature Language="C#" Value="public Nullable&lt;DateTime&gt; EndTime { get; set; }" />
+      <MemberSignature Language="C#" Value="public DateTime? EndTime { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;valuetype System.DateTime&gt; EndTime" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Batch.Protocol.Models.JobExecutionInformation.EndTime" />
       <MemberSignature Language="VB.NET" Value="Public Property EndTime As Nullable(Of DateTime)" />
       <MemberSignature Language="F#" Value="member this.EndTime : Nullable&lt;DateTime&gt; with get, set" Usage="Microsoft.Azure.Batch.Protocol.Models.JobExecutionInformation.EndTime" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Nullable&lt;DateTime&gt; EndTime { Nullable&lt;DateTime&gt; get(); void set(Nullable&lt;DateTime&gt; value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Batch</AssemblyName>
-        <AssemblyVersion>7.1.0.0</AssemblyVersion>
-        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>12.0.0.0</AssemblyVersion>
+        <AssemblyVersion>13.0.0.0</AssemblyVersion>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="endTime")</AttributeName>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty(PropertyName="endTime")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty(PropertyName="endTime")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -102,11 +101,11 @@
       </ReturnValue>
       <Docs>
         <summary>
-            Gets or sets the completion time of the job.
+            Gets or sets the completion time of the Job.
             </summary>
         <value>To be added.</value>
         <remarks>
-            This property is set only if the job is in the completed state.
+            This property is set only if the Job is in the completed state.
             </remarks>
       </Docs>
     </Member>
@@ -116,17 +115,17 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Batch.Protocol.Models.JobExecutionInformation.PoolId" />
       <MemberSignature Language="VB.NET" Value="Public Property PoolId As String" />
       <MemberSignature Language="F#" Value="member this.PoolId : string with get, set" Usage="Microsoft.Azure.Batch.Protocol.Models.JobExecutionInformation.PoolId" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ PoolId { System::String ^ get(); void set(System::String ^ value); };" />
-      <MemberSignature Language="C++ CX" Value="public:&#xA; property Platform::String ^ PoolId { Platform::String ^ get(); void set(Platform::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Batch</AssemblyName>
-        <AssemblyVersion>7.1.0.0</AssemblyVersion>
-        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>12.0.0.0</AssemblyVersion>
+        <AssemblyVersion>13.0.0.0</AssemblyVersion>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="poolId")</AttributeName>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty(PropertyName="poolId")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty(PropertyName="poolId")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -134,17 +133,17 @@
       </ReturnValue>
       <Docs>
         <summary>
-            Gets or sets the ID of the pool to which this job is assigned.
+            Gets or sets the ID of the Pool to which this Job is assigned.
             </summary>
         <value>To be added.</value>
         <remarks>
-            This element contains the actual pool where the job is assigned.
-            When you get job details from the service, they also contain a
-            poolInfo element, which contains the pool configuration data from
-            when the job was added or updated. That poolInfo element may also
+            This element contains the actual Pool where the Job is assigned.
+            When you get Job details from the service, they also contain a
+            poolInfo element, which contains the Pool configuration data from
+            when the Job was added or updated. That poolInfo element may also
             contain a poolId element. If it does, the two IDs are the same. If
-            it does not, it means the job ran on an auto pool, and this
-            property contains the ID of that auto pool.
+            it does not, it means the Job ran on an auto Pool, and this
+            property contains the ID of that auto Pool.
             </remarks>
       </Docs>
     </Member>
@@ -154,16 +153,17 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Batch.Protocol.Models.JobExecutionInformation.SchedulingError" />
       <MemberSignature Language="VB.NET" Value="Public Property SchedulingError As JobSchedulingError" />
       <MemberSignature Language="F#" Value="member this.SchedulingError : Microsoft.Azure.Batch.Protocol.Models.JobSchedulingError with get, set" Usage="Microsoft.Azure.Batch.Protocol.Models.JobExecutionInformation.SchedulingError" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Azure::Batch::Protocol::Models::JobSchedulingError ^ SchedulingError { Microsoft::Azure::Batch::Protocol::Models::JobSchedulingError ^ get(); void set(Microsoft::Azure::Batch::Protocol::Models::JobSchedulingError ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Batch</AssemblyName>
-        <AssemblyVersion>7.1.0.0</AssemblyVersion>
-        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>12.0.0.0</AssemblyVersion>
+        <AssemblyVersion>13.0.0.0</AssemblyVersion>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="schedulingError")</AttributeName>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty(PropertyName="schedulingError")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty(PropertyName="schedulingError")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -172,11 +172,11 @@
       <Docs>
         <summary>
             Gets or sets details of any error encountered by the service in
-            starting the job.
+            starting the Job.
             </summary>
         <value>To be added.</value>
         <remarks>
-            This property is not set if there was no error starting the job.
+            This property is not set if there was no error starting the Job.
             </remarks>
       </Docs>
     </Member>
@@ -186,16 +186,17 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Batch.Protocol.Models.JobExecutionInformation.StartTime" />
       <MemberSignature Language="VB.NET" Value="Public Property StartTime As DateTime" />
       <MemberSignature Language="F#" Value="member this.StartTime : DateTime with get, set" Usage="Microsoft.Azure.Batch.Protocol.Models.JobExecutionInformation.StartTime" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property DateTime StartTime { DateTime get(); void set(DateTime value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Batch</AssemblyName>
-        <AssemblyVersion>7.1.0.0</AssemblyVersion>
-        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>12.0.0.0</AssemblyVersion>
+        <AssemblyVersion>13.0.0.0</AssemblyVersion>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="startTime")</AttributeName>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty(PropertyName="startTime")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty(PropertyName="startTime")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -203,11 +204,11 @@
       </ReturnValue>
       <Docs>
         <summary>
-            Gets or sets the start time of the job.
+            Gets or sets the start time of the Job.
             </summary>
         <value>To be added.</value>
         <remarks>
-            This is the time at which the job was created.
+            This is the time at which the Job was created.
             </remarks>
       </Docs>
     </Member>
@@ -217,17 +218,17 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Batch.Protocol.Models.JobExecutionInformation.TerminateReason" />
       <MemberSignature Language="VB.NET" Value="Public Property TerminateReason As String" />
       <MemberSignature Language="F#" Value="member this.TerminateReason : string with get, set" Usage="Microsoft.Azure.Batch.Protocol.Models.JobExecutionInformation.TerminateReason" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ TerminateReason { System::String ^ get(); void set(System::String ^ value); };" />
-      <MemberSignature Language="C++ CX" Value="public:&#xA; property Platform::String ^ TerminateReason { Platform::String ^ get(); void set(Platform::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Batch</AssemblyName>
-        <AssemblyVersion>7.1.0.0</AssemblyVersion>
-        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>12.0.0.0</AssemblyVersion>
+        <AssemblyVersion>13.0.0.0</AssemblyVersion>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="terminateReason")</AttributeName>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty(PropertyName="terminateReason")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty(PropertyName="terminateReason")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -235,53 +236,24 @@
       </ReturnValue>
       <Docs>
         <summary>
-            Gets or sets a string describing the reason the job ended.
+            Gets or sets a string describing the reason the Job ended.
             </summary>
         <value>To be added.</value>
         <remarks>
-            This property is set only if the job is in the completed state. If
-            the Batch service terminates the job, it sets the reason as
-            follows: JMComplete - the Job Manager task completed, and
+            This property is set only if the Job is in the completed state. If
+            the Batch service terminates the Job, it sets the reason as
+            follows: JMComplete - the Job Manager Task completed, and
             killJobOnCompletion was set to true. MaxWallClockTimeExpiry - the
-            job reached its maxWallClockTime constraint. TerminateJobSchedule -
-            the job ran as part of a schedule, and the schedule terminated.
-            AllTasksComplete - the job's onAllTasksComplete attribute is set to
-            terminatejob, and all tasks in the job are complete. TaskFailed -
-            the job's onTaskFailure attribute is set to
-            performExitOptionsJobAction, and a task in the job failed with an
+            Job reached its maxWallClockTime constraint. TerminateJobSchedule -
+            the Job ran as part of a schedule, and the schedule terminated.
+            AllTasksComplete - the Job's onAllTasksComplete attribute is set to
+            terminatejob, and all Tasks in the Job are complete. TaskFailed -
+            the Job's onTaskFailure attribute is set to
+            performExitOptionsJobAction, and a Task in the Job failed with an
             exit condition that specified a jobAction of terminatejob. Any
             other string is a user-defined reason specified in a call to the
-            'Terminate a job' operation.
+            'Terminate a Job' operation.
             </remarks>
-      </Docs>
-    </Member>
-    <Member MemberName="Validate">
-      <MemberSignature Language="C#" Value="public virtual void Validate ();" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Validate() cil managed" />
-      <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Batch.Protocol.Models.JobExecutionInformation.Validate" />
-      <MemberSignature Language="VB.NET" Value="Public Overridable Sub Validate ()" />
-      <MemberSignature Language="F#" Value="abstract member Validate : unit -&gt; unit&#xA;override this.Validate : unit -&gt; unit" Usage="jobExecutionInformation.Validate " />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Validate();" />
-      <MemberSignature Language="C++ CX" Value="public:&#xA; virtual void Validate();" />
-      <MemberSignature Language="C++ WINRT" Value=" virtual void Validate();" />
-      <MemberType>Method</MemberType>
-      <AssemblyInfo>
-        <AssemblyName>Microsoft.Azure.Batch</AssemblyName>
-        <AssemblyVersion>7.1.0.0</AssemblyVersion>
-        <AssemblyVersion>8.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <ReturnValue>
-        <ReturnType>System.Void</ReturnType>
-      </ReturnValue>
-      <Parameters />
-      <Docs>
-        <summary>
-            Validate the object.
-            </summary>
-        <remarks>To be added.</remarks>
-        <exception cref="T:Microsoft.Rest.ValidationException">
-            Thrown if validation fails
-            </exception>
       </Docs>
     </Member>
   </Members>

@@ -1,106 +1,52 @@
 ---
 title: Azure Key Vault libraries for .NET
-description: Reference for Azure Key Vault libraries for .NET
-keywords: Azure, .NET, SDK, API, Key Vault
-author: camsoper
-ms.author: casoper
-manager: wpickett
-ms.date: 10/19/2017
+description: The Azure Key Vault libraries for .NET offer a convenient interface for making calls to Azure Key Vault.
+ms.date: 03/04/2020
 ms.topic: reference
-ms.prod: azure
-ms.technology: azure
-ms.devlang: dotnet
 ms.service: key-vault
-ms.custom: devcenter, svc-overview
 ---
 
 # Azure Key Vault libraries for .NET
 
-## Overview
+The Azure Key Vault libraries for .NET offer a convenient interface for making calls to Azure Key Vault. For more information about Azure Key Vault, see [Introduction to Azure Key Vault](https://docs.microsoft.com/azure/key-vault/general/overview).
 
-Azure Key Vault helps safeguard cryptographic keys and secrets used by cloud applications and services.
+## Libraries for data access
 
-Read more about [What is Key Vault?](/azure/key-vault/key-vault-whatis) then [Get started with Azure Key Vault](/azure/key-vault/key-vault-get-started) or learn how to [Use Key Vault from a web app](/azure/key-vault/key-vault-use-from-web-application).
+The latest version of the Azure Key Vault library is version 4.x.x. Microsoft recommends using version 4.x.x for new applications.
 
-## Client library
+If you cannot update existing applications to version 4.x.x, then Microsoft recommends using version 3.x.x.
 
-Use the client library to manage keys and related assets such as certificates and secrets.
+### Version 4.x.x
 
-Install the [NuGet package](https://www.nuget.org/packages/Microsoft.Azure.KeyVault) directly from the Visual Studio [Package Manager console][PackageManager] or with the [.NET Core CLI][DotNetCLI].
+The version 4.x.x libraries for .NET are part of the Azure SDK for .NET. The source code for the Key Vault libraries for .NET is available on [GitHub](https://github.com/Azure/azure-sdk-for-net/tree/master/sdk/keyvault).
 
-#### Visual Studio Package Manager
+Use the following version 4.x.x libraries to work with certificates, keys, and secrets:
 
-```powershell
-Install-Package Microsoft.Azure.KeyVault
-```
+| Library | Reference | Package | Source |
+|----------------------------------------|-------------------------------------------------------------|-----------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------|
+|    Azure.Security.KeyVault.Administration    |      [Reference](https://docs.microsoft.com/dotnet/api/azure.security.keyvault.administration)       |    [Nuget](https://www.nuget.org/packages/Azure.Security.KeyVault.Administration/)    |    [GitHub](https://github.com/Azure/azure-sdk-for-net/tree/master/sdk/keyvault/Azure.Security.KeyVault.Administration)    |
+|    Azure.Security.KeyVault.Certificates    |      [Reference](https://docs.microsoft.com/dotnet/api/azure.security.keyvault.certificates)       |    [Nuget](https://www.nuget.org/packages/Azure.Security.KeyVault.Certificates/)    |    [GitHub](https://github.com/Azure/azure-sdk-for-net/tree/master/sdk/keyvault/Azure.Security.KeyVault.Certificates)    |
+|    Azure.Security.KeyVault.Keys    |     [Reference](https://docs.microsoft.com/dotnet/api/azure.security.keyvault.keys)    |    [Nuget](https://www.nuget.org/packages/Azure.Security.KeyVault.Keys/)      |     [GitHub](https://github.com/Azure/azure-sdk-for-net/tree/master/sdk/keyvault/Azure.Security.KeyVault.Keys)|
+|    Azure.Security.KeyVault.Secrets    |    [Reference](https://docs.microsoft.com/dotnet/api/azure.security.keyvault.secrets)    |    [Nuget](https://www.nuget.org/packages/Azure.Security.KeyVault.Secrets/)    |    [GitHub](https://github.com/Azure/azure-sdk-for-net/tree/master/sdk/keyvault/Azure.Security.KeyVault.Secrets)    |
 
-```bash
-dotnet add package Microsoft.Azure.KeyVault
-```
+### Version 3.x.x
 
-### Example
+The source code for the Azure Key Vault libraries for .NET is available on [GitHub](https://github.com/Azure/azure-sdk-for-net/tree/master/sdk/keyvault).
 
-The following example retrieves the secret for a specific key that is identified in the application settings.
+Use the following version 3.x.x libraries to work with certificates, keys, and secrets:
 
-```csharp
-KeyVaultClient kv = new KeyVaultClient(new KeyVaultClient.AuthenticationCallback(securityToken));
+| Library | Reference | Package | Source |
+|--------------------------------------|---------------------------------------------------------------|-------------------------------------------------------------------------------|-------------------------------------------------------------------------------|
+|    Microsoft.Azure.KeyVault.Core    |    [Reference](https://docs.microsoft.com/dotnet/api/microsoft.azure.keyvault.core)    |    [Nuget](https://www.nuget.org/packages/Microsoft.Azure.KeyVault.Core)    |    [GitHub](https://github.com/Azure/azure-sdk-for-net/tree/master/sdk/keyvault/Microsoft.Azure.KeyVault.Core)    |
+|    Microsoft.Azure.KeyVault.Cryptography    |    [Reference](https://docs.microsoft.com/dotnet/api/microsoft.azure.keyvault.cryptography)    |    [Nuget](https://www.nuget.org/packages/Microsoft.Azure.KeyVault.Cryptography)    |    [GitHub](https://github.com/Azure/azure-sdk-for-net/tree/master/sdk/keyvault/Microsoft.Azure.KeyVault.Cryptography)    |
+|    Microsoft.Azure.KeyVault.Extensions    |      |    [Nuget](https://www.nuget.org/packages/Microsoft.Azure.KeyVault.Extensions)    |    [GitHub](https://github.com/Azure/azure-sdk-for-net/tree/master/sdk/keyvault/Microsoft.Azure.KeyVault.Extensions)    |
+|    Microsoft.Azure.KeyVault.WebKey    |    [Reference](https://docs.microsoft.com/dotnet/api/microsoft.azure.keyvault.webkey)    |    [Nuget](https://www.nuget.org/packages/Microsoft.Azure.KeyVault.WebKey)    |    [GitHub](https://github.com/Azure/azure-sdk-for-net/tree/master/sdk/keyvault/Microsoft.Azure.KeyVault.WebKey)    |
+|    Microsoft.Azure.KeyVault    |    [Reference](https://docs.microsoft.com/dotnet/api/microsoft.azure.keyvault)    |    [Nuget](https://www.nuget.org/packages/Microsoft.Azure.KeyVault)    |    [GitHub](https://github.com/Azure/azure-sdk-for-net/tree/master/sdk/keyvault/Microsoft.Azure.KeyVault)    |
 
-SecretBundle sec = await kv.GetSecretAsync(WebConfigurationManager.AppSettings["SecretUri"]);
+## Libraries for resource management
 
-// sec.Value holds the secret
-```
+Use the following library to work with the Azure Key Vault resource provider:
 
-> [!div class="nextstepaction"]
-> [Explore the client APIs](/dotnet/api/overview/azure/keyvault/client)
-
-## Management library
-
-Use the management library to create, delete, and query key vaults.
-
-Install the [NuGet package](https://www.nuget.org/packages/Microsoft.Azure.Management.KeyVault.Fluent) directly from the Visual Studio [Package Manager console][PackageManager] or with the [.NET Core CLI][DotNetCLI].
-
-#### Visual Studio Package Manager
-
-```powershell
-Install-Package Microsoft.Azure.Management.KeyVault.Fluent
-```
-
-```bash
-dotnet add package Microsoft.Azure.Management.KeyVault.Fluent
-```
-
-### Example
-
-The following example demonstrates how to create a new key vault for a given resource group and location.
-
-```csharp
-using (KeyVaultManagementClient client = new KeyVaultManagementClient(
-    new TokenCloudCredentials(subscriptionId, accessToken)))
-{
-    client.Vaults.CreateOrUpdate(resourceGroupName, "myKeyVault", new VaultCreateOrUpdateParameters
-    {
-        Properties = new VaultProperties
-        {
-            EnabledForDeployment = true,
-            EnabledForDiskEncryption = true,
-            EnabledForTemplateDeployment = true,
-            Location = resourceGroupLocation,
-            // SKU level, access policies, tenants, etc.
-        }
-    });
-}
-```
-
-> [!div class="nextstepaction"]
-> [Explore the management APIs](/dotnet/api/overview/azure/keyvault/management)
-
-## Samples
-
-* [Download the Azure Key Vault client samples](https://www.microsoft.com/download/details.aspx?id=45343)
-* [Getting Started with Azure Client Side Encryption in .NET](https://azure.microsoft.com/resources/samples/storage-dotnet-client-side-encryption/)
-
-
-Explore more [sample .NET code](https://azure.microsoft.com/resources/samples/?platform=dotnet) you can use in your apps.
-
-[PackageManager]: https://docs.microsoft.com/nuget/tools/package-manager-console
-[DotNetCLI]: https://docs.microsoft.com/dotnet/core/tools/dotnet-add-package
+|    Library    |    Reference    |    Package    |    Source    |
+|------------------------------------------|-------------------------------------------------------------------|-----------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------|
+|    Microsoft.Azure.Management.KeyVault    |    [Reference](https://docs.microsoft.com/dotnet/api/microsoft.azure.management.keyvault)    |    [Nuget](https://www.nuget.org/packages/Microsoft.Azure.Management.KeyVault/)    |    [GitHub](https://github.com/Azure/azure-sdk-for-net/tree/master/sdk/keyvault/Microsoft.Azure.Management.KeyVault)    |

@@ -1,13 +1,12 @@
-﻿<Type Name="StatefulServiceType" FullName="System.Fabric.Management.ServiceModel.StatefulServiceType">
+<Type Name="StatefulServiceType" FullName="System.Fabric.Management.ServiceModel.StatefulServiceType">
   <TypeSignature Language="C#" Value="public class StatefulServiceType : System.Fabric.Management.ServiceModel.ServiceType" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit StatefulServiceType extends System.Fabric.Management.ServiceModel.ServiceType" />
   <TypeSignature Language="DocId" Value="T:System.Fabric.Management.ServiceModel.StatefulServiceType" />
   <TypeSignature Language="VB.NET" Value="Public Class StatefulServiceType&#xA;Inherits ServiceType" />
   <TypeSignature Language="F#" Value="type StatefulServiceType = class&#xA;    inherit ServiceType" />
-  <TypeSignature Language="C++ CLI" Value="public ref class StatefulServiceType : System::Fabric::Management::ServiceModel::ServiceType" />
   <AssemblyInfo>
     <AssemblyName>System.Fabric.Management.ServiceModel</AssemblyName>
-    <AssemblyVersion>6.0.0.0</AssemblyVersion>
+    <AssemblyVersion>7.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Fabric.Management.ServiceModel.ServiceType</BaseTypeName>
@@ -15,16 +14,20 @@
   <Interfaces />
   <Attributes>
     <Attribute>
-      <AttributeName>System.CodeDom.Compiler.GeneratedCode("xsd", "4.0.30319.17929")</AttributeName>
+      <AttributeName Language="C#">[System.CodeDom.Compiler.GeneratedCode("xsd", "4.0.30319.17929")]</AttributeName>
+      <AttributeName Language="F#">[&lt;System.CodeDom.Compiler.GeneratedCode("xsd", "4.0.30319.17929")&gt;]</AttributeName>
     </Attribute>
     <Attribute>
-      <AttributeName>System.Diagnostics.DebuggerStepThrough</AttributeName>
+      <AttributeName Language="C#">[System.Diagnostics.DebuggerStepThrough]</AttributeName>
+      <AttributeName Language="F#">[&lt;System.Diagnostics.DebuggerStepThrough&gt;]</AttributeName>
     </Attribute>
     <Attribute>
-      <AttributeName>System.Xml.Serialization.XmlInclude(typeof(System.Fabric.Management.ServiceModel.StatefulServiceGroupType))</AttributeName>
+      <AttributeName Language="C#">[System.Xml.Serialization.XmlInclude(typeof(System.Fabric.Management.ServiceModel.StatefulServiceGroupType))]</AttributeName>
+      <AttributeName Language="F#">[&lt;System.Xml.Serialization.XmlInclude(typeof(System.Fabric.Management.ServiceModel.StatefulServiceGroupType))&gt;]</AttributeName>
     </Attribute>
     <Attribute>
-      <AttributeName>System.Xml.Serialization.XmlType(Namespace="http://schemas.microsoft.com/2011/01/fabric")</AttributeName>
+      <AttributeName Language="C#">[System.Xml.Serialization.XmlType(Namespace="http://schemas.microsoft.com/2011/01/fabric")]</AttributeName>
+      <AttributeName Language="F#">[&lt;System.Xml.Serialization.XmlType(Namespace="http://schemas.microsoft.com/2011/01/fabric")&gt;]</AttributeName>
     </Attribute>
   </Attributes>
   <Docs>
@@ -37,17 +40,44 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Fabric.Management.ServiceModel.StatefulServiceType.#ctor" />
       <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; StatefulServiceType();" />
-      <MemberSignature Language="C++ CX" Value="public:&#xA; StatefulServiceType();" />
-      <MemberSignature Language="C++ WINRT" Value=" StatefulServiceType();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Fabric.Management.ServiceModel</AssemblyName>
-        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
         <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DropSourceReplicaOnMove">
+      <MemberSignature Language="C#" Value="public string DropSourceReplicaOnMove { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string DropSourceReplicaOnMove" />
+      <MemberSignature Language="DocId" Value="P:System.Fabric.Management.ServiceModel.StatefulServiceType.DropSourceReplicaOnMove" />
+      <MemberSignature Language="VB.NET" Value="Public Property DropSourceReplicaOnMove As String" />
+      <MemberSignature Language="F#" Value="member this.DropSourceReplicaOnMove : string with get, set" Usage="System.Fabric.Management.ServiceModel.StatefulServiceType.DropSourceReplicaOnMove" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Fabric.Management.ServiceModel</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName Language="C#">[System.ComponentModel.DefaultValue("")]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.ComponentModel.DefaultValue("")&gt;]</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName Language="C#">[System.Xml.Serialization.XmlAttribute]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Xml.Serialization.XmlAttribute&gt;]</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -57,19 +87,19 @@
       <MemberSignature Language="DocId" Value="P:System.Fabric.Management.ServiceModel.StatefulServiceType.MinReplicaSetSize" />
       <MemberSignature Language="VB.NET" Value="Public Property MinReplicaSetSize As String" />
       <MemberSignature Language="F#" Value="member this.MinReplicaSetSize : string with get, set" Usage="System.Fabric.Management.ServiceModel.StatefulServiceType.MinReplicaSetSize" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ MinReplicaSetSize { System::String ^ get(); void set(System::String ^ value); };" />
-      <MemberSignature Language="C++ CX" Value="public:&#xA; property Platform::String ^ MinReplicaSetSize { Platform::String ^ get(); void set(Platform::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Fabric.Management.ServiceModel</AssemblyName>
-        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>System.ComponentModel.DefaultValue("1")</AttributeName>
+          <AttributeName Language="C#">[System.ComponentModel.DefaultValue("1")]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.ComponentModel.DefaultValue("1")&gt;]</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.Xml.Serialization.XmlAttribute</AttributeName>
+          <AttributeName Language="C#">[System.Xml.Serialization.XmlAttribute]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Xml.Serialization.XmlAttribute&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -87,19 +117,19 @@
       <MemberSignature Language="DocId" Value="P:System.Fabric.Management.ServiceModel.StatefulServiceType.QuorumLossWaitDurationSeconds" />
       <MemberSignature Language="VB.NET" Value="Public Property QuorumLossWaitDurationSeconds As String" />
       <MemberSignature Language="F#" Value="member this.QuorumLossWaitDurationSeconds : string with get, set" Usage="System.Fabric.Management.ServiceModel.StatefulServiceType.QuorumLossWaitDurationSeconds" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ QuorumLossWaitDurationSeconds { System::String ^ get(); void set(System::String ^ value); };" />
-      <MemberSignature Language="C++ CX" Value="public:&#xA; property Platform::String ^ QuorumLossWaitDurationSeconds { Platform::String ^ get(); void set(Platform::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Fabric.Management.ServiceModel</AssemblyName>
-        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>System.ComponentModel.DefaultValue("")</AttributeName>
+          <AttributeName Language="C#">[System.ComponentModel.DefaultValue("")]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.ComponentModel.DefaultValue("")&gt;]</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.Xml.Serialization.XmlAttribute</AttributeName>
+          <AttributeName Language="C#">[System.Xml.Serialization.XmlAttribute]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Xml.Serialization.XmlAttribute&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -117,19 +147,49 @@
       <MemberSignature Language="DocId" Value="P:System.Fabric.Management.ServiceModel.StatefulServiceType.ReplicaRestartWaitDurationSeconds" />
       <MemberSignature Language="VB.NET" Value="Public Property ReplicaRestartWaitDurationSeconds As String" />
       <MemberSignature Language="F#" Value="member this.ReplicaRestartWaitDurationSeconds : string with get, set" Usage="System.Fabric.Management.ServiceModel.StatefulServiceType.ReplicaRestartWaitDurationSeconds" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ ReplicaRestartWaitDurationSeconds { System::String ^ get(); void set(System::String ^ value); };" />
-      <MemberSignature Language="C++ CX" Value="public:&#xA; property Platform::String ^ ReplicaRestartWaitDurationSeconds { Platform::String ^ get(); void set(Platform::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Fabric.Management.ServiceModel</AssemblyName>
-        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>System.ComponentModel.DefaultValue("")</AttributeName>
+          <AttributeName Language="C#">[System.ComponentModel.DefaultValue("")]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.ComponentModel.DefaultValue("")&gt;]</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.Xml.Serialization.XmlAttribute</AttributeName>
+          <AttributeName Language="C#">[System.Xml.Serialization.XmlAttribute]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Xml.Serialization.XmlAttribute&gt;]</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ServicePlacementTimeLimitSeconds">
+      <MemberSignature Language="C#" Value="public string ServicePlacementTimeLimitSeconds { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string ServicePlacementTimeLimitSeconds" />
+      <MemberSignature Language="DocId" Value="P:System.Fabric.Management.ServiceModel.StatefulServiceType.ServicePlacementTimeLimitSeconds" />
+      <MemberSignature Language="VB.NET" Value="Public Property ServicePlacementTimeLimitSeconds As String" />
+      <MemberSignature Language="F#" Value="member this.ServicePlacementTimeLimitSeconds : string with get, set" Usage="System.Fabric.Management.ServiceModel.StatefulServiceType.ServicePlacementTimeLimitSeconds" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Fabric.Management.ServiceModel</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName Language="C#">[System.ComponentModel.DefaultValue("")]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.ComponentModel.DefaultValue("")&gt;]</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName Language="C#">[System.Xml.Serialization.XmlAttribute]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Xml.Serialization.XmlAttribute&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -147,19 +207,19 @@
       <MemberSignature Language="DocId" Value="P:System.Fabric.Management.ServiceModel.StatefulServiceType.StandByReplicaKeepDurationSeconds" />
       <MemberSignature Language="VB.NET" Value="Public Property StandByReplicaKeepDurationSeconds As String" />
       <MemberSignature Language="F#" Value="member this.StandByReplicaKeepDurationSeconds : string with get, set" Usage="System.Fabric.Management.ServiceModel.StatefulServiceType.StandByReplicaKeepDurationSeconds" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ StandByReplicaKeepDurationSeconds { System::String ^ get(); void set(System::String ^ value); };" />
-      <MemberSignature Language="C++ CX" Value="public:&#xA; property Platform::String ^ StandByReplicaKeepDurationSeconds { Platform::String ^ get(); void set(Platform::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Fabric.Management.ServiceModel</AssemblyName>
-        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>System.ComponentModel.DefaultValue("")</AttributeName>
+          <AttributeName Language="C#">[System.ComponentModel.DefaultValue("")]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.ComponentModel.DefaultValue("")&gt;]</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.Xml.Serialization.XmlAttribute</AttributeName>
+          <AttributeName Language="C#">[System.Xml.Serialization.XmlAttribute]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Xml.Serialization.XmlAttribute&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -177,19 +237,19 @@
       <MemberSignature Language="DocId" Value="P:System.Fabric.Management.ServiceModel.StatefulServiceType.TargetReplicaSetSize" />
       <MemberSignature Language="VB.NET" Value="Public Property TargetReplicaSetSize As String" />
       <MemberSignature Language="F#" Value="member this.TargetReplicaSetSize : string with get, set" Usage="System.Fabric.Management.ServiceModel.StatefulServiceType.TargetReplicaSetSize" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ TargetReplicaSetSize { System::String ^ get(); void set(System::String ^ value); };" />
-      <MemberSignature Language="C++ CX" Value="public:&#xA; property Platform::String ^ TargetReplicaSetSize { Platform::String ^ get(); void set(Platform::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Fabric.Management.ServiceModel</AssemblyName>
-        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>System.ComponentModel.DefaultValue("1")</AttributeName>
+          <AttributeName Language="C#">[System.ComponentModel.DefaultValue("1")]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.ComponentModel.DefaultValue("1")&gt;]</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.Xml.Serialization.XmlAttribute</AttributeName>
+          <AttributeName Language="C#">[System.Xml.Serialization.XmlAttribute]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Xml.Serialization.XmlAttribute&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>

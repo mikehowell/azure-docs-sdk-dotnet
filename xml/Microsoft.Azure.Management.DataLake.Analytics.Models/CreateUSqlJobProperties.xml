@@ -1,11 +1,9 @@
-﻿<Type Name="CreateUSqlJobProperties" FullName="Microsoft.Azure.Management.DataLake.Analytics.Models.CreateUSqlJobProperties">
+<Type Name="CreateUSqlJobProperties" FullName="Microsoft.Azure.Management.DataLake.Analytics.Models.CreateUSqlJobProperties">
   <TypeSignature Language="C#" Value="public class CreateUSqlJobProperties : Microsoft.Azure.Management.DataLake.Analytics.Models.CreateJobProperties" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit CreateUSqlJobProperties extends Microsoft.Azure.Management.DataLake.Analytics.Models.CreateJobProperties" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Azure.Management.DataLake.Analytics.Models.CreateUSqlJobProperties" />
   <TypeSignature Language="VB.NET" Value="Public Class CreateUSqlJobProperties&#xA;Inherits CreateJobProperties" />
   <TypeSignature Language="F#" Value="type CreateUSqlJobProperties = class&#xA;    inherit CreateJobProperties" />
-  <TypeSignature Language="C++ CLI" Value="public ref class CreateUSqlJobProperties : Microsoft::Azure::Management::DataLake::Analytics::Models::CreateJobProperties" />
-  <TypeSignature Language="C++ WINRT" Value="[Windows::Foundation::Metadata::WebHostHidden]&#xA;class CreateUSqlJobProperties : Microsoft::Azure::Management::DataLake::Analytics::Models::CreateJobProperties" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Azure.Management.DataLake.Analytics</AssemblyName>
     <AssemblyVersion>3.0.0.0</AssemblyVersion>
@@ -16,7 +14,8 @@
   <Interfaces />
   <Attributes>
     <Attribute>
-      <AttributeName>Newtonsoft.Json.JsonObject("USql")</AttributeName>
+      <AttributeName Language="C#">[Newtonsoft.Json.JsonObject("USql")]</AttributeName>
+      <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonObject("USql")&gt;]</AttributeName>
     </Attribute>
   </Attributes>
   <Docs>
@@ -31,9 +30,6 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Management.DataLake.Analytics.Models.CreateUSqlJobProperties.#ctor" />
       <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; CreateUSqlJobProperties();" />
-      <MemberSignature Language="C++ CX" Value="public:&#xA; CreateUSqlJobProperties();" />
-      <MemberSignature Language="C++ WINRT" Value=" CreateUSqlJobProperties();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.DataLake.Analytics</AssemblyName>
@@ -48,10 +44,10 @@
       </Docs>
     </Member>
     <Member MemberName=".ctor">
-      <MemberSignature Language="C#" Value="public CreateUSqlJobProperties (string script, string runtimeVersion = null, Nullable&lt;Microsoft.Azure.Management.DataLake.Analytics.Models.CompileMode&gt; compileMode = null);" />
+      <MemberSignature Language="C#" Value="public CreateUSqlJobProperties (string script, string runtimeVersion = default, Microsoft.Azure.Management.DataLake.Analytics.Models.CompileMode? compileMode = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string script, string runtimeVersion, valuetype System.Nullable`1&lt;valuetype Microsoft.Azure.Management.DataLake.Analytics.Models.CompileMode&gt; compileMode) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Management.DataLake.Analytics.Models.CreateUSqlJobProperties.#ctor(System.String,System.String,System.Nullable{Microsoft.Azure.Management.DataLake.Analytics.Models.CompileMode})" />
-      <MemberSignature Language="VB.NET" Value="Public Sub New (script As String, Optional runtimeVersion As String = null, Optional compileMode As Nullable(Of CompileMode) = null)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (script As String, Optional runtimeVersion As String = Nothing, Optional compileMode As Nullable(Of CompileMode) = Nothing)" />
       <MemberSignature Language="F#" Value="new Microsoft.Azure.Management.DataLake.Analytics.Models.CreateUSqlJobProperties : string * string * Nullable&lt;Microsoft.Azure.Management.DataLake.Analytics.Models.CompileMode&gt; -&gt; Microsoft.Azure.Management.DataLake.Analytics.Models.CreateUSqlJobProperties" Usage="new Microsoft.Azure.Management.DataLake.Analytics.Models.CreateUSqlJobProperties (script, runtimeVersion, compileMode)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
@@ -64,12 +60,12 @@
         <Parameter Name="compileMode" Type="System.Nullable&lt;Microsoft.Azure.Management.DataLake.Analytics.Models.CompileMode&gt;" />
       </Parameters>
       <Docs>
-        <param name="script">the script to run. Please note that the
+        <param name="script">The script to run. Please note that the
             maximum script size is 3 MB.</param>
-        <param name="runtimeVersion">the runtime version of the Data Lake
+        <param name="runtimeVersion">The runtime version of the Data Lake
             Analytics engine to use for the specific type of job being
             run.</param>
-        <param name="compileMode">the specific compilation mode for the job
+        <param name="compileMode">The specific compilation mode for the job
             used during execution. If this is not specified during submission,
             the server will determine the optimal compilation mode. Possible
             values include: 'Semantic', 'Full', 'SingleBox'</param>
@@ -80,12 +76,11 @@
       </Docs>
     </Member>
     <Member MemberName="CompileMode">
-      <MemberSignature Language="C#" Value="public Nullable&lt;Microsoft.Azure.Management.DataLake.Analytics.Models.CompileMode&gt; CompileMode { get; set; }" />
+      <MemberSignature Language="C#" Value="public Microsoft.Azure.Management.DataLake.Analytics.Models.CompileMode? CompileMode { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;valuetype Microsoft.Azure.Management.DataLake.Analytics.Models.CompileMode&gt; CompileMode" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Management.DataLake.Analytics.Models.CreateUSqlJobProperties.CompileMode" />
       <MemberSignature Language="VB.NET" Value="Public Property CompileMode As Nullable(Of CompileMode)" />
       <MemberSignature Language="F#" Value="member this.CompileMode : Nullable&lt;Microsoft.Azure.Management.DataLake.Analytics.Models.CompileMode&gt; with get, set" Usage="Microsoft.Azure.Management.DataLake.Analytics.Models.CreateUSqlJobProperties.CompileMode" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Nullable&lt;Microsoft::Azure::Management::DataLake::Analytics::Models::CompileMode&gt; CompileMode { Nullable&lt;Microsoft::Azure::Management::DataLake::Analytics::Models::CompileMode&gt; get(); void set(Nullable&lt;Microsoft::Azure::Management::DataLake::Analytics::Models::CompileMode&gt; value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.DataLake.Analytics</AssemblyName>
@@ -93,7 +88,8 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="compileMode")</AttributeName>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty(PropertyName="compileMode")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty(PropertyName="compileMode")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -116,9 +112,6 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Management.DataLake.Analytics.Models.CreateUSqlJobProperties.Validate" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub Validate ()" />
       <MemberSignature Language="F#" Value="override this.Validate : unit -&gt; unit" Usage="createUSqlJobProperties.Validate " />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void Validate();" />
-      <MemberSignature Language="C++ CX" Value="public:&#xA; override void Validate();" />
-      <MemberSignature Language="C++ WINRT" Value=" override void Validate();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.DataLake.Analytics</AssemblyName>

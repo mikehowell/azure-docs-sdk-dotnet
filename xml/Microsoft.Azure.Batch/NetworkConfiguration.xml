@@ -1,15 +1,14 @@
-﻿<Type Name="NetworkConfiguration" FullName="Microsoft.Azure.Batch.NetworkConfiguration">
+<Type Name="NetworkConfiguration" FullName="Microsoft.Azure.Batch.NetworkConfiguration">
   <TypeSignature Language="C#" Value="public class NetworkConfiguration" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit NetworkConfiguration extends System.Object" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Azure.Batch.NetworkConfiguration" />
   <TypeSignature Language="VB.NET" Value="Public Class NetworkConfiguration" />
-  <TypeSignature Language="F#" Value="type NetworkConfiguration = class&#xA;    interface ITransportObjectProvider&lt;NetworkConfiguration&gt;&#xA;    interface IPropertyMetadata&#xA;    interface IModifiable&#xA;    interface IReadOnly" />
-  <TypeSignature Language="C++ CLI" Value="public ref class NetworkConfiguration" />
-  <TypeSignature Language="C++ WINRT" Value="[Windows::Foundation::Metadata::WebHostHidden]&#xA;class NetworkConfiguration" />
+  <TypeSignature Language="F#" Value="type NetworkConfiguration = class" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Azure.Batch</AssemblyName>
-    <AssemblyVersion>7.1.0.0</AssemblyVersion>
-    <AssemblyVersion>8.0.0.0</AssemblyVersion>
+    <AssemblyVersion>12.0.0.0</AssemblyVersion>
+    <AssemblyVersion>13.0.0.0</AssemblyVersion>
+    <AssemblyVersion>14.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
@@ -27,14 +26,12 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Batch.NetworkConfiguration.#ctor" />
       <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; NetworkConfiguration();" />
-      <MemberSignature Language="C++ CX" Value="public:&#xA; NetworkConfiguration();" />
-      <MemberSignature Language="C++ WINRT" Value=" NetworkConfiguration();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Batch</AssemblyName>
-        <AssemblyVersion>7.1.0.0</AssemblyVersion>
-        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>12.0.0.0</AssemblyVersion>
+        <AssemblyVersion>13.0.0.0</AssemblyVersion>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
@@ -44,18 +41,44 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <Member MemberName="DynamicVNetAssignmentScope">
+      <MemberSignature Language="C#" Value="public Microsoft.Azure.Batch.Common.DynamicVNetAssignmentScope? DynamicVNetAssignmentScope { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;valuetype Microsoft.Azure.Batch.Common.DynamicVNetAssignmentScope&gt; DynamicVNetAssignmentScope" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Batch.NetworkConfiguration.DynamicVNetAssignmentScope" />
+      <MemberSignature Language="VB.NET" Value="Public Property DynamicVNetAssignmentScope As Nullable(Of DynamicVNetAssignmentScope)" />
+      <MemberSignature Language="F#" Value="member this.DynamicVNetAssignmentScope : Nullable&lt;Microsoft.Azure.Batch.Common.DynamicVNetAssignmentScope&gt; with get, set" Usage="Microsoft.Azure.Batch.NetworkConfiguration.DynamicVNetAssignmentScope" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Azure.Batch</AssemblyName>
+        <AssemblyVersion>12.0.0.0</AssemblyVersion>
+        <AssemblyVersion>13.0.0.0</AssemblyVersion>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Nullable&lt;Microsoft.Azure.Batch.Common.DynamicVNetAssignmentScope&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets or sets the scope of the dynamic VNet assignment.
+            </summary>
+        <value>To be added.</value>
+        <remarks>
+            This property can only be specified for pools created with a <see cref="P:Microsoft.Azure.Batch.CloudPool.VirtualMachineConfiguration" />.
+            </remarks>
+      </Docs>
+    </Member>
     <Member MemberName="EndpointConfiguration">
       <MemberSignature Language="C#" Value="public Microsoft.Azure.Batch.PoolEndpointConfiguration EndpointConfiguration { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Azure.Batch.PoolEndpointConfiguration EndpointConfiguration" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Batch.NetworkConfiguration.EndpointConfiguration" />
       <MemberSignature Language="VB.NET" Value="Public Property EndpointConfiguration As PoolEndpointConfiguration" />
       <MemberSignature Language="F#" Value="member this.EndpointConfiguration : Microsoft.Azure.Batch.PoolEndpointConfiguration with get, set" Usage="Microsoft.Azure.Batch.NetworkConfiguration.EndpointConfiguration" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Azure::Batch::PoolEndpointConfiguration ^ EndpointConfiguration { Microsoft::Azure::Batch::PoolEndpointConfiguration ^ get(); void set(Microsoft::Azure::Batch::PoolEndpointConfiguration ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Batch</AssemblyName>
-        <AssemblyVersion>7.1.0.0</AssemblyVersion>
-        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>12.0.0.0</AssemblyVersion>
+        <AssemblyVersion>13.0.0.0</AssemblyVersion>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Azure.Batch.PoolEndpointConfiguration</ReturnType>
@@ -70,19 +93,43 @@
             </remarks>
       </Docs>
     </Member>
+    <Member MemberName="PublicIPAddressConfiguration">
+      <MemberSignature Language="C#" Value="public Microsoft.Azure.Batch.PublicIPAddressConfiguration PublicIPAddressConfiguration { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Azure.Batch.PublicIPAddressConfiguration PublicIPAddressConfiguration" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Batch.NetworkConfiguration.PublicIPAddressConfiguration" />
+      <MemberSignature Language="VB.NET" Value="Public Property PublicIPAddressConfiguration As PublicIPAddressConfiguration" />
+      <MemberSignature Language="F#" Value="member this.PublicIPAddressConfiguration : Microsoft.Azure.Batch.PublicIPAddressConfiguration with get, set" Usage="Microsoft.Azure.Batch.NetworkConfiguration.PublicIPAddressConfiguration" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Azure.Batch</AssemblyName>
+        <AssemblyVersion>13.0.0.0</AssemblyVersion>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Azure.Batch.PublicIPAddressConfiguration</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets or sets the Public IPAddress configuration for Compute Nodes in the Batch Pool.
+            </summary>
+        <value>To be added.</value>
+        <remarks>
+            Public IP configuration property is only supported on Pools created with a <see cref="P:Microsoft.Azure.Batch.CloudPool.VirtualMachineConfiguration" />.
+            </remarks>
+      </Docs>
+    </Member>
     <Member MemberName="SubnetId">
       <MemberSignature Language="C#" Value="public string SubnetId { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string SubnetId" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Batch.NetworkConfiguration.SubnetId" />
       <MemberSignature Language="VB.NET" Value="Public Property SubnetId As String" />
       <MemberSignature Language="F#" Value="member this.SubnetId : string with get, set" Usage="Microsoft.Azure.Batch.NetworkConfiguration.SubnetId" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ SubnetId { System::String ^ get(); void set(System::String ^ value); };" />
-      <MemberSignature Language="C++ CX" Value="public:&#xA; property Platform::String ^ SubnetId { Platform::String ^ get(); void set(Platform::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Batch</AssemblyName>
-        <AssemblyVersion>7.1.0.0</AssemblyVersion>
-        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>12.0.0.0</AssemblyVersion>
+        <AssemblyVersion>13.0.0.0</AssemblyVersion>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>

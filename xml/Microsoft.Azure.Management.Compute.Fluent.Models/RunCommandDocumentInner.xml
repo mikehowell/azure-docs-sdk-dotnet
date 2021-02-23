@@ -1,21 +1,28 @@
-﻿<Type Name="RunCommandDocumentInner" FullName="Microsoft.Azure.Management.Compute.Fluent.Models.RunCommandDocumentInner">
+<Type Name="RunCommandDocumentInner" FullName="Microsoft.Azure.Management.Compute.Fluent.Models.RunCommandDocumentInner">
   <TypeSignature Language="C#" Value="public class RunCommandDocumentInner : Microsoft.Azure.Management.Compute.Fluent.Models.RunCommandDocumentBase" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit RunCommandDocumentInner extends Microsoft.Azure.Management.Compute.Fluent.Models.RunCommandDocumentBase" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Azure.Management.Compute.Fluent.Models.RunCommandDocumentInner" />
   <TypeSignature Language="VB.NET" Value="Public Class RunCommandDocumentInner&#xA;Inherits RunCommandDocumentBase" />
   <TypeSignature Language="F#" Value="type RunCommandDocumentInner = class&#xA;    inherit RunCommandDocumentBase" />
-  <TypeSignature Language="C++ CLI" Value="public ref class RunCommandDocumentInner : Microsoft::Azure::Management::Compute::Fluent::Models::RunCommandDocumentBase" />
-  <TypeSignature Language="C++ WINRT" Value="[Windows::Foundation::Metadata::WebHostHidden]&#xA;class RunCommandDocumentInner : Microsoft::Azure::Management::Compute::Fluent::Models::RunCommandDocumentBase" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Azure.Management.Compute.Fluent</AssemblyName>
-    <AssemblyVersion>1.0.0.60</AssemblyVersion>
+    <AssemblyVersion>1.0.0.61</AssemblyVersion>
+    <AssemblyVersion>1.0.0.62</AssemblyVersion>
+    <AssemblyVersion>1.0.0.63</AssemblyVersion>
+    <AssemblyVersion>1.0.0.64</AssemblyVersion>
+    <AssemblyVersion>1.0.0.65</AssemblyVersion>
+    <AssemblyVersion>1.0.0.66</AssemblyVersion>
+    <AssemblyVersion>1.0.0.67</AssemblyVersion>
+    <AssemblyVersion>1.0.0.68</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>Microsoft.Azure.Management.Compute.Fluent.Models.RunCommandDocumentBase</BaseTypeName>
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
+    <summary>
+            Describes the properties of a Run Command.
+            </summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -24,30 +31,43 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Management.Compute.Fluent.Models.RunCommandDocumentInner.#ctor" />
       <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; RunCommandDocumentInner();" />
-      <MemberSignature Language="C++ CX" Value="public:&#xA; RunCommandDocumentInner();" />
-      <MemberSignature Language="C++ WINRT" Value=" RunCommandDocumentInner();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Compute.Fluent</AssemblyName>
-        <AssemblyVersion>1.0.0.60</AssemblyVersion>
+        <AssemblyVersion>1.0.0.61</AssemblyVersion>
+        <AssemblyVersion>1.0.0.62</AssemblyVersion>
+        <AssemblyVersion>1.0.0.63</AssemblyVersion>
+        <AssemblyVersion>1.0.0.64</AssemblyVersion>
+        <AssemblyVersion>1.0.0.65</AssemblyVersion>
+        <AssemblyVersion>1.0.0.66</AssemblyVersion>
+        <AssemblyVersion>1.0.0.67</AssemblyVersion>
+        <AssemblyVersion>1.0.0.68</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+            Initializes a new instance of the RunCommandDocumentInner class.
+            </summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
-      <MemberSignature Language="C#" Value="public RunCommandDocumentInner (string schema, string id, Microsoft.Azure.Management.Compute.Fluent.Models.OperatingSystemTypes osType, string label, string description, System.Collections.Generic.IList&lt;string&gt; script, System.Collections.Generic.IList&lt;Microsoft.Azure.Management.Compute.Fluent.Models.RunCommandParameterDefinition&gt; parameters = null);" />
+      <MemberSignature Language="C#" Value="public RunCommandDocumentInner (string schema, string id, Microsoft.Azure.Management.Compute.Fluent.Models.OperatingSystemTypes osType, string label, string description, System.Collections.Generic.IList&lt;string&gt; script, System.Collections.Generic.IList&lt;Microsoft.Azure.Management.Compute.Fluent.Models.RunCommandParameterDefinition&gt; parameters = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string schema, string id, valuetype Microsoft.Azure.Management.Compute.Fluent.Models.OperatingSystemTypes osType, string label, string description, class System.Collections.Generic.IList`1&lt;string&gt; script, class System.Collections.Generic.IList`1&lt;class Microsoft.Azure.Management.Compute.Fluent.Models.RunCommandParameterDefinition&gt; parameters) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Management.Compute.Fluent.Models.RunCommandDocumentInner.#ctor(System.String,System.String,Microsoft.Azure.Management.Compute.Fluent.Models.OperatingSystemTypes,System.String,System.String,System.Collections.Generic.IList{System.String},System.Collections.Generic.IList{Microsoft.Azure.Management.Compute.Fluent.Models.RunCommandParameterDefinition})" />
-      <MemberSignature Language="VB.NET" Value="Public Sub New (schema As String, id As String, osType As OperatingSystemTypes, label As String, description As String, script As IList(Of String), Optional parameters As IList(Of RunCommandParameterDefinition) = null)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (schema As String, id As String, osType As OperatingSystemTypes, label As String, description As String, script As IList(Of String), Optional parameters As IList(Of RunCommandParameterDefinition) = Nothing)" />
       <MemberSignature Language="F#" Value="new Microsoft.Azure.Management.Compute.Fluent.Models.RunCommandDocumentInner : string * string * Microsoft.Azure.Management.Compute.Fluent.Models.OperatingSystemTypes * string * string * System.Collections.Generic.IList&lt;string&gt; * System.Collections.Generic.IList&lt;Microsoft.Azure.Management.Compute.Fluent.Models.RunCommandParameterDefinition&gt; -&gt; Microsoft.Azure.Management.Compute.Fluent.Models.RunCommandDocumentInner" Usage="new Microsoft.Azure.Management.Compute.Fluent.Models.RunCommandDocumentInner (schema, id, osType, label, description, script, parameters)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Compute.Fluent</AssemblyName>
-        <AssemblyVersion>1.0.0.60</AssemblyVersion>
+        <AssemblyVersion>1.0.0.61</AssemblyVersion>
+        <AssemblyVersion>1.0.0.62</AssemblyVersion>
+        <AssemblyVersion>1.0.0.63</AssemblyVersion>
+        <AssemblyVersion>1.0.0.64</AssemblyVersion>
+        <AssemblyVersion>1.0.0.65</AssemblyVersion>
+        <AssemblyVersion>1.0.0.66</AssemblyVersion>
+        <AssemblyVersion>1.0.0.67</AssemblyVersion>
+        <AssemblyVersion>1.0.0.68</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="schema" Type="System.String" />
@@ -59,14 +79,17 @@
         <Parameter Name="parameters" Type="System.Collections.Generic.IList&lt;Microsoft.Azure.Management.Compute.Fluent.Models.RunCommandParameterDefinition&gt;" />
       </Parameters>
       <Docs>
-        <param name="schema">To be added.</param>
-        <param name="id">To be added.</param>
-        <param name="osType">To be added.</param>
-        <param name="label">To be added.</param>
-        <param name="description">To be added.</param>
-        <param name="script">To be added.</param>
-        <param name="parameters">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="schema">The VM run command schema.</param>
+        <param name="id">The VM run command id.</param>
+        <param name="osType">The Operating System type. Possible values
+            include: 'Windows', 'Linux'</param>
+        <param name="label">The VM run command label.</param>
+        <param name="description">The VM run command description.</param>
+        <param name="script">The script to be executed.</param>
+        <param name="parameters">The parameters used by the script.</param>
+        <summary>
+            Initializes a new instance of the RunCommandDocumentInner class.
+            </summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -76,22 +99,31 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Management.Compute.Fluent.Models.RunCommandDocumentInner.Parameters" />
       <MemberSignature Language="VB.NET" Value="Public Property Parameters As IList(Of RunCommandParameterDefinition)" />
       <MemberSignature Language="F#" Value="member this.Parameters : System.Collections.Generic.IList&lt;Microsoft.Azure.Management.Compute.Fluent.Models.RunCommandParameterDefinition&gt; with get, set" Usage="Microsoft.Azure.Management.Compute.Fluent.Models.RunCommandDocumentInner.Parameters" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::Generic::IList&lt;Microsoft::Azure::Management::Compute::Fluent::Models::RunCommandParameterDefinition ^&gt; ^ Parameters { System::Collections::Generic::IList&lt;Microsoft::Azure::Management::Compute::Fluent::Models::RunCommandParameterDefinition ^&gt; ^ get(); void set(System::Collections::Generic::IList&lt;Microsoft::Azure::Management::Compute::Fluent::Models::RunCommandParameterDefinition ^&gt; ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Compute.Fluent</AssemblyName>
-        <AssemblyVersion>1.0.0.60</AssemblyVersion>
+        <AssemblyVersion>1.0.0.61</AssemblyVersion>
+        <AssemblyVersion>1.0.0.62</AssemblyVersion>
+        <AssemblyVersion>1.0.0.63</AssemblyVersion>
+        <AssemblyVersion>1.0.0.64</AssemblyVersion>
+        <AssemblyVersion>1.0.0.65</AssemblyVersion>
+        <AssemblyVersion>1.0.0.66</AssemblyVersion>
+        <AssemblyVersion>1.0.0.67</AssemblyVersion>
+        <AssemblyVersion>1.0.0.68</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="parameters")</AttributeName>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty(PropertyName="parameters")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty(PropertyName="parameters")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
         <ReturnType>System.Collections.Generic.IList&lt;Microsoft.Azure.Management.Compute.Fluent.Models.RunCommandParameterDefinition&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+            Gets or sets the parameters used by the script.
+            </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -102,22 +134,31 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Management.Compute.Fluent.Models.RunCommandDocumentInner.Script" />
       <MemberSignature Language="VB.NET" Value="Public Property Script As IList(Of String)" />
       <MemberSignature Language="F#" Value="member this.Script : System.Collections.Generic.IList&lt;string&gt; with get, set" Usage="Microsoft.Azure.Management.Compute.Fluent.Models.RunCommandDocumentInner.Script" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::Generic::IList&lt;System::String ^&gt; ^ Script { System::Collections::Generic::IList&lt;System::String ^&gt; ^ get(); void set(System::Collections::Generic::IList&lt;System::String ^&gt; ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Compute.Fluent</AssemblyName>
-        <AssemblyVersion>1.0.0.60</AssemblyVersion>
+        <AssemblyVersion>1.0.0.61</AssemblyVersion>
+        <AssemblyVersion>1.0.0.62</AssemblyVersion>
+        <AssemblyVersion>1.0.0.63</AssemblyVersion>
+        <AssemblyVersion>1.0.0.64</AssemblyVersion>
+        <AssemblyVersion>1.0.0.65</AssemblyVersion>
+        <AssemblyVersion>1.0.0.66</AssemblyVersion>
+        <AssemblyVersion>1.0.0.67</AssemblyVersion>
+        <AssemblyVersion>1.0.0.68</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="script")</AttributeName>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty(PropertyName="script")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty(PropertyName="script")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
         <ReturnType>System.Collections.Generic.IList&lt;System.String&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+            Gets or sets the script to be executed.
+            </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -128,21 +169,30 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Management.Compute.Fluent.Models.RunCommandDocumentInner.Validate" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub Validate ()" />
       <MemberSignature Language="F#" Value="override this.Validate : unit -&gt; unit" Usage="runCommandDocumentInner.Validate " />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void Validate();" />
-      <MemberSignature Language="C++ CX" Value="public:&#xA; override void Validate();" />
-      <MemberSignature Language="C++ WINRT" Value=" override void Validate();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Compute.Fluent</AssemblyName>
-        <AssemblyVersion>1.0.0.60</AssemblyVersion>
+        <AssemblyVersion>1.0.0.61</AssemblyVersion>
+        <AssemblyVersion>1.0.0.62</AssemblyVersion>
+        <AssemblyVersion>1.0.0.63</AssemblyVersion>
+        <AssemblyVersion>1.0.0.64</AssemblyVersion>
+        <AssemblyVersion>1.0.0.65</AssemblyVersion>
+        <AssemblyVersion>1.0.0.66</AssemblyVersion>
+        <AssemblyVersion>1.0.0.67</AssemblyVersion>
+        <AssemblyVersion>1.0.0.68</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+            Validate the object.
+            </summary>
         <remarks>To be added.</remarks>
+        <exception cref="T:Microsoft.Rest.ValidationException">
+            Thrown if validation fails
+            </exception>
       </Docs>
     </Member>
   </Members>

@@ -1,14 +1,13 @@
-﻿<Type Name="TopLevelDomainAgreementOption" FullName="Microsoft.Azure.Management.WebSites.Models.TopLevelDomainAgreementOption">
+<Type Name="TopLevelDomainAgreementOption" FullName="Microsoft.Azure.Management.WebSites.Models.TopLevelDomainAgreementOption">
   <TypeSignature Language="C#" Value="public class TopLevelDomainAgreementOption" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit TopLevelDomainAgreementOption extends System.Object" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Azure.Management.WebSites.Models.TopLevelDomainAgreementOption" />
   <TypeSignature Language="VB.NET" Value="Public Class TopLevelDomainAgreementOption" />
   <TypeSignature Language="F#" Value="type TopLevelDomainAgreementOption = class" />
-  <TypeSignature Language="C++ CLI" Value="public ref class TopLevelDomainAgreementOption" />
-  <TypeSignature Language="C++ WINRT" Value="[Windows::Foundation::Metadata::WebHostHidden]&#xA;class TopLevelDomainAgreementOption" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Azure.Management.Websites</AssemblyName>
-    <AssemblyVersion>1.0.0.0</AssemblyVersion>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
+    <AssemblyVersion>3.1.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
@@ -26,13 +25,11 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Management.WebSites.Models.TopLevelDomainAgreementOption.#ctor" />
       <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; TopLevelDomainAgreementOption();" />
-      <MemberSignature Language="C++ CX" Value="public:&#xA; TopLevelDomainAgreementOption();" />
-      <MemberSignature Language="C++ WINRT" Value=" TopLevelDomainAgreementOption();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Websites</AssemblyName>
-        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>3.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
@@ -44,15 +41,16 @@
       </Docs>
     </Member>
     <Member MemberName=".ctor">
-      <MemberSignature Language="C#" Value="public TopLevelDomainAgreementOption (Nullable&lt;bool&gt; includePrivacy = null, Nullable&lt;bool&gt; forTransfer = null);" />
+      <MemberSignature Language="C#" Value="public TopLevelDomainAgreementOption (bool? includePrivacy = default, bool? forTransfer = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(valuetype System.Nullable`1&lt;bool&gt; includePrivacy, valuetype System.Nullable`1&lt;bool&gt; forTransfer) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Management.WebSites.Models.TopLevelDomainAgreementOption.#ctor(System.Nullable{System.Boolean},System.Nullable{System.Boolean})" />
-      <MemberSignature Language="VB.NET" Value="Public Sub New (Optional includePrivacy As Nullable(Of Boolean) = null, Optional forTransfer As Nullable(Of Boolean) = null)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (Optional includePrivacy As Nullable(Of Boolean) = Nothing, Optional forTransfer As Nullable(Of Boolean) = Nothing)" />
       <MemberSignature Language="F#" Value="new Microsoft.Azure.Management.WebSites.Models.TopLevelDomainAgreementOption : Nullable&lt;bool&gt; * Nullable&lt;bool&gt; -&gt; Microsoft.Azure.Management.WebSites.Models.TopLevelDomainAgreementOption" Usage="new Microsoft.Azure.Management.WebSites.Models.TopLevelDomainAgreementOption (includePrivacy, forTransfer)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Websites</AssemblyName>
-        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>3.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="includePrivacy" Type="System.Nullable&lt;System.Boolean&gt;" />
@@ -73,20 +71,21 @@
       </Docs>
     </Member>
     <Member MemberName="ForTransfer">
-      <MemberSignature Language="C#" Value="public Nullable&lt;bool&gt; ForTransfer { get; set; }" />
+      <MemberSignature Language="C#" Value="public bool? ForTransfer { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;bool&gt; ForTransfer" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Management.WebSites.Models.TopLevelDomainAgreementOption.ForTransfer" />
       <MemberSignature Language="VB.NET" Value="Public Property ForTransfer As Nullable(Of Boolean)" />
       <MemberSignature Language="F#" Value="member this.ForTransfer : Nullable&lt;bool&gt; with get, set" Usage="Microsoft.Azure.Management.WebSites.Models.TopLevelDomainAgreementOption.ForTransfer" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Nullable&lt;bool&gt; ForTransfer { Nullable&lt;bool&gt; get(); void set(Nullable&lt;bool&gt; value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Websites</AssemblyName>
-        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>3.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="forTransfer")</AttributeName>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty(PropertyName="forTransfer")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty(PropertyName="forTransfer")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -103,20 +102,21 @@
       </Docs>
     </Member>
     <Member MemberName="IncludePrivacy">
-      <MemberSignature Language="C#" Value="public Nullable&lt;bool&gt; IncludePrivacy { get; set; }" />
+      <MemberSignature Language="C#" Value="public bool? IncludePrivacy { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;bool&gt; IncludePrivacy" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Management.WebSites.Models.TopLevelDomainAgreementOption.IncludePrivacy" />
       <MemberSignature Language="VB.NET" Value="Public Property IncludePrivacy As Nullable(Of Boolean)" />
       <MemberSignature Language="F#" Value="member this.IncludePrivacy : Nullable&lt;bool&gt; with get, set" Usage="Microsoft.Azure.Management.WebSites.Models.TopLevelDomainAgreementOption.IncludePrivacy" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Nullable&lt;bool&gt; IncludePrivacy { Nullable&lt;bool&gt; get(); void set(Nullable&lt;bool&gt; value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Websites</AssemblyName>
-        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>3.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="includePrivacy")</AttributeName>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty(PropertyName="includePrivacy")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty(PropertyName="includePrivacy")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>

@@ -1,14 +1,12 @@
-﻿<Type Name="JobCreateParameters" FullName="Microsoft.Azure.Management.BatchAI.Models.JobCreateParameters">
+<Type Name="JobCreateParameters" FullName="Microsoft.Azure.Management.BatchAI.Models.JobCreateParameters">
   <TypeSignature Language="C#" Value="public class JobCreateParameters" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit JobCreateParameters extends System.Object" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Azure.Management.BatchAI.Models.JobCreateParameters" />
   <TypeSignature Language="VB.NET" Value="Public Class JobCreateParameters" />
   <TypeSignature Language="F#" Value="type JobCreateParameters = class" />
-  <TypeSignature Language="C++ CLI" Value="public ref class JobCreateParameters" />
-  <TypeSignature Language="C++ WINRT" Value="[Windows::Foundation::Metadata::WebHostHidden]&#xA;class JobCreateParameters" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Azure.Management.BatchAI</AssemblyName>
-    <AssemblyVersion>1.0.0.0</AssemblyVersion>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
@@ -16,12 +14,13 @@
   <Interfaces />
   <Attributes>
     <Attribute>
-      <AttributeName>Microsoft.Rest.Serialization.JsonTransformation</AttributeName>
+      <AttributeName Language="C#">[Microsoft.Rest.Serialization.JsonTransformation]</AttributeName>
+      <AttributeName Language="F#">[&lt;Microsoft.Rest.Serialization.JsonTransformation&gt;]</AttributeName>
     </Attribute>
   </Attributes>
   <Docs>
     <summary>
-            Parameters supplied to the Create operation.
+            Job creation parameters.
             </summary>
     <remarks>To be added.</remarks>
   </Docs>
@@ -31,13 +30,10 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Management.BatchAI.Models.JobCreateParameters.#ctor" />
       <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; JobCreateParameters();" />
-      <MemberSignature Language="C++ CX" Value="public:&#xA; JobCreateParameters();" />
-      <MemberSignature Language="C++ WINRT" Value=" JobCreateParameters();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.BatchAI</AssemblyName>
-        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
@@ -48,23 +44,21 @@
       </Docs>
     </Member>
     <Member MemberName=".ctor">
-      <MemberSignature Language="C#" Value="public JobCreateParameters (string location, Microsoft.Azure.Management.BatchAI.Models.ResourceId cluster, int nodeCount, string stdOutErrPathPrefix, System.Collections.Generic.IDictionary&lt;string,string&gt; tags = null, string experimentName = null, Nullable&lt;int&gt; priority = null, Microsoft.Azure.Management.BatchAI.Models.MountVolumes mountVolumes = null, Microsoft.Azure.Management.BatchAI.Models.ContainerSettings containerSettings = null, Microsoft.Azure.Management.BatchAI.Models.CNTKsettings cntkSettings = null, Microsoft.Azure.Management.BatchAI.Models.PyTorchSettings pyTorchSettings = null, Microsoft.Azure.Management.BatchAI.Models.TensorFlowSettings tensorFlowSettings = null, Microsoft.Azure.Management.BatchAI.Models.CaffeSettings caffeSettings = null, Microsoft.Azure.Management.BatchAI.Models.Caffe2Settings caffe2Settings = null, Microsoft.Azure.Management.BatchAI.Models.ChainerSettings chainerSettings = null, Microsoft.Azure.Management.BatchAI.Models.CustomToolkitSettings customToolkitSettings = null, Microsoft.Azure.Management.BatchAI.Models.JobPreparation jobPreparation = null, System.Collections.Generic.IList&lt;Microsoft.Azure.Management.BatchAI.Models.InputDirectory&gt; inputDirectories = null, System.Collections.Generic.IList&lt;Microsoft.Azure.Management.BatchAI.Models.OutputDirectory&gt; outputDirectories = null, System.Collections.Generic.IList&lt;Microsoft.Azure.Management.BatchAI.Models.EnvironmentVariable&gt; environmentVariables = null, System.Collections.Generic.IList&lt;Microsoft.Azure.Management.BatchAI.Models.EnvironmentVariableWithSecretValue&gt; secrets = null, Microsoft.Azure.Management.BatchAI.Models.JobBasePropertiesConstraints constraints = null);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string location, class Microsoft.Azure.Management.BatchAI.Models.ResourceId cluster, int32 nodeCount, string stdOutErrPathPrefix, class System.Collections.Generic.IDictionary`2&lt;string, string&gt; tags, string experimentName, valuetype System.Nullable`1&lt;int32&gt; priority, class Microsoft.Azure.Management.BatchAI.Models.MountVolumes mountVolumes, class Microsoft.Azure.Management.BatchAI.Models.ContainerSettings containerSettings, class Microsoft.Azure.Management.BatchAI.Models.CNTKsettings cntkSettings, class Microsoft.Azure.Management.BatchAI.Models.PyTorchSettings pyTorchSettings, class Microsoft.Azure.Management.BatchAI.Models.TensorFlowSettings tensorFlowSettings, class Microsoft.Azure.Management.BatchAI.Models.CaffeSettings caffeSettings, class Microsoft.Azure.Management.BatchAI.Models.Caffe2Settings caffe2Settings, class Microsoft.Azure.Management.BatchAI.Models.ChainerSettings chainerSettings, class Microsoft.Azure.Management.BatchAI.Models.CustomToolkitSettings customToolkitSettings, class Microsoft.Azure.Management.BatchAI.Models.JobPreparation jobPreparation, class System.Collections.Generic.IList`1&lt;class Microsoft.Azure.Management.BatchAI.Models.InputDirectory&gt; inputDirectories, class System.Collections.Generic.IList`1&lt;class Microsoft.Azure.Management.BatchAI.Models.OutputDirectory&gt; outputDirectories, class System.Collections.Generic.IList`1&lt;class Microsoft.Azure.Management.BatchAI.Models.EnvironmentVariable&gt; environmentVariables, class System.Collections.Generic.IList`1&lt;class Microsoft.Azure.Management.BatchAI.Models.EnvironmentVariableWithSecretValue&gt; secrets, class Microsoft.Azure.Management.BatchAI.Models.JobBasePropertiesConstraints constraints) cil managed" />
-      <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Management.BatchAI.Models.JobCreateParameters.#ctor(System.String,Microsoft.Azure.Management.BatchAI.Models.ResourceId,System.Int32,System.String,System.Collections.Generic.IDictionary{System.String,System.String},System.String,System.Nullable{System.Int32},Microsoft.Azure.Management.BatchAI.Models.MountVolumes,Microsoft.Azure.Management.BatchAI.Models.ContainerSettings,Microsoft.Azure.Management.BatchAI.Models.CNTKsettings,Microsoft.Azure.Management.BatchAI.Models.PyTorchSettings,Microsoft.Azure.Management.BatchAI.Models.TensorFlowSettings,Microsoft.Azure.Management.BatchAI.Models.CaffeSettings,Microsoft.Azure.Management.BatchAI.Models.Caffe2Settings,Microsoft.Azure.Management.BatchAI.Models.ChainerSettings,Microsoft.Azure.Management.BatchAI.Models.CustomToolkitSettings,Microsoft.Azure.Management.BatchAI.Models.JobPreparation,System.Collections.Generic.IList{Microsoft.Azure.Management.BatchAI.Models.InputDirectory},System.Collections.Generic.IList{Microsoft.Azure.Management.BatchAI.Models.OutputDirectory},System.Collections.Generic.IList{Microsoft.Azure.Management.BatchAI.Models.EnvironmentVariable},System.Collections.Generic.IList{Microsoft.Azure.Management.BatchAI.Models.EnvironmentVariableWithSecretValue},Microsoft.Azure.Management.BatchAI.Models.JobBasePropertiesConstraints)" />
-      <MemberSignature Language="F#" Value="new Microsoft.Azure.Management.BatchAI.Models.JobCreateParameters : string * Microsoft.Azure.Management.BatchAI.Models.ResourceId * int * string * System.Collections.Generic.IDictionary&lt;string, string&gt; * string * Nullable&lt;int&gt; * Microsoft.Azure.Management.BatchAI.Models.MountVolumes * Microsoft.Azure.Management.BatchAI.Models.ContainerSettings * Microsoft.Azure.Management.BatchAI.Models.CNTKsettings * Microsoft.Azure.Management.BatchAI.Models.PyTorchSettings * Microsoft.Azure.Management.BatchAI.Models.TensorFlowSettings * Microsoft.Azure.Management.BatchAI.Models.CaffeSettings * Microsoft.Azure.Management.BatchAI.Models.Caffe2Settings * Microsoft.Azure.Management.BatchAI.Models.ChainerSettings * Microsoft.Azure.Management.BatchAI.Models.CustomToolkitSettings * Microsoft.Azure.Management.BatchAI.Models.JobPreparation * System.Collections.Generic.IList&lt;Microsoft.Azure.Management.BatchAI.Models.InputDirectory&gt; * System.Collections.Generic.IList&lt;Microsoft.Azure.Management.BatchAI.Models.OutputDirectory&gt; * System.Collections.Generic.IList&lt;Microsoft.Azure.Management.BatchAI.Models.EnvironmentVariable&gt; * System.Collections.Generic.IList&lt;Microsoft.Azure.Management.BatchAI.Models.EnvironmentVariableWithSecretValue&gt; * Microsoft.Azure.Management.BatchAI.Models.JobBasePropertiesConstraints -&gt; Microsoft.Azure.Management.BatchAI.Models.JobCreateParameters" Usage="new Microsoft.Azure.Management.BatchAI.Models.JobCreateParameters (location, cluster, nodeCount, stdOutErrPathPrefix, tags, experimentName, priority, mountVolumes, containerSettings, cntkSettings, pyTorchSettings, tensorFlowSettings, caffeSettings, caffe2Settings, chainerSettings, customToolkitSettings, jobPreparation, inputDirectories, outputDirectories, environmentVariables, secrets, constraints)" />
+      <MemberSignature Language="C#" Value="public JobCreateParameters (Microsoft.Azure.Management.BatchAI.Models.ResourceId cluster, int nodeCount, string stdOutErrPathPrefix, string schedulingPriority = default, Microsoft.Azure.Management.BatchAI.Models.MountVolumes mountVolumes = default, Microsoft.Azure.Management.BatchAI.Models.ContainerSettings containerSettings = default, Microsoft.Azure.Management.BatchAI.Models.CNTKsettings cntkSettings = default, Microsoft.Azure.Management.BatchAI.Models.PyTorchSettings pyTorchSettings = default, Microsoft.Azure.Management.BatchAI.Models.TensorFlowSettings tensorFlowSettings = default, Microsoft.Azure.Management.BatchAI.Models.CaffeSettings caffeSettings = default, Microsoft.Azure.Management.BatchAI.Models.Caffe2Settings caffe2Settings = default, Microsoft.Azure.Management.BatchAI.Models.ChainerSettings chainerSettings = default, Microsoft.Azure.Management.BatchAI.Models.CustomToolkitSettings customToolkitSettings = default, Microsoft.Azure.Management.BatchAI.Models.CustomMpiSettings customMpiSettings = default, Microsoft.Azure.Management.BatchAI.Models.HorovodSettings horovodSettings = default, Microsoft.Azure.Management.BatchAI.Models.JobPreparation jobPreparation = default, System.Collections.Generic.IList&lt;Microsoft.Azure.Management.BatchAI.Models.InputDirectory&gt; inputDirectories = default, System.Collections.Generic.IList&lt;Microsoft.Azure.Management.BatchAI.Models.OutputDirectory&gt; outputDirectories = default, System.Collections.Generic.IList&lt;Microsoft.Azure.Management.BatchAI.Models.EnvironmentVariable&gt; environmentVariables = default, System.Collections.Generic.IList&lt;Microsoft.Azure.Management.BatchAI.Models.EnvironmentVariableWithSecretValue&gt; secrets = default, Microsoft.Azure.Management.BatchAI.Models.JobBasePropertiesConstraints constraints = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class Microsoft.Azure.Management.BatchAI.Models.ResourceId cluster, int32 nodeCount, string stdOutErrPathPrefix, string schedulingPriority, class Microsoft.Azure.Management.BatchAI.Models.MountVolumes mountVolumes, class Microsoft.Azure.Management.BatchAI.Models.ContainerSettings containerSettings, class Microsoft.Azure.Management.BatchAI.Models.CNTKsettings cntkSettings, class Microsoft.Azure.Management.BatchAI.Models.PyTorchSettings pyTorchSettings, class Microsoft.Azure.Management.BatchAI.Models.TensorFlowSettings tensorFlowSettings, class Microsoft.Azure.Management.BatchAI.Models.CaffeSettings caffeSettings, class Microsoft.Azure.Management.BatchAI.Models.Caffe2Settings caffe2Settings, class Microsoft.Azure.Management.BatchAI.Models.ChainerSettings chainerSettings, class Microsoft.Azure.Management.BatchAI.Models.CustomToolkitSettings customToolkitSettings, class Microsoft.Azure.Management.BatchAI.Models.CustomMpiSettings customMpiSettings, class Microsoft.Azure.Management.BatchAI.Models.HorovodSettings horovodSettings, class Microsoft.Azure.Management.BatchAI.Models.JobPreparation jobPreparation, class System.Collections.Generic.IList`1&lt;class Microsoft.Azure.Management.BatchAI.Models.InputDirectory&gt; inputDirectories, class System.Collections.Generic.IList`1&lt;class Microsoft.Azure.Management.BatchAI.Models.OutputDirectory&gt; outputDirectories, class System.Collections.Generic.IList`1&lt;class Microsoft.Azure.Management.BatchAI.Models.EnvironmentVariable&gt; environmentVariables, class System.Collections.Generic.IList`1&lt;class Microsoft.Azure.Management.BatchAI.Models.EnvironmentVariableWithSecretValue&gt; secrets, class Microsoft.Azure.Management.BatchAI.Models.JobBasePropertiesConstraints constraints) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Management.BatchAI.Models.JobCreateParameters.#ctor(Microsoft.Azure.Management.BatchAI.Models.ResourceId,System.Int32,System.String,System.String,Microsoft.Azure.Management.BatchAI.Models.MountVolumes,Microsoft.Azure.Management.BatchAI.Models.ContainerSettings,Microsoft.Azure.Management.BatchAI.Models.CNTKsettings,Microsoft.Azure.Management.BatchAI.Models.PyTorchSettings,Microsoft.Azure.Management.BatchAI.Models.TensorFlowSettings,Microsoft.Azure.Management.BatchAI.Models.CaffeSettings,Microsoft.Azure.Management.BatchAI.Models.Caffe2Settings,Microsoft.Azure.Management.BatchAI.Models.ChainerSettings,Microsoft.Azure.Management.BatchAI.Models.CustomToolkitSettings,Microsoft.Azure.Management.BatchAI.Models.CustomMpiSettings,Microsoft.Azure.Management.BatchAI.Models.HorovodSettings,Microsoft.Azure.Management.BatchAI.Models.JobPreparation,System.Collections.Generic.IList{Microsoft.Azure.Management.BatchAI.Models.InputDirectory},System.Collections.Generic.IList{Microsoft.Azure.Management.BatchAI.Models.OutputDirectory},System.Collections.Generic.IList{Microsoft.Azure.Management.BatchAI.Models.EnvironmentVariable},System.Collections.Generic.IList{Microsoft.Azure.Management.BatchAI.Models.EnvironmentVariableWithSecretValue},Microsoft.Azure.Management.BatchAI.Models.JobBasePropertiesConstraints)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (cluster As ResourceId, nodeCount As Integer, stdOutErrPathPrefix As String, Optional schedulingPriority As String = Nothing, Optional mountVolumes As MountVolumes = Nothing, Optional containerSettings As ContainerSettings = Nothing, Optional cntkSettings As CNTKsettings = Nothing, Optional pyTorchSettings As PyTorchSettings = Nothing, Optional tensorFlowSettings As TensorFlowSettings = Nothing, Optional caffeSettings As CaffeSettings = Nothing, Optional caffe2Settings As Caffe2Settings = Nothing, Optional chainerSettings As ChainerSettings = Nothing, Optional customToolkitSettings As CustomToolkitSettings = Nothing, Optional customMpiSettings As CustomMpiSettings = Nothing, Optional horovodSettings As HorovodSettings = Nothing, Optional jobPreparation As JobPreparation = Nothing, Optional inputDirectories As IList(Of InputDirectory) = Nothing, Optional outputDirectories As IList(Of OutputDirectory) = Nothing, Optional environmentVariables As IList(Of EnvironmentVariable) = Nothing, Optional secrets As IList(Of EnvironmentVariableWithSecretValue) = Nothing, Optional constraints As JobBasePropertiesConstraints = Nothing)" />
+      <MemberSignature Language="F#" Value="new Microsoft.Azure.Management.BatchAI.Models.JobCreateParameters : Microsoft.Azure.Management.BatchAI.Models.ResourceId * int * string * string * Microsoft.Azure.Management.BatchAI.Models.MountVolumes * Microsoft.Azure.Management.BatchAI.Models.ContainerSettings * Microsoft.Azure.Management.BatchAI.Models.CNTKsettings * Microsoft.Azure.Management.BatchAI.Models.PyTorchSettings * Microsoft.Azure.Management.BatchAI.Models.TensorFlowSettings * Microsoft.Azure.Management.BatchAI.Models.CaffeSettings * Microsoft.Azure.Management.BatchAI.Models.Caffe2Settings * Microsoft.Azure.Management.BatchAI.Models.ChainerSettings * Microsoft.Azure.Management.BatchAI.Models.CustomToolkitSettings * Microsoft.Azure.Management.BatchAI.Models.CustomMpiSettings * Microsoft.Azure.Management.BatchAI.Models.HorovodSettings * Microsoft.Azure.Management.BatchAI.Models.JobPreparation * System.Collections.Generic.IList&lt;Microsoft.Azure.Management.BatchAI.Models.InputDirectory&gt; * System.Collections.Generic.IList&lt;Microsoft.Azure.Management.BatchAI.Models.OutputDirectory&gt; * System.Collections.Generic.IList&lt;Microsoft.Azure.Management.BatchAI.Models.EnvironmentVariable&gt; * System.Collections.Generic.IList&lt;Microsoft.Azure.Management.BatchAI.Models.EnvironmentVariableWithSecretValue&gt; * Microsoft.Azure.Management.BatchAI.Models.JobBasePropertiesConstraints -&gt; Microsoft.Azure.Management.BatchAI.Models.JobCreateParameters" Usage="new Microsoft.Azure.Management.BatchAI.Models.JobCreateParameters (cluster, nodeCount, stdOutErrPathPrefix, schedulingPriority, mountVolumes, containerSettings, cntkSettings, pyTorchSettings, tensorFlowSettings, caffeSettings, caffe2Settings, chainerSettings, customToolkitSettings, customMpiSettings, horovodSettings, jobPreparation, inputDirectories, outputDirectories, environmentVariables, secrets, constraints)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.BatchAI</AssemblyName>
-        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
-        <Parameter Name="location" Type="System.String" />
         <Parameter Name="cluster" Type="Microsoft.Azure.Management.BatchAI.Models.ResourceId" />
         <Parameter Name="nodeCount" Type="System.Int32" />
         <Parameter Name="stdOutErrPathPrefix" Type="System.String" />
-        <Parameter Name="tags" Type="System.Collections.Generic.IDictionary&lt;System.String,System.String&gt;" />
-        <Parameter Name="experimentName" Type="System.String" />
-        <Parameter Name="priority" Type="System.Nullable&lt;System.Int32&gt;" />
+        <Parameter Name="schedulingPriority" Type="System.String" />
         <Parameter Name="mountVolumes" Type="Microsoft.Azure.Management.BatchAI.Models.MountVolumes" />
         <Parameter Name="containerSettings" Type="Microsoft.Azure.Management.BatchAI.Models.ContainerSettings" />
         <Parameter Name="cntkSettings" Type="Microsoft.Azure.Management.BatchAI.Models.CNTKsettings" />
@@ -74,6 +68,8 @@
         <Parameter Name="caffe2Settings" Type="Microsoft.Azure.Management.BatchAI.Models.Caffe2Settings" />
         <Parameter Name="chainerSettings" Type="Microsoft.Azure.Management.BatchAI.Models.ChainerSettings" />
         <Parameter Name="customToolkitSettings" Type="Microsoft.Azure.Management.BatchAI.Models.CustomToolkitSettings" />
+        <Parameter Name="customMpiSettings" Type="Microsoft.Azure.Management.BatchAI.Models.CustomMpiSettings" />
+        <Parameter Name="horovodSettings" Type="Microsoft.Azure.Management.BatchAI.Models.HorovodSettings" />
         <Parameter Name="jobPreparation" Type="Microsoft.Azure.Management.BatchAI.Models.JobPreparation" />
         <Parameter Name="inputDirectories" Type="System.Collections.Generic.IList&lt;Microsoft.Azure.Management.BatchAI.Models.InputDirectory&gt;" />
         <Parameter Name="outputDirectories" Type="System.Collections.Generic.IList&lt;Microsoft.Azure.Management.BatchAI.Models.OutputDirectory&gt;" />
@@ -82,47 +78,27 @@
         <Parameter Name="constraints" Type="Microsoft.Azure.Management.BatchAI.Models.JobBasePropertiesConstraints" />
       </Parameters>
       <Docs>
-        <param name="location">The region in which to create the
-            job.</param>
-        <param name="cluster">Specifies the Id of the cluster on which this
-            job will run.</param>
-        <param name="nodeCount">Number of compute nodes to run the job
-            on.</param>
-        <param name="stdOutErrPathPrefix">The path where the Batch AI
-            service will upload stdout and stderror of the job.</param>
-        <param name="tags">The user specified tags associated with the
-            job.</param>
-        <param name="experimentName">Describe the experiment information of
-            the job</param>
-        <param name="priority">Priority associated with the job.</param>
-        <param name="mountVolumes">Information on mount volumes to be used
-            by the job.</param>
-        <param name="containerSettings">If provided the job will run in the
-            specified container.</param>
-        <param name="cntkSettings">Specifies the settings for CNTK (aka
-            Microsoft Cognitive Toolkit) job.</param>
-        <param name="pyTorchSettings">Specifies the settings for pyTorch
-            job.</param>
-        <param name="tensorFlowSettings">Specifies the settings for Tensor
-            Flow job.</param>
-        <param name="caffeSettings">Specifies the settings for Caffe
-            job.</param>
-        <param name="caffe2Settings">Specifies the settings for Caffe2
-            job.</param>
-        <param name="chainerSettings">Specifies the settings for Chainer
-            job.</param>
-        <param name="customToolkitSettings">Specifies the settings for
-            custom tool kit job.</param>
-        <param name="jobPreparation">Specifies the command line to be
-            executed before tool kit is launched.</param>
-        <param name="inputDirectories">Specifies the list of input
-            directories for the Job.</param>
-        <param name="outputDirectories">Specifies the list of output
-            directories.</param>
-        <param name="environmentVariables">Additional environment variables
-            to set on the job.</param>
-        <param name="secrets">Additional environment variables with secret
-            values to set on the job.</param>
+        <param name="cluster">Cluster.</param>
+        <param name="nodeCount">Node count.</param>
+        <param name="stdOutErrPathPrefix">Standard output path
+            prefix.</param>
+        <param name="schedulingPriority">Scheduling priority.</param>
+        <param name="mountVolumes">Mount volumes.</param>
+        <param name="containerSettings">Container settings.</param>
+        <param name="cntkSettings">CNTK settings.</param>
+        <param name="pyTorchSettings">pyTorch settings.</param>
+        <param name="tensorFlowSettings">TensorFlow settings.</param>
+        <param name="caffeSettings">Caffe settings.</param>
+        <param name="caffe2Settings">Caffe2 settings.</param>
+        <param name="chainerSettings">Chainer settings.</param>
+        <param name="customToolkitSettings">Custom tool kit job.</param>
+        <param name="customMpiSettings">Custom MPI settings.</param>
+        <param name="horovodSettings">Horovod settings.</param>
+        <param name="jobPreparation">Job preparation.</param>
+        <param name="inputDirectories">Input directories.</param>
+        <param name="outputDirectories">Output directories.</param>
+        <param name="environmentVariables">Environment variables.</param>
+        <param name="secrets">Secrets.</param>
         <param name="constraints">Constraints associated with the
             Job.</param>
         <summary>
@@ -137,15 +113,15 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Management.BatchAI.Models.JobCreateParameters.Caffe2Settings" />
       <MemberSignature Language="VB.NET" Value="Public Property Caffe2Settings As Caffe2Settings" />
       <MemberSignature Language="F#" Value="member this.Caffe2Settings : Microsoft.Azure.Management.BatchAI.Models.Caffe2Settings with get, set" Usage="Microsoft.Azure.Management.BatchAI.Models.JobCreateParameters.Caffe2Settings" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Azure::Management::BatchAI::Models::Caffe2Settings ^ Caffe2Settings { Microsoft::Azure::Management::BatchAI::Models::Caffe2Settings ^ get(); void set(Microsoft::Azure::Management::BatchAI::Models::Caffe2Settings ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.BatchAI</AssemblyName>
-        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="properties.caffe2Settings")</AttributeName>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty(PropertyName="properties.caffe2Settings")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty(PropertyName="properties.caffe2Settings")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -153,10 +129,12 @@
       </ReturnValue>
       <Docs>
         <summary>
-            Gets or sets specifies the settings for Caffe2 job.
+            Gets or sets caffe2 settings.
             </summary>
         <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <remarks>
+            Settings for Caffe2 job.
+            </remarks>
       </Docs>
     </Member>
     <Member MemberName="CaffeSettings">
@@ -165,15 +143,15 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Management.BatchAI.Models.JobCreateParameters.CaffeSettings" />
       <MemberSignature Language="VB.NET" Value="Public Property CaffeSettings As CaffeSettings" />
       <MemberSignature Language="F#" Value="member this.CaffeSettings : Microsoft.Azure.Management.BatchAI.Models.CaffeSettings with get, set" Usage="Microsoft.Azure.Management.BatchAI.Models.JobCreateParameters.CaffeSettings" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Azure::Management::BatchAI::Models::CaffeSettings ^ CaffeSettings { Microsoft::Azure::Management::BatchAI::Models::CaffeSettings ^ get(); void set(Microsoft::Azure::Management::BatchAI::Models::CaffeSettings ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.BatchAI</AssemblyName>
-        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="properties.caffeSettings")</AttributeName>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty(PropertyName="properties.caffeSettings")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty(PropertyName="properties.caffeSettings")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -181,10 +159,12 @@
       </ReturnValue>
       <Docs>
         <summary>
-            Gets or sets specifies the settings for Caffe job.
+            Gets or sets caffe settings.
             </summary>
         <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <remarks>
+            Settings for Caffe job.
+            </remarks>
       </Docs>
     </Member>
     <Member MemberName="ChainerSettings">
@@ -193,15 +173,15 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Management.BatchAI.Models.JobCreateParameters.ChainerSettings" />
       <MemberSignature Language="VB.NET" Value="Public Property ChainerSettings As ChainerSettings" />
       <MemberSignature Language="F#" Value="member this.ChainerSettings : Microsoft.Azure.Management.BatchAI.Models.ChainerSettings with get, set" Usage="Microsoft.Azure.Management.BatchAI.Models.JobCreateParameters.ChainerSettings" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Azure::Management::BatchAI::Models::ChainerSettings ^ ChainerSettings { Microsoft::Azure::Management::BatchAI::Models::ChainerSettings ^ get(); void set(Microsoft::Azure::Management::BatchAI::Models::ChainerSettings ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.BatchAI</AssemblyName>
-        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="properties.chainerSettings")</AttributeName>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty(PropertyName="properties.chainerSettings")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty(PropertyName="properties.chainerSettings")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -209,10 +189,12 @@
       </ReturnValue>
       <Docs>
         <summary>
-            Gets or sets specifies the settings for Chainer job.
+            Gets or sets chainer settings.
             </summary>
         <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <remarks>
+            Settings for Chainer job.
+            </remarks>
       </Docs>
     </Member>
     <Member MemberName="Cluster">
@@ -221,15 +203,15 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Management.BatchAI.Models.JobCreateParameters.Cluster" />
       <MemberSignature Language="VB.NET" Value="Public Property Cluster As ResourceId" />
       <MemberSignature Language="F#" Value="member this.Cluster : Microsoft.Azure.Management.BatchAI.Models.ResourceId with get, set" Usage="Microsoft.Azure.Management.BatchAI.Models.JobCreateParameters.Cluster" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Azure::Management::BatchAI::Models::ResourceId ^ Cluster { Microsoft::Azure::Management::BatchAI::Models::ResourceId ^ get(); void set(Microsoft::Azure::Management::BatchAI::Models::ResourceId ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.BatchAI</AssemblyName>
-        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="properties.cluster")</AttributeName>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty(PropertyName="properties.cluster")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty(PropertyName="properties.cluster")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -237,11 +219,12 @@
       </ReturnValue>
       <Docs>
         <summary>
-            Gets or sets specifies the Id of the cluster on which this job will
-            run.
+            Gets or sets cluster.
             </summary>
         <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <remarks>
+            Resource ID of the cluster on which this job will run.
+            </remarks>
       </Docs>
     </Member>
     <Member MemberName="CntkSettings">
@@ -250,15 +233,15 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Management.BatchAI.Models.JobCreateParameters.CntkSettings" />
       <MemberSignature Language="VB.NET" Value="Public Property CntkSettings As CNTKsettings" />
       <MemberSignature Language="F#" Value="member this.CntkSettings : Microsoft.Azure.Management.BatchAI.Models.CNTKsettings with get, set" Usage="Microsoft.Azure.Management.BatchAI.Models.JobCreateParameters.CntkSettings" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Azure::Management::BatchAI::Models::CNTKsettings ^ CntkSettings { Microsoft::Azure::Management::BatchAI::Models::CNTKsettings ^ get(); void set(Microsoft::Azure::Management::BatchAI::Models::CNTKsettings ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.BatchAI</AssemblyName>
-        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="properties.cntkSettings")</AttributeName>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty(PropertyName="properties.cntkSettings")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty(PropertyName="properties.cntkSettings")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -266,11 +249,12 @@
       </ReturnValue>
       <Docs>
         <summary>
-            Gets or sets specifies the settings for CNTK (aka Microsoft
-            Cognitive Toolkit) job.
+            Gets or sets CNTK settings.
             </summary>
         <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <remarks>
+            Settings for CNTK (aka Microsoft Cognitive Toolkit) job.
+            </remarks>
       </Docs>
     </Member>
     <Member MemberName="Constraints">
@@ -279,15 +263,15 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Management.BatchAI.Models.JobCreateParameters.Constraints" />
       <MemberSignature Language="VB.NET" Value="Public Property Constraints As JobBasePropertiesConstraints" />
       <MemberSignature Language="F#" Value="member this.Constraints : Microsoft.Azure.Management.BatchAI.Models.JobBasePropertiesConstraints with get, set" Usage="Microsoft.Azure.Management.BatchAI.Models.JobCreateParameters.Constraints" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Azure::Management::BatchAI::Models::JobBasePropertiesConstraints ^ Constraints { Microsoft::Azure::Management::BatchAI::Models::JobBasePropertiesConstraints ^ get(); void set(Microsoft::Azure::Management::BatchAI::Models::JobBasePropertiesConstraints ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.BatchAI</AssemblyName>
-        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="properties.constraints")</AttributeName>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty(PropertyName="properties.constraints")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty(PropertyName="properties.constraints")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -307,15 +291,15 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Management.BatchAI.Models.JobCreateParameters.ContainerSettings" />
       <MemberSignature Language="VB.NET" Value="Public Property ContainerSettings As ContainerSettings" />
       <MemberSignature Language="F#" Value="member this.ContainerSettings : Microsoft.Azure.Management.BatchAI.Models.ContainerSettings with get, set" Usage="Microsoft.Azure.Management.BatchAI.Models.JobCreateParameters.ContainerSettings" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Azure::Management::BatchAI::Models::ContainerSettings ^ ContainerSettings { Microsoft::Azure::Management::BatchAI::Models::ContainerSettings ^ get(); void set(Microsoft::Azure::Management::BatchAI::Models::ContainerSettings ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.BatchAI</AssemblyName>
-        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="properties.containerSettings")</AttributeName>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty(PropertyName="properties.containerSettings")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty(PropertyName="properties.containerSettings")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -323,14 +307,42 @@
       </ReturnValue>
       <Docs>
         <summary>
-            Gets or sets if provided the job will run in the specified
-            container.
+            Gets or sets container settings.
             </summary>
         <value>To be added.</value>
         <remarks>
-            If the container was downloaded as part of cluster setup then the
-            same container image will be used. If not provided, the job will
-            run on the VM.
+            Docker container settings for the job. If not provided, the job
+            will run directly on the node.
+            </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CustomMpiSettings">
+      <MemberSignature Language="C#" Value="public Microsoft.Azure.Management.BatchAI.Models.CustomMpiSettings CustomMpiSettings { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Azure.Management.BatchAI.Models.CustomMpiSettings CustomMpiSettings" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Management.BatchAI.Models.JobCreateParameters.CustomMpiSettings" />
+      <MemberSignature Language="VB.NET" Value="Public Property CustomMpiSettings As CustomMpiSettings" />
+      <MemberSignature Language="F#" Value="member this.CustomMpiSettings : Microsoft.Azure.Management.BatchAI.Models.CustomMpiSettings with get, set" Usage="Microsoft.Azure.Management.BatchAI.Models.JobCreateParameters.CustomMpiSettings" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Azure.Management.BatchAI</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty(PropertyName="properties.customMpiSettings")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty(PropertyName="properties.customMpiSettings")&gt;]</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Azure.Management.BatchAI.Models.CustomMpiSettings</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets or sets custom MPI settings.
+            </summary>
+        <value>To be added.</value>
+        <remarks>
+            Settings for custom MPI job.
             </remarks>
       </Docs>
     </Member>
@@ -340,15 +352,15 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Management.BatchAI.Models.JobCreateParameters.CustomToolkitSettings" />
       <MemberSignature Language="VB.NET" Value="Public Property CustomToolkitSettings As CustomToolkitSettings" />
       <MemberSignature Language="F#" Value="member this.CustomToolkitSettings : Microsoft.Azure.Management.BatchAI.Models.CustomToolkitSettings with get, set" Usage="Microsoft.Azure.Management.BatchAI.Models.JobCreateParameters.CustomToolkitSettings" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Azure::Management::BatchAI::Models::CustomToolkitSettings ^ CustomToolkitSettings { Microsoft::Azure::Management::BatchAI::Models::CustomToolkitSettings ^ get(); void set(Microsoft::Azure::Management::BatchAI::Models::CustomToolkitSettings ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.BatchAI</AssemblyName>
-        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="properties.customToolkitSettings")</AttributeName>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty(PropertyName="properties.customToolkitSettings")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty(PropertyName="properties.customToolkitSettings")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -356,10 +368,12 @@
       </ReturnValue>
       <Docs>
         <summary>
-            Gets or sets specifies the settings for custom tool kit job.
+            Gets or sets custom tool kit job.
             </summary>
         <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <remarks>
+            Settings for custom tool kit job.
+            </remarks>
       </Docs>
     </Member>
     <Member MemberName="EnvironmentVariables">
@@ -368,15 +382,15 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Management.BatchAI.Models.JobCreateParameters.EnvironmentVariables" />
       <MemberSignature Language="VB.NET" Value="Public Property EnvironmentVariables As IList(Of EnvironmentVariable)" />
       <MemberSignature Language="F#" Value="member this.EnvironmentVariables : System.Collections.Generic.IList&lt;Microsoft.Azure.Management.BatchAI.Models.EnvironmentVariable&gt; with get, set" Usage="Microsoft.Azure.Management.BatchAI.Models.JobCreateParameters.EnvironmentVariables" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::Generic::IList&lt;Microsoft::Azure::Management::BatchAI::Models::EnvironmentVariable ^&gt; ^ EnvironmentVariables { System::Collections::Generic::IList&lt;Microsoft::Azure::Management::BatchAI::Models::EnvironmentVariable ^&gt; ^ get(); void set(System::Collections::Generic::IList&lt;Microsoft::Azure::Management::BatchAI::Models::EnvironmentVariable ^&gt; ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.BatchAI</AssemblyName>
-        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="properties.environmentVariables")</AttributeName>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty(PropertyName="properties.environmentVariables")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty(PropertyName="properties.environmentVariables")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -384,42 +398,43 @@
       </ReturnValue>
       <Docs>
         <summary>
-            Gets or sets additional environment variables to set on the job.
+            Gets or sets environment variables.
             </summary>
         <value>To be added.</value>
         <remarks>
-            Batch AI will setup these additional environment variables for the
-            job.
+            A list of user defined environment variables which will be setup
+            for the job.
             </remarks>
       </Docs>
     </Member>
-    <Member MemberName="ExperimentName">
-      <MemberSignature Language="C#" Value="public string ExperimentName { get; set; }" />
-      <MemberSignature Language="ILAsm" Value=".property instance string ExperimentName" />
-      <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Management.BatchAI.Models.JobCreateParameters.ExperimentName" />
-      <MemberSignature Language="VB.NET" Value="Public Property ExperimentName As String" />
-      <MemberSignature Language="F#" Value="member this.ExperimentName : string with get, set" Usage="Microsoft.Azure.Management.BatchAI.Models.JobCreateParameters.ExperimentName" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ ExperimentName { System::String ^ get(); void set(System::String ^ value); };" />
-      <MemberSignature Language="C++ CX" Value="public:&#xA; property Platform::String ^ ExperimentName { Platform::String ^ get(); void set(Platform::String ^ value); };" />
+    <Member MemberName="HorovodSettings">
+      <MemberSignature Language="C#" Value="public Microsoft.Azure.Management.BatchAI.Models.HorovodSettings HorovodSettings { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Azure.Management.BatchAI.Models.HorovodSettings HorovodSettings" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Management.BatchAI.Models.JobCreateParameters.HorovodSettings" />
+      <MemberSignature Language="VB.NET" Value="Public Property HorovodSettings As HorovodSettings" />
+      <MemberSignature Language="F#" Value="member this.HorovodSettings : Microsoft.Azure.Management.BatchAI.Models.HorovodSettings with get, set" Usage="Microsoft.Azure.Management.BatchAI.Models.JobCreateParameters.HorovodSettings" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.BatchAI</AssemblyName>
-        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="properties.experimentName")</AttributeName>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty(PropertyName="properties.horovodSettings")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty(PropertyName="properties.horovodSettings")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
-        <ReturnType>System.String</ReturnType>
+        <ReturnType>Microsoft.Azure.Management.BatchAI.Models.HorovodSettings</ReturnType>
       </ReturnValue>
       <Docs>
         <summary>
-            Gets or sets describe the experiment information of the job
+            Gets or sets horovod settings.
             </summary>
         <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <remarks>
+            Settings for Horovod job.
+            </remarks>
       </Docs>
     </Member>
     <Member MemberName="InputDirectories">
@@ -428,15 +443,15 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Management.BatchAI.Models.JobCreateParameters.InputDirectories" />
       <MemberSignature Language="VB.NET" Value="Public Property InputDirectories As IList(Of InputDirectory)" />
       <MemberSignature Language="F#" Value="member this.InputDirectories : System.Collections.Generic.IList&lt;Microsoft.Azure.Management.BatchAI.Models.InputDirectory&gt; with get, set" Usage="Microsoft.Azure.Management.BatchAI.Models.JobCreateParameters.InputDirectories" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::Generic::IList&lt;Microsoft::Azure::Management::BatchAI::Models::InputDirectory ^&gt; ^ InputDirectories { System::Collections::Generic::IList&lt;Microsoft::Azure::Management::BatchAI::Models::InputDirectory ^&gt; ^ get(); void set(System::Collections::Generic::IList&lt;Microsoft::Azure::Management::BatchAI::Models::InputDirectory ^&gt; ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.BatchAI</AssemblyName>
-        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="properties.inputDirectories")</AttributeName>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty(PropertyName="properties.inputDirectories")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty(PropertyName="properties.inputDirectories")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -444,10 +459,12 @@
       </ReturnValue>
       <Docs>
         <summary>
-            Gets or sets specifies the list of input directories for the Job.
+            Gets or sets input directories.
             </summary>
         <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <remarks>
+            A list of input directories for the job.
+            </remarks>
       </Docs>
     </Member>
     <Member MemberName="JobPreparation">
@@ -456,15 +473,15 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Management.BatchAI.Models.JobCreateParameters.JobPreparation" />
       <MemberSignature Language="VB.NET" Value="Public Property JobPreparation As JobPreparation" />
       <MemberSignature Language="F#" Value="member this.JobPreparation : Microsoft.Azure.Management.BatchAI.Models.JobPreparation with get, set" Usage="Microsoft.Azure.Management.BatchAI.Models.JobCreateParameters.JobPreparation" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Azure::Management::BatchAI::Models::JobPreparation ^ JobPreparation { Microsoft::Azure::Management::BatchAI::Models::JobPreparation ^ get(); void set(Microsoft::Azure::Management::BatchAI::Models::JobPreparation ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.BatchAI</AssemblyName>
-        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="properties.jobPreparation")</AttributeName>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty(PropertyName="properties.jobPreparation")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty(PropertyName="properties.jobPreparation")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -472,43 +489,13 @@
       </ReturnValue>
       <Docs>
         <summary>
-            Gets or sets specifies the command line to be executed before tool
-            kit is launched.
+            Gets or sets job preparation.
             </summary>
         <value>To be added.</value>
         <remarks>
-            The specified actions will run on all the nodes that are part of
-            the job
+            A command line to be executed on each node allocated for the job
+            before tool kit is launched.
             </remarks>
-      </Docs>
-    </Member>
-    <Member MemberName="Location">
-      <MemberSignature Language="C#" Value="public string Location { get; set; }" />
-      <MemberSignature Language="ILAsm" Value=".property instance string Location" />
-      <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Management.BatchAI.Models.JobCreateParameters.Location" />
-      <MemberSignature Language="VB.NET" Value="Public Property Location As String" />
-      <MemberSignature Language="F#" Value="member this.Location : string with get, set" Usage="Microsoft.Azure.Management.BatchAI.Models.JobCreateParameters.Location" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Location { System::String ^ get(); void set(System::String ^ value); };" />
-      <MemberSignature Language="C++ CX" Value="public:&#xA; property Platform::String ^ Location { Platform::String ^ get(); void set(Platform::String ^ value); };" />
-      <MemberType>Property</MemberType>
-      <AssemblyInfo>
-        <AssemblyName>Microsoft.Azure.Management.BatchAI</AssemblyName>
-        <AssemblyVersion>1.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Attributes>
-        <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="location")</AttributeName>
-        </Attribute>
-      </Attributes>
-      <ReturnValue>
-        <ReturnType>System.String</ReturnType>
-      </ReturnValue>
-      <Docs>
-        <summary>
-            Gets or sets the region in which to create the job.
-            </summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="MountVolumes">
@@ -517,15 +504,15 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Management.BatchAI.Models.JobCreateParameters.MountVolumes" />
       <MemberSignature Language="VB.NET" Value="Public Property MountVolumes As MountVolumes" />
       <MemberSignature Language="F#" Value="member this.MountVolumes : Microsoft.Azure.Management.BatchAI.Models.MountVolumes with get, set" Usage="Microsoft.Azure.Management.BatchAI.Models.JobCreateParameters.MountVolumes" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Azure::Management::BatchAI::Models::MountVolumes ^ MountVolumes { Microsoft::Azure::Management::BatchAI::Models::MountVolumes ^ get(); void set(Microsoft::Azure::Management::BatchAI::Models::MountVolumes ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.BatchAI</AssemblyName>
-        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="properties.mountVolumes")</AttributeName>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty(PropertyName="properties.mountVolumes")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty(PropertyName="properties.mountVolumes")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -533,14 +520,14 @@
       </ReturnValue>
       <Docs>
         <summary>
-            Gets or sets information on mount volumes to be used by the job.
+            Gets or sets mount volumes.
             </summary>
         <value>To be added.</value>
         <remarks>
-            These volumes will be mounted before the job execution and will be
-            unmouted after the job completion. The volumes will be mounted at
-            location specified by $AZ_BATCHAI_JOB_MOUNT_ROOT environment
-            variable.
+            Information on mount volumes to be used by the job. These volumes
+            will be mounted before the job execution and will be unmouted after
+            the job completion. The volumes will be mounted at location
+            specified by $AZ_BATCHAI_JOB_MOUNT_ROOT environment variable.
             </remarks>
       </Docs>
     </Member>
@@ -550,16 +537,15 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Management.BatchAI.Models.JobCreateParameters.NodeCount" />
       <MemberSignature Language="VB.NET" Value="Public Property NodeCount As Integer" />
       <MemberSignature Language="F#" Value="member this.NodeCount : int with get, set" Usage="Microsoft.Azure.Management.BatchAI.Models.JobCreateParameters.NodeCount" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int NodeCount { int get(); void set(int value); };" />
-      <MemberSignature Language="C++ CX" Value="public:&#xA; property int NodeCount { int get(); void set(int value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.BatchAI</AssemblyName>
-        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="properties.nodeCount")</AttributeName>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty(PropertyName="properties.nodeCount")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty(PropertyName="properties.nodeCount")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -567,11 +553,12 @@
       </ReturnValue>
       <Docs>
         <summary>
-            Gets or sets number of compute nodes to run the job on.
+            Gets or sets node count.
             </summary>
         <value>To be added.</value>
         <remarks>
-            The job will be gang scheduled on that many compute nodes
+            Number of compute nodes to run the job on. The job will be gang
+            scheduled on that many compute nodes.
             </remarks>
       </Docs>
     </Member>
@@ -581,15 +568,15 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Management.BatchAI.Models.JobCreateParameters.OutputDirectories" />
       <MemberSignature Language="VB.NET" Value="Public Property OutputDirectories As IList(Of OutputDirectory)" />
       <MemberSignature Language="F#" Value="member this.OutputDirectories : System.Collections.Generic.IList&lt;Microsoft.Azure.Management.BatchAI.Models.OutputDirectory&gt; with get, set" Usage="Microsoft.Azure.Management.BatchAI.Models.JobCreateParameters.OutputDirectories" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::Generic::IList&lt;Microsoft::Azure::Management::BatchAI::Models::OutputDirectory ^&gt; ^ OutputDirectories { System::Collections::Generic::IList&lt;Microsoft::Azure::Management::BatchAI::Models::OutputDirectory ^&gt; ^ get(); void set(System::Collections::Generic::IList&lt;Microsoft::Azure::Management::BatchAI::Models::OutputDirectory ^&gt; ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.BatchAI</AssemblyName>
-        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="properties.outputDirectories")</AttributeName>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty(PropertyName="properties.outputDirectories")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty(PropertyName="properties.outputDirectories")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -597,41 +584,11 @@
       </ReturnValue>
       <Docs>
         <summary>
-            Gets or sets specifies the list of output directories.
-            </summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
-      </Docs>
-    </Member>
-    <Member MemberName="Priority">
-      <MemberSignature Language="C#" Value="public Nullable&lt;int&gt; Priority { get; set; }" />
-      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;int32&gt; Priority" />
-      <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Management.BatchAI.Models.JobCreateParameters.Priority" />
-      <MemberSignature Language="VB.NET" Value="Public Property Priority As Nullable(Of Integer)" />
-      <MemberSignature Language="F#" Value="member this.Priority : Nullable&lt;int&gt; with get, set" Usage="Microsoft.Azure.Management.BatchAI.Models.JobCreateParameters.Priority" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Nullable&lt;int&gt; Priority { Nullable&lt;int&gt; get(); void set(Nullable&lt;int&gt; value); };" />
-      <MemberType>Property</MemberType>
-      <AssemblyInfo>
-        <AssemblyName>Microsoft.Azure.Management.BatchAI</AssemblyName>
-        <AssemblyVersion>1.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Attributes>
-        <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="properties.priority")</AttributeName>
-        </Attribute>
-      </Attributes>
-      <ReturnValue>
-        <ReturnType>System.Nullable&lt;System.Int32&gt;</ReturnType>
-      </ReturnValue>
-      <Docs>
-        <summary>
-            Gets or sets priority associated with the job.
+            Gets or sets output directories.
             </summary>
         <value>To be added.</value>
         <remarks>
-            Priority associated with the job. Priority values can range from
-            -1000 to 1000, with -1000 being the lowest priority and 1000 being
-            the highest priority. The default value is 0.
+            A list of output directories for the job.
             </remarks>
       </Docs>
     </Member>
@@ -641,15 +598,15 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Management.BatchAI.Models.JobCreateParameters.PyTorchSettings" />
       <MemberSignature Language="VB.NET" Value="Public Property PyTorchSettings As PyTorchSettings" />
       <MemberSignature Language="F#" Value="member this.PyTorchSettings : Microsoft.Azure.Management.BatchAI.Models.PyTorchSettings with get, set" Usage="Microsoft.Azure.Management.BatchAI.Models.JobCreateParameters.PyTorchSettings" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Azure::Management::BatchAI::Models::PyTorchSettings ^ PyTorchSettings { Microsoft::Azure::Management::BatchAI::Models::PyTorchSettings ^ get(); void set(Microsoft::Azure::Management::BatchAI::Models::PyTorchSettings ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.BatchAI</AssemblyName>
-        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="properties.pyTorchSettings")</AttributeName>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty(PropertyName="properties.pyTorchSettings")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty(PropertyName="properties.pyTorchSettings")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -657,10 +614,43 @@
       </ReturnValue>
       <Docs>
         <summary>
-            Gets or sets specifies the settings for pyTorch job.
+            Gets or sets pyTorch settings.
             </summary>
         <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <remarks>
+            Settings for pyTorch job.
+            </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SchedulingPriority">
+      <MemberSignature Language="C#" Value="public string SchedulingPriority { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string SchedulingPriority" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Management.BatchAI.Models.JobCreateParameters.SchedulingPriority" />
+      <MemberSignature Language="VB.NET" Value="Public Property SchedulingPriority As String" />
+      <MemberSignature Language="F#" Value="member this.SchedulingPriority : string with get, set" Usage="Microsoft.Azure.Management.BatchAI.Models.JobCreateParameters.SchedulingPriority" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Azure.Management.BatchAI</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty(PropertyName="properties.schedulingPriority")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty(PropertyName="properties.schedulingPriority")&gt;]</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets or sets scheduling priority.
+            </summary>
+        <value>To be added.</value>
+        <remarks>
+            Scheduling priority associated with the job. Possible values: low,
+            normal, high. Possible values include: 'low', 'normal', 'high'
+            </remarks>
       </Docs>
     </Member>
     <Member MemberName="Secrets">
@@ -669,15 +659,15 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Management.BatchAI.Models.JobCreateParameters.Secrets" />
       <MemberSignature Language="VB.NET" Value="Public Property Secrets As IList(Of EnvironmentVariableWithSecretValue)" />
       <MemberSignature Language="F#" Value="member this.Secrets : System.Collections.Generic.IList&lt;Microsoft.Azure.Management.BatchAI.Models.EnvironmentVariableWithSecretValue&gt; with get, set" Usage="Microsoft.Azure.Management.BatchAI.Models.JobCreateParameters.Secrets" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::Generic::IList&lt;Microsoft::Azure::Management::BatchAI::Models::EnvironmentVariableWithSecretValue ^&gt; ^ Secrets { System::Collections::Generic::IList&lt;Microsoft::Azure::Management::BatchAI::Models::EnvironmentVariableWithSecretValue ^&gt; ^ get(); void set(System::Collections::Generic::IList&lt;Microsoft::Azure::Management::BatchAI::Models::EnvironmentVariableWithSecretValue ^&gt; ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.BatchAI</AssemblyName>
-        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="properties.secrets")</AttributeName>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty(PropertyName="properties.secrets")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty(PropertyName="properties.secrets")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -685,13 +675,13 @@
       </ReturnValue>
       <Docs>
         <summary>
-            Gets or sets additional environment variables with secret values to
-            set on the job.
+            Gets or sets secrets.
             </summary>
         <value>To be added.</value>
         <remarks>
-            Batch AI will setup these additional environment variables for the
-            job. Server will never report values of these variables back.
+            A list of user defined environment variables with secret values
+            which will be setup for the job. Server will never report values of
+            these variables back.
             </remarks>
       </Docs>
     </Member>
@@ -701,16 +691,15 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Management.BatchAI.Models.JobCreateParameters.StdOutErrPathPrefix" />
       <MemberSignature Language="VB.NET" Value="Public Property StdOutErrPathPrefix As String" />
       <MemberSignature Language="F#" Value="member this.StdOutErrPathPrefix : string with get, set" Usage="Microsoft.Azure.Management.BatchAI.Models.JobCreateParameters.StdOutErrPathPrefix" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ StdOutErrPathPrefix { System::String ^ get(); void set(System::String ^ value); };" />
-      <MemberSignature Language="C++ CX" Value="public:&#xA; property Platform::String ^ StdOutErrPathPrefix { Platform::String ^ get(); void set(Platform::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.BatchAI</AssemblyName>
-        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="properties.stdOutErrPathPrefix")</AttributeName>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty(PropertyName="properties.stdOutErrPathPrefix")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty(PropertyName="properties.stdOutErrPathPrefix")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -718,39 +707,13 @@
       </ReturnValue>
       <Docs>
         <summary>
-            Gets or sets the path where the Batch AI service will upload stdout
-            and stderror of the job.
+            Gets or sets standard output path prefix.
             </summary>
         <value>To be added.</value>
-        <remarks>To be added.</remarks>
-      </Docs>
-    </Member>
-    <Member MemberName="Tags">
-      <MemberSignature Language="C#" Value="public System.Collections.Generic.IDictionary&lt;string,string&gt; Tags { get; set; }" />
-      <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Generic.IDictionary`2&lt;string, string&gt; Tags" />
-      <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Management.BatchAI.Models.JobCreateParameters.Tags" />
-      <MemberSignature Language="VB.NET" Value="Public Property Tags As IDictionary(Of String, String)" />
-      <MemberSignature Language="F#" Value="member this.Tags : System.Collections.Generic.IDictionary&lt;string, string&gt; with get, set" Usage="Microsoft.Azure.Management.BatchAI.Models.JobCreateParameters.Tags" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::Generic::IDictionary&lt;System::String ^, System::String ^&gt; ^ Tags { System::Collections::Generic::IDictionary&lt;System::String ^, System::String ^&gt; ^ get(); void set(System::Collections::Generic::IDictionary&lt;System::String ^, System::String ^&gt; ^ value); };" />
-      <MemberType>Property</MemberType>
-      <AssemblyInfo>
-        <AssemblyName>Microsoft.Azure.Management.BatchAI</AssemblyName>
-        <AssemblyVersion>1.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Attributes>
-        <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="tags")</AttributeName>
-        </Attribute>
-      </Attributes>
-      <ReturnValue>
-        <ReturnType>System.Collections.Generic.IDictionary&lt;System.String,System.String&gt;</ReturnType>
-      </ReturnValue>
-      <Docs>
-        <summary>
-            Gets or sets the user specified tags associated with the job.
-            </summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <remarks>
+            The path where the Batch AI service will store stdout, stderror and
+            execution log of the job.
+            </remarks>
       </Docs>
     </Member>
     <Member MemberName="TensorFlowSettings">
@@ -759,15 +722,15 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Management.BatchAI.Models.JobCreateParameters.TensorFlowSettings" />
       <MemberSignature Language="VB.NET" Value="Public Property TensorFlowSettings As TensorFlowSettings" />
       <MemberSignature Language="F#" Value="member this.TensorFlowSettings : Microsoft.Azure.Management.BatchAI.Models.TensorFlowSettings with get, set" Usage="Microsoft.Azure.Management.BatchAI.Models.JobCreateParameters.TensorFlowSettings" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Azure::Management::BatchAI::Models::TensorFlowSettings ^ TensorFlowSettings { Microsoft::Azure::Management::BatchAI::Models::TensorFlowSettings ^ get(); void set(Microsoft::Azure::Management::BatchAI::Models::TensorFlowSettings ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.BatchAI</AssemblyName>
-        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="properties.tensorFlowSettings")</AttributeName>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty(PropertyName="properties.tensorFlowSettings")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty(PropertyName="properties.tensorFlowSettings")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -775,10 +738,12 @@
       </ReturnValue>
       <Docs>
         <summary>
-            Gets or sets specifies the settings for Tensor Flow job.
+            Gets or sets tensorFlow settings.
             </summary>
         <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <remarks>
+            Settings for Tensor Flow job.
+            </remarks>
       </Docs>
     </Member>
     <Member MemberName="Validate">
@@ -787,13 +752,10 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Management.BatchAI.Models.JobCreateParameters.Validate" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Sub Validate ()" />
       <MemberSignature Language="F#" Value="abstract member Validate : unit -&gt; unit&#xA;override this.Validate : unit -&gt; unit" Usage="jobCreateParameters.Validate " />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Validate();" />
-      <MemberSignature Language="C++ CX" Value="public:&#xA; virtual void Validate();" />
-      <MemberSignature Language="C++ WINRT" Value=" virtual void Validate();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.BatchAI</AssemblyName>
-        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>

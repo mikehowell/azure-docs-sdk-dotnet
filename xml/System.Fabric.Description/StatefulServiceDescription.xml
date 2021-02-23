@@ -1,13 +1,12 @@
-﻿<Type Name="StatefulServiceDescription" FullName="System.Fabric.Description.StatefulServiceDescription">
+<Type Name="StatefulServiceDescription" FullName="System.Fabric.Description.StatefulServiceDescription">
   <TypeSignature Language="C#" Value="public sealed class StatefulServiceDescription : System.Fabric.Description.ServiceDescription" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit StatefulServiceDescription extends System.Fabric.Description.ServiceDescription" />
   <TypeSignature Language="DocId" Value="T:System.Fabric.Description.StatefulServiceDescription" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class StatefulServiceDescription&#xA;Inherits ServiceDescription" />
   <TypeSignature Language="F#" Value="type StatefulServiceDescription = class&#xA;    inherit ServiceDescription" />
-  <TypeSignature Language="C++ CLI" Value="public ref class StatefulServiceDescription sealed : System::Fabric::Description::ServiceDescription" />
   <AssemblyInfo>
     <AssemblyName>System.Fabric</AssemblyName>
-    <AssemblyVersion>6.0.0.0</AssemblyVersion>
+    <AssemblyVersion>7.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Fabric.Description.ServiceDescription</BaseTypeName>
@@ -27,13 +26,10 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Fabric.Description.StatefulServiceDescription.#ctor" />
       <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; StatefulServiceDescription();" />
-      <MemberSignature Language="C++ CX" Value="public:&#xA; StatefulServiceDescription();" />
-      <MemberSignature Language="C++ WINRT" Value=" StatefulServiceDescription();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Fabric</AssemblyName>
-        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
@@ -43,18 +39,43 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <Member MemberName="DropSourceReplicaOnMove">
+      <MemberSignature Language="C#" Value="public bool? DropSourceReplicaOnMove { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;bool&gt; DropSourceReplicaOnMove" />
+      <MemberSignature Language="DocId" Value="P:System.Fabric.Description.StatefulServiceDescription.DropSourceReplicaOnMove" />
+      <MemberSignature Language="VB.NET" Value="Public Property DropSourceReplicaOnMove As Nullable(Of Boolean)" />
+      <MemberSignature Language="F#" Value="member this.DropSourceReplicaOnMove : Nullable&lt;bool&gt; with get, set" Usage="System.Fabric.Description.StatefulServiceDescription.DropSourceReplicaOnMove" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Fabric</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Nullable&lt;System.Boolean&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <para>Enables or disables the behavior where source Secondary replica is being dropped when a new replica starts building.</para>
+        </summary>
+        <value>
+          <para>Drop source Secondary replica when new replica starts building.</para>
+        </value>
+        <remarks>
+          <para>DropSourceReplicaOnMove is the feature which enables source Secondary replicas to be dropped before new Secondary replicas finish the build.
+            If not specified, the default value is false.</para>
+        </remarks>
+      </Docs>
+    </Member>
     <Member MemberName="HasPersistedState">
       <MemberSignature Language="C#" Value="public bool HasPersistedState { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool HasPersistedState" />
       <MemberSignature Language="DocId" Value="P:System.Fabric.Description.StatefulServiceDescription.HasPersistedState" />
       <MemberSignature Language="VB.NET" Value="Public Property HasPersistedState As Boolean" />
       <MemberSignature Language="F#" Value="member this.HasPersistedState : bool with get, set" Usage="System.Fabric.Description.StatefulServiceDescription.HasPersistedState" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool HasPersistedState { bool get(); void set(bool value); };" />
-      <MemberSignature Language="C++ CX" Value="public:&#xA; property bool HasPersistedState { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Fabric</AssemblyName>
-        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
@@ -88,12 +109,10 @@
       <MemberSignature Language="DocId" Value="P:System.Fabric.Description.StatefulServiceDescription.MinReplicaSetSize" />
       <MemberSignature Language="VB.NET" Value="Public Property MinReplicaSetSize As Integer" />
       <MemberSignature Language="F#" Value="member this.MinReplicaSetSize : int with get, set" Usage="System.Fabric.Description.StatefulServiceDescription.MinReplicaSetSize" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int MinReplicaSetSize { int get(); void set(int value); };" />
-      <MemberSignature Language="C++ CX" Value="public:&#xA; property int MinReplicaSetSize { int get(); void set(int value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Fabric</AssemblyName>
-        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
@@ -122,44 +141,42 @@
       </Docs>
     </Member>
     <Member MemberName="QuorumLossWaitDuration">
-      <MemberSignature Language="C#" Value="public Nullable&lt;TimeSpan&gt; QuorumLossWaitDuration { get; set; }" />
+      <MemberSignature Language="C#" Value="public TimeSpan? QuorumLossWaitDuration { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;valuetype System.TimeSpan&gt; QuorumLossWaitDuration" />
       <MemberSignature Language="DocId" Value="P:System.Fabric.Description.StatefulServiceDescription.QuorumLossWaitDuration" />
       <MemberSignature Language="VB.NET" Value="Public Property QuorumLossWaitDuration As Nullable(Of TimeSpan)" />
       <MemberSignature Language="F#" Value="member this.QuorumLossWaitDuration : Nullable&lt;TimeSpan&gt; with get, set" Usage="System.Fabric.Description.StatefulServiceDescription.QuorumLossWaitDuration" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Nullable&lt;TimeSpan&gt; QuorumLossWaitDuration { Nullable&lt;TimeSpan&gt; get(); void set(Nullable&lt;TimeSpan&gt; value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Fabric</AssemblyName>
-        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Nullable&lt;System.TimeSpan&gt;</ReturnType>
       </ReturnValue>
       <Docs>
         <summary>
-          <para>Gets or sets the maximum duration, in seconds, for which a partition is allowed to be in a state of quorum loss.</para>
+          <para>Gets or sets the maximum duration, for which a partition is allowed to be in a state of quorum loss.</para>
         </summary>
         <value>
           <para>The wait duration as a <see cref="T:System.TimeSpan" /> object.</para>
         </value>
         <remarks>
-          <para>If the partition is still in quorum loss after this duration, the partition is recovered from quorum loss by considering the down 
+          <para>If the partition is still in quorum loss after this duration, Service Fabric will recover the partition from the quorum loss by considering the down 
             replicas as lost. Note that this can potentially incur data loss. The default value is Infinity and it is not recommended to change this value.</para>
         </remarks>
       </Docs>
     </Member>
     <Member MemberName="ReplicaRestartWaitDuration">
-      <MemberSignature Language="C#" Value="public Nullable&lt;TimeSpan&gt; ReplicaRestartWaitDuration { get; set; }" />
+      <MemberSignature Language="C#" Value="public TimeSpan? ReplicaRestartWaitDuration { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;valuetype System.TimeSpan&gt; ReplicaRestartWaitDuration" />
       <MemberSignature Language="DocId" Value="P:System.Fabric.Description.StatefulServiceDescription.ReplicaRestartWaitDuration" />
       <MemberSignature Language="VB.NET" Value="Public Property ReplicaRestartWaitDuration As Nullable(Of TimeSpan)" />
       <MemberSignature Language="F#" Value="member this.ReplicaRestartWaitDuration : Nullable&lt;TimeSpan&gt; with get, set" Usage="System.Fabric.Description.StatefulServiceDescription.ReplicaRestartWaitDuration" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Nullable&lt;TimeSpan&gt; ReplicaRestartWaitDuration { Nullable&lt;TimeSpan&gt; get(); void set(Nullable&lt;TimeSpan&gt; value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Fabric</AssemblyName>
-        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Nullable&lt;System.TimeSpan&gt;</ReturnType>
@@ -176,21 +193,50 @@
             cluster. This configuration is to reduce unnecessary state copies. When a persisted replica goes down, the system waits for it to come 
             back up for <see cref="P:System.Fabric.Description.StatefulServiceDescription.ReplicaRestartWaitDuration" /> seconds before creating a new 
             replica which will require a copy. Note that a replica that is down is not considered lost, yet.</para>
-          <para>The default value is 300 (seconds).</para>
+          <para>The default value is 1800 seconds (30 minutes).</para>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ServicePlacementTimeLimit">
+      <MemberSignature Language="C#" Value="public TimeSpan? ServicePlacementTimeLimit { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;valuetype System.TimeSpan&gt; ServicePlacementTimeLimit" />
+      <MemberSignature Language="DocId" Value="P:System.Fabric.Description.StatefulServiceDescription.ServicePlacementTimeLimit" />
+      <MemberSignature Language="VB.NET" Value="Public Property ServicePlacementTimeLimit As Nullable(Of TimeSpan)" />
+      <MemberSignature Language="F#" Value="member this.ServicePlacementTimeLimit : Nullable&lt;TimeSpan&gt; with get, set" Usage="System.Fabric.Description.StatefulServiceDescription.ServicePlacementTimeLimit" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Fabric</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Nullable&lt;System.TimeSpan&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <para>Gets or sets the duration for which replicas can stay InBuild before reporting that build is stuck.</para>
+        </summary>
+        <value>
+          <para>The duration for which replicas can stay InBuild before reporting that build is stuck.</para>
+        </value>
+        <remarks>
+          <para>ServicePlacementTimeLimit is the time for which partitions of the service can remain in the InBuild state before an error health report is generated
+            to indicate that the build is stuck. If not specified, the default value is taken from the PlacementTimeLimit parameter in cluster settings for FailoverManager.
+            <see href="https://docs.microsoft.com/en-us/azure/service-fabric/service-fabric-cluster-fabric-settings#failovermanager"> Check PlacementTimeLimit config. </see>
+            This setting is useful when the PlacementTimeLimit parameter in cluster settings for FailoverManager is not appropriate for all services. In such cases, ServicePlacementTimeLimit
+            can be used to specify the expected InBuild duration on a per-service basis.</para>
         </remarks>
       </Docs>
     </Member>
     <Member MemberName="StandByReplicaKeepDuration">
-      <MemberSignature Language="C#" Value="public Nullable&lt;TimeSpan&gt; StandByReplicaKeepDuration { get; set; }" />
+      <MemberSignature Language="C#" Value="public TimeSpan? StandByReplicaKeepDuration { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;valuetype System.TimeSpan&gt; StandByReplicaKeepDuration" />
       <MemberSignature Language="DocId" Value="P:System.Fabric.Description.StatefulServiceDescription.StandByReplicaKeepDuration" />
       <MemberSignature Language="VB.NET" Value="Public Property StandByReplicaKeepDuration As Nullable(Of TimeSpan)" />
       <MemberSignature Language="F#" Value="member this.StandByReplicaKeepDuration : Nullable&lt;TimeSpan&gt; with get, set" Usage="System.Fabric.Description.StatefulServiceDescription.StandByReplicaKeepDuration" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Nullable&lt;TimeSpan&gt; StandByReplicaKeepDuration { Nullable&lt;TimeSpan&gt; get(); void set(Nullable&lt;TimeSpan&gt; value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Fabric</AssemblyName>
-        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Nullable&lt;System.TimeSpan&gt;</ReturnType>
@@ -218,12 +264,10 @@
       <MemberSignature Language="DocId" Value="P:System.Fabric.Description.StatefulServiceDescription.TargetReplicaSetSize" />
       <MemberSignature Language="VB.NET" Value="Public Property TargetReplicaSetSize As Integer" />
       <MemberSignature Language="F#" Value="member this.TargetReplicaSetSize : int with get, set" Usage="System.Fabric.Description.StatefulServiceDescription.TargetReplicaSetSize" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int TargetReplicaSetSize { int get(); void set(int value); };" />
-      <MemberSignature Language="C++ CX" Value="public:&#xA; property int TargetReplicaSetSize { int get(); void set(int value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Fabric</AssemblyName>
-        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>

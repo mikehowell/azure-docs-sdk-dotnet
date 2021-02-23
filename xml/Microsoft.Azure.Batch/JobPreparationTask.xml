@@ -1,15 +1,14 @@
-﻿<Type Name="JobPreparationTask" FullName="Microsoft.Azure.Batch.JobPreparationTask">
+<Type Name="JobPreparationTask" FullName="Microsoft.Azure.Batch.JobPreparationTask">
   <TypeSignature Language="C#" Value="public class JobPreparationTask" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit JobPreparationTask extends System.Object" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Azure.Batch.JobPreparationTask" />
   <TypeSignature Language="VB.NET" Value="Public Class JobPreparationTask" />
-  <TypeSignature Language="F#" Value="type JobPreparationTask = class&#xA;    interface ITransportObjectProvider&lt;JobPreparationTask&gt;&#xA;    interface IPropertyMetadata&#xA;    interface IModifiable&#xA;    interface IReadOnly" />
-  <TypeSignature Language="C++ CLI" Value="public ref class JobPreparationTask" />
-  <TypeSignature Language="C++ WINRT" Value="[Windows::Foundation::Metadata::WebHostHidden]&#xA;class JobPreparationTask" />
+  <TypeSignature Language="F#" Value="type JobPreparationTask = class" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Azure.Batch</AssemblyName>
-    <AssemblyVersion>7.1.0.0</AssemblyVersion>
-    <AssemblyVersion>8.0.0.0</AssemblyVersion>
+    <AssemblyVersion>12.0.0.0</AssemblyVersion>
+    <AssemblyVersion>13.0.0.0</AssemblyVersion>
+    <AssemblyVersion>14.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
@@ -19,7 +18,14 @@
     <summary>
             A Job Preparation task to run before any tasks of the job on any given compute node.
             </summary>
-    <remarks>To be added.</remarks>
+    <remarks>
+            Batch will retry tasks when a recovery operation is triggered on a compute node. Examples of recovery operations 
+            include (but are not limited to) when an unhealthy compute node is rebooted or a compute node disappeared due to 
+            host failure. Retries due to recovery operations are independent of and are not counted against the <see cref="P:Microsoft.Azure.Batch.TaskConstraints.MaxTaskRetryCount" />. Even if the <see cref="P:Microsoft.Azure.Batch.TaskConstraints.MaxTaskRetryCount" /> is 0, an internal retry due to a recovery operation 
+            may occur. Because of this, all tasks should be idempotent. This means tasks need to tolerate being interrupted and 
+            restarted without causing any corruption or duplicate data. The best practice for long running tasks is to use some 
+            form of checkpointing.
+            </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -27,18 +33,18 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Batch.JobPreparationTask.#ctor" />
       <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; JobPreparationTask();" />
-      <MemberSignature Language="C++ CX" Value="public:&#xA; JobPreparationTask();" />
-      <MemberSignature Language="C++ WINRT" Value=" JobPreparationTask();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Batch</AssemblyName>
-        <AssemblyVersion>7.1.0.0</AssemblyVersion>
-        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>12.0.0.0</AssemblyVersion>
+        <AssemblyVersion>13.0.0.0</AssemblyVersion>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+            Initializes a new instance of the <see cref="T:Microsoft.Azure.Batch.JobPreparationTask" /> class.
+            </summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -48,14 +54,12 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Batch.JobPreparationTask.#ctor(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (commandLine As String)" />
       <MemberSignature Language="F#" Value="new Microsoft.Azure.Batch.JobPreparationTask : string -&gt; Microsoft.Azure.Batch.JobPreparationTask" Usage="new Microsoft.Azure.Batch.JobPreparationTask commandLine" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; JobPreparationTask(System::String ^ commandLine);" />
-      <MemberSignature Language="C++ CX" Value="public:&#xA; JobPreparationTask(Platform::String ^ commandLine);" />
-      <MemberSignature Language="C++ WINRT" Value=" JobPreparationTask(std::wstring const &amp; commandLine);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Batch</AssemblyName>
-        <AssemblyVersion>7.1.0.0</AssemblyVersion>
-        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>12.0.0.0</AssemblyVersion>
+        <AssemblyVersion>13.0.0.0</AssemblyVersion>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="commandLine" Type="System.String" />
@@ -74,13 +78,12 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Batch.JobPreparationTask.CommandLine" />
       <MemberSignature Language="VB.NET" Value="Public Property CommandLine As String" />
       <MemberSignature Language="F#" Value="member this.CommandLine : string with get, set" Usage="Microsoft.Azure.Batch.JobPreparationTask.CommandLine" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ CommandLine { System::String ^ get(); void set(System::String ^ value); };" />
-      <MemberSignature Language="C++ CX" Value="public:&#xA; property Platform::String ^ CommandLine { Platform::String ^ get(); void set(Platform::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Batch</AssemblyName>
-        <AssemblyVersion>7.1.0.0</AssemblyVersion>
-        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>12.0.0.0</AssemblyVersion>
+        <AssemblyVersion>13.0.0.0</AssemblyVersion>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -93,7 +96,9 @@
         <remarks>
             The command line does not run under a shell, and therefore cannot take advantage of shell features such as environment 
             variable expansion. If you want to take advantage of such features, you should invoke the shell in the command 
-            line, for example using "cmd /c MyCommand" in Windows or "/bin/sh -c MyCommand" in Linux.
+            line, for example using "cmd /c MyCommand" in Windows or "/bin/sh -c MyCommand" in Linux. If the command line 
+            refers to file paths, it should use a relative path (relative to the task working directory), or use the Batch 
+            provided environment variables (https://docs.microsoft.com/en-us/azure/batch/batch-compute-node-environment-variables).
             </remarks>
       </Docs>
     </Member>
@@ -103,12 +108,12 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Batch.JobPreparationTask.Constraints" />
       <MemberSignature Language="VB.NET" Value="Public Property Constraints As TaskConstraints" />
       <MemberSignature Language="F#" Value="member this.Constraints : Microsoft.Azure.Batch.TaskConstraints with get, set" Usage="Microsoft.Azure.Batch.JobPreparationTask.Constraints" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Azure::Batch::TaskConstraints ^ Constraints { Microsoft::Azure::Batch::TaskConstraints ^ get(); void set(Microsoft::Azure::Batch::TaskConstraints ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Batch</AssemblyName>
-        <AssemblyVersion>7.1.0.0</AssemblyVersion>
-        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>12.0.0.0</AssemblyVersion>
+        <AssemblyVersion>13.0.0.0</AssemblyVersion>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Azure.Batch.TaskConstraints</ReturnType>
@@ -127,11 +132,12 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Batch.JobPreparationTask.ContainerSettings" />
       <MemberSignature Language="VB.NET" Value="Public Property ContainerSettings As TaskContainerSettings" />
       <MemberSignature Language="F#" Value="member this.ContainerSettings : Microsoft.Azure.Batch.TaskContainerSettings with get, set" Usage="Microsoft.Azure.Batch.JobPreparationTask.ContainerSettings" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Azure::Batch::TaskContainerSettings ^ ContainerSettings { Microsoft::Azure::Batch::TaskContainerSettings ^ get(); void set(Microsoft::Azure::Batch::TaskContainerSettings ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Batch</AssemblyName>
-        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>12.0.0.0</AssemblyVersion>
+        <AssemblyVersion>13.0.0.0</AssemblyVersion>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Azure.Batch.TaskContainerSettings</ReturnType>
@@ -154,12 +160,12 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Batch.JobPreparationTask.EnvironmentSettings" />
       <MemberSignature Language="VB.NET" Value="Public Property EnvironmentSettings As IList(Of EnvironmentSetting)" />
       <MemberSignature Language="F#" Value="member this.EnvironmentSettings : System.Collections.Generic.IList&lt;Microsoft.Azure.Batch.EnvironmentSetting&gt; with get, set" Usage="Microsoft.Azure.Batch.JobPreparationTask.EnvironmentSettings" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::Generic::IList&lt;Microsoft::Azure::Batch::EnvironmentSetting ^&gt; ^ EnvironmentSettings { System::Collections::Generic::IList&lt;Microsoft::Azure::Batch::EnvironmentSetting ^&gt; ^ get(); void set(System::Collections::Generic::IList&lt;Microsoft::Azure::Batch::EnvironmentSetting ^&gt; ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Batch</AssemblyName>
-        <AssemblyVersion>7.1.0.0</AssemblyVersion>
-        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>12.0.0.0</AssemblyVersion>
+        <AssemblyVersion>13.0.0.0</AssemblyVersion>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Collections.Generic.IList&lt;Microsoft.Azure.Batch.EnvironmentSetting&gt;</ReturnType>
@@ -178,13 +184,12 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Batch.JobPreparationTask.Id" />
       <MemberSignature Language="VB.NET" Value="Public Property Id As String" />
       <MemberSignature Language="F#" Value="member this.Id : string with get, set" Usage="Microsoft.Azure.Batch.JobPreparationTask.Id" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Id { System::String ^ get(); void set(System::String ^ value); };" />
-      <MemberSignature Language="C++ CX" Value="public:&#xA; property Platform::String ^ Id { Platform::String ^ get(); void set(Platform::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Batch</AssemblyName>
-        <AssemblyVersion>7.1.0.0</AssemblyVersion>
-        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>12.0.0.0</AssemblyVersion>
+        <AssemblyVersion>13.0.0.0</AssemblyVersion>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -198,17 +203,17 @@
       </Docs>
     </Member>
     <Member MemberName="RerunOnComputeNodeRebootAfterSuccess">
-      <MemberSignature Language="C#" Value="public Nullable&lt;bool&gt; RerunOnComputeNodeRebootAfterSuccess { get; set; }" />
+      <MemberSignature Language="C#" Value="public bool? RerunOnComputeNodeRebootAfterSuccess { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;bool&gt; RerunOnComputeNodeRebootAfterSuccess" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Batch.JobPreparationTask.RerunOnComputeNodeRebootAfterSuccess" />
       <MemberSignature Language="VB.NET" Value="Public Property RerunOnComputeNodeRebootAfterSuccess As Nullable(Of Boolean)" />
       <MemberSignature Language="F#" Value="member this.RerunOnComputeNodeRebootAfterSuccess : Nullable&lt;bool&gt; with get, set" Usage="Microsoft.Azure.Batch.JobPreparationTask.RerunOnComputeNodeRebootAfterSuccess" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Nullable&lt;bool&gt; RerunOnComputeNodeRebootAfterSuccess { Nullable&lt;bool&gt; get(); void set(Nullable&lt;bool&gt; value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Batch</AssemblyName>
-        <AssemblyVersion>7.1.0.0</AssemblyVersion>
-        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>12.0.0.0</AssemblyVersion>
+        <AssemblyVersion>13.0.0.0</AssemblyVersion>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Nullable&lt;System.Boolean&gt;</ReturnType>
@@ -232,12 +237,12 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Batch.JobPreparationTask.ResourceFiles" />
       <MemberSignature Language="VB.NET" Value="Public Property ResourceFiles As IList(Of ResourceFile)" />
       <MemberSignature Language="F#" Value="member this.ResourceFiles : System.Collections.Generic.IList&lt;Microsoft.Azure.Batch.ResourceFile&gt; with get, set" Usage="Microsoft.Azure.Batch.JobPreparationTask.ResourceFiles" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::Generic::IList&lt;Microsoft::Azure::Batch::ResourceFile ^&gt; ^ ResourceFiles { System::Collections::Generic::IList&lt;Microsoft::Azure::Batch::ResourceFile ^&gt; ^ get(); void set(System::Collections::Generic::IList&lt;Microsoft::Azure::Batch::ResourceFile ^&gt; ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Batch</AssemblyName>
-        <AssemblyVersion>7.1.0.0</AssemblyVersion>
-        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>12.0.0.0</AssemblyVersion>
+        <AssemblyVersion>13.0.0.0</AssemblyVersion>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Collections.Generic.IList&lt;Microsoft.Azure.Batch.ResourceFile&gt;</ReturnType>
@@ -248,7 +253,11 @@
             line.
             </summary>
         <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <remarks>
+            There is a maximum size for the list of resource files. When the max size is exceeded, the request will fail 
+            and the response error code will be RequestEntityTooLarge. If this occurs, the collection of resource files must 
+            be reduced in size. This can be achieved using .zip files, Application Packages, or Docker Containers.
+            </remarks>
       </Docs>
     </Member>
     <Member MemberName="UserIdentity">
@@ -257,12 +266,12 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Batch.JobPreparationTask.UserIdentity" />
       <MemberSignature Language="VB.NET" Value="Public Property UserIdentity As UserIdentity" />
       <MemberSignature Language="F#" Value="member this.UserIdentity : Microsoft.Azure.Batch.UserIdentity with get, set" Usage="Microsoft.Azure.Batch.JobPreparationTask.UserIdentity" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Azure::Batch::UserIdentity ^ UserIdentity { Microsoft::Azure::Batch::UserIdentity ^ get(); void set(Microsoft::Azure::Batch::UserIdentity ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Batch</AssemblyName>
-        <AssemblyVersion>7.1.0.0</AssemblyVersion>
-        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>12.0.0.0</AssemblyVersion>
+        <AssemblyVersion>13.0.0.0</AssemblyVersion>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Azure.Batch.UserIdentity</ReturnType>
@@ -278,17 +287,17 @@
       </Docs>
     </Member>
     <Member MemberName="WaitForSuccess">
-      <MemberSignature Language="C#" Value="public Nullable&lt;bool&gt; WaitForSuccess { get; set; }" />
+      <MemberSignature Language="C#" Value="public bool? WaitForSuccess { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;bool&gt; WaitForSuccess" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Batch.JobPreparationTask.WaitForSuccess" />
       <MemberSignature Language="VB.NET" Value="Public Property WaitForSuccess As Nullable(Of Boolean)" />
       <MemberSignature Language="F#" Value="member this.WaitForSuccess : Nullable&lt;bool&gt; with get, set" Usage="Microsoft.Azure.Batch.JobPreparationTask.WaitForSuccess" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Nullable&lt;bool&gt; WaitForSuccess { Nullable&lt;bool&gt; get(); void set(Nullable&lt;bool&gt; value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Batch</AssemblyName>
-        <AssemblyVersion>7.1.0.0</AssemblyVersion>
-        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>12.0.0.0</AssemblyVersion>
+        <AssemblyVersion>13.0.0.0</AssemblyVersion>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Nullable&lt;System.Boolean&gt;</ReturnType>

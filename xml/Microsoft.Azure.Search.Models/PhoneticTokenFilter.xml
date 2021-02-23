@@ -1,4 +1,4 @@
-﻿<Type Name="PhoneticTokenFilter" FullName="Microsoft.Azure.Search.Models.PhoneticTokenFilter">
+<Type Name="PhoneticTokenFilter" FullName="Microsoft.Azure.Search.Models.PhoneticTokenFilter">
   <TypeSignature Language="C#" Value="public class PhoneticTokenFilter : Microsoft.Azure.Search.Models.TokenFilter" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit PhoneticTokenFilter extends Microsoft.Azure.Search.Models.TokenFilter" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Azure.Search.Models.PhoneticTokenFilter" />
@@ -6,7 +6,7 @@
   <TypeSignature Language="F#" Value="type PhoneticTokenFilter = class&#xA;    inherit TokenFilter" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Azure.Search.Service</AssemblyName>
-    <AssemblyVersion>5.0.0.0</AssemblyVersion>
+    <AssemblyVersion>10.1.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>Microsoft.Azure.Search.Models.TokenFilter</BaseTypeName>
@@ -14,7 +14,8 @@
   <Interfaces />
   <Attributes>
     <Attribute>
-      <AttributeName>Newtonsoft.Json.JsonObject("#Microsoft.Azure.Search.PhoneticTokenFilter")</AttributeName>
+      <AttributeName Language="C#">[Newtonsoft.Json.JsonObject("#Microsoft.Azure.Search.PhoneticTokenFilter")]</AttributeName>
+      <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonObject("#Microsoft.Azure.Search.PhoneticTokenFilter")&gt;]</AttributeName>
     </Attribute>
   </Attributes>
   <Docs>
@@ -33,7 +34,7 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Search.Service</AssemblyName>
-        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>10.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
@@ -44,15 +45,15 @@
       </Docs>
     </Member>
     <Member MemberName=".ctor">
-      <MemberSignature Language="C#" Value="public PhoneticTokenFilter (string name, Nullable&lt;Microsoft.Azure.Search.Models.PhoneticEncoder&gt; encoder = null, Nullable&lt;bool&gt; replaceOriginalTokens = null);" />
+      <MemberSignature Language="C#" Value="public PhoneticTokenFilter (string name, Microsoft.Azure.Search.Models.PhoneticEncoder? encoder = default, bool? replaceOriginalTokens = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string name, valuetype System.Nullable`1&lt;valuetype Microsoft.Azure.Search.Models.PhoneticEncoder&gt; encoder, valuetype System.Nullable`1&lt;bool&gt; replaceOriginalTokens) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Search.Models.PhoneticTokenFilter.#ctor(System.String,System.Nullable{Microsoft.Azure.Search.Models.PhoneticEncoder},System.Nullable{System.Boolean})" />
-      <MemberSignature Language="VB.NET" Value="Public Sub New (name As String, Optional encoder As Nullable(Of PhoneticEncoder) = null, Optional replaceOriginalTokens As Nullable(Of Boolean) = null)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (name As String, Optional encoder As Nullable(Of PhoneticEncoder) = Nothing, Optional replaceOriginalTokens As Nullable(Of Boolean) = Nothing)" />
       <MemberSignature Language="F#" Value="new Microsoft.Azure.Search.Models.PhoneticTokenFilter : string * Nullable&lt;Microsoft.Azure.Search.Models.PhoneticEncoder&gt; * Nullable&lt;bool&gt; -&gt; Microsoft.Azure.Search.Models.PhoneticTokenFilter" Usage="new Microsoft.Azure.Search.Models.PhoneticTokenFilter (name, encoder, replaceOriginalTokens)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Search.Service</AssemblyName>
-        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>10.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="name" Type="System.String" />
@@ -79,7 +80,7 @@
       </Docs>
     </Member>
     <Member MemberName="Encoder">
-      <MemberSignature Language="C#" Value="public Nullable&lt;Microsoft.Azure.Search.Models.PhoneticEncoder&gt; Encoder { get; set; }" />
+      <MemberSignature Language="C#" Value="public Microsoft.Azure.Search.Models.PhoneticEncoder? Encoder { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;valuetype Microsoft.Azure.Search.Models.PhoneticEncoder&gt; Encoder" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Search.Models.PhoneticTokenFilter.Encoder" />
       <MemberSignature Language="VB.NET" Value="Public Property Encoder As Nullable(Of PhoneticEncoder)" />
@@ -87,11 +88,12 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Search.Service</AssemblyName>
-        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>10.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="encoder")</AttributeName>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty(PropertyName="encoder")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty(PropertyName="encoder")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -109,7 +111,7 @@
       </Docs>
     </Member>
     <Member MemberName="ReplaceOriginalTokens">
-      <MemberSignature Language="C#" Value="public Nullable&lt;bool&gt; ReplaceOriginalTokens { get; set; }" />
+      <MemberSignature Language="C#" Value="public bool? ReplaceOriginalTokens { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;bool&gt; ReplaceOriginalTokens" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Search.Models.PhoneticTokenFilter.ReplaceOriginalTokens" />
       <MemberSignature Language="VB.NET" Value="Public Property ReplaceOriginalTokens As Nullable(Of Boolean)" />
@@ -117,11 +119,12 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Search.Service</AssemblyName>
-        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>10.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="replace")</AttributeName>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty(PropertyName="replace")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty(PropertyName="replace")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -146,7 +149,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Search.Service</AssemblyName>
-        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>10.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>

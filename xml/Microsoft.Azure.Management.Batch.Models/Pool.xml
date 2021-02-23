@@ -1,14 +1,15 @@
-﻿<Type Name="Pool" FullName="Microsoft.Azure.Management.Batch.Models.Pool">
+<Type Name="Pool" FullName="Microsoft.Azure.Management.Batch.Models.Pool">
   <TypeSignature Language="C#" Value="public class Pool : Microsoft.Azure.Management.Batch.Models.ProxyResource" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit Pool extends Microsoft.Azure.Management.Batch.Models.ProxyResource" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Azure.Management.Batch.Models.Pool" />
   <TypeSignature Language="VB.NET" Value="Public Class Pool&#xA;Inherits ProxyResource" />
   <TypeSignature Language="F#" Value="type Pool = class&#xA;    inherit ProxyResource" />
-  <TypeSignature Language="C++ CLI" Value="public ref class Pool : Microsoft::Azure::Management::Batch::Models::ProxyResource" />
-  <TypeSignature Language="C++ WINRT" Value="[Windows::Foundation::Metadata::WebHostHidden]&#xA;class Pool : Microsoft::Azure::Management::Batch::Models::ProxyResource" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Azure.Management.Batch</AssemblyName>
-    <AssemblyVersion>6.0.0.0</AssemblyVersion>
+    <AssemblyVersion>9.0.0.0</AssemblyVersion>
+    <AssemblyVersion>10.0.0.0</AssemblyVersion>
+    <AssemblyVersion>11.0.0.0</AssemblyVersion>
+    <AssemblyVersion>13.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>Microsoft.Azure.Management.Batch.Models.ProxyResource</BaseTypeName>
@@ -16,7 +17,8 @@
   <Interfaces />
   <Attributes>
     <Attribute>
-      <AttributeName>Microsoft.Rest.Serialization.JsonTransformation</AttributeName>
+      <AttributeName Language="C#">[Microsoft.Rest.Serialization.JsonTransformation]</AttributeName>
+      <AttributeName Language="F#">[&lt;Microsoft.Rest.Serialization.JsonTransformation&gt;]</AttributeName>
     </Attribute>
   </Attributes>
   <Docs>
@@ -31,13 +33,13 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Management.Batch.Models.Pool.#ctor" />
       <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; Pool();" />
-      <MemberSignature Language="C++ CX" Value="public:&#xA; Pool();" />
-      <MemberSignature Language="C++ WINRT" Value=" Pool();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Batch</AssemblyName>
-        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+        <AssemblyVersion>11.0.0.0</AssemblyVersion>
+        <AssemblyVersion>13.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
@@ -48,14 +50,15 @@
       </Docs>
     </Member>
     <Member MemberName=".ctor">
-      <MemberSignature Language="C#" Value="public Pool (string id = null, string name = null, string type = null, string etag = null, string displayName = null, Nullable&lt;DateTime&gt; lastModified = null, Nullable&lt;DateTime&gt; creationTime = null, Nullable&lt;Microsoft.Azure.Management.Batch.Models.PoolProvisioningState&gt; provisioningState = null, Nullable&lt;DateTime&gt; provisioningStateTransitionTime = null, Nullable&lt;Microsoft.Azure.Management.Batch.Models.AllocationState&gt; allocationState = null, Nullable&lt;DateTime&gt; allocationStateTransitionTime = null, string vmSize = null, Microsoft.Azure.Management.Batch.Models.DeploymentConfiguration deploymentConfiguration = null, Nullable&lt;int&gt; currentDedicatedNodes = null, Nullable&lt;int&gt; currentLowPriorityNodes = null, Microsoft.Azure.Management.Batch.Models.ScaleSettings scaleSettings = null, Microsoft.Azure.Management.Batch.Models.AutoScaleRun autoScaleRun = null, Nullable&lt;Microsoft.Azure.Management.Batch.Models.InterNodeCommunicationState&gt; interNodeCommunication = null, Microsoft.Azure.Management.Batch.Models.NetworkConfiguration networkConfiguration = null, Nullable&lt;int&gt; maxTasksPerNode = null, Microsoft.Azure.Management.Batch.Models.TaskSchedulingPolicy taskSchedulingPolicy = null, System.Collections.Generic.IList&lt;Microsoft.Azure.Management.Batch.Models.UserAccount&gt; userAccounts = null, System.Collections.Generic.IList&lt;Microsoft.Azure.Management.Batch.Models.MetadataItem&gt; metadata = null, Microsoft.Azure.Management.Batch.Models.StartTask startTask = null, System.Collections.Generic.IList&lt;Microsoft.Azure.Management.Batch.Models.CertificateReference&gt; certificates = null, System.Collections.Generic.IList&lt;Microsoft.Azure.Management.Batch.Models.ApplicationPackageReference&gt; applicationPackages = null, System.Collections.Generic.IList&lt;string&gt; applicationLicenses = null, Microsoft.Azure.Management.Batch.Models.ResizeOperationStatus resizeOperationStatus = null);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string id, string name, string type, string etag, string displayName, valuetype System.Nullable`1&lt;valuetype System.DateTime&gt; lastModified, valuetype System.Nullable`1&lt;valuetype System.DateTime&gt; creationTime, valuetype System.Nullable`1&lt;valuetype Microsoft.Azure.Management.Batch.Models.PoolProvisioningState&gt; provisioningState, valuetype System.Nullable`1&lt;valuetype System.DateTime&gt; provisioningStateTransitionTime, valuetype System.Nullable`1&lt;valuetype Microsoft.Azure.Management.Batch.Models.AllocationState&gt; allocationState, valuetype System.Nullable`1&lt;valuetype System.DateTime&gt; allocationStateTransitionTime, string vmSize, class Microsoft.Azure.Management.Batch.Models.DeploymentConfiguration deploymentConfiguration, valuetype System.Nullable`1&lt;int32&gt; currentDedicatedNodes, valuetype System.Nullable`1&lt;int32&gt; currentLowPriorityNodes, class Microsoft.Azure.Management.Batch.Models.ScaleSettings scaleSettings, class Microsoft.Azure.Management.Batch.Models.AutoScaleRun autoScaleRun, valuetype System.Nullable`1&lt;valuetype Microsoft.Azure.Management.Batch.Models.InterNodeCommunicationState&gt; interNodeCommunication, class Microsoft.Azure.Management.Batch.Models.NetworkConfiguration networkConfiguration, valuetype System.Nullable`1&lt;int32&gt; maxTasksPerNode, class Microsoft.Azure.Management.Batch.Models.TaskSchedulingPolicy taskSchedulingPolicy, class System.Collections.Generic.IList`1&lt;class Microsoft.Azure.Management.Batch.Models.UserAccount&gt; userAccounts, class System.Collections.Generic.IList`1&lt;class Microsoft.Azure.Management.Batch.Models.MetadataItem&gt; metadata, class Microsoft.Azure.Management.Batch.Models.StartTask startTask, class System.Collections.Generic.IList`1&lt;class Microsoft.Azure.Management.Batch.Models.CertificateReference&gt; certificates, class System.Collections.Generic.IList`1&lt;class Microsoft.Azure.Management.Batch.Models.ApplicationPackageReference&gt; applicationPackages, class System.Collections.Generic.IList`1&lt;string&gt; applicationLicenses, class Microsoft.Azure.Management.Batch.Models.ResizeOperationStatus resizeOperationStatus) cil managed" />
-      <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Management.Batch.Models.Pool.#ctor(System.String,System.String,System.String,System.String,System.String,System.Nullable{System.DateTime},System.Nullable{System.DateTime},System.Nullable{Microsoft.Azure.Management.Batch.Models.PoolProvisioningState},System.Nullable{System.DateTime},System.Nullable{Microsoft.Azure.Management.Batch.Models.AllocationState},System.Nullable{System.DateTime},System.String,Microsoft.Azure.Management.Batch.Models.DeploymentConfiguration,System.Nullable{System.Int32},System.Nullable{System.Int32},Microsoft.Azure.Management.Batch.Models.ScaleSettings,Microsoft.Azure.Management.Batch.Models.AutoScaleRun,System.Nullable{Microsoft.Azure.Management.Batch.Models.InterNodeCommunicationState},Microsoft.Azure.Management.Batch.Models.NetworkConfiguration,System.Nullable{System.Int32},Microsoft.Azure.Management.Batch.Models.TaskSchedulingPolicy,System.Collections.Generic.IList{Microsoft.Azure.Management.Batch.Models.UserAccount},System.Collections.Generic.IList{Microsoft.Azure.Management.Batch.Models.MetadataItem},Microsoft.Azure.Management.Batch.Models.StartTask,System.Collections.Generic.IList{Microsoft.Azure.Management.Batch.Models.CertificateReference},System.Collections.Generic.IList{Microsoft.Azure.Management.Batch.Models.ApplicationPackageReference},System.Collections.Generic.IList{System.String},Microsoft.Azure.Management.Batch.Models.ResizeOperationStatus)" />
-      <MemberSignature Language="F#" Value="new Microsoft.Azure.Management.Batch.Models.Pool : string * string * string * string * string * Nullable&lt;DateTime&gt; * Nullable&lt;DateTime&gt; * Nullable&lt;Microsoft.Azure.Management.Batch.Models.PoolProvisioningState&gt; * Nullable&lt;DateTime&gt; * Nullable&lt;Microsoft.Azure.Management.Batch.Models.AllocationState&gt; * Nullable&lt;DateTime&gt; * string * Microsoft.Azure.Management.Batch.Models.DeploymentConfiguration * Nullable&lt;int&gt; * Nullable&lt;int&gt; * Microsoft.Azure.Management.Batch.Models.ScaleSettings * Microsoft.Azure.Management.Batch.Models.AutoScaleRun * Nullable&lt;Microsoft.Azure.Management.Batch.Models.InterNodeCommunicationState&gt; * Microsoft.Azure.Management.Batch.Models.NetworkConfiguration * Nullable&lt;int&gt; * Microsoft.Azure.Management.Batch.Models.TaskSchedulingPolicy * System.Collections.Generic.IList&lt;Microsoft.Azure.Management.Batch.Models.UserAccount&gt; * System.Collections.Generic.IList&lt;Microsoft.Azure.Management.Batch.Models.MetadataItem&gt; * Microsoft.Azure.Management.Batch.Models.StartTask * System.Collections.Generic.IList&lt;Microsoft.Azure.Management.Batch.Models.CertificateReference&gt; * System.Collections.Generic.IList&lt;Microsoft.Azure.Management.Batch.Models.ApplicationPackageReference&gt; * System.Collections.Generic.IList&lt;string&gt; * Microsoft.Azure.Management.Batch.Models.ResizeOperationStatus -&gt; Microsoft.Azure.Management.Batch.Models.Pool" Usage="new Microsoft.Azure.Management.Batch.Models.Pool (id, name, type, etag, displayName, lastModified, creationTime, provisioningState, provisioningStateTransitionTime, allocationState, allocationStateTransitionTime, vmSize, deploymentConfiguration, currentDedicatedNodes, currentLowPriorityNodes, scaleSettings, autoScaleRun, interNodeCommunication, networkConfiguration, maxTasksPerNode, taskSchedulingPolicy, userAccounts, metadata, startTask, certificates, applicationPackages, applicationLicenses, resizeOperationStatus)" />
+      <MemberSignature Language="C#" Value="public Pool (string id = default, string name = default, string type = default, string etag = default, string displayName = default, DateTime? lastModified = default, DateTime? creationTime = default, Microsoft.Azure.Management.Batch.Models.PoolProvisioningState? provisioningState = default, DateTime? provisioningStateTransitionTime = default, Microsoft.Azure.Management.Batch.Models.AllocationState? allocationState = default, DateTime? allocationStateTransitionTime = default, string vmSize = default, Microsoft.Azure.Management.Batch.Models.DeploymentConfiguration deploymentConfiguration = default, int? currentDedicatedNodes = default, int? currentLowPriorityNodes = default, Microsoft.Azure.Management.Batch.Models.ScaleSettings scaleSettings = default, Microsoft.Azure.Management.Batch.Models.AutoScaleRun autoScaleRun = default, Microsoft.Azure.Management.Batch.Models.InterNodeCommunicationState? interNodeCommunication = default, Microsoft.Azure.Management.Batch.Models.NetworkConfiguration networkConfiguration = default, int? taskSlotsPerNode = default, Microsoft.Azure.Management.Batch.Models.TaskSchedulingPolicy taskSchedulingPolicy = default, System.Collections.Generic.IList&lt;Microsoft.Azure.Management.Batch.Models.UserAccount&gt; userAccounts = default, System.Collections.Generic.IList&lt;Microsoft.Azure.Management.Batch.Models.MetadataItem&gt; metadata = default, Microsoft.Azure.Management.Batch.Models.StartTask startTask = default, System.Collections.Generic.IList&lt;Microsoft.Azure.Management.Batch.Models.CertificateReference&gt; certificates = default, System.Collections.Generic.IList&lt;Microsoft.Azure.Management.Batch.Models.ApplicationPackageReference&gt; applicationPackages = default, System.Collections.Generic.IList&lt;string&gt; applicationLicenses = default, Microsoft.Azure.Management.Batch.Models.ResizeOperationStatus resizeOperationStatus = default, System.Collections.Generic.IList&lt;Microsoft.Azure.Management.Batch.Models.MountConfiguration&gt; mountConfiguration = default, Microsoft.Azure.Management.Batch.Models.BatchPoolIdentity identity = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string id, string name, string type, string etag, string displayName, valuetype System.Nullable`1&lt;valuetype System.DateTime&gt; lastModified, valuetype System.Nullable`1&lt;valuetype System.DateTime&gt; creationTime, valuetype System.Nullable`1&lt;valuetype Microsoft.Azure.Management.Batch.Models.PoolProvisioningState&gt; provisioningState, valuetype System.Nullable`1&lt;valuetype System.DateTime&gt; provisioningStateTransitionTime, valuetype System.Nullable`1&lt;valuetype Microsoft.Azure.Management.Batch.Models.AllocationState&gt; allocationState, valuetype System.Nullable`1&lt;valuetype System.DateTime&gt; allocationStateTransitionTime, string vmSize, class Microsoft.Azure.Management.Batch.Models.DeploymentConfiguration deploymentConfiguration, valuetype System.Nullable`1&lt;int32&gt; currentDedicatedNodes, valuetype System.Nullable`1&lt;int32&gt; currentLowPriorityNodes, class Microsoft.Azure.Management.Batch.Models.ScaleSettings scaleSettings, class Microsoft.Azure.Management.Batch.Models.AutoScaleRun autoScaleRun, valuetype System.Nullable`1&lt;valuetype Microsoft.Azure.Management.Batch.Models.InterNodeCommunicationState&gt; interNodeCommunication, class Microsoft.Azure.Management.Batch.Models.NetworkConfiguration networkConfiguration, valuetype System.Nullable`1&lt;int32&gt; taskSlotsPerNode, class Microsoft.Azure.Management.Batch.Models.TaskSchedulingPolicy taskSchedulingPolicy, class System.Collections.Generic.IList`1&lt;class Microsoft.Azure.Management.Batch.Models.UserAccount&gt; userAccounts, class System.Collections.Generic.IList`1&lt;class Microsoft.Azure.Management.Batch.Models.MetadataItem&gt; metadata, class Microsoft.Azure.Management.Batch.Models.StartTask startTask, class System.Collections.Generic.IList`1&lt;class Microsoft.Azure.Management.Batch.Models.CertificateReference&gt; certificates, class System.Collections.Generic.IList`1&lt;class Microsoft.Azure.Management.Batch.Models.ApplicationPackageReference&gt; applicationPackages, class System.Collections.Generic.IList`1&lt;string&gt; applicationLicenses, class Microsoft.Azure.Management.Batch.Models.ResizeOperationStatus resizeOperationStatus, class System.Collections.Generic.IList`1&lt;class Microsoft.Azure.Management.Batch.Models.MountConfiguration&gt; mountConfiguration, class Microsoft.Azure.Management.Batch.Models.BatchPoolIdentity identity) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Management.Batch.Models.Pool.#ctor(System.String,System.String,System.String,System.String,System.String,System.Nullable{System.DateTime},System.Nullable{System.DateTime},System.Nullable{Microsoft.Azure.Management.Batch.Models.PoolProvisioningState},System.Nullable{System.DateTime},System.Nullable{Microsoft.Azure.Management.Batch.Models.AllocationState},System.Nullable{System.DateTime},System.String,Microsoft.Azure.Management.Batch.Models.DeploymentConfiguration,System.Nullable{System.Int32},System.Nullable{System.Int32},Microsoft.Azure.Management.Batch.Models.ScaleSettings,Microsoft.Azure.Management.Batch.Models.AutoScaleRun,System.Nullable{Microsoft.Azure.Management.Batch.Models.InterNodeCommunicationState},Microsoft.Azure.Management.Batch.Models.NetworkConfiguration,System.Nullable{System.Int32},Microsoft.Azure.Management.Batch.Models.TaskSchedulingPolicy,System.Collections.Generic.IList{Microsoft.Azure.Management.Batch.Models.UserAccount},System.Collections.Generic.IList{Microsoft.Azure.Management.Batch.Models.MetadataItem},Microsoft.Azure.Management.Batch.Models.StartTask,System.Collections.Generic.IList{Microsoft.Azure.Management.Batch.Models.CertificateReference},System.Collections.Generic.IList{Microsoft.Azure.Management.Batch.Models.ApplicationPackageReference},System.Collections.Generic.IList{System.String},Microsoft.Azure.Management.Batch.Models.ResizeOperationStatus,System.Collections.Generic.IList{Microsoft.Azure.Management.Batch.Models.MountConfiguration},Microsoft.Azure.Management.Batch.Models.BatchPoolIdentity)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (Optional id As String = Nothing, Optional name As String = Nothing, Optional type As String = Nothing, Optional etag As String = Nothing, Optional displayName As String = Nothing, Optional lastModified As Nullable(Of DateTime) = Nothing, Optional creationTime As Nullable(Of DateTime) = Nothing, Optional provisioningState As Nullable(Of PoolProvisioningState) = Nothing, Optional provisioningStateTransitionTime As Nullable(Of DateTime) = Nothing, Optional allocationState As Nullable(Of AllocationState) = Nothing, Optional allocationStateTransitionTime As Nullable(Of DateTime) = Nothing, Optional vmSize As String = Nothing, Optional deploymentConfiguration As DeploymentConfiguration = Nothing, Optional currentDedicatedNodes As Nullable(Of Integer) = Nothing, Optional currentLowPriorityNodes As Nullable(Of Integer) = Nothing, Optional scaleSettings As ScaleSettings = Nothing, Optional autoScaleRun As AutoScaleRun = Nothing, Optional interNodeCommunication As Nullable(Of InterNodeCommunicationState) = Nothing, Optional networkConfiguration As NetworkConfiguration = Nothing, Optional taskSlotsPerNode As Nullable(Of Integer) = Nothing, Optional taskSchedulingPolicy As TaskSchedulingPolicy = Nothing, Optional userAccounts As IList(Of UserAccount) = Nothing, Optional metadata As IList(Of MetadataItem) = Nothing, Optional startTask As StartTask = Nothing, Optional certificates As IList(Of CertificateReference) = Nothing, Optional applicationPackages As IList(Of ApplicationPackageReference) = Nothing, Optional applicationLicenses As IList(Of String) = Nothing, Optional resizeOperationStatus As ResizeOperationStatus = Nothing, Optional mountConfiguration As IList(Of MountConfiguration) = Nothing, Optional identity As BatchPoolIdentity = Nothing)" />
+      <MemberSignature Language="F#" Value="new Microsoft.Azure.Management.Batch.Models.Pool : string * string * string * string * string * Nullable&lt;DateTime&gt; * Nullable&lt;DateTime&gt; * Nullable&lt;Microsoft.Azure.Management.Batch.Models.PoolProvisioningState&gt; * Nullable&lt;DateTime&gt; * Nullable&lt;Microsoft.Azure.Management.Batch.Models.AllocationState&gt; * Nullable&lt;DateTime&gt; * string * Microsoft.Azure.Management.Batch.Models.DeploymentConfiguration * Nullable&lt;int&gt; * Nullable&lt;int&gt; * Microsoft.Azure.Management.Batch.Models.ScaleSettings * Microsoft.Azure.Management.Batch.Models.AutoScaleRun * Nullable&lt;Microsoft.Azure.Management.Batch.Models.InterNodeCommunicationState&gt; * Microsoft.Azure.Management.Batch.Models.NetworkConfiguration * Nullable&lt;int&gt; * Microsoft.Azure.Management.Batch.Models.TaskSchedulingPolicy * System.Collections.Generic.IList&lt;Microsoft.Azure.Management.Batch.Models.UserAccount&gt; * System.Collections.Generic.IList&lt;Microsoft.Azure.Management.Batch.Models.MetadataItem&gt; * Microsoft.Azure.Management.Batch.Models.StartTask * System.Collections.Generic.IList&lt;Microsoft.Azure.Management.Batch.Models.CertificateReference&gt; * System.Collections.Generic.IList&lt;Microsoft.Azure.Management.Batch.Models.ApplicationPackageReference&gt; * System.Collections.Generic.IList&lt;string&gt; * Microsoft.Azure.Management.Batch.Models.ResizeOperationStatus * System.Collections.Generic.IList&lt;Microsoft.Azure.Management.Batch.Models.MountConfiguration&gt; * Microsoft.Azure.Management.Batch.Models.BatchPoolIdentity -&gt; Microsoft.Azure.Management.Batch.Models.Pool" Usage="new Microsoft.Azure.Management.Batch.Models.Pool (id, name, type, etag, displayName, lastModified, creationTime, provisioningState, provisioningStateTransitionTime, allocationState, allocationStateTransitionTime, vmSize, deploymentConfiguration, currentDedicatedNodes, currentLowPriorityNodes, scaleSettings, autoScaleRun, interNodeCommunication, networkConfiguration, taskSlotsPerNode, taskSchedulingPolicy, userAccounts, metadata, startTask, certificates, applicationPackages, applicationLicenses, resizeOperationStatus, mountConfiguration, identity)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Batch</AssemblyName>
-        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>13.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="id" Type="System.String" />
@@ -77,7 +80,7 @@
         <Parameter Name="autoScaleRun" Type="Microsoft.Azure.Management.Batch.Models.AutoScaleRun" />
         <Parameter Name="interNodeCommunication" Type="System.Nullable&lt;Microsoft.Azure.Management.Batch.Models.InterNodeCommunicationState&gt;" />
         <Parameter Name="networkConfiguration" Type="Microsoft.Azure.Management.Batch.Models.NetworkConfiguration" />
-        <Parameter Name="maxTasksPerNode" Type="System.Nullable&lt;System.Int32&gt;" />
+        <Parameter Name="taskSlotsPerNode" Type="System.Nullable&lt;System.Int32&gt;" />
         <Parameter Name="taskSchedulingPolicy" Type="Microsoft.Azure.Management.Batch.Models.TaskSchedulingPolicy" />
         <Parameter Name="userAccounts" Type="System.Collections.Generic.IList&lt;Microsoft.Azure.Management.Batch.Models.UserAccount&gt;" />
         <Parameter Name="metadata" Type="System.Collections.Generic.IList&lt;Microsoft.Azure.Management.Batch.Models.MetadataItem&gt;" />
@@ -86,6 +89,8 @@
         <Parameter Name="applicationPackages" Type="System.Collections.Generic.IList&lt;Microsoft.Azure.Management.Batch.Models.ApplicationPackageReference&gt;" />
         <Parameter Name="applicationLicenses" Type="System.Collections.Generic.IList&lt;System.String&gt;" />
         <Parameter Name="resizeOperationStatus" Type="Microsoft.Azure.Management.Batch.Models.ResizeOperationStatus" />
+        <Parameter Name="mountConfiguration" Type="System.Collections.Generic.IList&lt;Microsoft.Azure.Management.Batch.Models.MountConfiguration&gt;" />
+        <Parameter Name="identity" Type="Microsoft.Azure.Management.Batch.Models.BatchPoolIdentity" />
       </Parameters>
       <Docs>
         <param name="id">The ID of the resource.</param>
@@ -121,8 +126,9 @@
             direct communication between nodes.</param>
         <param name="networkConfiguration">The network configuration for
             the pool.</param>
-        <param name="maxTasksPerNode">The maximum number of tasks that can
-            run concurrently on a single compute node in the pool.</param>
+        <param name="taskSlotsPerNode">The number of task slots that can be
+            used to run concurrent tasks on a single compute node in the
+            pool.</param>
         <param name="taskSchedulingPolicy">How tasks are distributed across
             compute nodes in a pool.</param>
         <param name="userAccounts">The list of user accounts to be created
@@ -140,6 +146,10 @@
             pool.</param>
         <param name="resizeOperationStatus">Contains details about the
             current or last completed resize operation.</param>
+        <param name="mountConfiguration">A list of file systems to mount on
+            each node in the pool.</param>
+        <param name="identity">The type of identity used for the Batch
+            Pool.</param>
         <summary>
             Initializes a new instance of the Pool class.
             </summary>
@@ -147,20 +157,23 @@
       </Docs>
     </Member>
     <Member MemberName="AllocationState">
-      <MemberSignature Language="C#" Value="public Nullable&lt;Microsoft.Azure.Management.Batch.Models.AllocationState&gt; AllocationState { get; }" />
+      <MemberSignature Language="C#" Value="public Microsoft.Azure.Management.Batch.Models.AllocationState? AllocationState { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;valuetype Microsoft.Azure.Management.Batch.Models.AllocationState&gt; AllocationState" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Management.Batch.Models.Pool.AllocationState" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property AllocationState As Nullable(Of AllocationState)" />
       <MemberSignature Language="F#" Value="member this.AllocationState : Nullable&lt;Microsoft.Azure.Management.Batch.Models.AllocationState&gt;" Usage="Microsoft.Azure.Management.Batch.Models.Pool.AllocationState" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Nullable&lt;Microsoft::Azure::Management::Batch::Models::AllocationState&gt; AllocationState { Nullable&lt;Microsoft::Azure::Management::Batch::Models::AllocationState&gt; get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Batch</AssemblyName>
-        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+        <AssemblyVersion>11.0.0.0</AssemblyVersion>
+        <AssemblyVersion>13.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="properties.allocationState")</AttributeName>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty(PropertyName="properties.allocationState")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty(PropertyName="properties.allocationState")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -168,40 +181,32 @@
       </ReturnValue>
       <Docs>
         <summary>
-             Gets whether the pool is resizing.
-             </summary>
+            Gets whether the pool is resizing.
+            </summary>
         <value>To be added.</value>
         <remarks>
-             Values are:
-            
-             Steady - The pool is not resizing. There are no changes to the
-             number of nodes in the pool in progress. A pool enters this state
-             when it is created and when no operations are being performed on
-             the pool to change the number of dedicated nodes.
-             Resizing - The pool is resizing; that is, compute nodes are being
-             added to or removed from the pool.
-             Stopping - The pool was resizing, but the user has requested that
-             the resize be stopped, but the stop request has not yet been
-             completed. Possible values include: 'Steady', 'Resizing',
-             'Stopping'
-             </remarks>
+            Possible values include: 'Steady', 'Resizing', 'Stopping'
+            </remarks>
       </Docs>
     </Member>
     <Member MemberName="AllocationStateTransitionTime">
-      <MemberSignature Language="C#" Value="public Nullable&lt;DateTime&gt; AllocationStateTransitionTime { get; }" />
+      <MemberSignature Language="C#" Value="public DateTime? AllocationStateTransitionTime { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;valuetype System.DateTime&gt; AllocationStateTransitionTime" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Management.Batch.Models.Pool.AllocationStateTransitionTime" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property AllocationStateTransitionTime As Nullable(Of DateTime)" />
       <MemberSignature Language="F#" Value="member this.AllocationStateTransitionTime : Nullable&lt;DateTime&gt;" Usage="Microsoft.Azure.Management.Batch.Models.Pool.AllocationStateTransitionTime" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Nullable&lt;DateTime&gt; AllocationStateTransitionTime { Nullable&lt;DateTime&gt; get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Batch</AssemblyName>
-        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+        <AssemblyVersion>11.0.0.0</AssemblyVersion>
+        <AssemblyVersion>13.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="properties.allocationStateTransitionTime")</AttributeName>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty(PropertyName="properties.allocationStateTransitionTime")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty(PropertyName="properties.allocationStateTransitionTime")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -222,15 +227,18 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Management.Batch.Models.Pool.ApplicationLicenses" />
       <MemberSignature Language="VB.NET" Value="Public Property ApplicationLicenses As IList(Of String)" />
       <MemberSignature Language="F#" Value="member this.ApplicationLicenses : System.Collections.Generic.IList&lt;string&gt; with get, set" Usage="Microsoft.Azure.Management.Batch.Models.Pool.ApplicationLicenses" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::Generic::IList&lt;System::String ^&gt; ^ ApplicationLicenses { System::Collections::Generic::IList&lt;System::String ^&gt; ^ get(); void set(System::Collections::Generic::IList&lt;System::String ^&gt; ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Batch</AssemblyName>
-        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+        <AssemblyVersion>11.0.0.0</AssemblyVersion>
+        <AssemblyVersion>13.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="properties.applicationLicenses")</AttributeName>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty(PropertyName="properties.applicationLicenses")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty(PropertyName="properties.applicationLicenses")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -255,15 +263,18 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Management.Batch.Models.Pool.ApplicationPackages" />
       <MemberSignature Language="VB.NET" Value="Public Property ApplicationPackages As IList(Of ApplicationPackageReference)" />
       <MemberSignature Language="F#" Value="member this.ApplicationPackages : System.Collections.Generic.IList&lt;Microsoft.Azure.Management.Batch.Models.ApplicationPackageReference&gt; with get, set" Usage="Microsoft.Azure.Management.Batch.Models.Pool.ApplicationPackages" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::Generic::IList&lt;Microsoft::Azure::Management::Batch::Models::ApplicationPackageReference ^&gt; ^ ApplicationPackages { System::Collections::Generic::IList&lt;Microsoft::Azure::Management::Batch::Models::ApplicationPackageReference ^&gt; ^ get(); void set(System::Collections::Generic::IList&lt;Microsoft::Azure::Management::Batch::Models::ApplicationPackageReference ^&gt; ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Batch</AssemblyName>
-        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+        <AssemblyVersion>11.0.0.0</AssemblyVersion>
+        <AssemblyVersion>13.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="properties.applicationPackages")</AttributeName>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty(PropertyName="properties.applicationPackages")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty(PropertyName="properties.applicationPackages")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -276,9 +287,10 @@
             </summary>
         <value>To be added.</value>
         <remarks>
-            Changes to application packages affect all new compute nodes
-            joining the pool, but do not affect compute nodes that are already
-            in the pool until they are rebooted or reimaged.
+            Changes to application package references affect all new compute
+            nodes joining the pool, but do not affect compute nodes that are
+            already in the pool until they are rebooted or reimaged. There is a
+            maximum of 10 application package references on any given pool.
             </remarks>
       </Docs>
     </Member>
@@ -288,15 +300,18 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Management.Batch.Models.Pool.AutoScaleRun" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property AutoScaleRun As AutoScaleRun" />
       <MemberSignature Language="F#" Value="member this.AutoScaleRun : Microsoft.Azure.Management.Batch.Models.AutoScaleRun" Usage="Microsoft.Azure.Management.Batch.Models.Pool.AutoScaleRun" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Azure::Management::Batch::Models::AutoScaleRun ^ AutoScaleRun { Microsoft::Azure::Management::Batch::Models::AutoScaleRun ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Batch</AssemblyName>
-        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+        <AssemblyVersion>11.0.0.0</AssemblyVersion>
+        <AssemblyVersion>13.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="properties.autoScaleRun")</AttributeName>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty(PropertyName="properties.autoScaleRun")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty(PropertyName="properties.autoScaleRun")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -320,15 +335,18 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Management.Batch.Models.Pool.Certificates" />
       <MemberSignature Language="VB.NET" Value="Public Property Certificates As IList(Of CertificateReference)" />
       <MemberSignature Language="F#" Value="member this.Certificates : System.Collections.Generic.IList&lt;Microsoft.Azure.Management.Batch.Models.CertificateReference&gt; with get, set" Usage="Microsoft.Azure.Management.Batch.Models.Pool.Certificates" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::Generic::IList&lt;Microsoft::Azure::Management::Batch::Models::CertificateReference ^&gt; ^ Certificates { System::Collections::Generic::IList&lt;Microsoft::Azure::Management::Batch::Models::CertificateReference ^&gt; ^ get(); void set(System::Collections::Generic::IList&lt;Microsoft::Azure::Management::Batch::Models::CertificateReference ^&gt; ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Batch</AssemblyName>
-        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+        <AssemblyVersion>11.0.0.0</AssemblyVersion>
+        <AssemblyVersion>13.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="properties.certificates")</AttributeName>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty(PropertyName="properties.certificates")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty(PropertyName="properties.certificates")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -354,20 +372,23 @@
       </Docs>
     </Member>
     <Member MemberName="CreationTime">
-      <MemberSignature Language="C#" Value="public Nullable&lt;DateTime&gt; CreationTime { get; }" />
+      <MemberSignature Language="C#" Value="public DateTime? CreationTime { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;valuetype System.DateTime&gt; CreationTime" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Management.Batch.Models.Pool.CreationTime" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property CreationTime As Nullable(Of DateTime)" />
       <MemberSignature Language="F#" Value="member this.CreationTime : Nullable&lt;DateTime&gt;" Usage="Microsoft.Azure.Management.Batch.Models.Pool.CreationTime" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Nullable&lt;DateTime&gt; CreationTime { Nullable&lt;DateTime&gt; get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Batch</AssemblyName>
-        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+        <AssemblyVersion>11.0.0.0</AssemblyVersion>
+        <AssemblyVersion>13.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="properties.creationTime")</AttributeName>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty(PropertyName="properties.creationTime")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty(PropertyName="properties.creationTime")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -382,20 +403,23 @@
       </Docs>
     </Member>
     <Member MemberName="CurrentDedicatedNodes">
-      <MemberSignature Language="C#" Value="public Nullable&lt;int&gt; CurrentDedicatedNodes { get; }" />
+      <MemberSignature Language="C#" Value="public int? CurrentDedicatedNodes { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;int32&gt; CurrentDedicatedNodes" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Management.Batch.Models.Pool.CurrentDedicatedNodes" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property CurrentDedicatedNodes As Nullable(Of Integer)" />
       <MemberSignature Language="F#" Value="member this.CurrentDedicatedNodes : Nullable&lt;int&gt;" Usage="Microsoft.Azure.Management.Batch.Models.Pool.CurrentDedicatedNodes" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Nullable&lt;int&gt; CurrentDedicatedNodes { Nullable&lt;int&gt; get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Batch</AssemblyName>
-        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+        <AssemblyVersion>11.0.0.0</AssemblyVersion>
+        <AssemblyVersion>13.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="properties.currentDedicatedNodes")</AttributeName>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty(PropertyName="properties.currentDedicatedNodes")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty(PropertyName="properties.currentDedicatedNodes")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -410,20 +434,23 @@
       </Docs>
     </Member>
     <Member MemberName="CurrentLowPriorityNodes">
-      <MemberSignature Language="C#" Value="public Nullable&lt;int&gt; CurrentLowPriorityNodes { get; }" />
+      <MemberSignature Language="C#" Value="public int? CurrentLowPriorityNodes { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;int32&gt; CurrentLowPriorityNodes" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Management.Batch.Models.Pool.CurrentLowPriorityNodes" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property CurrentLowPriorityNodes As Nullable(Of Integer)" />
       <MemberSignature Language="F#" Value="member this.CurrentLowPriorityNodes : Nullable&lt;int&gt;" Usage="Microsoft.Azure.Management.Batch.Models.Pool.CurrentLowPriorityNodes" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Nullable&lt;int&gt; CurrentLowPriorityNodes { Nullable&lt;int&gt; get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Batch</AssemblyName>
-        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+        <AssemblyVersion>11.0.0.0</AssemblyVersion>
+        <AssemblyVersion>13.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="properties.currentLowPriorityNodes")</AttributeName>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty(PropertyName="properties.currentLowPriorityNodes")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty(PropertyName="properties.currentLowPriorityNodes")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -444,15 +471,18 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Management.Batch.Models.Pool.DeploymentConfiguration" />
       <MemberSignature Language="VB.NET" Value="Public Property DeploymentConfiguration As DeploymentConfiguration" />
       <MemberSignature Language="F#" Value="member this.DeploymentConfiguration : Microsoft.Azure.Management.Batch.Models.DeploymentConfiguration with get, set" Usage="Microsoft.Azure.Management.Batch.Models.Pool.DeploymentConfiguration" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Azure::Management::Batch::Models::DeploymentConfiguration ^ DeploymentConfiguration { Microsoft::Azure::Management::Batch::Models::DeploymentConfiguration ^ get(); void set(Microsoft::Azure::Management::Batch::Models::DeploymentConfiguration ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Batch</AssemblyName>
-        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+        <AssemblyVersion>11.0.0.0</AssemblyVersion>
+        <AssemblyVersion>13.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="properties.deploymentConfiguration")</AttributeName>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty(PropertyName="properties.deploymentConfiguration")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty(PropertyName="properties.deploymentConfiguration")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -477,16 +507,18 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Management.Batch.Models.Pool.DisplayName" />
       <MemberSignature Language="VB.NET" Value="Public Property DisplayName As String" />
       <MemberSignature Language="F#" Value="member this.DisplayName : string with get, set" Usage="Microsoft.Azure.Management.Batch.Models.Pool.DisplayName" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ DisplayName { System::String ^ get(); void set(System::String ^ value); };" />
-      <MemberSignature Language="C++ CX" Value="public:&#xA; property Platform::String ^ DisplayName { Platform::String ^ get(); void set(Platform::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Batch</AssemblyName>
-        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+        <AssemblyVersion>11.0.0.0</AssemblyVersion>
+        <AssemblyVersion>13.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="properties.displayName")</AttributeName>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty(PropertyName="properties.displayName")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty(PropertyName="properties.displayName")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -503,21 +535,54 @@
             </remarks>
       </Docs>
     </Member>
+    <Member MemberName="Identity">
+      <MemberSignature Language="C#" Value="public Microsoft.Azure.Management.Batch.Models.BatchPoolIdentity Identity { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Azure.Management.Batch.Models.BatchPoolIdentity Identity" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Management.Batch.Models.Pool.Identity" />
+      <MemberSignature Language="VB.NET" Value="Public Property Identity As BatchPoolIdentity" />
+      <MemberSignature Language="F#" Value="member this.Identity : Microsoft.Azure.Management.Batch.Models.BatchPoolIdentity with get, set" Usage="Microsoft.Azure.Management.Batch.Models.Pool.Identity" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Azure.Management.Batch</AssemblyName>
+        <AssemblyVersion>13.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty(PropertyName="identity")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty(PropertyName="identity")&gt;]</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Azure.Management.Batch.Models.BatchPoolIdentity</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets or sets the type of identity used for the Batch Pool.
+            </summary>
+        <value>To be added.</value>
+        <remarks>
+            The type of identity used for the Batch Pool.
+            </remarks>
+      </Docs>
+    </Member>
     <Member MemberName="InterNodeCommunication">
-      <MemberSignature Language="C#" Value="public Nullable&lt;Microsoft.Azure.Management.Batch.Models.InterNodeCommunicationState&gt; InterNodeCommunication { get; set; }" />
+      <MemberSignature Language="C#" Value="public Microsoft.Azure.Management.Batch.Models.InterNodeCommunicationState? InterNodeCommunication { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;valuetype Microsoft.Azure.Management.Batch.Models.InterNodeCommunicationState&gt; InterNodeCommunication" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Management.Batch.Models.Pool.InterNodeCommunication" />
       <MemberSignature Language="VB.NET" Value="Public Property InterNodeCommunication As Nullable(Of InterNodeCommunicationState)" />
       <MemberSignature Language="F#" Value="member this.InterNodeCommunication : Nullable&lt;Microsoft.Azure.Management.Batch.Models.InterNodeCommunicationState&gt; with get, set" Usage="Microsoft.Azure.Management.Batch.Models.Pool.InterNodeCommunication" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Nullable&lt;Microsoft::Azure::Management::Batch::Models::InterNodeCommunicationState&gt; InterNodeCommunication { Nullable&lt;Microsoft::Azure::Management::Batch::Models::InterNodeCommunicationState&gt; get(); void set(Nullable&lt;Microsoft::Azure::Management::Batch::Models::InterNodeCommunicationState&gt; value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Batch</AssemblyName>
-        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+        <AssemblyVersion>11.0.0.0</AssemblyVersion>
+        <AssemblyVersion>13.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="properties.interNodeCommunication")</AttributeName>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty(PropertyName="properties.interNodeCommunication")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty(PropertyName="properties.interNodeCommunication")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -539,20 +604,23 @@
       </Docs>
     </Member>
     <Member MemberName="LastModified">
-      <MemberSignature Language="C#" Value="public Nullable&lt;DateTime&gt; LastModified { get; }" />
+      <MemberSignature Language="C#" Value="public DateTime? LastModified { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;valuetype System.DateTime&gt; LastModified" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Management.Batch.Models.Pool.LastModified" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property LastModified As Nullable(Of DateTime)" />
       <MemberSignature Language="F#" Value="member this.LastModified : Nullable&lt;DateTime&gt;" Usage="Microsoft.Azure.Management.Batch.Models.Pool.LastModified" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Nullable&lt;DateTime&gt; LastModified { Nullable&lt;DateTime&gt; get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Batch</AssemblyName>
-        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+        <AssemblyVersion>11.0.0.0</AssemblyVersion>
+        <AssemblyVersion>13.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="properties.lastModified")</AttributeName>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty(PropertyName="properties.lastModified")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty(PropertyName="properties.lastModified")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -570,50 +638,24 @@
             </remarks>
       </Docs>
     </Member>
-    <Member MemberName="MaxTasksPerNode">
-      <MemberSignature Language="C#" Value="public Nullable&lt;int&gt; MaxTasksPerNode { get; set; }" />
-      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;int32&gt; MaxTasksPerNode" />
-      <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Management.Batch.Models.Pool.MaxTasksPerNode" />
-      <MemberSignature Language="VB.NET" Value="Public Property MaxTasksPerNode As Nullable(Of Integer)" />
-      <MemberSignature Language="F#" Value="member this.MaxTasksPerNode : Nullable&lt;int&gt; with get, set" Usage="Microsoft.Azure.Management.Batch.Models.Pool.MaxTasksPerNode" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Nullable&lt;int&gt; MaxTasksPerNode { Nullable&lt;int&gt; get(); void set(Nullable&lt;int&gt; value); };" />
-      <MemberType>Property</MemberType>
-      <AssemblyInfo>
-        <AssemblyName>Microsoft.Azure.Management.Batch</AssemblyName>
-        <AssemblyVersion>6.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Attributes>
-        <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="properties.maxTasksPerNode")</AttributeName>
-        </Attribute>
-      </Attributes>
-      <ReturnValue>
-        <ReturnType>System.Nullable&lt;System.Int32&gt;</ReturnType>
-      </ReturnValue>
-      <Docs>
-        <summary>
-            Gets or sets the maximum number of tasks that can run concurrently
-            on a single compute node in the pool.
-            </summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
-      </Docs>
-    </Member>
     <Member MemberName="Metadata">
       <MemberSignature Language="C#" Value="public System.Collections.Generic.IList&lt;Microsoft.Azure.Management.Batch.Models.MetadataItem&gt; Metadata { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Generic.IList`1&lt;class Microsoft.Azure.Management.Batch.Models.MetadataItem&gt; Metadata" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Management.Batch.Models.Pool.Metadata" />
       <MemberSignature Language="VB.NET" Value="Public Property Metadata As IList(Of MetadataItem)" />
       <MemberSignature Language="F#" Value="member this.Metadata : System.Collections.Generic.IList&lt;Microsoft.Azure.Management.Batch.Models.MetadataItem&gt; with get, set" Usage="Microsoft.Azure.Management.Batch.Models.Pool.Metadata" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::Generic::IList&lt;Microsoft::Azure::Management::Batch::Models::MetadataItem ^&gt; ^ Metadata { System::Collections::Generic::IList&lt;Microsoft::Azure::Management::Batch::Models::MetadataItem ^&gt; ^ get(); void set(System::Collections::Generic::IList&lt;Microsoft::Azure::Management::Batch::Models::MetadataItem ^&gt; ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Batch</AssemblyName>
-        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+        <AssemblyVersion>11.0.0.0</AssemblyVersion>
+        <AssemblyVersion>13.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="properties.metadata")</AttributeName>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty(PropertyName="properties.metadata")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty(PropertyName="properties.metadata")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -631,21 +673,58 @@
             </remarks>
       </Docs>
     </Member>
+    <Member MemberName="MountConfiguration">
+      <MemberSignature Language="C#" Value="public System.Collections.Generic.IList&lt;Microsoft.Azure.Management.Batch.Models.MountConfiguration&gt; MountConfiguration { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Generic.IList`1&lt;class Microsoft.Azure.Management.Batch.Models.MountConfiguration&gt; MountConfiguration" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Management.Batch.Models.Pool.MountConfiguration" />
+      <MemberSignature Language="VB.NET" Value="Public Property MountConfiguration As IList(Of MountConfiguration)" />
+      <MemberSignature Language="F#" Value="member this.MountConfiguration : System.Collections.Generic.IList&lt;Microsoft.Azure.Management.Batch.Models.MountConfiguration&gt; with get, set" Usage="Microsoft.Azure.Management.Batch.Models.Pool.MountConfiguration" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Azure.Management.Batch</AssemblyName>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+        <AssemblyVersion>11.0.0.0</AssemblyVersion>
+        <AssemblyVersion>13.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty(PropertyName="properties.mountConfiguration")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty(PropertyName="properties.mountConfiguration")&gt;]</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.IList&lt;Microsoft.Azure.Management.Batch.Models.MountConfiguration&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets or sets a list of file systems to mount on each node in the
+            pool.
+            </summary>
+        <value>To be added.</value>
+        <remarks>
+            This supports Azure Files, NFS, CIFS/SMB, and Blobfuse.
+            </remarks>
+      </Docs>
+    </Member>
     <Member MemberName="NetworkConfiguration">
       <MemberSignature Language="C#" Value="public Microsoft.Azure.Management.Batch.Models.NetworkConfiguration NetworkConfiguration { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Azure.Management.Batch.Models.NetworkConfiguration NetworkConfiguration" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Management.Batch.Models.Pool.NetworkConfiguration" />
       <MemberSignature Language="VB.NET" Value="Public Property NetworkConfiguration As NetworkConfiguration" />
       <MemberSignature Language="F#" Value="member this.NetworkConfiguration : Microsoft.Azure.Management.Batch.Models.NetworkConfiguration with get, set" Usage="Microsoft.Azure.Management.Batch.Models.Pool.NetworkConfiguration" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Azure::Management::Batch::Models::NetworkConfiguration ^ NetworkConfiguration { Microsoft::Azure::Management::Batch::Models::NetworkConfiguration ^ get(); void set(Microsoft::Azure::Management::Batch::Models::NetworkConfiguration ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Batch</AssemblyName>
-        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+        <AssemblyVersion>11.0.0.0</AssemblyVersion>
+        <AssemblyVersion>13.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="properties.networkConfiguration")</AttributeName>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty(PropertyName="properties.networkConfiguration")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty(PropertyName="properties.networkConfiguration")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -660,20 +739,23 @@
       </Docs>
     </Member>
     <Member MemberName="ProvisioningState">
-      <MemberSignature Language="C#" Value="public Nullable&lt;Microsoft.Azure.Management.Batch.Models.PoolProvisioningState&gt; ProvisioningState { get; }" />
+      <MemberSignature Language="C#" Value="public Microsoft.Azure.Management.Batch.Models.PoolProvisioningState? ProvisioningState { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;valuetype Microsoft.Azure.Management.Batch.Models.PoolProvisioningState&gt; ProvisioningState" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Management.Batch.Models.Pool.ProvisioningState" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ProvisioningState As Nullable(Of PoolProvisioningState)" />
       <MemberSignature Language="F#" Value="member this.ProvisioningState : Nullable&lt;Microsoft.Azure.Management.Batch.Models.PoolProvisioningState&gt;" Usage="Microsoft.Azure.Management.Batch.Models.Pool.ProvisioningState" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Nullable&lt;Microsoft::Azure::Management::Batch::Models::PoolProvisioningState&gt; ProvisioningState { Nullable&lt;Microsoft::Azure::Management::Batch::Models::PoolProvisioningState&gt; get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Batch</AssemblyName>
-        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+        <AssemblyVersion>11.0.0.0</AssemblyVersion>
+        <AssemblyVersion>13.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="properties.provisioningState")</AttributeName>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty(PropertyName="properties.provisioningState")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty(PropertyName="properties.provisioningState")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -681,35 +763,32 @@
       </ReturnValue>
       <Docs>
         <summary>
-             Gets the current state of the pool.
-             </summary>
+            Gets the current state of the pool.
+            </summary>
         <value>To be added.</value>
         <remarks>
-             Values are:
-            
-             Succeeded - The pool is available to run tasks subject to the
-             availability of compute nodes.
-             Deleting - The user has requested that the pool be deleted, but the
-             delete operation has not yet completed. Possible values include:
-             'Succeeded', 'Deleting'
-             </remarks>
+            Possible values include: 'Succeeded', 'Deleting'
+            </remarks>
       </Docs>
     </Member>
     <Member MemberName="ProvisioningStateTransitionTime">
-      <MemberSignature Language="C#" Value="public Nullable&lt;DateTime&gt; ProvisioningStateTransitionTime { get; }" />
+      <MemberSignature Language="C#" Value="public DateTime? ProvisioningStateTransitionTime { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;valuetype System.DateTime&gt; ProvisioningStateTransitionTime" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Management.Batch.Models.Pool.ProvisioningStateTransitionTime" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ProvisioningStateTransitionTime As Nullable(Of DateTime)" />
       <MemberSignature Language="F#" Value="member this.ProvisioningStateTransitionTime : Nullable&lt;DateTime&gt;" Usage="Microsoft.Azure.Management.Batch.Models.Pool.ProvisioningStateTransitionTime" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Nullable&lt;DateTime&gt; ProvisioningStateTransitionTime { Nullable&lt;DateTime&gt; get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Batch</AssemblyName>
-        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+        <AssemblyVersion>11.0.0.0</AssemblyVersion>
+        <AssemblyVersion>13.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="properties.provisioningStateTransitionTime")</AttributeName>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty(PropertyName="properties.provisioningStateTransitionTime")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty(PropertyName="properties.provisioningStateTransitionTime")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -729,15 +808,18 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Management.Batch.Models.Pool.ResizeOperationStatus" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ResizeOperationStatus As ResizeOperationStatus" />
       <MemberSignature Language="F#" Value="member this.ResizeOperationStatus : Microsoft.Azure.Management.Batch.Models.ResizeOperationStatus" Usage="Microsoft.Azure.Management.Batch.Models.Pool.ResizeOperationStatus" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Azure::Management::Batch::Models::ResizeOperationStatus ^ ResizeOperationStatus { Microsoft::Azure::Management::Batch::Models::ResizeOperationStatus ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Batch</AssemblyName>
-        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+        <AssemblyVersion>11.0.0.0</AssemblyVersion>
+        <AssemblyVersion>13.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="properties.resizeOperationStatus")</AttributeName>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty(PropertyName="properties.resizeOperationStatus")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty(PropertyName="properties.resizeOperationStatus")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -758,15 +840,18 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Management.Batch.Models.Pool.ScaleSettings" />
       <MemberSignature Language="VB.NET" Value="Public Property ScaleSettings As ScaleSettings" />
       <MemberSignature Language="F#" Value="member this.ScaleSettings : Microsoft.Azure.Management.Batch.Models.ScaleSettings with get, set" Usage="Microsoft.Azure.Management.Batch.Models.Pool.ScaleSettings" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Azure::Management::Batch::Models::ScaleSettings ^ ScaleSettings { Microsoft::Azure::Management::Batch::Models::ScaleSettings ^ get(); void set(Microsoft::Azure::Management::Batch::Models::ScaleSettings ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Batch</AssemblyName>
-        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+        <AssemblyVersion>11.0.0.0</AssemblyVersion>
+        <AssemblyVersion>13.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="properties.scaleSettings")</AttributeName>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty(PropertyName="properties.scaleSettings")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty(PropertyName="properties.scaleSettings")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -787,15 +872,18 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Management.Batch.Models.Pool.StartTask" />
       <MemberSignature Language="VB.NET" Value="Public Property StartTask As StartTask" />
       <MemberSignature Language="F#" Value="member this.StartTask : Microsoft.Azure.Management.Batch.Models.StartTask with get, set" Usage="Microsoft.Azure.Management.Batch.Models.Pool.StartTask" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Azure::Management::Batch::Models::StartTask ^ StartTask { Microsoft::Azure::Management::Batch::Models::StartTask ^ get(); void set(Microsoft::Azure::Management::Batch::Models::StartTask ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Batch</AssemblyName>
-        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+        <AssemblyVersion>11.0.0.0</AssemblyVersion>
+        <AssemblyVersion>13.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="properties.startTask")</AttributeName>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty(PropertyName="properties.startTask")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty(PropertyName="properties.startTask")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -819,15 +907,18 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Management.Batch.Models.Pool.TaskSchedulingPolicy" />
       <MemberSignature Language="VB.NET" Value="Public Property TaskSchedulingPolicy As TaskSchedulingPolicy" />
       <MemberSignature Language="F#" Value="member this.TaskSchedulingPolicy : Microsoft.Azure.Management.Batch.Models.TaskSchedulingPolicy with get, set" Usage="Microsoft.Azure.Management.Batch.Models.Pool.TaskSchedulingPolicy" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Azure::Management::Batch::Models::TaskSchedulingPolicy ^ TaskSchedulingPolicy { Microsoft::Azure::Management::Batch::Models::TaskSchedulingPolicy ^ get(); void set(Microsoft::Azure::Management::Batch::Models::TaskSchedulingPolicy ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Batch</AssemblyName>
-        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+        <AssemblyVersion>11.0.0.0</AssemblyVersion>
+        <AssemblyVersion>13.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="properties.taskSchedulingPolicy")</AttributeName>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty(PropertyName="properties.taskSchedulingPolicy")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty(PropertyName="properties.taskSchedulingPolicy")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -839,7 +930,42 @@
             pool.
             </summary>
         <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <remarks>
+            If not specified, the default is spread.
+            </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TaskSlotsPerNode">
+      <MemberSignature Language="C#" Value="public int? TaskSlotsPerNode { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;int32&gt; TaskSlotsPerNode" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Management.Batch.Models.Pool.TaskSlotsPerNode" />
+      <MemberSignature Language="VB.NET" Value="Public Property TaskSlotsPerNode As Nullable(Of Integer)" />
+      <MemberSignature Language="F#" Value="member this.TaskSlotsPerNode : Nullable&lt;int&gt; with get, set" Usage="Microsoft.Azure.Management.Batch.Models.Pool.TaskSlotsPerNode" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Azure.Management.Batch</AssemblyName>
+        <AssemblyVersion>11.0.0.0</AssemblyVersion>
+        <AssemblyVersion>13.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty(PropertyName="properties.taskSlotsPerNode")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty(PropertyName="properties.taskSlotsPerNode")&gt;]</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Nullable&lt;System.Int32&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets or sets the number of task slots that can be used to run
+            concurrent tasks on a single compute node in the pool.
+            </summary>
+        <value>To be added.</value>
+        <remarks>
+            The default value is 1. The maximum value is the smaller of 4 times
+            the number of cores of the vmSize of the pool or 256.
+            </remarks>
       </Docs>
     </Member>
     <Member MemberName="UserAccounts">
@@ -848,15 +974,18 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Management.Batch.Models.Pool.UserAccounts" />
       <MemberSignature Language="VB.NET" Value="Public Property UserAccounts As IList(Of UserAccount)" />
       <MemberSignature Language="F#" Value="member this.UserAccounts : System.Collections.Generic.IList&lt;Microsoft.Azure.Management.Batch.Models.UserAccount&gt; with get, set" Usage="Microsoft.Azure.Management.Batch.Models.Pool.UserAccounts" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::Generic::IList&lt;Microsoft::Azure::Management::Batch::Models::UserAccount ^&gt; ^ UserAccounts { System::Collections::Generic::IList&lt;Microsoft::Azure::Management::Batch::Models::UserAccount ^&gt; ^ get(); void set(System::Collections::Generic::IList&lt;Microsoft::Azure::Management::Batch::Models::UserAccount ^&gt; ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Batch</AssemblyName>
-        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+        <AssemblyVersion>11.0.0.0</AssemblyVersion>
+        <AssemblyVersion>13.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="properties.userAccounts")</AttributeName>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty(PropertyName="properties.userAccounts")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty(PropertyName="properties.userAccounts")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -877,13 +1006,13 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Management.Batch.Models.Pool.Validate" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Sub Validate ()" />
       <MemberSignature Language="F#" Value="abstract member Validate : unit -&gt; unit&#xA;override this.Validate : unit -&gt; unit" Usage="pool.Validate " />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Validate();" />
-      <MemberSignature Language="C++ CX" Value="public:&#xA; virtual void Validate();" />
-      <MemberSignature Language="C++ WINRT" Value=" virtual void Validate();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Batch</AssemblyName>
-        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+        <AssemblyVersion>11.0.0.0</AssemblyVersion>
+        <AssemblyVersion>13.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -905,16 +1034,18 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Management.Batch.Models.Pool.VmSize" />
       <MemberSignature Language="VB.NET" Value="Public Property VmSize As String" />
       <MemberSignature Language="F#" Value="member this.VmSize : string with get, set" Usage="Microsoft.Azure.Management.Batch.Models.Pool.VmSize" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ VmSize { System::String ^ get(); void set(System::String ^ value); };" />
-      <MemberSignature Language="C++ CX" Value="public:&#xA; property Platform::String ^ VmSize { Platform::String ^ get(); void set(Platform::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Batch</AssemblyName>
-        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+        <AssemblyVersion>11.0.0.0</AssemblyVersion>
+        <AssemblyVersion>13.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="properties.vmSize")</AttributeName>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty(PropertyName="properties.vmSize")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty(PropertyName="properties.vmSize")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -930,7 +1061,7 @@
             For information about available sizes of virtual machines for Cloud
             Services pools (pools created with cloudServiceConfiguration), see
             Sizes for Cloud Services
-            (http://azure.microsoft.com/documentation/articles/cloud-services-sizes-specs/).
+            (https://azure.microsoft.com/documentation/articles/cloud-services-sizes-specs/).
             Batch supports all Cloud Services VM sizes except ExtraSmall. For
             information about available VM sizes for pools using images from
             the Virtual Machines Marketplace (pools created with

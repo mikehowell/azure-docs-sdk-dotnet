@@ -1,11 +1,9 @@
-﻿<Type Name="SettingsParameterDescription" FullName="Microsoft.Azure.Management.ServiceFabric.Models.SettingsParameterDescription">
+<Type Name="SettingsParameterDescription" FullName="Microsoft.Azure.Management.ServiceFabric.Models.SettingsParameterDescription">
   <TypeSignature Language="C#" Value="public class SettingsParameterDescription" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit SettingsParameterDescription extends System.Object" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Azure.Management.ServiceFabric.Models.SettingsParameterDescription" />
   <TypeSignature Language="VB.NET" Value="Public Class SettingsParameterDescription" />
   <TypeSignature Language="F#" Value="type SettingsParameterDescription = class" />
-  <TypeSignature Language="C++ CLI" Value="public ref class SettingsParameterDescription" />
-  <TypeSignature Language="C++ WINRT" Value="[Windows::Foundation::Metadata::WebHostHidden]&#xA;class SettingsParameterDescription" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Azure.Management.ServiceFabric</AssemblyName>
     <AssemblyVersion>1.0.0.0</AssemblyVersion>
@@ -16,7 +14,7 @@
   <Interfaces />
   <Docs>
     <summary>
-            ServiceFabric settings under sections
+            Describes a parameter in fabric settings of the cluster.
             </summary>
     <remarks>To be added.</remarks>
   </Docs>
@@ -26,9 +24,6 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Management.ServiceFabric.Models.SettingsParameterDescription.#ctor" />
       <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; SettingsParameterDescription();" />
-      <MemberSignature Language="C++ CX" Value="public:&#xA; SettingsParameterDescription();" />
-      <MemberSignature Language="C++ WINRT" Value=" SettingsParameterDescription();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.ServiceFabric</AssemblyName>
@@ -49,9 +44,6 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Management.ServiceFabric.Models.SettingsParameterDescription.#ctor(System.String,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (name As String, value As String)" />
       <MemberSignature Language="F#" Value="new Microsoft.Azure.Management.ServiceFabric.Models.SettingsParameterDescription : string * string -&gt; Microsoft.Azure.Management.ServiceFabric.Models.SettingsParameterDescription" Usage="new Microsoft.Azure.Management.ServiceFabric.Models.SettingsParameterDescription (name, value)" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; SettingsParameterDescription(System::String ^ name, System::String ^ value);" />
-      <MemberSignature Language="C++ CX" Value="public:&#xA; SettingsParameterDescription(Platform::String ^ name, Platform::String ^ value);" />
-      <MemberSignature Language="C++ WINRT" Value=" SettingsParameterDescription(std::wstring const &amp; name, std::wstring const &amp; value);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.ServiceFabric</AssemblyName>
@@ -62,8 +54,8 @@
         <Parameter Name="value" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="name">The name of settings property</param>
-        <param name="value">The value of the property</param>
+        <param name="name">The parameter name of fabric setting.</param>
+        <param name="value">The parameter value of fabric setting.</param>
         <summary>
             Initializes a new instance of the SettingsParameterDescription
             class.
@@ -77,8 +69,6 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Management.ServiceFabric.Models.SettingsParameterDescription.Name" />
       <MemberSignature Language="VB.NET" Value="Public Property Name As String" />
       <MemberSignature Language="F#" Value="member this.Name : string with get, set" Usage="Microsoft.Azure.Management.ServiceFabric.Models.SettingsParameterDescription.Name" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Name { System::String ^ get(); void set(System::String ^ value); };" />
-      <MemberSignature Language="C++ CX" Value="public:&#xA; property Platform::String ^ Name { Platform::String ^ get(); void set(Platform::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.ServiceFabric</AssemblyName>
@@ -86,7 +76,8 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="name")</AttributeName>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty(PropertyName="name")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty(PropertyName="name")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -94,7 +85,7 @@
       </ReturnValue>
       <Docs>
         <summary>
-            Gets or sets the name of settings property
+            Gets or sets the parameter name of fabric setting.
             </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
@@ -106,9 +97,6 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Management.ServiceFabric.Models.SettingsParameterDescription.Validate" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Sub Validate ()" />
       <MemberSignature Language="F#" Value="abstract member Validate : unit -&gt; unit&#xA;override this.Validate : unit -&gt; unit" Usage="settingsParameterDescription.Validate " />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Validate();" />
-      <MemberSignature Language="C++ CX" Value="public:&#xA; virtual void Validate();" />
-      <MemberSignature Language="C++ WINRT" Value=" virtual void Validate();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.ServiceFabric</AssemblyName>
@@ -134,8 +122,6 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Management.ServiceFabric.Models.SettingsParameterDescription.Value" />
       <MemberSignature Language="VB.NET" Value="Public Property Value As String" />
       <MemberSignature Language="F#" Value="member this.Value : string with get, set" Usage="Microsoft.Azure.Management.ServiceFabric.Models.SettingsParameterDescription.Value" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Value { System::String ^ get(); void set(System::String ^ value); };" />
-      <MemberSignature Language="C++ CX" Value="public:&#xA; property Platform::String ^ Value { Platform::String ^ get(); void set(Platform::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.ServiceFabric</AssemblyName>
@@ -143,7 +129,8 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="value")</AttributeName>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty(PropertyName="value")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty(PropertyName="value")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -151,7 +138,7 @@
       </ReturnValue>
       <Docs>
         <summary>
-            Gets or sets the value of the property
+            Gets or sets the parameter value of fabric setting.
             </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>

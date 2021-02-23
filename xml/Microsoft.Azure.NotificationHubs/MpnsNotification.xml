@@ -1,22 +1,28 @@
-﻿<Type Name="MpnsNotification" FullName="Microsoft.Azure.NotificationHubs.MpnsNotification">
-  <TypeSignature Language="C#" Value="public sealed class MpnsNotification : Microsoft.Azure.NotificationHubs.Notification" />
-  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit MpnsNotification extends Microsoft.Azure.NotificationHubs.Notification" />
+<Type Name="MpnsNotification" FullName="Microsoft.Azure.NotificationHubs.MpnsNotification">
+  <TypeSignature Language="C#" Value="public sealed class MpnsNotification : Microsoft.Azure.NotificationHubs.Notification, Microsoft.Azure.NotificationHubs.INativeNotification" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit MpnsNotification extends Microsoft.Azure.NotificationHubs.Notification implements class Microsoft.Azure.NotificationHubs.INativeNotification" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Azure.NotificationHubs.MpnsNotification" />
-  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class MpnsNotification&#xA;Inherits Notification" />
-  <TypeSignature Language="F#" Value="type MpnsNotification = class&#xA;    inherit Notification" />
-  <TypeSignature Language="C++ CLI" Value="public ref class MpnsNotification sealed : Microsoft::Azure::NotificationHubs::Notification" />
-  <TypeSignature Language="C++ CX" Value="public ref class MpnsNotification sealed : Microsoft::Azure::NotificationHubs::Notification" />
-  <TypeSignature Language="C++ WINRT" Value="class MpnsNotification sealed : Microsoft::Azure::NotificationHubs::Notification" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class MpnsNotification&#xA;Inherits Notification&#xA;Implements INativeNotification" />
+  <TypeSignature Language="F#" Value="type MpnsNotification = class&#xA;    inherit Notification&#xA;    interface INativeNotification" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Azure.NotificationHubs</AssemblyName>
-    <AssemblyVersion>2.16.0.0</AssemblyVersion>
+    <AssemblyVersion>3.2.1.0</AssemblyVersion>
+    <AssemblyVersion>3.3.0.0</AssemblyVersion>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+    <AssemblyVersion>4.1.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>Microsoft.Azure.NotificationHubs.Notification</BaseTypeName>
   </Base>
-  <Interfaces></Interfaces>
+  <Interfaces>
+    <Interface>
+      <InterfaceName>Microsoft.Azure.NotificationHubs.INativeNotification</InterfaceName>
+    </Interface>
+  </Interfaces>
   <Docs>
-    <summary>Provides notification for Microsoft Push Notification Service (MPNS).</summary>
+    <summary>
+            Provides notification for Microsoft Push Notification Service (MPNS).
+            </summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -26,20 +32,22 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.NotificationHubs.MpnsNotification.#ctor(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (payLoad As String)" />
       <MemberSignature Language="F#" Value="new Microsoft.Azure.NotificationHubs.MpnsNotification : string -&gt; Microsoft.Azure.NotificationHubs.MpnsNotification" Usage="new Microsoft.Azure.NotificationHubs.MpnsNotification payLoad" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; MpnsNotification(System::String ^ payLoad);" />
-      <MemberSignature Language="C++ CX" Value="public:&#xA; MpnsNotification(Platform::String ^ payLoad);" />
-      <MemberSignature Language="C++ WINRT" Value=" MpnsNotification(std::wstring const &amp; payLoad);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.NotificationHubs</AssemblyName>
-        <AssemblyVersion>2.16.0.0</AssemblyVersion>
+        <AssemblyVersion>3.2.1.0</AssemblyVersion>
+        <AssemblyVersion>3.3.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="payLoad" Type="System.String" />
       </Parameters>
       <Docs>
         <param name="payLoad">The payload.</param>
-        <summary>Initializes a new instance of the <see cref="T:Microsoft.Azure.NotificationHubs.MpnsNotification" /> class.</summary>
+        <summary>
+            Initializes a new instance of the <see cref="T:Microsoft.Azure.NotificationHubs.MpnsNotification" /> class.
+            </summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -49,18 +57,22 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.NotificationHubs.MpnsNotification.#ctor(System.Xml.XmlDocument)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (payLoad As XmlDocument)" />
       <MemberSignature Language="F#" Value="new Microsoft.Azure.NotificationHubs.MpnsNotification : System.Xml.XmlDocument -&gt; Microsoft.Azure.NotificationHubs.MpnsNotification" Usage="new Microsoft.Azure.NotificationHubs.MpnsNotification payLoad" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; MpnsNotification(System::Xml::XmlDocument ^ payLoad);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.NotificationHubs</AssemblyName>
-        <AssemblyVersion>2.16.0.0</AssemblyVersion>
+        <AssemblyVersion>3.2.1.0</AssemblyVersion>
+        <AssemblyVersion>3.3.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="payLoad" Type="System.Xml.XmlDocument" />
       </Parameters>
       <Docs>
         <param name="payLoad">The payload.</param>
-        <summary>Initializes a new instance of the <see cref="T:Microsoft.Azure.NotificationHubs.MpnsNotification" /> class.</summary>
+        <summary>
+            Initializes a new instance of the <see cref="T:Microsoft.Azure.NotificationHubs.MpnsNotification" /> class.
+            </summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -70,11 +82,13 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.NotificationHubs.MpnsNotification.#ctor(System.String,System.Collections.Generic.IDictionary{System.String,System.String})" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (payLoad As String, mpnsHeaders As IDictionary(Of String, String))" />
       <MemberSignature Language="F#" Value="new Microsoft.Azure.NotificationHubs.MpnsNotification : string * System.Collections.Generic.IDictionary&lt;string, string&gt; -&gt; Microsoft.Azure.NotificationHubs.MpnsNotification" Usage="new Microsoft.Azure.NotificationHubs.MpnsNotification (payLoad, mpnsHeaders)" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; MpnsNotification(System::String ^ payLoad, System::Collections::Generic::IDictionary&lt;System::String ^, System::String ^&gt; ^ mpnsHeaders);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.NotificationHubs</AssemblyName>
-        <AssemblyVersion>2.16.0.0</AssemblyVersion>
+        <AssemblyVersion>3.2.1.0</AssemblyVersion>
+        <AssemblyVersion>3.3.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="payLoad" Type="System.String" />
@@ -83,7 +97,9 @@
       <Docs>
         <param name="payLoad">The payload.</param>
         <param name="mpnsHeaders">The MPNS headers.</param>
-        <summary>Initializes a new instance of the <see cref="T:Microsoft.Azure.NotificationHubs.MpnsNotification" /> class.</summary>
+        <summary>
+            Initializes a new instance of the <see cref="T:Microsoft.Azure.NotificationHubs.MpnsNotification" /> class.
+            </summary>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentNullException">payLoad</exception>
       </Docs>
@@ -94,17 +110,18 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.NotificationHubs.MpnsNotification.#ctor(System.String,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (payLoad As String, tag As String)" />
       <MemberSignature Language="F#" Value="new Microsoft.Azure.NotificationHubs.MpnsNotification : string * string -&gt; Microsoft.Azure.NotificationHubs.MpnsNotification" Usage="new Microsoft.Azure.NotificationHubs.MpnsNotification (payLoad, tag)" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; MpnsNotification(System::String ^ payLoad, System::String ^ tag);" />
-      <MemberSignature Language="C++ CX" Value="public:&#xA; MpnsNotification(Platform::String ^ payLoad, Platform::String ^ tag);" />
-      <MemberSignature Language="C++ WINRT" Value=" MpnsNotification(std::wstring const &amp; payLoad, std::wstring const &amp; tag);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.NotificationHubs</AssemblyName>
-        <AssemblyVersion>2.16.0.0</AssemblyVersion>
+        <AssemblyVersion>3.2.1.0</AssemblyVersion>
+        <AssemblyVersion>3.3.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>System.Obsolete("This method is obsolete.")</AttributeName>
+          <AttributeName Language="C#">[System.Obsolete("This method is obsolete.")]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Obsolete("This method is obsolete.")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <Parameters>
@@ -114,7 +131,9 @@
       <Docs>
         <param name="payLoad">The payload.</param>
         <param name="tag">The notification tag.</param>
-        <summary>Initializes a new instance of the <see cref="T:Microsoft.Azure.NotificationHubs.MpnsNotification" /> class.</summary>
+        <summary>
+            Initializes a new instance of the <see cref="T:Microsoft.Azure.NotificationHubs.MpnsNotification" /> class.
+            </summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -124,11 +143,13 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.NotificationHubs.MpnsNotification.#ctor(System.Xml.XmlDocument,System.Collections.Generic.IDictionary{System.String,System.String})" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (payLoad As XmlDocument, mpnsHeaders As IDictionary(Of String, String))" />
       <MemberSignature Language="F#" Value="new Microsoft.Azure.NotificationHubs.MpnsNotification : System.Xml.XmlDocument * System.Collections.Generic.IDictionary&lt;string, string&gt; -&gt; Microsoft.Azure.NotificationHubs.MpnsNotification" Usage="new Microsoft.Azure.NotificationHubs.MpnsNotification (payLoad, mpnsHeaders)" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; MpnsNotification(System::Xml::XmlDocument ^ payLoad, System::Collections::Generic::IDictionary&lt;System::String ^, System::String ^&gt; ^ mpnsHeaders);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.NotificationHubs</AssemblyName>
-        <AssemblyVersion>2.16.0.0</AssemblyVersion>
+        <AssemblyVersion>3.2.1.0</AssemblyVersion>
+        <AssemblyVersion>3.3.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="payLoad" Type="System.Xml.XmlDocument" />
@@ -137,7 +158,9 @@
       <Docs>
         <param name="payLoad">The payload.</param>
         <param name="mpnsHeaders">The MPNS headers.</param>
-        <summary>Initializes a new instance of the <see cref="T:Microsoft.Azure.NotificationHubs.MpnsNotification" /> class.</summary>
+        <summary>
+            Initializes a new instance of the <see cref="T:Microsoft.Azure.NotificationHubs.MpnsNotification" /> class.
+            </summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -147,15 +170,18 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.NotificationHubs.MpnsNotification.#ctor(System.Xml.XmlDocument,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (payLoad As XmlDocument, tag As String)" />
       <MemberSignature Language="F#" Value="new Microsoft.Azure.NotificationHubs.MpnsNotification : System.Xml.XmlDocument * string -&gt; Microsoft.Azure.NotificationHubs.MpnsNotification" Usage="new Microsoft.Azure.NotificationHubs.MpnsNotification (payLoad, tag)" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; MpnsNotification(System::Xml::XmlDocument ^ payLoad, System::String ^ tag);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.NotificationHubs</AssemblyName>
-        <AssemblyVersion>2.16.0.0</AssemblyVersion>
+        <AssemblyVersion>3.2.1.0</AssemblyVersion>
+        <AssemblyVersion>3.3.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>System.Obsolete("This method is obsolete.")</AttributeName>
+          <AttributeName Language="C#">[System.Obsolete("This method is obsolete.")]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Obsolete("This method is obsolete.")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <Parameters>
@@ -165,7 +191,9 @@
       <Docs>
         <param name="payLoad">The payload.</param>
         <param name="tag">The notification tag.</param>
-        <summary>Initializes a new instance of the <see cref="T:Microsoft.Azure.NotificationHubs.MpnsNotification" /> class.</summary>
+        <summary>
+            Initializes a new instance of the <see cref="T:Microsoft.Azure.NotificationHubs.MpnsNotification" /> class.
+            </summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -175,15 +203,18 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.NotificationHubs.MpnsNotification.#ctor(System.String,System.Collections.Generic.IDictionary{System.String,System.String},System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (payLoad As String, mpnsHeaders As IDictionary(Of String, String), tag As String)" />
       <MemberSignature Language="F#" Value="new Microsoft.Azure.NotificationHubs.MpnsNotification : string * System.Collections.Generic.IDictionary&lt;string, string&gt; * string -&gt; Microsoft.Azure.NotificationHubs.MpnsNotification" Usage="new Microsoft.Azure.NotificationHubs.MpnsNotification (payLoad, mpnsHeaders, tag)" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; MpnsNotification(System::String ^ payLoad, System::Collections::Generic::IDictionary&lt;System::String ^, System::String ^&gt; ^ mpnsHeaders, System::String ^ tag);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.NotificationHubs</AssemblyName>
-        <AssemblyVersion>2.16.0.0</AssemblyVersion>
+        <AssemblyVersion>3.2.1.0</AssemblyVersion>
+        <AssemblyVersion>3.3.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>System.Obsolete("This method is obsolete.")</AttributeName>
+          <AttributeName Language="C#">[System.Obsolete("This method is obsolete.")]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Obsolete("This method is obsolete.")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <Parameters>
@@ -195,7 +226,9 @@
         <param name="payLoad">The payload.</param>
         <param name="mpnsHeaders">The MPNS headers.</param>
         <param name="tag">The notification tag.</param>
-        <summary>Initializes a new instance of the <see cref="T:Microsoft.Azure.NotificationHubs.MpnsNotification" /> class.</summary>
+        <summary>
+            Initializes a new instance of the <see cref="T:Microsoft.Azure.NotificationHubs.MpnsNotification" /> class.
+            </summary>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentNullException">Thrown if the payload is null or empty</exception>
       </Docs>
@@ -206,15 +239,18 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.NotificationHubs.MpnsNotification.#ctor(System.Xml.XmlDocument,System.Collections.Generic.IDictionary{System.String,System.String},System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (payLoad As XmlDocument, mpnsHeaders As IDictionary(Of String, String), tag As String)" />
       <MemberSignature Language="F#" Value="new Microsoft.Azure.NotificationHubs.MpnsNotification : System.Xml.XmlDocument * System.Collections.Generic.IDictionary&lt;string, string&gt; * string -&gt; Microsoft.Azure.NotificationHubs.MpnsNotification" Usage="new Microsoft.Azure.NotificationHubs.MpnsNotification (payLoad, mpnsHeaders, tag)" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; MpnsNotification(System::Xml::XmlDocument ^ payLoad, System::Collections::Generic::IDictionary&lt;System::String ^, System::String ^&gt; ^ mpnsHeaders, System::String ^ tag);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.NotificationHubs</AssemblyName>
-        <AssemblyVersion>2.16.0.0</AssemblyVersion>
+        <AssemblyVersion>3.2.1.0</AssemblyVersion>
+        <AssemblyVersion>3.3.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>System.Obsolete("This method is obsolete.")</AttributeName>
+          <AttributeName Language="C#">[System.Obsolete("This method is obsolete.")]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Obsolete("This method is obsolete.")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <Parameters>
@@ -226,7 +262,9 @@
         <param name="payLoad">The payload.</param>
         <param name="mpnsHeaders">The MPNS headers.</param>
         <param name="tag">The notification tag.</param>
-        <summary>Initializes a new instance of the <see cref="T:Microsoft.Azure.NotificationHubs.MpnsNotification" /> class.</summary>
+        <summary>
+            Initializes a new instance of the <see cref="T:Microsoft.Azure.NotificationHubs.MpnsNotification" /> class.
+            </summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -236,13 +274,13 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.NotificationHubs.MpnsNotification.OnValidateAndPopulateHeaders" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnValidateAndPopulateHeaders ()" />
       <MemberSignature Language="F#" Value="override this.OnValidateAndPopulateHeaders : unit -&gt; unit" Usage="mpnsNotification.OnValidateAndPopulateHeaders " />
-      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnValidateAndPopulateHeaders();" />
-      <MemberSignature Language="C++ CX" Value="protected:&#xA; override void OnValidateAndPopulateHeaders();" />
-      <MemberSignature Language="C++ WINRT" Value=" override void OnValidateAndPopulateHeaders();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.NotificationHubs</AssemblyName>
-        <AssemblyVersion>2.16.0.0</AssemblyVersion>
+        <AssemblyVersion>3.2.1.0</AssemblyVersion>
+        <AssemblyVersion>3.3.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -261,12 +299,13 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Azure.NotificationHubs.MpnsNotification.PlatformType" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides ReadOnly Property PlatformType As String" />
       <MemberSignature Language="F#" Value="member this.PlatformType : string" Usage="Microsoft.Azure.NotificationHubs.MpnsNotification.PlatformType" />
-      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual property System::String ^ PlatformType { System::String ^ get(); };" />
-      <MemberSignature Language="C++ CX" Value="protected:&#xA; virtual property Platform::String ^ PlatformType { Platform::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.NotificationHubs</AssemblyName>
-        <AssemblyVersion>2.16.0.0</AssemblyVersion>
+        <AssemblyVersion>3.2.1.0</AssemblyVersion>
+        <AssemblyVersion>3.3.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>

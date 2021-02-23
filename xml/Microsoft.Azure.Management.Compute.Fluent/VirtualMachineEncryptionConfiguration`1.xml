@@ -1,13 +1,19 @@
-﻿<Type Name="VirtualMachineEncryptionConfiguration&lt;T&gt;" FullName="Microsoft.Azure.Management.Compute.Fluent.VirtualMachineEncryptionConfiguration&lt;T&gt;">
+<Type Name="VirtualMachineEncryptionConfiguration&lt;T&gt;" FullName="Microsoft.Azure.Management.Compute.Fluent.VirtualMachineEncryptionConfiguration&lt;T&gt;">
   <TypeSignature Language="C#" Value="public abstract class VirtualMachineEncryptionConfiguration&lt;T&gt; where T : VirtualMachineEncryptionConfiguration&lt;T&gt;" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit VirtualMachineEncryptionConfiguration`1&lt;(class Microsoft.Azure.Management.Compute.Fluent.VirtualMachineEncryptionConfiguration`1&lt;!T&gt;) T&gt; extends System.Object" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Azure.Management.Compute.Fluent.VirtualMachineEncryptionConfiguration`1" />
   <TypeSignature Language="VB.NET" Value="Public MustInherit Class VirtualMachineEncryptionConfiguration(Of T)" />
   <TypeSignature Language="F#" Value="type VirtualMachineEncryptionConfiguration&lt;'T (requires 'T :&gt; VirtualMachineEncryptionConfiguration&lt;'T&gt;)&gt; = class" />
-  <TypeSignature Language="C++ CLI" Value="generic &lt;typename T&gt;&#xA; where T : VirtualMachineEncryptionConfiguration&lt;T&gt;public ref class VirtualMachineEncryptionConfiguration abstract" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Azure.Management.Compute.Fluent</AssemblyName>
-    <AssemblyVersion>1.0.0.60</AssemblyVersion>
+    <AssemblyVersion>1.0.0.61</AssemblyVersion>
+    <AssemblyVersion>1.0.0.62</AssemblyVersion>
+    <AssemblyVersion>1.0.0.63</AssemblyVersion>
+    <AssemblyVersion>1.0.0.64</AssemblyVersion>
+    <AssemblyVersion>1.0.0.65</AssemblyVersion>
+    <AssemblyVersion>1.0.0.66</AssemblyVersion>
+    <AssemblyVersion>1.0.0.67</AssemblyVersion>
+    <AssemblyVersion>1.0.0.68</AssemblyVersion>
   </AssemblyInfo>
   <TypeParameters>
     <TypeParameter Name="T">
@@ -22,6 +28,7 @@
   <Interfaces />
   <Docs>
     <typeparam name="T">To be added.</typeparam>
+    <typeparam name="">Type presenting Windows or Linux specific settings.</typeparam>
     <summary>
              Type representing encryption configuration to be applied to a virtual machine.
              </summary>
@@ -29,18 +36,51 @@
   </Docs>
   <Members>
     <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="protected VirtualMachineEncryptionConfiguration (string keyVaultId);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor(string keyVaultId) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Management.Compute.Fluent.VirtualMachineEncryptionConfiguration`1.#ctor(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Protected Sub New (keyVaultId As String)" />
+      <MemberSignature Language="F#" Value="new Microsoft.Azure.Management.Compute.Fluent.VirtualMachineEncryptionConfiguration&lt;'T (requires 'T :&gt; Microsoft.Azure.Management.Compute.Fluent.VirtualMachineEncryptionConfiguration&lt;'T&gt;)&gt; : string -&gt; Microsoft.Azure.Management.Compute.Fluent.VirtualMachineEncryptionConfiguration&lt;'T (requires 'T :&gt; Microsoft.Azure.Management.Compute.Fluent.VirtualMachineEncryptionConfiguration&lt;'T&gt;)&gt;" Usage="new Microsoft.Azure.Management.Compute.Fluent.VirtualMachineEncryptionConfiguration&lt;'T (requires 'T :&gt; Microsoft.Azure.Management.Compute.Fluent.VirtualMachineEncryptionConfiguration&lt;'T&gt;)&gt; keyVaultId" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Azure.Management.Compute.Fluent</AssemblyName>
+        <AssemblyVersion>1.0.0.61</AssemblyVersion>
+        <AssemblyVersion>1.0.0.62</AssemblyVersion>
+        <AssemblyVersion>1.0.0.63</AssemblyVersion>
+        <AssemblyVersion>1.0.0.64</AssemblyVersion>
+        <AssemblyVersion>1.0.0.65</AssemblyVersion>
+        <AssemblyVersion>1.0.0.66</AssemblyVersion>
+        <AssemblyVersion>1.0.0.67</AssemblyVersion>
+        <AssemblyVersion>1.0.0.68</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="keyVaultId" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="keyVaultId">Resource id of the key vault to store the disk encryption key.</param>
+        <summary>
+            Creates VirtualMachineEncryptionConfiguration.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="protected VirtualMachineEncryptionConfiguration (string keyVaultId, string aadClientId, string aadSecret);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor(string keyVaultId, string aadClientId, string aadSecret) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Management.Compute.Fluent.VirtualMachineEncryptionConfiguration`1.#ctor(System.String,System.String,System.String)" />
       <MemberSignature Language="VB.NET" Value="Protected Sub New (keyVaultId As String, aadClientId As String, aadSecret As String)" />
       <MemberSignature Language="F#" Value="new Microsoft.Azure.Management.Compute.Fluent.VirtualMachineEncryptionConfiguration&lt;'T (requires 'T :&gt; Microsoft.Azure.Management.Compute.Fluent.VirtualMachineEncryptionConfiguration&lt;'T&gt;)&gt; : string * string * string -&gt; Microsoft.Azure.Management.Compute.Fluent.VirtualMachineEncryptionConfiguration&lt;'T (requires 'T :&gt; Microsoft.Azure.Management.Compute.Fluent.VirtualMachineEncryptionConfiguration&lt;'T&gt;)&gt;" Usage="new Microsoft.Azure.Management.Compute.Fluent.VirtualMachineEncryptionConfiguration&lt;'T (requires 'T :&gt; Microsoft.Azure.Management.Compute.Fluent.VirtualMachineEncryptionConfiguration&lt;'T&gt;)&gt; (keyVaultId, aadClientId, aadSecret)" />
-      <MemberSignature Language="C++ CLI" Value="protected:&#xA; VirtualMachineEncryptionConfiguration(System::String ^ keyVaultId, System::String ^ aadClientId, System::String ^ aadSecret);" />
-      <MemberSignature Language="C++ CX" Value="protected:&#xA; VirtualMachineEncryptionConfiguration(Platform::String ^ keyVaultId, Platform::String ^ aadClientId, Platform::String ^ aadSecret);" />
-      <MemberSignature Language="C++ WINRT" Value=" VirtualMachineEncryptionConfiguration(std::wstring const &amp; keyVaultId, std::wstring const &amp; aadClientId, std::wstring const &amp; aadSecret);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Compute.Fluent</AssemblyName>
-        <AssemblyVersion>1.0.0.60</AssemblyVersion>
+        <AssemblyVersion>1.0.0.61</AssemblyVersion>
+        <AssemblyVersion>1.0.0.62</AssemblyVersion>
+        <AssemblyVersion>1.0.0.63</AssemblyVersion>
+        <AssemblyVersion>1.0.0.64</AssemblyVersion>
+        <AssemblyVersion>1.0.0.65</AssemblyVersion>
+        <AssemblyVersion>1.0.0.66</AssemblyVersion>
+        <AssemblyVersion>1.0.0.67</AssemblyVersion>
+        <AssemblyVersion>1.0.0.68</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="keyVaultId" Type="System.String" />
@@ -63,13 +103,17 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.Azure.Management.Compute.Fluent.VirtualMachineEncryptionConfiguration`1.aadClientId" />
       <MemberSignature Language="VB.NET" Value="Protected aadClientId As String " />
       <MemberSignature Language="F#" Value="val mutable aadClientId : string" Usage="Microsoft.Azure.Management.Compute.Fluent.VirtualMachineEncryptionConfiguration&lt;'T (requires 'T :&gt; Microsoft.Azure.Management.Compute.Fluent.VirtualMachineEncryptionConfiguration&lt;'T&gt;)&gt;.aadClientId" />
-      <MemberSignature Language="C++ CLI" Value="protected: System::String ^ aadClientId;" />
-      <MemberSignature Language="C++ CX" Value="protected: Platform::String ^ aadClientId;" />
-      <MemberSignature Language="C++ WINRT" Value="std::wstring aadClientId;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Compute.Fluent</AssemblyName>
-        <AssemblyVersion>1.0.0.60</AssemblyVersion>
+        <AssemblyVersion>1.0.0.61</AssemblyVersion>
+        <AssemblyVersion>1.0.0.62</AssemblyVersion>
+        <AssemblyVersion>1.0.0.63</AssemblyVersion>
+        <AssemblyVersion>1.0.0.64</AssemblyVersion>
+        <AssemblyVersion>1.0.0.65</AssemblyVersion>
+        <AssemblyVersion>1.0.0.66</AssemblyVersion>
+        <AssemblyVersion>1.0.0.67</AssemblyVersion>
+        <AssemblyVersion>1.0.0.68</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -85,13 +129,17 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Management.Compute.Fluent.VirtualMachineEncryptionConfiguration`1.AadClientId" />
       <MemberSignature Language="VB.NET" Value="Public Function AadClientId () As String" />
       <MemberSignature Language="F#" Value="member this.AadClientId : unit -&gt; string" Usage="virtualMachineEncryptionConfiguration.AadClientId " />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::String ^ AadClientId();" />
-      <MemberSignature Language="C++ CX" Value="public:&#xA; Platform::String ^ AadClientId();" />
-      <MemberSignature Language="C++ WINRT" Value="std::wstring AadClientId();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Compute.Fluent</AssemblyName>
-        <AssemblyVersion>1.0.0.60</AssemblyVersion>
+        <AssemblyVersion>1.0.0.61</AssemblyVersion>
+        <AssemblyVersion>1.0.0.62</AssemblyVersion>
+        <AssemblyVersion>1.0.0.63</AssemblyVersion>
+        <AssemblyVersion>1.0.0.64</AssemblyVersion>
+        <AssemblyVersion>1.0.0.65</AssemblyVersion>
+        <AssemblyVersion>1.0.0.66</AssemblyVersion>
+        <AssemblyVersion>1.0.0.67</AssemblyVersion>
+        <AssemblyVersion>1.0.0.68</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -110,13 +158,17 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.Azure.Management.Compute.Fluent.VirtualMachineEncryptionConfiguration`1.aadSecret" />
       <MemberSignature Language="VB.NET" Value="Protected aadSecret As String " />
       <MemberSignature Language="F#" Value="val mutable aadSecret : string" Usage="Microsoft.Azure.Management.Compute.Fluent.VirtualMachineEncryptionConfiguration&lt;'T (requires 'T :&gt; Microsoft.Azure.Management.Compute.Fluent.VirtualMachineEncryptionConfiguration&lt;'T&gt;)&gt;.aadSecret" />
-      <MemberSignature Language="C++ CLI" Value="protected: System::String ^ aadSecret;" />
-      <MemberSignature Language="C++ CX" Value="protected: Platform::String ^ aadSecret;" />
-      <MemberSignature Language="C++ WINRT" Value="std::wstring aadSecret;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Compute.Fluent</AssemblyName>
-        <AssemblyVersion>1.0.0.60</AssemblyVersion>
+        <AssemblyVersion>1.0.0.61</AssemblyVersion>
+        <AssemblyVersion>1.0.0.62</AssemblyVersion>
+        <AssemblyVersion>1.0.0.63</AssemblyVersion>
+        <AssemblyVersion>1.0.0.64</AssemblyVersion>
+        <AssemblyVersion>1.0.0.65</AssemblyVersion>
+        <AssemblyVersion>1.0.0.66</AssemblyVersion>
+        <AssemblyVersion>1.0.0.67</AssemblyVersion>
+        <AssemblyVersion>1.0.0.68</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -132,13 +184,17 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Management.Compute.Fluent.VirtualMachineEncryptionConfiguration`1.AadSecret" />
       <MemberSignature Language="VB.NET" Value="Public Function AadSecret () As String" />
       <MemberSignature Language="F#" Value="member this.AadSecret : unit -&gt; string" Usage="virtualMachineEncryptionConfiguration.AadSecret " />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::String ^ AadSecret();" />
-      <MemberSignature Language="C++ CX" Value="public:&#xA; Platform::String ^ AadSecret();" />
-      <MemberSignature Language="C++ WINRT" Value="std::wstring AadSecret();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Compute.Fluent</AssemblyName>
-        <AssemblyVersion>1.0.0.60</AssemblyVersion>
+        <AssemblyVersion>1.0.0.61</AssemblyVersion>
+        <AssemblyVersion>1.0.0.62</AssemblyVersion>
+        <AssemblyVersion>1.0.0.63</AssemblyVersion>
+        <AssemblyVersion>1.0.0.64</AssemblyVersion>
+        <AssemblyVersion>1.0.0.65</AssemblyVersion>
+        <AssemblyVersion>1.0.0.66</AssemblyVersion>
+        <AssemblyVersion>1.0.0.67</AssemblyVersion>
+        <AssemblyVersion>1.0.0.68</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -157,13 +213,17 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.Azure.Management.Compute.Fluent.VirtualMachineEncryptionConfiguration`1.encryptionAlgorithm" />
       <MemberSignature Language="VB.NET" Value="Protected encryptionAlgorithm As String " />
       <MemberSignature Language="F#" Value="val mutable encryptionAlgorithm : string" Usage="Microsoft.Azure.Management.Compute.Fluent.VirtualMachineEncryptionConfiguration&lt;'T (requires 'T :&gt; Microsoft.Azure.Management.Compute.Fluent.VirtualMachineEncryptionConfiguration&lt;'T&gt;)&gt;.encryptionAlgorithm" />
-      <MemberSignature Language="C++ CLI" Value="protected: System::String ^ encryptionAlgorithm;" />
-      <MemberSignature Language="C++ CX" Value="protected: Platform::String ^ encryptionAlgorithm;" />
-      <MemberSignature Language="C++ WINRT" Value="std::wstring encryptionAlgorithm;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Compute.Fluent</AssemblyName>
-        <AssemblyVersion>1.0.0.60</AssemblyVersion>
+        <AssemblyVersion>1.0.0.61</AssemblyVersion>
+        <AssemblyVersion>1.0.0.62</AssemblyVersion>
+        <AssemblyVersion>1.0.0.63</AssemblyVersion>
+        <AssemblyVersion>1.0.0.64</AssemblyVersion>
+        <AssemblyVersion>1.0.0.65</AssemblyVersion>
+        <AssemblyVersion>1.0.0.66</AssemblyVersion>
+        <AssemblyVersion>1.0.0.67</AssemblyVersion>
+        <AssemblyVersion>1.0.0.68</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -179,13 +239,17 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.Azure.Management.Compute.Fluent.VirtualMachineEncryptionConfiguration`1.keyEncryptionKeyURL" />
       <MemberSignature Language="VB.NET" Value="Protected keyEncryptionKeyURL As String " />
       <MemberSignature Language="F#" Value="val mutable keyEncryptionKeyURL : string" Usage="Microsoft.Azure.Management.Compute.Fluent.VirtualMachineEncryptionConfiguration&lt;'T (requires 'T :&gt; Microsoft.Azure.Management.Compute.Fluent.VirtualMachineEncryptionConfiguration&lt;'T&gt;)&gt;.keyEncryptionKeyURL" />
-      <MemberSignature Language="C++ CLI" Value="protected: System::String ^ keyEncryptionKeyURL;" />
-      <MemberSignature Language="C++ CX" Value="protected: Platform::String ^ keyEncryptionKeyURL;" />
-      <MemberSignature Language="C++ WINRT" Value="std::wstring keyEncryptionKeyURL;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Compute.Fluent</AssemblyName>
-        <AssemblyVersion>1.0.0.60</AssemblyVersion>
+        <AssemblyVersion>1.0.0.61</AssemblyVersion>
+        <AssemblyVersion>1.0.0.62</AssemblyVersion>
+        <AssemblyVersion>1.0.0.63</AssemblyVersion>
+        <AssemblyVersion>1.0.0.64</AssemblyVersion>
+        <AssemblyVersion>1.0.0.65</AssemblyVersion>
+        <AssemblyVersion>1.0.0.66</AssemblyVersion>
+        <AssemblyVersion>1.0.0.67</AssemblyVersion>
+        <AssemblyVersion>1.0.0.68</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -201,13 +265,17 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Management.Compute.Fluent.VirtualMachineEncryptionConfiguration`1.KeyEncryptionKeyURL" />
       <MemberSignature Language="VB.NET" Value="Public Function KeyEncryptionKeyURL () As String" />
       <MemberSignature Language="F#" Value="member this.KeyEncryptionKeyURL : unit -&gt; string" Usage="virtualMachineEncryptionConfiguration.KeyEncryptionKeyURL " />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::String ^ KeyEncryptionKeyURL();" />
-      <MemberSignature Language="C++ CX" Value="public:&#xA; Platform::String ^ KeyEncryptionKeyURL();" />
-      <MemberSignature Language="C++ WINRT" Value="std::wstring KeyEncryptionKeyURL();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Compute.Fluent</AssemblyName>
-        <AssemblyVersion>1.0.0.60</AssemblyVersion>
+        <AssemblyVersion>1.0.0.61</AssemblyVersion>
+        <AssemblyVersion>1.0.0.62</AssemblyVersion>
+        <AssemblyVersion>1.0.0.63</AssemblyVersion>
+        <AssemblyVersion>1.0.0.64</AssemblyVersion>
+        <AssemblyVersion>1.0.0.65</AssemblyVersion>
+        <AssemblyVersion>1.0.0.66</AssemblyVersion>
+        <AssemblyVersion>1.0.0.67</AssemblyVersion>
+        <AssemblyVersion>1.0.0.68</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -226,13 +294,17 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.Azure.Management.Compute.Fluent.VirtualMachineEncryptionConfiguration`1.keyEncryptionKeyVaultId" />
       <MemberSignature Language="VB.NET" Value="Protected keyEncryptionKeyVaultId As String " />
       <MemberSignature Language="F#" Value="val mutable keyEncryptionKeyVaultId : string" Usage="Microsoft.Azure.Management.Compute.Fluent.VirtualMachineEncryptionConfiguration&lt;'T (requires 'T :&gt; Microsoft.Azure.Management.Compute.Fluent.VirtualMachineEncryptionConfiguration&lt;'T&gt;)&gt;.keyEncryptionKeyVaultId" />
-      <MemberSignature Language="C++ CLI" Value="protected: System::String ^ keyEncryptionKeyVaultId;" />
-      <MemberSignature Language="C++ CX" Value="protected: Platform::String ^ keyEncryptionKeyVaultId;" />
-      <MemberSignature Language="C++ WINRT" Value="std::wstring keyEncryptionKeyVaultId;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Compute.Fluent</AssemblyName>
-        <AssemblyVersion>1.0.0.60</AssemblyVersion>
+        <AssemblyVersion>1.0.0.61</AssemblyVersion>
+        <AssemblyVersion>1.0.0.62</AssemblyVersion>
+        <AssemblyVersion>1.0.0.63</AssemblyVersion>
+        <AssemblyVersion>1.0.0.64</AssemblyVersion>
+        <AssemblyVersion>1.0.0.65</AssemblyVersion>
+        <AssemblyVersion>1.0.0.66</AssemblyVersion>
+        <AssemblyVersion>1.0.0.67</AssemblyVersion>
+        <AssemblyVersion>1.0.0.68</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -248,13 +320,17 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Management.Compute.Fluent.VirtualMachineEncryptionConfiguration`1.KeyEncryptionKeyVaultId" />
       <MemberSignature Language="VB.NET" Value="Public Function KeyEncryptionKeyVaultId () As String" />
       <MemberSignature Language="F#" Value="member this.KeyEncryptionKeyVaultId : unit -&gt; string" Usage="virtualMachineEncryptionConfiguration.KeyEncryptionKeyVaultId " />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::String ^ KeyEncryptionKeyVaultId();" />
-      <MemberSignature Language="C++ CX" Value="public:&#xA; Platform::String ^ KeyEncryptionKeyVaultId();" />
-      <MemberSignature Language="C++ WINRT" Value="std::wstring KeyEncryptionKeyVaultId();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Compute.Fluent</AssemblyName>
-        <AssemblyVersion>1.0.0.60</AssemblyVersion>
+        <AssemblyVersion>1.0.0.61</AssemblyVersion>
+        <AssemblyVersion>1.0.0.62</AssemblyVersion>
+        <AssemblyVersion>1.0.0.63</AssemblyVersion>
+        <AssemblyVersion>1.0.0.64</AssemblyVersion>
+        <AssemblyVersion>1.0.0.65</AssemblyVersion>
+        <AssemblyVersion>1.0.0.66</AssemblyVersion>
+        <AssemblyVersion>1.0.0.67</AssemblyVersion>
+        <AssemblyVersion>1.0.0.68</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -273,13 +349,17 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.Azure.Management.Compute.Fluent.VirtualMachineEncryptionConfiguration`1.keyVaultId" />
       <MemberSignature Language="VB.NET" Value="Protected keyVaultId As String " />
       <MemberSignature Language="F#" Value="val mutable keyVaultId : string" Usage="Microsoft.Azure.Management.Compute.Fluent.VirtualMachineEncryptionConfiguration&lt;'T (requires 'T :&gt; Microsoft.Azure.Management.Compute.Fluent.VirtualMachineEncryptionConfiguration&lt;'T&gt;)&gt;.keyVaultId" />
-      <MemberSignature Language="C++ CLI" Value="protected: System::String ^ keyVaultId;" />
-      <MemberSignature Language="C++ CX" Value="protected: Platform::String ^ keyVaultId;" />
-      <MemberSignature Language="C++ WINRT" Value="std::wstring keyVaultId;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Compute.Fluent</AssemblyName>
-        <AssemblyVersion>1.0.0.60</AssemblyVersion>
+        <AssemblyVersion>1.0.0.61</AssemblyVersion>
+        <AssemblyVersion>1.0.0.62</AssemblyVersion>
+        <AssemblyVersion>1.0.0.63</AssemblyVersion>
+        <AssemblyVersion>1.0.0.64</AssemblyVersion>
+        <AssemblyVersion>1.0.0.65</AssemblyVersion>
+        <AssemblyVersion>1.0.0.66</AssemblyVersion>
+        <AssemblyVersion>1.0.0.67</AssemblyVersion>
+        <AssemblyVersion>1.0.0.68</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -295,13 +375,17 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Management.Compute.Fluent.VirtualMachineEncryptionConfiguration`1.KeyVaultId" />
       <MemberSignature Language="VB.NET" Value="Public Function KeyVaultId () As String" />
       <MemberSignature Language="F#" Value="member this.KeyVaultId : unit -&gt; string" Usage="virtualMachineEncryptionConfiguration.KeyVaultId " />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::String ^ KeyVaultId();" />
-      <MemberSignature Language="C++ CX" Value="public:&#xA; Platform::String ^ KeyVaultId();" />
-      <MemberSignature Language="C++ WINRT" Value="std::wstring KeyVaultId();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Compute.Fluent</AssemblyName>
-        <AssemblyVersion>1.0.0.60</AssemblyVersion>
+        <AssemblyVersion>1.0.0.61</AssemblyVersion>
+        <AssemblyVersion>1.0.0.62</AssemblyVersion>
+        <AssemblyVersion>1.0.0.63</AssemblyVersion>
+        <AssemblyVersion>1.0.0.64</AssemblyVersion>
+        <AssemblyVersion>1.0.0.65</AssemblyVersion>
+        <AssemblyVersion>1.0.0.66</AssemblyVersion>
+        <AssemblyVersion>1.0.0.67</AssemblyVersion>
+        <AssemblyVersion>1.0.0.68</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -320,13 +404,17 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Management.Compute.Fluent.VirtualMachineEncryptionConfiguration`1.KeyVaultUrl" />
       <MemberSignature Language="VB.NET" Value="Public Function KeyVaultUrl () As String" />
       <MemberSignature Language="F#" Value="member this.KeyVaultUrl : unit -&gt; string" Usage="virtualMachineEncryptionConfiguration.KeyVaultUrl " />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::String ^ KeyVaultUrl();" />
-      <MemberSignature Language="C++ CX" Value="public:&#xA; Platform::String ^ KeyVaultUrl();" />
-      <MemberSignature Language="C++ WINRT" Value="std::wstring KeyVaultUrl();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Compute.Fluent</AssemblyName>
-        <AssemblyVersion>1.0.0.60</AssemblyVersion>
+        <AssemblyVersion>1.0.0.61</AssemblyVersion>
+        <AssemblyVersion>1.0.0.62</AssemblyVersion>
+        <AssemblyVersion>1.0.0.63</AssemblyVersion>
+        <AssemblyVersion>1.0.0.64</AssemblyVersion>
+        <AssemblyVersion>1.0.0.65</AssemblyVersion>
+        <AssemblyVersion>1.0.0.66</AssemblyVersion>
+        <AssemblyVersion>1.0.0.67</AssemblyVersion>
+        <AssemblyVersion>1.0.0.68</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -345,13 +433,17 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Management.Compute.Fluent.VirtualMachineEncryptionConfiguration`1.LinuxPassPhrase" />
       <MemberSignature Language="VB.NET" Value="Public Function LinuxPassPhrase () As String" />
       <MemberSignature Language="F#" Value="member this.LinuxPassPhrase : unit -&gt; string" Usage="virtualMachineEncryptionConfiguration.LinuxPassPhrase " />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::String ^ LinuxPassPhrase();" />
-      <MemberSignature Language="C++ CX" Value="public:&#xA; Platform::String ^ LinuxPassPhrase();" />
-      <MemberSignature Language="C++ WINRT" Value="std::wstring LinuxPassPhrase();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Compute.Fluent</AssemblyName>
-        <AssemblyVersion>1.0.0.60</AssemblyVersion>
+        <AssemblyVersion>1.0.0.61</AssemblyVersion>
+        <AssemblyVersion>1.0.0.62</AssemblyVersion>
+        <AssemblyVersion>1.0.0.63</AssemblyVersion>
+        <AssemblyVersion>1.0.0.64</AssemblyVersion>
+        <AssemblyVersion>1.0.0.65</AssemblyVersion>
+        <AssemblyVersion>1.0.0.66</AssemblyVersion>
+        <AssemblyVersion>1.0.0.67</AssemblyVersion>
+        <AssemblyVersion>1.0.0.68</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -370,13 +462,17 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Management.Compute.Fluent.VirtualMachineEncryptionConfiguration`1.OsType" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride Function OsType () As OperatingSystemTypes" />
       <MemberSignature Language="F#" Value="abstract member OsType : unit -&gt; Microsoft.Azure.Management.Compute.Fluent.Models.OperatingSystemTypes" Usage="virtualMachineEncryptionConfiguration.OsType " />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract Microsoft::Azure::Management::Compute::Fluent::Models::OperatingSystemTypes OsType();" />
-      <MemberSignature Language="C++ CX" Value="public:&#xA; abstract Microsoft::Azure::Management::Compute::Fluent::Models::OperatingSystemTypes OsType();" />
-      <MemberSignature Language="C++ WINRT" Value=" abstract Microsoft::Azure::Management::Compute::Fluent::Models::OperatingSystemTypes OsType();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Compute.Fluent</AssemblyName>
-        <AssemblyVersion>1.0.0.60</AssemblyVersion>
+        <AssemblyVersion>1.0.0.61</AssemblyVersion>
+        <AssemblyVersion>1.0.0.62</AssemblyVersion>
+        <AssemblyVersion>1.0.0.63</AssemblyVersion>
+        <AssemblyVersion>1.0.0.64</AssemblyVersion>
+        <AssemblyVersion>1.0.0.65</AssemblyVersion>
+        <AssemblyVersion>1.0.0.66</AssemblyVersion>
+        <AssemblyVersion>1.0.0.67</AssemblyVersion>
+        <AssemblyVersion>1.0.0.68</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Azure.Management.Compute.Fluent.Models.OperatingSystemTypes</ReturnType>
@@ -395,13 +491,17 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.Azure.Management.Compute.Fluent.VirtualMachineEncryptionConfiguration`1.passPhrase" />
       <MemberSignature Language="VB.NET" Value="Protected passPhrase As String " />
       <MemberSignature Language="F#" Value="val mutable passPhrase : string" Usage="Microsoft.Azure.Management.Compute.Fluent.VirtualMachineEncryptionConfiguration&lt;'T (requires 'T :&gt; Microsoft.Azure.Management.Compute.Fluent.VirtualMachineEncryptionConfiguration&lt;'T&gt;)&gt;.passPhrase" />
-      <MemberSignature Language="C++ CLI" Value="protected: System::String ^ passPhrase;" />
-      <MemberSignature Language="C++ CX" Value="protected: Platform::String ^ passPhrase;" />
-      <MemberSignature Language="C++ WINRT" Value="std::wstring passPhrase;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Compute.Fluent</AssemblyName>
-        <AssemblyVersion>1.0.0.60</AssemblyVersion>
+        <AssemblyVersion>1.0.0.61</AssemblyVersion>
+        <AssemblyVersion>1.0.0.62</AssemblyVersion>
+        <AssemblyVersion>1.0.0.63</AssemblyVersion>
+        <AssemblyVersion>1.0.0.64</AssemblyVersion>
+        <AssemblyVersion>1.0.0.65</AssemblyVersion>
+        <AssemblyVersion>1.0.0.66</AssemblyVersion>
+        <AssemblyVersion>1.0.0.67</AssemblyVersion>
+        <AssemblyVersion>1.0.0.68</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -417,13 +517,17 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Management.Compute.Fluent.VirtualMachineEncryptionConfiguration`1.VolumeEncryptionKeyEncryptAlgorithm" />
       <MemberSignature Language="VB.NET" Value="Public Function VolumeEncryptionKeyEncryptAlgorithm () As String" />
       <MemberSignature Language="F#" Value="member this.VolumeEncryptionKeyEncryptAlgorithm : unit -&gt; string" Usage="virtualMachineEncryptionConfiguration.VolumeEncryptionKeyEncryptAlgorithm " />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::String ^ VolumeEncryptionKeyEncryptAlgorithm();" />
-      <MemberSignature Language="C++ CX" Value="public:&#xA; Platform::String ^ VolumeEncryptionKeyEncryptAlgorithm();" />
-      <MemberSignature Language="C++ WINRT" Value="std::wstring VolumeEncryptionKeyEncryptAlgorithm();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Compute.Fluent</AssemblyName>
-        <AssemblyVersion>1.0.0.60</AssemblyVersion>
+        <AssemblyVersion>1.0.0.61</AssemblyVersion>
+        <AssemblyVersion>1.0.0.62</AssemblyVersion>
+        <AssemblyVersion>1.0.0.63</AssemblyVersion>
+        <AssemblyVersion>1.0.0.64</AssemblyVersion>
+        <AssemblyVersion>1.0.0.65</AssemblyVersion>
+        <AssemblyVersion>1.0.0.66</AssemblyVersion>
+        <AssemblyVersion>1.0.0.67</AssemblyVersion>
+        <AssemblyVersion>1.0.0.68</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -442,13 +546,17 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.Azure.Management.Compute.Fluent.VirtualMachineEncryptionConfiguration`1.volumeType" />
       <MemberSignature Language="VB.NET" Value="Protected volumeType As DiskVolumeType " />
       <MemberSignature Language="F#" Value="val mutable volumeType : Microsoft.Azure.Management.Compute.Fluent.Models.DiskVolumeType" Usage="Microsoft.Azure.Management.Compute.Fluent.VirtualMachineEncryptionConfiguration&lt;'T (requires 'T :&gt; Microsoft.Azure.Management.Compute.Fluent.VirtualMachineEncryptionConfiguration&lt;'T&gt;)&gt;.volumeType" />
-      <MemberSignature Language="C++ CLI" Value="protected: Microsoft::Azure::Management::Compute::Fluent::Models::DiskVolumeType volumeType;" />
-      <MemberSignature Language="C++ CX" Value="protected: Microsoft::Azure::Management::Compute::Fluent::Models::DiskVolumeType volumeType;" />
-      <MemberSignature Language="C++ WINRT" Value="Microsoft::Azure::Management::Compute::Fluent::Models::DiskVolumeType volumeType;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Compute.Fluent</AssemblyName>
-        <AssemblyVersion>1.0.0.60</AssemblyVersion>
+        <AssemblyVersion>1.0.0.61</AssemblyVersion>
+        <AssemblyVersion>1.0.0.62</AssemblyVersion>
+        <AssemblyVersion>1.0.0.63</AssemblyVersion>
+        <AssemblyVersion>1.0.0.64</AssemblyVersion>
+        <AssemblyVersion>1.0.0.65</AssemblyVersion>
+        <AssemblyVersion>1.0.0.66</AssemblyVersion>
+        <AssemblyVersion>1.0.0.67</AssemblyVersion>
+        <AssemblyVersion>1.0.0.68</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Azure.Management.Compute.Fluent.Models.DiskVolumeType</ReturnType>
@@ -464,13 +572,17 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Management.Compute.Fluent.VirtualMachineEncryptionConfiguration`1.VolumeType" />
       <MemberSignature Language="VB.NET" Value="Public Function VolumeType () As DiskVolumeType" />
       <MemberSignature Language="F#" Value="member this.VolumeType : unit -&gt; Microsoft.Azure.Management.Compute.Fluent.Models.DiskVolumeType" Usage="virtualMachineEncryptionConfiguration.VolumeType " />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; Microsoft::Azure::Management::Compute::Fluent::Models::DiskVolumeType VolumeType();" />
-      <MemberSignature Language="C++ CX" Value="public:&#xA; Microsoft::Azure::Management::Compute::Fluent::Models::DiskVolumeType VolumeType();" />
-      <MemberSignature Language="C++ WINRT" Value="Microsoft::Azure::Management::Compute::Fluent::Models::DiskVolumeType VolumeType();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Compute.Fluent</AssemblyName>
-        <AssemblyVersion>1.0.0.60</AssemblyVersion>
+        <AssemblyVersion>1.0.0.61</AssemblyVersion>
+        <AssemblyVersion>1.0.0.62</AssemblyVersion>
+        <AssemblyVersion>1.0.0.63</AssemblyVersion>
+        <AssemblyVersion>1.0.0.64</AssemblyVersion>
+        <AssemblyVersion>1.0.0.65</AssemblyVersion>
+        <AssemblyVersion>1.0.0.66</AssemblyVersion>
+        <AssemblyVersion>1.0.0.67</AssemblyVersion>
+        <AssemblyVersion>1.0.0.68</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Azure.Management.Compute.Fluent.Models.DiskVolumeType</ReturnType>
@@ -489,13 +601,17 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Management.Compute.Fluent.VirtualMachineEncryptionConfiguration`1.WithVolumeEncryptionKeyEncryptAlgorithm(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Function WithVolumeEncryptionKeyEncryptAlgorithm (encryptionAlgorithm As String) As T" />
       <MemberSignature Language="F#" Value="member this.WithVolumeEncryptionKeyEncryptAlgorithm : string -&gt; 'T" Usage="virtualMachineEncryptionConfiguration.WithVolumeEncryptionKeyEncryptAlgorithm encryptionAlgorithm" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; T WithVolumeEncryptionKeyEncryptAlgorithm(System::String ^ encryptionAlgorithm);" />
-      <MemberSignature Language="C++ CX" Value="public:&#xA; T WithVolumeEncryptionKeyEncryptAlgorithm(Platform::String ^ encryptionAlgorithm);" />
-      <MemberSignature Language="C++ WINRT" Value="T WithVolumeEncryptionKeyEncryptAlgorithm(std::wstring const &amp; encryptionAlgorithm);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Compute.Fluent</AssemblyName>
-        <AssemblyVersion>1.0.0.60</AssemblyVersion>
+        <AssemblyVersion>1.0.0.61</AssemblyVersion>
+        <AssemblyVersion>1.0.0.62</AssemblyVersion>
+        <AssemblyVersion>1.0.0.63</AssemblyVersion>
+        <AssemblyVersion>1.0.0.64</AssemblyVersion>
+        <AssemblyVersion>1.0.0.65</AssemblyVersion>
+        <AssemblyVersion>1.0.0.66</AssemblyVersion>
+        <AssemblyVersion>1.0.0.67</AssemblyVersion>
+        <AssemblyVersion>1.0.0.68</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>T</ReturnType>
@@ -519,13 +635,17 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Management.Compute.Fluent.VirtualMachineEncryptionConfiguration`1.WithVolumeEncryptionKeyEncrypted(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Function WithVolumeEncryptionKeyEncrypted (keyEncryptionKeyURL As String) As T" />
       <MemberSignature Language="F#" Value="member this.WithVolumeEncryptionKeyEncrypted : string -&gt; 'T" Usage="virtualMachineEncryptionConfiguration.WithVolumeEncryptionKeyEncrypted keyEncryptionKeyURL" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; T WithVolumeEncryptionKeyEncrypted(System::String ^ keyEncryptionKeyURL);" />
-      <MemberSignature Language="C++ CX" Value="public:&#xA; T WithVolumeEncryptionKeyEncrypted(Platform::String ^ keyEncryptionKeyURL);" />
-      <MemberSignature Language="C++ WINRT" Value="T WithVolumeEncryptionKeyEncrypted(std::wstring const &amp; keyEncryptionKeyURL);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Compute.Fluent</AssemblyName>
-        <AssemblyVersion>1.0.0.60</AssemblyVersion>
+        <AssemblyVersion>1.0.0.61</AssemblyVersion>
+        <AssemblyVersion>1.0.0.62</AssemblyVersion>
+        <AssemblyVersion>1.0.0.63</AssemblyVersion>
+        <AssemblyVersion>1.0.0.64</AssemblyVersion>
+        <AssemblyVersion>1.0.0.65</AssemblyVersion>
+        <AssemblyVersion>1.0.0.66</AssemblyVersion>
+        <AssemblyVersion>1.0.0.67</AssemblyVersion>
+        <AssemblyVersion>1.0.0.68</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>T</ReturnType>
@@ -549,13 +669,17 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Management.Compute.Fluent.VirtualMachineEncryptionConfiguration`1.WithVolumeEncryptionKeyEncrypted(System.String,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Function WithVolumeEncryptionKeyEncrypted (keyEncryptionKeyURL As String, keyEncryptionKeyKevVaultId As String) As T" />
       <MemberSignature Language="F#" Value="member this.WithVolumeEncryptionKeyEncrypted : string * string -&gt; 'T" Usage="virtualMachineEncryptionConfiguration.WithVolumeEncryptionKeyEncrypted (keyEncryptionKeyURL, keyEncryptionKeyKevVaultId)" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; T WithVolumeEncryptionKeyEncrypted(System::String ^ keyEncryptionKeyURL, System::String ^ keyEncryptionKeyKevVaultId);" />
-      <MemberSignature Language="C++ CX" Value="public:&#xA; T WithVolumeEncryptionKeyEncrypted(Platform::String ^ keyEncryptionKeyURL, Platform::String ^ keyEncryptionKeyKevVaultId);" />
-      <MemberSignature Language="C++ WINRT" Value="T WithVolumeEncryptionKeyEncrypted(std::wstring const &amp; keyEncryptionKeyURL, std::wstring const &amp; keyEncryptionKeyKevVaultId);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Compute.Fluent</AssemblyName>
-        <AssemblyVersion>1.0.0.60</AssemblyVersion>
+        <AssemblyVersion>1.0.0.61</AssemblyVersion>
+        <AssemblyVersion>1.0.0.62</AssemblyVersion>
+        <AssemblyVersion>1.0.0.63</AssemblyVersion>
+        <AssemblyVersion>1.0.0.64</AssemblyVersion>
+        <AssemblyVersion>1.0.0.65</AssemblyVersion>
+        <AssemblyVersion>1.0.0.66</AssemblyVersion>
+        <AssemblyVersion>1.0.0.67</AssemblyVersion>
+        <AssemblyVersion>1.0.0.68</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>T</ReturnType>
@@ -581,13 +705,17 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Management.Compute.Fluent.VirtualMachineEncryptionConfiguration`1.WithVolumeType(Microsoft.Azure.Management.Compute.Fluent.Models.DiskVolumeType)" />
       <MemberSignature Language="VB.NET" Value="Public Function WithVolumeType (volumeType As DiskVolumeType) As T" />
       <MemberSignature Language="F#" Value="member this.WithVolumeType : Microsoft.Azure.Management.Compute.Fluent.Models.DiskVolumeType -&gt; 'T" Usage="virtualMachineEncryptionConfiguration.WithVolumeType volumeType" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; T WithVolumeType(Microsoft::Azure::Management::Compute::Fluent::Models::DiskVolumeType volumeType);" />
-      <MemberSignature Language="C++ CX" Value="public:&#xA; T WithVolumeType(Microsoft::Azure::Management::Compute::Fluent::Models::DiskVolumeType volumeType);" />
-      <MemberSignature Language="C++ WINRT" Value="T WithVolumeType(Microsoft::Azure::Management::Compute::Fluent::Models::DiskVolumeType volumeType);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Compute.Fluent</AssemblyName>
-        <AssemblyVersion>1.0.0.60</AssemblyVersion>
+        <AssemblyVersion>1.0.0.61</AssemblyVersion>
+        <AssemblyVersion>1.0.0.62</AssemblyVersion>
+        <AssemblyVersion>1.0.0.63</AssemblyVersion>
+        <AssemblyVersion>1.0.0.64</AssemblyVersion>
+        <AssemblyVersion>1.0.0.65</AssemblyVersion>
+        <AssemblyVersion>1.0.0.66</AssemblyVersion>
+        <AssemblyVersion>1.0.0.67</AssemblyVersion>
+        <AssemblyVersion>1.0.0.68</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>T</ReturnType>

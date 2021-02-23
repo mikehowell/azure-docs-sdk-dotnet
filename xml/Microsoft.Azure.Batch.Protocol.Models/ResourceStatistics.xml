@@ -1,15 +1,14 @@
-﻿<Type Name="ResourceStatistics" FullName="Microsoft.Azure.Batch.Protocol.Models.ResourceStatistics">
+<Type Name="ResourceStatistics" FullName="Microsoft.Azure.Batch.Protocol.Models.ResourceStatistics">
   <TypeSignature Language="C#" Value="public class ResourceStatistics" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit ResourceStatistics extends System.Object" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Azure.Batch.Protocol.Models.ResourceStatistics" />
   <TypeSignature Language="VB.NET" Value="Public Class ResourceStatistics" />
   <TypeSignature Language="F#" Value="type ResourceStatistics = class" />
-  <TypeSignature Language="C++ CLI" Value="public ref class ResourceStatistics" />
-  <TypeSignature Language="C++ WINRT" Value="[Windows::Foundation::Metadata::WebHostHidden]&#xA;class ResourceStatistics" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Azure.Batch</AssemblyName>
-    <AssemblyVersion>7.1.0.0</AssemblyVersion>
-    <AssemblyVersion>8.0.0.0</AssemblyVersion>
+    <AssemblyVersion>12.0.0.0</AssemblyVersion>
+    <AssemblyVersion>13.0.0.0</AssemblyVersion>
+    <AssemblyVersion>14.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
@@ -17,7 +16,7 @@
   <Interfaces />
   <Docs>
     <summary>
-            Statistics related to resource consumption by compute nodes in a pool.
+            Statistics related to resource consumption by Compute Nodes in a Pool.
             </summary>
     <remarks>To be added.</remarks>
   </Docs>
@@ -27,14 +26,12 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Batch.Protocol.Models.ResourceStatistics.#ctor" />
       <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; ResourceStatistics();" />
-      <MemberSignature Language="C++ CX" Value="public:&#xA; ResourceStatistics();" />
-      <MemberSignature Language="C++ WINRT" Value=" ResourceStatistics();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Batch</AssemblyName>
-        <AssemblyVersion>7.1.0.0</AssemblyVersion>
-        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>12.0.0.0</AssemblyVersion>
+        <AssemblyVersion>13.0.0.0</AssemblyVersion>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
@@ -50,12 +47,12 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Batch.Protocol.Models.ResourceStatistics.#ctor(System.DateTime,System.DateTime,System.Double,System.Double,System.Double,System.Double,System.Double,System.Int64,System.Int64,System.Double,System.Double,System.Double,System.Double)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (startTime As DateTime, lastUpdateTime As DateTime, avgCPUPercentage As Double, avgMemoryGiB As Double, peakMemoryGiB As Double, avgDiskGiB As Double, peakDiskGiB As Double, diskReadIOps As Long, diskWriteIOps As Long, diskReadGiB As Double, diskWriteGiB As Double, networkReadGiB As Double, networkWriteGiB As Double)" />
       <MemberSignature Language="F#" Value="new Microsoft.Azure.Batch.Protocol.Models.ResourceStatistics : DateTime * DateTime * double * double * double * double * double * int64 * int64 * double * double * double * double -&gt; Microsoft.Azure.Batch.Protocol.Models.ResourceStatistics" Usage="new Microsoft.Azure.Batch.Protocol.Models.ResourceStatistics (startTime, lastUpdateTime, avgCPUPercentage, avgMemoryGiB, peakMemoryGiB, avgDiskGiB, peakDiskGiB, diskReadIOps, diskWriteIOps, diskReadGiB, diskWriteGiB, networkReadGiB, networkWriteGiB)" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; ResourceStatistics(DateTime startTime, DateTime lastUpdateTime, double avgCPUPercentage, double avgMemoryGiB, double peakMemoryGiB, double avgDiskGiB, double peakDiskGiB, long diskReadIOps, long diskWriteIOps, double diskReadGiB, double diskWriteGiB, double networkReadGiB, double networkWriteGiB);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Batch</AssemblyName>
-        <AssemblyVersion>7.1.0.0</AssemblyVersion>
-        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>12.0.0.0</AssemblyVersion>
+        <AssemblyVersion>13.0.0.0</AssemblyVersion>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="startTime" Type="System.DateTime" />
@@ -79,27 +76,27 @@
             last updated. All statistics are limited to the range between
             startTime and lastUpdateTime.</param>
         <param name="avgCPUPercentage">The average CPU usage across all
-            nodes in the pool (percentage per node).</param>
+            Compute Nodes in the Pool (percentage per node).</param>
         <param name="avgMemoryGiB">The average memory usage in GiB across
-            all nodes in the pool.</param>
+            all Compute Nodes in the Pool.</param>
         <param name="peakMemoryGiB">The peak memory usage in GiB across all
-            nodes in the pool.</param>
+            Compute Nodes in the Pool.</param>
         <param name="avgDiskGiB">The average used disk space in GiB across
-            all nodes in the pool.</param>
+            all Compute Nodes in the Pool.</param>
         <param name="peakDiskGiB">The peak used disk space in GiB across
-            all nodes in the pool.</param>
+            all Compute Nodes in the Pool.</param>
         <param name="diskReadIOps">The total number of disk read operations
-            across all nodes in the pool.</param>
+            across all Compute Nodes in the Pool.</param>
         <param name="diskWriteIOps">The total number of disk write
-            operations across all nodes in the pool.</param>
+            operations across all Compute Nodes in the Pool.</param>
         <param name="diskReadGiB">The total amount of data in GiB of disk
-            reads across all nodes in the pool.</param>
+            reads across all Compute Nodes in the Pool.</param>
         <param name="diskWriteGiB">The total amount of data in GiB of disk
-            writes across all nodes in the pool.</param>
+            writes across all Compute Nodes in the Pool.</param>
         <param name="networkReadGiB">The total amount of data in GiB of
-            network reads across all nodes in the pool.</param>
+            network reads across all Compute Nodes in the Pool.</param>
         <param name="networkWriteGiB">The total amount of data in GiB of
-            network writes across all nodes in the pool.</param>
+            network writes across all Compute Nodes in the Pool.</param>
         <summary>
             Initializes a new instance of the ResourceStatistics class.
             </summary>
@@ -112,17 +109,17 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Batch.Protocol.Models.ResourceStatistics.AvgCPUPercentage" />
       <MemberSignature Language="VB.NET" Value="Public Property AvgCPUPercentage As Double" />
       <MemberSignature Language="F#" Value="member this.AvgCPUPercentage : double with get, set" Usage="Microsoft.Azure.Batch.Protocol.Models.ResourceStatistics.AvgCPUPercentage" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property double AvgCPUPercentage { double get(); void set(double value); };" />
-      <MemberSignature Language="C++ CX" Value="public:&#xA; property double AvgCPUPercentage { double get(); void set(double value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Batch</AssemblyName>
-        <AssemblyVersion>7.1.0.0</AssemblyVersion>
-        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>12.0.0.0</AssemblyVersion>
+        <AssemblyVersion>13.0.0.0</AssemblyVersion>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="avgCPUPercentage")</AttributeName>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty(PropertyName="avgCPUPercentage")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty(PropertyName="avgCPUPercentage")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -130,8 +127,8 @@
       </ReturnValue>
       <Docs>
         <summary>
-            Gets or sets the average CPU usage across all nodes in the pool
-            (percentage per node).
+            Gets or sets the average CPU usage across all Compute Nodes in the
+            Pool (percentage per node).
             </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
@@ -143,17 +140,17 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Batch.Protocol.Models.ResourceStatistics.AvgDiskGiB" />
       <MemberSignature Language="VB.NET" Value="Public Property AvgDiskGiB As Double" />
       <MemberSignature Language="F#" Value="member this.AvgDiskGiB : double with get, set" Usage="Microsoft.Azure.Batch.Protocol.Models.ResourceStatistics.AvgDiskGiB" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property double AvgDiskGiB { double get(); void set(double value); };" />
-      <MemberSignature Language="C++ CX" Value="public:&#xA; property double AvgDiskGiB { double get(); void set(double value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Batch</AssemblyName>
-        <AssemblyVersion>7.1.0.0</AssemblyVersion>
-        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>12.0.0.0</AssemblyVersion>
+        <AssemblyVersion>13.0.0.0</AssemblyVersion>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="avgDiskGiB")</AttributeName>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty(PropertyName="avgDiskGiB")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty(PropertyName="avgDiskGiB")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -161,8 +158,8 @@
       </ReturnValue>
       <Docs>
         <summary>
-            Gets or sets the average used disk space in GiB across all nodes in
-            the pool.
+            Gets or sets the average used disk space in GiB across all Compute
+            Nodes in the Pool.
             </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
@@ -174,17 +171,17 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Batch.Protocol.Models.ResourceStatistics.AvgMemoryGiB" />
       <MemberSignature Language="VB.NET" Value="Public Property AvgMemoryGiB As Double" />
       <MemberSignature Language="F#" Value="member this.AvgMemoryGiB : double with get, set" Usage="Microsoft.Azure.Batch.Protocol.Models.ResourceStatistics.AvgMemoryGiB" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property double AvgMemoryGiB { double get(); void set(double value); };" />
-      <MemberSignature Language="C++ CX" Value="public:&#xA; property double AvgMemoryGiB { double get(); void set(double value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Batch</AssemblyName>
-        <AssemblyVersion>7.1.0.0</AssemblyVersion>
-        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>12.0.0.0</AssemblyVersion>
+        <AssemblyVersion>13.0.0.0</AssemblyVersion>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="avgMemoryGiB")</AttributeName>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty(PropertyName="avgMemoryGiB")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty(PropertyName="avgMemoryGiB")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -192,8 +189,8 @@
       </ReturnValue>
       <Docs>
         <summary>
-            Gets or sets the average memory usage in GiB across all nodes in
-            the pool.
+            Gets or sets the average memory usage in GiB across all Compute
+            Nodes in the Pool.
             </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
@@ -205,17 +202,17 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Batch.Protocol.Models.ResourceStatistics.DiskReadGiB" />
       <MemberSignature Language="VB.NET" Value="Public Property DiskReadGiB As Double" />
       <MemberSignature Language="F#" Value="member this.DiskReadGiB : double with get, set" Usage="Microsoft.Azure.Batch.Protocol.Models.ResourceStatistics.DiskReadGiB" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property double DiskReadGiB { double get(); void set(double value); };" />
-      <MemberSignature Language="C++ CX" Value="public:&#xA; property double DiskReadGiB { double get(); void set(double value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Batch</AssemblyName>
-        <AssemblyVersion>7.1.0.0</AssemblyVersion>
-        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>12.0.0.0</AssemblyVersion>
+        <AssemblyVersion>13.0.0.0</AssemblyVersion>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="diskReadGiB")</AttributeName>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty(PropertyName="diskReadGiB")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty(PropertyName="diskReadGiB")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -224,7 +221,7 @@
       <Docs>
         <summary>
             Gets or sets the total amount of data in GiB of disk reads across
-            all nodes in the pool.
+            all Compute Nodes in the Pool.
             </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
@@ -236,17 +233,17 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Batch.Protocol.Models.ResourceStatistics.DiskReadIOps" />
       <MemberSignature Language="VB.NET" Value="Public Property DiskReadIOps As Long" />
       <MemberSignature Language="F#" Value="member this.DiskReadIOps : int64 with get, set" Usage="Microsoft.Azure.Batch.Protocol.Models.ResourceStatistics.DiskReadIOps" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property long DiskReadIOps { long get(); void set(long value); };" />
-      <MemberSignature Language="C++ CX" Value="public:&#xA; property long long DiskReadIOps { long long get(); void set(long long value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Batch</AssemblyName>
-        <AssemblyVersion>7.1.0.0</AssemblyVersion>
-        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>12.0.0.0</AssemblyVersion>
+        <AssemblyVersion>13.0.0.0</AssemblyVersion>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="diskReadIOps")</AttributeName>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty(PropertyName="diskReadIOps")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty(PropertyName="diskReadIOps")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -255,7 +252,7 @@
       <Docs>
         <summary>
             Gets or sets the total number of disk read operations across all
-            nodes in the pool.
+            Compute Nodes in the Pool.
             </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
@@ -267,17 +264,17 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Batch.Protocol.Models.ResourceStatistics.DiskWriteGiB" />
       <MemberSignature Language="VB.NET" Value="Public Property DiskWriteGiB As Double" />
       <MemberSignature Language="F#" Value="member this.DiskWriteGiB : double with get, set" Usage="Microsoft.Azure.Batch.Protocol.Models.ResourceStatistics.DiskWriteGiB" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property double DiskWriteGiB { double get(); void set(double value); };" />
-      <MemberSignature Language="C++ CX" Value="public:&#xA; property double DiskWriteGiB { double get(); void set(double value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Batch</AssemblyName>
-        <AssemblyVersion>7.1.0.0</AssemblyVersion>
-        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>12.0.0.0</AssemblyVersion>
+        <AssemblyVersion>13.0.0.0</AssemblyVersion>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="diskWriteGiB")</AttributeName>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty(PropertyName="diskWriteGiB")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty(PropertyName="diskWriteGiB")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -286,7 +283,7 @@
       <Docs>
         <summary>
             Gets or sets the total amount of data in GiB of disk writes across
-            all nodes in the pool.
+            all Compute Nodes in the Pool.
             </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
@@ -298,17 +295,17 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Batch.Protocol.Models.ResourceStatistics.DiskWriteIOps" />
       <MemberSignature Language="VB.NET" Value="Public Property DiskWriteIOps As Long" />
       <MemberSignature Language="F#" Value="member this.DiskWriteIOps : int64 with get, set" Usage="Microsoft.Azure.Batch.Protocol.Models.ResourceStatistics.DiskWriteIOps" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property long DiskWriteIOps { long get(); void set(long value); };" />
-      <MemberSignature Language="C++ CX" Value="public:&#xA; property long long DiskWriteIOps { long long get(); void set(long long value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Batch</AssemblyName>
-        <AssemblyVersion>7.1.0.0</AssemblyVersion>
-        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>12.0.0.0</AssemblyVersion>
+        <AssemblyVersion>13.0.0.0</AssemblyVersion>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="diskWriteIOps")</AttributeName>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty(PropertyName="diskWriteIOps")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty(PropertyName="diskWriteIOps")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -317,7 +314,7 @@
       <Docs>
         <summary>
             Gets or sets the total number of disk write operations across all
-            nodes in the pool.
+            Compute Nodes in the Pool.
             </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
@@ -329,16 +326,17 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Batch.Protocol.Models.ResourceStatistics.LastUpdateTime" />
       <MemberSignature Language="VB.NET" Value="Public Property LastUpdateTime As DateTime" />
       <MemberSignature Language="F#" Value="member this.LastUpdateTime : DateTime with get, set" Usage="Microsoft.Azure.Batch.Protocol.Models.ResourceStatistics.LastUpdateTime" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property DateTime LastUpdateTime { DateTime get(); void set(DateTime value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Batch</AssemblyName>
-        <AssemblyVersion>7.1.0.0</AssemblyVersion>
-        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>12.0.0.0</AssemblyVersion>
+        <AssemblyVersion>13.0.0.0</AssemblyVersion>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="lastUpdateTime")</AttributeName>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty(PropertyName="lastUpdateTime")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty(PropertyName="lastUpdateTime")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -360,17 +358,17 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Batch.Protocol.Models.ResourceStatistics.NetworkReadGiB" />
       <MemberSignature Language="VB.NET" Value="Public Property NetworkReadGiB As Double" />
       <MemberSignature Language="F#" Value="member this.NetworkReadGiB : double with get, set" Usage="Microsoft.Azure.Batch.Protocol.Models.ResourceStatistics.NetworkReadGiB" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property double NetworkReadGiB { double get(); void set(double value); };" />
-      <MemberSignature Language="C++ CX" Value="public:&#xA; property double NetworkReadGiB { double get(); void set(double value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Batch</AssemblyName>
-        <AssemblyVersion>7.1.0.0</AssemblyVersion>
-        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>12.0.0.0</AssemblyVersion>
+        <AssemblyVersion>13.0.0.0</AssemblyVersion>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="networkReadGiB")</AttributeName>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty(PropertyName="networkReadGiB")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty(PropertyName="networkReadGiB")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -379,7 +377,7 @@
       <Docs>
         <summary>
             Gets or sets the total amount of data in GiB of network reads
-            across all nodes in the pool.
+            across all Compute Nodes in the Pool.
             </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
@@ -391,17 +389,17 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Batch.Protocol.Models.ResourceStatistics.NetworkWriteGiB" />
       <MemberSignature Language="VB.NET" Value="Public Property NetworkWriteGiB As Double" />
       <MemberSignature Language="F#" Value="member this.NetworkWriteGiB : double with get, set" Usage="Microsoft.Azure.Batch.Protocol.Models.ResourceStatistics.NetworkWriteGiB" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property double NetworkWriteGiB { double get(); void set(double value); };" />
-      <MemberSignature Language="C++ CX" Value="public:&#xA; property double NetworkWriteGiB { double get(); void set(double value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Batch</AssemblyName>
-        <AssemblyVersion>7.1.0.0</AssemblyVersion>
-        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>12.0.0.0</AssemblyVersion>
+        <AssemblyVersion>13.0.0.0</AssemblyVersion>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="networkWriteGiB")</AttributeName>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty(PropertyName="networkWriteGiB")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty(PropertyName="networkWriteGiB")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -410,7 +408,7 @@
       <Docs>
         <summary>
             Gets or sets the total amount of data in GiB of network writes
-            across all nodes in the pool.
+            across all Compute Nodes in the Pool.
             </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
@@ -422,17 +420,17 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Batch.Protocol.Models.ResourceStatistics.PeakDiskGiB" />
       <MemberSignature Language="VB.NET" Value="Public Property PeakDiskGiB As Double" />
       <MemberSignature Language="F#" Value="member this.PeakDiskGiB : double with get, set" Usage="Microsoft.Azure.Batch.Protocol.Models.ResourceStatistics.PeakDiskGiB" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property double PeakDiskGiB { double get(); void set(double value); };" />
-      <MemberSignature Language="C++ CX" Value="public:&#xA; property double PeakDiskGiB { double get(); void set(double value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Batch</AssemblyName>
-        <AssemblyVersion>7.1.0.0</AssemblyVersion>
-        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>12.0.0.0</AssemblyVersion>
+        <AssemblyVersion>13.0.0.0</AssemblyVersion>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="peakDiskGiB")</AttributeName>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty(PropertyName="peakDiskGiB")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty(PropertyName="peakDiskGiB")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -440,8 +438,8 @@
       </ReturnValue>
       <Docs>
         <summary>
-            Gets or sets the peak used disk space in GiB across all nodes in
-            the pool.
+            Gets or sets the peak used disk space in GiB across all Compute
+            Nodes in the Pool.
             </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
@@ -453,17 +451,17 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Batch.Protocol.Models.ResourceStatistics.PeakMemoryGiB" />
       <MemberSignature Language="VB.NET" Value="Public Property PeakMemoryGiB As Double" />
       <MemberSignature Language="F#" Value="member this.PeakMemoryGiB : double with get, set" Usage="Microsoft.Azure.Batch.Protocol.Models.ResourceStatistics.PeakMemoryGiB" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property double PeakMemoryGiB { double get(); void set(double value); };" />
-      <MemberSignature Language="C++ CX" Value="public:&#xA; property double PeakMemoryGiB { double get(); void set(double value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Batch</AssemblyName>
-        <AssemblyVersion>7.1.0.0</AssemblyVersion>
-        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>12.0.0.0</AssemblyVersion>
+        <AssemblyVersion>13.0.0.0</AssemblyVersion>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="peakMemoryGiB")</AttributeName>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty(PropertyName="peakMemoryGiB")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty(PropertyName="peakMemoryGiB")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -471,8 +469,8 @@
       </ReturnValue>
       <Docs>
         <summary>
-            Gets or sets the peak memory usage in GiB across all nodes in the
-            pool.
+            Gets or sets the peak memory usage in GiB across all Compute Nodes
+            in the Pool.
             </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
@@ -484,16 +482,17 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Batch.Protocol.Models.ResourceStatistics.StartTime" />
       <MemberSignature Language="VB.NET" Value="Public Property StartTime As DateTime" />
       <MemberSignature Language="F#" Value="member this.StartTime : DateTime with get, set" Usage="Microsoft.Azure.Batch.Protocol.Models.ResourceStatistics.StartTime" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property DateTime StartTime { DateTime get(); void set(DateTime value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Batch</AssemblyName>
-        <AssemblyVersion>7.1.0.0</AssemblyVersion>
-        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>12.0.0.0</AssemblyVersion>
+        <AssemblyVersion>13.0.0.0</AssemblyVersion>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="startTime")</AttributeName>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty(PropertyName="startTime")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty(PropertyName="startTime")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -506,35 +505,6 @@
             </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
-      </Docs>
-    </Member>
-    <Member MemberName="Validate">
-      <MemberSignature Language="C#" Value="public virtual void Validate ();" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Validate() cil managed" />
-      <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Batch.Protocol.Models.ResourceStatistics.Validate" />
-      <MemberSignature Language="VB.NET" Value="Public Overridable Sub Validate ()" />
-      <MemberSignature Language="F#" Value="abstract member Validate : unit -&gt; unit&#xA;override this.Validate : unit -&gt; unit" Usage="resourceStatistics.Validate " />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Validate();" />
-      <MemberSignature Language="C++ CX" Value="public:&#xA; virtual void Validate();" />
-      <MemberSignature Language="C++ WINRT" Value=" virtual void Validate();" />
-      <MemberType>Method</MemberType>
-      <AssemblyInfo>
-        <AssemblyName>Microsoft.Azure.Batch</AssemblyName>
-        <AssemblyVersion>7.1.0.0</AssemblyVersion>
-        <AssemblyVersion>8.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <ReturnValue>
-        <ReturnType>System.Void</ReturnType>
-      </ReturnValue>
-      <Parameters />
-      <Docs>
-        <summary>
-            Validate the object.
-            </summary>
-        <remarks>To be added.</remarks>
-        <exception cref="T:Microsoft.Rest.ValidationException">
-            Thrown if validation fails
-            </exception>
       </Docs>
     </Member>
   </Members>

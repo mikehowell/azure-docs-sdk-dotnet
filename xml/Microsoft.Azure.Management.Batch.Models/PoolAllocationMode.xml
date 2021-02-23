@@ -1,23 +1,23 @@
-﻿<Type Name="PoolAllocationMode" FullName="Microsoft.Azure.Management.Batch.Models.PoolAllocationMode">
+<Type Name="PoolAllocationMode" FullName="Microsoft.Azure.Management.Batch.Models.PoolAllocationMode">
   <TypeSignature Language="C#" Value="public enum PoolAllocationMode" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed PoolAllocationMode extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Azure.Management.Batch.Models.PoolAllocationMode" />
   <TypeSignature Language="VB.NET" Value="Public Enum PoolAllocationMode" />
   <TypeSignature Language="F#" Value="type PoolAllocationMode = " />
-  <TypeSignature Language="C++ CLI" Value="public enum class PoolAllocationMode" />
-  <TypeSignature Language="C++ CX" Value="public enum class PoolAllocationMode" />
-  <TypeSignature Language="C++ WINRT" Value="enum PoolAllocationMode" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Azure.Management.Batch</AssemblyName>
-    <AssemblyVersion>5.0.0.0</AssemblyVersion>
-    <AssemblyVersion>6.0.0.0</AssemblyVersion>
+    <AssemblyVersion>9.0.0.0</AssemblyVersion>
+    <AssemblyVersion>10.0.0.0</AssemblyVersion>
+    <AssemblyVersion>11.0.0.0</AssemblyVersion>
+    <AssemblyVersion>13.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Attributes>
     <Attribute>
-      <AttributeName>Newtonsoft.Json.JsonConverter(typeof(Newtonsoft.Json.Converters.StringEnumConverter))</AttributeName>
+      <AttributeName Language="C#">[Newtonsoft.Json.JsonConverter(typeof(Newtonsoft.Json.Converters.StringEnumConverter))]</AttributeName>
+      <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonConverter(typeof(Newtonsoft.Json.Converters.StringEnumConverter))&gt;]</AttributeName>
     </Attribute>
   </Attributes>
   <Docs>
@@ -33,18 +33,18 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.Azure.Management.Batch.Models.PoolAllocationMode.BatchService" />
       <MemberSignature Language="VB.NET" Value="BatchService" />
       <MemberSignature Language="F#" Value="BatchService = 0" Usage="Microsoft.Azure.Management.Batch.Models.PoolAllocationMode.BatchService" />
-      <MemberSignature Language="C++ CLI" Value="BatchService" />
-      <MemberSignature Language="C++ CX" Value="BatchService" />
-      <MemberSignature Language="C++ WINRT" Value="BatchService" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Batch</AssemblyName>
-        <AssemblyVersion>5.0.0.0</AssemblyVersion>
-        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+        <AssemblyVersion>11.0.0.0</AssemblyVersion>
+        <AssemblyVersion>13.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>System.Runtime.Serialization.EnumMember(Value="BatchService")</AttributeName>
+          <AttributeName Language="C#">[System.Runtime.Serialization.EnumMember(Value="BatchService")]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Runtime.Serialization.EnumMember(Value="BatchService")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -52,7 +52,10 @@
       </ReturnValue>
       <MemberValue>0</MemberValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+            Pools will be allocated in subscriptions owned by the Batch
+            service.
+            </summary>
       </Docs>
     </Member>
     <Member MemberName="UserSubscription">
@@ -61,18 +64,18 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.Azure.Management.Batch.Models.PoolAllocationMode.UserSubscription" />
       <MemberSignature Language="VB.NET" Value="UserSubscription" />
       <MemberSignature Language="F#" Value="UserSubscription = 1" Usage="Microsoft.Azure.Management.Batch.Models.PoolAllocationMode.UserSubscription" />
-      <MemberSignature Language="C++ CLI" Value="UserSubscription" />
-      <MemberSignature Language="C++ CX" Value="UserSubscription" />
-      <MemberSignature Language="C++ WINRT" Value="UserSubscription" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Batch</AssemblyName>
-        <AssemblyVersion>5.0.0.0</AssemblyVersion>
-        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>9.0.0.0</AssemblyVersion>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+        <AssemblyVersion>11.0.0.0</AssemblyVersion>
+        <AssemblyVersion>13.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>System.Runtime.Serialization.EnumMember(Value="UserSubscription")</AttributeName>
+          <AttributeName Language="C#">[System.Runtime.Serialization.EnumMember(Value="UserSubscription")]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Runtime.Serialization.EnumMember(Value="UserSubscription")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -80,7 +83,9 @@
       </ReturnValue>
       <MemberValue>1</MemberValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+            Pools will be allocated in a subscription owned by the user.
+            </summary>
       </Docs>
     </Member>
   </Members>

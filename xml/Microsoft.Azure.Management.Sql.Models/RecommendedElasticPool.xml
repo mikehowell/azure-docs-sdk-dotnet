@@ -1,11 +1,9 @@
-﻿<Type Name="RecommendedElasticPool" FullName="Microsoft.Azure.Management.Sql.Models.RecommendedElasticPool">
+<Type Name="RecommendedElasticPool" FullName="Microsoft.Azure.Management.Sql.Models.RecommendedElasticPool">
   <TypeSignature Language="C#" Value="public class RecommendedElasticPool : Microsoft.Azure.Management.Sql.Models.ProxyResource" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit RecommendedElasticPool extends Microsoft.Azure.Management.Sql.Models.ProxyResource" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Azure.Management.Sql.Models.RecommendedElasticPool" />
   <TypeSignature Language="VB.NET" Value="Public Class RecommendedElasticPool&#xA;Inherits ProxyResource" />
   <TypeSignature Language="F#" Value="type RecommendedElasticPool = class&#xA;    inherit ProxyResource" />
-  <TypeSignature Language="C++ CLI" Value="public ref class RecommendedElasticPool : Microsoft::Azure::Management::Sql::Models::ProxyResource" />
-  <TypeSignature Language="C++ WINRT" Value="[Windows::Foundation::Metadata::WebHostHidden]&#xA;class RecommendedElasticPool : Microsoft::Azure::Management::Sql::Models::ProxyResource" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Azure.Management.Sql</AssemblyName>
     <AssemblyVersion>1.0.0.0</AssemblyVersion>
@@ -16,12 +14,13 @@
   <Interfaces />
   <Attributes>
     <Attribute>
-      <AttributeName>Microsoft.Rest.Serialization.JsonTransformation</AttributeName>
+      <AttributeName Language="C#">[Microsoft.Rest.Serialization.JsonTransformation]</AttributeName>
+      <AttributeName Language="F#">[&lt;Microsoft.Rest.Serialization.JsonTransformation&gt;]</AttributeName>
     </Attribute>
   </Attributes>
   <Docs>
     <summary>
-            Represents a recommented elastic pool.
+            Represents a recommended elastic pool.
             </summary>
     <remarks>To be added.</remarks>
   </Docs>
@@ -31,9 +30,6 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Management.Sql.Models.RecommendedElasticPool.#ctor" />
       <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; RecommendedElasticPool();" />
-      <MemberSignature Language="C++ CX" Value="public:&#xA; RecommendedElasticPool();" />
-      <MemberSignature Language="C++ WINRT" Value=" RecommendedElasticPool();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Sql</AssemblyName>
@@ -48,10 +44,10 @@
       </Docs>
     </Member>
     <Member MemberName=".ctor">
-      <MemberSignature Language="C#" Value="public RecommendedElasticPool (string id = null, string name = null, string type = null, string databaseEdition = null, Nullable&lt;double&gt; dtu = null, Nullable&lt;double&gt; databaseDtuMin = null, Nullable&lt;double&gt; databaseDtuMax = null, Nullable&lt;double&gt; storageMB = null, Nullable&lt;DateTime&gt; observationPeriodStart = null, Nullable&lt;DateTime&gt; observationPeriodEnd = null, Nullable&lt;double&gt; maxObservedDtu = null, Nullable&lt;double&gt; maxObservedStorageMB = null, System.Collections.Generic.IList&lt;Microsoft.Azure.Management.Sql.Models.TrackedResource&gt; databases = null, System.Collections.Generic.IList&lt;Microsoft.Azure.Management.Sql.Models.RecommendedElasticPoolMetric&gt; metrics = null);" />
+      <MemberSignature Language="C#" Value="public RecommendedElasticPool (string id = default, string name = default, string type = default, string databaseEdition = default, double? dtu = default, double? databaseDtuMin = default, double? databaseDtuMax = default, double? storageMB = default, DateTime? observationPeriodStart = default, DateTime? observationPeriodEnd = default, double? maxObservedDtu = default, double? maxObservedStorageMB = default, System.Collections.Generic.IList&lt;Microsoft.Azure.Management.Sql.Models.TrackedResource&gt; databases = default, System.Collections.Generic.IList&lt;Microsoft.Azure.Management.Sql.Models.RecommendedElasticPoolMetric&gt; metrics = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string id, string name, string type, string databaseEdition, valuetype System.Nullable`1&lt;float64&gt; dtu, valuetype System.Nullable`1&lt;float64&gt; databaseDtuMin, valuetype System.Nullable`1&lt;float64&gt; databaseDtuMax, valuetype System.Nullable`1&lt;float64&gt; storageMB, valuetype System.Nullable`1&lt;valuetype System.DateTime&gt; observationPeriodStart, valuetype System.Nullable`1&lt;valuetype System.DateTime&gt; observationPeriodEnd, valuetype System.Nullable`1&lt;float64&gt; maxObservedDtu, valuetype System.Nullable`1&lt;float64&gt; maxObservedStorageMB, class System.Collections.Generic.IList`1&lt;class Microsoft.Azure.Management.Sql.Models.TrackedResource&gt; databases, class System.Collections.Generic.IList`1&lt;class Microsoft.Azure.Management.Sql.Models.RecommendedElasticPoolMetric&gt; metrics) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Management.Sql.Models.RecommendedElasticPool.#ctor(System.String,System.String,System.String,System.String,System.Nullable{System.Double},System.Nullable{System.Double},System.Nullable{System.Double},System.Nullable{System.Double},System.Nullable{System.DateTime},System.Nullable{System.DateTime},System.Nullable{System.Double},System.Nullable{System.Double},System.Collections.Generic.IList{Microsoft.Azure.Management.Sql.Models.TrackedResource},System.Collections.Generic.IList{Microsoft.Azure.Management.Sql.Models.RecommendedElasticPoolMetric})" />
-      <MemberSignature Language="VB.NET" Value="Public Sub New (Optional id As String = null, Optional name As String = null, Optional type As String = null, Optional databaseEdition As String = null, Optional dtu As Nullable(Of Double) = null, Optional databaseDtuMin As Nullable(Of Double) = null, Optional databaseDtuMax As Nullable(Of Double) = null, Optional storageMB As Nullable(Of Double) = null, Optional observationPeriodStart As Nullable(Of DateTime) = null, Optional observationPeriodEnd As Nullable(Of DateTime) = null, Optional maxObservedDtu As Nullable(Of Double) = null, Optional maxObservedStorageMB As Nullable(Of Double) = null, Optional databases As IList(Of TrackedResource) = null, Optional metrics As IList(Of RecommendedElasticPoolMetric) = null)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (Optional id As String = Nothing, Optional name As String = Nothing, Optional type As String = Nothing, Optional databaseEdition As String = Nothing, Optional dtu As Nullable(Of Double) = Nothing, Optional databaseDtuMin As Nullable(Of Double) = Nothing, Optional databaseDtuMax As Nullable(Of Double) = Nothing, Optional storageMB As Nullable(Of Double) = Nothing, Optional observationPeriodStart As Nullable(Of DateTime) = Nothing, Optional observationPeriodEnd As Nullable(Of DateTime) = Nothing, Optional maxObservedDtu As Nullable(Of Double) = Nothing, Optional maxObservedStorageMB As Nullable(Of Double) = Nothing, Optional databases As IList(Of TrackedResource) = Nothing, Optional metrics As IList(Of RecommendedElasticPoolMetric) = Nothing)" />
       <MemberSignature Language="F#" Value="new Microsoft.Azure.Management.Sql.Models.RecommendedElasticPool : string * string * string * string * Nullable&lt;double&gt; * Nullable&lt;double&gt; * Nullable&lt;double&gt; * Nullable&lt;double&gt; * Nullable&lt;DateTime&gt; * Nullable&lt;DateTime&gt; * Nullable&lt;double&gt; * Nullable&lt;double&gt; * System.Collections.Generic.IList&lt;Microsoft.Azure.Management.Sql.Models.TrackedResource&gt; * System.Collections.Generic.IList&lt;Microsoft.Azure.Management.Sql.Models.RecommendedElasticPoolMetric&gt; -&gt; Microsoft.Azure.Management.Sql.Models.RecommendedElasticPool" Usage="new Microsoft.Azure.Management.Sql.Models.RecommendedElasticPool (id, name, type, databaseEdition, dtu, databaseDtuMin, databaseDtuMax, storageMB, observationPeriodStart, observationPeriodEnd, maxObservedDtu, maxObservedStorageMB, databases, metrics)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
@@ -81,7 +77,7 @@
         <param name="databaseEdition">The edition of the recommended
             elastic pool. The ElasticPoolEdition enumeration contains all the
             valid editions. Possible values include: 'Basic', 'Standard',
-            'Premium'</param>
+            'Premium', 'GeneralPurpose', 'BusinessCritical'</param>
         <param name="dtu">The DTU for the recommended elastic pool.</param>
         <param name="databaseDtuMin">The minimum DTU for the
             database.</param>
@@ -106,12 +102,11 @@
       </Docs>
     </Member>
     <Member MemberName="DatabaseDtuMax">
-      <MemberSignature Language="C#" Value="public Nullable&lt;double&gt; DatabaseDtuMax { get; set; }" />
+      <MemberSignature Language="C#" Value="public double? DatabaseDtuMax { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;float64&gt; DatabaseDtuMax" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Management.Sql.Models.RecommendedElasticPool.DatabaseDtuMax" />
       <MemberSignature Language="VB.NET" Value="Public Property DatabaseDtuMax As Nullable(Of Double)" />
       <MemberSignature Language="F#" Value="member this.DatabaseDtuMax : Nullable&lt;double&gt; with get, set" Usage="Microsoft.Azure.Management.Sql.Models.RecommendedElasticPool.DatabaseDtuMax" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Nullable&lt;double&gt; DatabaseDtuMax { Nullable&lt;double&gt; get(); void set(Nullable&lt;double&gt; value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Sql</AssemblyName>
@@ -119,7 +114,8 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="properties.databaseDtuMax")</AttributeName>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty(PropertyName="properties.databaseDtuMax")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty(PropertyName="properties.databaseDtuMax")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -134,12 +130,11 @@
       </Docs>
     </Member>
     <Member MemberName="DatabaseDtuMin">
-      <MemberSignature Language="C#" Value="public Nullable&lt;double&gt; DatabaseDtuMin { get; set; }" />
+      <MemberSignature Language="C#" Value="public double? DatabaseDtuMin { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;float64&gt; DatabaseDtuMin" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Management.Sql.Models.RecommendedElasticPool.DatabaseDtuMin" />
       <MemberSignature Language="VB.NET" Value="Public Property DatabaseDtuMin As Nullable(Of Double)" />
       <MemberSignature Language="F#" Value="member this.DatabaseDtuMin : Nullable&lt;double&gt; with get, set" Usage="Microsoft.Azure.Management.Sql.Models.RecommendedElasticPool.DatabaseDtuMin" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Nullable&lt;double&gt; DatabaseDtuMin { Nullable&lt;double&gt; get(); void set(Nullable&lt;double&gt; value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Sql</AssemblyName>
@@ -147,7 +142,8 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="properties.databaseDtuMin")</AttributeName>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty(PropertyName="properties.databaseDtuMin")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty(PropertyName="properties.databaseDtuMin")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -167,8 +163,6 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Management.Sql.Models.RecommendedElasticPool.DatabaseEdition" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property DatabaseEdition As String" />
       <MemberSignature Language="F#" Value="member this.DatabaseEdition : string" Usage="Microsoft.Azure.Management.Sql.Models.RecommendedElasticPool.DatabaseEdition" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ DatabaseEdition { System::String ^ get(); };" />
-      <MemberSignature Language="C++ CX" Value="public:&#xA; property Platform::String ^ DatabaseEdition { Platform::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Sql</AssemblyName>
@@ -176,7 +170,8 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="properties.databaseEdition")</AttributeName>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty(PropertyName="properties.databaseEdition")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty(PropertyName="properties.databaseEdition")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -186,7 +181,8 @@
         <summary>
             Gets the edition of the recommended elastic pool. The
             ElasticPoolEdition enumeration contains all the valid editions.
-            Possible values include: 'Basic', 'Standard', 'Premium'
+            Possible values include: 'Basic', 'Standard', 'Premium',
+            'GeneralPurpose', 'BusinessCritical'
             </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
@@ -198,7 +194,6 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Management.Sql.Models.RecommendedElasticPool.Databases" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Databases As IList(Of TrackedResource)" />
       <MemberSignature Language="F#" Value="member this.Databases : System.Collections.Generic.IList&lt;Microsoft.Azure.Management.Sql.Models.TrackedResource&gt;" Usage="Microsoft.Azure.Management.Sql.Models.RecommendedElasticPool.Databases" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::Generic::IList&lt;Microsoft::Azure::Management::Sql::Models::Database ^&gt; ^ Databases { System::Collections::Generic::IList&lt;Microsoft::Azure::Management::Sql::Models::Database ^&gt; ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Sql</AssemblyName>
@@ -206,7 +201,8 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="properties.databases")</AttributeName>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty(PropertyName="properties.databases")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty(PropertyName="properties.databases")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -221,12 +217,11 @@
       </Docs>
     </Member>
     <Member MemberName="Dtu">
-      <MemberSignature Language="C#" Value="public Nullable&lt;double&gt; Dtu { get; set; }" />
+      <MemberSignature Language="C#" Value="public double? Dtu { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;float64&gt; Dtu" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Management.Sql.Models.RecommendedElasticPool.Dtu" />
       <MemberSignature Language="VB.NET" Value="Public Property Dtu As Nullable(Of Double)" />
       <MemberSignature Language="F#" Value="member this.Dtu : Nullable&lt;double&gt; with get, set" Usage="Microsoft.Azure.Management.Sql.Models.RecommendedElasticPool.Dtu" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Nullable&lt;double&gt; Dtu { Nullable&lt;double&gt; get(); void set(Nullable&lt;double&gt; value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Sql</AssemblyName>
@@ -234,7 +229,8 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="properties.dtu")</AttributeName>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty(PropertyName="properties.dtu")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty(PropertyName="properties.dtu")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -249,12 +245,11 @@
       </Docs>
     </Member>
     <Member MemberName="MaxObservedDtu">
-      <MemberSignature Language="C#" Value="public Nullable&lt;double&gt; MaxObservedDtu { get; }" />
+      <MemberSignature Language="C#" Value="public double? MaxObservedDtu { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;float64&gt; MaxObservedDtu" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Management.Sql.Models.RecommendedElasticPool.MaxObservedDtu" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property MaxObservedDtu As Nullable(Of Double)" />
       <MemberSignature Language="F#" Value="member this.MaxObservedDtu : Nullable&lt;double&gt;" Usage="Microsoft.Azure.Management.Sql.Models.RecommendedElasticPool.MaxObservedDtu" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Nullable&lt;double&gt; MaxObservedDtu { Nullable&lt;double&gt; get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Sql</AssemblyName>
@@ -262,7 +257,8 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="properties.maxObservedDtu")</AttributeName>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty(PropertyName="properties.maxObservedDtu")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty(PropertyName="properties.maxObservedDtu")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -277,12 +273,11 @@
       </Docs>
     </Member>
     <Member MemberName="MaxObservedStorageMB">
-      <MemberSignature Language="C#" Value="public Nullable&lt;double&gt; MaxObservedStorageMB { get; }" />
+      <MemberSignature Language="C#" Value="public double? MaxObservedStorageMB { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;float64&gt; MaxObservedStorageMB" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Management.Sql.Models.RecommendedElasticPool.MaxObservedStorageMB" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property MaxObservedStorageMB As Nullable(Of Double)" />
       <MemberSignature Language="F#" Value="member this.MaxObservedStorageMB : Nullable&lt;double&gt;" Usage="Microsoft.Azure.Management.Sql.Models.RecommendedElasticPool.MaxObservedStorageMB" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Nullable&lt;double&gt; MaxObservedStorageMB { Nullable&lt;double&gt; get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Sql</AssemblyName>
@@ -290,7 +285,8 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="properties.maxObservedStorageMB")</AttributeName>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty(PropertyName="properties.maxObservedStorageMB")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty(PropertyName="properties.maxObservedStorageMB")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -310,7 +306,6 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Management.Sql.Models.RecommendedElasticPool.Metrics" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Metrics As IList(Of RecommendedElasticPoolMetric)" />
       <MemberSignature Language="F#" Value="member this.Metrics : System.Collections.Generic.IList&lt;Microsoft.Azure.Management.Sql.Models.RecommendedElasticPoolMetric&gt;" Usage="Microsoft.Azure.Management.Sql.Models.RecommendedElasticPool.Metrics" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::Generic::IList&lt;Microsoft::Azure::Management::Sql::Models::RecommendedElasticPoolMetric ^&gt; ^ Metrics { System::Collections::Generic::IList&lt;Microsoft::Azure::Management::Sql::Models::RecommendedElasticPoolMetric ^&gt; ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Sql</AssemblyName>
@@ -318,7 +313,8 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="properties.metrics")</AttributeName>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty(PropertyName="properties.metrics")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty(PropertyName="properties.metrics")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -333,12 +329,11 @@
       </Docs>
     </Member>
     <Member MemberName="ObservationPeriodEnd">
-      <MemberSignature Language="C#" Value="public Nullable&lt;DateTime&gt; ObservationPeriodEnd { get; }" />
+      <MemberSignature Language="C#" Value="public DateTime? ObservationPeriodEnd { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;valuetype System.DateTime&gt; ObservationPeriodEnd" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Management.Sql.Models.RecommendedElasticPool.ObservationPeriodEnd" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ObservationPeriodEnd As Nullable(Of DateTime)" />
       <MemberSignature Language="F#" Value="member this.ObservationPeriodEnd : Nullable&lt;DateTime&gt;" Usage="Microsoft.Azure.Management.Sql.Models.RecommendedElasticPool.ObservationPeriodEnd" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Nullable&lt;DateTime&gt; ObservationPeriodEnd { Nullable&lt;DateTime&gt; get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Sql</AssemblyName>
@@ -346,7 +341,8 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="properties.observationPeriodEnd")</AttributeName>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty(PropertyName="properties.observationPeriodEnd")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty(PropertyName="properties.observationPeriodEnd")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -361,12 +357,11 @@
       </Docs>
     </Member>
     <Member MemberName="ObservationPeriodStart">
-      <MemberSignature Language="C#" Value="public Nullable&lt;DateTime&gt; ObservationPeriodStart { get; }" />
+      <MemberSignature Language="C#" Value="public DateTime? ObservationPeriodStart { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;valuetype System.DateTime&gt; ObservationPeriodStart" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Management.Sql.Models.RecommendedElasticPool.ObservationPeriodStart" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ObservationPeriodStart As Nullable(Of DateTime)" />
       <MemberSignature Language="F#" Value="member this.ObservationPeriodStart : Nullable&lt;DateTime&gt;" Usage="Microsoft.Azure.Management.Sql.Models.RecommendedElasticPool.ObservationPeriodStart" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Nullable&lt;DateTime&gt; ObservationPeriodStart { Nullable&lt;DateTime&gt; get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Sql</AssemblyName>
@@ -374,7 +369,8 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="properties.observationPeriodStart")</AttributeName>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty(PropertyName="properties.observationPeriodStart")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty(PropertyName="properties.observationPeriodStart")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -389,12 +385,11 @@
       </Docs>
     </Member>
     <Member MemberName="StorageMB">
-      <MemberSignature Language="C#" Value="public Nullable&lt;double&gt; StorageMB { get; set; }" />
+      <MemberSignature Language="C#" Value="public double? StorageMB { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;float64&gt; StorageMB" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Management.Sql.Models.RecommendedElasticPool.StorageMB" />
       <MemberSignature Language="VB.NET" Value="Public Property StorageMB As Nullable(Of Double)" />
       <MemberSignature Language="F#" Value="member this.StorageMB : Nullable&lt;double&gt; with get, set" Usage="Microsoft.Azure.Management.Sql.Models.RecommendedElasticPool.StorageMB" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Nullable&lt;double&gt; StorageMB { Nullable&lt;double&gt; get(); void set(Nullable&lt;double&gt; value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Sql</AssemblyName>
@@ -402,7 +397,8 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="properties.storageMB")</AttributeName>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty(PropertyName="properties.storageMB")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty(PropertyName="properties.storageMB")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>

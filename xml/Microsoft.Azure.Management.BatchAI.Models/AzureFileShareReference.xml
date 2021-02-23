@@ -1,14 +1,12 @@
-﻿<Type Name="AzureFileShareReference" FullName="Microsoft.Azure.Management.BatchAI.Models.AzureFileShareReference">
+<Type Name="AzureFileShareReference" FullName="Microsoft.Azure.Management.BatchAI.Models.AzureFileShareReference">
   <TypeSignature Language="C#" Value="public class AzureFileShareReference" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit AzureFileShareReference extends System.Object" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Azure.Management.BatchAI.Models.AzureFileShareReference" />
   <TypeSignature Language="VB.NET" Value="Public Class AzureFileShareReference" />
   <TypeSignature Language="F#" Value="type AzureFileShareReference = class" />
-  <TypeSignature Language="C++ CLI" Value="public ref class AzureFileShareReference" />
-  <TypeSignature Language="C++ WINRT" Value="[Windows::Foundation::Metadata::WebHostHidden]&#xA;class AzureFileShareReference" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Azure.Management.BatchAI</AssemblyName>
-    <AssemblyVersion>1.0.0.0</AssemblyVersion>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
@@ -16,7 +14,7 @@
   <Interfaces />
   <Docs>
     <summary>
-            Details of the Azure File Share to mount on the cluster.
+            Azure File Share mounting configuration.
             </summary>
     <remarks>To be added.</remarks>
   </Docs>
@@ -26,13 +24,10 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Management.BatchAI.Models.AzureFileShareReference.#ctor" />
       <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; AzureFileShareReference();" />
-      <MemberSignature Language="C++ CX" Value="public:&#xA; AzureFileShareReference();" />
-      <MemberSignature Language="C++ WINRT" Value=" AzureFileShareReference();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.BatchAI</AssemblyName>
-        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
@@ -43,16 +38,15 @@
       </Docs>
     </Member>
     <Member MemberName=".ctor">
-      <MemberSignature Language="C#" Value="public AzureFileShareReference (string accountName, string azureFileUrl, Microsoft.Azure.Management.BatchAI.Models.AzureStorageCredentialsInfo credentials, string relativeMountPath, string fileMode = null, string directoryMode = null);" />
+      <MemberSignature Language="C#" Value="public AzureFileShareReference (string accountName, string azureFileUrl, Microsoft.Azure.Management.BatchAI.Models.AzureStorageCredentialsInfo credentials, string relativeMountPath, string fileMode = default, string directoryMode = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string accountName, string azureFileUrl, class Microsoft.Azure.Management.BatchAI.Models.AzureStorageCredentialsInfo credentials, string relativeMountPath, string fileMode, string directoryMode) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Management.BatchAI.Models.AzureFileShareReference.#ctor(System.String,System.String,Microsoft.Azure.Management.BatchAI.Models.AzureStorageCredentialsInfo,System.String,System.String,System.String)" />
-      <MemberSignature Language="VB.NET" Value="Public Sub New (accountName As String, azureFileUrl As String, credentials As AzureStorageCredentialsInfo, relativeMountPath As String, Optional fileMode As String = null, Optional directoryMode As String = null)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (accountName As String, azureFileUrl As String, credentials As AzureStorageCredentialsInfo, relativeMountPath As String, Optional fileMode As String = Nothing, Optional directoryMode As String = Nothing)" />
       <MemberSignature Language="F#" Value="new Microsoft.Azure.Management.BatchAI.Models.AzureFileShareReference : string * string * Microsoft.Azure.Management.BatchAI.Models.AzureStorageCredentialsInfo * string * string * string -&gt; Microsoft.Azure.Management.BatchAI.Models.AzureFileShareReference" Usage="new Microsoft.Azure.Management.BatchAI.Models.AzureFileShareReference (accountName, azureFileUrl, credentials, relativeMountPath, fileMode, directoryMode)" />
-      <MemberSignature Language="C++ WINRT" Value=" AzureFileShareReference(std::wstring const &amp; accountName, std::wstring const &amp; azureFileUrl, Microsoft::Azure::Management::BatchAI::Models::AzureStorageCredentialsInfo const &amp; credentials, std::wstring const &amp; relativeMountPath, std::wstring const &amp; fileMode = null, std::wstring const &amp; directoryMode = null);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.BatchAI</AssemblyName>
-        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="accountName" Type="System.String" />
@@ -63,14 +57,12 @@
         <Parameter Name="directoryMode" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="accountName">Name of the storage account.</param>
-        <param name="azureFileUrl">URL to access the Azure File.</param>
-        <param name="credentials">Information of the Azure File
-            credentials.</param>
-        <param name="relativeMountPath">Specifies the relative path on the
-            compute node where the Azure file share will be mounted.</param>
-        <param name="fileMode">Specifies the file mode.</param>
-        <param name="directoryMode">Specifies the directory Mode.</param>
+        <param name="accountName">Account name.</param>
+        <param name="azureFileUrl">Azure File URL.</param>
+        <param name="credentials">Credentials.</param>
+        <param name="relativeMountPath">Relative mount path.</param>
+        <param name="fileMode">File mode.</param>
+        <param name="directoryMode">Directory mode.</param>
         <summary>
             Initializes a new instance of the AzureFileShareReference class.
             </summary>
@@ -83,16 +75,15 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Management.BatchAI.Models.AzureFileShareReference.AccountName" />
       <MemberSignature Language="VB.NET" Value="Public Property AccountName As String" />
       <MemberSignature Language="F#" Value="member this.AccountName : string with get, set" Usage="Microsoft.Azure.Management.BatchAI.Models.AzureFileShareReference.AccountName" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ AccountName { System::String ^ get(); void set(System::String ^ value); };" />
-      <MemberSignature Language="C++ CX" Value="public:&#xA; property Platform::String ^ AccountName { Platform::String ^ get(); void set(Platform::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.BatchAI</AssemblyName>
-        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="accountName")</AttributeName>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty(PropertyName="accountName")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty(PropertyName="accountName")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -100,10 +91,12 @@
       </ReturnValue>
       <Docs>
         <summary>
-            Gets or sets name of the storage account.
+            Gets or sets account name.
             </summary>
         <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <remarks>
+            Name of the Azure storage account.
+            </remarks>
       </Docs>
     </Member>
     <Member MemberName="AzureFileUrl">
@@ -112,16 +105,15 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Management.BatchAI.Models.AzureFileShareReference.AzureFileUrl" />
       <MemberSignature Language="VB.NET" Value="Public Property AzureFileUrl As String" />
       <MemberSignature Language="F#" Value="member this.AzureFileUrl : string with get, set" Usage="Microsoft.Azure.Management.BatchAI.Models.AzureFileShareReference.AzureFileUrl" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ AzureFileUrl { System::String ^ get(); void set(System::String ^ value); };" />
-      <MemberSignature Language="C++ CX" Value="public:&#xA; property Platform::String ^ AzureFileUrl { Platform::String ^ get(); void set(Platform::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.BatchAI</AssemblyName>
-        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="azureFileUrl")</AttributeName>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty(PropertyName="azureFileUrl")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty(PropertyName="azureFileUrl")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -129,10 +121,12 @@
       </ReturnValue>
       <Docs>
         <summary>
-            Gets or sets URL to access the Azure File.
+            Gets or sets azure File URL.
             </summary>
         <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <remarks>
+            URL to access the Azure File.
+            </remarks>
       </Docs>
     </Member>
     <Member MemberName="Credentials">
@@ -141,15 +135,15 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Management.BatchAI.Models.AzureFileShareReference.Credentials" />
       <MemberSignature Language="VB.NET" Value="Public Property Credentials As AzureStorageCredentialsInfo" />
       <MemberSignature Language="F#" Value="member this.Credentials : Microsoft.Azure.Management.BatchAI.Models.AzureStorageCredentialsInfo with get, set" Usage="Microsoft.Azure.Management.BatchAI.Models.AzureFileShareReference.Credentials" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Azure::Management::BatchAI::Models::AzureStorageCredentialsInfo ^ Credentials { Microsoft::Azure::Management::BatchAI::Models::AzureStorageCredentialsInfo ^ get(); void set(Microsoft::Azure::Management::BatchAI::Models::AzureStorageCredentialsInfo ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.BatchAI</AssemblyName>
-        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="credentials")</AttributeName>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty(PropertyName="credentials")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty(PropertyName="credentials")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -157,10 +151,12 @@
       </ReturnValue>
       <Docs>
         <summary>
-            Gets or sets information of the Azure File credentials.
+            Gets or sets credentials.
             </summary>
         <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <remarks>
+            Information about the Azure storage credentials.
+            </remarks>
       </Docs>
     </Member>
     <Member MemberName="DirectoryMode">
@@ -169,16 +165,15 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Management.BatchAI.Models.AzureFileShareReference.DirectoryMode" />
       <MemberSignature Language="VB.NET" Value="Public Property DirectoryMode As String" />
       <MemberSignature Language="F#" Value="member this.DirectoryMode : string with get, set" Usage="Microsoft.Azure.Management.BatchAI.Models.AzureFileShareReference.DirectoryMode" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ DirectoryMode { System::String ^ get(); void set(System::String ^ value); };" />
-      <MemberSignature Language="C++ CX" Value="public:&#xA; property Platform::String ^ DirectoryMode { Platform::String ^ get(); void set(Platform::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.BatchAI</AssemblyName>
-        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="directoryMode")</AttributeName>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty(PropertyName="directoryMode")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty(PropertyName="directoryMode")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -186,11 +181,12 @@
       </ReturnValue>
       <Docs>
         <summary>
-            Gets or sets specifies the directory Mode.
+            Gets or sets directory mode.
             </summary>
         <value>To be added.</value>
         <remarks>
-            Default value is 0777. Valid only if OS is linux.
+            File mode for directories on the mounted file share. Default value:
+            0777.
             </remarks>
       </Docs>
     </Member>
@@ -200,16 +196,15 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Management.BatchAI.Models.AzureFileShareReference.FileMode" />
       <MemberSignature Language="VB.NET" Value="Public Property FileMode As String" />
       <MemberSignature Language="F#" Value="member this.FileMode : string with get, set" Usage="Microsoft.Azure.Management.BatchAI.Models.AzureFileShareReference.FileMode" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ FileMode { System::String ^ get(); void set(System::String ^ value); };" />
-      <MemberSignature Language="C++ CX" Value="public:&#xA; property Platform::String ^ FileMode { Platform::String ^ get(); void set(Platform::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.BatchAI</AssemblyName>
-        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="fileMode")</AttributeName>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty(PropertyName="fileMode")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty(PropertyName="fileMode")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -217,11 +212,11 @@
       </ReturnValue>
       <Docs>
         <summary>
-            Gets or sets specifies the file mode.
+            Gets or sets file mode.
             </summary>
         <value>To be added.</value>
         <remarks>
-            Default value is 0777. Valid only if OS is linux.
+            File mode for files on the mounted file share. Default value: 0777.
             </remarks>
       </Docs>
     </Member>
@@ -231,16 +226,15 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Management.BatchAI.Models.AzureFileShareReference.RelativeMountPath" />
       <MemberSignature Language="VB.NET" Value="Public Property RelativeMountPath As String" />
       <MemberSignature Language="F#" Value="member this.RelativeMountPath : string with get, set" Usage="Microsoft.Azure.Management.BatchAI.Models.AzureFileShareReference.RelativeMountPath" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ RelativeMountPath { System::String ^ get(); void set(System::String ^ value); };" />
-      <MemberSignature Language="C++ CX" Value="public:&#xA; property Platform::String ^ RelativeMountPath { Platform::String ^ get(); void set(Platform::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.BatchAI</AssemblyName>
-        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="relativeMountPath")</AttributeName>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty(PropertyName="relativeMountPath")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty(PropertyName="relativeMountPath")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -248,14 +242,14 @@
       </ReturnValue>
       <Docs>
         <summary>
-            Gets or sets specifies the relative path on the compute node where
-            the Azure file share will be mounted.
+            Gets or sets relative mount path.
             </summary>
         <value>To be added.</value>
         <remarks>
-            Note that all cluster level file shares will be mounted under
-            $AZ_BATCHAI_MOUNT_ROOT location and all job level file shares will
-            be mounted under $AZ_BATCHAI_JOB_MOUNT_ROOT.
+            The relative path on the compute node where the Azure File share
+            will be mounted. Note that all cluster level file shares will be
+            mounted under $AZ_BATCHAI_MOUNT_ROOT location and all job level
+            file shares will be mounted under $AZ_BATCHAI_JOB_MOUNT_ROOT.
             </remarks>
       </Docs>
     </Member>
@@ -265,13 +259,10 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Management.BatchAI.Models.AzureFileShareReference.Validate" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Sub Validate ()" />
       <MemberSignature Language="F#" Value="abstract member Validate : unit -&gt; unit&#xA;override this.Validate : unit -&gt; unit" Usage="azureFileShareReference.Validate " />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Validate();" />
-      <MemberSignature Language="C++ CX" Value="public:&#xA; virtual void Validate();" />
-      <MemberSignature Language="C++ WINRT" Value=" virtual void Validate();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.BatchAI</AssemblyName>
-        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>

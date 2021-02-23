@@ -1,24 +1,20 @@
-﻿<Type Name="KvsActorStateProvider" FullName="Microsoft.ServiceFabric.Actors.Runtime.KvsActorStateProvider">
+<Type Name="KvsActorStateProvider" FullName="Microsoft.ServiceFabric.Actors.Runtime.KvsActorStateProvider">
   <TypeSignature Language="C#" Value="public sealed class KvsActorStateProvider : Microsoft.ServiceFabric.Actors.Runtime.KvsActorStateProviderBase" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit KvsActorStateProvider extends Microsoft.ServiceFabric.Actors.Runtime.KvsActorStateProviderBase" />
   <TypeSignature Language="DocId" Value="T:Microsoft.ServiceFabric.Actors.Runtime.KvsActorStateProvider" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class KvsActorStateProvider&#xA;Inherits KvsActorStateProviderBase" />
   <TypeSignature Language="F#" Value="type KvsActorStateProvider = class&#xA;    inherit KvsActorStateProviderBase" />
-  <TypeSignature Language="C++ CLI" Value="public ref class KvsActorStateProvider sealed : Microsoft::ServiceFabric::Actors::Runtime::KvsActorStateProviderBase" />
-  <TypeSignature Language="C++ CX" Value="public ref class KvsActorStateProvider sealed : Microsoft::ServiceFabric::Actors::Runtime::KvsActorStateProviderBase" />
-  <TypeSignature Language="C++ WINRT" Value="class KvsActorStateProvider sealed : Microsoft::ServiceFabric::Actors::Runtime::KvsActorStateProviderBase" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.ServiceFabric.Actors</AssemblyName>
     <AssemblyVersion>6.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
-    <BaseTypeName>System.Object</BaseTypeName>
-    <BaseTypeName FrameworkAlternate="azure-dotnet">Microsoft.ServiceFabric.Actors.Runtime.KvsActorStateProviderBase</BaseTypeName>
+    <BaseTypeName>Microsoft.ServiceFabric.Actors.Runtime.KvsActorStateProviderBase</BaseTypeName>
   </Base>
-  <Interfaces></Interfaces>
+  <Interfaces />
   <Docs>
     <summary>
-            Provides an implementation of <see cref="T:Microsoft.ServiceFabric.Actors.Runtime.IActorStateProvider" /> which 
+            Provides an implementation of <see cref="T:Microsoft.ServiceFabric.Actors.Runtime.IActorStateProvider" /> which
             uses <see cref="T:System.Fabric.KeyValueStoreReplica" /> to store and persist the actor state.
             </summary>
     <remarks>To be added.</remarks>
@@ -29,9 +25,6 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.ServiceFabric.Actors.Runtime.KvsActorStateProvider.#ctor" />
       <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; KvsActorStateProvider();" />
-      <MemberSignature Language="C++ CX" Value="public:&#xA; KvsActorStateProvider();" />
-      <MemberSignature Language="C++ WINRT" Value=" KvsActorStateProvider();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.ServiceFabric.Actors</AssemblyName>
@@ -40,6 +33,7 @@
       <Parameters />
       <Docs>
         <summary>
+            Initializes a new instance of the <see cref="T:Microsoft.ServiceFabric.Actors.Runtime.KvsActorStateProvider" /> class.
             Creates an instance of <see cref="T:Microsoft.ServiceFabric.Actors.Runtime.KvsActorStateProvider" /> with default settings.
             </summary>
         <remarks>To be added.</remarks>
@@ -51,9 +45,6 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.ServiceFabric.Actors.Runtime.KvsActorStateProvider.#ctor(System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (enableIncrementalBackup As Boolean)" />
       <MemberSignature Language="F#" Value="new Microsoft.ServiceFabric.Actors.Runtime.KvsActorStateProvider : bool -&gt; Microsoft.ServiceFabric.Actors.Runtime.KvsActorStateProvider" Usage="new Microsoft.ServiceFabric.Actors.Runtime.KvsActorStateProvider enableIncrementalBackup" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; KvsActorStateProvider(bool enableIncrementalBackup);" />
-      <MemberSignature Language="C++ CX" Value="public:&#xA; KvsActorStateProvider(bool enableIncrementalBackup);" />
-      <MemberSignature Language="C++ WINRT" Value=" KvsActorStateProvider(bool enableIncrementalBackup);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.ServiceFabric.Actors</AssemblyName>
@@ -68,7 +59,7 @@
             This sets the <see cref="P:System.Fabric.LocalEseStoreSettings.EnableIncrementalBackup" /> setting.
             </param>
         <summary>
-            Creates an instance of <see cref="T:Microsoft.ServiceFabric.Actors.Runtime.KvsActorStateProvider" /> with specified settings.
+            Initializes a new instance of the <see cref="T:Microsoft.ServiceFabric.Actors.Runtime.KvsActorStateProvider" /> class with specified settings.
             </summary>
         <remarks>To be added.</remarks>
       </Docs>
@@ -79,9 +70,6 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.ServiceFabric.Actors.Runtime.KvsActorStateProvider.#ctor(System.Boolean,System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (enableIncrementalBackup As Boolean, logTruncationIntervalInMinutes As Integer)" />
       <MemberSignature Language="F#" Value="new Microsoft.ServiceFabric.Actors.Runtime.KvsActorStateProvider : bool * int -&gt; Microsoft.ServiceFabric.Actors.Runtime.KvsActorStateProvider" Usage="new Microsoft.ServiceFabric.Actors.Runtime.KvsActorStateProvider (enableIncrementalBackup, logTruncationIntervalInMinutes)" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; KvsActorStateProvider(bool enableIncrementalBackup, int logTruncationIntervalInMinutes);" />
-      <MemberSignature Language="C++ CX" Value="public:&#xA; KvsActorStateProvider(bool enableIncrementalBackup, int logTruncationIntervalInMinutes);" />
-      <MemberSignature Language="C++ WINRT" Value=" KvsActorStateProvider(bool enableIncrementalBackup, int logTruncationIntervalInMinutes);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.ServiceFabric.Actors</AssemblyName>
@@ -100,7 +88,7 @@
             Indicates the interval after which <see cref="T:System.Fabric.KeyValueStoreReplica" /> tries to truncate local store logs.
             </param>
         <summary>
-            Creates an instance of <see cref="T:Microsoft.ServiceFabric.Actors.Runtime.KvsActorStateProvider" /> with specified settings.
+            Initializes a new instance of the <see cref="T:Microsoft.ServiceFabric.Actors.Runtime.KvsActorStateProvider" /> class with specified settings.
             </summary>
         <remarks>
             When an incremental backup is enabled for <see cref="T:System.Fabric.KeyValueStoreReplica" />, it does not use circular buffer
@@ -112,9 +100,10 @@
       </Docs>
     </Member>
     <Member MemberName=".ctor">
-      <MemberSignature Language="C#" Value="public KvsActorStateProvider (System.Fabric.ReplicatorSettings replicatorSettings = null, System.Fabric.LocalStoreSettings localStoreSettings = null);" />
+      <MemberSignature Language="C#" Value="public KvsActorStateProvider (System.Fabric.ReplicatorSettings replicatorSettings = default, System.Fabric.LocalStoreSettings localStoreSettings = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Fabric.ReplicatorSettings replicatorSettings, class System.Fabric.LocalStoreSettings localStoreSettings) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.ServiceFabric.Actors.Runtime.KvsActorStateProvider.#ctor(System.Fabric.ReplicatorSettings,System.Fabric.LocalStoreSettings)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (Optional replicatorSettings As ReplicatorSettings = Nothing, Optional localStoreSettings As LocalStoreSettings = Nothing)" />
       <MemberSignature Language="F#" Value="new Microsoft.ServiceFabric.Actors.Runtime.KvsActorStateProvider : System.Fabric.ReplicatorSettings * System.Fabric.LocalStoreSettings -&gt; Microsoft.ServiceFabric.Actors.Runtime.KvsActorStateProvider" Usage="new Microsoft.ServiceFabric.Actors.Runtime.KvsActorStateProvider (replicatorSettings, localStoreSettings)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
@@ -133,8 +122,8 @@
             A <see cref="T:System.Fabric.LocalStoreSettings" /> that describes local key value store settings.
             </param>
         <summary>
-            Creates an instance of <see cref="T:Microsoft.ServiceFabric.Actors.Runtime.KvsActorStateProvider" /> with specified
-            replicator and local key-value store settings.
+            Initializes a new instance of the <see cref="T:Microsoft.ServiceFabric.Actors.Runtime.KvsActorStateProvider" /> class
+            with specified replicator and local key-value store settings.
             </summary>
         <remarks>To be added.</remarks>
       </Docs>

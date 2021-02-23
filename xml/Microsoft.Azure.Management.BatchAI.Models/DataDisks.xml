@@ -1,14 +1,12 @@
-﻿<Type Name="DataDisks" FullName="Microsoft.Azure.Management.BatchAI.Models.DataDisks">
+<Type Name="DataDisks" FullName="Microsoft.Azure.Management.BatchAI.Models.DataDisks">
   <TypeSignature Language="C#" Value="public class DataDisks" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit DataDisks extends System.Object" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Azure.Management.BatchAI.Models.DataDisks" />
   <TypeSignature Language="VB.NET" Value="Public Class DataDisks" />
   <TypeSignature Language="F#" Value="type DataDisks = class" />
-  <TypeSignature Language="C++ CLI" Value="public ref class DataDisks" />
-  <TypeSignature Language="C++ WINRT" Value="[Windows::Foundation::Metadata::WebHostHidden]&#xA;class DataDisks" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Azure.Management.BatchAI</AssemblyName>
-    <AssemblyVersion>1.0.0.0</AssemblyVersion>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
@@ -16,7 +14,7 @@
   <Interfaces />
   <Docs>
     <summary>
-            Settings for the data disk which would be created for the File Server.
+            Data disks settings.
             </summary>
     <remarks>To be added.</remarks>
   </Docs>
@@ -26,13 +24,10 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Management.BatchAI.Models.DataDisks.#ctor" />
       <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; DataDisks();" />
-      <MemberSignature Language="C++ CX" Value="public:&#xA; DataDisks();" />
-      <MemberSignature Language="C++ WINRT" Value=" DataDisks();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.BatchAI</AssemblyName>
-        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
@@ -43,15 +38,15 @@
       </Docs>
     </Member>
     <Member MemberName=".ctor">
-      <MemberSignature Language="C#" Value="public DataDisks (int diskSizeInGB, int diskCount, string storageAccountType, Nullable&lt;Microsoft.Azure.Management.BatchAI.Models.CachingType&gt; cachingType = null);" />
+      <MemberSignature Language="C#" Value="public DataDisks (int diskSizeInGB, int diskCount, string storageAccountType, Microsoft.Azure.Management.BatchAI.Models.CachingType? cachingType = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(int32 diskSizeInGB, int32 diskCount, string storageAccountType, valuetype System.Nullable`1&lt;valuetype Microsoft.Azure.Management.BatchAI.Models.CachingType&gt; cachingType) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Management.BatchAI.Models.DataDisks.#ctor(System.Int32,System.Int32,System.String,System.Nullable{Microsoft.Azure.Management.BatchAI.Models.CachingType})" />
-      <MemberSignature Language="VB.NET" Value="Public Sub New (diskSizeInGB As Integer, diskCount As Integer, storageAccountType As String, Optional cachingType As Nullable(Of CachingType) = null)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (diskSizeInGB As Integer, diskCount As Integer, storageAccountType As String, Optional cachingType As Nullable(Of CachingType) = Nothing)" />
       <MemberSignature Language="F#" Value="new Microsoft.Azure.Management.BatchAI.Models.DataDisks : int * int * string * Nullable&lt;Microsoft.Azure.Management.BatchAI.Models.CachingType&gt; -&gt; Microsoft.Azure.Management.BatchAI.Models.DataDisks" Usage="new Microsoft.Azure.Management.BatchAI.Models.DataDisks (diskSizeInGB, diskCount, storageAccountType, cachingType)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.BatchAI</AssemblyName>
-        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="diskSizeInGB" Type="System.Int32" />
@@ -60,17 +55,10 @@
         <Parameter Name="cachingType" Type="System.Nullable&lt;Microsoft.Azure.Management.BatchAI.Models.CachingType&gt;" />
       </Parameters>
       <Docs>
-        <param name="diskSizeInGB">Initial disk size in GB for blank data
-            disks, and the new desired size for resizing existing data
-            disks.</param>
-        <param name="diskCount">Number of data disks to be attached to the
-            VM. RAID level 0 will be applied in the case of multiple
-            disks.</param>
-        <param name="storageAccountType">Specifies the type of storage
-            account to be used on the disk. Possible values are: Standard_LRS
-            or Premium_LRS.</param>
-        <param name="cachingType">None, ReadOnly, ReadWrite. Default value
-            is None. This property is not patchable.</param>
+        <param name="diskSizeInGB">Disk size in GB.</param>
+        <param name="diskCount">Number of data disks.</param>
+        <param name="storageAccountType">Storage account type.</param>
+        <param name="cachingType">Caching type.</param>
         <summary>
             Initializes a new instance of the DataDisks class.
             </summary>
@@ -78,20 +66,20 @@
       </Docs>
     </Member>
     <Member MemberName="CachingType">
-      <MemberSignature Language="C#" Value="public Nullable&lt;Microsoft.Azure.Management.BatchAI.Models.CachingType&gt; CachingType { get; set; }" />
+      <MemberSignature Language="C#" Value="public Microsoft.Azure.Management.BatchAI.Models.CachingType? CachingType { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;valuetype Microsoft.Azure.Management.BatchAI.Models.CachingType&gt; CachingType" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Management.BatchAI.Models.DataDisks.CachingType" />
       <MemberSignature Language="VB.NET" Value="Public Property CachingType As Nullable(Of CachingType)" />
       <MemberSignature Language="F#" Value="member this.CachingType : Nullable&lt;Microsoft.Azure.Management.BatchAI.Models.CachingType&gt; with get, set" Usage="Microsoft.Azure.Management.BatchAI.Models.DataDisks.CachingType" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Nullable&lt;Microsoft::Azure::Management::BatchAI::Models::CachingType&gt; CachingType { Nullable&lt;Microsoft::Azure::Management::BatchAI::Models::CachingType&gt; get(); void set(Nullable&lt;Microsoft::Azure::Management::BatchAI::Models::CachingType&gt; value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.BatchAI</AssemblyName>
-        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="cachingType")</AttributeName>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty(PropertyName="cachingType")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty(PropertyName="cachingType")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -99,12 +87,14 @@
       </ReturnValue>
       <Docs>
         <summary>
-            Gets or sets none, ReadOnly, ReadWrite. Default value is None. This
-            property is not patchable.
+            Gets or sets caching type.
             </summary>
         <value>To be added.</value>
         <remarks>
-            Possible values include: 'none', 'readonly', 'readwrite'
+            Caching type for the disks. Available values are none (default),
+            readonly, readwrite. Caching type can be set only for VM sizes
+            supporting premium storage. Possible values include: 'none',
+            'readonly', 'readwrite'
             </remarks>
       </Docs>
     </Member>
@@ -114,16 +104,15 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Management.BatchAI.Models.DataDisks.DiskCount" />
       <MemberSignature Language="VB.NET" Value="Public Property DiskCount As Integer" />
       <MemberSignature Language="F#" Value="member this.DiskCount : int with get, set" Usage="Microsoft.Azure.Management.BatchAI.Models.DataDisks.DiskCount" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int DiskCount { int get(); void set(int value); };" />
-      <MemberSignature Language="C++ CX" Value="public:&#xA; property int DiskCount { int get(); void set(int value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.BatchAI</AssemblyName>
-        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="diskCount")</AttributeName>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty(PropertyName="diskCount")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty(PropertyName="diskCount")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -131,11 +120,13 @@
       </ReturnValue>
       <Docs>
         <summary>
-            Gets or sets number of data disks to be attached to the VM. RAID
-            level 0 will be applied in the case of multiple disks.
+            Gets or sets number of data disks.
             </summary>
         <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <remarks>
+            Number of data disks attached to the File Server. If multiple disks
+            attached, they will be configured in RAID level 0.
+            </remarks>
       </Docs>
     </Member>
     <Member MemberName="DiskSizeInGB">
@@ -144,16 +135,15 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Management.BatchAI.Models.DataDisks.DiskSizeInGB" />
       <MemberSignature Language="VB.NET" Value="Public Property DiskSizeInGB As Integer" />
       <MemberSignature Language="F#" Value="member this.DiskSizeInGB : int with get, set" Usage="Microsoft.Azure.Management.BatchAI.Models.DataDisks.DiskSizeInGB" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int DiskSizeInGB { int get(); void set(int value); };" />
-      <MemberSignature Language="C++ CX" Value="public:&#xA; property int DiskSizeInGB { int get(); void set(int value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.BatchAI</AssemblyName>
-        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="diskSizeInGB")</AttributeName>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty(PropertyName="diskSizeInGB")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty(PropertyName="diskSizeInGB")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -161,11 +151,12 @@
       </ReturnValue>
       <Docs>
         <summary>
-            Gets or sets initial disk size in GB for blank data disks, and the
-            new desired size for resizing existing data disks.
+            Gets or sets disk size in GB.
             </summary>
         <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <remarks>
+            Disk size in GB for the blank data disks.
+            </remarks>
       </Docs>
     </Member>
     <Member MemberName="StorageAccountType">
@@ -174,16 +165,15 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Management.BatchAI.Models.DataDisks.StorageAccountType" />
       <MemberSignature Language="VB.NET" Value="Public Property StorageAccountType As String" />
       <MemberSignature Language="F#" Value="member this.StorageAccountType : string with get, set" Usage="Microsoft.Azure.Management.BatchAI.Models.DataDisks.StorageAccountType" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ StorageAccountType { System::String ^ get(); void set(System::String ^ value); };" />
-      <MemberSignature Language="C++ CX" Value="public:&#xA; property Platform::String ^ StorageAccountType { Platform::String ^ get(); void set(Platform::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.BatchAI</AssemblyName>
-        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="storageAccountType")</AttributeName>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty(PropertyName="storageAccountType")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty(PropertyName="storageAccountType")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -191,12 +181,14 @@
       </ReturnValue>
       <Docs>
         <summary>
-            Gets or sets specifies the type of storage account to be used on
-            the disk. Possible values are: Standard_LRS or Premium_LRS.
+            Gets or sets storage account type.
             </summary>
         <value>To be added.</value>
         <remarks>
-            Possible values include: 'Standard_LRS', 'Premium_LRS'
+            Type of storage account to be used on the disk. Possible values
+            are: Standard_LRS or Premium_LRS. Premium storage account type can
+            only be used with VM sizes supporting premium storage. Possible
+            values include: 'Standard_LRS', 'Premium_LRS'
             </remarks>
       </Docs>
     </Member>
@@ -206,13 +198,10 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Management.BatchAI.Models.DataDisks.Validate" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Sub Validate ()" />
       <MemberSignature Language="F#" Value="abstract member Validate : unit -&gt; unit&#xA;override this.Validate : unit -&gt; unit" Usage="dataDisks.Validate " />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Validate();" />
-      <MemberSignature Language="C++ CX" Value="public:&#xA; virtual void Validate();" />
-      <MemberSignature Language="C++ WINRT" Value=" virtual void Validate();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.BatchAI</AssemblyName>
-        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>

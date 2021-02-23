@@ -1,22 +1,21 @@
-﻿<Type Name="AmazonRedshiftSource" FullName="Microsoft.Azure.Management.DataFactory.Models.AmazonRedshiftSource">
-  <TypeSignature Language="C#" Value="public class AmazonRedshiftSource : Microsoft.Azure.Management.DataFactory.Models.CopySource" />
-  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit AmazonRedshiftSource extends Microsoft.Azure.Management.DataFactory.Models.CopySource" />
+<Type Name="AmazonRedshiftSource" FullName="Microsoft.Azure.Management.DataFactory.Models.AmazonRedshiftSource">
+  <TypeSignature Language="C#" Value="public class AmazonRedshiftSource : Microsoft.Azure.Management.DataFactory.Models.TabularSource" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit AmazonRedshiftSource extends Microsoft.Azure.Management.DataFactory.Models.TabularSource" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Azure.Management.DataFactory.Models.AmazonRedshiftSource" />
-  <TypeSignature Language="VB.NET" Value="Public Class AmazonRedshiftSource&#xA;Inherits CopySource" />
-  <TypeSignature Language="F#" Value="type AmazonRedshiftSource = class&#xA;    inherit CopySource" />
-  <TypeSignature Language="C++ CLI" Value="public ref class AmazonRedshiftSource : Microsoft::Azure::Management::DataFactory::Models::CopySource" />
-  <TypeSignature Language="C++ WINRT" Value="[Windows::Foundation::Metadata::WebHostHidden]&#xA;class AmazonRedshiftSource : Microsoft::Azure::Management::DataFactory::Models::CopySource" />
+  <TypeSignature Language="VB.NET" Value="Public Class AmazonRedshiftSource&#xA;Inherits TabularSource" />
+  <TypeSignature Language="F#" Value="type AmazonRedshiftSource = class&#xA;    inherit TabularSource" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Azure.Management.DataFactory</AssemblyName>
-    <AssemblyVersion>0.2.0.0</AssemblyVersion>
-    <AssemblyVersion>0.3.0.0</AssemblyVersion>
-    <AssemblyVersion>0.4.0.0</AssemblyVersion>
-    <AssemblyVersion>0.5.0.0</AssemblyVersion>
-    <AssemblyVersion>0.6.0.0</AssemblyVersion>
-    <AssemblyVersion>0.7.0.0</AssemblyVersion>
+    <AssemblyVersion>4.3.0.0</AssemblyVersion>
+    <AssemblyVersion>4.9.0.0</AssemblyVersion>
+    <AssemblyVersion>4.10.0.0</AssemblyVersion>
+    <AssemblyVersion>4.11.0.0</AssemblyVersion>
+    <AssemblyVersion>4.12.0.0</AssemblyVersion>
+    <AssemblyVersion>4.13.0.0</AssemblyVersion>
+    <AssemblyVersion>4.14.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
-    <BaseTypeName>Microsoft.Azure.Management.DataFactory.Models.CopySource</BaseTypeName>
+    <BaseTypeName>Microsoft.Azure.Management.DataFactory.Models.TabularSource</BaseTypeName>
   </Base>
   <Interfaces />
   <Docs>
@@ -31,18 +30,16 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Management.DataFactory.Models.AmazonRedshiftSource.#ctor" />
       <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; AmazonRedshiftSource();" />
-      <MemberSignature Language="C++ CX" Value="public:&#xA; AmazonRedshiftSource();" />
-      <MemberSignature Language="C++ WINRT" Value=" AmazonRedshiftSource();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.DataFactory</AssemblyName>
-        <AssemblyVersion>0.2.0.0</AssemblyVersion>
-        <AssemblyVersion>0.3.0.0</AssemblyVersion>
-        <AssemblyVersion>0.4.0.0</AssemblyVersion>
-        <AssemblyVersion>0.5.0.0</AssemblyVersion>
-        <AssemblyVersion>0.6.0.0</AssemblyVersion>
-        <AssemblyVersion>0.7.0.0</AssemblyVersion>
+        <AssemblyVersion>4.3.0.0</AssemblyVersion>
+        <AssemblyVersion>4.9.0.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
+        <AssemblyVersion>4.11.0.0</AssemblyVersion>
+        <AssemblyVersion>4.12.0.0</AssemblyVersion>
+        <AssemblyVersion>4.13.0.0</AssemblyVersion>
+        <AssemblyVersion>4.14.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
@@ -53,23 +50,29 @@
       </Docs>
     </Member>
     <Member MemberName=".ctor">
-      <MemberSignature Language="C#" Value="public AmazonRedshiftSource (System.Collections.Generic.IDictionary&lt;string,object&gt; additionalProperties = null, object sourceRetryCount = null, object sourceRetryWait = null, object query = null, Microsoft.Azure.Management.DataFactory.Models.RedshiftUnloadSettings redshiftUnloadSettings = null);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Collections.Generic.IDictionary`2&lt;string, object&gt; additionalProperties, object sourceRetryCount, object sourceRetryWait, object query, class Microsoft.Azure.Management.DataFactory.Models.RedshiftUnloadSettings redshiftUnloadSettings) cil managed" />
-      <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Management.DataFactory.Models.AmazonRedshiftSource.#ctor(System.Collections.Generic.IDictionary{System.String,System.Object},System.Object,System.Object,System.Object,Microsoft.Azure.Management.DataFactory.Models.RedshiftUnloadSettings)" />
-      <MemberSignature Language="F#" Value="new Microsoft.Azure.Management.DataFactory.Models.AmazonRedshiftSource : System.Collections.Generic.IDictionary&lt;string, obj&gt; * obj * obj * obj * Microsoft.Azure.Management.DataFactory.Models.RedshiftUnloadSettings -&gt; Microsoft.Azure.Management.DataFactory.Models.AmazonRedshiftSource" Usage="new Microsoft.Azure.Management.DataFactory.Models.AmazonRedshiftSource (additionalProperties, sourceRetryCount, sourceRetryWait, query, redshiftUnloadSettings)" />
+      <MemberSignature Language="C#" Value="public AmazonRedshiftSource (System.Collections.Generic.IDictionary&lt;string,object&gt; additionalProperties = default, object sourceRetryCount = default, object sourceRetryWait = default, object maxConcurrentConnections = default, object queryTimeout = default, System.Collections.Generic.IList&lt;Microsoft.Azure.Management.DataFactory.Models.AdditionalColumns&gt; additionalColumns = default, object query = default, Microsoft.Azure.Management.DataFactory.Models.RedshiftUnloadSettings redshiftUnloadSettings = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Collections.Generic.IDictionary`2&lt;string, object&gt; additionalProperties, object sourceRetryCount, object sourceRetryWait, object maxConcurrentConnections, object queryTimeout, class System.Collections.Generic.IList`1&lt;class Microsoft.Azure.Management.DataFactory.Models.AdditionalColumns&gt; additionalColumns, object query, class Microsoft.Azure.Management.DataFactory.Models.RedshiftUnloadSettings redshiftUnloadSettings) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Management.DataFactory.Models.AmazonRedshiftSource.#ctor(System.Collections.Generic.IDictionary{System.String,System.Object},System.Object,System.Object,System.Object,System.Object,System.Collections.Generic.IList{Microsoft.Azure.Management.DataFactory.Models.AdditionalColumns},System.Object,Microsoft.Azure.Management.DataFactory.Models.RedshiftUnloadSettings)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (Optional additionalProperties As IDictionary(Of String, Object) = Nothing, Optional sourceRetryCount As Object = Nothing, Optional sourceRetryWait As Object = Nothing, Optional maxConcurrentConnections As Object = Nothing, Optional queryTimeout As Object = Nothing, Optional additionalColumns As IList(Of AdditionalColumns) = Nothing, Optional query As Object = Nothing, Optional redshiftUnloadSettings As RedshiftUnloadSettings = Nothing)" />
+      <MemberSignature Language="F#" Value="new Microsoft.Azure.Management.DataFactory.Models.AmazonRedshiftSource : System.Collections.Generic.IDictionary&lt;string, obj&gt; * obj * obj * obj * obj * System.Collections.Generic.IList&lt;Microsoft.Azure.Management.DataFactory.Models.AdditionalColumns&gt; * obj * Microsoft.Azure.Management.DataFactory.Models.RedshiftUnloadSettings -&gt; Microsoft.Azure.Management.DataFactory.Models.AmazonRedshiftSource" Usage="new Microsoft.Azure.Management.DataFactory.Models.AmazonRedshiftSource (additionalProperties, sourceRetryCount, sourceRetryWait, maxConcurrentConnections, queryTimeout, additionalColumns, query, redshiftUnloadSettings)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.DataFactory</AssemblyName>
-        <AssemblyVersion>0.3.0.0</AssemblyVersion>
-        <AssemblyVersion>0.4.0.0</AssemblyVersion>
-        <AssemblyVersion>0.5.0.0</AssemblyVersion>
-        <AssemblyVersion>0.6.0.0</AssemblyVersion>
-        <AssemblyVersion>0.7.0.0</AssemblyVersion>
+        <AssemblyVersion>4.3.0.0</AssemblyVersion>
+        <AssemblyVersion>4.9.0.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
+        <AssemblyVersion>4.11.0.0</AssemblyVersion>
+        <AssemblyVersion>4.12.0.0</AssemblyVersion>
+        <AssemblyVersion>4.13.0.0</AssemblyVersion>
+        <AssemblyVersion>4.14.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="additionalProperties" Type="System.Collections.Generic.IDictionary&lt;System.String,System.Object&gt;" />
         <Parameter Name="sourceRetryCount" Type="System.Object" />
         <Parameter Name="sourceRetryWait" Type="System.Object" />
+        <Parameter Name="maxConcurrentConnections" Type="System.Object" />
+        <Parameter Name="queryTimeout" Type="System.Object" />
+        <Parameter Name="additionalColumns" Type="System.Collections.Generic.IList&lt;Microsoft.Azure.Management.DataFactory.Models.AdditionalColumns&gt;" />
         <Parameter Name="query" Type="System.Object" />
         <Parameter Name="redshiftUnloadSettings" Type="Microsoft.Azure.Management.DataFactory.Models.RedshiftUnloadSettings" />
       </Parameters>
@@ -81,6 +84,15 @@
         <param name="sourceRetryWait">Source retry wait. Type: string (or
             Expression with resultType string), pattern:
             ((\d+)\.)?(\d\d):(60|([0-5][0-9])):(60|([0-5][0-9])).</param>
+        <param name="maxConcurrentConnections">The maximum concurrent
+            connection count for the source data store. Type: integer (or
+            Expression with resultType integer).</param>
+        <param name="queryTimeout">Query timeout. Type: string (or
+            Expression with resultType string), pattern:
+            ((\d+)\.)?(\d\d):(60|([0-5][0-9])):(60|([0-5][0-9])).</param>
+        <param name="additionalColumns">Specifies the additional columns to
+            be added to source data. Type: array of objects (or Expression with
+            resultType array of objects).</param>
         <param name="query">Database query. Type: string (or Expression
             with resultType string).</param>
         <param name="redshiftUnloadSettings">The Amazon S3 settings needed
@@ -100,21 +112,21 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Management.DataFactory.Models.AmazonRedshiftSource.Query" />
       <MemberSignature Language="VB.NET" Value="Public Property Query As Object" />
       <MemberSignature Language="F#" Value="member this.Query : obj with get, set" Usage="Microsoft.Azure.Management.DataFactory.Models.AmazonRedshiftSource.Query" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ Query { System::Object ^ get(); void set(System::Object ^ value); };" />
-      <MemberSignature Language="C++ CX" Value="public:&#xA; property Platform::Object ^ Query { Platform::Object ^ get(); void set(Platform::Object ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.DataFactory</AssemblyName>
-        <AssemblyVersion>0.2.0.0</AssemblyVersion>
-        <AssemblyVersion>0.3.0.0</AssemblyVersion>
-        <AssemblyVersion>0.4.0.0</AssemblyVersion>
-        <AssemblyVersion>0.5.0.0</AssemblyVersion>
-        <AssemblyVersion>0.6.0.0</AssemblyVersion>
-        <AssemblyVersion>0.7.0.0</AssemblyVersion>
+        <AssemblyVersion>4.3.0.0</AssemblyVersion>
+        <AssemblyVersion>4.9.0.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
+        <AssemblyVersion>4.11.0.0</AssemblyVersion>
+        <AssemblyVersion>4.12.0.0</AssemblyVersion>
+        <AssemblyVersion>4.13.0.0</AssemblyVersion>
+        <AssemblyVersion>4.14.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="query")</AttributeName>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty(PropertyName="query")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty(PropertyName="query")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -135,20 +147,21 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Management.DataFactory.Models.AmazonRedshiftSource.RedshiftUnloadSettings" />
       <MemberSignature Language="VB.NET" Value="Public Property RedshiftUnloadSettings As RedshiftUnloadSettings" />
       <MemberSignature Language="F#" Value="member this.RedshiftUnloadSettings : Microsoft.Azure.Management.DataFactory.Models.RedshiftUnloadSettings with get, set" Usage="Microsoft.Azure.Management.DataFactory.Models.AmazonRedshiftSource.RedshiftUnloadSettings" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Azure::Management::DataFactory::Models::RedshiftUnloadSettings ^ RedshiftUnloadSettings { Microsoft::Azure::Management::DataFactory::Models::RedshiftUnloadSettings ^ get(); void set(Microsoft::Azure::Management::DataFactory::Models::RedshiftUnloadSettings ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.DataFactory</AssemblyName>
-        <AssemblyVersion>0.2.0.0</AssemblyVersion>
-        <AssemblyVersion>0.3.0.0</AssemblyVersion>
-        <AssemblyVersion>0.4.0.0</AssemblyVersion>
-        <AssemblyVersion>0.5.0.0</AssemblyVersion>
-        <AssemblyVersion>0.6.0.0</AssemblyVersion>
-        <AssemblyVersion>0.7.0.0</AssemblyVersion>
+        <AssemblyVersion>4.3.0.0</AssemblyVersion>
+        <AssemblyVersion>4.9.0.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
+        <AssemblyVersion>4.11.0.0</AssemblyVersion>
+        <AssemblyVersion>4.12.0.0</AssemblyVersion>
+        <AssemblyVersion>4.13.0.0</AssemblyVersion>
+        <AssemblyVersion>4.14.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="redshiftUnloadSettings")</AttributeName>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty(PropertyName="redshiftUnloadSettings")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty(PropertyName="redshiftUnloadSettings")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -171,18 +184,16 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Management.DataFactory.Models.AmazonRedshiftSource.Validate" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Sub Validate ()" />
       <MemberSignature Language="F#" Value="abstract member Validate : unit -&gt; unit&#xA;override this.Validate : unit -&gt; unit" Usage="amazonRedshiftSource.Validate " />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Validate();" />
-      <MemberSignature Language="C++ CX" Value="public:&#xA; virtual void Validate();" />
-      <MemberSignature Language="C++ WINRT" Value=" virtual void Validate();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.DataFactory</AssemblyName>
-        <AssemblyVersion>0.2.0.0</AssemblyVersion>
-        <AssemblyVersion>0.3.0.0</AssemblyVersion>
-        <AssemblyVersion>0.4.0.0</AssemblyVersion>
-        <AssemblyVersion>0.5.0.0</AssemblyVersion>
-        <AssemblyVersion>0.6.0.0</AssemblyVersion>
-        <AssemblyVersion>0.7.0.0</AssemblyVersion>
+        <AssemblyVersion>4.3.0.0</AssemblyVersion>
+        <AssemblyVersion>4.9.0.0</AssemblyVersion>
+        <AssemblyVersion>4.10.0.0</AssemblyVersion>
+        <AssemblyVersion>4.11.0.0</AssemblyVersion>
+        <AssemblyVersion>4.12.0.0</AssemblyVersion>
+        <AssemblyVersion>4.13.0.0</AssemblyVersion>
+        <AssemblyVersion>4.14.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>

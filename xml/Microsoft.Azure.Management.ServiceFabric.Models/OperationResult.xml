@@ -1,11 +1,9 @@
-﻿<Type Name="OperationResult" FullName="Microsoft.Azure.Management.ServiceFabric.Models.OperationResult">
+<Type Name="OperationResult" FullName="Microsoft.Azure.Management.ServiceFabric.Models.OperationResult">
   <TypeSignature Language="C#" Value="public class OperationResult" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit OperationResult extends System.Object" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Azure.Management.ServiceFabric.Models.OperationResult" />
   <TypeSignature Language="VB.NET" Value="Public Class OperationResult" />
   <TypeSignature Language="F#" Value="type OperationResult = class" />
-  <TypeSignature Language="C++ CLI" Value="public ref class OperationResult" />
-  <TypeSignature Language="C++ WINRT" Value="[Windows::Foundation::Metadata::WebHostHidden]&#xA;class OperationResult" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Azure.Management.ServiceFabric</AssemblyName>
     <AssemblyVersion>1.0.0.0</AssemblyVersion>
@@ -26,9 +24,6 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Management.ServiceFabric.Models.OperationResult.#ctor" />
       <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; OperationResult();" />
-      <MemberSignature Language="C++ CX" Value="public:&#xA; OperationResult();" />
-      <MemberSignature Language="C++ WINRT" Value=" OperationResult();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.ServiceFabric</AssemblyName>
@@ -43,12 +38,11 @@
       </Docs>
     </Member>
     <Member MemberName=".ctor">
-      <MemberSignature Language="C#" Value="public OperationResult (string name = null, Microsoft.Azure.Management.ServiceFabric.Models.AvailableOperationDisplay display = null, string origin = null, string nextLink = null);" />
+      <MemberSignature Language="C#" Value="public OperationResult (string name = default, Microsoft.Azure.Management.ServiceFabric.Models.AvailableOperationDisplay display = default, string origin = default, string nextLink = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string name, class Microsoft.Azure.Management.ServiceFabric.Models.AvailableOperationDisplay display, string origin, string nextLink) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Management.ServiceFabric.Models.OperationResult.#ctor(System.String,Microsoft.Azure.Management.ServiceFabric.Models.AvailableOperationDisplay,System.String,System.String)" />
-      <MemberSignature Language="VB.NET" Value="Public Sub New (Optional name As String = null, Optional display As AvailableOperationDisplay = null, Optional origin As String = null, Optional nextLink As String = null)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (Optional name As String = Nothing, Optional display As AvailableOperationDisplay = Nothing, Optional origin As String = Nothing, Optional nextLink As String = Nothing)" />
       <MemberSignature Language="F#" Value="new Microsoft.Azure.Management.ServiceFabric.Models.OperationResult : string * Microsoft.Azure.Management.ServiceFabric.Models.AvailableOperationDisplay * string * string -&gt; Microsoft.Azure.Management.ServiceFabric.Models.OperationResult" Usage="new Microsoft.Azure.Management.ServiceFabric.Models.OperationResult (name, display, origin, nextLink)" />
-      <MemberSignature Language="C++ WINRT" Value=" OperationResult(std::wstring const &amp; name = null, Microsoft::Azure::Management::ServiceFabric::Models::AvailableOperationDisplay const &amp; display = null, std::wstring const &amp; origin = null, std::wstring const &amp; nextLink = null);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.ServiceFabric</AssemblyName>
@@ -61,8 +55,9 @@
         <Parameter Name="nextLink" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="name">Result name</param>
-        <param name="display">Dispaly of the result</param>
+        <param name="name">The name of the operation.</param>
+        <param name="display">The object that represents the
+            operation.</param>
         <param name="origin">Origin result</param>
         <param name="nextLink">The URL to use for getting the next set of
             results.</param>
@@ -78,7 +73,6 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Management.ServiceFabric.Models.OperationResult.Display" />
       <MemberSignature Language="VB.NET" Value="Public Property Display As AvailableOperationDisplay" />
       <MemberSignature Language="F#" Value="member this.Display : Microsoft.Azure.Management.ServiceFabric.Models.AvailableOperationDisplay with get, set" Usage="Microsoft.Azure.Management.ServiceFabric.Models.OperationResult.Display" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Azure::Management::ServiceFabric::Models::AvailableOperationDisplay ^ Display { Microsoft::Azure::Management::ServiceFabric::Models::AvailableOperationDisplay ^ get(); void set(Microsoft::Azure::Management::ServiceFabric::Models::AvailableOperationDisplay ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.ServiceFabric</AssemblyName>
@@ -86,7 +80,8 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="display")</AttributeName>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty(PropertyName="display")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty(PropertyName="display")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -94,7 +89,7 @@
       </ReturnValue>
       <Docs>
         <summary>
-            Gets or sets dispaly of the result
+            Gets or sets the object that represents the operation.
             </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
@@ -106,8 +101,6 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Management.ServiceFabric.Models.OperationResult.Name" />
       <MemberSignature Language="VB.NET" Value="Public Property Name As String" />
       <MemberSignature Language="F#" Value="member this.Name : string with get, set" Usage="Microsoft.Azure.Management.ServiceFabric.Models.OperationResult.Name" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Name { System::String ^ get(); void set(System::String ^ value); };" />
-      <MemberSignature Language="C++ CX" Value="public:&#xA; property Platform::String ^ Name { Platform::String ^ get(); void set(Platform::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.ServiceFabric</AssemblyName>
@@ -115,7 +108,8 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="name")</AttributeName>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty(PropertyName="name")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty(PropertyName="name")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -123,7 +117,7 @@
       </ReturnValue>
       <Docs>
         <summary>
-            Gets or sets result name
+            Gets or sets the name of the operation.
             </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
@@ -135,8 +129,6 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Management.ServiceFabric.Models.OperationResult.NextLink" />
       <MemberSignature Language="VB.NET" Value="Public Property NextLink As String" />
       <MemberSignature Language="F#" Value="member this.NextLink : string with get, set" Usage="Microsoft.Azure.Management.ServiceFabric.Models.OperationResult.NextLink" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ NextLink { System::String ^ get(); void set(System::String ^ value); };" />
-      <MemberSignature Language="C++ CX" Value="public:&#xA; property Platform::String ^ NextLink { Platform::String ^ get(); void set(Platform::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.ServiceFabric</AssemblyName>
@@ -144,7 +136,8 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="nextLink")</AttributeName>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty(PropertyName="nextLink")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty(PropertyName="nextLink")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -164,8 +157,6 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Management.ServiceFabric.Models.OperationResult.Origin" />
       <MemberSignature Language="VB.NET" Value="Public Property Origin As String" />
       <MemberSignature Language="F#" Value="member this.Origin : string with get, set" Usage="Microsoft.Azure.Management.ServiceFabric.Models.OperationResult.Origin" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Origin { System::String ^ get(); void set(System::String ^ value); };" />
-      <MemberSignature Language="C++ CX" Value="public:&#xA; property Platform::String ^ Origin { Platform::String ^ get(); void set(Platform::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.ServiceFabric</AssemblyName>
@@ -173,7 +164,8 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="origin")</AttributeName>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty(PropertyName="origin")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty(PropertyName="origin")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>

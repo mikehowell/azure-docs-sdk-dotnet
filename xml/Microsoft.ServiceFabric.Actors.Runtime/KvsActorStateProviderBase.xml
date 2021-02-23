@@ -1,12 +1,9 @@
-﻿<Type Name="KvsActorStateProviderBase" FullName="Microsoft.ServiceFabric.Actors.Runtime.KvsActorStateProviderBase">
+<Type Name="KvsActorStateProviderBase" FullName="Microsoft.ServiceFabric.Actors.Runtime.KvsActorStateProviderBase">
   <TypeSignature Language="C#" Value="public abstract class KvsActorStateProviderBase : Microsoft.ServiceFabric.Actors.Runtime.IActorStateProvider, Microsoft.ServiceFabric.Data.IStateProviderReplica2" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit KvsActorStateProviderBase extends System.Object implements class Microsoft.ServiceFabric.Actors.Runtime.IActorStateProvider, class Microsoft.ServiceFabric.Data.IStateProviderReplica, class Microsoft.ServiceFabric.Data.IStateProviderReplica2" />
   <TypeSignature Language="DocId" Value="T:Microsoft.ServiceFabric.Actors.Runtime.KvsActorStateProviderBase" />
   <TypeSignature Language="VB.NET" Value="Public MustInherit Class KvsActorStateProviderBase&#xA;Implements IActorStateProvider, IStateProviderReplica2" />
-  <TypeSignature Language="F#" Value="type KvsActorStateProviderBase = class&#xA;    interface IActorStateProvider&#xA;    interface IStateProviderReplica2&#xA;    interface IStateProviderReplica&#xA;    interface VolatileLogicalTimeManager.ISnapshotHandler&#xA;    interface IActorStateProviderInternal" />
-  <TypeSignature Language="C++ CLI" Value="public ref class KvsActorStateProviderBase abstract : Microsoft::ServiceFabric::Actors::Runtime::IActorStateProvider, Microsoft::ServiceFabric::Data::IStateProviderReplica2" />
-  <TypeSignature Language="C++ CX" Value="[Windows::Foundation::Metadata::WebHostHidden]&#xA;public ref class KvsActorStateProviderBase abstract : Microsoft::ServiceFabric::Actors::Runtime::IActorStateProvider, Microsoft::ServiceFabric::Data::IStateProviderReplica2" />
-  <TypeSignature Language="C++ WINRT" Value="[Windows::Foundation::Metadata::WebHostHidden]&#xA;class KvsActorStateProviderBase abstract : Microsoft::ServiceFabric::Actors::Runtime::IActorStateProvider, Microsoft::ServiceFabric::Data::IStateProviderReplica2" />
+  <TypeSignature Language="F#" Value="type KvsActorStateProviderBase = class&#xA;    interface IActorStateProvider&#xA;    interface IStateProviderReplica2&#xA;    interface IStateProviderReplica&#xA;    interface VolatileLogicalTimeManager.ISnapshotHandler" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.ServiceFabric.Actors</AssemblyName>
     <AssemblyVersion>6.0.0.0</AssemblyVersion>
@@ -19,12 +16,15 @@
       <InterfaceName>Microsoft.ServiceFabric.Actors.Runtime.IActorStateProvider</InterfaceName>
     </Interface>
     <Interface>
+      <InterfaceName>Microsoft.ServiceFabric.Data.IStateProviderReplica</InterfaceName>
+    </Interface>
+    <Interface>
       <InterfaceName>Microsoft.ServiceFabric.Data.IStateProviderReplica2</InterfaceName>
     </Interface>
   </Interfaces>
   <Docs>
     <summary>
-            Provides an implementation of <see cref="T:Microsoft.ServiceFabric.Actors.Runtime.IActorStateProvider" /> which 
+            Provides an implementation of <see cref="T:Microsoft.ServiceFabric.Actors.Runtime.IActorStateProvider" /> which
             uses <see cref="T:System.Fabric.KeyValueStoreReplica" /> to store and persist the actor state.
             </summary>
     <remarks>To be added.</remarks>
@@ -34,7 +34,8 @@
       <MemberSignature Language="C#" Value="System.Threading.Tasks.Task IActorStateProvider.ActorActivatedAsync (Microsoft.ServiceFabric.Actors.ActorId actorId, System.Threading.CancellationToken cancellationToken);" />
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance class System.Threading.Tasks.Task Microsoft.ServiceFabric.Actors.Runtime.IActorStateProvider.ActorActivatedAsync(class Microsoft.ServiceFabric.Actors.ActorId actorId, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.ServiceFabric.Actors.Runtime.KvsActorStateProviderBase.Microsoft#ServiceFabric#Actors#Runtime#IActorStateProvider#ActorActivatedAsync(Microsoft.ServiceFabric.Actors.ActorId,System.Threading.CancellationToken)" />
-      <MemberSignature Language="C++ CLI" Value=" virtual System::Threading::Tasks::Task ^ Microsoft.ServiceFabric.Actors.Runtime.IActorStateProvider.ActorActivatedAsync(Microsoft::ServiceFabric::Actors::ActorId ^ actorId, System::Threading::CancellationToken cancellationToken) = Microsoft::ServiceFabric::Actors::Runtime::IActorStateProvider::ActorActivatedAsync;" />
+      <MemberSignature Language="VB.NET" Value="Function ActorActivatedAsync (actorId As ActorId, cancellationToken As CancellationToken) As Task Implements IActorStateProvider.ActorActivatedAsync" />
+      <MemberSignature Language="F#" Value="abstract member Microsoft.ServiceFabric.Actors.Runtime.IActorStateProvider.ActorActivatedAsync : Microsoft.ServiceFabric.Actors.ActorId * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&#xA;override this.Microsoft.ServiceFabric.Actors.Runtime.IActorStateProvider.ActorActivatedAsync : Microsoft.ServiceFabric.Actors.ActorId * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task" Usage="kvsActorStateProviderBase.Microsoft.ServiceFabric.Actors.Runtime.IActorStateProvider.ActorActivatedAsync (actorId, cancellationToken)" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:Microsoft.ServiceFabric.Actors.Runtime.IActorStateProvider.ActorActivatedAsync(Microsoft.ServiceFabric.Actors.ActorId,System.Threading.CancellationToken)</InterfaceMember>
@@ -54,7 +55,7 @@
         <param name="actorId">The ID of the actor that is activated.</param>
         <param name="cancellationToken">The token to monitor for cancellation requests.</param>
         <summary>
-            This method is invoked as part of the activation process of the actor with the specified Id. 
+            This method is invoked as part of the activation process of the actor with the specified Id.
             </summary>
         <returns> A task that represents the asynchronous Actor activation notification processing.</returns>
         <remarks>To be added.</remarks>
@@ -65,7 +66,8 @@
       <MemberSignature Language="C#" Value="System.Threading.Tasks.Task&lt;bool&gt; IActorStateProvider.ContainsStateAsync (Microsoft.ServiceFabric.Actors.ActorId actorId, string stateName, System.Threading.CancellationToken cancellationToken);" />
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;bool&gt; Microsoft.ServiceFabric.Actors.Runtime.IActorStateProvider.ContainsStateAsync(class Microsoft.ServiceFabric.Actors.ActorId actorId, string stateName, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.ServiceFabric.Actors.Runtime.KvsActorStateProviderBase.Microsoft#ServiceFabric#Actors#Runtime#IActorStateProvider#ContainsStateAsync(Microsoft.ServiceFabric.Actors.ActorId,System.String,System.Threading.CancellationToken)" />
-      <MemberSignature Language="C++ CLI" Value=" virtual System::Threading::Tasks::Task&lt;bool&gt; ^ Microsoft.ServiceFabric.Actors.Runtime.IActorStateProvider.ContainsStateAsync(Microsoft::ServiceFabric::Actors::ActorId ^ actorId, System::String ^ stateName, System::Threading::CancellationToken cancellationToken) = Microsoft::ServiceFabric::Actors::Runtime::IActorStateProvider::ContainsStateAsync;" />
+      <MemberSignature Language="VB.NET" Value="Function ContainsStateAsync (actorId As ActorId, stateName As String, cancellationToken As CancellationToken) As Task(Of Boolean) Implements IActorStateProvider.ContainsStateAsync" />
+      <MemberSignature Language="F#" Value="abstract member Microsoft.ServiceFabric.Actors.Runtime.IActorStateProvider.ContainsStateAsync : Microsoft.ServiceFabric.Actors.ActorId * string * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;bool&gt;&#xA;override this.Microsoft.ServiceFabric.Actors.Runtime.IActorStateProvider.ContainsStateAsync : Microsoft.ServiceFabric.Actors.ActorId * string * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;bool&gt;" Usage="kvsActorStateProviderBase.Microsoft.ServiceFabric.Actors.Runtime.IActorStateProvider.ContainsStateAsync (actorId, stateName, cancellationToken)" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:Microsoft.ServiceFabric.Actors.Runtime.IActorStateProvider.ContainsStateAsync(Microsoft.ServiceFabric.Actors.ActorId,System.String,System.Threading.CancellationToken)</InterfaceMember>
@@ -87,7 +89,7 @@
         <param name="stateName">Name of the actor state to check for existence.</param>
         <param name="cancellationToken">The token to monitor for cancellation requests.</param>
         <summary>
-            Checks whether the actor state provider contains an actor state with 
+            Checks whether the actor state provider contains an actor state with
             specified state name.
             </summary>
         <returns>
@@ -102,7 +104,8 @@
       <MemberSignature Language="C#" Value="System.Threading.Tasks.Task IActorStateProvider.DeleteReminderAsync (Microsoft.ServiceFabric.Actors.ActorId actorId, string reminderName, System.Threading.CancellationToken cancellationToken);" />
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance class System.Threading.Tasks.Task Microsoft.ServiceFabric.Actors.Runtime.IActorStateProvider.DeleteReminderAsync(class Microsoft.ServiceFabric.Actors.ActorId actorId, string reminderName, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.ServiceFabric.Actors.Runtime.KvsActorStateProviderBase.Microsoft#ServiceFabric#Actors#Runtime#IActorStateProvider#DeleteReminderAsync(Microsoft.ServiceFabric.Actors.ActorId,System.String,System.Threading.CancellationToken)" />
-      <MemberSignature Language="C++ CLI" Value=" virtual System::Threading::Tasks::Task ^ Microsoft.ServiceFabric.Actors.Runtime.IActorStateProvider.DeleteReminderAsync(Microsoft::ServiceFabric::Actors::ActorId ^ actorId, System::String ^ reminderName, System::Threading::CancellationToken cancellationToken) = Microsoft::ServiceFabric::Actors::Runtime::IActorStateProvider::DeleteReminderAsync;" />
+      <MemberSignature Language="VB.NET" Value="Function DeleteReminderAsync (actorId As ActorId, reminderName As String, cancellationToken As CancellationToken) As Task Implements IActorStateProvider.DeleteReminderAsync" />
+      <MemberSignature Language="F#" Value="abstract member Microsoft.ServiceFabric.Actors.Runtime.IActorStateProvider.DeleteReminderAsync : Microsoft.ServiceFabric.Actors.ActorId * string * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&#xA;override this.Microsoft.ServiceFabric.Actors.Runtime.IActorStateProvider.DeleteReminderAsync : Microsoft.ServiceFabric.Actors.ActorId * string * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task" Usage="kvsActorStateProviderBase.Microsoft.ServiceFabric.Actors.Runtime.IActorStateProvider.DeleteReminderAsync (actorId, reminderName, cancellationToken)" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:Microsoft.ServiceFabric.Actors.Runtime.IActorStateProvider.DeleteReminderAsync(Microsoft.ServiceFabric.Actors.ActorId,System.String,System.Threading.CancellationToken)</InterfaceMember>
@@ -135,7 +138,8 @@
       <MemberSignature Language="C#" Value="System.Threading.Tasks.Task IActorStateProvider.DeleteRemindersAsync (System.Collections.Generic.IReadOnlyDictionary&lt;Microsoft.ServiceFabric.Actors.ActorId,System.Collections.Generic.IReadOnlyCollection&lt;string&gt;&gt; reminderNames, System.Threading.CancellationToken cancellationToken);" />
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance class System.Threading.Tasks.Task Microsoft.ServiceFabric.Actors.Runtime.IActorStateProvider.DeleteRemindersAsync(class System.Collections.Generic.IReadOnlyDictionary`2&lt;class Microsoft.ServiceFabric.Actors.ActorId, class System.Collections.Generic.IReadOnlyCollection`1&lt;string&gt;&gt; reminderNames, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.ServiceFabric.Actors.Runtime.KvsActorStateProviderBase.Microsoft#ServiceFabric#Actors#Runtime#IActorStateProvider#DeleteRemindersAsync(System.Collections.Generic.IReadOnlyDictionary{Microsoft.ServiceFabric.Actors.ActorId,System.Collections.Generic.IReadOnlyCollection{System.String}},System.Threading.CancellationToken)" />
-      <MemberSignature Language="C++ CLI" Value=" virtual System::Threading::Tasks::Task ^ Microsoft.ServiceFabric.Actors.Runtime.IActorStateProvider.DeleteRemindersAsync(System::Collections::Generic::IReadOnlyDictionary&lt;Microsoft::ServiceFabric::Actors::ActorId ^, System::Collections::Generic::IReadOnlyCollection&lt;System::String ^&gt; ^&gt; ^ reminderNames, System::Threading::CancellationToken cancellationToken) = Microsoft::ServiceFabric::Actors::Runtime::IActorStateProvider::DeleteRemindersAsync;" />
+      <MemberSignature Language="VB.NET" Value="Function DeleteRemindersAsync (reminderNames As IReadOnlyDictionary(Of ActorId, IReadOnlyCollection(Of String)), cancellationToken As CancellationToken) As Task Implements IActorStateProvider.DeleteRemindersAsync" />
+      <MemberSignature Language="F#" Value="abstract member Microsoft.ServiceFabric.Actors.Runtime.IActorStateProvider.DeleteRemindersAsync : System.Collections.Generic.IReadOnlyDictionary&lt;Microsoft.ServiceFabric.Actors.ActorId, System.Collections.Generic.IReadOnlyCollection&lt;string&gt;&gt; * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&#xA;override this.Microsoft.ServiceFabric.Actors.Runtime.IActorStateProvider.DeleteRemindersAsync : System.Collections.Generic.IReadOnlyDictionary&lt;Microsoft.ServiceFabric.Actors.ActorId, System.Collections.Generic.IReadOnlyCollection&lt;string&gt;&gt; * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task" Usage="kvsActorStateProviderBase.Microsoft.ServiceFabric.Actors.Runtime.IActorStateProvider.DeleteRemindersAsync (reminderNames, cancellationToken)" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:Microsoft.ServiceFabric.Actors.Runtime.IActorStateProvider.DeleteRemindersAsync(System.Collections.Generic.IReadOnlyDictionary{Microsoft.ServiceFabric.Actors.ActorId,System.Collections.Generic.IReadOnlyCollection{System.String}},System.Threading.CancellationToken)</InterfaceMember>
@@ -166,7 +170,8 @@
       <MemberSignature Language="C#" Value="System.Threading.Tasks.Task&lt;System.Collections.Generic.IEnumerable&lt;string&gt;&gt; IActorStateProvider.EnumerateStateNamesAsync (Microsoft.ServiceFabric.Actors.ActorId actorId, System.Threading.CancellationToken cancellationToken);" />
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class System.Collections.Generic.IEnumerable`1&lt;string&gt;&gt; Microsoft.ServiceFabric.Actors.Runtime.IActorStateProvider.EnumerateStateNamesAsync(class Microsoft.ServiceFabric.Actors.ActorId actorId, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.ServiceFabric.Actors.Runtime.KvsActorStateProviderBase.Microsoft#ServiceFabric#Actors#Runtime#IActorStateProvider#EnumerateStateNamesAsync(Microsoft.ServiceFabric.Actors.ActorId,System.Threading.CancellationToken)" />
-      <MemberSignature Language="C++ CLI" Value=" virtual System::Threading::Tasks::Task&lt;System::Collections::Generic::IEnumerable&lt;System::String ^&gt; ^&gt; ^ Microsoft.ServiceFabric.Actors.Runtime.IActorStateProvider.EnumerateStateNamesAsync(Microsoft::ServiceFabric::Actors::ActorId ^ actorId, System::Threading::CancellationToken cancellationToken) = Microsoft::ServiceFabric::Actors::Runtime::IActorStateProvider::EnumerateStateNamesAsync;" />
+      <MemberSignature Language="VB.NET" Value="Function EnumerateStateNamesAsync (actorId As ActorId, cancellationToken As CancellationToken) As Task(Of IEnumerable(Of String)) Implements IActorStateProvider.EnumerateStateNamesAsync" />
+      <MemberSignature Language="F#" Value="abstract member Microsoft.ServiceFabric.Actors.Runtime.IActorStateProvider.EnumerateStateNamesAsync : Microsoft.ServiceFabric.Actors.ActorId * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;seq&lt;string&gt;&gt;&#xA;override this.Microsoft.ServiceFabric.Actors.Runtime.IActorStateProvider.EnumerateStateNamesAsync : Microsoft.ServiceFabric.Actors.ActorId * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;seq&lt;string&gt;&gt;" Usage="kvsActorStateProviderBase.Microsoft.ServiceFabric.Actors.Runtime.IActorStateProvider.EnumerateStateNamesAsync (actorId, cancellationToken)" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:Microsoft.ServiceFabric.Actors.Runtime.IActorStateProvider.EnumerateStateNamesAsync(Microsoft.ServiceFabric.Actors.ActorId,System.Threading.CancellationToken)</InterfaceMember>
@@ -204,7 +209,8 @@
       <MemberSignature Language="C#" Value="System.Threading.Tasks.Task&lt;Microsoft.ServiceFabric.Actors.Query.PagedResult&lt;Microsoft.ServiceFabric.Actors.ActorId&gt;&gt; IActorStateProvider.GetActorsAsync (int numItemsToReturn, Microsoft.ServiceFabric.Actors.Query.ContinuationToken continuationToken, System.Threading.CancellationToken cancellationToken);" />
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Microsoft.ServiceFabric.Actors.Query.PagedResult`1&lt;class Microsoft.ServiceFabric.Actors.ActorId&gt;&gt; Microsoft.ServiceFabric.Actors.Runtime.IActorStateProvider.GetActorsAsync(int32 numItemsToReturn, class Microsoft.ServiceFabric.Actors.Query.ContinuationToken continuationToken, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.ServiceFabric.Actors.Runtime.KvsActorStateProviderBase.Microsoft#ServiceFabric#Actors#Runtime#IActorStateProvider#GetActorsAsync(System.Int32,Microsoft.ServiceFabric.Actors.Query.ContinuationToken,System.Threading.CancellationToken)" />
-      <MemberSignature Language="C++ CLI" Value=" virtual System::Threading::Tasks::Task&lt;Microsoft::ServiceFabric::Actors::Query::PagedResult&lt;Microsoft::ServiceFabric::Actors::ActorId ^&gt; ^&gt; ^ Microsoft.ServiceFabric.Actors.Runtime.IActorStateProvider.GetActorsAsync(int numItemsToReturn, Microsoft::ServiceFabric::Actors::Query::ContinuationToken ^ continuationToken, System::Threading::CancellationToken cancellationToken) = Microsoft::ServiceFabric::Actors::Runtime::IActorStateProvider::GetActorsAsync;" />
+      <MemberSignature Language="VB.NET" Value="Function GetActorsAsync (numItemsToReturn As Integer, continuationToken As ContinuationToken, cancellationToken As CancellationToken) As Task(Of PagedResult(Of ActorId)) Implements IActorStateProvider.GetActorsAsync" />
+      <MemberSignature Language="F#" Value="abstract member Microsoft.ServiceFabric.Actors.Runtime.IActorStateProvider.GetActorsAsync : int * Microsoft.ServiceFabric.Actors.Query.ContinuationToken * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.ServiceFabric.Actors.Query.PagedResult&lt;Microsoft.ServiceFabric.Actors.ActorId&gt;&gt;&#xA;override this.Microsoft.ServiceFabric.Actors.Runtime.IActorStateProvider.GetActorsAsync : int * Microsoft.ServiceFabric.Actors.Query.ContinuationToken * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.ServiceFabric.Actors.Query.PagedResult&lt;Microsoft.ServiceFabric.Actors.ActorId&gt;&gt;" Usage="kvsActorStateProviderBase.Microsoft.ServiceFabric.Actors.Runtime.IActorStateProvider.GetActorsAsync (numItemsToReturn, continuationToken, cancellationToken)" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:Microsoft.ServiceFabric.Actors.Runtime.IActorStateProvider.GetActorsAsync(System.Int32,Microsoft.ServiceFabric.Actors.Query.ContinuationToken,System.Threading.CancellationToken)</InterfaceMember>
@@ -236,7 +242,7 @@
             The <paramref name="continuationToken" /> is relative to the state of actor state provider
             at the time of invocation of this API. If the state of actor state provider changes (i.e.
             new actors are activated or existing actors are deleted) in between calls to this API and
-            the continuation token from previous call (before the state was modified) is supplied, the 
+            the continuation token from previous call (before the state was modified) is supplied, the
             result may contain entries that were already fetched in previous calls.
             </remarks>
         <exception cref="T:System.OperationCanceledException">The operation was canceled.</exception>
@@ -246,9 +252,8 @@
       <MemberSignature Language="C#" Value="void IActorStateProvider.Initialize (Microsoft.ServiceFabric.Actors.Runtime.ActorTypeInformation actorTypeInformation);" />
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void Microsoft.ServiceFabric.Actors.Runtime.IActorStateProvider.Initialize(class Microsoft.ServiceFabric.Actors.Runtime.ActorTypeInformation actorTypeInformation) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.ServiceFabric.Actors.Runtime.KvsActorStateProviderBase.Microsoft#ServiceFabric#Actors#Runtime#IActorStateProvider#Initialize(Microsoft.ServiceFabric.Actors.Runtime.ActorTypeInformation)" />
-      <MemberSignature Language="C++ CLI" Value=" virtual void Microsoft.ServiceFabric.Actors.Runtime.IActorStateProvider.Initialize(Microsoft::ServiceFabric::Actors::Runtime::ActorTypeInformation ^ actorTypeInformation) = Microsoft::ServiceFabric::Actors::Runtime::IActorStateProvider::Initialize;" />
-      <MemberSignature Language="C++ CX" Value=" virtual void Microsoft.ServiceFabric.Actors.Runtime.IActorStateProvider.Initialize(Microsoft::ServiceFabric::Actors::Runtime::ActorTypeInformation ^ actorTypeInformation) = Microsoft::ServiceFabric::Actors::Runtime::IActorStateProvider::Initialize;" />
-      <MemberSignature Language="C++ WINRT" Value="void Microsoft.ServiceFabric.Actors.Runtime.IActorStateProvider.Initialize(Microsoft::ServiceFabric::Actors::Runtime::ActorTypeInformation const &amp; actorTypeInformation);" />
+      <MemberSignature Language="VB.NET" Value="Sub Initialize (actorTypeInformation As ActorTypeInformation) Implements IActorStateProvider.Initialize" />
+      <MemberSignature Language="F#" Value="abstract member Microsoft.ServiceFabric.Actors.Runtime.IActorStateProvider.Initialize : Microsoft.ServiceFabric.Actors.Runtime.ActorTypeInformation -&gt; unit&#xA;override this.Microsoft.ServiceFabric.Actors.Runtime.IActorStateProvider.Initialize : Microsoft.ServiceFabric.Actors.Runtime.ActorTypeInformation -&gt; unit" Usage="kvsActorStateProviderBase.Microsoft.ServiceFabric.Actors.Runtime.IActorStateProvider.Initialize actorTypeInformation" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:Microsoft.ServiceFabric.Actors.Runtime.IActorStateProvider.Initialize(Microsoft.ServiceFabric.Actors.Runtime.ActorTypeInformation)</InterfaceMember>
@@ -276,7 +281,8 @@
       <MemberSignature Language="C#" Value="System.Threading.Tasks.Task&lt;Microsoft.ServiceFabric.Actors.Runtime.IActorReminderCollection&gt; IActorStateProvider.LoadRemindersAsync (System.Threading.CancellationToken cancellationToken);" />
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Microsoft.ServiceFabric.Actors.Runtime.IActorReminderCollection&gt; Microsoft.ServiceFabric.Actors.Runtime.IActorStateProvider.LoadRemindersAsync(valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.ServiceFabric.Actors.Runtime.KvsActorStateProviderBase.Microsoft#ServiceFabric#Actors#Runtime#IActorStateProvider#LoadRemindersAsync(System.Threading.CancellationToken)" />
-      <MemberSignature Language="C++ CLI" Value=" virtual System::Threading::Tasks::Task&lt;Microsoft::ServiceFabric::Actors::Runtime::IActorReminderCollection ^&gt; ^ Microsoft.ServiceFabric.Actors.Runtime.IActorStateProvider.LoadRemindersAsync(System::Threading::CancellationToken cancellationToken) = Microsoft::ServiceFabric::Actors::Runtime::IActorStateProvider::LoadRemindersAsync;" />
+      <MemberSignature Language="VB.NET" Value="Function LoadRemindersAsync (cancellationToken As CancellationToken) As Task(Of IActorReminderCollection) Implements IActorStateProvider.LoadRemindersAsync" />
+      <MemberSignature Language="F#" Value="abstract member Microsoft.ServiceFabric.Actors.Runtime.IActorStateProvider.LoadRemindersAsync : System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.ServiceFabric.Actors.Runtime.IActorReminderCollection&gt;&#xA;override this.Microsoft.ServiceFabric.Actors.Runtime.IActorStateProvider.LoadRemindersAsync : System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.ServiceFabric.Actors.Runtime.IActorReminderCollection&gt;" Usage="kvsActorStateProviderBase.Microsoft.ServiceFabric.Actors.Runtime.IActorStateProvider.LoadRemindersAsync cancellationToken" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:Microsoft.ServiceFabric.Actors.Runtime.IActorStateProvider.LoadRemindersAsync(System.Threading.CancellationToken)</InterfaceMember>
@@ -308,7 +314,8 @@
       <MemberSignature Language="C#" Value="System.Threading.Tasks.Task&lt;T&gt; IActorStateProvider.LoadStateAsync&lt;T&gt; (Microsoft.ServiceFabric.Actors.ActorId actorId, string stateName, System.Threading.CancellationToken cancellationToken);" />
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;!!T&gt; Microsoft.ServiceFabric.Actors.Runtime.IActorStateProvider.LoadStateAsync&lt;T&gt;(class Microsoft.ServiceFabric.Actors.ActorId actorId, string stateName, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.ServiceFabric.Actors.Runtime.KvsActorStateProviderBase.Microsoft#ServiceFabric#Actors#Runtime#IActorStateProvider#LoadStateAsync``1(Microsoft.ServiceFabric.Actors.ActorId,System.String,System.Threading.CancellationToken)" />
-      <MemberSignature Language="C++ CLI" Value="generic &lt;typename T&gt;&#xA; virtual System::Threading::Tasks::Task&lt;T&gt; ^ Microsoft.ServiceFabric.Actors.Runtime.IActorStateProvider.LoadStateAsync(Microsoft::ServiceFabric::Actors::ActorId ^ actorId, System::String ^ stateName, System::Threading::CancellationToken cancellationToken) = Microsoft::ServiceFabric::Actors::Runtime::IActorStateProvider::LoadStateAsync;" />
+      <MemberSignature Language="VB.NET" Value="Function LoadStateAsync(Of T) (actorId As ActorId, stateName As String, cancellationToken As CancellationToken) As Task(Of T) Implements IActorStateProvider.LoadStateAsync" />
+      <MemberSignature Language="F#" Value="abstract member Microsoft.ServiceFabric.Actors.Runtime.IActorStateProvider.LoadStateAsync : Microsoft.ServiceFabric.Actors.ActorId * string * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;'T&gt;&#xA;override this.Microsoft.ServiceFabric.Actors.Runtime.IActorStateProvider.LoadStateAsync : Microsoft.ServiceFabric.Actors.ActorId * string * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;'T&gt;" Usage="kvsActorStateProviderBase.Microsoft.ServiceFabric.Actors.Runtime.IActorStateProvider.LoadStateAsync (actorId, stateName, cancellationToken)" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:Microsoft.ServiceFabric.Actors.Runtime.IActorStateProvider.LoadStateAsync``1(Microsoft.ServiceFabric.Actors.ActorId,System.String,System.Threading.CancellationToken)</InterfaceMember>
@@ -349,7 +356,8 @@
       <MemberSignature Language="C#" Value="System.Threading.Tasks.Task IActorStateProvider.ReminderCallbackCompletedAsync (Microsoft.ServiceFabric.Actors.ActorId actorId, Microsoft.ServiceFabric.Actors.Runtime.IActorReminder reminder, System.Threading.CancellationToken cancellationToken);" />
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance class System.Threading.Tasks.Task Microsoft.ServiceFabric.Actors.Runtime.IActorStateProvider.ReminderCallbackCompletedAsync(class Microsoft.ServiceFabric.Actors.ActorId actorId, class Microsoft.ServiceFabric.Actors.Runtime.IActorReminder reminder, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.ServiceFabric.Actors.Runtime.KvsActorStateProviderBase.Microsoft#ServiceFabric#Actors#Runtime#IActorStateProvider#ReminderCallbackCompletedAsync(Microsoft.ServiceFabric.Actors.ActorId,Microsoft.ServiceFabric.Actors.Runtime.IActorReminder,System.Threading.CancellationToken)" />
-      <MemberSignature Language="C++ CLI" Value=" virtual System::Threading::Tasks::Task ^ Microsoft.ServiceFabric.Actors.Runtime.IActorStateProvider.ReminderCallbackCompletedAsync(Microsoft::ServiceFabric::Actors::ActorId ^ actorId, Microsoft::ServiceFabric::Actors::Runtime::IActorReminder ^ reminder, System::Threading::CancellationToken cancellationToken) = Microsoft::ServiceFabric::Actors::Runtime::IActorStateProvider::ReminderCallbackCompletedAsync;" />
+      <MemberSignature Language="VB.NET" Value="Function ReminderCallbackCompletedAsync (actorId As ActorId, reminder As IActorReminder, cancellationToken As CancellationToken) As Task Implements IActorStateProvider.ReminderCallbackCompletedAsync" />
+      <MemberSignature Language="F#" Value="abstract member Microsoft.ServiceFabric.Actors.Runtime.IActorStateProvider.ReminderCallbackCompletedAsync : Microsoft.ServiceFabric.Actors.ActorId * Microsoft.ServiceFabric.Actors.Runtime.IActorReminder * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&#xA;override this.Microsoft.ServiceFabric.Actors.Runtime.IActorStateProvider.ReminderCallbackCompletedAsync : Microsoft.ServiceFabric.Actors.ActorId * Microsoft.ServiceFabric.Actors.Runtime.IActorReminder * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task" Usage="kvsActorStateProviderBase.Microsoft.ServiceFabric.Actors.Runtime.IActorStateProvider.ReminderCallbackCompletedAsync (actorId, reminder, cancellationToken)" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:Microsoft.ServiceFabric.Actors.Runtime.IActorStateProvider.ReminderCallbackCompletedAsync(Microsoft.ServiceFabric.Actors.ActorId,Microsoft.ServiceFabric.Actors.Runtime.IActorReminder,System.Threading.CancellationToken)</InterfaceMember>
@@ -371,7 +379,7 @@
         <param name="reminder">The actor reminder that completed successfully.</param>
         <param name="cancellationToken">The token to monitor for cancellation requests.</param>
         <summary>
-            This method is invoked when a reminder fires and finishes executing its callback 
+            This method is invoked when a reminder fires and finishes executing its callback
             <see cref="M:Microsoft.ServiceFabric.Actors.Runtime.IRemindable.ReceiveReminderAsync(System.String,System.Byte[],System.TimeSpan,System.TimeSpan)" /> successfully.
             </summary>
         <returns>
@@ -384,7 +392,8 @@
       <MemberSignature Language="C#" Value="System.Threading.Tasks.Task IActorStateProvider.RemoveActorAsync (Microsoft.ServiceFabric.Actors.ActorId actorId, System.Threading.CancellationToken cancellationToken);" />
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance class System.Threading.Tasks.Task Microsoft.ServiceFabric.Actors.Runtime.IActorStateProvider.RemoveActorAsync(class Microsoft.ServiceFabric.Actors.ActorId actorId, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.ServiceFabric.Actors.Runtime.KvsActorStateProviderBase.Microsoft#ServiceFabric#Actors#Runtime#IActorStateProvider#RemoveActorAsync(Microsoft.ServiceFabric.Actors.ActorId,System.Threading.CancellationToken)" />
-      <MemberSignature Language="C++ CLI" Value=" virtual System::Threading::Tasks::Task ^ Microsoft.ServiceFabric.Actors.Runtime.IActorStateProvider.RemoveActorAsync(Microsoft::ServiceFabric::Actors::ActorId ^ actorId, System::Threading::CancellationToken cancellationToken) = Microsoft::ServiceFabric::Actors::Runtime::IActorStateProvider::RemoveActorAsync;" />
+      <MemberSignature Language="VB.NET" Value="Function RemoveActorAsync (actorId As ActorId, cancellationToken As CancellationToken) As Task Implements IActorStateProvider.RemoveActorAsync" />
+      <MemberSignature Language="F#" Value="abstract member Microsoft.ServiceFabric.Actors.Runtime.IActorStateProvider.RemoveActorAsync : Microsoft.ServiceFabric.Actors.ActorId * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&#xA;override this.Microsoft.ServiceFabric.Actors.Runtime.IActorStateProvider.RemoveActorAsync : Microsoft.ServiceFabric.Actors.ActorId * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task" Usage="kvsActorStateProviderBase.Microsoft.ServiceFabric.Actors.Runtime.IActorStateProvider.RemoveActorAsync (actorId, cancellationToken)" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:Microsoft.ServiceFabric.Actors.Runtime.IActorStateProvider.RemoveActorAsync(Microsoft.ServiceFabric.Actors.ActorId,System.Threading.CancellationToken)</InterfaceMember>
@@ -415,7 +424,8 @@
       <MemberSignature Language="C#" Value="System.Threading.Tasks.Task IActorStateProvider.SaveReminderAsync (Microsoft.ServiceFabric.Actors.ActorId actorId, Microsoft.ServiceFabric.Actors.Runtime.IActorReminder reminder, System.Threading.CancellationToken cancellationToken);" />
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance class System.Threading.Tasks.Task Microsoft.ServiceFabric.Actors.Runtime.IActorStateProvider.SaveReminderAsync(class Microsoft.ServiceFabric.Actors.ActorId actorId, class Microsoft.ServiceFabric.Actors.Runtime.IActorReminder reminder, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.ServiceFabric.Actors.Runtime.KvsActorStateProviderBase.Microsoft#ServiceFabric#Actors#Runtime#IActorStateProvider#SaveReminderAsync(Microsoft.ServiceFabric.Actors.ActorId,Microsoft.ServiceFabric.Actors.Runtime.IActorReminder,System.Threading.CancellationToken)" />
-      <MemberSignature Language="C++ CLI" Value=" virtual System::Threading::Tasks::Task ^ Microsoft.ServiceFabric.Actors.Runtime.IActorStateProvider.SaveReminderAsync(Microsoft::ServiceFabric::Actors::ActorId ^ actorId, Microsoft::ServiceFabric::Actors::Runtime::IActorReminder ^ reminder, System::Threading::CancellationToken cancellationToken) = Microsoft::ServiceFabric::Actors::Runtime::IActorStateProvider::SaveReminderAsync;" />
+      <MemberSignature Language="VB.NET" Value="Function SaveReminderAsync (actorId As ActorId, reminder As IActorReminder, cancellationToken As CancellationToken) As Task Implements IActorStateProvider.SaveReminderAsync" />
+      <MemberSignature Language="F#" Value="abstract member Microsoft.ServiceFabric.Actors.Runtime.IActorStateProvider.SaveReminderAsync : Microsoft.ServiceFabric.Actors.ActorId * Microsoft.ServiceFabric.Actors.Runtime.IActorReminder * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&#xA;override this.Microsoft.ServiceFabric.Actors.Runtime.IActorStateProvider.SaveReminderAsync : Microsoft.ServiceFabric.Actors.ActorId * Microsoft.ServiceFabric.Actors.Runtime.IActorReminder * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task" Usage="kvsActorStateProviderBase.Microsoft.ServiceFabric.Actors.Runtime.IActorStateProvider.SaveReminderAsync (actorId, reminder, cancellationToken)" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:Microsoft.ServiceFabric.Actors.Runtime.IActorStateProvider.SaveReminderAsync(Microsoft.ServiceFabric.Actors.ActorId,Microsoft.ServiceFabric.Actors.Runtime.IActorReminder,System.Threading.CancellationToken)</InterfaceMember>
@@ -439,7 +449,7 @@
         <summary>
             Saves the specified actor reminder. If an actor reminder with
             given name does not exist, it adds the actor reminder otherwise
-            existing actor reminder with same name is updated. 
+            existing actor reminder with same name is updated.
             </summary>
         <returns>A task that represents the asynchronous save operation.</returns>
         <remarks>To be added.</remarks>
@@ -450,7 +460,8 @@
       <MemberSignature Language="C#" Value="System.Threading.Tasks.Task IActorStateProvider.SaveStateAsync (Microsoft.ServiceFabric.Actors.ActorId actorId, System.Collections.Generic.IReadOnlyCollection&lt;Microsoft.ServiceFabric.Actors.Runtime.ActorStateChange&gt; stateChanges, System.Threading.CancellationToken cancellationToken);" />
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance class System.Threading.Tasks.Task Microsoft.ServiceFabric.Actors.Runtime.IActorStateProvider.SaveStateAsync(class Microsoft.ServiceFabric.Actors.ActorId actorId, class System.Collections.Generic.IReadOnlyCollection`1&lt;class Microsoft.ServiceFabric.Actors.Runtime.ActorStateChange&gt; stateChanges, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.ServiceFabric.Actors.Runtime.KvsActorStateProviderBase.Microsoft#ServiceFabric#Actors#Runtime#IActorStateProvider#SaveStateAsync(Microsoft.ServiceFabric.Actors.ActorId,System.Collections.Generic.IReadOnlyCollection{Microsoft.ServiceFabric.Actors.Runtime.ActorStateChange},System.Threading.CancellationToken)" />
-      <MemberSignature Language="C++ CLI" Value=" virtual System::Threading::Tasks::Task ^ Microsoft.ServiceFabric.Actors.Runtime.IActorStateProvider.SaveStateAsync(Microsoft::ServiceFabric::Actors::ActorId ^ actorId, System::Collections::Generic::IReadOnlyCollection&lt;Microsoft::ServiceFabric::Actors::Runtime::ActorStateChange ^&gt; ^ stateChanges, System::Threading::CancellationToken cancellationToken) = Microsoft::ServiceFabric::Actors::Runtime::IActorStateProvider::SaveStateAsync;" />
+      <MemberSignature Language="VB.NET" Value="Function SaveStateAsync (actorId As ActorId, stateChanges As IReadOnlyCollection(Of ActorStateChange), cancellationToken As CancellationToken) As Task Implements IActorStateProvider.SaveStateAsync" />
+      <MemberSignature Language="F#" Value="abstract member Microsoft.ServiceFabric.Actors.Runtime.IActorStateProvider.SaveStateAsync : Microsoft.ServiceFabric.Actors.ActorId * System.Collections.Generic.IReadOnlyCollection&lt;Microsoft.ServiceFabric.Actors.Runtime.ActorStateChange&gt; * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&#xA;override this.Microsoft.ServiceFabric.Actors.Runtime.IActorStateProvider.SaveStateAsync : Microsoft.ServiceFabric.Actors.ActorId * System.Collections.Generic.IReadOnlyCollection&lt;Microsoft.ServiceFabric.Actors.Runtime.ActorStateChange&gt; * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task" Usage="kvsActorStateProviderBase.Microsoft.ServiceFabric.Actors.Runtime.IActorStateProvider.SaveStateAsync (actorId, stateChanges, cancellationToken)" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:Microsoft.ServiceFabric.Actors.Runtime.IActorStateProvider.SaveStateAsync(Microsoft.ServiceFabric.Actors.ActorId,System.Collections.Generic.IReadOnlyCollection{Microsoft.ServiceFabric.Actors.Runtime.ActorStateChange},System.Threading.CancellationToken)</InterfaceMember>
@@ -477,7 +488,7 @@
         <returns>A task that represents the asynchronous save operation.</returns>
         <remarks>
             The collection of state changes should contain only one item for a given state name.
-            The save operation will fail on trying to add an actor state which already exists 
+            The save operation will fail on trying to add an actor state which already exists
             or update/remove an actor state which does not exist.
             </remarks>
         <exception cref="T:System.InvalidOperationException">
@@ -490,9 +501,7 @@
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void Microsoft.ServiceFabric.Data.IStateProviderReplica.Abort() cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.ServiceFabric.Actors.Runtime.KvsActorStateProviderBase.Microsoft#ServiceFabric#Data#IStateProviderReplica#Abort" />
       <MemberSignature Language="VB.NET" Value="Sub Abort () Implements IStateProviderReplica.Abort" />
-      <MemberSignature Language="C++ CLI" Value=" virtual void Microsoft.ServiceFabric.Data.IStateProviderReplica.Abort() = Microsoft::ServiceFabric::Data::IStateProviderReplica::Abort;" />
-      <MemberSignature Language="C++ CX" Value=" virtual void Microsoft.ServiceFabric.Data.IStateProviderReplica.Abort() = Microsoft::ServiceFabric::Data::IStateProviderReplica::Abort;" />
-      <MemberSignature Language="C++ WINRT" Value="void Microsoft.ServiceFabric.Data.IStateProviderReplica.Abort();" />
+      <MemberSignature Language="F#" Value="abstract member Microsoft.ServiceFabric.Data.IStateProviderReplica.Abort : unit -&gt; unit&#xA;override this.Microsoft.ServiceFabric.Data.IStateProviderReplica.Abort : unit -&gt; unit" Usage="kvsActorStateProviderBase.Microsoft.ServiceFabric.Data.IStateProviderReplica.Abort " />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:Microsoft.ServiceFabric.Data.IStateProviderReplica.Abort</InterfaceMember>
@@ -520,7 +529,7 @@
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance class System.Threading.Tasks.Task Microsoft.ServiceFabric.Data.IStateProviderReplica.BackupAsync(class System.Func`3&lt;class Microsoft.ServiceFabric.Data.BackupInfo, valuetype System.Threading.CancellationToken, class System.Threading.Tasks.Task`1&lt;bool&gt;&gt; backupCallback) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.ServiceFabric.Actors.Runtime.KvsActorStateProviderBase.Microsoft#ServiceFabric#Data#IStateProviderReplica#BackupAsync(System.Func{Microsoft.ServiceFabric.Data.BackupInfo,System.Threading.CancellationToken,System.Threading.Tasks.Task{System.Boolean}})" />
       <MemberSignature Language="VB.NET" Value="Function BackupAsync (backupCallback As Func(Of BackupInfo, CancellationToken, Task(Of Boolean))) As Task Implements IStateProviderReplica.BackupAsync" />
-      <MemberSignature Language="C++ CLI" Value=" virtual System::Threading::Tasks::Task ^ Microsoft.ServiceFabric.Data.IStateProviderReplica.BackupAsync(Func&lt;Microsoft::ServiceFabric::Data::BackupInfo ^, System::Threading::CancellationToken, System::Threading::Tasks::Task&lt;bool&gt; ^&gt; ^ backupCallback) = Microsoft::ServiceFabric::Data::IStateProviderReplica::BackupAsync;" />
+      <MemberSignature Language="F#" Value="abstract member Microsoft.ServiceFabric.Data.IStateProviderReplica.BackupAsync : Func&lt;Microsoft.ServiceFabric.Data.BackupInfo, System.Threading.CancellationToken, System.Threading.Tasks.Task&lt;bool&gt;&gt; -&gt; System.Threading.Tasks.Task&#xA;override this.Microsoft.ServiceFabric.Data.IStateProviderReplica.BackupAsync : Func&lt;Microsoft.ServiceFabric.Data.BackupInfo, System.Threading.CancellationToken, System.Threading.Tasks.Task&lt;bool&gt;&gt; -&gt; System.Threading.Tasks.Task" Usage="kvsActorStateProviderBase.Microsoft.ServiceFabric.Data.IStateProviderReplica.BackupAsync backupCallback" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:Microsoft.ServiceFabric.Data.IStateProviderReplica.BackupAsync(System.Func{Microsoft.ServiceFabric.Data.BackupInfo,System.Threading.CancellationToken,System.Threading.Tasks.Task{System.Boolean}})</InterfaceMember>
@@ -553,7 +562,8 @@
       <MemberSignature Language="C#" Value="System.Threading.Tasks.Task IStateProviderReplica.BackupAsync (Microsoft.ServiceFabric.Data.BackupOption option, TimeSpan timeout, System.Threading.CancellationToken cancellationToken, Func&lt;Microsoft.ServiceFabric.Data.BackupInfo,System.Threading.CancellationToken,System.Threading.Tasks.Task&lt;bool&gt;&gt; backupCallback);" />
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance class System.Threading.Tasks.Task Microsoft.ServiceFabric.Data.IStateProviderReplica.BackupAsync(valuetype Microsoft.ServiceFabric.Data.BackupOption option, valuetype System.TimeSpan timeout, valuetype System.Threading.CancellationToken cancellationToken, class System.Func`3&lt;class Microsoft.ServiceFabric.Data.BackupInfo, valuetype System.Threading.CancellationToken, class System.Threading.Tasks.Task`1&lt;bool&gt;&gt; backupCallback) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.ServiceFabric.Actors.Runtime.KvsActorStateProviderBase.Microsoft#ServiceFabric#Data#IStateProviderReplica#BackupAsync(Microsoft.ServiceFabric.Data.BackupOption,System.TimeSpan,System.Threading.CancellationToken,System.Func{Microsoft.ServiceFabric.Data.BackupInfo,System.Threading.CancellationToken,System.Threading.Tasks.Task{System.Boolean}})" />
-      <MemberSignature Language="C++ CLI" Value=" virtual System::Threading::Tasks::Task ^ Microsoft.ServiceFabric.Data.IStateProviderReplica.BackupAsync(Microsoft::ServiceFabric::Data::BackupOption option, TimeSpan timeout, System::Threading::CancellationToken cancellationToken, Func&lt;Microsoft::ServiceFabric::Data::BackupInfo ^, System::Threading::CancellationToken, System::Threading::Tasks::Task&lt;bool&gt; ^&gt; ^ backupCallback) = Microsoft::ServiceFabric::Data::IStateProviderReplica::BackupAsync;" />
+      <MemberSignature Language="VB.NET" Value="Function BackupAsync (option As BackupOption, timeout As TimeSpan, cancellationToken As CancellationToken, backupCallback As Func(Of BackupInfo, CancellationToken, Task(Of Boolean))) As Task Implements IStateProviderReplica.BackupAsync" />
+      <MemberSignature Language="F#" Value="abstract member Microsoft.ServiceFabric.Data.IStateProviderReplica.BackupAsync : Microsoft.ServiceFabric.Data.BackupOption * TimeSpan * System.Threading.CancellationToken * Func&lt;Microsoft.ServiceFabric.Data.BackupInfo, System.Threading.CancellationToken, System.Threading.Tasks.Task&lt;bool&gt;&gt; -&gt; System.Threading.Tasks.Task&#xA;override this.Microsoft.ServiceFabric.Data.IStateProviderReplica.BackupAsync : Microsoft.ServiceFabric.Data.BackupOption * TimeSpan * System.Threading.CancellationToken * Func&lt;Microsoft.ServiceFabric.Data.BackupInfo, System.Threading.CancellationToken, System.Threading.Tasks.Task&lt;bool&gt;&gt; -&gt; System.Threading.Tasks.Task" Usage="kvsActorStateProviderBase.Microsoft.ServiceFabric.Data.IStateProviderReplica.BackupAsync (option, timeout, cancellationToken, backupCallback)" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:Microsoft.ServiceFabric.Data.IStateProviderReplica.BackupAsync(Microsoft.ServiceFabric.Data.BackupOption,System.TimeSpan,System.Threading.CancellationToken,System.Func{Microsoft.ServiceFabric.Data.BackupInfo,System.Threading.CancellationToken,System.Threading.Tasks.Task{System.Boolean}})</InterfaceMember>
@@ -562,11 +572,6 @@
         <AssemblyName>Microsoft.ServiceFabric.Actors</AssemblyName>
         <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
-      <Attributes>
-        <Attribute>
-          <AttributeName>System.Runtime.CompilerServices.AsyncStateMachine(typeof(Microsoft.ServiceFabric.Actors.Runtime.KvsActorStateProviderBase/&lt;Microsoft-ServiceFabric-Data-IStateProviderReplica-BackupAsync&gt;d__62))</AttributeName>
-        </Attribute>
-      </Attributes>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task</ReturnType>
       </ReturnValue>
@@ -595,7 +600,8 @@
       <MemberSignature Language="C#" Value="System.Threading.Tasks.Task IStateProviderReplica.ChangeRoleAsync (System.Fabric.ReplicaRole newRole, System.Threading.CancellationToken cancellationToken);" />
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance class System.Threading.Tasks.Task Microsoft.ServiceFabric.Data.IStateProviderReplica.ChangeRoleAsync(valuetype System.Fabric.ReplicaRole newRole, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.ServiceFabric.Actors.Runtime.KvsActorStateProviderBase.Microsoft#ServiceFabric#Data#IStateProviderReplica#ChangeRoleAsync(System.Fabric.ReplicaRole,System.Threading.CancellationToken)" />
-      <MemberSignature Language="C++ CLI" Value=" virtual System::Threading::Tasks::Task ^ Microsoft.ServiceFabric.Data.IStateProviderReplica.ChangeRoleAsync(System::Fabric::ReplicaRole newRole, System::Threading::CancellationToken cancellationToken) = Microsoft::ServiceFabric::Data::IStateProviderReplica::ChangeRoleAsync;" />
+      <MemberSignature Language="VB.NET" Value="Function ChangeRoleAsync (newRole As ReplicaRole, cancellationToken As CancellationToken) As Task Implements IStateProviderReplica.ChangeRoleAsync" />
+      <MemberSignature Language="F#" Value="abstract member Microsoft.ServiceFabric.Data.IStateProviderReplica.ChangeRoleAsync : System.Fabric.ReplicaRole * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&#xA;override this.Microsoft.ServiceFabric.Data.IStateProviderReplica.ChangeRoleAsync : System.Fabric.ReplicaRole * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task" Usage="kvsActorStateProviderBase.Microsoft.ServiceFabric.Data.IStateProviderReplica.ChangeRoleAsync (newRole, cancellationToken)" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:Microsoft.ServiceFabric.Data.IStateProviderReplica.ChangeRoleAsync(System.Fabric.ReplicaRole,System.Threading.CancellationToken)</InterfaceMember>
@@ -604,11 +610,6 @@
         <AssemblyName>Microsoft.ServiceFabric.Actors</AssemblyName>
         <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
-      <Attributes>
-        <Attribute>
-          <AttributeName>System.Runtime.CompilerServices.AsyncStateMachine(typeof(Microsoft.ServiceFabric.Actors.Runtime.KvsActorStateProviderBase/&lt;Microsoft-ServiceFabric-Data-IStateProviderReplica-ChangeRoleAsync&gt;d__58))</AttributeName>
-        </Attribute>
-      </Attributes>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task</ReturnType>
       </ReturnValue>
@@ -630,7 +631,8 @@
       <MemberSignature Language="C#" Value="System.Threading.Tasks.Task IStateProviderReplica.CloseAsync (System.Threading.CancellationToken cancellationToken);" />
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance class System.Threading.Tasks.Task Microsoft.ServiceFabric.Data.IStateProviderReplica.CloseAsync(valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.ServiceFabric.Actors.Runtime.KvsActorStateProviderBase.Microsoft#ServiceFabric#Data#IStateProviderReplica#CloseAsync(System.Threading.CancellationToken)" />
-      <MemberSignature Language="C++ CLI" Value=" virtual System::Threading::Tasks::Task ^ Microsoft.ServiceFabric.Data.IStateProviderReplica.CloseAsync(System::Threading::CancellationToken cancellationToken) = Microsoft::ServiceFabric::Data::IStateProviderReplica::CloseAsync;" />
+      <MemberSignature Language="VB.NET" Value="Function CloseAsync (cancellationToken As CancellationToken) As Task Implements IStateProviderReplica.CloseAsync" />
+      <MemberSignature Language="F#" Value="abstract member Microsoft.ServiceFabric.Data.IStateProviderReplica.CloseAsync : System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&#xA;override this.Microsoft.ServiceFabric.Data.IStateProviderReplica.CloseAsync : System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task" Usage="kvsActorStateProviderBase.Microsoft.ServiceFabric.Data.IStateProviderReplica.CloseAsync cancellationToken" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:Microsoft.ServiceFabric.Data.IStateProviderReplica.CloseAsync(System.Threading.CancellationToken)</InterfaceMember>
@@ -639,11 +641,6 @@
         <AssemblyName>Microsoft.ServiceFabric.Actors</AssemblyName>
         <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
-      <Attributes>
-        <Attribute>
-          <AttributeName>System.Runtime.CompilerServices.AsyncStateMachine(typeof(Microsoft.ServiceFabric.Actors.Runtime.KvsActorStateProviderBase/&lt;Microsoft-ServiceFabric-Data-IStateProviderReplica-CloseAsync&gt;d__59))</AttributeName>
-        </Attribute>
-      </Attributes>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task</ReturnType>
       </ReturnValue>
@@ -667,7 +664,7 @@
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void Microsoft.ServiceFabric.Data.IStateProviderReplica.Initialize(class System.Fabric.StatefulServiceInitializationParameters initializationParameters) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.ServiceFabric.Actors.Runtime.KvsActorStateProviderBase.Microsoft#ServiceFabric#Data#IStateProviderReplica#Initialize(System.Fabric.StatefulServiceInitializationParameters)" />
       <MemberSignature Language="VB.NET" Value="Sub Initialize (initializationParameters As StatefulServiceInitializationParameters) Implements IStateProviderReplica.Initialize" />
-      <MemberSignature Language="C++ CLI" Value=" virtual void Microsoft.ServiceFabric.Data.IStateProviderReplica.Initialize(System::Fabric::StatefulServiceInitializationParameters ^ initializationParameters) = Microsoft::ServiceFabric::Data::IStateProviderReplica::Initialize;" />
+      <MemberSignature Language="F#" Value="abstract member Microsoft.ServiceFabric.Data.IStateProviderReplica.Initialize : System.Fabric.StatefulServiceInitializationParameters -&gt; unit&#xA;override this.Microsoft.ServiceFabric.Data.IStateProviderReplica.Initialize : System.Fabric.StatefulServiceInitializationParameters -&gt; unit" Usage="kvsActorStateProviderBase.Microsoft.ServiceFabric.Data.IStateProviderReplica.Initialize initializationParameters" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:Microsoft.ServiceFabric.Data.IStateProviderReplica.Initialize(System.Fabric.StatefulServiceInitializationParameters)</InterfaceMember>
@@ -698,7 +695,8 @@
       <MemberSignature Language="C#" Value="System.Threading.Tasks.Task&lt;System.Fabric.IReplicator&gt; IStateProviderReplica.OpenAsync (System.Fabric.ReplicaOpenMode openMode, System.Fabric.IStatefulServicePartition partition, System.Threading.CancellationToken cancellationToken);" />
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class System.Fabric.IReplicator&gt; Microsoft.ServiceFabric.Data.IStateProviderReplica.OpenAsync(valuetype System.Fabric.ReplicaOpenMode openMode, class System.Fabric.IStatefulServicePartition partition, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.ServiceFabric.Actors.Runtime.KvsActorStateProviderBase.Microsoft#ServiceFabric#Data#IStateProviderReplica#OpenAsync(System.Fabric.ReplicaOpenMode,System.Fabric.IStatefulServicePartition,System.Threading.CancellationToken)" />
-      <MemberSignature Language="C++ CLI" Value=" virtual System::Threading::Tasks::Task&lt;System::Fabric::IReplicator ^&gt; ^ Microsoft.ServiceFabric.Data.IStateProviderReplica.OpenAsync(System::Fabric::ReplicaOpenMode openMode, System::Fabric::IStatefulServicePartition ^ partition, System::Threading::CancellationToken cancellationToken) = Microsoft::ServiceFabric::Data::IStateProviderReplica::OpenAsync;" />
+      <MemberSignature Language="VB.NET" Value="Function OpenAsync (openMode As ReplicaOpenMode, partition As IStatefulServicePartition, cancellationToken As CancellationToken) As Task(Of IReplicator) Implements IStateProviderReplica.OpenAsync" />
+      <MemberSignature Language="F#" Value="abstract member Microsoft.ServiceFabric.Data.IStateProviderReplica.OpenAsync : System.Fabric.ReplicaOpenMode * System.Fabric.IStatefulServicePartition * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;System.Fabric.IReplicator&gt;&#xA;override this.Microsoft.ServiceFabric.Data.IStateProviderReplica.OpenAsync : System.Fabric.ReplicaOpenMode * System.Fabric.IStatefulServicePartition * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;System.Fabric.IReplicator&gt;" Usage="kvsActorStateProviderBase.Microsoft.ServiceFabric.Data.IStateProviderReplica.OpenAsync (openMode, partition, cancellationToken)" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:Microsoft.ServiceFabric.Data.IStateProviderReplica.OpenAsync(System.Fabric.ReplicaOpenMode,System.Fabric.IStatefulServicePartition,System.Threading.CancellationToken)</InterfaceMember>
@@ -736,7 +734,7 @@
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance class System.Threading.Tasks.Task Microsoft.ServiceFabric.Data.IStateProviderReplica.RestoreAsync(string backupFolderPath) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.ServiceFabric.Actors.Runtime.KvsActorStateProviderBase.Microsoft#ServiceFabric#Data#IStateProviderReplica#RestoreAsync(System.String)" />
       <MemberSignature Language="VB.NET" Value="Function RestoreAsync (backupFolderPath As String) As Task Implements IStateProviderReplica.RestoreAsync" />
-      <MemberSignature Language="C++ CLI" Value=" virtual System::Threading::Tasks::Task ^ Microsoft.ServiceFabric.Data.IStateProviderReplica.RestoreAsync(System::String ^ backupFolderPath) = Microsoft::ServiceFabric::Data::IStateProviderReplica::RestoreAsync;" />
+      <MemberSignature Language="F#" Value="abstract member Microsoft.ServiceFabric.Data.IStateProviderReplica.RestoreAsync : string -&gt; System.Threading.Tasks.Task&#xA;override this.Microsoft.ServiceFabric.Data.IStateProviderReplica.RestoreAsync : string -&gt; System.Threading.Tasks.Task" Usage="kvsActorStateProviderBase.Microsoft.ServiceFabric.Data.IStateProviderReplica.RestoreAsync backupFolderPath" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:Microsoft.ServiceFabric.Data.IStateProviderReplica.RestoreAsync(System.String)</InterfaceMember>
@@ -754,11 +752,11 @@
       <Docs>
         <param name="backupFolderPath">
             The directory where the replica is to be restored from.
-            This parameter cannot be null, empty or contain just whitespace. 
+            This parameter cannot be null, empty or contain just whitespace.
             UNC paths may also be provided.
             </param>
         <summary>
-            Restore a backup taken by <see cref="M:Microsoft.ServiceFabric.Data.IStateProviderReplica.BackupAsync(System.Func{Microsoft.ServiceFabric.Data.BackupInfo,System.Threading.CancellationToken,System.Threading.Tasks.Task{System.Boolean}})" /> or 
+            Restore a backup taken by <see cref="M:Microsoft.ServiceFabric.Data.IStateProviderReplica.BackupAsync(System.Func{Microsoft.ServiceFabric.Data.BackupInfo,System.Threading.CancellationToken,System.Threading.Tasks.Task{System.Boolean}})" /> or
             <see cref="M:Microsoft.ServiceFabric.Data.IStateProviderReplica.BackupAsync(Microsoft.ServiceFabric.Data.BackupOption,System.TimeSpan,System.Threading.CancellationToken,System.Func{Microsoft.ServiceFabric.Data.BackupInfo,System.Threading.CancellationToken,System.Threading.Tasks.Task{System.Boolean}})" />.
             </summary>
         <returns>Task that represents the asynchronous restore operation.</returns>
@@ -769,7 +767,8 @@
       <MemberSignature Language="C#" Value="System.Threading.Tasks.Task IStateProviderReplica.RestoreAsync (string backupFolderPath, Microsoft.ServiceFabric.Data.RestorePolicy restorePolicy, System.Threading.CancellationToken cancellationToken);" />
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance class System.Threading.Tasks.Task Microsoft.ServiceFabric.Data.IStateProviderReplica.RestoreAsync(string backupFolderPath, valuetype Microsoft.ServiceFabric.Data.RestorePolicy restorePolicy, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.ServiceFabric.Actors.Runtime.KvsActorStateProviderBase.Microsoft#ServiceFabric#Data#IStateProviderReplica#RestoreAsync(System.String,Microsoft.ServiceFabric.Data.RestorePolicy,System.Threading.CancellationToken)" />
-      <MemberSignature Language="C++ CLI" Value=" virtual System::Threading::Tasks::Task ^ Microsoft.ServiceFabric.Data.IStateProviderReplica.RestoreAsync(System::String ^ backupFolderPath, Microsoft::ServiceFabric::Data::RestorePolicy restorePolicy, System::Threading::CancellationToken cancellationToken) = Microsoft::ServiceFabric::Data::IStateProviderReplica::RestoreAsync;" />
+      <MemberSignature Language="VB.NET" Value="Function RestoreAsync (backupFolderPath As String, restorePolicy As RestorePolicy, cancellationToken As CancellationToken) As Task Implements IStateProviderReplica.RestoreAsync" />
+      <MemberSignature Language="F#" Value="abstract member Microsoft.ServiceFabric.Data.IStateProviderReplica.RestoreAsync : string * Microsoft.ServiceFabric.Data.RestorePolicy * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&#xA;override this.Microsoft.ServiceFabric.Data.IStateProviderReplica.RestoreAsync : string * Microsoft.ServiceFabric.Data.RestorePolicy * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task" Usage="kvsActorStateProviderBase.Microsoft.ServiceFabric.Data.IStateProviderReplica.RestoreAsync (backupFolderPath, restorePolicy, cancellationToken)" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:Microsoft.ServiceFabric.Data.IStateProviderReplica.RestoreAsync(System.String,Microsoft.ServiceFabric.Data.RestorePolicy,System.Threading.CancellationToken)</InterfaceMember>
@@ -789,13 +788,13 @@
       <Docs>
         <param name="backupFolderPath">
             The directory where the replica is to be restored from.
-            This parameter cannot be null, empty or contain just whitespace. 
+            This parameter cannot be null, empty or contain just whitespace.
             UNC paths may also be provided.
             </param>
         <param name="restorePolicy">The restore policy.</param>
         <param name="cancellationToken">The token to monitor for cancellation requests.</param>
         <summary>
-            Restore a backup taken by <see cref="M:Microsoft.ServiceFabric.Data.IStateProviderReplica.BackupAsync(System.Func{Microsoft.ServiceFabric.Data.BackupInfo,System.Threading.CancellationToken,System.Threading.Tasks.Task{System.Boolean}})" /> or 
+            Restore a backup taken by <see cref="M:Microsoft.ServiceFabric.Data.IStateProviderReplica.BackupAsync(System.Func{Microsoft.ServiceFabric.Data.BackupInfo,System.Threading.CancellationToken,System.Threading.Tasks.Task{System.Boolean}})" /> or
             <see cref="M:Microsoft.ServiceFabric.Data.IStateProviderReplica.BackupAsync(Microsoft.ServiceFabric.Data.BackupOption,System.TimeSpan,System.Threading.CancellationToken,System.Func{Microsoft.ServiceFabric.Data.BackupInfo,System.Threading.CancellationToken,System.Threading.Tasks.Task{System.Boolean}})" />.
             </summary>
         <returns>Task that represents the asynchronous restore operation.</returns>
@@ -808,7 +807,6 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.ServiceFabric.Actors.Runtime.KvsActorStateProviderBase.OnDataLossAsync" />
       <MemberSignature Language="VB.NET" Value="Public Property OnDataLossAsync As Func(Of CancellationToken, Task(Of Boolean))" />
       <MemberSignature Language="F#" Value="member this.OnDataLossAsync : Func&lt;System.Threading.CancellationToken, System.Threading.Tasks.Task&lt;bool&gt;&gt;" Usage="Microsoft.ServiceFabric.Actors.Runtime.KvsActorStateProviderBase.OnDataLossAsync" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Func&lt;System::Threading::CancellationToken, System::Threading::Tasks::Task&lt;bool&gt; ^&gt; ^ OnDataLossAsync {  void set(Func&lt;System::Threading::CancellationToken, System::Threading::Tasks::Task&lt;bool&gt; ^&gt; ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.ServiceFabric.Actors</AssemblyName>
@@ -819,7 +817,7 @@
       </ReturnValue>
       <Docs>
         <summary>
-            The function called during suspected data-loss.
+            Sets the function to be called during suspected data-loss.
             </summary>
         <value>
             A function representing data-loss callback function.
@@ -833,7 +831,6 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.ServiceFabric.Actors.Runtime.KvsActorStateProviderBase.OnRestoreCompletedAsync" />
       <MemberSignature Language="VB.NET" Value="Public Property OnRestoreCompletedAsync As Func(Of CancellationToken, Task)" />
       <MemberSignature Language="F#" Value="member this.OnRestoreCompletedAsync : Func&lt;System.Threading.CancellationToken, System.Threading.Tasks.Task&gt;" Usage="Microsoft.ServiceFabric.Actors.Runtime.KvsActorStateProviderBase.OnRestoreCompletedAsync" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Func&lt;System::Threading::CancellationToken, System::Threading::Tasks::Task ^&gt; ^ OnRestoreCompletedAsync {  void set(Func&lt;System::Threading::CancellationToken, System::Threading::Tasks::Task ^&gt; ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.ServiceFabric.Actors</AssemblyName>
@@ -844,7 +841,7 @@
       </ReturnValue>
       <Docs>
         <summary>
-            Function called after the partition state has been restored automatically by the system
+            Sets the function to be called after the partition state has been restored automatically by the system
             </summary>
         <value>
             A function representing on restore completed callback function.

@@ -1,23 +1,22 @@
-﻿<Type Name="SiteSourceControl" FullName="Microsoft.Azure.Management.WebSites.Models.SiteSourceControl">
+<Type Name="SiteSourceControl" FullName="Microsoft.Azure.Management.WebSites.Models.SiteSourceControl">
   <TypeSignature Language="C#" Value="public class SiteSourceControl : Microsoft.Azure.Management.WebSites.Models.ProxyOnlyResource" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit SiteSourceControl extends Microsoft.Azure.Management.WebSites.Models.ProxyOnlyResource" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Azure.Management.WebSites.Models.SiteSourceControl" />
   <TypeSignature Language="VB.NET" Value="Public Class SiteSourceControl&#xA;Inherits ProxyOnlyResource" />
   <TypeSignature Language="F#" Value="type SiteSourceControl = class&#xA;    inherit ProxyOnlyResource" />
-  <TypeSignature Language="C++ CLI" Value="public ref class SiteSourceControl : Microsoft::Azure::Management::WebSites::Models::ProxyOnlyResource" />
-  <TypeSignature Language="C++ WINRT" Value="[Windows::Foundation::Metadata::WebHostHidden]&#xA;class SiteSourceControl : Microsoft::Azure::Management::WebSites::Models::ProxyOnlyResource" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Azure.Management.Websites</AssemblyName>
-    <AssemblyVersion>1.0.0.0</AssemblyVersion>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
+    <AssemblyVersion>3.1.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
-    <BaseTypeName>Microsoft.Azure.Management.WebSites.Models.Resource</BaseTypeName>
-    <BaseTypeName FrameworkAlternate="azure-dotnet">Microsoft.Azure.Management.WebSites.Models.ProxyOnlyResource</BaseTypeName>
+    <BaseTypeName>Microsoft.Azure.Management.WebSites.Models.ProxyOnlyResource</BaseTypeName>
   </Base>
   <Interfaces />
   <Attributes>
     <Attribute>
-      <AttributeName>Microsoft.Rest.Serialization.JsonTransformation</AttributeName>
+      <AttributeName Language="C#">[Microsoft.Rest.Serialization.JsonTransformation]</AttributeName>
+      <AttributeName Language="F#">[&lt;Microsoft.Rest.Serialization.JsonTransformation&gt;]</AttributeName>
     </Attribute>
   </Attributes>
   <Docs>
@@ -32,13 +31,11 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Management.WebSites.Models.SiteSourceControl.#ctor" />
       <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; SiteSourceControl();" />
-      <MemberSignature Language="C++ CX" Value="public:&#xA; SiteSourceControl();" />
-      <MemberSignature Language="C++ WINRT" Value=" SiteSourceControl();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Websites</AssemblyName>
-        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>3.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
@@ -49,15 +46,15 @@
       </Docs>
     </Member>
     <Member MemberName=".ctor">
-      <MemberSignature Language="C#" Value="public SiteSourceControl (string id = null, string name = null, string kind = null, string type = null, string repoUrl = null, string branch = null, Nullable&lt;bool&gt; isManualIntegration = null, Nullable&lt;bool&gt; deploymentRollbackEnabled = null, Nullable&lt;bool&gt; isMercurial = null);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string id, string name, string kind, string type, string repoUrl, string branch, valuetype System.Nullable`1&lt;bool&gt; isManualIntegration, valuetype System.Nullable`1&lt;bool&gt; deploymentRollbackEnabled, valuetype System.Nullable`1&lt;bool&gt; isMercurial) cil managed" />
-      <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Management.WebSites.Models.SiteSourceControl.#ctor(System.String,System.String,System.String,System.String,System.String,System.String,System.Nullable{System.Boolean},System.Nullable{System.Boolean},System.Nullable{System.Boolean})" />
-      <MemberSignature Language="VB.NET" Value="Public Sub New (Optional id As String = null, Optional name As String = null, Optional kind As String = null, Optional type As String = null, Optional repoUrl As String = null, Optional branch As String = null, Optional isManualIntegration As Nullable(Of Boolean) = null, Optional deploymentRollbackEnabled As Nullable(Of Boolean) = null, Optional isMercurial As Nullable(Of Boolean) = null)" />
-      <MemberSignature Language="F#" Value="new Microsoft.Azure.Management.WebSites.Models.SiteSourceControl : string * string * string * string * string * string * Nullable&lt;bool&gt; * Nullable&lt;bool&gt; * Nullable&lt;bool&gt; -&gt; Microsoft.Azure.Management.WebSites.Models.SiteSourceControl" Usage="new Microsoft.Azure.Management.WebSites.Models.SiteSourceControl (id, name, kind, type, repoUrl, branch, isManualIntegration, deploymentRollbackEnabled, isMercurial)" />
+      <MemberSignature Language="C#" Value="public SiteSourceControl (string id = default, string name = default, string kind = default, string type = default, string repoUrl = default, string branch = default, bool? isManualIntegration = default, bool? isGitHubAction = default, bool? deploymentRollbackEnabled = default, bool? isMercurial = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string id, string name, string kind, string type, string repoUrl, string branch, valuetype System.Nullable`1&lt;bool&gt; isManualIntegration, valuetype System.Nullable`1&lt;bool&gt; isGitHubAction, valuetype System.Nullable`1&lt;bool&gt; deploymentRollbackEnabled, valuetype System.Nullable`1&lt;bool&gt; isMercurial) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Management.WebSites.Models.SiteSourceControl.#ctor(System.String,System.String,System.String,System.String,System.String,System.String,System.Nullable{System.Boolean},System.Nullable{System.Boolean},System.Nullable{System.Boolean},System.Nullable{System.Boolean})" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (Optional id As String = Nothing, Optional name As String = Nothing, Optional kind As String = Nothing, Optional type As String = Nothing, Optional repoUrl As String = Nothing, Optional branch As String = Nothing, Optional isManualIntegration As Nullable(Of Boolean) = Nothing, Optional isGitHubAction As Nullable(Of Boolean) = Nothing, Optional deploymentRollbackEnabled As Nullable(Of Boolean) = Nothing, Optional isMercurial As Nullable(Of Boolean) = Nothing)" />
+      <MemberSignature Language="F#" Value="new Microsoft.Azure.Management.WebSites.Models.SiteSourceControl : string * string * string * string * string * string * Nullable&lt;bool&gt; * Nullable&lt;bool&gt; * Nullable&lt;bool&gt; * Nullable&lt;bool&gt; -&gt; Microsoft.Azure.Management.WebSites.Models.SiteSourceControl" Usage="new Microsoft.Azure.Management.WebSites.Models.SiteSourceControl (id, name, kind, type, repoUrl, branch, isManualIntegration, isGitHubAction, deploymentRollbackEnabled, isMercurial)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Websites</AssemblyName>
-        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>3.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="id" Type="System.String" />
@@ -67,6 +64,7 @@
         <Parameter Name="repoUrl" Type="System.String" />
         <Parameter Name="branch" Type="System.String" />
         <Parameter Name="isManualIntegration" Type="System.Nullable&lt;System.Boolean&gt;" />
+        <Parameter Name="isGitHubAction" Type="System.Nullable&lt;System.Boolean&gt;" />
         <Parameter Name="deploymentRollbackEnabled" Type="System.Nullable&lt;System.Boolean&gt;" />
         <Parameter Name="isMercurial" Type="System.Nullable&lt;System.Boolean&gt;" />
       </Parameters>
@@ -81,6 +79,8 @@
             limit to manual integration; &lt;code&gt;false&lt;/code&gt; to
             enable continuous integration (which configures webhooks into
             online repos like GitHub).</param>
+        <param name="isGitHubAction">&lt;code&gt;true&lt;/code&gt; if this
+            is deployed via GitHub action.</param>
         <param name="deploymentRollbackEnabled">&lt;code&gt;true&lt;/code&gt; to
             enable deployment rollback; otherwise,
             &lt;code&gt;false&lt;/code&gt;.</param>
@@ -99,16 +99,16 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Management.WebSites.Models.SiteSourceControl.Branch" />
       <MemberSignature Language="VB.NET" Value="Public Property Branch As String" />
       <MemberSignature Language="F#" Value="member this.Branch : string with get, set" Usage="Microsoft.Azure.Management.WebSites.Models.SiteSourceControl.Branch" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Branch { System::String ^ get(); void set(System::String ^ value); };" />
-      <MemberSignature Language="C++ CX" Value="public:&#xA; property Platform::String ^ Branch { Platform::String ^ get(); void set(Platform::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Websites</AssemblyName>
-        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>3.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="properties.branch")</AttributeName>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty(PropertyName="properties.branch")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty(PropertyName="properties.branch")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -123,20 +123,21 @@
       </Docs>
     </Member>
     <Member MemberName="DeploymentRollbackEnabled">
-      <MemberSignature Language="C#" Value="public Nullable&lt;bool&gt; DeploymentRollbackEnabled { get; set; }" />
+      <MemberSignature Language="C#" Value="public bool? DeploymentRollbackEnabled { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;bool&gt; DeploymentRollbackEnabled" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Management.WebSites.Models.SiteSourceControl.DeploymentRollbackEnabled" />
       <MemberSignature Language="VB.NET" Value="Public Property DeploymentRollbackEnabled As Nullable(Of Boolean)" />
       <MemberSignature Language="F#" Value="member this.DeploymentRollbackEnabled : Nullable&lt;bool&gt; with get, set" Usage="Microsoft.Azure.Management.WebSites.Models.SiteSourceControl.DeploymentRollbackEnabled" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Nullable&lt;bool&gt; DeploymentRollbackEnabled { Nullable&lt;bool&gt; get(); void set(Nullable&lt;bool&gt; value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Websites</AssemblyName>
-        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>3.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="properties.deploymentRollbackEnabled")</AttributeName>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty(PropertyName="properties.deploymentRollbackEnabled")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty(PropertyName="properties.deploymentRollbackEnabled")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -152,21 +153,51 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <Member MemberName="IsGitHubAction">
+      <MemberSignature Language="C#" Value="public bool? IsGitHubAction { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;bool&gt; IsGitHubAction" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Management.WebSites.Models.SiteSourceControl.IsGitHubAction" />
+      <MemberSignature Language="VB.NET" Value="Public Property IsGitHubAction As Nullable(Of Boolean)" />
+      <MemberSignature Language="F#" Value="member this.IsGitHubAction : Nullable&lt;bool&gt; with get, set" Usage="Microsoft.Azure.Management.WebSites.Models.SiteSourceControl.IsGitHubAction" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Azure.Management.Websites</AssemblyName>
+        <AssemblyVersion>3.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty(PropertyName="properties.isGitHubAction")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty(PropertyName="properties.isGitHubAction")&gt;]</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Nullable&lt;System.Boolean&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets or sets &amp;lt;code&amp;gt;true&amp;lt;/code&amp;gt; if this
+            is deployed via GitHub action.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
     <Member MemberName="IsManualIntegration">
-      <MemberSignature Language="C#" Value="public Nullable&lt;bool&gt; IsManualIntegration { get; set; }" />
+      <MemberSignature Language="C#" Value="public bool? IsManualIntegration { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;bool&gt; IsManualIntegration" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Management.WebSites.Models.SiteSourceControl.IsManualIntegration" />
       <MemberSignature Language="VB.NET" Value="Public Property IsManualIntegration As Nullable(Of Boolean)" />
       <MemberSignature Language="F#" Value="member this.IsManualIntegration : Nullable&lt;bool&gt; with get, set" Usage="Microsoft.Azure.Management.WebSites.Models.SiteSourceControl.IsManualIntegration" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Nullable&lt;bool&gt; IsManualIntegration { Nullable&lt;bool&gt; get(); void set(Nullable&lt;bool&gt; value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Websites</AssemblyName>
-        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>3.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="properties.isManualIntegration")</AttributeName>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty(PropertyName="properties.isManualIntegration")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty(PropertyName="properties.isManualIntegration")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -185,20 +216,21 @@
       </Docs>
     </Member>
     <Member MemberName="IsMercurial">
-      <MemberSignature Language="C#" Value="public Nullable&lt;bool&gt; IsMercurial { get; set; }" />
+      <MemberSignature Language="C#" Value="public bool? IsMercurial { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;bool&gt; IsMercurial" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Management.WebSites.Models.SiteSourceControl.IsMercurial" />
       <MemberSignature Language="VB.NET" Value="Public Property IsMercurial As Nullable(Of Boolean)" />
       <MemberSignature Language="F#" Value="member this.IsMercurial : Nullable&lt;bool&gt; with get, set" Usage="Microsoft.Azure.Management.WebSites.Models.SiteSourceControl.IsMercurial" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Nullable&lt;bool&gt; IsMercurial { Nullable&lt;bool&gt; get(); void set(Nullable&lt;bool&gt; value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Websites</AssemblyName>
-        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>3.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="properties.isMercurial")</AttributeName>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty(PropertyName="properties.isMercurial")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty(PropertyName="properties.isMercurial")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -221,16 +253,16 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Management.WebSites.Models.SiteSourceControl.RepoUrl" />
       <MemberSignature Language="VB.NET" Value="Public Property RepoUrl As String" />
       <MemberSignature Language="F#" Value="member this.RepoUrl : string with get, set" Usage="Microsoft.Azure.Management.WebSites.Models.SiteSourceControl.RepoUrl" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ RepoUrl { System::String ^ get(); void set(System::String ^ value); };" />
-      <MemberSignature Language="C++ CX" Value="public:&#xA; property Platform::String ^ RepoUrl { Platform::String ^ get(); void set(Platform::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Websites</AssemblyName>
-        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>3.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="properties.repoUrl")</AttributeName>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty(PropertyName="properties.repoUrl")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty(PropertyName="properties.repoUrl")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>

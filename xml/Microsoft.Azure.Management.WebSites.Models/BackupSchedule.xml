@@ -1,14 +1,13 @@
-﻿<Type Name="BackupSchedule" FullName="Microsoft.Azure.Management.WebSites.Models.BackupSchedule">
+<Type Name="BackupSchedule" FullName="Microsoft.Azure.Management.WebSites.Models.BackupSchedule">
   <TypeSignature Language="C#" Value="public class BackupSchedule" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit BackupSchedule extends System.Object" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Azure.Management.WebSites.Models.BackupSchedule" />
   <TypeSignature Language="VB.NET" Value="Public Class BackupSchedule" />
   <TypeSignature Language="F#" Value="type BackupSchedule = class" />
-  <TypeSignature Language="C++ CLI" Value="public ref class BackupSchedule" />
-  <TypeSignature Language="C++ WINRT" Value="[Windows::Foundation::Metadata::WebHostHidden]&#xA;class BackupSchedule" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Azure.Management.Websites</AssemblyName>
-    <AssemblyVersion>1.0.0.0</AssemblyVersion>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
+    <AssemblyVersion>3.1.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
@@ -27,13 +26,11 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Management.WebSites.Models.BackupSchedule.#ctor" />
       <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; BackupSchedule();" />
-      <MemberSignature Language="C++ CX" Value="public:&#xA; BackupSchedule();" />
-      <MemberSignature Language="C++ WINRT" Value=" BackupSchedule();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Websites</AssemblyName>
-        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>3.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
@@ -44,14 +41,16 @@
       </Docs>
     </Member>
     <Member MemberName=".ctor">
-      <MemberSignature Language="C#" Value="public BackupSchedule (int frequencyInterval, Microsoft.Azure.Management.WebSites.Models.FrequencyUnit frequencyUnit, bool keepAtLeastOneBackup, int retentionPeriodInDays, Nullable&lt;DateTime&gt; startTime = null, Nullable&lt;DateTime&gt; lastExecutionTime = null);" />
+      <MemberSignature Language="C#" Value="public BackupSchedule (int frequencyInterval, Microsoft.Azure.Management.WebSites.Models.FrequencyUnit frequencyUnit, bool keepAtLeastOneBackup, int retentionPeriodInDays, DateTime? startTime = default, DateTime? lastExecutionTime = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(int32 frequencyInterval, valuetype Microsoft.Azure.Management.WebSites.Models.FrequencyUnit frequencyUnit, bool keepAtLeastOneBackup, int32 retentionPeriodInDays, valuetype System.Nullable`1&lt;valuetype System.DateTime&gt; startTime, valuetype System.Nullable`1&lt;valuetype System.DateTime&gt; lastExecutionTime) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Management.WebSites.Models.BackupSchedule.#ctor(System.Int32,Microsoft.Azure.Management.WebSites.Models.FrequencyUnit,System.Boolean,System.Int32,System.Nullable{System.DateTime},System.Nullable{System.DateTime})" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (frequencyInterval As Integer, frequencyUnit As FrequencyUnit, keepAtLeastOneBackup As Boolean, retentionPeriodInDays As Integer, Optional startTime As Nullable(Of DateTime) = Nothing, Optional lastExecutionTime As Nullable(Of DateTime) = Nothing)" />
       <MemberSignature Language="F#" Value="new Microsoft.Azure.Management.WebSites.Models.BackupSchedule : int * Microsoft.Azure.Management.WebSites.Models.FrequencyUnit * bool * int * Nullable&lt;DateTime&gt; * Nullable&lt;DateTime&gt; -&gt; Microsoft.Azure.Management.WebSites.Models.BackupSchedule" Usage="new Microsoft.Azure.Management.WebSites.Models.BackupSchedule (frequencyInterval, frequencyUnit, keepAtLeastOneBackup, retentionPeriodInDays, startTime, lastExecutionTime)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Websites</AssemblyName>
-        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>3.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="frequencyInterval" Type="System.Int32" />
@@ -90,16 +89,16 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Management.WebSites.Models.BackupSchedule.FrequencyInterval" />
       <MemberSignature Language="VB.NET" Value="Public Property FrequencyInterval As Integer" />
       <MemberSignature Language="F#" Value="member this.FrequencyInterval : int with get, set" Usage="Microsoft.Azure.Management.WebSites.Models.BackupSchedule.FrequencyInterval" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int FrequencyInterval { int get(); void set(int value); };" />
-      <MemberSignature Language="C++ CX" Value="public:&#xA; property int FrequencyInterval { int get(); void set(int value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Websites</AssemblyName>
-        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>3.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="frequencyInterval")</AttributeName>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty(PropertyName="frequencyInterval")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty(PropertyName="frequencyInterval")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -121,16 +120,16 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Management.WebSites.Models.BackupSchedule.FrequencyUnit" />
       <MemberSignature Language="VB.NET" Value="Public Property FrequencyUnit As FrequencyUnit" />
       <MemberSignature Language="F#" Value="member this.FrequencyUnit : Microsoft.Azure.Management.WebSites.Models.FrequencyUnit with get, set" Usage="Microsoft.Azure.Management.WebSites.Models.BackupSchedule.FrequencyUnit" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Azure::Management::WebSites::Models::FrequencyUnit FrequencyUnit { Microsoft::Azure::Management::WebSites::Models::FrequencyUnit get(); void set(Microsoft::Azure::Management::WebSites::Models::FrequencyUnit value); };" />
-      <MemberSignature Language="C++ CX" Value="public:&#xA; property Microsoft::Azure::Management::WebSites::Models::FrequencyUnit FrequencyUnit { Microsoft::Azure::Management::WebSites::Models::FrequencyUnit get(); void set(Microsoft::Azure::Management::WebSites::Models::FrequencyUnit value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Websites</AssemblyName>
-        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>3.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="frequencyUnit")</AttributeName>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty(PropertyName="frequencyUnit")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty(PropertyName="frequencyUnit")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -153,16 +152,16 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Management.WebSites.Models.BackupSchedule.KeepAtLeastOneBackup" />
       <MemberSignature Language="VB.NET" Value="Public Property KeepAtLeastOneBackup As Boolean" />
       <MemberSignature Language="F#" Value="member this.KeepAtLeastOneBackup : bool with get, set" Usage="Microsoft.Azure.Management.WebSites.Models.BackupSchedule.KeepAtLeastOneBackup" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool KeepAtLeastOneBackup { bool get(); void set(bool value); };" />
-      <MemberSignature Language="C++ CX" Value="public:&#xA; property bool KeepAtLeastOneBackup { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Websites</AssemblyName>
-        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>3.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="keepAtLeastOneBackup")</AttributeName>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty(PropertyName="keepAtLeastOneBackup")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty(PropertyName="keepAtLeastOneBackup")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -179,20 +178,21 @@
       </Docs>
     </Member>
     <Member MemberName="LastExecutionTime">
-      <MemberSignature Language="C#" Value="public Nullable&lt;DateTime&gt; LastExecutionTime { get; }" />
+      <MemberSignature Language="C#" Value="public DateTime? LastExecutionTime { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;valuetype System.DateTime&gt; LastExecutionTime" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Management.WebSites.Models.BackupSchedule.LastExecutionTime" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property LastExecutionTime As Nullable(Of DateTime)" />
       <MemberSignature Language="F#" Value="member this.LastExecutionTime : Nullable&lt;DateTime&gt;" Usage="Microsoft.Azure.Management.WebSites.Models.BackupSchedule.LastExecutionTime" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Nullable&lt;DateTime&gt; LastExecutionTime { Nullable&lt;DateTime&gt; get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Websites</AssemblyName>
-        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>3.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="lastExecutionTime")</AttributeName>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty(PropertyName="lastExecutionTime")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty(PropertyName="lastExecutionTime")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -212,16 +212,16 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Management.WebSites.Models.BackupSchedule.RetentionPeriodInDays" />
       <MemberSignature Language="VB.NET" Value="Public Property RetentionPeriodInDays As Integer" />
       <MemberSignature Language="F#" Value="member this.RetentionPeriodInDays : int with get, set" Usage="Microsoft.Azure.Management.WebSites.Models.BackupSchedule.RetentionPeriodInDays" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int RetentionPeriodInDays { int get(); void set(int value); };" />
-      <MemberSignature Language="C++ CX" Value="public:&#xA; property int RetentionPeriodInDays { int get(); void set(int value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Websites</AssemblyName>
-        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>3.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="retentionPeriodInDays")</AttributeName>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty(PropertyName="retentionPeriodInDays")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty(PropertyName="retentionPeriodInDays")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -236,20 +236,21 @@
       </Docs>
     </Member>
     <Member MemberName="StartTime">
-      <MemberSignature Language="C#" Value="public Nullable&lt;DateTime&gt; StartTime { get; set; }" />
+      <MemberSignature Language="C#" Value="public DateTime? StartTime { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;valuetype System.DateTime&gt; StartTime" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Management.WebSites.Models.BackupSchedule.StartTime" />
       <MemberSignature Language="VB.NET" Value="Public Property StartTime As Nullable(Of DateTime)" />
       <MemberSignature Language="F#" Value="member this.StartTime : Nullable&lt;DateTime&gt; with get, set" Usage="Microsoft.Azure.Management.WebSites.Models.BackupSchedule.StartTime" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Nullable&lt;DateTime&gt; StartTime { Nullable&lt;DateTime&gt; get(); void set(Nullable&lt;DateTime&gt; value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Websites</AssemblyName>
-        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>3.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="startTime")</AttributeName>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty(PropertyName="startTime")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty(PropertyName="startTime")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -269,13 +270,11 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Management.WebSites.Models.BackupSchedule.Validate" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Sub Validate ()" />
       <MemberSignature Language="F#" Value="abstract member Validate : unit -&gt; unit&#xA;override this.Validate : unit -&gt; unit" Usage="backupSchedule.Validate " />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Validate();" />
-      <MemberSignature Language="C++ CX" Value="public:&#xA; virtual void Validate();" />
-      <MemberSignature Language="C++ WINRT" Value=" virtual void Validate();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Websites</AssemblyName>
-        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>3.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>

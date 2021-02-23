@@ -1,4 +1,4 @@
-﻿<Type Name="AverageServiceLoadScalingTrigger" FullName="System.Fabric.Description.AverageServiceLoadScalingTrigger">
+<Type Name="AverageServiceLoadScalingTrigger" FullName="System.Fabric.Description.AverageServiceLoadScalingTrigger">
   <TypeSignature Language="C#" Value="public class AverageServiceLoadScalingTrigger : System.Fabric.Description.ScalingTriggerDescription" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit AverageServiceLoadScalingTrigger extends System.Fabric.Description.ScalingTriggerDescription" />
   <TypeSignature Language="DocId" Value="T:System.Fabric.Description.AverageServiceLoadScalingTrigger" />
@@ -6,7 +6,7 @@
   <TypeSignature Language="F#" Value="type AverageServiceLoadScalingTrigger = class&#xA;    inherit ScalingTriggerDescription" />
   <AssemblyInfo>
     <AssemblyName>System.Fabric</AssemblyName>
-    <AssemblyVersion>6.0.0.0</AssemblyVersion>
+    <AssemblyVersion>7.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Fabric.Description.ScalingTriggerDescription</BaseTypeName>
@@ -31,7 +31,7 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Fabric</AssemblyName>
-        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
@@ -50,7 +50,7 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Fabric</AssemblyName>
-        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Double</ReturnType>
@@ -74,7 +74,7 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Fabric</AssemblyName>
-        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -90,7 +90,7 @@
       </Docs>
     </Member>
     <Member MemberName="ScaleInterval">
-      <MemberSignature Language="C#" Value="public Nullable&lt;TimeSpan&gt; ScaleInterval { get; set; }" />
+      <MemberSignature Language="C#" Value="public TimeSpan? ScaleInterval { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;valuetype System.TimeSpan&gt; ScaleInterval" />
       <MemberSignature Language="DocId" Value="P:System.Fabric.Description.AverageServiceLoadScalingTrigger.ScaleInterval" />
       <MemberSignature Language="VB.NET" Value="Public Property ScaleInterval As Nullable(Of TimeSpan)" />
@@ -98,7 +98,7 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Fabric</AssemblyName>
-        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Nullable&lt;System.TimeSpan&gt;</ReturnType>
@@ -125,7 +125,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Fabric</AssemblyName>
-        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -152,7 +152,7 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Fabric</AssemblyName>
-        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Double</ReturnType>
@@ -163,6 +163,30 @@
         </summary>
         <value>
           <para>The upper limit of the load value of a metric. </para>
+        </value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="UseOnlyPrimaryLoad">
+      <MemberSignature Language="C#" Value="public bool UseOnlyPrimaryLoad { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool UseOnlyPrimaryLoad" />
+      <MemberSignature Language="DocId" Value="P:System.Fabric.Description.AverageServiceLoadScalingTrigger.UseOnlyPrimaryLoad" />
+      <MemberSignature Language="VB.NET" Value="Public Property UseOnlyPrimaryLoad As Boolean" />
+      <MemberSignature Language="F#" Value="member this.UseOnlyPrimaryLoad : bool with get, set" Usage="System.Fabric.Description.AverageServiceLoadScalingTrigger.UseOnlyPrimaryLoad" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Fabric</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <para>Gets or sets whether only the load of primary replica should be considered for scaling. </para>
+        </summary>
+        <value>
+          <para>If set to true, then trigger will only consider the load of primary replicas of stateful service. If set to false, trigger will consider load of all replicas. This parameter cannot be set to true for stateless service. </para>
         </value>
         <remarks>To be added.</remarks>
       </Docs>

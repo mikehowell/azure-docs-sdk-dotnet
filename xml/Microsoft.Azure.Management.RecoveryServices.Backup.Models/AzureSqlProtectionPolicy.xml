@@ -1,14 +1,12 @@
-﻿<Type Name="AzureSqlProtectionPolicy" FullName="Microsoft.Azure.Management.RecoveryServices.Backup.Models.AzureSqlProtectionPolicy">
+<Type Name="AzureSqlProtectionPolicy" FullName="Microsoft.Azure.Management.RecoveryServices.Backup.Models.AzureSqlProtectionPolicy">
   <TypeSignature Language="C#" Value="public class AzureSqlProtectionPolicy : Microsoft.Azure.Management.RecoveryServices.Backup.Models.ProtectionPolicy" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit AzureSqlProtectionPolicy extends Microsoft.Azure.Management.RecoveryServices.Backup.Models.ProtectionPolicy" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Azure.Management.RecoveryServices.Backup.Models.AzureSqlProtectionPolicy" />
   <TypeSignature Language="VB.NET" Value="Public Class AzureSqlProtectionPolicy&#xA;Inherits ProtectionPolicy" />
   <TypeSignature Language="F#" Value="type AzureSqlProtectionPolicy = class&#xA;    inherit ProtectionPolicy" />
-  <TypeSignature Language="C++ CLI" Value="public ref class AzureSqlProtectionPolicy : Microsoft::Azure::Management::RecoveryServices::Backup::Models::ProtectionPolicy" />
-  <TypeSignature Language="C++ WINRT" Value="[Windows::Foundation::Metadata::WebHostHidden]&#xA;class AzureSqlProtectionPolicy : Microsoft::Azure::Management::RecoveryServices::Backup::Models::ProtectionPolicy" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Azure.Management.RecoveryServices.Backup</AssemblyName>
-    <AssemblyVersion>2.0.0.0</AssemblyVersion>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>Microsoft.Azure.Management.RecoveryServices.Backup.Models.ProtectionPolicy</BaseTypeName>
@@ -16,7 +14,8 @@
   <Interfaces />
   <Attributes>
     <Attribute>
-      <AttributeName>Newtonsoft.Json.JsonObject("AzureSql")</AttributeName>
+      <AttributeName Language="C#">[Newtonsoft.Json.JsonObject("AzureSql")]</AttributeName>
+      <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonObject("AzureSql")&gt;]</AttributeName>
     </Attribute>
   </Attributes>
   <Docs>
@@ -31,13 +30,10 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Management.RecoveryServices.Backup.Models.AzureSqlProtectionPolicy.#ctor" />
       <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; AzureSqlProtectionPolicy();" />
-      <MemberSignature Language="C++ CX" Value="public:&#xA; AzureSqlProtectionPolicy();" />
-      <MemberSignature Language="C++ WINRT" Value=" AzureSqlProtectionPolicy();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.RecoveryServices.Backup</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
@@ -48,14 +44,15 @@
       </Docs>
     </Member>
     <Member MemberName=".ctor">
-      <MemberSignature Language="C#" Value="public AzureSqlProtectionPolicy (Nullable&lt;int&gt; protectedItemsCount = null, Microsoft.Azure.Management.RecoveryServices.Backup.Models.RetentionPolicy retentionPolicy = null);" />
+      <MemberSignature Language="C#" Value="public AzureSqlProtectionPolicy (int? protectedItemsCount = default, Microsoft.Azure.Management.RecoveryServices.Backup.Models.RetentionPolicy retentionPolicy = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(valuetype System.Nullable`1&lt;int32&gt; protectedItemsCount, class Microsoft.Azure.Management.RecoveryServices.Backup.Models.RetentionPolicy retentionPolicy) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Management.RecoveryServices.Backup.Models.AzureSqlProtectionPolicy.#ctor(System.Nullable{System.Int32},Microsoft.Azure.Management.RecoveryServices.Backup.Models.RetentionPolicy)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (Optional protectedItemsCount As Nullable(Of Integer) = Nothing, Optional retentionPolicy As RetentionPolicy = Nothing)" />
       <MemberSignature Language="F#" Value="new Microsoft.Azure.Management.RecoveryServices.Backup.Models.AzureSqlProtectionPolicy : Nullable&lt;int&gt; * Microsoft.Azure.Management.RecoveryServices.Backup.Models.RetentionPolicy -&gt; Microsoft.Azure.Management.RecoveryServices.Backup.Models.AzureSqlProtectionPolicy" Usage="new Microsoft.Azure.Management.RecoveryServices.Backup.Models.AzureSqlProtectionPolicy (protectedItemsCount, retentionPolicy)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.RecoveryServices.Backup</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="protectedItemsCount" Type="System.Nullable&lt;System.Int32&gt;" />
@@ -77,15 +74,15 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Management.RecoveryServices.Backup.Models.AzureSqlProtectionPolicy.RetentionPolicy" />
       <MemberSignature Language="VB.NET" Value="Public Property RetentionPolicy As RetentionPolicy" />
       <MemberSignature Language="F#" Value="member this.RetentionPolicy : Microsoft.Azure.Management.RecoveryServices.Backup.Models.RetentionPolicy with get, set" Usage="Microsoft.Azure.Management.RecoveryServices.Backup.Models.AzureSqlProtectionPolicy.RetentionPolicy" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Azure::Management::RecoveryServices::Backup::Models::RetentionPolicy ^ RetentionPolicy { Microsoft::Azure::Management::RecoveryServices::Backup::Models::RetentionPolicy ^ get(); void set(Microsoft::Azure::Management::RecoveryServices::Backup::Models::RetentionPolicy ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.RecoveryServices.Backup</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="retentionPolicy")</AttributeName>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty(PropertyName="retentionPolicy")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty(PropertyName="retentionPolicy")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>

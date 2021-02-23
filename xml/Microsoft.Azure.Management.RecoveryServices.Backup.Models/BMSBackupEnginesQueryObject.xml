@@ -1,14 +1,12 @@
-﻿<Type Name="BMSBackupEnginesQueryObject" FullName="Microsoft.Azure.Management.RecoveryServices.Backup.Models.BMSBackupEnginesQueryObject">
+<Type Name="BMSBackupEnginesQueryObject" FullName="Microsoft.Azure.Management.RecoveryServices.Backup.Models.BMSBackupEnginesQueryObject">
   <TypeSignature Language="C#" Value="public class BMSBackupEnginesQueryObject" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit BMSBackupEnginesQueryObject extends System.Object" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Azure.Management.RecoveryServices.Backup.Models.BMSBackupEnginesQueryObject" />
   <TypeSignature Language="VB.NET" Value="Public Class BMSBackupEnginesQueryObject" />
   <TypeSignature Language="F#" Value="type BMSBackupEnginesQueryObject = class" />
-  <TypeSignature Language="C++ CLI" Value="public ref class BMSBackupEnginesQueryObject" />
-  <TypeSignature Language="C++ WINRT" Value="[Windows::Foundation::Metadata::WebHostHidden]&#xA;class BMSBackupEnginesQueryObject" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Azure.Management.RecoveryServices.Backup</AssemblyName>
-    <AssemblyVersion>2.0.0.0</AssemblyVersion>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
@@ -26,13 +24,10 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Management.RecoveryServices.Backup.Models.BMSBackupEnginesQueryObject.#ctor" />
       <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; BMSBackupEnginesQueryObject();" />
-      <MemberSignature Language="C++ CX" Value="public:&#xA; BMSBackupEnginesQueryObject();" />
-      <MemberSignature Language="C++ WINRT" Value=" BMSBackupEnginesQueryObject();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.RecoveryServices.Backup</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
@@ -44,16 +39,15 @@
       </Docs>
     </Member>
     <Member MemberName=".ctor">
-      <MemberSignature Language="C#" Value="public BMSBackupEnginesQueryObject (string backupManagementType = null, string friendlyName = null, string expand = null);" />
+      <MemberSignature Language="C#" Value="public BMSBackupEnginesQueryObject (string backupManagementType = default, string friendlyName = default, string expand = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string backupManagementType, string friendlyName, string expand) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Management.RecoveryServices.Backup.Models.BMSBackupEnginesQueryObject.#ctor(System.String,System.String,System.String)" />
-      <MemberSignature Language="VB.NET" Value="Public Sub New (Optional backupManagementType As String = null, Optional friendlyName As String = null, Optional expand As String = null)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (Optional backupManagementType As String = Nothing, Optional friendlyName As String = Nothing, Optional expand As String = Nothing)" />
       <MemberSignature Language="F#" Value="new Microsoft.Azure.Management.RecoveryServices.Backup.Models.BMSBackupEnginesQueryObject : string * string * string -&gt; Microsoft.Azure.Management.RecoveryServices.Backup.Models.BMSBackupEnginesQueryObject" Usage="new Microsoft.Azure.Management.RecoveryServices.Backup.Models.BMSBackupEnginesQueryObject (backupManagementType, friendlyName, expand)" />
-      <MemberSignature Language="C++ WINRT" Value=" BMSBackupEnginesQueryObject(std::wstring const &amp; backupManagementType = null, std::wstring const &amp; friendlyName = null, std::wstring const &amp; expand = null);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.RecoveryServices.Backup</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="backupManagementType" Type="System.String" />
@@ -63,7 +57,8 @@
       <Docs>
         <param name="backupManagementType">Backup management type for the
             backup engine. Possible values include: 'Invalid', 'AzureIaasVM',
-            'MAB', 'DPM', 'AzureBackupServer', 'AzureSql'</param>
+            'MAB', 'DPM', 'AzureBackupServer', 'AzureSql', 'AzureStorage',
+            'AzureWorkload', 'DefaultBackup'</param>
         <param name="friendlyName">Friendly name of the backup
             engine.</param>
         <param name="expand">Attribute to add extended info.</param>
@@ -80,16 +75,15 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Management.RecoveryServices.Backup.Models.BMSBackupEnginesQueryObject.BackupManagementType" />
       <MemberSignature Language="VB.NET" Value="Public Property BackupManagementType As String" />
       <MemberSignature Language="F#" Value="member this.BackupManagementType : string with get, set" Usage="Microsoft.Azure.Management.RecoveryServices.Backup.Models.BMSBackupEnginesQueryObject.BackupManagementType" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ BackupManagementType { System::String ^ get(); void set(System::String ^ value); };" />
-      <MemberSignature Language="C++ CX" Value="public:&#xA; property Platform::String ^ BackupManagementType { Platform::String ^ get(); void set(Platform::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.RecoveryServices.Backup</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="backupManagementType")</AttributeName>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty(PropertyName="backupManagementType")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty(PropertyName="backupManagementType")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -99,7 +93,8 @@
         <summary>
             Gets or sets backup management type for the backup engine. Possible
             values include: 'Invalid', 'AzureIaasVM', 'MAB', 'DPM',
-            'AzureBackupServer', 'AzureSql'
+            'AzureBackupServer', 'AzureSql', 'AzureStorage', 'AzureWorkload',
+            'DefaultBackup'
             </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
@@ -111,16 +106,15 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Management.RecoveryServices.Backup.Models.BMSBackupEnginesQueryObject.Expand" />
       <MemberSignature Language="VB.NET" Value="Public Property Expand As String" />
       <MemberSignature Language="F#" Value="member this.Expand : string with get, set" Usage="Microsoft.Azure.Management.RecoveryServices.Backup.Models.BMSBackupEnginesQueryObject.Expand" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Expand { System::String ^ get(); void set(System::String ^ value); };" />
-      <MemberSignature Language="C++ CX" Value="public:&#xA; property Platform::String ^ Expand { Platform::String ^ get(); void set(Platform::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.RecoveryServices.Backup</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="expand")</AttributeName>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty(PropertyName="expand")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty(PropertyName="expand")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -140,16 +134,15 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Management.RecoveryServices.Backup.Models.BMSBackupEnginesQueryObject.FriendlyName" />
       <MemberSignature Language="VB.NET" Value="Public Property FriendlyName As String" />
       <MemberSignature Language="F#" Value="member this.FriendlyName : string with get, set" Usage="Microsoft.Azure.Management.RecoveryServices.Backup.Models.BMSBackupEnginesQueryObject.FriendlyName" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ FriendlyName { System::String ^ get(); void set(System::String ^ value); };" />
-      <MemberSignature Language="C++ CX" Value="public:&#xA; property Platform::String ^ FriendlyName { Platform::String ^ get(); void set(Platform::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.RecoveryServices.Backup</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="friendlyName")</AttributeName>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty(PropertyName="friendlyName")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty(PropertyName="friendlyName")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>

@@ -1,15 +1,15 @@
-﻿<Type Name="TimeWindow" FullName="Microsoft.Azure.Management.Monitor.Models.TimeWindow">
+<Type Name="TimeWindow" FullName="Microsoft.Azure.Management.Monitor.Models.TimeWindow">
   <TypeSignature Language="C#" Value="public class TimeWindow" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit TimeWindow extends System.Object" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Azure.Management.Monitor.Models.TimeWindow" />
   <TypeSignature Language="VB.NET" Value="Public Class TimeWindow" />
   <TypeSignature Language="F#" Value="type TimeWindow = class" />
-  <TypeSignature Language="C++ CLI" Value="public ref class TimeWindow" />
-  <TypeSignature Language="C++ WINRT" Value="[Windows::Foundation::Metadata::WebHostHidden]&#xA;class TimeWindow" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Azure.Management.Monitor</AssemblyName>
-    <AssemblyVersion>0.19.0.0</AssemblyVersion>
-    <AssemblyVersion>0.19.1.0</AssemblyVersion>
+    <AssemblyVersion>0.24.1.0</AssemblyVersion>
+    <AssemblyVersion>0.25.0.0</AssemblyVersion>
+    <AssemblyVersion>0.25.1.0</AssemblyVersion>
+    <AssemblyVersion>0.25.2.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
@@ -27,14 +27,13 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Management.Monitor.Models.TimeWindow.#ctor" />
       <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; TimeWindow();" />
-      <MemberSignature Language="C++ CX" Value="public:&#xA; TimeWindow();" />
-      <MemberSignature Language="C++ WINRT" Value=" TimeWindow();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Monitor</AssemblyName>
-        <AssemblyVersion>0.19.0.0</AssemblyVersion>
-        <AssemblyVersion>0.19.1.0</AssemblyVersion>
+        <AssemblyVersion>0.24.1.0</AssemblyVersion>
+        <AssemblyVersion>0.25.0.0</AssemblyVersion>
+        <AssemblyVersion>0.25.1.0</AssemblyVersion>
+        <AssemblyVersion>0.25.2.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
@@ -45,16 +44,18 @@
       </Docs>
     </Member>
     <Member MemberName=".ctor">
-      <MemberSignature Language="C#" Value="public TimeWindow (DateTime start, DateTime end, string timeZone = null);" />
+      <MemberSignature Language="C#" Value="public TimeWindow (DateTime start, DateTime end, string timeZone = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(valuetype System.DateTime start, valuetype System.DateTime end, string timeZone) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Management.Monitor.Models.TimeWindow.#ctor(System.DateTime,System.DateTime,System.String)" />
-      <MemberSignature Language="VB.NET" Value="Public Sub New (start As DateTime, end As DateTime, Optional timeZone As String = null)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (start As DateTime, end As DateTime, Optional timeZone As String = Nothing)" />
       <MemberSignature Language="F#" Value="new Microsoft.Azure.Management.Monitor.Models.TimeWindow : DateTime * DateTime * string -&gt; Microsoft.Azure.Management.Monitor.Models.TimeWindow" Usage="new Microsoft.Azure.Management.Monitor.Models.TimeWindow (start, end, timeZone)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Monitor</AssemblyName>
-        <AssemblyVersion>0.19.0.0</AssemblyVersion>
-        <AssemblyVersion>0.19.1.0</AssemblyVersion>
+        <AssemblyVersion>0.24.1.0</AssemblyVersion>
+        <AssemblyVersion>0.25.0.0</AssemblyVersion>
+        <AssemblyVersion>0.25.1.0</AssemblyVersion>
+        <AssemblyVersion>0.25.2.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="start" Type="System.DateTime" />
@@ -67,7 +68,7 @@
         <param name="end">the end time for the profile in ISO 8601
             format.</param>
         <param name="timeZone">the timezone of the start and end times for
-            the profile. Some examples of valid timezones are: Dateline
+            the profile. Some examples of valid time zones are: Dateline
             Standard Time, UTC-11, Hawaiian Standard Time, Alaskan Standard
             Time, Pacific Standard Time (Mexico), Pacific Standard Time, US
             Mountain Standard Time, Mountain Standard Time (Mexico), Mountain
@@ -121,16 +122,18 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Management.Monitor.Models.TimeWindow.End" />
       <MemberSignature Language="VB.NET" Value="Public Property End As DateTime" />
       <MemberSignature Language="F#" Value="member this.End : DateTime with get, set" Usage="Microsoft.Azure.Management.Monitor.Models.TimeWindow.End" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property DateTime End { DateTime get(); void set(DateTime value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Monitor</AssemblyName>
-        <AssemblyVersion>0.19.0.0</AssemblyVersion>
-        <AssemblyVersion>0.19.1.0</AssemblyVersion>
+        <AssemblyVersion>0.24.1.0</AssemblyVersion>
+        <AssemblyVersion>0.25.0.0</AssemblyVersion>
+        <AssemblyVersion>0.25.1.0</AssemblyVersion>
+        <AssemblyVersion>0.25.2.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="end")</AttributeName>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty(PropertyName="end")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty(PropertyName="end")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -150,16 +153,18 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Management.Monitor.Models.TimeWindow.Start" />
       <MemberSignature Language="VB.NET" Value="Public Property Start As DateTime" />
       <MemberSignature Language="F#" Value="member this.Start : DateTime with get, set" Usage="Microsoft.Azure.Management.Monitor.Models.TimeWindow.Start" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property DateTime Start { DateTime get(); void set(DateTime value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Monitor</AssemblyName>
-        <AssemblyVersion>0.19.0.0</AssemblyVersion>
-        <AssemblyVersion>0.19.1.0</AssemblyVersion>
+        <AssemblyVersion>0.24.1.0</AssemblyVersion>
+        <AssemblyVersion>0.25.0.0</AssemblyVersion>
+        <AssemblyVersion>0.25.1.0</AssemblyVersion>
+        <AssemblyVersion>0.25.2.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="start")</AttributeName>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty(PropertyName="start")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty(PropertyName="start")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -179,17 +184,18 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Management.Monitor.Models.TimeWindow.TimeZone" />
       <MemberSignature Language="VB.NET" Value="Public Property TimeZone As String" />
       <MemberSignature Language="F#" Value="member this.TimeZone : string with get, set" Usage="Microsoft.Azure.Management.Monitor.Models.TimeWindow.TimeZone" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ TimeZone { System::String ^ get(); void set(System::String ^ value); };" />
-      <MemberSignature Language="C++ CX" Value="public:&#xA; property Platform::String ^ TimeZone { Platform::String ^ get(); void set(Platform::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Monitor</AssemblyName>
-        <AssemblyVersion>0.19.0.0</AssemblyVersion>
-        <AssemblyVersion>0.19.1.0</AssemblyVersion>
+        <AssemblyVersion>0.24.1.0</AssemblyVersion>
+        <AssemblyVersion>0.25.0.0</AssemblyVersion>
+        <AssemblyVersion>0.25.1.0</AssemblyVersion>
+        <AssemblyVersion>0.25.2.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="timeZone")</AttributeName>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty(PropertyName="timeZone")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty(PropertyName="timeZone")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -198,7 +204,7 @@
       <Docs>
         <summary>
             Gets or sets the timezone of the start and end times for the
-            profile. Some examples of valid timezones are: Dateline Standard
+            profile. Some examples of valid time zones are: Dateline Standard
             Time, UTC-11, Hawaiian Standard Time, Alaskan Standard Time,
             Pacific Standard Time (Mexico), Pacific Standard Time, US Mountain
             Standard Time, Mountain Standard Time (Mexico), Mountain Standard
@@ -250,14 +256,13 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Management.Monitor.Models.TimeWindow.Validate" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Sub Validate ()" />
       <MemberSignature Language="F#" Value="abstract member Validate : unit -&gt; unit&#xA;override this.Validate : unit -&gt; unit" Usage="timeWindow.Validate " />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Validate();" />
-      <MemberSignature Language="C++ CX" Value="public:&#xA; virtual void Validate();" />
-      <MemberSignature Language="C++ WINRT" Value=" virtual void Validate();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Monitor</AssemblyName>
-        <AssemblyVersion>0.19.0.0</AssemblyVersion>
-        <AssemblyVersion>0.19.1.0</AssemblyVersion>
+        <AssemblyVersion>0.24.1.0</AssemblyVersion>
+        <AssemblyVersion>0.25.0.0</AssemblyVersion>
+        <AssemblyVersion>0.25.1.0</AssemblyVersion>
+        <AssemblyVersion>0.25.2.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>

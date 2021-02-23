@@ -1,14 +1,14 @@
-﻿<Type Name="UsageMetric" FullName="Microsoft.Azure.Management.OperationalInsights.Models.UsageMetric">
+<Type Name="UsageMetric" FullName="Microsoft.Azure.Management.OperationalInsights.Models.UsageMetric">
   <TypeSignature Language="C#" Value="public class UsageMetric" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit UsageMetric extends System.Object" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Azure.Management.OperationalInsights.Models.UsageMetric" />
   <TypeSignature Language="VB.NET" Value="Public Class UsageMetric" />
   <TypeSignature Language="F#" Value="type UsageMetric = class" />
-  <TypeSignature Language="C++ CLI" Value="public ref class UsageMetric" />
-  <TypeSignature Language="C++ WINRT" Value="[Windows::Foundation::Metadata::WebHostHidden]&#xA;class UsageMetric" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Azure.Management.OperationalInsights</AssemblyName>
-    <AssemblyVersion>0.18.0.0</AssemblyVersion>
+    <AssemblyVersion>0.19.0.0</AssemblyVersion>
+    <AssemblyVersion>0.20.0.0</AssemblyVersion>
+    <AssemblyVersion>0.21.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
@@ -26,13 +26,12 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Management.OperationalInsights.Models.UsageMetric.#ctor" />
       <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; UsageMetric();" />
-      <MemberSignature Language="C++ CX" Value="public:&#xA; UsageMetric();" />
-      <MemberSignature Language="C++ WINRT" Value=" UsageMetric();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.OperationalInsights</AssemblyName>
-        <AssemblyVersion>0.18.0.0</AssemblyVersion>
+        <AssemblyVersion>0.19.0.0</AssemblyVersion>
+        <AssemblyVersion>0.20.0.0</AssemblyVersion>
+        <AssemblyVersion>0.21.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
@@ -43,15 +42,17 @@
       </Docs>
     </Member>
     <Member MemberName=".ctor">
-      <MemberSignature Language="C#" Value="public UsageMetric (Microsoft.Azure.Management.OperationalInsights.Models.MetricName name = null, string unit = null, Nullable&lt;double&gt; currentValue = null, Nullable&lt;double&gt; limit = null, Nullable&lt;DateTime&gt; nextResetTime = null, string quotaPeriod = null);" />
+      <MemberSignature Language="C#" Value="public UsageMetric (Microsoft.Azure.Management.OperationalInsights.Models.MetricName name = default, string unit = default, double? currentValue = default, double? limit = default, DateTime? nextResetTime = default, string quotaPeriod = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class Microsoft.Azure.Management.OperationalInsights.Models.MetricName name, string unit, valuetype System.Nullable`1&lt;float64&gt; currentValue, valuetype System.Nullable`1&lt;float64&gt; limit, valuetype System.Nullable`1&lt;valuetype System.DateTime&gt; nextResetTime, string quotaPeriod) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Management.OperationalInsights.Models.UsageMetric.#ctor(Microsoft.Azure.Management.OperationalInsights.Models.MetricName,System.String,System.Nullable{System.Double},System.Nullable{System.Double},System.Nullable{System.DateTime},System.String)" />
-      <MemberSignature Language="VB.NET" Value="Public Sub New (Optional name As MetricName = null, Optional unit As String = null, Optional currentValue As Nullable(Of Double) = null, Optional limit As Nullable(Of Double) = null, Optional nextResetTime As Nullable(Of DateTime) = null, Optional quotaPeriod As String = null)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (Optional name As MetricName = Nothing, Optional unit As String = Nothing, Optional currentValue As Nullable(Of Double) = Nothing, Optional limit As Nullable(Of Double) = Nothing, Optional nextResetTime As Nullable(Of DateTime) = Nothing, Optional quotaPeriod As String = Nothing)" />
       <MemberSignature Language="F#" Value="new Microsoft.Azure.Management.OperationalInsights.Models.UsageMetric : Microsoft.Azure.Management.OperationalInsights.Models.MetricName * string * Nullable&lt;double&gt; * Nullable&lt;double&gt; * Nullable&lt;DateTime&gt; * string -&gt; Microsoft.Azure.Management.OperationalInsights.Models.UsageMetric" Usage="new Microsoft.Azure.Management.OperationalInsights.Models.UsageMetric (name, unit, currentValue, limit, nextResetTime, quotaPeriod)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.OperationalInsights</AssemblyName>
-        <AssemblyVersion>0.18.0.0</AssemblyVersion>
+        <AssemblyVersion>0.19.0.0</AssemblyVersion>
+        <AssemblyVersion>0.20.0.0</AssemblyVersion>
+        <AssemblyVersion>0.21.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="name" Type="Microsoft.Azure.Management.OperationalInsights.Models.MetricName" />
@@ -77,20 +78,22 @@
       </Docs>
     </Member>
     <Member MemberName="CurrentValue">
-      <MemberSignature Language="C#" Value="public Nullable&lt;double&gt; CurrentValue { get; set; }" />
+      <MemberSignature Language="C#" Value="public double? CurrentValue { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;float64&gt; CurrentValue" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Management.OperationalInsights.Models.UsageMetric.CurrentValue" />
       <MemberSignature Language="VB.NET" Value="Public Property CurrentValue As Nullable(Of Double)" />
       <MemberSignature Language="F#" Value="member this.CurrentValue : Nullable&lt;double&gt; with get, set" Usage="Microsoft.Azure.Management.OperationalInsights.Models.UsageMetric.CurrentValue" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Nullable&lt;double&gt; CurrentValue { Nullable&lt;double&gt; get(); void set(Nullable&lt;double&gt; value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.OperationalInsights</AssemblyName>
-        <AssemblyVersion>0.18.0.0</AssemblyVersion>
+        <AssemblyVersion>0.19.0.0</AssemblyVersion>
+        <AssemblyVersion>0.20.0.0</AssemblyVersion>
+        <AssemblyVersion>0.21.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="currentValue")</AttributeName>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty(PropertyName="currentValue")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty(PropertyName="currentValue")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -105,20 +108,22 @@
       </Docs>
     </Member>
     <Member MemberName="Limit">
-      <MemberSignature Language="C#" Value="public Nullable&lt;double&gt; Limit { get; set; }" />
+      <MemberSignature Language="C#" Value="public double? Limit { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;float64&gt; Limit" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Management.OperationalInsights.Models.UsageMetric.Limit" />
       <MemberSignature Language="VB.NET" Value="Public Property Limit As Nullable(Of Double)" />
       <MemberSignature Language="F#" Value="member this.Limit : Nullable&lt;double&gt; with get, set" Usage="Microsoft.Azure.Management.OperationalInsights.Models.UsageMetric.Limit" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Nullable&lt;double&gt; Limit { Nullable&lt;double&gt; get(); void set(Nullable&lt;double&gt; value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.OperationalInsights</AssemblyName>
-        <AssemblyVersion>0.18.0.0</AssemblyVersion>
+        <AssemblyVersion>0.19.0.0</AssemblyVersion>
+        <AssemblyVersion>0.20.0.0</AssemblyVersion>
+        <AssemblyVersion>0.21.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="limit")</AttributeName>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty(PropertyName="limit")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty(PropertyName="limit")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -138,15 +143,17 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Management.OperationalInsights.Models.UsageMetric.Name" />
       <MemberSignature Language="VB.NET" Value="Public Property Name As MetricName" />
       <MemberSignature Language="F#" Value="member this.Name : Microsoft.Azure.Management.OperationalInsights.Models.MetricName with get, set" Usage="Microsoft.Azure.Management.OperationalInsights.Models.UsageMetric.Name" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Azure::Management::OperationalInsights::Models::MetricName ^ Name { Microsoft::Azure::Management::OperationalInsights::Models::MetricName ^ get(); void set(Microsoft::Azure::Management::OperationalInsights::Models::MetricName ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.OperationalInsights</AssemblyName>
-        <AssemblyVersion>0.18.0.0</AssemblyVersion>
+        <AssemblyVersion>0.19.0.0</AssemblyVersion>
+        <AssemblyVersion>0.20.0.0</AssemblyVersion>
+        <AssemblyVersion>0.21.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="name")</AttributeName>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty(PropertyName="name")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty(PropertyName="name")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -161,20 +168,22 @@
       </Docs>
     </Member>
     <Member MemberName="NextResetTime">
-      <MemberSignature Language="C#" Value="public Nullable&lt;DateTime&gt; NextResetTime { get; set; }" />
+      <MemberSignature Language="C#" Value="public DateTime? NextResetTime { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;valuetype System.DateTime&gt; NextResetTime" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Management.OperationalInsights.Models.UsageMetric.NextResetTime" />
       <MemberSignature Language="VB.NET" Value="Public Property NextResetTime As Nullable(Of DateTime)" />
       <MemberSignature Language="F#" Value="member this.NextResetTime : Nullable&lt;DateTime&gt; with get, set" Usage="Microsoft.Azure.Management.OperationalInsights.Models.UsageMetric.NextResetTime" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Nullable&lt;DateTime&gt; NextResetTime { Nullable&lt;DateTime&gt; get(); void set(Nullable&lt;DateTime&gt; value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.OperationalInsights</AssemblyName>
-        <AssemblyVersion>0.18.0.0</AssemblyVersion>
+        <AssemblyVersion>0.19.0.0</AssemblyVersion>
+        <AssemblyVersion>0.20.0.0</AssemblyVersion>
+        <AssemblyVersion>0.21.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="nextResetTime")</AttributeName>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty(PropertyName="nextResetTime")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty(PropertyName="nextResetTime")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -194,16 +203,17 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Management.OperationalInsights.Models.UsageMetric.QuotaPeriod" />
       <MemberSignature Language="VB.NET" Value="Public Property QuotaPeriod As String" />
       <MemberSignature Language="F#" Value="member this.QuotaPeriod : string with get, set" Usage="Microsoft.Azure.Management.OperationalInsights.Models.UsageMetric.QuotaPeriod" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ QuotaPeriod { System::String ^ get(); void set(System::String ^ value); };" />
-      <MemberSignature Language="C++ CX" Value="public:&#xA; property Platform::String ^ QuotaPeriod { Platform::String ^ get(); void set(Platform::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.OperationalInsights</AssemblyName>
-        <AssemblyVersion>0.18.0.0</AssemblyVersion>
+        <AssemblyVersion>0.19.0.0</AssemblyVersion>
+        <AssemblyVersion>0.20.0.0</AssemblyVersion>
+        <AssemblyVersion>0.21.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="quotaPeriod")</AttributeName>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty(PropertyName="quotaPeriod")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty(PropertyName="quotaPeriod")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -224,16 +234,17 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Management.OperationalInsights.Models.UsageMetric.Unit" />
       <MemberSignature Language="VB.NET" Value="Public Property Unit As String" />
       <MemberSignature Language="F#" Value="member this.Unit : string with get, set" Usage="Microsoft.Azure.Management.OperationalInsights.Models.UsageMetric.Unit" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Unit { System::String ^ get(); void set(System::String ^ value); };" />
-      <MemberSignature Language="C++ CX" Value="public:&#xA; property Platform::String ^ Unit { Platform::String ^ get(); void set(Platform::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.OperationalInsights</AssemblyName>
-        <AssemblyVersion>0.18.0.0</AssemblyVersion>
+        <AssemblyVersion>0.19.0.0</AssemblyVersion>
+        <AssemblyVersion>0.20.0.0</AssemblyVersion>
+        <AssemblyVersion>0.21.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="unit")</AttributeName>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty(PropertyName="unit")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty(PropertyName="unit")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>

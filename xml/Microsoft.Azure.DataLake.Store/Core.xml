@@ -1,14 +1,11 @@
-﻿<Type Name="Core" FullName="Microsoft.Azure.DataLake.Store.Core">
+<Type Name="Core" FullName="Microsoft.Azure.DataLake.Store.Core">
   <TypeSignature Language="C#" Value="public class Core" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit Core extends System.Object" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Azure.DataLake.Store.Core" />
   <TypeSignature Language="VB.NET" Value="Public Class Core" />
   <TypeSignature Language="F#" Value="type Core = class" />
-  <TypeSignature Language="C++ CLI" Value="public ref class Core" />
-  <TypeSignature Language="C++ WINRT" Value="[Windows::Foundation::Metadata::WebHostHidden]&#xA;class Core" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Azure.DataLake.Store</AssemblyName>
-    <AssemblyVersion>0.1.0.0</AssemblyVersion>
     <AssemblyVersion>1.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -17,7 +14,8 @@
   <Interfaces />
   <Docs>
     <summary>
-            Core layer. It contains methods for REST APIs. For each rest api command it sends a HTTP request to server.
+            Core is a stateless class. It contains thread safe methods for REST APIs. For each rest api command it sends a HTTP request to server. 
+            Every API is threadsafe with some exceptions in Create and Append (Listed in the documentation of the respective apis).
             We have both async and sync versions of CREATE, APPEND, OPEN, CONCURRENTAPPEND. The reason we have that is if the application is doing these operations heavily using explicit threads,
             then using async-await internally creates unecessary threads in threadpool and performance degrades due to context switching. Application can create explicit threads in cases of uploader and downloader.
             All these operation also call sync versions of MakeCall in WebTransport layer.
@@ -30,13 +28,9 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.DataLake.Store.Core.#ctor" />
       <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; Core();" />
-      <MemberSignature Language="C++ CX" Value="public:&#xA; Core();" />
-      <MemberSignature Language="C++ WINRT" Value=" Core();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.DataLake.Store</AssemblyName>
-        <AssemblyVersion>0.1.0.0</AssemblyVersion>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
@@ -51,12 +45,9 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.DataLake.Store.Core.Append(System.String,System.String,System.String,Microsoft.Azure.DataLake.Store.SyncFlag,System.Int64,System.Byte[],System.Int32,System.Int32,Microsoft.Azure.DataLake.Store.AdlsClient,Microsoft.Azure.DataLake.Store.RequestOptions,Microsoft.Azure.DataLake.Store.OperationResponse)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Sub Append (path As String, leaseId As String, sessionId As String, flag As SyncFlag, offsetFile As Long, dataBytes As Byte(), offset As Integer, length As Integer, client As AdlsClient, req As RequestOptions, resp As OperationResponse)" />
       <MemberSignature Language="F#" Value="static member Append : string * string * string * Microsoft.Azure.DataLake.Store.SyncFlag * int64 * byte[] * int * int * Microsoft.Azure.DataLake.Store.AdlsClient * Microsoft.Azure.DataLake.Store.RequestOptions * Microsoft.Azure.DataLake.Store.OperationResponse -&gt; unit" Usage="Microsoft.Azure.DataLake.Store.Core.Append (path, leaseId, sessionId, flag, offsetFile, dataBytes, offset, length, client, req, resp)" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; static void Append(System::String ^ path, System::String ^ leaseId, System::String ^ sessionId, Microsoft::Azure::DataLake::Store::SyncFlag flag, long offsetFile, cli::array &lt;System::Byte&gt; ^ dataBytes, int offset, int length, Microsoft::Azure::DataLake::Store::AdlsClient ^ client, Microsoft::Azure::DataLake::Store::RequestOptions ^ req, Microsoft::Azure::DataLake::Store::OperationResponse ^ resp);" />
-      <MemberSignature Language="C++ WINRT" Value=" static void Append(std::wstring const &amp; path, std::wstring const &amp; leaseId, std::wstring const &amp; sessionId, Microsoft::Azure::DataLake::Store::SyncFlag flag, long offsetFile, std::Array &lt;byte&gt; const &amp; dataBytes, int offset, int length, Microsoft::Azure::DataLake::Store::AdlsClient const &amp; client, Microsoft::Azure::DataLake::Store::RequestOptions const &amp; req, Microsoft::Azure::DataLake::Store::OperationResponse const &amp; resp);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.DataLake.Store</AssemblyName>
-        <AssemblyVersion>0.1.0.0</AssemblyVersion>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -91,28 +82,24 @@
         <param name="req">Options to change behavior of the Http request </param>
         <param name="resp">Stores the response/ouput of the Http request </param>
         <summary>
-            Append data to file. This is a synchronous operation.
+            Append data to file. This is a synchronous operation. 
+            
+            Not threadsafe when Append is called for same path from different threads. 
             </summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="AppendAsync">
-      <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task AppendAsync (string path, string leaseId, string sessionId, Microsoft.Azure.DataLake.Store.SyncFlag flag, long offsetFile, byte[] dataBytes, int offset, int length, Microsoft.Azure.DataLake.Store.AdlsClient client, Microsoft.Azure.DataLake.Store.RequestOptions req, Microsoft.Azure.DataLake.Store.OperationResponse resp, System.Threading.CancellationToken cancelToken = null);" />
+      <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task AppendAsync (string path, string leaseId, string sessionId, Microsoft.Azure.DataLake.Store.SyncFlag flag, long offsetFile, byte[] dataBytes, int offset, int length, Microsoft.Azure.DataLake.Store.AdlsClient client, Microsoft.Azure.DataLake.Store.RequestOptions req, Microsoft.Azure.DataLake.Store.OperationResponse resp, System.Threading.CancellationToken cancelToken = default);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Threading.Tasks.Task AppendAsync(string path, string leaseId, string sessionId, valuetype Microsoft.Azure.DataLake.Store.SyncFlag flag, int64 offsetFile, unsigned int8[] dataBytes, int32 offset, int32 length, class Microsoft.Azure.DataLake.Store.AdlsClient client, class Microsoft.Azure.DataLake.Store.RequestOptions req, class Microsoft.Azure.DataLake.Store.OperationResponse resp, valuetype System.Threading.CancellationToken cancelToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.DataLake.Store.Core.AppendAsync(System.String,System.String,System.String,Microsoft.Azure.DataLake.Store.SyncFlag,System.Int64,System.Byte[],System.Int32,System.Int32,Microsoft.Azure.DataLake.Store.AdlsClient,Microsoft.Azure.DataLake.Store.RequestOptions,Microsoft.Azure.DataLake.Store.OperationResponse,System.Threading.CancellationToken)" />
-      <MemberSignature Language="VB.NET" Value="Public Shared Function AppendAsync (path As String, leaseId As String, sessionId As String, flag As SyncFlag, offsetFile As Long, dataBytes As Byte(), offset As Integer, length As Integer, client As AdlsClient, req As RequestOptions, resp As OperationResponse, Optional cancelToken As CancellationToken = null) As Task" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function AppendAsync (path As String, leaseId As String, sessionId As String, flag As SyncFlag, offsetFile As Long, dataBytes As Byte(), offset As Integer, length As Integer, client As AdlsClient, req As RequestOptions, resp As OperationResponse, Optional cancelToken As CancellationToken = Nothing) As Task" />
       <MemberSignature Language="F#" Value="static member AppendAsync : string * string * string * Microsoft.Azure.DataLake.Store.SyncFlag * int64 * byte[] * int * int * Microsoft.Azure.DataLake.Store.AdlsClient * Microsoft.Azure.DataLake.Store.RequestOptions * Microsoft.Azure.DataLake.Store.OperationResponse * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task" Usage="Microsoft.Azure.DataLake.Store.Core.AppendAsync (path, leaseId, sessionId, flag, offsetFile, dataBytes, offset, length, client, req, resp, cancelToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.DataLake.Store</AssemblyName>
-        <AssemblyVersion>0.1.0.0</AssemblyVersion>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
-      <Attributes>
-        <Attribute>
-          <AttributeName>System.Runtime.CompilerServices.AsyncStateMachine(typeof(Microsoft.Azure.DataLake.Store.Core/&lt;AppendAsync&gt;d__5))</AttributeName>
-        </Attribute>
-      </Attributes>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task</ReturnType>
       </ReturnValue>
@@ -148,28 +135,24 @@
         <param name="cancelToken">CancellationToken to cancel the request</param>
         <summary>
             Append data to file. This is an asynchronous operation.
+            
+            Not threadsafe when AppendAsync is called for same path from different threads. 
             </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="CheckAccessSync">
-      <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task CheckAccessSync (string path, string rwx, Microsoft.Azure.DataLake.Store.AdlsClient client, Microsoft.Azure.DataLake.Store.RequestOptions req, Microsoft.Azure.DataLake.Store.OperationResponse resp, System.Threading.CancellationToken cancelToken = null);" />
+      <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task CheckAccessSync (string path, string rwx, Microsoft.Azure.DataLake.Store.AdlsClient client, Microsoft.Azure.DataLake.Store.RequestOptions req, Microsoft.Azure.DataLake.Store.OperationResponse resp, System.Threading.CancellationToken cancelToken = default);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Threading.Tasks.Task CheckAccessSync(string path, string rwx, class Microsoft.Azure.DataLake.Store.AdlsClient client, class Microsoft.Azure.DataLake.Store.RequestOptions req, class Microsoft.Azure.DataLake.Store.OperationResponse resp, valuetype System.Threading.CancellationToken cancelToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.DataLake.Store.Core.CheckAccessSync(System.String,System.String,Microsoft.Azure.DataLake.Store.AdlsClient,Microsoft.Azure.DataLake.Store.RequestOptions,Microsoft.Azure.DataLake.Store.OperationResponse,System.Threading.CancellationToken)" />
-      <MemberSignature Language="VB.NET" Value="Public Shared Function CheckAccessSync (path As String, rwx As String, client As AdlsClient, req As RequestOptions, resp As OperationResponse, Optional cancelToken As CancellationToken = null) As Task" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function CheckAccessSync (path As String, rwx As String, client As AdlsClient, req As RequestOptions, resp As OperationResponse, Optional cancelToken As CancellationToken = Nothing) As Task" />
       <MemberSignature Language="F#" Value="static member CheckAccessSync : string * string * Microsoft.Azure.DataLake.Store.AdlsClient * Microsoft.Azure.DataLake.Store.RequestOptions * Microsoft.Azure.DataLake.Store.OperationResponse * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task" Usage="Microsoft.Azure.DataLake.Store.Core.CheckAccessSync (path, rwx, client, req, resp, cancelToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.DataLake.Store</AssemblyName>
-        <AssemblyVersion>0.1.0.0</AssemblyVersion>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
-      <Attributes>
-        <Attribute>
-          <AttributeName>System.Runtime.CompilerServices.AsyncStateMachine(typeof(Microsoft.Azure.DataLake.Store.Core/&lt;CheckAccessSync&gt;d__21))</AttributeName>
-        </Attribute>
-      </Attributes>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task</ReturnType>
       </ReturnValue>
@@ -196,22 +179,16 @@
       </Docs>
     </Member>
     <Member MemberName="ConcatAsync">
-      <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task ConcatAsync (string path, System.Collections.Generic.List&lt;string&gt; sourceFiles, Microsoft.Azure.DataLake.Store.AdlsClient client, Microsoft.Azure.DataLake.Store.RequestOptions req, Microsoft.Azure.DataLake.Store.OperationResponse resp, System.Threading.CancellationToken cancelToken = null);" />
+      <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task ConcatAsync (string path, System.Collections.Generic.List&lt;string&gt; sourceFiles, Microsoft.Azure.DataLake.Store.AdlsClient client, Microsoft.Azure.DataLake.Store.RequestOptions req, Microsoft.Azure.DataLake.Store.OperationResponse resp, System.Threading.CancellationToken cancelToken = default);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Threading.Tasks.Task ConcatAsync(string path, class System.Collections.Generic.List`1&lt;string&gt; sourceFiles, class Microsoft.Azure.DataLake.Store.AdlsClient client, class Microsoft.Azure.DataLake.Store.RequestOptions req, class Microsoft.Azure.DataLake.Store.OperationResponse resp, valuetype System.Threading.CancellationToken cancelToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.DataLake.Store.Core.ConcatAsync(System.String,System.Collections.Generic.List{System.String},Microsoft.Azure.DataLake.Store.AdlsClient,Microsoft.Azure.DataLake.Store.RequestOptions,Microsoft.Azure.DataLake.Store.OperationResponse,System.Threading.CancellationToken)" />
-      <MemberSignature Language="VB.NET" Value="Public Shared Function ConcatAsync (path As String, sourceFiles As List(Of String), client As AdlsClient, req As RequestOptions, resp As OperationResponse, Optional cancelToken As CancellationToken = null) As Task" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function ConcatAsync (path As String, sourceFiles As List(Of String), client As AdlsClient, req As RequestOptions, resp As OperationResponse, Optional cancelToken As CancellationToken = Nothing) As Task" />
       <MemberSignature Language="F#" Value="static member ConcatAsync : string * System.Collections.Generic.List&lt;string&gt; * Microsoft.Azure.DataLake.Store.AdlsClient * Microsoft.Azure.DataLake.Store.RequestOptions * Microsoft.Azure.DataLake.Store.OperationResponse * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task" Usage="Microsoft.Azure.DataLake.Store.Core.ConcatAsync (path, sourceFiles, client, req, resp, cancelToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.DataLake.Store</AssemblyName>
-        <AssemblyVersion>0.1.0.0</AssemblyVersion>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
-      <Attributes>
-        <Attribute>
-          <AttributeName>System.Runtime.CompilerServices.AsyncStateMachine(typeof(Microsoft.Azure.DataLake.Store.Core/&lt;ConcatAsync&gt;d__15))</AttributeName>
-        </Attribute>
-      </Attributes>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task</ReturnType>
       </ReturnValue>
@@ -238,22 +215,16 @@
       </Docs>
     </Member>
     <Member MemberName="ConcatAsync">
-      <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task ConcatAsync (string path, System.Collections.Generic.List&lt;string&gt; sourceFiles, bool deleteSourceDirectory, Microsoft.Azure.DataLake.Store.AdlsClient client, Microsoft.Azure.DataLake.Store.RequestOptions req, Microsoft.Azure.DataLake.Store.OperationResponse resp, System.Threading.CancellationToken cancelToken = null);" />
+      <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task ConcatAsync (string path, System.Collections.Generic.List&lt;string&gt; sourceFiles, bool deleteSourceDirectory, Microsoft.Azure.DataLake.Store.AdlsClient client, Microsoft.Azure.DataLake.Store.RequestOptions req, Microsoft.Azure.DataLake.Store.OperationResponse resp, System.Threading.CancellationToken cancelToken = default);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Threading.Tasks.Task ConcatAsync(string path, class System.Collections.Generic.List`1&lt;string&gt; sourceFiles, bool deleteSourceDirectory, class Microsoft.Azure.DataLake.Store.AdlsClient client, class Microsoft.Azure.DataLake.Store.RequestOptions req, class Microsoft.Azure.DataLake.Store.OperationResponse resp, valuetype System.Threading.CancellationToken cancelToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.DataLake.Store.Core.ConcatAsync(System.String,System.Collections.Generic.List{System.String},System.Boolean,Microsoft.Azure.DataLake.Store.AdlsClient,Microsoft.Azure.DataLake.Store.RequestOptions,Microsoft.Azure.DataLake.Store.OperationResponse,System.Threading.CancellationToken)" />
-      <MemberSignature Language="VB.NET" Value="Public Shared Function ConcatAsync (path As String, sourceFiles As List(Of String), deleteSourceDirectory As Boolean, client As AdlsClient, req As RequestOptions, resp As OperationResponse, Optional cancelToken As CancellationToken = null) As Task" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function ConcatAsync (path As String, sourceFiles As List(Of String), deleteSourceDirectory As Boolean, client As AdlsClient, req As RequestOptions, resp As OperationResponse, Optional cancelToken As CancellationToken = Nothing) As Task" />
       <MemberSignature Language="F#" Value="static member ConcatAsync : string * System.Collections.Generic.List&lt;string&gt; * bool * Microsoft.Azure.DataLake.Store.AdlsClient * Microsoft.Azure.DataLake.Store.RequestOptions * Microsoft.Azure.DataLake.Store.OperationResponse * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task" Usage="Microsoft.Azure.DataLake.Store.Core.ConcatAsync (path, sourceFiles, deleteSourceDirectory, client, req, resp, cancelToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.DataLake.Store</AssemblyName>
-        <AssemblyVersion>0.1.0.0</AssemblyVersion>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
-      <Attributes>
-        <Attribute>
-          <AttributeName>System.Runtime.CompilerServices.AsyncStateMachine(typeof(Microsoft.Azure.DataLake.Store.Core/&lt;ConcatAsync&gt;d__16))</AttributeName>
-        </Attribute>
-      </Attributes>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task</ReturnType>
       </ReturnValue>
@@ -287,12 +258,9 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.DataLake.Store.Core.ConcurrentAppend(System.String,System.Boolean,System.Byte[],System.Int32,System.Int32,Microsoft.Azure.DataLake.Store.AdlsClient,Microsoft.Azure.DataLake.Store.RequestOptions,Microsoft.Azure.DataLake.Store.OperationResponse)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Sub ConcurrentAppend (path As String, autoCreate As Boolean, dataBytes As Byte(), offset As Integer, length As Integer, client As AdlsClient, req As RequestOptions, resp As OperationResponse)" />
       <MemberSignature Language="F#" Value="static member ConcurrentAppend : string * bool * byte[] * int * int * Microsoft.Azure.DataLake.Store.AdlsClient * Microsoft.Azure.DataLake.Store.RequestOptions * Microsoft.Azure.DataLake.Store.OperationResponse -&gt; unit" Usage="Microsoft.Azure.DataLake.Store.Core.ConcurrentAppend (path, autoCreate, dataBytes, offset, length, client, req, resp)" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; static void ConcurrentAppend(System::String ^ path, bool autoCreate, cli::array &lt;System::Byte&gt; ^ dataBytes, int offset, int length, Microsoft::Azure::DataLake::Store::AdlsClient ^ client, Microsoft::Azure::DataLake::Store::RequestOptions ^ req, Microsoft::Azure::DataLake::Store::OperationResponse ^ resp);" />
-      <MemberSignature Language="C++ WINRT" Value=" static void ConcurrentAppend(std::wstring const &amp; path, bool autoCreate, std::Array &lt;byte&gt; const &amp; dataBytes, int offset, int length, Microsoft::Azure::DataLake::Store::AdlsClient const &amp; client, Microsoft::Azure::DataLake::Store::RequestOptions const &amp; req, Microsoft::Azure::DataLake::Store::OperationResponse const &amp; resp);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.DataLake.Store</AssemblyName>
-        <AssemblyVersion>0.1.0.0</AssemblyVersion>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -310,7 +278,7 @@
       </Parameters>
       <Docs>
         <param name="path">Path of the file</param>
-        <param name="autoCreate"></param>
+        <param name="autoCreate" />
         <param name="dataBytes">Array of bytes to write to the file</param>
         <param name="offset">Offset in the byte array</param>
         <param name="length">Number of bytes to write from the offset</param>
@@ -324,22 +292,16 @@
       </Docs>
     </Member>
     <Member MemberName="ConcurrentAppendAsync">
-      <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task ConcurrentAppendAsync (string path, bool autoCreate, byte[] dataBytes, int offset, int length, Microsoft.Azure.DataLake.Store.AdlsClient client, Microsoft.Azure.DataLake.Store.RequestOptions req, Microsoft.Azure.DataLake.Store.OperationResponse resp, System.Threading.CancellationToken cancelToken = null);" />
+      <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task ConcurrentAppendAsync (string path, bool autoCreate, byte[] dataBytes, int offset, int length, Microsoft.Azure.DataLake.Store.AdlsClient client, Microsoft.Azure.DataLake.Store.RequestOptions req, Microsoft.Azure.DataLake.Store.OperationResponse resp, System.Threading.CancellationToken cancelToken = default);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Threading.Tasks.Task ConcurrentAppendAsync(string path, bool autoCreate, unsigned int8[] dataBytes, int32 offset, int32 length, class Microsoft.Azure.DataLake.Store.AdlsClient client, class Microsoft.Azure.DataLake.Store.RequestOptions req, class Microsoft.Azure.DataLake.Store.OperationResponse resp, valuetype System.Threading.CancellationToken cancelToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.DataLake.Store.Core.ConcurrentAppendAsync(System.String,System.Boolean,System.Byte[],System.Int32,System.Int32,Microsoft.Azure.DataLake.Store.AdlsClient,Microsoft.Azure.DataLake.Store.RequestOptions,Microsoft.Azure.DataLake.Store.OperationResponse,System.Threading.CancellationToken)" />
-      <MemberSignature Language="VB.NET" Value="Public Shared Function ConcurrentAppendAsync (path As String, autoCreate As Boolean, dataBytes As Byte(), offset As Integer, length As Integer, client As AdlsClient, req As RequestOptions, resp As OperationResponse, Optional cancelToken As CancellationToken = null) As Task" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function ConcurrentAppendAsync (path As String, autoCreate As Boolean, dataBytes As Byte(), offset As Integer, length As Integer, client As AdlsClient, req As RequestOptions, resp As OperationResponse, Optional cancelToken As CancellationToken = Nothing) As Task" />
       <MemberSignature Language="F#" Value="static member ConcurrentAppendAsync : string * bool * byte[] * int * int * Microsoft.Azure.DataLake.Store.AdlsClient * Microsoft.Azure.DataLake.Store.RequestOptions * Microsoft.Azure.DataLake.Store.OperationResponse * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task" Usage="Microsoft.Azure.DataLake.Store.Core.ConcurrentAppendAsync (path, autoCreate, dataBytes, offset, length, client, req, resp, cancelToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.DataLake.Store</AssemblyName>
-        <AssemblyVersion>0.1.0.0</AssemblyVersion>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
-      <Attributes>
-        <Attribute>
-          <AttributeName>System.Runtime.CompilerServices.AsyncStateMachine(typeof(Microsoft.Azure.DataLake.Store.Core/&lt;ConcurrentAppendAsync&gt;d__8))</AttributeName>
-        </Attribute>
-      </Attributes>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task</ReturnType>
       </ReturnValue>
@@ -356,7 +318,7 @@
       </Parameters>
       <Docs>
         <param name="path">Path of the file</param>
-        <param name="autoCreate"></param>
+        <param name="autoCreate" />
         <param name="dataBytes">Array of bytes to write to the file</param>
         <param name="offset">Offset in the byte array</param>
         <param name="length">Number of bytes to write from the offset</param>
@@ -377,12 +339,9 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.DataLake.Store.Core.Create(System.String,System.Boolean,System.String,System.String,System.String,System.Boolean,Microsoft.Azure.DataLake.Store.SyncFlag,System.Byte[],System.Int32,System.Int32,Microsoft.Azure.DataLake.Store.AdlsClient,Microsoft.Azure.DataLake.Store.RequestOptions,Microsoft.Azure.DataLake.Store.OperationResponse)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Sub Create (path As String, overwrite As Boolean, octalPermission As String, leaseId As String, sessionId As String, createParent As Boolean, flag As SyncFlag, dataBytes As Byte(), offset As Integer, length As Integer, client As AdlsClient, req As RequestOptions, resp As OperationResponse)" />
       <MemberSignature Language="F#" Value="static member Create : string * bool * string * string * string * bool * Microsoft.Azure.DataLake.Store.SyncFlag * byte[] * int * int * Microsoft.Azure.DataLake.Store.AdlsClient * Microsoft.Azure.DataLake.Store.RequestOptions * Microsoft.Azure.DataLake.Store.OperationResponse -&gt; unit" Usage="Microsoft.Azure.DataLake.Store.Core.Create (path, overwrite, octalPermission, leaseId, sessionId, createParent, flag, dataBytes, offset, length, client, req, resp)" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; static void Create(System::String ^ path, bool overwrite, System::String ^ octalPermission, System::String ^ leaseId, System::String ^ sessionId, bool createParent, Microsoft::Azure::DataLake::Store::SyncFlag flag, cli::array &lt;System::Byte&gt; ^ dataBytes, int offset, int length, Microsoft::Azure::DataLake::Store::AdlsClient ^ client, Microsoft::Azure::DataLake::Store::RequestOptions ^ req, Microsoft::Azure::DataLake::Store::OperationResponse ^ resp);" />
-      <MemberSignature Language="C++ WINRT" Value=" static void Create(std::wstring const &amp; path, bool overwrite, std::wstring const &amp; octalPermission, std::wstring const &amp; leaseId, std::wstring const &amp; sessionId, bool createParent, Microsoft::Azure::DataLake::Store::SyncFlag flag, std::Array &lt;byte&gt; const &amp; dataBytes, int offset, int length, Microsoft::Azure::DataLake::Store::AdlsClient const &amp; client, Microsoft::Azure::DataLake::Store::RequestOptions const &amp; req, Microsoft::Azure::DataLake::Store::OperationResponse const &amp; resp);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.DataLake.Store</AssemblyName>
-        <AssemblyVersion>0.1.0.0</AssemblyVersion>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -422,27 +381,23 @@
         <param name="resp">Stores the response/ouput of the Http request </param>
         <summary>
             Create a new file. This is a synchronous operation.
+            
+            Not threadsafe when Create is called for same path from different threads with different leaseId. 
             </summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="CreateAsync">
-      <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task CreateAsync (string path, bool overwrite, string octalPermission, string leaseId, string sessionId, bool createParent, Microsoft.Azure.DataLake.Store.SyncFlag flag, byte[] dataBytes, int offset, int length, Microsoft.Azure.DataLake.Store.AdlsClient client, Microsoft.Azure.DataLake.Store.RequestOptions req, Microsoft.Azure.DataLake.Store.OperationResponse resp, System.Threading.CancellationToken cancelToken = null);" />
+      <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task CreateAsync (string path, bool overwrite, string octalPermission, string leaseId, string sessionId, bool createParent, Microsoft.Azure.DataLake.Store.SyncFlag flag, byte[] dataBytes, int offset, int length, Microsoft.Azure.DataLake.Store.AdlsClient client, Microsoft.Azure.DataLake.Store.RequestOptions req, Microsoft.Azure.DataLake.Store.OperationResponse resp, System.Threading.CancellationToken cancelToken = default);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Threading.Tasks.Task CreateAsync(string path, bool overwrite, string octalPermission, string leaseId, string sessionId, bool createParent, valuetype Microsoft.Azure.DataLake.Store.SyncFlag flag, unsigned int8[] dataBytes, int32 offset, int32 length, class Microsoft.Azure.DataLake.Store.AdlsClient client, class Microsoft.Azure.DataLake.Store.RequestOptions req, class Microsoft.Azure.DataLake.Store.OperationResponse resp, valuetype System.Threading.CancellationToken cancelToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.DataLake.Store.Core.CreateAsync(System.String,System.Boolean,System.String,System.String,System.String,System.Boolean,Microsoft.Azure.DataLake.Store.SyncFlag,System.Byte[],System.Int32,System.Int32,Microsoft.Azure.DataLake.Store.AdlsClient,Microsoft.Azure.DataLake.Store.RequestOptions,Microsoft.Azure.DataLake.Store.OperationResponse,System.Threading.CancellationToken)" />
-      <MemberSignature Language="VB.NET" Value="Public Shared Function CreateAsync (path As String, overwrite As Boolean, octalPermission As String, leaseId As String, sessionId As String, createParent As Boolean, flag As SyncFlag, dataBytes As Byte(), offset As Integer, length As Integer, client As AdlsClient, req As RequestOptions, resp As OperationResponse, Optional cancelToken As CancellationToken = null) As Task" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function CreateAsync (path As String, overwrite As Boolean, octalPermission As String, leaseId As String, sessionId As String, createParent As Boolean, flag As SyncFlag, dataBytes As Byte(), offset As Integer, length As Integer, client As AdlsClient, req As RequestOptions, resp As OperationResponse, Optional cancelToken As CancellationToken = Nothing) As Task" />
       <MemberSignature Language="F#" Value="static member CreateAsync : string * bool * string * string * string * bool * Microsoft.Azure.DataLake.Store.SyncFlag * byte[] * int * int * Microsoft.Azure.DataLake.Store.AdlsClient * Microsoft.Azure.DataLake.Store.RequestOptions * Microsoft.Azure.DataLake.Store.OperationResponse * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task" Usage="Microsoft.Azure.DataLake.Store.Core.CreateAsync (path, overwrite, octalPermission, leaseId, sessionId, createParent, flag, dataBytes, offset, length, client, req, resp, cancelToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.DataLake.Store</AssemblyName>
-        <AssemblyVersion>0.1.0.0</AssemblyVersion>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
-      <Attributes>
-        <Attribute>
-          <AttributeName>System.Runtime.CompilerServices.AsyncStateMachine(typeof(Microsoft.Azure.DataLake.Store.Core/&lt;CreateAsync&gt;d__2))</AttributeName>
-        </Attribute>
-      </Attributes>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task</ReturnType>
       </ReturnValue>
@@ -482,28 +437,24 @@
         <param name="cancelToken">CancellationToken to cancel the request</param>
         <summary>
             Create a new file. This is an asynchronous operation.
+            
+            Not threadsafe when CreateAsync is called multiple times for same path with different leaseId. 
             </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="DeleteAsync">
-      <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task&lt;bool&gt; DeleteAsync (string path, bool recursive, Microsoft.Azure.DataLake.Store.AdlsClient client, Microsoft.Azure.DataLake.Store.RequestOptions req, Microsoft.Azure.DataLake.Store.OperationResponse resp, System.Threading.CancellationToken cancelToken = null);" />
+      <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task&lt;bool&gt; DeleteAsync (string path, bool recursive, Microsoft.Azure.DataLake.Store.AdlsClient client, Microsoft.Azure.DataLake.Store.RequestOptions req, Microsoft.Azure.DataLake.Store.OperationResponse resp, System.Threading.CancellationToken cancelToken = default);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Threading.Tasks.Task`1&lt;bool&gt; DeleteAsync(string path, bool recursive, class Microsoft.Azure.DataLake.Store.AdlsClient client, class Microsoft.Azure.DataLake.Store.RequestOptions req, class Microsoft.Azure.DataLake.Store.OperationResponse resp, valuetype System.Threading.CancellationToken cancelToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.DataLake.Store.Core.DeleteAsync(System.String,System.Boolean,Microsoft.Azure.DataLake.Store.AdlsClient,Microsoft.Azure.DataLake.Store.RequestOptions,Microsoft.Azure.DataLake.Store.OperationResponse,System.Threading.CancellationToken)" />
-      <MemberSignature Language="VB.NET" Value="Public Shared Function DeleteAsync (path As String, recursive As Boolean, client As AdlsClient, req As RequestOptions, resp As OperationResponse, Optional cancelToken As CancellationToken = null) As Task(Of Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function DeleteAsync (path As String, recursive As Boolean, client As AdlsClient, req As RequestOptions, resp As OperationResponse, Optional cancelToken As CancellationToken = Nothing) As Task(Of Boolean)" />
       <MemberSignature Language="F#" Value="static member DeleteAsync : string * bool * Microsoft.Azure.DataLake.Store.AdlsClient * Microsoft.Azure.DataLake.Store.RequestOptions * Microsoft.Azure.DataLake.Store.OperationResponse * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;bool&gt;" Usage="Microsoft.Azure.DataLake.Store.Core.DeleteAsync (path, recursive, client, req, resp, cancelToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.DataLake.Store</AssemblyName>
-        <AssemblyVersion>0.1.0.0</AssemblyVersion>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
-      <Attributes>
-        <Attribute>
-          <AttributeName>System.Runtime.CompilerServices.AsyncStateMachine(typeof(Microsoft.Azure.DataLake.Store.Core/&lt;DeleteAsync&gt;d__13))</AttributeName>
-        </Attribute>
-      </Attributes>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;System.Boolean&gt;</ReturnType>
       </ReturnValue>
@@ -517,7 +468,7 @@
       </Parameters>
       <Docs>
         <param name="path">Path of the file or directory</param>
-        <param name="recursive"></param>
+        <param name="recursive" />
         <param name="client">ADLS Client</param>
         <param name="req">Options to change behavior of the Http request </param>
         <param name="resp">Stores the response/ouput of the Http request </param>
@@ -529,23 +480,56 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <Member MemberName="EnumerateDeletedItemsAsync">
+      <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task&lt;Microsoft.Azure.DataLake.Store.TrashStatus&gt; EnumerateDeletedItemsAsync (string hint, string listAfter, int numResults, Microsoft.Azure.DataLake.Store.AdlsClient client, Microsoft.Azure.DataLake.Store.RequestOptions req, Microsoft.Azure.DataLake.Store.OperationResponse resp, System.Threading.CancellationToken cancelToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Threading.Tasks.Task`1&lt;class Microsoft.Azure.DataLake.Store.TrashStatus&gt; EnumerateDeletedItemsAsync(string hint, string listAfter, int32 numResults, class Microsoft.Azure.DataLake.Store.AdlsClient client, class Microsoft.Azure.DataLake.Store.RequestOptions req, class Microsoft.Azure.DataLake.Store.OperationResponse resp, valuetype System.Threading.CancellationToken cancelToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Azure.DataLake.Store.Core.EnumerateDeletedItemsAsync(System.String,System.String,System.Int32,Microsoft.Azure.DataLake.Store.AdlsClient,Microsoft.Azure.DataLake.Store.RequestOptions,Microsoft.Azure.DataLake.Store.OperationResponse,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function EnumerateDeletedItemsAsync (hint As String, listAfter As String, numResults As Integer, client As AdlsClient, req As RequestOptions, resp As OperationResponse, Optional cancelToken As CancellationToken = Nothing) As Task(Of TrashStatus)" />
+      <MemberSignature Language="F#" Value="static member EnumerateDeletedItemsAsync : string * string * int * Microsoft.Azure.DataLake.Store.AdlsClient * Microsoft.Azure.DataLake.Store.RequestOptions * Microsoft.Azure.DataLake.Store.OperationResponse * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.Azure.DataLake.Store.TrashStatus&gt;" Usage="Microsoft.Azure.DataLake.Store.Core.EnumerateDeletedItemsAsync (hint, listAfter, numResults, client, req, resp, cancelToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Azure.DataLake.Store</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.Azure.DataLake.Store.TrashStatus&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="hint" Type="System.String" />
+        <Parameter Name="listAfter" Type="System.String" />
+        <Parameter Name="numResults" Type="System.Int32" />
+        <Parameter Name="client" Type="Microsoft.Azure.DataLake.Store.AdlsClient" />
+        <Parameter Name="req" Type="Microsoft.Azure.DataLake.Store.RequestOptions" />
+        <Parameter Name="resp" Type="Microsoft.Azure.DataLake.Store.OperationResponse" />
+        <Parameter Name="cancelToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="hint">String to match</param>
+        <param name="listAfter">Filename after which list of files should be obtained from server</param>
+        <param name="numResults">Search is executed until we find numResults or search completes. Maximum allowed value for this param is 4000. The number of returned entries could be more or less than numResults.</param>
+        <param name="client">ADLS Client</param>
+        <param name="req">Options to change behavior of the Http request </param>
+        <param name="resp">Stores the response/ouput of the Http request </param>
+        <param name="cancelToken">CancellationToken to cancel the request</param>
+        <summary>
+            Lists the deleted streams or directories in the trash matching the hint.
+            Caution: Undeleting files is a best effort operation.  There are no guarantees that a file can be restored once it is deleted. The use of this API is enabled via whitelisting. If your ADL account is not whitelisted, then using this api will throw Not immplemented exception. For further information and assistance please contact Microsoft support.
+            </summary>
+        <returns>List of deleted entries</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
     <Member MemberName="GetAclStatusAsync">
-      <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task&lt;Microsoft.Azure.DataLake.Store.Acl.AclStatus&gt; GetAclStatusAsync (string path, Nullable&lt;Microsoft.Azure.DataLake.Store.UserGroupRepresentation&gt; userIdFormat, Microsoft.Azure.DataLake.Store.AdlsClient client, Microsoft.Azure.DataLake.Store.RequestOptions req, Microsoft.Azure.DataLake.Store.OperationResponse resp, System.Threading.CancellationToken cancelToken = null);" />
+      <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task&lt;Microsoft.Azure.DataLake.Store.Acl.AclStatus&gt; GetAclStatusAsync (string path, Microsoft.Azure.DataLake.Store.UserGroupRepresentation? userIdFormat, Microsoft.Azure.DataLake.Store.AdlsClient client, Microsoft.Azure.DataLake.Store.RequestOptions req, Microsoft.Azure.DataLake.Store.OperationResponse resp, System.Threading.CancellationToken cancelToken = default);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Threading.Tasks.Task`1&lt;class Microsoft.Azure.DataLake.Store.Acl.AclStatus&gt; GetAclStatusAsync(string path, valuetype System.Nullable`1&lt;valuetype Microsoft.Azure.DataLake.Store.UserGroupRepresentation&gt; userIdFormat, class Microsoft.Azure.DataLake.Store.AdlsClient client, class Microsoft.Azure.DataLake.Store.RequestOptions req, class Microsoft.Azure.DataLake.Store.OperationResponse resp, valuetype System.Threading.CancellationToken cancelToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.DataLake.Store.Core.GetAclStatusAsync(System.String,System.Nullable{Microsoft.Azure.DataLake.Store.UserGroupRepresentation},Microsoft.Azure.DataLake.Store.AdlsClient,Microsoft.Azure.DataLake.Store.RequestOptions,Microsoft.Azure.DataLake.Store.OperationResponse,System.Threading.CancellationToken)" />
-      <MemberSignature Language="VB.NET" Value="Public Shared Function GetAclStatusAsync (path As String, userIdFormat As Nullable(Of UserGroupRepresentation), client As AdlsClient, req As RequestOptions, resp As OperationResponse, Optional cancelToken As CancellationToken = null) As Task(Of AclStatus)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function GetAclStatusAsync (path As String, userIdFormat As Nullable(Of UserGroupRepresentation), client As AdlsClient, req As RequestOptions, resp As OperationResponse, Optional cancelToken As CancellationToken = Nothing) As Task(Of AclStatus)" />
       <MemberSignature Language="F#" Value="static member GetAclStatusAsync : string * Nullable&lt;Microsoft.Azure.DataLake.Store.UserGroupRepresentation&gt; * Microsoft.Azure.DataLake.Store.AdlsClient * Microsoft.Azure.DataLake.Store.RequestOptions * Microsoft.Azure.DataLake.Store.OperationResponse * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.Azure.DataLake.Store.Acl.AclStatus&gt;" Usage="Microsoft.Azure.DataLake.Store.Core.GetAclStatusAsync (path, userIdFormat, client, req, resp, cancelToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.DataLake.Store</AssemblyName>
-        <AssemblyVersion>0.1.0.0</AssemblyVersion>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
-      <Attributes>
-        <Attribute>
-          <AttributeName>System.Runtime.CompilerServices.AsyncStateMachine(typeof(Microsoft.Azure.DataLake.Store.Core/&lt;GetAclStatusAsync&gt;d__33))</AttributeName>
-        </Attribute>
-      </Attributes>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.Azure.DataLake.Store.Acl.AclStatus&gt;</ReturnType>
       </ReturnValue>
@@ -572,22 +556,16 @@
       </Docs>
     </Member>
     <Member MemberName="GetContentSummaryAsync">
-      <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task&lt;Microsoft.Azure.DataLake.Store.ContentSummary&gt; GetContentSummaryAsync (string path, Microsoft.Azure.DataLake.Store.AdlsClient client, Microsoft.Azure.DataLake.Store.RequestOptions req, Microsoft.Azure.DataLake.Store.OperationResponse resp, System.Threading.CancellationToken cancelToken = null);" />
+      <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task&lt;Microsoft.Azure.DataLake.Store.ContentSummary&gt; GetContentSummaryAsync (string path, Microsoft.Azure.DataLake.Store.AdlsClient client, Microsoft.Azure.DataLake.Store.RequestOptions req, Microsoft.Azure.DataLake.Store.OperationResponse resp, System.Threading.CancellationToken cancelToken = default);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Threading.Tasks.Task`1&lt;class Microsoft.Azure.DataLake.Store.ContentSummary&gt; GetContentSummaryAsync(string path, class Microsoft.Azure.DataLake.Store.AdlsClient client, class Microsoft.Azure.DataLake.Store.RequestOptions req, class Microsoft.Azure.DataLake.Store.OperationResponse resp, valuetype System.Threading.CancellationToken cancelToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.DataLake.Store.Core.GetContentSummaryAsync(System.String,Microsoft.Azure.DataLake.Store.AdlsClient,Microsoft.Azure.DataLake.Store.RequestOptions,Microsoft.Azure.DataLake.Store.OperationResponse,System.Threading.CancellationToken)" />
-      <MemberSignature Language="VB.NET" Value="Public Shared Function GetContentSummaryAsync (path As String, client As AdlsClient, req As RequestOptions, resp As OperationResponse, Optional cancelToken As CancellationToken = null) As Task(Of ContentSummary)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function GetContentSummaryAsync (path As String, client As AdlsClient, req As RequestOptions, resp As OperationResponse, Optional cancelToken As CancellationToken = Nothing) As Task(Of ContentSummary)" />
       <MemberSignature Language="F#" Value="static member GetContentSummaryAsync : string * Microsoft.Azure.DataLake.Store.AdlsClient * Microsoft.Azure.DataLake.Store.RequestOptions * Microsoft.Azure.DataLake.Store.OperationResponse * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.Azure.DataLake.Store.ContentSummary&gt;" Usage="Microsoft.Azure.DataLake.Store.Core.GetContentSummaryAsync (path, client, req, resp, cancelToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.DataLake.Store</AssemblyName>
-        <AssemblyVersion>0.1.0.0</AssemblyVersion>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
-      <Attributes>
-        <Attribute>
-          <AttributeName>System.Runtime.CompilerServices.AsyncStateMachine(typeof(Microsoft.Azure.DataLake.Store.Core/&lt;GetContentSummaryAsync&gt;d__34))</AttributeName>
-        </Attribute>
-      </Attributes>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.Azure.DataLake.Store.ContentSummary&gt;</ReturnType>
       </ReturnValue>
@@ -612,21 +590,16 @@
       </Docs>
     </Member>
     <Member MemberName="GetFileStatusAsync">
-      <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task&lt;Microsoft.Azure.DataLake.Store.DirectoryEntry&gt; GetFileStatusAsync (string path, Nullable&lt;Microsoft.Azure.DataLake.Store.UserGroupRepresentation&gt; userIdFormat, Microsoft.Azure.DataLake.Store.AdlsClient client, Microsoft.Azure.DataLake.Store.RequestOptions req, Microsoft.Azure.DataLake.Store.OperationResponse resp, System.Threading.CancellationToken cancelToken = null, bool getConsistentFileLength = false);" />
+      <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task&lt;Microsoft.Azure.DataLake.Store.DirectoryEntry&gt; GetFileStatusAsync (string path, Microsoft.Azure.DataLake.Store.UserGroupRepresentation? userIdFormat, Microsoft.Azure.DataLake.Store.AdlsClient client, Microsoft.Azure.DataLake.Store.RequestOptions req, Microsoft.Azure.DataLake.Store.OperationResponse resp, System.Threading.CancellationToken cancelToken = default, bool getConsistentFileLength = false);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Threading.Tasks.Task`1&lt;class Microsoft.Azure.DataLake.Store.DirectoryEntry&gt; GetFileStatusAsync(string path, valuetype System.Nullable`1&lt;valuetype Microsoft.Azure.DataLake.Store.UserGroupRepresentation&gt; userIdFormat, class Microsoft.Azure.DataLake.Store.AdlsClient client, class Microsoft.Azure.DataLake.Store.RequestOptions req, class Microsoft.Azure.DataLake.Store.OperationResponse resp, valuetype System.Threading.CancellationToken cancelToken, bool getConsistentFileLength) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.DataLake.Store.Core.GetFileStatusAsync(System.String,System.Nullable{Microsoft.Azure.DataLake.Store.UserGroupRepresentation},Microsoft.Azure.DataLake.Store.AdlsClient,Microsoft.Azure.DataLake.Store.RequestOptions,Microsoft.Azure.DataLake.Store.OperationResponse,System.Threading.CancellationToken,System.Boolean)" />
-      <MemberSignature Language="VB.NET" Value="Public Shared Function GetFileStatusAsync (path As String, userIdFormat As Nullable(Of UserGroupRepresentation), client As AdlsClient, req As RequestOptions, resp As OperationResponse, Optional cancelToken As CancellationToken = null, Optional getConsistentFileLength As Boolean = false) As Task(Of DirectoryEntry)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function GetFileStatusAsync (path As String, userIdFormat As Nullable(Of UserGroupRepresentation), client As AdlsClient, req As RequestOptions, resp As OperationResponse, Optional cancelToken As CancellationToken = Nothing, Optional getConsistentFileLength As Boolean = false) As Task(Of DirectoryEntry)" />
       <MemberSignature Language="F#" Value="static member GetFileStatusAsync : string * Nullable&lt;Microsoft.Azure.DataLake.Store.UserGroupRepresentation&gt; * Microsoft.Azure.DataLake.Store.AdlsClient * Microsoft.Azure.DataLake.Store.RequestOptions * Microsoft.Azure.DataLake.Store.OperationResponse * System.Threading.CancellationToken * bool -&gt; System.Threading.Tasks.Task&lt;Microsoft.Azure.DataLake.Store.DirectoryEntry&gt;" Usage="Microsoft.Azure.DataLake.Store.Core.GetFileStatusAsync (path, userIdFormat, client, req, resp, cancelToken, getConsistentFileLength)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.DataLake.Store</AssemblyName>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
-      <Attributes>
-        <Attribute>
-          <AttributeName>System.Runtime.CompilerServices.AsyncStateMachine(typeof(Microsoft.Azure.DataLake.Store.Core/&lt;GetFileStatusAsync&gt;d__17))</AttributeName>
-        </Attribute>
-      </Attributes>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.Azure.DataLake.Store.DirectoryEntry&gt;</ReturnType>
       </ReturnValue>
@@ -646,7 +619,7 @@
         <param name="req">Options to change behavior of the Http request </param>
         <param name="resp">Stores the response/ouput of the Http request </param>
         <param name="cancelToken">CancellationToken to cancel the request</param>
-        <param name="getConsistentFileLength"> True if we want to get consistent and updated length</param>
+        <param name="getConsistentFileLength"> True if we want to get updated length.</param>
         <summary>
             Gets meta data like full path, type (file or directory), group, user, permission, length,last Access Time,last Modified Time, expiry time, acl Bit, replication Factor
             </summary>
@@ -655,22 +628,16 @@
       </Docs>
     </Member>
     <Member MemberName="ListStatusAsync">
-      <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task&lt;System.Collections.Generic.List&lt;Microsoft.Azure.DataLake.Store.DirectoryEntry&gt;&gt; ListStatusAsync (string path, string listAfter, string listBefore, int listSize, Nullable&lt;Microsoft.Azure.DataLake.Store.UserGroupRepresentation&gt; userIdFormat, Microsoft.Azure.DataLake.Store.AdlsClient client, Microsoft.Azure.DataLake.Store.RequestOptions req, Microsoft.Azure.DataLake.Store.OperationResponse resp, System.Threading.CancellationToken cancelToken = null);" />
+      <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task&lt;System.Collections.Generic.List&lt;Microsoft.Azure.DataLake.Store.DirectoryEntry&gt;&gt; ListStatusAsync (string path, string listAfter, string listBefore, int listSize, Microsoft.Azure.DataLake.Store.UserGroupRepresentation? userIdFormat, Microsoft.Azure.DataLake.Store.AdlsClient client, Microsoft.Azure.DataLake.Store.RequestOptions req, Microsoft.Azure.DataLake.Store.OperationResponse resp, System.Threading.CancellationToken cancelToken = default);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Threading.Tasks.Task`1&lt;class System.Collections.Generic.List`1&lt;class Microsoft.Azure.DataLake.Store.DirectoryEntry&gt;&gt; ListStatusAsync(string path, string listAfter, string listBefore, int32 listSize, valuetype System.Nullable`1&lt;valuetype Microsoft.Azure.DataLake.Store.UserGroupRepresentation&gt; userIdFormat, class Microsoft.Azure.DataLake.Store.AdlsClient client, class Microsoft.Azure.DataLake.Store.RequestOptions req, class Microsoft.Azure.DataLake.Store.OperationResponse resp, valuetype System.Threading.CancellationToken cancelToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.DataLake.Store.Core.ListStatusAsync(System.String,System.String,System.String,System.Int32,System.Nullable{Microsoft.Azure.DataLake.Store.UserGroupRepresentation},Microsoft.Azure.DataLake.Store.AdlsClient,Microsoft.Azure.DataLake.Store.RequestOptions,Microsoft.Azure.DataLake.Store.OperationResponse,System.Threading.CancellationToken)" />
-      <MemberSignature Language="VB.NET" Value="Public Shared Function ListStatusAsync (path As String, listAfter As String, listBefore As String, listSize As Integer, userIdFormat As Nullable(Of UserGroupRepresentation), client As AdlsClient, req As RequestOptions, resp As OperationResponse, Optional cancelToken As CancellationToken = null) As Task(Of List(Of DirectoryEntry))" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function ListStatusAsync (path As String, listAfter As String, listBefore As String, listSize As Integer, userIdFormat As Nullable(Of UserGroupRepresentation), client As AdlsClient, req As RequestOptions, resp As OperationResponse, Optional cancelToken As CancellationToken = Nothing) As Task(Of List(Of DirectoryEntry))" />
       <MemberSignature Language="F#" Value="static member ListStatusAsync : string * string * string * int * Nullable&lt;Microsoft.Azure.DataLake.Store.UserGroupRepresentation&gt; * Microsoft.Azure.DataLake.Store.AdlsClient * Microsoft.Azure.DataLake.Store.RequestOptions * Microsoft.Azure.DataLake.Store.OperationResponse * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;System.Collections.Generic.List&lt;Microsoft.Azure.DataLake.Store.DirectoryEntry&gt;&gt;" Usage="Microsoft.Azure.DataLake.Store.Core.ListStatusAsync (path, listAfter, listBefore, listSize, userIdFormat, client, req, resp, cancelToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.DataLake.Store</AssemblyName>
-        <AssemblyVersion>0.1.0.0</AssemblyVersion>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
-      <Attributes>
-        <Attribute>
-          <AttributeName>System.Runtime.CompilerServices.AsyncStateMachine(typeof(Microsoft.Azure.DataLake.Store.Core/&lt;ListStatusAsync&gt;d__19))</AttributeName>
-        </Attribute>
-      </Attributes>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;System.Collections.Generic.List&lt;Microsoft.Azure.DataLake.Store.DirectoryEntry&gt;&gt;</ReturnType>
       </ReturnValue>
@@ -703,22 +670,16 @@
       </Docs>
     </Member>
     <Member MemberName="MkdirsAsync">
-      <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task&lt;bool&gt; MkdirsAsync (string path, string octalPermission, Microsoft.Azure.DataLake.Store.AdlsClient client, Microsoft.Azure.DataLake.Store.RequestOptions req, Microsoft.Azure.DataLake.Store.OperationResponse resp, System.Threading.CancellationToken cancelToken = null);" />
+      <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task&lt;bool&gt; MkdirsAsync (string path, string octalPermission, Microsoft.Azure.DataLake.Store.AdlsClient client, Microsoft.Azure.DataLake.Store.RequestOptions req, Microsoft.Azure.DataLake.Store.OperationResponse resp, System.Threading.CancellationToken cancelToken = default);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Threading.Tasks.Task`1&lt;bool&gt; MkdirsAsync(string path, string octalPermission, class Microsoft.Azure.DataLake.Store.AdlsClient client, class Microsoft.Azure.DataLake.Store.RequestOptions req, class Microsoft.Azure.DataLake.Store.OperationResponse resp, valuetype System.Threading.CancellationToken cancelToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.DataLake.Store.Core.MkdirsAsync(System.String,System.String,Microsoft.Azure.DataLake.Store.AdlsClient,Microsoft.Azure.DataLake.Store.RequestOptions,Microsoft.Azure.DataLake.Store.OperationResponse,System.Threading.CancellationToken)" />
-      <MemberSignature Language="VB.NET" Value="Public Shared Function MkdirsAsync (path As String, octalPermission As String, client As AdlsClient, req As RequestOptions, resp As OperationResponse, Optional cancelToken As CancellationToken = null) As Task(Of Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function MkdirsAsync (path As String, octalPermission As String, client As AdlsClient, req As RequestOptions, resp As OperationResponse, Optional cancelToken As CancellationToken = Nothing) As Task(Of Boolean)" />
       <MemberSignature Language="F#" Value="static member MkdirsAsync : string * string * Microsoft.Azure.DataLake.Store.AdlsClient * Microsoft.Azure.DataLake.Store.RequestOptions * Microsoft.Azure.DataLake.Store.OperationResponse * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;bool&gt;" Usage="Microsoft.Azure.DataLake.Store.Core.MkdirsAsync (path, octalPermission, client, req, resp, cancelToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.DataLake.Store</AssemblyName>
-        <AssemblyVersion>0.1.0.0</AssemblyVersion>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
-      <Attributes>
-        <Attribute>
-          <AttributeName>System.Runtime.CompilerServices.AsyncStateMachine(typeof(Microsoft.Azure.DataLake.Store.Core/&lt;MkdirsAsync&gt;d__0))</AttributeName>
-        </Attribute>
-      </Attributes>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;System.Boolean&gt;</ReturnType>
       </ReturnValue>
@@ -745,22 +706,16 @@
       </Docs>
     </Member>
     <Member MemberName="ModifyAclEntriesAsync">
-      <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task ModifyAclEntriesAsync (string path, System.Collections.Generic.List&lt;Microsoft.Azure.DataLake.Store.Acl.AclEntry&gt; aclSpecList, Microsoft.Azure.DataLake.Store.AdlsClient client, Microsoft.Azure.DataLake.Store.RequestOptions req, Microsoft.Azure.DataLake.Store.OperationResponse resp, System.Threading.CancellationToken cancelToken = null);" />
+      <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task ModifyAclEntriesAsync (string path, System.Collections.Generic.List&lt;Microsoft.Azure.DataLake.Store.Acl.AclEntry&gt; aclSpecList, Microsoft.Azure.DataLake.Store.AdlsClient client, Microsoft.Azure.DataLake.Store.RequestOptions req, Microsoft.Azure.DataLake.Store.OperationResponse resp, System.Threading.CancellationToken cancelToken = default);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Threading.Tasks.Task ModifyAclEntriesAsync(string path, class System.Collections.Generic.List`1&lt;class Microsoft.Azure.DataLake.Store.Acl.AclEntry&gt; aclSpecList, class Microsoft.Azure.DataLake.Store.AdlsClient client, class Microsoft.Azure.DataLake.Store.RequestOptions req, class Microsoft.Azure.DataLake.Store.OperationResponse resp, valuetype System.Threading.CancellationToken cancelToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.DataLake.Store.Core.ModifyAclEntriesAsync(System.String,System.Collections.Generic.List{Microsoft.Azure.DataLake.Store.Acl.AclEntry},Microsoft.Azure.DataLake.Store.AdlsClient,Microsoft.Azure.DataLake.Store.RequestOptions,Microsoft.Azure.DataLake.Store.OperationResponse,System.Threading.CancellationToken)" />
-      <MemberSignature Language="VB.NET" Value="Public Shared Function ModifyAclEntriesAsync (path As String, aclSpecList As List(Of AclEntry), client As AdlsClient, req As RequestOptions, resp As OperationResponse, Optional cancelToken As CancellationToken = null) As Task" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function ModifyAclEntriesAsync (path As String, aclSpecList As List(Of AclEntry), client As AdlsClient, req As RequestOptions, resp As OperationResponse, Optional cancelToken As CancellationToken = Nothing) As Task" />
       <MemberSignature Language="F#" Value="static member ModifyAclEntriesAsync : string * System.Collections.Generic.List&lt;Microsoft.Azure.DataLake.Store.Acl.AclEntry&gt; * Microsoft.Azure.DataLake.Store.AdlsClient * Microsoft.Azure.DataLake.Store.RequestOptions * Microsoft.Azure.DataLake.Store.OperationResponse * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task" Usage="Microsoft.Azure.DataLake.Store.Core.ModifyAclEntriesAsync (path, aclSpecList, client, req, resp, cancelToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.DataLake.Store</AssemblyName>
-        <AssemblyVersion>0.1.0.0</AssemblyVersion>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
-      <Attributes>
-        <Attribute>
-          <AttributeName>System.Runtime.CompilerServices.AsyncStateMachine(typeof(Microsoft.Azure.DataLake.Store.Core/&lt;ModifyAclEntriesAsync&gt;d__26))</AttributeName>
-        </Attribute>
-      </Attributes>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task</ReturnType>
       </ReturnValue>
@@ -787,22 +742,16 @@
       </Docs>
     </Member>
     <Member MemberName="ModifyAclEntriesAsync">
-      <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task ModifyAclEntriesAsync (string path, string aclSpec, Microsoft.Azure.DataLake.Store.AdlsClient client, Microsoft.Azure.DataLake.Store.RequestOptions req, Microsoft.Azure.DataLake.Store.OperationResponse resp, System.Threading.CancellationToken cancelToken = null);" />
+      <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task ModifyAclEntriesAsync (string path, string aclSpec, Microsoft.Azure.DataLake.Store.AdlsClient client, Microsoft.Azure.DataLake.Store.RequestOptions req, Microsoft.Azure.DataLake.Store.OperationResponse resp, System.Threading.CancellationToken cancelToken = default);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Threading.Tasks.Task ModifyAclEntriesAsync(string path, string aclSpec, class Microsoft.Azure.DataLake.Store.AdlsClient client, class Microsoft.Azure.DataLake.Store.RequestOptions req, class Microsoft.Azure.DataLake.Store.OperationResponse resp, valuetype System.Threading.CancellationToken cancelToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.DataLake.Store.Core.ModifyAclEntriesAsync(System.String,System.String,Microsoft.Azure.DataLake.Store.AdlsClient,Microsoft.Azure.DataLake.Store.RequestOptions,Microsoft.Azure.DataLake.Store.OperationResponse,System.Threading.CancellationToken)" />
-      <MemberSignature Language="VB.NET" Value="Public Shared Function ModifyAclEntriesAsync (path As String, aclSpec As String, client As AdlsClient, req As RequestOptions, resp As OperationResponse, Optional cancelToken As CancellationToken = null) As Task" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function ModifyAclEntriesAsync (path As String, aclSpec As String, client As AdlsClient, req As RequestOptions, resp As OperationResponse, Optional cancelToken As CancellationToken = Nothing) As Task" />
       <MemberSignature Language="F#" Value="static member ModifyAclEntriesAsync : string * string * Microsoft.Azure.DataLake.Store.AdlsClient * Microsoft.Azure.DataLake.Store.RequestOptions * Microsoft.Azure.DataLake.Store.OperationResponse * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task" Usage="Microsoft.Azure.DataLake.Store.Core.ModifyAclEntriesAsync (path, aclSpec, client, req, resp, cancelToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.DataLake.Store</AssemblyName>
-        <AssemblyVersion>0.1.0.0</AssemblyVersion>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
-      <Attributes>
-        <Attribute>
-          <AttributeName>System.Runtime.CompilerServices.AsyncStateMachine(typeof(Microsoft.Azure.DataLake.Store.Core/&lt;ModifyAclEntriesAsync&gt;d__25))</AttributeName>
-        </Attribute>
-      </Attributes>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task</ReturnType>
       </ReturnValue>
@@ -834,12 +783,9 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.DataLake.Store.Core.Open(System.String,System.String,System.Int64,System.Byte[],System.Int32,System.Int32,Microsoft.Azure.DataLake.Store.AdlsClient,Microsoft.Azure.DataLake.Store.RequestOptions,Microsoft.Azure.DataLake.Store.OperationResponse)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function Open (path As String, sessionId As String, offsetFile As Long, buffer As Byte(), offset As Integer, lengthFile As Integer, client As AdlsClient, req As RequestOptions, resp As OperationResponse) As Integer" />
       <MemberSignature Language="F#" Value="static member Open : string * string * int64 * byte[] * int * int * Microsoft.Azure.DataLake.Store.AdlsClient * Microsoft.Azure.DataLake.Store.RequestOptions * Microsoft.Azure.DataLake.Store.OperationResponse -&gt; int" Usage="Microsoft.Azure.DataLake.Store.Core.Open (path, sessionId, offsetFile, buffer, offset, lengthFile, client, req, resp)" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; static int Open(System::String ^ path, System::String ^ sessionId, long offsetFile, cli::array &lt;System::Byte&gt; ^ buffer, int offset, int lengthFile, Microsoft::Azure::DataLake::Store::AdlsClient ^ client, Microsoft::Azure::DataLake::Store::RequestOptions ^ req, Microsoft::Azure::DataLake::Store::OperationResponse ^ resp);" />
-      <MemberSignature Language="C++ WINRT" Value=" static int Open(std::wstring const &amp; path, std::wstring const &amp; sessionId, long offsetFile, std::Array &lt;byte&gt; const &amp; buffer, int offset, int lengthFile, Microsoft::Azure::DataLake::Store::AdlsClient const &amp; client, Microsoft::Azure::DataLake::Store::RequestOptions const &amp; req, Microsoft::Azure::DataLake::Store::OperationResponse const &amp; resp);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.DataLake.Store</AssemblyName>
-        <AssemblyVersion>0.1.0.0</AssemblyVersion>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -874,22 +820,16 @@
       </Docs>
     </Member>
     <Member MemberName="OpenAsync">
-      <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task&lt;int&gt; OpenAsync (string path, string sessionId, long offsetFile, byte[] buffer, int offset, int lengthFile, Microsoft.Azure.DataLake.Store.AdlsClient client, Microsoft.Azure.DataLake.Store.RequestOptions req, Microsoft.Azure.DataLake.Store.OperationResponse resp, System.Threading.CancellationToken cancelToken = null);" />
+      <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task&lt;int&gt; OpenAsync (string path, string sessionId, long offsetFile, byte[] buffer, int offset, int lengthFile, Microsoft.Azure.DataLake.Store.AdlsClient client, Microsoft.Azure.DataLake.Store.RequestOptions req, Microsoft.Azure.DataLake.Store.OperationResponse resp, System.Threading.CancellationToken cancelToken = default);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Threading.Tasks.Task`1&lt;int32&gt; OpenAsync(string path, string sessionId, int64 offsetFile, unsigned int8[] buffer, int32 offset, int32 lengthFile, class Microsoft.Azure.DataLake.Store.AdlsClient client, class Microsoft.Azure.DataLake.Store.RequestOptions req, class Microsoft.Azure.DataLake.Store.OperationResponse resp, valuetype System.Threading.CancellationToken cancelToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.DataLake.Store.Core.OpenAsync(System.String,System.String,System.Int64,System.Byte[],System.Int32,System.Int32,Microsoft.Azure.DataLake.Store.AdlsClient,Microsoft.Azure.DataLake.Store.RequestOptions,Microsoft.Azure.DataLake.Store.OperationResponse,System.Threading.CancellationToken)" />
-      <MemberSignature Language="VB.NET" Value="Public Shared Function OpenAsync (path As String, sessionId As String, offsetFile As Long, buffer As Byte(), offset As Integer, lengthFile As Integer, client As AdlsClient, req As RequestOptions, resp As OperationResponse, Optional cancelToken As CancellationToken = null) As Task(Of Integer)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function OpenAsync (path As String, sessionId As String, offsetFile As Long, buffer As Byte(), offset As Integer, lengthFile As Integer, client As AdlsClient, req As RequestOptions, resp As OperationResponse, Optional cancelToken As CancellationToken = Nothing) As Task(Of Integer)" />
       <MemberSignature Language="F#" Value="static member OpenAsync : string * string * int64 * byte[] * int * int * Microsoft.Azure.DataLake.Store.AdlsClient * Microsoft.Azure.DataLake.Store.RequestOptions * Microsoft.Azure.DataLake.Store.OperationResponse * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;int&gt;" Usage="Microsoft.Azure.DataLake.Store.Core.OpenAsync (path, sessionId, offsetFile, buffer, offset, lengthFile, client, req, resp, cancelToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.DataLake.Store</AssemblyName>
-        <AssemblyVersion>0.1.0.0</AssemblyVersion>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
-      <Attributes>
-        <Attribute>
-          <AttributeName>System.Runtime.CompilerServices.AsyncStateMachine(typeof(Microsoft.Azure.DataLake.Store.Core/&lt;OpenAsync&gt;d__10))</AttributeName>
-        </Attribute>
-      </Attributes>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;System.Int32&gt;</ReturnType>
       </ReturnValue>
@@ -924,22 +864,16 @@
       </Docs>
     </Member>
     <Member MemberName="RemoveAclAsync">
-      <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task RemoveAclAsync (string path, Microsoft.Azure.DataLake.Store.AdlsClient client, Microsoft.Azure.DataLake.Store.RequestOptions req, Microsoft.Azure.DataLake.Store.OperationResponse resp, System.Threading.CancellationToken cancelToken = null);" />
+      <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task RemoveAclAsync (string path, Microsoft.Azure.DataLake.Store.AdlsClient client, Microsoft.Azure.DataLake.Store.RequestOptions req, Microsoft.Azure.DataLake.Store.OperationResponse resp, System.Threading.CancellationToken cancelToken = default);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Threading.Tasks.Task RemoveAclAsync(string path, class Microsoft.Azure.DataLake.Store.AdlsClient client, class Microsoft.Azure.DataLake.Store.RequestOptions req, class Microsoft.Azure.DataLake.Store.OperationResponse resp, valuetype System.Threading.CancellationToken cancelToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.DataLake.Store.Core.RemoveAclAsync(System.String,Microsoft.Azure.DataLake.Store.AdlsClient,Microsoft.Azure.DataLake.Store.RequestOptions,Microsoft.Azure.DataLake.Store.OperationResponse,System.Threading.CancellationToken)" />
-      <MemberSignature Language="VB.NET" Value="Public Shared Function RemoveAclAsync (path As String, client As AdlsClient, req As RequestOptions, resp As OperationResponse, Optional cancelToken As CancellationToken = null) As Task" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function RemoveAclAsync (path As String, client As AdlsClient, req As RequestOptions, resp As OperationResponse, Optional cancelToken As CancellationToken = Nothing) As Task" />
       <MemberSignature Language="F#" Value="static member RemoveAclAsync : string * Microsoft.Azure.DataLake.Store.AdlsClient * Microsoft.Azure.DataLake.Store.RequestOptions * Microsoft.Azure.DataLake.Store.OperationResponse * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task" Usage="Microsoft.Azure.DataLake.Store.Core.RemoveAclAsync (path, client, req, resp, cancelToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.DataLake.Store</AssemblyName>
-        <AssemblyVersion>0.1.0.0</AssemblyVersion>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
-      <Attributes>
-        <Attribute>
-          <AttributeName>System.Runtime.CompilerServices.AsyncStateMachine(typeof(Microsoft.Azure.DataLake.Store.Core/&lt;RemoveAclAsync&gt;d__32))</AttributeName>
-        </Attribute>
-      </Attributes>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task</ReturnType>
       </ReturnValue>
@@ -964,22 +898,16 @@
       </Docs>
     </Member>
     <Member MemberName="RemoveAclEntriesAsync">
-      <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task RemoveAclEntriesAsync (string path, System.Collections.Generic.List&lt;Microsoft.Azure.DataLake.Store.Acl.AclEntry&gt; aclSpecList, Microsoft.Azure.DataLake.Store.AdlsClient client, Microsoft.Azure.DataLake.Store.RequestOptions req, Microsoft.Azure.DataLake.Store.OperationResponse resp, System.Threading.CancellationToken cancelToken = null);" />
+      <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task RemoveAclEntriesAsync (string path, System.Collections.Generic.List&lt;Microsoft.Azure.DataLake.Store.Acl.AclEntry&gt; aclSpecList, Microsoft.Azure.DataLake.Store.AdlsClient client, Microsoft.Azure.DataLake.Store.RequestOptions req, Microsoft.Azure.DataLake.Store.OperationResponse resp, System.Threading.CancellationToken cancelToken = default);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Threading.Tasks.Task RemoveAclEntriesAsync(string path, class System.Collections.Generic.List`1&lt;class Microsoft.Azure.DataLake.Store.Acl.AclEntry&gt; aclSpecList, class Microsoft.Azure.DataLake.Store.AdlsClient client, class Microsoft.Azure.DataLake.Store.RequestOptions req, class Microsoft.Azure.DataLake.Store.OperationResponse resp, valuetype System.Threading.CancellationToken cancelToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.DataLake.Store.Core.RemoveAclEntriesAsync(System.String,System.Collections.Generic.List{Microsoft.Azure.DataLake.Store.Acl.AclEntry},Microsoft.Azure.DataLake.Store.AdlsClient,Microsoft.Azure.DataLake.Store.RequestOptions,Microsoft.Azure.DataLake.Store.OperationResponse,System.Threading.CancellationToken)" />
-      <MemberSignature Language="VB.NET" Value="Public Shared Function RemoveAclEntriesAsync (path As String, aclSpecList As List(Of AclEntry), client As AdlsClient, req As RequestOptions, resp As OperationResponse, Optional cancelToken As CancellationToken = null) As Task" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function RemoveAclEntriesAsync (path As String, aclSpecList As List(Of AclEntry), client As AdlsClient, req As RequestOptions, resp As OperationResponse, Optional cancelToken As CancellationToken = Nothing) As Task" />
       <MemberSignature Language="F#" Value="static member RemoveAclEntriesAsync : string * System.Collections.Generic.List&lt;Microsoft.Azure.DataLake.Store.Acl.AclEntry&gt; * Microsoft.Azure.DataLake.Store.AdlsClient * Microsoft.Azure.DataLake.Store.RequestOptions * Microsoft.Azure.DataLake.Store.OperationResponse * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task" Usage="Microsoft.Azure.DataLake.Store.Core.RemoveAclEntriesAsync (path, aclSpecList, client, req, resp, cancelToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.DataLake.Store</AssemblyName>
-        <AssemblyVersion>0.1.0.0</AssemblyVersion>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
-      <Attributes>
-        <Attribute>
-          <AttributeName>System.Runtime.CompilerServices.AsyncStateMachine(typeof(Microsoft.Azure.DataLake.Store.Core/&lt;RemoveAclEntriesAsync&gt;d__30))</AttributeName>
-        </Attribute>
-      </Attributes>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task</ReturnType>
       </ReturnValue>
@@ -1006,22 +934,16 @@
       </Docs>
     </Member>
     <Member MemberName="RemoveAclEntriesAsync">
-      <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task RemoveAclEntriesAsync (string path, string aclSpec, Microsoft.Azure.DataLake.Store.AdlsClient client, Microsoft.Azure.DataLake.Store.RequestOptions req, Microsoft.Azure.DataLake.Store.OperationResponse resp, System.Threading.CancellationToken cancelToken = null);" />
+      <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task RemoveAclEntriesAsync (string path, string aclSpec, Microsoft.Azure.DataLake.Store.AdlsClient client, Microsoft.Azure.DataLake.Store.RequestOptions req, Microsoft.Azure.DataLake.Store.OperationResponse resp, System.Threading.CancellationToken cancelToken = default);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Threading.Tasks.Task RemoveAclEntriesAsync(string path, string aclSpec, class Microsoft.Azure.DataLake.Store.AdlsClient client, class Microsoft.Azure.DataLake.Store.RequestOptions req, class Microsoft.Azure.DataLake.Store.OperationResponse resp, valuetype System.Threading.CancellationToken cancelToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.DataLake.Store.Core.RemoveAclEntriesAsync(System.String,System.String,Microsoft.Azure.DataLake.Store.AdlsClient,Microsoft.Azure.DataLake.Store.RequestOptions,Microsoft.Azure.DataLake.Store.OperationResponse,System.Threading.CancellationToken)" />
-      <MemberSignature Language="VB.NET" Value="Public Shared Function RemoveAclEntriesAsync (path As String, aclSpec As String, client As AdlsClient, req As RequestOptions, resp As OperationResponse, Optional cancelToken As CancellationToken = null) As Task" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function RemoveAclEntriesAsync (path As String, aclSpec As String, client As AdlsClient, req As RequestOptions, resp As OperationResponse, Optional cancelToken As CancellationToken = Nothing) As Task" />
       <MemberSignature Language="F#" Value="static member RemoveAclEntriesAsync : string * string * Microsoft.Azure.DataLake.Store.AdlsClient * Microsoft.Azure.DataLake.Store.RequestOptions * Microsoft.Azure.DataLake.Store.OperationResponse * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task" Usage="Microsoft.Azure.DataLake.Store.Core.RemoveAclEntriesAsync (path, aclSpec, client, req, resp, cancelToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.DataLake.Store</AssemblyName>
-        <AssemblyVersion>0.1.0.0</AssemblyVersion>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
-      <Attributes>
-        <Attribute>
-          <AttributeName>System.Runtime.CompilerServices.AsyncStateMachine(typeof(Microsoft.Azure.DataLake.Store.Core/&lt;RemoveAclEntriesAsync&gt;d__29))</AttributeName>
-        </Attribute>
-      </Attributes>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task</ReturnType>
       </ReturnValue>
@@ -1048,22 +970,16 @@
       </Docs>
     </Member>
     <Member MemberName="RemoveDefaultAclAsync">
-      <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task RemoveDefaultAclAsync (string path, Microsoft.Azure.DataLake.Store.AdlsClient client, Microsoft.Azure.DataLake.Store.RequestOptions req, Microsoft.Azure.DataLake.Store.OperationResponse resp, System.Threading.CancellationToken cancelToken = null);" />
+      <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task RemoveDefaultAclAsync (string path, Microsoft.Azure.DataLake.Store.AdlsClient client, Microsoft.Azure.DataLake.Store.RequestOptions req, Microsoft.Azure.DataLake.Store.OperationResponse resp, System.Threading.CancellationToken cancelToken = default);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Threading.Tasks.Task RemoveDefaultAclAsync(string path, class Microsoft.Azure.DataLake.Store.AdlsClient client, class Microsoft.Azure.DataLake.Store.RequestOptions req, class Microsoft.Azure.DataLake.Store.OperationResponse resp, valuetype System.Threading.CancellationToken cancelToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.DataLake.Store.Core.RemoveDefaultAclAsync(System.String,Microsoft.Azure.DataLake.Store.AdlsClient,Microsoft.Azure.DataLake.Store.RequestOptions,Microsoft.Azure.DataLake.Store.OperationResponse,System.Threading.CancellationToken)" />
-      <MemberSignature Language="VB.NET" Value="Public Shared Function RemoveDefaultAclAsync (path As String, client As AdlsClient, req As RequestOptions, resp As OperationResponse, Optional cancelToken As CancellationToken = null) As Task" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function RemoveDefaultAclAsync (path As String, client As AdlsClient, req As RequestOptions, resp As OperationResponse, Optional cancelToken As CancellationToken = Nothing) As Task" />
       <MemberSignature Language="F#" Value="static member RemoveDefaultAclAsync : string * Microsoft.Azure.DataLake.Store.AdlsClient * Microsoft.Azure.DataLake.Store.RequestOptions * Microsoft.Azure.DataLake.Store.OperationResponse * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task" Usage="Microsoft.Azure.DataLake.Store.Core.RemoveDefaultAclAsync (path, client, req, resp, cancelToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.DataLake.Store</AssemblyName>
-        <AssemblyVersion>0.1.0.0</AssemblyVersion>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
-      <Attributes>
-        <Attribute>
-          <AttributeName>System.Runtime.CompilerServices.AsyncStateMachine(typeof(Microsoft.Azure.DataLake.Store.Core/&lt;RemoveDefaultAclAsync&gt;d__31))</AttributeName>
-        </Attribute>
-      </Attributes>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task</ReturnType>
       </ReturnValue>
@@ -1088,22 +1004,16 @@
       </Docs>
     </Member>
     <Member MemberName="RenameAsync">
-      <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task&lt;bool&gt; RenameAsync (string path, string destination, bool overwrite, Microsoft.Azure.DataLake.Store.AdlsClient client, Microsoft.Azure.DataLake.Store.RequestOptions req, Microsoft.Azure.DataLake.Store.OperationResponse resp, System.Threading.CancellationToken cancelToken = null);" />
+      <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task&lt;bool&gt; RenameAsync (string path, string destination, bool overwrite, Microsoft.Azure.DataLake.Store.AdlsClient client, Microsoft.Azure.DataLake.Store.RequestOptions req, Microsoft.Azure.DataLake.Store.OperationResponse resp, System.Threading.CancellationToken cancelToken = default);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Threading.Tasks.Task`1&lt;bool&gt; RenameAsync(string path, string destination, bool overwrite, class Microsoft.Azure.DataLake.Store.AdlsClient client, class Microsoft.Azure.DataLake.Store.RequestOptions req, class Microsoft.Azure.DataLake.Store.OperationResponse resp, valuetype System.Threading.CancellationToken cancelToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.DataLake.Store.Core.RenameAsync(System.String,System.String,System.Boolean,Microsoft.Azure.DataLake.Store.AdlsClient,Microsoft.Azure.DataLake.Store.RequestOptions,Microsoft.Azure.DataLake.Store.OperationResponse,System.Threading.CancellationToken)" />
-      <MemberSignature Language="VB.NET" Value="Public Shared Function RenameAsync (path As String, destination As String, overwrite As Boolean, client As AdlsClient, req As RequestOptions, resp As OperationResponse, Optional cancelToken As CancellationToken = null) As Task(Of Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function RenameAsync (path As String, destination As String, overwrite As Boolean, client As AdlsClient, req As RequestOptions, resp As OperationResponse, Optional cancelToken As CancellationToken = Nothing) As Task(Of Boolean)" />
       <MemberSignature Language="F#" Value="static member RenameAsync : string * string * bool * Microsoft.Azure.DataLake.Store.AdlsClient * Microsoft.Azure.DataLake.Store.RequestOptions * Microsoft.Azure.DataLake.Store.OperationResponse * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;bool&gt;" Usage="Microsoft.Azure.DataLake.Store.Core.RenameAsync (path, destination, overwrite, client, req, resp, cancelToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.DataLake.Store</AssemblyName>
-        <AssemblyVersion>0.1.0.0</AssemblyVersion>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
-      <Attributes>
-        <Attribute>
-          <AttributeName>System.Runtime.CompilerServices.AsyncStateMachine(typeof(Microsoft.Azure.DataLake.Store.Core/&lt;RenameAsync&gt;d__14))</AttributeName>
-        </Attribute>
-      </Attributes>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;System.Boolean&gt;</ReturnType>
       </ReturnValue>
@@ -1134,23 +1044,59 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <Member MemberName="RestoreDeletedItemsAsync">
+      <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task RestoreDeletedItemsAsync (string restoreToken, string restoreDestination, string type, string restoreAction, Microsoft.Azure.DataLake.Store.AdlsClient client, Microsoft.Azure.DataLake.Store.RequestOptions req, Microsoft.Azure.DataLake.Store.OperationResponse resp, System.Threading.CancellationToken cancelToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Threading.Tasks.Task RestoreDeletedItemsAsync(string restoreToken, string restoreDestination, string type, string restoreAction, class Microsoft.Azure.DataLake.Store.AdlsClient client, class Microsoft.Azure.DataLake.Store.RequestOptions req, class Microsoft.Azure.DataLake.Store.OperationResponse resp, valuetype System.Threading.CancellationToken cancelToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Azure.DataLake.Store.Core.RestoreDeletedItemsAsync(System.String,System.String,System.String,System.String,Microsoft.Azure.DataLake.Store.AdlsClient,Microsoft.Azure.DataLake.Store.RequestOptions,Microsoft.Azure.DataLake.Store.OperationResponse,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function RestoreDeletedItemsAsync (restoreToken As String, restoreDestination As String, type As String, restoreAction As String, client As AdlsClient, req As RequestOptions, resp As OperationResponse, Optional cancelToken As CancellationToken = Nothing) As Task" />
+      <MemberSignature Language="F#" Value="static member RestoreDeletedItemsAsync : string * string * string * string * Microsoft.Azure.DataLake.Store.AdlsClient * Microsoft.Azure.DataLake.Store.RequestOptions * Microsoft.Azure.DataLake.Store.OperationResponse * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task" Usage="Microsoft.Azure.DataLake.Store.Core.RestoreDeletedItemsAsync (restoreToken, restoreDestination, type, restoreAction, client, req, resp, cancelToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Azure.DataLake.Store</AssemblyName>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="restoreToken" Type="System.String" />
+        <Parameter Name="restoreDestination" Type="System.String" />
+        <Parameter Name="type" Type="System.String" />
+        <Parameter Name="restoreAction" Type="System.String" />
+        <Parameter Name="client" Type="Microsoft.Azure.DataLake.Store.AdlsClient" />
+        <Parameter Name="req" Type="Microsoft.Azure.DataLake.Store.RequestOptions" />
+        <Parameter Name="resp" Type="Microsoft.Azure.DataLake.Store.OperationResponse" />
+        <Parameter Name="cancelToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="cancelToken">To be added.</param>
+        <param name="restoreToken">restore token of the entry to be restored. This is the trash directory path in enumeratedeleteditems response</param>
+        <param name="restoreDestination">Path to which the entry should be restored</param>
+        <param name="type">Type of the entry which is being restored</param>
+        <param name="restoreAction">Action to take during destination name conflicts - overwrite or copy</param>
+        <param name="client">ADLS Client</param>
+        <param name="req">Options to change behavior of the Http request </param>
+        <param name="resp">Stores the response/ouput of the Http request </param>
+        <summary>
+            Restore a stream or directory from trash to user space. This is a synchronous operation.
+            Not threadsafe when Restore is called for same path from different threads. 
+            Caution: Undeleting files is a best effort operation.  There are no guarantees that a file can be restored once it is deleted. The use of this API is enabled via whitelisting. If your ADL account is not whitelisted, then using this api will throw Not immplemented exception. For further information and assistance please contact Microsoft support.
+            </summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
     <Member MemberName="SetAclAsync">
-      <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task SetAclAsync (string path, System.Collections.Generic.List&lt;Microsoft.Azure.DataLake.Store.Acl.AclEntry&gt; aclSpecList, Microsoft.Azure.DataLake.Store.AdlsClient client, Microsoft.Azure.DataLake.Store.RequestOptions req, Microsoft.Azure.DataLake.Store.OperationResponse resp, System.Threading.CancellationToken cancelToken = null);" />
+      <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task SetAclAsync (string path, System.Collections.Generic.List&lt;Microsoft.Azure.DataLake.Store.Acl.AclEntry&gt; aclSpecList, Microsoft.Azure.DataLake.Store.AdlsClient client, Microsoft.Azure.DataLake.Store.RequestOptions req, Microsoft.Azure.DataLake.Store.OperationResponse resp, System.Threading.CancellationToken cancelToken = default);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Threading.Tasks.Task SetAclAsync(string path, class System.Collections.Generic.List`1&lt;class Microsoft.Azure.DataLake.Store.Acl.AclEntry&gt; aclSpecList, class Microsoft.Azure.DataLake.Store.AdlsClient client, class Microsoft.Azure.DataLake.Store.RequestOptions req, class Microsoft.Azure.DataLake.Store.OperationResponse resp, valuetype System.Threading.CancellationToken cancelToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.DataLake.Store.Core.SetAclAsync(System.String,System.Collections.Generic.List{Microsoft.Azure.DataLake.Store.Acl.AclEntry},Microsoft.Azure.DataLake.Store.AdlsClient,Microsoft.Azure.DataLake.Store.RequestOptions,Microsoft.Azure.DataLake.Store.OperationResponse,System.Threading.CancellationToken)" />
-      <MemberSignature Language="VB.NET" Value="Public Shared Function SetAclAsync (path As String, aclSpecList As List(Of AclEntry), client As AdlsClient, req As RequestOptions, resp As OperationResponse, Optional cancelToken As CancellationToken = null) As Task" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function SetAclAsync (path As String, aclSpecList As List(Of AclEntry), client As AdlsClient, req As RequestOptions, resp As OperationResponse, Optional cancelToken As CancellationToken = Nothing) As Task" />
       <MemberSignature Language="F#" Value="static member SetAclAsync : string * System.Collections.Generic.List&lt;Microsoft.Azure.DataLake.Store.Acl.AclEntry&gt; * Microsoft.Azure.DataLake.Store.AdlsClient * Microsoft.Azure.DataLake.Store.RequestOptions * Microsoft.Azure.DataLake.Store.OperationResponse * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task" Usage="Microsoft.Azure.DataLake.Store.Core.SetAclAsync (path, aclSpecList, client, req, resp, cancelToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.DataLake.Store</AssemblyName>
-        <AssemblyVersion>0.1.0.0</AssemblyVersion>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
-      <Attributes>
-        <Attribute>
-          <AttributeName>System.Runtime.CompilerServices.AsyncStateMachine(typeof(Microsoft.Azure.DataLake.Store.Core/&lt;SetAclAsync&gt;d__28))</AttributeName>
-        </Attribute>
-      </Attributes>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task</ReturnType>
       </ReturnValue>
@@ -1177,22 +1123,16 @@
       </Docs>
     </Member>
     <Member MemberName="SetAclAsync">
-      <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task SetAclAsync (string path, string aclSpec, Microsoft.Azure.DataLake.Store.AdlsClient client, Microsoft.Azure.DataLake.Store.RequestOptions req, Microsoft.Azure.DataLake.Store.OperationResponse resp, System.Threading.CancellationToken cancelToken = null);" />
+      <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task SetAclAsync (string path, string aclSpec, Microsoft.Azure.DataLake.Store.AdlsClient client, Microsoft.Azure.DataLake.Store.RequestOptions req, Microsoft.Azure.DataLake.Store.OperationResponse resp, System.Threading.CancellationToken cancelToken = default);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Threading.Tasks.Task SetAclAsync(string path, string aclSpec, class Microsoft.Azure.DataLake.Store.AdlsClient client, class Microsoft.Azure.DataLake.Store.RequestOptions req, class Microsoft.Azure.DataLake.Store.OperationResponse resp, valuetype System.Threading.CancellationToken cancelToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.DataLake.Store.Core.SetAclAsync(System.String,System.String,Microsoft.Azure.DataLake.Store.AdlsClient,Microsoft.Azure.DataLake.Store.RequestOptions,Microsoft.Azure.DataLake.Store.OperationResponse,System.Threading.CancellationToken)" />
-      <MemberSignature Language="VB.NET" Value="Public Shared Function SetAclAsync (path As String, aclSpec As String, client As AdlsClient, req As RequestOptions, resp As OperationResponse, Optional cancelToken As CancellationToken = null) As Task" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function SetAclAsync (path As String, aclSpec As String, client As AdlsClient, req As RequestOptions, resp As OperationResponse, Optional cancelToken As CancellationToken = Nothing) As Task" />
       <MemberSignature Language="F#" Value="static member SetAclAsync : string * string * Microsoft.Azure.DataLake.Store.AdlsClient * Microsoft.Azure.DataLake.Store.RequestOptions * Microsoft.Azure.DataLake.Store.OperationResponse * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task" Usage="Microsoft.Azure.DataLake.Store.Core.SetAclAsync (path, aclSpec, client, req, resp, cancelToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.DataLake.Store</AssemblyName>
-        <AssemblyVersion>0.1.0.0</AssemblyVersion>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
-      <Attributes>
-        <Attribute>
-          <AttributeName>System.Runtime.CompilerServices.AsyncStateMachine(typeof(Microsoft.Azure.DataLake.Store.Core/&lt;SetAclAsync&gt;d__27))</AttributeName>
-        </Attribute>
-      </Attributes>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task</ReturnType>
       </ReturnValue>
@@ -1219,22 +1159,16 @@
       </Docs>
     </Member>
     <Member MemberName="SetExpiryTimeAsync">
-      <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task SetExpiryTimeAsync (string path, Microsoft.Azure.DataLake.Store.ExpiryOption opt, long expiryTime, Microsoft.Azure.DataLake.Store.AdlsClient client, Microsoft.Azure.DataLake.Store.RequestOptions req, Microsoft.Azure.DataLake.Store.OperationResponse resp, System.Threading.CancellationToken cancelToken = null);" />
+      <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task SetExpiryTimeAsync (string path, Microsoft.Azure.DataLake.Store.ExpiryOption opt, long expiryTime, Microsoft.Azure.DataLake.Store.AdlsClient client, Microsoft.Azure.DataLake.Store.RequestOptions req, Microsoft.Azure.DataLake.Store.OperationResponse resp, System.Threading.CancellationToken cancelToken = default);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Threading.Tasks.Task SetExpiryTimeAsync(string path, valuetype Microsoft.Azure.DataLake.Store.ExpiryOption opt, int64 expiryTime, class Microsoft.Azure.DataLake.Store.AdlsClient client, class Microsoft.Azure.DataLake.Store.RequestOptions req, class Microsoft.Azure.DataLake.Store.OperationResponse resp, valuetype System.Threading.CancellationToken cancelToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.DataLake.Store.Core.SetExpiryTimeAsync(System.String,Microsoft.Azure.DataLake.Store.ExpiryOption,System.Int64,Microsoft.Azure.DataLake.Store.AdlsClient,Microsoft.Azure.DataLake.Store.RequestOptions,Microsoft.Azure.DataLake.Store.OperationResponse,System.Threading.CancellationToken)" />
-      <MemberSignature Language="VB.NET" Value="Public Shared Function SetExpiryTimeAsync (path As String, opt As ExpiryOption, expiryTime As Long, client As AdlsClient, req As RequestOptions, resp As OperationResponse, Optional cancelToken As CancellationToken = null) As Task" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function SetExpiryTimeAsync (path As String, opt As ExpiryOption, expiryTime As Long, client As AdlsClient, req As RequestOptions, resp As OperationResponse, Optional cancelToken As CancellationToken = Nothing) As Task" />
       <MemberSignature Language="F#" Value="static member SetExpiryTimeAsync : string * Microsoft.Azure.DataLake.Store.ExpiryOption * int64 * Microsoft.Azure.DataLake.Store.AdlsClient * Microsoft.Azure.DataLake.Store.RequestOptions * Microsoft.Azure.DataLake.Store.OperationResponse * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task" Usage="Microsoft.Azure.DataLake.Store.Core.SetExpiryTimeAsync (path, opt, expiryTime, client, req, resp, cancelToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.DataLake.Store</AssemblyName>
-        <AssemblyVersion>0.1.0.0</AssemblyVersion>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
-      <Attributes>
-        <Attribute>
-          <AttributeName>System.Runtime.CompilerServices.AsyncStateMachine(typeof(Microsoft.Azure.DataLake.Store.Core/&lt;SetExpiryTimeAsync&gt;d__20))</AttributeName>
-        </Attribute>
-      </Attributes>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task</ReturnType>
       </ReturnValue>
@@ -1263,22 +1197,16 @@
       </Docs>
     </Member>
     <Member MemberName="SetOwnerAsync">
-      <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task SetOwnerAsync (string path, string user, string group, Microsoft.Azure.DataLake.Store.AdlsClient client, Microsoft.Azure.DataLake.Store.RequestOptions req, Microsoft.Azure.DataLake.Store.OperationResponse resp, System.Threading.CancellationToken cancelToken = null);" />
+      <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task SetOwnerAsync (string path, string user, string group, Microsoft.Azure.DataLake.Store.AdlsClient client, Microsoft.Azure.DataLake.Store.RequestOptions req, Microsoft.Azure.DataLake.Store.OperationResponse resp, System.Threading.CancellationToken cancelToken = default);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Threading.Tasks.Task SetOwnerAsync(string path, string user, string group, class Microsoft.Azure.DataLake.Store.AdlsClient client, class Microsoft.Azure.DataLake.Store.RequestOptions req, class Microsoft.Azure.DataLake.Store.OperationResponse resp, valuetype System.Threading.CancellationToken cancelToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.DataLake.Store.Core.SetOwnerAsync(System.String,System.String,System.String,Microsoft.Azure.DataLake.Store.AdlsClient,Microsoft.Azure.DataLake.Store.RequestOptions,Microsoft.Azure.DataLake.Store.OperationResponse,System.Threading.CancellationToken)" />
-      <MemberSignature Language="VB.NET" Value="Public Shared Function SetOwnerAsync (path As String, user As String, group As String, client As AdlsClient, req As RequestOptions, resp As OperationResponse, Optional cancelToken As CancellationToken = null) As Task" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function SetOwnerAsync (path As String, user As String, group As String, client As AdlsClient, req As RequestOptions, resp As OperationResponse, Optional cancelToken As CancellationToken = Nothing) As Task" />
       <MemberSignature Language="F#" Value="static member SetOwnerAsync : string * string * string * Microsoft.Azure.DataLake.Store.AdlsClient * Microsoft.Azure.DataLake.Store.RequestOptions * Microsoft.Azure.DataLake.Store.OperationResponse * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task" Usage="Microsoft.Azure.DataLake.Store.Core.SetOwnerAsync (path, user, group, client, req, resp, cancelToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.DataLake.Store</AssemblyName>
-        <AssemblyVersion>0.1.0.0</AssemblyVersion>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
-      <Attributes>
-        <Attribute>
-          <AttributeName>System.Runtime.CompilerServices.AsyncStateMachine(typeof(Microsoft.Azure.DataLake.Store.Core/&lt;SetOwnerAsync&gt;d__23))</AttributeName>
-        </Attribute>
-      </Attributes>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task</ReturnType>
       </ReturnValue>
@@ -1307,22 +1235,16 @@
       </Docs>
     </Member>
     <Member MemberName="SetPermissionAsync">
-      <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task SetPermissionAsync (string path, string permission, Microsoft.Azure.DataLake.Store.AdlsClient client, Microsoft.Azure.DataLake.Store.RequestOptions req, Microsoft.Azure.DataLake.Store.OperationResponse resp, System.Threading.CancellationToken cancelToken = null);" />
+      <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task SetPermissionAsync (string path, string permission, Microsoft.Azure.DataLake.Store.AdlsClient client, Microsoft.Azure.DataLake.Store.RequestOptions req, Microsoft.Azure.DataLake.Store.OperationResponse resp, System.Threading.CancellationToken cancelToken = default);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Threading.Tasks.Task SetPermissionAsync(string path, string permission, class Microsoft.Azure.DataLake.Store.AdlsClient client, class Microsoft.Azure.DataLake.Store.RequestOptions req, class Microsoft.Azure.DataLake.Store.OperationResponse resp, valuetype System.Threading.CancellationToken cancelToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.DataLake.Store.Core.SetPermissionAsync(System.String,System.String,Microsoft.Azure.DataLake.Store.AdlsClient,Microsoft.Azure.DataLake.Store.RequestOptions,Microsoft.Azure.DataLake.Store.OperationResponse,System.Threading.CancellationToken)" />
-      <MemberSignature Language="VB.NET" Value="Public Shared Function SetPermissionAsync (path As String, permission As String, client As AdlsClient, req As RequestOptions, resp As OperationResponse, Optional cancelToken As CancellationToken = null) As Task" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function SetPermissionAsync (path As String, permission As String, client As AdlsClient, req As RequestOptions, resp As OperationResponse, Optional cancelToken As CancellationToken = Nothing) As Task" />
       <MemberSignature Language="F#" Value="static member SetPermissionAsync : string * string * Microsoft.Azure.DataLake.Store.AdlsClient * Microsoft.Azure.DataLake.Store.RequestOptions * Microsoft.Azure.DataLake.Store.OperationResponse * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task" Usage="Microsoft.Azure.DataLake.Store.Core.SetPermissionAsync (path, permission, client, req, resp, cancelToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.DataLake.Store</AssemblyName>
-        <AssemblyVersion>0.1.0.0</AssemblyVersion>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
       </AssemblyInfo>
-      <Attributes>
-        <Attribute>
-          <AttributeName>System.Runtime.CompilerServices.AsyncStateMachine(typeof(Microsoft.Azure.DataLake.Store.Core/&lt;SetPermissionAsync&gt;d__22))</AttributeName>
-        </Attribute>
-      </Attributes>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task</ReturnType>
       </ReturnValue>

@@ -1,17 +1,9 @@
 ---
 title: Azure SQL Database APIs for .NET
 description: Reference for Azure SQL Database libraries for .NET
-keywords: Azure, .NET, SDK, API, SQL, SQL Database
-author: camsoper
-ms.author: casoper
-manager: wpickett
 ms.date: 10/19/2017
 ms.topic: reference
-ms.prod: azure
-ms.technology: azure
-ms.devlang: dotnet
 ms.service: sql-database
-ms.custom: devcenter, svc-overview
 ---
 
 # Azure SQL Database APIs for .NET
@@ -36,7 +28,7 @@ Install-Package System.Data.SqlClient
 
 #### .NET Core CLI
 
-```bash
+```dotnetcli
 dotnet add package System.Data.SqlClient
 ```
 
@@ -89,7 +81,7 @@ Install-Package Microsoft.Azure.Management.Sql.Fluent
 
 #### .NET Core command line
 
-```bash
+```dotnetcli
 dotnet add package Microsoft.Azure.Management.Sql.Fluent
 ```
 
@@ -127,5 +119,5 @@ ISqlDatabase sqlDb = sqlServer.Databases.Define("DatabaseName").Create();
 - [ADO.NET code examples](/dotnet/framework/data/adonet/ado-net-code-examples)
 - [Azure management libraries for .NET samples for SQL Database](/dotnet/azure/dotnet-sdk-azure-sql-database-samples)
 
-View the [complete list](https://azure.microsoft.com/en-us/resources/samples/?platform=dotnet&term=sql+database) of Azure SQL Database samples.
+View the [complete list](https://azure.microsoft.com/resources/samples/?platform=dotnet&term=sql+database) of Azure SQL Database samples.
 

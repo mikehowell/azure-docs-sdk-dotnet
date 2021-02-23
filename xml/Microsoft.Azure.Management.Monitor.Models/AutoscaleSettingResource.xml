@@ -1,15 +1,15 @@
-﻿<Type Name="AutoscaleSettingResource" FullName="Microsoft.Azure.Management.Monitor.Models.AutoscaleSettingResource">
+<Type Name="AutoscaleSettingResource" FullName="Microsoft.Azure.Management.Monitor.Models.AutoscaleSettingResource">
   <TypeSignature Language="C#" Value="public class AutoscaleSettingResource : Microsoft.Azure.Management.Monitor.Models.Resource" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit AutoscaleSettingResource extends Microsoft.Azure.Management.Monitor.Models.Resource" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Azure.Management.Monitor.Models.AutoscaleSettingResource" />
   <TypeSignature Language="VB.NET" Value="Public Class AutoscaleSettingResource&#xA;Inherits Resource" />
   <TypeSignature Language="F#" Value="type AutoscaleSettingResource = class&#xA;    inherit Resource" />
-  <TypeSignature Language="C++ CLI" Value="public ref class AutoscaleSettingResource : Microsoft::Azure::Management::Monitor::Models::Resource" />
-  <TypeSignature Language="C++ WINRT" Value="[Windows::Foundation::Metadata::WebHostHidden]&#xA;class AutoscaleSettingResource : Microsoft::Azure::Management::Monitor::Models::Resource" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Azure.Management.Monitor</AssemblyName>
-    <AssemblyVersion>0.19.0.0</AssemblyVersion>
-    <AssemblyVersion>0.19.1.0</AssemblyVersion>
+    <AssemblyVersion>0.24.1.0</AssemblyVersion>
+    <AssemblyVersion>0.25.0.0</AssemblyVersion>
+    <AssemblyVersion>0.25.1.0</AssemblyVersion>
+    <AssemblyVersion>0.25.2.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>Microsoft.Azure.Management.Monitor.Models.Resource</BaseTypeName>
@@ -17,7 +17,8 @@
   <Interfaces />
   <Attributes>
     <Attribute>
-      <AttributeName>Microsoft.Rest.Serialization.JsonTransformation</AttributeName>
+      <AttributeName Language="C#">[Microsoft.Rest.Serialization.JsonTransformation]</AttributeName>
+      <AttributeName Language="F#">[&lt;Microsoft.Rest.Serialization.JsonTransformation&gt;]</AttributeName>
     </Attribute>
   </Attributes>
   <Docs>
@@ -32,14 +33,13 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Management.Monitor.Models.AutoscaleSettingResource.#ctor" />
       <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; AutoscaleSettingResource();" />
-      <MemberSignature Language="C++ CX" Value="public:&#xA; AutoscaleSettingResource();" />
-      <MemberSignature Language="C++ WINRT" Value=" AutoscaleSettingResource();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Monitor</AssemblyName>
-        <AssemblyVersion>0.19.0.0</AssemblyVersion>
-        <AssemblyVersion>0.19.1.0</AssemblyVersion>
+        <AssemblyVersion>0.24.1.0</AssemblyVersion>
+        <AssemblyVersion>0.25.0.0</AssemblyVersion>
+        <AssemblyVersion>0.25.1.0</AssemblyVersion>
+        <AssemblyVersion>0.25.2.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
@@ -50,16 +50,18 @@
       </Docs>
     </Member>
     <Member MemberName=".ctor">
-      <MemberSignature Language="C#" Value="public AutoscaleSettingResource (string location, System.Collections.Generic.IList&lt;Microsoft.Azure.Management.Monitor.Models.AutoscaleProfile&gt; profiles, string id = null, string name = null, string type = null, System.Collections.Generic.IDictionary&lt;string,string&gt; tags = null, System.Collections.Generic.IList&lt;Microsoft.Azure.Management.Monitor.Models.AutoscaleNotification&gt; notifications = null, Nullable&lt;bool&gt; enabled = null, string autoscaleSettingResourceName = null, string targetResourceUri = null);" />
+      <MemberSignature Language="C#" Value="public AutoscaleSettingResource (string location, System.Collections.Generic.IList&lt;Microsoft.Azure.Management.Monitor.Models.AutoscaleProfile&gt; profiles, string id = default, string name = default, string type = default, System.Collections.Generic.IDictionary&lt;string,string&gt; tags = default, System.Collections.Generic.IList&lt;Microsoft.Azure.Management.Monitor.Models.AutoscaleNotification&gt; notifications = default, bool? enabled = default, string autoscaleSettingResourceName = default, string targetResourceUri = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string location, class System.Collections.Generic.IList`1&lt;class Microsoft.Azure.Management.Monitor.Models.AutoscaleProfile&gt; profiles, string id, string name, string type, class System.Collections.Generic.IDictionary`2&lt;string, string&gt; tags, class System.Collections.Generic.IList`1&lt;class Microsoft.Azure.Management.Monitor.Models.AutoscaleNotification&gt; notifications, valuetype System.Nullable`1&lt;bool&gt; enabled, string autoscaleSettingResourceName, string targetResourceUri) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Management.Monitor.Models.AutoscaleSettingResource.#ctor(System.String,System.Collections.Generic.IList{Microsoft.Azure.Management.Monitor.Models.AutoscaleProfile},System.String,System.String,System.String,System.Collections.Generic.IDictionary{System.String,System.String},System.Collections.Generic.IList{Microsoft.Azure.Management.Monitor.Models.AutoscaleNotification},System.Nullable{System.Boolean},System.String,System.String)" />
-      <MemberSignature Language="VB.NET" Value="Public Sub New (location As String, profiles As IList(Of AutoscaleProfile), Optional id As String = null, Optional name As String = null, Optional type As String = null, Optional tags As IDictionary(Of String, String) = null, Optional notifications As IList(Of AutoscaleNotification) = null, Optional enabled As Nullable(Of Boolean) = null, Optional autoscaleSettingResourceName As String = null, Optional targetResourceUri As String = null)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (location As String, profiles As IList(Of AutoscaleProfile), Optional id As String = Nothing, Optional name As String = Nothing, Optional type As String = Nothing, Optional tags As IDictionary(Of String, String) = Nothing, Optional notifications As IList(Of AutoscaleNotification) = Nothing, Optional enabled As Nullable(Of Boolean) = Nothing, Optional autoscaleSettingResourceName As String = Nothing, Optional targetResourceUri As String = Nothing)" />
       <MemberSignature Language="F#" Value="new Microsoft.Azure.Management.Monitor.Models.AutoscaleSettingResource : string * System.Collections.Generic.IList&lt;Microsoft.Azure.Management.Monitor.Models.AutoscaleProfile&gt; * string * string * string * System.Collections.Generic.IDictionary&lt;string, string&gt; * System.Collections.Generic.IList&lt;Microsoft.Azure.Management.Monitor.Models.AutoscaleNotification&gt; * Nullable&lt;bool&gt; * string * string -&gt; Microsoft.Azure.Management.Monitor.Models.AutoscaleSettingResource" Usage="new Microsoft.Azure.Management.Monitor.Models.AutoscaleSettingResource (location, profiles, id, name, type, tags, notifications, enabled, autoscaleSettingResourceName, targetResourceUri)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Monitor</AssemblyName>
-        <AssemblyVersion>0.19.0.0</AssemblyVersion>
-        <AssemblyVersion>0.19.1.0</AssemblyVersion>
+        <AssemblyVersion>0.24.1.0</AssemblyVersion>
+        <AssemblyVersion>0.25.0.0</AssemblyVersion>
+        <AssemblyVersion>0.25.1.0</AssemblyVersion>
+        <AssemblyVersion>0.25.2.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="location" Type="System.String" />
@@ -103,17 +105,18 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Management.Monitor.Models.AutoscaleSettingResource.AutoscaleSettingResourceName" />
       <MemberSignature Language="VB.NET" Value="Public Property AutoscaleSettingResourceName As String" />
       <MemberSignature Language="F#" Value="member this.AutoscaleSettingResourceName : string with get, set" Usage="Microsoft.Azure.Management.Monitor.Models.AutoscaleSettingResource.AutoscaleSettingResourceName" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ AutoscaleSettingResourceName { System::String ^ get(); void set(System::String ^ value); };" />
-      <MemberSignature Language="C++ CX" Value="public:&#xA; property Platform::String ^ AutoscaleSettingResourceName { Platform::String ^ get(); void set(Platform::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Monitor</AssemblyName>
-        <AssemblyVersion>0.19.0.0</AssemblyVersion>
-        <AssemblyVersion>0.19.1.0</AssemblyVersion>
+        <AssemblyVersion>0.24.1.0</AssemblyVersion>
+        <AssemblyVersion>0.25.0.0</AssemblyVersion>
+        <AssemblyVersion>0.25.1.0</AssemblyVersion>
+        <AssemblyVersion>0.25.2.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="properties.name")</AttributeName>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty(PropertyName="properties.name")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty(PropertyName="properties.name")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -128,21 +131,23 @@
       </Docs>
     </Member>
     <Member MemberName="Enabled">
-      <MemberSignature Language="C#" Value="public Nullable&lt;bool&gt; Enabled { get; set; }" />
+      <MemberSignature Language="C#" Value="public bool? Enabled { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;bool&gt; Enabled" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Management.Monitor.Models.AutoscaleSettingResource.Enabled" />
       <MemberSignature Language="VB.NET" Value="Public Property Enabled As Nullable(Of Boolean)" />
       <MemberSignature Language="F#" Value="member this.Enabled : Nullable&lt;bool&gt; with get, set" Usage="Microsoft.Azure.Management.Monitor.Models.AutoscaleSettingResource.Enabled" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Nullable&lt;bool&gt; Enabled { Nullable&lt;bool&gt; get(); void set(Nullable&lt;bool&gt; value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Monitor</AssemblyName>
-        <AssemblyVersion>0.19.0.0</AssemblyVersion>
-        <AssemblyVersion>0.19.1.0</AssemblyVersion>
+        <AssemblyVersion>0.24.1.0</AssemblyVersion>
+        <AssemblyVersion>0.25.0.0</AssemblyVersion>
+        <AssemblyVersion>0.25.1.0</AssemblyVersion>
+        <AssemblyVersion>0.25.2.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="properties.enabled")</AttributeName>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty(PropertyName="properties.enabled")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty(PropertyName="properties.enabled")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -163,16 +168,18 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Management.Monitor.Models.AutoscaleSettingResource.Notifications" />
       <MemberSignature Language="VB.NET" Value="Public Property Notifications As IList(Of AutoscaleNotification)" />
       <MemberSignature Language="F#" Value="member this.Notifications : System.Collections.Generic.IList&lt;Microsoft.Azure.Management.Monitor.Models.AutoscaleNotification&gt; with get, set" Usage="Microsoft.Azure.Management.Monitor.Models.AutoscaleSettingResource.Notifications" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::Generic::IList&lt;Microsoft::Azure::Management::Monitor::Models::AutoscaleNotification ^&gt; ^ Notifications { System::Collections::Generic::IList&lt;Microsoft::Azure::Management::Monitor::Models::AutoscaleNotification ^&gt; ^ get(); void set(System::Collections::Generic::IList&lt;Microsoft::Azure::Management::Monitor::Models::AutoscaleNotification ^&gt; ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Monitor</AssemblyName>
-        <AssemblyVersion>0.19.0.0</AssemblyVersion>
-        <AssemblyVersion>0.19.1.0</AssemblyVersion>
+        <AssemblyVersion>0.24.1.0</AssemblyVersion>
+        <AssemblyVersion>0.25.0.0</AssemblyVersion>
+        <AssemblyVersion>0.25.1.0</AssemblyVersion>
+        <AssemblyVersion>0.25.2.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="properties.notifications")</AttributeName>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty(PropertyName="properties.notifications")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty(PropertyName="properties.notifications")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -192,16 +199,18 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Management.Monitor.Models.AutoscaleSettingResource.Profiles" />
       <MemberSignature Language="VB.NET" Value="Public Property Profiles As IList(Of AutoscaleProfile)" />
       <MemberSignature Language="F#" Value="member this.Profiles : System.Collections.Generic.IList&lt;Microsoft.Azure.Management.Monitor.Models.AutoscaleProfile&gt; with get, set" Usage="Microsoft.Azure.Management.Monitor.Models.AutoscaleSettingResource.Profiles" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::Generic::IList&lt;Microsoft::Azure::Management::Monitor::Models::AutoscaleProfile ^&gt; ^ Profiles { System::Collections::Generic::IList&lt;Microsoft::Azure::Management::Monitor::Models::AutoscaleProfile ^&gt; ^ get(); void set(System::Collections::Generic::IList&lt;Microsoft::Azure::Management::Monitor::Models::AutoscaleProfile ^&gt; ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Monitor</AssemblyName>
-        <AssemblyVersion>0.19.0.0</AssemblyVersion>
-        <AssemblyVersion>0.19.1.0</AssemblyVersion>
+        <AssemblyVersion>0.24.1.0</AssemblyVersion>
+        <AssemblyVersion>0.25.0.0</AssemblyVersion>
+        <AssemblyVersion>0.25.1.0</AssemblyVersion>
+        <AssemblyVersion>0.25.2.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="properties.profiles")</AttributeName>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty(PropertyName="properties.profiles")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty(PropertyName="properties.profiles")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -223,17 +232,18 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Management.Monitor.Models.AutoscaleSettingResource.TargetResourceUri" />
       <MemberSignature Language="VB.NET" Value="Public Property TargetResourceUri As String" />
       <MemberSignature Language="F#" Value="member this.TargetResourceUri : string with get, set" Usage="Microsoft.Azure.Management.Monitor.Models.AutoscaleSettingResource.TargetResourceUri" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ TargetResourceUri { System::String ^ get(); void set(System::String ^ value); };" />
-      <MemberSignature Language="C++ CX" Value="public:&#xA; property Platform::String ^ TargetResourceUri { Platform::String ^ get(); void set(Platform::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Monitor</AssemblyName>
-        <AssemblyVersion>0.19.0.0</AssemblyVersion>
-        <AssemblyVersion>0.19.1.0</AssemblyVersion>
+        <AssemblyVersion>0.24.1.0</AssemblyVersion>
+        <AssemblyVersion>0.25.0.0</AssemblyVersion>
+        <AssemblyVersion>0.25.1.0</AssemblyVersion>
+        <AssemblyVersion>0.25.2.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="properties.targetResourceUri")</AttributeName>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty(PropertyName="properties.targetResourceUri")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty(PropertyName="properties.targetResourceUri")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -254,14 +264,13 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Management.Monitor.Models.AutoscaleSettingResource.Validate" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub Validate ()" />
       <MemberSignature Language="F#" Value="override this.Validate : unit -&gt; unit" Usage="autoscaleSettingResource.Validate " />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void Validate();" />
-      <MemberSignature Language="C++ CX" Value="public:&#xA; override void Validate();" />
-      <MemberSignature Language="C++ WINRT" Value=" override void Validate();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Monitor</AssemblyName>
-        <AssemblyVersion>0.19.0.0</AssemblyVersion>
-        <AssemblyVersion>0.19.1.0</AssemblyVersion>
+        <AssemblyVersion>0.24.1.0</AssemblyVersion>
+        <AssemblyVersion>0.25.0.0</AssemblyVersion>
+        <AssemblyVersion>0.25.1.0</AssemblyVersion>
+        <AssemblyVersion>0.25.2.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>

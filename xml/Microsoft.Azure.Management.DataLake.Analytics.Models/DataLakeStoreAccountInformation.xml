@@ -1,11 +1,9 @@
-﻿<Type Name="DataLakeStoreAccountInformation" FullName="Microsoft.Azure.Management.DataLake.Analytics.Models.DataLakeStoreAccountInformation">
+<Type Name="DataLakeStoreAccountInformation" FullName="Microsoft.Azure.Management.DataLake.Analytics.Models.DataLakeStoreAccountInformation">
   <TypeSignature Language="C#" Value="public class DataLakeStoreAccountInformation : Microsoft.Azure.Management.DataLake.Analytics.Models.SubResource" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit DataLakeStoreAccountInformation extends Microsoft.Azure.Management.DataLake.Analytics.Models.SubResource" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Azure.Management.DataLake.Analytics.Models.DataLakeStoreAccountInformation" />
   <TypeSignature Language="VB.NET" Value="Public Class DataLakeStoreAccountInformation&#xA;Inherits SubResource" />
   <TypeSignature Language="F#" Value="type DataLakeStoreAccountInformation = class&#xA;    inherit SubResource" />
-  <TypeSignature Language="C++ CLI" Value="public ref class DataLakeStoreAccountInformation : Microsoft::Azure::Management::DataLake::Analytics::Models::SubResource" />
-  <TypeSignature Language="C++ WINRT" Value="[Windows::Foundation::Metadata::WebHostHidden]&#xA;class DataLakeStoreAccountInformation : Microsoft::Azure::Management::DataLake::Analytics::Models::SubResource" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Azure.Management.DataLake.Analytics</AssemblyName>
     <AssemblyVersion>3.0.0.0</AssemblyVersion>
@@ -16,7 +14,8 @@
   <Interfaces />
   <Attributes>
     <Attribute>
-      <AttributeName>Microsoft.Rest.Serialization.JsonTransformation</AttributeName>
+      <AttributeName Language="C#">[Microsoft.Rest.Serialization.JsonTransformation]</AttributeName>
+      <AttributeName Language="F#">[&lt;Microsoft.Rest.Serialization.JsonTransformation&gt;]</AttributeName>
     </Attribute>
   </Attributes>
   <Docs>
@@ -31,9 +30,6 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Management.DataLake.Analytics.Models.DataLakeStoreAccountInformation.#ctor" />
       <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; DataLakeStoreAccountInformation();" />
-      <MemberSignature Language="C++ CX" Value="public:&#xA; DataLakeStoreAccountInformation();" />
-      <MemberSignature Language="C++ WINRT" Value=" DataLakeStoreAccountInformation();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.DataLake.Analytics</AssemblyName>
@@ -49,12 +45,11 @@
       </Docs>
     </Member>
     <Member MemberName=".ctor">
-      <MemberSignature Language="C#" Value="public DataLakeStoreAccountInformation (string id = null, string name = null, string type = null, string suffix = null);" />
+      <MemberSignature Language="C#" Value="public DataLakeStoreAccountInformation (string id = default, string name = default, string type = default, string suffix = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string id, string name, string type, string suffix) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Management.DataLake.Analytics.Models.DataLakeStoreAccountInformation.#ctor(System.String,System.String,System.String,System.String)" />
-      <MemberSignature Language="VB.NET" Value="Public Sub New (Optional id As String = null, Optional name As String = null, Optional type As String = null, Optional suffix As String = null)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (Optional id As String = Nothing, Optional name As String = Nothing, Optional type As String = Nothing, Optional suffix As String = Nothing)" />
       <MemberSignature Language="F#" Value="new Microsoft.Azure.Management.DataLake.Analytics.Models.DataLakeStoreAccountInformation : string * string * string * string -&gt; Microsoft.Azure.Management.DataLake.Analytics.Models.DataLakeStoreAccountInformation" Usage="new Microsoft.Azure.Management.DataLake.Analytics.Models.DataLakeStoreAccountInformation (id, name, type, suffix)" />
-      <MemberSignature Language="C++ WINRT" Value=" DataLakeStoreAccountInformation(std::wstring const &amp; id = null, std::wstring const &amp; name = null, std::wstring const &amp; type = null, std::wstring const &amp; suffix = null);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.DataLake.Analytics</AssemblyName>
@@ -85,8 +80,6 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Management.DataLake.Analytics.Models.DataLakeStoreAccountInformation.Suffix" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Suffix As String" />
       <MemberSignature Language="F#" Value="member this.Suffix : string" Usage="Microsoft.Azure.Management.DataLake.Analytics.Models.DataLakeStoreAccountInformation.Suffix" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Suffix { System::String ^ get(); };" />
-      <MemberSignature Language="C++ CX" Value="public:&#xA; property Platform::String ^ Suffix { Platform::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.DataLake.Analytics</AssemblyName>
@@ -94,7 +87,8 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="properties.suffix")</AttributeName>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty(PropertyName="properties.suffix")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty(PropertyName="properties.suffix")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>

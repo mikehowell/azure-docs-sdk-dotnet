@@ -1,14 +1,13 @@
-﻿<Type Name="DomainPurchaseConsent" FullName="Microsoft.Azure.Management.WebSites.Models.DomainPurchaseConsent">
+<Type Name="DomainPurchaseConsent" FullName="Microsoft.Azure.Management.WebSites.Models.DomainPurchaseConsent">
   <TypeSignature Language="C#" Value="public class DomainPurchaseConsent" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit DomainPurchaseConsent extends System.Object" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Azure.Management.WebSites.Models.DomainPurchaseConsent" />
   <TypeSignature Language="VB.NET" Value="Public Class DomainPurchaseConsent" />
   <TypeSignature Language="F#" Value="type DomainPurchaseConsent = class" />
-  <TypeSignature Language="C++ CLI" Value="public ref class DomainPurchaseConsent" />
-  <TypeSignature Language="C++ WINRT" Value="[Windows::Foundation::Metadata::WebHostHidden]&#xA;class DomainPurchaseConsent" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Azure.Management.Websites</AssemblyName>
-    <AssemblyVersion>1.0.0.0</AssemblyVersion>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
+    <AssemblyVersion>3.1.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
@@ -27,13 +26,11 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Management.WebSites.Models.DomainPurchaseConsent.#ctor" />
       <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; DomainPurchaseConsent();" />
-      <MemberSignature Language="C++ CX" Value="public:&#xA; DomainPurchaseConsent();" />
-      <MemberSignature Language="C++ WINRT" Value=" DomainPurchaseConsent();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Websites</AssemblyName>
-        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>3.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
@@ -44,15 +41,16 @@
       </Docs>
     </Member>
     <Member MemberName=".ctor">
-      <MemberSignature Language="C#" Value="public DomainPurchaseConsent (System.Collections.Generic.IList&lt;string&gt; agreementKeys = null, string agreedBy = null, Nullable&lt;DateTime&gt; agreedAt = null);" />
+      <MemberSignature Language="C#" Value="public DomainPurchaseConsent (System.Collections.Generic.IList&lt;string&gt; agreementKeys = default, string agreedBy = default, DateTime? agreedAt = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Collections.Generic.IList`1&lt;string&gt; agreementKeys, string agreedBy, valuetype System.Nullable`1&lt;valuetype System.DateTime&gt; agreedAt) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Management.WebSites.Models.DomainPurchaseConsent.#ctor(System.Collections.Generic.IList{System.String},System.String,System.Nullable{System.DateTime})" />
-      <MemberSignature Language="VB.NET" Value="Public Sub New (Optional agreementKeys As IList(Of String) = null, Optional agreedBy As String = null, Optional agreedAt As Nullable(Of DateTime) = null)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (Optional agreementKeys As IList(Of String) = Nothing, Optional agreedBy As String = Nothing, Optional agreedAt As Nullable(Of DateTime) = Nothing)" />
       <MemberSignature Language="F#" Value="new Microsoft.Azure.Management.WebSites.Models.DomainPurchaseConsent : System.Collections.Generic.IList&lt;string&gt; * string * Nullable&lt;DateTime&gt; -&gt; Microsoft.Azure.Management.WebSites.Models.DomainPurchaseConsent" Usage="new Microsoft.Azure.Management.WebSites.Models.DomainPurchaseConsent (agreementKeys, agreedBy, agreedAt)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Websites</AssemblyName>
-        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>3.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="agreementKeys" Type="System.Collections.Generic.IList&lt;System.String&gt;" />
@@ -73,20 +71,21 @@
       </Docs>
     </Member>
     <Member MemberName="AgreedAt">
-      <MemberSignature Language="C#" Value="public Nullable&lt;DateTime&gt; AgreedAt { get; set; }" />
+      <MemberSignature Language="C#" Value="public DateTime? AgreedAt { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;valuetype System.DateTime&gt; AgreedAt" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Management.WebSites.Models.DomainPurchaseConsent.AgreedAt" />
       <MemberSignature Language="VB.NET" Value="Public Property AgreedAt As Nullable(Of DateTime)" />
       <MemberSignature Language="F#" Value="member this.AgreedAt : Nullable&lt;DateTime&gt; with get, set" Usage="Microsoft.Azure.Management.WebSites.Models.DomainPurchaseConsent.AgreedAt" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Nullable&lt;DateTime&gt; AgreedAt { Nullable&lt;DateTime&gt; get(); void set(Nullable&lt;DateTime&gt; value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Websites</AssemblyName>
-        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>3.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="agreedAt")</AttributeName>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty(PropertyName="agreedAt")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty(PropertyName="agreedAt")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -106,16 +105,16 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Management.WebSites.Models.DomainPurchaseConsent.AgreedBy" />
       <MemberSignature Language="VB.NET" Value="Public Property AgreedBy As String" />
       <MemberSignature Language="F#" Value="member this.AgreedBy : string with get, set" Usage="Microsoft.Azure.Management.WebSites.Models.DomainPurchaseConsent.AgreedBy" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ AgreedBy { System::String ^ get(); void set(System::String ^ value); };" />
-      <MemberSignature Language="C++ CX" Value="public:&#xA; property Platform::String ^ AgreedBy { Platform::String ^ get(); void set(Platform::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Websites</AssemblyName>
-        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>3.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="agreedBy")</AttributeName>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty(PropertyName="agreedBy")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty(PropertyName="agreedBy")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -135,15 +134,16 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Management.WebSites.Models.DomainPurchaseConsent.AgreementKeys" />
       <MemberSignature Language="VB.NET" Value="Public Property AgreementKeys As IList(Of String)" />
       <MemberSignature Language="F#" Value="member this.AgreementKeys : System.Collections.Generic.IList&lt;string&gt; with get, set" Usage="Microsoft.Azure.Management.WebSites.Models.DomainPurchaseConsent.AgreementKeys" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::Generic::IList&lt;System::String ^&gt; ^ AgreementKeys { System::Collections::Generic::IList&lt;System::String ^&gt; ^ get(); void set(System::Collections::Generic::IList&lt;System::String ^&gt; ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Websites</AssemblyName>
-        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>3.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="agreementKeys")</AttributeName>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty(PropertyName="agreementKeys")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty(PropertyName="agreementKeys")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>

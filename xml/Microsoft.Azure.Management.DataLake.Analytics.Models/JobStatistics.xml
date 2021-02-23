@@ -1,11 +1,9 @@
-﻿<Type Name="JobStatistics" FullName="Microsoft.Azure.Management.DataLake.Analytics.Models.JobStatistics">
+<Type Name="JobStatistics" FullName="Microsoft.Azure.Management.DataLake.Analytics.Models.JobStatistics">
   <TypeSignature Language="C#" Value="public class JobStatistics" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit JobStatistics extends System.Object" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Azure.Management.DataLake.Analytics.Models.JobStatistics" />
   <TypeSignature Language="VB.NET" Value="Public Class JobStatistics" />
   <TypeSignature Language="F#" Value="type JobStatistics = class" />
-  <TypeSignature Language="C++ CLI" Value="public ref class JobStatistics" />
-  <TypeSignature Language="C++ WINRT" Value="[Windows::Foundation::Metadata::WebHostHidden]&#xA;class JobStatistics" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Azure.Management.DataLake.Analytics</AssemblyName>
     <AssemblyVersion>3.0.0.0</AssemblyVersion>
@@ -26,9 +24,6 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Management.DataLake.Analytics.Models.JobStatistics.#ctor" />
       <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; JobStatistics();" />
-      <MemberSignature Language="C++ CX" Value="public:&#xA; JobStatistics();" />
-      <MemberSignature Language="C++ WINRT" Value=" JobStatistics();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.DataLake.Analytics</AssemblyName>
@@ -43,10 +38,10 @@
       </Docs>
     </Member>
     <Member MemberName=".ctor">
-      <MemberSignature Language="C#" Value="public JobStatistics (Nullable&lt;DateTimeOffset&gt; lastUpdateTimeUtc = null, Nullable&lt;DateTimeOffset&gt; finalizingTimeUtc = null, System.Collections.Generic.IList&lt;Microsoft.Azure.Management.DataLake.Analytics.Models.JobStatisticsVertexStage&gt; stages = null);" />
+      <MemberSignature Language="C#" Value="public JobStatistics (DateTimeOffset? lastUpdateTimeUtc = default, DateTimeOffset? finalizingTimeUtc = default, System.Collections.Generic.IList&lt;Microsoft.Azure.Management.DataLake.Analytics.Models.JobStatisticsVertexStage&gt; stages = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(valuetype System.Nullable`1&lt;valuetype System.DateTimeOffset&gt; lastUpdateTimeUtc, valuetype System.Nullable`1&lt;valuetype System.DateTimeOffset&gt; finalizingTimeUtc, class System.Collections.Generic.IList`1&lt;class Microsoft.Azure.Management.DataLake.Analytics.Models.JobStatisticsVertexStage&gt; stages) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Management.DataLake.Analytics.Models.JobStatistics.#ctor(System.Nullable{System.DateTimeOffset},System.Nullable{System.DateTimeOffset},System.Collections.Generic.IList{Microsoft.Azure.Management.DataLake.Analytics.Models.JobStatisticsVertexStage})" />
-      <MemberSignature Language="VB.NET" Value="Public Sub New (Optional lastUpdateTimeUtc As Nullable(Of DateTimeOffset) = null, Optional finalizingTimeUtc As Nullable(Of DateTimeOffset) = null, Optional stages As IList(Of JobStatisticsVertexStage) = null)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (Optional lastUpdateTimeUtc As Nullable(Of DateTimeOffset) = Nothing, Optional finalizingTimeUtc As Nullable(Of DateTimeOffset) = Nothing, Optional stages As IList(Of JobStatisticsVertexStage) = Nothing)" />
       <MemberSignature Language="F#" Value="new Microsoft.Azure.Management.DataLake.Analytics.Models.JobStatistics : Nullable&lt;DateTimeOffset&gt; * Nullable&lt;DateTimeOffset&gt; * System.Collections.Generic.IList&lt;Microsoft.Azure.Management.DataLake.Analytics.Models.JobStatisticsVertexStage&gt; -&gt; Microsoft.Azure.Management.DataLake.Analytics.Models.JobStatistics" Usage="new Microsoft.Azure.Management.DataLake.Analytics.Models.JobStatistics (lastUpdateTimeUtc, finalizingTimeUtc, stages)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
@@ -59,11 +54,11 @@
         <Parameter Name="stages" Type="System.Collections.Generic.IList&lt;Microsoft.Azure.Management.DataLake.Analytics.Models.JobStatisticsVertexStage&gt;" />
       </Parameters>
       <Docs>
-        <param name="lastUpdateTimeUtc">the last update time for the
+        <param name="lastUpdateTimeUtc">The last update time for the
             statistics.</param>
-        <param name="finalizingTimeUtc">the job finalizing start
+        <param name="finalizingTimeUtc">The job finalizing start
             time.</param>
-        <param name="stages">the list of stages for the job.</param>
+        <param name="stages">The list of stages for the job.</param>
         <summary>
             Initializes a new instance of the JobStatistics class.
             </summary>
@@ -71,12 +66,11 @@
       </Docs>
     </Member>
     <Member MemberName="FinalizingTimeUtc">
-      <MemberSignature Language="C#" Value="public Nullable&lt;DateTimeOffset&gt; FinalizingTimeUtc { get; }" />
+      <MemberSignature Language="C#" Value="public DateTimeOffset? FinalizingTimeUtc { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;valuetype System.DateTimeOffset&gt; FinalizingTimeUtc" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Management.DataLake.Analytics.Models.JobStatistics.FinalizingTimeUtc" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property FinalizingTimeUtc As Nullable(Of DateTimeOffset)" />
       <MemberSignature Language="F#" Value="member this.FinalizingTimeUtc : Nullable&lt;DateTimeOffset&gt;" Usage="Microsoft.Azure.Management.DataLake.Analytics.Models.JobStatistics.FinalizingTimeUtc" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Nullable&lt;DateTimeOffset&gt; FinalizingTimeUtc { Nullable&lt;DateTimeOffset&gt; get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.DataLake.Analytics</AssemblyName>
@@ -84,7 +78,8 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="finalizingTimeUtc")</AttributeName>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty(PropertyName="finalizingTimeUtc")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty(PropertyName="finalizingTimeUtc")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -99,12 +94,11 @@
       </Docs>
     </Member>
     <Member MemberName="LastUpdateTimeUtc">
-      <MemberSignature Language="C#" Value="public Nullable&lt;DateTimeOffset&gt; LastUpdateTimeUtc { get; }" />
+      <MemberSignature Language="C#" Value="public DateTimeOffset? LastUpdateTimeUtc { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;valuetype System.DateTimeOffset&gt; LastUpdateTimeUtc" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Management.DataLake.Analytics.Models.JobStatistics.LastUpdateTimeUtc" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property LastUpdateTimeUtc As Nullable(Of DateTimeOffset)" />
       <MemberSignature Language="F#" Value="member this.LastUpdateTimeUtc : Nullable&lt;DateTimeOffset&gt;" Usage="Microsoft.Azure.Management.DataLake.Analytics.Models.JobStatistics.LastUpdateTimeUtc" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Nullable&lt;DateTimeOffset&gt; LastUpdateTimeUtc { Nullable&lt;DateTimeOffset&gt; get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.DataLake.Analytics</AssemblyName>
@@ -112,7 +106,8 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="lastUpdateTimeUtc")</AttributeName>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty(PropertyName="lastUpdateTimeUtc")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty(PropertyName="lastUpdateTimeUtc")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -132,7 +127,6 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Management.DataLake.Analytics.Models.JobStatistics.Stages" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Stages As IList(Of JobStatisticsVertexStage)" />
       <MemberSignature Language="F#" Value="member this.Stages : System.Collections.Generic.IList&lt;Microsoft.Azure.Management.DataLake.Analytics.Models.JobStatisticsVertexStage&gt;" Usage="Microsoft.Azure.Management.DataLake.Analytics.Models.JobStatistics.Stages" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::Generic::IList&lt;Microsoft::Azure::Management::DataLake::Analytics::Models::JobStatisticsVertexStage ^&gt; ^ Stages { System::Collections::Generic::IList&lt;Microsoft::Azure::Management::DataLake::Analytics::Models::JobStatisticsVertexStage ^&gt; ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.DataLake.Analytics</AssemblyName>
@@ -140,7 +134,8 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="stages")</AttributeName>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty(PropertyName="stages")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty(PropertyName="stages")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>

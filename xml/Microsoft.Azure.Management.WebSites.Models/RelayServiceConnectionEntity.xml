@@ -1,23 +1,22 @@
-﻿<Type Name="RelayServiceConnectionEntity" FullName="Microsoft.Azure.Management.WebSites.Models.RelayServiceConnectionEntity">
+<Type Name="RelayServiceConnectionEntity" FullName="Microsoft.Azure.Management.WebSites.Models.RelayServiceConnectionEntity">
   <TypeSignature Language="C#" Value="public class RelayServiceConnectionEntity : Microsoft.Azure.Management.WebSites.Models.ProxyOnlyResource" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit RelayServiceConnectionEntity extends Microsoft.Azure.Management.WebSites.Models.ProxyOnlyResource" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Azure.Management.WebSites.Models.RelayServiceConnectionEntity" />
   <TypeSignature Language="VB.NET" Value="Public Class RelayServiceConnectionEntity&#xA;Inherits ProxyOnlyResource" />
   <TypeSignature Language="F#" Value="type RelayServiceConnectionEntity = class&#xA;    inherit ProxyOnlyResource" />
-  <TypeSignature Language="C++ CLI" Value="public ref class RelayServiceConnectionEntity : Microsoft::Azure::Management::WebSites::Models::ProxyOnlyResource" />
-  <TypeSignature Language="C++ WINRT" Value="[Windows::Foundation::Metadata::WebHostHidden]&#xA;class RelayServiceConnectionEntity : Microsoft::Azure::Management::WebSites::Models::ProxyOnlyResource" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Azure.Management.Websites</AssemblyName>
-    <AssemblyVersion>1.0.0.0</AssemblyVersion>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
+    <AssemblyVersion>3.1.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
-    <BaseTypeName>Microsoft.Azure.Management.WebSites.Models.Resource</BaseTypeName>
-    <BaseTypeName FrameworkAlternate="azure-dotnet">Microsoft.Azure.Management.WebSites.Models.ProxyOnlyResource</BaseTypeName>
+    <BaseTypeName>Microsoft.Azure.Management.WebSites.Models.ProxyOnlyResource</BaseTypeName>
   </Base>
   <Interfaces />
   <Attributes>
     <Attribute>
-      <AttributeName>Microsoft.Rest.Serialization.JsonTransformation</AttributeName>
+      <AttributeName Language="C#">[Microsoft.Rest.Serialization.JsonTransformation]</AttributeName>
+      <AttributeName Language="F#">[&lt;Microsoft.Rest.Serialization.JsonTransformation&gt;]</AttributeName>
     </Attribute>
   </Attributes>
   <Docs>
@@ -32,13 +31,11 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Management.WebSites.Models.RelayServiceConnectionEntity.#ctor" />
       <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; RelayServiceConnectionEntity();" />
-      <MemberSignature Language="C++ CX" Value="public:&#xA; RelayServiceConnectionEntity();" />
-      <MemberSignature Language="C++ WINRT" Value=" RelayServiceConnectionEntity();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Websites</AssemblyName>
-        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>3.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
@@ -50,15 +47,16 @@
       </Docs>
     </Member>
     <Member MemberName=".ctor">
-      <MemberSignature Language="C#" Value="public RelayServiceConnectionEntity (string id = null, string name = null, string kind = null, string type = null, string entityName = null, string entityConnectionString = null, string resourceType = null, string resourceConnectionString = null, string hostname = null, Nullable&lt;int&gt; port = null, string biztalkUri = null);" />
+      <MemberSignature Language="C#" Value="public RelayServiceConnectionEntity (string id = default, string name = default, string kind = default, string type = default, string entityName = default, string entityConnectionString = default, string resourceType = default, string resourceConnectionString = default, string hostname = default, int? port = default, string biztalkUri = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string id, string name, string kind, string type, string entityName, string entityConnectionString, string resourceType, string resourceConnectionString, string hostname, valuetype System.Nullable`1&lt;int32&gt; port, string biztalkUri) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Management.WebSites.Models.RelayServiceConnectionEntity.#ctor(System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.Nullable{System.Int32},System.String)" />
-      <MemberSignature Language="VB.NET" Value="Public Sub New (Optional id As String = null, Optional name As String = null, Optional kind As String = null, Optional type As String = null, Optional entityName As String = null, Optional entityConnectionString As String = null, Optional resourceType As String = null, Optional resourceConnectionString As String = null, Optional hostname As String = null, Optional port As Nullable(Of Integer) = null, Optional biztalkUri As String = null)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (Optional id As String = Nothing, Optional name As String = Nothing, Optional kind As String = Nothing, Optional type As String = Nothing, Optional entityName As String = Nothing, Optional entityConnectionString As String = Nothing, Optional resourceType As String = Nothing, Optional resourceConnectionString As String = Nothing, Optional hostname As String = Nothing, Optional port As Nullable(Of Integer) = Nothing, Optional biztalkUri As String = Nothing)" />
       <MemberSignature Language="F#" Value="new Microsoft.Azure.Management.WebSites.Models.RelayServiceConnectionEntity : string * string * string * string * string * string * string * string * string * Nullable&lt;int&gt; * string -&gt; Microsoft.Azure.Management.WebSites.Models.RelayServiceConnectionEntity" Usage="new Microsoft.Azure.Management.WebSites.Models.RelayServiceConnectionEntity (id, name, kind, type, entityName, entityConnectionString, resourceType, resourceConnectionString, hostname, port, biztalkUri)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Websites</AssemblyName>
-        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>3.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="id" Type="System.String" />
@@ -74,10 +72,6 @@
         <Parameter Name="biztalkUri" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="id">Resource Id.</param>
-        <param name="name">Resource Name.</param>
-        <param name="kind">Kind of resource.</param>
-        <param name="type">Resource type.</param>
         <param name="entityName">To be added.</param>
         <param name="entityConnectionString">To be added.</param>
         <param name="resourceType">To be added.</param>
@@ -85,6 +79,10 @@
         <param name="hostname">To be added.</param>
         <param name="port">To be added.</param>
         <param name="biztalkUri">To be added.</param>
+        <param name="id">Resource Id.</param>
+        <param name="name">Resource Name.</param>
+        <param name="kind">Kind of resource.</param>
+        <param name="type">Resource type.</param>
         <summary>
             Initializes a new instance of the RelayServiceConnectionEntity
             class.
@@ -98,16 +96,16 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Management.WebSites.Models.RelayServiceConnectionEntity.BiztalkUri" />
       <MemberSignature Language="VB.NET" Value="Public Property BiztalkUri As String" />
       <MemberSignature Language="F#" Value="member this.BiztalkUri : string with get, set" Usage="Microsoft.Azure.Management.WebSites.Models.RelayServiceConnectionEntity.BiztalkUri" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ BiztalkUri { System::String ^ get(); void set(System::String ^ value); };" />
-      <MemberSignature Language="C++ CX" Value="public:&#xA; property Platform::String ^ BiztalkUri { Platform::String ^ get(); void set(Platform::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Websites</AssemblyName>
-        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>3.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="properties.biztalkUri")</AttributeName>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty(PropertyName="properties.biztalkUri")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty(PropertyName="properties.biztalkUri")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -125,16 +123,16 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Management.WebSites.Models.RelayServiceConnectionEntity.EntityConnectionString" />
       <MemberSignature Language="VB.NET" Value="Public Property EntityConnectionString As String" />
       <MemberSignature Language="F#" Value="member this.EntityConnectionString : string with get, set" Usage="Microsoft.Azure.Management.WebSites.Models.RelayServiceConnectionEntity.EntityConnectionString" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ EntityConnectionString { System::String ^ get(); void set(System::String ^ value); };" />
-      <MemberSignature Language="C++ CX" Value="public:&#xA; property Platform::String ^ EntityConnectionString { Platform::String ^ get(); void set(Platform::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Websites</AssemblyName>
-        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>3.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="properties.entityConnectionString")</AttributeName>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty(PropertyName="properties.entityConnectionString")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty(PropertyName="properties.entityConnectionString")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -152,16 +150,16 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Management.WebSites.Models.RelayServiceConnectionEntity.EntityName" />
       <MemberSignature Language="VB.NET" Value="Public Property EntityName As String" />
       <MemberSignature Language="F#" Value="member this.EntityName : string with get, set" Usage="Microsoft.Azure.Management.WebSites.Models.RelayServiceConnectionEntity.EntityName" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ EntityName { System::String ^ get(); void set(System::String ^ value); };" />
-      <MemberSignature Language="C++ CX" Value="public:&#xA; property Platform::String ^ EntityName { Platform::String ^ get(); void set(Platform::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Websites</AssemblyName>
-        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>3.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="properties.entityName")</AttributeName>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty(PropertyName="properties.entityName")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty(PropertyName="properties.entityName")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -179,16 +177,16 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Management.WebSites.Models.RelayServiceConnectionEntity.Hostname" />
       <MemberSignature Language="VB.NET" Value="Public Property Hostname As String" />
       <MemberSignature Language="F#" Value="member this.Hostname : string with get, set" Usage="Microsoft.Azure.Management.WebSites.Models.RelayServiceConnectionEntity.Hostname" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Hostname { System::String ^ get(); void set(System::String ^ value); };" />
-      <MemberSignature Language="C++ CX" Value="public:&#xA; property Platform::String ^ Hostname { Platform::String ^ get(); void set(Platform::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Websites</AssemblyName>
-        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>3.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="properties.hostname")</AttributeName>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty(PropertyName="properties.hostname")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty(PropertyName="properties.hostname")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -201,20 +199,21 @@
       </Docs>
     </Member>
     <Member MemberName="Port">
-      <MemberSignature Language="C#" Value="public Nullable&lt;int&gt; Port { get; set; }" />
+      <MemberSignature Language="C#" Value="public int? Port { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;int32&gt; Port" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Management.WebSites.Models.RelayServiceConnectionEntity.Port" />
       <MemberSignature Language="VB.NET" Value="Public Property Port As Nullable(Of Integer)" />
       <MemberSignature Language="F#" Value="member this.Port : Nullable&lt;int&gt; with get, set" Usage="Microsoft.Azure.Management.WebSites.Models.RelayServiceConnectionEntity.Port" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Nullable&lt;int&gt; Port { Nullable&lt;int&gt; get(); void set(Nullable&lt;int&gt; value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Websites</AssemblyName>
-        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>3.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="properties.port")</AttributeName>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty(PropertyName="properties.port")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty(PropertyName="properties.port")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -232,16 +231,16 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Management.WebSites.Models.RelayServiceConnectionEntity.ResourceConnectionString" />
       <MemberSignature Language="VB.NET" Value="Public Property ResourceConnectionString As String" />
       <MemberSignature Language="F#" Value="member this.ResourceConnectionString : string with get, set" Usage="Microsoft.Azure.Management.WebSites.Models.RelayServiceConnectionEntity.ResourceConnectionString" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ ResourceConnectionString { System::String ^ get(); void set(System::String ^ value); };" />
-      <MemberSignature Language="C++ CX" Value="public:&#xA; property Platform::String ^ ResourceConnectionString { Platform::String ^ get(); void set(Platform::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Websites</AssemblyName>
-        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>3.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="properties.resourceConnectionString")</AttributeName>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty(PropertyName="properties.resourceConnectionString")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty(PropertyName="properties.resourceConnectionString")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -259,16 +258,16 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Management.WebSites.Models.RelayServiceConnectionEntity.ResourceType" />
       <MemberSignature Language="VB.NET" Value="Public Property ResourceType As String" />
       <MemberSignature Language="F#" Value="member this.ResourceType : string with get, set" Usage="Microsoft.Azure.Management.WebSites.Models.RelayServiceConnectionEntity.ResourceType" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ ResourceType { System::String ^ get(); void set(System::String ^ value); };" />
-      <MemberSignature Language="C++ CX" Value="public:&#xA; property Platform::String ^ ResourceType { Platform::String ^ get(); void set(Platform::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Websites</AssemblyName>
-        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>3.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="properties.resourceType")</AttributeName>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty(PropertyName="properties.resourceType")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty(PropertyName="properties.resourceType")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>

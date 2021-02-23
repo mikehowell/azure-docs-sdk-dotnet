@@ -1,28 +1,33 @@
-﻿<Type Name="UserInner" FullName="Microsoft.Azure.Management.AppService.Fluent.Models.UserInner">
-  <TypeSignature Language="C#" Value="public class UserInner : Microsoft.Azure.Management.AppService.Fluent.Models.ProxyOnlyResource" />
-  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit UserInner extends Microsoft.Azure.Management.AppService.Fluent.Models.ProxyOnlyResource" />
+<Type Name="UserInner" FullName="Microsoft.Azure.Management.AppService.Fluent.Models.UserInner">
+  <TypeSignature Language="C#" Value="public class UserInner : Microsoft.Azure.Management.AppService.Fluent.Models.ProxyOnlyResourceInner" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit UserInner extends Microsoft.Azure.Management.AppService.Fluent.Models.ProxyOnlyResourceInner" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Azure.Management.AppService.Fluent.Models.UserInner" />
-  <TypeSignature Language="VB.NET" Value="Public Class UserInner&#xA;Inherits ProxyOnlyResource" />
-  <TypeSignature Language="F#" Value="type UserInner = class&#xA;    inherit ProxyOnlyResource" />
-  <TypeSignature Language="C++ CLI" Value="public ref class UserInner : Microsoft::Azure::Management::AppService::Fluent::Models::ProxyOnlyResource" />
-  <TypeSignature Language="C++ WINRT" Value="[Windows::Foundation::Metadata::WebHostHidden]&#xA;class UserInner : Microsoft::Azure::Management::AppService::Fluent::Models::ProxyOnlyResource" />
+  <TypeSignature Language="VB.NET" Value="Public Class UserInner&#xA;Inherits ProxyOnlyResourceInner" />
+  <TypeSignature Language="F#" Value="type UserInner = class&#xA;    inherit ProxyOnlyResourceInner" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Azure.Management.AppService.Fluent</AssemblyName>
-    <AssemblyVersion>1.0.0.60</AssemblyVersion>
+    <AssemblyVersion>1.0.0.61</AssemblyVersion>
+    <AssemblyVersion>1.0.0.62</AssemblyVersion>
+    <AssemblyVersion>1.0.0.63</AssemblyVersion>
+    <AssemblyVersion>1.0.0.64</AssemblyVersion>
+    <AssemblyVersion>1.0.0.65</AssemblyVersion>
+    <AssemblyVersion>1.0.0.66</AssemblyVersion>
+    <AssemblyVersion>1.0.0.67</AssemblyVersion>
+    <AssemblyVersion>1.0.0.68</AssemblyVersion>
   </AssemblyInfo>
   <Base>
-    <BaseTypeName>Microsoft.Azure.Management.ResourceManager.Fluent.Resource</BaseTypeName>
-    <BaseTypeName FrameworkAlternate="azure-dotnet">Microsoft.Azure.Management.AppService.Fluent.Models.ProxyOnlyResource</BaseTypeName>
+    <BaseTypeName>Microsoft.Azure.Management.AppService.Fluent.Models.ProxyOnlyResourceInner</BaseTypeName>
   </Base>
   <Interfaces />
   <Attributes>
     <Attribute>
-      <AttributeName>Microsoft.Rest.Serialization.JsonTransformation</AttributeName>
+      <AttributeName Language="C#">[Microsoft.Rest.Serialization.JsonTransformation]</AttributeName>
+      <AttributeName Language="F#">[&lt;Microsoft.Rest.Serialization.JsonTransformation&gt;]</AttributeName>
     </Attribute>
   </Attributes>
   <Docs>
     <summary>
-            User crendentials used for publishing activity.
+            User credentials used for publishing activity.
             </summary>
     <remarks>To be added.</remarks>
   </Docs>
@@ -32,13 +37,17 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Management.AppService.Fluent.Models.UserInner.#ctor" />
       <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; UserInner();" />
-      <MemberSignature Language="C++ CX" Value="public:&#xA; UserInner();" />
-      <MemberSignature Language="C++ WINRT" Value=" UserInner();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.AppService.Fluent</AssemblyName>
-        <AssemblyVersion>1.0.0.60</AssemblyVersion>
+        <AssemblyVersion>1.0.0.61</AssemblyVersion>
+        <AssemblyVersion>1.0.0.62</AssemblyVersion>
+        <AssemblyVersion>1.0.0.63</AssemblyVersion>
+        <AssemblyVersion>1.0.0.64</AssemblyVersion>
+        <AssemblyVersion>1.0.0.65</AssemblyVersion>
+        <AssemblyVersion>1.0.0.66</AssemblyVersion>
+        <AssemblyVersion>1.0.0.67</AssemblyVersion>
+        <AssemblyVersion>1.0.0.68</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
@@ -49,39 +58,51 @@
       </Docs>
     </Member>
     <Member MemberName=".ctor">
-      <MemberSignature Language="C#" Value="public UserInner (string publishingUserName, string id = null, string name = null, string kind = null, string type = null, string userName = null, string publishingPassword = null, string publishingPasswordHash = null, string publishingPasswordHashSalt = null);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string publishingUserName, string id, string name, string kind, string type, string userName, string publishingPassword, string publishingPasswordHash, string publishingPasswordHashSalt) cil managed" />
+      <MemberSignature Language="C#" Value="public UserInner (string publishingUserName, string id = default, string name = default, string type = default, string kind = default, string publishingPassword = default, string publishingPasswordHash = default, string publishingPasswordHashSalt = default, string scmUri = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string publishingUserName, string id, string name, string type, string kind, string publishingPassword, string publishingPasswordHash, string publishingPasswordHashSalt, string scmUri) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Management.AppService.Fluent.Models.UserInner.#ctor(System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String)" />
-      <MemberSignature Language="VB.NET" Value="Public Sub New (publishingUserName As String, Optional id As String = null, Optional name As String = null, Optional kind As String = null, Optional type As String = null, Optional userName As String = null, Optional publishingPassword As String = null, Optional publishingPasswordHash As String = null, Optional publishingPasswordHashSalt As String = null)" />
-      <MemberSignature Language="F#" Value="new Microsoft.Azure.Management.AppService.Fluent.Models.UserInner : string * string * string * string * string * string * string * string * string -&gt; Microsoft.Azure.Management.AppService.Fluent.Models.UserInner" Usage="new Microsoft.Azure.Management.AppService.Fluent.Models.UserInner (publishingUserName, id, name, kind, type, userName, publishingPassword, publishingPasswordHash, publishingPasswordHashSalt)" />
-      <MemberSignature Language="C++ WINRT" Value=" UserInner(std::wstring const &amp; publishingUserName, std::wstring const &amp; id = null, std::wstring const &amp; name = null, std::wstring const &amp; kind = null, std::wstring const &amp; type = null, std::wstring const &amp; userName = null, std::wstring const &amp; publishingPassword = null, std::wstring const &amp; publishingPasswordHash = null, std::wstring const &amp; publishingPasswordHashSalt = null);" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (publishingUserName As String, Optional id As String = Nothing, Optional name As String = Nothing, Optional type As String = Nothing, Optional kind As String = Nothing, Optional publishingPassword As String = Nothing, Optional publishingPasswordHash As String = Nothing, Optional publishingPasswordHashSalt As String = Nothing, Optional scmUri As String = Nothing)" />
+      <MemberSignature Language="F#" Value="new Microsoft.Azure.Management.AppService.Fluent.Models.UserInner : string * string * string * string * string * string * string * string * string -&gt; Microsoft.Azure.Management.AppService.Fluent.Models.UserInner" Usage="new Microsoft.Azure.Management.AppService.Fluent.Models.UserInner (publishingUserName, id, name, type, kind, publishingPassword, publishingPasswordHash, publishingPasswordHashSalt, scmUri)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.AppService.Fluent</AssemblyName>
-        <AssemblyVersion>1.0.0.60</AssemblyVersion>
+        <AssemblyVersion>1.0.0.61</AssemblyVersion>
+        <AssemblyVersion>1.0.0.62</AssemblyVersion>
+        <AssemblyVersion>1.0.0.63</AssemblyVersion>
+        <AssemblyVersion>1.0.0.64</AssemblyVersion>
+        <AssemblyVersion>1.0.0.65</AssemblyVersion>
+        <AssemblyVersion>1.0.0.66</AssemblyVersion>
+        <AssemblyVersion>1.0.0.67</AssemblyVersion>
+        <AssemblyVersion>1.0.0.68</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
+        <Parameter Name="publishingUserName" Type="System.String" />
         <Parameter Name="id" Type="System.String" />
         <Parameter Name="name" Type="System.String" />
-        <Parameter Name="kind" Type="System.String" />
         <Parameter Name="type" Type="System.String" />
-        <Parameter Name="userName" Type="System.String" />
-        <Parameter Name="publishingUserName" Type="System.String" />
+        <Parameter Name="kind" Type="System.String" />
         <Parameter Name="publishingPassword" Type="System.String" />
         <Parameter Name="publishingPasswordHash" Type="System.String" />
         <Parameter Name="publishingPasswordHashSalt" Type="System.String" />
+        <Parameter Name="scmUri" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="publishingUserName">To be added.</param>
         <param name="id">To be added.</param>
         <param name="name">To be added.</param>
-        <param name="kind">To be added.</param>
         <param name="type">To be added.</param>
-        <param name="userName">To be added.</param>
-        <param name="publishingPassword">To be added.</param>
-        <param name="publishingPasswordHash">To be added.</param>
-        <param name="publishingPasswordHashSalt">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="publishingUserName">Username used for
+            publishing.</param>
+        <param name="kind">Kind of resource.</param>
+        <param name="publishingPassword">Password used for
+            publishing.</param>
+        <param name="publishingPasswordHash">Password hash used for
+            publishing.</param>
+        <param name="publishingPasswordHashSalt">Password hash salt used
+            for publishing.</param>
+        <param name="scmUri">Url of SCM site.</param>
+        <summary>
+            Initializes a new instance of the UserInner class.
+            </summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -91,16 +112,22 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Management.AppService.Fluent.Models.UserInner.PublishingPassword" />
       <MemberSignature Language="VB.NET" Value="Public Property PublishingPassword As String" />
       <MemberSignature Language="F#" Value="member this.PublishingPassword : string with get, set" Usage="Microsoft.Azure.Management.AppService.Fluent.Models.UserInner.PublishingPassword" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ PublishingPassword { System::String ^ get(); void set(System::String ^ value); };" />
-      <MemberSignature Language="C++ CX" Value="public:&#xA; property Platform::String ^ PublishingPassword { Platform::String ^ get(); void set(Platform::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.AppService.Fluent</AssemblyName>
-        <AssemblyVersion>1.0.0.60</AssemblyVersion>
+        <AssemblyVersion>1.0.0.61</AssemblyVersion>
+        <AssemblyVersion>1.0.0.62</AssemblyVersion>
+        <AssemblyVersion>1.0.0.63</AssemblyVersion>
+        <AssemblyVersion>1.0.0.64</AssemblyVersion>
+        <AssemblyVersion>1.0.0.65</AssemblyVersion>
+        <AssemblyVersion>1.0.0.66</AssemblyVersion>
+        <AssemblyVersion>1.0.0.67</AssemblyVersion>
+        <AssemblyVersion>1.0.0.68</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="properties.publishingPassword")</AttributeName>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty(PropertyName="properties.publishingPassword")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty(PropertyName="properties.publishingPassword")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -120,16 +147,22 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Management.AppService.Fluent.Models.UserInner.PublishingPasswordHash" />
       <MemberSignature Language="VB.NET" Value="Public Property PublishingPasswordHash As String" />
       <MemberSignature Language="F#" Value="member this.PublishingPasswordHash : string with get, set" Usage="Microsoft.Azure.Management.AppService.Fluent.Models.UserInner.PublishingPasswordHash" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ PublishingPasswordHash { System::String ^ get(); void set(System::String ^ value); };" />
-      <MemberSignature Language="C++ CX" Value="public:&#xA; property Platform::String ^ PublishingPasswordHash { Platform::String ^ get(); void set(Platform::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.AppService.Fluent</AssemblyName>
-        <AssemblyVersion>1.0.0.60</AssemblyVersion>
+        <AssemblyVersion>1.0.0.61</AssemblyVersion>
+        <AssemblyVersion>1.0.0.62</AssemblyVersion>
+        <AssemblyVersion>1.0.0.63</AssemblyVersion>
+        <AssemblyVersion>1.0.0.64</AssemblyVersion>
+        <AssemblyVersion>1.0.0.65</AssemblyVersion>
+        <AssemblyVersion>1.0.0.66</AssemblyVersion>
+        <AssemblyVersion>1.0.0.67</AssemblyVersion>
+        <AssemblyVersion>1.0.0.68</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="properties.publishingPasswordHash")</AttributeName>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty(PropertyName="properties.publishingPasswordHash")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty(PropertyName="properties.publishingPasswordHash")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -149,16 +182,22 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Management.AppService.Fluent.Models.UserInner.PublishingPasswordHashSalt" />
       <MemberSignature Language="VB.NET" Value="Public Property PublishingPasswordHashSalt As String" />
       <MemberSignature Language="F#" Value="member this.PublishingPasswordHashSalt : string with get, set" Usage="Microsoft.Azure.Management.AppService.Fluent.Models.UserInner.PublishingPasswordHashSalt" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ PublishingPasswordHashSalt { System::String ^ get(); void set(System::String ^ value); };" />
-      <MemberSignature Language="C++ CX" Value="public:&#xA; property Platform::String ^ PublishingPasswordHashSalt { Platform::String ^ get(); void set(Platform::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.AppService.Fluent</AssemblyName>
-        <AssemblyVersion>1.0.0.60</AssemblyVersion>
+        <AssemblyVersion>1.0.0.61</AssemblyVersion>
+        <AssemblyVersion>1.0.0.62</AssemblyVersion>
+        <AssemblyVersion>1.0.0.63</AssemblyVersion>
+        <AssemblyVersion>1.0.0.64</AssemblyVersion>
+        <AssemblyVersion>1.0.0.65</AssemblyVersion>
+        <AssemblyVersion>1.0.0.66</AssemblyVersion>
+        <AssemblyVersion>1.0.0.67</AssemblyVersion>
+        <AssemblyVersion>1.0.0.68</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="properties.publishingPasswordHashSalt")</AttributeName>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty(PropertyName="properties.publishingPasswordHashSalt")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty(PropertyName="properties.publishingPasswordHashSalt")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -178,16 +217,22 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Management.AppService.Fluent.Models.UserInner.PublishingUserName" />
       <MemberSignature Language="VB.NET" Value="Public Property PublishingUserName As String" />
       <MemberSignature Language="F#" Value="member this.PublishingUserName : string with get, set" Usage="Microsoft.Azure.Management.AppService.Fluent.Models.UserInner.PublishingUserName" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ PublishingUserName { System::String ^ get(); void set(System::String ^ value); };" />
-      <MemberSignature Language="C++ CX" Value="public:&#xA; property Platform::String ^ PublishingUserName { Platform::String ^ get(); void set(Platform::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.AppService.Fluent</AssemblyName>
-        <AssemblyVersion>1.0.0.60</AssemblyVersion>
+        <AssemblyVersion>1.0.0.61</AssemblyVersion>
+        <AssemblyVersion>1.0.0.62</AssemblyVersion>
+        <AssemblyVersion>1.0.0.63</AssemblyVersion>
+        <AssemblyVersion>1.0.0.64</AssemblyVersion>
+        <AssemblyVersion>1.0.0.65</AssemblyVersion>
+        <AssemblyVersion>1.0.0.66</AssemblyVersion>
+        <AssemblyVersion>1.0.0.67</AssemblyVersion>
+        <AssemblyVersion>1.0.0.68</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="properties.publishingUserName")</AttributeName>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty(PropertyName="properties.publishingUserName")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty(PropertyName="properties.publishingUserName")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -201,22 +246,28 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
-    <Member MemberName="UserName">
-      <MemberSignature Language="C#" Value="public string UserName { get; set; }" />
-      <MemberSignature Language="ILAsm" Value=".property instance string UserName" />
-      <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Management.AppService.Fluent.Models.UserInner.UserName" />
-      <MemberSignature Language="VB.NET" Value="Public Property UserName As String" />
-      <MemberSignature Language="F#" Value="member this.UserName : string with get, set" Usage="Microsoft.Azure.Management.AppService.Fluent.Models.UserInner.UserName" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ UserName { System::String ^ get(); void set(System::String ^ value); };" />
-      <MemberSignature Language="C++ CX" Value="public:&#xA; property Platform::String ^ UserName { Platform::String ^ get(); void set(Platform::String ^ value); };" />
+    <Member MemberName="ScmUri">
+      <MemberSignature Language="C#" Value="public string ScmUri { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string ScmUri" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Management.AppService.Fluent.Models.UserInner.ScmUri" />
+      <MemberSignature Language="VB.NET" Value="Public Property ScmUri As String" />
+      <MemberSignature Language="F#" Value="member this.ScmUri : string with get, set" Usage="Microsoft.Azure.Management.AppService.Fluent.Models.UserInner.ScmUri" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.AppService.Fluent</AssemblyName>
-        <AssemblyVersion>1.0.0.60</AssemblyVersion>
+        <AssemblyVersion>1.0.0.61</AssemblyVersion>
+        <AssemblyVersion>1.0.0.62</AssemblyVersion>
+        <AssemblyVersion>1.0.0.63</AssemblyVersion>
+        <AssemblyVersion>1.0.0.64</AssemblyVersion>
+        <AssemblyVersion>1.0.0.65</AssemblyVersion>
+        <AssemblyVersion>1.0.0.66</AssemblyVersion>
+        <AssemblyVersion>1.0.0.67</AssemblyVersion>
+        <AssemblyVersion>1.0.0.68</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="properties.name")</AttributeName>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty(PropertyName="properties.scmUri")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty(PropertyName="properties.scmUri")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -224,7 +275,7 @@
       </ReturnValue>
       <Docs>
         <summary>
-            Gets or sets username
+            Gets or sets url of SCM site.
             </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
@@ -235,22 +286,31 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Validate() cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Management.AppService.Fluent.Models.UserInner.Validate" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Sub Validate ()" />
-      <MemberSignature Language="F#" Value="abstract member Validate : unit -&gt; unit&#xA;override this.Validate : unit -&gt; unit" Usage="userInner.Validate " />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Validate();" />
-      <MemberSignature Language="C++ CX" Value="public:&#xA; virtual void Validate();" />
-      <MemberSignature Language="C++ WINRT" Value=" virtual void Validate();" />
+      <MemberSignature Language="F#" Value="override this.Validate : unit -&gt; unit" Usage="userInner.Validate " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.AppService.Fluent</AssemblyName>
-        <AssemblyVersion>1.0.0.60</AssemblyVersion>
+        <AssemblyVersion>1.0.0.61</AssemblyVersion>
+        <AssemblyVersion>1.0.0.62</AssemblyVersion>
+        <AssemblyVersion>1.0.0.63</AssemblyVersion>
+        <AssemblyVersion>1.0.0.64</AssemblyVersion>
+        <AssemblyVersion>1.0.0.65</AssemblyVersion>
+        <AssemblyVersion>1.0.0.66</AssemblyVersion>
+        <AssemblyVersion>1.0.0.67</AssemblyVersion>
+        <AssemblyVersion>1.0.0.68</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+            Validate the object.
+            </summary>
         <remarks>To be added.</remarks>
+        <exception cref="T:Microsoft.Rest.ValidationException">
+            Thrown if validation fails
+            </exception>
       </Docs>
     </Member>
   </Members>

@@ -1,4 +1,4 @@
-﻿<Type Name="MetricManager" FullName="Microsoft.ApplicationInsights.Metrics.MetricManager">
+<Type Name="MetricManager" FullName="Microsoft.ApplicationInsights.Metrics.MetricManager">
   <TypeSignature Language="C#" Value="public sealed class MetricManager" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit MetricManager extends System.Object" />
   <TypeSignature Language="DocId" Value="T:Microsoft.ApplicationInsights.Metrics.MetricManager" />
@@ -6,14 +6,27 @@
   <TypeSignature Language="F#" Value="type MetricManager = class" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.ApplicationInsights</AssemblyName>
-    <AssemblyVersion>2.6.0.0</AssemblyVersion>
+    <AssemblyVersion>2.11.0.0</AssemblyVersion>
+    <AssemblyVersion>2.12.0.21496</AssemblyVersion>
+    <AssemblyVersion>2.12.1.36699</AssemblyVersion>
+    <AssemblyVersion>2.13.0.10578</AssemblyVersion>
+    <AssemblyVersion>2.13.1.12554</AssemblyVersion>
+    <AssemblyVersion>2.14.0.17971</AssemblyVersion>
+    <AssemblyVersion>2.15.0.44797</AssemblyVersion>
+    <AssemblyVersion>2.16.0.18277</AssemblyVersion>
+    <AssemblyVersion>2.17.0.146</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
+    <summary>A metric manager coordinates metrics aggregation at a specific scope.
+            It keeps track of the known metrics and is ultimataly respnsibe for correctly
+            initializeing metric data time series.
+            Note that a metric manager deals with zero dimensional time series.
+            Metric objects are multidimensional collections of such series and the manager 
+            merely holds a collection of such containers for its scope.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -26,14 +39,22 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.ApplicationInsights</AssemblyName>
-        <AssemblyVersion>2.6.0.0</AssemblyVersion>
+        <AssemblyVersion>2.11.0.0</AssemblyVersion>
+        <AssemblyVersion>2.12.0.21496</AssemblyVersion>
+        <AssemblyVersion>2.12.1.36699</AssemblyVersion>
+        <AssemblyVersion>2.13.0.10578</AssemblyVersion>
+        <AssemblyVersion>2.13.1.12554</AssemblyVersion>
+        <AssemblyVersion>2.14.0.17971</AssemblyVersion>
+        <AssemblyVersion>2.15.0.44797</AssemblyVersion>
+        <AssemblyVersion>2.16.0.18277</AssemblyVersion>
+        <AssemblyVersion>2.17.0.146</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="telemetryPipeline" Type="Microsoft.ApplicationInsights.Metrics.Extensibility.IMetricTelemetryPipeline" />
       </Parameters>
       <Docs>
-        <param name="telemetryPipeline">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="telemetryPipeline">The destination where aggregates will be sent.</param>
+        <summary>Initializes a new metric manager.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -41,11 +62,20 @@
       <MemberSignature Language="C#" Value="public Microsoft.ApplicationInsights.Metrics.MetricSeries CreateNewSeries (Microsoft.ApplicationInsights.Metrics.MetricIdentifier metricIdentifier, System.Collections.Generic.IEnumerable&lt;System.Collections.Generic.KeyValuePair&lt;string,string&gt;&gt; dimensionNamesAndValues, Microsoft.ApplicationInsights.Metrics.IMetricSeriesConfiguration config);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class Microsoft.ApplicationInsights.Metrics.MetricSeries CreateNewSeries(class Microsoft.ApplicationInsights.Metrics.MetricIdentifier metricIdentifier, class System.Collections.Generic.IEnumerable`1&lt;valuetype System.Collections.Generic.KeyValuePair`2&lt;string, string&gt;&gt; dimensionNamesAndValues, class Microsoft.ApplicationInsights.Metrics.IMetricSeriesConfiguration config) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.ApplicationInsights.Metrics.MetricManager.CreateNewSeries(Microsoft.ApplicationInsights.Metrics.MetricIdentifier,System.Collections.Generic.IEnumerable{System.Collections.Generic.KeyValuePair{System.String,System.String}},Microsoft.ApplicationInsights.Metrics.IMetricSeriesConfiguration)" />
+      <MemberSignature Language="VB.NET" Value="Public Function CreateNewSeries (metricIdentifier As MetricIdentifier, dimensionNamesAndValues As IEnumerable(Of KeyValuePair(Of String, String)), config As IMetricSeriesConfiguration) As MetricSeries" />
       <MemberSignature Language="F#" Value="member this.CreateNewSeries : Microsoft.ApplicationInsights.Metrics.MetricIdentifier * seq&lt;System.Collections.Generic.KeyValuePair&lt;string, string&gt;&gt; * Microsoft.ApplicationInsights.Metrics.IMetricSeriesConfiguration -&gt; Microsoft.ApplicationInsights.Metrics.MetricSeries" Usage="metricManager.CreateNewSeries (metricIdentifier, dimensionNamesAndValues, config)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.ApplicationInsights</AssemblyName>
-        <AssemblyVersion>2.6.0.0</AssemblyVersion>
+        <AssemblyVersion>2.11.0.0</AssemblyVersion>
+        <AssemblyVersion>2.12.0.21496</AssemblyVersion>
+        <AssemblyVersion>2.12.1.36699</AssemblyVersion>
+        <AssemblyVersion>2.13.0.10578</AssemblyVersion>
+        <AssemblyVersion>2.13.1.12554</AssemblyVersion>
+        <AssemblyVersion>2.14.0.17971</AssemblyVersion>
+        <AssemblyVersion>2.15.0.44797</AssemblyVersion>
+        <AssemblyVersion>2.16.0.18277</AssemblyVersion>
+        <AssemblyVersion>2.17.0.146</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.ApplicationInsights.Metrics.MetricSeries</ReturnType>
@@ -56,11 +86,11 @@
         <Parameter Name="config" Type="Microsoft.ApplicationInsights.Metrics.IMetricSeriesConfiguration" />
       </Parameters>
       <Docs>
-        <param name="metricIdentifier">To be added.</param>
-        <param name="dimensionNamesAndValues">To be added.</param>
-        <param name="config">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="metricIdentifier">THe identify of the metric to whcih the series belongs.</param>
+        <param name="dimensionNamesAndValues">The dimension names and values of the series within its metric.</param>
+        <param name="config">Configuration of the series, including the aggregatio kind and other aspects.</param>
+        <summary>Creates and initilizes a new metric data time series.</summary>
+        <returns>A new metric data time series.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -73,7 +103,15 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.ApplicationInsights</AssemblyName>
-        <AssemblyVersion>2.6.0.0</AssemblyVersion>
+        <AssemblyVersion>2.11.0.0</AssemblyVersion>
+        <AssemblyVersion>2.12.0.21496</AssemblyVersion>
+        <AssemblyVersion>2.12.1.36699</AssemblyVersion>
+        <AssemblyVersion>2.13.0.10578</AssemblyVersion>
+        <AssemblyVersion>2.13.1.12554</AssemblyVersion>
+        <AssemblyVersion>2.14.0.17971</AssemblyVersion>
+        <AssemblyVersion>2.15.0.44797</AssemblyVersion>
+        <AssemblyVersion>2.16.0.18277</AssemblyVersion>
+        <AssemblyVersion>2.17.0.146</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.ApplicationInsights.Metrics.MetricSeries</ReturnType>
@@ -84,11 +122,11 @@
         <Parameter Name="config" Type="Microsoft.ApplicationInsights.Metrics.IMetricSeriesConfiguration" />
       </Parameters>
       <Docs>
-        <param name="metricNamespace">To be added.</param>
-        <param name="metricId">To be added.</param>
-        <param name="config">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="metricNamespace">Namespace of the metric to whcih the series belongs.</param>
+        <param name="metricId">Id (name) if the metric to which the series belongs.</param>
+        <param name="config">Configuration of the series, including the aggregatio kind and other aspects.</param>
+        <summary>Creates and initilizes a new metric data time series.</summary>
+        <returns>A new metric data time series.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -101,7 +139,15 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.ApplicationInsights</AssemblyName>
-        <AssemblyVersion>2.6.0.0</AssemblyVersion>
+        <AssemblyVersion>2.11.0.0</AssemblyVersion>
+        <AssemblyVersion>2.12.0.21496</AssemblyVersion>
+        <AssemblyVersion>2.12.1.36699</AssemblyVersion>
+        <AssemblyVersion>2.13.0.10578</AssemblyVersion>
+        <AssemblyVersion>2.13.1.12554</AssemblyVersion>
+        <AssemblyVersion>2.14.0.17971</AssemblyVersion>
+        <AssemblyVersion>2.15.0.44797</AssemblyVersion>
+        <AssemblyVersion>2.16.0.18277</AssemblyVersion>
+        <AssemblyVersion>2.17.0.146</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.ApplicationInsights.Metrics.MetricSeries</ReturnType>
@@ -113,12 +159,12 @@
         <Parameter Name="config" Type="Microsoft.ApplicationInsights.Metrics.IMetricSeriesConfiguration" />
       </Parameters>
       <Docs>
-        <param name="metricNamespace">To be added.</param>
-        <param name="metricId">To be added.</param>
-        <param name="dimensionNamesAndValues">To be added.</param>
-        <param name="config">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="metricNamespace">Namespace of the metric to whcih the series belongs.</param>
+        <param name="metricId">Id (name) if the metric to which the series belongs.</param>
+        <param name="dimensionNamesAndValues">The dimension names and values of the series within its metric.</param>
+        <param name="config">Configuration of the series, including the aggregatio kind and other aspects.</param>
+        <summary>Creates and initilizes a new metric data time series.</summary>
+        <returns>A new metric data time series.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -131,14 +177,24 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.ApplicationInsights</AssemblyName>
-        <AssemblyVersion>2.6.0.0</AssemblyVersion>
+        <AssemblyVersion>2.11.0.0</AssemblyVersion>
+        <AssemblyVersion>2.12.0.21496</AssemblyVersion>
+        <AssemblyVersion>2.12.1.36699</AssemblyVersion>
+        <AssemblyVersion>2.13.0.10578</AssemblyVersion>
+        <AssemblyVersion>2.13.1.12554</AssemblyVersion>
+        <AssemblyVersion>2.14.0.17971</AssemblyVersion>
+        <AssemblyVersion>2.15.0.44797</AssemblyVersion>
+        <AssemblyVersion>2.16.0.18277</AssemblyVersion>
+        <AssemblyVersion>2.17.0.146</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+            Finalizes an instance of the <see cref="T:Microsoft.ApplicationInsights.Metrics.MetricManager" /> class.
+            </summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -151,14 +207,22 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.ApplicationInsights</AssemblyName>
-        <AssemblyVersion>2.6.0.0</AssemblyVersion>
+        <AssemblyVersion>2.11.0.0</AssemblyVersion>
+        <AssemblyVersion>2.12.0.21496</AssemblyVersion>
+        <AssemblyVersion>2.12.1.36699</AssemblyVersion>
+        <AssemblyVersion>2.13.0.10578</AssemblyVersion>
+        <AssemblyVersion>2.13.1.12554</AssemblyVersion>
+        <AssemblyVersion>2.14.0.17971</AssemblyVersion>
+        <AssemblyVersion>2.15.0.44797</AssemblyVersion>
+        <AssemblyVersion>2.16.0.18277</AssemblyVersion>
+        <AssemblyVersion>2.17.0.146</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Flushes cached metric data. The default aggregation cycle will be completed/restarted if required.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -171,13 +235,21 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.ApplicationInsights</AssemblyName>
-        <AssemblyVersion>2.6.0.0</AssemblyVersion>
+        <AssemblyVersion>2.11.0.0</AssemblyVersion>
+        <AssemblyVersion>2.12.0.21496</AssemblyVersion>
+        <AssemblyVersion>2.12.1.36699</AssemblyVersion>
+        <AssemblyVersion>2.13.0.10578</AssemblyVersion>
+        <AssemblyVersion>2.13.1.12554</AssemblyVersion>
+        <AssemblyVersion>2.14.0.17971</AssemblyVersion>
+        <AssemblyVersion>2.15.0.44797</AssemblyVersion>
+        <AssemblyVersion>2.16.0.18277</AssemblyVersion>
+        <AssemblyVersion>2.17.0.146</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.ApplicationInsights.Metrics.MetricsCollection</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Gets the collection of metrics available the this manager's scope.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>

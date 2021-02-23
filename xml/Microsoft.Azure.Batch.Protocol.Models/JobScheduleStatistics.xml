@@ -1,15 +1,14 @@
-﻿<Type Name="JobScheduleStatistics" FullName="Microsoft.Azure.Batch.Protocol.Models.JobScheduleStatistics">
+<Type Name="JobScheduleStatistics" FullName="Microsoft.Azure.Batch.Protocol.Models.JobScheduleStatistics">
   <TypeSignature Language="C#" Value="public class JobScheduleStatistics" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit JobScheduleStatistics extends System.Object" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Azure.Batch.Protocol.Models.JobScheduleStatistics" />
   <TypeSignature Language="VB.NET" Value="Public Class JobScheduleStatistics" />
   <TypeSignature Language="F#" Value="type JobScheduleStatistics = class" />
-  <TypeSignature Language="C++ CLI" Value="public ref class JobScheduleStatistics" />
-  <TypeSignature Language="C++ WINRT" Value="[Windows::Foundation::Metadata::WebHostHidden]&#xA;class JobScheduleStatistics" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Azure.Batch</AssemblyName>
-    <AssemblyVersion>7.1.0.0</AssemblyVersion>
-    <AssemblyVersion>8.0.0.0</AssemblyVersion>
+    <AssemblyVersion>12.0.0.0</AssemblyVersion>
+    <AssemblyVersion>13.0.0.0</AssemblyVersion>
+    <AssemblyVersion>14.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
@@ -17,7 +16,7 @@
   <Interfaces />
   <Docs>
     <summary>
-            Resource usage statistics for a job schedule.
+            Resource usage statistics for a Job Schedule.
             </summary>
     <remarks>To be added.</remarks>
   </Docs>
@@ -27,14 +26,12 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Batch.Protocol.Models.JobScheduleStatistics.#ctor" />
       <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; JobScheduleStatistics();" />
-      <MemberSignature Language="C++ CX" Value="public:&#xA; JobScheduleStatistics();" />
-      <MemberSignature Language="C++ WINRT" Value=" JobScheduleStatistics();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Batch</AssemblyName>
-        <AssemblyVersion>7.1.0.0</AssemblyVersion>
-        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>12.0.0.0</AssemblyVersion>
+        <AssemblyVersion>13.0.0.0</AssemblyVersion>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
@@ -50,12 +47,12 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Batch.Protocol.Models.JobScheduleStatistics.#ctor(System.String,System.DateTime,System.DateTime,System.TimeSpan,System.TimeSpan,System.TimeSpan,System.Int64,System.Int64,System.Double,System.Double,System.Int64,System.Int64,System.Int64,System.TimeSpan)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (url As String, startTime As DateTime, lastUpdateTime As DateTime, userCPUTime As TimeSpan, kernelCPUTime As TimeSpan, wallClockTime As TimeSpan, readIOps As Long, writeIOps As Long, readIOGiB As Double, writeIOGiB As Double, numSucceededTasks As Long, numFailedTasks As Long, numTaskRetries As Long, waitTime As TimeSpan)" />
       <MemberSignature Language="F#" Value="new Microsoft.Azure.Batch.Protocol.Models.JobScheduleStatistics : string * DateTime * DateTime * TimeSpan * TimeSpan * TimeSpan * int64 * int64 * double * double * int64 * int64 * int64 * TimeSpan -&gt; Microsoft.Azure.Batch.Protocol.Models.JobScheduleStatistics" Usage="new Microsoft.Azure.Batch.Protocol.Models.JobScheduleStatistics (url, startTime, lastUpdateTime, userCPUTime, kernelCPUTime, wallClockTime, readIOps, writeIOps, readIOGiB, writeIOGiB, numSucceededTasks, numFailedTasks, numTaskRetries, waitTime)" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; JobScheduleStatistics(System::String ^ url, DateTime startTime, DateTime lastUpdateTime, TimeSpan userCPUTime, TimeSpan kernelCPUTime, TimeSpan wallClockTime, long readIOps, long writeIOps, double readIOGiB, double writeIOGiB, long numSucceededTasks, long numFailedTasks, long numTaskRetries, TimeSpan waitTime);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Batch</AssemblyName>
-        <AssemblyVersion>7.1.0.0</AssemblyVersion>
-        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>12.0.0.0</AssemblyVersion>
+        <AssemblyVersion>13.0.0.0</AssemblyVersion>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="url" Type="System.String" />
@@ -81,37 +78,37 @@
             last updated. All statistics are limited to the range between
             startTime and lastUpdateTime.</param>
         <param name="userCPUTime">The total user mode CPU time (summed
-            across all cores and all compute nodes) consumed by all tasks in
-            all jobs created under the schedule.</param>
+            across all cores and all Compute Nodes) consumed by all Tasks in
+            all Jobs created under the schedule.</param>
         <param name="kernelCPUTime">The total kernel mode CPU time (summed
-            across all cores and all compute nodes) consumed by all tasks in
-            all jobs created under the schedule.</param>
+            across all cores and all Compute Nodes) consumed by all Tasks in
+            all Jobs created under the schedule.</param>
         <param name="wallClockTime">The total wall clock time of all the
-            tasks in all the jobs created under the schedule.</param>
+            Tasks in all the Jobs created under the schedule.</param>
         <param name="readIOps">The total number of disk read operations
-            made by all tasks in all jobs created under the schedule.</param>
+            made by all Tasks in all Jobs created under the schedule.</param>
         <param name="writeIOps">The total number of disk write operations
-            made by all tasks in all jobs created under the schedule.</param>
+            made by all Tasks in all Jobs created under the schedule.</param>
         <param name="readIOGiB">The total gibibytes read from disk by all
-            tasks in all jobs created under the schedule.</param>
+            Tasks in all Jobs created under the schedule.</param>
         <param name="writeIOGiB">The total gibibytes written to disk by all
-            tasks in all jobs created under the schedule.</param>
-        <param name="numSucceededTasks">The total number of tasks
-            successfully completed during the given time range in jobs created
-            under the schedule. A task completes successfully if it returns
+            Tasks in all Jobs created under the schedule.</param>
+        <param name="numSucceededTasks">The total number of Tasks
+            successfully completed during the given time range in Jobs created
+            under the schedule. A Task completes successfully if it returns
             exit code 0.</param>
-        <param name="numFailedTasks">The total number of tasks that failed
-            during the given time range in jobs created under the schedule. A
-            task fails if it exhausts its maximum retry count without returning
+        <param name="numFailedTasks">The total number of Tasks that failed
+            during the given time range in Jobs created under the schedule. A
+            Task fails if it exhausts its maximum retry count without returning
             exit code 0.</param>
         <param name="numTaskRetries">The total number of retries during the
-            given time range on all tasks in all jobs created under the
+            given time range on all Tasks in all Jobs created under the
             schedule.</param>
-        <param name="waitTime">The total wait time of all tasks in all jobs
-            created under the schedule. The wait time for a task is defined as
-            the elapsed time between the creation of the task and the start of
-            task execution. (If the task is retried due to failures, the wait
-            time is the time to the most recent task execution.)</param>
+        <param name="waitTime">The total wait time of all Tasks in all Jobs
+            created under the schedule. The wait time for a Task is defined as
+            the elapsed time between the creation of the Task and the start of
+            Task execution. (If the Task is retried due to failures, the wait
+            time is the time to the most recent Task execution.)</param>
         <summary>
             Initializes a new instance of the JobScheduleStatistics class.
             </summary>
@@ -124,16 +121,17 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Batch.Protocol.Models.JobScheduleStatistics.KernelCPUTime" />
       <MemberSignature Language="VB.NET" Value="Public Property KernelCPUTime As TimeSpan" />
       <MemberSignature Language="F#" Value="member this.KernelCPUTime : TimeSpan with get, set" Usage="Microsoft.Azure.Batch.Protocol.Models.JobScheduleStatistics.KernelCPUTime" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property TimeSpan KernelCPUTime { TimeSpan get(); void set(TimeSpan value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Batch</AssemblyName>
-        <AssemblyVersion>7.1.0.0</AssemblyVersion>
-        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>12.0.0.0</AssemblyVersion>
+        <AssemblyVersion>13.0.0.0</AssemblyVersion>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="kernelCPUTime")</AttributeName>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty(PropertyName="kernelCPUTime")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty(PropertyName="kernelCPUTime")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -142,7 +140,7 @@
       <Docs>
         <summary>
             Gets or sets the total kernel mode CPU time (summed across all
-            cores and all compute nodes) consumed by all tasks in all jobs
+            cores and all Compute Nodes) consumed by all Tasks in all Jobs
             created under the schedule.
             </summary>
         <value>To be added.</value>
@@ -155,16 +153,17 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Batch.Protocol.Models.JobScheduleStatistics.LastUpdateTime" />
       <MemberSignature Language="VB.NET" Value="Public Property LastUpdateTime As DateTime" />
       <MemberSignature Language="F#" Value="member this.LastUpdateTime : DateTime with get, set" Usage="Microsoft.Azure.Batch.Protocol.Models.JobScheduleStatistics.LastUpdateTime" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property DateTime LastUpdateTime { DateTime get(); void set(DateTime value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Batch</AssemblyName>
-        <AssemblyVersion>7.1.0.0</AssemblyVersion>
-        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>12.0.0.0</AssemblyVersion>
+        <AssemblyVersion>13.0.0.0</AssemblyVersion>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="lastUpdateTime")</AttributeName>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty(PropertyName="lastUpdateTime")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty(PropertyName="lastUpdateTime")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -186,17 +185,17 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Batch.Protocol.Models.JobScheduleStatistics.NumFailedTasks" />
       <MemberSignature Language="VB.NET" Value="Public Property NumFailedTasks As Long" />
       <MemberSignature Language="F#" Value="member this.NumFailedTasks : int64 with get, set" Usage="Microsoft.Azure.Batch.Protocol.Models.JobScheduleStatistics.NumFailedTasks" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property long NumFailedTasks { long get(); void set(long value); };" />
-      <MemberSignature Language="C++ CX" Value="public:&#xA; property long long NumFailedTasks { long long get(); void set(long long value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Batch</AssemblyName>
-        <AssemblyVersion>7.1.0.0</AssemblyVersion>
-        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>12.0.0.0</AssemblyVersion>
+        <AssemblyVersion>13.0.0.0</AssemblyVersion>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="numFailedTasks")</AttributeName>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty(PropertyName="numFailedTasks")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty(PropertyName="numFailedTasks")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -204,8 +203,8 @@
       </ReturnValue>
       <Docs>
         <summary>
-            Gets or sets the total number of tasks that failed during the given
-            time range in jobs created under the schedule. A task fails if it
+            Gets or sets the total number of Tasks that failed during the given
+            time range in Jobs created under the schedule. A Task fails if it
             exhausts its maximum retry count without returning exit code 0.
             </summary>
         <value>To be added.</value>
@@ -218,17 +217,17 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Batch.Protocol.Models.JobScheduleStatistics.NumSucceededTasks" />
       <MemberSignature Language="VB.NET" Value="Public Property NumSucceededTasks As Long" />
       <MemberSignature Language="F#" Value="member this.NumSucceededTasks : int64 with get, set" Usage="Microsoft.Azure.Batch.Protocol.Models.JobScheduleStatistics.NumSucceededTasks" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property long NumSucceededTasks { long get(); void set(long value); };" />
-      <MemberSignature Language="C++ CX" Value="public:&#xA; property long long NumSucceededTasks { long long get(); void set(long long value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Batch</AssemblyName>
-        <AssemblyVersion>7.1.0.0</AssemblyVersion>
-        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>12.0.0.0</AssemblyVersion>
+        <AssemblyVersion>13.0.0.0</AssemblyVersion>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="numSucceededTasks")</AttributeName>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty(PropertyName="numSucceededTasks")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty(PropertyName="numSucceededTasks")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -236,9 +235,9 @@
       </ReturnValue>
       <Docs>
         <summary>
-            Gets or sets the total number of tasks successfully completed
-            during the given time range in jobs created under the schedule. A
-            task completes successfully if it returns exit code 0.
+            Gets or sets the total number of Tasks successfully completed
+            during the given time range in Jobs created under the schedule. A
+            Task completes successfully if it returns exit code 0.
             </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
@@ -250,17 +249,17 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Batch.Protocol.Models.JobScheduleStatistics.NumTaskRetries" />
       <MemberSignature Language="VB.NET" Value="Public Property NumTaskRetries As Long" />
       <MemberSignature Language="F#" Value="member this.NumTaskRetries : int64 with get, set" Usage="Microsoft.Azure.Batch.Protocol.Models.JobScheduleStatistics.NumTaskRetries" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property long NumTaskRetries { long get(); void set(long value); };" />
-      <MemberSignature Language="C++ CX" Value="public:&#xA; property long long NumTaskRetries { long long get(); void set(long long value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Batch</AssemblyName>
-        <AssemblyVersion>7.1.0.0</AssemblyVersion>
-        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>12.0.0.0</AssemblyVersion>
+        <AssemblyVersion>13.0.0.0</AssemblyVersion>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="numTaskRetries")</AttributeName>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty(PropertyName="numTaskRetries")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty(PropertyName="numTaskRetries")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -269,7 +268,7 @@
       <Docs>
         <summary>
             Gets or sets the total number of retries during the given time
-            range on all tasks in all jobs created under the schedule.
+            range on all Tasks in all Jobs created under the schedule.
             </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
@@ -281,17 +280,17 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Batch.Protocol.Models.JobScheduleStatistics.ReadIOGiB" />
       <MemberSignature Language="VB.NET" Value="Public Property ReadIOGiB As Double" />
       <MemberSignature Language="F#" Value="member this.ReadIOGiB : double with get, set" Usage="Microsoft.Azure.Batch.Protocol.Models.JobScheduleStatistics.ReadIOGiB" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property double ReadIOGiB { double get(); void set(double value); };" />
-      <MemberSignature Language="C++ CX" Value="public:&#xA; property double ReadIOGiB { double get(); void set(double value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Batch</AssemblyName>
-        <AssemblyVersion>7.1.0.0</AssemblyVersion>
-        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>12.0.0.0</AssemblyVersion>
+        <AssemblyVersion>13.0.0.0</AssemblyVersion>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="readIOGiB")</AttributeName>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty(PropertyName="readIOGiB")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty(PropertyName="readIOGiB")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -299,8 +298,8 @@
       </ReturnValue>
       <Docs>
         <summary>
-            Gets or sets the total gibibytes read from disk by all tasks in all
-            jobs created under the schedule.
+            Gets or sets the total gibibytes read from disk by all Tasks in all
+            Jobs created under the schedule.
             </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
@@ -312,17 +311,17 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Batch.Protocol.Models.JobScheduleStatistics.ReadIOps" />
       <MemberSignature Language="VB.NET" Value="Public Property ReadIOps As Long" />
       <MemberSignature Language="F#" Value="member this.ReadIOps : int64 with get, set" Usage="Microsoft.Azure.Batch.Protocol.Models.JobScheduleStatistics.ReadIOps" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property long ReadIOps { long get(); void set(long value); };" />
-      <MemberSignature Language="C++ CX" Value="public:&#xA; property long long ReadIOps { long long get(); void set(long long value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Batch</AssemblyName>
-        <AssemblyVersion>7.1.0.0</AssemblyVersion>
-        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>12.0.0.0</AssemblyVersion>
+        <AssemblyVersion>13.0.0.0</AssemblyVersion>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="readIOps")</AttributeName>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty(PropertyName="readIOps")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty(PropertyName="readIOps")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -331,7 +330,7 @@
       <Docs>
         <summary>
             Gets or sets the total number of disk read operations made by all
-            tasks in all jobs created under the schedule.
+            Tasks in all Jobs created under the schedule.
             </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
@@ -343,16 +342,17 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Batch.Protocol.Models.JobScheduleStatistics.StartTime" />
       <MemberSignature Language="VB.NET" Value="Public Property StartTime As DateTime" />
       <MemberSignature Language="F#" Value="member this.StartTime : DateTime with get, set" Usage="Microsoft.Azure.Batch.Protocol.Models.JobScheduleStatistics.StartTime" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property DateTime StartTime { DateTime get(); void set(DateTime value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Batch</AssemblyName>
-        <AssemblyVersion>7.1.0.0</AssemblyVersion>
-        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>12.0.0.0</AssemblyVersion>
+        <AssemblyVersion>13.0.0.0</AssemblyVersion>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="startTime")</AttributeName>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty(PropertyName="startTime")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty(PropertyName="startTime")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -373,17 +373,17 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Batch.Protocol.Models.JobScheduleStatistics.Url" />
       <MemberSignature Language="VB.NET" Value="Public Property Url As String" />
       <MemberSignature Language="F#" Value="member this.Url : string with get, set" Usage="Microsoft.Azure.Batch.Protocol.Models.JobScheduleStatistics.Url" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Url { System::String ^ get(); void set(System::String ^ value); };" />
-      <MemberSignature Language="C++ CX" Value="public:&#xA; property Platform::String ^ Url { Platform::String ^ get(); void set(Platform::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Batch</AssemblyName>
-        <AssemblyVersion>7.1.0.0</AssemblyVersion>
-        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>12.0.0.0</AssemblyVersion>
+        <AssemblyVersion>13.0.0.0</AssemblyVersion>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="url")</AttributeName>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty(PropertyName="url")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty(PropertyName="url")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -403,16 +403,17 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Batch.Protocol.Models.JobScheduleStatistics.UserCPUTime" />
       <MemberSignature Language="VB.NET" Value="Public Property UserCPUTime As TimeSpan" />
       <MemberSignature Language="F#" Value="member this.UserCPUTime : TimeSpan with get, set" Usage="Microsoft.Azure.Batch.Protocol.Models.JobScheduleStatistics.UserCPUTime" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property TimeSpan UserCPUTime { TimeSpan get(); void set(TimeSpan value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Batch</AssemblyName>
-        <AssemblyVersion>7.1.0.0</AssemblyVersion>
-        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>12.0.0.0</AssemblyVersion>
+        <AssemblyVersion>13.0.0.0</AssemblyVersion>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="userCPUTime")</AttributeName>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty(PropertyName="userCPUTime")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty(PropertyName="userCPUTime")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -421,40 +422,11 @@
       <Docs>
         <summary>
             Gets or sets the total user mode CPU time (summed across all cores
-            and all compute nodes) consumed by all tasks in all jobs created
+            and all Compute Nodes) consumed by all Tasks in all Jobs created
             under the schedule.
             </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
-      </Docs>
-    </Member>
-    <Member MemberName="Validate">
-      <MemberSignature Language="C#" Value="public virtual void Validate ();" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Validate() cil managed" />
-      <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Batch.Protocol.Models.JobScheduleStatistics.Validate" />
-      <MemberSignature Language="VB.NET" Value="Public Overridable Sub Validate ()" />
-      <MemberSignature Language="F#" Value="abstract member Validate : unit -&gt; unit&#xA;override this.Validate : unit -&gt; unit" Usage="jobScheduleStatistics.Validate " />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Validate();" />
-      <MemberSignature Language="C++ CX" Value="public:&#xA; virtual void Validate();" />
-      <MemberSignature Language="C++ WINRT" Value=" virtual void Validate();" />
-      <MemberType>Method</MemberType>
-      <AssemblyInfo>
-        <AssemblyName>Microsoft.Azure.Batch</AssemblyName>
-        <AssemblyVersion>7.1.0.0</AssemblyVersion>
-        <AssemblyVersion>8.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <ReturnValue>
-        <ReturnType>System.Void</ReturnType>
-      </ReturnValue>
-      <Parameters />
-      <Docs>
-        <summary>
-            Validate the object.
-            </summary>
-        <remarks>To be added.</remarks>
-        <exception cref="T:Microsoft.Rest.ValidationException">
-            Thrown if validation fails
-            </exception>
       </Docs>
     </Member>
     <Member MemberName="WaitTime">
@@ -463,16 +435,17 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Batch.Protocol.Models.JobScheduleStatistics.WaitTime" />
       <MemberSignature Language="VB.NET" Value="Public Property WaitTime As TimeSpan" />
       <MemberSignature Language="F#" Value="member this.WaitTime : TimeSpan with get, set" Usage="Microsoft.Azure.Batch.Protocol.Models.JobScheduleStatistics.WaitTime" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property TimeSpan WaitTime { TimeSpan get(); void set(TimeSpan value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Batch</AssemblyName>
-        <AssemblyVersion>7.1.0.0</AssemblyVersion>
-        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>12.0.0.0</AssemblyVersion>
+        <AssemblyVersion>13.0.0.0</AssemblyVersion>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="waitTime")</AttributeName>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty(PropertyName="waitTime")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty(PropertyName="waitTime")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -480,16 +453,16 @@
       </ReturnValue>
       <Docs>
         <summary>
-            Gets or sets the total wait time of all tasks in all jobs created
-            under the schedule. The wait time for a task is defined as the
-            elapsed time between the creation of the task and the start of task
-            execution. (If the task is retried due to failures, the wait time
-            is the time to the most recent task execution.)
+            Gets or sets the total wait time of all Tasks in all Jobs created
+            under the schedule. The wait time for a Task is defined as the
+            elapsed time between the creation of the Task and the start of Task
+            execution. (If the Task is retried due to failures, the wait time
+            is the time to the most recent Task execution.)
             </summary>
         <value>To be added.</value>
         <remarks>
-            This value is only reported in the account lifetime statistics; it
-            is not included in the job statistics.
+            This value is only reported in the Account lifetime statistics; it
+            is not included in the Job statistics.
             </remarks>
       </Docs>
     </Member>
@@ -499,16 +472,17 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Batch.Protocol.Models.JobScheduleStatistics.WallClockTime" />
       <MemberSignature Language="VB.NET" Value="Public Property WallClockTime As TimeSpan" />
       <MemberSignature Language="F#" Value="member this.WallClockTime : TimeSpan with get, set" Usage="Microsoft.Azure.Batch.Protocol.Models.JobScheduleStatistics.WallClockTime" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property TimeSpan WallClockTime { TimeSpan get(); void set(TimeSpan value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Batch</AssemblyName>
-        <AssemblyVersion>7.1.0.0</AssemblyVersion>
-        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>12.0.0.0</AssemblyVersion>
+        <AssemblyVersion>13.0.0.0</AssemblyVersion>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="wallClockTime")</AttributeName>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty(PropertyName="wallClockTime")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty(PropertyName="wallClockTime")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -516,16 +490,16 @@
       </ReturnValue>
       <Docs>
         <summary>
-            Gets or sets the total wall clock time of all the tasks in all the
-            jobs created under the schedule.
+            Gets or sets the total wall clock time of all the Tasks in all the
+            Jobs created under the schedule.
             </summary>
         <value>To be added.</value>
         <remarks>
-            The wall clock time is the elapsed time from when the task started
-            running on a compute node to when it finished (or to the last time
-            the statistics were updated, if the task had not finished by then).
-            If a task was retried, this includes the wall clock time of all the
-            task retries.
+            The wall clock time is the elapsed time from when the Task started
+            running on a Compute Node to when it finished (or to the last time
+            the statistics were updated, if the Task had not finished by then).
+            If a Task was retried, this includes the wall clock time of all the
+            Task retries.
             </remarks>
       </Docs>
     </Member>
@@ -535,17 +509,17 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Batch.Protocol.Models.JobScheduleStatistics.WriteIOGiB" />
       <MemberSignature Language="VB.NET" Value="Public Property WriteIOGiB As Double" />
       <MemberSignature Language="F#" Value="member this.WriteIOGiB : double with get, set" Usage="Microsoft.Azure.Batch.Protocol.Models.JobScheduleStatistics.WriteIOGiB" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property double WriteIOGiB { double get(); void set(double value); };" />
-      <MemberSignature Language="C++ CX" Value="public:&#xA; property double WriteIOGiB { double get(); void set(double value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Batch</AssemblyName>
-        <AssemblyVersion>7.1.0.0</AssemblyVersion>
-        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>12.0.0.0</AssemblyVersion>
+        <AssemblyVersion>13.0.0.0</AssemblyVersion>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="writeIOGiB")</AttributeName>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty(PropertyName="writeIOGiB")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty(PropertyName="writeIOGiB")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -553,8 +527,8 @@
       </ReturnValue>
       <Docs>
         <summary>
-            Gets or sets the total gibibytes written to disk by all tasks in
-            all jobs created under the schedule.
+            Gets or sets the total gibibytes written to disk by all Tasks in
+            all Jobs created under the schedule.
             </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
@@ -566,17 +540,17 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Batch.Protocol.Models.JobScheduleStatistics.WriteIOps" />
       <MemberSignature Language="VB.NET" Value="Public Property WriteIOps As Long" />
       <MemberSignature Language="F#" Value="member this.WriteIOps : int64 with get, set" Usage="Microsoft.Azure.Batch.Protocol.Models.JobScheduleStatistics.WriteIOps" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property long WriteIOps { long get(); void set(long value); };" />
-      <MemberSignature Language="C++ CX" Value="public:&#xA; property long long WriteIOps { long long get(); void set(long long value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Batch</AssemblyName>
-        <AssemblyVersion>7.1.0.0</AssemblyVersion>
-        <AssemblyVersion>8.0.0.0</AssemblyVersion>
+        <AssemblyVersion>12.0.0.0</AssemblyVersion>
+        <AssemblyVersion>13.0.0.0</AssemblyVersion>
+        <AssemblyVersion>14.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="writeIOps")</AttributeName>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty(PropertyName="writeIOps")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty(PropertyName="writeIOps")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -585,7 +559,7 @@
       <Docs>
         <summary>
             Gets or sets the total number of disk write operations made by all
-            tasks in all jobs created under the schedule.
+            Tasks in all Jobs created under the schedule.
             </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>

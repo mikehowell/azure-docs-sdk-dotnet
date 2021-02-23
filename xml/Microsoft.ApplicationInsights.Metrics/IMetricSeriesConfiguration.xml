@@ -1,4 +1,4 @@
-﻿<Type Name="IMetricSeriesConfiguration" FullName="Microsoft.ApplicationInsights.Metrics.IMetricSeriesConfiguration">
+<Type Name="IMetricSeriesConfiguration" FullName="Microsoft.ApplicationInsights.Metrics.IMetricSeriesConfiguration">
   <TypeSignature Language="C#" Value="public interface IMetricSeriesConfiguration : IEquatable&lt;Microsoft.ApplicationInsights.Metrics.IMetricSeriesConfiguration&gt;" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IMetricSeriesConfiguration implements class System.IEquatable`1&lt;class Microsoft.ApplicationInsights.Metrics.IMetricSeriesConfiguration&gt;" />
   <TypeSignature Language="DocId" Value="T:Microsoft.ApplicationInsights.Metrics.IMetricSeriesConfiguration" />
@@ -6,7 +6,15 @@
   <TypeSignature Language="F#" Value="type IMetricSeriesConfiguration = interface&#xA;    interface IEquatable&lt;IMetricSeriesConfiguration&gt;" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.ApplicationInsights</AssemblyName>
-    <AssemblyVersion>2.6.0.0</AssemblyVersion>
+    <AssemblyVersion>2.11.0.0</AssemblyVersion>
+    <AssemblyVersion>2.12.0.21496</AssemblyVersion>
+    <AssemblyVersion>2.12.1.36699</AssemblyVersion>
+    <AssemblyVersion>2.13.0.10578</AssemblyVersion>
+    <AssemblyVersion>2.13.1.12554</AssemblyVersion>
+    <AssemblyVersion>2.14.0.17971</AssemblyVersion>
+    <AssemblyVersion>2.15.0.44797</AssemblyVersion>
+    <AssemblyVersion>2.16.0.18277</AssemblyVersion>
+    <AssemblyVersion>2.17.0.146</AssemblyVersion>
   </AssemblyInfo>
   <Interfaces>
     <Interface>
@@ -14,7 +22,8 @@
     </Interface>
   </Interfaces>
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Abstraction for the configuration of a metric series.
+            The configuration is a factory that can produce an arbitrary aggregator to be used by the respective series.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -27,7 +36,15 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.ApplicationInsights</AssemblyName>
-        <AssemblyVersion>2.6.0.0</AssemblyVersion>
+        <AssemblyVersion>2.11.0.0</AssemblyVersion>
+        <AssemblyVersion>2.12.0.21496</AssemblyVersion>
+        <AssemblyVersion>2.12.1.36699</AssemblyVersion>
+        <AssemblyVersion>2.13.0.10578</AssemblyVersion>
+        <AssemblyVersion>2.13.1.12554</AssemblyVersion>
+        <AssemblyVersion>2.14.0.17971</AssemblyVersion>
+        <AssemblyVersion>2.15.0.44797</AssemblyVersion>
+        <AssemblyVersion>2.16.0.18277</AssemblyVersion>
+        <AssemblyVersion>2.17.0.146</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.ApplicationInsights.Metrics.Extensibility.IMetricSeriesAggregator</ReturnType>
@@ -37,10 +54,10 @@
         <Parameter Name="aggregationCycleKind" Type="Microsoft.ApplicationInsights.Metrics.Extensibility.MetricAggregationCycleKind" />
       </Parameters>
       <Docs>
-        <param name="dataSeries">To be added.</param>
-        <param name="aggregationCycleKind">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="dataSeries">Metric data series for which to produce the aggregator..</param>
+        <param name="aggregationCycleKind">THe kind of the aggregation cycle (not the aggregation kind).</param>
+        <summary>Create an aggregator for any series configured by this confuguration object.</summary>
+        <returns>A new aggregator for the specified series and the specified cycle.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -53,13 +70,22 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.ApplicationInsights</AssemblyName>
-        <AssemblyVersion>2.6.0.0</AssemblyVersion>
+        <AssemblyVersion>2.11.0.0</AssemblyVersion>
+        <AssemblyVersion>2.12.0.21496</AssemblyVersion>
+        <AssemblyVersion>2.12.1.36699</AssemblyVersion>
+        <AssemblyVersion>2.13.0.10578</AssemblyVersion>
+        <AssemblyVersion>2.13.1.12554</AssemblyVersion>
+        <AssemblyVersion>2.14.0.17971</AssemblyVersion>
+        <AssemblyVersion>2.15.0.44797</AssemblyVersion>
+        <AssemblyVersion>2.16.0.18277</AssemblyVersion>
+        <AssemblyVersion>2.17.0.146</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Gets a value indicating whether the aggrgator produced by this settings object is
+            persistent (carries state across aggregation periods) or not.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>

@@ -1,11 +1,9 @@
-﻿<Type Name="BackupLongTermRetentionPolicy" FullName="Microsoft.Azure.Management.Sql.Models.BackupLongTermRetentionPolicy">
+<Type Name="BackupLongTermRetentionPolicy" FullName="Microsoft.Azure.Management.Sql.Models.BackupLongTermRetentionPolicy">
   <TypeSignature Language="C#" Value="public class BackupLongTermRetentionPolicy : Microsoft.Azure.Management.Sql.Models.ProxyResource" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit BackupLongTermRetentionPolicy extends Microsoft.Azure.Management.Sql.Models.ProxyResource" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Azure.Management.Sql.Models.BackupLongTermRetentionPolicy" />
   <TypeSignature Language="VB.NET" Value="Public Class BackupLongTermRetentionPolicy&#xA;Inherits ProxyResource" />
   <TypeSignature Language="F#" Value="type BackupLongTermRetentionPolicy = class&#xA;    inherit ProxyResource" />
-  <TypeSignature Language="C++ CLI" Value="public ref class BackupLongTermRetentionPolicy : Microsoft::Azure::Management::Sql::Models::ProxyResource" />
-  <TypeSignature Language="C++ WINRT" Value="[Windows::Foundation::Metadata::WebHostHidden]&#xA;class BackupLongTermRetentionPolicy : Microsoft::Azure::Management::Sql::Models::ProxyResource" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Azure.Management.Sql</AssemblyName>
     <AssemblyVersion>1.0.0.0</AssemblyVersion>
@@ -16,7 +14,8 @@
   <Interfaces />
   <Attributes>
     <Attribute>
-      <AttributeName>Microsoft.Rest.Serialization.JsonTransformation</AttributeName>
+      <AttributeName Language="C#">[Microsoft.Rest.Serialization.JsonTransformation]</AttributeName>
+      <AttributeName Language="F#">[&lt;Microsoft.Rest.Serialization.JsonTransformation&gt;]</AttributeName>
     </Attribute>
   </Attributes>
   <Docs>
@@ -31,9 +30,6 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Management.Sql.Models.BackupLongTermRetentionPolicy.#ctor" />
       <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; BackupLongTermRetentionPolicy();" />
-      <MemberSignature Language="C++ CX" Value="public:&#xA; BackupLongTermRetentionPolicy();" />
-      <MemberSignature Language="C++ WINRT" Value=" BackupLongTermRetentionPolicy();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Sql</AssemblyName>
@@ -49,10 +45,10 @@
       </Docs>
     </Member>
     <Member MemberName=".ctor">
-      <MemberSignature Language="C#" Value="public BackupLongTermRetentionPolicy (string id = null, string name = null, string type = null, string weeklyRetention = null, string monthlyRetention = null, string yearlyRetention = null, Nullable&lt;int&gt; weekOfYear = null);" />
+      <MemberSignature Language="C#" Value="public BackupLongTermRetentionPolicy (string id = default, string name = default, string type = default, string weeklyRetention = default, string monthlyRetention = default, string yearlyRetention = default, int? weekOfYear = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string id, string name, string type, string weeklyRetention, string monthlyRetention, string yearlyRetention, valuetype System.Nullable`1&lt;int32&gt; weekOfYear) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Management.Sql.Models.BackupLongTermRetentionPolicy.#ctor(System.String,System.String,System.String,System.String,System.String,System.String,System.Nullable{System.Int32})" />
-      <MemberSignature Language="VB.NET" Value="Public Sub New (Optional id As String = null, Optional name As String = null, Optional type As String = null, Optional weeklyRetention As String = null, Optional monthlyRetention As String = null, Optional yearlyRetention As String = null, Optional weekOfYear As Nullable(Of Integer) = null)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (Optional id As String = Nothing, Optional name As String = Nothing, Optional type As String = Nothing, Optional weeklyRetention As String = Nothing, Optional monthlyRetention As String = Nothing, Optional yearlyRetention As String = Nothing, Optional weekOfYear As Nullable(Of Integer) = Nothing)" />
       <MemberSignature Language="F#" Value="new Microsoft.Azure.Management.Sql.Models.BackupLongTermRetentionPolicy : string * string * string * string * string * string * Nullable&lt;int&gt; -&gt; Microsoft.Azure.Management.Sql.Models.BackupLongTermRetentionPolicy" Usage="new Microsoft.Azure.Management.Sql.Models.BackupLongTermRetentionPolicy (id, name, type, weeklyRetention, monthlyRetention, yearlyRetention, weekOfYear)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
@@ -74,7 +70,7 @@
         <param name="type">Resource type.</param>
         <param name="weeklyRetention">The weekly retention policy for an
             LTR backup in an ISO 8601 format.</param>
-        <param name="monthlyRetention">The montly retention policy for an
+        <param name="monthlyRetention">The monthly retention policy for an
             LTR backup in an ISO 8601 format.</param>
         <param name="yearlyRetention">The yearly retention policy for an
             LTR backup in an ISO 8601 format.</param>
@@ -93,8 +89,6 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Management.Sql.Models.BackupLongTermRetentionPolicy.MonthlyRetention" />
       <MemberSignature Language="VB.NET" Value="Public Property MonthlyRetention As String" />
       <MemberSignature Language="F#" Value="member this.MonthlyRetention : string with get, set" Usage="Microsoft.Azure.Management.Sql.Models.BackupLongTermRetentionPolicy.MonthlyRetention" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ MonthlyRetention { System::String ^ get(); void set(System::String ^ value); };" />
-      <MemberSignature Language="C++ CX" Value="public:&#xA; property Platform::String ^ MonthlyRetention { Platform::String ^ get(); void set(Platform::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Sql</AssemblyName>
@@ -102,7 +96,8 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="properties.monthlyRetention")</AttributeName>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty(PropertyName="properties.monthlyRetention")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty(PropertyName="properties.monthlyRetention")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -110,7 +105,7 @@
       </ReturnValue>
       <Docs>
         <summary>
-            Gets or sets the montly retention policy for an LTR backup in an
+            Gets or sets the monthly retention policy for an LTR backup in an
             ISO 8601 format.
             </summary>
         <value>To be added.</value>
@@ -123,8 +118,6 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Management.Sql.Models.BackupLongTermRetentionPolicy.WeeklyRetention" />
       <MemberSignature Language="VB.NET" Value="Public Property WeeklyRetention As String" />
       <MemberSignature Language="F#" Value="member this.WeeklyRetention : string with get, set" Usage="Microsoft.Azure.Management.Sql.Models.BackupLongTermRetentionPolicy.WeeklyRetention" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ WeeklyRetention { System::String ^ get(); void set(System::String ^ value); };" />
-      <MemberSignature Language="C++ CX" Value="public:&#xA; property Platform::String ^ WeeklyRetention { Platform::String ^ get(); void set(Platform::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Sql</AssemblyName>
@@ -132,7 +125,8 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="properties.weeklyRetention")</AttributeName>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty(PropertyName="properties.weeklyRetention")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty(PropertyName="properties.weeklyRetention")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -148,12 +142,11 @@
       </Docs>
     </Member>
     <Member MemberName="WeekOfYear">
-      <MemberSignature Language="C#" Value="public Nullable&lt;int&gt; WeekOfYear { get; set; }" />
+      <MemberSignature Language="C#" Value="public int? WeekOfYear { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;int32&gt; WeekOfYear" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Management.Sql.Models.BackupLongTermRetentionPolicy.WeekOfYear" />
       <MemberSignature Language="VB.NET" Value="Public Property WeekOfYear As Nullable(Of Integer)" />
       <MemberSignature Language="F#" Value="member this.WeekOfYear : Nullable&lt;int&gt; with get, set" Usage="Microsoft.Azure.Management.Sql.Models.BackupLongTermRetentionPolicy.WeekOfYear" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Nullable&lt;int&gt; WeekOfYear { Nullable&lt;int&gt; get(); void set(Nullable&lt;int&gt; value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Sql</AssemblyName>
@@ -161,7 +154,8 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="properties.weekOfYear")</AttributeName>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty(PropertyName="properties.weekOfYear")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty(PropertyName="properties.weekOfYear")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -182,8 +176,6 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Azure.Management.Sql.Models.BackupLongTermRetentionPolicy.YearlyRetention" />
       <MemberSignature Language="VB.NET" Value="Public Property YearlyRetention As String" />
       <MemberSignature Language="F#" Value="member this.YearlyRetention : string with get, set" Usage="Microsoft.Azure.Management.Sql.Models.BackupLongTermRetentionPolicy.YearlyRetention" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ YearlyRetention { System::String ^ get(); void set(System::String ^ value); };" />
-      <MemberSignature Language="C++ CX" Value="public:&#xA; property Platform::String ^ YearlyRetention { Platform::String ^ get(); void set(Platform::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Management.Sql</AssemblyName>
@@ -191,7 +183,8 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="properties.yearlyRetention")</AttributeName>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty(PropertyName="properties.yearlyRetention")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty(PropertyName="properties.yearlyRetention")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>

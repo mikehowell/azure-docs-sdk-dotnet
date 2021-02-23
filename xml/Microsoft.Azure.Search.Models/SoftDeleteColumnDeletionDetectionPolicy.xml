@@ -1,4 +1,4 @@
-﻿<Type Name="SoftDeleteColumnDeletionDetectionPolicy" FullName="Microsoft.Azure.Search.Models.SoftDeleteColumnDeletionDetectionPolicy">
+<Type Name="SoftDeleteColumnDeletionDetectionPolicy" FullName="Microsoft.Azure.Search.Models.SoftDeleteColumnDeletionDetectionPolicy">
   <TypeSignature Language="C#" Value="public class SoftDeleteColumnDeletionDetectionPolicy : Microsoft.Azure.Search.Models.DataDeletionDetectionPolicy" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit SoftDeleteColumnDeletionDetectionPolicy extends Microsoft.Azure.Search.Models.DataDeletionDetectionPolicy" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Azure.Search.Models.SoftDeleteColumnDeletionDetectionPolicy" />
@@ -6,7 +6,7 @@
   <TypeSignature Language="F#" Value="type SoftDeleteColumnDeletionDetectionPolicy = class&#xA;    inherit DataDeletionDetectionPolicy" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Azure.Search.Service</AssemblyName>
-    <AssemblyVersion>5.0.0.0</AssemblyVersion>
+    <AssemblyVersion>10.1.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>Microsoft.Azure.Search.Models.DataDeletionDetectionPolicy</BaseTypeName>
@@ -14,7 +14,8 @@
   <Interfaces />
   <Attributes>
     <Attribute>
-      <AttributeName>Newtonsoft.Json.JsonObject("#Microsoft.Azure.Search.SoftDeleteColumnDeletionDetectionPolicy")</AttributeName>
+      <AttributeName Language="C#">[Newtonsoft.Json.JsonObject("#Microsoft.Azure.Search.SoftDeleteColumnDeletionDetectionPolicy")]</AttributeName>
+      <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonObject("#Microsoft.Azure.Search.SoftDeleteColumnDeletionDetectionPolicy")&gt;]</AttributeName>
     </Attribute>
   </Attributes>
   <Docs>
@@ -34,7 +35,7 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Search.Service</AssemblyName>
-        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>10.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
@@ -54,7 +55,7 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Search.Service</AssemblyName>
-        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>10.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="softDeleteColumnName" Type="System.String" />
@@ -74,15 +75,15 @@
       </Docs>
     </Member>
     <Member MemberName=".ctor">
-      <MemberSignature Language="C#" Value="public SoftDeleteColumnDeletionDetectionPolicy (string softDeleteColumnName = null, string softDeleteMarkerValue = null);" />
+      <MemberSignature Language="C#" Value="public SoftDeleteColumnDeletionDetectionPolicy (string softDeleteColumnName = default, string softDeleteMarkerValue = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string softDeleteColumnName, string softDeleteMarkerValue) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Azure.Search.Models.SoftDeleteColumnDeletionDetectionPolicy.#ctor(System.String,System.String)" />
-      <MemberSignature Language="VB.NET" Value="Public Sub New (Optional softDeleteColumnName As String = null, Optional softDeleteMarkerValue As String = null)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (Optional softDeleteColumnName As String = Nothing, Optional softDeleteMarkerValue As String = Nothing)" />
       <MemberSignature Language="F#" Value="new Microsoft.Azure.Search.Models.SoftDeleteColumnDeletionDetectionPolicy : string * string -&gt; Microsoft.Azure.Search.Models.SoftDeleteColumnDeletionDetectionPolicy" Usage="new Microsoft.Azure.Search.Models.SoftDeleteColumnDeletionDetectionPolicy (softDeleteColumnName, softDeleteMarkerValue)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Search.Service</AssemblyName>
-        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>10.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="softDeleteColumnName" Type="System.String" />
@@ -92,7 +93,7 @@
         <param name="softDeleteColumnName">The name of the column to use
             for soft-deletion detection.</param>
         <param name="softDeleteMarkerValue">The marker value that
-            indentifies an item as deleted.</param>
+            identifies an item as deleted.</param>
         <summary>
             Initializes a new instance of the
             SoftDeleteColumnDeletionDetectionPolicy class.
@@ -109,11 +110,12 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Search.Service</AssemblyName>
-        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>10.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="softDeleteColumnName")</AttributeName>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty(PropertyName="softDeleteColumnName")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty(PropertyName="softDeleteColumnName")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -137,11 +139,12 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Azure.Search.Service</AssemblyName>
-        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>10.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Newtonsoft.Json.JsonProperty(PropertyName="softDeleteMarkerValue")</AttributeName>
+          <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty(PropertyName="softDeleteMarkerValue")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty(PropertyName="softDeleteMarkerValue")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -149,7 +152,7 @@
       </ReturnValue>
       <Docs>
         <summary>
-            Gets or sets the marker value that indentifies an item as deleted.
+            Gets or sets the marker value that identifies an item as deleted.
             </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
